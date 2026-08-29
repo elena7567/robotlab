@@ -1,0 +1,701 @@
+{
+  "results": [
+    {
+      "name": "minimum-320x568",
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "state": {
+        "mode": "ultra-narrow-portrait",
+        "layout": {
+          "card": {
+            "x": 12,
+            "y": 213.2121212121212,
+            "width": 296,
+            "height": 205
+          },
+          "ribbonTop": 196.2121212121212,
+          "ribbonHeight": 34
+        },
+        "cardBounds": {
+          "x": 24,
+          "y": 205.71212768554688,
+          "width": 241,
+          "height": 187.5,
+          "right": 265,
+          "bottom": 393.2121276855469
+        },
+        "homeBounds": {
+          "x": 17,
+          "y": 28,
+          "width": 66,
+          "height": 18,
+          "right": 83,
+          "bottom": 46
+        },
+        "choices": [
+          {
+            "x": 96,
+            "y": 293.2121276855469,
+            "width": 24,
+            "height": 24,
+            "right": 120,
+            "bottom": 317.2121276855469,
+            "hitWidth": 106,
+            "hitHeight": 44
+          },
+          {
+            "x": 200,
+            "y": 293.2121276855469,
+            "width": 24,
+            "height": 24,
+            "right": 224,
+            "bottom": 317.2121276855469,
+            "hitWidth": 106,
+            "hitHeight": 44
+          },
+          {
+            "x": 96,
+            "y": 335.2121276855469,
+            "width": 24,
+            "height": 24,
+            "right": 120,
+            "bottom": 359.2121276855469,
+            "hitWidth": 106,
+            "hitHeight": 44
+          },
+          {
+            "x": 200,
+            "y": 335.2121276855469,
+            "width": 24,
+            "height": 24,
+            "right": 224,
+            "bottom": 359.2121276855469,
+            "hitWidth": 106,
+            "hitHeight": 44
+          }
+        ],
+        "actions": [
+          {
+            "x": 57,
+            "y": 377.2121276855469,
+            "width": 66,
+            "height": 16,
+            "right": 123,
+            "bottom": 393.2121276855469,
+            "hitWidth": 140,
+            "hitHeight": 56
+          },
+          {
+            "x": 196,
+            "y": 377.2121276855469,
+            "width": 68,
+            "height": 16,
+            "right": 264,
+            "bottom": 393.2121276855469,
+            "hitWidth": 140,
+            "hitHeight": 56
+          }
+        ],
+        "homeGap": 150.2121212121212,
+        "answerActionGap": 18,
+        "canvas": {
+          "width": 320,
+          "height": 568
+        }
+      },
+      "checks": {
+        "viewport": true,
+        "homeSpacing": true,
+        "cardInsideViewport": true,
+        "choicesInsideViewport": true,
+        "touchTargets": true,
+        "hierarchySeparated": true,
+        "compactLandscape": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "state": {
+        "mode": "portrait",
+        "layout": {
+          "card": {
+            "x": 13.649999999999977,
+            "y": 265.2674545454546,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "ribbonTop": 246.61478787878792,
+          "ribbonHeight": 37.30533333333334
+        },
+        "cardBounds": {
+          "x": 28.128999618530273,
+          "y": 256.7674560546875,
+          "width": 293.37100000000004,
+          "height": 311.50732421875,
+          "right": 321.4999996185303,
+          "bottom": 568.2747802734375
+        },
+        "homeBounds": {
+          "x": 18.650001525878906,
+          "y": 34.650001525878906,
+          "width": 66,
+          "height": 18,
+          "right": 84.6500015258789,
+          "bottom": 52.650001525878906
+        },
+        "choices": [
+          {
+            "x": 104.22646240234374,
+            "y": 365.16530517578127,
+            "width": 56.888750000000016,
+            "height": 56.88874999999996,
+            "right": 161.11521240234376,
+            "bottom": 422.05405517578123,
+            "hitWidth": 124.17933333333335,
+            "hitHeight": 76.88875
+          },
+          {
+            "x": 228.88478759765624,
+            "y": 365.16530517578127,
+            "width": 56.88874999999999,
+            "height": 56.88874999999996,
+            "right": 285.77353759765623,
+            "bottom": 422.05405517578123,
+            "hitWidth": 124.17933333333335,
+            "hitHeight": 76.88875
+          },
+          {
+            "x": 104.22646240234374,
+            "y": 442.5330419921875,
+            "width": 56.888750000000016,
+            "height": 56.88874999999996,
+            "right": 161.11521240234376,
+            "bottom": 499.4217919921875,
+            "hitWidth": 124.17933333333335,
+            "hitHeight": 76.88875
+          },
+          {
+            "x": 228.88478759765624,
+            "y": 442.5330419921875,
+            "width": 56.88874999999999,
+            "height": 56.88874999999996,
+            "right": 285.77353759765623,
+            "bottom": 499.4217919921875,
+            "hitWidth": 124.17933333333335,
+            "hitHeight": 76.88875
+          }
+        ],
+        "actions": [
+          {
+            "x": 70.94474792480469,
+            "y": 551.2747802734375,
+            "width": 76,
+            "height": 17,
+            "right": 146.9447479248047,
+            "bottom": 568.2747802734375,
+            "hitWidth": 169.63150000000002,
+            "hitHeight": 59.30533333333334
+          },
+          {
+            "x": 242.05523681640625,
+            "y": 551.2747802734375,
+            "width": 78,
+            "height": 17,
+            "right": 320.05523681640625,
+            "bottom": 568.2747802734375,
+            "hitWidth": 169.63150000000002,
+            "hitHeight": 59.30533333333334
+          }
+        ],
+        "homeGap": 193.96478635290902,
+        "answerActionGap": 51.85298828125002,
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "screenshot": "stage8-0a-task-panel-mobile-390x844.png"
+      },
+      "checks": {
+        "viewport": true,
+        "homeSpacing": true,
+        "cardInsideViewport": true,
+        "choicesInsideViewport": true,
+        "touchTargets": true,
+        "hierarchySeparated": true,
+        "compactLandscape": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "state": {
+        "mode": "large-portrait-tablet",
+        "layout": {
+          "card": {
+            "x": 26.880000000000003,
+            "y": 127.88,
+            "width": 430,
+            "height": 419.84
+          },
+          "ribbonTop": 107.716,
+          "ribbonHeight": 40.328
+        },
+        "cardBounds": {
+          "x": 43.6259991607666,
+          "y": 117.87999725341797,
+          "width": 344.56751280212404,
+          "height": 403.1759719848633,
+          "right": 388.1935119628906,
+          "bottom": 521.0559692382812
+        },
+        "homeBounds": {
+          "x": 31.87999725341797,
+          "y": 47.880001068115234,
+          "width": 66,
+          "height": 18,
+          "right": 97.87999725341797,
+          "bottom": 65.88000106811523
+        },
+        "choices": [
+          {
+            "x": 128.90876098632813,
+            "y": 247.80298706054688,
+            "width": 82.39249999999998,
+            "height": 82.39249999999996,
+            "right": 211.30126098632812,
+            "bottom": 330.19548706054684,
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "x": 272.4587487792969,
+            "y": 247.80298706054688,
+            "width": 82.39249999999993,
+            "height": 82.39249999999996,
+            "right": 354.85124877929684,
+            "bottom": 330.19548706054684,
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "x": 128.90876098632813,
+            "y": 352.9415063476563,
+            "width": 82.39249999999998,
+            "height": 82.39249999999993,
+            "right": 211.30126098632812,
+            "bottom": 435.3340063476562,
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "x": 272.4587487792969,
+            "y": 352.9415063476563,
+            "width": 82.39249999999993,
+            "height": 82.39249999999993,
+            "right": 354.85124877929684,
+            "bottom": 435.3340063476562,
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          }
+        ],
+        "actions": [
+          {
+            "x": 96.56649780273438,
+            "y": 502.05596923828125,
+            "width": 86,
+            "height": 19,
+            "right": 182.56649780273438,
+            "bottom": 521.0559692382812,
+            "hitWidth": 199.881,
+            "hitHeight": 62.328
+          },
+          {
+            "x": 300.1935119628906,
+            "y": 502.05596923828125,
+            "width": 88,
+            "height": 19,
+            "right": 388.1935119628906,
+            "bottom": 521.0559692382812,
+            "hitWidth": 199.881,
+            "hitHeight": 62.328
+          }
+        ],
+        "homeGap": 41.83599893188476,
+        "answerActionGap": 66.72196289062504,
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        }
+      },
+      "checks": {
+        "viewport": true,
+        "homeSpacing": true,
+        "cardInsideViewport": true,
+        "choicesInsideViewport": true,
+        "touchTargets": true,
+        "hierarchySeparated": true,
+        "compactLandscape": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "touch": false,
+      "state": {
+        "mode": "landscape",
+        "layout": {
+          "card": {
+            "x": 25.200000000000003,
+            "y": 113.76,
+            "width": 358.40000000000003,
+            "height": 458.75200000000007
+          },
+          "ribbonTop": 92.94746666666667,
+          "ribbonHeight": 41.62506666666667
+        },
+        "cardBounds": {
+          "x": 42.918800762939455,
+          "y": 103.26000213623047,
+          "width": 315.98120000000006,
+          "height": 442.93946075439453,
+          "right": 358.9000007629395,
+          "bottom": 546.199462890625
+        },
+        "homeBounds": {
+          "x": 34.19999694824219,
+          "y": 41.779998779296875,
+          "width": 74,
+          "height": 21,
+          "right": 108.19999694824219,
+          "bottom": 62.779998779296875
+        },
+        "choices": [
+          {
+            "x": 81.90342053222655,
+            "y": 242.27605541992187,
+            "width": 93.33650000000002,
+            "height": 93.3365,
+            "right": 175.23992053222656,
+            "bottom": 335.6125554199219,
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "x": 233.56008251953125,
+            "y": 242.27605541992187,
+            "width": 93.3365,
+            "height": 93.3365,
+            "right": 326.89658251953125,
+            "bottom": 335.6125554199219,
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "x": 81.90342053222655,
+            "y": 359.3313837890625,
+            "width": 93.33650000000002,
+            "height": 93.3365,
+            "right": 175.23992053222656,
+            "bottom": 452.6678837890625,
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "x": 233.56008251953125,
+            "y": 359.3313837890625,
+            "width": 93.3365,
+            "height": 93.3365,
+            "right": 326.89658251953125,
+            "bottom": 452.6678837890625,
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          }
+        ],
+        "actions": [
+          {
+            "x": 75.22970581054688,
+            "y": 525.199462890625,
+            "width": 90,
+            "height": 21,
+            "right": 165.22970581054688,
+            "bottom": 546.199462890625,
+            "hitWidth": 162.6218,
+            "hitHeight": 63.62506666666667
+          },
+          {
+            "x": 242.5703125,
+            "y": 525.199462890625,
+            "width": 92,
+            "height": 21,
+            "right": 334.5703125,
+            "bottom": 546.199462890625,
+            "hitWidth": 162.6218,
+            "hitHeight": 63.62506666666667
+          }
+        ],
+        "homeGap": 30.167467887369796,
+        "answerActionGap": 72.5315791015625,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "screenshot": "stage8-0a-task-panel-desktop-1280x720.png"
+      },
+      "checks": {
+        "viewport": true,
+        "homeSpacing": true,
+        "cardInsideViewport": true,
+        "choicesInsideViewport": true,
+        "touchTargets": true,
+        "hierarchySeparated": true,
+        "compactLandscape": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "desktop-1438x914",
+      "width": 1438,
+      "height": 914,
+      "touch": false,
+      "state": {
+        "mode": "landscape",
+        "layout": {
+          "card": {
+            "x": 28,
+            "y": 129.28,
+            "width": 400,
+            "height": 480
+          },
+          "ribbonTop": 108.28,
+          "ribbonHeight": 42
+        },
+        "cardBounds": {
+          "x": 46,
+          "y": 118.77999877929688,
+          "width": 339,
+          "height": 464.0000305175781,
+          "right": 385,
+          "bottom": 582.780029296875
+        },
+        "homeBounds": {
+          "x": 37,
+          "y": 47.5,
+          "width": 74,
+          "height": 21,
+          "right": 111,
+          "bottom": 68.5
+        },
+        "choices": [
+          {
+            "x": 101,
+            "y": 261.7799987792969,
+            "width": 100,
+            "height": 100,
+            "right": 201,
+            "bottom": 361.7799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "x": 255,
+            "y": 261.7799987792969,
+            "width": 100,
+            "height": 100,
+            "right": 355,
+            "bottom": 361.7799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "x": 101,
+            "y": 385.7799987792969,
+            "width": 100,
+            "height": 100,
+            "right": 201,
+            "bottom": 485.7799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "x": 255,
+            "y": 385.7799987792969,
+            "width": 100,
+            "height": 100,
+            "right": 355,
+            "bottom": 485.7799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120
+          }
+        ],
+        "actions": [
+          {
+            "x": 88,
+            "y": 561.780029296875,
+            "width": 91,
+            "height": 21,
+            "right": 179,
+            "bottom": 582.780029296875,
+            "hitWidth": 183,
+            "hitHeight": 64
+          },
+          {
+            "x": 276,
+            "y": 561.780029296875,
+            "width": 93,
+            "height": 21,
+            "right": 369,
+            "bottom": 582.780029296875,
+            "hitWidth": 183,
+            "hitHeight": 64
+          }
+        ],
+        "homeGap": 39.78,
+        "answerActionGap": 76.00003051757812,
+        "canvas": {
+          "width": 1438,
+          "height": 914
+        }
+      },
+      "checks": {
+        "viewport": true,
+        "homeSpacing": true,
+        "cardInsideViewport": true,
+        "choicesInsideViewport": true,
+        "touchTargets": true,
+        "hierarchySeparated": true,
+        "compactLandscape": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    }
+  ],
+  "mechanicRegression": [
+    {
+      "name": "mobile-390x844",
+      "tasks": [
+        {
+          "taskNumber": 1,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 2,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 3,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 4,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 5,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        }
+      ],
+      "checks": {
+        "allMechanicsReached": true,
+        "allCardsInside": true,
+        "allTouchTargets": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "tasks": [
+        {
+          "taskNumber": 1,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 2,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 3,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 4,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        },
+        {
+          "taskNumber": 5,
+          "cardInside": true,
+          "childrenInside": true,
+          "touchTargets": true
+        }
+      ],
+      "checks": {
+        "allMechanicsReached": true,
+        "allCardsInside": true,
+        "allTouchTargets": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    }
+  ],
+  "failures": []
+}

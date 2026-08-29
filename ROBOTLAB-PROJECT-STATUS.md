@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.0 — 10-Mission Game Design
+Stage 8.0A — Task Panel Spacing and Height Polish
 
 ## CURRENT STATUS
 
-PASS — Stage 8.0 defines RobotLab as a ten-mission, three-act educational repair adventure: build, activate/program/test, then launch. The first five missions and current runtime are locked. Missions 6–10, the future Mission 5 transition, semantic progression, resumable checkpoints, laboratory reactivity, and lightweight adaptive difficulty are documented as design/architecture only and are not implemented.
+PASS — Stage 8.0A gives the task panel stable Home/ribbon separation and content-driven landscape height while preserving the locked five-mission runtime, mechanics, controls, progression, robot placement, assembly, and audio.
 
 ## FIRST FIVE MISSIONS
 
@@ -19,6 +19,18 @@ LOCKED
 ## MISSION 6–10
 
 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.0A — TASK PANEL SPACING AND HEIGHT POLISH
+
+- Added centralized fluid ribbon-overhang and control-gap measurements for landscape and large portrait/tablet compositions, respecting the existing safe-area inset pipeline.
+- Replaced landscape full-available-height stretching with a content-driven height derived from panel width and capped at 480 px.
+- Preserved the task ribbon, title, instruction, answer area, feedback/info row, action buttons, 44 px minimum hit areas, all mechanic code, and all game-state behavior.
+- Responsive verification PASS at 320×568, 390×844, 768×1024, 1280×720, and 1438×914 with `failures: []`, no clipping, no overlap, and no console/page/request errors.
+- Full layout regression reached Tasks 1–5 on touch mobile 390×844 and desktop 1280×720; every task card and visible child remained in bounds and every interactive target remained at least 44×44 px.
+- Measured visual Home-to-ribbon gaps: 150.21 px at 320×568, 193.96 px at 390×844, 41.84 px at 768×1024, 30.17 px at 1280×720, and 39.78 px at 1438×914.
+- Landscape task-card heights are 458.75 px at 1280×720 and 480 px at 1438×914 instead of consuming all available vertical space.
+- Verification: `npm run build` PASS; TypeScript passed, Vite transformed 43 modules, and only the existing non-blocking Phaser bundle-size advisory was emitted. The first restricted-sandbox attempt hit the known Windows `spawn EPERM`; the identical approved rerun passed.
+- Evidence: `docs/qa/stage8-0a-task-panel-results.json`, `docs/qa/screenshots/stage8-0a-task-panel-desktop-1280x720.png`, and `docs/qa/screenshots/stage8-0a-task-panel-mobile-390x844.png`.
 
 ## STAGE 8.0 — 10-MISSION GAME DESIGN
 
@@ -673,8 +685,8 @@ main
 
 ## NEXT
 
-Stage 8.0 design is ready for a separately authorized Mission 6 implementation stage. Do not implement Mission 6 as part of Stage 8.0; confirm required production asset IDs/readiness before dependent visual work.
+Stage 8.0A is ready for manual visual review. Stage 8.0 design remains ready for a separately authorized Mission 6 implementation stage; confirm required production asset IDs/readiness before dependent visual work.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 8.0 documentation scope verified: the three requested design/architecture documents exist, Missions 1–5 are marked locked, Missions 6–10 remain design-only, and no runtime/source/asset file is modified. `npm run build` passes with 43 modules transformed and only the existing non-blocking Phaser chunk-size advisory. The first restricted-sandbox build attempt was blocked by Windows `spawn EPERM`; the identical approved rerun completed successfully.
+2026-08-29 — Stage 8.0A responsive layout QA passed at 320×568, 390×844, 768×1024, 1280×720, and 1438×914; Tasks 1–5 additionally passed layout and touch-target regression on 390×844 and 1280×720 with `failures: []`. `npm run build` passes with 43 modules transformed and only the existing non-blocking Phaser chunk-size advisory. The first restricted-sandbox build attempt was blocked by Windows `spawn EPERM`; the identical approved rerun completed successfully.

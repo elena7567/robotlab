@@ -119,11 +119,13 @@ export function createResponsiveLayout(width: number, height: number): Responsiv
   const portrait = mode !== 'landscape';
   const ultra = mode === 'ultra-narrow-portrait';
   const largePortrait = mode === 'large-portrait-tablet';
+  const taskRibbonOverhang = fluidValue(17, height, 0.025, 21);
+  const taskControlGap = fluidValue(14, height, 0.02, 20);
 
   let taskCard: RectLayout;
   let progress: RectLayout & { horizontal: boolean; sizing: ProgressSizing };
   if (largePortrait) {
-    const top = safe.top + iconHeight + fluidValue(14, height, 0.018, 22);
+    const top = safe.top + iconHeight + taskRibbonOverhang + taskControlGap;
     const stationWidth = fluidValue(220, width, 0.31, 260);
     const stationHeight = stationWidth / 1.32;
     const gap = fluidValue(16, width, 0.028, 24);
@@ -169,10 +171,11 @@ export function createResponsiveLayout(width: number, height: number): Responsiv
       },
     };
   } else {
-    const top = safe.top + headerHeight + fluidValue(8, height, 0.018, 20);
+    const top = safe.top + Math.max(headerHeight, iconHeight) + taskRibbonOverhang + taskControlGap;
     const availableHeight = height - top - safe.bottom;
     const cardWidth = fluidValue(210, width, 0.28, 400);
-    const panelHeight = clampValue(224, availableHeight, 600);
+    const contentDrivenHeight = cardWidth * 1.28;
+    const panelHeight = clampValue(224, contentDrivenHeight, Math.min(480, availableHeight));
     taskCard = { x: safe.left, y: top, width: cardWidth, height: panelHeight };
     const progressWidth = fluidValue(220, width, 0.2, 300);
     const progressHeight = progressWidth / 1.32;
