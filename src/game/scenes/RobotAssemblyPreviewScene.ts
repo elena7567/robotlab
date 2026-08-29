@@ -40,10 +40,11 @@ export class RobotAssemblyPreviewScene extends Phaser.Scene {
       fontStyle: 'bold', color: '#b9eaf3', align: 'center', wordWrap: { width: width - 32 },
     }).setOrigin(0.5).setName('assembly-preview-subtitle');
 
-    const stationWidth = Math.min(portrait ? width - 34 : 430, width - 34);
+    const stationWidth = Math.min(portrait ? width - 34 : 440, width - 34);
     const stationTop = Math.max(titleY + titleSize * 1.75, height * (portrait ? 0.23 : 0.2));
-    const stationBottom = Math.min(height - 74, stationTop + Math.min(420, height * (portrait ? 0.56 : 0.64)));
-    const feetY = stationBottom - 28;
+    const preferredStationHeight = stationWidth / 1.28;
+    const stationBottom = Math.min(height - 74, stationTop + preferredStationHeight);
+    const feetY = stationBottom - Math.max(18, (stationBottom - stationTop) * 0.07);
     this.drawRepairStation(width / 2, stationTop, stationWidth, stationBottom - stationTop, feetY);
 
     const robot = new RobotAssemblyPreview(this, width / 2, feetY, this.previewState);
@@ -71,22 +72,19 @@ export class RobotAssemblyPreviewScene extends Phaser.Scene {
   private drawRepairStation(x: number, top: number, width: number, height: number, feetY: number): void {
     const graphics = this.add.graphics().setName('assembly-repair-stand');
     const left = x - width / 2;
-    const railInset = Math.max(20, width * 0.075);
-    graphics.fillStyle(0x0b2238, 0.68);
+    graphics.fillStyle(0x0b2238, 1);
     graphics.fillRoundedRect(left, top, width, height, 24);
     graphics.lineStyle(2, 0x69ddec, 0.48);
     graphics.strokeRoundedRect(left, top, width, height, 24);
     graphics.lineStyle(1, 0x8df2ff, 0.2);
     graphics.strokeRoundedRect(left + 9, top + 9, width - 18, height - 18, 18);
 
-    graphics.lineStyle(5, 0x2e7895, 0.62);
-    graphics.lineBetween(left + railInset, top + 34, left + railInset, feetY - 2);
-    graphics.lineBetween(left + width - railInset, top + 34, left + width - railInset, feetY - 2);
-    graphics.lineStyle(1, 0x7de8f5, 0.42);
-    for (let y = top + 54; y < feetY - 28; y += 34) {
-      graphics.lineBetween(left + 14, y, left + 22, y);
-      graphics.lineBetween(left + width - 22, y, left + width - 14, y);
-    }
+    const bracket = Math.max(18, width * 0.07);
+    graphics.lineStyle(3, 0x58ccdd, 0.38);
+    graphics.lineBetween(left + 18, top + 28, left + 18 + bracket, top + 28);
+    graphics.lineBetween(left + 18, top + 28, left + 18, top + 28 + bracket);
+    graphics.lineBetween(left + width - 18 - bracket, top + 28, left + width - 18, top + 28);
+    graphics.lineBetween(left + width - 18, top + 28, left + width - 18, top + 28 + bracket);
 
     graphics.fillStyle(0x48d9e9, 0.08);
     graphics.fillEllipse(x, feetY + 7, width * 0.76, 42);

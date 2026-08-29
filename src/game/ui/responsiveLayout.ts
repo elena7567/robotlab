@@ -122,19 +122,40 @@ export function createResponsiveLayout(width: number, height: number): Responsiv
 
   let taskCard: RectLayout;
   let progress: RectLayout & { horizontal: boolean; sizing: ProgressSizing };
-  if (portrait) {
+  if (largePortrait) {
+    const top = safe.top + iconHeight + fluidValue(14, height, 0.018, 22);
+    const stationWidth = fluidValue(220, width, 0.31, 260);
+    const stationHeight = stationWidth / 1.32;
+    const gap = fluidValue(16, width, 0.028, 24);
+    const availableWidth = width - safe.left - safe.right - stationWidth - gap;
+    const cardWidth = Math.min(430, availableWidth);
+    const cardHeight = clampValue(350, height * 0.41, 430);
+    taskCard = { x: safe.left, y: top, width: cardWidth, height: cardHeight };
+    progress = {
+      x: width - safe.right - stationWidth,
+      y: top + fluidValue(20, height, 0.035, 42),
+      width: stationWidth,
+      height: stationHeight,
+      horizontal: false,
+      sizing: {
+        titleFontSize: fluidValue(13, stationWidth, 0.06, 17),
+        stepRadius: fluidValue(14, stationWidth, 0.065, 19),
+        borderRadius: fluidValue(18, stationWidth, 0.085, 24),
+      },
+    };
+  } else if (portrait) {
     const progressY = safe.top + iconHeight + fluidValue(8, height, 0.012, 14);
-    const progressHeight = fluidValue(54, height, 0.065, 68);
-    const cardY = progressY + progressHeight + fluidValue(10, height, 0.016, 22);
-    const cardWidth = Math.min(width - safe.left - safe.right, largePortrait ? fluidValue(430, width, 0.66, 610) : 430);
-    const preferredHeight = ultra ? height * 0.43 : (largePortrait ? height * 0.41 : height * 0.39);
+    const progressWidth = ultra
+      ? Math.min(width - safe.left - safe.right, fluidValue(160, width, 0.5, 176))
+      : Math.min(width - safe.left - safe.right, fluidValue(190, width, 0.54, 218));
+    const progressHeight = progressWidth / 1.32;
+    const cardY = progressY + progressHeight + fluidValue(20, height, 0.026, 26);
+    const cardWidth = Math.min(width - safe.left - safe.right, 430);
+    const preferredHeight = ultra ? height * 0.36 : height * 0.39;
     const cardHeight = ultra
-      ? clampValue(238, preferredHeight, 272)
-      : largePortrait
-        ? clampValue(350, preferredHeight, 500)
-        : clampValue(286, preferredHeight, 350);
+      ? clampValue(205, preferredHeight, 230)
+      : clampValue(286, preferredHeight, 350);
     taskCard = { x: (width - cardWidth) / 2, y: cardY, width: cardWidth, height: cardHeight };
-    const progressWidth = Math.min(width - safe.left - safe.right, largePortrait ? 430 : 360);
     progress = {
       x: (width - progressWidth) / 2,
       y: progressY,
@@ -153,17 +174,19 @@ export function createResponsiveLayout(width: number, height: number): Responsiv
     const cardWidth = fluidValue(210, width, 0.28, 400);
     const panelHeight = clampValue(224, availableHeight, 600);
     taskCard = { x: safe.left, y: top, width: cardWidth, height: panelHeight };
-    const progressWidth = fluidValue(82, width, 0.12, 170);
+    const progressWidth = fluidValue(220, width, 0.2, 300);
+    const progressHeight = progressWidth / 1.32;
+    const edgeBreathingRoom = fluidValue(12, width, 0.014, 24);
     progress = {
-      x: width - safe.right - progressWidth,
-      y: top,
+      x: width - safe.right - edgeBreathingRoom - progressWidth,
+      y: top + Math.min(fluidValue(52, height, 0.09, 82), Math.max(0, panelHeight - progressHeight) / 2),
       width: progressWidth,
-      height: panelHeight,
+      height: progressHeight,
       horizontal: false,
       sizing: {
-        titleFontSize: fluidValue(12, progressWidth, 0.13, 20),
-        stepRadius: fluidValue(13, progressWidth, 0.16, 25),
-        borderRadius: fluidValue(18, progressWidth, 0.16, 24),
+        titleFontSize: fluidValue(13, progressWidth, 0.06, 18),
+        stepRadius: fluidValue(14, progressWidth, 0.065, 20),
+        borderRadius: fluidValue(18, progressWidth, 0.085, 24),
       },
     };
   }

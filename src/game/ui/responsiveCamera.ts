@@ -21,7 +21,9 @@ export function configureResponsiveCamera(
 
   const portrait = layout.mode !== 'landscape';
   const scale = portrait
-    ? clampValue(0.5, layout.viewportWidth / 610, 0.9)
+    ? layout.mode === 'ultra-narrow-portrait'
+      ? clampValue(0.4, layout.viewportWidth / 780, 0.48)
+      : clampValue(0.5, layout.viewportWidth / 610, 0.9)
     : Math.min(layout.viewportWidth / LOGICAL_SCENE_WIDTH, layout.viewportHeight / LOGICAL_SCENE_HEIGHT);
   const platformScreenX = portrait ? layout.viewportWidth / 2 : layout.viewportWidth / 2;
   const robotDisplayHeight = 365 * scale;

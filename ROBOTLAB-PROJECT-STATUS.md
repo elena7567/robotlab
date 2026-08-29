@@ -6,11 +6,36 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT STAGE
 
-Stage 7.1B — Robot Assembly Progression Integration
+Stage 7.1B.2 — Assembly Panel Redesign + Final Robot Release
 
 ## CURRENT STATUS
 
-PASS — the intact gameplay robot is now the helper mechanic while a second modular robot assembles through the real five-task flow. `assemblyProgress` is derived from `completedTasks`, the compact gameplay station replaces abstract repair dots, all five guarded install rewards and activation run once with the existing audio manager, Victory shows two independently grounded robots, and Play Again/Home clear the assembly consistently. Full normal flows passed on desktop and touch mobile; the compact layout matrix passed at all five required viewports with clean console, asset, request, and response logs.
+PASS — the assembly station is now a wide, calm repair-bay card with a 1.32:1 proportion, meaningful desktop edge spacing, a much fainter blueprint, and clear installed/missing-part contrast. States 0/5–4/5 stay fully inside the station. At 5/5 the antenna activates, the station fades, and the repaired robot moves beside the helper on the shared platform before VictoryScene. The five-task progression and educational mechanics are unchanged. Full desktop/touch-mobile flow and the five canonical responsive viewports pass with clean console, page, request, response, and asset behavior.
+
+## STAGE 7.1B.2 ASSEMBLY PANEL REDESIGN + FINAL ROBOT RELEASE
+
+- Replaced the narrow desktop progress tube and shallow phone strip with a 1.32:1 repair-bay card using the existing four responsive composition modes.
+- Landscape uses a fluid extra right-edge inset; phone portrait stacks the compact station above the task card with ribbon clearance; large portrait/tablet places the station beside the task card.
+- Reduced blueprint alpha to `0.024`, changed it to a colder subdued tint, and retained full-colour installed parts for obvious contrast.
+- Simplified the station interior to a dark-blue bay, small cyan corner/details, counter, divider, and grounding glow without cage-like rails or diagonal guides.
+- Added an explicit final release: after the 5/5 antenna activation, the station fades away and the repaired robot travels into the logical actor layer beside the helper.
+- Final gameplay and VictoryScene both show two independently grounded robots with no assembly frame around the repaired robot.
+- Preserved canonical `completedTasks → assemblyProgress`, all five task mechanics, answer evaluation, audio ownership, controls, and helper part grounding.
+- Added architecture decision `docs/decisions/0003-assembly-station-release.md`.
+- Verification: `qa/stage7-1b-assembly-integration-playtest.cjs` PASS with `failures: []` across 320×568, 390×844, 768×1024, 1280×720, and 1438×914; full flows pass at desktop 1280×720 and touch mobile 390×844.
+- Verification: 0/5–4/5 mapping, install animation, 5/5 activation, station release, final no-frame state, two-robot grounding, Victory, audio exactly once per task, Play Again, Home, and Home-during-reward all pass.
+- Verification: `npm run build` PASS; 43 modules transformed with only the existing non-blocking Phaser bundle-size advisory.
+- Evidence: `docs/qa/stage7-1b2-assembly-release-results.json` and `docs/qa/screenshots/stage7-1b2-*`.
+
+## STAGE 7.1B.1 REMOVE ASSEMBLY CROSSHAIR
+
+- Removed the two diagonal `lineBetween` draws from the compact `ProgressPanel` assembly station.
+- Changed only the full preview station interior alpha from `0.68` to `1`, retaining the same dark-blue color and preventing background-window diagonals from reading as a debug X.
+- Verified compact and full stations at every assembly state 0/5–5/5 on 390×844, 768×1024, and 1280×720.
+- Visual review confirms clean interiors with the frame, rails/ticks, blueprint robot, installed parts, labels, and borders preserved.
+- Verification: `qa/stage7-1b1-crosshair-playtest.cjs` PASS with `failures: []` and zero console/page/request/response errors.
+- Verification: `npm run build` PASS; 43 modules transformed and only the existing non-blocking Phaser bundle-size advisory was emitted.
+- Evidence: `docs/qa/stage7-1b1-crosshair-results.json` and `docs/qa/screenshots/stage7-1b1-*`.
 
 ## STAGE 7.1B ROBOT ASSEMBLY PROGRESSION INTEGRATION
 
@@ -173,6 +198,8 @@ Stage 1.2 filesystem re-audit confirmed `public/assets/backgrounds/laboratory-ba
 
 PASS
 
+- Stage 7.1B.2 `npm run build` — PASS; TypeScript validation passed, 43 modules transformed, and `dist/` generated. The existing non-blocking Phaser bundle-size advisory remains.
+- Stage 7.1B.1 `npm run build` — PASS; TypeScript validation passed, 43 modules transformed, and `dist/` generated. The existing non-blocking Phaser bundle-size advisory remains.
 - Stage 7.1B `npm run build` — PASS; TypeScript validation passed, 43 modules transformed, and `dist/` generated. The existing non-blocking Phaser bundle-size advisory remains.
 - `npm run build` — PASS; TypeScript validation passed, 29 modules transformed, and `dist/` generated.
 - Vite reported a non-blocking bundle-size advisory for the Phaser bundle; no build errors or missing modules.
@@ -321,6 +348,17 @@ PASS
 - Stage 7.0A evidence: `docs/qa/stage7-0a-victory-grounding-results.json` and `docs/qa/screenshots/stage7-0a-victory-*.png`.
 
 ## FILES CREATED
+
+- `docs/decisions/0003-assembly-station-release.md`
+- `docs/qa/stage7-1b2-assembly-release-results.json`
+- `docs/qa/screenshots/stage7-1b2-{desktop-1280x720,mobile-390x844}-assembly-{0,1,2,3,4}-of-5.png`
+- `docs/qa/screenshots/stage7-1b2-{desktop-1280x720,mobile-390x844}-activation-5-of-5.png`
+- `docs/qa/screenshots/stage7-1b2-{desktop-1280x720,mobile-390x844}-final-released.png`
+- `docs/qa/screenshots/stage7-1b2-{desktop-1280x720,mobile-390x844}-victory-two-robots.png`
+
+- `qa/stage7-1b1-crosshair-playtest.cjs`
+- `docs/qa/stage7-1b1-crosshair-results.json`
+- `docs/qa/screenshots/stage7-1b1-{mobile-390x844,tablet-768x1024,desktop-1280x720}-{compact,full}-{0,5}-of-5.png`
 
 - `src/game/state/robotAssemblyState.ts`
 - `src/game/ui/RobotAssemblyPreview.ts`
@@ -477,6 +515,20 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## FILES CHANGED
 
+- `src/game/ui/responsiveLayout.ts` — replaces the tube/strip dimensions with centralized wide station compositions and portrait ribbon clearance.
+- `src/game/ui/responsiveCamera.ts` — slightly reduces the ultra-narrow world scale so the expanded station/task stack and helper remain separated at 320 px.
+- `src/game/ui/ProgressPanel.ts` — redesigns the station card, dedicated assembly fit, faint blueprint, labels, install focus, and release fade.
+- `src/game/ui/RobotAssemblyPreview.ts` — applies the colder, lower-alpha blueprint treatment.
+- `src/game/scenes/GameScene.ts` — coordinates the final station exit and grounded two-robot gameplay presentation before VictoryScene.
+- `src/game/scenes/RobotAssemblyPreviewScene.ts` — updates the visual proof station to the same wider, less cage-like composition.
+- `qa/stage7-1b-assembly-integration-playtest.cjs` — adds release/no-frame/grounding assertions and the complete Stage 7.1B.2 screenshot set.
+- `docs/qa/stage7-1b-assembly-integration-results.json` and existing `docs/qa/screenshots/stage7-1b-*` evidence — refreshed by the backward-compatible full-flow QA run while the new review set is stored separately under `stage7-1b2-*`.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 7.1B.2 implementation, verification, evidence, and manual-review readiness.
+
+- `src/game/ui/ProgressPanel.ts` — removes the compact station's two diagonal crosshair draws.
+- `src/game/scenes/RobotAssemblyPreviewScene.ts` — makes the existing dark-blue full-station interior opaque so background diagonals cannot show through.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 7.1B.1 scope, QA, build, and evidence.
+
 - `src/game/config.ts` — registers the dev/QA-only assembly proof scene without adding a production-flow route.
 - `src/game/state/sessionState.ts` — exposes derived `assemblyProgress` from the canonical completed-task count.
 - `src/game/ui/ProgressPanel.ts` — replaces abstract repair indicators with the compact assembly station and guarded install choreography.
@@ -596,8 +648,8 @@ main
 
 ## NEXT
 
-User manual review of the Stage 7.1B full gameplay flow and final two-robot composition in the open local preview.
+User manual visual review of the Stage 7.1B.2 screenshots. Do not commit until the screenshots are approved.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 7.1B full normal gameplay verified at desktop 1280×720 and touch mobile 390×844. Assembly 0/5 through 5/5, exact task-part mapping, helper reactions, install animations, activation, exactly one repair sound per major task, two-robot Victory grounding, Play Again, Home, Home during an active reward, and clean console/page/request/response logs all pass. Compact-state responsive checks pass at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. `npm run build` passes with 43 modules transformed and only the existing Phaser chunk-size advisory.
+2026-08-29 — Stage 7.1B.2 verified through the full five-task flow on desktop 1280×720 and touch mobile 390×844, with responsive layout checks at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. Wide station proportions, desktop edge spacing, faint blueprint, all 0/5–4/5 fits, 5/5 activation/release, final no-frame state, two-robot grounding, Victory, audio, resets, and clean browser logs all pass. `npm run build` passes with 43 modules transformed and only the existing Phaser chunk-size advisory. No commit was created pending manual screenshot approval.

@@ -5,7 +5,7 @@ import {
   type RobotAssemblyProgress,
 } from '../state/robotAssemblyState';
 import { RobotAssemblyPreview } from './RobotAssemblyPreview';
-import { UI_COLORS, UI_FONT } from './visualTheme';
+import { UI_FONT } from './visualTheme';
 import type { ProgressSizing } from './responsiveLayout';
 
 export interface ProgressPanelConfig {
@@ -39,23 +39,26 @@ export class ProgressPanel extends Phaser.GameObjects.Container {
     this.progressLayer = scene.add.container(0, 0).setName('assembly-progress-layer');
     this.add(this.progressLayer);
 
-    const horizontal = config.horizontal ?? false;
-    this.drawStation(horizontal);
-    const robotArea = horizontal
-      ? { x: config.width - Math.max(34, config.height * 0.62), feetY: config.height - 6, width: Math.max(48, config.height * 1.25), height: config.height - 9 }
-      : { x: config.width / 2, feetY: config.height - 17, width: config.width - 18, height: config.height - 62 };
+    this.drawStation();
+    const labelBand = Math.max(25, config.height * 0.2);
+    const robotArea = {
+      x: config.width / 2,
+      feetY: config.height - Math.max(9, config.height * 0.07),
+      width: config.width - Math.max(24, config.width * 0.16),
+      height: config.height - labelBand - Math.max(15, config.height * 0.12),
+    };
     const robotScale = Math.min(robotArea.width / ASSEMBLY_DESIGN_WIDTH, robotArea.height / ASSEMBLY_DESIGN_HEIGHT);
     this.assemblyRobot = new RobotAssemblyPreview(scene, robotArea.x, robotArea.feetY, this.value, {
       scale: robotScale,
-      blueprintAlpha: 0.055,
+      blueprintAlpha: 0.024,
     });
     this.assemblyRobot.setName('assembly-progress-robot');
     this.progressLayer.add(this.assemblyRobot);
 
-    this.label = scene.add.text(horizontal ? 12 : config.width / 2, horizontal ? config.height / 2 : 27, '', {
-      color: '#243548', fontFamily: UI_FONT, fontSize: `${config.sizing.titleFontSize}px`, fontStyle: 'bold',
-      align: horizontal ? 'left' : 'center',
-    }).setOrigin(horizontal ? 0 : 0.5, 0.5).setName('assembly-progress-label');
+    this.label = scene.add.text(config.width / 2, Math.max(14, labelBand * 0.53), '', {
+      color: '#d7f8ff', fontFamily: UI_FONT, fontSize: `${config.sizing.titleFontSize}px`, fontStyle: 'bold',
+      align: 'center', letterSpacing: 1,
+    }).setOrigin(0.5).setName('assembly-progress-label');
     this.progressLayer.add(this.label);
     this.syncLabel();
     this.setData({
@@ -64,6 +67,7 @@ export class ProgressPanel extends Phaser.GameObjects.Container {
       animationActive: false,
       panelWidth: config.width,
       panelHeight: config.height,
+      released: false,
     });
   }
 
@@ -105,19 +109,31 @@ export class ProgressPanel extends Phaser.GameObjects.Container {
     this.setData({ assemblyProgress: next, animationActive: false, installingProgress: null });
   }
 
-  private drawStation(horizontal: boolean): void {
+  async playRelease(reducedMotion = false): Promise<void> {
+    this.setData({ releaseActive: true, released: false });
+    await this.tweenPanel(
+      { x: this.x + this.config.width * 0.04, y: this.y - this.config.height * 0.03, scaleX: 0.96, scaleY: 0.96 },
+      reducedMotion ? 120 : 520,
+      0,
+    );
+    if (!this.active || !this.scene.sys.isActive()) return;
+    this.setVisible(false).setAlpha(0);
+    this.setData({ releaseActive: false, released: true });
+  }
+
+  private drawStation(): void {
     const { width, height, sizing } = this.config;
     const graphics = this.scene.add.graphics().setName('assembly-progress-station');
-    graphics.fillStyle(0x26364b, 0.2).fillRoundedRect(5, 7, width, height, sizing.borderRadius);
-    graphics.fillStyle(UI_COLORS.cream, 0.97).fillRoundedRect(0, 0, width, height, sizing.borderRadius);
-    graphics.lineStyle(3, UI_COLORS.creamEdge, 1).strokeRoundedRect(0, 0, width, height, sizing.borderRadius);
-    const stationLeft = horizontal ? width - Math.max(72, height * 1.35) : 8;
-    const stationTop = horizontal ? 5 : 48;
-    graphics.fillStyle(0x173b52, 0.94).fillRoundedRect(stationLeft, stationTop, width - stationLeft - 5, height - stationTop - 5, 12);
-    graphics.lineStyle(2, 0x52cede, 0.75).strokeRoundedRect(stationLeft, stationTop, width - stationLeft - 5, height - stationTop - 5, 12);
-    graphics.lineStyle(1, 0x8df2ff, 0.32);
-    graphics.lineBetween(stationLeft + 8, stationTop + 8, width - 12, height - 10);
-    graphics.lineBetween(width - 12, stationTop + 8, stationLeft + 8, height - 10);
+    graphics.fillStyle(0x0b1f35, 0.28).fillRoundedRect(5, 7, width, height, sizing.borderRadius);
+    graphics.fillStyle(0x102d47, 0.98).fillRoundedRect(0, 0, width, height, sizing.borderRadius);
+    graphics.lineStyle(2, 0x58d5e5, 0.72).strokeRoundedRect(0, 0, width, height, sizing.borderRadius);
+    graphics.fillStyle(0x173b52, 0.94).fillRoundedRect(8, 8, width - 16, height - 16, Math.max(12, sizing.borderRadius - 6));
+    graphics.lineStyle(1, 0x8aebf5, 0.22).strokeRoundedRect(8, 8, width - 16, height - 16, Math.max(12, sizing.borderRadius - 6));
+    const labelDividerY = Math.max(28, height * 0.22);
+    graphics.lineStyle(1, 0x73e6f2, 0.28).lineBetween(width * 0.18, labelDividerY, width * 0.82, labelDividerY);
+    graphics.fillStyle(0x69e4f2, 0.38);
+    graphics.fillCircle(18, 18, 2.5).fillCircle(width - 18, 18, 2.5);
+    graphics.fillStyle(0x58d5e5, 0.08).fillEllipse(width / 2, height - 12, width * 0.56, Math.max(12, height * 0.09));
     this.progressLayer.add(graphics);
   }
 
@@ -128,16 +144,14 @@ export class ProgressPanel extends Phaser.GameObjects.Container {
 
   private fitLabel(): void {
     this.label.setScale(1);
-    const horizontal = this.config.horizontal ?? false;
-    const maxWidth = horizontal
-      ? this.config.width - Math.max(92, this.config.height * 1.55)
-      : this.config.width - 14;
+    const maxWidth = this.config.width - 28;
     if (this.label.width > maxWidth) this.label.setScale(maxWidth / this.label.width);
   }
 
   private tweenPanel(
     targets: { x: number; y: number; scaleX: number; scaleY: number },
     duration: number,
+    alpha = 1,
   ): Promise<void> {
     return new Promise((resolve) => {
       const scene = this.scene;
@@ -153,7 +167,7 @@ export class ProgressPanel extends Phaser.GameObjects.Container {
         finish();
       };
       scene.events.once(Phaser.Scenes.Events.SHUTDOWN, cancel);
-      scene.tweens.add({ targets: this, ...targets, duration, ease: 'Sine.easeInOut', onComplete: () => finish() });
+      scene.tweens.add({ targets: this, ...targets, alpha, duration, ease: 'Sine.easeInOut', onComplete: () => finish() });
     });
   }
 }

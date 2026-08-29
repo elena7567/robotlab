@@ -65,8 +65,8 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
 
     for (const name of DRAW_ORDER) {
       const ghost = this.createPart(name, 'assembly-blueprint')
-        .setTint(0x83e9ff)
-        .setAlpha(options.blueprintAlpha ?? 0.045)
+        .setTint(0x6bbbd0)
+        .setAlpha(options.blueprintAlpha ?? 0.024)
         .setBlendMode(Phaser.BlendModes.ADD);
       this.silhouetteParts.set(name, ghost);
     }

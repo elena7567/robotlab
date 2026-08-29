@@ -96,6 +96,7 @@ async function snapshotGame(page) {
     const assembly = panel?.getByName('assembly-progress-layer')?.getByName('assembly-progress-robot');
     const task = scene.children.getByName('task-card') || scene.children.getByName('memory-task-card');
     const helper = scene.children.getByName('logical-actors')?.getByName('grounded-robot');
+    const released = scene.children.getByName('logical-actors')?.getByName('released-assembled-robot');
     const dialogue = scene.children.getByName('robot-dialogue');
     const bounds = (item) => {
       if (!item) return null;
@@ -119,6 +120,11 @@ async function snapshotGame(page) {
       } : null,
       taskBounds: bounds(task),
       helperBounds: bounds(helper),
+      releasedBounds: bounds(released),
+      released: released?.getData('released') || false,
+      releasedFeetY: released?.getData('robotFeetContactY'),
+      stationReleased: panel?.getData('released') || false,
+      panelVisible: panel?.visible ?? false,
       dialogue: dialogue?.visible ? dialogue.getByName('robot-dialogue-text')?.text : null,
       helperVisible: Boolean(helper?.visible && helper?.active),
       audio: [...(window.__ROBOTLAB_AUDIO_EVENTS__ || [])],
@@ -255,13 +261,21 @@ async function completeNormalFlow(page, touch, screenshotPrefix, captureAllState
     return assembly?.getData('assemblyState') === 5 && assembly?.getData('activationActive') === true;
   });
   const activation = await snapshotGame(page);
-  await page.screenshot({ path: path.join(screenshotDir, `${screenshotPrefix}-assembly-5-of-5.png`) });
+  await page.screenshot({ path: path.join(screenshotDir, `${screenshotPrefix}-activation-5-of-5.png`) });
   states.push(activation);
   rewards.push({ during: reward5During, settled: activation });
+  await page.waitForFunction(() => {
+    const scene = window.__ROBOTLAB_GAME__.scene.getScene('GameScene');
+    const panel = scene.children.getByName('progress-panel');
+    const released = scene.children.getByName('logical-actors')?.getByName('released-assembled-robot');
+    return panel?.getData('released') === true && released?.getData('released') === true;
+  });
+  const released = await snapshotGame(page);
+  await page.screenshot({ path: path.join(screenshotDir, `${screenshotPrefix}-final-released.png`) });
   await page.waitForFunction(() => window.__ROBOTLAB_GAME__.scene.isActive('VictoryScene'));
   await sleep(850);
   await page.screenshot({ path: path.join(screenshotDir, `${screenshotPrefix}-victory-two-robots.png`) });
-  return { states, rewards, activation };
+  return { states, rewards, activation, released };
 }
 
 async function snapshotVictory(page) {
@@ -318,7 +332,7 @@ async function runFullFlow(browser, name, width, height, touch, captureAllStates
   await page.goto(baseUrl, { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => window.__ROBOTLAB_GAME__?.scene.isActive('StartScene'));
   await installAudioProbe(page);
-  const flow = await completeNormalFlow(page, touch, `stage7-1b-${name}`, captureAllStates);
+  const flow = await completeNormalFlow(page, touch, `stage7-1b2-${name}`, captureAllStates);
   const victory = await snapshotVictory(page);
   const audio = flow.activation.audio;
   const repairAudioCount = audio.filter((event) => event.key === 'audio-repair-reward').length;
@@ -338,6 +352,10 @@ async function runFullFlow(browser, name, width, height, touch, captureAllStates
     installAnimations: rewardChecks.every((entry) => entry.animationObserved),
     helperReactions: rewardChecks.every((entry) => entry.helperDialogue),
     activation: flow.activation.activationActive && flow.activation.assemblyState === 5,
+    finalRelease: flow.released.released && flow.released.stationReleased && !flow.released.panelVisible
+      && inside(flow.released.releasedBounds, width, height)
+      && noOverlap(flow.released.helperBounds, flow.released.releasedBounds),
+    finalGrounding: flow.released.releasedFeetY === 560,
     audioExactlyOncePerTask: repairAudioCount === 5,
     victoryTwoRobots: victory.helperRole === 'helper' && victory.repairedRole === 'repaired'
       && JSON.stringify([...victory.repairedParts].sort()) === JSON.stringify([...expectedParts[5]].sort())
@@ -381,7 +399,7 @@ async function runFullFlow(browser, name, width, height, touch, captureAllStates
   for (const viewport of matrixViewports) matrix.push(await runMatrix(browser, viewport));
   const flows = [
     await runFullFlow(browser, 'desktop-1280x720', 1280, 720, false, true),
-    await runFullFlow(browser, 'mobile-390x844', 390, 844, true, false),
+    await runFullFlow(browser, 'mobile-390x844', 390, 844, true, true),
   ];
   await browser.close();
   const failures = [
@@ -389,6 +407,7 @@ async function runFullFlow(browser, name, width, height, touch, captureAllStates
     ...flows.flatMap((entry) => Object.entries(entry.checks).filter(([, pass]) => !pass).map(([check]) => `${entry.name}:${check}`)),
   ];
   const report = { matrix, flows, failures };
+  fs.writeFileSync(path.join('docs', 'qa', 'stage7-1b2-assembly-release-results.json'), JSON.stringify(report, null, 2));
   fs.writeFileSync(path.join('docs', 'qa', 'stage7-1b-assembly-integration-results.json'), JSON.stringify(report, null, 2));
   process.stdout.write(JSON.stringify({
     matrix: matrix.map(({ name, checks }) => ({ name, checks })),

@@ -24,6 +24,7 @@ import { shadowMatchingMechanic, type ShadowChoiceKey } from '../mechanics/shado
 import { memoryMechanic } from '../mechanics/memory';
 import { MemoryTaskCard } from '../ui/MemoryTaskCard';
 import { HELPER_ASSEMBLY_DIALOGUE } from '../state/robotAssemblyState';
+import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
 
 const WRONG_DIALOGUE = [
   'Почти! Попробуй ещё раз',
@@ -125,6 +126,53 @@ export class GameScene extends Phaser.Scene {
       this.scene.restart();
     };
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+    const releaseCompletedRobot = async (): Promise<void> => {
+      const panelBounds = progressPanel.getBounds();
+      const startScreenX = panelBounds.centerX;
+      const startScreenY = panelBounds.centerY;
+      const startLogicalX = (startScreenX - frame.offsetX) / frame.scale;
+      const startLogicalY = (startScreenY - frame.offsetY) / frame.scale;
+      const pairScale = layout.mode === 'landscape' ? 0.19 : (layout.mode === 'large-portrait-tablet' ? 0.19 : 0.17);
+      const pairSpan = layout.mode === 'landscape' ? 270 : 250;
+      const helperX = 640 - pairSpan / 2;
+      const repairedX = 640 + pairSpan / 2;
+      const repairedRobot = new RobotAssemblyPreview(this, startLogicalX, startLogicalY, 5, {
+        scale: pairScale * 0.72,
+        blueprintAlpha: 0,
+      }).setName('released-assembled-robot').setAlpha(0).setData({
+        role: 'repaired',
+        releaseActive: true,
+        released: false,
+        platformContactX: repairedX,
+        platformContactY: 560,
+        robotFeetContactX: repairedX,
+        robotFeetContactY: 560,
+        groundedScale: pairScale,
+      });
+      actorLayer.add(repairedRobot);
+      const duration = reducedMotion ? 260 : 720;
+      const tween = (config: Phaser.Types.Tweens.TweenBuilderConfig): Promise<void> => new Promise((resolve) => {
+        this.tweens.add({ ...config, duration, ease: 'Sine.easeInOut', onComplete: () => resolve() });
+      });
+      const movements: Promise<void>[] = [
+        progressPanel.playRelease(reducedMotion),
+        tween({ targets: repairedRobot, x: repairedX, y: 560, scaleX: pairScale, scaleY: pairScale, alpha: 1 }),
+      ];
+      if (robot) {
+        movements.push(tween({ targets: robot, x: helperX, y: 560, scaleX: pairScale, scaleY: pairScale }));
+      }
+      await Promise.all(movements);
+      if (!this.sys.isActive() || !repairedRobot.active) return;
+      repairedRobot.setData({ releaseActive: false, released: true });
+      robot?.setData({
+        baseX: helperX,
+        baseY: 560,
+        groundedScale: pairScale,
+        platformContactX: helperX,
+        platformContactY: 560,
+      });
+      this.game.registry.set('finalRobotReleased', true);
+    };
     let completionRewardPromise: Promise<void> | undefined;
     const playCompletionFlow = (): Promise<void> => {
       if (completionRewardPromise) return completionRewardPromise;
@@ -144,7 +192,9 @@ export class GameScene extends Phaser.Scene {
       completionRewardPromise = Promise.all([
         progressPanel.playInstall(previousProgress, nextState.assemblyProgress, reducedMotion),
         helperReaction,
-      ]).then(() => undefined);
+      ]).then(async () => {
+        if (completedTasks === 5 && this.sys.isActive()) await releaseCompletedRobot();
+      });
       return completionRewardPromise;
     };
 
@@ -155,7 +205,7 @@ export class GameScene extends Phaser.Scene {
       const playFinalCompletion = (): void => {
         if (completionFlowActive) return;
         void playCompletionFlow().then(() => {
-          finalTransitionTimer = this.time.delayedCall(reducedMotion ? 180 : 260, () => {
+          finalTransitionTimer = this.time.delayedCall(reducedMotion ? 420 : 900, () => {
             if (this.sys.isActive()) this.scene.start('VictoryScene');
           });
         });
