@@ -9,6 +9,7 @@ import { createResponsiveLayout, createStartSceneLayout } from '../ui/responsive
 import { clampValue } from '../ui/fluidSizing';
 import { sequenceMechanic } from '../mechanics/sequence';
 import { sizeComparisonMechanic } from '../mechanics/sizeComparison';
+import { shadowMatchingMechanic } from '../mechanics/shadowMatching';
 import { LOGICAL_SCENE_WIDTH, PLATFORM_CENTER_X, PLATFORM_CONTACT_Y } from '../ui/sceneLayout';
 import { audioManager } from '../audio/AudioManager';
 
@@ -79,6 +80,7 @@ export class StartScene extends Phaser.Scene {
       sessionState.reset();
       sequenceMechanic.reset();
       sizeComparisonMechanic.reset();
+      shadowMatchingMechanic.reset();
       this.scene.start('GameScene');
     }, {
       width: startLayout.playWidth,

@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT STAGE
 
-Stage 5.3 — Audio Feedback Foundation
+Stage 6 — Mechanic 4: Найди тень
 
 ## CURRENT STATUS
 
-PASS — RobotLab now has six original project-local WAV assets, a centralized `AudioManager`, a typed audio manifest, explicit user-gesture autoplay gating, separate music/SFX mix levels, one-instance music and one-shot overlap control, semantic feedback across all three implemented mechanics, major-repair timing, and a persisted master mute preference. Production build, decoded-asset checks, playback counts, Home/resize loop uniqueness, mute reload/unmute, full three-viewport gameplay regression, screenshots, and console/page/request checks all pass.
+PASS — Mechanic 4 is reachable through the normal Start → Tasks 1–4 flow and presents three authored shadow-matching challenges with randomized option positions, persistent single selection, empty-check safety, gentle wrong retry, transient two-phase hints, centralized audio, stable robot reactions, and one final 3/5 → 4/5 repair reward. Production build, full challenge coverage, rapid-tap/double-submit protection, mute, resize, Home/restart, four required responsive viewports, screenshot review, and console/page/request checks all pass.
 
 ## TECH STACK
 
@@ -97,6 +97,12 @@ PASS — RobotLab now has six original project-local WAV assets, a centralized `
 - Stage 5.3: synthesized `start-theme.wav`, `ui-click.wav`, `answer-correct.wav`, `answer-wrong.wav`, `hint.wav`, and `repair-reward.wav` locally from original waveforms; no external downloads, unclear licenses, vocals, or third-party sound packs are used.
 - Stage 5.3: added `AudioManager` with semantic APIs, music/SFX levels `0.26`/`0.58`, explicit first-gesture gating, a 180 ms Play fade, single-loop music, same-key SFX restart, master mute, blur/focus handling, and `robotlab.audioMuted` persistence.
 - Stage 5.3: shared controls emit one UI click at their existing `pointerdown` boundary; Odd One Out, Continue the Sequence, and Compare by Size emit correct/wrong/hint cues without delaying state, and only major mechanic completion emits repair reward audio.
+- Stage 6: added serializable `ShadowMatchingMechanic` data for apple, banana, and ball targets with their exact approved shadow mapping and the requested two distractors per challenge.
+- Stage 6: shuffles each three-shadow option order at new-game reset while preventing consecutive challenges from sharing the same correct slot; answer evaluation always uses the stable shadow ID, never screen position.
+- Stage 6: added a reusable `shadow-matching` TaskCard composition with one unchanged colour source asset, three fully interactive silhouette cards, at least 56×56 px effective targets, persistent selection, selection changes before check, and disabled empty checking.
+- Stage 6: hints pulse the colour target and then the correct shadow card temporarily without selecting, revealing, or advancing it; challenge transitions reset selection, result, hint, and rendered options through serializable state plus normal scene rendering.
+- Stage 6: Challenges 1 and 2 leave repair progress at `✓ ✓ ✓ ○ ○`; Challenge 3 completes Task 4 once, plays the existing repair reward choreography/audio once, and renders `✓ ✓ ✓ ✓ ○`.
+- Stage 6: restored the existing `Дальше` handoff after final Task 3 correctness so the ordinary player route visibly reaches `ЗАДАНИЕ 4 ИЗ 5`; Mechanic 5 remains unimplemented.
 
 ## ASSET STATUS
 
@@ -149,6 +155,8 @@ PASS
 - Stage 5.1H production preview at `http://127.0.0.1:4213/` — PASS.
 - Stage 5.3 `npm run build` — PASS; TypeScript validation passed, 38 modules transformed, six WAV files copied into the self-contained production output, and the existing non-blocking Phaser bundle-size advisory remains.
 - Stage 5.3 production preview at `http://127.0.0.1:4193/` — PASS.
+- Stage 6 `npm run build` — PASS; TypeScript validation passed, 39 modules transformed, all approved object/shadow/audio assets were included, and only the existing non-blocking Phaser bundle-size advisory remains.
+- Stage 6 production preview at `http://127.0.0.1:4196/` — PASS.
 - `npm run preview -- --host 127.0.0.1 --port 4174` — PASS; Vite selected the available local preview at `127.0.0.1:4177` for final Stage 3.1 verification.
 - `npm run preview -- --host 127.0.0.1 --port 4180` — PASS; Stage 3.3 was verified from the generated production build.
 
@@ -243,8 +251,24 @@ PASS
 - Stage 5.3 full gameplay regression: Start through all three implemented mechanics, Home, and restart — PASS at 390×844, 768×1024, and 1280×720 with no console/page/request failures.
 - Stage 5.3 screenshot review: desktop Start, desktop completed Task 3, mobile live-resized Start, mobile unmuted Start, and the three-viewport full-flow evidence retain readable controls, unobstructed playfields, and correct responsive composition.
 - Stage 5.3 evidence: `docs/qa/stage5-3-audio-results.json`, `docs/qa/screenshots/stage5-3-*.png`, refreshed `docs/qa/stage5-2-main-flow-results.json`, and refreshed `docs/qa/screenshots/stage5-2-*.png`.
+- Stage 6 full Start-origin flow: Start → Odd One Out → three Sequence challenges → three Size challenges → `ЗАДАНИЕ 4 ИЗ 5` / `НАЙДИ ТЕНЬ` with three shadow options — PASS.
+- Stage 6 challenge coverage: wrong, transient target→shadow hint, and correct for apple, banana, and ball; change-selection, empty check, rapid repeated selection/check, and no double progress/reward — PASS.
+- Stage 6 state trace: Task 4 initial and Challenges 1–2 correct remain `✓ ✓ ✓ ○ ○`; final Challenge 3 correct becomes `✓ ✓ ✓ ✓ ○` exactly once — PASS.
+- Stage 6 audio: three `answer-wrong`, three `hint`, three `answer-correct`, and one `repair-reward` event while unmuted; muted hint is suppressed by `AudioManager`; no duplicate audio — PASS.
+- Stage 6 responsive/visual review: 390×844, 768×1024, 1280×720, and 320×568 all show the target, three complete silhouettes, task/internal labels, accessible buttons, grounded robot, safe edges, and no clipping or overlap — PASS.
+- Stage 6 live resize preserves selected ID/order; Home → Играть resets session and all shadow state to Task 1; console errors, page errors, failed requests, and non-OK responses are zero — PASS.
+- Stage 6 evidence: `docs/qa/stage6-shadow-matching-results.json` and `docs/qa/screenshots/stage6-shadow-*.png`.
 
 ## FILES CREATED
+
+- `src/game/mechanics/shadowMatching.ts`
+- `qa/stage6-shadow-matching-playtest.cjs`
+- `docs/qa/stage6-shadow-matching-results.json`
+- `docs/qa/screenshots/stage6-shadow-mobile-390x844.png`
+- `docs/qa/screenshots/stage6-shadow-tablet-768x1024.png`
+- `docs/qa/screenshots/stage6-shadow-desktop-1280x720.png`
+- `docs/qa/screenshots/stage6-shadow-minimum-320x568.png`
+- `docs/qa/screenshots/stage6-shadow-complete-1280x720.png`
 
 - `public/assets/audio/music/start-theme.wav`
 - `public/assets/audio/sfx/ui-click.wav`
@@ -360,6 +384,11 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## FILES CHANGED
 
+- `src/game/scenes/GameScene.ts` — routes completed Task 3 into Mechanic 4, coordinates all three shadow challenges, and restores the normal final-Task-3 `Дальше` handoff.
+- `src/game/scenes/StartScene.ts` — resets shadow-matching state with the existing session/mechanic reset boundary.
+- `src/game/ui/TaskCard.ts` — adds the reusable responsive target-plus-three-shadows composition and temporary two-phase hint choreography.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 6 implementation, QA, evidence, and release state.
+
 - `src/game/assets/manifest.ts` — registers the six stable local audio IDs and exact runtime paths.
 - `src/game/scenes/PreloadScene.ts` — preloads audio and initializes the manager after decoding.
 - `src/game/scenes/StartScene.ts` — requests gesture-gated music, fades it on Play, and binds the real sound toggle.
@@ -444,7 +473,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 5.3.
+- None for Stage 6.
 
 ## GIT
 
@@ -459,8 +488,8 @@ main
 
 ## NEXT
 
-User manual audio review of the six Stage 5.3 cues and their mix. Do not implement Mechanic 4 until explicitly requested.
+User manual review of Stage 6 shadow matching and its transient hint timing. Do not implement Mechanic 5 until explicitly requested.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 5.3 audio feedback verified from the production preview. Six WAVs decode and play through the centralized manager; pre-gesture playback is absent; click/correct/wrong/hint/repair counts, mute persistence, unmute resume, single Start loop, live resize, Home/restart, and full 390×844, 768×1024, and 1280×720 gameplay regression all pass with zero console/page/request/audio-response errors.
+2026-08-29 — Stage 6 shadow matching verified from the production preview. Normal flow reaches Task 4; all three wrong/hint/correct paths, option randomization, selection change, empty check, rapid taps, exact 3/5 → 4/5 completion, centralized audio/mute, robot grounding, live resize, Home/restart, and 390×844, 768×1024, 1280×720, and 320×568 visual QA pass with zero console/page/request/response errors.

@@ -2,11 +2,12 @@ import Phaser from 'phaser';
 import type { OddOneOutObjectKey, OddOneOutResult } from '../mechanics/oddOneOut';
 import type { SequenceAssetKey } from '../mechanics/sequence';
 import type { SizeChoiceKey } from '../mechanics/sizeComparison';
+import type { ShadowChoiceKey } from '../mechanics/shadowMatching';
 import { addControl, setControlEnabled } from './controls';
 import { UI_COLORS, UI_FONT } from './visualTheme';
 import type { TaskCardSizing } from './responsiveLayout';
 
-export type TaskObjectKey = OddOneOutObjectKey | SequenceAssetKey | SizeChoiceKey;
+export type TaskObjectKey = OddOneOutObjectKey | SequenceAssetKey | SizeChoiceKey | ShadowChoiceKey;
 
 export interface TaskCardConfig {
   x: number;
@@ -32,7 +33,8 @@ export interface TaskCardConfig {
   internalProgressLabel?: string;
   choiceTextureKey?: (key: TaskObjectKey) => string;
   choiceVisualScale?: (key: TaskObjectKey) => number;
-  choiceLayout?: 'grid' | 'size-comparison';
+  choiceLayout?: 'grid' | 'size-comparison' | 'shadow-matching';
+  targetTextureKey?: TaskObjectKey;
   showContinueOnComplete?: boolean;
   continueDelayMs?: number;
   onSelect: (key: TaskObjectKey) => void;
@@ -61,6 +63,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
   private readonly configuredHintKeys: ReadonlySet<TaskObjectKey>;
   private readonly feedbackPrefix: string;
   private missingSlotImage?: Phaser.GameObjects.Image;
+  private targetImage?: Phaser.GameObjects.Image;
 
   constructor(scene: Phaser.Scene, config: TaskCardConfig) {
     super(scene, config.x, config.y);
@@ -163,6 +166,43 @@ export class TaskCard extends Phaser.GameObjects.Container {
         this.missingSlotImage.setName('missing-slot-answer');
         this.add(this.missingSlotImage);
       }
+    } else if (config.choiceLayout === 'shadow-matching' && config.targetTextureKey) {
+      const contentWidth = config.width - sizing.horizontalPadding * 2;
+      const shadowAreaHeight = Math.max(84, Math.min(
+        areaHeight,
+        config.height - sizing.actionHeight - 24 - sizing.feedbackFontSize - areaTop,
+      ));
+      const targetHeight = Math.max(30, Math.min(shadowAreaHeight * 0.34, sizing.cellMaxHeight));
+      const optionGap = sizing.cellGap;
+      cellWidth = Math.max(56, Math.min(
+        (contentWidth - optionGap * (config.objectKeys.length - 1)) / config.objectKeys.length,
+        sizing.cellMaxWidth,
+      ));
+      cellHeight = Math.max(48, Math.min(shadowAreaHeight - targetHeight - optionGap, sizing.cellMaxHeight));
+      const rowWidth = cellWidth * config.objectKeys.length + optionGap * (config.objectKeys.length - 1);
+      const rowX = (config.width - rowWidth) / 2;
+      const optionsY = areaTop + targetHeight + optionGap + cellHeight / 2;
+      choicePositions = config.objectKeys.map((_, index) => ({
+        x: rowX + index * (cellWidth + optionGap) + cellWidth / 2,
+        y: optionsY,
+      }));
+
+      const targetBackground = scene.add.graphics();
+      const targetWidth = Math.min(contentWidth, Math.max(92, targetHeight * 1.5));
+      targetBackground.fillStyle(0xe8f4f4, 0.96)
+        .fillRoundedRect(config.width / 2 - targetWidth / 2, areaTop, targetWidth, targetHeight, 12);
+      targetBackground.lineStyle(2, UI_COLORS.cyan, 0.7)
+        .strokeRoundedRect(config.width / 2 - targetWidth / 2, areaTop, targetWidth, targetHeight, 12);
+      this.add(targetBackground);
+      if (scene.textures.exists(config.targetTextureKey)) {
+        this.targetImage = scene.add.image(config.width / 2, areaTop + targetHeight / 2, config.targetTextureKey)
+          .setName('shadow-target-object');
+        this.targetImage.setScale(Math.min(
+          (targetWidth - 18) / this.targetImage.width,
+          (targetHeight - 10) / this.targetImage.height,
+        ));
+        this.add(this.targetImage);
+      }
     } else if (config.choiceLayout === 'size-comparison') {
       const contentWidth = config.width - sizing.horizontalPadding * 2;
       cellWidth = Math.max(64, Math.min(
@@ -248,7 +288,8 @@ export class TaskCard extends Phaser.GameObjects.Container {
       if (this.result === 'correct') return;
       config.onHint();
       this.setFeedback(config.hintFeedbackText ?? config.hintText);
-      this.drawChoices(true);
+      if (config.choiceLayout === 'shadow-matching') this.playShadowHint();
+      else this.drawChoices(true);
     }, {
       width: actionWidth, height: sizing.actionHeight, fill: UI_COLORS.purple, hoverFill: 0x916ee1,
       stroke: UI_COLORS.purpleDark, fontSize: sizing.actionFontSize,
@@ -323,7 +364,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
     setControlEnabled(this.continueButton, continueVisible);
     this.add(this.continueButton);
 
-    this.drawChoices(Boolean(config.hintShown));
+    this.drawChoices(Boolean(config.hintShown) && config.choiceLayout !== 'shadow-matching');
     this.setCheckEnabled(Boolean(this.selectedKey) && this.result !== 'correct');
     if (this.result === 'correct') this.setFeedback('Задание выполнено!');
     else if (config.hintShown) this.setFeedback(config.hintFeedbackText ?? config.hintText);
@@ -364,6 +405,45 @@ export class TaskCard extends Phaser.GameObjects.Container {
         .lineTo(width / 2 - 6, -height / 2 + 7)
         .strokePath();
     }
+  }
+
+  private playShadowHint(): void {
+    if (!this.targetImage) return;
+    this.setData('shadowHintStage', 'target');
+    const hintedKey = [...this.configuredHintKeys][0];
+    const hintedChoice = hintedKey ? this.choices.get(hintedKey) : undefined;
+    const targetBaseScale = this.targetImage.scaleX;
+    this.scene.tweens.killTweensOf(this.targetImage);
+    if (hintedChoice) this.scene.tweens.killTweensOf(hintedChoice.container);
+    this.scene.tweens.add({
+      targets: this.targetImage,
+      scaleX: targetBaseScale * 1.1,
+      scaleY: targetBaseScale * 1.1,
+      duration: 180,
+      yoyo: true,
+      repeat: 1,
+      ease: 'Sine.easeInOut',
+      onComplete: () => {
+        if (!this.active || !hintedChoice || this.result === 'correct') return;
+        this.setData('shadowHintStage', 'choice');
+        this.drawFrame(hintedChoice, 'hint');
+        this.scene.tweens.add({
+          targets: hintedChoice.container,
+          scaleX: 1.055,
+          scaleY: 1.055,
+          duration: 180,
+          yoyo: true,
+          repeat: 1,
+          ease: 'Sine.easeInOut',
+          onComplete: () => {
+            if (!this.active) return;
+            hintedChoice.container.setScale(hintedKey === this.selectedKey ? 1.045 : 1);
+            this.drawChoices();
+            this.setData('shadowHintStage', 'idle');
+          },
+        });
+      },
+    });
   }
 
   private setCheckEnabled(enabled: boolean): void {

@@ -1,0 +1,4270 @@
+{
+  "matrix": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 175.1363946185303,
+            "y": 251.03983162434895,
+            "width": 39.727210000000014,
+            "height": 39.727210000000014,
+            "right": 214.8636046185303,
+            "bottom": 290.76704162434896
+          },
+          "texture": "odd-apple",
+          "scale": 0.03168039074960128
+        },
+        "choices": [
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 48.53133819580078,
+              "y": 310.24605224609377,
+              "width": 64.79000000000002,
+              "height": 64.78999999999996,
+              "right": 113.32133819580079,
+              "bottom": 375.03605224609373
+            },
+            "image": {
+              "bounds": {
+                "x": 48.53133819580078,
+                "y": 310.24605224609377,
+                "width": 64.79000000000002,
+                "height": 64.78999999999996,
+                "right": 113.32133819580079,
+                "bottom": 375.03605224609373
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "scale": 1
+          },
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 162.605,
+              "y": 310.24605224609377,
+              "width": 64.79000000000002,
+              "height": 64.78999999999996,
+              "right": 227.395,
+              "bottom": 375.03605224609373
+            },
+            "image": {
+              "bounds": {
+                "x": 162.605,
+                "y": 310.24605224609377,
+                "width": 64.79000000000002,
+                "height": 64.78999999999996,
+                "right": 227.395,
+                "bottom": 375.03605224609373
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 276.67866943359377,
+              "y": 310.24605224609377,
+              "width": 64.78999999999996,
+              "height": 64.78999999999996,
+              "right": 341.46866943359373,
+              "bottom": 375.03605224609373
+            },
+            "image": {
+              "bounds": {
+                "x": 276.67866943359377,
+                "y": 310.24605224609377,
+                "width": 64.78999999999996,
+                "height": 64.78999999999996,
+                "right": 341.46866943359373,
+                "bottom": 375.03605224609373
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-banana",
+          "shadow-apple",
+          "shadow-ball"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 82.51897147686158,
+            "y": 501.6018475284824,
+            "width": 223.09714727772712,
+            "height": 230.79090784420873,
+            "right": 305.6161187545887,
+            "bottom": 732.3927553726911
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 28.128999618530273,
+          "y": 143.64199829101562,
+          "width": 313.3396698150635,
+          "height": 311.50732421875,
+          "right": 341.46866943359373,
+          "bottom": 455.1493225097656
+        },
+        "layout": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 152.142,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "taskCardSizing": {
+            "radius": 22.892166666666668,
+            "ribbonHeight": 37.30533333333334,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 17.065833333333334,
+            "titleFontSize": 19.305333333333333,
+            "instructionFontSize": 15.065833333333334,
+            "feedbackFontSize": 13.2395,
+            "titleY": 36.85016666666667,
+            "instructionY": 66.04766666666667,
+            "areaTop": 93.89783333333334,
+            "footerSpace": 89.00566666666667,
+            "cellGap": 8.479000000000001,
+            "cellMaxWidth": 116.17933333333335,
+            "cellMaxHeight": 76.79,
+            "sequenceGap": 5.479000000000001,
+            "sequenceIconMaxSize": 40.395,
+            "sequenceOptionMaxHeight": 50.04766666666667,
+            "actionHeight": 51.30533333333334,
+            "actionFontSize": 15.065833333333334,
+            "actionGap": 10.479000000000001,
+            "horizontalPadding": 14.479000000000001
+          },
+          "progress": {
+            "x": 15,
+            "y": 83.778,
+            "width": 360,
+            "height": 54.86,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 13.650000000000002,
+              "stepRadius": 17.16,
+              "borderRadius": 23.4
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          },
+          "worldFrame": {
+            "scale": 0.639344262295082,
+            "offsetX": -214.1803278688525,
+            "offsetY": 370.27986885245906,
+            "platformScreenX": 195,
+            "platformScreenY": 728.312655737705
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "checks": {
+        "labels": true,
+        "target": true,
+        "shadows": true,
+        "touchTargets": true,
+        "initialState": true,
+        "repairBefore": true,
+        "viewport": true,
+        "robotGrounded": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 355.07972755859373,
+            "y": 301.03499951171875,
+            "width": 57.84054000000003,
+            "height": 57.84054000000003,
+            "right": 412.92026755859376,
+            "bottom": 358.8755395117188
+          },
+          "texture": "odd-apple",
+          "scale": 0.046124832535885174
+        },
+        "choices": [
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 196.7199969482422,
+              "y": 380.62153198242186,
+              "width": 87.46000000000001,
+              "height": 87.46000000000004,
+              "right": 284.1799969482422,
+              "bottom": 468.0815319824219
+            },
+            "image": {
+              "bounds": {
+                "x": 196.7199969482422,
+                "y": 380.62153198242186,
+                "width": 87.46000000000001,
+                "height": 87.46000000000004,
+                "right": 284.1799969482422,
+                "bottom": 468.0815319824219
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 107.46,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 340.27,
+              "y": 380.62153198242186,
+              "width": 87.46000000000004,
+              "height": 87.46000000000004,
+              "right": 427.73,
+              "bottom": 468.0815319824219
+            },
+            "image": {
+              "bounds": {
+                "x": 340.27,
+                "y": 380.62153198242186,
+                "width": 87.46000000000004,
+                "height": 87.46000000000004,
+                "right": 427.73,
+                "bottom": 468.0815319824219
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 107.46,
+            "scale": 1
+          },
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 483.81998779296873,
+              "y": 380.62153198242186,
+              "width": 87.46000000000004,
+              "height": 87.46000000000004,
+              "right": 571.2799877929688,
+              "bottom": 468.0815319824219
+            },
+            "image": {
+              "bounds": {
+                "x": 483.81998779296873,
+                "y": 380.62153198242186,
+                "width": 87.46000000000004,
+                "height": 87.46000000000004,
+                "right": 571.2799877929688,
+                "bottom": 468.0815319824219
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 107.46,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-ball",
+          "shadow-banana",
+          "shadow-apple"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 225.6613347468746,
+            "y": 638.1951536011546,
+            "width": 314.0521115920325,
+            "height": 324.880302474466,
+            "right": 539.713446338907,
+            "bottom": 963.0754560756207
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 147.30599755859376,
+          "y": 172.11199951171875,
+          "width": 423.97399023437504,
+          "height": 403.17596435546875,
+          "right": 571.2799877929688,
+          "bottom": 575.2879638671875
+        },
+        "layout": {
+          "viewportWidth": 768,
+          "viewportHeight": 1024,
+          "aspectRatio": 0.75,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "margin": 26.880000000000003,
+          "headerY": 57.88,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 130.56,
+            "y": 182.11200000000002,
+            "width": 506.88,
+            "height": 419.84
+          },
+          "taskCardSizing": {
+            "radius": 25.537,
+            "ribbonHeight": 40.328,
+            "ribbonWidth": 250,
+            "taskFontSize": 18.955,
+            "titleFontSize": 22.328,
+            "instructionFontSize": 16.955,
+            "feedbackFontSize": 14.373,
+            "titleY": 44.028999999999996,
+            "instructionY": 78.894,
+            "areaTop": 113.923,
+            "footerSpace": 106.386,
+            "cellGap": 10.745999999999999,
+            "cellMaxWidth": 132.804,
+            "cellMaxHeight": 99.46,
+            "sequenceGap": 7.7459999999999996,
+            "sequenceIconMaxSize": 51.73,
+            "sequenceOptionMaxHeight": 62.894,
+            "actionHeight": 54.328,
+            "actionFontSize": 16.955,
+            "actionGap": 12.745999999999999,
+            "horizontalPadding": 16.746
+          },
+          "progress": {
+            "x": 169,
+            "y": 99.16799999999999,
+            "width": 430,
+            "height": 66.56,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 16,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -192,
+            "offsetY": 453.332,
+            "platformScreenX": 384,
+            "platformScreenY": 957.332
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "document": {
+          "width": 768,
+          "height": 1024
+        }
+      },
+      "checks": {
+        "labels": true,
+        "target": true,
+        "shadows": true,
+        "touchTargets": true,
+        "initialState": true,
+        "repairBefore": true,
+        "viewport": true,
+        "robotGrounded": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-apple",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 51.2000010172526,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 134.6666676839193,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-banana",
+          "shadow-apple",
+          "shadow-ball"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.40373773015165,
+            "width": 348.9468089937278,
+            "height": 360.9779135616002,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "checks": {
+        "labels": true,
+        "target": true,
+        "shadows": true,
+        "touchTargets": true,
+        "initialState": true,
+        "repairBefore": true,
+        "viewport": true,
+        "robotGrounded": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "minimum-320x568",
+      "width": 320,
+      "height": 568,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 150,
+            "y": 217.01733333333334,
+            "width": 20,
+            "height": 20,
+            "right": 170,
+            "bottom": 237.01733333333334
+          },
+          "texture": "odd-apple",
+          "scale": 0.01594896331738437
+        },
+        "choices": [
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 49.451995849609375,
+              "y": 254.37335205078125,
+              "width": 36,
+              "height": 36,
+              "right": 85.45199584960938,
+              "bottom": 290.37335205078125
+            },
+            "image": {
+              "bounds": {
+                "x": 49.451995849609375,
+                "y": 254.37335205078125,
+                "width": 36,
+                "height": 36,
+                "right": 85.45199584960938,
+                "bottom": 290.37335205078125
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 94.19200000000001,
+            "hitHeight": 56,
+            "scale": 1
+          },
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 142,
+              "y": 254.37335205078125,
+              "width": 36,
+              "height": 36,
+              "right": 178,
+              "bottom": 290.37335205078125
+            },
+            "image": {
+              "bounds": {
+                "x": 142,
+                "y": 254.37335205078125,
+                "width": 36,
+                "height": 36,
+                "right": 178,
+                "bottom": 290.37335205078125
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 94.19200000000001,
+            "hitHeight": 56,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 234.54800415039062,
+              "y": 254.37335205078125,
+              "width": 36,
+              "height": 36,
+              "right": 270.5480041503906,
+              "bottom": 290.37335205078125
+            },
+            "image": {
+              "bounds": {
+                "x": 234.54800415039062,
+                "y": 254.37335205078125,
+                "width": 36,
+                "height": 36,
+                "right": 270.5480041503906,
+                "bottom": 290.37335205078125
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 94.19200000000001,
+            "hitHeight": 56,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-ball",
+          "shadow-apple",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 67.7078659736238,
+            "y": 377.78022755553263,
+            "width": 183.0540552803559,
+            "height": 189.36751158013806,
+            "right": 250.7619212539797,
+            "bottom": 567.1477391356707
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 24.356,
+          "y": 128.5,
+          "width": 246.19200415039063,
+          "height": 226.502685546875,
+          "right": 270.5480041503906,
+          "bottom": 355.002685546875
+        },
+        "layout": {
+          "viewportWidth": 320,
+          "viewportHeight": 568,
+          "aspectRatio": 0.5633802816901409,
+          "mode": "ultra-narrow-portrait",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 38,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 136,
+            "width": 296,
+            "height": 244.24
+          },
+          "taskCardSizing": {
+            "radius": 20.415333333333333,
+            "ribbonHeight": 34.474666666666664,
+            "ribbonWidth": 201.28,
+            "taskFontSize": 15.296666666666667,
+            "titleFontSize": 16.474666666666668,
+            "instructionFontSize": 13.296666666666667,
+            "feedbackFontSize": 12.178,
+            "titleY": 30.127333333333333,
+            "instructionY": 54.01733333333333,
+            "areaTop": 75.14466666666667,
+            "footerSpace": 72.72933333333333,
+            "cellGap": 6.356,
+            "cellMaxWidth": 100.61066666666667,
+            "cellMaxHeight": 55.56,
+            "sequenceGap": 3.3560000000000003,
+            "sequenceIconMaxSize": 29.78,
+            "sequenceOptionMaxHeight": 38.01733333333333,
+            "actionHeight": 48.474666666666664,
+            "actionFontSize": 13.296666666666667,
+            "actionGap": 8.356,
+            "horizontalPadding": 12.356
+          },
+          "progress": {
+            "x": 12,
+            "y": 72,
+            "width": 296,
+            "height": 54,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 12,
+              "stepRadius": 14.079999999999998,
+              "borderRadius": 19.2
+            }
+          },
+          "dialogue": {
+            "width": 146,
+            "height": 72,
+            "fontSize": 14,
+            "gap": 8
+          },
+          "worldFrame": {
+            "scale": 0.5245901639344263,
+            "offsetX": -175.73770491803282,
+            "offsetY": 270.0295081967212,
+            "platformScreenX": 160,
+            "platformScreenY": 563.8
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 320,
+          "height": 568
+        },
+        "document": {
+          "width": 320,
+          "height": 568
+        }
+      },
+      "checks": {
+        "labels": true,
+        "target": true,
+        "shadows": true,
+        "touchTargets": true,
+        "initialState": true,
+        "repairBefore": true,
+        "viewport": true,
+        "robotGrounded": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "flow": {
+    "checks": {
+      "fullFlowToTask4": true,
+      "emptyCheck": true,
+      "resizePreservesSelection": true,
+      "changeSelection": true,
+      "challenge1Wrong": true,
+      "challenge1Hint": true,
+      "challenge1Correct": true,
+      "challenge2Wrong": true,
+      "challenge2Hint": true,
+      "challenge2Correct": true,
+      "challenge3Wrong": true,
+      "challenge3Hint": true,
+      "challenge3Correct": true,
+      "randomization": true,
+      "rapidTapSafety": true,
+      "audio": true,
+      "mute": true,
+      "robotRegression": true,
+      "homeRestart": true,
+      "errors": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "correctSlots": [
+      0,
+      1,
+      2
+    ],
+    "states": {
+      "initial": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-apple",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 51.2000010172526,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 134.6666676839193,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-ball",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.4041719606746,
+            "width": 348.9468089937278,
+            "height": 360.97747933107723,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "emptyCheck": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-apple",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 51.2000010172526,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 134.6666676839193,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-ball",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.37625826263985,
+            "width": 348.9468089937278,
+            "height": 361.005393029112,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "resized": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": "shadow-ball",
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3",
+        "checkEnabled": true,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 175.1363946185303,
+            "y": 251.03983162434895,
+            "width": 39.727210000000014,
+            "height": 39.727210000000014,
+            "right": 214.8636046185303,
+            "bottom": 290.76704162434896
+          },
+          "texture": "odd-apple",
+          "scale": 0.03168039074960128
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 48.53133819580078,
+              "y": 310.24605224609377,
+              "width": 64.79000000000002,
+              "height": 64.78999999999996,
+              "right": 113.32133819580079,
+              "bottom": 375.03605224609373
+            },
+            "image": {
+              "bounds": {
+                "x": 48.53133819580078,
+                "y": 310.24605224609377,
+                "width": 64.79000000000002,
+                "height": 64.78999999999996,
+                "right": 113.32133819580079,
+                "bottom": 375.03605224609373
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 161.14722639024257,
+              "y": 308.7882786363363,
+              "width": 67.70554721951487,
+              "height": 67.70554721951487,
+              "right": 228.85277360975743,
+              "bottom": 376.4938258558512
+            },
+            "image": {
+              "bounds": {
+                "x": 161.14722639024257,
+                "y": 308.7882786363363,
+                "width": 67.70554721951487,
+                "height": 67.70554721951487,
+                "right": 228.85277360975743,
+                "bottom": 376.4938258558512
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "scale": 1.045
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 276.67866943359377,
+              "y": 310.24605224609377,
+              "width": 64.78999999999996,
+              "height": 64.78999999999996,
+              "right": 341.46866943359373,
+              "bottom": 375.03605224609373
+            },
+            "image": {
+              "bounds": {
+                "x": 276.67866943359377,
+                "y": 310.24605224609377,
+                "width": 64.78999999999996,
+                "height": 64.78999999999996,
+                "right": 341.46866943359373,
+                "bottom": 375.03605224609373
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-ball",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 82.51897147686158,
+            "y": 501.5810970918019,
+            "width": 223.09714727772712,
+            "height": 230.81165828088922,
+            "right": 305.6161187545887,
+            "bottom": 732.3927553726911
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 28.128999618530273,
+          "y": 143.64199829101562,
+          "width": 313.3396698150635,
+          "height": 311.50732421875,
+          "right": 341.46866943359373,
+          "bottom": 455.1493225097656
+        },
+        "layout": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 152.142,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "taskCardSizing": {
+            "radius": 22.892166666666668,
+            "ribbonHeight": 37.30533333333334,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 17.065833333333334,
+            "titleFontSize": 19.305333333333333,
+            "instructionFontSize": 15.065833333333334,
+            "feedbackFontSize": 13.2395,
+            "titleY": 36.85016666666667,
+            "instructionY": 66.04766666666667,
+            "areaTop": 93.89783333333334,
+            "footerSpace": 89.00566666666667,
+            "cellGap": 8.479000000000001,
+            "cellMaxWidth": 116.17933333333335,
+            "cellMaxHeight": 76.79,
+            "sequenceGap": 5.479000000000001,
+            "sequenceIconMaxSize": 40.395,
+            "sequenceOptionMaxHeight": 50.04766666666667,
+            "actionHeight": 51.30533333333334,
+            "actionFontSize": 15.065833333333334,
+            "actionGap": 10.479000000000001,
+            "horizontalPadding": 14.479000000000001
+          },
+          "progress": {
+            "x": 15,
+            "y": 83.778,
+            "width": 360,
+            "height": 54.86,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 13.650000000000002,
+              "stepRadius": 17.16,
+              "borderRadius": 23.4
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          },
+          "worldFrame": {
+            "scale": 0.639344262295082,
+            "offsetX": -214.1803278688525,
+            "offsetY": 370.27986885245906,
+            "platformScreenX": 195,
+            "platformScreenY": 728.312655737705
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "changedSelection": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": "shadow-apple",
+        "result": "idle",
+        "feedback": "ТЕНЬ 1 ИЗ 3 · Выбрано",
+        "checkEnabled": true,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-apple",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 49.54482812881469,
+              "y": 355.9315011024475,
+              "width": 86.7770124435425,
+              "height": 86.7770124435425,
+              "right": 136.3218405723572,
+              "bottom": 442.70851354599
+            },
+            "image": {
+              "bounds": {
+                "x": 49.54482812881469,
+                "y": 355.9315011024475,
+                "width": 86.7770124435425,
+                "height": 86.7770124435425,
+                "right": 136.3218405723572,
+                "bottom": 442.70851354599
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1.0396607164653942
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-ball",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.3033322611024,
+            "width": 348.9468089937278,
+            "height": 361.0783190306494,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge1Wrong": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": null,
+        "result": "wrong",
+        "feedback": "ТЕНЬ 1 ИЗ 3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-apple",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 49.32200280825297,
+              "y": 355.7086757818858,
+              "width": 87.22266308466595,
+              "height": 87.2226630846659,
+              "right": 136.5446658929189,
+              "bottom": 442.9313388665517
+            },
+            "image": {
+              "bounds": {
+                "x": 49.32200280825297,
+                "y": 355.7086757818858,
+                "width": 87.22266308466595,
+                "height": 87.2226630846659,
+                "right": 136.5446658929189,
+                "bottom": 442.9313388665517
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1.045
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 166.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 250.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 166.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 250.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-ball",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": true,
+          "text": "Попробуй ещё"
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.3893894789926,
+            "width": 348.9468089937278,
+            "height": 360.99226181275924,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge1Correct": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 1 ИЗ 3",
+        "selectedKey": "shadow-apple",
+        "result": "correct",
+        "feedback": "ТЕНЬ 1 ИЗ 3 · Правильно!",
+        "checkEnabled": false,
+        "continueVisible": true,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-apple",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 49.32200280825297,
+              "y": 355.7086757818858,
+              "width": 87.22266308466595,
+              "height": 87.2226630846659,
+              "right": 136.5446658929189,
+              "bottom": 442.9313388665517
+            },
+            "image": {
+              "bounds": {
+                "x": 49.32200280825297,
+                "y": 355.7086757818858,
+                "width": 87.22266308466595,
+                "height": 87.2226630846659,
+                "right": 136.5446658929189,
+                "bottom": 442.9313388665517
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1.045
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-ball",
+          "shadow-banana"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": true,
+          "text": "Точно!"
+        },
+        "robot": {
+          "bounds": {
+            "x": 461.82948355259566,
+            "y": 195.1502737265173,
+            "width": 353.3870064162726,
+            "height": 365.65724684881536,
+            "right": 815.2164899688682,
+            "bottom": 560.8075205753327
+          },
+          "x": 640,
+          "y": 554.3446499677849,
+          "baseY": 560,
+          "scale": 0.25527929709006364,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge2Wrong": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 2 ИЗ 3",
+        "selectedKey": null,
+        "result": "wrong",
+        "feedback": "ТЕНЬ 2 ИЗ 3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-banana",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 55.06715799967448,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 138.53382466634116,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 55.06715799967448,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 138.53382466634116,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-carrot",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-carrot"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-banana",
+          "shadow-carrot"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": true,
+          "text": "Попробуй ещё"
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.39043329736592,
+            "width": 348.9468089937278,
+            "height": 360.9912179943859,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8304.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8597.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 8597.299999982119
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge2Correct": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 2 ИЗ 3",
+        "selectedKey": "shadow-banana",
+        "result": "correct",
+        "feedback": "ТЕНЬ 2 ИЗ 3 · Правильно!",
+        "checkEnabled": false,
+        "continueVisible": true,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-banana",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 51.2000010172526,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 134.6666676839193,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 160.7886623541514,
+              "y": 355.7086757818858,
+              "width": 87.22266308466595,
+              "height": 87.2226630846659,
+              "right": 248.01132543881735,
+              "bottom": 442.9313388665517
+            },
+            "image": {
+              "bounds": {
+                "x": 160.7886623541514,
+                "y": 355.7086757818858,
+                "width": 87.22266308466595,
+                "height": 87.2226630846659,
+                "right": 248.01132543881735,
+                "bottom": 442.9313388665517
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1.045
+          },
+          {
+            "key": "shadow-carrot",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-carrot"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-banana",
+          "shadow-carrot"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": true,
+          "text": "Это она!"
+        },
+        "robot": {
+          "bounds": {
+            "x": 461.9178849789855,
+            "y": 195.60865883984866,
+            "width": 353.2116692389566,
+            "height": 365.4189217144459,
+            "right": 815.1295542179421,
+            "bottom": 561.0275805542946
+          },
+          "x": 640,
+          "y": 554.5679495420724,
+          "baseY": 560,
+          "scale": 0.2551526501573964,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8304.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8597.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 8597.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 9050.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 10688.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 10688.799999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12250.09999999404
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 12250.299999982119
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "muted": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 2 ИЗ 3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "ТЕНЬ 2 ИЗ 3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-banana",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 51.2000010172526,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 134.6666676839193,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-banana",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-banana"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-carrot",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-carrot"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-apple",
+          "shadow-banana",
+          "shadow-carrot"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": true,
+          "text": "Попробуй ещё"
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.41343267193213,
+            "width": 348.9468089937278,
+            "height": 360.9682186198197,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8304.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8597.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 8597.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 9050.199999988079
+          }
+        ],
+        "muted": true,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge3Wrong": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 3 ИЗ 3",
+        "selectedKey": null,
+        "result": "wrong",
+        "feedback": "ТЕНЬ 3 ИЗ 3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-ball",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-carrot",
+            "bounds": {
+              "x": 54.81802775065104,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 138.28469441731772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 54.81802775065104,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 138.28469441731772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-carrot"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 274.1333353678385,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 274.1333353678385,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 357.6000020345052,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "shadow-carrot",
+          "shadow-apple",
+          "shadow-ball"
+        ],
+        "repairComplete": 3,
+        "repairPending": 2,
+        "dialogue": {
+          "visible": true,
+          "text": "Попробуй ещё"
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.3943750892616,
+            "width": 348.9468089937278,
+            "height": 360.98727620249025,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 314.40000127156577,
+          "height": 584.0000076293945,
+          "right": 357.6000020345052,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 4,
+          "completedTasks": 3,
+          "totalTasks": 5,
+          "score": 3
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8304.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8597.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 8597.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 9050.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 10688.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 10688.799999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12250.09999999404
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 12250.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12538.59999999404
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12812.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 12812.299999982119
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge3Correct": {
+        "taskLabel": "ЗАДАНИЕ 4 ИЗ 5",
+        "title": "НАЙДИ ТЕНЬ",
+        "instruction": "Какая тень подходит?",
+        "internalProgress": "ТЕНЬ 3 ИЗ 3",
+        "selectedKey": "shadow-ball",
+        "result": "correct",
+        "feedback": "ТЕНЬ 3 ИЗ 3 · Правильно!",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": {
+          "bounds": {
+            "x": 153.40000076293947,
+            "y": 224.31999969482422,
+            "width": 101.99999999999997,
+            "height": 102,
+            "right": 255.40000076293944,
+            "bottom": 326.3199996948242
+          },
+          "texture": "odd-ball",
+          "scale": 0.08133971291866028
+        },
+        "choices": [
+          {
+            "key": "shadow-carrot",
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 357.5866739908854,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 51.2000010172526,
+                "y": 357.5866739908854,
+                "width": 83.46666666666668,
+                "height": 83.4666666666667,
+                "right": 134.6666676839193,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-carrot"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-apple",
+            "bounds": {
+              "x": 162.66666056315103,
+              "y": 357.5866739908854,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 441.0533406575521
+            },
+            "image": {
+              "bounds": {
+                "x": 162.66666056315103,
+                "y": 357.5866739908854,
+                "width": 83.4666666666667,
+                "height": 83.4666666666667,
+                "right": 246.13332722981772,
+                "bottom": 441.0533406575521
+              },
+              "texture": "shadow-apple"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "shadow-ball",
+            "bounds": {
+              "x": 272.2553371588389,
+              "y": 355.7086757818858,
+              "width": 87.2226630846659,
+              "height": 87.2226630846659,
+              "right": 359.4780002435048,
+              "bottom": 442.9313388665517
+            },
+            "image": {
+              "bounds": {
+                "x": 272.2553371588389,
+                "y": 355.7086757818858,
+                "width": 87.2226630846659,
+                "height": 87.2226630846659,
+                "right": 359.4780002435048,
+                "bottom": 442.9313388665517
+              },
+              "texture": "shadow-ball"
+            },
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "scale": 1.045
+          }
+        ],
+        "choiceOrder": [
+          "shadow-carrot",
+          "shadow-apple",
+          "shadow-ball"
+        ],
+        "repairComplete": 4,
+        "repairPending": 1,
+        "dialogue": {
+          "visible": true,
+          "text": "Молодец!"
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.23631297815587,
+            "width": 348.9468089937278,
+            "height": 361.14533831359597,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 316.27799948056537,
+          "height": 584.0000076293945,
+          "right": 359.4780002435048,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 5,
+          "completedTasks": 4,
+          "totalTasks": 5,
+          "score": 4
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8304.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8597.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 8597.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 9050.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 10688.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 10688.799999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12250.09999999404
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 12250.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12538.59999999404
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12812.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 12812.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 13269.90000000596
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 13270.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 14991
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 14991.5
+          },
+          {
+            "key": "audio-repair-reward",
+            "muted": false,
+            "at": 14992
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "restarted": {
+        "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "hintStage": "idle",
+        "target": null,
+        "choices": [
+          {
+            "key": "odd-apple",
+            "bounds": {
+              "x": 77.39999389648438,
+              "y": 286.82000732421875,
+              "width": 100,
+              "height": 100,
+              "right": 177.39999389648438,
+              "bottom": 386.82000732421875
+            },
+            "image": {
+              "bounds": {
+                "x": 77.39999389648438,
+                "y": 286.82000732421875,
+                "width": 100,
+                "height": 100,
+                "right": 177.39999389648438,
+                "bottom": 386.82000732421875
+              },
+              "texture": "odd-apple"
+            },
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "odd-banana",
+            "bounds": {
+              "x": 231.4000244140625,
+              "y": 286.82000732421875,
+              "width": 100,
+              "height": 100,
+              "right": 331.4000244140625,
+              "bottom": 386.82000732421875
+            },
+            "image": {
+              "bounds": {
+                "x": 231.4000244140625,
+                "y": 286.82000732421875,
+                "width": 100,
+                "height": 100,
+                "right": 331.4000244140625,
+                "bottom": 386.82000732421875
+              },
+              "texture": "odd-banana"
+            },
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "odd-carrot",
+            "bounds": {
+              "x": 77.39999389648438,
+              "y": 410.82000732421875,
+              "width": 100,
+              "height": 100,
+              "right": 177.39999389648438,
+              "bottom": 510.82000732421875
+            },
+            "image": {
+              "bounds": {
+                "x": 77.39999389648438,
+                "y": 410.82000732421875,
+                "width": 100,
+                "height": 100,
+                "right": 177.39999389648438,
+                "bottom": 510.82000732421875
+              },
+              "texture": "odd-carrot"
+            },
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "scale": 1
+          },
+          {
+            "key": "odd-ball",
+            "bounds": {
+              "x": 231.4000244140625,
+              "y": 410.82000732421875,
+              "width": 100,
+              "height": 100,
+              "right": 331.4000244140625,
+              "bottom": 510.82000732421875
+            },
+            "image": {
+              "bounds": {
+                "x": 231.4000244140625,
+                "y": 410.82000732421875,
+                "width": 100,
+                "height": 100,
+                "right": 331.4000244140625,
+                "bottom": 510.82000732421875
+              },
+              "texture": "odd-ball"
+            },
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "scale": 1
+          }
+        ],
+        "choiceOrder": [
+          "odd-apple",
+          "odd-banana",
+          "odd-carrot",
+          "odd-ball"
+        ],
+        "repairComplete": 0,
+        "repairPending": 5,
+        "dialogue": {
+          "visible": false,
+          "text": ""
+        },
+        "robot": {
+          "bounds": {
+            "x": 464.06814047415594,
+            "y": 205.4146039788123,
+            "width": 348.9468089937278,
+            "height": 360.96704731293954,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          },
+          "x": 640,
+          "y": 560,
+          "baseY": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "cardBounds": {
+          "x": 43.20000076293945,
+          "y": 83.81999969482422,
+          "width": 318.20000000000005,
+          "height": 584.0000076293945,
+          "right": 361.4000007629395,
+          "bottom": 667.8200073242188
+        },
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 5,
+          "score": 0
+        },
+        "audio": [
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 5992
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 5992.4000000059605
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 6450.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 6451
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8018.4000000059605
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 8018.5999999940395
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8304.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 8597.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 8597.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 9050.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 10688.5
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 10688.799999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12250.09999999404
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 12250.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12538.59999999404
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 12812.09999999404
+          },
+          {
+            "key": "audio-answer-wrong",
+            "muted": false,
+            "at": 12812.299999982119
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 13269.90000000596
+          },
+          {
+            "key": "audio-hint",
+            "muted": false,
+            "at": 13270.199999988079
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 14991
+          },
+          {
+            "key": "audio-answer-correct",
+            "muted": false,
+            "at": 14991.5
+          },
+          {
+            "key": "audio-repair-reward",
+            "muted": false,
+            "at": 14992
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 16310.5
+          },
+          {
+            "key": "audio-ui-click",
+            "muted": false,
+            "at": 16502.40000000596
+          }
+        ],
+        "muted": false,
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    }
+  },
+  "failures": []
+}

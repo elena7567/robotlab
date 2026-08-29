@@ -21,6 +21,7 @@ import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
 import { configureResponsiveCamera } from '../ui/responsiveCamera';
 import { audioManager } from '../audio/AudioManager';
+import { shadowMatchingMechanic, type ShadowChoiceKey } from '../mechanics/shadowMatching';
 
 const WRONG_DIALOGUE = [
   'Почти! Попробуй ещё раз',
@@ -51,6 +52,9 @@ const SIZE_CORRECT_DIALOGUE = [
   'Супер! Ты заметил разницу!',
 ] as const;
 
+const SHADOW_WRONG_DIALOGUE = ['Попробуй ещё', 'Посмотри на форму', 'Почти!'] as const;
+const SHADOW_CORRECT_DIALOGUE = ['Точно!', 'Это она!', 'Молодец!'] as const;
+
 export class GameScene extends Phaser.Scene {
   constructor() { super('GameScene'); }
   create(): void {
@@ -59,7 +63,8 @@ export class GameScene extends Phaser.Scene {
     const portrait = layout.mode !== 'landscape';
     const state = sessionState.snapshot;
     this.game.registry.set('sessionSnapshot', state);
-    const isSizeComparisonTask = state.completedTasks >= 2;
+    const isShadowMatchingTask = state.completedTasks === 3;
+    const isSizeComparisonTask = state.completedTasks === 2;
     const isSequenceTask = state.completedTasks === 1;
     const oddMechanic = state.completedTasks === 0 ? new OddOneOutMechanic(false) : undefined;
     this.cameras.main.setBackgroundColor('#173b52');
@@ -140,7 +145,59 @@ export class GameScene extends Phaser.Scene {
       })();
     };
 
-    if (isSequenceTask) {
+    if (isShadowMatchingTask) {
+      const shadowState = shadowMatchingMechanic.snapshot;
+      new TaskCard(this, {
+        x: cardX, y: cardY, width: cardWidth, height: cardHeight,
+        sizing: layout.taskCardSizing,
+        taskNumber: 4, totalTasks: state.totalTasks,
+        title: 'Найди тень', instruction: 'Какая тень подходит?',
+        objectKeys: shadowState.orderedKeys,
+        targetTextureKey: shadowState.targetKey,
+        initialSelection: shadowState.selectedKey,
+        completed: shadowState.result === 'correct',
+        hintShown: shadowState.hintShown,
+        hintText: shadowState.challenge.hint,
+        hintFeedbackText: 'Подсказка у робота',
+        correctFeedbackText: 'Правильно!',
+        hintKeys: [shadowState.correctKey],
+        internalProgress: { current: shadowState.challengeIndex + 1, total: shadowState.challengeCount },
+        internalProgressLabel: 'ТЕНЬ',
+        choiceLayout: 'shadow-matching',
+        showContinueOnComplete: !shadowState.isFinalChallenge,
+        continueDelayMs: 180,
+        onSelect: (key: TaskObjectKey) => {
+          robotDialogue?.hide();
+          shadowMatchingMechanic.select(key as ShadowChoiceKey);
+        },
+        onHint: () => {
+          audioManager.playHint();
+          shadowMatchingMechanic.showHint();
+          robotDialogue?.show(shadowMatchingMechanic.snapshot.challenge.hint);
+          void robot?.playHint();
+        },
+        onCheck: () => {
+          const result = shadowMatchingMechanic.check().result;
+          if (result === 'correct') {
+            audioManager.playCorrect();
+            if (shadowMatchingMechanic.snapshot.completed) playCompletionFlow();
+            else void robot?.playCorrect();
+            const challengeIndex = shadowMatchingMechanic.snapshot.challengeIndex;
+            robotDialogue?.show(SHADOW_CORRECT_DIALOGUE[challengeIndex % SHADOW_CORRECT_DIALOGUE.length]);
+          } else if (result === 'wrong') {
+            audioManager.playWrong();
+            robotDialogue?.show(SHADOW_WRONG_DIALOGUE[wrongAttempt % SHADOW_WRONG_DIALOGUE.length]);
+            wrongAttempt += 1;
+            void robot?.playWrong();
+          }
+          return result;
+        },
+        onContinue: () => {
+          shadowMatchingMechanic.continue();
+          renderCurrentTask();
+        },
+      });
+    } else if (isSequenceTask) {
       const sequenceState = sequenceMechanic.snapshot;
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
@@ -210,7 +267,7 @@ export class GameScene extends Phaser.Scene {
         choiceLayout: 'size-comparison',
         choiceTextureKey: () => 'size-battery',
         choiceVisualScale: (key) => SIZE_SCALE_MULTIPLIERS[key.replace('size-', '') as SizeId],
-        showContinueOnComplete: !sizeState.isFinalChallenge,
+        showContinueOnComplete: true,
         continueDelayMs: 180,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
