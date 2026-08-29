@@ -10,6 +10,48 @@ import { restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 
+const LABORATORY_SOURCE_WIDTH = 1672;
+const LABORATORY_SOURCE_HEIGHT = 941;
+const VICTORY_PLATFORM_SOURCE_X = 836;
+const VICTORY_PLATFORM_CONTACT_SOURCE_Y = 700;
+const ROBOT_SOURCE_HEIGHT = 1448;
+const ROBOT_FEET_CONTACT_SOURCE_Y = 1423;
+const PLATFORM_TO_CONTROLS_GAP = 30;
+
+interface VictoryPlatformPlacement {
+  contactX: number;
+  contactY: number;
+  scale: number;
+  offsetX: number;
+  offsetY: number;
+}
+
+const getVictoryPlatformPlacement = (
+  width: number,
+  height: number,
+  controlsTop: number,
+): VictoryPlatformPlacement => {
+  const coverScale = Math.max(width / LABORATORY_SOURCE_WIDTH, height / LABORATORY_SOURCE_HEIGHT);
+  const centeredOffsetY = (height - LABORATORY_SOURCE_HEIGHT * coverScale) / 2;
+  const centeredContactY = centeredOffsetY + VICTORY_PLATFORM_CONTACT_SOURCE_Y * coverScale;
+  const contactY = Math.min(centeredContactY, controlsTop - PLATFORM_TO_CONTROLS_GAP);
+  const scale = Math.max(
+    width / LABORATORY_SOURCE_WIDTH,
+    contactY / VICTORY_PLATFORM_CONTACT_SOURCE_Y,
+    (height - contactY) / (LABORATORY_SOURCE_HEIGHT - VICTORY_PLATFORM_CONTACT_SOURCE_Y),
+  );
+  const offsetX = (width - LABORATORY_SOURCE_WIDTH * scale) / 2;
+  const offsetY = contactY - VICTORY_PLATFORM_CONTACT_SOURCE_Y * scale;
+
+  return {
+    contactX: offsetX + VICTORY_PLATFORM_SOURCE_X * scale,
+    contactY,
+    scale,
+    offsetX,
+    offsetY,
+  };
+};
+
 const resetFullSession = (): void => {
   sessionState.reset();
   sequenceMechanic.reset();
@@ -25,8 +67,22 @@ export class VictoryScene extends Phaser.Scene {
     const { width, height } = this.scale;
     const portrait = width < height;
     this.cameras.main.setBackgroundColor('#173b52');
-    const background = this.add.image(width / 2, height / 2, 'bg-main-laboratory').setName('victory-background');
-    background.setScale(Math.max(width / background.width, height / background.height)).setAlpha(0.72);
+    const buttonHeight = fluidValue(50, height, 0.078, 60);
+    const buttonWidth = portrait ? Math.min(250, width - 44) : fluidValue(190, width, 0.18, 250);
+    const buttonsY = portrait ? height - 30 - buttonHeight * 1.5 : height - 34 - buttonHeight / 2;
+    const controlsTop = buttonsY - buttonHeight / 2;
+    const platform = getVictoryPlatformPlacement(width, height, controlsTop);
+    this.add.image(platform.offsetX, platform.offsetY, 'bg-main-laboratory')
+      .setOrigin(0)
+      .setScale(platform.scale)
+      .setAlpha(0.72)
+      .setName('victory-background')
+      .setData({
+        platformContactX: platform.contactX,
+        platformContactY: platform.contactY,
+        platformSourceX: VICTORY_PLATFORM_SOURCE_X,
+        platformSourceY: VICTORY_PLATFORM_CONTACT_SOURCE_Y,
+      });
     this.add.rectangle(0, 0, width, height, 0x102b47, 0.26).setOrigin(0);
 
     const titleY = portrait ? height * 0.105 : height * 0.13;
@@ -43,20 +99,23 @@ export class VictoryScene extends Phaser.Scene {
       stroke: '#31567a', strokeThickness: 4,
     }).setOrigin(0.5).setName('victory-subtitle');
 
-    const buttonHeight = fluidValue(50, height, 0.078, 60);
-    const buttonWidth = portrait ? Math.min(250, width - 44) : fluidValue(190, width, 0.18, 250);
-    const buttonsY = portrait ? height - 30 - buttonHeight * 1.5 : height - 34 - buttonHeight / 2;
     const robotTop = titleY + titleSize * 1.45;
-    const robotBottom = portrait ? buttonsY - buttonHeight - 22 : height - buttonHeight - 36;
-    const robotHeight = clampValue(128, robotBottom - robotTop, portrait ? 260 : 360);
-    const robot = this.add.image(width / 2, robotBottom, 'robot-complete')
-      .setOrigin(0.5, 1)
+    const robotHeight = clampValue(128, platform.contactY - robotTop, portrait ? 260 : 360);
+    const robot = this.add.image(platform.contactX, platform.contactY, 'robot-complete')
+      .setOrigin(0.5, ROBOT_FEET_CONTACT_SOURCE_Y / ROBOT_SOURCE_HEIGHT)
       .setScale(robotHeight / 1448)
-      .setName('victory-robot');
+      .setName('victory-robot')
+      .setData({
+        platformContactX: platform.contactX,
+        platformContactY: platform.contactY,
+        robotFeetContactX: platform.contactX,
+        robotFeetContactY: platform.contactY,
+        feetContactSourceY: ROBOT_FEET_CONTACT_SOURCE_Y,
+      });
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     if (!reducedMotion) {
       this.tweens.add({
-        targets: robot, y: robot.y - 7, scaleX: robot.scaleX * 1.018, scaleY: robot.scaleY * 1.018,
+        targets: robot, scaleX: robot.scaleX * 1.018, scaleY: robot.scaleY * 1.018,
         duration: 620, yoyo: true, repeat: 1, ease: 'Sine.easeInOut',
       });
     }

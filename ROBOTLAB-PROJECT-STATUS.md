@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT STAGE
 
-Stage 7 — Mechanic 5: Memory / Найди пары
+Stage 7.0A — Victory Robot Grounding Fix
 
 ## CURRENT STATUS
 
-PASS — All five major mechanics are reachable and playable through the normal Start-origin flow. Memory presents four shuffled pairs across eight cards with explicit face-down/up/matched state, comparison lockout, non-solving hints, responsive 4×2/2×4 composition, exact `ПАРЫ 0 ИЗ 4` → `ПАРЫ 4 ИЗ 4` progress, one final 4/5 → 5/5 repair completion, stable robot/audio feedback, and a production Russian completion screen. Build, full-flow, input safety, mute, live resize, Play Again, Home, four required viewports, screenshot review, and console/page/request checks all pass.
+PASS — VictoryScene now maps the complete robot's measured feet anchor directly to the visible upper platform plane and keeps that shared contact point centered and clear of the controls through the existing responsive portrait/landscape composition. Both soles rest on the top surface rather than the front rim at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. Build, focused contact-marker QA, close-up review, console checks, and the complete Stage 7 gameplay regression pass.
 
 ## TECH STACK
 
@@ -109,6 +109,9 @@ PASS — All five major mechanics are reachable and playable through the normal 
 - Stage 7: hints briefly reveal two unmatched cards or the selected card's partner without changing mechanic state; accepted card taps, correct/wrong/hint cues, comparison timing, reduced-motion flips, matched-card disabling, and third-tap lockout use existing input/audio/reaction boundaries.
 - Stage 7: the fourth pair alone advances overall repair from `✓ ✓ ✓ ✓ ○` to `✓ ✓ ✓ ✓ ✓`, plays one correct cue and one final repair reward, shows `Я СНОВА РАБОТАЮ!`, preserves the completed board for a readable success moment, then enters the production completion screen.
 - Stage 7: replaced the unused temporary Victory presentation with `РОБОТ ПОЧИНЕН!`, `ТЫ ВЫПОЛНИЛ ВСЕ ЗАДАНИЯ`, `Играть ещё`, and `На главную`; both exits reset session and all mechanic-local state without a browser reload or duplicate music loop.
+- Stage 7.0A: replaced VictoryScene's arbitrary bottom Y with a measured robot-feet visual origin (`source y = 1423`) attached to the laboratory platform's upper-plane contact point (`source x/y = 836/700`).
+- Stage 7.0A: derives the shared platform/feet point from the scaled background composition, with a centralized control-clearance constraint for the minimum portrait layout; no exact-device checks, gameplay state, assets, controls, or robot scale rules changed.
+- Stage 7.0A: removed vertical displacement from the existing completion pulse so its feet anchor remains planted throughout the animation; the subtle scale pulse remains anchored at the soles.
 
 ## ASSET STATUS
 
@@ -165,6 +168,8 @@ PASS
 - Stage 6 production preview at `http://127.0.0.1:4196/` — PASS.
 - Stage 7 `npm run build` — PASS; TypeScript validation passed, 41 modules transformed, all approved memory/object/audio assets were included, and only the existing non-blocking Phaser bundle-size advisory remains.
 - Stage 7 production preview at `http://127.0.0.1:4197/` — PASS.
+- Stage 7.0A `npm run build` — PASS; TypeScript validation passed, 41 modules transformed, and only the existing non-blocking Phaser bundle-size advisory remains.
+- Stage 7.0A production preview at `http://127.0.0.1:4198/` — PASS.
 - `npm run preview -- --host 127.0.0.1 --port 4174` — PASS; Vite selected the available local preview at `127.0.0.1:4177` for final Stage 3.1 verification.
 - `npm run preview -- --host 127.0.0.1 --port 4180` — PASS; Stage 3.3 was verified from the generated production build.
 
@@ -274,8 +279,20 @@ PASS
 - Stage 7 randomization produced four distinct layouts across four starts with no trivial horizontal adjacent pair; live resize preserves selected/matched state; Play Again and final-screen Home reset the full session to Task 1 — PASS.
 - Stage 7 console errors, page errors, failed requests, and non-OK responses: zero.
 - Stage 7 evidence: `docs/qa/stage7-memory-results.json` and `docs/qa/screenshots/stage7-*.png`.
+- Stage 7.0A exact background-platform and robot-feet contacts coincide with zero delta at every required viewport: `(160, 408)` at 320×568, `(195, 627.843)` at 390×844, `(384, 761.743)` at 768×1024, `(640, 535.694)` at 1280×720, and `(719, 679.915)` at 1438×914 — PASS.
+- Stage 7.0A visual review: both soles rest on the upper platform surface, front-rim overlap is absent, the robot remains centered, buttons do not overlap, and both title lines remain readable at all five viewports — PASS.
+- Stage 7.0A temporary QA markers for the platform contact and feet contact were rendered at the same coordinate, captured, and destroyed before the clean production screenshots; no debug marker exists in production code.
+- Stage 7.0A existing complete Stage 7 flow regression — PASS at 390×844, 768×1024, 1280×720, and 320×568; all Memory, final repair, completion, Play Again, Home, audio, and error checks remain green.
+- Stage 7.0A console errors, page errors, failed requests, and non-OK responses: zero across the focused five-viewport run and the existing full-flow regression.
+- Stage 7.0A evidence: `docs/qa/stage7-0a-victory-grounding-results.json` and `docs/qa/screenshots/stage7-0a-victory-*.png`.
 
 ## FILES CREATED
+
+- `qa/stage7-0a-victory-grounding-playtest.cjs`
+- `docs/qa/stage7-0a-victory-grounding-results.json`
+- `docs/qa/screenshots/stage7-0a-victory-{minimum-320x568,mobile-390x844,tablet-768x1024,desktop-1280x720,desktop-wide-1438x914}.png`
+- `docs/qa/screenshots/stage7-0a-victory-desktop-contact-debug.png`
+- `docs/qa/screenshots/stage7-0a-victory-desktop-feet-close-up.png`
 
 - `src/game/mechanics/memory.ts`
 - `src/game/ui/MemoryTaskCard.ts`
@@ -411,6 +428,9 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## FILES CHANGED
 
+- `src/game/scenes/VictoryScene.ts` — Stage 7.0A maps a measured feet origin to the visible platform upper plane, keeps the shared contact responsive and control-safe, and anchors the completion pulse at the soles.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 7.0A implementation, verification, exact contact coordinates, and evidence.
+
 - `src/game/scenes/GameScene.ts` — routes final Shadow completion into Task 5, coordinates Memory comparison/hint/audio/robot/final-repair behavior, and transitions once to the completion screen after the readable 4/4 state.
 - `src/game/scenes/StartScene.ts` — resets Memory together with the existing full-session reset boundary.
 - `src/game/scenes/VictoryScene.ts` — replaces the unused temporary placeholder with the responsive final completion state and clean Play Again/Home resets.
@@ -520,8 +540,8 @@ main
 
 ## NEXT
 
-User manual final gameplay review of the complete five-task flow and final completion presentation.
+User manual review of the Stage 7.0A VictoryScene platform contact.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 7 Memory and the complete five-task game verified from the production preview. The normal flow reaches and completes all five mechanics; Memory match/mismatch, both hint modes, rapid/same/third/matched-card protection, four distinct shuffled starts, exact 4/5 → 5/5 completion, final robot reaction, completion screen, Play Again, Home, mute, live resize, and 390×844, 768×1024, 1280×720, and 320×568 visual/runtime QA all pass with zero console/page/request/response errors.
+2026-08-29 — Stage 7.0A VictoryScene grounding verified from the production preview. The visible platform upper-plane point and measured robot-feet anchor coincide exactly at 320×568, 390×844, 768×1024, 1280×720, and 1438×914; both soles are on the top surface with no front-rim or button overlap, centered placement, readable titles, and zero console/page/request/response errors. The unchanged complete Stage 7 flow regression also passes.

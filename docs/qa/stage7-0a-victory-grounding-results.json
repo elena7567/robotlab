@@ -1,0 +1,220 @@
+{
+  "matrix": [
+    {
+      "name": "minimum-320x568",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "platformContact": {
+        "x": 160,
+        "y": 408
+      },
+      "feetContact": {
+        "x": 160,
+        "y": 408
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "robot": {
+        "x": 160,
+        "y": 408,
+        "width": 195,
+        "height": 260
+      },
+      "titleReadable": true,
+      "robotCentered": true,
+      "buttonOverlap": false,
+      "controlsInBounds": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contactCoincides": true,
+        "robotCentered": true,
+        "noButtonOverlap": true,
+        "titleReadable": true,
+        "controlsInBounds": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "platformContact": {
+        "x": 195,
+        "y": 627.8427205100957
+      },
+      "feetContact": {
+        "x": 195,
+        "y": 627.8427205100957
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "robot": {
+        "x": 195,
+        "y": 627.8427205100957,
+        "width": 195,
+        "height": 259.99999999999994
+      },
+      "titleReadable": true,
+      "robotCentered": true,
+      "buttonOverlap": false,
+      "controlsInBounds": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contactCoincides": true,
+        "robotCentered": true,
+        "noButtonOverlap": true,
+        "titleReadable": true,
+        "controlsInBounds": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "platformContact": {
+        "x": 384,
+        "y": 761.7428267800212
+      },
+      "feetContact": {
+        "x": 384,
+        "y": 761.7428267800212
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "robot": {
+        "x": 384,
+        "y": 761.7428267800212,
+        "width": 195,
+        "height": 259.99999999999994
+      },
+      "titleReadable": true,
+      "robotCentered": true,
+      "buttonOverlap": false,
+      "controlsInBounds": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contactCoincides": true,
+        "robotCentered": true,
+        "noButtonOverlap": true,
+        "titleReadable": true,
+        "controlsInBounds": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "platformContact": {
+        "x": 640,
+        "y": 535.6937799043062
+      },
+      "feetContact": {
+        "x": 640,
+        "y": 535.6937799043062
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "robot": {
+        "x": 640,
+        "y": 535.6937799043062,
+        "width": 270,
+        "height": 360
+      },
+      "titleReadable": true,
+      "robotCentered": true,
+      "buttonOverlap": false,
+      "controlsInBounds": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contactCoincides": true,
+        "robotCentered": true,
+        "noButtonOverlap": true,
+        "titleReadable": true,
+        "controlsInBounds": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "desktop-wide-1438x914",
+      "viewport": {
+        "width": 1438,
+        "height": 914
+      },
+      "platformContact": {
+        "x": 719,
+        "y": 679.9149840595112
+      },
+      "feetContact": {
+        "x": 719,
+        "y": 679.9149840595112
+      },
+      "delta": {
+        "x": 0,
+        "y": 0
+      },
+      "robot": {
+        "x": 719,
+        "y": 679.9149840595112,
+        "width": 270,
+        "height": 360
+      },
+      "titleReadable": true,
+      "robotCentered": true,
+      "buttonOverlap": false,
+      "controlsInBounds": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contactCoincides": true,
+        "robotCentered": true,
+        "noButtonOverlap": true,
+        "titleReadable": true,
+        "controlsInBounds": true,
+        "consoleClean": true
+      }
+    }
+  ],
+  "failures": []
+}
