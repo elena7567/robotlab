@@ -5,11 +5,12 @@ export interface GameSessionState {
   completedTasks: number;
   readonly assemblyProgress: RobotAssemblyProgress;
   readonly powerActivated: boolean;
+  readonly connectionsCompleted: boolean;
   readonly totalTasks: 10;
   score: number;
 }
 
-type MutableGameSessionState = Omit<GameSessionState, 'assemblyProgress' | 'powerActivated'>;
+type MutableGameSessionState = Omit<GameSessionState, 'assemblyProgress' | 'powerActivated' | 'connectionsCompleted'>;
 
 const createInitialState = (): MutableGameSessionState => ({ currentTask: 1, completedTasks: 0, totalTasks: 10, score: 0 });
 let state: MutableGameSessionState = createInitialState();
@@ -20,6 +21,7 @@ export const sessionState = {
       ...state,
       assemblyProgress: deriveAssemblyProgress(state.completedTasks),
       powerActivated: state.completedTasks >= 6,
+      connectionsCompleted: state.completedTasks >= 7,
     };
   },
   reset(): void { state = createInitialState(); },

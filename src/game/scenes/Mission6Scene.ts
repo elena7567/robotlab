@@ -3,7 +3,7 @@ import { audioManager } from '../audio/AudioManager';
 import { energyMechanic } from '../mechanics/energy';
 import { preferencesState } from '../state/preferencesState';
 import { sessionState } from '../state/sessionState';
-import { addIconControl } from '../ui/controls';
+import { addControl, addIconControl } from '../ui/controls';
 import { EnergyTaskCard } from '../ui/EnergyTaskCard';
 import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
@@ -81,6 +81,16 @@ export class Mission6Scene extends Phaser.Scene {
       },
     }) : undefined;
     let transitionLocked = false;
+    let continueShown = false;
+    const showContinue = (): void => {
+      if (continueShown) return;
+      continueShown = true;
+      const buttonHeight = Math.min(60, Math.max(50, height * 0.075));
+      addControl(this, width / 2, height - layout.safe.bottom - buttonHeight / 2, 'ПРОДОЛЖИТЬ', () => {
+        this.scene.start('Mission7Scene');
+      }, { width: Math.min(270, width - 40), height: buttonHeight, fontSize: Math.min(24, Math.max(17, width * 0.052)) })
+        .setName('mission6-continue');
+    };
     const render = (): void => {
       if (transitionLocked) return;
       transitionLocked = true;
@@ -123,6 +133,7 @@ export class Mission6Scene extends Phaser.Scene {
               if (!this.sys.isActive()) return;
               dialogue?.show('УРА! ЭНЕРГИЯ ЕСТЬ!');
               this.game.registry.set('mission6Complete', true);
+              showContinue();
             });
           });
         } else if (result === 'wrong') {
@@ -133,6 +144,10 @@ export class Mission6Scene extends Phaser.Scene {
         return result;
       },
     });
+    if (state.powerActivated) {
+      this.game.registry.set('mission6Complete', true);
+      showContinue();
+    }
     restartOnViewportResize(this);
     markSceneReady(this);
   }

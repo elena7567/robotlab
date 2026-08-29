@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.1B — Mission 6 Dialogue Collision Fix
+Stage 8.2 — Mission 7: Подключи провода
 
 ## CURRENT STATUS
 
-PASS — Mission 6 dialogue uses collision-safe responsive placement and no longer covers the repaired robot, helper robot, task card, or visible systems panel.
+PASS — Mission 7 provides three responsive, touch-first randomized color-port connection challenges, persists completed wires across resize, records canonical systems completion, and rewards the player with wire, robot, and laboratory pulses.
 
 ## CANONICAL LOCAL URL
 
@@ -26,7 +26,28 @@ LOCKED
 
 ## MISSION 6–10
 
-MISSION 6 IMPLEMENTED; MISSIONS 7–10 DESIGN ONLY / NOT IMPLEMENTED
+MISSIONS 6–7 IMPLEMENTED; MISSIONS 8–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.2 — MISSION 7: ПОДКЛЮЧИ ПРОВОДА
+
+- Mission 6 now exposes one guarded post-activation `ПРОДОЛЖИТЬ` action into Mission 7; the Mission 6 mechanic, answer rules, and power reward are unchanged.
+- Added `connectionsMechanic` outside Phaser scenes with three challenges (3, 4, and 4 ports), non-identity randomized destination order, persistent correct pairs, and idempotent challenge/mission completion.
+- Added a real one-pointer drag/trace interaction. Correct color pairs snap and lock; wrong targets play gentle feedback and retract; empty-space release cancels without wrong audio; completed endpoints cannot be reused.
+- Added curved procedural Graphics wires with color, highlight, glow, clean endpoints, controlled crossings, and a final pulse along all completed wires.
+- Added 48 px minimum effective targets at 320×568 and 64–72 px targets where space permits. CDP touch drags and mouse drags use the same connection boundary.
+- Added `ЗАДАНИЕ 7 ИЗ 10`, `СИСТЕМЫ 2/4` / `СОЕДИНЕНИЯ`, and `ПОДКЛЮЧЕНИЕ 1 ИЗ 3` through `3 ИЗ 3` without reintroducing the stretched task panel.
+- Hint pulses one unmatched source and then its matching target without drawing or completing the wire. Existing hint/correct/wrong/repair audio is reused; no new assets or runtime network dependencies were added.
+- Challenge completion preserves the readable completed board for 900 ms. Final completion derives `connectionsCompleted` from canonical `completedTasks >= 7`, activates persistent robot chest/arm/antenna system lights, pulses the laboratory conduit, and shows the Mission 8-ready completion copy without implementing Mission 8.
+- Live resize rebuilds only presentation objects; destination permutation and completed pair state remain intact. Shutdown removes global pointer listeners and clears any in-flight pointer state.
+- Architecture decision: `docs/decisions/0005-mission7-wire-connections.md`.
+- Stage 8.2 QA: `qa/stage8-2-mission7-playtest.cjs` PASS with `failures: []` at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. It verifies mouse/CDP touch drag, wrong target, empty release, hint, duplicate source, locked endpoints, live resize, randomized layouts, all three challenges, audio, robot systems state, lab reactivity, clean console/network, and a normal Start → Missions 1–7 flow.
+- Missions 1–6 regression: unchanged `qa/stage8-1-mission6-playtest.cjs` PASS at all five required viewports with `failures: []`.
+- Visual evidence: seven required captures under `docs/qa/screenshots/stage8-2-*`, including initial, partial, and completed boards at 390×844; initial, partial, completed, and active robot-pulse states at 1280×720.
+- Verification commands: `npm run build` PASS (49 modules; existing non-blocking chunk-size advisory only); bundled Node + `qa/stage8-2-mission7-playtest.cjs` PASS; bundled Node + `qa/stage8-1-mission6-playtest.cjs` PASS. Restricted-sandbox Vite/Chrome spawn attempts hit the known Windows `EPERM`; approved reruns passed.
+- Files created: `src/game/mechanics/connections.ts`, `src/game/scenes/Mission7Scene.ts`, `src/game/ui/ConnectionTaskCard.ts`, `qa/stage8-2-mission7-playtest.cjs`, `docs/decisions/0005-mission7-wire-connections.md`, `docs/qa/stage8-2-mission7-results.json`, and seven `docs/qa/screenshots/stage8-2-*` images.
+- Files changed: `src/game/config.ts`, `src/game/scenes/Mission6Scene.ts`, `src/game/scenes/StartScene.ts`, `src/game/state/sessionState.ts`, `src/game/ui/RobotAssemblyPreview.ts`, `docs/game-design/SECOND-HALF-DEVELOPMENT-PLAN.md`, `ROBOTLAB-PROJECT-STATUS.md`, and the refreshed Stage 8.1 regression results/screenshots.
+- Files moved or deleted: none.
+- Blockers: none. Ready for manual review.
 
 ## STAGE 8.1B — MISSION 6 DIALOGUE COLLISION FIX
 
@@ -49,7 +70,7 @@ MISSION 6 IMPLEMENTED; MISSIONS 7–10 DESIGN ONLY / NOT IMPLEMENTED
 - Selection uses tap → selected frame → `ПРОВЕРИТЬ`; ordering uses the approved robust tap-order alternative with three numbered slots, large targets, toggle-to-correct before check, and equivalent mouse/touch actions.
 - Correct, wrong, and hint paths use the existing centralized audio manager and `answer-correct.wav`, `answer-wrong.wav`, and `hint.wav`; final activation uses `repair-reward.wav` exactly once.
 - The assembled repaired robot is cool/dim but neutral before activation. At completion it becomes `assembled + powered`: full-colour parts, brighter eyes, chest display, antenna glow, a restrained power pulse, and persistent lit platform conduits. The helper robot artwork/state is not darkened or replaced.
-- Completion is guarded by mechanic result, disabled submit, canonical state idempotency, one power-activation token, and scene shutdown-safe tweens. Mission 7 is not implemented.
+- Completion is guarded by mechanic result, disabled submit, canonical state idempotency, one power-activation token, and scene shutdown-safe tweens. Stage 8.2 now continues from this completed state into Mission 7.
 - Added architecture decision `docs/decisions/0004-mission6-energy-system.md`.
 - Full-flow QA: `qa/stage8-1-mission6-playtest.cjs` completed the real Start → Missions 1–5 → transition → Energy 1/3 → 2/3 → 3/3 → powered flow at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. All five use their intended touch/mouse paths and returned `failures: []`.
 - QA explicitly passed no-selection neutrality, selection change, wrong/reset, hint in all three challenges, wrong-order reset, order correction, duplicate final submit protection, exact audio counts, canonical `completedTasks = 6` / `powerActivated = true`, persistent repaired-robot powered state, platform-conduit activation, in-bounds cards/batteries, >=56 px targets, and zero console/page/request/response errors.

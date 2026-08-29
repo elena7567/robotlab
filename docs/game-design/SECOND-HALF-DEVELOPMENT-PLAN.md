@@ -53,13 +53,13 @@ Exit criteria:
 
 ### 3. Mission 7 — Подключи провода
 
-Implement a reusable port-connection mechanic with semantic `selectSource`, `connect`, and `cancel` actions. Drag/trace is a presentation gesture, not the rule boundary; tap-source/tap-destination must produce the same command. Pair color with shape/symbol so recognition is not color-only.
+Stage 8.2 implements a reusable port-connection mechanic with semantic `connect` and neutral `cancel` actions. Drag/trace is the presentation gesture and releases directly into the same evaluator. The approved Mission 7 brief makes bright socket color and position the primary cues, so this stage does not add text labels, shape symbols, tap-to-connect, or fake ports.
 
 Start with aligned ports, then add crossed layouts from validated content. Wire paths and pulses are disposable view effects derived from completed connections.
 
 Exit criteria:
 
-- drag and tap alternatives share one evaluator;
+- pointer drag resolves through one evaluator and empty-space release remains neutral;
 - pointer capture cannot become stranded after resize or scene shutdown;
 - every port has a minimum 44×44 CSS-pixel hit target;
 - wires remain legible without covering instructions or controls;

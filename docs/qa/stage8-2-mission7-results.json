@@ -1,0 +1,4185 @@
+{
+  "matrix": [
+    {
+      "name": "minimum-320x568",
+      "checks": {
+        "missionCopy": true,
+        "responsive": true,
+        "touchTargets": true,
+        "hint": true,
+        "wrongConnection": true,
+        "emptyRelease": true,
+        "correctConnection": true,
+        "duplicateGuard": true,
+        "liveResize": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 33.28,
+          "y": 139,
+          "width": 253.44000000000003,
+          "height": 332,
+          "right": 286.72,
+          "bottom": 471
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 228.28,
+              "width": 41.44,
+              "height": 41.440000000000026,
+              "right": 74.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 415.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 321.78,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 228.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000026,
+              "right": 286.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 415.28,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 321.78,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": []
+      },
+      "wrong": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 31.85460289001465,
+          "y": 139,
+          "width": 254.86539710998537,
+          "height": 332,
+          "right": 286.72,
+          "bottom": 471
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 31.85460289001465,
+              "y": 226.85460289001466,
+              "width": 44.29079421997071,
+              "height": 44.29079421997071,
+              "right": 76.14539710998535,
+              "bottom": 271.14539710998537
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 415.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 321.78,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 228.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000026,
+              "right": 286.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 415.28,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 321.78,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОПРОБУЙ ЕЩЁ",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "empty": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 29.72628849029541,
+          "y": 139,
+          "width": 259.39219631195067,
+          "height": 332,
+          "right": 289.1184848022461,
+          "bottom": 471
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 29.72628849029541,
+              "y": 224.72628849029542,
+              "width": 48.54742301940917,
+              "height": 48.547423019409166,
+              "right": 78.27371150970458,
+              "bottom": 273.2737115097046
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 242.8815151977539,
+              "y": 412.8815151977539,
+              "width": 46.236969604492174,
+              "height": 46.236969604492174,
+              "right": 289.1184848022461,
+              "bottom": 459.1184848022461
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 321.78,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 228.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000026,
+              "right": 286.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 415.28,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 321.78,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "partial": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 32.40401606559753,
+          "y": 139,
+          "width": 256.31741852760314,
+          "height": 332,
+          "right": 288.7214345932007,
+          "bottom": 471
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 32.40401606559753,
+              "y": 227.40401606559755,
+              "width": 43.19196786880494,
+              "height": 43.19196786880491,
+              "right": 75.59598393440247,
+              "bottom": 270.59598393440245
+            },
+            "hitWidth": 59.2,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 243.27856540679932,
+              "y": 413.2785654067993,
+              "width": 45.44286918640137,
+              "height": 45.44286918640137,
+              "right": 288.7214345932007,
+              "bottom": 458.7214345932007
+            },
+            "hitWidth": 59.2,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 321.78,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 228.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000026,
+              "right": 286.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 415.28,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 321.78,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "duplicate": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 33.28,
+          "y": 139,
+          "width": 256.3474316978454,
+          "height": 332,
+          "right": 289.6274316978454,
+          "bottom": 471
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 228.28,
+              "width": 41.44,
+              "height": 41.440000000000026,
+              "right": 74.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 242.37256830215455,
+              "y": 412.37256830215455,
+              "width": 47.254863395690904,
+              "height": 47.254863395690904,
+              "right": 289.62743169784545,
+              "bottom": 459.62743169784545
+            },
+            "hitWidth": 59.2,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 321.78,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 228.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000026,
+              "right": 286.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 415.28,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 321.78,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "resized": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 33.28,
+          "y": 139,
+          "width": 255.40199584007266,
+          "height": 332,
+          "right": 288.68199584007266,
+          "bottom": 471
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 228.28,
+              "width": 41.44,
+              "height": 41.440000000000026,
+              "right": 74.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 243.31800415992737,
+              "y": 413.31800415992734,
+              "width": 45.36399168014529,
+              "height": 45.36399168014532,
+              "right": 288.68199584007266,
+              "bottom": 458.68199584007266
+            },
+            "hitWidth": 59.2,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 321.78,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 228.28,
+              "width": 41.440000000000026,
+              "height": 41.440000000000026,
+              "right": 286.72,
+              "bottom": 269.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 33.28,
+              "y": 415.28,
+              "width": 41.44,
+              "height": 41.440000000000055,
+              "right": 74.72,
+              "bottom": 456.72
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 245.28,
+              "y": 321.78,
+              "width": 41.440000000000026,
+              "height": 41.440000000000055,
+              "right": 286.72,
+              "bottom": 363.22
+            },
+            "hitWidth": 59.2,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "checks": {
+        "missionCopy": true,
+        "responsive": true,
+        "touchTargets": true,
+        "hint": true,
+        "wrongConnection": true,
+        "emptyRelease": true,
+        "correctConnection": true,
+        "duplicateGuard": true,
+        "liveResize": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 30.450001525878907,
+          "y": 148.64999389648438,
+          "width": 329.1000045776367,
+          "height": 512,
+          "right": 359.5500061035156,
+          "bottom": 660.6499938964844
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 233.4499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 283.84999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 233.4499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 283.84999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 416.9499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 600.4500244140625,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 359.5500061035156,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 600.4500244140625,
+              "width": 50.400000000000006,
+              "height": 50.40000000000009,
+              "right": 80.85000152587891,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 416.9499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": []
+      },
+      "wrong": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 29.603594636917116,
+          "y": 148.64999389648438,
+          "width": 329.9464114665985,
+          "height": 512,
+          "right": 359.5500061035156,
+          "bottom": 660.6499938964844
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 29.603594636917116,
+              "y": 232.60358700752258,
+              "width": 52.09281377792359,
+              "height": 52.09281377792357,
+              "right": 81.6964084148407,
+              "bottom": 284.69640078544614
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 233.4499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 283.84999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 416.9499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 600.4500244140625,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 359.5500061035156,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 600.4500244140625,
+              "width": 50.400000000000006,
+              "height": 50.40000000000009,
+              "right": 80.85000152587891,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 416.9499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОПРОБУЙ ЕЩЁ",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "empty": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 25.43540577888489,
+          "y": 148.64999389648438,
+          "width": 336.93497829437257,
+          "height": 512,
+          "right": 362.37038407325747,
+          "bottom": 660.6499938964844
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 25.43540577888489,
+              "y": 228.43539814949037,
+              "width": 60.42919149398804,
+              "height": 60.429191493988014,
+              "right": 85.86459727287293,
+              "bottom": 288.8645896434784
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 306.3296281337738,
+              "y": 230.62961592674256,
+              "width": 56.04075593948369,
+              "height": 56.04075593948366,
+              "right": 362.37038407325747,
+              "bottom": 286.6703718662262
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 416.9499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 600.4500244140625,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 359.5500061035156,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 600.4500244140625,
+              "width": 50.400000000000006,
+              "height": 50.40000000000009,
+              "right": 80.85000152587891,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 416.9499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "partial": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 30.389427375793456,
+          "y": 148.64999389648438,
+          "width": 330.7610803127289,
+          "height": 512,
+          "right": 361.15050768852234,
+          "bottom": 660.6499938964844
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 30.389427375793456,
+              "y": 233.38941974639891,
+              "width": 50.52114830017089,
+              "height": 50.52114830017092,
+              "right": 80.91057567596435,
+              "bottom": 283.91056804656984
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 307.5495045185089,
+              "y": 231.84949231147766,
+              "width": 53.60100317001343,
+              "height": 53.60100317001343,
+              "right": 361.15050768852234,
+              "bottom": 285.4504954814911
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 416.9499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 600.4500244140625,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 359.5500061035156,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 600.4500244140625,
+              "width": 50.400000000000006,
+              "height": 50.40000000000009,
+              "right": 80.85000152587891,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 416.9499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "duplicate": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 30.450001525878907,
+          "y": 148.64999389648438,
+          "width": 334.49298148155214,
+          "height": 512,
+          "right": 364.94298300743105,
+          "bottom": 660.6499938964844
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 233.4499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 283.84999389648436
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 303.7570291996002,
+              "y": 228.05701699256898,
+              "width": 61.185953807830856,
+              "height": 61.18595380783083,
+              "right": 364.94298300743105,
+              "bottom": 289.2429708003998
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 416.9499938964844,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 600.4500244140625,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 359.5500061035156,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 30.450001525878907,
+              "y": 600.4500244140625,
+              "width": 50.400000000000006,
+              "height": 50.40000000000009,
+              "right": 80.85000152587891,
+              "bottom": 650.8500244140625
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 309.15000610351564,
+              "y": 416.9499938964844,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 359.5500061035156,
+              "bottom": 467.34999389648436
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "resized": {
+        "viewport": {
+          "width": 391,
+          "height": 844
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 30.485001373291016,
+          "y": 148.68499755859375,
+          "width": 330.0300010681152,
+          "height": 512,
+          "right": 360.51500244140624,
+          "bottom": 660.6849975585938
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 30.485001373291016,
+              "y": 233.48499755859376,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.88500137329102,
+              "bottom": 283.88499755859374
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 310.11500244140626,
+              "y": 233.48499755859376,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 360.51500244140624,
+              "bottom": 283.88499755859374
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 30.485001373291016,
+              "y": 416.98499755859376,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.88500137329102,
+              "bottom": 467.38499755859374
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 310.11500244140626,
+              "y": 600.4849975585937,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 360.51500244140624,
+              "bottom": 650.8849975585938
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 30.485001373291016,
+              "y": 600.4849975585937,
+              "width": 50.400000000000006,
+              "height": 50.40000000000009,
+              "right": 80.88500137329102,
+              "bottom": 650.8849975585938
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 310.11500244140626,
+              "y": 416.98499755859376,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 360.51500244140624,
+              "bottom": 467.38499755859374
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "checks": {
+        "missionCopy": true,
+        "responsive": true,
+        "touchTargets": true,
+        "hint": true,
+        "wrongConnection": true,
+        "emptyRelease": true,
+        "correctConnection": true,
+        "duplicateGuard": true,
+        "liveResize": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 113.90000610351562,
+          "y": 159.3800048828125,
+          "width": 540.200018310547,
+          "height": 516.5,
+          "right": 654.1000244140625,
+          "bottom": 675.8800048828125
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 246.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 430.1800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 430.1800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 613.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 654.1000244140625,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 613.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.40000000000009,
+              "right": 164.3000061035156,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 246.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": []
+      },
+      "wrong": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 112.79623718261719,
+          "y": 159.3800048828125,
+          "width": 541.3037872314453,
+          "height": 516.5,
+          "right": 654.1000244140625,
+          "bottom": 675.8800048828125
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 112.79623718261719,
+              "y": 245.57623596191405,
+              "width": 52.60753784179688,
+              "height": 52.6075378417969,
+              "right": 165.40377502441407,
+              "bottom": 298.18377380371095
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 430.1800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 430.1800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 613.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 654.1000244140625,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 613.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.40000000000009,
+              "right": 164.3000061035156,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 246.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОПРОБУЙ ЕЩЁ",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "empty": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 108.42705173492432,
+          "y": 159.3800048828125,
+          "width": 549.3474479675292,
+          "height": 516.5,
+          "right": 657.7744997024536,
+          "bottom": 675.8800048828125
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 108.42705173492432,
+              "y": 241.20705051422118,
+              "width": 61.345908737182626,
+              "height": 61.34590873718264,
+              "right": 169.77296047210694,
+              "bottom": 302.5529592514038
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 600.0255491256714,
+              "y": 426.5055295944214,
+              "width": 57.748950576782136,
+              "height": 57.74895057678225,
+              "right": 657.7744997024536,
+              "bottom": 484.2544801712036
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 430.1800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 613.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 654.1000244140625,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 613.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.40000000000009,
+              "right": 164.3000061035156,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 246.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "partial": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 113.90000610351562,
+          "y": 159.3800048828125,
+          "width": 540.8799634456635,
+          "height": 516.5,
+          "right": 654.7799695491791,
+          "bottom": 675.8800048828125
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 246.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 603.0200792789459,
+              "y": 429.5000597476959,
+              "width": 51.7598902702332,
+              "height": 51.7598902702332,
+              "right": 654.7799695491791,
+              "bottom": 481.2599500179291
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 430.1800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 613.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 654.1000244140625,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 613.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.40000000000009,
+              "right": 164.3000061035156,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 246.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "duplicate": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 113.90000610351562,
+          "y": 159.3800048828125,
+          "width": 545.463474559784,
+          "height": 516.5,
+          "right": 659.3634806632996,
+          "bottom": 675.8800048828125
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 246.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 598.4365681648254,
+              "y": 424.9165486335754,
+              "width": 60.92691249847417,
+              "height": 60.92691249847417,
+              "right": 659.3634806632996,
+              "bottom": 485.8434611320496
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 430.1800048828125,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 164.3000061035156,
+              "bottom": 480.5800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 613.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 654.1000244140625,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 113.90000610351562,
+              "y": 613.6800048828125,
+              "width": 50.39999999999999,
+              "height": 50.40000000000009,
+              "right": 164.3000061035156,
+              "bottom": 664.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 603.7000244140625,
+              "y": 246.6800048828125,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 654.1000244140625,
+              "bottom": 297.0800048828125
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "resized": {
+        "viewport": {
+          "width": 767,
+          "height": 1024
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 113.40000610351562,
+          "y": 159.34500122070312,
+          "width": 540.200018310547,
+          "height": 516.5,
+          "right": 653.6000244140625,
+          "bottom": 675.8450012207031
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 113.40000610351562,
+              "y": 246.64500122070314,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 163.8000061035156,
+              "bottom": 297.0450012207031
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 603.2000244140625,
+              "y": 430.14500122070314,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 653.6000244140625,
+              "bottom": 480.5450012207031
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 113.40000610351562,
+              "y": 430.14500122070314,
+              "width": 50.39999999999999,
+              "height": 50.39999999999998,
+              "right": 163.8000061035156,
+              "bottom": 480.5450012207031
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 603.2000244140625,
+              "y": 613.644970703125,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 653.6000244140625,
+              "bottom": 664.044970703125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 113.40000610351562,
+              "y": 613.644970703125,
+              "width": 50.39999999999999,
+              "height": 50.40000000000009,
+              "right": 163.8000061035156,
+              "bottom": 664.044970703125
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 603.2000244140625,
+              "y": 246.64500122070314,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 653.6000244140625,
+              "bottom": 297.0450012207031
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "checks": {
+        "missionCopy": true,
+        "responsive": true,
+        "touchTargets": true,
+        "hint": true,
+        "wrongConnection": true,
+        "emptyRelease": true,
+        "correctConnection": true,
+        "duplicateGuard": true,
+        "liveResize": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 274.0640075683594,
+          "y": 139.6999969482422,
+          "width": 616.6720031738282,
+          "height": 472.0999999999999,
+          "right": 890.7360107421875,
+          "bottom": 611.7999969482421
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "red",
+          "green"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 226.9999969482422,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 388.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 388.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 226.9999969482422,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 549.5999877929687,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 324.46400756835936,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 549.5999877929687,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 890.7360107421875,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": []
+      },
+      "wrong": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 271.6298303604126,
+          "y": 139.6999969482422,
+          "width": 619.106180381775,
+          "height": 472.0999999999999,
+          "right": 890.7360107421875,
+          "bottom": 611.7999969482421
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "red",
+          "green"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 271.6298303604126,
+              "y": 224.5658197402954,
+              "width": 55.268354415893555,
+              "height": 55.268354415893555,
+              "right": 326.89818477630615,
+              "bottom": 279.83417415618896
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 388.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 388.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 226.9999969482422,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 549.5999877929687,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 324.46400756835936,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 549.5999877929687,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 890.7360107421875,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОПРОБУЙ ЕЩЁ",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "empty": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 271.34038481712344,
+          "y": 139.6999969482422,
+          "width": 620.0133777141571,
+          "height": 472.0999999999999,
+          "right": 891.3537625312805,
+          "bottom": 611.7999969482421
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "red",
+          "green"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 271.34038481712344,
+              "y": 224.27637419700622,
+              "width": 55.84724550247188,
+              "height": 55.84724550247191,
+              "right": 327.1876303195953,
+              "bottom": 280.1236196994781
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 839.7182589530945,
+              "y": 387.682248210907,
+              "width": 51.63550357818599,
+              "height": 51.63550357818599,
+              "right": 891.3537625312805,
+              "bottom": 439.317751789093
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 388.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 226.9999969482422,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 549.5999877929687,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 324.46400756835936,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 549.5999877929687,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 890.7360107421875,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "partial": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 271.6777964115143,
+          "y": 139.6999969482422,
+          "width": 623.6850441932679,
+          "height": 472.0999999999999,
+          "right": 895.3628406047821,
+          "bottom": 611.7999969482421
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "red",
+          "green"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 271.6777964115143,
+              "y": 224.6137857913971,
+              "width": 55.17242231369016,
+              "height": 55.17242231369016,
+              "right": 326.85021872520446,
+              "bottom": 279.78620810508727
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 835.7091808795929,
+              "y": 383.6731701374054,
+              "width": 59.6536597251893,
+              "height": 59.653659725189186,
+              "right": 895.3628406047821,
+              "bottom": 443.3268298625946
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 388.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 226.9999969482422,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 549.5999877929687,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 324.46400756835936,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 549.5999877929687,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 890.7360107421875,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "duplicate": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 274.0640075683594,
+          "y": 139.6999969482422,
+          "width": 619.2024068832397,
+          "height": 472.0999999999999,
+          "right": 893.2664144515991,
+          "bottom": 611.7999969482421
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "red",
+          "green"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 226.9999969482422,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 837.8056070327759,
+              "y": 385.76959629058837,
+              "width": 55.46080741882315,
+              "height": 55.460807418823265,
+              "right": 893.2664144515991,
+              "bottom": 441.23040370941163
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 388.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.46400756835936,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 226.9999969482422,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.7360107421875,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 274.0640075683594,
+              "y": 549.5999877929687,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 324.46400756835936,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 840.3360107421875,
+              "y": 549.5999877929687,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 890.7360107421875,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "resized": {
+        "viewport": {
+          "width": 1279,
+          "height": 720
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 273.83021240234376,
+          "y": 139.6999969482422,
+          "width": 616.2295898437501,
+          "height": 472.0999999999999,
+          "right": 890.0598022460938,
+          "bottom": 611.7999969482421
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "red",
+          "green"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 273.83021240234376,
+              "y": 226.9999969482422,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.23021240234374,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 839.6598022460937,
+              "y": 388.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.0598022460938,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 273.83021240234376,
+              "y": 388.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 324.23021240234374,
+              "bottom": 438.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 839.6598022460937,
+              "y": 226.9999969482422,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 890.0598022460938,
+              "bottom": 277.3999969482422
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 273.83021240234376,
+              "y": 549.5999877929687,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 324.23021240234374,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 839.6598022460937,
+              "y": 549.5999877929687,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 890.0598022460938,
+              "bottom": 599.9999877929688
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      }
+    },
+    {
+      "name": "wide-1438x914",
+      "checks": {
+        "missionCopy": true,
+        "responsive": true,
+        "touchTargets": true,
+        "hint": true,
+        "wrongConnection": true,
+        "emptyRelease": true,
+        "correctConnection": true,
+        "duplicateGuard": true,
+        "liveResize": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 344.6900146484375,
+          "y": 148.5,
+          "width": 619.2000488281251,
+          "height": 496.5,
+          "right": 963.8900634765625,
+          "bottom": 645
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 235.8,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 235.8,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 409.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 582.8,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 963.8900634765625,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 582.8,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 395.0900146484375,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 409.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": []
+      },
+      "wrong": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 343.46809849739077,
+          "y": 148.5,
+          "width": 620.4219649791718,
+          "height": 496.5,
+          "right": 963.8900634765625,
+          "bottom": 645
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 343.46809849739077,
+              "y": 234.57808384895324,
+              "width": 52.84383230209346,
+              "height": 52.84383230209349,
+              "right": 396.31193079948423,
+              "bottom": 287.42191615104673
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 235.8,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 409.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 582.8,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 963.8900634765625,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 582.8,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 395.0900146484375,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 409.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОПРОБУЙ ЕЩЁ",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "empty": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 339.2170602798462,
+          "y": 148.5,
+          "width": 628.3015972614289,
+          "height": 496.5,
+          "right": 967.5186575412752,
+          "bottom": 645
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 339.2170602798462,
+              "y": 230.32704563140868,
+              "width": 61.34590873718264,
+              "height": 61.34590873718264,
+              "right": 400.5629690170288,
+              "bottom": 291.6729543685913
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 909.86146941185,
+              "y": 232.17140593528748,
+              "width": 57.657188129425094,
+              "height": 57.657188129425066,
+              "right": 967.518657541275,
+              "bottom": 289.82859406471255
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 409.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 582.8,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 963.8900634765625,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 582.8,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 395.0900146484375,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 409.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 279,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong"
+        ]
+      },
+      "partial": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 344.6900146484375,
+          "y": 148.5,
+          "width": 620.5443629741669,
+          "height": 496.5,
+          "right": 965.2343776226044,
+          "bottom": 645
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 235.8,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 912.1457493305206,
+              "y": 234.45568585395813,
+              "width": 53.08862829208374,
+              "height": 53.08862829208374,
+              "right": 965.2343776226044,
+              "bottom": 287.54431414604187
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 409.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 582.8,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 963.8900634765625,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 582.8,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 395.0900146484375,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 409.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "duplicate": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 344.6900146484375,
+          "y": 148.5,
+          "width": 624.6229252815247,
+          "height": 496.5,
+          "right": 969.3129399299621,
+          "bottom": 645
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 235.8,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 908.0671870231629,
+              "y": 230.37712354660033,
+              "width": 61.245752906799225,
+              "height": 61.24575290679934,
+              "right": 969.3129399299621,
+              "bottom": 291.62287645339967
+            },
+            "hitWidth": 72,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 409.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 395.0900146484375,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 582.8,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 963.8900634765625,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 344.6900146484375,
+              "y": 582.8,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 395.0900146484375,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 913.4900634765625,
+              "y": 409.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.8900634765625,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "ПОДКЛЮЧЕНО!",
+        "temporaryCommands": 0,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      },
+      "resized": {
+        "viewport": {
+          "width": 1437,
+          "height": 914
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false
+        },
+        "mission7Complete": false,
+        "cardBounds": {
+          "x": 344.23499755859376,
+          "y": 148.5,
+          "width": 619.1999877929688,
+          "height": 496.5,
+          "right": 963.4349853515625,
+          "bottom": 645
+        },
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "connected": [
+          "red"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 344.23499755859376,
+              "y": 235.8,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 394.63499755859374,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 913.0349853515625,
+              "y": 235.8,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.4349853515625,
+              "bottom": 286.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 344.23499755859376,
+              "y": 409.3,
+              "width": 50.39999999999998,
+              "height": 50.39999999999998,
+              "right": 394.63499755859374,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 913.0349853515625,
+              "y": 582.8,
+              "width": 50.40000000000009,
+              "height": 50.40000000000009,
+              "right": 963.4349853515625,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 344.23499755859376,
+              "y": 582.8,
+              "width": 50.39999999999998,
+              "height": 50.40000000000009,
+              "right": 394.63499755859374,
+              "bottom": 633.2
+            },
+            "hitWidth": 72,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 913.0349853515625,
+              "y": 409.3,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 963.4349853515625,
+              "bottom": 459.7
+            },
+            "hitWidth": 72,
+            "locked": false
+          }
+        ],
+        "feedback": "",
+        "temporaryCommands": 7,
+        "completionVisible": false,
+        "robotConnected": false,
+        "lifecycle": "powered",
+        "labActive": false,
+        "audio": [
+          "audio-ui-click",
+          "audio-hint",
+          "audio-answer-wrong",
+          "audio-answer-correct"
+        ]
+      }
+    }
+  ],
+  "flow": {
+    "checks": {
+      "mission6Transition": true,
+      "challenge1": true,
+      "challenge2": true,
+      "challenge3": true,
+      "randomization": true,
+      "completion": true,
+      "robotSystems": true,
+      "labReactivity": true,
+      "audio": true,
+      "errors": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "layouts": [
+      [
+        "blue",
+        "green",
+        "red"
+      ],
+      [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      [
+        "blue",
+        "red",
+        "green",
+        "yellow"
+      ]
+    ],
+    "complete": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "session": {
+        "currentTask": 8,
+        "completedTasks": 7,
+        "totalTasks": 10,
+        "score": 7,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true
+      },
+      "mission7Complete": true,
+      "cardBounds": {
+        "x": 274.0640075683594,
+        "y": 139.6999969482422,
+        "width": 616.6720031738282,
+        "height": 478.2999908447266,
+        "right": 890.7360107421875,
+        "bottom": 617.9999877929688
+      },
+      "challengeIndex": 2,
+      "destinationOrder": [
+        "blue",
+        "red",
+        "green",
+        "yellow"
+      ],
+      "connected": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "bounds": {
+            "x": 274.0640075683594,
+            "y": 226.9999969482422,
+            "width": 50.39999999999998,
+            "height": 50.39999999999998,
+            "right": 324.46400756835936,
+            "bottom": 277.3999969482422
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "bounds": {
+            "x": 840.3360107421875,
+            "y": 334.53333740234376,
+            "width": 50.40000000000009,
+            "height": 50.39999999999998,
+            "right": 890.7360107421875,
+            "bottom": 384.93333740234374
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "bounds": {
+            "x": 274.0640075683594,
+            "y": 352.53333740234376,
+            "width": 50.39999999999998,
+            "height": 50.39999999999998,
+            "right": 324.46400756835936,
+            "bottom": 402.93333740234374
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "bounds": {
+            "x": 840.3360107421875,
+            "y": 245.00001220703126,
+            "width": 50.40000000000009,
+            "height": 50.39999999999998,
+            "right": 890.7360107421875,
+            "bottom": 295.40001220703124
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "bounds": {
+            "x": 274.0640075683594,
+            "y": 442.06666259765626,
+            "width": 50.39999999999998,
+            "height": 50.39999999999998,
+            "right": 324.46400756835936,
+            "bottom": 492.46666259765624
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "bounds": {
+            "x": 840.3360107421875,
+            "y": 460.06666259765626,
+            "width": 50.40000000000009,
+            "height": 50.39999999999998,
+            "right": 890.7360107421875,
+            "bottom": 510.46666259765624
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "yellow",
+          "side": "source",
+          "bounds": {
+            "x": 274.0640075683594,
+            "y": 567.5999877929687,
+            "width": 50.39999999999998,
+            "height": 50.40000000000009,
+            "right": 324.46400756835936,
+            "bottom": 617.9999877929688
+          },
+          "hitWidth": 72,
+          "locked": true
+        },
+        {
+          "color": "yellow",
+          "side": "target",
+          "bounds": {
+            "x": 840.3360107421875,
+            "y": 549.5999877929687,
+            "width": 50.40000000000009,
+            "height": 50.40000000000009,
+            "right": 890.7360107421875,
+            "bottom": 599.9999877929688
+          },
+          "hitWidth": 72,
+          "locked": true
+        }
+      ],
+      "feedback": "ПОДКЛЮЧЕНО!",
+      "temporaryCommands": 0,
+      "completionVisible": true,
+      "robotConnected": true,
+      "lifecycle": "systems-connected",
+      "labActive": true,
+      "audio": [
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-answer-correct",
+        "audio-repair-reward"
+      ]
+    }
+  },
+  "failures": []
+}

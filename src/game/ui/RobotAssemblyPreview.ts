@@ -50,6 +50,7 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
   private readonly installedParts = new Map<AssemblyPartName, Phaser.GameObjects.Image>();
   private assemblyState: RobotAssemblyState = 0;
   private readonly powerVisuals: Phaser.GameObjects.GameObject[] = [];
+  private readonly systemVisuals: Phaser.GameObjects.Shape[] = [];
 
   constructor(
     scene: Phaser.Scene,
@@ -78,7 +79,9 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
 
     this.setAssemblyState(state);
     this.createPowerVisuals();
+    this.createSystemVisuals();
     this.setPowered(false);
+    this.setSystemsConnected(false);
     this.setData({
       previewScale,
       helperScale: HELPER_ROBOT_CANONICAL_SCALE,
@@ -138,6 +141,32 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
       ease: 'Sine.easeOut',
     });
     if (pulse.active) pulse.destroy();
+  }
+
+  setSystemsConnected(connected: boolean): void {
+    for (const visual of this.systemVisuals) visual.setAlpha(connected ? Number(visual.getData('connectedAlpha')) : 0.02);
+    this.setData({ systemsConnected: connected, lifecycleState: connected ? 'systems-connected' : (this.getData('powered') ? 'powered' : 'assembled') });
+  }
+
+  async playSystemsConnection(reducedMotion = false): Promise<void> {
+    this.setPowered(true);
+    this.setSystemsConnected(true);
+    this.setData('systemsPulseActive', true);
+    const pulse = this.scene.add.ellipse(0, -690, 760, 1160, 0xa8ffcf, 0)
+      .setName('robot-systems-pulse').setBlendMode(Phaser.BlendModes.ADD);
+    this.addAt(pulse, 0);
+    await this.runTween({
+      targets: [pulse, ...this.systemVisuals],
+      alpha: { from: 0.12, to: 0.88 },
+      scaleX: { from: 0.9, to: 1.06 },
+      scaleY: { from: 0.9, to: 1.06 },
+      duration: reducedMotion ? 180 : 520,
+      yoyo: true,
+      ease: 'Sine.easeInOut',
+    });
+    if (pulse.active) pulse.destroy();
+    this.setSystemsConnected(true);
+    this.setData('systemsPulseActive', false);
   }
 
   async playInstall(
@@ -251,5 +280,17 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
     addPowerVisual(this.scene.add.circle(-62, -1004, 25, 0xa8fbff).setName('robot-eye-left'), 0.12, 0.96);
     addPowerVisual(this.scene.add.circle(62, -1004, 25, 0xa8fbff).setName('robot-eye-right'), 0.12, 0.96);
     addPowerVisual(this.scene.add.circle(0, -1234, 46, 0xffef83).setName('robot-antenna-glow'), 0.025, 0.85);
+  }
+
+  private createSystemVisuals(): void {
+    const add = (visual: Phaser.GameObjects.Shape, connectedAlpha: number): void => {
+      visual.setData('connectedAlpha', connectedAlpha).setBlendMode(Phaser.BlendModes.ADD);
+      this.add(visual);
+      this.systemVisuals.push(visual);
+    };
+    add(this.scene.add.circle(0, -650, 34, 0x8affb3).setName('robot-system-chest-light'), 0.92);
+    add(this.scene.add.circle(-244, -572, 25, 0x77f3ff).setName('robot-system-arm-left-light'), 0.78);
+    add(this.scene.add.circle(244, -572, 25, 0x77f3ff).setName('robot-system-arm-right-light'), 0.78);
+    add(this.scene.add.circle(0, -1228, 58, 0xb8ffcb).setName('robot-system-antenna-pulse'), 0.62);
   }
 }

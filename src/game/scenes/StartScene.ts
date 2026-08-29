@@ -14,6 +14,7 @@ import { memoryMechanic } from '../mechanics/memory';
 import { LOGICAL_SCENE_WIDTH, PLATFORM_CENTER_X, PLATFORM_CONTACT_Y } from '../ui/sceneLayout';
 import { audioManager } from '../audio/AudioManager';
 import { energyMechanic } from '../mechanics/energy';
+import { connectionsMechanic } from '../mechanics/connections';
 
 const COMPLETE_ROBOT_SOURCE_HEIGHT = 1448;
 const COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX = 25;
@@ -85,6 +86,7 @@ export class StartScene extends Phaser.Scene {
       shadowMatchingMechanic.reset();
       memoryMechanic.reset();
       energyMechanic.reset();
+      connectionsMechanic.reset();
       this.scene.start('GameScene');
     }, {
       width: startLayout.playWidth,
