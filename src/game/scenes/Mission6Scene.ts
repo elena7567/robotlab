@@ -74,7 +74,12 @@ export class Mission6Scene extends Phaser.Scene {
     const energyLabel = this.add.text(0, 18, 'ЭНЕРГИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: `${portrait ? 12 : 14}px`, fontStyle: 'bold' }).setOrigin(0.5);
     systems.add([systemsBody, systemsLabel, energyLabel]);
 
-    const dialogue = helper ? new RobotDialogue(this, helper, layout) : undefined;
+    const dialogue = helper ? new RobotDialogue(this, helper, layout, {
+      placement: 'above-robot',
+      onVisibilityChange: (visible) => {
+        if (portrait) systems.setVisible(!visible);
+      },
+    }) : undefined;
     let transitionLocked = false;
     const render = (): void => {
       if (transitionLocked) return;

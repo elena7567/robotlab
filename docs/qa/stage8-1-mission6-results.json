@@ -8,6 +8,7 @@
         "energy1": true,
         "noSelectionSafe": true,
         "wrongReset": true,
+        "dialogueSafe": true,
         "hint": true,
         "energy2": true,
         "ordering": true,
@@ -46,6 +47,12 @@
           "title": "РОБОТ СОБРАН!",
           "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
           "cardBounds": null,
+          "helperBounds": null,
+          "repairedBounds": null,
+          "dialogueBounds": null,
+          "dialogueVisible": false,
+          "systemsBounds": null,
+          "systemsVisible": false,
           "batteryTargets": [],
           "powered": false,
           "conduitsActive": false,
@@ -123,6 +130,40 @@
             "right": 269.8666717529297,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.6837363902557,
+            "width": 96.54710636391327,
+            "height": 99.88193588574052,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 160,
+            "y": 100,
+            "width": 0,
+            "height": 16,
+            "right": 160,
+            "bottom": 116
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ЭНЕРГИЯ 1 ИЗ 3",
           "challengeIndex": 0,
@@ -198,6 +239,40 @@
             "right": 269.8666717529297,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.6652878656595,
+            "width": 96.54710636391327,
+            "height": 99.90038441033676,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 160,
+            "y": 100,
+            "width": 0,
+            "height": 16,
+            "right": 160,
+            "bottom": 116
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ВЫБЕРИ БАТАРЕЮ",
           "challengeIndex": 0,
@@ -275,6 +350,40 @@
             "right": 269.8666717529297,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.7178334285728,
+            "width": 96.54710636391327,
+            "height": 99.84783884742342,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 101.99807327985764,
+            "y": 90.99755948781967,
+            "width": 115.98510003089905,
+            "height": 33.99563276767731,
+            "right": 217.98317331075668,
+            "bottom": 124.99319225549698
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": false,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 0,
@@ -354,6 +463,40 @@
             "right": 269.8666717529297,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.6897451699178,
+            "width": 96.54710636391327,
+            "height": 99.87592710607845,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 160,
+            "y": 100,
+            "width": 0,
+            "height": 16,
+            "right": 160,
+            "bottom": 116
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
           "progress": "ЭНЕРГИЯ 2 ИЗ 3",
           "challengeIndex": 1,
@@ -437,6 +580,40 @@
             "right": 267,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.6899813691676,
+            "width": 96.54710636391327,
+            "height": 99.87569090682865,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 160,
+            "y": 100,
+            "width": 0,
+            "height": 16,
+            "right": 160,
+            "bottom": 116
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ЭНЕРГИЯ 3 ИЗ 3",
           "challengeIndex": 2,
@@ -524,6 +701,40 @@
             "right": 267,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.7260889938559,
+            "width": 96.54710636391327,
+            "height": 99.83958328214032,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 106,
+            "y": 100,
+            "width": 108,
+            "height": 16,
+            "right": 214,
+            "bottom": 116
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": false,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 2,
@@ -613,6 +824,40 @@
             "right": 267,
             "bottom": 395.2121276855469
           },
+          "helperBounds": {
+            "x": 61.066510685833194,
+            "y": 465.4298592427312,
+            "width": 96.54710636391327,
+            "height": 100.13581303326504,
+            "right": 157.61361704974647,
+            "bottom": 565.5656722759962
+          },
+          "repairedBounds": {
+            "x": 161.57932806864568,
+            "y": 465.69431248423996,
+            "width": 96.54710636391331,
+            "height": 99.87135979175628,
+            "right": 258.126434432559,
+            "bottom": 565.5656722759962
+          },
+          "dialogueBounds": {
+            "x": 108.14999994635582,
+            "y": 89.85999995470047,
+            "width": 94.93999975919724,
+            "height": 31.959999918937683,
+            "right": 203.08999970555305,
+            "bottom": 121.81999987363815
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 113.5,
+            "y": 79,
+            "width": 93,
+            "height": 40,
+            "right": 206.5,
+            "bottom": 119
+          },
+          "systemsVisible": false,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ОТЛИЧНО!",
           "challengeIndex": 2,
@@ -694,6 +939,7 @@
         "energy1": true,
         "noSelectionSafe": true,
         "wrongReset": true,
+        "dialogueSafe": true,
         "hint": true,
         "energy2": true,
         "ordering": true,
@@ -732,6 +978,12 @@
           "title": "РОБОТ СОБРАН!",
           "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
           "cardBounds": null,
+          "helperBounds": null,
+          "repairedBounds": null,
+          "dialogueBounds": null,
+          "dialogueVisible": false,
+          "systemsBounds": null,
+          "systemsVisible": false,
           "batteryTargets": [],
           "powered": false,
           "conduitsActive": false,
@@ -809,6 +1061,40 @@
             "right": 336.51900390625,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 686.31946924471,
+            "width": 150.4591731219021,
+            "height": 155.65471060635707,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 195,
+            "y": 117.97799987792969,
+            "width": 0,
+            "height": 15.999999999999986,
+            "right": 195,
+            "bottom": 133.97799987792968
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ЭНЕРГИЯ 1 ИЗ 3",
           "challengeIndex": 0,
@@ -884,6 +1170,40 @@
             "right": 336.51900390625,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 686.2566597822344,
+            "width": 150.4591731219021,
+            "height": 155.71752006883275,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 195,
+            "y": 117.97799987792969,
+            "width": 0,
+            "height": 15.999999999999986,
+            "right": 195,
+            "bottom": 133.97799987792968
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ВЫБЕРИ БАТАРЕЮ",
           "challengeIndex": 0,
@@ -961,6 +1281,40 @@
             "right": 336.51900390625,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 686.3759505584133,
+            "width": 150.4591731219021,
+            "height": 155.59822929265385,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 135.49941907823086,
+            "y": 108.97748167514801,
+            "width": 118.99755293130875,
+            "height": 33.99930083751677,
+            "right": 254.4969720095396,
+            "bottom": 142.97678251266478
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": false,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 0,
@@ -1040,6 +1394,40 @@
             "right": 336.51900390625,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 686.3298416295116,
+            "width": 150.4591731219021,
+            "height": 155.64433822155547,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 195,
+            "y": 117.97799987792969,
+            "width": 0,
+            "height": 15.999999999999986,
+            "right": 195,
+            "bottom": 133.97799987792968
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
           "progress": "ЭНЕРГИЯ 2 ИЗ 3",
           "challengeIndex": 1,
@@ -1123,6 +1511,40 @@
             "right": 336.51900390625,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 686.3239261608417,
+            "width": 150.4591731219021,
+            "height": 155.65025369022544,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 195,
+            "y": 117.97799987792969,
+            "width": 0,
+            "height": 15.999999999999986,
+            "right": 195,
+            "bottom": 133.97799987792968
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ЭНЕРГИЯ 3 ИЗ 3",
           "challengeIndex": 2,
@@ -1210,6 +1632,40 @@
             "right": 336.51900390625,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 686.3759505584133,
+            "width": 150.4591731219021,
+            "height": 155.59822929265385,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 139.49933682382107,
+            "y": 117.97729660272599,
+            "width": 110.99771744012833,
+            "height": 15.999670982360826,
+            "right": 250.4970542639494,
+            "bottom": 133.9769675850868
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": false,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 2,
@@ -1299,6 +1755,40 @@
             "right": 338.2614022445679,
             "bottom": 562.2747802734375
           },
+          "helperBounds": {
+            "x": 40.82189159438262,
+            "y": 685.918324279694,
+            "width": 150.4591731219021,
+            "height": 156.05585557137306,
+            "right": 191.28106471628473,
+            "bottom": 841.9741798510671
+          },
+          "repairedBounds": {
+            "x": 197.46122722670685,
+            "y": 686.3344845898929,
+            "width": 150.4591731219021,
+            "height": 155.6396952611742,
+            "right": 347.92040034860895,
+            "bottom": 841.9741798510671
+          },
+          "dialogueBounds": {
+            "x": 121.58499996364117,
+            "y": 115.92599979639053,
+            "width": 136.29999965429306,
+            "height": 15.039999961853027,
+            "right": 257.8849996179342,
+            "bottom": 130.96599975824356
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 148.5,
+            "y": 90.77799987792969,
+            "width": 93,
+            "height": 40,
+            "right": 241.5,
+            "bottom": 130.7779998779297
+          },
+          "systemsVisible": false,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ОТЛИЧНО!",
           "challengeIndex": 2,
@@ -1380,6 +1870,7 @@
         "energy1": true,
         "noSelectionSafe": true,
         "wrongReset": true,
+        "dialogueSafe": true,
         "hint": true,
         "energy2": true,
         "ordering": true,
@@ -1418,6 +1909,12 @@
           "title": "РОБОТ СОБРАН!",
           "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
           "cardBounds": null,
+          "helperBounds": null,
+          "repairedBounds": null,
+          "dialogueBounds": null,
+          "dialogueVisible": false,
+          "systemsBounds": null,
+          "systemsVisible": false,
           "batteryTargets": [],
           "powered": false,
           "conduitsActive": false,
@@ -1495,6 +1992,40 @@
             "right": 401.6340026855469,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.8574494642951,
+            "width": 211.80021419906157,
+            "height": 219.11599644921046,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 622.0799865722656,
+            "y": 197.22000122070312,
+            "width": 0,
+            "height": 19,
+            "right": 622.0799865722656,
+            "bottom": 216.22000122070312
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ЭНЕРГИЯ 1 ИЗ 3",
           "challengeIndex": 0,
@@ -1565,11 +2096,45 @@
           "cardBounds": {
             "x": 80.6259994506836,
             "y": 117.87999725341797,
-            "width": 320.917340695858,
+            "width": 320.7779595851898,
             "height": 396.84000396728516,
-            "right": 401.5433401465416,
+            "right": 401.4039590358734,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.8178248404577,
+            "width": 211.80021419906157,
+            "height": 219.15562107304788,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 622.0799865722656,
+            "y": 197.22000122070312,
+            "width": 0,
+            "height": 19,
+            "right": 622.0799865722656,
+            "bottom": 216.22000122070312
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ВЫБЕРИ БАТАРЕЮ",
           "challengeIndex": 0,
@@ -1642,11 +2207,45 @@
           "cardBounds": {
             "x": 80.6259994506836,
             "y": 117.87999725341797,
-            "width": 321.0080032348633,
+            "width": 320.9851464033127,
             "height": 396.84000396728516,
-            "right": 401.6340026855469,
+            "right": 401.6111458539963,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.9126789896939,
+            "width": 211.80021419906157,
+            "height": 219.06076692381168,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 552.0347752571106,
+            "y": 186.69689321517944,
+            "width": 139.85934257507324,
+            "height": 39.95981216430664,
+            "right": 691.8941178321838,
+            "bottom": 226.65670537948608
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": false,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 0,
@@ -1726,6 +2325,40 @@
             "right": 401.6340026855469,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.8706312246546,
+            "width": 211.80021419906157,
+            "height": 219.1028146888509,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 622.0799865722656,
+            "y": 197.22000122070312,
+            "width": 0,
+            "height": 19,
+            "right": 622.0799865722656,
+            "bottom": 216.22000122070312
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
           "progress": "ЭНЕРГИЯ 2 ИЗ 3",
           "challengeIndex": 1,
@@ -1809,6 +2442,40 @@
             "right": 401.6340026855469,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.8680341360102,
+            "width": 211.80021419906157,
+            "height": 219.1054117774953,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 622.0799865722656,
+            "y": 197.22000122070312,
+            "width": 0,
+            "height": 19,
+            "right": 622.0799865722656,
+            "bottom": 216.22000122070312
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ЭНЕРГИЯ 3 ИЗ 3",
           "challengeIndex": 2,
@@ -1896,6 +2563,40 @@
             "right": 401.6340026855469,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.9526171312262,
+            "width": 211.80021419906157,
+            "height": 219.0208287822793,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 556.5799865722656,
+            "y": 197.22000122070312,
+            "width": 131,
+            "height": 19,
+            "right": 687.5799865722656,
+            "bottom": 216.22000122070312
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": false,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 2,
@@ -1985,6 +2686,40 @@
             "right": 401.6340026855469,
             "bottom": 514.7200012207031
           },
+          "helperBounds": {
+            "x": 166.96465457882218,
+            "y": 687.299794341979,
+            "width": 211.80021419906157,
+            "height": 219.67365157152653,
+            "right": 378.76486877788375,
+            "bottom": 906.9734459135055
+          },
+          "repairedBounds": {
+            "x": 387.4646240612441,
+            "y": 687.8806507704305,
+            "width": 211.80021419906154,
+            "height": 219.09279514307502,
+            "right": 599.2648382603056,
+            "bottom": 906.9734459135055
+          },
+          "dialogueBounds": {
+            "x": 535.27998650074,
+            "y": 195.2100011408329,
+            "width": 159.79999959468842,
+            "height": 17.85999995470047,
+            "right": 695.0799860954285,
+            "bottom": 213.07000109553337
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 337.5,
+            "y": 170.72000122070312,
+            "width": 93,
+            "height": 40,
+            "right": 430.5,
+            "bottom": 210.72000122070312
+          },
+          "systemsVisible": false,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ОТЛИЧНО!",
           "challengeIndex": 2,
@@ -2066,6 +2801,7 @@
         "energy1": true,
         "noSelectionSafe": true,
         "wrongReset": true,
+        "dialogueSafe": true,
         "hint": true,
         "energy2": true,
         "ordering": true,
@@ -2104,6 +2840,12 @@
           "title": "РОБОТ СОБРАН!",
           "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
           "cardBounds": null,
+          "helperBounds": null,
+          "repairedBounds": null,
+          "dialogueBounds": null,
+          "dialogueVisible": false,
+          "systemsBounds": null,
+          "systemsVisible": false,
           "batteryTargets": [],
           "powered": false,
           "conduitsActive": false,
@@ -2181,6 +2923,40 @@
             "right": 345.0004187011719,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.70760750210025,
+            "width": 263.0198754598466,
+            "height": 272.1025844375398,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 502.0000061035156,
+            "y": 231.2341766357422,
+            "width": 0,
+            "height": 19,
+            "right": 502.0000061035156,
+            "bottom": 250.2341766357422
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ЭНЕРГИЯ 1 ИЗ 3",
           "challengeIndex": 0,
@@ -2256,6 +3032,40 @@
             "right": 345.0004187011719,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.50400428782814,
+            "width": 263.0198754598466,
+            "height": 272.3061876518119,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 502.0000061035156,
+            "y": 231.2341766357422,
+            "width": 0,
+            "height": 19,
+            "right": 502.0000061035156,
+            "bottom": 250.2341766357422
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ВЫБЕРИ БАТАРЕЮ",
           "challengeIndex": 0,
@@ -2333,6 +3143,40 @@
             "right": 345.0004187011719,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.79824743251646,
+            "width": 263.0198754598466,
+            "height": 272.0119445071236,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 431.9958443880081,
+            "y": 220.73212146759033,
+            "width": 139.98201727867126,
+            "height": 39.99486207962036,
+            "right": 571.9778616666794,
+            "bottom": 260.7269835472107
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 0,
@@ -2412,6 +3256,40 @@
             "right": 346.9000007629395,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.71874491359074,
+            "width": 263.0198754598466,
+            "height": 272.0914470260493,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 502.0000061035156,
+            "y": 231.2341766357422,
+            "width": 0,
+            "height": 19,
+            "right": 502.0000061035156,
+            "bottom": 250.2341766357422
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
           "progress": "ЭНЕРГИЯ 2 ИЗ 3",
           "challengeIndex": 1,
@@ -2495,6 +3373,40 @@
             "right": 348.4000007629395,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.7219439428365,
+            "width": 263.0198754598466,
+            "height": 272.08824799680355,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 502.0000061035156,
+            "y": 231.2341766357422,
+            "width": 0,
+            "height": 19,
+            "right": 502.0000061035156,
+            "bottom": 250.2341766357422
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ЭНЕРГИЯ 3 ИЗ 3",
           "challengeIndex": 2,
@@ -2582,6 +3494,40 @@
             "right": 348.4000007629395,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.80384580448447,
+            "width": 263.0198754598466,
+            "height": 272.0063461351556,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 436.49829936027527,
+            "y": 231.23295092582703,
+            "width": 130.9939408302307,
+            "height": 18.99912118911743,
+            "right": 567.492240190506,
+            "bottom": 250.23207211494446
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 2,
@@ -2671,6 +3617,40 @@
             "right": 348.4000007629395,
             "bottom": 539.5120239257812
           },
+          "helperBounds": {
+            "x": 369.890746700485,
+            "y": 292.00931472536087,
+            "width": 263.0198754598466,
+            "height": 272.8008772142792,
+            "right": 632.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "repairedBounds": {
+            "x": 644.890746700485,
+            "y": 292.73417015374423,
+            "width": 263.0198754598466,
+            "height": 272.0760217858958,
+            "right": 907.9106221603316,
+            "bottom": 564.81019193964
+          },
+          "dialogueBounds": {
+            "x": 415.9560060620308,
+            "y": 229.64417657256126,
+            "width": 159.79999959468847,
+            "height": 17.85999995470047,
+            "right": 575.7560056567193,
+            "bottom": 247.50417652726173
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 1052.3800048828125,
+            "y": 190.05999755859375,
+            "width": 113,
+            "height": 42.5,
+            "right": 1165.3800048828125,
+            "bottom": 232.55999755859375
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ОТЛИЧНО!",
           "challengeIndex": 2,
@@ -2752,6 +3732,7 @@
         "energy1": true,
         "noSelectionSafe": true,
         "wrongReset": true,
+        "dialogueSafe": true,
         "hint": true,
         "energy2": true,
         "ordering": true,
@@ -2790,6 +3771,12 @@
           "title": "РОБОТ СОБРАН!",
           "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
           "cardBounds": null,
+          "helperBounds": null,
+          "repairedBounds": null,
+          "dialogueBounds": null,
+          "dialogueVisible": false,
+          "systemsBounds": null,
+          "systemsVisible": false,
           "batteryTargets": [],
           "powered": false,
           "conduitsActive": false,
@@ -2867,6 +3854,40 @@
             "right": 373.0400000000001,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 381.40293751166655,
+            "width": 295.48640049055354,
+            "height": 305.68851266292734,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 563.2923278808594,
+            "y": 312.9310302734375,
+            "width": 0,
+            "height": 19,
+            "right": 563.2923278808594,
+            "bottom": 331.9310302734375
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ЭНЕРГИЯ 1 ИЗ 3",
           "challengeIndex": 0,
@@ -2942,6 +3963,40 @@
             "right": 373.0400000000001,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 381.3564501822061,
+            "width": 295.48640049055354,
+            "height": 305.73499999238777,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 563.2923278808594,
+            "y": 312.9310302734375,
+            "width": 0,
+            "height": 19,
+            "right": 563.2923278808594,
+            "bottom": 331.9310302734375
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ВЫБЕРИ БАТАРЕЮ",
           "challengeIndex": 0,
@@ -3019,6 +4074,40 @@
             "right": 373.0400000000001,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 381.55887559664177,
+            "width": 295.48640049055354,
+            "height": 305.5325745779521,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 493.2923278808594,
+            "y": 302.4310302734375,
+            "width": 140,
+            "height": 40,
+            "right": 633.2923278808594,
+            "bottom": 342.4310302734375
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 0,
@@ -3098,6 +4187,40 @@
             "right": 373.0400000000001,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 381.42026773288836,
+            "width": 295.48640049055354,
+            "height": 305.6711824417055,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 563.2923278808594,
+            "y": 312.9310302734375,
+            "width": 0,
+            "height": 19,
+            "right": 563.2923278808594,
+            "bottom": 331.9310302734375
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
           "progress": "ЭНЕРГИЯ 2 ИЗ 3",
           "challengeIndex": 1,
@@ -3181,6 +4304,40 @@
             "right": 374,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 381.4182508307162,
+            "width": 295.48640049055354,
+            "height": 305.6731993438777,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 563.2923278808594,
+            "y": 312.9310302734375,
+            "width": 0,
+            "height": 19,
+            "right": 563.2923278808594,
+            "bottom": 331.9310302734375
+          },
+          "dialogueVisible": false,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ЭНЕРГИЯ 3 ИЗ 3",
           "challengeIndex": 2,
@@ -3268,6 +4425,40 @@
             "right": 374,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 381.53457286159227,
+            "width": 295.48640049055354,
+            "height": 305.5568773130016,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 497.7923278808594,
+            "y": 312.9310302734375,
+            "width": 131,
+            "height": 19,
+            "right": 628.7923278808594,
+            "bottom": 331.9310302734375
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ПОПРОБУЙ ЕЩЁ",
           "challengeIndex": 2,
@@ -3357,6 +4548,40 @@
             "right": 374.7823983383179,
             "bottom": 576.280029296875
           },
+          "helperBounds": {
+            "x": 415.5491311312516,
+            "y": 380.6196786914215,
+            "width": 295.48640049055354,
+            "height": 306.4717714831724,
+            "right": 711.0355316218051,
+            "bottom": 687.0914501745939
+          },
+          "repairedBounds": {
+            "x": 724.4944436312517,
+            "y": 381.431034980697,
+            "width": 295.4864004905535,
+            "height": 305.6604151938969,
+            "right": 1019.9808441218051,
+            "bottom": 687.0914501745939
+          },
+          "dialogueBounds": {
+            "x": 476.64232781529427,
+            "y": 310.9210301935673,
+            "width": 159.79999959468842,
+            "height": 17.85999995470047,
+            "right": 636.4423274099827,
+            "bottom": 328.78103014826775
+          },
+          "dialogueVisible": true,
+          "systemsBounds": {
+            "x": 1189.5679931640625,
+            "y": 222.77999877929688,
+            "width": 113,
+            "height": 42.5,
+            "right": 1302.5679931640625,
+            "bottom": 265.2799987792969
+          },
+          "systemsVisible": true,
           "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
           "progress": "ОТЛИЧНО!",
           "challengeIndex": 2,

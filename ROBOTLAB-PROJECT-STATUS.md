@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.1 — Mission 6: Заряди робота
+Stage 8.1B — Mission 6 Dialogue Collision Fix
 
 ## CURRENT STATUS
 
-PASS — Mission 6 is implemented through the ordinary Start → Missions 1–5 → assembly milestone → Energy 1/3–3/3 flow, ending in one canonical power activation and persistent powered/laboratory presentation state.
+PASS — Mission 6 dialogue uses collision-safe responsive placement and no longer covers the repaired robot, helper robot, task card, or visible systems panel.
 
 ## CANONICAL LOCAL URL
 
@@ -27,6 +27,16 @@ LOCKED
 ## MISSION 6–10
 
 MISSION 6 IMPLEMENTED; MISSIONS 7–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.1B — MISSION 6 DIALOGUE COLLISION FIX
+
+- Added an opt-in `above-robot` placement mode to `RobotDialogue`; existing Missions 1–5 retain the prior automatic placement behavior.
+- Mission 6 landscape dialogue is constrained to the safe horizontal region between the task card and systems panel and sits above the helper robot with a downward speech tail.
+- Phone portrait dialogue uses the reserved upper status region. The systems chip is temporarily hidden while the transient dialogue is visible, so neither surface covers the other.
+- Large portrait/tablet dialogue uses the dedicated progress-side region instead of the phone-centered position.
+- Added explicit `dialogueSafe` QA assertions: the visible bubble must be inside the viewport and must not intersect the task card, helper robot, repaired robot, or a visible systems panel.
+- Full ordinary Start → Missions 1–6 browser QA PASS at 320×568, 390×844, 768×1024, 1280×720, and 1438×914 with `failures: []`, including touch paths and zero console/page/request/response errors.
+- Visual review PASS: `stage8-1b-mobile-390x844-dialogue-safe.png`, `stage8-1b-desktop-1280x720-dialogue-safe.png`, and `stage8-1b-wide-1438x914-dialogue-safe.png`.
 
 ## STAGE 8.1 — MISSION 6: ЗАРЯДИ РОБОТА
 

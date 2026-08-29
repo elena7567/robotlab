@@ -118,8 +118,12 @@ async function sceneSnapshot(page, sceneKey) {
       return { x: b.x, y: b.y, width: b.width, height: b.height, right: b.right, bottom: b.bottom };
     };
     const card = scene.children.getByName('energy-task-card');
+    const actors = scene.children.getByName('mission6-actors');
+    const helper = actors?.getByName('grounded-robot');
     const repaired = scene.children.getByName('mission6-actors')?.getByName('mission6-repaired-robot');
     const conduits = scene.children.getByName('mission6-actors')?.getByName('energy-conduits');
+    const dialogue = scene.children.getByName('robot-dialogue');
+    const systems = scene.children.getByName('systems-progress');
     return {
       scene: key,
       viewport: { width: game.canvas.width, height: game.canvas.height },
@@ -128,6 +132,12 @@ async function sceneSnapshot(page, sceneKey) {
       title: scene.children.getByName('transition-title')?.text,
       subtitle: scene.children.getByName('transition-subtitle')?.text,
       cardBounds: bounds(card),
+      helperBounds: bounds(helper),
+      repairedBounds: bounds(repaired),
+      dialogueBounds: bounds(dialogue),
+      dialogueVisible: dialogue?.visible || false,
+      systemsBounds: bounds(systems),
+      systemsVisible: systems?.visible || false,
       instruction: card?.list.find((item) => item.name === 'energy-instruction')?.text,
       progress: card?.list.find((item) => item.name === 'energy-progress')?.text,
       challengeIndex: card?.getData('challengeIndex'),
@@ -175,6 +185,9 @@ async function runViewport(browser, [name, width, height, touch]) {
   await activate(page, 'energy-battery-low', touch, 'Mission6Scene', 50);
   await activate(page, 'energy-check-button', touch, 'Mission6Scene', 120);
   const wrong = await sceneSnapshot(page, 'Mission6Scene');
+  if (name === 'mobile-390x844' || name === 'desktop-1280x720' || name === 'wide-1438x914') {
+    await page.screenshot({ path: path.join(screenshotDir, `stage8-1b-${name}-dialogue-safe.png`) });
+  }
   await activate(page, 'energy-hint-button', touch, 'Mission6Scene', 120);
   await activate(page, 'energy-battery-full', touch, 'Mission6Scene', 50);
   await activate(page, 'energy-check-button', touch, 'Mission6Scene', 760);
@@ -206,6 +219,7 @@ async function runViewport(browser, [name, width, height, touch]) {
     await page.screenshot({ path: path.join(screenshotDir, `stage8-1-${name}-mission6-powered.png`) });
   }
   const counts = (key) => complete.audio.filter((item) => item === key).length;
+  const noOverlap = (a, b) => a && b && (a.right <= b.x || b.right <= a.x || a.bottom <= b.y || b.bottom <= a.y);
   const checks = {
     startCopy: startCopy === 'СОБЕРИ, ОЖИВИ И ЗАПУСТИ РОБОТА!' && !/5|10/.test(startCopy),
     mission5Transition: transition.title === 'РОБОТ СОБРАН!' && transition.subtitle === 'ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!'
@@ -213,6 +227,11 @@ async function runViewport(browser, [name, width, height, touch]) {
     energy1: initial.instruction === 'КАКАЯ БАТАРЕЯ ПОЛНАЯ?' && initial.progress === 'ЭНЕРГИЯ 1 ИЗ 3',
     noSelectionSafe: noSelection.session.completedTasks === 5 && counts('audio-answer-wrong') === 2,
     wrongReset: wrong.session.completedTasks === 5,
+    dialogueSafe: wrong.dialogueVisible && inside(wrong.dialogueBounds, width, height)
+      && noOverlap(wrong.dialogueBounds, wrong.cardBounds)
+      && noOverlap(wrong.dialogueBounds, wrong.helperBounds)
+      && noOverlap(wrong.dialogueBounds, wrong.repairedBounds)
+      && (!wrong.systemsVisible || noOverlap(wrong.dialogueBounds, wrong.systemsBounds)),
     hint: counts('audio-hint') === 3,
     energy2: energy2.instruction === 'КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?' && energy2.progress === 'ЭНЕРГИЯ 2 ИЗ 3',
     ordering: ordering.challengeKind === 'order' && ordering.progress === 'ЭНЕРГИЯ 3 ИЗ 3',
