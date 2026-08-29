@@ -4,13 +4,38 @@
 
 RobotLab — «Почини робота», a browser educational 2D mini-game for ages 4–6.
 
-## CURRENT STAGE
+## CURRENT DESIGN STAGE
 
-Stage 7.1B.2 — Assembly Panel Redesign + Final Robot Release
+Stage 8.0 — 10-Mission Game Design
 
 ## CURRENT STATUS
 
-PASS — the assembly station is now a wide, calm repair-bay card with a 1.32:1 proportion, meaningful desktop edge spacing, a much fainter blueprint, and clear installed/missing-part contrast. States 0/5–4/5 stay fully inside the station. At 5/5 the antenna activates, the station fades, and the repaired robot moves beside the helper on the shared platform before VictoryScene. The five-task progression and educational mechanics are unchanged. Full desktop/touch-mobile flow and the five canonical responsive viewports pass with clean console, page, request, response, and asset behavior.
+PASS — Stage 8.0 defines RobotLab as a ten-mission, three-act educational repair adventure: build, activate/program/test, then launch. The first five missions and current runtime are locked. Missions 6–10, the future Mission 5 transition, semantic progression, resumable checkpoints, laboratory reactivity, and lightweight adaptive difficulty are documented as design/architecture only and are not implemented.
+
+## FIRST FIVE MISSIONS
+
+LOCKED
+
+## MISSION 6–10
+
+DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.0 — 10-MISSION GAME DESIGN
+
+- Approved the three-act structure: `СОБЕРИ РОБОТА` (Missions 1–5), `ОЖИВИ РОБОТА` (Missions 6–9), and `ЗАПУСТИ РОБОТА` (Mission 10).
+- Preserved Missions 1–5 as the locked assembly baseline and documented the second robot lifecycle: assembled, powered, connected, command-capable, verified, launched.
+- Designed Mission 6 quantity/energy selection, Mission 7 port connection, Mission 8 command programming, Mission 9 diagnostics, and Mission 10 integrated first launch without implementing runtime behavior.
+- Approved the future Mission 5 transition copy: `РОБОТ СОБРАН!`, `ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!`, and `ПРОДОЛЖИТЬ`; final repair language is reserved for Mission 10.
+- Approved the future Start screen direction: `ПОЧИНИ РОБОТА` / `СОБЕРИ, ОЖИВИ И ЗАПУСТИ РОБОТА!`; current StartScene remains unchanged.
+- Defined semantic progress phases for assembly, systems, and launch instead of a generic 0/10 bar.
+- Defined progressive laboratory reactions, persistent helper responsibilities, non-punitive adaptive hints, and resumable session checkpoints.
+- Defined a conceptual versioned state model with one canonical `completedMissions` source and derived assembly/system/robot/laboratory selectors.
+- Added portrait-specific interaction guidance for wire connection and programming while retaining centralized fluid sizing, camera/framing, and four composition modes.
+- Marked the future robot collection loop as out of current scope and excluded coins, loot boxes, random rewards, stores, and premium unlocks.
+- Created `docs/game-design/10-MISSION-GAME-DESIGN.md`.
+- Created `docs/game-design/SECOND-HALF-DEVELOPMENT-PLAN.md`.
+- Created `docs/architecture/10-MISSION-PROGRESSION-ARCHITECTURE.md`.
+- Runtime files modified: none.
 
 ## STAGE 7.1B.2 ASSEMBLY PANEL REDESIGN + FINAL ROBOT RELEASE
 
@@ -633,7 +658,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 7.1B.
+- None for Stage 8.0 design completion.
 
 ## GIT
 
@@ -641,15 +666,15 @@ GIT:
 INITIALIZED
 
 BASELINE:
-`c26ea9d RobotLab add shadow matching mechanic`
+`99058509ab5cc7ee2d267f6c5d9178905f2137f2`
 
 BRANCH:
 main
 
 ## NEXT
 
-User manual visual review of the Stage 7.1B.2 screenshots. Do not commit until the screenshots are approved.
+Stage 8.0 design is ready for a separately authorized Mission 6 implementation stage. Do not implement Mission 6 as part of Stage 8.0; confirm required production asset IDs/readiness before dependent visual work.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 7.1B.2 verified through the full five-task flow on desktop 1280×720 and touch mobile 390×844, with responsive layout checks at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. Wide station proportions, desktop edge spacing, faint blueprint, all 0/5–4/5 fits, 5/5 activation/release, final no-frame state, two-robot grounding, Victory, audio, resets, and clean browser logs all pass. `npm run build` passes with 43 modules transformed and only the existing Phaser chunk-size advisory. No commit was created pending manual screenshot approval.
+2026-08-29 — Stage 8.0 documentation scope verified: the three requested design/architecture documents exist, Missions 1–5 are marked locked, Missions 6–10 remain design-only, and no runtime/source/asset file is modified. `npm run build` passes with 43 modules transformed and only the existing non-blocking Phaser chunk-size advisory. The first restricted-sandbox build attempt was blocked by Windows `spawn EPERM`; the identical approved rerun completed successfully.
