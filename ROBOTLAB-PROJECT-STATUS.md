@@ -6,11 +6,44 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT STAGE
 
-Stage 7.0A — Victory Robot Grounding Fix
+Stage 7.1B — Robot Assembly Progression Integration
 
 ## CURRENT STATUS
 
-PASS — VictoryScene now maps the complete robot's measured feet anchor directly to the visible upper platform plane and keeps that shared contact point centered and clear of the controls through the existing responsive portrait/landscape composition. Both soles rest on the top surface rather than the front rim at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. Build, focused contact-marker QA, close-up review, console checks, and the complete Stage 7 gameplay regression pass.
+PASS — the intact gameplay robot is now the helper mechanic while a second modular robot assembles through the real five-task flow. `assemblyProgress` is derived from `completedTasks`, the compact gameplay station replaces abstract repair dots, all five guarded install rewards and activation run once with the existing audio manager, Victory shows two independently grounded robots, and Play Again/Home clear the assembly consistently. Full normal flows passed on desktop and touch mobile; the compact layout matrix passed at all five required viewports with clean console, asset, request, and response logs.
+
+## STAGE 7.1B ROBOT ASSEMBLY PROGRESSION INTEGRATION
+
+- Added a centralized derived `assemblyProgress: 0 | 1 | 2 | 3 | 4 | 5` session snapshot value. `completedTasks` remains the only mutable major-progress counter.
+- Added the exact mapping: Task 1 body; Task 2 head; Task 3 both legs; Task 4 both normal arms; Task 5 antenna plus activation.
+- Replaced the abstract `РЕМОНТ` dot/check panel with a compact second-robot station and `СБОРКА N/5` label. The robot preview remains the primary progress signal in both portrait and landscape layouts.
+- Each major completion runs one guarded 1.2–2.0 second reward: station focus, earned-part fade/move/0.85→1.05→1.00 settle, glow, one `repair-reward.wav`, helper reaction/dialogue, and compact return.
+- Task 5 adds the antenna and runs the antenna/chest-color glow pulse activation before Victory.
+- The helper stays intact and uses only stable `RobotActor` correct/celebrate reactions; no helper arm transform or asset changes were made.
+- VictoryScene now shows the complete helper on screen-left and the modular repaired robot on screen-right. Both use the same responsive platform contact Y and remain visually distinct without overlap.
+- Play Again resets session and mechanic state to assembly blueprint 0/5. Home during an active reward shuts down tweens safely; the next Play starts at 0/5 with no stale preview or duplicate reward.
+- Added `docs/decisions/0002-robot-assembly-progression.md` to record canonical state ownership and the replaceable second-robot renderer boundary.
+- Verification: `npm run build` PASS; TypeScript passed, Vite transformed 43 modules, and only the existing non-blocking bundle-size advisory was emitted.
+- Verification: `qa/stage7-1a-assembly-preview-playtest.cjs` PASS for all six proof states plus responsive 5/5 captures. Blueprint alpha is `0.045`; complete proof scale is `0.1792`, exactly 12% above the prior `0.16`, with feet contact preserved.
+- Verification: `qa/stage7-1b-assembly-integration-playtest.cjs` PASS. Full ordinary Start→Tasks 1–5→Victory flow passed at 1280×720 and touch 390×844; responsive compact-state checks passed at 320×568, 390×844, 768×1024, 1280×720, and 1438×914.
+- Verification: all 0/5 through 5/5 state/part checks, install-animation observations, helper phrases, activation observation, exactly five repair-reward events, two-robot Victory, grounding, Play Again, Home, Home-during-reward, and console/page/request/response checks passed with `failures: []`.
+- Evidence: `docs/qa/stage7-1b-assembly-integration-results.json` and `docs/qa/screenshots/stage7-1b-*`.
+
+## STAGE 7.1A ROBOT ASSEMBLY VISUAL PROOF (APPROVED INPUT)
+
+- Added `RobotAssemblyPreviewScene`, registered only for direct dev/QA invocation and never entered by Boot, Preload, Start, gameplay, Victory, or Results flow.
+- Added a dedicated static `RobotAssemblyPreview` layout measured against the approved modular part artwork; it does not inherit transforms or behavior from `RobotActor`.
+- State 0/5 now uses `0.045` alpha missing-part guides so it reads as a technical blueprint rather than a transparent complete robot. The renderer supports every state from 0/5 through 5/5.
+- The 5/5 proof scale is `0.1792`, 12% larger than the original `0.16`, while remaining smaller than the helper and preserving feet contact.
+- The repair station uses only Phaser primitives: restrained cyan outline, twin technical rails, inspection marks, subtle glow, and a rounded grounded platform.
+- Visual QA confirms centered head/body and antenna, symmetric measured shoulder roots, natural neck and leg overlap, coherent silhouette, and visible feet contact on the stand.
+- Complete-state responsive proof passes at 390×844, 768×1024, and 1280×720 without viewport-specific transforms or device checks.
+- The approved task-to-part mapping is implemented by Stage 7.1B.
+- Verification: `npm run build` PASS (TypeScript plus Vite production build; only the existing chunk-size advisory was emitted).
+- Verification: Stage 7.1A Playwright visual/layout suite PASS across all eight current proof captures with no console, page, request, or response errors.
+- Evidence report: `docs/qa/stage7-1a-assembly-preview-results.json`.
+- Evidence screenshots: `docs/qa/screenshots/stage7-1a-state-0-of-5-desktop-1280x720.png`, `stage7-1a-state-2-of-5-desktop-1280x720.png`, `stage7-1a-state-5-of-5-desktop-1280x720.png`, `stage7-1a-state-5-of-5-mobile-390x844.png`, and `stage7-1a-state-5-of-5-tablet-768x1024.png`.
+- Git: Stage 7.1A proof is included with the Stage 7.1B integration commit.
 
 ## TECH STACK
 
@@ -140,6 +173,7 @@ Stage 1.2 filesystem re-audit confirmed `public/assets/backgrounds/laboratory-ba
 
 PASS
 
+- Stage 7.1B `npm run build` — PASS; TypeScript validation passed, 43 modules transformed, and `dist/` generated. The existing non-blocking Phaser bundle-size advisory remains.
 - `npm run build` — PASS; TypeScript validation passed, 29 modules transformed, and `dist/` generated.
 - Vite reported a non-blocking bundle-size advisory for the Phaser bundle; no build errors or missing modules.
 - Stage 3.4 `npm run build` — PASS; 32 modules transformed and `dist/` generated. The existing non-blocking Phaser bundle-size advisory remains.
@@ -288,6 +322,21 @@ PASS
 
 ## FILES CREATED
 
+- `src/game/state/robotAssemblyState.ts`
+- `src/game/ui/RobotAssemblyPreview.ts`
+- `src/game/scenes/RobotAssemblyPreviewScene.ts`
+- `docs/decisions/0002-robot-assembly-progression.md`
+- `qa/stage7-1a-assembly-preview-playtest.cjs`
+- `qa/stage7-1b-assembly-integration-playtest.cjs`
+- `qa/stage7-1b-home-interrupt-playtest.cjs`
+- `docs/qa/stage7-1a-assembly-preview-results.json`
+- `docs/qa/stage7-1b-assembly-integration-results.json`
+- `docs/qa/screenshots/stage7-1a-state-{0,1,2,3,4,5}-of-5-desktop-1280x720.png`
+- `docs/qa/screenshots/stage7-1a-state-5-of-5-{mobile-390x844,tablet-768x1024}.png`
+- `docs/qa/screenshots/stage7-1b-desktop-1280x720-assembly-{0,1,2,3,4,5}-of-5.png`
+- `docs/qa/screenshots/stage7-1b-{desktop-1280x720,mobile-390x844}-victory-two-robots.png`
+- `docs/qa/screenshots/stage7-1b-mobile-390x844-assembly-5-of-5.png`
+
 - `qa/stage7-0a-victory-grounding-playtest.cjs`
 - `docs/qa/stage7-0a-victory-grounding-results.json`
 - `docs/qa/screenshots/stage7-0a-victory-{minimum-320x568,mobile-390x844,tablet-768x1024,desktop-1280x720,desktop-wide-1438x914}.png`
@@ -428,6 +477,13 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## FILES CHANGED
 
+- `src/game/config.ts` — registers the dev/QA-only assembly proof scene without adding a production-flow route.
+- `src/game/state/sessionState.ts` — exposes derived `assemblyProgress` from the canonical completed-task count.
+- `src/game/ui/ProgressPanel.ts` — replaces abstract repair indicators with the compact assembly station and guarded install choreography.
+- `src/game/scenes/GameScene.ts` — synchronizes task completion, assembly rewards, helper dialogue/reactions, audio, activation, and final transition.
+- `src/game/scenes/VictoryScene.ts` — composes the intact helper and modular repaired robot on separate grounded platform positions.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 7.1A approval adjustments, Stage 7.1B architecture, verification, evidence, and release status.
+
 - `src/game/scenes/VictoryScene.ts` — Stage 7.0A maps a measured feet origin to the visible platform upper plane, keeps the shared contact responsive and control-safe, and anchors the completion pulse at the soles.
 - `ROBOTLAB-PROJECT-STATUS.md` — records Stage 7.0A implementation, verification, exact contact coordinates, and evidence.
 
@@ -525,7 +581,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 7.
+- None for Stage 7.1B.
 
 ## GIT
 
@@ -540,8 +596,8 @@ main
 
 ## NEXT
 
-User manual review of the Stage 7.0A VictoryScene platform contact.
+User manual review of the Stage 7.1B full gameplay flow and final two-robot composition in the open local preview.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 7.0A VictoryScene grounding verified from the production preview. The visible platform upper-plane point and measured robot-feet anchor coincide exactly at 320×568, 390×844, 768×1024, 1280×720, and 1438×914; both soles are on the top surface with no front-rim or button overlap, centered placement, readable titles, and zero console/page/request/response errors. The unchanged complete Stage 7 flow regression also passes.
+2026-08-29 — Stage 7.1B full normal gameplay verified at desktop 1280×720 and touch mobile 390×844. Assembly 0/5 through 5/5, exact task-part mapping, helper reactions, install animations, activation, exactly one repair sound per major task, two-robot Victory grounding, Play Again, Home, Home during an active reward, and clean console/page/request/response logs all pass. Compact-state responsive checks pass at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. `npm run build` passes with 43 modules transformed and only the existing Phaser chunk-size advisory.

@@ -15,7 +15,6 @@ import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneL
 import { markSceneReady } from '../ui/sceneUi';
 import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotDialogue } from '../ui/RobotDialogue';
-import { playRepairItemReward } from '../ui/RepairReward';
 import { TaskCard, type TaskObjectKey } from '../ui/TaskCard';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
@@ -24,6 +23,7 @@ import { audioManager } from '../audio/AudioManager';
 import { shadowMatchingMechanic, type ShadowChoiceKey } from '../mechanics/shadowMatching';
 import { memoryMechanic } from '../mechanics/memory';
 import { MemoryTaskCard } from '../ui/MemoryTaskCard';
+import { HELPER_ASSEMBLY_DIALOGUE } from '../state/robotAssemblyState';
 
 const WRONG_DIALOGUE = [
   'Почти! Попробуй ещё раз',
@@ -109,7 +109,7 @@ export class GameScene extends Phaser.Scene {
     let progressPanel: ProgressPanel;
     progressPanel = new ProgressPanel(this, {
       x: layout.progress.x, y: layout.progress.y, width: layout.progress.width, height: layout.progress.height,
-      value: state.completedTasks, horizontal: layout.progress.horizontal, sizing: layout.progress.sizing,
+      value: state.assemblyProgress, horizontal: layout.progress.horizontal, sizing: layout.progress.sizing,
     });
 
     const robotDialogue = robot ? new RobotDialogue(this, robot, layout) : undefined;
@@ -125,29 +125,27 @@ export class GameScene extends Phaser.Scene {
       this.scene.restart();
     };
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
-    const playCompletionFlow = (): void => {
-      if (completionFlowActive) return;
+    let completionRewardPromise: Promise<void> | undefined;
+    const playCompletionFlow = (): Promise<void> => {
+      if (completionRewardPromise) return completionRewardPromise;
+      const previousProgress = sessionState.snapshot.assemblyProgress;
       completionFlowActive = true;
       sessionState.completeCurrentTask();
-      const completedTasks = sessionState.snapshot.completedTasks;
-      this.game.registry.set('sessionSnapshot', sessionState.snapshot);
-      progressPanel.setValue(completedTasks);
+      const nextState = sessionState.snapshot;
+      const completedTasks = nextState.completedTasks;
+      this.game.registry.set('sessionSnapshot', nextState);
       audioManager.playRepairReward();
-      if (!robot) {
-        return;
-      }
-      robot.setRepairProgress(completedTasks);
-      void (async () => {
+      robot?.setRepairProgress(completedTasks);
+      robotDialogue?.show(HELPER_ASSEMBLY_DIALOGUE[nextState.assemblyProgress as 1 | 2 | 3 | 4 | 5]);
+      const helperReaction = robot ? (async (): Promise<void> => {
         await robot.playCorrect();
-        if (!this.sys.isActive() || !robot.active) return;
-        await playRepairItemReward(this, robot, {
-          textureKey: 'repair-gear',
-          source: new Phaser.Math.Vector2(cardX + cardWidth - 54, cardY + cardHeight * 0.52),
-          reducedMotion,
-        });
-        if (!this.sys.isActive() || !robot.active) return;
-        await robot.playCelebrate();
-      })();
+        if (this.sys.isActive() && robot.active) await robot.playCelebrate();
+      })() : Promise.resolve();
+      completionRewardPromise = Promise.all([
+        progressPanel.playInstall(previousProgress, nextState.assemblyProgress, reducedMotion),
+        helperReaction,
+      ]).then(() => undefined);
+      return completionRewardPromise;
     };
 
     if (isMemoryTask) {
@@ -156,16 +154,10 @@ export class GameScene extends Phaser.Scene {
       let finalTransitionTimer: Phaser.Time.TimerEvent | undefined;
       const playFinalCompletion = (): void => {
         if (completionFlowActive) return;
-        completionFlowActive = true;
-        sessionState.completeCurrentTask();
-        this.game.registry.set('sessionSnapshot', sessionState.snapshot);
-        progressPanel.setValue(5);
-        robot?.setRepairProgress(5);
-        audioManager.playRepairReward();
-        robotDialogue?.show('Я СНОВА РАБОТАЮ!');
-        void robot?.playCelebrate();
-        finalTransitionTimer = this.time.delayedCall(reducedMotion ? 1250 : 1900, () => {
-          if (this.sys.isActive()) this.scene.start('VictoryScene');
+        void playCompletionFlow().then(() => {
+          finalTransitionTimer = this.time.delayedCall(reducedMotion ? 180 : 260, () => {
+            if (this.sys.isActive()) this.scene.start('VictoryScene');
+          });
         });
       };
       const resolvePendingPair = (): void => {
@@ -259,12 +251,14 @@ export class GameScene extends Phaser.Scene {
           if (result === 'correct') {
             audioManager.playCorrect();
             if (shadowMatchingMechanic.snapshot.completed) {
-              playCompletionFlow();
-              this.time.delayedCall(reducedMotion ? 1050 : 1600, renderCurrentTask);
+              void playCompletionFlow().then(() => {
+                this.time.delayedCall(reducedMotion ? 120 : 180, renderCurrentTask);
+              });
+            } else {
+              void robot?.playCorrect();
+              const challengeIndex = shadowMatchingMechanic.snapshot.challengeIndex;
+              robotDialogue?.show(SHADOW_CORRECT_DIALOGUE[challengeIndex % SHADOW_CORRECT_DIALOGUE.length]);
             }
-            else void robot?.playCorrect();
-            const challengeIndex = shadowMatchingMechanic.snapshot.challengeIndex;
-            robotDialogue?.show(SHADOW_CORRECT_DIALOGUE[challengeIndex % SHADOW_CORRECT_DIALOGUE.length]);
           } else if (result === 'wrong') {
             audioManager.playWrong();
             robotDialogue?.show(SHADOW_WRONG_DIALOGUE[wrongAttempt % SHADOW_WRONG_DIALOGUE.length]);
@@ -295,7 +289,7 @@ export class GameScene extends Phaser.Scene {
         hintText: sequenceState.challenge.hint,
         hintFeedbackText: 'Подсказка у робота',
         showContinueOnComplete: true,
-        continueDelayMs: 180,
+        continueDelayMs: sequenceState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 180,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
           sequenceMechanic.select(key as SequenceAssetKey);
@@ -311,11 +305,11 @@ export class GameScene extends Phaser.Scene {
           if (result === 'correct') {
             audioManager.playCorrect();
             if (sequenceMechanic.snapshot.completed) {
-              playCompletionFlow();
+              void playCompletionFlow();
             } else {
               void robot?.playCorrect();
+              robotDialogue?.show(SEQUENCE_CORRECT_DIALOGUE);
             }
-            robotDialogue?.show(SEQUENCE_CORRECT_DIALOGUE);
           } else if (result === 'wrong') {
             audioManager.playWrong();
             robotDialogue?.show(SEQUENCE_WRONG_DIALOGUE[wrongAttempt % SEQUENCE_WRONG_DIALOGUE.length]);
@@ -349,7 +343,7 @@ export class GameScene extends Phaser.Scene {
         choiceTextureKey: () => 'size-battery',
         choiceVisualScale: (key) => SIZE_SCALE_MULTIPLIERS[key.replace('size-', '') as SizeId],
         showContinueOnComplete: true,
-        continueDelayMs: 180,
+        continueDelayMs: sizeState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 180,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
           sizeComparisonMechanic.select(key as SizeChoiceKey);
@@ -365,12 +359,12 @@ export class GameScene extends Phaser.Scene {
           if (result === 'correct') {
             audioManager.playCorrect();
             if (sizeComparisonMechanic.snapshot.completed) {
-              playCompletionFlow();
+              void playCompletionFlow();
             } else {
               void robot?.playCorrect();
+              const challengeIndex = sizeComparisonMechanic.snapshot.challengeIndex;
+              robotDialogue?.show(SIZE_CORRECT_DIALOGUE[challengeIndex % SIZE_CORRECT_DIALOGUE.length]);
             }
-            const challengeIndex = sizeComparisonMechanic.snapshot.challengeIndex;
-            robotDialogue?.show(SIZE_CORRECT_DIALOGUE[challengeIndex % SIZE_CORRECT_DIALOGUE.length]);
           } else if (result === 'wrong') {
             audioManager.playWrong();
             robotDialogue?.show(SIZE_WRONG_DIALOGUE[wrongAttempt % SIZE_WRONG_DIALOGUE.length]);
@@ -409,7 +403,7 @@ export class GameScene extends Phaser.Scene {
           const result = oddMechanic.check().result;
           if (result === 'correct') {
             audioManager.playCorrect();
-            playCompletionFlow();
+            void playCompletionFlow();
           } else if (result === 'wrong') {
             audioManager.playWrong();
             robotDialogue?.show(WRONG_DIALOGUE[wrongAttempt % WRONG_DIALOGUE.length]);
@@ -418,7 +412,7 @@ export class GameScene extends Phaser.Scene {
           }
           return result;
         },
-        continueDelayMs: 180,
+        continueDelayMs: reducedMotion ? 650 : 1550,
         onContinue: renderCurrentTask,
       });
     }

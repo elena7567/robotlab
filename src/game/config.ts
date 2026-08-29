@@ -4,6 +4,7 @@ import { GameScene } from './scenes/GameScene';
 import { IntroScene } from './scenes/IntroScene';
 import { PreloadScene } from './scenes/PreloadScene';
 import { ResultsScene } from './scenes/ResultsScene';
+import { RobotAssemblyPreviewScene } from './scenes/RobotAssemblyPreviewScene';
 import { StartScene } from './scenes/StartScene';
 import { TransitionScene } from './scenes/TransitionScene';
 import { VictoryScene } from './scenes/VictoryScene';
@@ -17,7 +18,8 @@ export const gameConfig: Phaser.Types.Core.GameConfig = {
   width: REFERENCE_WIDTH,
   height: REFERENCE_HEIGHT,
   backgroundColor: '#0b1d36',
-  scene: [BootScene, PreloadScene, StartScene, IntroScene, GameScene, TransitionScene, VictoryScene, ResultsScene],
+  // RobotAssemblyPreviewScene is dev/QA-only and is never entered by production flow.
+  scene: [BootScene, PreloadScene, StartScene, IntroScene, GameScene, TransitionScene, VictoryScene, ResultsScene, RobotAssemblyPreviewScene],
   input: { activePointers: 2, touch: { capture: true } },
   scale: {
     mode: Phaser.Scale.RESIZE,

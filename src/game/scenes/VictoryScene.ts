@@ -9,6 +9,7 @@ import { clampValue, fluidValue } from '../ui/fluidSizing';
 import { restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
+import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
 
 const LABORATORY_SOURCE_WIDTH = 1672;
 const LABORATORY_SOURCE_HEIGHT = 941;
@@ -100,23 +101,52 @@ export class VictoryScene extends Phaser.Scene {
     }).setOrigin(0.5).setName('victory-subtitle');
 
     const robotTop = titleY + titleSize * 1.45;
-    const robotHeight = clampValue(128, platform.contactY - robotTop, portrait ? 260 : 360);
-    const robot = this.add.image(platform.contactX, platform.contactY, 'robot-complete')
+    const pairWidthBudget = width - 36;
+    const robotHeight = Math.min(
+      clampValue(112, platform.contactY - robotTop, portrait ? 245 : 330),
+      pairWidthBudget * (portrait ? 0.72 : 0.62),
+    );
+    const pairSpan = Math.min(pairWidthBudget * 0.52, robotHeight * 0.92, portrait ? 170 : 270);
+    const helperX = platform.contactX - pairSpan / 2;
+    const assembledX = platform.contactX + pairSpan / 2;
+    const robot = this.add.image(helperX, platform.contactY, 'robot-complete')
       .setOrigin(0.5, ROBOT_FEET_CONTACT_SOURCE_Y / ROBOT_SOURCE_HEIGHT)
       .setScale(robotHeight / 1448)
       .setName('victory-robot')
       .setData({
-        platformContactX: platform.contactX,
+        role: 'helper',
+        platformContactX: helperX,
         platformContactY: platform.contactY,
-        robotFeetContactX: platform.contactX,
+        robotFeetContactX: helperX,
         robotFeetContactY: platform.contactY,
         feetContactSourceY: ROBOT_FEET_CONTACT_SOURCE_Y,
       });
+    const assembledScale = (robotHeight / ROBOT_SOURCE_HEIGHT) * 0.92;
+    const assembledRobot = new RobotAssemblyPreview(this, assembledX, platform.contactY, 5, {
+      scale: assembledScale,
+      blueprintAlpha: 0,
+    }).setName('victory-assembled-robot').setData({
+      role: 'repaired',
+      platformContactX: assembledX,
+      platformContactY: platform.contactY,
+      robotFeetContactX: assembledX,
+      robotFeetContactY: platform.contactY,
+      groundedScale: assembledScale,
+    });
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     if (!reducedMotion) {
       this.tweens.add({
         targets: robot, scaleX: robot.scaleX * 1.018, scaleY: robot.scaleY * 1.018,
         duration: 620, yoyo: true, repeat: 1, ease: 'Sine.easeInOut',
+      });
+      this.tweens.add({
+        targets: assembledRobot,
+        scaleX: assembledScale * 1.025,
+        scaleY: assembledScale * 1.025,
+        duration: 300,
+        yoyo: true,
+        repeat: 1,
+        ease: 'Sine.easeOut',
       });
     }
 

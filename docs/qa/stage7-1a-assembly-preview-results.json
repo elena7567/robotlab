@@ -1,0 +1,575 @@
+{
+  "matrix": [
+    {
+      "name": "state-0-of-5-desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": 0,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-0-of-5-desktop-1280x720.png",
+      "installedParts": [],
+      "visibleInstalled": [],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.16,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.6347397844582376,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 536,
+        "stand": 536,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 528.3290509477945,
+        "right": 749.8194702163071,
+        "top": 310.93404023061635,
+        "bottom": 540.0506879094601
+      },
+      "stationBounds": {
+        "top": 144,
+        "bottom": 564
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-1-of-5-desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": 1,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-1-of-5-desktop-1280x720.png",
+      "installedParts": [
+        "body"
+      ],
+      "visibleInstalled": [
+        "body"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.16,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.6347397844582376,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 536,
+        "stand": 536,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 528.3290509477945,
+        "right": 749.8194702163071,
+        "top": 310.93404023061635,
+        "bottom": 540.0506879094601
+      },
+      "stationBounds": {
+        "top": 144,
+        "bottom": 564
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-2-of-5-desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": 2,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-2-of-5-desktop-1280x720.png",
+      "installedParts": [
+        "body",
+        "head"
+      ],
+      "visibleInstalled": [
+        "body",
+        "head"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.16,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.6347397844582376,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 536,
+        "stand": 536,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 528.3290509477945,
+        "right": 749.8194702163071,
+        "top": 310.93404023061635,
+        "bottom": 540.0506879094601
+      },
+      "stationBounds": {
+        "top": 144,
+        "bottom": 564
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-3-of-5-desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": 3,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-3-of-5-desktop-1280x720.png",
+      "installedParts": [
+        "body",
+        "head",
+        "legLeft",
+        "legRight"
+      ],
+      "visibleInstalled": [
+        "legLeft",
+        "legRight",
+        "body",
+        "head"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.16,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.6347397844582376,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 536,
+        "stand": 536,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 528.3290509477945,
+        "right": 749.8194702163071,
+        "top": 310.93404023061635,
+        "bottom": 540.0506879094601
+      },
+      "stationBounds": {
+        "top": 144,
+        "bottom": 564
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-4-of-5-desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": 4,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-4-of-5-desktop-1280x720.png",
+      "installedParts": [
+        "body",
+        "head",
+        "legLeft",
+        "legRight",
+        "armLeft",
+        "armRight"
+      ],
+      "visibleInstalled": [
+        "legLeft",
+        "legRight",
+        "armRight",
+        "armLeft",
+        "body",
+        "head"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.16,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.6347397844582376,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 536,
+        "stand": 536,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 528.3290509477945,
+        "right": 749.8194702163071,
+        "top": 310.93404023061635,
+        "bottom": 540.0506879094601
+      },
+      "stationBounds": {
+        "top": 144,
+        "bottom": 564
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-5-of-5-desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-5-of-5-desktop-1280x720.png",
+      "installedParts": [
+        "body",
+        "head",
+        "legLeft",
+        "legRight",
+        "armLeft",
+        "armRight",
+        "antenna"
+      ],
+      "visibleInstalled": [
+        "legLeft",
+        "legRight",
+        "armRight",
+        "armLeft",
+        "body",
+        "head",
+        "antenna"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.17920000000000003,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.7109085585932263,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 536,
+        "stand": 536,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 514.9285387255567,
+        "right": 762.9978050058263,
+        "top": 283.9261284120345,
+        "bottom": 540.5367703982354
+      },
+      "stationBounds": {
+        "top": 144,
+        "bottom": 564
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-5-of-5-mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "state": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-5-of-5-mobile-390x844.png",
+      "installedParts": [
+        "body",
+        "head",
+        "legLeft",
+        "legRight",
+        "armLeft",
+        "armRight",
+        "antenna"
+      ],
+      "visibleInstalled": [
+        "legLeft",
+        "legRight",
+        "armRight",
+        "armLeft",
+        "body",
+        "head",
+        "antenna"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.17920000000000003,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.7109085585932263,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 586.12,
+        "stand": 586.12,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 69.92853872555666,
+        "right": 317.9978050058263,
+        "top": 334.046123529222,
+        "bottom": 590.6567655154229
+      },
+      "stationBounds": {
+        "top": 194.12,
+        "bottom": 614.12
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    },
+    {
+      "name": "state-5-of-5-tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage7-1a-state-5-of-5-tablet-768x1024.png",
+      "installedParts": [
+        "body",
+        "head",
+        "legLeft",
+        "legRight",
+        "armLeft",
+        "armRight",
+        "antenna"
+      ],
+      "visibleInstalled": [
+        "legLeft",
+        "legRight",
+        "armRight",
+        "armLeft",
+        "body",
+        "head",
+        "antenna"
+      ],
+      "blueprintAlphas": [
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045,
+        0.045
+      ],
+      "previewScale": 0.17920000000000003,
+      "helperScale": 0.2520718,
+      "scaleRatio": 0.7109085585932263,
+      "centerAlignment": {
+        "headBody": 0,
+        "antennaBody": 0
+      },
+      "feetContact": {
+        "robot": 627.52,
+        "stand": 627.52,
+        "delta": 0
+      },
+      "shoulderSymmetry": 0,
+      "robotBounds": {
+        "left": 258.9285387255567,
+        "right": 506.9978050058263,
+        "top": 375.4461479432845,
+        "bottom": 632.0567899294854
+      },
+      "stationBounds": {
+        "top": 235.52,
+        "bottom": 655.52
+      },
+      "inViewport": true,
+      "inStation": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "correctParts": true,
+        "scaleWithinBrief": true,
+        "feetContactCoincides": true,
+        "headBodyCentered": true,
+        "antennaCentered": true,
+        "shouldersSymmetric": true,
+        "blueprintIsFaint": true,
+        "robotInViewport": true,
+        "robotInStation": true,
+        "consoleClean": true
+      }
+    }
+  ],
+  "failures": []
+}
