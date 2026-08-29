@@ -22,6 +22,8 @@ import { createResponsiveLayout } from '../ui/responsiveLayout';
 import { configureResponsiveCamera } from '../ui/responsiveCamera';
 import { audioManager } from '../audio/AudioManager';
 import { shadowMatchingMechanic, type ShadowChoiceKey } from '../mechanics/shadowMatching';
+import { memoryMechanic } from '../mechanics/memory';
+import { MemoryTaskCard } from '../ui/MemoryTaskCard';
 
 const WRONG_DIALOGUE = [
   'Почти! Попробуй ещё раз',
@@ -54,6 +56,8 @@ const SIZE_CORRECT_DIALOGUE = [
 
 const SHADOW_WRONG_DIALOGUE = ['Попробуй ещё', 'Посмотри на форму', 'Почти!'] as const;
 const SHADOW_CORRECT_DIALOGUE = ['Точно!', 'Это она!', 'Молодец!'] as const;
+const MEMORY_MATCH_DIALOGUE = ['ПАРА!', 'ТОЧНО!', 'НАШЁЛ!'] as const;
+const MEMORY_WRONG_DIALOGUE = ['ЗАПОМНИ ИХ', 'ПОПРОБУЙ ЕЩЁ', 'ГДЕ ЖЕ ПАРА?'] as const;
 
 export class GameScene extends Phaser.Scene {
   constructor() { super('GameScene'); }
@@ -63,6 +67,7 @@ export class GameScene extends Phaser.Scene {
     const portrait = layout.mode !== 'landscape';
     const state = sessionState.snapshot;
     this.game.registry.set('sessionSnapshot', state);
+    const isMemoryTask = state.completedTasks === 4;
     const isShadowMatchingTask = state.completedTasks === 3;
     const isSizeComparisonTask = state.completedTasks === 2;
     const isSequenceTask = state.completedTasks === 1;
@@ -145,7 +150,80 @@ export class GameScene extends Phaser.Scene {
       })();
     };
 
-    if (isShadowMatchingTask) {
+    if (isMemoryTask) {
+      let memoryCard: MemoryTaskCard;
+      let memoryResolutionTimer: Phaser.Time.TimerEvent | undefined;
+      let finalTransitionTimer: Phaser.Time.TimerEvent | undefined;
+      const playFinalCompletion = (): void => {
+        if (completionFlowActive) return;
+        completionFlowActive = true;
+        sessionState.completeCurrentTask();
+        this.game.registry.set('sessionSnapshot', sessionState.snapshot);
+        progressPanel.setValue(5);
+        robot?.setRepairProgress(5);
+        audioManager.playRepairReward();
+        robotDialogue?.show('Я СНОВА РАБОТАЮ!');
+        void robot?.playCelebrate();
+        finalTransitionTimer = this.time.delayedCall(reducedMotion ? 1250 : 1900, () => {
+          if (this.sys.isActive()) this.scene.start('VictoryScene');
+        });
+      };
+      const resolvePendingPair = (): void => {
+        memoryResolutionTimer?.remove(false);
+        const pending = memoryMechanic.snapshot;
+        if (!pending.locked || !pending.firstCardId || !pending.secondCardId) return;
+        const first = pending.cards.find((card) => card.id === pending.firstCardId);
+        const second = pending.cards.find((card) => card.id === pending.secondCardId);
+        const matches = first?.pairId === second?.pairId;
+        memoryResolutionTimer = this.time.delayedCall(matches ? 360 : (reducedMotion ? 650 : 900), () => {
+          const resolution = memoryMechanic.resolvePair();
+          memoryCard.sync(memoryMechanic.snapshot, true);
+          if (resolution === 'mismatch') {
+            audioManager.playWrong();
+            robotDialogue?.show(MEMORY_WRONG_DIALOGUE[wrongAttempt % MEMORY_WRONG_DIALOGUE.length]);
+            wrongAttempt += 1;
+            void robot?.playWrong();
+          } else if (resolution === 'match' || resolution === 'complete') {
+            audioManager.playCorrect();
+            const pairIndex = memoryMechanic.snapshot.matchedPairs - 1;
+            robotDialogue?.show(MEMORY_MATCH_DIALOGUE[pairIndex % MEMORY_MATCH_DIALOGUE.length]);
+            if (resolution === 'complete') playFinalCompletion();
+            else void robot?.playCorrect();
+          }
+          memoryResolutionTimer = undefined;
+        });
+      };
+      memoryCard = new MemoryTaskCard(this, {
+        x: cardX, y: cardY, width: cardWidth, height: cardHeight,
+        sizing: layout.taskCardSizing,
+        mode: layout.mode,
+        snapshot: memoryMechanic.snapshot,
+        reducedMotion,
+        onCard: (cardId) => {
+          robotDialogue?.hide();
+          const result = memoryMechanic.select(cardId);
+          if (result !== 'ignored') {
+            audioManager.registerUserGesture();
+            audioManager.playUiClick();
+          }
+          if (result === 'second') resolvePendingPair();
+          return result;
+        },
+        onHint: () => {
+          const ids = memoryMechanic.hintCardIds();
+          if (!ids.length) return ids;
+          audioManager.playHint();
+          robotDialogue?.show(memoryMechanic.snapshot.firstCardId ? 'ВОТ ГДЕ ПАРА' : 'ЗАПОМНИ ИХ');
+          void robot?.playHint();
+          return ids;
+        },
+      });
+      if (memoryMechanic.snapshot.locked) resolvePendingPair();
+      this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
+        memoryResolutionTimer?.remove(false);
+        finalTransitionTimer?.remove(false);
+      });
+    } else if (isShadowMatchingTask) {
       const shadowState = shadowMatchingMechanic.snapshot;
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
@@ -180,7 +258,10 @@ export class GameScene extends Phaser.Scene {
           const result = shadowMatchingMechanic.check().result;
           if (result === 'correct') {
             audioManager.playCorrect();
-            if (shadowMatchingMechanic.snapshot.completed) playCompletionFlow();
+            if (shadowMatchingMechanic.snapshot.completed) {
+              playCompletionFlow();
+              this.time.delayedCall(reducedMotion ? 1050 : 1600, renderCurrentTask);
+            }
             else void robot?.playCorrect();
             const challengeIndex = shadowMatchingMechanic.snapshot.challengeIndex;
             robotDialogue?.show(SHADOW_CORRECT_DIALOGUE[challengeIndex % SHADOW_CORRECT_DIALOGUE.length]);

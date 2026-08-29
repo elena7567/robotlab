@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT STAGE
 
-Stage 6 — Mechanic 4: Найди тень
+Stage 7 — Mechanic 5: Memory / Найди пары
 
 ## CURRENT STATUS
 
-PASS — Mechanic 4 is reachable through the normal Start → Tasks 1–4 flow and presents three authored shadow-matching challenges with randomized option positions, persistent single selection, empty-check safety, gentle wrong retry, transient two-phase hints, centralized audio, stable robot reactions, and one final 3/5 → 4/5 repair reward. Production build, full challenge coverage, rapid-tap/double-submit protection, mute, resize, Home/restart, four required responsive viewports, screenshot review, and console/page/request checks all pass.
+PASS — All five major mechanics are reachable and playable through the normal Start-origin flow. Memory presents four shuffled pairs across eight cards with explicit face-down/up/matched state, comparison lockout, non-solving hints, responsive 4×2/2×4 composition, exact `ПАРЫ 0 ИЗ 4` → `ПАРЫ 4 ИЗ 4` progress, one final 4/5 → 5/5 repair completion, stable robot/audio feedback, and a production Russian completion screen. Build, full-flow, input safety, mute, live resize, Play Again, Home, four required viewports, screenshot review, and console/page/request checks all pass.
 
 ## TECH STACK
 
@@ -102,7 +102,13 @@ PASS — Mechanic 4 is reachable through the normal Start → Tasks 1–4 flow a
 - Stage 6: added a reusable `shadow-matching` TaskCard composition with one unchanged colour source asset, three fully interactive silhouette cards, at least 56×56 px effective targets, persistent selection, selection changes before check, and disabled empty checking.
 - Stage 6: hints pulse the colour target and then the correct shadow card temporarily without selecting, revealing, or advancing it; challenge transitions reset selection, result, hint, and rendered options through serializable state plus normal scene rendering.
 - Stage 6: Challenges 1 and 2 leave repair progress at `✓ ✓ ✓ ○ ○`; Challenge 3 completes Task 4 once, plays the existing repair reward choreography/audio once, and renders `✓ ✓ ✓ ✓ ○`.
-- Stage 6: restored the existing `Дальше` handoff after final Task 3 correctness so the ordinary player route visibly reaches `ЗАДАНИЕ 4 ИЗ 5`; Mechanic 5 remains unimplemented.
+- Stage 6: restored the existing `Дальше` handoff after final Task 3 correctness so the ordinary player route visibly reaches `ЗАДАНИЕ 4 ИЗ 5`.
+- Stage 7: added a serializable `MemoryMechanic` with eight unique card IDs, four stable pair IDs, explicit `FACE_DOWN` / `FACE_UP` / `MATCHED` state, first/second selection, comparison lockout, idempotent resolution, and reset-time shuffling that rejects trivial horizontal adjacent pairs.
+- Stage 7: added a dedicated responsive `MemoryTaskCard` so Tasks 1–4 retain their proven generic four-choice renderer; phones/desktop use a 4×2 grid and large portrait tablets use 2×4, with full-rectangle pointer targets at least 56×44 px.
+- Stage 7: reuses only `memory-cover`, `odd-apple`, `odd-banana`, `sequence-star`, and `size-battery`; no production art or audio was created, copied, renamed, or modified.
+- Stage 7: hints briefly reveal two unmatched cards or the selected card's partner without changing mechanic state; accepted card taps, correct/wrong/hint cues, comparison timing, reduced-motion flips, matched-card disabling, and third-tap lockout use existing input/audio/reaction boundaries.
+- Stage 7: the fourth pair alone advances overall repair from `✓ ✓ ✓ ✓ ○` to `✓ ✓ ✓ ✓ ✓`, plays one correct cue and one final repair reward, shows `Я СНОВА РАБОТАЮ!`, preserves the completed board for a readable success moment, then enters the production completion screen.
+- Stage 7: replaced the unused temporary Victory presentation with `РОБОТ ПОЧИНЕН!`, `ТЫ ВЫПОЛНИЛ ВСЕ ЗАДАНИЯ`, `Играть ещё`, and `На главную`; both exits reset session and all mechanic-local state without a browser reload or duplicate music loop.
 
 ## ASSET STATUS
 
@@ -157,6 +163,8 @@ PASS
 - Stage 5.3 production preview at `http://127.0.0.1:4193/` — PASS.
 - Stage 6 `npm run build` — PASS; TypeScript validation passed, 39 modules transformed, all approved object/shadow/audio assets were included, and only the existing non-blocking Phaser bundle-size advisory remains.
 - Stage 6 production preview at `http://127.0.0.1:4196/` — PASS.
+- Stage 7 `npm run build` — PASS; TypeScript validation passed, 41 modules transformed, all approved memory/object/audio assets were included, and only the existing non-blocking Phaser bundle-size advisory remains.
+- Stage 7 production preview at `http://127.0.0.1:4197/` — PASS.
 - `npm run preview -- --host 127.0.0.1 --port 4174` — PASS; Vite selected the available local preview at `127.0.0.1:4177` for final Stage 3.1 verification.
 - `npm run preview -- --host 127.0.0.1 --port 4180` — PASS; Stage 3.3 was verified from the generated production build.
 
@@ -258,8 +266,27 @@ PASS
 - Stage 6 responsive/visual review: 390×844, 768×1024, 1280×720, and 320×568 all show the target, three complete silhouettes, task/internal labels, accessible buttons, grounded robot, safe edges, and no clipping or overlap — PASS.
 - Stage 6 live resize preserves selected ID/order; Home → Играть resets session and all shadow state to Task 1; console errors, page errors, failed requests, and non-OK responses are zero — PASS.
 - Stage 6 evidence: `docs/qa/stage6-shadow-matching-results.json` and `docs/qa/screenshots/stage6-shadow-*.png`.
+- Stage 7 full Start-origin flow: Start → Odd One Out → Sequence → Size Comparison → Shadow Matching → Memory → 5/5 repair → completion screen — PASS.
+- Stage 7 input/state coverage: first card, same-card double tap, matching pair, mismatch reveal/reset, third-card attempt during lock, rapid input, matched-card tap, last pair, and no duplicate progress/completion — PASS.
+- Stage 7 hint coverage: no-selection hint temporarily reveals two unmatched cards; selected-card hint temporarily reveals its partner; both restore normal state without matching or progress, and muted hint emits no sound — PASS.
+- Stage 7 state/audio trace: `ПАРЫ 0 ИЗ 4` through `ПАРЫ 4 ИЗ 4`; four `answer-correct`, one exercised `answer-wrong`, two audible `hint`, and one final `repair-reward`, with exact overall repair `4/5 → 5/5` — PASS.
+- Stage 7 responsive/visual review: 390×844, 768×1024, 1280×720, and 320×568 keep all eight cards, controls, progress, robot, and final completion controls visible and non-overlapping; tablet uses 2×4 while the other required targets use 4×2 — PASS.
+- Stage 7 randomization produced four distinct layouts across four starts with no trivial horizontal adjacent pair; live resize preserves selected/matched state; Play Again and final-screen Home reset the full session to Task 1 — PASS.
+- Stage 7 console errors, page errors, failed requests, and non-OK responses: zero.
+- Stage 7 evidence: `docs/qa/stage7-memory-results.json` and `docs/qa/screenshots/stage7-*.png`.
 
 ## FILES CREATED
+
+- `src/game/mechanics/memory.ts`
+- `src/game/ui/MemoryTaskCard.ts`
+- `qa/stage7-memory-playtest.cjs`
+- `docs/qa/stage7-memory-results.json`
+- `docs/qa/screenshots/stage7-memory-mobile-390x844.png`
+- `docs/qa/screenshots/stage7-memory-tablet-768x1024.png`
+- `docs/qa/screenshots/stage7-memory-desktop-1280x720.png`
+- `docs/qa/screenshots/stage7-memory-minimum-320x568.png`
+- `docs/qa/screenshots/stage7-memory-final-pair-4-of-4.png`
+- `docs/qa/screenshots/stage7-final-completion-1280x720.png`
 
 - `src/game/mechanics/shadowMatching.ts`
 - `qa/stage6-shadow-matching-playtest.cjs`
@@ -384,6 +411,11 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## FILES CHANGED
 
+- `src/game/scenes/GameScene.ts` — routes final Shadow completion into Task 5, coordinates Memory comparison/hint/audio/robot/final-repair behavior, and transitions once to the completion screen after the readable 4/4 state.
+- `src/game/scenes/StartScene.ts` — resets Memory together with the existing full-session reset boundary.
+- `src/game/scenes/VictoryScene.ts` — replaces the unused temporary placeholder with the responsive final completion state and clean Play Again/Home resets.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 7 implementation, full five-task completion, verification, evidence, and release state.
+
 - `src/game/scenes/GameScene.ts` — routes completed Task 3 into Mechanic 4, coordinates all three shadow challenges, and restores the normal final-Task-3 `Дальше` handoff.
 - `src/game/scenes/StartScene.ts` — resets shadow-matching state with the existing session/mechanic reset boundary.
 - `src/game/ui/TaskCard.ts` — adds the reusable responsive target-plus-three-shadows composition and temporary two-phase hint choreography.
@@ -473,7 +505,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 6.
+- None for Stage 7.
 
 ## GIT
 
@@ -481,15 +513,15 @@ GIT:
 INITIALIZED
 
 BASELINE:
-This commit (`RobotLab baseline through Stage 5.1H`)
+`c26ea9d RobotLab add shadow matching mechanic`
 
 BRANCH:
 main
 
 ## NEXT
 
-User manual review of Stage 6 shadow matching and its transient hint timing. Do not implement Mechanic 5 until explicitly requested.
+User manual final gameplay review of the complete five-task flow and final completion presentation.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 6 shadow matching verified from the production preview. Normal flow reaches Task 4; all three wrong/hint/correct paths, option randomization, selection change, empty check, rapid taps, exact 3/5 → 4/5 completion, centralized audio/mute, robot grounding, live resize, Home/restart, and 390×844, 768×1024, 1280×720, and 320×568 visual QA pass with zero console/page/request/response errors.
+2026-08-29 — Stage 7 Memory and the complete five-task game verified from the production preview. The normal flow reaches and completes all five mechanics; Memory match/mismatch, both hint modes, rapid/same/third/matched-card protection, four distinct shuffled starts, exact 4/5 → 5/5 completion, final robot reaction, completion screen, Play Again, Home, mute, live resize, and 390×844, 768×1024, 1280×720, and 320×568 visual/runtime QA all pass with zero console/page/request/response errors.
