@@ -10,6 +10,7 @@ import { restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
+import { energyMechanic } from '../mechanics/energy';
 
 const LABORATORY_SOURCE_WIDTH = 1672;
 const LABORATORY_SOURCE_HEIGHT = 941;
@@ -59,6 +60,7 @@ const resetFullSession = (): void => {
   sizeComparisonMechanic.reset();
   shadowMatchingMechanic.reset();
   memoryMechanic.reset();
+  energyMechanic.reset();
 };
 
 export class VictoryScene extends Phaser.Scene {

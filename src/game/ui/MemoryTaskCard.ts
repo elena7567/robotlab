@@ -48,7 +48,7 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
     body.lineStyle(2, UI_COLORS.purpleDark, 1).strokeRoundedRect((config.width - sizing.ribbonWidth) / 2, ribbonY, sizing.ribbonWidth, sizing.ribbonHeight, 14);
     this.add(body);
 
-    this.add(scene.add.text(config.width / 2, 1, 'ЗАДАНИЕ 5 ИЗ 5', {
+    this.add(scene.add.text(config.width / 2, 1, 'ЗАДАНИЕ 5 ИЗ 10', {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${sizing.taskFontSize}px`, fontStyle: 'bold',
     }).setOrigin(0.5).setName('memory-task-label'));
     this.add(scene.add.text(config.width / 2, sizing.titleY, 'НАЙДИ ПАРЫ', {

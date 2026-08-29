@@ -161,12 +161,11 @@ Compilation is necessary but not sufficient for a mission-stage PASS.
 
 | Future stage | Deliverable | Dependency |
 |---|---|---|
-| 8.1 | Progression/persistence foundation and transition seam | Approved Stage 8.0 design |
-| 8.2 | Mission 6 complete | Foundation; approved energy assets |
-| 8.3 | Mission 7 complete | Foundation; approved connection assets |
-| 8.4 | Mission 8 complete | Foundation; approved grid/command assets |
-| 8.5 | Mission 9 complete | Missions 6–8 system states; diagnostic assets/audio |
-| 8.6 | Mission 10 complete | Stable Missions 6–9; finale assets |
-| 8.7 | Start/checkpoint/adaptation polish and 1–10 regression | Complete ten-mission loop |
+| 8.1 | Progression seam and Mission 6 complete | Approved Stage 8.0 design; procedural energy UI |
+| 8.2 | Mission 7 complete | Foundation; approved connection assets |
+| 8.3 | Mission 8 complete | Foundation; approved grid/command assets |
+| 8.4 | Mission 9 complete | Missions 6–8 system states; diagnostic assets/audio |
+| 8.5 | Mission 10 complete | Stable Missions 6–9; finale assets |
+| 8.6 | Start/checkpoint/adaptation polish and 1–10 regression | Complete ten-mission loop |
 
 Each stage must update `ROBOTLAB-PROJECT-STATUS.md` with exact file changes, verification commands/results, unresolved assets, and whether runtime scope remained within the approved stage.

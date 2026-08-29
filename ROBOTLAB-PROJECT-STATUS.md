@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.0A — Task Panel Spacing and Height Polish
+Stage 8.1 — Mission 6: Заряди робота
 
 ## CURRENT STATUS
 
-PASS — Stage 8.0A gives the task panel stable Home/ribbon separation and content-driven landscape height while preserving the locked five-mission runtime, mechanics, controls, progression, robot placement, assembly, and audio.
+PASS — Mission 6 is implemented through the ordinary Start → Missions 1–5 → assembly milestone → Energy 1/3–3/3 flow, ending in one canonical power activation and persistent powered/laboratory presentation state.
 
 ## FIRST FIVE MISSIONS
 
@@ -18,7 +18,26 @@ LOCKED
 
 ## MISSION 6–10
 
-DESIGN ONLY / NOT IMPLEMENTED
+MISSION 6 IMPLEMENTED; MISSIONS 7–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.1 — MISSION 6: ЗАРЯДИ РОБОТА
+
+- Changed only the post-completion destination of Mission 5: its gameplay, Memory rules, assembly 5/5 reward, scoring, audio, and release remain intact; after release it now opens `РОБОТ СОБРАН!` / `ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!` with `ПРОДОЛЖИТЬ`, never the true final `VictoryScene`.
+- Updated the Start subtitle to `СОБЕРИ, ОЖИВИ И ЗАПУСТИ РОБОТА!` without a mission count.
+- Extended canonical session progression to ten missions. `completedTasks` remains the mutable major-progress source; `assemblyProgress` remains clamped to 0–5 and `powerActivated` is derived from `completedTasks >= 6`, preventing contradictory duplicated state.
+- Added the reusable deterministic `energyMechanic` outside Phaser scenes: full-battery selection, almost-empty selection, and low → medium → full tap-ordering. Empty submission is neutral; wrong input resets only the current selection/order; hint state never solves or advances a challenge.
+- Added a procedural child-facing battery card using Phaser shapes at 20%, 55%, and 100% fill. Existing `size-battery.png` was inspected conceptually as a single size-comparison object and not reused because it cannot communicate three independent fill levels clearly. No production artwork or audio was added.
+- Mission 6 renders `ЗАДАНИЕ 6 ИЗ 10`, `ЭНЕРГИЯ 1 ИЗ 3` through `3 ИЗ 3`, and semantic phase progress `СИСТЕМЫ 1/4` / `ЭНЕРГИЯ`; it does not reuse assembly progress as the Mission 6 label.
+- Selection uses tap → selected frame → `ПРОВЕРИТЬ`; ordering uses the approved robust tap-order alternative with three numbered slots, large targets, toggle-to-correct before check, and equivalent mouse/touch actions.
+- Correct, wrong, and hint paths use the existing centralized audio manager and `answer-correct.wav`, `answer-wrong.wav`, and `hint.wav`; final activation uses `repair-reward.wav` exactly once.
+- The assembled repaired robot is cool/dim but neutral before activation. At completion it becomes `assembled + powered`: full-colour parts, brighter eyes, chest display, antenna glow, a restrained power pulse, and persistent lit platform conduits. The helper robot artwork/state is not darkened or replaced.
+- Completion is guarded by mechanic result, disabled submit, canonical state idempotency, one power-activation token, and scene shutdown-safe tweens. Mission 7 is not implemented.
+- Added architecture decision `docs/decisions/0004-mission6-energy-system.md`.
+- Full-flow QA: `qa/stage8-1-mission6-playtest.cjs` completed the real Start → Missions 1–5 → transition → Energy 1/3 → 2/3 → 3/3 → powered flow at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. All five use their intended touch/mouse paths and returned `failures: []`.
+- QA explicitly passed no-selection neutrality, selection change, wrong/reset, hint in all three challenges, wrong-order reset, order correction, duplicate final submit protection, exact audio counts, canonical `completedTasks = 6` / `powerActivated = true`, persistent repaired-robot powered state, platform-conduit activation, in-bounds cards/batteries, >=56 px targets, and zero console/page/request/response errors.
+- Visual review passed the eight required 390×844 and 1280×720 captures: Mission 5 transition, Energy 1/3, ordering, and powered completion at each size. At least two captures clearly show the powered reward.
+- Verification: `npm run build` PASS; TypeScript passed, Vite transformed 46 modules, and only the existing non-blocking Phaser bundle-size advisory was emitted. The first restricted-sandbox attempt hit Windows `spawn EPERM`; the identical approved rerun passed.
+- Evidence: `docs/qa/stage8-1-mission6-results.json` and `docs/qa/screenshots/stage8-1-*`.
 
 ## STAGE 8.0A — TASK PANEL SPACING AND HEIGHT POLISH
 

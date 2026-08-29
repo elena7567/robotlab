@@ -1,0 +1,3435 @@
+{
+  "matrix": [
+    {
+      "name": "minimum-320x568",
+      "checks": {
+        "startCopy": true,
+        "mission5Transition": true,
+        "energy1": true,
+        "noSelectionSafe": true,
+        "wrongReset": true,
+        "hint": true,
+        "energy2": true,
+        "ordering": true,
+        "wrongOrderReset": true,
+        "powerActivation": true,
+        "secondRobotPowered": true,
+        "labReactivity": true,
+        "audio": true,
+        "responsive": true,
+        "touchTargets": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "states": {
+        "transition": {
+          "scene": "TransitionScene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "title": "РОБОТ СОБРАН!",
+          "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
+          "cardBounds": null,
+          "batteryTargets": [],
+          "powered": false,
+          "conduitsActive": false,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        },
+        "initial": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 50.13332824707031,
+            "y": 205.71212768554688,
+            "width": 219.73334350585935,
+            "height": 189.5,
+            "right": 269.8666717529297,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ЭНЕРГИЯ 1 ИЗ 3",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 50.13332824707031,
+                "y": 328.7481276855469,
+                "width": 34.400000000000006,
+                "height": 7.463999999999999,
+                "right": 84.53332824707032,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 142.8,
+                "y": 315.68612768554686,
+                "width": 34.39999999999998,
+                "height": 20.52600000000001,
+                "right": 177.2,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 235.4666717529297,
+                "y": 298.8921276855469,
+                "width": 34.39999999999998,
+                "height": 37.31999999999999,
+                "right": 269.8666717529297,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": []
+        },
+        "noSelection": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 50.13332824707031,
+            "y": 205.71212768554688,
+            "width": 219.73334350585935,
+            "height": 189.5,
+            "right": 269.8666717529297,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ВЫБЕРИ БАТАРЕЮ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 50.13332824707031,
+                "y": 328.7481276855469,
+                "width": 34.400000000000006,
+                "height": 7.463999999999999,
+                "right": 84.53332824707032,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 142.8,
+                "y": 315.68612768554686,
+                "width": 34.39999999999998,
+                "height": 20.52600000000001,
+                "right": 177.2,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 235.4666717529297,
+                "y": 298.8921276855469,
+                "width": 34.39999999999998,
+                "height": 37.31999999999999,
+                "right": 269.8666717529297,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click"
+          ]
+        },
+        "wrong": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 50.13332824707031,
+            "y": 205.71212768554688,
+            "width": 219.73334350585935,
+            "height": 189.5,
+            "right": 269.8666717529297,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 50.13332824707031,
+                "y": 328.7481276855469,
+                "width": 34.400000000000006,
+                "height": 7.463999999999999,
+                "right": 84.53332824707032,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 142.8,
+                "y": 315.68612768554686,
+                "width": 34.39999999999998,
+                "height": 20.52600000000001,
+                "right": 177.2,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 235.4666717529297,
+                "y": 298.8921276855469,
+                "width": 34.39999999999998,
+                "height": 37.31999999999999,
+                "right": 269.8666717529297,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "energy2": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 50.13332824707031,
+            "y": 205.71212768554688,
+            "width": 219.73334350585935,
+            "height": 189.5,
+            "right": 269.8666717529297,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
+          "progress": "ЭНЕРГИЯ 2 ИЗ 3",
+          "challengeIndex": 1,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 50.13332824707031,
+                "y": 328.7481276855469,
+                "width": 34.400000000000006,
+                "height": 7.463999999999999,
+                "right": 84.53332824707032,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 142.8,
+                "y": 315.68612768554686,
+                "width": 34.39999999999998,
+                "height": 20.52600000000001,
+                "right": 177.2,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 235.4666717529297,
+                "y": 298.8921276855469,
+                "width": 34.39999999999998,
+                "height": 37.31999999999999,
+                "right": 269.8666717529297,
+                "bottom": 336.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 60
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "ordering": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 52,
+            "y": 205.71212768554688,
+            "width": 215,
+            "height": 189.5,
+            "right": 267,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ЭНЕРГИЯ 3 ИЗ 3",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.83332824707031,
+                "y": 342.61212768554685,
+                "width": 27,
+                "height": 5.600000000000023,
+                "right": 80.83332824707031,
+                "bottom": 348.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 146.5,
+                "y": 332.8121276855469,
+                "width": 27,
+                "height": 15.399999999999977,
+                "right": 173.5,
+                "bottom": 348.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 239.1666717529297,
+                "y": 320.2121276855469,
+                "width": 27,
+                "height": 28,
+                "right": 266.1666717529297,
+                "bottom": 348.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "wrongOrder": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 52,
+            "y": 205.71212768554688,
+            "width": 215,
+            "height": 189.5,
+            "right": 267,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.83332824707031,
+                "y": 342.61212768554685,
+                "width": 27,
+                "height": 5.600000000000023,
+                "right": 80.83332824707031,
+                "bottom": 348.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 146.5,
+                "y": 332.8121276855469,
+                "width": 27,
+                "height": 15.399999999999977,
+                "right": 173.5,
+                "bottom": 348.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 239.1666717529297,
+                "y": 320.2121276855469,
+                "width": 27,
+                "height": 28,
+                "right": 266.1666717529297,
+                "bottom": 348.2121276855469
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "complete": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "session": {
+            "currentTask": 7,
+            "completedTasks": 6,
+            "totalTasks": 10,
+            "score": 6,
+            "assemblyProgress": 5,
+            "powerActivated": true
+          },
+          "mission6Complete": true,
+          "cardBounds": {
+            "x": 52,
+            "y": 205.71212768554688,
+            "width": 215,
+            "height": 189.5,
+            "right": 267,
+            "bottom": 395.2121276855469
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ОТЛИЧНО!",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.02332901954651,
+                "y": 343.2361270904541,
+                "width": 28.619998455047607,
+                "height": 5.935999679565441,
+                "right": 81.64332747459412,
+                "bottom": 349.17212677001953
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 145.6900007724762,
+                "y": 332.8481276512146,
+                "width": 28.619998455047607,
+                "height": 16.32399911880492,
+                "right": 174.3099992275238,
+                "bottom": 349.17212677001953
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 238.35667252540588,
+                "y": 319.4921283721924,
+                "width": 28.619998455047607,
+                "height": 29.67999839782715,
+                "right": 266.9766709804535,
+                "bottom": 349.17212677001953
+              },
+              "hitWidth": 86.66666666666667,
+              "hitHeight": 56
+            }
+          ],
+          "powered": true,
+          "lifecycle": "powered",
+          "conduitsActive": true,
+          "conduitsAlpha": 0.72,
+          "rewardPlayed": true,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        }
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "checks": {
+        "startCopy": true,
+        "mission5Transition": true,
+        "energy1": true,
+        "noSelectionSafe": true,
+        "wrongReset": true,
+        "hint": true,
+        "energy2": true,
+        "ordering": true,
+        "wrongOrderReset": true,
+        "powerActivation": true,
+        "secondRobotPowered": true,
+        "labReactivity": true,
+        "audio": true,
+        "responsive": true,
+        "touchTargets": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "states": {
+        "transition": {
+          "scene": "TransitionScene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "title": "РОБОТ СОБРАН!",
+          "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
+          "cardBounds": null,
+          "batteryTargets": [],
+          "powered": false,
+          "conduitsActive": false,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        },
+        "initial": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 53.48100372314453,
+            "y": 256.7674560546875,
+            "width": 283.0380001831055,
+            "height": 305.50732421875,
+            "right": 336.51900390625,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ЭНЕРГИЯ 1 ИЗ 3",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.48100372314453,
+                "y": 453.0702954988281,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 111.56100372314452,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 165.96,
+                "y": 430.98378909882814,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 224.04,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 278.43900390625,
+                "y": 402.58685229882815,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 336.51900390625,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": []
+        },
+        "noSelection": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 53.48100372314453,
+            "y": 256.7674560546875,
+            "width": 283.0380001831055,
+            "height": 305.50732421875,
+            "right": 336.51900390625,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ВЫБЕРИ БАТАРЕЮ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.48100372314453,
+                "y": 453.0702954988281,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 111.56100372314452,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 165.96,
+                "y": 430.98378909882814,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 224.04,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 278.43900390625,
+                "y": 402.58685229882815,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 336.51900390625,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click"
+          ]
+        },
+        "wrong": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 53.48100372314453,
+            "y": 256.7674560546875,
+            "width": 283.0380001831055,
+            "height": 305.50732421875,
+            "right": 336.51900390625,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.48100372314453,
+                "y": 453.0702954988281,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 111.56100372314452,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 165.96,
+                "y": 430.98378909882814,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 224.04,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 278.43900390625,
+                "y": 402.58685229882815,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 336.51900390625,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "energy2": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 53.48100372314453,
+            "y": 256.7674560546875,
+            "width": 283.0380001831055,
+            "height": 305.50732421875,
+            "right": 336.51900390625,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
+          "progress": "ЭНЕРГИЯ 2 ИЗ 3",
+          "challengeIndex": 1,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.48100372314453,
+                "y": 453.0702954988281,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 111.56100372314452,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 165.96,
+                "y": 430.98378909882814,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 224.04,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 278.43900390625,
+                "y": 402.58685229882815,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 336.51900390625,
+                "bottom": 465.6911562988281
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "ordering": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 53.48100372314453,
+            "y": 256.7674560546875,
+            "width": 283.0380001831055,
+            "height": 305.50732421875,
+            "right": 336.51900390625,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ЭНЕРГИЯ 3 ИЗ 3",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.48100372314453,
+                "y": 449.711622403125,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 111.56100372314452,
+                "bottom": 462.332483203125
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 165.96,
+                "y": 427.625116003125,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 224.04,
+                "bottom": 462.332483203125
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 278.43900390625,
+                "y": 399.228179203125,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 336.51900390625,
+                "bottom": 462.332483203125
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "wrongOrder": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 53.48100372314453,
+            "y": 256.7674560546875,
+            "width": 283.0380001831055,
+            "height": 305.50732421875,
+            "right": 336.51900390625,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 53.48100372314453,
+                "y": 449.711622403125,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 111.56100372314452,
+                "bottom": 462.332483203125
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 165.96,
+                "y": 427.625116003125,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 224.04,
+                "bottom": 462.332483203125
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 278.43900390625,
+                "y": 399.228179203125,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 336.51900390625,
+                "bottom": 462.332483203125
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "complete": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "session": {
+            "currentTask": 7,
+            "completedTasks": 6,
+            "totalTasks": 10,
+            "score": 6,
+            "assemblyProgress": 5,
+            "powerActivated": true
+          },
+          "mission6Complete": true,
+          "cardBounds": {
+            "x": 51.73860538482666,
+            "y": 256.7674560546875,
+            "width": 286.5227968597412,
+            "height": 305.50732421875,
+            "right": 338.2614022445679,
+            "bottom": 562.2747802734375
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ОТЛИЧНО!",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 51.73860538482666,
+                "y": 451.06440146501313,
+                "width": 61.564796676635744,
+                "height": 13.378111725828546,
+                "right": 113.3034020614624,
+                "bottom": 464.4425131908417
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 164.21760166168212,
+                "y": 427.65270594481314,
+                "width": 61.56479667663575,
+                "height": 36.789807246028545,
+                "right": 225.78239833831788,
+                "bottom": 464.4425131908417
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 276.6966055679321,
+                "y": 397.55195456169895,
+                "width": 61.56479667663575,
+                "height": 66.89055862914273,
+                "right": 338.2614022445679,
+                "bottom": 464.4425131908417
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": true,
+          "lifecycle": "powered",
+          "conduitsActive": true,
+          "conduitsAlpha": 0.72,
+          "rewardPlayed": true,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "checks": {
+        "startCopy": true,
+        "mission5Transition": true,
+        "energy1": true,
+        "noSelectionSafe": true,
+        "wrongReset": true,
+        "hint": true,
+        "energy2": true,
+        "ordering": true,
+        "wrongOrderReset": true,
+        "powerActivation": true,
+        "secondRobotPowered": true,
+        "labReactivity": true,
+        "audio": true,
+        "responsive": true,
+        "touchTargets": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "states": {
+        "transition": {
+          "scene": "TransitionScene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "title": "РОБОТ СОБРАН!",
+          "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
+          "cardBounds": null,
+          "batteryTargets": [],
+          "powered": false,
+          "conduitsActive": false,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        },
+        "initial": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 321.0080032348633,
+            "height": 396.84000396728516,
+            "right": 401.6340026855469,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ЭНЕРГИЯ 1 ИЗ 3",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 98.09399505615235,
+                "y": 369.1213514070312,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 156.17399505615234,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 212.8400048828125,
+                "y": 347.03484500703127,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 270.9200048828125,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 327.5860070800781,
+                "y": 318.6379082070313,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 385.66600708007815,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": []
+        },
+        "noSelection": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 320.917340695858,
+            "height": 396.84000396728516,
+            "right": 401.5433401465416,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ВЫБЕРИ БАТАРЕЮ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 98.09399505615235,
+                "y": 369.1213514070312,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 156.17399505615234,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 212.8400048828125,
+                "y": 347.03484500703127,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 270.9200048828125,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 327.5860070800781,
+                "y": 318.6379082070313,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 385.66600708007815,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click"
+          ]
+        },
+        "wrong": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 321.0080032348633,
+            "height": 396.84000396728516,
+            "right": 401.6340026855469,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 98.09399505615235,
+                "y": 369.1213514070312,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 156.17399505615234,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 212.8400048828125,
+                "y": 347.03484500703127,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 270.9200048828125,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 327.5860070800781,
+                "y": 318.6379082070313,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 385.66600708007815,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "energy2": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 321.0080032348633,
+            "height": 396.84000396728516,
+            "right": 401.6340026855469,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
+          "progress": "ЭНЕРГИЯ 2 ИЗ 3",
+          "challengeIndex": 1,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 98.09399505615235,
+                "y": 369.1213514070312,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 156.17399505615234,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 212.8400048828125,
+                "y": 347.03484500703127,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 270.9200048828125,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 327.5860070800781,
+                "y": 318.6379082070313,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 385.66600708007815,
+                "bottom": 381.74221220703123
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "ordering": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 321.0080032348633,
+            "height": 396.84000396728516,
+            "right": 401.6340026855469,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ЭНЕРГИЯ 3 ИЗ 3",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 98.09399505615235,
+                "y": 332.3493482332031,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 156.17399505615234,
+                "bottom": 344.9702090332031
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 212.8400048828125,
+                "y": 310.26284183320314,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 270.9200048828125,
+                "bottom": 344.9702090332031
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 327.5860070800781,
+                "y": 281.86590503320315,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 385.66600708007815,
+                "bottom": 344.9702090332031
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "wrongOrder": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 321.0080032348633,
+            "height": 396.84000396728516,
+            "right": 401.6340026855469,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 98.09399505615235,
+                "y": 332.3493482332031,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 156.17399505615234,
+                "bottom": 344.9702090332031
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 212.8400048828125,
+                "y": 310.26284183320314,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 270.9200048828125,
+                "bottom": 344.9702090332031
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 327.5860070800781,
+                "y": 281.86590503320315,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 385.66600708007815,
+                "bottom": 344.9702090332031
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "complete": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 768,
+            "height": 1024
+          },
+          "session": {
+            "currentTask": 7,
+            "completedTasks": 6,
+            "totalTasks": 10,
+            "score": 6,
+            "assemblyProgress": 5,
+            "powerActivated": true
+          },
+          "mission6Complete": true,
+          "cardBounds": {
+            "x": 80.6259994506836,
+            "y": 117.87999725341797,
+            "width": 321.0080032348633,
+            "height": 396.84000396728516,
+            "right": 401.6340026855469,
+            "bottom": 514.7200012207031
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ОТЛИЧНО!",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 96.35159671783447,
+                "y": 333.70212729509126,
+                "width": 61.56479667663575,
+                "height": 13.378111725828546,
+                "right": 157.91639339447022,
+                "bottom": 347.0802390209198
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 211.09760654449462,
+                "y": 310.29043177489126,
+                "width": 61.56479667663575,
+                "height": 36.789807246028545,
+                "right": 272.6624032211304,
+                "bottom": 347.0802390209198
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 325.84360874176025,
+                "y": 280.1896803917771,
+                "width": 61.56479667663575,
+                "height": 66.89055862914273,
+                "right": 387.408405418396,
+                "bottom": 347.0802390209198
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": true,
+          "lifecycle": "powered",
+          "conduitsActive": true,
+          "conduitsAlpha": 0.72,
+          "rewardPlayed": true,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "checks": {
+        "startCopy": true,
+        "mission5Transition": true,
+        "energy1": true,
+        "noSelectionSafe": true,
+        "wrongReset": true,
+        "hint": true,
+        "energy2": true,
+        "ordering": true,
+        "wrongOrderReset": true,
+        "powerActivation": true,
+        "secondRobotPowered": true,
+        "labReactivity": true,
+        "audio": true,
+        "responsive": true,
+        "touchTargets": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "states": {
+        "transition": {
+          "scene": "TransitionScene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "title": "РОБОТ СОБРАН!",
+          "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
+          "cardBounds": null,
+          "batteryTargets": [],
+          "powered": false,
+          "conduitsActive": false,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        },
+        "initial": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 63.799599609375,
+            "y": 103.26000213623047,
+            "width": 281.2008190917969,
+            "height": 436.2520217895508,
+            "right": 345.0004187011719,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ЭНЕРГИЯ 1 ИЗ 3",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 63.799599609375,
+                "y": 378.51066415117185,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 121.87959960937499,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 175.35999389648438,
+                "y": 356.4241577511719,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 233.43999389648437,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 286.92041870117185,
+                "y": 328.0272209511719,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 345.0004187011719,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": []
+        },
+        "noSelection": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 63.799599609375,
+            "y": 103.26000213623047,
+            "width": 281.2008190917969,
+            "height": 436.2520217895508,
+            "right": 345.0004187011719,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ВЫБЕРИ БАТАРЕЮ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 63.799599609375,
+                "y": 378.51066415117185,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 121.87959960937499,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 175.35999389648438,
+                "y": 356.4241577511719,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 233.43999389648437,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 286.92041870117185,
+                "y": 328.0272209511719,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 345.0004187011719,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click"
+          ]
+        },
+        "wrong": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 63.799599609375,
+            "y": 103.26000213623047,
+            "width": 281.2008190917969,
+            "height": 436.2520217895508,
+            "right": 345.0004187011719,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 63.799599609375,
+                "y": 378.51066415117185,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 121.87959960937499,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 175.35999389648438,
+                "y": 356.4241577511719,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 233.43999389648437,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 286.92041870117185,
+                "y": 328.0272209511719,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 345.0004187011719,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "energy2": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 61.90000076293947,
+            "y": 103.26000213623047,
+            "width": 285,
+            "height": 436.2520217895508,
+            "right": 346.9000007629395,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
+          "progress": "ЭНЕРГИЯ 2 ИЗ 3",
+          "challengeIndex": 1,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 63.799599609375,
+                "y": 378.51066415117185,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 121.87959960937499,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 175.35999389648438,
+                "y": 356.4241577511719,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 233.43999389648437,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 286.92041870117185,
+                "y": 328.0272209511719,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 345.0004187011719,
+                "bottom": 391.13152495117185
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "ordering": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 60.40000076293947,
+            "y": 103.26000213623047,
+            "width": 288,
+            "height": 436.2520217895508,
+            "right": 348.4000007629395,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ЭНЕРГИЯ 3 ИЗ 3",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 63.799599609375,
+                "y": 326.8224012117187,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 121.87959960937499,
+                "bottom": 339.44326201171873
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 175.35999389648438,
+                "y": 304.73589481171877,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 233.43999389648437,
+                "bottom": 339.44326201171873
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 286.92041870117185,
+                "y": 276.3389580117188,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 345.0004187011719,
+                "bottom": 339.44326201171873
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "wrongOrder": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 60.40000076293947,
+            "y": 103.26000213623047,
+            "width": 288,
+            "height": 436.2520217895508,
+            "right": 348.4000007629395,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 63.799599609375,
+                "y": 326.8224012117187,
+                "width": 58.07999999999999,
+                "height": 12.620860800000003,
+                "right": 121.87959960937499,
+                "bottom": 339.44326201171873
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 175.35999389648438,
+                "y": 304.73589481171877,
+                "width": 58.079999999999984,
+                "height": 34.707367199999965,
+                "right": 233.43999389648437,
+                "bottom": 339.44326201171873
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 286.92041870117185,
+                "y": 276.3389580117188,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 345.0004187011719,
+                "bottom": 339.44326201171873
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "complete": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "session": {
+            "currentTask": 7,
+            "completedTasks": 6,
+            "totalTasks": 10,
+            "score": 6,
+            "assemblyProgress": 5,
+            "powerActivated": true
+          },
+          "mission6Complete": true,
+          "cardBounds": {
+            "x": 60.40000076293947,
+            "y": 103.26000213623047,
+            "width": 288,
+            "height": 436.2520217895508,
+            "right": 348.4000007629395,
+            "bottom": 539.5120239257812
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ОТЛИЧНО!",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 62.05720127105713,
+                "y": 328.1751802736069,
+                "width": 61.564796676635744,
+                "height": 13.378111725828546,
+                "right": 123.62199794769288,
+                "bottom": 341.55329199943543
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 173.6175955581665,
+                "y": 304.7634847534069,
+                "width": 61.56479667663575,
+                "height": 36.789807246028545,
+                "right": 235.18239223480225,
+                "bottom": 341.55329199943543
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 285.178020362854,
+                "y": 274.6627333702927,
+                "width": 61.56479667663575,
+                "height": 66.89055862914273,
+                "right": 346.74281703948975,
+                "bottom": 341.55329199943543
+              },
+              "hitWidth": 99.84160000000001,
+              "hitHeight": 92
+            }
+          ],
+          "powered": true,
+          "lifecycle": "powered",
+          "conduitsActive": true,
+          "conduitsAlpha": 0.72,
+          "rewardPlayed": true,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        }
+      }
+    },
+    {
+      "name": "wide-1438x914",
+      "checks": {
+        "startCopy": true,
+        "mission5Transition": true,
+        "energy1": true,
+        "noSelectionSafe": true,
+        "wrongReset": true,
+        "hint": true,
+        "energy2": true,
+        "ordering": true,
+        "wrongOrderReset": true,
+        "powerActivation": true,
+        "secondRobotPowered": true,
+        "labReactivity": true,
+        "audio": true,
+        "responsive": true,
+        "touchTargets": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "states": {
+        "transition": {
+          "scene": "TransitionScene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "title": "РОБОТ СОБРАН!",
+          "subtitle": "ТЕПЕРЬ ПОРА ЕГО ОЖИВИТЬ!",
+          "cardBounds": null,
+          "batteryTargets": [],
+          "powered": false,
+          "conduitsActive": false,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        },
+        "initial": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 82.96000000000001,
+            "y": 118.77999877929688,
+            "width": 290.08000000000004,
+            "height": 457.5000305175781,
+            "right": 373.0400000000001,
+            "bottom": 576.280029296875
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ЭНЕРГИЯ 1 ИЗ 3",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 82.96000000000001,
+                "y": 405.82633797929685,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 141.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 198.96,
+                "y": 383.7398315792969,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 257.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 314.96,
+                "y": 355.3428947792969,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 373.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": []
+        },
+        "noSelection": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 82.96000000000001,
+            "y": 118.77999877929688,
+            "width": 290.08000000000004,
+            "height": 457.5000305175781,
+            "right": 373.0400000000001,
+            "bottom": 576.280029296875
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ВЫБЕРИ БАТАРЕЮ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 82.96000000000001,
+                "y": 405.82633797929685,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 141.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 198.96,
+                "y": 383.7398315792969,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 257.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 314.96,
+                "y": 355.3428947792969,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 373.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click"
+          ]
+        },
+        "wrong": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 82.96000000000001,
+            "y": 118.77999877929688,
+            "width": 290.08000000000004,
+            "height": 457.5000305175781,
+            "right": 373.0400000000001,
+            "bottom": 576.280029296875
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 0,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 82.96000000000001,
+                "y": 405.82633797929685,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 141.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 198.96,
+                "y": 383.7398315792969,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 257.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 314.96,
+                "y": 355.3428947792969,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 373.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "energy2": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 82.96000000000001,
+            "y": 118.77999877929688,
+            "width": 290.08000000000004,
+            "height": 457.5000305175781,
+            "right": 373.0400000000001,
+            "bottom": 576.280029296875
+          },
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
+          "progress": "ЭНЕРГИЯ 2 ИЗ 3",
+          "challengeIndex": 1,
+          "challengeKind": "select",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 82.96000000000001,
+                "y": 405.82633797929685,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 141.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 198.96,
+                "y": 383.7398315792969,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 257.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 314.96,
+                "y": 355.3428947792969,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 373.04,
+                "bottom": 418.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "ordering": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 82,
+            "y": 118.77999877929688,
+            "width": 292,
+            "height": 457.5000305175781,
+            "right": 374,
+            "bottom": 576.280029296875
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ЭНЕРГИЯ 3 ИЗ 3",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 82.96000000000001,
+                "y": 344.82633797929685,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 141.04,
+                "bottom": 357.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 198.96,
+                "y": 322.7398315792969,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 257.04,
+                "bottom": 357.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 314.96,
+                "y": 294.3428947792969,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 373.04,
+                "bottom": 357.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct"
+          ]
+        },
+        "wrongOrder": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 6,
+            "completedTasks": 5,
+            "totalTasks": 10,
+            "score": 5,
+            "assemblyProgress": 5,
+            "powerActivated": false
+          },
+          "mission6Complete": false,
+          "cardBounds": {
+            "x": 82,
+            "y": 118.77999877929688,
+            "width": 292,
+            "height": 457.5000305175781,
+            "right": 374,
+            "bottom": 576.280029296875
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ПОПРОБУЙ ЕЩЁ",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 82.96000000000001,
+                "y": 344.82633797929685,
+                "width": 58.079999999999984,
+                "height": 12.620860800000003,
+                "right": 141.04,
+                "bottom": 357.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 198.96,
+                "y": 322.7398315792969,
+                "width": 58.08000000000001,
+                "height": 34.707367199999965,
+                "right": 257.04,
+                "bottom": 357.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 314.96,
+                "y": 294.3428947792969,
+                "width": 58.08000000000004,
+                "height": 63.104303999999956,
+                "right": 373.04,
+                "bottom": 357.44719877929685
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": false,
+          "lifecycle": "assembled",
+          "conduitsActive": false,
+          "conduitsAlpha": 0.08,
+          "rewardPlayed": false,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong"
+          ]
+        },
+        "complete": {
+          "scene": "Mission6Scene",
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "session": {
+            "currentTask": 7,
+            "completedTasks": 6,
+            "totalTasks": 10,
+            "score": 6,
+            "assemblyProgress": 5,
+            "powerActivated": true
+          },
+          "mission6Complete": true,
+          "cardBounds": {
+            "x": 81.21760166168212,
+            "y": 118.77999877929688,
+            "width": 293.56479667663575,
+            "height": 457.5000305175781,
+            "right": 374.7823983383179,
+            "bottom": 576.280029296875
+          },
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "progress": "ОТЛИЧНО!",
+          "challengeIndex": 2,
+          "challengeKind": "order",
+          "batteryTargets": [
+            {
+              "level": "low",
+              "bounds": {
+                "x": 81.21760166168212,
+                "y": 346.179117041185,
+                "width": 61.56479667663575,
+                "height": 13.378111725828546,
+                "right": 142.78239833831788,
+                "bottom": 359.55722876701356
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "medium",
+              "bounds": {
+                "x": 197.21760166168212,
+                "y": 322.767421520985,
+                "width": 61.56479667663575,
+                "height": 36.789807246028545,
+                "right": 258.7823983383179,
+                "bottom": 359.55722876701356
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            },
+            {
+              "level": "full",
+              "bounds": {
+                "x": 313.2176016616821,
+                "y": 292.6666701378708,
+                "width": 61.56479667663575,
+                "height": 66.89055862914273,
+                "right": 374.7823983383179,
+                "bottom": 359.55722876701356
+              },
+              "hitWidth": 104,
+              "hitHeight": 92
+            }
+          ],
+          "powered": true,
+          "lifecycle": "powered",
+          "conduitsActive": true,
+          "conduitsAlpha": 0.72,
+          "rewardPlayed": true,
+          "audio": [
+            "audio-ui-click",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-ui-click",
+            "audio-answer-wrong",
+            "audio-ui-click",
+            "audio-hint",
+            "audio-ui-click",
+            "audio-answer-correct",
+            "audio-repair-reward"
+          ]
+        }
+      }
+    }
+  ],
+  "failures": []
+}

@@ -49,6 +49,7 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
   private readonly silhouetteParts = new Map<AssemblyPartName, Phaser.GameObjects.Image>();
   private readonly installedParts = new Map<AssemblyPartName, Phaser.GameObjects.Image>();
   private assemblyState: RobotAssemblyState = 0;
+  private readonly powerVisuals: Phaser.GameObjects.GameObject[] = [];
 
   constructor(
     scene: Phaser.Scene,
@@ -76,6 +77,8 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
     }
 
     this.setAssemblyState(state);
+    this.createPowerVisuals();
+    this.setPowered(false);
     this.setData({
       previewScale,
       helperScale: HELPER_ROBOT_CANONICAL_SCALE,
@@ -100,6 +103,41 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
 
   get currentAssemblyState(): RobotAssemblyState {
     return this.assemblyState;
+  }
+
+  setPowered(powered: boolean): void {
+    for (const part of this.installedParts.values()) {
+      if (powered) part.clearTint().setAlpha(1);
+      else part.setTint(0x78929c).setAlpha(0.76);
+    }
+    for (const visual of this.powerVisuals) {
+      const object = visual as Phaser.GameObjects.Shape;
+      object.setVisible(true).setAlpha(powered ? Number(object.getData('poweredAlpha')) : Number(object.getData('inactiveAlpha')));
+    }
+    this.setData({ powered, lifecycleState: powered ? 'powered' : 'assembled' });
+  }
+
+  async playPowerActivation(reducedMotion = false): Promise<void> {
+    if (this.getData('powerActivationPlayed')) {
+      this.setPowered(true);
+      return;
+    }
+    this.setData('powerActivationPlayed', true);
+    this.setPowered(true);
+    const pulse = this.scene.add.ellipse(0, -690, 760, 1180, 0x65efff, 0)
+      .setName('robot-power-up-pulse')
+      .setBlendMode(Phaser.BlendModes.ADD);
+    this.addAt(pulse, 0);
+    await this.runTween({
+      targets: pulse,
+      alpha: { from: 0, to: reducedMotion ? 0.34 : 0.62 },
+      scaleX: { from: 0.72, to: 1.08 },
+      scaleY: { from: 0.72, to: 1.08 },
+      duration: reducedMotion ? 180 : 520,
+      yoyo: true,
+      ease: 'Sine.easeOut',
+    });
+    if (pulse.active) pulse.destroy();
   }
 
   async playInstall(
@@ -199,5 +237,19 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
       .setData('assemblyPart', name);
     this.add(part);
     return part;
+  }
+
+  private createPowerVisuals(): void {
+    const addPowerVisual = <T extends Phaser.GameObjects.Shape>(visual: T, inactiveAlpha: number, poweredAlpha: number): T => {
+      visual.setData({ inactiveAlpha, poweredAlpha }).setBlendMode(Phaser.BlendModes.ADD);
+      this.add(visual);
+      this.powerVisuals.push(visual);
+      return visual;
+    };
+    addPowerVisual(this.scene.add.ellipse(0, -720, 320, 270, 0x58e9ff).setName('robot-chest-glow'), 0.015, 0.16);
+    addPowerVisual(this.scene.add.rectangle(0, -704, 154, 74, 0x6ff3ff).setName('robot-chest-display'), 0.08, 0.92);
+    addPowerVisual(this.scene.add.circle(-62, -1004, 25, 0xa8fbff).setName('robot-eye-left'), 0.12, 0.96);
+    addPowerVisual(this.scene.add.circle(62, -1004, 25, 0xa8fbff).setName('robot-eye-right'), 0.12, 0.96);
+    addPowerVisual(this.scene.add.circle(0, -1234, 46, 0xffef83).setName('robot-antenna-glow'), 0.025, 0.85);
   }
 }

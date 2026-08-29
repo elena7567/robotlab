@@ -13,6 +13,7 @@ import { shadowMatchingMechanic } from '../mechanics/shadowMatching';
 import { memoryMechanic } from '../mechanics/memory';
 import { LOGICAL_SCENE_WIDTH, PLATFORM_CENTER_X, PLATFORM_CONTACT_Y } from '../ui/sceneLayout';
 import { audioManager } from '../audio/AudioManager';
+import { energyMechanic } from '../mechanics/energy';
 
 const COMPLETE_ROBOT_SOURCE_HEIGHT = 1448;
 const COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX = 25;
@@ -70,7 +71,7 @@ export class StartScene extends Phaser.Scene {
       stroke: '#31567a', strokeThickness: 7,
     }).setOrigin(0.5).setName('start-title');
     if (title.width > startLayout.titleMaxWidth) title.setScale(startLayout.titleMaxWidth / title.width);
-    this.add.text(width / 2, startLayout.subtitleY, 'Выполни 5 заданий и помоги\nроботу снова заработать', {
+    this.add.text(width / 2, startLayout.subtitleY, 'СОБЕРИ, ОЖИВИ И ЗАПУСТИ РОБОТА!', {
       color: '#fff8e7', fontFamily: UI_FONT, fontSize: `${startLayout.subtitleFontSize}px`, align: 'center',
       lineSpacing: 7, stroke: '#31567a', strokeThickness: 4,
       wordWrap: { width: startLayout.subtitleMaxWidth },
@@ -83,6 +84,7 @@ export class StartScene extends Phaser.Scene {
       sizeComparisonMechanic.reset();
       shadowMatchingMechanic.reset();
       memoryMechanic.reset();
+      energyMechanic.reset();
       this.scene.start('GameScene');
     }, {
       width: startLayout.playWidth,

@@ -206,7 +206,7 @@ export class GameScene extends Phaser.Scene {
         if (completionFlowActive) return;
         void playCompletionFlow().then(() => {
           finalTransitionTimer = this.time.delayedCall(reducedMotion ? 420 : 900, () => {
-            if (this.sys.isActive()) this.scene.start('VictoryScene');
+            if (this.sys.isActive()) this.scene.start('TransitionScene');
           });
         });
       };
