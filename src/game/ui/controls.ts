@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { audioManager } from '../audio/AudioManager';
 import { UI_COLORS, UI_FONT } from './visualTheme';
 
 export interface ControlOptions {
@@ -91,6 +92,8 @@ export function addControl(
   });
   container.on('pointerdown', () => {
     if (!runtime.enabled || runtime.pressed) return;
+    audioManager.registerUserGesture();
+    audioManager.playUiClick();
     runtime.pressed = true;
     scene.tweens.killTweensOf(container);
     container.setScale(0.97);

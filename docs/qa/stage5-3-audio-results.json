@@ -1,0 +1,1145 @@
+{
+  "checks": {
+    "filesExactAndValid": true,
+    "durations": true,
+    "decoded": true,
+    "noAutoplayBeforeGesture": true,
+    "playGestureUnlocked": true,
+    "singleUiClick": true,
+    "hintAllMechanics": true,
+    "wrongAllMechanics": true,
+    "correctAllMechanics": true,
+    "repairMajorOnly": true,
+    "immediateRetry": true,
+    "startMusicAfterHome": true,
+    "noDuplicateMusicOnResize": true,
+    "resizePreservesState": true,
+    "mute": true,
+    "mutePersistence": true,
+    "unmuteResumes": true,
+    "noRuntimeErrors": true
+  },
+  "failures": [],
+  "files": {
+    "audio-start-theme": {
+      "file": "public/assets/audio/music/start-theme.wav",
+      "size": 1411244,
+      "duration": 16,
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitsPerSample": 16
+    },
+    "audio-ui-click": {
+      "file": "public/assets/audio/sfx/ui-click.wav",
+      "size": 10628,
+      "duration": 0.12,
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitsPerSample": 16
+    },
+    "audio-answer-correct": {
+      "file": "public/assets/audio/sfx/answer-correct.wav",
+      "size": 63548,
+      "duration": 0.72,
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitsPerSample": 16
+    },
+    "audio-answer-wrong": {
+      "file": "public/assets/audio/sfx/answer-wrong.wav",
+      "size": 51200,
+      "duration": 0.58,
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitsPerSample": 16
+    },
+    "audio-hint": {
+      "file": "public/assets/audio/sfx/hint.wav",
+      "size": 56492,
+      "duration": 0.64,
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitsPerSample": 16
+    },
+    "audio-repair-reward": {
+      "file": "public/assets/audio/sfx/repair-reward.wav",
+      "size": 109412,
+      "duration": 1.24,
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitsPerSample": 16
+    }
+  },
+  "errors": {
+    "console": [],
+    "page": [],
+    "requests": [],
+    "responses": []
+  },
+  "snapshots": {
+    "beforeGesture": {
+      "events": [],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 0,
+      "musicPlaying": 0,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "StartScene"
+      ]
+    },
+    "afterPlay": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 0,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "GameScene"
+      ]
+    },
+    "afterHintOdd": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 0,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "GameScene"
+      ]
+    },
+    "afterWrongOdd": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2020.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 2020.8999999761581,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 0,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "GameScene"
+      ]
+    },
+    "afterCorrectOdd": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2020.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 2020.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2506,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 2506.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 2507.399999976158,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 0,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "GameScene"
+      ]
+    },
+    "afterMechanics": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2020.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 2020.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2506,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 2506.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 2507.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2887,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2991.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 2992.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3210.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 3211,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3698,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 3698.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4076.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4292.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4293.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4669.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4898.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4898.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 4899.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5275.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5382,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 5382.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5572.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 5573.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6052.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6052.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6428.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6616.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6616.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6994.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7207.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 7208,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 7208.899999976158,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 0,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "GameScene"
+      ]
+    },
+    "firstHome": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2020.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 2020.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2506,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 2506.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 2507.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2887,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2991.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 2992.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3210.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 3211,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3698,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 3698.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4076.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4292.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4293.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4669.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4898.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4898.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 4899.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5275.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5382,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 5382.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5572.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 5573.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6052.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6052.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6428.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6616.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6616.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6994.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7207.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 7208,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 7208.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7798.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-start-theme",
+          "at": 7802.699999988079,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": [
+        "StartScene"
+      ]
+    },
+    "afterResize": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2020.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 2020.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2506,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 2506.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 2507.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2887,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2991.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 2992.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3210.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 3211,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3698,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 3698.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4076.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4292.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4293.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4669.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4898.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4898.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 4899.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5275.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5382,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 5382.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5572.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 5573.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6052.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6052.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6428.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6616.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6616.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6994.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7207.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 7208,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 7208.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7798.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-start-theme",
+          "at": 7802.699999988079,
+          "muted": false
+        }
+      ],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "storedMuted": null,
+      "decoded": true,
+      "canvas": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": [
+        "StartScene"
+      ]
+    },
+    "afterMute": {
+      "events": [
+        {
+          "key": "audio-start-theme",
+          "at": 1433.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1434,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 1793.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 1794.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2020.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 2020.8999999761581,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2506,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 2506.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 2507.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2887,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 2991.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 2992.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3210.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 3211,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 3698,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 3698.2999999821186,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4076.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4292.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4293.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4669.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 4898.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 4898.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 4899.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5275.199999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5382,
+          "muted": false
+        },
+        {
+          "key": "audio-hint",
+          "at": 5382.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 5572.799999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-wrong",
+          "at": 5573.299999982119,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6052.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6052.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6428.0999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6616.5999999940395,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 6616.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 6994.399999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7207.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-answer-correct",
+          "at": 7208,
+          "muted": false
+        },
+        {
+          "key": "audio-repair-reward",
+          "at": 7208.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 7798.899999976158,
+          "muted": false
+        },
+        {
+          "key": "audio-start-theme",
+          "at": 7802.699999988079,
+          "muted": false
+        },
+        {
+          "key": "audio-ui-click",
+          "at": 8524,
+          "muted": false
+        }
+      ],
+      "muted": true,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "storedMuted": "true",
+      "decoded": true,
+      "canvas": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": [
+        "StartScene"
+      ]
+    },
+    "afterMutedReload": {
+      "events": [],
+      "muted": true,
+      "locked": false,
+      "musicInstances": 0,
+      "musicPlaying": 0,
+      "storedMuted": "true",
+      "decoded": true,
+      "canvas": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": [
+        "StartScene"
+      ]
+    },
+    "afterUnmute": {
+      "events": [],
+      "muted": false,
+      "locked": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "storedMuted": "false",
+      "decoded": true,
+      "canvas": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": [
+        "StartScene"
+      ]
+    }
+  }
+}

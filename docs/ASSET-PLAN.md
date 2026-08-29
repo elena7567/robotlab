@@ -80,11 +80,12 @@ Each set is one coordinated deliverable containing enough approved items for rev
 
 | ID | Purpose | Format | Transparent | Approx. dimensions | Animation requirement | Status |
 |---|---|---|---|---|---|---|
-| audio-music-main | Calm laboratory/game music | OGG + MP3 fallback | N/A | 60–150 s loop | Seamless loop points | MISSING |
-| audio-sfx-button | UI press confirmation | OGG + MP3 fallback | N/A | <0.5 s | None | MISSING |
-| audio-sfx-correct | Warm correct-answer cue | OGG + MP3 fallback | N/A | 0.5–1.5 s | Sync with feedback | MISSING |
-| audio-sfx-incorrect-soft | Gentle retry cue | OGG + MP3 fallback | N/A | <1 s | Never harsh/alarming | MISSING |
-| audio-sfx-repair | Restored-module cue | OGG + MP3 fallback | N/A | 1–2 s | Sync with repair reveal | MISSING |
+| audio-start-theme | Gentle playful StartScene theme | WAV, mono 44.1 kHz/16-bit | N/A | 16.00 s loop | Gesture-gated single loop | IMPLEMENTED |
+| audio-ui-click | Soft rounded UI confirmation | WAV, mono 44.1 kHz/16-bit | N/A | 0.12 s | Restart same key | IMPLEMENTED |
+| audio-answer-correct | Bright ascending answer chime | WAV, mono 44.1 kHz/16-bit | N/A | 0.72 s | Non-blocking | IMPLEMENTED |
+| audio-answer-wrong | Gentle descending retry cue | WAV, mono 44.1 kHz/16-bit | N/A | 0.58 s | Never harsh/alarming | IMPLEMENTED |
+| audio-hint | Curious sparkling hint chime | WAV, mono 44.1 kHz/16-bit | N/A | 0.64 s | Non-blocking | IMPLEMENTED |
+| audio-repair-reward | Mechanical/energy/reward flourish | WAV, mono 44.1 kHz/16-bit | N/A | 1.24 s | Major mechanic completion only | IMPLEMENTED |
 | audio-sfx-victory | Final completion flourish | OGG + MP3 fallback | N/A | 2–5 s | Sync with victory one-shot | MISSING |
 | audio-voice-robot | Optional short approved robot lines | OGG + MP3 fallback | N/A | <5 s/line | Localized clip manifest if used | MISSING |
 

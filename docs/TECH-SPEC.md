@@ -42,11 +42,12 @@ Fluid typography, padding, gaps, card dimensions, progress indicators, controls,
 
 ## Audio
 
-- Use Phaser Audio / Web Audio with local files only.
-- Start or resume audio only after a user gesture to satisfy browser autoplay policies.
-- Provide a persistent, clearly visible sound toggle.
-- Pause or attenuate audio when the document is hidden; restore settings without surprise playback.
-- Mix music below instruction, feedback, and optional voice. Incorrect feedback must be soft.
+- `AudioManager` owns Phaser Audio / Web Audio playback for the six local WAV assets; scenes and controls call semantic methods instead of embedding paths.
+- A project-owned gesture flag gates all playback independently of Phaser's reported lock state. Start music is requested when StartScene opens but is created/played only after a valid control gesture.
+- Music and SFX use separate internal mix levels (`0.26` and `0.58`); music is a single loop and repeated one-shot keys restart rather than stack.
+- The visible master sound toggle writes the validated boolean preference to `localStorage` key `robotlab.audioMuted` and applies it to both groups.
+- Start music fades out over 180 ms on Play, resumes as one instance on Home, survives resize without duplication, and pauses/resumes with app blur/focus.
+- Correct, retry, hint, and major repair cues are non-blocking. Incorrect feedback is deliberately soft and repair audio occurs once per completed major mechanic.
 - If decoding fails, gameplay remains fully playable without audio.
 
 ## Game state

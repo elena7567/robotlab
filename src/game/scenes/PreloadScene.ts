@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
-import { IMAGE_ASSETS, MISSING_ASSET_IDS } from '../assets/manifest';
+import { AUDIO_ASSETS, IMAGE_ASSETS, MISSING_ASSET_IDS } from '../assets/manifest';
+import { audioManager } from '../audio/AudioManager';
 
 export class PreloadScene extends Phaser.Scene {
   constructor() { super('PreloadScene'); }
@@ -11,9 +12,11 @@ export class PreloadScene extends Phaser.Scene {
     }).setOrigin(0.5);
     this.load.on('progress', (value: number) => progress.setText(`Loading ${Math.round(value * 100)}%`));
     for (const asset of IMAGE_ASSETS) this.load.image(asset.key, asset.path);
+    for (const asset of AUDIO_ASSETS) this.load.audio(asset.key, asset.path);
   }
 
   create(): void {
+    audioManager.initialize(this.game);
     for (const assetId of MISSING_ASSET_IDS) console.warn(`MISSING_ASSET: ${assetId}`);
     this.scene.start('StartScene');
   }

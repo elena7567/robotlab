@@ -3,6 +3,11 @@ export interface ImageAsset {
   readonly path: string;
 }
 
+export interface AudioAsset {
+  readonly key: string;
+  readonly path: string;
+}
+
 export const ASSET_GROUPS = {
   backgrounds: [
     { key: 'bg-start-laboratory', path: '/assets/backgrounds/laboratory-background.png' },
@@ -46,4 +51,12 @@ export const ASSET_GROUPS = {
 } satisfies Record<string, readonly ImageAsset[]>;
 
 export const IMAGE_ASSETS = Object.values(ASSET_GROUPS).flat();
+export const AUDIO_ASSETS = [
+  { key: 'audio-start-theme', path: 'assets/audio/music/start-theme.wav' },
+  { key: 'audio-ui-click', path: 'assets/audio/sfx/ui-click.wav' },
+  { key: 'audio-answer-correct', path: 'assets/audio/sfx/answer-correct.wav' },
+  { key: 'audio-answer-wrong', path: 'assets/audio/sfx/answer-wrong.wav' },
+  { key: 'audio-hint', path: 'assets/audio/sfx/hint.wav' },
+  { key: 'audio-repair-reward', path: 'assets/audio/sfx/repair-reward.wav' },
+] satisfies readonly AudioAsset[];
 export const MISSING_ASSET_IDS = [] as const;

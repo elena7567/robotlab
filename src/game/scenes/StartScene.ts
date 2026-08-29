@@ -10,6 +10,7 @@ import { clampValue } from '../ui/fluidSizing';
 import { sequenceMechanic } from '../mechanics/sequence';
 import { sizeComparisonMechanic } from '../mechanics/sizeComparison';
 import { LOGICAL_SCENE_WIDTH, PLATFORM_CENTER_X, PLATFORM_CONTACT_Y } from '../ui/sceneLayout';
+import { audioManager } from '../audio/AudioManager';
 
 const COMPLETE_ROBOT_SOURCE_HEIGHT = 1448;
 const COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX = 25;
@@ -17,6 +18,7 @@ const COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX = 25;
 export class StartScene extends Phaser.Scene {
   constructor() { super('StartScene'); }
   create(): void {
+    audioManager.startMusic();
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
     const startLayout = createStartSceneLayout(layout);
@@ -56,7 +58,7 @@ export class StartScene extends Phaser.Scene {
     const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
     let soundControl: Phaser.GameObjects.Container;
     soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, layout.headerY, soundLabel(), () => {
-      preferencesState.toggleSound();
+      audioManager.toggleMuted();
       const label = soundControl.getAt(1) as Phaser.GameObjects.Text;
       label.setText(soundLabel());
     }, undefined, { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize });
@@ -73,6 +75,7 @@ export class StartScene extends Phaser.Scene {
     }).setOrigin(0.5).setName('start-subtitle');
 
     const playButton = addControl(this, width / 2, startLayout.playY, 'Играть', () => {
+      audioManager.stopMusic(180);
       sessionState.reset();
       sequenceMechanic.reset();
       sizeComparisonMechanic.reset();

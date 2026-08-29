@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT STAGE
 
-Stage 5.1H — Align Arms to Body Shoulder Sockets
+Stage 5.3 — Audio Feedback Foundation
 
 ## CURRENT STATUS
 
-PASS — GameScene now derives explicit screen-left and screen-right shoulder anchors from the visible circular socket centers in `robot-body.png`: texture pixels `(21, 526)` and `(1233, 526)`. Through the unchanged body transform these become actor-local anchors `(-266.64, -583.80432)` and `(266.64, -583.80432)`. The screen-left `robot-arm-right.png` root uses its proximal connector center `(1006, 183)` as origin; the screen-right `robot-arm-left.png` root uses `(277, 183)`. Each arm root is placed directly on its corresponding body-local socket anchor, while the existing scale and mirrored `±4°` rotations remain unchanged. Temporary runtime QA markers confirmed zero-distance root/socket coincidence and were destroyed before clean screenshots. No arm art, hand target, body, head, legs, grounding, responsiveness, gameplay, or animation behavior changed.
+PASS — RobotLab now has six original project-local WAV assets, a centralized `AudioManager`, a typed audio manifest, explicit user-gesture autoplay gating, separate music/SFX mix levels, one-instance music and one-shot overlap control, semantic feedback across all three implemented mechanics, major-repair timing, and a persisted master mute preference. Production build, decoded-asset checks, playback counts, Home/resize loop uniqueness, mute reload/unmute, full three-viewport gameplay regression, screenshots, and console/page/request checks all pass.
 
 ## TECH STACK
 
@@ -94,10 +94,13 @@ PASS — GameScene now derives explicit screen-left and screen-right shoulder an
 - Stage 5.2B: changed only progress presentation; `currentTask`, `completedTasks`, score, major-mechanic completion, and internal challenge state semantics are unchanged.
 - Stage 5.2B: major task and internal challenge counters use explicit `ИЗ` wording so the two scopes remain distinct for young players.
 - Stage 5.2B: renamed the responsive progress panel to `РЕМОНТ`, removed its numeric fraction, and retained exactly five named visual repair indicators in both horizontal portrait/tablet and vertical desktop layouts.
+- Stage 5.3: synthesized `start-theme.wav`, `ui-click.wav`, `answer-correct.wav`, `answer-wrong.wav`, `hint.wav`, and `repair-reward.wav` locally from original waveforms; no external downloads, unclear licenses, vocals, or third-party sound packs are used.
+- Stage 5.3: added `AudioManager` with semantic APIs, music/SFX levels `0.26`/`0.58`, explicit first-gesture gating, a 180 ms Play fade, single-loop music, same-key SFX restart, master mute, blur/focus handling, and `robotlab.audioMuted` persistence.
+- Stage 5.3: shared controls emit one UI click at their existing `pointerdown` boundary; Odd One Out, Continue the Sequence, and Compare by Size emit correct/wrong/hint cues without delaying state, and only major mechanic completion emits repair reward audio.
 
 ## ASSET STATUS
 
-### FOUND AND LOADED (26 FILES / 27 RUNTIME IDS)
+### FOUND AND LOADED (32 FILES / 33 RUNTIME IDS)
 
 - Laboratory background (1 file / 2 runtime IDs): `laboratory-background.png` (`bg-start-laboratory`, `bg-main-laboratory`)
 - Robot complete (1): `robot-complete_v01.png` (runtime ID `robot-complete`)
@@ -108,6 +111,7 @@ PASS — GameScene now derives explicit screen-left and screen-right shoulder an
 - Shadows (4): `shadow-apple.png`, `shadow-ball.png`, `shadow-banana.png`, `shadow-carrot.png`
 - Memory (1): `memory-cover.png`
 - Repair items (3): `bolt.png`, `circuit-board.png`, `gear.png`
+- Audio (6): `start-theme.wav`, `ui-click.wav`, `answer-correct.wav`, `answer-wrong.wav`, `hint.wav`, `repair-reward.wav`
 
 ### MISSING_ASSET
 
@@ -143,6 +147,8 @@ PASS
 - Stage 5.1F production preview at `http://127.0.0.1:4210/` — PASS.
 - Stage 5.1H `npm run build` — PASS; TypeScript validation passed, 37 modules transformed, and `dist/` generated. The existing non-blocking Phaser bundle-size advisory remains.
 - Stage 5.1H production preview at `http://127.0.0.1:4213/` — PASS.
+- Stage 5.3 `npm run build` — PASS; TypeScript validation passed, 38 modules transformed, six WAV files copied into the self-contained production output, and the existing non-blocking Phaser bundle-size advisory remains.
+- Stage 5.3 production preview at `http://127.0.0.1:4193/` — PASS.
 - `npm run preview -- --host 127.0.0.1 --port 4174` — PASS; Vite selected the available local preview at `127.0.0.1:4177` for final Stage 3.1 verification.
 - `npm run preview -- --host 127.0.0.1 --port 4180` — PASS; Stage 3.3 was verified from the generated production build.
 
@@ -233,8 +239,27 @@ PASS
 - Stage 5.1H body-local socket/root coordinate, approved-texture, connector-origin, matching-height, temporary-marker, and error checks — PASS at 390×844, 768×1024, and 1280×720.
 - Stage 5.1H screenshot review: both arms visibly emerge from the round body sockets; no empty socket remains below either arm and neither arm grows from an upper torso corner.
 - Stage 5.1H evidence: `docs/qa/stage5-1h-shoulder-socket-alignment-results.json`, `docs/qa/screenshots/stage5-1h-*.png`, and `docs/qa/screenshots/stage5-1h-desktop-1280x720-torso-shoulders-close-up.png`.
+- Stage 5.3 audio assertions: exact WAV format/duration, decoded cache entries, no pre-gesture playback, gesture unlock, one click per tap, three mechanic-specific hint/wrong paths, seven correct paths, exactly three major repair cues, immediate wrong retry, Start music, Home/resize loop uniqueness, mute, reload persistence, unmute resume, and zero errors — PASS.
+- Stage 5.3 full gameplay regression: Start through all three implemented mechanics, Home, and restart — PASS at 390×844, 768×1024, and 1280×720 with no console/page/request failures.
+- Stage 5.3 screenshot review: desktop Start, desktop completed Task 3, mobile live-resized Start, mobile unmuted Start, and the three-viewport full-flow evidence retain readable controls, unobstructed playfields, and correct responsive composition.
+- Stage 5.3 evidence: `docs/qa/stage5-3-audio-results.json`, `docs/qa/screenshots/stage5-3-*.png`, refreshed `docs/qa/stage5-2-main-flow-results.json`, and refreshed `docs/qa/screenshots/stage5-2-*.png`.
 
 ## FILES CREATED
+
+- `public/assets/audio/music/start-theme.wav`
+- `public/assets/audio/sfx/ui-click.wav`
+- `public/assets/audio/sfx/answer-correct.wav`
+- `public/assets/audio/sfx/answer-wrong.wav`
+- `public/assets/audio/sfx/hint.wav`
+- `public/assets/audio/sfx/repair-reward.wav`
+- `src/game/audio/AudioManager.ts`
+- `tools/generate-audio.mjs`
+- `qa/stage5-3-audio-playtest.cjs`
+- `docs/qa/stage5-3-audio-results.json`
+- `docs/qa/screenshots/stage5-3-desktop-start-before-gesture.png`
+- `docs/qa/screenshots/stage5-3-desktop-game-audio-complete.png`
+- `docs/qa/screenshots/stage5-3-mobile-start-after-resize.png`
+- `docs/qa/screenshots/stage5-3-mobile-start-unmuted.png`
 
 - `package-lock.json`
 - `src/style.css`
@@ -335,6 +360,16 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## FILES CHANGED
 
+- `src/game/assets/manifest.ts` — registers the six stable local audio IDs and exact runtime paths.
+- `src/game/scenes/PreloadScene.ts` — preloads audio and initializes the manager after decoding.
+- `src/game/scenes/StartScene.ts` — requests gesture-gated music, fades it on Play, and binds the real sound toggle.
+- `src/game/scenes/GameScene.ts` — emits semantic correct, wrong, hint, and major repair audio for all implemented mechanics.
+- `src/game/state/preferencesState.ts` — validates and persists `robotlab.audioMuted` with denied-storage fallback.
+- `src/game/ui/controls.ts` — registers the first user gesture and emits exactly one centralized UI click per accepted press.
+- `docs/TECH-SPEC.md`, `docs/ARCHITECTURE.md`, `docs/ASSET-PLAN.md` — document audio architecture, files, mixing, persistence, autoplay, and lifecycle.
+- `qa/stage5-2-main-flow-playtest.cjs` evidence outputs — rerun unchanged across the required responsive targets.
+- `ROBOTLAB-PROJECT-STATUS.md` — documents Stage 5.3 implementation and verification.
+
 - `index.html` — added an empty data favicon to prevent an unnecessary browser 404.
 - `src/main.ts` — added the Phaser bootstrap and browser QA handle.
 - `src/game/assets/manifest.ts` — mapped both laboratory background IDs to the single approved production file and cleared resolved missing IDs.
@@ -409,7 +444,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 5.1H.
+- None for Stage 5.3.
 
 ## GIT
 
@@ -424,8 +459,8 @@ main
 
 ## NEXT
 
-User manual review of the Stage 5.1H shoulder-socket attachment. Do not optimize other robot geometry or implement Mechanic 4 until explicitly requested.
+User manual audio review of the six Stage 5.3 cues and their mix. Do not implement Mechanic 4 until explicitly requested.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 5.1H shoulder-socket alignment verified at 390×844, 768×1024, and 1280×720. Actor-local screen-left socket/root is `(-266.64, -583.80432)` and screen-right socket/root is `(266.64, -583.80432)`, with zero measured distance on both sides. Clean and temporary-marker screenshots confirm both arms emerge from the round body sockets with no empty socket below. Production build and console/page/request checks pass.
+2026-08-29 — Stage 5.3 audio feedback verified from the production preview. Six WAVs decode and play through the centralized manager; pre-gesture playback is absent; click/correct/wrong/hint/repair counts, mute persistence, unmute resume, single Start loop, live resize, Home/restart, and full 390×844, 768×1024, and 1280×720 gameplay regression all pass with zero console/page/request/audio-response errors.

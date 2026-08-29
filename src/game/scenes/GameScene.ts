@@ -20,6 +20,7 @@ import { TaskCard, type TaskObjectKey } from '../ui/TaskCard';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
 import { configureResponsiveCamera } from '../ui/responsiveCamera';
+import { audioManager } from '../audio/AudioManager';
 
 const WRONG_DIALOGUE = [
   'Почти! Попробуй ещё раз',
@@ -78,7 +79,7 @@ export class GameScene extends Phaser.Scene {
     const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
     let soundControl: Phaser.GameObjects.Container;
     soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, topY, soundLabel(), () => {
-      preferencesState.toggleSound();
+      audioManager.toggleMuted();
       (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
     }, UI_COLORS.green, iconSizing);
 
@@ -121,6 +122,7 @@ export class GameScene extends Phaser.Scene {
       const completedTasks = sessionState.snapshot.completedTasks;
       this.game.registry.set('sessionSnapshot', sessionState.snapshot);
       progressPanel.setValue(completedTasks);
+      audioManager.playRepairReward();
       if (!robot) {
         return;
       }
@@ -161,6 +163,7 @@ export class GameScene extends Phaser.Scene {
           sequenceMechanic.select(key as SequenceAssetKey);
         },
         onHint: () => {
+          audioManager.playHint();
           sequenceMechanic.showHint();
           robotDialogue?.show(sequenceMechanic.snapshot.challenge.hint);
           void robot?.playHint();
@@ -168,6 +171,7 @@ export class GameScene extends Phaser.Scene {
         onCheck: () => {
           const result = sequenceMechanic.check().result;
           if (result === 'correct') {
+            audioManager.playCorrect();
             if (sequenceMechanic.snapshot.completed) {
               playCompletionFlow();
             } else {
@@ -175,6 +179,7 @@ export class GameScene extends Phaser.Scene {
             }
             robotDialogue?.show(SEQUENCE_CORRECT_DIALOGUE);
           } else if (result === 'wrong') {
+            audioManager.playWrong();
             robotDialogue?.show(SEQUENCE_WRONG_DIALOGUE[wrongAttempt % SEQUENCE_WRONG_DIALOGUE.length]);
             wrongAttempt += 1;
             void robot?.playWrong();
@@ -212,6 +217,7 @@ export class GameScene extends Phaser.Scene {
           sizeComparisonMechanic.select(key as SizeChoiceKey);
         },
         onHint: () => {
+          audioManager.playHint();
           sizeComparisonMechanic.showHint();
           robotDialogue?.show(sizeComparisonMechanic.snapshot.challenge.hint);
           void robot?.playHint();
@@ -219,6 +225,7 @@ export class GameScene extends Phaser.Scene {
         onCheck: () => {
           const result = sizeComparisonMechanic.check().result;
           if (result === 'correct') {
+            audioManager.playCorrect();
             if (sizeComparisonMechanic.snapshot.completed) {
               playCompletionFlow();
             } else {
@@ -227,6 +234,7 @@ export class GameScene extends Phaser.Scene {
             const challengeIndex = sizeComparisonMechanic.snapshot.challengeIndex;
             robotDialogue?.show(SIZE_CORRECT_DIALOGUE[challengeIndex % SIZE_CORRECT_DIALOGUE.length]);
           } else if (result === 'wrong') {
+            audioManager.playWrong();
             robotDialogue?.show(SIZE_WRONG_DIALOGUE[wrongAttempt % SIZE_WRONG_DIALOGUE.length]);
             wrongAttempt += 1;
             void robot?.playWrong();
@@ -254,6 +262,7 @@ export class GameScene extends Phaser.Scene {
           oddMechanic.select(key as OddOneOutObjectKey);
         },
         onHint: () => {
+          audioManager.playHint();
           oddMechanic.showHint();
           robotDialogue?.show('Три предмета можно съесть');
           void robot?.playHint();
@@ -261,8 +270,10 @@ export class GameScene extends Phaser.Scene {
         onCheck: () => {
           const result = oddMechanic.check().result;
           if (result === 'correct') {
+            audioManager.playCorrect();
             playCompletionFlow();
           } else if (result === 'wrong') {
+            audioManager.playWrong();
             robotDialogue?.show(WRONG_DIALOGUE[wrongAttempt % WRONG_DIALOGUE.length]);
             wrongAttempt += 1;
             void robot?.playWrong();

@@ -52,11 +52,13 @@ Wrong answers remain inside the current mechanic attempt and emit gentle feedbac
 - `FlowController`: legal transitions and finite-loop guards.
 - `ProgressionSystem`: maps completed task count to repair stage/module IDs.
 - `InputRouter`: translates mouse/touch/optional keyboard into semantic actions.
-- `AudioSystem`: local playback, mixing, mute preference, lifecycle handling.
+- `AudioManager`: centralized local playback, separate music/SFX mix levels, explicit user-gesture unlock gate, overlap control, mute persistence, and blur/focus lifecycle handling.
 - `PersistenceService`: versioned, validated optional local settings only.
 - `AssetRegistry`: typed stable IDs mapped to local files and metadata.
 
 Systems expose state/events without retaining Phaser sprites, tweens, scenes, or audio objects.
+
+`PreloadScene` loads the typed `AUDIO_ASSETS` manifest and initializes the singleton `AudioManager`. Shared controls emit one UI click from their single `pointerdown` action boundary. `GameScene` emits semantic correct/wrong/hint/major-repair requests, while `StartScene` requests the one looping theme and stops it during Play transition. The manager alone owns sound instances; responsive scene restarts never create a second music loop.
 
 ### Mechanics
 
