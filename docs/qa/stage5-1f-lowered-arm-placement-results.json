@@ -1,0 +1,2030 @@
+{
+  "matrix": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "canonicalInitial": true,
+        "idleReset": true,
+        "wrongReset": true,
+        "correctReset": true,
+        "hintReset": true,
+        "celebrateReset": true,
+        "noRaisedRuntime": true,
+        "viewportContainment": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -220,
+            "y": -765,
+            "rotation": 4,
+            "origin": [
+              0.76,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 93.06942046041536,
+              "y": 594.2878443346293,
+              "width": 86.28025765125372,
+              "height": 86.28025765125369
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 220,
+            "y": -765,
+            "rotation": -4,
+            "origin": [
+              0.239,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 210.73096315901236,
+              "y": 594.2822053476596,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "idleReset": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -220,
+            "y": -765,
+            "rotation": 4,
+            "origin": [
+              0.76,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 93.06942046041536,
+              "y": 594.2878443346293,
+              "width": 86.28025765125372,
+              "height": 86.28025765125369
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 220,
+            "y": -765,
+            "rotation": -4,
+            "origin": [
+              0.239,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 210.73096315901236,
+              "y": 594.2822053476596,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "wrong": {
+          "active": {
+            "animationState": "WRONG",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 93.06942046041536,
+                "y": 594.2878443346293,
+                "width": 86.28025765125372,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.73096315901236,
+                "y": 594.2822053476596,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 93.06942046041536,
+                "y": 594.2878443346293,
+                "width": 86.28025765125372,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.73096315901236,
+                "y": 594.2822053476596,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "correct": {
+          "active": {
+            "animationState": "CORRECT",
+            "actor": {
+              "x": 640,
+              "y": 552.8032480124203,
+              "scale": 0.2561535210122413,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 91.41888967445374,
+                "y": 587.5163636733706,
+                "width": 87.67736754817909,
+                "height": 87.67736754817906
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.9856898475494,
+                "y": 587.5106333760046,
+                "width": 87.67736754817912,
+                "height": 87.67736754817906
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 93.06942046041536,
+                "y": 594.2878443346293,
+                "width": 86.28025765125372,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.73096315901236,
+                "y": 594.2822053476596,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "hint": {
+          "active": {
+            "animationState": "HINT",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 93.06942046041536,
+                "y": 594.2878443346293,
+                "width": 86.28025765125372,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.73096315901236,
+                "y": 594.2822053476596,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 93.06942046041536,
+                "y": 594.2878443346293,
+                "width": 86.28025765125372,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.73096315901236,
+                "y": 594.2822053476596,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "celebrate": {
+          "active": {
+            "animationState": "CELEBRATE",
+            "actor": {
+              "x": 640,
+              "y": 548.448174197156,
+              "scale": 0.25813823650710277,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 90.61632356827286,
+                "y": 583.6767356845235,
+                "width": 88.35670843622495,
+                "height": 88.35670843622506
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 211.10955000714065,
+                "y": 583.6709609877257,
+                "width": 88.35670843622492,
+                "height": 88.35670843622495
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 93.06942046041536,
+                "y": 594.2878443346293,
+                "width": 86.28025765125372,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 210.73096315901236,
+                "y": 594.2822053476596,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "canonicalInitial": true,
+        "idleReset": true,
+        "wrongReset": true,
+        "correctReset": true,
+        "hintReset": true,
+        "celebrateReset": true,
+        "noRaisedRuntime": true,
+        "viewportContainment": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -220,
+            "y": -765,
+            "rotation": 4,
+            "origin": [
+              0.76,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 240.51311937056738,
+              "y": 768.6662515565669,
+              "width": 121.45604475322676,
+              "height": 121.4560447532267
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 220,
+            "y": -765,
+            "rotation": -4,
+            "origin": [
+              0.239,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 406.1443539630483,
+              "y": 768.658313598656,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "idleReset": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -220,
+            "y": -765,
+            "rotation": 4,
+            "origin": [
+              0.76,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 240.51311937056738,
+              "y": 768.6662515565669,
+              "width": 121.45604475322676,
+              "height": 121.4560447532267
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 220,
+            "y": -765,
+            "rotation": -4,
+            "origin": [
+              0.239,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 406.1443539630483,
+              "y": 768.658313598656,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "wrong": {
+          "active": {
+            "animationState": "WRONG",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 240.51311937056738,
+                "y": 768.6662515565669,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.1443539630483,
+                "y": 768.658313598656,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 240.51311937056738,
+                "y": 768.6662515565669,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.1443539630483,
+                "y": 768.658313598656,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "correct": {
+          "active": {
+            "animationState": "CORRECT",
+            "actor": {
+              "x": 640,
+              "y": 552.482104995174,
+              "scale": 0.2563356609836744,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 238.0859874089351,
+                "y": 758.708851127203,
+                "width": 123.51051723782498,
+                "height": 123.51051723782496
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.5189336391667,
+                "y": 758.700778895892,
+                "width": 123.51051723782496,
+                "height": 123.51051723782496
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 240.51311937056738,
+                "y": 768.6662515565669,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.1443539630483,
+                "y": 768.658313598656,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "hint": {
+          "active": {
+            "animationState": "HINT",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 240.51311937056738,
+                "y": 768.6662515565669,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.1443539630483,
+                "y": 768.658313598656,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 240.51311937056738,
+                "y": 768.6662515565669,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.1443539630483,
+                "y": 768.658313598656,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "celebrate": {
+          "active": {
+            "animationState": "CELEBRATE",
+            "actor": {
+              "x": 640,
+              "y": 548.322035697205,
+              "scale": 0.25820447808779434,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 237.02219807990423,
+                "y": 753.565972322223,
+                "width": 124.4109733895512,
+                "height": 124.41097338955126
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.6831084218425,
+                "y": 753.5578412401314,
+                "width": 124.4109733895512,
+                "height": 124.41097338955115
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 240.51311937056738,
+                "y": 768.6662515565669,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 406.1443539630483,
+                "y": 768.658313598656,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "canonicalInitial": true,
+        "idleReset": true,
+        "wrongReset": true,
+        "correctReset": true,
+        "hintReset": true,
+        "celebrateReset": true,
+        "noRaisedRuntime": true,
+        "viewportContainment": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -220,
+            "y": -765,
+            "rotation": 4,
+            "origin": [
+              0.76,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 480.5701242564907,
+              "y": 350.37141269778886,
+              "width": 134.95116792812263,
+              "height": 134.95116792812257
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 220,
+            "y": -765,
+            "rotation": -4,
+            "origin": [
+              0.239,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 664.6048390296171,
+              "y": 350.36259274409116,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "idleReset": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -220,
+            "y": -765,
+            "rotation": 4,
+            "origin": [
+              0.76,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 480.5701242564907,
+              "y": 350.37141269778886,
+              "width": 134.95116792812263,
+              "height": 134.95116792812257
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 220,
+            "y": -765,
+            "rotation": -4,
+            "origin": [
+              0.239,
+              0.08
+            ],
+            "scale": [
+              0.4,
+              0.4
+            ],
+            "alpha": 1,
+            "bounds": {
+              "x": 664.6048390296171,
+              "y": 350.36259274409116,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "wrong": {
+          "active": {
+            "animationState": "WRONG",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 480.5701242564907,
+                "y": 350.37141269778886,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 664.6048390296171,
+                "y": 350.36259274409116,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 480.5701242564907,
+                "y": 350.37141269778886,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 664.6048390296171,
+                "y": 350.36259274409116,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "correct": {
+          "active": {
+            "animationState": "CORRECT",
+            "actor": {
+              "x": 640,
+              "y": 552.482104995174,
+              "scale": 0.2563356609836744,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 477.8733151545247,
+                "y": 339.3075924787704,
+                "width": 137.2339115876298,
+                "height": 137.23391158762968
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 665.0210380233003,
+                "y": 339.2986233326375,
+                "width": 137.23391158762968,
+                "height": 137.23391158762968
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 480.5701242564907,
+                "y": 350.37141269778886,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 664.6048390296171,
+                "y": 350.36259274409116,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "hint": {
+          "active": {
+            "animationState": "HINT",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 480.5701242564907,
+                "y": 350.37141269778886,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 664.6048390296171,
+                "y": 350.36259274409116,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 480.5701242564907,
+                "y": 350.37141269778886,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 664.6048390296171,
+                "y": 350.36259274409116,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        },
+        "celebrate": {
+          "active": {
+            "animationState": "CELEBRATE",
+            "actor": {
+              "x": 640,
+              "y": 548.6744852659726,
+              "scale": 0.25801938934360996,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 476.80840429129034,
+                "y": 334.09976244645986,
+                "width": 138.13531707429036,
+                "height": 138.1353170742904
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 665.1853858925348,
+                "y": 334.09073438750113,
+                "width": 138.13531707429036,
+                "height": 138.13531707429036
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scale": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -220,
+              "y": -765,
+              "rotation": 4,
+              "origin": [
+                0.76,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 480.5701242564907,
+                "y": 350.37141269778886,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 220,
+              "y": -765,
+              "rotation": -4,
+              "origin": [
+                0.239,
+                0.08
+              ],
+              "scale": [
+                0.4,
+                0.4
+              ],
+              "alpha": 1,
+              "bounds": {
+                "x": 664.6048390296171,
+                "y": 350.36259274409116,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "pass": true
+        }
+      }
+    }
+  ],
+  "failures": []
+}

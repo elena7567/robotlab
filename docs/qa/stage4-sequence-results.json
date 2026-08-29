@@ -1,0 +1,4923 @@
+{
+  "matrix": [
+    {
+      "name": "mobile-320x568",
+      "width": 320,
+      "height": 568,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 43.99983247884114,
+            "y": 263.39038118489583,
+            "width": 26.01733333333334,
+            "height": 26.01733333333334,
+            "right": 70.01716581217448,
+            "bottom": 289.40771451822917,
+            "hitWidth": 73.305,
+            "hitHeight": 46.01733333333333
+          },
+          {
+            "x": 112.66083559163411,
+            "y": 263.39038118489583,
+            "width": 26.01733333333334,
+            "height": 26.01733333333334,
+            "right": 138.67816892496745,
+            "bottom": 289.40771451822917,
+            "hitWidth": 73.305,
+            "hitHeight": 46.01733333333333
+          },
+          {
+            "x": 181.32183870442708,
+            "y": 263.39038118489583,
+            "width": 26.01733333333334,
+            "height": 26.01733333333334,
+            "right": 207.33917203776042,
+            "bottom": 289.40771451822917,
+            "hitWidth": 73.305,
+            "hitHeight": 46.01733333333333
+          },
+          {
+            "x": 249.98284944661458,
+            "y": 263.39038118489583,
+            "width": 26.01733333333334,
+            "height": 26.01733333333334,
+            "right": 276.0001827799479,
+            "bottom": 289.40771451822917,
+            "hitWidth": 73.305,
+            "hitHeight": 46.01733333333333
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 78.838,
+            "y": 221.1358666666667,
+            "width": 29.78,
+            "height": 29.779999999999973,
+            "right": 108.618,
+            "bottom": 250.91586666666666
+          },
+          {
+            "x": 111.974,
+            "y": 221.1358666666667,
+            "width": 29.780000000000015,
+            "height": 29.779999999999973,
+            "right": 141.75400000000002,
+            "bottom": 250.91586666666666
+          },
+          {
+            "x": 145.11,
+            "y": 221.1358666666667,
+            "width": 29.78,
+            "height": 29.779999999999973,
+            "right": 174.89000000000001,
+            "bottom": 250.91586666666666
+          },
+          {
+            "x": 178.24600000000004,
+            "y": 221.1358666666667,
+            "width": 29.78,
+            "height": 29.779999999999973,
+            "right": 208.02600000000004,
+            "bottom": 250.91586666666666
+          },
+          {
+            "x": 213.382,
+            "y": 223.1358666666667,
+            "width": 25.78,
+            "height": 25.779999999999973,
+            "right": 239.162,
+            "bottom": 248.91586666666666
+          }
+        ],
+        "layout": {
+          "viewportWidth": 320,
+          "viewportHeight": 568,
+          "aspectRatio": 0.5633802816901409,
+          "mode": "ultra-narrow-portrait",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 38,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 136,
+            "width": 296,
+            "height": 244.24
+          },
+          "taskCardSizing": {
+            "radius": 20.415333333333333,
+            "ribbonHeight": 34.474666666666664,
+            "ribbonWidth": 201.28,
+            "taskFontSize": 15.296666666666667,
+            "titleFontSize": 16.474666666666668,
+            "instructionFontSize": 13.296666666666667,
+            "feedbackFontSize": 12.178,
+            "titleY": 30.127333333333333,
+            "instructionY": 54.01733333333333,
+            "areaTop": 75.14466666666667,
+            "footerSpace": 72.72933333333333,
+            "cellGap": 6.356,
+            "cellMaxWidth": 100.61066666666667,
+            "cellMaxHeight": 55.56,
+            "sequenceGap": 3.3560000000000003,
+            "sequenceIconMaxSize": 29.78,
+            "sequenceOptionMaxHeight": 38.01733333333333,
+            "actionHeight": 48.474666666666664,
+            "actionFontSize": 13.296666666666667,
+            "actionGap": 8.356,
+            "horizontalPadding": 12.356
+          },
+          "progress": {
+            "x": 12,
+            "y": 72,
+            "width": 296,
+            "height": 54,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 16,
+              "stepRadius": 14.079999999999998,
+              "borderRadius": 19.2
+            }
+          },
+          "dialogue": {
+            "width": 146,
+            "height": 72,
+            "fontSize": 14,
+            "gap": 8
+          },
+          "worldFrame": {
+            "scale": 0.5245901639344263,
+            "offsetX": -175.73770491803282,
+            "offsetY": 270.0295081967212,
+            "platformScreenX": 160,
+            "platformScreenY": 563.8
+          }
+        },
+        "robot": {
+          "x": 88.19671667484289,
+          "y": 375.6304638627072,
+          "width": 143.6065361327361,
+          "height": 191.47538151031483,
+          "right": 231.80325280757899,
+          "bottom": 567.105845373022,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 320,
+          "height": 568
+        },
+        "document": {
+          "width": 320,
+          "height": 568
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-333x885",
+      "width": 333,
+      "height": 885,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 43.918749237060545,
+            "y": 292.87998046875,
+            "width": 29.949999999999996,
+            "height": 29.950000000000045,
+            "right": 73.86874923706054,
+            "bottom": 322.82998046875,
+            "hitWidth": 75.6875,
+            "hitHeight": 49.95
+          },
+          {
+            "x": 115.65625610351563,
+            "y": 292.87998046875,
+            "width": 29.94999999999999,
+            "height": 29.950000000000045,
+            "right": 145.60625610351562,
+            "bottom": 322.82998046875,
+            "hitWidth": 75.6875,
+            "hitHeight": 49.95
+          },
+          {
+            "x": 187.39374389648438,
+            "y": 292.87998046875,
+            "width": 29.94999999999999,
+            "height": 29.950000000000045,
+            "right": 217.34374389648437,
+            "bottom": 322.82998046875,
+            "hitWidth": 75.6875,
+            "hitHeight": 49.95
+          },
+          {
+            "x": 259.1312622070312,
+            "y": 292.87998046875,
+            "width": 29.950000000000045,
+            "height": 29.950000000000045,
+            "right": 289.0812622070313,
+            "bottom": 322.82998046875,
+            "hitWidth": 75.6875,
+            "hitHeight": 49.95
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 75.275,
+            "y": 245.57999267578126,
+            "width": 33.25,
+            "height": 33.24999999999997,
+            "right": 108.525,
+            "bottom": 278.8299926757812
+          },
+          {
+            "x": 112.575,
+            "y": 245.57999267578126,
+            "width": 33.249999999999986,
+            "height": 33.24999999999997,
+            "right": 145.825,
+            "bottom": 278.8299926757812
+          },
+          {
+            "x": 149.875,
+            "y": 245.57999267578126,
+            "width": 33.25,
+            "height": 33.24999999999997,
+            "right": 183.125,
+            "bottom": 278.8299926757812
+          },
+          {
+            "x": 187.175,
+            "y": 245.57999267578126,
+            "width": 33.25,
+            "height": 33.24999999999997,
+            "right": 220.425,
+            "bottom": 278.8299926757812
+          },
+          {
+            "x": 226.475,
+            "y": 247.57999267578126,
+            "width": 29.25,
+            "height": 29.24999999999997,
+            "right": 255.725,
+            "bottom": 276.8299926757812
+          }
+        ],
+        "layout": {
+          "viewportWidth": 333,
+          "viewportHeight": 885,
+          "aspectRatio": 0.376271186440678,
+          "mode": "ultra-narrow-portrait",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 43,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 154.305,
+            "width": 309,
+            "height": 272
+          },
+          "taskCardSizing": {
+            "radius": 21.225,
+            "ribbonHeight": 35.4,
+            "ribbonWidth": 210.12,
+            "taskFontSize": 15.875,
+            "titleFontSize": 17.4,
+            "instructionFontSize": 13.875,
+            "feedbackFontSize": 12.525,
+            "titleY": 32.325,
+            "instructionY": 57.95,
+            "areaTop": 81.275,
+            "footerSpace": 78.05,
+            "cellGap": 7.05,
+            "cellMaxWidth": 105.7,
+            "cellMaxHeight": 62.5,
+            "sequenceGap": 4.05,
+            "sequenceIconMaxSize": 33.25,
+            "sequenceOptionMaxHeight": 41.95,
+            "actionHeight": 49.4,
+            "actionFontSize": 13.875,
+            "actionGap": 9.05,
+            "horizontalPadding": 13.05
+          },
+          "progress": {
+            "x": 12,
+            "y": 82.62,
+            "width": 309,
+            "height": 57.525,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 16,
+              "stepRadius": 14.652,
+              "borderRadius": 19.98
+            }
+          },
+          "dialogue": {
+            "width": 149.85,
+            "height": 86,
+            "fontSize": 14,
+            "gap": 8.325000000000001
+          },
+          "worldFrame": {
+            "scale": 0.5459016393442623,
+            "offsetX": -182.87704918032784,
+            "offsetY": 319.8541803278689,
+            "platformScreenX": 166.5,
+            "platformScreenY": 625.5590983606558
+          }
+        },
+        "robot": {
+          "x": 91.77973295150673,
+          "y": 429.7451886306468,
+          "width": 149.44056461456466,
+          "height": 199.25408615275285,
+          "right": 241.2202975660714,
+          "bottom": 628.9992747833996,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 333,
+          "height": 885
+        },
+        "document": {
+          "width": 333,
+          "height": 885
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-360x800",
+      "width": 360,
+      "height": 800,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 45.28541666666666,
+            "y": 302.40834147135416,
+            "width": 35.616666666666674,
+            "height": 35.616666666666674,
+            "right": 80.90208333333334,
+            "bottom": 338.02500813802084,
+            "hitWidth": 80.88749999999999,
+            "hitHeight": 55.61666666666667
+          },
+          {
+            "x": 123.22291666666666,
+            "y": 302.40834147135416,
+            "width": 35.616666666666674,
+            "height": 35.616666666666674,
+            "right": 158.83958333333334,
+            "bottom": 338.02500813802084,
+            "hitWidth": 80.88749999999999,
+            "hitHeight": 55.61666666666667
+          },
+          {
+            "x": 201.16041666666666,
+            "y": 302.40834147135416,
+            "width": 35.616666666666674,
+            "height": 35.616666666666674,
+            "right": 236.77708333333334,
+            "bottom": 338.02500813802084,
+            "hitWidth": 80.88749999999999,
+            "hitHeight": 55.61666666666667
+          },
+          {
+            "x": 279.09791666666666,
+            "y": 302.40834147135416,
+            "width": 35.616666666666674,
+            "height": 35.616666666666674,
+            "right": 314.71458333333334,
+            "bottom": 338.02500813802084,
+            "hitWidth": 80.88749999999999,
+            "hitHeight": 55.61666666666667
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 74.27500038146971,
+            "y": 249.10833333333335,
+            "width": 38.25,
+            "height": 38.25,
+            "right": 112.52500038146971,
+            "bottom": 287.35833333333335
+          },
+          {
+            "x": 117.5750003814697,
+            "y": 249.10833333333335,
+            "width": 38.249999999999986,
+            "height": 38.25,
+            "right": 155.8250003814697,
+            "bottom": 287.35833333333335
+          },
+          {
+            "x": 160.8750003814697,
+            "y": 249.10833333333335,
+            "width": 38.25,
+            "height": 38.25,
+            "right": 199.1250003814697,
+            "bottom": 287.35833333333335
+          },
+          {
+            "x": 204.1750003814697,
+            "y": 249.10833333333335,
+            "width": 38.25,
+            "height": 38.25,
+            "right": 242.4250003814697,
+            "bottom": 287.35833333333335
+          },
+          {
+            "x": 249.4750003814697,
+            "y": 251.10833333333335,
+            "width": 34.25000000000003,
+            "height": 34.25,
+            "right": 283.7250003814697,
+            "bottom": 285.35833333333335
+          }
+        ],
+        "layout": {
+          "viewportWidth": 360,
+          "viewportHeight": 800,
+          "aspectRatio": 0.45,
+          "mode": "portrait",
+          "safe": {
+            "top": 12.600000000000001,
+            "right": 12.600000000000001,
+            "bottom": 12.600000000000001,
+            "left": 12.600000000000001
+          },
+          "margin": 12.600000000000001,
+          "headerY": 43.6,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12.600000000000023,
+            "y": 149,
+            "width": 334.79999999999995,
+            "height": 312
+          },
+          "taskCardSizing": {
+            "radius": 22.391666666666666,
+            "ribbonHeight": 36.733333333333334,
+            "ribbonWidth": 227.664,
+            "taskFontSize": 16.708333333333332,
+            "titleFontSize": 18.733333333333334,
+            "instructionFontSize": 14.708333333333334,
+            "feedbackFontSize": 13.025,
+            "titleY": 35.49166666666667,
+            "instructionY": 63.61666666666667,
+            "areaTop": 90.10833333333333,
+            "footerSpace": 85.71666666666667,
+            "cellGap": 8.05,
+            "cellMaxWidth": 113.03333333333333,
+            "cellMaxHeight": 72.5,
+            "sequenceGap": 5.05,
+            "sequenceIconMaxSize": 38.25,
+            "sequenceOptionMaxHeight": 47.61666666666667,
+            "actionHeight": 50.733333333333334,
+            "actionFontSize": 14.708333333333334,
+            "actionGap": 10.05,
+            "horizontalPadding": 14.05
+          },
+          "progress": {
+            "x": 12.600000000000023,
+            "y": 82.19999999999999,
+            "width": 334.79999999999995,
+            "height": 54,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 16.2,
+              "stepRadius": 15.84,
+              "borderRadius": 21.599999999999998
+            }
+          },
+          "dialogue": {
+            "width": 162,
+            "height": 80,
+            "fontSize": 14,
+            "gap": 9
+          },
+          "worldFrame": {
+            "scale": 0.5901639344262295,
+            "offsetX": -197.70491803278685,
+            "offsetY": 358.5180327868853,
+            "platformScreenX": 180,
+            "platformScreenY": 689.0098360655738
+          }
+        },
+        "robot": {
+          "x": 99.22131730654723,
+          "y": 477.3191174228077,
+          "width": 161.55736538690553,
+          "height": 215.40982051587412,
+          "right": 260.77868269345277,
+          "bottom": 692.7289379386818,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 360,
+          "height": 800
+        },
+        "document": {
+          "width": 360,
+          "height": 800
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 48.768288553873695,
+            "y": 311.9138497721354,
+            "width": 38.047666666666665,
+            "height": 38.047666666666714,
+            "right": 86.81595522054036,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          },
+          {
+            "x": 133.57353299967448,
+            "y": 311.9138497721354,
+            "width": 38.04766666666666,
+            "height": 38.047666666666714,
+            "right": 171.62119966634114,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          },
+          {
+            "x": 218.3787850748698,
+            "y": 311.9138497721354,
+            "width": 38.047666666666686,
+            "height": 38.047666666666714,
+            "right": 256.4264517415365,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          },
+          {
+            "x": 303.184021891276,
+            "y": 311.9138497721354,
+            "width": 38.047666666666714,
+            "height": 38.047666666666714,
+            "right": 341.23168855794273,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 83.05449961853029,
+            "y": 256.03983162434895,
+            "width": 40.39500000000001,
+            "height": 40.39499999999998,
+            "right": 123.4494996185303,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 128.92849961853028,
+            "y": 256.03983162434895,
+            "width": 40.39500000000001,
+            "height": 40.39499999999998,
+            "right": 169.3234996185303,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 174.8024996185303,
+            "y": 256.03983162434895,
+            "width": 40.39500000000001,
+            "height": 40.39499999999998,
+            "right": 215.19749961853032,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 220.67649961853033,
+            "y": 256.03983162434895,
+            "width": 40.39499999999998,
+            "height": 40.39499999999998,
+            "right": 261.0714996185303,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 268.5504996185303,
+            "y": 258.03983162434895,
+            "width": 36.39499999999998,
+            "height": 36.39499999999998,
+            "right": 304.9454996185303,
+            "bottom": 294.43483162434893
+          }
+        ],
+        "layout": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 152.142,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "taskCardSizing": {
+            "radius": 22.892166666666668,
+            "ribbonHeight": 37.30533333333334,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 17.065833333333334,
+            "titleFontSize": 19.305333333333333,
+            "instructionFontSize": 15.065833333333334,
+            "feedbackFontSize": 13.2395,
+            "titleY": 36.85016666666667,
+            "instructionY": 66.04766666666667,
+            "areaTop": 93.89783333333334,
+            "footerSpace": 89.00566666666667,
+            "cellGap": 8.479000000000001,
+            "cellMaxWidth": 116.17933333333335,
+            "cellMaxHeight": 76.79,
+            "sequenceGap": 5.479000000000001,
+            "sequenceIconMaxSize": 40.395,
+            "sequenceOptionMaxHeight": 50.04766666666667,
+            "actionHeight": 51.30533333333334,
+            "actionFontSize": 15.065833333333334,
+            "actionGap": 10.479000000000001,
+            "horizontalPadding": 14.479000000000001
+          },
+          "progress": {
+            "x": 15,
+            "y": 83.778,
+            "width": 360,
+            "height": 54.86,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 17.55,
+              "stepRadius": 17.16,
+              "borderRadius": 23.4
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          },
+          "worldFrame": {
+            "scale": 0.639344262295082,
+            "offsetX": -214.1803278688525,
+            "offsetY": 370.27986885245906,
+            "platformScreenX": 195,
+            "platformScreenY": 728.312655737705
+          }
+        },
+        "robot": {
+          "x": 107.48976804482066,
+          "y": 498.9810483709649,
+          "width": 175.02047916914773,
+          "height": 233.3606388921969,
+          "right": 282.5102472139684,
+          "bottom": 732.3416872631618,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-412x915",
+      "width": 412,
+      "height": 915,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 50.81500244140625,
+            "y": 327.0150146484375,
+            "width": 41,
+            "height": 41,
+            "right": 91.81500244140625,
+            "bottom": 368.0150146484375,
+            "hitWidth": 91.78999999999999,
+            "hitHeight": 61
+          },
+          {
+            "x": 140.60499572753906,
+            "y": 327.0150146484375,
+            "width": 41,
+            "height": 41,
+            "right": 181.60499572753906,
+            "bottom": 368.0150146484375,
+            "hitWidth": 91.78999999999999,
+            "hitHeight": 61
+          },
+          {
+            "x": 230.39500427246094,
+            "y": 327.0150146484375,
+            "width": 41,
+            "height": 41,
+            "right": 271.39500427246094,
+            "bottom": 368.0150146484375,
+            "hitWidth": 91.78999999999999,
+            "hitHeight": 61
+          },
+          {
+            "x": 320.1850280761719,
+            "y": 327.0150146484375,
+            "width": 41,
+            "height": 41,
+            "right": 361.1850280761719,
+            "bottom": 368.0150146484375,
+            "hitWidth": 91.78999999999999,
+            "hitHeight": 61
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 86.50000007629393,
+            "y": 268.01499938964844,
+            "width": 43,
+            "height": 43,
+            "right": 129.50000007629393,
+            "bottom": 311.01499938964844
+          },
+          {
+            "x": 135.50000007629393,
+            "y": 268.01499938964844,
+            "width": 43,
+            "height": 43,
+            "right": 178.50000007629393,
+            "bottom": 311.01499938964844
+          },
+          {
+            "x": 184.50000007629393,
+            "y": 268.01499938964844,
+            "width": 43,
+            "height": 43,
+            "right": 227.50000007629393,
+            "bottom": 311.01499938964844
+          },
+          {
+            "x": 233.50000007629393,
+            "y": 268.01499938964844,
+            "width": 43,
+            "height": 43,
+            "right": 276.50000007629393,
+            "bottom": 311.01499938964844
+          },
+          {
+            "x": 284.50000007629393,
+            "y": 270.01499938964844,
+            "width": 39,
+            "height": 39,
+            "right": 323.50000007629393,
+            "bottom": 309.01499938964844
+          }
+        ],
+        "layout": {
+          "viewportWidth": 412,
+          "viewportHeight": 915,
+          "aspectRatio": 0.45027322404371584,
+          "mode": "portrait",
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "margin": 14.420000000000002,
+          "headerY": 45.42,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000016,
+            "y": 159.515,
+            "width": 383.15999999999997,
+            "height": 350
+          },
+          "taskCardSizing": {
+            "radius": 23.5,
+            "ribbonHeight": 38,
+            "ribbonWidth": 250,
+            "taskFontSize": 17.5,
+            "titleFontSize": 20,
+            "instructionFontSize": 15.5,
+            "feedbackFontSize": 13.5,
+            "titleY": 38.5,
+            "instructionY": 69,
+            "areaTop": 98.5,
+            "footerSpace": 93,
+            "cellGap": 9,
+            "cellMaxWidth": 120,
+            "cellMaxHeight": 82,
+            "sequenceGap": 6,
+            "sequenceIconMaxSize": 43,
+            "sequenceOptionMaxHeight": 53,
+            "actionHeight": 52,
+            "actionFontSize": 15.5,
+            "actionGap": 11,
+            "horizontalPadding": 15
+          },
+          "progress": {
+            "x": 26,
+            "y": 85.4,
+            "width": 360,
+            "height": 59.475,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 18.54,
+              "stepRadius": 18.128,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 185.4,
+            "height": 86,
+            "fontSize": 15.244,
+            "gap": 10.3
+          },
+          "worldFrame": {
+            "scale": 0.6754098360655738,
+            "offsetX": -226.26229508196724,
+            "offsetY": 392.2300819672131,
+            "platformScreenX": 206,
+            "platformScreenY": 770.4595901639344
+          }
+        },
+        "robot": {
+          "x": 113.55329244743956,
+          "y": 528.1913105771192,
+          "width": 184.89343036391,
+          "height": 246.52457381854663,
+          "right": 298.44672281134956,
+          "bottom": 774.7158843956659,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 412,
+          "height": 915
+        },
+        "document": {
+          "width": 412,
+          "height": 915
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 178.12773754882812,
+            "y": 375.5110078125,
+            "width": 50.894000000000005,
+            "height": 50.894000000000005,
+            "right": 229.02173754882813,
+            "bottom": 426.4050078125,
+            "hitWidth": 120.5375,
+            "hitHeight": 70.894
+          },
+          {
+            "x": 298.4112458496094,
+            "y": 375.5110078125,
+            "width": 50.894000000000005,
+            "height": 50.894000000000005,
+            "right": 349.3052458496094,
+            "bottom": 426.4050078125,
+            "hitWidth": 120.5375,
+            "hitHeight": 70.894
+          },
+          {
+            "x": 418.6947541503906,
+            "y": 375.5110078125,
+            "width": 50.894000000000005,
+            "height": 50.894000000000005,
+            "right": 469.5887541503906,
+            "bottom": 426.4050078125,
+            "hitWidth": 120.5375,
+            "hitHeight": 70.894
+          },
+          {
+            "x": 538.97829296875,
+            "y": 375.5110078125,
+            "width": 50.894000000000005,
+            "height": 50.894000000000005,
+            "right": 589.87229296875,
+            "bottom": 426.4050078125,
+            "hitWidth": 120.5375,
+            "hitHeight": 70.894
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 239.1829975585938,
+            "y": 306.03499951171875,
+            "width": 51.73000000000002,
+            "height": 51.73000000000002,
+            "right": 290.9129975585938,
+            "bottom": 357.76499951171877
+          },
+          {
+            "x": 298.6589975585938,
+            "y": 306.03499951171875,
+            "width": 51.72999999999996,
+            "height": 51.73000000000002,
+            "right": 350.38899755859376,
+            "bottom": 357.76499951171877
+          },
+          {
+            "x": 358.1349975585938,
+            "y": 306.03499951171875,
+            "width": 51.72999999999996,
+            "height": 51.73000000000002,
+            "right": 409.86499755859376,
+            "bottom": 357.76499951171877
+          },
+          {
+            "x": 417.6109975585938,
+            "y": 306.03499951171875,
+            "width": 51.73000000000002,
+            "height": 51.73000000000002,
+            "right": 469.3409975585938,
+            "bottom": 357.76499951171877
+          },
+          {
+            "x": 479.0869975585938,
+            "y": 308.03499951171875,
+            "width": 47.73000000000002,
+            "height": 47.73000000000002,
+            "right": 526.8169975585938,
+            "bottom": 355.76499951171877
+          }
+        ],
+        "layout": {
+          "viewportWidth": 768,
+          "viewportHeight": 1024,
+          "aspectRatio": 0.75,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "margin": 26.880000000000003,
+          "headerY": 57.88,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 130.56,
+            "y": 182.11200000000002,
+            "width": 506.88,
+            "height": 419.84
+          },
+          "taskCardSizing": {
+            "radius": 25.537,
+            "ribbonHeight": 40.328,
+            "ribbonWidth": 250,
+            "taskFontSize": 18.955,
+            "titleFontSize": 22.328,
+            "instructionFontSize": 16.955,
+            "feedbackFontSize": 14.373,
+            "titleY": 44.028999999999996,
+            "instructionY": 78.894,
+            "areaTop": 113.923,
+            "footerSpace": 106.386,
+            "cellGap": 10.745999999999999,
+            "cellMaxWidth": 132.804,
+            "cellMaxHeight": 99.46,
+            "sequenceGap": 7.7459999999999996,
+            "sequenceIconMaxSize": 51.73,
+            "sequenceOptionMaxHeight": 62.894,
+            "actionHeight": 54.328,
+            "actionFontSize": 16.955,
+            "actionGap": 12.745999999999999,
+            "horizontalPadding": 16.746
+          },
+          "progress": {
+            "x": 169,
+            "y": 99.16799999999999,
+            "width": 430,
+            "height": 66.56,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 20,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -192,
+            "offsetY": 453.332,
+            "platformScreenX": 384,
+            "platformScreenY": 957.332
+          }
+        },
+        "robot": {
+          "x": 260.8124993445649,
+          "y": 634.5036416730122,
+          "width": 246.37497079329205,
+          "height": 328.49996105772266,
+          "right": 507.18747013785696,
+          "bottom": 963.0036027307349,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "document": {
+          "width": 768,
+          "height": 1024
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "tablet-820x1180",
+      "width": 820,
+      "height": 1180,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 188.17498779296875,
+            "y": 400.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 246.17498779296875,
+            "bottom": 458.8800048828125,
+            "hitWidth": 127.55000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 316.7249755859375,
+            "y": 400.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 374.7249755859375,
+            "bottom": 458.8800048828125,
+            "hitWidth": 127.55000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 445.2749938964844,
+            "y": 400.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 503.2749938964844,
+            "bottom": 458.8800048828125,
+            "hitWidth": 127.55000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 573.824951171875,
+            "y": 400.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 631.824951171875,
+            "bottom": 458.8800048828125,
+            "hitWidth": 127.55000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 246.9999938964844,
+            "y": 323.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 304.9999938964844,
+            "bottom": 381.8800048828125
+          },
+          {
+            "x": 313.9999938964844,
+            "y": 323.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 371.9999938964844,
+            "bottom": 381.8800048828125
+          },
+          {
+            "x": 380.9999938964844,
+            "y": 323.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 438.9999938964844,
+            "bottom": 381.8800048828125
+          },
+          {
+            "x": 447.9999938964844,
+            "y": 323.8800048828125,
+            "width": 58,
+            "height": 58,
+            "right": 505.9999938964844,
+            "bottom": 381.8800048828125
+          },
+          {
+            "x": 516.9999938964844,
+            "y": 325.8800048828125,
+            "width": 54,
+            "height": 54,
+            "right": 570.9999938964844,
+            "bottom": 379.8800048828125
+          }
+        ],
+        "layout": {
+          "viewportWidth": 820,
+          "viewportHeight": 1180,
+          "aspectRatio": 0.6949152542372882,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 28,
+            "right": 28,
+            "bottom": 28,
+            "left": 28
+          },
+          "margin": 28,
+          "headerY": 59,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 139.39999999999998,
+            "y": 188.88,
+            "width": 541.2,
+            "height": 483.79999999999995
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 195,
+            "y": 102,
+            "width": 430,
+            "height": 68,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 20,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -166,
+            "offsetY": 525.1799999999998,
+            "platformScreenX": 410,
+            "platformScreenY": 1029.1799999999998
+          }
+        },
+        "robot": {
+          "x": 286.8124993445649,
+          "y": 706.3516336163716,
+          "width": 246.37497079329205,
+          "height": 328.49996105772266,
+          "right": 533.187470137857,
+          "bottom": 1034.8515946740943,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 820,
+          "height": 1180
+        },
+        "document": {
+          "width": 820,
+          "height": 1180
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "tablet-1024x1366",
+      "width": 1024,
+      "height": 1366,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 264.375,
+            "y": 403.85601806640625,
+            "width": 58,
+            "height": 58,
+            "right": 322.375,
+            "bottom": 461.85601806640625,
+            "hitWidth": 144.75,
+            "hitHeight": 78
+          },
+          {
+            "x": 410.125,
+            "y": 403.85601806640625,
+            "width": 58,
+            "height": 58,
+            "right": 468.125,
+            "bottom": 461.85601806640625,
+            "hitWidth": 144.75,
+            "hitHeight": 78
+          },
+          {
+            "x": 555.875,
+            "y": 403.85601806640625,
+            "width": 58,
+            "height": 58,
+            "right": 613.875,
+            "bottom": 461.85601806640625,
+            "hitWidth": 144.75,
+            "hitHeight": 78
+          },
+          {
+            "x": 701.625,
+            "y": 403.85601806640625,
+            "width": 58,
+            "height": 58,
+            "right": 759.625,
+            "bottom": 461.85601806640625,
+            "hitWidth": 144.75,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 349,
+            "y": 326.8560028076172,
+            "width": 58,
+            "height": 58,
+            "right": 407,
+            "bottom": 384.8560028076172
+          },
+          {
+            "x": 416,
+            "y": 326.8560028076172,
+            "width": 58,
+            "height": 58,
+            "right": 474,
+            "bottom": 384.8560028076172
+          },
+          {
+            "x": 483,
+            "y": 326.8560028076172,
+            "width": 58,
+            "height": 58,
+            "right": 541,
+            "bottom": 384.8560028076172
+          },
+          {
+            "x": 550,
+            "y": 326.8560028076172,
+            "width": 58,
+            "height": 58,
+            "right": 608,
+            "bottom": 384.8560028076172
+          },
+          {
+            "x": 619,
+            "y": 328.8560028076172,
+            "width": 54,
+            "height": 54,
+            "right": 673,
+            "bottom": 382.8560028076172
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1024,
+          "viewportHeight": 1366,
+          "aspectRatio": 0.7496339677891655,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 28,
+            "right": 28,
+            "bottom": 28,
+            "left": 28
+          },
+          "margin": 28,
+          "headerY": 59,
+          "headerWidth": 337.92,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76.8,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 207,
+            "y": 191.856,
+            "width": 610,
+            "height": 500
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 297,
+            "y": 102,
+            "width": 430,
+            "height": 68,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 20,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -64,
+            "offsetY": 544.356,
+            "platformScreenX": 512,
+            "platformScreenY": 1048.356
+          }
+        },
+        "robot": {
+          "x": 388.8124993445649,
+          "y": 725.5276590069966,
+          "width": 246.37497079329205,
+          "height": 328.49996105772266,
+          "right": 635.187470137857,
+          "bottom": 1054.0276200647193,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1024,
+          "height": 1366
+        },
+        "document": {
+          "width": 1024,
+          "height": 1366
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "landscape-568x320",
+      "width": 568,
+      "height": 320,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 33.75625152587891,
+            "y": 204.0000030517578,
+            "width": 24.849999999999994,
+            "height": 24.850000000000023,
+            "right": 58.6062515258789,
+            "bottom": 228.85000305175782,
+            "hitWidth": 52.0625,
+            "hitHeight": 44.85
+          },
+          {
+            "x": 80.96875305175782,
+            "y": 204.0000030517578,
+            "width": 24.849999999999994,
+            "height": 24.850000000000023,
+            "right": 105.81875305175781,
+            "bottom": 228.85000305175782,
+            "hitWidth": 52.0625,
+            "hitHeight": 44.85
+          },
+          {
+            "x": 128.18124694824218,
+            "y": 204.0000030517578,
+            "width": 24.850000000000023,
+            "height": 24.850000000000023,
+            "right": 153.0312469482422,
+            "bottom": 228.85000305175782,
+            "hitWidth": 52.0625,
+            "hitHeight": 44.85
+          },
+          {
+            "x": 175.3937561035156,
+            "y": 204.0000030517578,
+            "width": 24.850000000000023,
+            "height": 24.850000000000023,
+            "right": 200.24375610351564,
+            "bottom": 228.85000305175782,
+            "hitWidth": 52.0625,
+            "hitHeight": 44.85
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 55.7,
+            "y": 170.35,
+            "width": 22,
+            "height": 22,
+            "right": 77.7,
+            "bottom": 192.35
+          },
+          {
+            "x": 80.85,
+            "y": 170.35,
+            "width": 22,
+            "height": 22,
+            "right": 102.85,
+            "bottom": 192.35
+          },
+          {
+            "x": 106,
+            "y": 170.35,
+            "width": 22,
+            "height": 22,
+            "right": 128,
+            "bottom": 192.35
+          },
+          {
+            "x": 131.14999999999998,
+            "y": 170.35,
+            "width": 22,
+            "height": 22,
+            "right": 153.14999999999998,
+            "bottom": 192.35
+          },
+          {
+            "x": 158.3,
+            "y": 172.35,
+            "width": 18,
+            "height": 18,
+            "right": 176.3,
+            "bottom": 190.35
+          }
+        ],
+        "layout": {
+          "viewportWidth": 568,
+          "viewportHeight": 320,
+          "aspectRatio": 1.775,
+          "mode": "landscape",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 38,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 72,
+            "width": 210,
+            "height": 236
+          },
+          "taskCardSizing": {
+            "radius": 20.175,
+            "ribbonHeight": 34.2,
+            "ribbonWidth": 176,
+            "taskFontSize": 15.125,
+            "titleFontSize": 16.2,
+            "instructionFontSize": 13.125,
+            "feedbackFontSize": 12.075,
+            "titleY": 29.475,
+            "instructionY": 52.85,
+            "areaTop": 73.325,
+            "footerSpace": 71.15,
+            "cellGap": 6.15,
+            "cellMaxWidth": 99.1,
+            "cellMaxHeight": 53.5,
+            "sequenceGap": 3.15,
+            "sequenceIconMaxSize": 28.75,
+            "sequenceOptionMaxHeight": 36.85,
+            "actionHeight": 48.2,
+            "actionFontSize": 13.125,
+            "actionGap": 8.15,
+            "horizontalPadding": 12.15
+          },
+          "progress": {
+            "x": 474,
+            "y": 72,
+            "width": 82,
+            "height": 236,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 12,
+              "countFontSize": 14,
+              "stepRadius": 13.120000000000001,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 14.200000000000001
+          },
+          "worldFrame": {
+            "scale": 0.44375,
+            "offsetX": 0,
+            "offsetY": 0.25,
+            "platformScreenX": 284,
+            "platformScreenY": 248.75
+          }
+        },
+        "robot": {
+          "x": 223.26172134239124,
+          "y": 89.57768524139759,
+          "width": 121.47654968582299,
+          "height": 161.9687329144307,
+          "right": 344.7382710282142,
+          "bottom": 251.5464181558283,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 568,
+          "height": 320
+        },
+        "document": {
+          "width": 568,
+          "height": 320
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 35.467496643066404,
+            "y": 239.44252563476562,
+            "width": 32.55812500000001,
+            "height": 32.55812500000002,
+            "right": 68.02562164306642,
+            "bottom": 272.00065063476563,
+            "hitWidth": 56.558125000000004,
+            "hitHeight": 54.29916666666667
+          },
+          {
+            "x": 88.84312988281249,
+            "y": 239.44252563476562,
+            "width": 32.55812500000002,
+            "height": 32.55812500000002,
+            "right": 121.40125488281251,
+            "bottom": 272.00065063476563,
+            "hitWidth": 56.558125000000004,
+            "hitHeight": 54.29916666666667
+          },
+          {
+            "x": 142.218740234375,
+            "y": 239.44252563476562,
+            "width": 32.55812500000002,
+            "height": 32.55812500000002,
+            "right": 174.776865234375,
+            "bottom": 272.00065063476563,
+            "hitWidth": 56.558125000000004,
+            "hitHeight": 54.29916666666667
+          },
+          {
+            "x": 195.59436584472655,
+            "y": 239.44252563476562,
+            "width": 32.55812500000002,
+            "height": 32.55812500000002,
+            "right": 228.15249084472657,
+            "bottom": 272.00065063476563,
+            "hitWidth": 56.558125000000004,
+            "hitHeight": 54.29916666666667
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 33.46749961853027,
+            "y": 187.61033485921226,
+            "width": 35.483000000000004,
+            "height": 35.483000000000004,
+            "right": 68.95049961853027,
+            "bottom": 223.09333485921226
+          },
+          {
+            "x": 73.76799961853027,
+            "y": 187.61033485921226,
+            "width": 35.483000000000004,
+            "height": 35.483000000000004,
+            "right": 109.25099961853027,
+            "bottom": 223.09333485921226
+          },
+          {
+            "x": 114.06849961853028,
+            "y": 187.61033485921226,
+            "width": 35.48299999999999,
+            "height": 35.483000000000004,
+            "right": 149.55149961853027,
+            "bottom": 223.09333485921226
+          },
+          {
+            "x": 154.3689996185303,
+            "y": 187.61033485921226,
+            "width": 35.483000000000004,
+            "height": 35.483000000000004,
+            "right": 189.8519996185303,
+            "bottom": 223.09333485921226
+          },
+          {
+            "x": 196.6694996185303,
+            "y": 189.61033485921226,
+            "width": 31.483000000000004,
+            "height": 31.483000000000004,
+            "right": 228.1524996185303,
+            "bottom": 221.09333485921226
+          }
+        ],
+        "layout": {
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 39.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 73.65,
+            "width": 236.32000000000002,
+            "height": 302.70000000000005
+          },
+          "taskCardSizing": {
+            "radius": 22.120416666666667,
+            "ribbonHeight": 36.42333333333333,
+            "ribbonWidth": 188,
+            "taskFontSize": 16.514583333333334,
+            "titleFontSize": 18.423333333333336,
+            "instructionFontSize": 14.514583333333334,
+            "feedbackFontSize": 12.908750000000001,
+            "titleY": 34.75541666666667,
+            "instructionY": 62.29916666666667,
+            "areaTop": 88.05458333333334,
+            "footerSpace": 83.93416666666667,
+            "cellGap": 7.817500000000001,
+            "cellMaxWidth": 111.32833333333335,
+            "cellMaxHeight": 70.17500000000001,
+            "sequenceGap": 4.817500000000001,
+            "sequenceIconMaxSize": 37.087500000000006,
+            "sequenceOptionMaxHeight": 46.29916666666667,
+            "actionHeight": 50.42333333333333,
+            "actionFontSize": 14.514583333333334,
+            "actionGap": 9.8175,
+            "horizontalPadding": 13.8175
+          },
+          "progress": {
+            "x": 729.07,
+            "y": 73.65,
+            "width": 101.28,
+            "height": 302.70000000000005,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 13.166400000000001,
+              "countFontSize": 14.179200000000002,
+              "stepRadius": 16.2048,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.5416666666666666,
+            "offsetX": 75.33333333333337,
+            "offsetY": 0,
+            "platformScreenX": 422,
+            "platformScreenY": 303.3333333333333
+          }
+        },
+        "robot": {
+          "x": 347.8593943643274,
+          "y": 109.03849449117465,
+          "width": 148.28124178892335,
+          "height": 197.70832238523113,
+          "right": 496.14063615325074,
+          "bottom": 306.7468168764058,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "document": {
+          "width": 844,
+          "height": 390
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "landscape-915x412",
+      "width": 915,
+      "height": 412,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 36.748999633789055,
+            "y": 245.74611572265624,
+            "width": 36.888750000000016,
+            "height": 36.888750000000044,
+            "right": 73.63774963378907,
+            "bottom": 282.6348657226563,
+            "hitWidth": 60.888750000000016,
+            "hitHeight": 57.19766666666666
+          },
+          {
+            "x": 94.96675018310546,
+            "y": 245.74611572265624,
+            "width": 36.888750000000016,
+            "height": 36.888750000000044,
+            "right": 131.85550018310548,
+            "bottom": 282.6348657226563,
+            "hitWidth": 60.888750000000016,
+            "hitHeight": 57.19766666666666
+          },
+          {
+            "x": 153.18450073242187,
+            "y": 245.74611572265624,
+            "width": 36.888750000000016,
+            "height": 36.888750000000044,
+            "right": 190.07325073242188,
+            "bottom": 282.6348657226563,
+            "hitWidth": 60.888750000000016,
+            "hitHeight": 57.19766666666666
+          },
+          {
+            "x": 211.40224365234374,
+            "y": 245.74611572265624,
+            "width": 36.888750000000016,
+            "height": 36.888750000000044,
+            "right": 248.29099365234376,
+            "bottom": 282.6348657226563,
+            "hitWidth": 60.888750000000016,
+            "hitHeight": 57.19766666666666
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 34.74900007629394,
+            "y": 191.01756483561195,
+            "width": 38.845200000000006,
+            "height": 38.845200000000034,
+            "right": 73.59420007629394,
+            "bottom": 229.86276483561198
+          },
+          {
+            "x": 78.92320007629395,
+            "y": 191.01756483561195,
+            "width": 38.84520000000002,
+            "height": 38.845200000000034,
+            "right": 117.76840007629397,
+            "bottom": 229.86276483561198
+          },
+          {
+            "x": 123.09740007629397,
+            "y": 191.01756483561195,
+            "width": 38.84520000000002,
+            "height": 38.845200000000034,
+            "right": 161.94260007629399,
+            "bottom": 229.86276483561198
+          },
+          {
+            "x": 167.27160007629396,
+            "y": 191.01756483561195,
+            "width": 38.845200000000006,
+            "height": 38.845200000000034,
+            "right": 206.11680007629397,
+            "bottom": 229.86276483561198
+          },
+          {
+            "x": 213.44580007629398,
+            "y": 193.01756483561195,
+            "width": 34.845200000000006,
+            "height": 34.845200000000034,
+            "right": 248.29100007629398,
+            "bottom": 227.86276483561198
+          }
+        ],
+        "layout": {
+          "viewportWidth": 915,
+          "viewportHeight": 412,
+          "aspectRatio": 2.220873786407767,
+          "mode": "landscape",
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "margin": 14.420000000000002,
+          "headerY": 40.42,
+          "headerWidth": 301.95,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000002,
+            "y": 74.42,
+            "width": 256.20000000000005,
+            "height": 323.15999999999997
+          },
+          "taskCardSizing": {
+            "radius": 22.717166666666664,
+            "ribbonHeight": 37.105333333333334,
+            "ribbonWidth": 188,
+            "taskFontSize": 16.940833333333334,
+            "titleFontSize": 19.105333333333334,
+            "instructionFontSize": 14.940833333333332,
+            "feedbackFontSize": 13.1645,
+            "titleY": 36.375166666666665,
+            "instructionY": 65.19766666666666,
+            "areaTop": 92.57283333333334,
+            "footerSpace": 87.85566666666666,
+            "cellGap": 8.328999999999999,
+            "cellMaxWidth": 115.07933333333332,
+            "cellMaxHeight": 75.28999999999999,
+            "sequenceGap": 5.328999999999999,
+            "sequenceIconMaxSize": 39.644999999999996,
+            "sequenceOptionMaxHeight": 49.19766666666666,
+            "actionHeight": 51.105333333333334,
+            "actionFontSize": 14.940833333333332,
+            "actionGap": 10.328999999999999,
+            "horizontalPadding": 14.328999999999999
+          },
+          "progress": {
+            "x": 790.7800000000001,
+            "y": 74.42,
+            "width": 109.8,
+            "height": 323.15999999999997,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14.274000000000001,
+              "countFontSize": 15.372000000000002,
+              "stepRadius": 17.568,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.5722222222222222,
+            "offsetX": 91.27777777777783,
+            "offsetY": 0,
+            "platformScreenX": 457.5,
+            "platformScreenY": 320.4444444444444
+          }
+        },
+        "robot": {
+          "x": 379.1770967223483,
+          "y": 115.18938183195979,
+          "width": 156.64582181409241,
+          "height": 208.86109575212328,
+          "right": 535.8229185364407,
+          "bottom": 324.05047758408307,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 915,
+          "height": 412
+        },
+        "document": {
+          "width": 915,
+          "height": 412
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 216.89999694824218,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 274.7499969482422,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 240.87999969482422,
+            "width": 54.88000000000001,
+            "height": 54.879999999999995,
+            "right": 104.08000076293946,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 113.08000076293948,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 167.9600007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 176.96000076293947,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 231.8400007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 240.8400007629395,
+            "y": 240.87999969482422,
+            "width": 54.879999999999995,
+            "height": 54.879999999999995,
+            "right": 295.7200007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 306.7200007629395,
+            "y": 242.87999969482422,
+            "width": 50.879999999999995,
+            "height": 50.879999999999995,
+            "right": 357.6000007629395,
+            "bottom": 293.7599996948242
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1366x768",
+      "width": 1366,
+      "height": 768,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 55.81500244140625,
+            "y": 312.6080017089844,
+            "width": 58,
+            "height": 58,
+            "right": 113.81500244140625,
+            "bottom": 370.6080017089844,
+            "hitWidth": 87.87,
+            "hitHeight": 78
+          },
+          {
+            "x": 144.68499755859375,
+            "y": 312.6080017089844,
+            "width": 58,
+            "height": 58,
+            "right": 202.68499755859375,
+            "bottom": 370.6080017089844,
+            "hitWidth": 87.87,
+            "hitHeight": 78
+          },
+          {
+            "x": 233.55499267578125,
+            "y": 312.6080017089844,
+            "width": 58,
+            "height": 58,
+            "right": 291.55499267578125,
+            "bottom": 370.6080017089844,
+            "hitWidth": 87.87,
+            "hitHeight": 78
+          },
+          {
+            "x": 322.4250183105469,
+            "y": 312.6080017089844,
+            "width": 58,
+            "height": 58,
+            "right": 380.4250183105469,
+            "bottom": 370.6080017089844,
+            "hitWidth": 87.87,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 55.11999916076661,
+            "y": 235.60800170898438,
+            "width": 58,
+            "height": 58,
+            "right": 113.11999916076661,
+            "bottom": 293.6080017089844
+          },
+          {
+            "x": 122.11999916076661,
+            "y": 235.60800170898438,
+            "width": 58,
+            "height": 58,
+            "right": 180.1199991607666,
+            "bottom": 293.6080017089844
+          },
+          {
+            "x": 189.1199991607666,
+            "y": 235.60800170898438,
+            "width": 58,
+            "height": 58,
+            "right": 247.1199991607666,
+            "bottom": 293.6080017089844
+          },
+          {
+            "x": 256.1199991607666,
+            "y": 235.60800170898438,
+            "width": 58,
+            "height": 58,
+            "right": 314.1199991607666,
+            "bottom": 293.6080017089844
+          },
+          {
+            "x": 325.1199991607666,
+            "y": 237.60800170898438,
+            "width": 54,
+            "height": 54,
+            "right": 379.1199991607666,
+            "bottom": 291.6080017089844
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1366,
+          "viewportHeight": 768,
+          "aspectRatio": 1.7786458333333333,
+          "mode": "landscape",
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "margin": 26.880000000000003,
+          "headerY": 56.832,
+          "headerWidth": 440,
+          "headerHeight": 59.903999999999996,
+          "headerFontSize": 32,
+          "iconWidth": 92,
+          "iconHeight": 57.599999999999994,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 26.880000000000003,
+            "y": 100.60799999999999,
+            "width": 382.48,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1175.1999999999998,
+            "y": 100.60799999999999,
+            "width": 163.92,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 20,
+              "countFontSize": 20,
+              "stepRadius": 25,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 218.56,
+            "height": 76.80000000000001,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1.0666666666666667,
+            "offsetX": 0.33333333333337123,
+            "offsetY": 0,
+            "platformScreenX": 683,
+            "platformScreenY": 597.3333333333334
+          }
+        },
+        "robot": {
+          "x": 537.0000414392825,
+          "y": 214.721961705289,
+          "width": 291.9999883489854,
+          "height": 389.33331779864716,
+          "right": 829.000029788268,
+          "bottom": 604.0552795039362,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1366,
+          "height": 768
+        },
+        "document": {
+          "width": 1366,
+          "height": 768
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 59.125,
+            "y": 321.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 117.125,
+            "bottom": 379.44000244140625,
+            "hitWidth": 92.25,
+            "hitHeight": 78
+          },
+          {
+            "x": 152.375,
+            "y": 321.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 210.375,
+            "bottom": 379.44000244140625,
+            "hitWidth": 92.25,
+            "hitHeight": 78
+          },
+          {
+            "x": 245.625,
+            "y": 321.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 303.625,
+            "bottom": 379.44000244140625,
+            "hitWidth": 92.25,
+            "hitHeight": 78
+          },
+          {
+            "x": 338.875,
+            "y": 321.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 396.875,
+            "bottom": 379.44000244140625,
+            "hitWidth": 92.25,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 65,
+            "y": 244.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 123,
+            "bottom": 302.44000244140625
+          },
+          {
+            "x": 132,
+            "y": 244.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 190,
+            "bottom": 302.44000244140625
+          },
+          {
+            "x": 199,
+            "y": 244.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 257,
+            "bottom": 302.44000244140625
+          },
+          {
+            "x": 266,
+            "y": 244.44000244140625,
+            "width": 58,
+            "height": 58,
+            "right": 324,
+            "bottom": 302.44000244140625
+          },
+          {
+            "x": 335,
+            "y": 246.44000244140625,
+            "width": 54,
+            "height": 54,
+            "right": 389,
+            "bottom": 300.44000244140625
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1920,
+          "viewportHeight": 1080,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 28,
+            "right": 28,
+            "bottom": 28,
+            "left": 28
+          },
+          "margin": 28,
+          "headerY": 59,
+          "headerWidth": 440,
+          "headerHeight": 62,
+          "headerFontSize": 32,
+          "iconWidth": 92,
+          "iconHeight": 60,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 28,
+            "y": 109.44,
+            "width": 400,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1722,
+            "y": 109.44,
+            "width": 170,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 20,
+              "countFontSize": 20,
+              "stepRadius": 25,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 225,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 960,
+            "platformScreenY": 840
+          }
+        },
+        "robot": {
+          "x": 754.6875189,
+          "y": 301.9527429,
+          "width": 410.6249622,
+          "height": 547.4999496,
+          "right": 1165.3124811,
+          "bottom": 849.4526925,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1920,
+          "height": 1080
+        },
+        "document": {
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "missingSlot": true,
+        "targets": true,
+        "sequenceInsideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    }
+  ],
+  "flow": {
+    "checks": {
+      "liveResize": true,
+      "challenge1Wrong": true,
+      "hint": true,
+      "challenge1Correct": true,
+      "challenge2Recovery": true,
+      "challenge2Correct": true,
+      "challenge3Correct": true,
+      "grounding": true,
+      "homeReset": true,
+      "errors": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": []
+    },
+    "states": {
+      "beforeResize": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": "sequence-gear",
+        "result": "idle",
+        "feedback": "РЯД 1/3 · Выбрано",
+        "checkEnabled": true,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 50.2799116820097,
+            "y": 315.47491900622845,
+            "width": 59.690176635980606,
+            "height": 59.690176635980606,
+            "right": 109.9700883179903,
+            "bottom": 375.16509564220905,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 216.89999694824218,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 274.7499969482422,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 240.87999969482422,
+            "width": 54.88000000000001,
+            "height": 54.879999999999995,
+            "right": 104.08000076293946,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 113.08000076293948,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 167.9600007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 176.96000076293947,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 231.8400007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 240.8400007629395,
+            "y": 240.87999969482422,
+            "width": 54.879999999999995,
+            "height": 54.879999999999995,
+            "right": 295.7200007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 306.7200007629395,
+            "y": 242.87999969482422,
+            "width": 50.879999999999995,
+            "height": 50.879999999999995,
+            "right": 357.6000007629395,
+            "bottom": 293.7599996948242
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "afterResize": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": "sequence-gear",
+        "result": "idle",
+        "feedback": "РЯД 1/3",
+        "checkEnabled": true,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 47.91221687028805,
+            "y": 311.05777808854975,
+            "width": 39.759810033837965,
+            "height": 39.759810033837994,
+            "right": 87.67202690412601,
+            "bottom": 350.81758812238775,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          },
+          {
+            "x": 133.57353299967448,
+            "y": 311.9138497721354,
+            "width": 38.04766666666666,
+            "height": 38.047666666666714,
+            "right": 171.62119966634114,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          },
+          {
+            "x": 218.3787850748698,
+            "y": 311.9138497721354,
+            "width": 38.047666666666686,
+            "height": 38.047666666666714,
+            "right": 256.4264517415365,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          },
+          {
+            "x": 303.184021891276,
+            "y": 311.9138497721354,
+            "width": 38.047666666666714,
+            "height": 38.047666666666714,
+            "right": 341.23168855794273,
+            "bottom": 349.9615164388021,
+            "hitWidth": 87.32625,
+            "hitHeight": 58.04766666666667
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 83.05449961853029,
+            "y": 256.03983162434895,
+            "width": 40.39500000000001,
+            "height": 40.39499999999998,
+            "right": 123.4494996185303,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 128.92849961853028,
+            "y": 256.03983162434895,
+            "width": 40.39500000000001,
+            "height": 40.39499999999998,
+            "right": 169.3234996185303,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 174.8024996185303,
+            "y": 256.03983162434895,
+            "width": 40.39500000000001,
+            "height": 40.39499999999998,
+            "right": 215.19749961853032,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 220.67649961853033,
+            "y": 256.03983162434895,
+            "width": 40.39499999999998,
+            "height": 40.39499999999998,
+            "right": 261.0714996185303,
+            "bottom": 296.43483162434893
+          },
+          {
+            "x": 268.5504996185303,
+            "y": 258.03983162434895,
+            "width": 36.39499999999998,
+            "height": 36.39499999999998,
+            "right": 304.9454996185303,
+            "bottom": 294.43483162434893
+          }
+        ],
+        "layout": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 152.142,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "taskCardSizing": {
+            "radius": 22.892166666666668,
+            "ribbonHeight": 37.30533333333334,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 17.065833333333334,
+            "titleFontSize": 19.305333333333333,
+            "instructionFontSize": 15.065833333333334,
+            "feedbackFontSize": 13.2395,
+            "titleY": 36.85016666666667,
+            "instructionY": 66.04766666666667,
+            "areaTop": 93.89783333333334,
+            "footerSpace": 89.00566666666667,
+            "cellGap": 8.479000000000001,
+            "cellMaxWidth": 116.17933333333335,
+            "cellMaxHeight": 76.79,
+            "sequenceGap": 5.479000000000001,
+            "sequenceIconMaxSize": 40.395,
+            "sequenceOptionMaxHeight": 50.04766666666667,
+            "actionHeight": 51.30533333333334,
+            "actionFontSize": 15.065833333333334,
+            "actionGap": 10.479000000000001,
+            "horizontalPadding": 14.479000000000001
+          },
+          "progress": {
+            "x": 15,
+            "y": 83.778,
+            "width": 360,
+            "height": 54.86,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 17.55,
+              "stepRadius": 17.16,
+              "borderRadius": 23.4
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          },
+          "worldFrame": {
+            "scale": 0.639344262295082,
+            "offsetX": -214.1803278688525,
+            "offsetY": 370.27986885245906,
+            "platformScreenX": 195,
+            "platformScreenY": 728.312655737705
+          }
+        },
+        "robot": {
+          "x": 107.48976804482066,
+          "y": 498.9810483709649,
+          "width": 175.02047916914773,
+          "height": 233.3606388921969,
+          "right": 282.5102472139684,
+          "bottom": 732.3416872631618,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "challenge1Wrong": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "wrong",
+        "feedback": "РЯД 1/3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Почти! Посмотри на ряд ещё раз",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 219.98927612304686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 277.8392761230469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 240.87999969482422,
+            "width": 54.88000000000001,
+            "height": 54.879999999999995,
+            "right": 104.08000076293946,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 113.08000076293948,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 167.9600007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 176.96000076293947,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 231.8400007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 240.8400007629395,
+            "y": 240.87999969482422,
+            "width": 54.879999999999995,
+            "height": 54.879999999999995,
+            "right": 295.7200007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 306.7200007629395,
+            "y": 242.87999969482422,
+            "width": 50.879999999999995,
+            "height": 50.879999999999995,
+            "right": 357.6000007629395,
+            "bottom": 293.7599996948242
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.2991874792606,
+          "y": 194.86339469046663,
+          "width": 291.8093590527543,
+          "height": 378.3413005637617,
+          "right": 795.1085465320149,
+          "bottom": 573.2046952542283,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 2.8907757818501523,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge1Hint": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": null,
+        "result": "wrong",
+        "feedback": "РЯД 1/3 · Подсказка у робота",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Посмотри, какие картинки чередуются",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 220.8890411376953,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 278.7390411376953,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 240.87999969482422,
+            "width": 54.88000000000001,
+            "height": 54.879999999999995,
+            "right": 104.08000076293946,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 113.08000076293948,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 167.9600007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 176.96000076293947,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 231.8400007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 240.8400007629395,
+            "y": 240.87999969482422,
+            "width": 54.879999999999995,
+            "height": 54.879999999999995,
+            "right": 295.7200007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 306.7200007629395,
+            "y": 242.87999969482422,
+            "width": 50.879999999999995,
+            "height": 50.879999999999995,
+            "right": 357.6000007629395,
+            "bottom": 293.7599996948242
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250128783351,
+          "y": 201.29310041159897,
+          "width": 273.77325139167107,
+          "height": 365.01742351902897,
+          "right": 776.8982642700062,
+          "bottom": 566.3105239306279,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0.003653924610262038,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge1Correct": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 1/3",
+        "selectedKey": "sequence-star",
+        "result": "correct",
+        "feedback": "РЯД 1/3 · Правильно! Отличная работа!",
+        "checkEnabled": false,
+        "continueVisible": true,
+        "missingAnswerVisible": true,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Верно! Ты нашёл закономерность!",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 216.89999694824218,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 274.7499969482422,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 298.4483945518732,
+            "y": 315.0933835655451,
+            "width": 60.453247517347336,
+            "height": 60.453247517347336,
+            "right": 358.90164206922054,
+            "bottom": 375.5466310828924,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 240.87999969482422,
+            "width": 54.88000000000001,
+            "height": 54.879999999999995,
+            "right": 104.08000076293946,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 113.08000076293948,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 167.9600007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 176.96000076293947,
+            "y": 240.87999969482422,
+            "width": 54.880000000000024,
+            "height": 54.879999999999995,
+            "right": 231.8400007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 240.8400007629395,
+            "y": 240.87999969482422,
+            "width": 54.879999999999995,
+            "height": 54.879999999999995,
+            "right": 295.7200007629395,
+            "bottom": 295.7599996948242
+          },
+          {
+            "x": 306.7200007629395,
+            "y": 242.87999969482422,
+            "width": 50.879999999999995,
+            "height": 50.879999999999995,
+            "right": 357.6000007629395,
+            "bottom": 293.7599996948242
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge2AfterWrong": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 2/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "РЯД 2/3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Какой рисунок повторяется?",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 216.89999694824218,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 274.7499969482422,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 93.4333340962728,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 102.4333340962728,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 146.66666742960615,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 155.66666742960615,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 199.9000007629395,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 208.90000076293947,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 253.13333409627282,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 262.13333409627285,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 306.3666674296062,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 317.36666742960614,
+            "y": 248.20333302815754,
+            "width": 40.23333333333335,
+            "height": 40.23333333333335,
+            "right": 357.6000007629395,
+            "bottom": 288.4366663614909
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge2Correct": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 2/3",
+        "selectedKey": "sequence-planet",
+        "result": "correct",
+        "feedback": "РЯД 2/3 · Правильно! Отличная работа!",
+        "checkEnabled": false,
+        "continueVisible": true,
+        "missingAnswerVisible": true,
+        "missingQuestionVisible": true,
+        "progressText": "1 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Верно! Ты нашёл закономерность!",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 134.04999084472655,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 191.89999084472657,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 215.59837318956852,
+            "y": 315.0933835655451,
+            "width": 60.453247517347336,
+            "height": 60.453247517347336,
+            "right": 276.05162070691586,
+            "bottom": 375.5466310828924,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 93.4333340962728,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 102.4333340962728,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 146.66666742960615,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 155.66666742960615,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 199.9000007629395,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 208.90000076293947,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 253.13333409627282,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 262.13333409627285,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 306.3666674296062,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 317.36666742960614,
+            "y": 248.20333302815754,
+            "width": 40.23333333333335,
+            "height": 40.23333333333335,
+            "right": 357.6000007629395,
+            "bottom": 288.4366663614909
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge3Correct": {
+        "taskLabel": "ЗАДАНИЕ 2/5",
+        "title": "ПРОДОЛЖИ РЯД",
+        "instruction": "Какая картинка должна быть следующей?",
+        "internalProgress": "РЯД 3/3",
+        "selectedKey": "sequence-planet",
+        "result": "correct",
+        "feedback": "РЯД 3/3 · Правильно! Отличная работа!",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": true,
+        "missingQuestionVisible": true,
+        "progressText": "2 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Верно! Ты нашёл закономерность!",
+        "choices": [
+          {
+            "x": 51.199999999999996,
+            "y": 316.39500732421874,
+            "width": 57.850000000000016,
+            "height": 57.85000000000002,
+            "right": 109.05000000000001,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 132.7483670860529,
+            "y": 315.0933835655451,
+            "width": 60.453247517347336,
+            "height": 60.453247517347336,
+            "right": 193.20161460340023,
+            "bottom": 375.5466310828924,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 216.89999694824218,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 274.7499969482422,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          },
+          {
+            "x": 299.75001831054686,
+            "y": 316.39500732421874,
+            "width": 57.85000000000002,
+            "height": 57.85000000000002,
+            "right": 357.6000183105469,
+            "bottom": 374.24500732421876,
+            "hitWidth": 81.85000000000001,
+            "hitHeight": 78
+          }
+        ],
+        "sequenceImages": [
+          {
+            "x": 49.20000076293945,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 93.4333340962728,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 102.4333340962728,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 146.66666742960615,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 155.66666742960615,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 199.9000007629395,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 208.90000076293947,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 253.13333409627282,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 262.13333409627285,
+            "y": 246.20333302815754,
+            "width": 44.23333333333335,
+            "height": 44.23333333333335,
+            "right": 306.3666674296062,
+            "bottom": 290.4366663614909
+          },
+          {
+            "x": 317.36666742960614,
+            "y": 248.20333302815754,
+            "width": 40.23333333333335,
+            "height": 40.23333333333335,
+            "right": 357.6000007629395,
+            "bottom": 288.4366663614909
+          }
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "homeReset": {
+        "taskLabel": "ЗАДАНИЕ 1/5",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "missingAnswerVisible": false,
+        "missingQuestionVisible": false,
+        "progressText": "0 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "x": 77.39999389648438,
+            "y": 286.82000732421875,
+            "width": 100,
+            "height": 100,
+            "right": 177.39999389648438,
+            "bottom": 386.82000732421875,
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "x": 231.4000244140625,
+            "y": 286.82000732421875,
+            "width": 100,
+            "height": 100,
+            "right": 331.4000244140625,
+            "bottom": 386.82000732421875,
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "x": 77.39999389648438,
+            "y": 410.82000732421875,
+            "width": 100,
+            "height": 100,
+            "right": 177.39999389648438,
+            "bottom": 510.82000732421875,
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "x": 231.4000244140625,
+            "y": 410.82000732421875,
+            "width": 100,
+            "height": 100,
+            "right": 331.4000244140625,
+            "bottom": 510.82000732421875,
+            "hitWidth": 150,
+            "hitHeight": 120
+          }
+        ],
+        "sequenceImages": [],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,4238 @@
+{
+  "matrix": [
+    {
+      "name": "mobile-320x568",
+      "width": 320,
+      "height": 568,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-small",
+            "x": 55.60584200345553,
+            "y": 258.0716998760517,
+            "width": 23.692307692307686,
+            "height": 23.69230769230768,
+            "right": 79.29814969576321,
+            "bottom": 281.7640075683594,
+            "hitWidth": 94.19200000000001,
+            "hitHeight": 64,
+            "image": {
+              "x": 55.60584200345553,
+              "y": 258.0716998760517,
+              "width": 23.692307692307686,
+              "height": 23.69230769230768,
+              "right": 79.29814969576321,
+              "bottom": 281.7640075683594,
+              "texture": "size-battery",
+              "scale": 0.018893387314439944
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 138,
+            "y": 237.76400756835938,
+            "width": 44,
+            "height": 44,
+            "right": 182,
+            "bottom": 281.7640075683594,
+            "hitWidth": 94.19200000000001,
+            "hitHeight": 64,
+            "image": {
+              "x": 138,
+              "y": 237.76400756835938,
+              "width": 44,
+              "height": 44,
+              "right": 182,
+              "bottom": 281.7640075683594,
+              "texture": "size-battery",
+              "scale": 0.03508771929824561
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 235.6249272273137,
+            "y": 247.91785372220554,
+            "width": 33.84615384615384,
+            "height": 33.84615384615384,
+            "right": 269.47108107346753,
+            "bottom": 281.7640075683594,
+            "hitWidth": 94.19200000000001,
+            "hitHeight": 64,
+            "image": {
+              "x": 235.6249272273137,
+              "y": 247.91785372220554,
+              "width": 33.84615384615384,
+              "height": 33.84615384615384,
+              "right": 269.47108107346753,
+              "bottom": 281.7640075683594,
+              "texture": "size-battery",
+              "scale": 0.026990553306342778
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-small",
+          "size-large",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 320,
+          "viewportHeight": 568,
+          "aspectRatio": 0.5633802816901409,
+          "mode": "ultra-narrow-portrait",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 38,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 136,
+            "width": 296,
+            "height": 244.24
+          },
+          "taskCardSizing": {
+            "radius": 20.415333333333333,
+            "ribbonHeight": 34.474666666666664,
+            "ribbonWidth": 201.28,
+            "taskFontSize": 15.296666666666667,
+            "titleFontSize": 16.474666666666668,
+            "instructionFontSize": 13.296666666666667,
+            "feedbackFontSize": 12.178,
+            "titleY": 30.127333333333333,
+            "instructionY": 54.01733333333333,
+            "areaTop": 75.14466666666667,
+            "footerSpace": 72.72933333333333,
+            "cellGap": 6.356,
+            "cellMaxWidth": 100.61066666666667,
+            "cellMaxHeight": 55.56,
+            "sequenceGap": 3.3560000000000003,
+            "sequenceIconMaxSize": 29.78,
+            "sequenceOptionMaxHeight": 38.01733333333333,
+            "actionHeight": 48.474666666666664,
+            "actionFontSize": 13.296666666666667,
+            "actionGap": 8.356,
+            "horizontalPadding": 12.356
+          },
+          "progress": {
+            "x": 12,
+            "y": 72,
+            "width": 296,
+            "height": 54,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 16,
+              "stepRadius": 14.079999999999998,
+              "borderRadius": 19.2
+            }
+          },
+          "dialogue": {
+            "width": 146,
+            "height": 72,
+            "fontSize": 14,
+            "gap": 8
+          },
+          "worldFrame": {
+            "scale": 0.5245901639344263,
+            "offsetX": -175.73770491803282,
+            "offsetY": 270.0295081967212,
+            "platformScreenX": 160,
+            "platformScreenY": 563.8
+          }
+        },
+        "robot": {
+          "x": 88.19671667484289,
+          "y": 375.6304638627072,
+          "width": 143.6065361327361,
+          "height": 191.47538151031483,
+          "right": 231.80325280757899,
+          "bottom": 567.105845373022,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 320,
+          "height": 568
+        },
+        "document": {
+          "width": 320,
+          "height": 568
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-333x885",
+      "width": 333,
+      "height": 885,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 44.599998474121094,
+            "y": 266.66748046875,
+            "width": 50.5,
+            "height": 50.5,
+            "right": 95.0999984741211,
+            "bottom": 317.16748046875,
+            "hitWidth": 97.59999999999998,
+            "hitHeight": 70.5,
+            "image": {
+              "x": 44.599998474121094,
+              "y": 266.66748046875,
+              "width": 50.5,
+              "height": 50.5,
+              "right": 95.0999984741211,
+              "bottom": 317.16748046875,
+              "texture": "size-battery",
+              "scale": 0.040271132376395534
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 147.07692307692307,
+            "y": 278.32132662259613,
+            "width": 38.84615384615387,
+            "height": 38.84615384615387,
+            "right": 185.92307692307693,
+            "bottom": 317.16748046875,
+            "hitWidth": 97.59999999999998,
+            "hitHeight": 70.5,
+            "image": {
+              "x": 147.07692307692307,
+              "y": 278.32132662259613,
+              "width": 38.84615384615387,
+              "height": 38.84615384615387,
+              "right": 185.92307692307693,
+              "bottom": 317.16748046875,
+              "texture": "size-battery",
+              "scale": 0.030977794135688873
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 249.55384005033054,
+            "y": 289.9751727764423,
+            "width": 27.192307692307708,
+            "height": 27.19230769230768,
+            "right": 276.74614774263824,
+            "bottom": 317.16748046875,
+            "hitWidth": 97.59999999999998,
+            "hitHeight": 70.5,
+            "image": {
+              "x": 249.55384005033054,
+              "y": 289.9751727764423,
+              "width": 27.192307692307708,
+              "height": 27.19230769230768,
+              "right": 276.74614774263824,
+              "bottom": 317.16748046875,
+              "texture": "size-battery",
+              "scale": 0.021684455894982208
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-medium",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 333,
+          "viewportHeight": 885,
+          "aspectRatio": 0.376271186440678,
+          "mode": "ultra-narrow-portrait",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 43,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 154.305,
+            "width": 309,
+            "height": 272
+          },
+          "taskCardSizing": {
+            "radius": 21.225,
+            "ribbonHeight": 35.4,
+            "ribbonWidth": 210.12,
+            "taskFontSize": 15.875,
+            "titleFontSize": 17.4,
+            "instructionFontSize": 13.875,
+            "feedbackFontSize": 12.525,
+            "titleY": 32.325,
+            "instructionY": 57.95,
+            "areaTop": 81.275,
+            "footerSpace": 78.05,
+            "cellGap": 7.05,
+            "cellMaxWidth": 105.7,
+            "cellMaxHeight": 62.5,
+            "sequenceGap": 4.05,
+            "sequenceIconMaxSize": 33.25,
+            "sequenceOptionMaxHeight": 41.95,
+            "actionHeight": 49.4,
+            "actionFontSize": 13.875,
+            "actionGap": 9.05,
+            "horizontalPadding": 13.05
+          },
+          "progress": {
+            "x": 12,
+            "y": 82.62,
+            "width": 309,
+            "height": 57.525,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 16,
+              "stepRadius": 14.652,
+              "borderRadius": 19.98
+            }
+          },
+          "dialogue": {
+            "width": 149.85,
+            "height": 86,
+            "fontSize": 14,
+            "gap": 8.325000000000001
+          },
+          "worldFrame": {
+            "scale": 0.5459016393442623,
+            "offsetX": -182.87704918032784,
+            "offsetY": 319.8541803278689,
+            "platformScreenX": 166.5,
+            "platformScreenY": 625.5590983606558
+          }
+        },
+        "robot": {
+          "x": 91.77973295150673,
+          "y": 429.7451886306468,
+          "width": 149.44056461456466,
+          "height": 199.25408615275285,
+          "right": 241.2202975660714,
+          "bottom": 628.9992747833996,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 333,
+          "height": 885
+        },
+        "document": {
+          "width": 333,
+          "height": 885
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-360x800",
+      "width": 360,
+      "height": 800,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-medium",
+            "x": 51.81410510723408,
+            "y": 290.9073697603666,
+            "width": 46.53846153846154,
+            "height": 46.53846153846155,
+            "right": 98.35256664569562,
+            "bottom": 337.4458312988281,
+            "hitWidth": 104.86666666666663,
+            "hitHeight": 80.5,
+            "image": {
+              "x": 51.81410510723408,
+              "y": 290.9073697603666,
+              "width": 46.53846153846154,
+              "height": 46.53846153846155,
+              "right": 98.35256664569562,
+              "bottom": 337.4458312988281,
+              "texture": "size-battery",
+              "scale": 0.03711201079622132
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 149.75,
+            "y": 276.9458312988281,
+            "width": 60.5,
+            "height": 60.5,
+            "right": 210.25,
+            "bottom": 337.4458312988281,
+            "hitWidth": 104.86666666666663,
+            "hitHeight": 80.5,
+            "image": {
+              "x": 149.75,
+              "y": 276.9458312988281,
+              "width": 60.5,
+              "height": 60.5,
+              "right": 210.25,
+              "bottom": 337.4458312988281,
+              "texture": "size-battery",
+              "scale": 0.04824561403508772
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 268.6282254732572,
+            "y": 304.86890822190503,
+            "width": 32.576923076923094,
+            "height": 32.576923076923094,
+            "right": 301.2051485501803,
+            "bottom": 337.4458312988281,
+            "hitWidth": 104.86666666666663,
+            "hitHeight": 80.5,
+            "image": {
+              "x": 268.6282254732572,
+              "y": 304.86890822190503,
+              "width": 32.576923076923094,
+              "height": 32.576923076923094,
+              "right": 301.2051485501803,
+              "bottom": 337.4458312988281,
+              "texture": "size-battery",
+              "scale": 0.02597840755735492
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-medium",
+          "size-large",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 360,
+          "viewportHeight": 800,
+          "aspectRatio": 0.45,
+          "mode": "portrait",
+          "safe": {
+            "top": 12.600000000000001,
+            "right": 12.600000000000001,
+            "bottom": 12.600000000000001,
+            "left": 12.600000000000001
+          },
+          "margin": 12.600000000000001,
+          "headerY": 43.6,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12.600000000000023,
+            "y": 149,
+            "width": 334.79999999999995,
+            "height": 312
+          },
+          "taskCardSizing": {
+            "radius": 22.391666666666666,
+            "ribbonHeight": 36.733333333333334,
+            "ribbonWidth": 227.664,
+            "taskFontSize": 16.708333333333332,
+            "titleFontSize": 18.733333333333334,
+            "instructionFontSize": 14.708333333333334,
+            "feedbackFontSize": 13.025,
+            "titleY": 35.49166666666667,
+            "instructionY": 63.61666666666667,
+            "areaTop": 90.10833333333333,
+            "footerSpace": 85.71666666666667,
+            "cellGap": 8.05,
+            "cellMaxWidth": 113.03333333333333,
+            "cellMaxHeight": 72.5,
+            "sequenceGap": 5.05,
+            "sequenceIconMaxSize": 38.25,
+            "sequenceOptionMaxHeight": 47.61666666666667,
+            "actionHeight": 50.733333333333334,
+            "actionFontSize": 14.708333333333334,
+            "actionGap": 10.05,
+            "horizontalPadding": 14.05
+          },
+          "progress": {
+            "x": 12.600000000000023,
+            "y": 82.19999999999999,
+            "width": 334.79999999999995,
+            "height": 54,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 16.2,
+              "stepRadius": 15.84,
+              "borderRadius": 21.599999999999998
+            }
+          },
+          "dialogue": {
+            "width": 162,
+            "height": 80,
+            "fontSize": 14,
+            "gap": 9
+          },
+          "worldFrame": {
+            "scale": 0.5901639344262295,
+            "offsetX": -197.70491803278685,
+            "offsetY": 358.5180327868853,
+            "platformScreenX": 180,
+            "platformScreenY": 689.0098360655738
+          }
+        },
+        "robot": {
+          "x": 99.22131730654723,
+          "y": 477.3191174228077,
+          "width": 161.55736538690553,
+          "height": 215.40982051587412,
+          "right": 260.77868269345277,
+          "bottom": 692.7289379386818,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 360,
+          "height": 800
+        },
+        "document": {
+          "width": 360,
+          "height": 800
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 48.53133819580078,
+            "y": 286.7730908203125,
+            "width": 64.79000000000002,
+            "height": 64.78999999999996,
+            "right": 113.32133819580079,
+            "bottom": 351.5630908203125,
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "image": {
+              "x": 48.53133819580078,
+              "y": 286.7730908203125,
+              "width": 64.79000000000002,
+              "height": 64.78999999999996,
+              "right": 113.32133819580079,
+              "bottom": 351.5630908203125,
+              "texture": "size-battery",
+              "scale": 0.05166666666666667
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 170.08076923076922,
+            "y": 301.724629281851,
+            "width": 49.83846153846156,
+            "height": 49.8384615384615,
+            "right": 219.91923076923078,
+            "bottom": 351.5630908203125,
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "image": {
+              "x": 170.08076923076922,
+              "y": 301.724629281851,
+              "width": 49.83846153846156,
+              "height": 49.8384615384615,
+              "right": 219.91923076923078,
+              "bottom": 351.5630908203125,
+              "texture": "size-battery",
+              "scale": 0.03974358974358975
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 291.63020789513223,
+            "y": 316.67616774338944,
+            "width": 34.88692307692304,
+            "height": 34.88692307692304,
+            "right": 326.51713097205527,
+            "bottom": 351.5630908203125,
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "image": {
+              "x": 291.63020789513223,
+              "y": 316.67616774338944,
+              "width": 34.88692307692304,
+              "height": 34.88692307692304,
+              "right": 326.51713097205527,
+              "bottom": 351.5630908203125,
+              "texture": "size-battery",
+              "scale": 0.027820512820512823
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-medium",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 152.142,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "taskCardSizing": {
+            "radius": 22.892166666666668,
+            "ribbonHeight": 37.30533333333334,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 17.065833333333334,
+            "titleFontSize": 19.305333333333333,
+            "instructionFontSize": 15.065833333333334,
+            "feedbackFontSize": 13.2395,
+            "titleY": 36.85016666666667,
+            "instructionY": 66.04766666666667,
+            "areaTop": 93.89783333333334,
+            "footerSpace": 89.00566666666667,
+            "cellGap": 8.479000000000001,
+            "cellMaxWidth": 116.17933333333335,
+            "cellMaxHeight": 76.79,
+            "sequenceGap": 5.479000000000001,
+            "sequenceIconMaxSize": 40.395,
+            "sequenceOptionMaxHeight": 50.04766666666667,
+            "actionHeight": 51.30533333333334,
+            "actionFontSize": 15.065833333333334,
+            "actionGap": 10.479000000000001,
+            "horizontalPadding": 14.479000000000001
+          },
+          "progress": {
+            "x": 15,
+            "y": 83.778,
+            "width": 360,
+            "height": 54.86,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 17.55,
+              "stepRadius": 17.16,
+              "borderRadius": 23.4
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          },
+          "worldFrame": {
+            "scale": 0.639344262295082,
+            "offsetX": -214.1803278688525,
+            "offsetY": 370.27986885245906,
+            "platformScreenX": 195,
+            "platformScreenY": 728.312655737705
+          }
+        },
+        "robot": {
+          "x": 107.48976804482066,
+          "y": 498.9810483709649,
+          "width": 175.02047916914773,
+          "height": 233.3606388921969,
+          "right": 282.5102472139684,
+          "bottom": 732.3416872631618,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "mobile-412x915",
+      "width": 412,
+      "height": 915,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-small",
+            "x": 66.43384493314304,
+            "y": 334.5727069561298,
+            "width": 37.69230769230768,
+            "height": 37.69230769230768,
+            "right": 104.12615262545071,
+            "bottom": 372.2650146484375,
+            "hitWidth": 119.71999999999998,
+            "hitHeight": 90,
+            "image": {
+              "x": 66.43384493314304,
+              "y": 334.5727069561298,
+              "width": 37.69230769230768,
+              "height": 37.69230769230768,
+              "right": 104.12615262545071,
+              "bottom": 372.2650146484375,
+              "texture": "size-battery",
+              "scale": 0.030057661636609005
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 171,
+            "y": 302.2650146484375,
+            "width": 70,
+            "height": 70,
+            "right": 241,
+            "bottom": 372.2650146484375,
+            "hitWidth": 119.71999999999998,
+            "hitHeight": 90,
+            "image": {
+              "x": 171,
+              "y": 302.2650146484375,
+              "width": 70,
+              "height": 70,
+              "right": 241,
+              "bottom": 372.2650146484375,
+              "texture": "size-battery",
+              "scale": 0.0558213716108453
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 299.7969242976262,
+            "y": 318.41886080228363,
+            "width": 53.84615384615381,
+            "height": 53.84615384615387,
+            "right": 353.64307814378003,
+            "bottom": 372.2650146484375,
+            "hitWidth": 119.71999999999998,
+            "hitHeight": 90,
+            "image": {
+              "x": 299.7969242976262,
+              "y": 318.41886080228363,
+              "width": 53.84615384615381,
+              "height": 53.84615384615387,
+              "right": 353.64307814378003,
+              "bottom": 372.2650146484375,
+              "texture": "size-battery",
+              "scale": 0.04293951662372715
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-small",
+          "size-large",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 412,
+          "viewportHeight": 915,
+          "aspectRatio": 0.45027322404371584,
+          "mode": "portrait",
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "margin": 14.420000000000002,
+          "headerY": 45.42,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000016,
+            "y": 159.515,
+            "width": 383.15999999999997,
+            "height": 350
+          },
+          "taskCardSizing": {
+            "radius": 23.5,
+            "ribbonHeight": 38,
+            "ribbonWidth": 250,
+            "taskFontSize": 17.5,
+            "titleFontSize": 20,
+            "instructionFontSize": 15.5,
+            "feedbackFontSize": 13.5,
+            "titleY": 38.5,
+            "instructionY": 69,
+            "areaTop": 98.5,
+            "footerSpace": 93,
+            "cellGap": 9,
+            "cellMaxWidth": 120,
+            "cellMaxHeight": 82,
+            "sequenceGap": 6,
+            "sequenceIconMaxSize": 43,
+            "sequenceOptionMaxHeight": 53,
+            "actionHeight": 52,
+            "actionFontSize": 15.5,
+            "actionGap": 11,
+            "horizontalPadding": 15
+          },
+          "progress": {
+            "x": 26,
+            "y": 85.4,
+            "width": 360,
+            "height": 59.475,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 18.54,
+              "stepRadius": 18.128,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 185.4,
+            "height": 86,
+            "fontSize": 15.244,
+            "gap": 10.3
+          },
+          "worldFrame": {
+            "scale": 0.6754098360655738,
+            "offsetX": -226.26229508196724,
+            "offsetY": 392.2300819672131,
+            "platformScreenX": 206,
+            "platformScreenY": 770.4595901639344
+          }
+        },
+        "robot": {
+          "x": 113.55329244743956,
+          "y": 528.1913105771192,
+          "width": 184.89343036391,
+          "height": 246.52457381854663,
+          "right": 298.44672281134956,
+          "bottom": 774.7158843956659,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 412,
+          "height": 915
+        },
+        "document": {
+          "width": 412,
+          "height": 915
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-small",
+            "x": 216.90307387131912,
+            "y": 392.4366604379507,
+            "width": 47.09384615384613,
+            "height": 47.09384615384619,
+            "right": 263.99692002516525,
+            "bottom": 439.5305065917969,
+            "hitWidth": 140.804,
+            "hitHeight": 107.46,
+            "image": {
+              "x": 216.90307387131912,
+              "y": 392.4366604379507,
+              "width": 47.09384615384613,
+              "height": 47.09384615384619,
+              "right": 263.99692002516525,
+              "bottom": 439.5305065917969,
+              "texture": "size-battery",
+              "scale": 0.03755490123911176
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 350.3615384615385,
+            "y": 372.2535835148738,
+            "width": 67.27692307692303,
+            "height": 67.27692307692308,
+            "right": 417.6384615384615,
+            "bottom": 439.5305065917969,
+            "hitWidth": 140.804,
+            "hitHeight": 107.46,
+            "image": {
+              "x": 350.3615384615385,
+              "y": 372.2535835148738,
+              "width": 67.27692307692303,
+              "height": 67.27692307692308,
+              "right": 417.6384615384615,
+              "bottom": 439.5305065917969,
+              "texture": "size-battery",
+              "scale": 0.0536498589130168
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 483.81998779296873,
+            "y": 352.07050659179686,
+            "width": 87.46000000000004,
+            "height": 87.46000000000004,
+            "right": 571.2799877929688,
+            "bottom": 439.5305065917969,
+            "hitWidth": 140.804,
+            "hitHeight": 107.46,
+            "image": {
+              "x": 483.81998779296873,
+              "y": 352.07050659179686,
+              "width": 87.46000000000004,
+              "height": 87.46000000000004,
+              "right": 571.2799877929688,
+              "bottom": 439.5305065917969,
+              "texture": "size-battery",
+              "scale": 0.06974481658692185
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-small",
+          "size-medium",
+          "size-large"
+        ],
+        "layout": {
+          "viewportWidth": 768,
+          "viewportHeight": 1024,
+          "aspectRatio": 0.75,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "margin": 26.880000000000003,
+          "headerY": 57.88,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 130.56,
+            "y": 182.11200000000002,
+            "width": 506.88,
+            "height": 419.84
+          },
+          "taskCardSizing": {
+            "radius": 25.537,
+            "ribbonHeight": 40.328,
+            "ribbonWidth": 250,
+            "taskFontSize": 18.955,
+            "titleFontSize": 22.328,
+            "instructionFontSize": 16.955,
+            "feedbackFontSize": 14.373,
+            "titleY": 44.028999999999996,
+            "instructionY": 78.894,
+            "areaTop": 113.923,
+            "footerSpace": 106.386,
+            "cellGap": 10.745999999999999,
+            "cellMaxWidth": 132.804,
+            "cellMaxHeight": 99.46,
+            "sequenceGap": 7.7459999999999996,
+            "sequenceIconMaxSize": 51.73,
+            "sequenceOptionMaxHeight": 62.894,
+            "actionHeight": 54.328,
+            "actionFontSize": 16.955,
+            "actionGap": 12.745999999999999,
+            "horizontalPadding": 16.746
+          },
+          "progress": {
+            "x": 169,
+            "y": 99.16799999999999,
+            "width": 430,
+            "height": 66.56,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 20,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -192,
+            "offsetY": 453.332,
+            "platformScreenX": 384,
+            "platformScreenY": 957.332
+          }
+        },
+        "robot": {
+          "x": 260.8124993445649,
+          "y": 634.5036416730122,
+          "width": 246.37497079329205,
+          "height": 328.49996105772266,
+          "right": 507.18747013785696,
+          "bottom": 963.0036027307349,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "document": {
+          "width": 768,
+          "height": 1024
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "tablet-820x1180",
+      "width": 820,
+      "height": 1180,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-medium",
+            "x": 217.53846153846155,
+            "y": 408.35692185621997,
+            "width": 76.9230769230769,
+            "height": 76.9230769230769,
+            "right": 294.46153846153845,
+            "bottom": 485.2799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "image": {
+              "x": 217.53846153846155,
+              "y": 408.35692185621997,
+              "width": 76.9230769230769,
+              "height": 76.9230769230769,
+              "right": 294.46153846153845,
+              "bottom": 485.2799987792969,
+              "texture": "size-battery",
+              "scale": 0.061342166605324495
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 360,
+            "y": 385.2799987792969,
+            "width": 100,
+            "height": 100,
+            "right": 460,
+            "bottom": 485.2799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "image": {
+              "x": 360,
+              "y": 385.2799987792969,
+              "width": 100,
+              "height": 100,
+              "right": 460,
+              "bottom": 485.2799987792969,
+              "texture": "size-battery",
+              "scale": 0.07974481658692184
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 537.0769230769231,
+            "y": 431.43384493314306,
+            "width": 53.84615384615381,
+            "height": 53.84615384615381,
+            "right": 590.9230769230769,
+            "bottom": 485.2799987792969,
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "image": {
+              "x": 537.0769230769231,
+              "y": 431.43384493314306,
+              "width": 53.84615384615381,
+              "height": 53.84615384615381,
+              "right": 590.9230769230769,
+              "bottom": 485.2799987792969,
+              "texture": "size-battery",
+              "scale": 0.04293951662372714
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-medium",
+          "size-large",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 820,
+          "viewportHeight": 1180,
+          "aspectRatio": 0.6949152542372882,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 28,
+            "right": 28,
+            "bottom": 28,
+            "left": 28
+          },
+          "margin": 28,
+          "headerY": 59,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 139.39999999999998,
+            "y": 188.88,
+            "width": 541.2,
+            "height": 483.79999999999995
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 195,
+            "y": 102,
+            "width": 430,
+            "height": 68,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 20,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -166,
+            "offsetY": 525.1799999999998,
+            "platformScreenX": 410,
+            "platformScreenY": 1029.1799999999998
+          }
+        },
+        "robot": {
+          "x": 286.8124993445649,
+          "y": 706.3516336163716,
+          "width": 246.37497079329205,
+          "height": 328.49996105772266,
+          "right": 533.187470137857,
+          "bottom": 1034.8515946740943,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 820,
+          "height": 1180
+        },
+        "document": {
+          "width": 820,
+          "height": 1180
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "tablet-1024x1366",
+      "width": 1024,
+      "height": 1366,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-medium",
+            "x": 319.53846153846155,
+            "y": 419.43294114332934,
+            "width": 76.9230769230769,
+            "height": 76.9230769230769,
+            "right": 396.46153846153845,
+            "bottom": 496.35601806640625,
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "image": {
+              "x": 319.53846153846155,
+              "y": 419.43294114332934,
+              "width": 76.9230769230769,
+              "height": 76.9230769230769,
+              "right": 396.46153846153845,
+              "bottom": 496.35601806640625,
+              "texture": "size-battery",
+              "scale": 0.061342166605324495
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 462,
+            "y": 396.35601806640625,
+            "width": 100,
+            "height": 100,
+            "right": 562,
+            "bottom": 496.35601806640625,
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "image": {
+              "x": 462,
+              "y": 396.35601806640625,
+              "width": 100,
+              "height": 100,
+              "right": 562,
+              "bottom": 496.35601806640625,
+              "texture": "size-battery",
+              "scale": 0.07974481658692184
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 639.0769230769231,
+            "y": 442.50986422025244,
+            "width": 53.84615384615381,
+            "height": 53.84615384615381,
+            "right": 692.9230769230769,
+            "bottom": 496.35601806640625,
+            "hitWidth": 150,
+            "hitHeight": 120,
+            "image": {
+              "x": 639.0769230769231,
+              "y": 442.50986422025244,
+              "width": 53.84615384615381,
+              "height": 53.84615384615381,
+              "right": 692.9230769230769,
+              "bottom": 496.35601806640625,
+              "texture": "size-battery",
+              "scale": 0.04293951662372714
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-medium",
+          "size-large",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 1024,
+          "viewportHeight": 1366,
+          "aspectRatio": 0.7496339677891655,
+          "mode": "large-portrait-tablet",
+          "safe": {
+            "top": 28,
+            "right": 28,
+            "bottom": 28,
+            "left": 28
+          },
+          "margin": 28,
+          "headerY": 59,
+          "headerWidth": 337.92,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76.8,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 207,
+            "y": 191.856,
+            "width": 610,
+            "height": 500
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 297,
+            "y": 102,
+            "width": 430,
+            "height": 68,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 20,
+              "stepRadius": 19,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.9,
+            "offsetX": -64,
+            "offsetY": 544.356,
+            "platformScreenX": 512,
+            "platformScreenY": 1048.356
+          }
+        },
+        "robot": {
+          "x": 388.8124993445649,
+          "y": 725.5276590069966,
+          "width": 246.37497079329205,
+          "height": 328.49996105772266,
+          "right": 635.187470137857,
+          "bottom": 1054.0276200647193,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1024,
+          "height": 1366
+        },
+        "document": {
+          "width": 1024,
+          "height": 1366
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "landscape-568x320",
+      "width": 568,
+      "height": 320,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 24.849998474121094,
+            "y": 177.35000610351562,
+            "width": 44,
+            "height": 44,
+            "right": 68.8499984741211,
+            "bottom": 221.35000610351562,
+            "hitWidth": 72,
+            "hitHeight": 64,
+            "image": {
+              "x": 24.849998474121094,
+              "y": 177.35000610351562,
+              "width": 44,
+              "height": 44,
+              "right": 68.8499984741211,
+              "bottom": 221.35000610351562,
+              "texture": "size-battery",
+              "scale": 0.03508771929824561
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 105.15384615384616,
+            "y": 197.65769841120795,
+            "width": 23.69230769230768,
+            "height": 23.69230769230768,
+            "right": 128.84615384615384,
+            "bottom": 221.35000610351562,
+            "hitWidth": 72,
+            "hitHeight": 64,
+            "image": {
+              "x": 105.15384615384616,
+              "y": 197.65769841120795,
+              "width": 23.69230769230768,
+              "height": 23.69230769230768,
+              "right": 128.84615384615384,
+              "bottom": 221.35000610351562,
+              "texture": "size-battery",
+              "scale": 0.018893387314439944
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 170.22691697340744,
+            "y": 187.50385225736179,
+            "width": 33.84615384615387,
+            "height": 33.84615384615384,
+            "right": 204.0730708195613,
+            "bottom": 221.35000610351562,
+            "hitWidth": 72,
+            "hitHeight": 64,
+            "image": {
+              "x": 170.22691697340744,
+              "y": 187.50385225736179,
+              "width": 33.84615384615387,
+              "height": 33.84615384615384,
+              "right": 204.0730708195613,
+              "bottom": 221.35000610351562,
+              "texture": "size-battery",
+              "scale": 0.026990553306342778
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-small",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 568,
+          "viewportHeight": 320,
+          "aspectRatio": 1.775,
+          "mode": "landscape",
+          "safe": {
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12
+          },
+          "margin": 12,
+          "headerY": 38,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12,
+            "y": 72,
+            "width": 210,
+            "height": 236
+          },
+          "taskCardSizing": {
+            "radius": 20.175,
+            "ribbonHeight": 34.2,
+            "ribbonWidth": 176,
+            "taskFontSize": 15.125,
+            "titleFontSize": 16.2,
+            "instructionFontSize": 13.125,
+            "feedbackFontSize": 12.075,
+            "titleY": 29.475,
+            "instructionY": 52.85,
+            "areaTop": 73.325,
+            "footerSpace": 71.15,
+            "cellGap": 6.15,
+            "cellMaxWidth": 99.1,
+            "cellMaxHeight": 53.5,
+            "sequenceGap": 3.15,
+            "sequenceIconMaxSize": 28.75,
+            "sequenceOptionMaxHeight": 36.85,
+            "actionHeight": 48.2,
+            "actionFontSize": 13.125,
+            "actionGap": 8.15,
+            "horizontalPadding": 12.15
+          },
+          "progress": {
+            "x": 474,
+            "y": 72,
+            "width": 82,
+            "height": 236,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 12,
+              "countFontSize": 14,
+              "stepRadius": 13.120000000000001,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 14.200000000000001
+          },
+          "worldFrame": {
+            "scale": 0.44375,
+            "offsetX": 0,
+            "offsetY": 0.25,
+            "platformScreenX": 284,
+            "platformScreenY": 248.75
+          }
+        },
+        "robot": {
+          "x": 223.26172134239124,
+          "y": 89.57768524139759,
+          "width": 121.47654968582299,
+          "height": 161.9687329144307,
+          "right": 344.7382710282142,
+          "bottom": 251.5464181558283,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 568,
+          "height": 320
+        },
+        "document": {
+          "width": 568,
+          "height": 320
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-small",
+            "x": 46.62519413874699,
+            "y": 237.7353797325721,
+            "width": 26.034615384615392,
+            "height": 26.034615384615364,
+            "right": 72.65980952336238,
+            "bottom": 263.7699951171875,
+            "hitWidth": 72.35000000000001,
+            "hitHeight": 78.17500000000001,
+            "image": {
+              "x": 46.62519413874699,
+              "y": 237.7353797325721,
+              "width": 26.034615384615392,
+              "height": 26.034615384615364,
+              "right": 72.65980952336238,
+              "bottom": 263.7699951171875,
+              "texture": "size-battery",
+              "scale": 0.02076125628757208
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 113.2138437124399,
+            "y": 226.5776874248798,
+            "width": 37.19230769230769,
+            "height": 37.19230769230768,
+            "right": 150.4061514047476,
+            "bottom": 263.7699951171875,
+            "hitWidth": 72.35000000000001,
+            "hitHeight": 78.17500000000001,
+            "image": {
+              "x": 113.2138437124399,
+              "y": 226.5776874248798,
+              "width": 37.19230769230769,
+              "height": 37.19230769230768,
+              "right": 150.4061514047476,
+              "bottom": 263.7699951171875,
+              "texture": "size-battery",
+              "scale": 0.0296589375536744
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 179.8024932861328,
+            "y": 215.4199951171875,
+            "width": 48.35000000000002,
+            "height": 48.349999999999966,
+            "right": 228.15249328613282,
+            "bottom": 263.7699951171875,
+            "hitWidth": 72.35000000000001,
+            "hitHeight": 78.17500000000001,
+            "image": {
+              "x": 179.8024932861328,
+              "y": 215.4199951171875,
+              "width": 48.35000000000002,
+              "height": 48.349999999999966,
+              "right": 228.15249328613282,
+              "bottom": 263.7699951171875,
+              "texture": "size-battery",
+              "scale": 0.03855661881977672
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-small",
+          "size-medium",
+          "size-large"
+        ],
+        "layout": {
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 39.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 73.65,
+            "width": 236.32000000000002,
+            "height": 302.70000000000005
+          },
+          "taskCardSizing": {
+            "radius": 22.120416666666667,
+            "ribbonHeight": 36.42333333333333,
+            "ribbonWidth": 188,
+            "taskFontSize": 16.514583333333334,
+            "titleFontSize": 18.423333333333336,
+            "instructionFontSize": 14.514583333333334,
+            "feedbackFontSize": 12.908750000000001,
+            "titleY": 34.75541666666667,
+            "instructionY": 62.29916666666667,
+            "areaTop": 88.05458333333334,
+            "footerSpace": 83.93416666666667,
+            "cellGap": 7.817500000000001,
+            "cellMaxWidth": 111.32833333333335,
+            "cellMaxHeight": 70.17500000000001,
+            "sequenceGap": 4.817500000000001,
+            "sequenceIconMaxSize": 37.087500000000006,
+            "sequenceOptionMaxHeight": 46.29916666666667,
+            "actionHeight": 50.42333333333333,
+            "actionFontSize": 14.514583333333334,
+            "actionGap": 9.8175,
+            "horizontalPadding": 13.8175
+          },
+          "progress": {
+            "x": 729.07,
+            "y": 73.65,
+            "width": 101.28,
+            "height": 302.70000000000005,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 13.166400000000001,
+              "countFontSize": 14.179200000000002,
+              "stepRadius": 16.2048,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.5416666666666666,
+            "offsetX": 75.33333333333337,
+            "offsetY": 0,
+            "platformScreenX": 422,
+            "platformScreenY": 303.3333333333333
+          }
+        },
+        "robot": {
+          "x": 347.8593943643274,
+          "y": 109.03849449117465,
+          "width": 148.28124178892335,
+          "height": 197.70832238523113,
+          "right": 496.14063615325074,
+          "bottom": 306.7468168764058,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "document": {
+          "width": 844,
+          "height": 390
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "landscape-915x412",
+      "width": 915,
+      "height": 412,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-small",
+            "x": 49.2785369153145,
+            "y": 247.58041550543368,
+            "width": 29.23558974358975,
+            "height": 29.235589743589742,
+            "right": 78.51412665890425,
+            "bottom": 276.8160052490234,
+            "hitWidth": 78.29466666666669,
+            "hitHeight": 83.28999999999999,
+            "image": {
+              "x": 49.2785369153145,
+              "y": 247.58041550543368,
+              "width": 29.23558974358975,
+              "height": 29.235589743589742,
+              "right": 78.51412665890425,
+              "bottom": 276.8160052490234,
+              "texture": "size-battery",
+              "scale": 0.023313867419130583
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 121.63744016989683,
+            "y": 235.0508770438952,
+            "width": 41.76512820512822,
+            "height": 41.76512820512821,
+            "right": 163.40256837502506,
+            "bottom": 276.8160052490234,
+            "hitWidth": 78.29466666666669,
+            "hitHeight": 83.28999999999999,
+            "image": {
+              "x": 121.63744016989683,
+              "y": 235.0508770438952,
+              "width": 41.76512820512822,
+              "height": 41.76512820512821,
+              "right": 163.40256837502506,
+              "bottom": 276.8160052490234,
+              "texture": "size-battery",
+              "scale": 0.03330552488447226
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 193.9963281656901,
+            "y": 222.52133858235675,
+            "width": 54.29466666666667,
+            "height": 54.29466666666667,
+            "right": 248.29099483235677,
+            "bottom": 276.8160052490234,
+            "hitWidth": 78.29466666666669,
+            "hitHeight": 83.28999999999999,
+            "image": {
+              "x": 193.9963281656901,
+              "y": 222.52133858235675,
+              "width": 54.29466666666667,
+              "height": 54.29466666666667,
+              "right": 248.29099483235677,
+              "bottom": 276.8160052490234,
+              "texture": "size-battery",
+              "scale": 0.043297182349813945
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-small",
+          "size-medium",
+          "size-large"
+        ],
+        "layout": {
+          "viewportWidth": 915,
+          "viewportHeight": 412,
+          "aspectRatio": 2.220873786407767,
+          "mode": "landscape",
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "margin": 14.420000000000002,
+          "headerY": 40.42,
+          "headerWidth": 301.95,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000002,
+            "y": 74.42,
+            "width": 256.20000000000005,
+            "height": 323.15999999999997
+          },
+          "taskCardSizing": {
+            "radius": 22.717166666666664,
+            "ribbonHeight": 37.105333333333334,
+            "ribbonWidth": 188,
+            "taskFontSize": 16.940833333333334,
+            "titleFontSize": 19.105333333333334,
+            "instructionFontSize": 14.940833333333332,
+            "feedbackFontSize": 13.1645,
+            "titleY": 36.375166666666665,
+            "instructionY": 65.19766666666666,
+            "areaTop": 92.57283333333334,
+            "footerSpace": 87.85566666666666,
+            "cellGap": 8.328999999999999,
+            "cellMaxWidth": 115.07933333333332,
+            "cellMaxHeight": 75.28999999999999,
+            "sequenceGap": 5.328999999999999,
+            "sequenceIconMaxSize": 39.644999999999996,
+            "sequenceOptionMaxHeight": 49.19766666666666,
+            "actionHeight": 51.105333333333334,
+            "actionFontSize": 14.940833333333332,
+            "actionGap": 10.328999999999999,
+            "horizontalPadding": 14.328999999999999
+          },
+          "progress": {
+            "x": 790.7800000000001,
+            "y": 74.42,
+            "width": 109.8,
+            "height": 323.15999999999997,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14.274000000000001,
+              "countFontSize": 15.372000000000002,
+              "stepRadius": 17.568,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.5722222222222222,
+            "offsetX": 91.27777777777783,
+            "offsetY": 0,
+            "platformScreenX": 457.5,
+            "platformScreenY": 320.4444444444444
+          }
+        },
+        "robot": {
+          "x": 379.1770967223483,
+          "y": 115.18938183195979,
+          "width": 156.64582181409241,
+          "height": 208.86109575212328,
+          "right": 535.8229185364407,
+          "bottom": 324.05047758408307,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 915,
+          "height": 412
+        },
+        "document": {
+          "width": 915,
+          "height": 412
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 51.2000010172526,
+            "y": 365.35334065755205,
+            "width": 83.46666666666668,
+            "height": 83.4666666666667,
+            "right": 134.6666676839193,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 51.2000010172526,
+              "y": 365.35334065755205,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 172.29742979392026,
+            "y": 384.6148791190905,
+            "width": 64.20512820512823,
+            "height": 64.20512820512823,
+            "right": 236.5025579990485,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 172.29742979392026,
+              "y": 384.6148791190905,
+              "width": 64.20512820512823,
+              "height": 64.20512820512823,
+              "right": 236.5025579990485,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 293.394873829377,
+            "y": 403.876417580629,
+            "width": 44.94358974358977,
+            "height": 44.94358974358977,
+            "right": 338.33846357296676,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 293.394873829377,
+              "y": 403.876417580629,
+              "width": 44.94358974358977,
+              "height": 44.94358974358977,
+              "right": 338.33846357296676,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-medium",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1366x768",
+      "width": 1366,
+      "height": 768,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 52.879996541341136,
+            "y": 363.61466837565104,
+            "width": 91.49333333333334,
+            "height": 91.49333333333334,
+            "right": 144.37332987467448,
+            "bottom": 455.1080017089844,
+            "hitWidth": 115.49333333333334,
+            "hitHeight": 120,
+            "image": {
+              "x": 52.879996541341136,
+              "y": 363.61466837565104,
+              "width": 91.49333333333334,
+              "height": 91.49333333333334,
+              "right": 144.37332987467448,
+              "bottom": 455.1080017089844,
+              "texture": "size-battery",
+              "scale": 0.07296119085592771
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 182.93026678623298,
+            "y": 384.7285145294972,
+            "width": 70.37948717948717,
+            "height": 70.37948717948717,
+            "right": 253.30975396572015,
+            "bottom": 455.1080017089844,
+            "hitWidth": 115.49333333333334,
+            "hitHeight": 120,
+            "image": {
+              "x": 182.93026678623298,
+              "y": 384.7285145294972,
+              "width": 70.37948717948717,
+              "height": 70.37948717948717,
+              "right": 253.30975396572015,
+              "bottom": 455.1080017089844,
+              "texture": "size-battery",
+              "scale": 0.056123992966098234
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 312.98052177233575,
+            "y": 405.8423606833434,
+            "width": 49.265641025641,
+            "height": 49.265641025641,
+            "right": 362.24616279797675,
+            "bottom": 455.1080017089844,
+            "hitWidth": 115.49333333333334,
+            "hitHeight": 120,
+            "image": {
+              "x": 312.98052177233575,
+              "y": 405.8423606833434,
+              "width": 49.265641025641,
+              "height": 49.265641025641,
+              "right": 362.24616279797675,
+              "bottom": 455.1080017089844,
+              "texture": "size-battery",
+              "scale": 0.03928679507626876
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-medium",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 1366,
+          "viewportHeight": 768,
+          "aspectRatio": 1.7786458333333333,
+          "mode": "landscape",
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "margin": 26.880000000000003,
+          "headerY": 56.832,
+          "headerWidth": 440,
+          "headerHeight": 59.903999999999996,
+          "headerFontSize": 32,
+          "iconWidth": 92,
+          "iconHeight": 57.599999999999994,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 26.880000000000003,
+            "y": 100.60799999999999,
+            "width": 382.48,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1175.1999999999998,
+            "y": 100.60799999999999,
+            "width": 163.92,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 20,
+              "countFontSize": 20,
+              "stepRadius": 25,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 218.56,
+            "height": 76.80000000000001,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1.0666666666666667,
+            "offsetX": 0.33333333333337123,
+            "offsetY": 0,
+            "platformScreenX": 683,
+            "platformScreenY": 597.3333333333334
+          }
+        },
+        "robot": {
+          "x": 537.0000414392825,
+          "y": 214.721961705289,
+          "width": 291.9999883489854,
+          "height": 389.33331779864716,
+          "right": 829.000029788268,
+          "bottom": 604.0552795039362,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1366,
+          "height": 768
+        },
+        "document": {
+          "width": 1366,
+          "height": 768
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-medium",
+            "x": 65.23076668763773,
+            "y": 389.0682075696114,
+            "width": 74.87179487179486,
+            "height": 74.87179487179486,
+            "right": 140.1025615594326,
+            "bottom": 463.94000244140625,
+            "hitWidth": 121.33333333333333,
+            "hitHeight": 120,
+            "image": {
+              "x": 65.23076668763773,
+              "y": 389.0682075696114,
+              "width": 74.87179487179486,
+              "height": 74.87179487179486,
+              "right": 140.1025615594326,
+              "bottom": 463.94000244140625,
+              "texture": "size-battery",
+              "scale": 0.05970637549584917
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 201.7948717948718,
+            "y": 411.52974603114984,
+            "width": 52.41025641025641,
+            "height": 52.41025641025641,
+            "right": 254.2051282051282,
+            "bottom": 463.94000244140625,
+            "hitWidth": 121.33333333333333,
+            "hitHeight": 120,
+            "image": {
+              "x": 201.7948717948718,
+              "y": 411.52974603114984,
+              "width": 52.41025641025641,
+              "height": 52.41025641025641,
+              "right": 254.2051282051282,
+              "bottom": 463.94000244140625,
+              "texture": "size-battery",
+              "scale": 0.04179446284709442
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 304.6666768391927,
+            "y": 366.60666910807294,
+            "width": 97.33333333333337,
+            "height": 97.33333333333331,
+            "right": 402.00001017252606,
+            "bottom": 463.94000244140625,
+            "hitWidth": 121.33333333333333,
+            "hitHeight": 120,
+            "image": {
+              "x": 304.6666768391927,
+              "y": 366.60666910807294,
+              "width": 97.33333333333337,
+              "height": 97.33333333333331,
+              "right": 402.00001017252606,
+              "bottom": 463.94000244140625,
+              "texture": "size-battery",
+              "scale": 0.07761828814460393
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-medium",
+          "size-small",
+          "size-large"
+        ],
+        "layout": {
+          "viewportWidth": 1920,
+          "viewportHeight": 1080,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 28,
+            "right": 28,
+            "bottom": 28,
+            "left": 28
+          },
+          "margin": 28,
+          "headerY": 59,
+          "headerWidth": 440,
+          "headerHeight": 62,
+          "headerFontSize": 32,
+          "iconWidth": 92,
+          "iconHeight": 60,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 28,
+            "y": 109.44,
+            "width": 400,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 250,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1722,
+            "y": 109.44,
+            "width": 170,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 20,
+              "countFontSize": 20,
+              "stepRadius": 25,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 225,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 960,
+            "platformScreenY": 840
+          }
+        },
+        "robot": {
+          "x": 754.6875189,
+          "y": 301.9527429,
+          "width": 410.6249622,
+          "height": 547.4999496,
+          "right": 1165.3124811,
+          "bottom": 849.4526925,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1920,
+          "height": 1080
+        },
+        "document": {
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "checks": {
+        "labels": true,
+        "progress": true,
+        "sameSource": true,
+        "sizeDifference": true,
+        "baseline": true,
+        "targets": true,
+        "insideCard": true,
+        "noCardRobotOverlap": true,
+        "grounding": true,
+        "viewport": true,
+        "errors": true
+      }
+    }
+  ],
+  "flow": {
+    "checks": {
+      "liveResize": true,
+      "challenge1Wrong": true,
+      "hint": true,
+      "challenge1Correct": true,
+      "challenge2Correct": true,
+      "challenge3Correct": true,
+      "shuffledPositions": true,
+      "dialogue": true,
+      "grounding": true,
+      "errors": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": []
+    },
+    "states": {
+      "beforeResize": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": "size-medium",
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3 · Выбрано",
+        "checkEnabled": true,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 51.2000010172526,
+            "y": 365.35334065755205,
+            "width": 83.46666666666668,
+            "height": 83.4666666666667,
+            "right": 134.6666676839193,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 51.2000010172526,
+              "y": 365.35334065755205,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 181.9281990246895,
+            "y": 403.876417580629,
+            "width": 44.94358974358977,
+            "height": 44.94358974358977,
+            "right": 226.87178876827926,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 181.9281990246895,
+              "y": 403.876417580629,
+              "width": 44.94358974358977,
+              "height": 44.94358974358977,
+              "right": 226.87178876827926,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 282.5276446342468,
+            "y": 384.06775546073914,
+            "width": 66.6780481338501,
+            "height": 66.6780481338501,
+            "right": 349.2056927680969,
+            "bottom": 450.74580359458923,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 282.5276446342468,
+              "y": 384.06775546073914,
+              "width": 66.6780481338501,
+              "height": 66.6780481338501,
+              "right": 349.2056927680969,
+              "bottom": 450.74580359458923,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-small",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "afterResize": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": "size-medium",
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3",
+        "checkEnabled": true,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": false,
+        "dialogueText": "",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 48.53133819580078,
+            "y": 286.7730908203125,
+            "width": 64.79000000000002,
+            "height": 64.78999999999996,
+            "right": 113.32133819580079,
+            "bottom": 351.5630908203125,
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "image": {
+              "x": 48.53133819580078,
+              "y": 286.7730908203125,
+              "width": 64.79000000000002,
+              "height": 64.78999999999996,
+              "right": 113.32133819580079,
+              "bottom": 351.5630908203125,
+              "texture": "size-battery",
+              "scale": 0.05166666666666667
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 177.55653846153845,
+            "y": 316.67616774338944,
+            "width": 34.8869230769231,
+            "height": 34.88692307692304,
+            "right": 212.44346153846155,
+            "bottom": 351.5630908203125,
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "image": {
+              "x": 177.55653846153845,
+              "y": 316.67616774338944,
+              "width": 34.8869230769231,
+              "height": 34.88692307692304,
+              "right": 212.44346153846155,
+              "bottom": 351.5630908203125,
+              "texture": "size-battery",
+              "scale": 0.027820512820512823
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 283.03307434916496,
+            "y": 300.93967426121236,
+            "width": 52.081190168857574,
+            "height": 52.081190168857574,
+            "right": 335.11426451802254,
+            "bottom": 353.02086443006993,
+            "hitWidth": 113.59466666666667,
+            "hitHeight": 84.79,
+            "image": {
+              "x": 283.03307434916496,
+              "y": 300.93967426121236,
+              "width": 52.081190168857574,
+              "height": 52.081190168857574,
+              "right": 335.11426451802254,
+              "bottom": 353.02086443006993,
+              "texture": "size-battery",
+              "scale": 0.03974358974358975
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-small",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 152.142,
+            "width": 362.70000000000005,
+            "height": 329.16
+          },
+          "taskCardSizing": {
+            "radius": 22.892166666666668,
+            "ribbonHeight": 37.30533333333334,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 17.065833333333334,
+            "titleFontSize": 19.305333333333333,
+            "instructionFontSize": 15.065833333333334,
+            "feedbackFontSize": 13.2395,
+            "titleY": 36.85016666666667,
+            "instructionY": 66.04766666666667,
+            "areaTop": 93.89783333333334,
+            "footerSpace": 89.00566666666667,
+            "cellGap": 8.479000000000001,
+            "cellMaxWidth": 116.17933333333335,
+            "cellMaxHeight": 76.79,
+            "sequenceGap": 5.479000000000001,
+            "sequenceIconMaxSize": 40.395,
+            "sequenceOptionMaxHeight": 50.04766666666667,
+            "actionHeight": 51.30533333333334,
+            "actionFontSize": 15.065833333333334,
+            "actionGap": 10.479000000000001,
+            "horizontalPadding": 14.479000000000001
+          },
+          "progress": {
+            "x": 15,
+            "y": 83.778,
+            "width": 360,
+            "height": 54.86,
+            "horizontal": true,
+            "sizing": {
+              "titleFontSize": 0,
+              "countFontSize": 17.55,
+              "stepRadius": 17.16,
+              "borderRadius": 23.4
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          },
+          "worldFrame": {
+            "scale": 0.639344262295082,
+            "offsetX": -214.1803278688525,
+            "offsetY": 370.27986885245906,
+            "platformScreenX": 195,
+            "platformScreenY": 728.312655737705
+          }
+        },
+        "robot": {
+          "x": 107.48976804482066,
+          "y": 498.9810483709649,
+          "width": 175.02047916914773,
+          "height": 233.3606388921969,
+          "right": 282.5102472139684,
+          "bottom": 732.3416872631618,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "challenge1Wrong": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "wrong",
+        "feedback": "СРАВНЕНИЕ 1/3 · Попробуй ещё раз",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Посмотри на размеры ещё раз",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 51.2000010172526,
+            "y": 365.35334065755205,
+            "width": 83.46666666666668,
+            "height": 83.4666666666667,
+            "right": 134.6666676839193,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 51.2000010172526,
+              "y": 365.35334065755205,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 184.83618852664262,
+            "y": 403.876417580629,
+            "width": 44.94358974358977,
+            "height": 44.94358974358977,
+            "right": 229.77977827023238,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 184.83618852664262,
+              "y": 403.876417580629,
+              "width": 44.94358974358977,
+              "height": 44.94358974358977,
+              "right": 229.77977827023238,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 283.7641045986078,
+            "y": 384.6148791190905,
+            "width": 64.20512820512818,
+            "height": 64.20512820512823,
+            "right": 347.96923280373596,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 283.7641045986078,
+              "y": 384.6148791190905,
+              "width": 64.20512820512818,
+              "height": 64.20512820512823,
+              "right": 347.96923280373596,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-small",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.30352838495014,
+          "y": 194.78953585963376,
+          "width": 292.0285027862775,
+          "height": 378.5005939739329,
+          "right": 795.3320311712276,
+          "bottom": 573.2901298335667,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 2.9265847744427447,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge1Hint": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": null,
+        "result": "idle",
+        "feedback": "СРАВНЕНИЕ 1/3 · Подсказка у робота",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "2 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Сравни, какая батарейка занимает больше места",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 51.2000010172526,
+            "y": 365.35334065755205,
+            "width": 83.46666666666668,
+            "height": 83.4666666666667,
+            "right": 134.6666676839193,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 51.2000010172526,
+              "y": 365.35334065755205,
+              "width": 83.46666666666668,
+              "height": 83.4666666666667,
+              "right": 134.6666676839193,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 181.9281990246895,
+            "y": 403.876417580629,
+            "width": 44.94358974358977,
+            "height": 44.94358974358977,
+            "right": 226.87178876827926,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 181.9281990246895,
+              "y": 403.876417580629,
+              "width": 44.94358974358977,
+              "height": 44.94358974358977,
+              "right": 226.87178876827926,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 283.7641045986078,
+            "y": 384.6148791190905,
+            "width": 64.20512820512818,
+            "height": 64.20512820512823,
+            "right": 347.96923280373596,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 283.7641045986078,
+              "y": 384.6148791190905,
+              "width": 64.20512820512818,
+              "height": 64.20512820512823,
+              "right": 347.96923280373596,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-small",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge1Correct": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую большую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 1/3",
+        "selectedKey": "size-large",
+        "result": "correct",
+        "feedback": "СРАВНЕНИЕ 1/3 · Правильно!",
+        "checkEnabled": false,
+        "continueVisible": true,
+        "progressText": "2 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Верно! Отлично сравнил!",
+        "choices": [
+          {
+            "key": "size-large",
+            "x": 49.32200280825297,
+            "y": 363.8473420937856,
+            "width": 87.22266308466595,
+            "height": 87.22266308466595,
+            "right": 136.5446658929189,
+            "bottom": 451.07000517845154,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 49.32200280825297,
+              "y": 363.8473420937856,
+              "width": 87.22266308466595,
+              "height": 87.22266308466595,
+              "right": 136.5446658929189,
+              "bottom": 451.07000517845154,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 181.9281990246895,
+            "y": 403.876417580629,
+            "width": 44.94358974358977,
+            "height": 44.94358974358977,
+            "right": 226.87178876827926,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 181.9281990246895,
+              "y": 403.876417580629,
+              "width": 44.94358974358977,
+              "height": 44.94358974358977,
+              "right": 226.87178876827926,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          },
+          {
+            "key": "size-medium",
+            "x": 283.7641045986078,
+            "y": 384.6148791190905,
+            "width": 64.20512820512818,
+            "height": 64.20512820512823,
+            "right": 347.96923280373596,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 283.7641045986078,
+              "y": 384.6148791190905,
+              "width": 64.20512820512818,
+              "height": 64.20512820512823,
+              "right": 347.96923280373596,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-large",
+          "size-small",
+          "size-medium"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge2Correct": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Найди самую маленькую батарейку",
+        "internalProgress": "СРАВНЕНИЕ 2/3",
+        "selectedKey": "size-small",
+        "result": "correct",
+        "feedback": "СРАВНЕНИЕ 2/3 · Правильно!",
+        "checkEnabled": false,
+        "continueVisible": true,
+        "progressText": "2 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Да! Размер выбран правильно!",
+        "choices": [
+          {
+            "key": "size-medium",
+            "x": 60.83077024802183,
+            "y": 384.6148791190905,
+            "width": 64.20512820512823,
+            "height": 64.20512820512823,
+            "right": 125.03589845315005,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 60.83077024802183,
+              "y": 384.6148791190905,
+              "width": 64.20512820512823,
+              "height": 64.20512820512823,
+              "right": 125.03589845315005,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 180.91696921984354,
+            "y": 404.10395582516986,
+            "width": 46.966049353281676,
+            "height": 46.966049353281676,
+            "right": 227.8830185731252,
+            "bottom": 451.07000517845154,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 180.91696921984354,
+              "y": 404.10395582516986,
+              "width": 46.966049353281676,
+              "height": 46.966049353281676,
+              "right": 227.8830185731252,
+              "bottom": 451.07000517845154,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 274.1333353678385,
+            "y": 365.35334065755205,
+            "width": 83.4666666666667,
+            "height": 83.4666666666667,
+            "right": 357.6000020345052,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 274.1333353678385,
+              "y": 365.35334065755205,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 357.6000020345052,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-medium",
+          "size-small",
+          "size-large"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "challenge3Correct": {
+        "taskLabel": "ЗАДАНИЕ 3/5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "instruction": "Какая батарейка среднего размера?",
+        "internalProgress": "СРАВНЕНИЕ 3/3",
+        "selectedKey": "size-medium",
+        "result": "correct",
+        "feedback": "СРАВНЕНИЕ 3/3 · Правильно!",
+        "checkEnabled": false,
+        "continueVisible": false,
+        "progressText": "3 / 5",
+        "dialogueVisible": true,
+        "dialogueText": "Супер! Ты заметил разницу!",
+        "choices": [
+          {
+            "key": "size-medium",
+            "x": 59.38615624109903,
+            "y": 383.9756489594777,
+            "width": 67.09435621897381,
+            "height": 67.09435621897381,
+            "right": 126.48051246007284,
+            "bottom": 451.07000517845154,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 59.38615624109903,
+              "y": 383.9756489594777,
+              "width": 67.09435621897381,
+              "height": 67.09435621897381,
+              "right": 126.48051246007284,
+              "bottom": 451.07000517845154,
+              "texture": "size-battery",
+              "scale": 0.051200261726577524
+            }
+          },
+          {
+            "key": "size-large",
+            "x": 162.66666056315103,
+            "y": 365.35334065755205,
+            "width": 83.4666666666667,
+            "height": 83.4666666666667,
+            "right": 246.13332722981772,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 162.66666056315103,
+              "y": 365.35334065755205,
+              "width": 83.4666666666667,
+              "height": 83.4666666666667,
+              "right": 246.13332722981772,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.06656034024455078
+            }
+          },
+          {
+            "key": "size-small",
+            "x": 293.394873829377,
+            "y": 403.876417580629,
+            "width": 44.94358974358977,
+            "height": 44.94358974358977,
+            "right": 338.33846357296676,
+            "bottom": 448.82000732421875,
+            "hitWidth": 107.46666666666668,
+            "hitHeight": 120,
+            "image": {
+              "x": 293.394873829377,
+              "y": 403.876417580629,
+              "width": 44.94358974358977,
+              "height": 44.94358974358977,
+              "right": 338.33846357296676,
+              "bottom": 448.82000732421875,
+              "texture": "size-battery",
+              "scale": 0.035840183208604263
+            }
+          }
+        ],
+        "choiceOrder": [
+          "size-medium",
+          "size-large",
+          "size-small"
+        ],
+        "layout": {
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 94.32,
+            "width": 358.40000000000003,
+            "height": 600
+          },
+          "taskCardSizing": {
+            "radius": 27,
+            "ribbonHeight": 42,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 20,
+            "titleFontSize": 24,
+            "instructionFontSize": 18,
+            "feedbackFontSize": 15,
+            "titleY": 48,
+            "instructionY": 86,
+            "areaTop": 125,
+            "footerSpace": 116,
+            "cellGap": 12,
+            "cellMaxWidth": 142,
+            "cellMaxHeight": 112,
+            "sequenceGap": 9,
+            "sequenceIconMaxSize": 58,
+            "sequenceOptionMaxHeight": 70,
+            "actionHeight": 56,
+            "actionFontSize": 18,
+            "actionGap": 14,
+            "horizontalPadding": 18
+          },
+          "progress": {
+            "x": 1101.2,
+            "y": 94.32,
+            "width": 153.6,
+            "height": 600,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 19.968,
+              "countFontSize": 20,
+              "stepRadius": 24.576,
+              "borderRadius": 24
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "platformScreenX": 640,
+            "platformScreenY": 560
+          }
+        },
+        "robot": {
+          "x": 503.1250126,
+          "y": 201.30182859999996,
+          "width": 273.7499748,
+          "height": 364.9999664,
+          "right": 776.8749874,
+          "bottom": 566.301795,
+          "xValue": 640,
+          "yValue": 566.301795,
+          "scale": 0.2520718,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "baseX": 640,
+          "baseY": 566.301795,
+          "platformX": 640,
+          "platformY": 560
+        },
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "document": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    },
+    "correctSlots": [
+      0,
+      1,
+      0
+    ]
+  },
+  "failures": []
+}

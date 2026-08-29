@@ -1,0 +1,1319 @@
+{
+  "flows": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "initial": true,
+        "oddComplete": true,
+        "sequenceInternal": true,
+        "sequenceFinal": true,
+        "sizeLoaded": true,
+        "sizeInternal": true,
+        "sizeComplete": true,
+        "restart": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 0,
+          "repairPending": 5,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "oddComplete": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sequence1": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sequence2": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 2 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sequence3": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sizeLoaded": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "size1": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "size2": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 2 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "size3": {
+          "session": {
+            "currentTask": 4,
+            "completedTasks": 3,
+            "totalTasks": 5,
+            "score": 3
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 3,
+          "repairPending": 2,
+          "result": "correct",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "restarted": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 0,
+          "repairPending": 5,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "initial": true,
+        "oddComplete": true,
+        "sequenceInternal": true,
+        "sequenceFinal": true,
+        "sizeLoaded": true,
+        "sizeInternal": true,
+        "sizeComplete": true,
+        "restart": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 0,
+          "repairPending": 5,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "oddComplete": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sequence1": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sequence2": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 2 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sequence3": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sizeLoaded": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "size1": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "size2": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 2 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "size3": {
+          "session": {
+            "currentTask": 4,
+            "completedTasks": 3,
+            "totalTasks": 5,
+            "score": 3
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 3,
+          "repairPending": 2,
+          "result": "correct",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "restarted": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 0,
+          "repairPending": 5,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "initial": true,
+        "oddComplete": true,
+        "sequenceInternal": true,
+        "sequenceFinal": true,
+        "sizeLoaded": true,
+        "sizeInternal": true,
+        "sizeComplete": true,
+        "restart": true,
+        "viewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 0,
+          "repairPending": 5,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "oddComplete": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "sequence1": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "sequence2": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 2 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 1,
+          "repairPending": 4,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "sequence3": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalProgress": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "sequence-lightning",
+              "texture": "sequence-lightning"
+            },
+            {
+              "key": "sequence-planet",
+              "texture": "sequence-planet"
+            },
+            {
+              "key": "sequence-gear",
+              "texture": "sequence-gear"
+            },
+            {
+              "key": "sequence-star",
+              "texture": "sequence-star"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "sizeLoaded": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "size1": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "size2": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 2 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 2,
+          "repairPending": 3,
+          "result": "correct",
+          "continueVisible": true,
+          "choices": [
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "size3": {
+          "session": {
+            "currentTask": 4,
+            "completedTasks": 3,
+            "totalTasks": 5,
+            "score": 3
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalProgress": "СРАВНЕНИЕ 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 3,
+          "repairPending": 2,
+          "result": "correct",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "size-small",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-large",
+              "texture": "size-battery"
+            },
+            {
+              "key": "size-medium",
+              "texture": "size-battery"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "restarted": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalProgress": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgressVisible": false,
+          "repairCompleted": 0,
+          "repairPending": 5,
+          "result": "idle",
+          "continueVisible": false,
+          "choices": [
+            {
+              "key": "odd-apple",
+              "texture": "odd-apple"
+            },
+            {
+              "key": "odd-banana",
+              "texture": "odd-banana"
+            },
+            {
+              "key": "odd-carrot",
+              "texture": "odd-carrot"
+            },
+            {
+              "key": "odd-ball",
+              "texture": "odd-ball"
+            }
+          ],
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        }
+      }
+    }
+  ],
+  "failures": []
+}

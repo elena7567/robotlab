@@ -1,0 +1,260 @@
+{
+  "flows": [
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "taskTitle": true,
+        "batteries": true,
+        "noStaleUi": true,
+        "progression": true,
+        "rewardCleared": true,
+        "console": true
+      },
+      "screen": {
+        "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "cardCount": 1,
+        "staleSequenceTitle": false,
+        "batteries": [
+          {
+            "key": "size-medium",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.03974358974358975,
+            "scaleY": 0.03974358974358975,
+            "depth": 0,
+            "bounds": {
+              "x": 56.00710742657001,
+              "y": 301.724629281851,
+              "right": 105.84556896503156,
+              "bottom": 351.5630908203125
+            },
+            "insideViewport": true
+          },
+          {
+            "key": "size-large",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.05166666666666667,
+            "scaleY": 0.05166666666666667,
+            "depth": 0,
+            "bounds": {
+              "x": 162.605,
+              "y": 286.7730908203125,
+              "right": 227.395,
+              "bottom": 351.5630908203125
+            },
+            "insideViewport": true
+          },
+          {
+            "key": "size-small",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.027820512820512823,
+            "scaleY": 0.027820512820512823,
+            "depth": 0,
+            "bounds": {
+              "x": 291.63020789513223,
+              "y": 316.67616774338944,
+              "right": 326.51713097205527,
+              "bottom": 351.5630908203125
+            },
+            "insideViewport": true
+          }
+        ],
+        "session": {
+          "currentTask": 3,
+          "completedTasks": 2,
+          "totalTasks": 5,
+          "score": 2
+        },
+        "rewardCount": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "taskTitle": true,
+        "batteries": true,
+        "noStaleUi": true,
+        "progression": true,
+        "rewardCleared": true,
+        "console": true
+      },
+      "screen": {
+        "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "cardCount": 1,
+        "staleSequenceTitle": false,
+        "batteries": [
+          {
+            "key": "size-medium",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.0536498589130168,
+            "scaleY": 0.0536498589130168,
+            "depth": 0,
+            "bounds": {
+              "x": 206.81153540978065,
+              "y": 372.2535835148738,
+              "right": 274.0884584867037,
+              "bottom": 439.5305065917969
+            },
+            "insideViewport": true
+          },
+          {
+            "key": "size-large",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.06974481658692185,
+            "scaleY": 0.06974481658692185,
+            "depth": 0,
+            "bounds": {
+              "x": 340.27,
+              "y": 352.07050659179686,
+              "right": 427.73,
+              "bottom": 439.5305065917969
+            },
+            "insideViewport": true
+          },
+          {
+            "key": "size-small",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.03755490123911176,
+            "scaleY": 0.03755490123911176,
+            "depth": 0,
+            "bounds": {
+              "x": 504.0030647160457,
+              "y": 392.4366604379507,
+              "right": 551.0969108698919,
+              "bottom": 439.5305065917969
+            },
+            "insideViewport": true
+          }
+        ],
+        "session": {
+          "currentTask": 3,
+          "completedTasks": 2,
+          "totalTasks": 5,
+          "score": 2
+        },
+        "rewardCount": 0,
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    },
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "taskTitle": true,
+        "batteries": true,
+        "noStaleUi": true,
+        "progression": true,
+        "rewardCleared": true,
+        "console": true
+      },
+      "screen": {
+        "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+        "title": "СРАВНИ ПО РАЗМЕРУ",
+        "cardCount": 1,
+        "staleSequenceTitle": false,
+        "batteries": [
+          {
+            "key": "size-large",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.06656034024455078,
+            "scaleY": 0.06656034024455078,
+            "depth": 0,
+            "bounds": {
+              "x": 51.2000010172526,
+              "y": 365.35334065755205,
+              "right": 134.6666676839193,
+              "bottom": 448.82000732421875
+            },
+            "insideViewport": true
+          },
+          {
+            "key": "size-medium",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.051200261726577524,
+            "scaleY": 0.051200261726577524,
+            "depth": 0,
+            "bounds": {
+              "x": 172.29742979392026,
+              "y": 384.6148791190905,
+              "right": 236.5025579990485,
+              "bottom": 448.82000732421875
+            },
+            "insideViewport": true
+          },
+          {
+            "key": "size-small",
+            "texture": "size-battery",
+            "visible": true,
+            "alpha": 1,
+            "scaleX": 0.035840183208604263,
+            "scaleY": 0.035840183208604263,
+            "depth": 0,
+            "bounds": {
+              "x": 293.394873829377,
+              "y": 403.876417580629,
+              "right": 338.33846357296676,
+              "bottom": 448.82000732421875
+            },
+            "insideViewport": true
+          }
+        ],
+        "session": {
+          "currentTask": 3,
+          "completedTasks": 2,
+          "totalTasks": 5,
+          "score": 2
+        },
+        "rewardCount": 0,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      }
+    }
+  ],
+  "failures": []
+}

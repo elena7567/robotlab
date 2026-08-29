@@ -1,0 +1,230 @@
+{
+  "matrix": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "leftSocketAlignment": true,
+        "rightSocketAlignment": true,
+        "matchingAttachmentHeight": true,
+        "approvedArmTextures": true,
+        "shoulderRootOrigins": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "state": {
+        "local": {
+          "leftSocket": {
+            "x": -266.64,
+            "y": -583.80432
+          },
+          "rightSocket": {
+            "x": 266.64,
+            "y": -583.80432
+          },
+          "leftRoot": {
+            "x": -266.64,
+            "y": -583.80432
+          },
+          "rightRoot": {
+            "x": 266.64,
+            "y": -583.80432
+          }
+        },
+        "world": {
+          "leftSocket": {
+            "x": 152.02812087893486,
+            "y": 634.2263919661212
+          },
+          "rightSocket": {
+            "x": 237.97187912106514,
+            "y": 634.2263919661212
+          },
+          "leftRoot": {
+            "x": 152.02812087893486,
+            "y": 634.2263919661212
+          },
+          "rightRoot": {
+            "x": 237.97187912106514,
+            "y": 634.2263919661212
+          }
+        },
+        "distances": {
+          "left": 0,
+          "right": 0
+        },
+        "textures": {
+          "screenLeft": "robot-part-arm-right",
+          "screenRight": "robot-part-arm-left",
+          "waveLoaded": false
+        },
+        "origins": {
+          "screenLeft": [
+            0.8022328548644339,
+            0.145933014354067
+          ],
+          "screenRight": [
+            0.22089314194577353,
+            0.145933014354067
+          ]
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "leftSocketAlignment": true,
+        "rightSocketAlignment": true,
+        "matchingAttachmentHeight": true,
+        "approvedArmTextures": true,
+        "shoulderRootOrigins": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "state": {
+        "local": {
+          "leftSocket": {
+            "x": -266.64,
+            "y": -583.80432
+          },
+          "rightSocket": {
+            "x": 266.64,
+            "y": -583.80432
+          },
+          "leftRoot": {
+            "x": -266.64,
+            "y": -583.80432
+          },
+          "rightRoot": {
+            "x": 266.64,
+            "y": -583.80432
+          }
+        },
+        "world": {
+          "leftSocket": {
+            "x": 323.5088214182854,
+            "y": 824.8874330940199
+          },
+          "rightSocket": {
+            "x": 444.4911785817146,
+            "y": 824.8874330940199
+          },
+          "leftRoot": {
+            "x": 323.5088214182854,
+            "y": 824.8874330940199
+          },
+          "rightRoot": {
+            "x": 444.4911785817146,
+            "y": 824.8874330940199
+          }
+        },
+        "distances": {
+          "left": 0,
+          "right": 0
+        },
+        "textures": {
+          "screenLeft": "robot-part-arm-right",
+          "screenRight": "robot-part-arm-left",
+          "waveLoaded": false
+        },
+        "origins": {
+          "screenLeft": [
+            0.8022328548644339,
+            0.145933014354067
+          ],
+          "screenRight": [
+            0.22089314194577353,
+            0.145933014354067
+          ]
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "leftSocketAlignment": true,
+        "rightSocketAlignment": true,
+        "matchingAttachmentHeight": true,
+        "approvedArmTextures": true,
+        "shoulderRootOrigins": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "state": {
+        "local": {
+          "leftSocket": {
+            "x": -266.64,
+            "y": -583.80432
+          },
+          "rightSocket": {
+            "x": 266.64,
+            "y": -583.80432
+          },
+          "leftRoot": {
+            "x": -266.64,
+            "y": -583.80432
+          },
+          "rightRoot": {
+            "x": 266.64,
+            "y": -583.80432
+          }
+        },
+        "world": {
+          "leftSocket": {
+            "x": 572.7875758218765,
+            "y": 412.83939546631814
+          },
+          "rightSocket": {
+            "x": 707.2124241781235,
+            "y": 412.83939546631814
+          },
+          "leftRoot": {
+            "x": 572.7875758218765,
+            "y": 412.83939546631814
+          },
+          "rightRoot": {
+            "x": 707.2124241781235,
+            "y": 412.83939546631814
+          }
+        },
+        "distances": {
+          "left": 0,
+          "right": 0
+        },
+        "textures": {
+          "screenLeft": "robot-part-arm-right",
+          "screenRight": "robot-part-arm-left",
+          "waveLoaded": false
+        },
+        "origins": {
+          "screenLeft": [
+            0.8022328548644339,
+            0.145933014354067
+          ],
+          "screenRight": [
+            0.22089314194577353,
+            0.145933014354067
+          ]
+        }
+      }
+    }
+  ],
+  "failures": []
+}

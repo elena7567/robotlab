@@ -1,0 +1,374 @@
+{
+  "viewports": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "targetArm": true,
+        "friendlyBaseAngle": true,
+        "idle": true,
+        "correct": true,
+        "hint": true,
+        "wrong": true,
+        "baseRestoration": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "idle": {
+          "state": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 122.02460752558977,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "correct": {
+          "state": "CORRECT",
+          "actor": {
+            "x": 640,
+            "y": 549.0260466428048,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 134.1439040836758,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "hint": {
+          "state": "HINT",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 112.05040653093772,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "wrong": {
+          "state": "WRONG",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 122,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "targetArm": true,
+        "friendlyBaseAngle": true,
+        "idle": true,
+        "correct": true,
+        "hint": true,
+        "wrong": true,
+        "baseRestoration": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "idle": {
+          "state": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 122.02368671362137,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "correct": {
+          "state": "CORRECT",
+          "actor": {
+            "x": 640,
+            "y": 547.8948700058985,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 134.88151601149104,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "hint": {
+          "state": "HINT",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 112.1190854508668,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "wrong": {
+          "state": "WRONG",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 122,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "targetArm": true,
+        "friendlyBaseAngle": true,
+        "idle": true,
+        "correct": true,
+        "hint": true,
+        "wrong": true,
+        "baseRestoration": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "idle": {
+          "state": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 122.02278327263434,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "correct": {
+          "state": "CORRECT",
+          "actor": {
+            "x": 640,
+            "y": 548.7360408331547,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 134.38891437542304,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "hint": {
+          "state": "HINT",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 112.41270345987436,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        },
+        "wrong": {
+          "state": "WRONG",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "arm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 122,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "base": {
+              "x": -236,
+              "y": -733,
+              "rotation": 2.129301687433081,
+              "scaleX": 0.4,
+              "scaleY": 0.4
+            }
+          }
+        }
+      }
+    }
+  ],
+  "failures": []
+}

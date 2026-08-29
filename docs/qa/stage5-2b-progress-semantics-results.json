@@ -1,0 +1,461 @@
+{
+  "flows": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "initialSemantics": true,
+        "afterTask1": true,
+        "sequenceWrong": true,
+        "afterTask2": true,
+        "batteryTask": true,
+        "noNumericProgress": true,
+        "viewport": true,
+        "console": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalCounter": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 0,
+          "pendingIndicators": 5,
+          "continueVisible": false,
+          "result": "idle",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "afterTask1": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalCounter": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 1,
+          "pendingIndicators": 4,
+          "continueVisible": true,
+          "result": "correct",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "sequence3Wrong": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalCounter": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 1,
+          "pendingIndicators": 4,
+          "continueVisible": false,
+          "result": "wrong",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "afterTask2": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalCounter": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 2,
+          "pendingIndicators": 3,
+          "continueVisible": true,
+          "result": "correct",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "batteryTask": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalCounter": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 2,
+          "pendingIndicators": 3,
+          "continueVisible": false,
+          "result": "idle",
+          "batteryCount": 3,
+          "canvas": {
+            "width": 390,
+            "height": 844
+          },
+          "document": {
+            "width": 390,
+            "height": 844
+          }
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "initialSemantics": true,
+        "afterTask1": true,
+        "sequenceWrong": true,
+        "afterTask2": true,
+        "batteryTask": true,
+        "noNumericProgress": true,
+        "viewport": true,
+        "console": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalCounter": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 0,
+          "pendingIndicators": 5,
+          "continueVisible": false,
+          "result": "idle",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "afterTask1": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalCounter": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 1,
+          "pendingIndicators": 4,
+          "continueVisible": true,
+          "result": "correct",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "sequence3Wrong": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalCounter": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 1,
+          "pendingIndicators": 4,
+          "continueVisible": false,
+          "result": "wrong",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "afterTask2": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalCounter": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 2,
+          "pendingIndicators": 3,
+          "continueVisible": true,
+          "result": "correct",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        },
+        "batteryTask": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalCounter": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 2,
+          "pendingIndicators": 3,
+          "continueVisible": false,
+          "result": "idle",
+          "batteryCount": 3,
+          "canvas": {
+            "width": 768,
+            "height": 1024
+          },
+          "document": {
+            "width": 768,
+            "height": 1024
+          }
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "initialSemantics": true,
+        "afterTask1": true,
+        "sequenceWrong": true,
+        "afterTask2": true,
+        "batteryTask": true,
+        "noNumericProgress": true,
+        "viewport": true,
+        "console": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "initial": {
+          "session": {
+            "currentTask": 1,
+            "completedTasks": 0,
+            "totalTasks": 5,
+            "score": 0
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalCounter": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 0,
+          "pendingIndicators": 5,
+          "continueVisible": false,
+          "result": "idle",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "afterTask1": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 1 ИЗ 5",
+          "title": "НАЙДИ ЛИШНИЙ ПРЕДМЕТ",
+          "internalCounter": null,
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 1,
+          "pendingIndicators": 4,
+          "continueVisible": true,
+          "result": "correct",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "sequence3Wrong": {
+          "session": {
+            "currentTask": 2,
+            "completedTasks": 1,
+            "totalTasks": 5,
+            "score": 1
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalCounter": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 1,
+          "pendingIndicators": 4,
+          "continueVisible": false,
+          "result": "wrong",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "afterTask2": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 2 ИЗ 5",
+          "title": "ПРОДОЛЖИ РЯД",
+          "internalCounter": "РЯД 3 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 2,
+          "pendingIndicators": 3,
+          "continueVisible": true,
+          "result": "correct",
+          "batteryCount": 0,
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "batteryTask": {
+          "session": {
+            "currentTask": 3,
+            "completedTasks": 2,
+            "totalTasks": 5,
+            "score": 2
+          },
+          "taskLabel": "ЗАДАНИЕ 3 ИЗ 5",
+          "title": "СРАВНИ ПО РАЗМЕРУ",
+          "internalCounter": "СРАВНЕНИЕ 1 ИЗ 3",
+          "repairTitle": "РЕМОНТ",
+          "numericProgress": null,
+          "completedIndicators": 2,
+          "pendingIndicators": 3,
+          "continueVisible": false,
+          "result": "idle",
+          "batteryCount": 3,
+          "canvas": {
+            "width": 1280,
+            "height": 720
+          },
+          "document": {
+            "width": 1280,
+            "height": 720
+          }
+        }
+      }
+    }
+  ],
+  "failures": []
+}

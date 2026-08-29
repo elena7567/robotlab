@@ -1,0 +1,3155 @@
+{
+  "matrix": [
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "exactMapping": true,
+        "raisedArmInactive": true,
+        "idleArmsStable": true,
+        "correctArmsStable": true,
+        "wrongArmsStable": true,
+        "hintArmsStable": true,
+        "celebrateArmsStable": true,
+        "groundingRestored": true,
+        "armsInsideViewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scaleX": 0.2520718,
+            "scaleY": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 476.53697549092675,
+              "y": 358.4377102289168,
+              "width": 134.95116792812263,
+              "height": 134.95116792812257
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "angle": -4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "head": {
+            "name": "robot-head",
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "angle": 0.004397156576942507,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.8128587555217,
+              "y": 224.32038792293145,
+              "width": 164.38359208418194,
+              "height": 164.38359208418194
+            }
+          },
+          "body": {
+            "name": "robot-body",
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0095895691248,
+            "angle": 0,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.4974813125055,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "antenna": {
+            "name": "robot-antenna",
+            "texture": "robot-part-antenna",
+            "x": 0,
+            "y": -1220,
+            "angle": 0.015525079375265705,
+            "scaleX": 0.14,
+            "scaleY": 0.14,
+            "alpha": 1,
+            "bounds": {
+              "x": 620.201624811244,
+              "y": 205.4147473789585,
+              "width": 39.60884293156437,
+              "height": 49.48737959353679
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "idleLater": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scaleX": 0.2520718,
+            "scaleY": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 476.53697549092675,
+              "y": 358.4377102289168,
+              "width": 134.95116792812263,
+              "height": 134.95116792812257
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "angle": -4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "head": {
+            "name": "robot-head",
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "angle": 0.9637751494478835,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.4639540329488,
+              "y": 222.96452124136016,
+              "width": 167.11248628200974,
+              "height": 167.11248628200974
+            }
+          },
+          "body": {
+            "name": "robot-body",
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -771.8521570128978,
+            "angle": 0,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.0330220242979,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "antenna": {
+            "name": "robot-antenna",
+            "texture": "robot-part-antenna",
+            "x": 0,
+            "y": -1220,
+            "angle": 1.3385457821235605,
+            "scaleX": 0.14,
+            "scaleY": 0.14,
+            "alpha": 1,
+            "bounds": {
+              "x": 620.1510506676664,
+              "y": 204.9704768830839,
+              "width": 40.74040316235755,
+              "height": 50.388097012093965
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "correct": {
+          "active": {
+            "animationState": "CORRECT",
+            "actor": {
+              "x": 640,
+              "y": 552.3639738598033,
+              "scaleX": 0.25640266042151444,
+              "scaleY": 0.25640266042151444,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 473.72849915448313,
+                "y": 347.3385988311752,
+                "width": 137.26977889742176,
+                "height": 137.26977889742176
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 669.130020236693,
+                "y": 347.32962734087573,
+                "width": 137.26977889742182,
+                "height": 137.26977889742182
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -781.9449563998962,
+              "angle": 2.8241593999827046,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 555.4248474129201,
+                "y": 202.63621272784593,
+                "width": 175.22984190315935,
+                "height": 175.22984190315935
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 569.2636310315132,
+                "y": 343.3331311962986,
+                "width": 141.47273793697354,
+                "height": 141.47273793697354
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1231.1506927616113,
+              "angle": 0,
+              "scaleX": 0.1556109698662557,
+              "scaleY": 0.1556109698662557,
+              "alpha": 1,
+              "bounds": {
+                "x": 617.6166226483182,
+                "y": 183.49611854746934,
+                "width": 44.76675470336363,
+                "height": 55.938493845023004
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 476.53697549092675,
+                "y": 358.4377102289168,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 668.6379877951811,
+                "y": 358.4288902752191,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.003006133771577879,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 557.8133813934778,
+                "y": 224.32238299226321,
+                "width": 164.37960175525052,
+                "height": 164.37960175525063
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0065566217547,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 570.4584324097633,
+                "y": 354.4982458330019,
+                "width": 139.0831351804734,
+                "height": 139.08313518047328
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.010621136920462959,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 620.2018319250972,
+                "y": 205.41644094565623,
+                "width": 39.604609001109,
+                "height": 49.4839915886044
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "wrong": {
+          "active": {
+            "animationState": "WRONG",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 476.53697549092675,
+                "y": 358.4377102289168,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 668.6379877951811,
+                "y": 358.4288902752191,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": -4.073300977624513,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 547.8759245951076,
+                "y": 218.84965326489333,
+                "width": 175.63148048683126,
+                "height": 175.63148048683132
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 6.135750131012638,
+              "y": -770,
+              "angle": 1.928378612603865,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 567.748064119364,
+                "y": 352.16626963232864,
+                "width": 143.68454407272566,
+                "height": 143.68454407272566
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1211.367832129919,
+              "angle": -6.90573429606502,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 614.6885181120646,
+                "y": 205.55698343922398,
+                "width": 45.2570699828442,
+                "height": 53.878519706421855
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 476.53697549092675,
+                "y": 358.4377102289168,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 668.6379877951811,
+                "y": 358.4288902752191,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.0015146709517921408,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 557.8139418227784,
+                "y": 224.324522210848,
+                "width": 164.3753231935052,
+                "height": 164.3753231935051
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0033039842211,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 570.4584324097633,
+                "y": 354.4990657311927,
+                "width": 139.0831351804734,
+                "height": 139.08313518047333
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.005355538645517299,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 620.20205447465,
+                "y": 205.41825979325176,
+                "width": 39.60006250384902,
+                "height": 49.480353321584914
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "hint": {
+          "active": {
+            "animationState": "HINT",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 476.53697549092675,
+                "y": 358.4377102289168,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 668.6379877951811,
+                "y": 358.4288902752191,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": -4.426163986680308,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 547.0361647087901,
+                "y": 218.41008451282107,
+                "width": 176.56597912699908,
+                "height": 176.56597912699908
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 570.4584324097633,
+                "y": 354.49989857243537,
+                "width": 139.0831351804734,
+                "height": 139.08313518047333
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": -6.666894683631085,
+              "scaleX": 0.15333378936726216,
+              "scaleY": 0.15333378936726216,
+              "alpha": 1,
+              "bounds": {
+                "x": 612.4804521428803,
+                "y": 198.76990053620023,
+                "width": 49.36447056893894,
+                "height": 58.857166826464834
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 476.53697549092675,
+                "y": 358.4377102289168,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 668.6379877951811,
+                "y": 358.4288902752191,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.003103799823065856,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 557.8133446966064,
+                "y": 224.32224291234058,
+                "width": 164.37988192612113,
+                "height": 164.37988192612113
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.006769590481,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 570.4584324097633,
+                "y": 354.4981921495921,
+                "width": 139.0831351804734,
+                "height": 139.08313518047333
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.010965673222472105,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 620.2018173691616,
+                "y": 205.41632194947624,
+                "width": 39.604906473851656,
+                "height": 49.4842296315183
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "celebrate": {
+          "active": {
+            "animationState": "CELEBRATE",
+            "actor": {
+              "x": 640,
+              "y": 548.7164268088595,
+              "scaleX": 0.25799736375983856,
+              "scaleY": 0.25799736375983856,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 472.6943761136989,
+                "y": 342.41592482562646,
+                "width": 138.1235261748525,
+                "height": 138.1235261748525
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 669.311193949278,
+                "y": 342.4068975372811,
+                "width": 138.1235261748525,
+                "height": 138.1235261748525
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -784.9906055574435,
+              "angle": 4.543319444873532,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 554.4011061485094,
+                "y": 193.79098509380896,
+                "width": 181.03264193129223,
+                "height": 181.03264193129223
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 568.8236872732639,
+                "y": 338.3855452464342,
+                "width": 142.35262545347223,
+                "height": 142.35262545347211
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1230.6605083082939,
+              "angle": 6.396304984976382,
+              "scaleX": 0.15591969240705233,
+              "scaleY": 0.15591969240705233,
+              "alpha": 1,
+              "bounds": {
+                "x": 617.2653371471301,
+                "y": 175.39446396453474,
+                "width": 51.13660821771373,
+                "height": 61.07520639091132
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 476.53697549092675,
+                "y": 358.4377102289168,
+                "width": 134.95116792812263,
+                "height": 134.95116792812257
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 668.6379877951811,
+                "y": 358.4288902752191,
+                "width": 134.95116792812257,
+                "height": 134.95116792812257
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.003831042193723988,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 557.813071451339,
+                "y": 224.321199860239,
+                "width": 164.38196812350418,
+                "height": 164.38196812350412
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0083553044892,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 570.4584324097633,
+                "y": 354.4977924358112,
+                "width": 139.0831351804734,
+                "height": 139.08313518047333
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.013530109001976598,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 620.2017090496273,
+                "y": 205.4154362963851,
+                "width": 39.607120563445164,
+                "height": 49.486001364687695
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        }
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "exactMapping": true,
+        "raisedArmInactive": true,
+        "idleArmsStable": true,
+        "correctArmsStable": true,
+        "wrongArmsStable": true,
+        "hintArmsStable": true,
+        "celebrateArmsStable": true,
+        "groundingRestored": true,
+        "armsInsideViewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scaleX": 0.2520718,
+            "scaleY": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 90.49084985609102,
+              "y": 599.444985543278,
+              "width": 86.28025765125369,
+              "height": 86.28025765125369
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "angle": -4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "head": {
+            "name": "robot-head",
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "angle": 0.004397156576942507,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.45412113831847,
+              "y": 513.6978423231473,
+              "width": 105.09770975984407,
+              "height": 105.09770975984407
+            }
+          },
+          "body": {
+            "name": "robot-body",
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0095895691248,
+            "angle": 0,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9258227132538,
+              "width": 88.9220072901249,
+              "height": 88.92200729012495
+            }
+          },
+          "antenna": {
+            "name": "robot-antenna",
+            "texture": "robot-part-antenna",
+            "x": 0,
+            "y": -1220,
+            "angle": 0.015525079375265705,
+            "scaleX": 0.14,
+            "scaleY": 0.14,
+            "alpha": 1,
+            "bounds": {
+              "x": 182.34202201738722,
+              "y": 501.6106291315965,
+              "width": 25.323687270521503,
+              "height": 31.63947320626312
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "idleLater": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scaleX": 0.2520718,
+            "scaleY": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 90.49084985609102,
+              "y": 599.444985543278,
+              "width": 86.28025765125369,
+              "height": 86.28025765125369
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "angle": -4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "head": {
+            "name": "robot-head",
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "angle": 0.9081227628083752,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.24358730776436,
+              "y": 512.8805586581134,
+              "width": 106.74201825436896,
+              "height": 106.74201825436899
+            }
+          },
+          "body": {
+            "name": "robot-body",
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -771.7711018921599,
+            "angle": 0,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.6419362197954,
+              "width": 88.9220072901249,
+              "height": 88.92200729012495
+            }
+          },
+          "antenna": {
+            "name": "robot-antenna",
+            "texture": "robot-part-antenna",
+            "x": 0,
+            "y": -1220,
+            "angle": 1.4209175900854234,
+            "scaleX": 0.14,
+            "scaleY": 0.14,
+            "alpha": 1,
+            "bounds": {
+              "x": 182.30789816814217,
+              "y": 501.30943671311707,
+              "width": 26.091731240814596,
+              "height": 32.25063067785595
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "correct": {
+          "active": {
+            "animationState": "CORRECT",
+            "actor": {
+              "x": 640,
+              "y": 552.3920350794682,
+              "scaleX": 0.2563867451766745,
+              "scaleY": 0.2563867451766745,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 88.7018666637437,
+                "y": 592.3748980288505,
+                "width": 87.75719943632176,
+                "height": 87.75719943632168
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.62295558446166,
+                "y": 592.3691625139412,
+                "width": 87.75719943632171,
+                "height": 87.7571994363218
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -781.8990647860078,
+              "angle": 2.8165107976678883,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 140.93223284147354,
+                "y": 499.880036925903,
+                "width": 112.0116923426169,
+                "height": 112.01169234261693
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 149.77791478335857,
+                "y": 589.8141841929794,
+                "width": 90.44417043328286,
+                "height": 90.4441704332828
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1231.218446798934,
+              "angle": 0,
+              "scaleX": 0.15570582551850787,
+              "scaleY": 0.15570582551850787,
+              "alpha": 1,
+              "bounds": {
+                "x": 180.68148135460132,
+                "y": 487.59781139175936,
+                "width": 28.637037290797366,
+                "height": 35.78353501042591
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 90.49084985609102,
+                "y": 599.444985543278,
+                "width": 86.28025765125369,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.3095337633367,
+                "y": 599.4393465563082,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.002862554611624546,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 142.45448977564683,
+                "y": 513.6992495211961,
+                "width": 105.09489523214631,
+                "height": 105.09489523214631
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0062435301937,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 150.53899635493755,
+                "y": 596.9263619631056,
+                "width": 88.9220072901249,
+                "height": 88.92200729012484
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.010114572123598009,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 182.34216811807474,
+                "y": 501.61182376395686,
+                "width": 25.320700700776,
+                "height": 31.637083338682487
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "wrong": {
+          "active": {
+            "animationState": "WRONG",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 90.49084985609102,
+                "y": 599.444985543278,
+                "width": 86.28025765125369,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.3095337633367,
+                "y": 599.4393465563082,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": -3.9694631307311283,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 136.25941901563684,
+                "y": 510.28354585818835,
+                "width": 112.11235296741128,
+                "height": 112.11235296741125
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 6.3315594803123165,
+              "y": -770,
+              "angle": 1.9899186938124558,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 148.75170114459934,
+                "y": 595.3879169709943,
+                "width": 91.95607984749205,
+                "height": 91.9560798474921
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1211.5638165701537,
+              "angle": -6.748946743877013,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 178.89486729787788,
+                "y": 501.6945872288628,
+                "width": 28.85713654184562,
+                "height": 34.38843121946695
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 90.49084985609102,
+                "y": 599.444985543278,
+                "width": 86.28025765125369,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.3095337633367,
+                "y": 599.4393465563082,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.0017281512837143964,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 142.45476230273013,
+                "y": 513.7002897875423,
+                "width": 105.09281463793803,
+                "height": 105.09281463793798
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0037695940368,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 150.53899635493755,
+                "y": 596.9267606642962,
+                "width": 88.9220072901249,
+                "height": 88.92200729012495
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.00610970907337105,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 182.34227633465025,
+                "y": 501.61270820484486,
+                "width": 25.31848989334685,
+                "height": 31.635314174535836
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "hint": {
+          "active": {
+            "animationState": "HINT",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 90.49084985609102,
+                "y": 599.444985543278,
+                "width": 86.28025765125369,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.3095337633367,
+                "y": 599.4393465563082,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": -4.457950239727779,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 135.51584969254253,
+                "y": 509.8939845944675,
+                "width": 112.94005975106003,
+                "height": 112.94005975106006
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 150.53899635493755,
+                "y": 596.9273681745697,
+                "width": 88.9220072901249,
+                "height": 88.92200729012484
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": -6.634991160837899,
+              "scaleX": 0.15326998232167588,
+              "scaleY": 0.15326998232167588,
+              "alpha": 1,
+              "bounds": {
+                "x": 177.43017730955845,
+                "y": 497.38211208685595,
+                "width": 31.530392413961437,
+                "height": 37.60123921943807
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 90.49084985609102,
+                "y": 599.444985543278,
+                "width": 86.28025765125369,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.3095337633367,
+                "y": 599.4393465563082,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.0030547721580660436,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 142.45444359967846,
+                "y": 513.6990732581191,
+                "width": 105.09524777173576,
+                "height": 105.09524777173579
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.006662682076,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 150.53899635493755,
+                "y": 596.9262944123104,
+                "width": 88.9220072901249,
+                "height": 88.92200729012484
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.01079272263814346,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 182.34214979969397,
+                "y": 501.6116740145754,
+                "width": 25.32107504844481,
+                "height": 31.637382899061038
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "celebrate": {
+          "active": {
+            "animationState": "CELEBRATE",
+            "actor": {
+              "x": 640,
+              "y": 548.2665631652832,
+              "scaleX": 0.25823360946481955,
+              "scaleY": 0.25823360946481955,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 87.9361645411873,
+                "y": 588.7931560759189,
+                "width": 88.38934481619812,
+                "height": 88.38934481619822
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.7571031576292,
+                "y": 588.7873792461173,
+                "width": 88.38934481619808,
+                "height": 88.3893448161981
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -786.0059519488997,
+              "angle": 4.774079988386347,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 140.18372146220997,
+                "y": 493.33053192999887,
+                "width": 116.24511020634361,
+                "height": 116.24511020634361
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 149.452164503932,
+                "y": 586.2139965349555,
+                "width": 91.09567099213598,
+                "height": 91.09567099213598
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1228.4040251019148,
+              "angle": 5.042415061148972,
+              "scaleX": 0.15255001081885963,
+              "scaleY": 0.15255001081885963,
+              "alpha": 1,
+              "bounds": {
+                "x": 180.77324200569873,
+                "y": 483.30875507182463,
+                "width": 31.25294538554067,
+                "height": 37.65791180561928
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 90.49084985609102,
+                "y": 599.444985543278,
+                "width": 86.28025765125369,
+                "height": 86.28025765125369
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 213.3095337633367,
+                "y": 599.4393465563082,
+                "width": 86.28025765125372,
+                "height": 86.28025765125358
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.0037224831048661144,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 142.4542832016459,
+                "y": 513.698460976603,
+                "width": 105.09647238822245,
+                "height": 105.09647238822254
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0081186079068,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 150.53899635493755,
+                "y": 596.9260597743386,
+                "width": 88.9220072901249,
+                "height": 88.92200729012495
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.013147421082749133,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 182.34208620772586,
+                "y": 501.6111540821465,
+                "width": 25.32237484425241,
+                "height": 31.638423008897348
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "exactMapping": true,
+        "raisedArmInactive": true,
+        "idleArmsStable": true,
+        "correctArmsStable": true,
+        "wrongArmsStable": true,
+        "hintArmsStable": true,
+        "celebrateArmsStable": true,
+        "groundingRestored": true,
+        "armsInsideViewport": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scaleX": 0.2520718,
+            "scaleY": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 236.88328567229468,
+              "y": 775.9259189531123,
+              "width": 121.45604475322676,
+              "height": 121.4560447532267
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "angle": -4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "head": {
+            "name": "robot-head",
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "angle": 0.004397156576942507,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "alpha": 1,
+            "bounds": {
+              "x": 310.0315767667473,
+              "y": 655.2203352203751,
+              "width": 147.94522510176785,
+              "height": 147.94522510176773
+            }
+          },
+          "body": {
+            "name": "robot-body",
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0095895691248,
+            "angle": 0,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3797131146827,
+              "width": 125.17481508493427,
+              "height": 125.17481508493415
+            }
+          },
+          "antenna": {
+            "name": "robot-antenna",
+            "texture": "robot-part-antenna",
+            "x": 0,
+            "y": -1220,
+            "angle": 0.015525079375265705,
+            "scaleX": 0.14,
+            "scaleY": 0.14,
+            "alpha": 1,
+            "bounds": {
+              "x": 366.1814632664204,
+              "y": 638.2052596248811,
+              "width": 35.647956765234426,
+              "height": 44.538639293835786
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "idleLater": {
+          "animationState": "IDLE",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scaleX": 0.2520718,
+            "scaleY": 0.2520718,
+            "angle": 0
+          },
+          "screenLeftArm": {
+            "name": "robot-armRight",
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "angle": 4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 236.88328567229468,
+              "y": 775.9259189531123,
+              "width": 121.45604475322676,
+              "height": 121.4560447532267
+            }
+          },
+          "screenRightArm": {
+            "name": "robot-armLeft",
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "angle": -4,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "head": {
+            "name": "robot-head",
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "angle": 0.9360968065681163,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "alpha": 1,
+            "bounds": {
+              "x": 309.7263305929854,
+              "y": 654.0347526035013,
+              "width": 150.33096071995715,
+              "height": 150.33096071995715
+            }
+          },
+          "body": {
+            "name": "robot-body",
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -771.8128018315042,
+            "angle": 0,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 771.9706280749874,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "antenna": {
+            "name": "robot-antenna",
+            "texture": "robot-part-antenna",
+            "x": 0,
+            "y": -1220,
+            "angle": 1.383878597560738,
+            "scaleX": 0.14,
+            "scaleY": 0.14,
+            "alpha": 1,
+            "bounds": {
+              "x": 366.13455557252826,
+              "y": 637.7921184280983,
+              "width": 36.70091282364842,
+              "height": 45.37663539232881
+            }
+          },
+          "runtimePartNames": [
+            "robot-legLeft",
+            "robot-legRight",
+            "robot-armRight",
+            "robot-armLeft",
+            "robot-body",
+            "robot-head",
+            "robot-antenna"
+          ],
+          "hasWaveProperty": false,
+          "waveTextureLoaded": false
+        },
+        "correct": {
+          "active": {
+            "animationState": "CORRECT",
+            "actor": {
+              "x": 640,
+              "y": 552.6156189903163,
+              "scaleX": 0.2562599369792428,
+              "scaleY": 0.2562599369792428,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 234.43895268247417,
+                "y": 766.2659361863539,
+                "width": 123.47402767488256,
+                "height": 123.47402767488268
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 410.20242382384197,
+                "y": 766.2578663398778,
+                "width": 123.47402767488256,
+                "height": 123.47402767488256
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -781.5514999059261,
+              "angle": 2.758583317654484,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 307.94306610433904,
+                "y": 636.275706886855,
+                "width": 157.45552655272337,
+                "height": 157.45552655272343
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 320.37270745396614,
+                "y": 762.6630220884942,
+                "width": 127.25458509206771,
+                "height": 127.25458509206783
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1231.6174092238384,
+              "angle": 0,
+              "scaleX": 0.1562643729133738,
+              "scaleY": 0.1562643729133738,
+              "alpha": 1,
+              "bounds": {
+                "x": 363.7816336736854,
+                "y": 618.5812252484104,
+                "width": 40.43673265262919,
+                "height": 50.52789588144935
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 236.88328567229468,
+                "y": 775.9259189531123,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 409.774187661321,
+                "y": 775.9179809952014,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.002862554611624546,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 310.032095694635,
+                "y": 655.2223161220766,
+                "width": 147.9412631131122,
+                "height": 147.9412631131123
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0062435301937,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 321.41259245753287,
+                "y": 772.3804722124869,
+                "width": 125.17481508493427,
+                "height": 125.17481508493415
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.010114572123598009,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 366.181668931217,
+                "y": 638.2069412995234,
+                "width": 35.64375259433206,
+                "height": 44.53527509591004
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "wrong": {
+          "active": {
+            "animationState": "WRONG",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 236.88328567229468,
+                "y": 775.9259189531123,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 409.774187661321,
+                "y": 775.9179809952014,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": -4.1728265158972135,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 300.8748468848428,
+                "y": 650.1845781107876,
+                "width": 158.30615158550017,
+                "height": 158.30615158550006
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 5.918719271454027,
+              "y": -770,
+              "angle": 1.860168913885559,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 319.0582858800998,
+                "y": 770.3556873672396,
+                "width": 129.17207157429135,
+                "height": 129.1720715742913
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1211.1830085862946,
+              "angle": -7.053593130964373,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 361.1167830715515,
+                "y": 638.3428409488226,
+                "width": 40.834246732819224,
+                "height": 48.567982649646865
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 236.88328567229468,
+                "y": 775.9259189531123,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 409.774187661321,
+                "y": 775.9179809952014,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.002631044617146472,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 310.03217398468286,
+                "y": 655.2226149688385,
+                "width": 147.94066539844027,
+                "height": 147.94066539844027
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0057386809051,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 321.41259245753287,
+                "y": 772.3805867449219,
+                "width": 125.17481508493427,
+                "height": 125.17481508493427
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.009297623870679672,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 366.1816999989508,
+                "y": 638.2071952532934,
+                "width": 35.64311776669871,
+                "height": 44.534767091353956
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "hint": {
+          "active": {
+            "animationState": "HINT",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 236.88328567229468,
+                "y": 775.9259189531123,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 409.774187661321,
+                "y": 775.9179809952014,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": -4.7041942401934875,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 299.73928404490425,
+                "y": 649.5929251939837,
+                "width": 159.56781393520242,
+                "height": 159.56781393520248
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 321.41259245753287,
+                "y": 772.3818886485052,
+                "width": 125.17481508493427,
+                "height": 125.17481508493427
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": -6.331559480312308,
+              "scaleX": 0.15266311896062457,
+              "scaleY": 0.15266311896062457,
+              "alpha": 1,
+              "bounds": {
+                "x": 359.59639369481505,
+                "y": 632.5186931611788,
+                "width": 43.977078225548155,
+                "height": 52.545951997016004
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 236.88328567229468,
+                "y": 775.9259189531123,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 409.774187661321,
+                "y": 775.9179809952014,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.003510031104610789,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 310.0318767430456,
+                "y": 655.221480332357,
+                "width": 147.94293476116167,
+                "height": 147.9429347611616
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0076553776224,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 321.41259245753287,
+                "y": 772.380151914276,
+                "width": 125.17481508493427,
+                "height": 125.17481508493427
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.012398374251347377,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 366.18158209970005,
+                "y": 638.2062314101986,
+                "width": 35.6455272346314,
+                "height": 44.53669518909169
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        },
+        "celebrate": {
+          "active": {
+            "animationState": "CELEBRATE",
+            "actor": {
+              "x": 640,
+              "y": 548.633735554002,
+              "scaleX": 0.25804078903787236,
+              "scaleY": 0.25804078903787236,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 233.39960191770834,
+                "y": 761.40065877463,
+                "width": 124.33209083634299,
+                "height": 124.33209083634301
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 410.38451341019135,
+                "y": 761.3925328480364,
+                "width": 124.33209083634296,
+                "height": 124.3320908363429
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -785.1679245978685,
+              "angle": 4.583619226788301,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 306.9383606231952,
+                "y": 627.5288011643656,
+                "width": 163.05449598879648,
+                "height": 163.0544959887966
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 319.9305396813154,
+                "y": 757.772706796987,
+                "width": 128.1389206373692,
+                "height": 128.1389206373692
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1230.3282113126625,
+              "angle": 6.1969267875974765,
+              "scaleX": 0.1554234622269092,
+              "scaleY": 0.1554234622269092,
+              "alpha": 1,
+              "bounds": {
+                "x": 363.60133982605566,
+                "y": 611.3447929830594,
+                "width": 45.724616429447224,
+                "height": 54.68120159663897
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "finished": {
+            "animationState": "IDLE",
+            "actor": {
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.2520718,
+              "scaleY": 0.2520718,
+              "angle": 0
+            },
+            "screenLeftArm": {
+              "name": "robot-armRight",
+              "texture": "robot-part-arm-right",
+              "x": -236,
+              "y": -733,
+              "angle": 4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 236.88328567229468,
+                "y": 775.9259189531123,
+                "width": 121.45604475322676,
+                "height": 121.4560447532267
+              }
+            },
+            "screenRightArm": {
+              "name": "robot-armLeft",
+              "texture": "robot-part-arm-left",
+              "x": 236,
+              "y": -733,
+              "angle": -4,
+              "scaleX": 0.4,
+              "scaleY": 0.4,
+              "alpha": 1,
+              "bounds": {
+                "x": 409.774187661321,
+                "y": 775.9179809952014,
+                "width": 121.4560447532267,
+                "height": 121.4560447532267
+              }
+            },
+            "head": {
+              "name": "robot-head",
+              "texture": "robot-part-head",
+              "x": 0,
+              "y": -765,
+              "angle": 0.0033038025954965633,
+              "scaleX": 0.52,
+              "scaleY": 0.52,
+              "alpha": 1,
+              "bounds": {
+                "x": 310.031946480552,
+                "y": 655.2217465389544,
+                "width": 147.94240232460044,
+                "height": 147.9424023246005
+              }
+            },
+            "body": {
+              "name": "robot-body",
+              "texture": "robot-part-body",
+              "x": 0,
+              "y": -770.0072057030995,
+              "angle": 0,
+              "scaleX": 0.44,
+              "scaleY": 0.44,
+              "alpha": 1,
+              "bounds": {
+                "x": 321.41259245753287,
+                "y": 772.3802539295095,
+                "width": 125.17481508493427,
+                "height": 125.17481508493427
+              }
+            },
+            "antenna": {
+              "name": "robot-antenna",
+              "texture": "robot-part-antenna",
+              "x": 0,
+              "y": -1220,
+              "angle": 0.011671117802961817,
+              "scaleX": 0.14,
+              "scaleY": 0.14,
+              "alpha": 1,
+              "bounds": {
+                "x": 366.18160974735116,
+                "y": 638.20645746083,
+                "width": 35.644962122378445,
+                "height": 44.53624298074374
+              }
+            },
+            "runtimePartNames": [
+              "robot-legLeft",
+              "robot-legRight",
+              "robot-armRight",
+              "robot-armLeft",
+              "robot-body",
+              "robot-head",
+              "robot-antenna"
+            ],
+            "hasWaveProperty": false,
+            "waveTextureLoaded": false
+          },
+          "armsStable": true,
+          "restored": true
+        }
+      }
+    }
+  ],
+  "failures": []
+}

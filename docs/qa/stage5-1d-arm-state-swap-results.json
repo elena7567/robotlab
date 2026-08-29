@@ -1,0 +1,4333 @@
+{
+  "matrix": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "checks": {
+        "assets": true,
+        "idleLowered": true,
+        "preparationLoweredOnly": true,
+        "raisedCanonical": true,
+        "waveSmallAndFixed": true,
+        "correctReturned": true,
+        "wrongNeverRaises": true,
+        "hintRaised": true,
+        "hintReturned": true,
+        "celebrateRaised": true,
+        "celebrateReturned": true,
+        "responsiveViewport": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "preparationDelta": {
+        "x": -2.9344428022014313,
+        "y": -4.890738003669071,
+        "angle": -7.825180805870332
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.003668786777893729,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.45429610035464,
+              "y": 513.6985102149185,
+              "width": 105.09637390690315,
+              "height": 105.09637390690318
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.008001529826,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9260786427196,
+              "width": 88.9220072901249,
+              "height": 88.92200729012495
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01039644315176,
+            "alpha": 1,
+            "bounds": {
+              "x": 83.618901229712,
+              "y": 518.6641351864935,
+              "width": 111.39704971495449,
+              "height": 111.3970497149545
+            }
+          }
+        },
+        "preparation": {
+          "animationState": "CORRECT",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233.06555719779857,
+            "y": -737.8907380036691,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -11.825180805870332,
+            "alpha": 1,
+            "bounds": {
+              "x": 212.32543056941506,
+              "y": 590.457291659538,
+              "width": 95.68845898083458,
+              "height": 95.68845898083464
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -779.8722979376879,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.478716322948003,
+            "alpha": 1,
+            "bounds": {
+              "x": 141.90895295292393,
+              "y": 509.11801838727433,
+              "width": 109.53626357535529,
+              "height": 109.53626357535529
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9273681745697,
+              "width": 88.9220072901249,
+              "height": 88.92200729012484
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 134.46187345978547,
+            "alpha": 1,
+            "bounds": {
+              "x": 90.29691847733393,
+              "y": 514.2411810903757,
+              "width": 114.31742023564827,
+              "height": 114.31742023564823
+            }
+          }
+        },
+        "raisedFinal": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 212.30772653199196,
+              "y": 590.2600969943146,
+              "width": 95.87888451806239,
+              "height": 95.87888451806225
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -781.655477408532,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.775912901421975,
+            "alpha": 1,
+            "bounds": {
+              "x": 141.85011279490607,
+              "y": 508.5800876113718,
+              "width": 110.05580892095182,
+              "height": 110.05580892095179
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9273681745697,
+              "width": 88.9220072901249,
+              "height": 88.92200729012484
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 124.32944230121097,
+            "alpha": 1,
+            "bounds": {
+              "x": 84.60846498716971,
+              "y": 517.505058421757,
+              "width": 112.34560694210442,
+              "height": 112.3456069421045
+            }
+          }
+        },
+        "wave": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 212.30772653199196,
+              "y": 590.2600969943146,
+              "width": 95.87888451806239,
+              "height": 95.87888451806225
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 4.949188496058127,
+            "alpha": 1,
+            "bounds": {
+              "x": 156.96814524848466,
+              "y": 535.4671651575818,
+              "width": 91.28196456918315,
+              "height": 83.94915970480679
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -767.4161987847178,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.40269979745289675,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.3597174363924,
+              "y": 512.9454290662889,
+              "width": 105.82565923789957,
+              "height": 105.82565923789957
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9273681745697,
+              "width": 88.9220072901249,
+              "height": 88.92200729012484
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 128.58878137947863,
+            "alpha": 1,
+            "bounds": {
+              "x": 86.73341439827598,
+              "y": 515.7728705580223,
+              "width": 113.60749826975902,
+              "height": 113.60749826975893
+            }
+          }
+        },
+        "returned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.006050703883374808,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.4537239704997,
+              "y": 513.6963261280266,
+              "width": 105.10074235415797,
+              "height": 105.100742354158
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0131941042613,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9252418039822,
+              "width": 88.9220072901249,
+              "height": 88.92200729012484
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.0171404872774,
+            "alpha": 1,
+            "bounds": {
+              "x": 83.62160554355667,
+              "y": 518.6605461438888,
+              "width": 111.40007359862322,
+              "height": 111.40007359862318
+            }
+          }
+        },
+        "wrong": {
+          "animationState": "WRONG",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -4.833951066243003,
+            "alpha": 1,
+            "bounds": {
+              "x": 134.94644775306102,
+              "y": 509.5988376947173,
+              "width": 113.57157826036001,
+              "height": 113.57157826036007
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 3.3429730937731983,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 1.0506486866144087,
+            "alpha": 1,
+            "bounds": {
+              "x": 149.58843146975323,
+              "y": 596.1133459304403,
+              "width": 90.53755370273439,
+              "height": 90.53755370273439
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122,
+            "alpha": 1,
+            "bounds": {
+              "x": 83.61473432053246,
+              "y": 518.6696704452022,
+              "width": 111.39238515101898,
+              "height": 111.39238515101897
+            }
+          }
+        },
+        "hintRaised": {
+          "animationState": "HINT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 212.30772653199196,
+              "y": 590.2600969943146,
+              "width": 95.87888451806239,
+              "height": 95.87888451806225
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -6,
+            "alpha": 1,
+            "bounds": {
+              "x": 133.1971809922593,
+              "y": 508.7097214613598,
+              "width": 115.49881200335437,
+              "height": 115.49881200335437
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": -6.966614989938279,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": -2.488076782120743,
+            "alpha": 1,
+            "bounds": {
+              "x": 149.1416270871781,
+              "y": 595.0041239408005,
+              "width": 92.69841487171391,
+              "height": 92.69841487171391
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 120.26500908260778,
+            "alpha": 1,
+            "bounds": {
+              "x": 82.95328270978564,
+              "y": 519.6354751356647,
+              "width": 110.56269398867707,
+              "height": 110.5626939886771
+            }
+          }
+        },
+        "hintReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.0016196549703408891,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.45478836877504,
+              "y": 513.7003892823061,
+              "width": 105.09261564411975,
+              "height": 105.09261564411975
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.003532960731,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9267988002766,
+              "width": 88.9220072901249,
+              "height": 88.92200729012495
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.0045910222758,
+            "alpha": 1,
+            "bounds": {
+              "x": 83.61657411102202,
+              "y": 518.6672257284899,
+              "width": 111.39444545355808,
+              "height": 111.39444545355809
+            }
+          }
+        },
+        "celebrateRaised": {
+          "animationState": "CELEBRATE",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 212.30772653199196,
+              "y": 590.2600969943146,
+              "width": 95.87888451806239,
+              "height": 95.87888451806225
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -784.2095359368467,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 4.365803622010617,
+            "alpha": 1,
+            "bounds": {
+              "x": 141.55966480611454,
+              "y": 506.87112030648296,
+              "width": 112.78455025135852,
+              "height": 112.78455025135844
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9273681745697,
+              "width": 88.9220072901249,
+              "height": 88.92200729012484
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 132.6384874918283,
+            "alpha": 1,
+            "bounds": {
+              "x": 89.11376369678513,
+              "y": 514.6094525793908,
+              "width": 114.22537227233127,
+              "height": 114.22537227233124
+            }
+          }
+        },
+        "celebrateReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 213.3095337633367,
+              "y": 599.4393465563082,
+              "width": 86.28025765125372,
+              "height": 86.28025765125358
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 157.41604415667058,
+              "y": 541.7356945310235,
+              "width": 84.96390141248702,
+              "height": 76.90586827397351
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.0031532167331533856,
+            "alpha": 1,
+            "bounds": {
+              "x": 142.45441995079912,
+              "y": 513.6989829850535,
+              "width": 105.09542832508615,
+              "height": 105.09542832508623
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0068773468781,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 150.53899635493755,
+              "y": 596.9262598167886,
+              "width": 88.9220072901249,
+              "height": 88.92200729012495
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.0089360892157,
+            "alpha": 1,
+            "bounds": {
+              "x": 83.61831577199207,
+              "y": 518.6649125240541,
+              "width": 111.39639472051765,
+              "height": 111.39639472051772
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "checks": {
+        "assets": true,
+        "idleLowered": true,
+        "preparationLoweredOnly": true,
+        "raisedCanonical": true,
+        "waveSmallAndFixed": true,
+        "correctReturned": true,
+        "wrongNeverRaises": true,
+        "hintRaised": true,
+        "hintReturned": true,
+        "celebrateRaised": true,
+        "celebrateReturned": true,
+        "responsiveViewport": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "preparationDelta": {
+        "x": -2.913402839728917,
+        "y": -4.855671399548214,
+        "angle": -7.769074239277188
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.00445590466779322,
+            "alpha": 1,
+            "bounds": {
+              "x": 310.0315569020495,
+              "y": 655.2202593887372,
+              "width": 147.9453767736918,
+              "height": 147.94537677369192
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0097176480724,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3796840581026,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01262554976552,
+            "alpha": 1,
+            "bounds": {
+              "x": 227.21095538406936,
+              "y": 662.2096767703141,
+              "width": 156.81416395702567,
+              "height": 156.8141639570257
+            }
+          }
+        },
+        "preparation": {
+          "animationState": "CORRECT",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233.08659716027108,
+            "y": -737.8556713995482,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -11.769074239277188,
+            "alpha": 1,
+            "bounds": {
+              "x": 408.39692792654813,
+              "y": 763.3631548820478,
+              "width": 134.61359884769394,
+              "height": 134.61359884769388
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -779.6410370024676,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.4401728337445547,
+            "alpha": 1,
+            "bounds": {
+              "x": 309.27503720909357,
+              "y": 648.871819230301,
+              "width": 154.0981880810209,
+              "height": 154.09818808102102
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3818886485052,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 134.65385573134176,
+            "alpha": 1,
+            "bounds": {
+              "x": 236.79121078505156,
+              "y": 655.9385561881822,
+              "width": 160.92790060114092,
+              "height": 160.9279006011409
+            }
+          }
+        },
+        "raisedFinal": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 408.36395144695865,
+              "y": 762.9964230866833,
+              "width": 134.96795681794111,
+              "height": 134.96795681794117
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -780.976544202082,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.6627573670136826,
+            "alpha": 1,
+            "bounds": {
+              "x": 309.21261824732403,
+              "y": 648.3040079958288,
+              "width": 154.64673268227386,
+              "height": 154.64673268227386
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3818886485052,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 126.15679985337238,
+            "alpha": 1,
+            "bounds": {
+              "x": 229.81800711277137,
+              "y": 659.4444547737287,
+              "width": 159.01781257311862,
+              "height": 159.0178125731187
+            }
+          }
+        },
+        "wave": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 408.36395144695865,
+              "y": 762.9964230866833,
+              "width": 134.96795681794111,
+              "height": 134.96795681794117
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 4.909907151739617,
+            "alpha": 1,
+            "bounds": {
+              "x": 330.464718214541,
+              "y": 685.9318732944371,
+              "width": 128.43000754343927,
+              "height": 118.09925912167228
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -767.8158203707242,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.4693033951207326,
+            "alpha": 1,
+            "bounds": {
+              "x": 309.8768128111384,
+              "y": 653.9856656037166,
+              "width": 149.14060635292861,
+              "height": 149.14060635292867
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3818886485052,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 129.12054247449612,
+            "alpha": 1,
+            "bounds": {
+              "x": 232.00613953964913,
+              "y": 657.8882278702239,
+              "width": 160.08427809432774,
+              "height": 160.08427809432771
+            }
+          }
+        },
+        "returned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.005712359568633474,
+            "alpha": 1,
+            "bounds": {
+              "x": 310.03113207116763,
+              "y": 655.2186375976178,
+              "width": 147.9486205683737,
+              "height": 147.9486205683737
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0124566261222,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3790626809262,
+              "width": 125.17481508493427,
+              "height": 125.17481508493415
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01618279080242,
+            "alpha": 1,
+            "bounds": {
+              "x": 227.21296342733288,
+              "y": 662.2070119695616,
+              "width": 156.8164091039978,
+              "height": 156.8164091039979
+            }
+          }
+        },
+        "wrong": {
+          "animationState": "WRONG",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -4.746985115747975,
+            "alpha": 1,
+            "bounds": {
+              "x": 299.6481515330802,
+              "y": 649.5457810302773,
+              "width": 159.6688195418718,
+              "height": 159.6688195418718
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 3.8658496214367863,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 1.21498130959435,
+            "alpha": 1,
+            "bounds": {
+              "x": 319.8671453595759,
+              "y": 771.0571032813624,
+              "width": 127.80085858394352,
+              "height": 127.80085858394352
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122,
+            "alpha": 1,
+            "bounds": {
+              "x": 227.20383154281316,
+              "y": 662.2191388324188,
+              "width": 156.806190481679,
+              "height": 156.80619048167898
+            }
+          }
+        },
+        "hintRaised": {
+          "animationState": "HINT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 408.36395144695865,
+              "y": 762.9964230866833,
+              "width": 134.96795681794111,
+              "height": 134.96795681794117
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -6,
+            "alpha": 1,
+            "bounds": {
+              "x": 297.0006544298879,
+              "y": 648.1985964458738,
+              "width": 162.58677548606153,
+              "height": 162.5867754860617
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": -6.960281106582698,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": -2.485814680922431,
+            "alpha": 1,
+            "bounds": {
+              "x": 319.44726123197626,
+              "y": 769.6770038720516,
+              "width": 130.4861115971807,
+              "height": 130.48611159718064
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 120.34814837282352,
+            "alpha": 1,
+            "bounds": {
+              "x": 226.31515710057664,
+              "y": 663.5108695198244,
+              "width": 155.6974721734291,
+              "height": 155.6974721734291
+            }
+          }
+        },
+        "hintReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.0020346408823570528,
+            "alpha": 1,
+            "bounds": {
+              "x": 310.03237567690314,
+              "y": 655.2233848516403,
+              "width": 147.93912558656604,
+              "height": 147.9391255865661
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0044380353969,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3808818153528,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.00576699325609,
+            "alpha": 1,
+            "bounds": {
+              "x": 227.20708488954511,
+              "y": 662.2148160545705,
+              "width": 156.80983348387724,
+              "height": 156.80983348387736
+            }
+          }
+        },
+        "celebrateRaised": {
+          "animationState": "CELEBRATE",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 408.36395144695865,
+              "y": 762.9964230866833,
+              "width": 134.96795681794111,
+              "height": 134.96795681794117
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -784.710924705145,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 4.479755614805754,
+            "alpha": 1,
+            "bounds": {
+              "x": 308.7453743126591,
+              "y": 645.3697108825615,
+              "width": 159.03658204972754,
+              "height": 159.03658204972749
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3818886485052,
+              "width": 125.17481508493427,
+              "height": 125.17481508493427
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 131.38849193777514,
+            "alpha": 1,
+            "bounds": {
+              "x": 233.85878649572354,
+              "y": 656.9377439179955,
+              "width": 160.61124432104978,
+              "height": 160.61124432104975
+            }
+          }
+        },
+        "celebrateReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 409.774187661321,
+              "y": 775.9179809952014,
+              "width": 121.4560447532267,
+              "height": 121.4560447532267
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 331.0933589308262,
+              "y": 694.6890007673502,
+              "width": 119.60302035808564,
+              "height": 108.25979005098338
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.0036154793114064887,
+            "alpha": 1,
+            "bounds": {
+              "x": 310.0318410854216,
+              "y": 655.2213442169589,
+              "width": 147.94320700445206,
+              "height": 147.943207004452
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0078852986856,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 321.41259245753287,
+              "y": 772.3800997533247,
+              "width": 125.17481508493427,
+              "height": 125.17481508493415
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01024545936002,
+            "alpha": 1,
+            "bounds": {
+              "x": 227.20961205817574,
+              "y": 662.2114600211576,
+              "width": 156.81266142926873,
+              "height": 156.81266142926881
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "checks": {
+        "assets": true,
+        "idleLowered": true,
+        "preparationLoweredOnly": true,
+        "raisedCanonical": true,
+        "waveSmallAndFixed": true,
+        "correctReturned": true,
+        "wrongNeverRaises": true,
+        "hintRaised": true,
+        "hintReturned": true,
+        "celebrateRaised": true,
+        "celebrateReturned": true,
+        "responsiveViewport": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "preparationDelta": {
+        "x": -2.98011829680118,
+        "y": -4.966863828002033,
+        "angle": -7.946982124803071
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 437.512243671211,
+              "y": 194.14899041896544,
+              "width": 73.09855062400044,
+              "height": 73.09855062400047
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.00463447872789402,
+            "alpha": 1,
+            "bounds": {
+              "x": 377.48191605323234,
+              "y": 121.50669928975094,
+              "width": 89.04148275415236,
+              "height": 89.04148275415236
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.010106957326,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.01940654848264,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01313120038185,
+            "alpha": 1,
+            "bounds": {
+              "x": 327.6363882491537,
+              "y": 125.71320411392233,
+              "width": 94.37909374762432,
+              "height": 94.3790937476243
+            }
+          }
+        },
+        "preparation": {
+          "animationState": "CORRECT",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233.01988170319882,
+            "y": -737.966863828002,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -11.946982124803071,
+            "alpha": 1,
+            "bounds": {
+              "x": 436.6680223315145,
+              "y": 186.4227775079308,
+              "width": 81.18187251923155,
+              "height": 81.18187251923149
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -780.5207019671633,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.586783661193863,
+            "alpha": 1,
+            "bounds": {
+              "x": 377.00181883334386,
+              "y": 117.46078838394081,
+              "width": 92.96190069720006,
+              "height": 92.96190069720004
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.02078654124736,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 133.65228934220556,
+            "alpha": 1,
+            "bounds": {
+              "x": 332.84103801550515,
+              "y": 122.09560053209165,
+              "width": 96.82973602628192,
+              "height": 96.82973602628189
+            }
+          }
+        },
+        "raisedFinal": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 436.6634903340114,
+              "y": 186.37212631281176,
+              "width": 81.23072049744212,
+              "height": 81.23072049744206
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -781.3324565022216,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.7220760837035414,
+            "alpha": 1,
+            "bounds": {
+              "x": 376.97917564215123,
+              "y": 117.25340787374483,
+              "width": 93.16217509668888,
+              "height": 93.16217509668891
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.02078654124736,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 125.19887590592839,
+            "alpha": 1,
+            "bounds": {
+              "x": 328.8141160904365,
+              "y": 124.397349749342,
+              "width": 95.44286560501791,
+              "height": 95.44286560501797
+            }
+          }
+        },
+        "wave": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 436.6634903340114,
+              "y": 186.37212631281176,
+              "width": 81.23072049744212,
+              "height": 81.23072049744206
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 4.9373197804545725,
+            "alpha": 1,
+            "bounds": {
+              "x": 389.7789035441419,
+              "y": 139.9625239958327,
+              "width": 77.32394588253408,
+              "height": 71.10989994659394
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -767.2827112719291,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.38045187865486696,
+            "alpha": 1,
+            "bounds": {
+              "x": 377.40639412112256,
+              "y": 120.90472892687976,
+              "width": 89.62351408393351,
+              "height": 89.62351408393351
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.02078654124736,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 128.41121862052137,
+            "alpha": 1,
+            "bounds": {
+              "x": 330.1924525188091,
+              "y": 123.31729515497517,
+              "width": 96.21681635144841,
+              "height": 96.21681635144841
+            }
+          }
+        },
+        "returned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 437.512243671211,
+              "y": 194.14899041896544,
+              "width": 73.09855062400044,
+              "height": 73.09855062400047
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.007123798788597924,
+            "alpha": 1,
+            "bounds": {
+              "x": 377.4814095099783,
+              "y": 121.50476550599154,
+              "width": 89.04535061460047,
+              "height": 89.04535061460044
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0155328493296,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.018665703195,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.02017731996852,
+            "alpha": 1,
+            "bounds": {
+              "x": 327.63878241292525,
+              "y": 125.71002767950094,
+              "width": 94.38176981570126,
+              "height": 94.38176981570129
+            }
+          }
+        },
+        "wrong": {
+          "animationState": "WRONG",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 437.512243671211,
+              "y": 194.14899041896544,
+              "width": 73.09855062400044,
+              "height": 73.09855062400047
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -4.817959636416958,
+            "alpha": 1,
+            "bounds": {
+              "x": 371.14176928402105,
+              "y": 118.04467999498144,
+              "width": 96.19769254477603,
+              "height": 96.19769254477598
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 3.447642075446577,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 1.0835446522831944,
+            "alpha": 1,
+            "bounds": {
+              "x": 383.50130435825133,
+              "y": 191.30957160464874,
+              "width": 76.74786739451292,
+              "height": 76.74786739451292
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122,
+            "alpha": 1,
+            "bounds": {
+              "x": 327.63192897558537,
+              "y": 125.71912686945603,
+              "width": 94.37410279884125,
+              "height": 94.3741027988412
+            }
+          }
+        },
+        "hintRaised": {
+          "animationState": "HINT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 436.6634903340114,
+              "y": 186.37212631281176,
+              "width": 81.23072049744212,
+              "height": 81.23072049744206
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -6,
+            "alpha": 1,
+            "bounds": {
+              "x": 369.639279054962,
+              "y": 117.28083687325915,
+              "width": 97.85315883460896,
+              "height": 97.85315883460896
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": -6.953400804727538,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": -2.4833574302599573,
+            "alpha": 1,
+            "bounds": {
+              "x": 383.1499459694168,
+              "y": 190.3944489971818,
+              "width": 78.53022558921992,
+              "height": 78.5302255892199
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 120.42959973798042,
+            "alpha": 1,
+            "bounds": {
+              "x": 327.1222340161005,
+              "y": 126.45672228346382,
+              "width": 93.7415520638898,
+              "height": 93.74155206388986
+            }
+          }
+        },
+        "hintReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 437.512243671211,
+              "y": 194.14899041896544,
+              "width": 73.09855062400044,
+              "height": 73.09855062400047
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.001446633199293501,
+            "alpha": 1,
+            "bounds": {
+              "x": 377.48256485976555,
+              "y": 121.50917592380435,
+              "width": 89.03652929203798,
+              "height": 89.03652929203798
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0031555878616,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.02035568077403,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.00410067952976,
+            "alpha": 1,
+            "bounds": {
+              "x": 327.6333211902232,
+              "y": 125.7172768432581,
+              "width": 94.37566193057688,
+              "height": 94.37566193057697
+            }
+          }
+        },
+        "celebrateRaised": {
+          "animationState": "CELEBRATE",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 436.6634903340114,
+              "y": 186.37212631281176,
+              "width": 81.23072049744212,
+              "height": 81.23072049744206
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -784.5155577170299,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 4.435354026597679,
+            "alpha": 1,
+            "bounds": {
+              "x": 376.7141910328028,
+              "y": 115.63467627855212,
+              "width": 95.65304195229061,
+              "height": 95.65304195229064
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.02078654124736,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 131.8924522470286,
+            "alpha": 1,
+            "bounds": {
+              "x": 331.897427011628,
+              "y": 122.43053646269797,
+              "width": 96.71410549587233,
+              "height": 96.7141054958723
+            }
+          }
+        },
+        "celebrateReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 437.512243671211,
+              "y": 194.14899041896544,
+              "width": 73.09855062400044,
+              "height": 73.09855062400047
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 390.1580378448963,
+              "y": 145.2611747866869,
+              "width": 71.9833043813706,
+              "height": 65.15635973215103
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.003562560741670495,
+            "alpha": 1,
+            "bounds": {
+              "x": 377.4821342000532,
+              "y": 121.50753203505064,
+              "width": 89.03981717561885,
+              "height": 89.03981717561891
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0077699145849,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 384.33165020346644,
+              "y": 192.01972564571136,
+              "width": 75.33669959306712,
+              "height": 75.33669959306715
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01009557481439,
+            "alpha": 1,
+            "bounds": {
+              "x": 327.63535707962416,
+              "y": 125.7145729541881,
+              "width": 94.3779403978412,
+              "height": 94.3779403978412
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "checks": {
+        "assets": true,
+        "idleLowered": true,
+        "preparationLoweredOnly": true,
+        "raisedCanonical": true,
+        "waveSmallAndFixed": true,
+        "correctReturned": true,
+        "wrongNeverRaises": true,
+        "hintRaised": true,
+        "hintReturned": true,
+        "celebrateRaised": true,
+        "celebrateReturned": true,
+        "responsiveViewport": true,
+        "grounding": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": []
+      },
+      "preparationDelta": {
+        "x": -2.9722435214143275,
+        "y": -4.953739202357269,
+        "angle": -7.92598272377154
+      },
+      "states": {
+        "idle": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.0041660482561383105,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.8129455846608,
+              "y": 224.32071938335656,
+              "width": 164.3829291267673,
+              "height": 164.38292912676735
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0090857102634,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.4976083211145,
+              "width": 139.0831351804734,
+              "height": 139.0831351804734
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01180473785394,
+            "alpha": 1,
+            "bounds": {
+              "x": 465.78942650886506,
+              "y": 232.0870066723191,
+              "width": 174.23739339675035,
+              "height": 174.2373933967504
+            }
+          }
+        },
+        "preparation": {
+          "animationState": "CORRECT",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233.02775647858567,
+            "y": -737.9537392023573,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -11.92598272377154,
+            "alpha": 1,
+            "bounds": {
+              "x": 667.0827467659321,
+              "y": 344.2021574578283,
+              "width": 149.8384689970594,
+              "height": 149.8384689970594
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -780.3825900606173,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.563765010102884,
+            "alpha": 1,
+            "bounds": {
+              "x": 556.9335947251983,
+              "y": 216.9158941631244,
+              "width": 171.55896497672688,
+              "height": 171.55896497672683
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.49989857243537,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 133.8610074124682,
+            "alpha": 1,
+            "bounds": {
+              "x": 475.6120613940593,
+              "y": 225.34327902345763,
+              "width": 178.77672053469416,
+              "height": 178.77672053469422
+            }
+          }
+        },
+        "raisedFinal": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 667.0710585857753,
+              "y": 344.07160295577455,
+              "width": 149.96440434447516,
+              "height": 149.9644043444752
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -781.098793337994,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 2.6831322229990064,
+            "alpha": 1,
+            "bounds": {
+              "x": 556.8966188975659,
+              "y": 216.57793867668403,
+              "width": 171.88537422077866,
+              "height": 171.8853742207786
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.49989857243537,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 125.82920320037738,
+            "alpha": 1,
+            "bounds": {
+              "x": 468.43617638094145,
+              "y": 229.22908593388195,
+              "width": 176.52640864163743,
+              "height": 176.52640864163743
+            }
+          }
+        },
+        "wave": {
+          "animationState": "CORRECT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 667.0710585857753,
+              "y": 344.07160295577455,
+              "width": 149.96440434447516,
+              "height": 149.9644043444752
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 4.959823971496576,
+            "alpha": 1,
+            "bounds": {
+              "x": 580.5137295004416,
+              "y": 258.34968428350487,
+              "width": 142.7944648912636,
+              "height": 131.3277392068494
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -766.6135075602618,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.26891792671017356,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.7143533110875,
+              "y": 223.53581191063864,
+              "width": 165.14064036684488,
+              "height": 165.14064036684482
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.49989857243537,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 127.52704488008953,
+            "alpha": 1,
+            "bounds": {
+              "x": 469.77391912362174,
+              "y": 228.1654895803975,
+              "width": 177.2932861740781,
+              "height": 177.2932861740781
+            }
+          }
+        },
+        "returned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.03133368344174414,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.8027476601563,
+              "y": 224.28177091117112,
+              "width": 164.46084389013038,
+              "height": 164.46084389013043
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0681969354906,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.48270804829855,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.08844502983652,
+            "alpha": 1,
+            "bounds": {
+              "x": 465.83759219962883,
+              "y": 232.023334079827,
+              "width": 174.29099407803415,
+              "height": 174.29099407803415
+            }
+          }
+        },
+        "wrong": {
+          "animationState": "WRONG",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -4.890761889907594,
+            "alpha": 1,
+            "bounds": {
+              "x": 545.935875521935,
+              "y": 217.83993271398617,
+              "width": 177.7861697666557,
+              "height": 177.7861697666558
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 2.9266373100470178,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0.9198002974433166,
+            "alpha": 1,
+            "bounds": {
+              "x": 569.1555145279167,
+              "y": 353.38502750471275,
+              "width": 141.2978948515639,
+              "height": 141.29789485156397
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122,
+            "alpha": 1,
+            "bounds": {
+              "x": 465.78202589303515,
+              "y": 232.09683678938256,
+              "width": 174.22910969031904,
+              "height": 174.2291096903191
+            }
+          }
+        },
+        "hintRaised": {
+          "animationState": "HINT",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 667.0710585857753,
+              "y": 344.07160295577455,
+              "width": 149.96440434447516,
+              "height": 149.9644043444752
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": -5.950859720841436,
+            "alpha": 1,
+            "bounds": {
+              "x": 543.4485586330474,
+              "y": 216.57580654464056,
+              "width": 180.52644957544555,
+              "height": 180.5264495754456
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": -6.828697807033038,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": -2.438820645368878,
+            "alpha": 1,
+            "bounds": {
+              "x": 568.3147944868682,
+              "y": 351.55105437899283,
+              "width": 144.87550628555903,
+              "height": 144.87550628555903
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 121.26313972081448,
+            "alpha": 1,
+            "bounds": {
+              "x": 465.329726553863,
+              "y": 232.72244930352275,
+              "width": 173.69740996840983,
+              "height": 173.69740996840977
+            }
+          }
+        },
+        "hintReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.002631044617146472,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.8135223310405,
+              "y": 224.32292097691283,
+              "width": 164.37852574688497,
+              "height": 164.3785257468851
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0057386809051,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.4984520128223,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.00745681963463,
+            "alpha": 1,
+            "bounds": {
+              "x": 465.78670014929156,
+              "y": 232.09062659184292,
+              "width": 174.23434320436417,
+              "height": 174.23434320436417
+            }
+          }
+        },
+        "celebrateRaised": {
+          "animationState": "CELEBRATE",
+          "armState": "RAISED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 233,
+            "y": -738,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -12,
+            "alpha": 0,
+            "bounds": {
+              "x": 667.0710585857753,
+              "y": 344.07160295577455,
+              "width": 149.96440434447516,
+              "height": 149.9644043444752
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -784.5155577170299,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 4.435354026597679,
+            "alpha": 1,
+            "bounds": {
+              "x": 556.3954311197168,
+              "y": 213.47938988327252,
+              "width": 176.5902280845097,
+              "height": 176.59022808450965
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.49989857243537,
+              "width": 139.0831351804734,
+              "height": 139.08313518047333
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 131.8924522470286,
+            "alpha": 1,
+            "bounds": {
+              "x": 473.6567913548015,
+              "y": 226.0255930719523,
+              "width": 178.54911459087623,
+              "height": 178.54911459087623
+            }
+          }
+        },
+        "celebrateReturned": {
+          "animationState": "IDLE",
+          "armState": "LOWERED",
+          "actor": {
+            "x": 640,
+            "y": 560,
+            "scale": 0.2520718,
+            "angle": 0
+          },
+          "lowered": {
+            "texture": "robot-part-arm-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.239,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -4,
+            "alpha": 1,
+            "bounds": {
+              "x": 668.6379877951811,
+              "y": 358.4288902752191,
+              "width": 134.95116792812257,
+              "height": 134.95116792812257
+            }
+          },
+          "raised": {
+            "texture": "robot-part-arm-wave-left",
+            "x": 236,
+            "y": -733,
+            "originX": 0.89,
+            "originY": 0.89,
+            "scaleX": -0.4,
+            "scaleY": 0.4,
+            "angle": 0,
+            "alpha": 0,
+            "bounds": {
+              "x": 581.2148401675224,
+              "y": 268.1744630572796,
+              "width": 132.89225182533266,
+              "height": 120.28866193294527
+            }
+          },
+          "head": {
+            "texture": "robot-part-head",
+            "x": 0,
+            "y": -765,
+            "originX": 0.5,
+            "originY": 0.869,
+            "scaleX": 0.52,
+            "scaleY": 0.52,
+            "angle": 0.003996796358251231,
+            "alpha": 1,
+            "bounds": {
+              "x": 557.8130091747236,
+              "y": 224.32096212947044,
+              "width": 164.38244360901365,
+              "height": 164.38244360901365
+            }
+          },
+          "body": {
+            "texture": "robot-part-body",
+            "x": 0,
+            "y": -770.0087166988941,
+            "originX": 0.5,
+            "originY": 0.082,
+            "scaleX": 0.44,
+            "scaleY": 0.44,
+            "angle": 0,
+            "alpha": 1,
+            "bounds": {
+              "x": 570.4584324097633,
+              "y": 354.4977013384738,
+              "width": 139.0831351804734,
+              "height": 139.0831351804734
+            }
+          },
+          "oppositeArm": {
+            "texture": "robot-part-arm-right",
+            "x": -236,
+            "y": -733,
+            "originX": 0.76,
+            "originY": 0.08,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 122.01132542146274,
+            "alpha": 1,
+            "bounds": {
+              "x": 465.78912592140216,
+              "y": 232.0874056933913,
+              "width": 174.23705719142652,
+              "height": 174.23705719142646
+            }
+          }
+        }
+      }
+    }
+  ],
+  "gameplay": {
+    "checks": {
+      "hintUsesRaisedState": true,
+      "wrongStaysLowered": true,
+      "correctUsesRaisedState": true,
+      "completionReturnsLowered": true,
+      "errors": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": []
+    },
+    "states": {
+      "hint": {
+        "animationState": "HINT",
+        "armState": "RAISED",
+        "actor": {
+          "x": 640,
+          "y": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "lowered": {
+          "texture": "robot-part-arm-left",
+          "x": 233,
+          "y": -738,
+          "originX": 0.239,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": -12,
+          "alpha": 0,
+          "bounds": {
+            "x": 212.30772653199196,
+            "y": 590.2600969943146,
+            "width": 95.87888451806239,
+            "height": 95.87888451806225
+          }
+        },
+        "raised": {
+          "texture": "robot-part-arm-wave-left",
+          "x": 236,
+          "y": -733,
+          "originX": 0.89,
+          "originY": 0.89,
+          "scaleX": -0.4,
+          "scaleY": 0.4,
+          "angle": 0.010064265011919815,
+          "alpha": 1,
+          "bounds": {
+            "x": 157.41455934793453,
+            "y": 541.7224129628555,
+            "width": 84.97740896820653,
+            "height": 76.9207913842746
+          }
+        },
+        "head": {
+          "texture": "robot-part-head",
+          "x": 0,
+          "y": -765,
+          "originX": 0.5,
+          "originY": 0.869,
+          "scaleX": 0.52,
+          "scaleY": 0.52,
+          "angle": -5.957178242794953,
+          "alpha": 1,
+          "bounds": {
+            "x": 133.26097238456637,
+            "y": 508.74166983333294,
+            "width": 115.42887791695537,
+            "height": 115.42887791695534
+          }
+        },
+        "body": {
+          "texture": "robot-part-body",
+          "x": -6.842025906613251,
+          "y": -770,
+          "originX": 0.5,
+          "originY": 0.082,
+          "scaleX": 0.44,
+          "scaleY": 0.44,
+          "angle": -2.443580680933337,
+          "alpha": 1,
+          "bounds": {
+            "x": 149.16587784692126,
+            "y": 595.0383769094094,
+            "width": 92.63239275984205,
+            "height": 92.63239275984199
+          }
+        },
+        "oppositeArm": {
+          "texture": "robot-part-arm-right",
+          "x": -236,
+          "y": -733,
+          "originX": 0.76,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": 121.20450343088282,
+          "alpha": 1,
+          "bounds": {
+            "x": 83.30307052570765,
+            "y": 519.102129304618,
+            "width": 111.02460530579194,
+            "height": 111.02460530579197
+          }
+        }
+      },
+      "wrong": {
+        "animationState": "WRONG",
+        "armState": "LOWERED",
+        "actor": {
+          "x": 640,
+          "y": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "lowered": {
+          "texture": "robot-part-arm-left",
+          "x": 236,
+          "y": -733,
+          "originX": 0.239,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": -4,
+          "alpha": 1,
+          "bounds": {
+            "x": 213.3095337633367,
+            "y": 599.4393465563082,
+            "width": 86.28025765125372,
+            "height": 86.28025765125358
+          }
+        },
+        "raised": {
+          "texture": "robot-part-arm-wave-left",
+          "x": 236,
+          "y": -733,
+          "originX": 0.89,
+          "originY": 0.89,
+          "scaleX": -0.4,
+          "scaleY": 0.4,
+          "angle": 0,
+          "alpha": 0,
+          "bounds": {
+            "x": 157.41604415667058,
+            "y": 541.7356945310235,
+            "width": 84.96390141248702,
+            "height": 76.90586827397351
+          }
+        },
+        "head": {
+          "texture": "robot-part-head",
+          "x": 0,
+          "y": -765,
+          "originX": 0.5,
+          "originY": 0.869,
+          "scaleX": 0.52,
+          "scaleY": 0.52,
+          "angle": -2.6743911843602746,
+          "alpha": 1,
+          "bounds": {
+            "x": 138.2512826386631,
+            "y": 511.3496002030895,
+            "width": 109.87866562780033,
+            "height": 109.87866562780027
+          }
+        },
+        "body": {
+          "texture": "robot-part-body",
+          "x": 6.812145843297074,
+          "y": -770,
+          "originX": 0.5,
+          "originY": 0.082,
+          "scaleX": 0.44,
+          "scaleY": 0.44,
+          "angle": 2.140960122179081,
+          "alpha": 1,
+          "bounds": {
+            "x": 148.61832523046522,
+            "y": 595.2714791530498,
+            "width": 92.18189255793811,
+            "height": 92.181892557938
+          }
+        },
+        "oppositeArm": {
+          "texture": "robot-part-arm-right",
+          "x": -236,
+          "y": -733,
+          "originX": 0.76,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": 122,
+          "alpha": 1,
+          "bounds": {
+            "x": 83.61473432053246,
+            "y": 518.6696704452022,
+            "width": 111.39238515101898,
+            "height": 111.39238515101897
+          }
+        }
+      },
+      "correct": {
+        "animationState": "CORRECT",
+        "armState": "RAISED",
+        "actor": {
+          "x": 640,
+          "y": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "lowered": {
+          "texture": "robot-part-arm-left",
+          "x": 233,
+          "y": -738,
+          "originX": 0.239,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": -12,
+          "alpha": 0,
+          "bounds": {
+            "x": 212.30772653199196,
+            "y": 590.2600969943146,
+            "width": 95.87888451806239,
+            "height": 95.87888451806225
+          }
+        },
+        "raised": {
+          "texture": "robot-part-arm-wave-left",
+          "x": 236,
+          "y": -733,
+          "originX": 0.89,
+          "originY": 0.89,
+          "scaleX": -0.4,
+          "scaleY": 0.4,
+          "angle": 0.04017602850342428,
+          "alpha": 1,
+          "bounds": {
+            "x": 157.41013081023684,
+            "y": 541.682687809611,
+            "width": 85.01780722099187,
+            "height": 76.96542638792005
+          }
+        },
+        "head": {
+          "texture": "robot-part-head",
+          "x": 0,
+          "y": -780.7864752179418,
+          "originX": 0.5,
+          "originY": 0.869,
+          "scaleX": 0.52,
+          "scaleY": 0.52,
+          "angle": 2.6310792029903496,
+          "alpha": 1,
+          "bounds": {
+            "x": 141.87860900399815,
+            "y": 508.8419243110262,
+            "width": 109.80298636924988,
+            "height": 109.80298636924988
+          }
+        },
+        "body": {
+          "texture": "robot-part-body",
+          "x": 0,
+          "y": -770,
+          "originX": 0.5,
+          "originY": 0.082,
+          "scaleX": 0.44,
+          "scaleY": 0.44,
+          "angle": 0,
+          "alpha": 1,
+          "bounds": {
+            "x": 150.53899635493755,
+            "y": 596.9273681745697,
+            "width": 88.9220072901249,
+            "height": 88.92200729012484
+          }
+        },
+        "oppositeArm": {
+          "texture": "robot-part-arm-right",
+          "x": -236,
+          "y": -733,
+          "originX": 0.76,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": 126.66099545264001,
+          "alpha": 1,
+          "bounds": {
+            "x": 85.7228449467945,
+            "y": 516.4927685909353,
+            "width": 113.11376400749425,
+            "height": 113.1137640074943
+          }
+        }
+      },
+      "finished": {
+        "animationState": "IDLE",
+        "armState": "LOWERED",
+        "actor": {
+          "x": 640,
+          "y": 560,
+          "scale": 0.2520718,
+          "angle": 0
+        },
+        "lowered": {
+          "texture": "robot-part-arm-left",
+          "x": 236,
+          "y": -733,
+          "originX": 0.239,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": -4,
+          "alpha": 1,
+          "bounds": {
+            "x": 213.3095337633367,
+            "y": 599.4393465563082,
+            "width": 86.28025765125372,
+            "height": 86.28025765125358
+          }
+        },
+        "raised": {
+          "texture": "robot-part-arm-wave-left",
+          "x": 236,
+          "y": -733,
+          "originX": 0.89,
+          "originY": 0.89,
+          "scaleX": -0.4,
+          "scaleY": 0.4,
+          "angle": 0,
+          "alpha": 0,
+          "bounds": {
+            "x": 157.41604415667058,
+            "y": 541.7356945310235,
+            "width": 84.96390141248702,
+            "height": 76.90586827397351
+          }
+        },
+        "head": {
+          "texture": "robot-part-head",
+          "x": 0,
+          "y": -765,
+          "originX": 0.5,
+          "originY": 0.869,
+          "scaleX": 0.52,
+          "scaleY": 0.52,
+          "angle": 0.20383656033436637,
+          "alpha": 1,
+          "bounds": {
+            "x": 142.40653330437374,
+            "y": 513.5155184493238,
+            "width": 105.46284807929834,
+            "height": 105.4628480792984
+          }
+        },
+        "body": {
+          "texture": "robot-part-body",
+          "x": 0,
+          "y": -770.5250203299458,
+          "originX": 0.5,
+          "originY": 0.082,
+          "scaleX": 0.44,
+          "scaleY": 0.44,
+          "angle": 0,
+          "alpha": 1,
+          "bounds": {
+            "x": 150.53899635493755,
+            "y": 596.8427555502277,
+            "width": 88.9220072901249,
+            "height": 88.92200729012484
+          }
+        },
+        "oppositeArm": {
+          "texture": "robot-part-arm-right",
+          "x": -236,
+          "y": -733,
+          "originX": 0.76,
+          "originY": 0.08,
+          "scaleX": 0.4,
+          "scaleY": 0.4,
+          "angle": 122.56037511606883,
+          "alpha": 1,
+          "bounds": {
+            "x": 83.84277301910498,
+            "y": 518.3756167332177,
+            "width": 111.63857541062418,
+            "height": 111.63857541062418
+          }
+        }
+      }
+    }
+  },
+  "failures": []
+}
