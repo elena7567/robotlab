@@ -12,6 +12,14 @@ Stage 8.1 — Mission 6: Заряди робота
 
 PASS — Mission 6 is implemented through the ordinary Start → Missions 1–5 → assembly milestone → Energy 1/3–3/3 flow, ending in one canonical power activation and persistent powered/laboratory presentation state.
 
+## CANONICAL LOCAL URL
+
+`http://127.0.0.1:4198/`
+
+- `npm run dev` and `npm run preview` bind strictly to port 4198.
+- Automatic fallback to changing ports is disabled.
+- All future manual browser review, screenshots, and automated level QA must use this address.
+
 ## FIRST FIVE MISSIONS
 
 LOCKED

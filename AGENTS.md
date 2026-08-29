@@ -36,6 +36,8 @@
 
 ## Verification and reporting
 
+- Use `http://127.0.0.1:4198/` as the single canonical local game URL for development, manual review, screenshots, and browser QA.
+- Start Vite with strict port binding. Never allow automatic fallback to another port; if 4198 is occupied, stop the stale RobotLab server or report the conflict before continuing.
 - Verify changes in proportion to their risk; a successful compilation alone is not sufficient for a stage PASS.
 - For UI/game changes, test relevant desktop, tablet, mobile, touch, flow, console, and visual states.
 - Update `ROBOTLAB-PROJECT-STATUS.md` after every completed stage or material change.
