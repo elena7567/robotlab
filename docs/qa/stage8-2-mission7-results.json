@@ -12,6 +12,14 @@
         "correctConnection": true,
         "duplicateGuard": true,
         "liveResize": true,
+        "boardCentered": true,
+        "compositionInBounds": true,
+        "robotsSeparated": true,
+        "boardClearOfRobots": true,
+        "panelSpacing": true,
+        "actorZones": true,
+        "robotScale": true,
+        "grounding": true,
         "errors": true
       },
       "errors": {
@@ -36,12 +44,59 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 33.28,
-          "y": 139,
-          "width": 253.44000000000003,
-          "height": 332,
-          "right": 286.72,
-          "bottom": 471
+          "x": 37.2,
+          "y": 275,
+          "width": 245.60000000000002,
+          "height": 212,
+          "right": 282.8,
+          "bottom": 487
+        },
+        "cardCenterX": 160,
+        "helperBounds": {
+          "x": 12.895370298484679,
+          "y": 129.1672040732594,
+          "width": 131.5099377299233,
+          "height": 136.23789189656063,
+          "right": 144.405308028408,
+          "bottom": 265.40509596982
+        },
+        "repairedBounds": {
+          "x": 174.49537640200032,
+          "y": 129.36708507687212,
+          "width": 131.5099377299233,
+          "height": 136.0380108929479,
+          "right": 306.0053141319236,
+          "bottom": 265.40509596982
+        },
+        "systemsBounds": {
+          "x": 116.5,
+          "y": 68,
+          "width": 87,
+          "height": 37.5,
+          "right": 203.5,
+          "bottom": 105.5
+        },
+        "hintBounds": {
+          "x": 116,
+          "y": 522.5,
+          "width": 88,
+          "height": 17,
+          "right": 204,
+          "bottom": 539.5
+        },
+        "helperScale": 0.095,
+        "repairedScale": 0.095,
+        "helperGrounding": {
+          "baseX": 79.2,
+          "baseY": 263,
+          "contactX": 79.2,
+          "contactY": 263
+        },
+        "repairedGrounding": {
+          "baseX": 240.8,
+          "baseY": 263,
+          "contactX": 240.8,
+          "contactY": 263
         },
         "challengeIndex": 0,
         "destinationOrder": [
@@ -55,84 +110,84 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 228.28,
-              "width": 41.44,
-              "height": 41.440000000000026,
-              "right": 74.72,
-              "bottom": 269.72
+              "x": 37.2,
+              "y": 352.6166564941406,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 415.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 456.72
+              "x": 249.2,
+              "y": 448.03331298828124,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 321.78,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 363.22
+              "x": 37.2,
+              "y": 400.325,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 228.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000026,
-              "right": 286.72,
-              "bottom": 269.72
+              "x": 249.2,
+              "y": 352.6166564941406,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 415.28,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 456.72
+              "x": 37.2,
+              "y": 448.03331298828124,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 321.78,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 363.22
+              "x": 249.2,
+              "y": 400.325,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           }
         ],
@@ -160,12 +215,59 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 31.85460289001465,
-          "y": 139,
-          "width": 254.86539710998537,
-          "height": 332,
-          "right": 286.72,
-          "bottom": 471
+          "x": 36.539870738983154,
+          "y": 275,
+          "width": 246.26012926101686,
+          "height": 212,
+          "right": 282.8,
+          "bottom": 487
+        },
+        "cardCenterX": 159.66993536949158,
+        "helperBounds": {
+          "x": 12.895370298484679,
+          "y": 129.36903600785885,
+          "width": 131.5099377299233,
+          "height": 136.03605996196117,
+          "right": 144.405308028408,
+          "bottom": 265.40509596982
+        },
+        "repairedBounds": {
+          "x": 174.49537640200032,
+          "y": 129.36708507687212,
+          "width": 131.5099377299233,
+          "height": 136.0380108929479,
+          "right": 306.0053141319236,
+          "bottom": 265.40509596982
+        },
+        "systemsBounds": {
+          "x": 116.5,
+          "y": 68,
+          "width": 87,
+          "height": 37.5,
+          "right": 203.5,
+          "bottom": 105.5
+        },
+        "hintBounds": {
+          "x": 116,
+          "y": 522.5,
+          "width": 88,
+          "height": 17,
+          "right": 204,
+          "bottom": 539.5
+        },
+        "helperScale": 0.095,
+        "repairedScale": 0.095,
+        "helperGrounding": {
+          "baseX": 79.2,
+          "baseY": 263,
+          "contactX": 79.2,
+          "contactY": 263
+        },
+        "repairedGrounding": {
+          "baseX": 240.8,
+          "baseY": 263,
+          "contactX": 240.8,
+          "contactY": 263
         },
         "challengeIndex": 0,
         "destinationOrder": [
@@ -179,84 +281,84 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 31.85460289001465,
-              "y": 226.85460289001466,
-              "width": 44.29079421997071,
-              "height": 44.29079421997071,
-              "right": 76.14539710998535,
-              "bottom": 271.14539710998537
+              "x": 36.539870738983154,
+              "y": 351.9565272331238,
+              "width": 34.92025852203369,
+              "height": 34.92025852203369,
+              "right": 71.46012926101685,
+              "bottom": 386.87678575515747
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 415.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 456.72
+              "x": 249.2,
+              "y": 448.03331298828124,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 321.78,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 363.22
+              "x": 37.2,
+              "y": 400.325,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 228.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000026,
-              "right": 286.72,
-              "bottom": 269.72
+              "x": 249.2,
+              "y": 352.6166564941406,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 415.28,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 456.72
+              "x": 37.2,
+              "y": 448.03331298828124,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 321.78,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 363.22
+              "x": 249.2,
+              "y": 400.325,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           }
         ],
@@ -288,12 +390,59 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 29.72628849029541,
-          "y": 139,
-          "width": 259.39219631195067,
-          "height": 332,
-          "right": 289.1184848022461,
-          "bottom": 471
+          "x": 33.50399951934815,
+          "y": 275,
+          "width": 252.12329082489015,
+          "height": 212,
+          "right": 285.6272903442383,
+          "bottom": 487
+        },
+        "cardCenterX": 159.56564493179323,
+        "helperBounds": {
+          "x": 12.895370298484679,
+          "y": 129.36598706963568,
+          "width": 131.5099377299233,
+          "height": 136.03910890018435,
+          "right": 144.405308028408,
+          "bottom": 265.40509596982
+        },
+        "repairedBounds": {
+          "x": 174.49537640200032,
+          "y": 129.36708507687212,
+          "width": 131.5099377299233,
+          "height": 136.0380108929479,
+          "right": 306.0053141319236,
+          "bottom": 265.40509596982
+        },
+        "systemsBounds": {
+          "x": 116.5,
+          "y": 68,
+          "width": 87,
+          "height": 37.5,
+          "right": 203.5,
+          "bottom": 105.5
+        },
+        "hintBounds": {
+          "x": 116,
+          "y": 522.5,
+          "width": 88,
+          "height": 17,
+          "right": 204,
+          "bottom": 539.5
+        },
+        "helperScale": 0.095,
+        "repairedScale": 0.095,
+        "helperGrounding": {
+          "baseX": 79.2,
+          "baseY": 263,
+          "contactX": 79.2,
+          "contactY": 263
+        },
+        "repairedGrounding": {
+          "baseX": 240.8,
+          "baseY": 263,
+          "contactX": 240.8,
+          "contactY": 263
         },
         "challengeIndex": 0,
         "destinationOrder": [
@@ -307,84 +456,84 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 29.72628849029541,
-              "y": 224.72628849029542,
-              "width": 48.54742301940917,
-              "height": 48.547423019409166,
-              "right": 78.27371150970458,
-              "bottom": 273.2737115097046
+              "x": 33.50399951934815,
+              "y": 348.9206560134888,
+              "width": 40.992000961303695,
+              "height": 40.99200096130369,
+              "right": 74.49600048065184,
+              "bottom": 389.91265697479247
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 242.8815151977539,
-              "y": 412.8815151977539,
-              "width": 46.236969604492174,
-              "height": 46.236969604492174,
-              "right": 289.1184848022461,
-              "bottom": 459.1184848022461
+              "x": 246.37270965576172,
+              "y": 445.20602264404295,
+              "width": 39.25458068847658,
+              "height": 39.25458068847661,
+              "right": 285.6272903442383,
+              "bottom": 484.46060333251955
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 321.78,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 363.22
+              "x": 37.2,
+              "y": 400.325,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 228.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000026,
-              "right": 286.72,
-              "bottom": 269.72
+              "x": 249.2,
+              "y": 352.6166564941406,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 415.28,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 456.72
+              "x": 37.2,
+              "y": 448.03331298828124,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 321.78,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 363.22
+              "x": 249.2,
+              "y": 400.325,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           }
         ],
@@ -416,12 +565,59 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 32.40401606559753,
-          "y": 139,
-          "width": 256.31741852760314,
-          "height": 332,
-          "right": 288.7214345932007,
-          "bottom": 471
+          "x": 37.2,
+          "y": 275,
+          "width": 245.60000000000002,
+          "height": 212,
+          "right": 282.8,
+          "bottom": 487
+        },
+        "cardCenterX": 160,
+        "helperBounds": {
+          "x": 11.944051348600368,
+          "y": 117.21821005616505,
+          "width": 133.3968029787308,
+          "height": 141.84462349167745,
+          "right": 145.34085432733116,
+          "bottom": 259.0628335478425
+        },
+        "repairedBounds": {
+          "x": 174.49537640200032,
+          "y": 129.36708507687212,
+          "width": 131.5099377299233,
+          "height": 136.0380108929479,
+          "right": 306.0053141319236,
+          "bottom": 265.40509596982
+        },
+        "systemsBounds": {
+          "x": 116.5,
+          "y": 68,
+          "width": 87,
+          "height": 37.5,
+          "right": 203.5,
+          "bottom": 105.5
+        },
+        "hintBounds": {
+          "x": 116,
+          "y": 522.5,
+          "width": 88,
+          "height": 17,
+          "right": 204,
+          "bottom": 539.5
+        },
+        "helperScale": 0.09636303135675284,
+        "repairedScale": 0.095,
+        "helperGrounding": {
+          "baseX": 79.2,
+          "baseY": 263,
+          "contactX": 79.2,
+          "contactY": 263
+        },
+        "repairedGrounding": {
+          "baseX": 240.8,
+          "baseY": 263,
+          "contactX": 240.8,
+          "contactY": 263
         },
         "challengeIndex": 0,
         "destinationOrder": [
@@ -437,84 +633,84 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 32.40401606559753,
-              "y": 227.40401606559755,
-              "width": 43.19196786880494,
-              "height": 43.19196786880491,
-              "right": 75.59598393440247,
-              "bottom": 270.59598393440245
+              "x": 37.2,
+              "y": 352.6166564941406,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": true
           },
           {
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 243.27856540679932,
-              "y": 413.2785654067993,
-              "width": 45.44286918640137,
-              "height": 45.44286918640137,
-              "right": 288.7214345932007,
-              "bottom": 458.7214345932007
+              "x": 249.2,
+              "y": 448.03331298828124,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": true
           },
           {
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 321.78,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 363.22
+              "x": 37.2,
+              "y": 400.325,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 228.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000026,
-              "right": 286.72,
-              "bottom": 269.72
+              "x": 249.2,
+              "y": 352.6166564941406,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 415.28,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 456.72
+              "x": 37.2,
+              "y": 448.03331298828124,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 321.78,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 363.22
+              "x": 249.2,
+              "y": 400.325,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           }
         ],
@@ -547,12 +743,59 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 33.28,
-          "y": 139,
-          "width": 256.3474316978454,
-          "height": 332,
-          "right": 289.6274316978454,
-          "bottom": 471
+          "x": 37.2,
+          "y": 275,
+          "width": 248.58574323654176,
+          "height": 212,
+          "right": 285.78574323654175,
+          "bottom": 487
+        },
+        "cardCenterX": 161.4928716182709,
+        "helperBounds": {
+          "x": 12.691407407467736,
+          "y": 126.05994859319372,
+          "width": 131.91448185379784,
+          "height": 137.98538882704332,
+          "right": 144.6058892612656,
+          "bottom": 264.04533742023705
+        },
+        "repairedBounds": {
+          "x": 174.49537640200032,
+          "y": 129.36708507687212,
+          "width": 131.5099377299233,
+          "height": 136.0380108929479,
+          "right": 306.0053141319236,
+          "bottom": 265.40509596982
+        },
+        "systemsBounds": {
+          "x": 116.5,
+          "y": 68,
+          "width": 87,
+          "height": 37.5,
+          "right": 203.5,
+          "bottom": 105.5
+        },
+        "hintBounds": {
+          "x": 116,
+          "y": 522.5,
+          "width": 88,
+          "height": 17,
+          "right": 204,
+          "bottom": 539.5
+        },
+        "helperScale": 0.09529223131019104,
+        "repairedScale": 0.095,
+        "helperGrounding": {
+          "baseX": 79.2,
+          "baseY": 263,
+          "contactX": 79.2,
+          "contactY": 263
+        },
+        "repairedGrounding": {
+          "baseX": 240.8,
+          "baseY": 263,
+          "contactX": 240.8,
+          "contactY": 263
         },
         "challengeIndex": 0,
         "destinationOrder": [
@@ -568,84 +811,84 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 228.28,
-              "width": 41.44,
-              "height": 41.440000000000026,
-              "right": 74.72,
-              "bottom": 269.72
+              "x": 37.2,
+              "y": 352.6166564941406,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": true
           },
           {
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 242.37256830215455,
-              "y": 412.37256830215455,
-              "width": 47.254863395690904,
-              "height": 47.254863395690904,
-              "right": 289.62743169784545,
-              "bottom": 459.62743169784545
+              "x": 246.21425676345825,
+              "y": 445.0475697517395,
+              "width": 39.571486473083496,
+              "height": 39.571486473083496,
+              "right": 285.78574323654175,
+              "bottom": 484.619056224823
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": true
           },
           {
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 321.78,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 363.22
+              "x": 37.2,
+              "y": 400.325,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 228.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000026,
-              "right": 286.72,
-              "bottom": 269.72
+              "x": 249.2,
+              "y": 352.6166564941406,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 415.28,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 456.72
+              "x": 37.2,
+              "y": 448.03331298828124,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 321.78,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 363.22
+              "x": 249.2,
+              "y": 400.325,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           }
         ],
@@ -678,12 +921,59 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 33.28,
-          "y": 139,
-          "width": 255.40199584007266,
-          "height": 332,
-          "right": 288.68199584007266,
-          "bottom": 471
+          "x": 37.2,
+          "y": 275,
+          "width": 245.60000000000002,
+          "height": 212,
+          "right": 282.8,
+          "bottom": 487
+        },
+        "cardCenterX": 160,
+        "helperBounds": {
+          "x": 12.895370298484679,
+          "y": 127.98244886379447,
+          "width": 131.5099377299233,
+          "height": 137.42264710602555,
+          "right": 144.405308028408,
+          "bottom": 265.40509596982
+        },
+        "repairedBounds": {
+          "x": 174.49537640200032,
+          "y": 129.36708507687212,
+          "width": 131.5099377299233,
+          "height": 136.0380108929479,
+          "right": 306.0053141319236,
+          "bottom": 265.40509596982
+        },
+        "systemsBounds": {
+          "x": 116.5,
+          "y": 68,
+          "width": 87,
+          "height": 37.5,
+          "right": 203.5,
+          "bottom": 105.5
+        },
+        "hintBounds": {
+          "x": 116,
+          "y": 522.5,
+          "width": 88,
+          "height": 17,
+          "right": 204,
+          "bottom": 539.5
+        },
+        "helperScale": 0.095,
+        "repairedScale": 0.095,
+        "helperGrounding": {
+          "baseX": 79.2,
+          "baseY": 263,
+          "contactX": 79.2,
+          "contactY": 263
+        },
+        "repairedGrounding": {
+          "baseX": 240.8,
+          "baseY": 263,
+          "contactX": 240.8,
+          "contactY": 263
         },
         "challengeIndex": 0,
         "destinationOrder": [
@@ -699,84 +989,84 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 228.28,
-              "width": 41.44,
-              "height": 41.440000000000026,
-              "right": 74.72,
-              "bottom": 269.72
+              "x": 37.2,
+              "y": 352.6166564941406,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": true
           },
           {
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 243.31800415992737,
-              "y": 413.31800415992734,
-              "width": 45.36399168014529,
-              "height": 45.36399168014532,
-              "right": 288.68199584007266,
-              "bottom": 458.68199584007266
+              "x": 249.2,
+              "y": 448.03331298828124,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": true
           },
           {
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 321.78,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 363.22
+              "x": 37.2,
+              "y": 400.325,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 228.28,
-              "width": 41.440000000000026,
-              "height": 41.440000000000026,
-              "right": 286.72,
-              "bottom": 269.72
+              "x": 249.2,
+              "y": 352.6166564941406,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 386.21665649414064
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 33.28,
-              "y": 415.28,
-              "width": 41.44,
-              "height": 41.440000000000055,
-              "right": 74.72,
-              "bottom": 456.72
+              "x": 37.2,
+              "y": 448.03331298828124,
+              "width": 33.599999999999994,
+              "height": 33.60000000000002,
+              "right": 70.8,
+              "bottom": 481.63331298828126
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           },
           {
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 245.28,
-              "y": 321.78,
-              "width": 41.440000000000026,
-              "height": 41.440000000000055,
-              "right": 286.72,
-              "bottom": 363.22
+              "x": 249.2,
+              "y": 400.325,
+              "width": 33.60000000000002,
+              "height": 33.60000000000002,
+              "right": 282.8,
+              "bottom": 433.925
             },
-            "hitWidth": 59.2,
+            "hitWidth": 48,
             "locked": false
           }
         ],
@@ -806,6 +1096,14 @@
         "correctConnection": true,
         "duplicateGuard": true,
         "liveResize": true,
+        "boardCentered": true,
+        "compositionInBounds": true,
+        "robotsSeparated": true,
+        "boardClearOfRobots": true,
+        "panelSpacing": true,
+        "actorZones": true,
+        "robotScale": true,
+        "grounding": true,
         "errors": true
       },
       "errors": {
@@ -831,17 +1129,64 @@
         "mission7Complete": false,
         "cardBounds": {
           "x": 30.450001525878907,
-          "y": 148.64999389648438,
+          "y": 321.8500061035156,
           "width": 329.1000045776367,
-          "height": 512,
+          "height": 424.60400000000004,
           "right": 359.5500061035156,
-          "bottom": 660.6499938964844
+          "bottom": 746.4540061035157
+        },
+        "cardCenterX": 195.00000381469727,
+        "helperBounds": {
+          "x": 11.796791262603676,
+          "y": 136.74098041821335,
+          "width": 166.11781445138445,
+          "height": 172.0470355138817,
+          "right": 177.91460571398812,
+          "bottom": 308.78801593209505
+        },
+        "repairedBounds": {
+          "x": 210.6968004178771,
+          "y": 136.95053017296226,
+          "width": 166.11781445138445,
+          "height": 171.8374857591328,
+          "right": 376.81461486926156,
+          "bottom": 308.78801593209505
+        },
+        "systemsBounds": {
+          "x": 151.5,
+          "y": 80.75,
+          "width": 87,
+          "height": 37.5,
+          "right": 238.5,
+          "bottom": 118.25
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 791.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 812.8499755859375
+        },
+        "helperScale": 0.12,
+        "repairedScale": 0.12,
+        "helperGrounding": {
+          "baseX": 95.55,
+          "baseY": 305.75,
+          "contactX": 95.55,
+          "contactY": 305.75
+        },
+        "repairedGrounding": {
+          "baseX": 294.45000000000005,
+          "baseY": 305.75,
+          "contactX": 294.45000000000005,
+          "contactY": 305.75
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
+          "blue",
           "green",
-          "blue"
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -850,11 +1195,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 233.4499938964844,
+              "y": 406.65000610351564,
               "width": 50.400000000000006,
               "height": 50.39999999999998,
               "right": 80.85000152587891,
-              "bottom": 283.84999389648436
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -864,11 +1209,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 233.4499938964844,
+              "y": 686.2539794921875,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 283.84999389648436
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -878,11 +1223,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.400000000000006,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -892,11 +1237,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 600.4500244140625,
+              "y": 406.65000610351564,
               "width": 50.39999999999998,
-              "height": 50.40000000000009,
+              "height": 50.39999999999998,
               "right": 359.5500061035156,
-              "bottom": 650.8500244140625
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -906,11 +1251,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 600.4500244140625,
+              "y": 686.2539794921875,
               "width": 50.400000000000006,
               "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 650.8500244140625
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -920,11 +1265,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -954,18 +1299,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 29.603594636917116,
-          "y": 148.64999389648438,
-          "width": 329.9464114665985,
-          "height": 512,
+          "x": 30.054070568084718,
+          "y": 321.8500061035156,
+          "width": 329.4959355354309,
+          "height": 424.60400000000004,
           "right": 359.5500061035156,
-          "bottom": 660.6499938964844
+          "bottom": 746.4540061035157
+        },
+        "cardCenterX": 194.80203833580015,
+        "helperBounds": {
+          "x": 11.796791262603676,
+          "y": 136.97729105310458,
+          "width": 166.11781445138445,
+          "height": 171.81072487899047,
+          "right": 177.91460571398812,
+          "bottom": 308.78801593209505
+        },
+        "repairedBounds": {
+          "x": 210.6968004178771,
+          "y": 136.95053017296226,
+          "width": 166.11781445138445,
+          "height": 171.8374857591328,
+          "right": 376.81461486926156,
+          "bottom": 308.78801593209505
+        },
+        "systemsBounds": {
+          "x": 151.5,
+          "y": 80.75,
+          "width": 87,
+          "height": 37.5,
+          "right": 238.5,
+          "bottom": 118.25
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 791.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 812.8499755859375
+        },
+        "helperScale": 0.12,
+        "repairedScale": 0.12,
+        "helperGrounding": {
+          "baseX": 95.55,
+          "baseY": 305.75,
+          "contactX": 95.55,
+          "contactY": 305.75
+        },
+        "repairedGrounding": {
+          "baseX": 294.45000000000005,
+          "baseY": 305.75,
+          "contactX": 294.45000000000005,
+          "contactY": 305.75
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
+          "blue",
           "green",
-          "blue"
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -973,12 +1365,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 29.603594636917116,
-              "y": 232.60358700752258,
-              "width": 52.09281377792359,
-              "height": 52.09281377792357,
-              "right": 81.6964084148407,
-              "bottom": 284.69640078544614
+              "x": 30.054070568084718,
+              "y": 406.25407514572146,
+              "width": 51.19186191558838,
+              "height": 51.19186191558833,
+              "right": 81.2459324836731,
+              "bottom": 457.4459370613098
             },
             "hitWidth": 72,
             "locked": false
@@ -988,11 +1380,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 233.4499938964844,
+              "y": 686.2539794921875,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 283.84999389648436
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -1002,11 +1394,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.400000000000006,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1016,11 +1408,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 600.4500244140625,
+              "y": 406.65000610351564,
               "width": 50.39999999999998,
-              "height": 50.40000000000009,
+              "height": 50.39999999999998,
               "right": 359.5500061035156,
-              "bottom": 650.8500244140625
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -1030,11 +1422,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 600.4500244140625,
+              "y": 686.2539794921875,
               "width": 50.400000000000006,
               "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 650.8500244140625
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -1044,11 +1436,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1082,18 +1474,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 25.43540577888489,
-          "y": 148.64999389648438,
-          "width": 336.93497829437257,
-          "height": 512,
-          "right": 362.37038407325747,
-          "bottom": 660.6499938964844
+          "x": 24.906000804901122,
+          "y": 321.8500061035156,
+          "width": 339.197812128067,
+          "height": 424.60400000000004,
+          "right": 364.10381293296814,
+          "bottom": 746.4540061035157
+        },
+        "cardCenterX": 194.50490686893463,
+        "helperBounds": {
+          "x": 11.796791262603676,
+          "y": 136.94751630542092,
+          "width": 166.11781445138445,
+          "height": 171.84049962667413,
+          "right": 177.91460571398812,
+          "bottom": 308.78801593209505
+        },
+        "repairedBounds": {
+          "x": 210.6968004178771,
+          "y": 136.95053017296226,
+          "width": 166.11781445138445,
+          "height": 171.8374857591328,
+          "right": 376.81461486926156,
+          "bottom": 308.78801593209505
+        },
+        "systemsBounds": {
+          "x": 151.5,
+          "y": 80.75,
+          "width": 87,
+          "height": 37.5,
+          "right": 238.5,
+          "bottom": 118.25
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 791.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 812.8499755859375
+        },
+        "helperScale": 0.12,
+        "repairedScale": 0.12,
+        "helperGrounding": {
+          "baseX": 95.55,
+          "baseY": 305.75,
+          "contactX": 95.55,
+          "contactY": 305.75
+        },
+        "repairedGrounding": {
+          "baseX": 294.45000000000005,
+          "baseY": 305.75,
+          "contactX": 294.45000000000005,
+          "contactY": 305.75
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
+          "blue",
           "green",
-          "blue"
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -1101,12 +1540,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 25.43540577888489,
-              "y": 228.43539814949037,
-              "width": 60.42919149398804,
-              "height": 60.429191493988014,
-              "right": 85.86459727287293,
-              "bottom": 288.8645896434784
+              "x": 24.906000804901122,
+              "y": 401.10600538253783,
+              "width": 61.48800144195556,
+              "height": 61.48800144195559,
+              "right": 86.39400224685669,
+              "bottom": 462.5940068244934
             },
             "hitWidth": 72,
             "locked": false
@@ -1115,12 +1554,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 306.3296281337738,
-              "y": 230.62961592674256,
-              "width": 56.04075593948369,
-              "height": 56.04075593948366,
-              "right": 362.37038407325747,
-              "bottom": 286.6703718662262
+              "x": 304.5961992740631,
+              "y": 681.700172662735,
+              "width": 59.50761365890503,
+              "height": 59.50761365890503,
+              "right": 364.10381293296814,
+              "bottom": 741.20778632164
             },
             "hitWidth": 72,
             "locked": false
@@ -1130,11 +1569,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.400000000000006,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1144,11 +1583,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 600.4500244140625,
+              "y": 406.65000610351564,
               "width": 50.39999999999998,
-              "height": 50.40000000000009,
+              "height": 50.39999999999998,
               "right": 359.5500061035156,
-              "bottom": 650.8500244140625
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -1158,11 +1597,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 600.4500244140625,
+              "y": 686.2539794921875,
               "width": 50.400000000000006,
               "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 650.8500244140625
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -1172,11 +1611,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1210,18 +1649,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 30.389427375793456,
-          "y": 148.64999389648438,
-          "width": 330.7610803127289,
-          "height": 512,
-          "right": 361.15050768852234,
-          "bottom": 660.6499938964844
+          "x": 30.450001525878907,
+          "y": 321.8500061035156,
+          "width": 329.2211288452148,
+          "height": 424.60400000000004,
+          "right": 359.67113037109374,
+          "bottom": 746.4540061035157
+        },
+        "cardCenterX": 195.06056594848633,
+        "helperBounds": {
+          "x": 10.695153487269337,
+          "y": 124.30120636114148,
+          "width": 168.30282509929043,
+          "height": 178.6808529992554,
+          "right": 178.99797858655978,
+          "bottom": 302.9820593603969
+        },
+        "repairedBounds": {
+          "x": 210.6968004178771,
+          "y": 136.95053017296226,
+          "width": 166.11781445138445,
+          "height": 171.8374857591328,
+          "right": 376.81461486926156,
+          "bottom": 308.78801593209505
+        },
+        "systemsBounds": {
+          "x": 151.5,
+          "y": 80.75,
+          "width": 87,
+          "height": 37.5,
+          "right": 238.5,
+          "bottom": 118.25
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 791.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 812.8499755859375
+        },
+        "helperScale": 0.12157840068569865,
+        "repairedScale": 0.12,
+        "helperGrounding": {
+          "baseX": 95.55,
+          "baseY": 305.75,
+          "contactX": 95.55,
+          "contactY": 305.75
+        },
+        "repairedGrounding": {
+          "baseX": 294.45000000000005,
+          "baseY": 305.75,
+          "contactX": 294.45000000000005,
+          "contactY": 305.75
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
+          "blue",
           "green",
-          "blue"
+          "red"
         ],
         "connected": [
           "red"
@@ -1231,12 +1717,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 30.389427375793456,
-              "y": 233.38941974639891,
-              "width": 50.52114830017089,
-              "height": 50.52114830017092,
-              "right": 80.91057567596435,
-              "bottom": 283.91056804656984
+              "x": 30.450001525878907,
+              "y": 406.65000610351564,
+              "width": 50.400000000000006,
+              "height": 50.39999999999998,
+              "right": 80.85000152587891,
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": true
@@ -1245,12 +1731,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 307.5495045185089,
-              "y": 231.84949231147766,
-              "width": 53.60100317001343,
-              "height": 53.60100317001343,
-              "right": 361.15050768852234,
-              "bottom": 285.4504954814911
+              "x": 309.0288818359375,
+              "y": 686.1328552246093,
+              "width": 50.64224853515623,
+              "height": 50.64224853515634,
+              "right": 359.67113037109374,
+              "bottom": 736.7751037597657
             },
             "hitWidth": 72,
             "locked": true
@@ -1260,11 +1746,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.400000000000006,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1274,11 +1760,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 600.4500244140625,
+              "y": 406.65000610351564,
               "width": 50.39999999999998,
-              "height": 50.40000000000009,
+              "height": 50.39999999999998,
               "right": 359.5500061035156,
-              "bottom": 650.8500244140625
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -1288,11 +1774,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 600.4500244140625,
+              "y": 686.2539794921875,
               "width": 50.400000000000006,
               "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 650.8500244140625
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -1302,11 +1788,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1342,17 +1828,64 @@
         "mission7Complete": false,
         "cardBounds": {
           "x": 30.450001525878907,
-          "y": 148.64999389648438,
-          "width": 334.49298148155214,
-          "height": 512,
-          "right": 364.94298300743105,
-          "bottom": 660.6499938964844
+          "y": 321.8500061035156,
+          "width": 329.9464114665985,
+          "height": 424.60400000000004,
+          "right": 360.3964129924774,
+          "bottom": 746.4540061035157
+        },
+        "cardCenterX": 195.42320725917816,
+        "helperBounds": {
+          "x": 11.796791262603676,
+          "y": 131.46227140046642,
+          "width": 166.11781445138445,
+          "height": 177.32574453162863,
+          "right": 177.91460571398812,
+          "bottom": 308.78801593209505
+        },
+        "repairedBounds": {
+          "x": 210.6968004178771,
+          "y": 136.95053017296226,
+          "width": 166.11781445138445,
+          "height": 171.8374857591328,
+          "right": 376.81461486926156,
+          "bottom": 308.78801593209505
+        },
+        "systemsBounds": {
+          "x": 151.5,
+          "y": 80.75,
+          "width": 87,
+          "height": 37.5,
+          "right": 238.5,
+          "bottom": 118.25
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 791.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 812.8499755859375
+        },
+        "helperScale": 0.12,
+        "repairedScale": 0.12,
+        "helperGrounding": {
+          "baseX": 95.55,
+          "baseY": 305.75,
+          "contactX": 95.55,
+          "contactY": 305.75
+        },
+        "repairedGrounding": {
+          "baseX": 294.45000000000005,
+          "baseY": 305.75,
+          "contactX": 294.45000000000005,
+          "contactY": 305.75
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
+          "blue",
           "green",
-          "blue"
+          "red"
         ],
         "connected": [
           "red"
@@ -1363,11 +1896,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 233.4499938964844,
+              "y": 406.65000610351564,
               "width": 50.400000000000006,
               "height": 50.39999999999998,
               "right": 80.85000152587891,
-              "bottom": 283.84999389648436
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": true
@@ -1376,12 +1909,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 303.7570291996002,
-              "y": 228.05701699256898,
-              "width": 61.185953807830856,
-              "height": 61.18595380783083,
-              "right": 364.94298300743105,
-              "bottom": 289.2429708003998
+              "x": 308.30359921455386,
+              "y": 685.4075726032257,
+              "width": 52.09281377792354,
+              "height": 52.09281377792354,
+              "right": 360.3964129924774,
+              "bottom": 737.5003863811493
             },
             "hitWidth": 72,
             "locked": true
@@ -1391,11 +1924,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.400000000000006,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1405,11 +1938,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 600.4500244140625,
+              "y": 406.65000610351564,
               "width": 50.39999999999998,
-              "height": 50.40000000000009,
+              "height": 50.39999999999998,
               "right": 359.5500061035156,
-              "bottom": 650.8500244140625
+              "bottom": 457.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -1419,11 +1952,11 @@
             "side": "source",
             "bounds": {
               "x": 30.450001525878907,
-              "y": 600.4500244140625,
+              "y": 686.2539794921875,
               "width": 50.400000000000006,
               "height": 50.40000000000009,
               "right": 80.85000152587891,
-              "bottom": 650.8500244140625
+              "bottom": 736.6539794921875
             },
             "hitWidth": 72,
             "locked": false
@@ -1433,11 +1966,11 @@
             "side": "target",
             "bounds": {
               "x": 309.15000610351564,
-              "y": 416.9499938964844,
+              "y": 546.4519775390625,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 359.5500061035156,
-              "bottom": 467.34999389648436
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1473,17 +2006,64 @@
         "mission7Complete": false,
         "cardBounds": {
           "x": 30.485001373291016,
-          "y": 148.68499755859375,
+          "y": 321.885009765625,
           "width": 330.0300010681152,
-          "height": 512,
+          "height": 424.5340000000001,
           "right": 360.51500244140624,
-          "bottom": 660.6849975585938
+          "bottom": 746.4190097656251
+        },
+        "cardCenterX": 195.50000190734863,
+        "helperBounds": {
+          "x": 12.041786379791176,
+          "y": 136.9756384355624,
+          "width": 166.11781445138445,
+          "height": 171.84738115864204,
+          "right": 178.15960083117562,
+          "bottom": 308.8230195942044
+        },
+        "repairedBounds": {
+          "x": 211.4517747831115,
+          "y": 136.98553383507164,
+          "width": 166.11781445138445,
+          "height": 171.8374857591328,
+          "right": 377.56958923449594,
+          "bottom": 308.8230195942044
+        },
+        "systemsBounds": {
+          "x": 152,
+          "y": 80.78500366210938,
+          "width": 87,
+          "height": 37.5,
+          "right": 239,
+          "bottom": 118.28500366210938
+        },
+        "hintBounds": {
+          "x": 144,
+          "y": 791.8150024414062,
+          "width": 103,
+          "height": 21,
+          "right": 247,
+          "bottom": 812.8150024414062
+        },
+        "helperScale": 0.12,
+        "repairedScale": 0.12,
+        "helperGrounding": {
+          "baseX": 95.795,
+          "baseY": 305.78499999999997,
+          "contactX": 95.795,
+          "contactY": 305.78499999999997
+        },
+        "repairedGrounding": {
+          "baseX": 295.205,
+          "baseY": 305.78499999999997,
+          "contactX": 295.205,
+          "contactY": 305.78499999999997
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
+          "blue",
           "green",
-          "blue"
+          "red"
         ],
         "connected": [
           "red"
@@ -1494,11 +2074,11 @@
             "side": "source",
             "bounds": {
               "x": 30.485001373291016,
-              "y": 233.48499755859376,
+              "y": 406.685009765625,
               "width": 50.400000000000006,
               "height": 50.39999999999998,
               "right": 80.88500137329102,
-              "bottom": 283.88499755859374
+              "bottom": 457.085009765625
             },
             "hitWidth": 72,
             "locked": false
@@ -1508,11 +2088,11 @@
             "side": "target",
             "bounds": {
               "x": 310.11500244140626,
-              "y": 233.48499755859376,
+              "y": 686.2190063476562,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 360.51500244140624,
-              "bottom": 283.88499755859374
+              "bottom": 736.6190063476563
             },
             "hitWidth": 72,
             "locked": false
@@ -1522,11 +2102,11 @@
             "side": "source",
             "bounds": {
               "x": 30.485001373291016,
-              "y": 416.98499755859376,
+              "y": 546.4519775390625,
               "width": 50.400000000000006,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 80.88500137329102,
-              "bottom": 467.38499755859374
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1536,11 +2116,11 @@
             "side": "target",
             "bounds": {
               "x": 310.11500244140626,
-              "y": 600.4849975585937,
+              "y": 406.685009765625,
               "width": 50.39999999999998,
-              "height": 50.40000000000009,
+              "height": 50.39999999999998,
               "right": 360.51500244140624,
-              "bottom": 650.8849975585938
+              "bottom": 457.085009765625
             },
             "hitWidth": 72,
             "locked": false
@@ -1550,11 +2130,11 @@
             "side": "source",
             "bounds": {
               "x": 30.485001373291016,
-              "y": 600.4849975585937,
+              "y": 686.2190063476562,
               "width": 50.400000000000006,
               "height": 50.40000000000009,
               "right": 80.88500137329102,
-              "bottom": 650.8849975585938
+              "bottom": 736.6190063476563
             },
             "hitWidth": 72,
             "locked": false
@@ -1564,11 +2144,11 @@
             "side": "target",
             "bounds": {
               "x": 310.11500244140626,
-              "y": 416.98499755859376,
+              "y": 546.4519775390625,
               "width": 50.39999999999998,
-              "height": 50.39999999999998,
+              "height": 50.40000000000009,
               "right": 360.51500244140624,
-              "bottom": 467.38499755859374
+              "bottom": 596.8519775390625
             },
             "hitWidth": 72,
             "locked": false
@@ -1600,6 +2180,14 @@
         "correctConnection": true,
         "duplicateGuard": true,
         "liveResize": true,
+        "boardCentered": true,
+        "compositionInBounds": true,
+        "robotsSeparated": true,
+        "boardClearOfRobots": true,
+        "panelSpacing": true,
+        "actorZones": true,
+        "robotScale": true,
+        "grounding": true,
         "errors": true
       },
       "errors": {
@@ -1624,18 +2212,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 113.90000610351562,
-          "y": 159.3800048828125,
-          "width": 540.200018310547,
-          "height": 516.5,
-          "right": 654.1000244140625,
-          "bottom": 675.8800048828125
+          "x": 82.3,
+          "y": 458.9800109863281,
+          "width": 603.4000000000001,
+          "height": 445.14,
+          "right": 685.7,
+          "bottom": 904.1200109863281
+        },
+        "cardCenterX": 384.00000000000006,
+        "helperBounds": {
+          "x": 36.00045572550144,
+          "y": 181.8747883743751,
+          "width": 256.09830630392537,
+          "height": 265.288830672313,
+          "right": 292.0987620294268,
+          "bottom": 447.1636190466881
+        },
+        "repairedBounds": {
+          "x": 473.7604654911264,
+          "y": 182.2474858325839,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 729.8587717950518,
+          "bottom": 447.1636190466881
+        },
+        "systemsBounds": {
+          "x": 340.5,
+          "y": 98.4800033569336,
+          "width": 87,
+          "height": 37.5,
+          "right": 427.5,
+          "bottom": 135.9800033569336
+        },
+        "hintBounds": {
+          "x": 328.5,
+          "y": 958.1199951171875,
+          "width": 111,
+          "height": 22,
+          "right": 439.5,
+          "bottom": 980.1199951171875
+        },
+        "helperScale": 0.185,
+        "repairedScale": 0.185,
+        "helperGrounding": {
+          "baseX": 165.12,
+          "baseY": 442.48,
+          "contactX": 165.12,
+          "contactY": 442.48
+        },
+        "repairedGrounding": {
+          "baseX": 602.88,
+          "baseY": 442.48,
+          "contactX": 602.88,
+          "contactY": 442.48
         },
         "challengeIndex": 0,
         "destinationOrder": [
+          "blue",
           "green",
-          "red",
-          "blue"
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -1643,12 +2278,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 246.6800048828125,
+              "x": 82.3,
+              "y": 546.27998046875,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": false
@@ -1657,12 +2292,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 430.1800048828125,
+              "x": 635.3,
+              "y": 841.9199951171875,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -1671,12 +2306,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 430.1800048828125,
+              "x": 82.3,
+              "y": 694.100048828125,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -1685,12 +2320,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 613.6800048828125,
+              "x": 635.3,
+              "y": 546.27998046875,
               "width": 50.40000000000009,
               "height": 50.40000000000009,
-              "right": 654.1000244140625,
-              "bottom": 664.0800048828125
+              "right": 685.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": false
@@ -1699,12 +2334,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 613.6800048828125,
+              "x": 82.3,
+              "y": 841.9199951171875,
               "width": 50.39999999999999,
               "height": 50.40000000000009,
-              "right": 164.3000061035156,
-              "bottom": 664.0800048828125
+              "right": 132.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -1713,12 +2348,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 246.6800048828125,
+              "x": 635.3,
+              "y": 694.100048828125,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -1748,18 +2383,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 112.79623718261719,
-          "y": 159.3800048828125,
-          "width": 541.3037872314453,
-          "height": 516.5,
-          "right": 654.1000244140625,
-          "bottom": 675.8800048828125
+          "x": 82.14897618293762,
+          "y": 458.9800109863281,
+          "width": 603.5510238170624,
+          "height": 445.14,
+          "right": 685.7,
+          "bottom": 904.1200109863281
+        },
+        "cardCenterX": 383.9244880914688,
+        "helperBounds": {
+          "x": 36.00045572550144,
+          "y": 182.2609048533755,
+          "width": 256.09830630392537,
+          "height": 264.9027141933126,
+          "right": 292.0987620294268,
+          "bottom": 447.1636190466881
+        },
+        "repairedBounds": {
+          "x": 473.7604654911264,
+          "y": 182.2474858325839,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 729.8587717950518,
+          "bottom": 447.1636190466881
+        },
+        "systemsBounds": {
+          "x": 340.5,
+          "y": 98.4800033569336,
+          "width": 87,
+          "height": 37.5,
+          "right": 427.5,
+          "bottom": 135.9800033569336
+        },
+        "hintBounds": {
+          "x": 328.5,
+          "y": 958.1199951171875,
+          "width": 111,
+          "height": 22,
+          "right": 439.5,
+          "bottom": 980.1199951171875
+        },
+        "helperScale": 0.185,
+        "repairedScale": 0.185,
+        "helperGrounding": {
+          "baseX": 165.12,
+          "baseY": 442.48,
+          "contactX": 165.12,
+          "contactY": 442.48
+        },
+        "repairedGrounding": {
+          "baseX": 602.88,
+          "baseY": 442.48,
+          "contactX": 602.88,
+          "contactY": 442.48
         },
         "challengeIndex": 0,
         "destinationOrder": [
+          "blue",
           "green",
-          "red",
-          "blue"
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -1767,12 +2449,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 112.79623718261719,
-              "y": 245.57623596191405,
-              "width": 52.60753784179688,
-              "height": 52.6075378417969,
-              "right": 165.40377502441407,
-              "bottom": 298.18377380371095
+              "x": 82.14897618293762,
+              "y": 546.1289566516876,
+              "width": 50.70204763412477,
+              "height": 50.70204763412471,
+              "right": 132.85102381706238,
+              "bottom": 596.8310042858124
             },
             "hitWidth": 72,
             "locked": false
@@ -1781,12 +2463,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 430.1800048828125,
+              "x": 635.3,
+              "y": 841.9199951171875,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -1795,12 +2477,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 430.1800048828125,
+              "x": 82.3,
+              "y": 694.100048828125,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -1809,12 +2491,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 613.6800048828125,
+              "x": 635.3,
+              "y": 546.27998046875,
               "width": 50.40000000000009,
               "height": 50.40000000000009,
-              "right": 654.1000244140625,
-              "bottom": 664.0800048828125
+              "right": 685.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": false
@@ -1823,12 +2505,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 613.6800048828125,
+              "x": 82.3,
+              "y": 841.9199951171875,
               "width": 50.39999999999999,
               "height": 50.40000000000009,
-              "right": 164.3000061035156,
-              "bottom": 664.0800048828125
+              "right": 132.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -1837,12 +2519,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 246.6800048828125,
+              "x": 635.3,
+              "y": 694.100048828125,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -1876,18 +2558,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 108.42705173492432,
-          "y": 159.3800048828125,
-          "width": 549.3474479675292,
-          "height": 516.5,
-          "right": 657.7744997024536,
-          "bottom": 675.8800048828125
+          "x": 78.57991986274719,
+          "y": 458.9800109863281,
+          "width": 612.6640808582306,
+          "height": 445.14,
+          "right": 691.2440007209777,
+          "bottom": 904.1200109863281
+        },
+        "cardCenterX": 384.9119602918625,
+        "helperBounds": {
+          "x": 36.00045572550144,
+          "y": 182.2474858325839,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 292.0987620294268,
+          "bottom": 447.1636190466881
+        },
+        "repairedBounds": {
+          "x": 473.7604654911264,
+          "y": 182.2474858325839,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 729.8587717950518,
+          "bottom": 447.1636190466881
+        },
+        "systemsBounds": {
+          "x": 340.5,
+          "y": 98.4800033569336,
+          "width": 87,
+          "height": 37.5,
+          "right": 427.5,
+          "bottom": 135.9800033569336
+        },
+        "hintBounds": {
+          "x": 328.5,
+          "y": 958.1199951171875,
+          "width": 111,
+          "height": 22,
+          "right": 439.5,
+          "bottom": 980.1199951171875
+        },
+        "helperScale": 0.185,
+        "repairedScale": 0.185,
+        "helperGrounding": {
+          "baseX": 165.12,
+          "baseY": 442.48,
+          "contactX": 165.12,
+          "contactY": 442.48
+        },
+        "repairedGrounding": {
+          "baseX": 602.88,
+          "baseY": 442.48,
+          "contactX": 602.88,
+          "contactY": 442.48
         },
         "challengeIndex": 0,
         "destinationOrder": [
+          "blue",
           "green",
-          "red",
-          "blue"
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -1895,12 +2624,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 108.42705173492432,
-              "y": 241.20705051422118,
-              "width": 61.345908737182626,
-              "height": 61.34590873718264,
-              "right": 169.77296047210694,
-              "bottom": 302.5529592514038
+              "x": 78.57991986274719,
+              "y": 542.5599003314971,
+              "width": 57.84016027450561,
+              "height": 57.840160274505706,
+              "right": 136.4200801372528,
+              "bottom": 600.4000606060029
             },
             "hitWidth": 72,
             "locked": false
@@ -1909,12 +2638,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 600.0255491256714,
-              "y": 426.5055295944214,
-              "width": 57.748950576782136,
-              "height": 57.74895057678225,
-              "right": 657.7744997024536,
-              "bottom": 484.2544801712036
+              "x": 629.7559992790223,
+              "y": 836.3759943962098,
+              "width": 61.488001441955475,
+              "height": 61.488001441955475,
+              "right": 691.2440007209777,
+              "bottom": 897.8639958381652
             },
             "hitWidth": 72,
             "locked": false
@@ -1923,12 +2652,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 430.1800048828125,
+              "x": 82.3,
+              "y": 694.100048828125,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -1937,12 +2666,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 613.6800048828125,
+              "x": 635.3,
+              "y": 546.27998046875,
               "width": 50.40000000000009,
               "height": 50.40000000000009,
-              "right": 654.1000244140625,
-              "bottom": 664.0800048828125
+              "right": 685.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": false
@@ -1951,12 +2680,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 613.6800048828125,
+              "x": 82.3,
+              "y": 841.9199951171875,
               "width": 50.39999999999999,
               "height": 50.40000000000009,
-              "right": 164.3000061035156,
-              "bottom": 664.0800048828125
+              "right": 132.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -1965,19 +2694,19 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 246.6800048828125,
+              "x": 635.3,
+              "y": 694.100048828125,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
           }
         ],
         "feedback": "",
-        "temporaryCommands": 279,
+        "temporaryCommands": 0,
         "completionVisible": false,
         "robotConnected": false,
         "lifecycle": "powered",
@@ -2004,18 +2733,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 113.90000610351562,
-          "y": 159.3800048828125,
-          "width": 540.8799634456635,
-          "height": 516.5,
-          "right": 654.7799695491791,
-          "bottom": 675.8800048828125
+          "x": 82.3,
+          "y": 458.9800109863281,
+          "width": 604.5426596641541,
+          "height": 445.14,
+          "right": 686.8426596641541,
+          "bottom": 904.1200109863281
+        },
+        "cardCenterX": 384.5713298320771,
+        "helperBounds": {
+          "x": 34.48352884932336,
+          "y": 167.4778097997376,
+          "width": 259.10700975505557,
+          "height": 274.519367317324,
+          "right": 293.59053860437893,
+          "bottom": 441.9971771170616
+        },
+        "repairedBounds": {
+          "x": 473.7604654911264,
+          "y": 182.2474858325839,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 729.8587717950518,
+          "bottom": 447.1636190466881
+        },
+        "systemsBounds": {
+          "x": 340.5,
+          "y": 98.4800033569336,
+          "width": 87,
+          "height": 37.5,
+          "right": 427.5,
+          "bottom": 135.9800033569336
+        },
+        "hintBounds": {
+          "x": 328.5,
+          "y": 958.1199951171875,
+          "width": 111,
+          "height": 22,
+          "right": 439.5,
+          "bottom": 980.1199951171875
+        },
+        "helperScale": 0.18717343181161702,
+        "repairedScale": 0.185,
+        "helperGrounding": {
+          "baseX": 165.12,
+          "baseY": 442.48,
+          "contactX": 165.12,
+          "contactY": 442.48
+        },
+        "repairedGrounding": {
+          "baseX": 602.88,
+          "baseY": 442.48,
+          "contactX": 602.88,
+          "contactY": 442.48
         },
         "challengeIndex": 0,
         "destinationOrder": [
+          "blue",
           "green",
-          "red",
-          "blue"
+          "red"
         ],
         "connected": [
           "red"
@@ -2025,12 +2801,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 246.6800048828125,
+              "x": 82.3,
+              "y": 546.27998046875,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": true
@@ -2039,12 +2815,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 603.0200792789459,
-              "y": 429.5000597476959,
-              "width": 51.7598902702332,
-              "height": 51.7598902702332,
-              "right": 654.7799695491791,
-              "bottom": 481.2599500179291
+              "x": 634.1573403358459,
+              "y": 840.7773354530334,
+              "width": 52.685319328308196,
+              "height": 52.685319328308196,
+              "right": 686.8426596641541,
+              "bottom": 893.4626547813416
             },
             "hitWidth": 72,
             "locked": true
@@ -2053,12 +2829,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 430.1800048828125,
+              "x": 82.3,
+              "y": 694.100048828125,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -2067,12 +2843,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 613.6800048828125,
+              "x": 635.3,
+              "y": 546.27998046875,
               "width": 50.40000000000009,
               "height": 50.40000000000009,
-              "right": 654.1000244140625,
-              "bottom": 664.0800048828125
+              "right": 685.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": false
@@ -2081,12 +2857,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 613.6800048828125,
+              "x": 82.3,
+              "y": 841.9199951171875,
               "width": 50.39999999999999,
               "height": 50.40000000000009,
-              "right": 164.3000061035156,
-              "bottom": 664.0800048828125
+              "right": 132.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -2095,12 +2871,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 246.6800048828125,
+              "x": 635.3,
+              "y": 694.100048828125,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -2135,18 +2911,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 113.90000610351562,
-          "y": 159.3800048828125,
-          "width": 545.463474559784,
-          "height": 516.5,
-          "right": 659.3634806632996,
-          "bottom": 675.8800048828125
+          "x": 82.3,
+          "y": 458.9800109863281,
+          "width": 605.133591079712,
+          "height": 445.14,
+          "right": 687.433591079712,
+          "bottom": 904.1200109863281
+        },
+        "cardCenterX": 384.866795539856,
+        "helperBounds": {
+          "x": 35.51311426206607,
+          "y": 177.05914241470407,
+          "width": 257.0649092206138,
+          "height": 268.4446639421312,
+          "right": 292.5780234826799,
+          "bottom": 445.5038063568353
+        },
+        "repairedBounds": {
+          "x": 473.7604654911264,
+          "y": 182.2474858325839,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 729.8587717950518,
+          "bottom": 447.1636190466881
+        },
+        "systemsBounds": {
+          "x": 340.5,
+          "y": 98.4800033569336,
+          "width": 87,
+          "height": 37.5,
+          "right": 427.5,
+          "bottom": 135.9800033569336
+        },
+        "hintBounds": {
+          "x": 328.5,
+          "y": 958.1199951171875,
+          "width": 111,
+          "height": 22,
+          "right": 439.5,
+          "bottom": 980.1199951171875
+        },
+        "helperScale": 0.18569825587465374,
+        "repairedScale": 0.185,
+        "helperGrounding": {
+          "baseX": 165.12,
+          "baseY": 442.48,
+          "contactX": 165.12,
+          "contactY": 442.48
+        },
+        "repairedGrounding": {
+          "baseX": 602.88,
+          "baseY": 442.48,
+          "contactX": 602.88,
+          "contactY": 442.48
         },
         "challengeIndex": 0,
         "destinationOrder": [
+          "blue",
           "green",
-          "red",
-          "blue"
+          "red"
         ],
         "connected": [
           "red"
@@ -2156,12 +2979,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 246.6800048828125,
+              "x": 82.3,
+              "y": 546.27998046875,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": true
@@ -2170,12 +2993,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 598.4365681648254,
-              "y": 424.9165486335754,
-              "width": 60.92691249847417,
-              "height": 60.92691249847417,
-              "right": 659.3634806632996,
-              "bottom": 485.8434611320496
+              "x": 633.566408920288,
+              "y": 840.1864040374755,
+              "width": 53.86718215942392,
+              "height": 53.86718215942392,
+              "right": 687.433591079712,
+              "bottom": 894.0535861968995
             },
             "hitWidth": 72,
             "locked": true
@@ -2184,12 +3007,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 430.1800048828125,
+              "x": 82.3,
+              "y": 694.100048828125,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 164.3000061035156,
-              "bottom": 480.5800048828125
+              "height": 50.40000000000009,
+              "right": 132.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -2198,12 +3021,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 613.6800048828125,
+              "x": 635.3,
+              "y": 546.27998046875,
               "width": 50.40000000000009,
               "height": 50.40000000000009,
-              "right": 654.1000244140625,
-              "bottom": 664.0800048828125
+              "right": 685.7,
+              "bottom": 596.67998046875
             },
             "hitWidth": 72,
             "locked": false
@@ -2212,12 +3035,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 113.90000610351562,
-              "y": 613.6800048828125,
+              "x": 82.3,
+              "y": 841.9199951171875,
               "width": 50.39999999999999,
               "height": 50.40000000000009,
-              "right": 164.3000061035156,
-              "bottom": 664.0800048828125
+              "right": 132.7,
+              "bottom": 892.3199951171875
             },
             "hitWidth": 72,
             "locked": false
@@ -2226,12 +3049,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 603.7000244140625,
-              "y": 246.6800048828125,
+              "x": 635.3,
+              "y": 694.100048828125,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 654.1000244140625,
-              "bottom": 297.0800048828125
+              "height": 50.40000000000009,
+              "right": 685.7,
+              "bottom": 744.500048828125
             },
             "hitWidth": 72,
             "locked": false
@@ -2266,18 +3089,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 113.40000610351562,
-          "y": 159.34500122070312,
-          "width": 540.200018310547,
-          "height": 516.5,
-          "right": 653.6000244140625,
-          "bottom": 675.8450012207031
+          "x": 81.8,
+          "y": 458.94500732421875,
+          "width": 603.4000000000001,
+          "height": 445.21000000000004,
+          "right": 685.2,
+          "bottom": 904.1550073242188
+        },
+        "cardCenterX": 383.50000000000006,
+        "helperBounds": {
+          "x": 35.785459387610814,
+          "y": 182.19346882739973,
+          "width": 256.09830630392537,
+          "height": 264.935146557179,
+          "right": 291.88376569153615,
+          "bottom": 447.1286153845787
+        },
+        "repairedBounds": {
+          "x": 472.9754313114389,
+          "y": 182.21248217047452,
+          "width": 256.09830630392537,
+          "height": 264.9161332141042,
+          "right": 729.0737376153643,
+          "bottom": 447.1286153845787
+        },
+        "systemsBounds": {
+          "x": 340,
+          "y": 98.44499969482422,
+          "width": 87,
+          "height": 37.5,
+          "right": 427,
+          "bottom": 135.94499969482422
+        },
+        "hintBounds": {
+          "x": 328,
+          "y": 958.155029296875,
+          "width": 111,
+          "height": 22,
+          "right": 439,
+          "bottom": 980.155029296875
+        },
+        "helperScale": 0.185,
+        "repairedScale": 0.185,
+        "helperGrounding": {
+          "baseX": 164.905,
+          "baseY": 442.445,
+          "contactX": 164.905,
+          "contactY": 442.445
+        },
+        "repairedGrounding": {
+          "baseX": 602.095,
+          "baseY": 442.445,
+          "contactX": 602.095,
+          "contactY": 442.445
         },
         "challengeIndex": 0,
         "destinationOrder": [
+          "blue",
           "green",
-          "red",
-          "blue"
+          "red"
         ],
         "connected": [
           "red"
@@ -2287,12 +3157,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 113.40000610351562,
-              "y": 246.64500122070314,
+              "x": 81.8,
+              "y": 546.2450073242187,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 163.8000061035156,
-              "bottom": 297.0450012207031
+              "height": 50.40000000000009,
+              "right": 132.2,
+              "bottom": 596.6450073242188
             },
             "hitWidth": 72,
             "locked": false
@@ -2301,12 +3171,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 603.2000244140625,
-              "y": 430.14500122070314,
+              "x": 634.8,
+              "y": 841.955029296875,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 653.6000244140625,
-              "bottom": 480.5450012207031
+              "height": 50.40000000000009,
+              "right": 685.2,
+              "bottom": 892.355029296875
             },
             "hitWidth": 72,
             "locked": false
@@ -2315,12 +3185,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 113.40000610351562,
-              "y": 430.14500122070314,
+              "x": 81.8,
+              "y": 694.0999877929687,
               "width": 50.39999999999999,
-              "height": 50.39999999999998,
-              "right": 163.8000061035156,
-              "bottom": 480.5450012207031
+              "height": 50.40000000000009,
+              "right": 132.2,
+              "bottom": 744.4999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2329,12 +3199,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 603.2000244140625,
-              "y": 613.644970703125,
+              "x": 634.8,
+              "y": 546.2450073242187,
               "width": 50.40000000000009,
               "height": 50.40000000000009,
-              "right": 653.6000244140625,
-              "bottom": 664.044970703125
+              "right": 685.2,
+              "bottom": 596.6450073242188
             },
             "hitWidth": 72,
             "locked": false
@@ -2343,12 +3213,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 113.40000610351562,
-              "y": 613.644970703125,
+              "x": 81.8,
+              "y": 841.955029296875,
               "width": 50.39999999999999,
               "height": 50.40000000000009,
-              "right": 163.8000061035156,
-              "bottom": 664.044970703125
+              "right": 132.2,
+              "bottom": 892.355029296875
             },
             "hitWidth": 72,
             "locked": false
@@ -2357,12 +3227,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 603.2000244140625,
-              "y": 246.64500122070314,
+              "x": 634.8,
+              "y": 694.0999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 653.6000244140625,
-              "bottom": 297.0450012207031
+              "height": 50.40000000000009,
+              "right": 685.2,
+              "bottom": 744.4999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2394,6 +3264,14 @@
         "correctConnection": true,
         "duplicateGuard": true,
         "liveResize": true,
+        "boardCentered": true,
+        "compositionInBounds": true,
+        "robotsSeparated": true,
+        "boardClearOfRobots": true,
+        "panelSpacing": true,
+        "actorZones": true,
+        "robotScale": true,
+        "grounding": true,
         "errors": true
       },
       "errors": {
@@ -2418,18 +3296,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 274.0640075683594,
-          "y": 139.6999969482422,
-          "width": 616.6720031738282,
-          "height": 472.0999999999999,
-          "right": 890.7360107421875,
-          "bottom": 611.7999969482421
+          "x": 341.77598266601564,
+          "y": 153.05999755859375,
+          "width": 596.448065185547,
+          "height": 456.74,
+          "right": 938.2240478515625,
+          "bottom": 609.7999975585938
+        },
+        "cardCenterX": 640.0000152587891,
+        "helperBounds": {
+          "x": 3.371315198526389,
+          "y": 417.1626211618992,
+          "width": 276.8630343995924,
+          "height": 286.7007267065195,
+          "right": 280.2343495981188,
+          "bottom": 703.8633478684187
+        },
+        "repairedBounds": {
+          "x": 997.4513475471592,
+          "y": 417.46752760078846,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1274.3143819467516,
+          "bottom": 703.8633478684187
+        },
+        "systemsBounds": {
+          "x": 586.5,
+          "y": 82.19999694824219,
+          "width": 107,
+          "height": 40,
+          "right": 693.5,
+          "bottom": 122.19999694824219
+        },
+        "hintBounds": {
+          "x": 584,
+          "y": 644.7999877929688,
+          "width": 112,
+          "height": 22,
+          "right": 696,
+          "bottom": 666.7999877929688
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 142.95999999999998,
+          "baseY": 698.8,
+          "contactX": 142.95999999999998,
+          "contactY": 698.8
+        },
+        "repairedGrounding": {
+          "baseX": 1137.04,
+          "baseY": 698.8,
+          "contactX": 1137.04,
+          "contactY": 698.8
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "blue",
           "red",
-          "green"
+          "green",
+          "blue"
         ],
         "connected": [],
         "ports": [
@@ -2437,12 +3362,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 226.9999969482422,
+              "x": 341.77598266601564,
+              "y": 240.35999755859376,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 277.3999969482422
+              "right": 392.1759826660156,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": false
@@ -2451,12 +3376,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 388.3,
+              "x": 887.8240478515625,
+              "y": 240.35999755859376,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 438.7
+              "right": 938.2240478515625,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": false
@@ -2465,12 +3390,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 388.3,
+              "x": 341.77598266601564,
+              "y": 393.97999267578126,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 438.7
+              "right": 392.1759826660156,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2479,12 +3404,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 226.9999969482422,
+              "x": 887.8240478515625,
+              "y": 547.5999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 277.3999969482422
+              "height": 50.40000000000009,
+              "right": 938.2240478515625,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2493,12 +3418,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 549.5999877929687,
+              "x": 341.77598266601564,
+              "y": 547.5999877929687,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 324.46400756835936,
-              "bottom": 599.9999877929688
+              "right": 392.1759826660156,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2507,12 +3432,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 549.5999877929687,
+              "x": 887.8240478515625,
+              "y": 393.97999267578126,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 890.7360107421875,
-              "bottom": 599.9999877929688
+              "height": 50.39999999999998,
+              "right": 938.2240478515625,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2542,18 +3467,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 271.6298303604126,
-          "y": 139.6999969482422,
-          "width": 619.106180381775,
-          "height": 472.0999999999999,
-          "right": 890.7360107421875,
-          "bottom": 611.7999969482421
+          "x": 340.13145637512207,
+          "y": 153.05999755859375,
+          "width": 598.0925914764405,
+          "height": 456.74,
+          "right": 938.2240478515625,
+          "bottom": 609.7999975585938
+        },
+        "cardCenterX": 639.1777521133423,
+        "helperBounds": {
+          "x": 3.371315198526389,
+          "y": 417.4913366988659,
+          "width": 276.8630343995924,
+          "height": 286.3720111695528,
+          "right": 280.2343495981188,
+          "bottom": 703.8633478684187
+        },
+        "repairedBounds": {
+          "x": 997.4513475471592,
+          "y": 417.46752760078846,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1274.3143819467516,
+          "bottom": 703.8633478684187
+        },
+        "systemsBounds": {
+          "x": 586.5,
+          "y": 82.19999694824219,
+          "width": 107,
+          "height": 40,
+          "right": 693.5,
+          "bottom": 122.19999694824219
+        },
+        "hintBounds": {
+          "x": 584,
+          "y": 644.7999877929688,
+          "width": 112,
+          "height": 22,
+          "right": 696,
+          "bottom": 666.7999877929688
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 142.95999999999998,
+          "baseY": 698.8,
+          "contactX": 142.95999999999998,
+          "contactY": 698.8
+        },
+        "repairedGrounding": {
+          "baseX": 1137.04,
+          "baseY": 698.8,
+          "contactX": 1137.04,
+          "contactY": 698.8
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "blue",
           "red",
-          "green"
+          "green",
+          "blue"
         ],
         "connected": [],
         "ports": [
@@ -2561,12 +3533,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 271.6298303604126,
-              "y": 224.5658197402954,
-              "width": 55.268354415893555,
-              "height": 55.268354415893555,
-              "right": 326.89818477630615,
-              "bottom": 279.83417415618896
+              "x": 340.13145637512207,
+              "y": 238.7154712677002,
+              "width": 53.68905258178711,
+              "height": 53.68905258178711,
+              "right": 393.8205089569092,
+              "bottom": 292.4045238494873
             },
             "hitWidth": 72,
             "locked": false
@@ -2575,12 +3547,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 388.3,
+              "x": 887.8240478515625,
+              "y": 240.35999755859376,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 438.7
+              "right": 938.2240478515625,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": false
@@ -2589,12 +3561,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 388.3,
+              "x": 341.77598266601564,
+              "y": 393.97999267578126,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 438.7
+              "right": 392.1759826660156,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2603,12 +3575,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 226.9999969482422,
+              "x": 887.8240478515625,
+              "y": 547.5999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 277.3999969482422
+              "height": 50.40000000000009,
+              "right": 938.2240478515625,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2617,12 +3589,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 549.5999877929687,
+              "x": 341.77598266601564,
+              "y": 547.5999877929687,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 324.46400756835936,
-              "bottom": 599.9999877929688
+              "right": 392.1759826660156,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2631,12 +3603,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 549.5999877929687,
+              "x": 887.8240478515625,
+              "y": 393.97999267578126,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 890.7360107421875,
-              "bottom": 599.9999877929688
+              "height": 50.39999999999998,
+              "right": 938.2240478515625,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2670,18 +3642,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 271.34038481712344,
-          "y": 139.6999969482422,
-          "width": 620.0133777141571,
-          "height": 472.0999999999999,
-          "right": 891.3537625312805,
-          "bottom": 611.7999969482421
+          "x": 337.3357508659363,
+          "y": 153.05999755859375,
+          "width": 602.757822418213,
+          "height": 456.74,
+          "right": 940.0935732841492,
+          "bottom": 609.7999975585938
+        },
+        "cardCenterX": 638.7146620750427,
+        "helperBounds": {
+          "x": 3.371315198526389,
+          "y": 417.4443252107165,
+          "width": 276.8630343995924,
+          "height": 286.4190226577022,
+          "right": 280.2343495981188,
+          "bottom": 703.8633478684187
+        },
+        "repairedBounds": {
+          "x": 997.4513475471592,
+          "y": 417.46752760078846,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1274.3143819467516,
+          "bottom": 703.8633478684187
+        },
+        "systemsBounds": {
+          "x": 586.5,
+          "y": 82.19999694824219,
+          "width": 107,
+          "height": 40,
+          "right": 693.5,
+          "bottom": 122.19999694824219
+        },
+        "hintBounds": {
+          "x": 584,
+          "y": 644.7999877929688,
+          "width": 112,
+          "height": 22,
+          "right": 696,
+          "bottom": 666.7999877929688
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 142.95999999999998,
+          "baseY": 698.8,
+          "contactX": 142.95999999999998,
+          "contactY": 698.8
+        },
+        "repairedGrounding": {
+          "baseX": 1137.04,
+          "baseY": 698.8,
+          "contactX": 1137.04,
+          "contactY": 698.8
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "blue",
           "red",
-          "green"
+          "green",
+          "blue"
         ],
         "connected": [],
         "ports": [
@@ -2689,12 +3708,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 271.34038481712344,
-              "y": 224.27637419700622,
-              "width": 55.84724550247188,
-              "height": 55.84724550247191,
-              "right": 327.1876303195953,
-              "bottom": 280.1236196994781
+              "x": 337.3357508659363,
+              "y": 235.91976575851442,
+              "width": 59.28046360015867,
+              "height": 59.28046360015867,
+              "right": 396.61621446609496,
+              "bottom": 295.2002293586731
             },
             "hitWidth": 72,
             "locked": false
@@ -2703,12 +3722,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 839.7182589530945,
-              "y": 387.682248210907,
-              "width": 51.63550357818599,
-              "height": 51.63550357818599,
-              "right": 891.3537625312805,
-              "bottom": 439.317751789093
+              "x": 885.9545224189758,
+              "y": 238.4904721260071,
+              "width": 54.13905086517343,
+              "height": 54.13905086517332,
+              "right": 940.0935732841492,
+              "bottom": 292.6295229911804
             },
             "hitWidth": 72,
             "locked": false
@@ -2717,12 +3736,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 388.3,
+              "x": 341.77598266601564,
+              "y": 393.97999267578126,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 438.7
+              "right": 392.1759826660156,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2731,12 +3750,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 226.9999969482422,
+              "x": 887.8240478515625,
+              "y": 547.5999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 277.3999969482422
+              "height": 50.40000000000009,
+              "right": 938.2240478515625,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2745,12 +3764,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 549.5999877929687,
+              "x": 341.77598266601564,
+              "y": 547.5999877929687,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 324.46400756835936,
-              "bottom": 599.9999877929688
+              "right": 392.1759826660156,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2759,12 +3778,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 549.5999877929687,
+              "x": 887.8240478515625,
+              "y": 393.97999267578126,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 890.7360107421875,
-              "bottom": 599.9999877929688
+              "height": 50.39999999999998,
+              "right": 938.2240478515625,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2798,18 +3817,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 271.6777964115143,
-          "y": 139.6999969482422,
-          "width": 623.6850441932679,
-          "height": 472.0999999999999,
-          "right": 895.3628406047821,
-          "bottom": 611.7999969482421
+          "x": 339.99737854003905,
+          "y": 153.05999755859375,
+          "width": 602.5886239528656,
+          "height": 456.74,
+          "right": 942.5860024929048,
+          "bottom": 609.7999975585938
+        },
+        "cardCenterX": 641.2916905164718,
+        "helperBounds": {
+          "x": 1.8153668927230342,
+          "y": 402.6444902393035,
+          "width": 279.94913374358026,
+          "height": 296.321256677539,
+          "right": 281.7645006363033,
+          "bottom": 698.9657469168425
+        },
+        "repairedBounds": {
+          "x": 997.4513475471592,
+          "y": 417.46752760078846,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1274.3143819467516,
+          "bottom": 703.8633478684187
+        },
+        "systemsBounds": {
+          "x": 586.5,
+          "y": 82.19999694824219,
+          "width": 107,
+          "height": 40,
+          "right": 693.5,
+          "bottom": 122.19999694824219
+        },
+        "hintBounds": {
+          "x": 584,
+          "y": 644.7999877929688,
+          "width": 112,
+          "height": 22,
+          "right": 696,
+          "bottom": 666.7999877929688
+        },
+        "helperScale": 0.20222933219050224,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 142.95999999999998,
+          "baseY": 698.8,
+          "contactX": 142.95999999999998,
+          "contactY": 698.8
+        },
+        "repairedGrounding": {
+          "baseX": 1137.04,
+          "baseY": 698.8,
+          "contactX": 1137.04,
+          "contactY": 698.8
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "blue",
           "red",
-          "green"
+          "green",
+          "blue"
         ],
         "connected": [
           "red"
@@ -2819,12 +3885,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 271.6777964115143,
-              "y": 224.6137857913971,
-              "width": 55.17242231369016,
-              "height": 55.17242231369016,
-              "right": 326.85021872520446,
-              "bottom": 279.78620810508727
+              "x": 339.99737854003905,
+              "y": 238.58139343261718,
+              "width": 53.95720825195315,
+              "height": 53.95720825195315,
+              "right": 393.9545867919922,
+              "bottom": 292.5386016845703
             },
             "hitWidth": 72,
             "locked": true
@@ -2833,12 +3899,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 835.7091808795929,
-              "y": 383.6731701374054,
-              "width": 59.6536597251893,
-              "height": 59.653659725189186,
-              "right": 895.3628406047821,
-              "bottom": 443.3268298625946
+              "x": 883.4620932102204,
+              "y": 235.99804291725158,
+              "width": 59.12390928268428,
+              "height": 59.12390928268431,
+              "right": 942.5860024929046,
+              "bottom": 295.1219521999359
             },
             "hitWidth": 72,
             "locked": true
@@ -2847,12 +3913,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 388.3,
+              "x": 341.77598266601564,
+              "y": 393.97999267578126,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 438.7
+              "right": 392.1759826660156,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2861,12 +3927,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 226.9999969482422,
+              "x": 887.8240478515625,
+              "y": 547.5999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 277.3999969482422
+              "height": 50.40000000000009,
+              "right": 938.2240478515625,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2875,12 +3941,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 549.5999877929687,
+              "x": 341.77598266601564,
+              "y": 547.5999877929687,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 324.46400756835936,
-              "bottom": 599.9999877929688
+              "right": 392.1759826660156,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -2889,12 +3955,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 549.5999877929687,
+              "x": 887.8240478515625,
+              "y": 393.97999267578126,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 890.7360107421875,
-              "bottom": 599.9999877929688
+              "height": 50.39999999999998,
+              "right": 938.2240478515625,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2929,18 +3995,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 274.0640075683594,
-          "y": 139.6999969482422,
-          "width": 619.2024068832397,
-          "height": 472.0999999999999,
-          "right": 893.2664144515991,
-          "bottom": 611.7999969482421
+          "x": 341.77598266601564,
+          "y": 153.05999755859375,
+          "width": 596.448065185547,
+          "height": 456.74,
+          "right": 938.2240478515625,
+          "bottom": 609.7999975585938
+        },
+        "cardCenterX": 640.0000152587891,
+        "helperBounds": {
+          "x": 3.371315198526389,
+          "y": 417.4555491863842,
+          "width": 276.8630343995924,
+          "height": 286.4077986820345,
+          "right": 280.2343495981188,
+          "bottom": 703.8633478684187
+        },
+        "repairedBounds": {
+          "x": 997.4513475471592,
+          "y": 417.46752760078846,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1274.3143819467516,
+          "bottom": 703.8633478684187
+        },
+        "systemsBounds": {
+          "x": 586.5,
+          "y": 82.19999694824219,
+          "width": 107,
+          "height": 40,
+          "right": 693.5,
+          "bottom": 122.19999694824219
+        },
+        "hintBounds": {
+          "x": 584,
+          "y": 644.7999877929688,
+          "width": 112,
+          "height": 22,
+          "right": 696,
+          "bottom": 666.7999877929688
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 142.95999999999998,
+          "baseY": 698.8,
+          "contactX": 142.95999999999998,
+          "contactY": 698.8
+        },
+        "repairedGrounding": {
+          "baseX": 1137.04,
+          "baseY": 698.8,
+          "contactX": 1137.04,
+          "contactY": 698.8
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "blue",
           "red",
-          "green"
+          "green",
+          "blue"
         ],
         "connected": [
           "red"
@@ -2950,12 +4063,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 226.9999969482422,
+              "x": 341.77598266601564,
+              "y": 240.35999755859376,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 277.3999969482422
+              "right": 392.1759826660156,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": true
@@ -2964,12 +4077,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 837.8056070327759,
-              "y": 385.76959629058837,
-              "width": 55.46080741882315,
-              "height": 55.460807418823265,
-              "right": 893.2664144515991,
-              "bottom": 441.23040370941163
+              "x": 887.8240478515625,
+              "y": 240.35999755859376,
+              "width": 50.40000000000009,
+              "height": 50.39999999999998,
+              "right": 938.2240478515625,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": true
@@ -2978,12 +4091,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 388.3,
+              "x": 341.77598266601564,
+              "y": 393.97999267578126,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.46400756835936,
-              "bottom": 438.7
+              "right": 392.1759826660156,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -2992,12 +4105,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 226.9999969482422,
+              "x": 887.8240478515625,
+              "y": 547.5999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 890.7360107421875,
-              "bottom": 277.3999969482422
+              "height": 50.40000000000009,
+              "right": 938.2240478515625,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -3006,12 +4119,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 274.0640075683594,
-              "y": 549.5999877929687,
+              "x": 341.77598266601564,
+              "y": 547.5999877929687,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 324.46400756835936,
-              "bottom": 599.9999877929688
+              "right": 392.1759826660156,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -3020,12 +4133,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 840.3360107421875,
-              "y": 549.5999877929687,
+              "x": 887.8240478515625,
+              "y": 393.97999267578126,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 890.7360107421875,
-              "bottom": 599.9999877929688
+              "height": 50.39999999999998,
+              "right": 938.2240478515625,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -3060,18 +4173,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 273.83021240234376,
-          "y": 139.6999969482422,
-          "width": 616.2295898437501,
-          "height": 472.0999999999999,
-          "right": 890.0598022460938,
-          "bottom": 611.7999969482421
+          "x": 341.4893310546875,
+          "y": 153.05999755859375,
+          "width": 596.0213378906251,
+          "height": 456.74,
+          "right": 937.5106689453125,
+          "bottom": 609.7999975585938
+        },
+        "cardCenterX": 639.5,
+        "helperBounds": {
+          "x": 3.279304700479514,
+          "y": 417.4609004796266,
+          "width": 276.8630343995924,
+          "height": 286.4024473887921,
+          "right": 280.1423391000719,
+          "bottom": 703.8633478684187
+        },
+        "repairedBounds": {
+          "x": 996.5432664924717,
+          "y": 417.46752760078846,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1273.406300892064,
+          "bottom": 703.8633478684187
+        },
+        "systemsBounds": {
+          "x": 586,
+          "y": 82.19999694824219,
+          "width": 107,
+          "height": 40,
+          "right": 693,
+          "bottom": 122.19999694824219
+        },
+        "hintBounds": {
+          "x": 583.5,
+          "y": 644.7999877929688,
+          "width": 112,
+          "height": 22,
+          "right": 695.5,
+          "bottom": 666.7999877929688
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 142.868,
+          "baseY": 698.8,
+          "contactX": 142.868,
+          "contactY": 698.8
+        },
+        "repairedGrounding": {
+          "baseX": 1136.132,
+          "baseY": 698.8,
+          "contactX": 1136.132,
+          "contactY": 698.8
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "blue",
           "red",
-          "green"
+          "green",
+          "blue"
         ],
         "connected": [
           "red"
@@ -3081,12 +4241,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 273.83021240234376,
-              "y": 226.9999969482422,
+              "x": 341.4893310546875,
+              "y": 240.35999755859376,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.23021240234374,
-              "bottom": 277.3999969482422
+              "right": 391.8893310546875,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": false
@@ -3095,12 +4255,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 839.6598022460937,
-              "y": 388.3,
+              "x": 887.1106689453125,
+              "y": 240.35999755859376,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 890.0598022460938,
-              "bottom": 438.7
+              "right": 937.5106689453125,
+              "bottom": 290.75999755859374
             },
             "hitWidth": 72,
             "locked": false
@@ -3109,12 +4269,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 273.83021240234376,
-              "y": 388.3,
+              "x": 341.4893310546875,
+              "y": 393.97999267578126,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 324.23021240234374,
-              "bottom": 438.7
+              "right": 391.8893310546875,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -3123,12 +4283,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 839.6598022460937,
-              "y": 226.9999969482422,
+              "x": 887.1106689453125,
+              "y": 547.5999877929687,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 890.0598022460938,
-              "bottom": 277.3999969482422
+              "height": 50.40000000000009,
+              "right": 937.5106689453125,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -3137,12 +4297,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 273.83021240234376,
-              "y": 549.5999877929687,
+              "x": 341.4893310546875,
+              "y": 547.5999877929687,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 324.23021240234374,
-              "bottom": 599.9999877929688
+              "right": 391.8893310546875,
+              "bottom": 597.9999877929688
             },
             "hitWidth": 72,
             "locked": false
@@ -3151,12 +4311,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 839.6598022460937,
-              "y": 549.5999877929687,
+              "x": 887.1106689453125,
+              "y": 393.97999267578126,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 890.0598022460938,
-              "bottom": 599.9999877929688
+              "height": 50.39999999999998,
+              "right": 937.5106689453125,
+              "bottom": 444.37999267578124
             },
             "hitWidth": 72,
             "locked": false
@@ -3188,6 +4348,14 @@
         "correctConnection": true,
         "duplicateGuard": true,
         "liveResize": true,
+        "boardCentered": true,
+        "compositionInBounds": true,
+        "robotsSeparated": true,
+        "boardClearOfRobots": true,
+        "panelSpacing": true,
+        "actorZones": true,
+        "robotScale": true,
+        "grounding": true,
         "errors": true
       },
       "errors": {
@@ -3212,18 +4380,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 344.6900146484375,
-          "y": 148.5,
-          "width": 619.2000488281251,
+          "x": 409.40000610351564,
+          "y": 179.35000610351562,
+          "width": 619.200018310547,
           "height": 496.5,
-          "right": 963.8900634765625,
-          "bottom": 645
+          "right": 1028.6000244140625,
+          "bottom": 675.8500061035156
+        },
+        "cardCenterX": 719.0000152587891,
+        "helperBounds": {
+          "x": 20.70731373368264,
+          "y": 608.3598524365367,
+          "width": 276.8630343995924,
+          "height": 286.70350763891327,
+          "right": 297.57034813327505,
+          "bottom": 895.06336007545
+        },
+        "repairedBounds": {
+          "x": 1138.1152879768467,
+          "y": 608.6675398078197,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1414.978322376439,
+          "bottom": 895.06336007545
+        },
+        "systemsBounds": {
+          "x": 665.5,
+          "y": 95.8499984741211,
+          "width": 107,
+          "height": 40,
+          "right": 772.5,
+          "bottom": 135.8499984741211
+        },
+        "hintBounds": {
+          "x": 660.5,
+          "y": 716.3499755859375,
+          "width": 117,
+          "height": 23,
+          "right": 777.5,
+          "bottom": 739.3499755859375
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 160.296,
+          "baseY": 890,
+          "contactX": 160.296,
+          "contactY": 890
+        },
+        "repairedGrounding": {
+          "baseX": 1277.704,
+          "baseY": 890,
+          "contactX": 1277.704,
+          "contactY": 890
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
           "green",
-          "blue"
+          "blue",
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -3231,12 +4446,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 235.8,
+              "x": 409.40000610351564,
+              "y": 266.65000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 286.2
+              "right": 459.8000061035156,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3245,12 +4460,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 235.8,
+              "x": 978.2000244140625,
+              "y": 613.6499755859375,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 286.2
+              "height": 50.40000000000009,
+              "right": 1028.6000244140625,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3259,12 +4474,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 409.3,
+              "x": 409.40000610351564,
+              "y": 440.15000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 459.7
+              "right": 459.8000061035156,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3273,12 +4488,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 582.8,
+              "x": 978.2000244140625,
+              "y": 440.15000610351564,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 963.8900634765625,
-              "bottom": 633.2
+              "height": 50.39999999999998,
+              "right": 1028.6000244140625,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3287,12 +4502,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 582.8,
+              "x": 409.40000610351564,
+              "y": 613.6499755859375,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 395.0900146484375,
-              "bottom": 633.2
+              "right": 459.8000061035156,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3301,12 +4516,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 409.3,
+              "x": 978.2000244140625,
+              "y": 266.65000610351564,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 459.7
+              "right": 1028.6000244140625,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3336,18 +4551,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 343.46809849739077,
-          "y": 148.5,
-          "width": 620.4219649791718,
+          "x": 407.2515704154968,
+          "y": 179.35000610351562,
+          "width": 621.3484539985657,
           "height": 496.5,
-          "right": 963.8900634765625,
-          "bottom": 645
+          "right": 1028.6000244140625,
+          "bottom": 675.8500061035156
+        },
+        "cardCenterX": 717.9257974147797,
+        "helperBounds": {
+          "x": 20.70731373368264,
+          "y": 608.7040436954212,
+          "width": 276.8630343995924,
+          "height": 286.35931638002876,
+          "right": 297.57034813327505,
+          "bottom": 895.06336007545
+        },
+        "repairedBounds": {
+          "x": 1138.1152879768467,
+          "y": 608.6675398078197,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1414.978322376439,
+          "bottom": 895.06336007545
+        },
+        "systemsBounds": {
+          "x": 665.5,
+          "y": 95.8499984741211,
+          "width": 107,
+          "height": 40,
+          "right": 772.5,
+          "bottom": 135.8499984741211
+        },
+        "hintBounds": {
+          "x": 660.5,
+          "y": 716.3499755859375,
+          "width": 117,
+          "height": 23,
+          "right": 777.5,
+          "bottom": 739.3499755859375
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 160.296,
+          "baseY": 890,
+          "contactX": 160.296,
+          "contactY": 890
+        },
+        "repairedGrounding": {
+          "baseX": 1277.704,
+          "baseY": 890,
+          "contactX": 1277.704,
+          "contactY": 890
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
           "green",
-          "blue"
+          "blue",
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -3355,12 +4617,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 343.46809849739077,
-              "y": 234.57808384895324,
-              "width": 52.84383230209346,
-              "height": 52.84383230209349,
-              "right": 396.31193079948423,
-              "bottom": 287.42191615104673
+              "x": 407.2515704154968,
+              "y": 264.5015704154968,
+              "width": 54.69687137603762,
+              "height": 54.69687137603762,
+              "right": 461.94844179153444,
+              "bottom": 319.19844179153444
             },
             "hitWidth": 72,
             "locked": false
@@ -3369,12 +4631,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 235.8,
+              "x": 978.2000244140625,
+              "y": 613.6499755859375,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 286.2
+              "height": 50.40000000000009,
+              "right": 1028.6000244140625,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3383,12 +4645,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 409.3,
+              "x": 409.40000610351564,
+              "y": 440.15000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 459.7
+              "right": 459.8000061035156,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3397,12 +4659,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 582.8,
+              "x": 978.2000244140625,
+              "y": 440.15000610351564,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 963.8900634765625,
-              "bottom": 633.2
+              "height": 50.39999999999998,
+              "right": 1028.6000244140625,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3411,12 +4673,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 582.8,
+              "x": 409.40000610351564,
+              "y": 613.6499755859375,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 395.0900146484375,
-              "bottom": 633.2
+              "right": 459.8000061035156,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3425,12 +4687,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 409.3,
+              "x": 978.2000244140625,
+              "y": 266.65000610351564,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 459.7
+              "right": 1028.6000244140625,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3464,18 +4726,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 339.2170602798462,
-          "y": 148.5,
-          "width": 628.3015972614289,
+          "x": 405.7714120388031,
+          "y": 179.35000610351562,
+          "width": 624.1316775798797,
           "height": 496.5,
-          "right": 967.5186575412752,
-          "bottom": 645
+          "right": 1029.9030896186828,
+          "bottom": 675.8500061035156
+        },
+        "cardCenterX": 717.837250828743,
+        "helperBounds": {
+          "x": 20.70731373368264,
+          "y": 608.64322966076,
+          "width": 276.8630343995924,
+          "height": 286.42013041469,
+          "right": 297.57034813327505,
+          "bottom": 895.06336007545
+        },
+        "repairedBounds": {
+          "x": 1138.1152879768467,
+          "y": 608.6675398078197,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1414.978322376439,
+          "bottom": 895.06336007545
+        },
+        "systemsBounds": {
+          "x": 665.5,
+          "y": 95.8499984741211,
+          "width": 107,
+          "height": 40,
+          "right": 772.5,
+          "bottom": 135.8499984741211
+        },
+        "hintBounds": {
+          "x": 660.5,
+          "y": 716.3499755859375,
+          "width": 117,
+          "height": 23,
+          "right": 777.5,
+          "bottom": 739.3499755859375
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 160.296,
+          "baseY": 890,
+          "contactX": 160.296,
+          "contactY": 890
+        },
+        "repairedGrounding": {
+          "baseX": 1277.704,
+          "baseY": 890,
+          "contactX": 1277.704,
+          "contactY": 890
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
           "green",
-          "blue"
+          "blue",
+          "red"
         ],
         "connected": [],
         "ports": [
@@ -3483,12 +4792,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 339.2170602798462,
-              "y": 230.32704563140868,
-              "width": 61.34590873718264,
-              "height": 61.34590873718264,
-              "right": 400.5629690170288,
-              "bottom": 291.6729543685913
+              "x": 405.7714120388031,
+              "y": 263.0214120388031,
+              "width": 57.657188129425094,
+              "height": 57.657188129425094,
+              "right": 463.4286001682282,
+              "bottom": 320.6786001682282
             },
             "hitWidth": 72,
             "locked": false
@@ -3497,12 +4806,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 909.86146941185,
-              "y": 232.17140593528748,
-              "width": 57.657188129425094,
-              "height": 57.657188129425066,
-              "right": 967.518657541275,
-              "bottom": 289.82859406471255
+              "x": 976.8969592094421,
+              "y": 612.3469103813171,
+              "width": 53.006130409240654,
+              "height": 53.00613040924077,
+              "right": 1029.9030896186828,
+              "bottom": 665.3530407905579
             },
             "hitWidth": 72,
             "locked": false
@@ -3511,12 +4820,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 409.3,
+              "x": 409.40000610351564,
+              "y": 440.15000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 459.7
+              "right": 459.8000061035156,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3525,12 +4834,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 582.8,
+              "x": 978.2000244140625,
+              "y": 440.15000610351564,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 963.8900634765625,
-              "bottom": 633.2
+              "height": 50.39999999999998,
+              "right": 1028.6000244140625,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3539,12 +4848,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 582.8,
+              "x": 409.40000610351564,
+              "y": 613.6499755859375,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 395.0900146484375,
-              "bottom": 633.2
+              "right": 459.8000061035156,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3553,12 +4862,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 409.3,
+              "x": 978.2000244140625,
+              "y": 266.65000610351564,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 459.7
+              "right": 1028.6000244140625,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3592,18 +4901,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 344.6900146484375,
-          "y": 148.5,
-          "width": 620.5443629741669,
+          "x": 407.9718993186951,
+          "y": 179.35000610351562,
+          "width": 624.3935216903687,
           "height": 496.5,
-          "right": 965.2343776226044,
-          "bottom": 645
+          "right": 1032.3654210090638,
+          "bottom": 675.8500061035156
+        },
+        "cardCenterX": 720.1686601638794,
+        "helperBounds": {
+          "x": 18.759861510818297,
+          "y": 590.5792091812596,
+          "width": 280.7256505321549,
+          "height": 298.35416909973776,
+          "right": 299.48551204297314,
+          "bottom": 888.9333782809973
+        },
+        "repairedBounds": {
+          "x": 1138.1152879768467,
+          "y": 608.6675398078197,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1414.978322376439,
+          "bottom": 895.06336007545
+        },
+        "systemsBounds": {
+          "x": 665.5,
+          "y": 95.8499984741211,
+          "width": 107,
+          "height": 40,
+          "right": 772.5,
+          "bottom": 135.8499984741211
+        },
+        "hintBounds": {
+          "x": 660.5,
+          "y": 716.3499755859375,
+          "width": 117,
+          "height": 23,
+          "right": 777.5,
+          "bottom": 739.3499755859375
+        },
+        "helperScale": 0.20279028066393978,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 160.296,
+          "baseY": 890,
+          "contactX": 160.296,
+          "contactY": 890
+        },
+        "repairedGrounding": {
+          "baseX": 1277.704,
+          "baseY": 890,
+          "contactX": 1277.704,
+          "contactY": 890
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
           "green",
-          "blue"
+          "blue",
+          "red"
         ],
         "connected": [
           "red"
@@ -3613,12 +4969,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 235.8,
-              "width": 50.39999999999998,
-              "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 286.2
+              "x": 407.9718993186951,
+              "y": 265.2218993186951,
+              "width": 53.25621356964109,
+              "height": 53.25621356964109,
+              "right": 461.22811288833617,
+              "bottom": 318.47811288833617
             },
             "hitWidth": 72,
             "locked": true
@@ -3627,12 +4983,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 912.1457493305206,
-              "y": 234.45568585395813,
-              "width": 53.08862829208374,
-              "height": 53.08862829208374,
-              "right": 965.2343776226044,
-              "bottom": 287.54431414604187
+              "x": 974.4346278190612,
+              "y": 609.8845789909362,
+              "width": 57.93079319000253,
+              "height": 57.93079319000253,
+              "right": 1032.3654210090638,
+              "bottom": 667.8153721809388
             },
             "hitWidth": 72,
             "locked": true
@@ -3641,12 +4997,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 409.3,
+              "x": 409.40000610351564,
+              "y": 440.15000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 459.7
+              "right": 459.8000061035156,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3655,12 +5011,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 582.8,
+              "x": 978.2000244140625,
+              "y": 440.15000610351564,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 963.8900634765625,
-              "bottom": 633.2
+              "height": 50.39999999999998,
+              "right": 1028.6000244140625,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3669,12 +5025,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 582.8,
+              "x": 409.40000610351564,
+              "y": 613.6499755859375,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 395.0900146484375,
-              "bottom": 633.2
+              "right": 459.8000061035156,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3683,12 +5039,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 409.3,
+              "x": 978.2000244140625,
+              "y": 266.65000610351564,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 459.7
+              "right": 1028.6000244140625,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3723,18 +5079,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 344.6900146484375,
-          "y": 148.5,
-          "width": 624.6229252815247,
+          "x": 409.40000610351564,
+          "y": 179.35000610351562,
+          "width": 621.1615645408631,
           "height": 496.5,
-          "right": 969.3129399299621,
-          "bottom": 645
+          "right": 1030.5615706443787,
+          "bottom": 675.8500061035156
+        },
+        "cardCenterX": 719.9807883739472,
+        "helperBounds": {
+          "x": 19.095412525058435,
+          "y": 600.2865884412067,
+          "width": 280.0601118628697,
+          "height": 289.7029776298983,
+          "right": 299.15552438792815,
+          "bottom": 889.9895660711051
+        },
+        "repairedBounds": {
+          "x": 1138.1152879768467,
+          "y": 608.6675398078197,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1414.978322376439,
+          "bottom": 895.06336007545
+        },
+        "systemsBounds": {
+          "x": 665.5,
+          "y": 95.8499984741211,
+          "width": 107,
+          "height": 40,
+          "right": 772.5,
+          "bottom": 135.8499984741211
+        },
+        "hintBounds": {
+          "x": 660.5,
+          "y": 716.3499755859375,
+          "width": 117,
+          "height": 23,
+          "right": 777.5,
+          "bottom": 739.3499755859375
+        },
+        "helperScale": 0.2023095114761441,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 160.296,
+          "baseY": 890,
+          "contactX": 160.296,
+          "contactY": 890
+        },
+        "repairedGrounding": {
+          "baseX": 1277.704,
+          "baseY": 890,
+          "contactX": 1277.704,
+          "contactY": 890
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
           "green",
-          "blue"
+          "blue",
+          "red"
         ],
         "connected": [
           "red"
@@ -3744,12 +5147,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 235.8,
+              "x": 409.40000610351564,
+              "y": 266.65000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 286.2
+              "right": 459.8000061035156,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": true
@@ -3758,12 +5161,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 908.0671870231629,
-              "y": 230.37712354660033,
-              "width": 61.245752906799225,
-              "height": 61.24575290679934,
-              "right": 969.3129399299621,
-              "bottom": 291.62287645339967
+              "x": 976.2384781837463,
+              "y": 611.6884293556213,
+              "width": 54.323092460632324,
+              "height": 54.323092460632324,
+              "right": 1030.5615706443787,
+              "bottom": 666.0115218162537
             },
             "hitWidth": 72,
             "locked": true
@@ -3772,12 +5175,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 409.3,
+              "x": 409.40000610351564,
+              "y": 440.15000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 395.0900146484375,
-              "bottom": 459.7
+              "right": 459.8000061035156,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3786,12 +5189,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 582.8,
+              "x": 978.2000244140625,
+              "y": 440.15000610351564,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 963.8900634765625,
-              "bottom": 633.2
+              "height": 50.39999999999998,
+              "right": 1028.6000244140625,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3800,12 +5203,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 344.6900146484375,
-              "y": 582.8,
+              "x": 409.40000610351564,
+              "y": 613.6499755859375,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 395.0900146484375,
-              "bottom": 633.2
+              "right": 459.8000061035156,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3814,12 +5217,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 913.4900634765625,
-              "y": 409.3,
+              "x": 978.2000244140625,
+              "y": 266.65000610351564,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 963.8900634765625,
-              "bottom": 459.7
+              "right": 1028.6000244140625,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3854,18 +5257,65 @@
         },
         "mission7Complete": false,
         "cardBounds": {
-          "x": 344.23499755859376,
-          "y": 148.5,
-          "width": 619.1999877929688,
+          "x": 408.90000610351564,
+          "y": 179.35000610351562,
+          "width": 619.200018310547,
           "height": 496.5,
-          "right": 963.4349853515625,
-          "bottom": 645
+          "right": 1028.1000244140625,
+          "bottom": 675.8500061035156
+        },
+        "cardCenterX": 718.5000152587891,
+        "helperBounds": {
+          "x": 20.615303235635764,
+          "y": 608.6621547810403,
+          "width": 276.8630343995924,
+          "height": 286.4012052944097,
+          "right": 297.4783376352282,
+          "bottom": 895.06336007545
+        },
+        "repairedBounds": {
+          "x": 1137.2073289924717,
+          "y": 608.6675398078197,
+          "width": 276.8630343995924,
+          "height": 286.39582026763026,
+          "right": 1414.070363392064,
+          "bottom": 895.06336007545
+        },
+        "systemsBounds": {
+          "x": 665,
+          "y": 95.8499984741211,
+          "width": 107,
+          "height": 40,
+          "right": 772,
+          "bottom": 135.8499984741211
+        },
+        "hintBounds": {
+          "x": 660,
+          "y": 716.3499755859375,
+          "width": 117,
+          "height": 23,
+          "right": 777,
+          "bottom": 739.3499755859375
+        },
+        "helperScale": 0.2,
+        "repairedScale": 0.2,
+        "helperGrounding": {
+          "baseX": 160.204,
+          "baseY": 890,
+          "contactX": 160.204,
+          "contactY": 890
+        },
+        "repairedGrounding": {
+          "baseX": 1276.796,
+          "baseY": 890,
+          "contactX": 1276.796,
+          "contactY": 890
         },
         "challengeIndex": 0,
         "destinationOrder": [
-          "red",
           "green",
-          "blue"
+          "blue",
+          "red"
         ],
         "connected": [
           "red"
@@ -3875,12 +5325,12 @@
             "color": "red",
             "side": "source",
             "bounds": {
-              "x": 344.23499755859376,
-              "y": 235.8,
+              "x": 408.90000610351564,
+              "y": 266.65000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 394.63499755859374,
-              "bottom": 286.2
+              "right": 459.3000061035156,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3889,12 +5339,12 @@
             "color": "red",
             "side": "target",
             "bounds": {
-              "x": 913.0349853515625,
-              "y": 235.8,
+              "x": 977.7000244140625,
+              "y": 613.6499755859375,
               "width": 50.40000000000009,
-              "height": 50.39999999999998,
-              "right": 963.4349853515625,
-              "bottom": 286.2
+              "height": 50.40000000000009,
+              "right": 1028.1000244140625,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3903,12 +5353,12 @@
             "color": "blue",
             "side": "source",
             "bounds": {
-              "x": 344.23499755859376,
-              "y": 409.3,
+              "x": 408.90000610351564,
+              "y": 440.15000610351564,
               "width": 50.39999999999998,
               "height": 50.39999999999998,
-              "right": 394.63499755859374,
-              "bottom": 459.7
+              "right": 459.3000061035156,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3917,12 +5367,12 @@
             "color": "blue",
             "side": "target",
             "bounds": {
-              "x": 913.0349853515625,
-              "y": 582.8,
+              "x": 977.7000244140625,
+              "y": 440.15000610351564,
               "width": 50.40000000000009,
-              "height": 50.40000000000009,
-              "right": 963.4349853515625,
-              "bottom": 633.2
+              "height": 50.39999999999998,
+              "right": 1028.1000244140625,
+              "bottom": 490.5500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3931,12 +5381,12 @@
             "color": "green",
             "side": "source",
             "bounds": {
-              "x": 344.23499755859376,
-              "y": 582.8,
+              "x": 408.90000610351564,
+              "y": 613.6499755859375,
               "width": 50.39999999999998,
               "height": 50.40000000000009,
-              "right": 394.63499755859374,
-              "bottom": 633.2
+              "right": 459.3000061035156,
+              "bottom": 664.0499755859375
             },
             "hitWidth": 72,
             "locked": false
@@ -3945,12 +5395,12 @@
             "color": "green",
             "side": "target",
             "bounds": {
-              "x": 913.0349853515625,
-              "y": 409.3,
+              "x": 977.7000244140625,
+              "y": 266.65000610351564,
               "width": 50.40000000000009,
               "height": 50.39999999999998,
-              "right": 963.4349853515625,
-              "bottom": 459.7
+              "right": 1028.1000244140625,
+              "bottom": 317.0500061035156
             },
             "hitWidth": 72,
             "locked": false
@@ -3993,20 +5443,20 @@
     "layouts": [
       [
         "blue",
-        "green",
-        "red"
-      ],
-      [
         "red",
-        "blue",
-        "yellow",
         "green"
       ],
       [
-        "blue",
         "red",
         "green",
+        "blue",
         "yellow"
+      ],
+      [
+        "green",
+        "red",
+        "yellow",
+        "blue"
       ]
     ],
     "complete": {
@@ -4025,19 +5475,66 @@
       },
       "mission7Complete": true,
       "cardBounds": {
-        "x": 274.0640075683594,
-        "y": 139.6999969482422,
-        "width": 616.6720031738282,
-        "height": 478.2999908447266,
-        "right": 890.7360107421875,
-        "bottom": 617.9999877929688
+        "x": 341.77598266601564,
+        "y": 153.05999755859375,
+        "width": 596.448065185547,
+        "height": 462.93999023437505,
+        "right": 938.2240478515625,
+        "bottom": 615.9999877929688
+      },
+      "cardCenterX": 640.0000152587891,
+      "helperBounds": {
+        "x": 3.371315198526389,
+        "y": 417.46752760078846,
+        "width": 276.8630343995924,
+        "height": 286.39582026763026,
+        "right": 280.2343495981188,
+        "bottom": 703.8633478684187
+      },
+      "repairedBounds": {
+        "x": 997.4513475471592,
+        "y": 417.46752760078846,
+        "width": 276.8630343995924,
+        "height": 286.39582026763026,
+        "right": 1274.3143819467516,
+        "bottom": 703.8633478684187
+      },
+      "systemsBounds": {
+        "x": 586.5,
+        "y": 82.19999694824219,
+        "width": 107,
+        "height": 40,
+        "right": 693.5,
+        "bottom": 122.19999694824219
+      },
+      "hintBounds": {
+        "x": 584,
+        "y": 644.7999877929688,
+        "width": 112,
+        "height": 22,
+        "right": 696,
+        "bottom": 666.7999877929688
+      },
+      "helperScale": 0.2,
+      "repairedScale": 0.2,
+      "helperGrounding": {
+        "baseX": 142.95999999999998,
+        "baseY": 698.8,
+        "contactX": 142.95999999999998,
+        "contactY": 698.8
+      },
+      "repairedGrounding": {
+        "baseX": 1137.04,
+        "baseY": 698.8,
+        "contactX": 1137.04,
+        "contactY": 698.8
       },
       "challengeIndex": 2,
       "destinationOrder": [
-        "blue",
-        "red",
         "green",
-        "yellow"
+        "red",
+        "yellow",
+        "blue"
       ],
       "connected": [
         "red",
@@ -4050,12 +5547,12 @@
           "color": "red",
           "side": "source",
           "bounds": {
-            "x": 274.0640075683594,
-            "y": 226.9999969482422,
+            "x": 341.77598266601564,
+            "y": 240.35999755859376,
             "width": 50.39999999999998,
             "height": 50.39999999999998,
-            "right": 324.46400756835936,
-            "bottom": 277.3999969482422
+            "right": 392.1759826660156,
+            "bottom": 290.75999755859374
           },
           "hitWidth": 72,
           "locked": true
@@ -4064,12 +5561,12 @@
           "color": "red",
           "side": "target",
           "bounds": {
-            "x": 840.3360107421875,
-            "y": 334.53333740234376,
+            "x": 887.8240478515625,
+            "y": 342.77332763671876,
             "width": 50.40000000000009,
             "height": 50.39999999999998,
-            "right": 890.7360107421875,
-            "bottom": 384.93333740234374
+            "right": 938.2240478515625,
+            "bottom": 393.17332763671874
           },
           "hitWidth": 72,
           "locked": true
@@ -4078,12 +5575,12 @@
           "color": "blue",
           "side": "source",
           "bounds": {
-            "x": 274.0640075683594,
-            "y": 352.53333740234376,
+            "x": 341.77598266601564,
+            "y": 360.77332763671876,
             "width": 50.39999999999998,
             "height": 50.39999999999998,
-            "right": 324.46400756835936,
-            "bottom": 402.93333740234374
+            "right": 392.1759826660156,
+            "bottom": 411.17332763671874
           },
           "hitWidth": 72,
           "locked": true
@@ -4092,12 +5589,12 @@
           "color": "blue",
           "side": "target",
           "bounds": {
-            "x": 840.3360107421875,
-            "y": 245.00001220703126,
+            "x": 887.8240478515625,
+            "y": 547.5999877929687,
             "width": 50.40000000000009,
-            "height": 50.39999999999998,
-            "right": 890.7360107421875,
-            "bottom": 295.40001220703124
+            "height": 50.40000000000009,
+            "right": 938.2240478515625,
+            "bottom": 597.9999877929688
           },
           "hitWidth": 72,
           "locked": true
@@ -4106,12 +5603,12 @@
           "color": "green",
           "side": "source",
           "bounds": {
-            "x": 274.0640075683594,
-            "y": 442.06666259765626,
+            "x": 341.77598266601564,
+            "y": 445.18665771484376,
             "width": 50.39999999999998,
             "height": 50.39999999999998,
-            "right": 324.46400756835936,
-            "bottom": 492.46666259765624
+            "right": 392.1759826660156,
+            "bottom": 495.58665771484374
           },
           "hitWidth": 72,
           "locked": true
@@ -4120,12 +5617,12 @@
           "color": "green",
           "side": "target",
           "bounds": {
-            "x": 840.3360107421875,
-            "y": 460.06666259765626,
+            "x": 887.8240478515625,
+            "y": 258.35999755859376,
             "width": 50.40000000000009,
             "height": 50.39999999999998,
-            "right": 890.7360107421875,
-            "bottom": 510.46666259765624
+            "right": 938.2240478515625,
+            "bottom": 308.75999755859374
           },
           "hitWidth": 72,
           "locked": true
@@ -4134,12 +5631,12 @@
           "color": "yellow",
           "side": "source",
           "bounds": {
-            "x": 274.0640075683594,
-            "y": 567.5999877929687,
+            "x": 341.77598266601564,
+            "y": 565.5999877929687,
             "width": 50.39999999999998,
             "height": 50.40000000000009,
-            "right": 324.46400756835936,
-            "bottom": 617.9999877929688
+            "right": 392.1759826660156,
+            "bottom": 615.9999877929688
           },
           "hitWidth": 72,
           "locked": true
@@ -4148,12 +5645,12 @@
           "color": "yellow",
           "side": "target",
           "bounds": {
-            "x": 840.3360107421875,
-            "y": 549.5999877929687,
+            "x": 887.8240478515625,
+            "y": 463.18665771484376,
             "width": 50.40000000000009,
-            "height": 50.40000000000009,
-            "right": 890.7360107421875,
-            "bottom": 599.9999877929688
+            "height": 50.400000000000034,
+            "right": 938.2240478515625,
+            "bottom": 513.5866577148438
           },
           "hitWidth": 72,
           "locked": true

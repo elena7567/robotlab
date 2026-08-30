@@ -22,3 +22,11 @@ Mission 7 must add a touch-first color-port connection activity after Mission 6 
 - No bitmap wire or port assets are required.
 - Correct, wrong, empty-release, hint, duplicate, simultaneous-pointer, and resize behavior share one rule boundary.
 - The existing robot geometry and approved laboratory background remain immutable; systems lights and conduit activity are procedural overlays.
+
+## Stage 8.2A composition amendment
+
+- Mission 7 presentation uses a centralized responsive composition derived from the four existing layout modes.
+- Landscape reserves distinct left, center, and right zones for the helper robot, connection board, and powered robot. The board is centered on the viewport rather than shifted into the remaining space between panels.
+- Portrait and tablet modes place the separated robots in a grounded row above the centered board. Ultra-narrow portrait compresses only board spacing; socket visuals retain their size and effective targets remain at least 48 px.
+- Robot placement changes only actor position and uniform scale. The helper grounding reset contract, modular robot part layout, shoulder anchors, and arm transforms remain unchanged.
+- Home, sound, systems, board, and hint surfaces use explicit responsive gaps so no panels appear attached or compete with the connection workspace.

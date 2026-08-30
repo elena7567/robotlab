@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.2 — Mission 7: Подключи провода
+Stage 8.2A — Mission 7 composition rebalance
 
 ## CURRENT STATUS
 
-PASS — Mission 7 provides three responsive, touch-first randomized color-port connection challenges, persists completed wires across resize, records canonical systems completion, and rewards the player with wire, robot, and laboratory pulses.
+PASS — Mission 7 keeps its approved connection mechanic while presenting a centered primary board, separated appropriately scaled robots, and uncluttered responsive UI. Ready for manual visual review; changes remain uncommitted.
 
 ## CANONICAL LOCAL URL
 
@@ -27,6 +27,21 @@ LOCKED
 ## MISSION 6–10
 
 MISSIONS 6–7 IMPLEMENTED; MISSIONS 8–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.2A — MISSION 7 COMPOSITION REBALANCE
+
+- Changed presentation only. Connection rules, drag evaluation, port mapping, wire colors, challenge/randomization/session behavior, hint/audio behavior, Mission 6 handoff, Missions 1–6 runtime code, and canonical robot assets remain unchanged.
+- Added a centralized Mission 7 responsive composition to the existing four-mode layout system. No device-specific checks or runtime network dependency were introduced.
+- Landscape now reserves separate helper/board/repaired-robot zones, centers the board exactly on the viewport, and restores both robots from the prior 0.15 miniature scale to 0.20, visually matching the established 0.19 gameplay pair scale.
+- Tablet and mobile use a separated, grounded two-robot row above the centered board. The 320×568 mode recomposes the board vertically and keeps robots at 0.095 rather than clipping or reducing them to progress icons.
+- The systems panel stays compact and secondary. Explicit responsive gaps separate Home/sound controls, systems, robots, board, and hint action.
+- Ultra-narrow board rows use height-responsive internal spacing while preserving socket art size and 48 px minimum effective touch targets; connection mechanics and pointer handling are untouched.
+- Grounding data is synchronized to each responsive actor position. Helper base/contact coordinates and repaired-robot position/contact coordinates match at all required viewports; robot shoulder/arm transforms remain unchanged.
+- Mission 7 QA: `qa/stage8-2-mission7-playtest.cjs` PASS with `failures: []` at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. Added assertions cover exact board centering, actor zones/scale/separation, board clearance, panel spacing, viewport bounds, and grounding, alongside the existing mouse/touch wire, wrong/cancel/duplicate, live-resize, audio, randomization, completion, and full-flow coverage.
+- Missions 1–6 regression: unchanged `qa/stage8-1-mission6-playtest.cjs` PASS at the same five viewports with `failures: []`; no input, flow, dialogue, energy, audio, or layout regressions were reported.
+- Required review evidence: `docs/qa/screenshots/stage8-2a-desktop-1280x720-challenge-1.png`, `stage8-2a-desktop-1280x720-partially-connected.png`, `stage8-2a-wide-1438x914-challenge-1.png`, `stage8-2a-tablet-768x1024-challenge-1.png`, and `stage8-2a-mobile-390x844-challenge-1.png`. An additional 320×568 challenge capture records the minimum-width composition.
+- Verification: `npm run build` PASS (49 modules transformed; existing non-blocking Phaser chunk-size advisory only). The restricted-sandbox attempt hit the known Windows `spawn EPERM`; the approved rerun passed. Both browser suites ran against `http://127.0.0.1:4198/` with zero console/page/request/response errors.
+- Files moved or deleted: none. Git commit: none. Ready for manual visual review.
 
 ## STAGE 8.2 — MISSION 7: ПОДКЛЮЧИ ПРОВОДА
 

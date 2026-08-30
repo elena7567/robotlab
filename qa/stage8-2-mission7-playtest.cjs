@@ -93,12 +93,31 @@ async function snapshot(page) {
       return { x: b.x, y: b.y, width: b.width, height: b.height, right: b.right, bottom: b.bottom };
     };
     const card = find('connection-task-card');
+    const helper = find('grounded-robot');
+    const repaired = find('mission7-repaired-robot');
+    const systems = find('systems-progress');
+    const hint = find('connection-hint-button');
     const colors = ['red', 'blue', 'green', 'yellow'];
     return {
       viewport: { width: game.canvas.width, height: game.canvas.height },
       session: game.registry.get('sessionSnapshot'),
       mission7Complete: game.registry.get('mission7Complete') || false,
       cardBounds: bounds(card),
+      cardCenterX: card ? bounds(card).x + bounds(card).width / 2 : null,
+      helperBounds: bounds(helper),
+      repairedBounds: bounds(repaired),
+      systemsBounds: bounds(systems),
+      hintBounds: bounds(hint),
+      helperScale: helper?.scaleX,
+      repairedScale: repaired?.scaleX,
+      helperGrounding: {
+        baseX: helper?.getData('baseX'), baseY: helper?.getData('baseY'),
+        contactX: helper?.getData('platformContactX'), contactY: helper?.getData('platformContactY'),
+      },
+      repairedGrounding: {
+        baseX: repaired?.x, baseY: repaired?.y,
+        contactX: repaired?.getData('platformContactX'), contactY: repaired?.getData('platformContactY'),
+      },
       challengeIndex: card?.getData('challengeIndex'),
       destinationOrder: card?.getData('destinationOrder'),
       connected: card?.getData('connected') || [],
@@ -141,6 +160,9 @@ async function responsiveRun(browser, [name, width, height, touch]) {
   const errors = captureErrors(page);
   await startDirect(page);
   const initial = await snapshot(page);
+  if (['minimum-320x568', 'mobile-390x844', 'tablet-768x1024', 'desktop-1280x720', 'wide-1438x914'].includes(name)) {
+    await page.screenshot({ path: path.join(screenshotDir, `stage8-2a-${name}-challenge-1.png`) });
+  }
   if (name === 'mobile-390x844' || name === 'desktop-1280x720') {
     await page.screenshot({ path: path.join(screenshotDir, `stage8-2-${name}-connection-1-of-3.png`) });
   }
@@ -157,6 +179,9 @@ async function responsiveRun(browser, [name, width, height, touch]) {
   if (name === 'mobile-390x844' || name === 'desktop-1280x720') {
     await page.screenshot({ path: path.join(screenshotDir, `stage8-2-${name}-partially-connected.png`) });
   }
+  if (name === 'desktop-1280x720') {
+    await page.screenshot({ path: path.join(screenshotDir, 'stage8-2a-desktop-1280x720-partially-connected.png') });
+  }
   const correctCount = partial.audio.filter((key) => key === 'audio-answer-correct').length;
   await drag(page, 'connection-source-red', 'connection-target-red', touch);
   const duplicate = await snapshot(page);
@@ -166,6 +191,8 @@ async function responsiveRun(browser, [name, width, height, touch]) {
   await sleep(150);
   const resized = await snapshot(page);
   const inside = (b) => b && b.x >= -1 && b.y >= -1 && b.right <= resized.viewport.width + 1 && b.bottom <= resized.viewport.height + 1;
+  const overlap = (a, b) => a && b && a.x < b.right && a.right > b.x && a.y < b.bottom && a.bottom > b.y;
+  const landscape = width > height;
   const checks = {
     missionCopy: initial.session?.connectionsCompleted === false && initial.challengeIndex === 0,
     responsive: inside(resized.cardBounds) && resized.ports.every((port) => inside(port.bounds)),
@@ -176,6 +203,21 @@ async function responsiveRun(browser, [name, width, height, touch]) {
     correctConnection: partial.connected.length === 1 && correctCount === 1,
     duplicateGuard: duplicate.connected.length === 1 && duplicate.audio.filter((key) => key === 'audio-answer-correct').length === correctCount,
     liveResize: JSON.stringify(resized.connected) === liveBefore,
+    boardCentered: Math.abs(initial.cardCenterX - width / 2) <= 1,
+    compositionInBounds: [initial.cardBounds, initial.helperBounds, initial.repairedBounds, initial.systemsBounds, initial.hintBounds].every(inside),
+    robotsSeparated: !overlap(initial.helperBounds, initial.repairedBounds),
+    boardClearOfRobots: !overlap(initial.cardBounds, initial.helperBounds) && !overlap(initial.cardBounds, initial.repairedBounds),
+    panelSpacing: !overlap(initial.cardBounds, initial.systemsBounds) && !overlap(initial.cardBounds, initial.hintBounds),
+    actorZones: landscape
+      ? initial.helperBounds.right < initial.cardBounds.x && initial.repairedBounds.x > initial.cardBounds.right
+      : initial.helperBounds.bottom <= initial.cardBounds.y && initial.repairedBounds.bottom <= initial.cardBounds.y,
+    robotScale: landscape
+      ? initial.helperScale >= 0.19 && initial.repairedScale >= 0.19
+      : initial.helperScale >= (width < 360 ? 0.09 : 0.12) && initial.repairedScale >= (width < 360 ? 0.09 : 0.12),
+    grounding: initial.helperGrounding.baseX === initial.helperGrounding.contactX
+      && initial.helperGrounding.baseY === initial.helperGrounding.contactY
+      && initial.repairedGrounding.baseX === initial.repairedGrounding.contactX
+      && initial.repairedGrounding.baseY === initial.repairedGrounding.contactY,
     errors: Object.values(errors).every((items) => items.length === 0),
   };
   if (name === 'mobile-390x844') {

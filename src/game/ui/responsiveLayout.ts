@@ -81,6 +81,15 @@ export interface StartSceneLayout {
   readonly playFontSize: number;
 }
 
+export interface Mission7SceneLayout {
+  readonly showHeader: boolean;
+  readonly systems: { readonly x: number; readonly y: number; readonly width: number };
+  readonly board: RectLayout;
+  readonly helper: { readonly x: number; readonly feetY: number; readonly scale: number };
+  readonly repaired: { readonly x: number; readonly feetY: number; readonly scale: number };
+  readonly hint: { readonly x: number; readonly y: number; readonly width: number; readonly height: number; readonly fontSize: number };
+}
+
 function cssSafeArea(): SafeAreaInsets {
   if (typeof document === 'undefined') return { top: 0, right: 0, bottom: 0, left: 0 };
   const styles = getComputedStyle(document.documentElement);
@@ -241,6 +250,67 @@ export function createResponsiveLayout(width: number, height: number): Responsiv
       height: fluidValue(72, height, 0.1, 86),
       fontSize: fluidValue(14, width, 0.037, 17),
       gap: fluidValue(8, width, 0.025, 16),
+    },
+  };
+}
+
+export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7SceneLayout {
+  const { viewportWidth: width, viewportHeight: height, mode, safe } = layout;
+  const landscape = mode === 'landscape';
+  const tablet = mode === 'large-portrait-tablet';
+  const ultra = mode === 'ultra-narrow-portrait';
+  const systemsWidth = landscape
+    ? fluidValue(210, width, 0.18, 240)
+    : Math.min(width - safe.left - safe.right - layout.iconWidth * 0.9, tablet ? 250 : 254);
+  const systemsY = safe.top + layout.iconHeight + fluidValue(18, height, 0.025, 28);
+
+  if (landscape) {
+    const boardTop = systemsY + fluidValue(62, height, 0.088, 76);
+    const boardWidth = clampValue(620, width * 0.54, 720);
+    const boardHeight = clampValue(370, height - boardTop - safe.bottom - 74, 500);
+    const robotScale = fluidValue(0.2, height, 0.00003, 0.225);
+    const actorInset = fluidValue(112, width, 0.092, 150);
+    const feetY = height - safe.bottom + 4;
+    const hintHeight = fluidValue(50, height, 0.072, 56);
+    return {
+      showHeader: true,
+      systems: { x: width / 2, y: systemsY, width: systemsWidth },
+      board: { x: (width - boardWidth) / 2, y: boardTop, width: boardWidth, height: boardHeight },
+      helper: { x: safe.left + actorInset, feetY, scale: robotScale },
+      repaired: { x: width - safe.right - actorInset, feetY, scale: robotScale },
+      hint: {
+        x: width / 2,
+        y: Math.min(height - safe.bottom - hintHeight / 2, boardTop + boardHeight + fluidValue(34, height, 0.05, 42)),
+        width: fluidValue(190, width, 0.17, 220),
+        height: hintHeight,
+        fontSize: fluidValue(17, width, 0.015, 20),
+      },
+    };
+  }
+
+  const actorScale = tablet ? fluidValue(0.185, width, 0.00002, 0.2) : (ultra ? 0.095 : fluidValue(0.12, width, 0.00004, 0.136));
+  const actorCenterY = tablet
+    ? systemsY + fluidValue(330, height, 0.32, 355)
+    : systemsY + (ultra ? 181 : fluidValue(210, height, 0.25, 230));
+  const actorInset = tablet ? fluidValue(126, width, 0.18, 150) : fluidValue(64, width, 0.21, 88);
+  const boardTop = actorCenterY + (ultra ? 17 : fluidValue(18, height, 0.025, 24));
+  const hintHeight = ultra ? 48 : fluidValue(50, height, 0.064, 54);
+  const hintBottom = height - safe.bottom;
+  const boardBottomGap = ultra ? 56 : fluidValue(68, height, 0.084, 82);
+  const boardWidth = Math.min(tablet ? 700 : 620, width - safe.left - safe.right);
+  const boardHeight = Math.max(ultra ? 210 : 330, hintBottom - boardBottomGap - boardTop);
+  return {
+    showHeader: false,
+    systems: { x: width / 2, y: systemsY, width: systemsWidth },
+    board: { x: (width - boardWidth) / 2, y: boardTop, width: boardWidth, height: boardHeight },
+    helper: { x: safe.left + actorInset, feetY: actorCenterY, scale: actorScale },
+    repaired: { x: width - safe.right - actorInset, feetY: actorCenterY, scale: actorScale },
+    hint: {
+      x: width / 2,
+      y: hintBottom - hintHeight / 2,
+      width: Math.min(220, width - safe.left - safe.right - 30),
+      height: hintHeight,
+      fontSize: ultra ? 15 : fluidValue(16, width, 0.045, 19),
     },
   };
 }

@@ -162,8 +162,9 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
   }
 
   private createPorts(options: ConnectionTaskCardOptions): void {
-    const top = 105;
-    const bottom = options.height - 48;
+    const compactness = Phaser.Math.Clamp((options.height - 210) / 120, 0, 1);
+    const top = Phaser.Math.Linear(88, 105, compactness);
+    const bottom = options.height - Phaser.Math.Linear(34, 48, compactness);
     const rows = this.snapshot.challenge.colors.length;
     const rowGap = rows === 1 ? 0 : (bottom - top) / (rows - 1);
     const hitRadius = Math.max(24, Math.min(36, rowGap * 0.43, options.width * 0.1));

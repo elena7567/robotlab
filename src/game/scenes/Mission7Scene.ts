@@ -7,7 +7,7 @@ import { addControl, addIconControl } from '../ui/controls';
 import { ConnectionTaskCard } from '../ui/ConnectionTaskCard';
 import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
-import { createResponsiveLayout } from '../ui/responsiveLayout';
+import { createMission7SceneLayout, createResponsiveLayout } from '../ui/responsiveLayout';
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
@@ -20,6 +20,7 @@ export class Mission7Scene extends Phaser.Scene {
   create(): void {
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
+    const missionLayout = createMission7SceneLayout(layout);
     const portrait = layout.mode !== 'landscape';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const session = sessionState.snapshot;
@@ -39,16 +40,24 @@ export class Mission7Scene extends Phaser.Scene {
     labConduit.setAlpha(session.connectionsCompleted ? 0.8 : 0.13).setData('active', session.connectionsCompleted);
 
     const actors = this.add.container(0, 0).setName('mission7-actors').setDepth(2);
-    const feetY = height - layout.safe.bottom + (portrait ? 18 : 4);
-    const robotScale = portrait ? Math.min(0.105, width / 3600) : Math.min(0.15, height / 4800);
     const helper = createGroundedRobot(this, actors, 5);
-    const pairCenter = portrait ? width / 2 : width - Math.max(105, width * 0.09);
-    const pairGap = portrait ? Math.min(150, width * 0.4) : Math.min(190, width * 0.14);
-    helper?.setPosition(pairCenter - pairGap / 2, feetY).setScale(robotScale).setData({
-      baseX: pairCenter - pairGap / 2, baseY: feetY, groundedScale: robotScale,
+    helper?.setPosition(missionLayout.helper.x, missionLayout.helper.feetY).setScale(missionLayout.helper.scale).setData({
+      baseX: missionLayout.helper.x,
+      baseY: missionLayout.helper.feetY,
+      groundedScale: missionLayout.helper.scale,
+      platformContactX: missionLayout.helper.x,
+      platformContactY: missionLayout.helper.feetY,
     });
-    const repaired = new RobotAssemblyPreview(this, pairCenter + pairGap / 2, feetY, 5, { scale: robotScale, blueprintAlpha: 0 })
+    const repaired = new RobotAssemblyPreview(this, missionLayout.repaired.x, missionLayout.repaired.feetY, 5, {
+      scale: missionLayout.repaired.scale,
+      blueprintAlpha: 0,
+    })
       .setName('mission7-repaired-robot');
+    repaired.setData({
+      groundedScale: missionLayout.repaired.scale,
+      platformContactX: missionLayout.repaired.x,
+      platformContactY: missionLayout.repaired.feetY,
+    });
     repaired.setPowered(true);
     repaired.setSystemsConnected(session.connectionsCompleted);
     actors.add(repaired);
@@ -61,13 +70,12 @@ export class Mission7Scene extends Phaser.Scene {
       audioManager.toggleMuted();
       (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
     }, UI_COLORS.green, iconSizing);
-    if (!portrait) this.add.text(width / 2, layout.headerY, 'ОЖИВИ РОБОТА', {
+    if (missionLayout.showHeader) this.add.text(width / 2, layout.headerY, 'ОЖИВИ РОБОТА', {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${layout.headerFontSize}px`, fontStyle: 'bold', stroke: '#31567a', strokeThickness: 5,
     }).setOrigin(0.5).setName('mission7-header');
 
-    const systemsY = layout.safe.top + layout.iconHeight + (portrait ? 30 : 18);
-    const systems = this.add.container(width / 2, systemsY).setName('systems-progress').setDepth(8);
-    const systemsWidth = Math.min(width - layout.safe.left - layout.safe.right - 110, 260);
+    const systems = this.add.container(missionLayout.systems.x, missionLayout.systems.y).setName('systems-progress').setDepth(8);
+    const systemsWidth = missionLayout.systems.width;
     const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.96).fillRoundedRect(-systemsWidth / 2, -19, systemsWidth, 52, 15)
       .lineStyle(2, 0x67e9f5, 0.85).strokeRoundedRect(-systemsWidth / 2, -19, systemsWidth, 52, 15);
     systems.add([
@@ -76,10 +84,7 @@ export class Mission7Scene extends Phaser.Scene {
       this.add.text(0, 17, 'СОЕДИНЕНИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: `${portrait ? 11 : 13}px`, fontStyle: 'bold' }).setOrigin(0.5),
     ]);
 
-    const boardTop = systemsY + 50;
-    const boardWidth = portrait ? Math.min(620, width - layout.safe.left - layout.safe.right) : Math.min(720, width * 0.56);
-    const boardHeight = Math.max(330, Math.min(portrait ? 520 : 500, height - boardTop - layout.safe.bottom - 72));
-    const boardX = portrait ? (width - boardWidth) / 2 : Math.max(layout.safe.left, (width - boardWidth) / 2 - width * 0.045);
+    const { x: boardX, y: boardTop, width: boardWidth, height: boardHeight } = missionLayout.board;
     let resolving = false;
     let card: ConnectionTaskCard;
     const finishChallenge = (): void => {
@@ -129,14 +134,18 @@ export class Mission7Scene extends Phaser.Scene {
       },
       onCancel: () => card.refresh(connectionsMechanic.snapshot, ''),
     });
-    addControl(this, width / 2, Math.min(height - layout.safe.bottom - 28, boardTop + boardHeight + 37), 'ПОДСКАЗКА', () => {
+    addControl(this, missionLayout.hint.x, missionLayout.hint.y, 'ПОДСКАЗКА', () => {
       if (resolving) return;
       const color = connectionsMechanic.hint();
       if (!color) return;
       audioManager.playHint();
       card.pulseHint(color);
       void helper?.playHint();
-    }, { width: Math.min(210, width - 50), height: 52, fontSize: Math.min(19, Math.max(15, width * 0.045)) }).setName('connection-hint-button').setDepth(10);
+    }, {
+      width: missionLayout.hint.width,
+      height: missionLayout.hint.height,
+      fontSize: missionLayout.hint.fontSize,
+    }).setName('connection-hint-button').setDepth(10);
 
     if (session.connectionsCompleted || connectionsMechanic.snapshot.completed) {
       this.game.registry.set('mission7Complete', true);
