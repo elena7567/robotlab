@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.2A — Mission 7 composition rebalance
+Stage 8.3 — Mission 8: Запрограммируй робота
 
 ## CURRENT STATUS
 
-PASS — Mission 7 keeps its approved connection mechanic while presenting a centered primary board, separated appropriately scaled robots, and uncluttered responsive UI. Ready for manual visual review; changes remain uncommitted.
+PASS — Mission 8 adds deterministic command programming, animated repaired-robot grid movement, non-punitive correction, a programmed-state reward, and a clean Mission 9 handoff seam. Ready for manual visual review.
 
 ## CANONICAL LOCAL URL
 
@@ -26,7 +26,26 @@ LOCKED
 
 ## MISSION 6–10
 
-MISSIONS 6–7 IMPLEMENTED; MISSIONS 8–10 DESIGN ONLY / NOT IMPLEMENTED
+MISSIONS 6–8 IMPLEMENTED; MISSIONS 9–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.3 — MISSION 8: ЗАПРОГРАММИРУЙ РОБОТА
+
+- Mission 7's existing completion card now activates its previously reserved `ПРОДОЛЖИТЬ` control and enters Mission 8 without changing the Mission 7 connection mechanic or composition.
+- Added `programmingMechanic` outside Phaser with three deterministic authored routes: a 4×2 straight introduction, a 4×3 turn around one obstacle, and a 5×3 five-command route around two obstacles. The module owns queue limits, pure simulation, ordered execution steps, collision classification, hints, logical position, route progression, interruption recovery, and idempotent completion.
+- Added a procedural laboratory test floor with dark-blue tiles, cyan grid lines, start pad, glowing charge target, crate obstacles, and the approved modular second robot at readable board scale. No background, robot, or production asset was modified or replaced.
+- Added four large arrow controls, a visible `КОМАНДЫ` strip with route-specific capacity, `УДАЛИТЬ`, `ПОДСКАЗКА`, and `ЗАПУСТИТЬ`. Wrong destinations and collisions keep the command sequence; the robot returns gently to start and becomes editable again.
+- Robot movement executes one tile at a time at 330 ms per normal step (95 ms under reduced motion). Editing and Run lock during execution; duplicate Run, duplicate completion, stale tween, Home-during-run, and between-cell persistence are guarded.
+- Hints highlight only the next useful neighboring tile and pulse its arrow control. They never insert commands or solve a route. Existing centralized audio provides UI, hint, one correct sound per route, one wrong sound per failed attempt, and one final repair reward.
+- Mission completion derives canonical `programmingCompleted` from `completedTasks >= 8`, updates `СИСТЕМЫ 3/4`, activates procedural laboratory navigation lights, and performs a short autonomous forward/return movement on a test strip. The completion copy points toward system verification but Mission 9 is not implemented.
+- Live resize retains current route and command queue. An interrupted movement safely resets only the logical robot to the authored start while leaving the queue editable. Home during movement passes with no stale tween or console error.
+- Architecture decision: `docs/decisions/0006-mission8-grid-programming.md`.
+- Stage 8.3 QA: `qa/stage8-3-mission8-playtest.cjs` PASS with `failures: []`. The responsive matrix passes 320×568, 390×844, 768×1024, 1280×720, and 1438×914; all boards/controls are in bounds, command hit targets pass, and live resize preserves the queue.
+- Interaction QA passes empty/too-short and extra-command recovery, wrong destination, obstacle collision, board boundary collision, delete/edit, hint, rapid Run, route transitions, exact route/audio counts, mission completion, lab reactivity, autonomous reward, mute, Home interruption, reduced motion, and zero console/page/request/response errors.
+- Real touch completes all three routes at 390×844. The ordinary production flow Start → Missions 1–5 → Mission 6 → Mission 7 → Mission 8 passes at 1280×720 with canonical `completedTasks = 8`, `connectionsCompleted = true`, and `programmingCompleted = true`.
+- Missions 1–7 regression: `qa/stage8-2-mission7-playtest.cjs` was rerun after Mission 8 integration and passes with `failures: []` across all five required viewports plus its ordinary Start → Missions 1–7 flow. Its existing result JSON and screenshot evidence were refreshed by that verification run.
+- Production build: `npm run build` PASS with TypeScript clean, 52 modules transformed, and only the existing non-blocking Phaser chunk-size advisory.
+- Verification evidence: `docs/qa/stage8-3-mission8-results.json` and nine `docs/qa/screenshots/stage8-3-*` captures covering desktop empty/built/executing/success/completion/autonomous states and mobile board/strip/completion states.
+- Files moved or deleted: none. Mission 9 remains unimplemented.
 
 ## STAGE 8.2A — MISSION 7 COMPOSITION REBALANCE
 
@@ -743,7 +762,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 8.0 design completion.
+- None for Stage 8.3.
 
 ## GIT
 
@@ -758,8 +777,8 @@ main
 
 ## NEXT
 
-Stage 8.0A is ready for manual visual review. Stage 8.0 design remains ready for a separately authorized Mission 6 implementation stage; confirm required production asset IDs/readiness before dependent visual work.
+Stage 8.3 is ready for manual visual review. Mission 9 remains design-only and must be implemented as a separately authorized stage.
 
 ## LAST VERIFIED
 
-2026-08-29 — Stage 8.0A responsive layout QA passed at 320×568, 390×844, 768×1024, 1280×720, and 1438×914; Tasks 1–5 additionally passed layout and touch-target regression on 390×844 and 1280×720 with `failures: []`. `npm run build` passes with 43 modules transformed and only the existing non-blocking Phaser chunk-size advisory. The first restricted-sandbox build attempt was blocked by Windows `spawn EPERM`; the identical approved rerun completed successfully.
+2026-08-30 — Stage 8.3 Mission 8 QA passed with `failures: []`: five responsive viewports, real 390×844 touch completion, deterministic route/collision/edit/run behavior, mute, Home interruption, reduced motion, autonomous reward, clean console/network, and ordinary Start → Missions 1–8 flow. Production build and locked-mission regression results are recorded in the Stage 8.3 section.

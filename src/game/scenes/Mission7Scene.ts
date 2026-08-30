@@ -170,7 +170,9 @@ export class Mission7Scene extends Phaser.Scene {
       color: '#bfffea', fontFamily: UI_FONT, fontSize: `${Math.min(18, Math.max(13, width * 0.035))}px`, fontStyle: 'bold', align: 'center',
       wordWrap: { width: panelWidth - 38 },
     }).setOrigin(0.5);
-    const button = addControl(this, width / 2, Math.min(height - safeBottom - 32, height / 2 + panelHeight * 0.3), 'ПРОДОЛЖИТЬ', () => undefined, {
+    const button = addControl(this, width / 2, Math.min(height - safeBottom - 32, height / 2 + panelHeight * 0.3), 'ПРОДОЛЖИТЬ', () => {
+      this.scene.start('Mission8Scene');
+    }, {
       width: Math.min(260, panelWidth - 50), height: 54, fontSize: Math.min(22, Math.max(17, width * 0.045)),
     }).setName('mission7-continue').setDepth(31);
     overlay.add([panel, title, subtitle]);

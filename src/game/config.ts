@@ -10,6 +10,7 @@ import { TransitionScene } from './scenes/TransitionScene';
 import { VictoryScene } from './scenes/VictoryScene';
 import { Mission6Scene } from './scenes/Mission6Scene';
 import { Mission7Scene } from './scenes/Mission7Scene';
+import { Mission8Scene } from './scenes/Mission8Scene';
 
 export const REFERENCE_WIDTH = 1280;
 export const REFERENCE_HEIGHT = 720;
@@ -21,7 +22,7 @@ export const gameConfig: Phaser.Types.Core.GameConfig = {
   height: REFERENCE_HEIGHT,
   backgroundColor: '#0b1d36',
   // RobotAssemblyPreviewScene is dev/QA-only and is never entered by production flow.
-  scene: [BootScene, PreloadScene, StartScene, IntroScene, GameScene, TransitionScene, Mission6Scene, Mission7Scene, VictoryScene, ResultsScene, RobotAssemblyPreviewScene],
+  scene: [BootScene, PreloadScene, StartScene, IntroScene, GameScene, TransitionScene, Mission6Scene, Mission7Scene, Mission8Scene, VictoryScene, ResultsScene, RobotAssemblyPreviewScene],
   input: { activePointers: 2, touch: { capture: true } },
   scale: {
     mode: Phaser.Scale.RESIZE,
