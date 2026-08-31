@@ -1,0 +1,1904 @@
+{
+  "matrix": [],
+  "orientation": {
+    "cases": [
+      {
+        "portrait": "390x844",
+        "landscape": "844x390",
+        "portrait1": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "mode": "PHONE_PORTRAIT_TALL",
+          "layout": {
+            "safe": {
+              "top": 13.650000000000002,
+              "right": 13.650000000000002,
+              "bottom": 13.650000000000002,
+              "left": 13.650000000000002
+            },
+            "headerY": 44.650000000000006,
+            "statusY": 99.23,
+            "taskCard": {
+              "x": 13.649999999999977,
+              "y": 145.81,
+              "width": 362.70000000000005,
+              "height": 430
+            },
+            "progress": {
+              "x": 267.15,
+              "y": 587.626,
+              "width": 109.20000000000002,
+              "height": 164,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 11,
+                "stepRadius": 14,
+                "borderRadius": 16
+              }
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 266.775,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 165.85,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 108.517,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 254.183,
+              "y": 273.042,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 254.183,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 108.517,
+              "y": 273.042,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 266.775,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 165.85,
+              "height": 62.667,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-home",
+              "x": 51.65,
+              "y": 44.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 338.35,
+              "y": 44.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 95.925,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 165.85,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": -214.18,
+              "y": 464.788,
+              "scaleX": 0.639,
+              "scaleY": 0.639,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 267.15,
+              "y": 587.626,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 13.65,
+              "y": 145.81,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "landscape1": {
+          "viewport": {
+            "width": 844,
+            "height": 390
+          },
+          "mode": "PHONE_LANDSCAPE_SHORT",
+          "layout": {
+            "safe": {
+              "top": 13.650000000000002,
+              "right": 13.650000000000002,
+              "bottom": 13.650000000000002,
+              "left": 13.650000000000002
+            },
+            "headerY": 39.650000000000006,
+            "statusY": 39.650000000000006,
+            "taskCard": {
+              "x": 13.650000000000002,
+              "y": 96.65,
+              "width": 236.32000000000002,
+              "height": 279.70000000000005
+            },
+            "progress": {
+              "x": 598.35,
+              "y": 148.65,
+              "width": 220,
+              "height": 166.66666666666666,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 13.2,
+                "stepRadius": 14.3,
+                "borderRadius": 18.700000000000003
+              }
+            }
+          },
+          "metrics": {
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 172.929,
+              "y": 246.872,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 108.296,
+              "height": 57.657,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 63.891,
+              "y": 124.684,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 172.429,
+              "y": 177.425,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 172.429,
+              "y": 124.684,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 63.891,
+              "y": 177.425,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 172.929,
+              "y": 246.872,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 108.296,
+              "height": 57.657,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-header",
+              "x": 422,
+              "y": 39.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 181,
+              "height": 28,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "game-home",
+              "x": 51.65,
+              "y": 39.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 792.35,
+              "y": 39.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 63.391,
+              "y": 246.872,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 108.296,
+              "height": 57.657,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": 75.333,
+              "y": 0,
+              "scaleX": 0.542,
+              "scaleY": 0.542,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 598.35,
+              "y": 148.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 13.65,
+              "y": 96.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "portrait2": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "mode": "PHONE_PORTRAIT_TALL",
+          "layout": {
+            "safe": {
+              "top": 13.650000000000002,
+              "right": 13.650000000000002,
+              "bottom": 13.650000000000002,
+              "left": 13.650000000000002
+            },
+            "headerY": 44.650000000000006,
+            "statusY": 99.23,
+            "taskCard": {
+              "x": 13.649999999999977,
+              "y": 145.81,
+              "width": 362.70000000000005,
+              "height": 430
+            },
+            "progress": {
+              "x": 267.15,
+              "y": 587.626,
+              "width": 109.20000000000002,
+              "height": 164,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 11,
+                "stepRadius": 14,
+                "borderRadius": 16
+              }
+            }
+          },
+          "metrics": {
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 266.775,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 165.85,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 108.517,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 254.183,
+              "y": 273.042,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 254.183,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 108.517,
+              "y": 273.042,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 266.775,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 165.85,
+              "height": 62.667,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-home",
+              "x": 51.65,
+              "y": 44.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 338.35,
+              "y": 44.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 95.925,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 165.85,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": -214.18,
+              "y": 464.788,
+              "scaleX": 0.639,
+              "scaleY": 0.639,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 267.15,
+              "y": 587.626,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 13.65,
+              "y": 145.81,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "landscape2": {
+          "viewport": {
+            "width": 844,
+            "height": 390
+          },
+          "mode": "PHONE_LANDSCAPE_SHORT",
+          "layout": {
+            "safe": {
+              "top": 13.650000000000002,
+              "right": 13.650000000000002,
+              "bottom": 13.650000000000002,
+              "left": 13.650000000000002
+            },
+            "headerY": 39.650000000000006,
+            "statusY": 39.650000000000006,
+            "taskCard": {
+              "x": 13.650000000000002,
+              "y": 96.65,
+              "width": 236.32000000000002,
+              "height": 279.70000000000005
+            },
+            "progress": {
+              "x": 598.35,
+              "y": 148.65,
+              "width": 220,
+              "height": 166.66666666666666,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 13.2,
+                "stepRadius": 14.3,
+                "borderRadius": 18.700000000000003
+              }
+            }
+          },
+          "metrics": {
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 172.929,
+              "y": 246.872,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 108.296,
+              "height": 57.657,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.027,
+              "scaleY": 0.027,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 63.891,
+              "y": 124.684,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 172.429,
+              "y": 177.425,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 172.429,
+              "y": 124.684,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 63.891,
+              "y": 177.425,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 109.296,
+              "height": 53.499,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 172.929,
+              "y": 246.872,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 108.296,
+              "height": 57.657,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-header",
+              "x": 422,
+              "y": 39.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 181,
+              "height": 28,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "game-home",
+              "x": 51.65,
+              "y": 39.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 792.35,
+              "y": 39.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 63.391,
+              "y": 246.872,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 108.296,
+              "height": 57.657,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": 75.333,
+              "y": 0,
+              "scaleX": 0.542,
+              "scaleY": 0.542,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 598.35,
+              "y": 148.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 13.65,
+              "y": 96.65,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "oddSelection": "odd-ball",
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        },
+        "checks": {
+          "portraitDeterministic": true,
+          "landscapeDeterministic": true,
+          "portraitMetrics": true,
+          "landscapeMetrics": true,
+          "listenerStable": true,
+          "selectionPreserved": true,
+          "errors": true
+        }
+      },
+      {
+        "portrait": "412x915",
+        "landscape": "915x412",
+        "portrait1": {
+          "viewport": {
+            "width": 412,
+            "height": 915
+          },
+          "mode": "PHONE_PORTRAIT_TALL",
+          "layout": {
+            "safe": {
+              "top": 14.420000000000002,
+              "right": 14.420000000000002,
+              "bottom": 14.420000000000002,
+              "left": 14.420000000000002
+            },
+            "headerY": 45.42,
+            "statusY": 100.48400000000001,
+            "taskCard": {
+              "x": 14.420000000000016,
+              "y": 147.548,
+              "width": 383.15999999999997,
+              "height": 430
+            },
+            "progress": {
+              "x": 282.21999999999997,
+              "y": 590.358,
+              "width": 115.36000000000001,
+              "height": 164,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 11,
+                "stepRadius": 14,
+                "borderRadius": 16
+              }
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 282.12,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 176.08,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 118.747,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 264.413,
+              "y": 273.042,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 264.413,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 118.747,
+              "y": 273.042,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 282.12,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 176.08,
+              "height": 62.667,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-home",
+              "x": 52.42,
+              "y": 45.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 359.58,
+              "y": 45.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 101.04,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 176.08,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": -226.262,
+              "y": 460.263,
+              "scaleX": 0.675,
+              "scaleY": 0.675,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 282.22,
+              "y": 590.358,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 14.42,
+              "y": 147.548,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "landscape1": {
+          "viewport": {
+            "width": 915,
+            "height": 412
+          },
+          "mode": "PHONE_LANDSCAPE_SHORT",
+          "layout": {
+            "safe": {
+              "top": 14.420000000000002,
+              "right": 14.420000000000002,
+              "bottom": 14.420000000000002,
+              "left": 14.420000000000002
+            },
+            "headerY": 40.42,
+            "statusY": 40.42,
+            "taskCard": {
+              "x": 14.420000000000002,
+              "y": 97.42,
+              "width": 256.20000000000005,
+              "height": 300.15999999999997
+            },
+            "progress": {
+              "x": 667.7700000000001,
+              "y": 149.42000000000002,
+              "width": 220,
+              "height": 166.66666666666666,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 13.2,
+                "stepRadius": 14.3,
+                "borderRadius": 18.700000000000003
+              }
+            }
+          },
+          "metrics": {
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 187.712,
+              "y": 266.991,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 117.469,
+              "height": 58.339,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 68.989,
+              "y": 129.905,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 187.212,
+              "y": 190.362,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 187.212,
+              "y": 129.905,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 68.989,
+              "y": 190.362,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 187.712,
+              "y": 266.991,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 117.469,
+              "height": 58.339,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-header",
+              "x": 457.5,
+              "y": 40.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 181,
+              "height": 28,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "game-home",
+              "x": 52.42,
+              "y": 40.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 862.58,
+              "y": 40.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 68.489,
+              "y": 266.991,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 117.469,
+              "height": 58.339,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": 91.278,
+              "y": 0,
+              "scaleX": 0.572,
+              "scaleY": 0.572,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 667.77,
+              "y": 149.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 14.42,
+              "y": 97.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "portrait2": {
+          "viewport": {
+            "width": 412,
+            "height": 915
+          },
+          "mode": "PHONE_PORTRAIT_TALL",
+          "layout": {
+            "safe": {
+              "top": 14.420000000000002,
+              "right": 14.420000000000002,
+              "bottom": 14.420000000000002,
+              "left": 14.420000000000002
+            },
+            "headerY": 45.42,
+            "statusY": 100.48400000000001,
+            "taskCard": {
+              "x": 14.420000000000016,
+              "y": 147.548,
+              "width": 383.15999999999997,
+              "height": 430
+            },
+            "progress": {
+              "x": 282.21999999999997,
+              "y": 590.358,
+              "width": 115.36000000000001,
+              "height": 164,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 11,
+                "stepRadius": 14,
+                "borderRadius": 16
+              }
+            }
+          },
+          "metrics": {
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 282.12,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 176.08,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.068,
+              "scaleY": 0.068,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 118.747,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 264.413,
+              "y": 273.042,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 264.413,
+              "y": 164.792,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 118.747,
+              "y": 273.042,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 142.667,
+              "height": 105.25,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 282.12,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 176.08,
+              "height": 62.667,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-home",
+              "x": 52.42,
+              "y": 45.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 359.58,
+              "y": 45.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 68,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 101.04,
+              "y": 394.667,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 176.08,
+              "height": 62.667,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": -226.262,
+              "y": 460.263,
+              "scaleX": 0.675,
+              "scaleY": 0.675,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 282.22,
+              "y": 590.358,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 14.42,
+              "y": 147.548,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "landscape2": {
+          "viewport": {
+            "width": 915,
+            "height": 412
+          },
+          "mode": "PHONE_LANDSCAPE_SHORT",
+          "layout": {
+            "safe": {
+              "top": 14.420000000000002,
+              "right": 14.420000000000002,
+              "bottom": 14.420000000000002,
+              "left": 14.420000000000002
+            },
+            "headerY": 40.42,
+            "statusY": 40.42,
+            "taskCard": {
+              "x": 14.420000000000002,
+              "y": 97.42,
+              "width": 256.20000000000005,
+              "height": 300.15999999999997
+            },
+            "progress": {
+              "x": 667.7700000000001,
+              "y": 149.42000000000002,
+              "width": 220,
+              "height": 166.66666666666666,
+              "horizontal": false,
+              "sizing": {
+                "titleFontSize": 13.2,
+                "stepRadius": 14.3,
+                "borderRadius": 18.700000000000003
+              }
+            }
+          },
+          "metrics": {
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            }
+          },
+          "resizeListeners": 16,
+          "geometry": [
+            {
+              "name": "check-button",
+              "x": 187.712,
+              "y": 266.991,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 117.469,
+              "height": 58.339,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0.032,
+              "scaleY": 0.032,
+              "width": 1254,
+              "height": 1254,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "choice-odd-apple",
+              "x": 68.989,
+              "y": 129.905,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-ball",
+              "x": 187.212,
+              "y": 190.362,
+              "scaleX": 1.045,
+              "scaleY": 1.045,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-banana",
+              "x": 187.212,
+              "y": 129.905,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "choice-odd-carrot",
+              "x": 68.989,
+              "y": 190.362,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 118.469,
+              "height": 60.702,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "continue-button",
+              "x": 187.712,
+              "y": 266.991,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 117.469,
+              "height": 58.339,
+              "visible": false,
+              "input": true
+            },
+            {
+              "name": "game-header",
+              "x": 457.5,
+              "y": 40.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 181,
+              "height": 28,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "game-home",
+              "x": 52.42,
+              "y": 40.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "game-sound",
+              "x": 862.58,
+              "y": 40.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 84,
+              "height": 60,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "hint-button",
+              "x": 68.489,
+              "y": 266.991,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 117.469,
+              "height": 58.339,
+              "visible": true,
+              "input": true
+            },
+            {
+              "name": "logical-actors",
+              "x": 91.278,
+              "y": 0,
+              "scaleX": 0.572,
+              "scaleY": 0.572,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "progress-panel",
+              "x": 667.77,
+              "y": 149.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            },
+            {
+              "name": "task-card",
+              "x": 14.42,
+              "y": 97.42,
+              "scaleX": 1,
+              "scaleY": 1,
+              "width": 0,
+              "height": 0,
+              "visible": true,
+              "input": false
+            }
+          ]
+        },
+        "oddSelection": "odd-ball",
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        },
+        "checks": {
+          "portraitDeterministic": true,
+          "landscapeDeterministic": true,
+          "portraitMetrics": true,
+          "landscapeMetrics": true,
+          "listenerStable": true,
+          "selectionPreserved": true,
+          "errors": true
+        }
+      }
+    ],
+    "checks": {
+      "390x844:portraitDeterministic": true,
+      "390x844:landscapeDeterministic": true,
+      "390x844:portraitMetrics": true,
+      "390x844:landscapeMetrics": true,
+      "390x844:listenerStable": true,
+      "390x844:selectionPreserved": true,
+      "390x844:errors": true,
+      "412x915:portraitDeterministic": true,
+      "412x915:landscapeDeterministic": true,
+      "412x915:portraitMetrics": true,
+      "412x915:landscapeMetrics": true,
+      "412x915:listenerStable": true,
+      "412x915:selectionPreserved": true,
+      "412x915:errors": true
+    }
+  },
+  "failures": []
+}

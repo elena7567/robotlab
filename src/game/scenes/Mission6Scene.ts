@@ -13,6 +13,7 @@ import { configureResponsiveCamera } from '../ui/responsiveCamera';
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
+import { CHILD_UI } from '../ui/childUi';
 
 const CORRECT_LINES = ['ЕСТЬ ЭНЕРГИЯ!', 'ТОЧНО!', 'ОТЛИЧНО!'] as const;
 
@@ -22,6 +23,7 @@ export class Mission6Scene extends Phaser.Scene {
   create(): void {
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
+    this.game.registry.set('responsiveLayout', layout);
     const portrait = layout.mode !== 'landscape';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const state = sessionState.snapshot;
@@ -41,38 +43,45 @@ export class Mission6Scene extends Phaser.Scene {
     const pairScale = portrait ? 0.17 : 0.19;
     const pairSpan = portrait ? 245 : 275;
     if (helper) helper.setPosition(640 - pairSpan / 2, 560).setScale(pairScale).setData({
-      baseX: 640 - pairSpan / 2, baseY: 560, groundedScale: pairScale,
+      baseX: 640 - pairSpan / 2, baseY: 560, groundedScale: pairScale, characterRole: 'HELPER',
     });
     const repaired = new RobotAssemblyPreview(this, 640 + pairSpan / 2, 560, 5, { scale: pairScale, blueprintAlpha: 0 })
       .setName('mission6-repaired-robot');
     repaired.setPowered(state.powerActivated);
+    repaired.setData('characterRole', 'HERO');
     actorLayer.add(repaired);
     const frame = configureResponsiveCamera(this, worldLayer, layout);
     actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
     this.add.rectangle(0, 0, width, height, 0x163852, portrait ? 0.12 : 0.05).setOrigin(0).setDepth(-1);
 
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
-    addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing);
+    addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing).setName('mission6-home');
     const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
     let soundControl: Phaser.GameObjects.Container;
     soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, layout.headerY, soundLabel(), () => {
       audioManager.toggleMuted();
       (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
-    }, UI_COLORS.green, iconSizing);
+    }, UI_COLORS.green, iconSizing).setName('mission6-sound');
     if (!portrait) {
       this.add.text(width / 2, layout.headerY, 'ОЖИВИ РОБОТА', {
         color: '#ffffff', fontFamily: UI_FONT, fontSize: `${layout.headerFontSize}px`, fontStyle: 'bold', stroke: '#31567a', strokeThickness: 5,
       }).setOrigin(0.5).setName('mission6-header');
     }
     const systemsX = portrait ? width / 2 : layout.progress.x + layout.progress.width / 2;
-    const systemsY = portrait ? layout.progress.y + 22 : layout.progress.y + 28;
+    const systemsY = portrait ? layout.statusY : layout.progress.y + 28;
     const systems = this.add.container(systemsX, systemsY).setName('systems-progress');
-    const systemsWidth = Math.min(portrait ? width - 128 : layout.progress.width, 270);
-    const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.94).fillRoundedRect(-systemsWidth / 2, -20, systemsWidth, 58, 16)
-      .lineStyle(2, 0x67e9f5, 0.85).strokeRoundedRect(-systemsWidth / 2, -20, systemsWidth, 58, 16);
-    const systemsLabel = this.add.text(0, -7, 'СИСТЕМЫ 1/4', { color: '#ffffff', fontFamily: UI_FONT, fontSize: `${portrait ? 14 : 17}px`, fontStyle: 'bold' }).setOrigin(0.5);
-    const energyLabel = this.add.text(0, 18, 'ЭНЕРГИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: `${portrait ? 12 : 14}px`, fontStyle: 'bold' }).setOrigin(0.5);
-    systems.add([systemsBody, systemsLabel, energyLabel]);
+    const systemsWidth = Math.min(portrait ? layout.headerZone.width : layout.progress.width, 270);
+    const systemsHeight = portrait ? 38 : 58;
+    const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.94).fillRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 14)
+      .lineStyle(2, 0x67e9f5, 0.85).strokeRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 14);
+    systems.add(portrait ? [
+      systemsBody,
+      this.add.text(0, 0, 'СИСТЕМЫ 1/4  •  ЭНЕРГИЯ', { color: '#ffffff', fontFamily: UI_FONT, fontSize: `${CHILD_UI.typography.statusMin}px`, fontStyle: 'bold' }).setOrigin(0.5),
+    ] : [
+      systemsBody,
+      this.add.text(0, -7, 'СИСТЕМЫ 1/4', { color: '#ffffff', fontFamily: UI_FONT, fontSize: '17px', fontStyle: 'bold' }).setOrigin(0.5),
+      this.add.text(0, 18, 'ЭНЕРГИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: '14px', fontStyle: 'bold' }).setOrigin(0.5),
+    ]);
 
     const dialogue = helper ? new RobotDialogue(this, helper, layout, {
       placement: 'above-robot',

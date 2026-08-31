@@ -16,6 +16,7 @@ import { audioManager } from '../audio/AudioManager';
 import { energyMechanic } from '../mechanics/energy';
 import { connectionsMechanic } from '../mechanics/connections';
 import { programmingMechanic } from '../mechanics/programming';
+import { oddOneOutMechanic } from '../mechanics/oddOneOut';
 
 const COMPLETE_ROBOT_SOURCE_HEIGHT = 1448;
 const COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX = 25;
@@ -26,6 +27,7 @@ export class StartScene extends Phaser.Scene {
     audioManager.startMusic();
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
+    this.game.registry.set('responsiveLayout', layout);
     const startLayout = createStartSceneLayout(layout);
     const portrait = layout.mode !== 'landscape';
     this.cameras.main.setBackgroundColor('#173b52');
@@ -45,7 +47,7 @@ export class StartScene extends Phaser.Scene {
       width / 2,
       startLayout.platformY + COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX * heroScale,
       'robot-complete',
-    ).setOrigin(0.5, 1).setScale(heroScale).setName('start-hero-robot');
+    ).setOrigin(0.5, 1).setScale(heroScale).setName('start-hero-robot').setData('characterRole', 'HERO');
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     if (!reducedMotion) {
       this.tweens.add({
@@ -66,7 +68,7 @@ export class StartScene extends Phaser.Scene {
       audioManager.toggleMuted();
       const label = soundControl.getAt(1) as Phaser.GameObjects.Text;
       label.setText(soundLabel());
-    }, undefined, { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize });
+    }, undefined, { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize }).setName('start-sound');
 
     const title = this.add.text(width / 2, startLayout.titleY, 'Почини робота', {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${startLayout.titleFontSize}px`, fontStyle: 'bold', align: 'center',
@@ -82,6 +84,7 @@ export class StartScene extends Phaser.Scene {
     const playButton = addControl(this, width / 2, startLayout.playY, 'Играть', () => {
       audioManager.stopMusic(180);
       sessionState.reset();
+      oddOneOutMechanic.reset();
       sequenceMechanic.reset();
       sizeComparisonMechanic.reset();
       shadowMatchingMechanic.reset();

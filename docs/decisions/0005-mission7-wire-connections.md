@@ -30,3 +30,9 @@ Mission 7 must add a touch-first color-port connection activity after Mission 6 
 - Portrait and tablet modes place the separated robots in a grounded row above the centered board. Ultra-narrow portrait compresses only board spacing; socket visuals retain their size and effective targets remain at least 48 px.
 - Robot placement changes only actor position and uniform scale. The helper grounding reset contract, modular robot part layout, shoulder anchors, and arm transforms remain unchanged.
 - Home, sound, systems, board, and hint surfaces use explicit responsive gaps so no panels appear attached or compete with the connection workspace.
+
+## Stage 8.3B touch-validation amendment
+
+- Mission 7 remains a unified Phaser Pointer interaction: pointer down starts one identified wire, pointer move updates only that pointer, and pointer up or pointer-up-outside resolves or cancels it.
+- Socket hit areas have a 64 px minimum diameter. When enlarged target areas overlap, release resolves to the nearest eligible target rather than iteration order.
+- Touch capture, gesture suppression, and text-selection suppression are scoped to the game host/canvas. Wrong-target, empty-space, and outside releases clear the temporary wire; completed source and target sockets remain locked.

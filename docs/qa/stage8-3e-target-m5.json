@@ -1,0 +1,4305 @@
+{
+  "matrix": [
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 360,
+          "height": 600
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 113.53666666666666,
+          "width": 334.79999999999995,
+          "height": 311.8633333333333,
+          "right": 347.4,
+          "bottom": 425.4
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 167,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 12.600000000000023,
+              "y": 113.53666666666666,
+              "width": 334.79999999999995,
+              "height": 311.8633333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 98.80067941882828,
+            "y": 430.20145008484553,
+            "width": 161.05237496848235,
+            "height": 166.60543869391256,
+            "right": 259.85305438731064,
+            "bottom": 596.8068887787581
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 30.120417887369808,
+              "y": 221.96750956217448,
+              "width": 63.35541666666663,
+              "height": 63.355416666666656,
+              "right": 93.47583455403644,
+              "bottom": 285.32292622884114
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 108.92167215983075,
+              "y": 221.96750956217448,
+              "width": 63.35541666666664,
+              "height": 63.355416666666656,
+              "right": 172.2770888264974,
+              "bottom": 285.32292622884114
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 187.72292643229167,
+              "y": 221.96750956217448,
+              "width": 63.355416666666656,
+              "height": 63.355416666666656,
+              "right": 251.07834309895833,
+              "bottom": 285.32292622884114
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 266.52416544596355,
+              "y": 221.96750956217448,
+              "width": 63.355416666666656,
+              "height": 63.355416666666656,
+              "right": 329.8795821126302,
+              "bottom": 285.32292622884114
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 30.120417887369808,
+              "y": 298.9179337565104,
+              "width": 63.35541666666663,
+              "height": 63.355416666666656,
+              "right": 93.47583455403644,
+              "bottom": 362.2733504231771
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 108.92167215983075,
+              "y": 298.9179337565104,
+              "width": 63.35541666666664,
+              "height": 63.355416666666656,
+              "right": 172.2770888264974,
+              "bottom": 362.2733504231771
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 187.72292643229167,
+              "y": 298.9179337565104,
+              "width": 63.355416666666656,
+              "height": 63.355416666666656,
+              "right": 251.07834309895833,
+              "bottom": 362.2733504231771
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 266.52416544596355,
+              "y": 298.9179337565104,
+              "width": 63.355416666666656,
+              "height": 63.355416666666656,
+              "right": 329.8795821126302,
+              "bottom": 362.2733504231771
+            },
+            "hitWidth": 71.20624999999998,
+            "hitHeight": 69.35541666666664
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 227.49700927734375,
+              "y": 383.336669921875,
+              "width": 72,
+              "height": 16,
+              "right": 299.49700927734375,
+              "bottom": 399.336669921875
+            },
+            "hitWidth": 148.61599999999999,
+            "hitHeight": 58.126666666666665
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "360x640",
+      "width": 360,
+      "height": 640,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 113.05,
+          "width": 334.79999999999995,
+          "height": 341.54999999999995,
+          "right": 347.4,
+          "bottom": 454.59999999999997
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 167,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 12.600000000000023,
+              "y": 113.05,
+              "width": 334.79999999999995,
+              "height": 341.54999999999995
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 98.80067941882828,
+            "y": 459.4011055136243,
+            "width": 161.05237496848235,
+            "height": 166.60579547216503,
+            "right": 259.85305438731064,
+            "bottom": 626.0069009857893
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 29.925001525878912,
+              "y": 232.25000610351563,
+              "width": 64.29374999999999,
+              "height": 64.29375000000002,
+              "right": 94.2187515258789,
+              "bottom": 296.54375610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 108.54375305175782,
+              "y": 232.25000610351563,
+              "width": 64.29374999999999,
+              "height": 64.29375000000002,
+              "right": 172.8375030517578,
+              "bottom": 296.54375610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 187.16251220703126,
+              "y": 232.25000610351563,
+              "width": 64.29374999999999,
+              "height": 64.29375000000002,
+              "right": 251.45626220703124,
+              "bottom": 296.54375610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 265.7812561035156,
+              "y": 232.25000610351563,
+              "width": 64.29375000000005,
+              "height": 64.29375000000002,
+              "right": 330.07500610351565,
+              "bottom": 296.54375610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 29.925001525878912,
+              "y": 321.0937561035156,
+              "width": 64.29374999999999,
+              "height": 64.29375000000005,
+              "right": 94.2187515258789,
+              "bottom": 385.38750610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 108.54375305175782,
+              "y": 321.0937561035156,
+              "width": 64.29374999999999,
+              "height": 64.29375000000005,
+              "right": 172.8375030517578,
+              "bottom": 385.38750610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 187.16251220703126,
+              "y": 321.0937561035156,
+              "width": 64.29374999999999,
+              "height": 64.29375000000005,
+              "right": 251.45626220703124,
+              "bottom": 385.38750610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 265.7812561035156,
+              "y": 321.0937561035156,
+              "width": 64.29375000000005,
+              "height": 64.29375000000005,
+              "right": 330.07500610351565,
+              "bottom": 385.38750610351565
+            },
+            "hitWidth": 70.29374999999999,
+            "hitHeight": 80.51874999999997
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 225.26699829101562,
+              "y": 411.5500183105469,
+              "width": 75,
+              "height": 17,
+              "right": 300.2669982910156,
+              "bottom": 428.5500183105469
+            },
+            "hitWidth": 148.61599999999999,
+            "hitHeight": 59.1
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x650",
+      "width": 390,
+      "height": 650,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 650
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 115.19266666666667,
+          "width": 362.70000000000005,
+          "height": 345.6573333333333,
+          "right": 376.35,
+          "bottom": 460.85
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 173,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.649999999999977,
+              "y": 115.19266666666667,
+              "width": 362.70000000000005,
+              "height": 345.6573333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 110.55270701158813,
+            "y": 465.8434022639782,
+            "width": 167.4944691421055,
+            "height": 173.26977816412148,
+            "right": 278.0471761536936,
+            "bottom": 639.1131804280997
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 31.07599731445312,
+              "y": 232.6558312988281,
+              "width": 71.14250000000001,
+              "height": 71.14250000000004,
+              "right": 102.21849731445313,
+              "bottom": 303.79833129882815
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 116.64449401855468,
+              "y": 232.6558312988281,
+              "width": 71.14250000000003,
+              "height": 71.14250000000004,
+              "right": 187.7869940185547,
+              "bottom": 303.79833129882815
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 202.21299072265623,
+              "y": 232.6558312988281,
+              "width": 71.14250000000004,
+              "height": 71.14250000000004,
+              "right": 273.35549072265627,
+              "bottom": 303.79833129882815
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 287.78150268554685,
+              "y": 232.6558312988281,
+              "width": 71.14250000000004,
+              "height": 71.14250000000004,
+              "right": 358.9240026855469,
+              "bottom": 303.79833129882815
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 31.07599731445312,
+              "y": 323.0566796875,
+              "width": 71.14250000000001,
+              "height": 71.14250000000004,
+              "right": 102.21849731445313,
+              "bottom": 394.1991796875
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 116.64449401855468,
+              "y": 323.0566796875,
+              "width": 71.14250000000003,
+              "height": 71.14250000000004,
+              "right": 187.7869940185547,
+              "bottom": 394.1991796875
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 202.21299072265623,
+              "y": 323.0566796875,
+              "width": 71.14250000000004,
+              "height": 71.14250000000004,
+              "right": 273.35549072265627,
+              "bottom": 394.1991796875
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 287.78150268554685,
+              "y": 323.0566796875,
+              "width": 71.14250000000004,
+              "height": 71.14250000000004,
+              "right": 358.9240026855469,
+              "bottom": 394.1991796875
+            },
+            "hitWidth": 77.14250000000001,
+            "hitHeight": 81.97483333333335
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 248.92398071289062,
+              "y": 417.732666015625,
+              "width": 76,
+              "height": 17,
+              "right": 324.9239807128906,
+              "bottom": 434.732666015625
+            },
+            "hitWidth": 158,
+            "hitHeight": 59.23466666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x700",
+      "width": 390,
+      "height": 700,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 700
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 115.36766666666666,
+          "width": 362.70000000000005,
+          "height": 395.9823333333333,
+          "right": 376.35,
+          "bottom": 511.34999999999997
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 30.950000762939453,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 30.950000762939453,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.649999999999977,
+              "y": 115.36766666666666,
+              "width": 362.70000000000005,
+              "height": 395.9823333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.51897147686158,
+            "y": 468.5105206118327,
+            "width": 223.09714727772712,
+            "height": 230.79208583507716,
+            "right": 305.6161187545887,
+            "bottom": 699.3026064469099
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 30.950000762939453,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 48.95000076293945
+            },
+            "hitWidth": 84,
+            "hitHeight": 60.5
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 30.950000762939453,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 48.95000076293945
+            },
+            "hitWidth": 84,
+            "hitHeight": 60.5
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 32.31350036621093,
+              "y": 254.2808312988281,
+              "width": 69.59562500000001,
+              "height": 69.59562500000004,
+              "right": 101.90912536621094,
+              "bottom": 323.87645629882815
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 117.5726251220703,
+              "y": 254.2808312988281,
+              "width": 69.59562500000003,
+              "height": 69.59562500000004,
+              "right": 187.16825012207033,
+              "bottom": 323.87645629882815
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 202.83174987792967,
+              "y": 254.2808312988281,
+              "width": 69.59562500000004,
+              "height": 69.59562500000004,
+              "right": 272.4273748779297,
+              "bottom": 323.87645629882815
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 288.090859375,
+              "y": 254.2808312988281,
+              "width": 69.59562500000004,
+              "height": 69.59562500000004,
+              "right": 357.686484375,
+              "bottom": 323.87645629882815
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 32.31350036621093,
+              "y": 363.75977416992185,
+              "width": 69.59562500000001,
+              "height": 69.59562500000004,
+              "right": 101.90912536621094,
+              "bottom": 433.3553991699219
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 117.5726251220703,
+              "y": 363.75977416992185,
+              "width": 69.59562500000003,
+              "height": 69.59562500000004,
+              "right": 187.16825012207033,
+              "bottom": 433.3553991699219
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 202.83174987792967,
+              "y": 363.75977416992185,
+              "width": 69.59562500000004,
+              "height": 69.59562500000004,
+              "right": 272.4273748779297,
+              "bottom": 433.3553991699219
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 288.090859375,
+              "y": 363.75977416992185,
+              "width": 69.59562500000004,
+              "height": 69.59562500000004,
+              "right": 357.686484375,
+              "bottom": 433.3553991699219
+            },
+            "hitWidth": 75.59562500000001,
+            "hitHeight": 99.81545833333334
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 245.18649291992188,
+              "y": 466.90765380859375,
+              "width": 81,
+              "height": 18,
+              "right": 326.1864929199219,
+              "bottom": 484.90765380859375
+            },
+            "hitWidth": 158,
+            "hitHeight": 60.88466666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 125.47666666666667,
+          "width": 362.70000000000005,
+          "height": 450.3333333333333,
+          "right": 376.35,
+          "bottom": 575.81
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.51897147686158,
+            "y": 596.110074672041,
+            "width": 223.09714727772712,
+            "height": 230.79067630611883,
+            "right": 305.6161187545887,
+            "bottom": 826.9007509781599
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 52.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 52.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 33.65000305175781,
+              "y": 287.430810546875,
+              "width": 68.67500000000001,
+              "height": 68.67499999999995,
+              "right": 102.32500305175782,
+              "bottom": 356.105810546875
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 118.32499084472656,
+              "y": 287.430810546875,
+              "width": 68.67500000000001,
+              "height": 68.67499999999995,
+              "right": 186.99999084472657,
+              "bottom": 356.105810546875
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 202.99999389648437,
+              "y": 287.430810546875,
+              "width": 68.67499999999998,
+              "height": 68.67499999999995,
+              "right": 271.67499389648435,
+              "bottom": 356.105810546875
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 287.67498168945315,
+              "y": 287.430810546875,
+              "width": 68.67499999999995,
+              "height": 68.67499999999995,
+              "right": 356.3499816894531,
+              "bottom": 356.105810546875
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 33.65000305175781,
+              "y": 417.0141540527344,
+              "width": 68.67500000000001,
+              "height": 68.67499999999995,
+              "right": 102.32500305175782,
+              "bottom": 485.68915405273435
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 118.32499084472656,
+              "y": 417.0141540527344,
+              "width": 68.67500000000001,
+              "height": 68.67499999999995,
+              "right": 186.99999084472657,
+              "bottom": 485.68915405273435
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 202.99999389648437,
+              "y": 417.0141540527344,
+              "width": 68.67499999999998,
+              "height": 68.67499999999995,
+              "right": 271.67499389648435,
+              "bottom": 485.68915405273435
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 287.67498168945315,
+              "y": 417.0141540527344,
+              "width": 68.67499999999995,
+              "height": 68.67499999999995,
+              "right": 356.3499816894531,
+              "bottom": 485.68915405273435
+            },
+            "hitWidth": 74.67500000000001,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 240.85000610351562,
+              "y": 529.9766845703125,
+              "width": 87,
+              "height": 19,
+              "right": 327.8500061035156,
+              "bottom": 548.9766845703125
+            },
+            "hitWidth": 158,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "393x852",
+      "width": 393,
+      "height": 852,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 13.754999999999995,
+          "y": 125.71366666666667,
+          "width": 365.49,
+          "height": 450.3333333333333,
+          "right": 379.245,
+          "bottom": 576.047
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 233,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.755001068115234,
+              "y": 34.755001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 317.2449951171875,
+              "y": 34.755001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.754999999999995,
+              "y": 125.71366666666667,
+              "width": 365.49,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 83.1537447746505,
+            "y": 596.5039063640077,
+            "width": 224.8132856855868,
+            "height": 232.56531486535482,
+            "right": 307.9670304602373,
+            "bottom": 829.0692212293625
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.755001068115234,
+              "y": 34.755001068115234,
+              "width": 66,
+              "height": 18,
+              "right": 84.75500106811523,
+              "bottom": 52.755001068115234
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 317.2449951171875,
+              "y": 34.755001068115234,
+              "width": 48,
+              "height": 18,
+              "right": 365.2449951171875,
+              "bottom": 52.755001068115234
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 33.75499603271484,
+              "y": 287.3190600585938,
+              "width": 69.3725,
+              "height": 69.37249999999995,
+              "right": 103.12749603271484,
+              "bottom": 356.6915600585937
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 119.12750122070312,
+              "y": 287.3190600585938,
+              "width": 69.3725,
+              "height": 69.37249999999995,
+              "right": 188.50000122070313,
+              "bottom": 356.6915600585937
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 204.49999877929687,
+              "y": 287.3190600585938,
+              "width": 69.37249999999997,
+              "height": 69.37249999999995,
+              "right": 273.87249877929685,
+              "bottom": 356.6915600585937
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 289.87249633789065,
+              "y": 287.3190600585938,
+              "width": 69.37249999999995,
+              "height": 69.37249999999995,
+              "right": 359.2449963378906,
+              "bottom": 356.6915600585937
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 33.75499603271484,
+              "y": 416.90240356445315,
+              "width": 69.3725,
+              "height": 69.37249999999995,
+              "right": 103.12749603271484,
+              "bottom": 486.2749035644531
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 119.12750122070312,
+              "y": 416.90240356445315,
+              "width": 69.3725,
+              "height": 69.37249999999995,
+              "right": 188.50000122070313,
+              "bottom": 486.2749035644531
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 204.49999877929687,
+              "y": 416.90240356445315,
+              "width": 69.37249999999997,
+              "height": 69.37249999999995,
+              "right": 273.87249877929685,
+              "bottom": 486.2749035644531
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 289.87249633789065,
+              "y": 416.90240356445315,
+              "width": 69.37249999999995,
+              "height": 69.37249999999995,
+              "right": 359.2449963378906,
+              "bottom": 486.2749035644531
+            },
+            "hitWidth": 75.3725,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 243.7449951171875,
+              "y": 530.213623046875,
+              "width": 87,
+              "height": 19,
+              "right": 330.7449951171875,
+              "bottom": 549.213623046875
+            },
+            "hitWidth": 158,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "412x915",
+      "width": 412,
+      "height": 915,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 14.420000000000016,
+          "y": 127.21466666666667,
+          "width": 383.15999999999997,
+          "height": 450.3333333333333,
+          "right": 397.58,
+          "bottom": 577.548
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 244,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 19.419998168945312,
+              "y": 35.41999816894531,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 335.5799865722656,
+              "y": 35.41999816894531,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 14.420000000000016,
+              "y": 127.21466666666667,
+              "width": 383.15999999999997,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 87.17389149664136,
+            "y": 598.9937522254876,
+            "width": 235.68210726095617,
+            "height": 243.80909257710664,
+            "right": 322.85599875759755,
+            "bottom": 842.8028448025942
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 19.419998168945312,
+              "y": 35.41999816894531,
+              "width": 66,
+              "height": 18,
+              "right": 85.41999816894531,
+              "bottom": 53.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 335.5799865722656,
+              "y": 35.41999816894531,
+              "width": 48,
+              "height": 18,
+              "right": 383.5799865722656,
+              "bottom": 53.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 34.420002441406254,
+              "y": 286.61134765625,
+              "width": 73.78999999999999,
+              "height": 73.78999999999996,
+              "right": 108.21000244140625,
+              "bottom": 360.40134765625
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 124.20999572753907,
+              "y": 286.61134765625,
+              "width": 73.78999999999998,
+              "height": 73.78999999999996,
+              "right": 197.99999572753904,
+              "bottom": 360.40134765625
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 214.00000427246096,
+              "y": 286.61134765625,
+              "width": 73.78999999999996,
+              "height": 73.78999999999996,
+              "right": 287.7900042724609,
+              "bottom": 360.40134765625
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 303.7900280761719,
+              "y": 286.61134765625,
+              "width": 73.78999999999996,
+              "height": 73.78999999999996,
+              "right": 377.58002807617186,
+              "bottom": 360.40134765625
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 34.420002441406254,
+              "y": 416.19466064453127,
+              "width": 73.78999999999999,
+              "height": 73.78999999999996,
+              "right": 108.21000244140625,
+              "bottom": 489.98466064453123
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 124.20999572753907,
+              "y": 416.19466064453127,
+              "width": 73.78999999999998,
+              "height": 73.78999999999996,
+              "right": 197.99999572753904,
+              "bottom": 489.98466064453123
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 214.00000427246096,
+              "y": 416.19466064453127,
+              "width": 73.78999999999996,
+              "height": 73.78999999999996,
+              "right": 287.7900042724609,
+              "bottom": 489.98466064453123
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 303.7900280761719,
+              "y": 416.19466064453127,
+              "width": 73.78999999999996,
+              "height": 73.78999999999996,
+              "right": 377.58002807617186,
+              "bottom": 489.98466064453123
+            },
+            "hitWidth": 79.78999999999999,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 262.08001708984375,
+              "y": 531.7146606445312,
+              "width": 87,
+              "height": 19,
+              "right": 349.08001708984375,
+              "bottom": 550.7146606445312
+            },
+            "hitWidth": 158,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "430x932",
+      "width": 430,
+      "height": 932,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 15.050000000000011,
+          "y": 128.63666666666663,
+          "width": 399.9,
+          "height": 450.3333333333333,
+          "right": 414.95,
+          "bottom": 578.9699999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 254,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 20.049999237060547,
+              "y": 36.04999923706055,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 352.95001220703125,
+              "y": 36.04999923706055,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 15.050000000000011,
+              "y": 128.63666666666663,
+              "width": 399.9,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 90.98246053097613,
+            "y": 601.3522877583192,
+            "width": 245.97889645230782,
+            "height": 254.46131676183472,
+            "right": 336.96135698328396,
+            "bottom": 855.813604520154
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 20.049999237060547,
+              "y": 36.04999923706055,
+              "width": 66,
+              "height": 18,
+              "right": 86.04999923706055,
+              "bottom": 54.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 352.95001220703125,
+              "y": 36.04999923706055,
+              "width": 48,
+              "height": 18,
+              "right": 400.95001220703125,
+              "bottom": 54.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 35.0499984741211,
+              "y": 285.9408447265625,
+              "width": 77.975,
+              "height": 77.97500000000002,
+              "right": 113.02499847412109,
+              "bottom": 363.9158447265625
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 129.02499694824218,
+              "y": 285.9408447265625,
+              "width": 77.97500000000002,
+              "height": 77.97500000000002,
+              "right": 206.9999969482422,
+              "bottom": 363.9158447265625
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 222.99998779296874,
+              "y": 285.9408447265625,
+              "width": 77.97500000000002,
+              "height": 77.97500000000002,
+              "right": 300.97498779296876,
+              "bottom": 363.9158447265625
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 316.97499389648436,
+              "y": 285.9408447265625,
+              "width": 77.97500000000002,
+              "height": 77.97500000000002,
+              "right": 394.9499938964844,
+              "bottom": 363.9158447265625
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 35.0499984741211,
+              "y": 415.52415771484374,
+              "width": 77.975,
+              "height": 77.97500000000002,
+              "right": 113.02499847412109,
+              "bottom": 493.49915771484376
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 129.02499694824218,
+              "y": 415.52415771484374,
+              "width": 77.97500000000002,
+              "height": 77.97500000000002,
+              "right": 206.9999969482422,
+              "bottom": 493.49915771484376
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 222.99998779296874,
+              "y": 415.52415771484374,
+              "width": 77.97500000000002,
+              "height": 77.97500000000002,
+              "right": 300.97498779296876,
+              "bottom": 493.49915771484376
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 316.97499389648436,
+              "y": 415.52415771484374,
+              "width": 77.97500000000002,
+              "height": 77.97500000000002,
+              "right": 394.9499938964844,
+              "bottom": 493.49915771484376
+            },
+            "hitWidth": 83.975,
+            "hitHeight": 119.58333333333334
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 279.4499816894531,
+              "y": 533.1366577148438,
+              "width": 87,
+              "height": 19,
+              "right": 366.4499816894531,
+              "bottom": 552.1366577148438
+            },
+            "hitWidth": 158,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "740x360",
+      "width": 740,
+      "height": 360,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 740,
+          "height": 360
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 12.600000000000001,
+          "y": 78.23666666666666,
+          "width": 210,
+          "height": 269.1633333333333,
+          "right": 222.6,
+          "bottom": 347.4
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 180,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 665.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 279.5,
+              "y": 24.6,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "memory-task-card",
+              "x": 12.600000000000001,
+              "y": 78.23666666666666,
+              "width": 210,
+              "height": 269.1633333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 282.03407023707797,
+            "y": 102.70055260291406,
+            "width": 174.4734044968639,
+            "height": 180.49027304296186,
+            "right": 456.5074747339419,
+            "bottom": 283.1908256458759
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 665.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 713.4000244140625,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 28.144999694824218,
+              "y": 184.9795715332031,
+              "width": 35.318749999999994,
+              "height": 35.31875000000002,
+              "right": 63.463749694824216,
+              "bottom": 220.29832153320314
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 76.00874633789063,
+              "y": 184.9795715332031,
+              "width": 35.318749999999994,
+              "height": 35.31875000000002,
+              "right": 111.32749633789062,
+              "bottom": 220.29832153320314
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 123.87250061035157,
+              "y": 184.9795715332031,
+              "width": 35.31875000000001,
+              "height": 35.31875000000002,
+              "right": 159.19125061035157,
+              "bottom": 220.29832153320314
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 171.7362548828125,
+              "y": 184.9795715332031,
+              "width": 35.31875000000002,
+              "height": 35.31875000000002,
+              "right": 207.0550048828125,
+              "bottom": 220.29832153320314
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 28.144999694824218,
+              "y": 244.5175048828125,
+              "width": 35.318749999999994,
+              "height": 35.31875000000002,
+              "right": 63.463749694824216,
+              "bottom": 279.8362548828125
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 76.00874633789063,
+              "y": 244.5175048828125,
+              "width": 35.318749999999994,
+              "height": 35.31875000000002,
+              "right": 111.32749633789062,
+              "bottom": 279.8362548828125
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 123.87250061035157,
+              "y": 244.5175048828125,
+              "width": 35.31875000000001,
+              "height": 35.31875000000002,
+              "right": 159.19125061035157,
+              "bottom": 279.8362548828125
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 171.7362548828125,
+              "y": 244.5175048828125,
+              "width": 35.31875000000002,
+              "height": 35.31875000000002,
+              "right": 207.0550048828125,
+              "bottom": 279.8362548828125
+            },
+            "hitWidth": 48,
+            "hitHeight": 52.992916666666666
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 131.9550018310547,
+              "y": 306.0366516113281,
+              "width": 68,
+              "height": 16,
+              "right": 199.9550018310547,
+              "bottom": 322.0366516113281
+            },
+            "hitWidth": 96.2,
+            "hitHeight": 56.72666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 13.650000000000002,
+          "y": 78.82166666666667,
+          "width": 236.32000000000002,
+          "height": 297.52833333333336,
+          "right": 249.97000000000003,
+          "bottom": 376.35
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 196,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.650000000000002,
+              "y": 78.82166666666667,
+              "width": 236.32000000000002,
+              "height": 297.52833333333336
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 326.7035743568065,
+            "y": 111.259656980051,
+            "width": 189.01285830958648,
+            "height": 195.53041437171558,
+            "right": 515.716432666393,
+            "bottom": 306.7900713517666
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 816.3499755859375,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 29.892499694824217,
+              "y": 193.14395690917968,
+              "width": 41.02687500000001,
+              "height": 41.02687500000002,
+              "right": 70.91937469482423,
+              "bottom": 234.1708319091797
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 84.16187835693358,
+              "y": 193.14395690917968,
+              "width": 41.02687500000002,
+              "height": 41.02687500000002,
+              "right": 125.1887533569336,
+              "bottom": 234.1708319091797
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 138.43124938964843,
+              "y": 193.14395690917968,
+              "width": 41.02687500000002,
+              "height": 41.02687500000002,
+              "right": 179.45812438964845,
+              "bottom": 234.1708319091797
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 192.70061279296874,
+              "y": 193.14395690917968,
+              "width": 41.02687500000002,
+              "height": 41.02687500000002,
+              "right": 233.72748779296876,
+              "bottom": 234.1708319091797
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 29.892499694824217,
+              "y": 264.24873901367187,
+              "width": 41.02687500000001,
+              "height": 41.02687500000002,
+              "right": 70.91937469482423,
+              "bottom": 305.2756140136719
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 84.16187835693358,
+              "y": 264.24873901367187,
+              "width": 41.02687500000002,
+              "height": 41.02687500000002,
+              "right": 125.1887533569336,
+              "bottom": 305.2756140136719
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 138.43124938964843,
+              "y": 264.24873901367187,
+              "width": 41.02687500000002,
+              "height": 41.02687500000002,
+              "right": 179.45812438964845,
+              "bottom": 305.2756140136719
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 192.70061279296874,
+              "y": 264.24873901367187,
+              "width": 41.02687500000002,
+              "height": 41.02687500000002,
+              "right": 233.72748779296876,
+              "bottom": 305.2756140136719
+            },
+            "hitWidth": 48,
+            "hitHeight": 63.86229166666669
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 151.6002960205078,
+              "y": 334.52166748046875,
+              "width": 71,
+              "height": 16,
+              "right": 222.6002960205078,
+              "bottom": 350.52166748046875
+            },
+            "hitWidth": 107.2544,
+            "hitHeight": 57.656666666666666
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "932x430",
+      "width": 932,
+      "height": 430,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 932,
+          "height": 430
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 15.05,
+          "y": 79.60166666666666,
+          "width": 260.96000000000004,
+          "height": 335.3483333333333,
+          "right": 276.01000000000005,
+          "bottom": 414.94999999999993
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 216,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 20.049999237060547,
+              "y": 31.049999237060547,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 854.9500122070312,
+              "y": 31.049999237060547,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 375.5,
+              "y": 27.049999999999997,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "memory-task-card",
+              "x": 15.05,
+              "y": 79.60166666666666,
+              "width": 260.96000000000004,
+              "height": 335.3483333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 360.92959024994565,
+            "y": 122.6712012467033,
+            "width": 208.39877609864658,
+            "height": 215.58448997889693,
+            "right": 569.3283663485922,
+            "bottom": 338.25569122560023
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 20.049999237060547,
+              "y": 31.049999237060547,
+              "width": 66,
+              "height": 18,
+              "right": 86.04999923706055,
+              "bottom": 49.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 854.9500122070312,
+              "y": 31.049999237060547,
+              "width": 48,
+              "height": 18,
+              "right": 902.9500122070312,
+              "bottom": 49.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 32.22250030517578,
+              "y": 205.38834045410155,
+              "width": 46.02437500000001,
+              "height": 46.02437500000002,
+              "right": 78.24687530517579,
+              "bottom": 251.41271545410157
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 92.41937683105468,
+              "y": 205.38834045410155,
+              "width": 46.02437500000002,
+              "height": 46.02437500000002,
+              "right": 138.4437518310547,
+              "bottom": 251.41271545410157
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 152.61624572753905,
+              "y": 205.38834045410155,
+              "width": 46.02437500000002,
+              "height": 46.02437500000002,
+              "right": 198.64062072753907,
+              "bottom": 251.41271545410157
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 212.8131298828125,
+              "y": 205.38834045410155,
+              "width": 46.02437499999999,
+              "height": 46.02437500000002,
+              "right": 258.8375048828125,
+              "bottom": 251.41271545410157
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 32.22250030517578,
+              "y": 291.88106201171877,
+              "width": 46.02437500000001,
+              "height": 46.024374999999964,
+              "right": 78.24687530517579,
+              "bottom": 337.90543701171873
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 92.41937683105468,
+              "y": 291.88106201171877,
+              "width": 46.02437500000002,
+              "height": 46.024374999999964,
+              "right": 138.4437518310547,
+              "bottom": 337.90543701171873
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 152.61624572753905,
+              "y": 291.88106201171877,
+              "width": 46.02437500000002,
+              "height": 46.024374999999964,
+              "right": 198.64062072753907,
+              "bottom": 337.90543701171873
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 212.8131298828125,
+              "y": 291.88106201171877,
+              "width": 46.02437499999999,
+              "height": 46.024374999999964,
+              "right": 258.8375048828125,
+              "bottom": 337.90543701171873
+            },
+            "hitWidth": 52.024375000000006,
+            "hitHeight": 78.32020833333334
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 169.53590393066406,
+              "y": 372.00164794921875,
+              "width": 75,
+              "height": 17,
+              "right": 244.53590393066406,
+              "bottom": 389.00164794921875
+            },
+            "hitWidth": 117.60320000000002,
+            "hitHeight": 58.89666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844-ios-safe",
+      "width": 390,
+      "height": 844,
+      "safeInsets": {
+        "top": 47,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 173.00100000000003,
+          "width": 362.70000000000005,
+          "height": 418.34899999999993,
+          "right": 376.35,
+          "bottom": 591.3499999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 81.6500015258789,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 81.6500015258789,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.649999999999977,
+              "y": 173.00100000000003,
+              "width": 362.70000000000005,
+              "height": 418.34899999999993
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.51897147686158,
+            "y": 600.6119057267285,
+            "width": 223.09714727772712,
+            "height": 230.79067630611883,
+            "right": 305.6161187545887,
+            "bottom": 831.4025820328474
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 81.6500015258789,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 99.6500015258789
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 81.6500015258789,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 99.6500015258789
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 32.86349615478515,
+              "y": 321.4208310546875,
+              "width": 69.06825,
+              "height": 69.06825000000003,
+              "right": 101.93174615478516,
+              "bottom": 390.4890810546875
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 117.93174108886718,
+              "y": 321.4208310546875,
+              "width": 69.06825000000002,
+              "height": 69.06825000000003,
+              "right": 186.9999910888672,
+              "bottom": 390.4890810546875
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 202.99999365234373,
+              "y": 321.4208310546875,
+              "width": 69.06825000000003,
+              "height": 69.06825000000003,
+              "right": 272.06824365234377,
+              "bottom": 390.4890810546875
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 288.06823095703123,
+              "y": 321.4208310546875,
+              "width": 69.06825000000003,
+              "height": 69.06825000000003,
+              "right": 357.13648095703127,
+              "bottom": 390.4890810546875
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 32.86349615478515,
+              "y": 439.2721799316406,
+              "width": 69.06825,
+              "height": 69.06825000000003,
+              "right": 101.93174615478516,
+              "bottom": 508.34042993164064
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 117.93174108886718,
+              "y": 439.2721799316406,
+              "width": 69.06825000000002,
+              "height": 69.06825000000003,
+              "right": 186.9999910888672,
+              "bottom": 508.34042993164064
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 202.99999365234373,
+              "y": 439.2721799316406,
+              "width": 69.06825000000003,
+              "height": 69.06825000000003,
+              "right": 272.06824365234377,
+              "bottom": 508.34042993164064
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 288.06823095703123,
+              "y": 439.2721799316406,
+              "width": 69.06825000000003,
+              "height": 69.06825000000003,
+              "right": 357.13648095703127,
+              "bottom": 508.34042993164064
+            },
+            "hitWidth": 75.06825,
+            "hitHeight": 107.85137499999999
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 243.63650512695312,
+              "y": 546.041015625,
+              "width": 83,
+              "height": 19,
+              "right": 326.6365051269531,
+              "bottom": 565.041015625
+            },
+            "hitWidth": 158,
+            "hitHeight": 61.617999999999995
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390-ios-safe",
+      "width": 844,
+      "height": 390,
+      "safeInsets": {
+        "top": 0,
+        "right": 47,
+        "bottom": 21,
+        "left": 47
+      },
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 60.650000000000006,
+          "y": 79.17166666666667,
+          "width": 236.32000000000002,
+          "height": 276.1783333333334,
+          "right": 296.97,
+          "bottom": 355.3500000000001
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 196,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 65.6500015258789,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 721.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "memory-task-card",
+              "x": 60.650000000000006,
+              "y": 79.17166666666667,
+              "width": 236.32000000000002,
+              "height": 276.1783333333334
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 326.7035743568065,
+            "y": 111.25993714964767,
+            "width": 189.01285830958648,
+            "height": 195.53013420211892,
+            "right": 515.716432666393,
+            "bottom": 306.7900713517666
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 65.6500015258789,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 131.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 721.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 769.3499755859375,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 76.36749816894532,
+              "y": 185.31270385742187,
+              "width": 41.68312499999999,
+              "height": 41.68312500000002,
+              "right": 118.05062316894531,
+              "bottom": 226.99582885742188
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 130.76811767578124,
+              "y": 185.31270385742187,
+              "width": 41.68312500000002,
+              "height": 41.68312500000002,
+              "right": 172.45124267578126,
+              "bottom": 226.99582885742188
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 185.16875244140624,
+              "y": 185.31270385742187,
+              "width": 41.68312500000002,
+              "height": 41.68312500000002,
+              "right": 226.85187744140626,
+              "bottom": 226.99582885742188
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 239.56938720703124,
+              "y": 185.31270385742187,
+              "width": 41.68312500000002,
+              "height": 41.68312500000002,
+              "right": 281.25251220703126,
+              "bottom": 226.99582885742188
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 76.36749816894532,
+              "y": 247.71126342773437,
+              "width": 41.68312499999999,
+              "height": 41.68312500000002,
+              "right": 118.05062316894531,
+              "bottom": 289.3943884277344
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 130.76811767578124,
+              "y": 247.71126342773437,
+              "width": 41.68312500000002,
+              "height": 41.68312500000002,
+              "right": 172.45124267578126,
+              "bottom": 289.3943884277344
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 185.16875244140624,
+              "y": 247.71126342773437,
+              "width": 41.68312500000002,
+              "height": 41.68312500000002,
+              "right": 226.85187744140626,
+              "bottom": 289.3943884277344
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 239.56938720703124,
+              "y": 247.71126342773437,
+              "width": 41.68312500000002,
+              "height": 41.68312500000002,
+              "right": 281.25251220703126,
+              "bottom": 289.3943884277344
+            },
+            "hitWidth": 48,
+            "hitHeight": 55.68104166666668
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 200.12530517578125,
+              "y": 313.8716735839844,
+              "width": 69,
+              "height": 16,
+              "right": 269.12530517578125,
+              "bottom": 329.8716735839844
+            },
+            "hitWidth": 107.2544,
+            "hitHeight": 56.95666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "mode": "TABLET_PORTRAIT",
+        "mechanic": {
+          "x": 26.880000000000003,
+          "y": 107.716,
+          "width": 430,
+          "height": 440.00399999999996,
+          "right": 456.88,
+          "bottom": 547.7199999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 325,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 26.880000000000003,
+              "y": 107.716,
+              "width": 430,
+              "height": 440.00399999999996
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 225.6613347468746,
+            "y": 583.9644400030223,
+            "width": 314.0521115920325,
+            "height": 324.87902144369207,
+            "right": 539.713446338907,
+            "bottom": 908.8434614467144
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18,
+              "right": 97.87999725341797,
+              "bottom": 65.88000106811523
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18,
+              "right": 727.1199951171875,
+              "bottom": 65.88000106811523
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 157.4313798828125,
+              "y": 244.80299243164063,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 204.3286298828125,
+              "bottom": 291.7002424316406
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 279.4313798828125,
+              "y": 244.80299243164063,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 326.3286298828125,
+              "bottom": 291.7002424316406
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 157.4313798828125,
+              "y": 307.70023974609376,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 204.3286298828125,
+              "bottom": 354.59748974609374
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 279.4313798828125,
+              "y": 307.70023974609376,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 326.3286298828125,
+              "bottom": 354.59748974609374
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 157.4313798828125,
+              "y": 370.597517578125,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 204.3286298828125,
+              "bottom": 417.494767578125
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 279.4313798828125,
+              "y": 370.597517578125,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 326.3286298828125,
+              "bottom": 417.494767578125
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 157.4313798828125,
+              "y": 433.49476489257813,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 204.3286298828125,
+              "bottom": 480.3920148925781
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 279.4313798828125,
+              "y": 433.49476489257813,
+              "width": 46.897249999999985,
+              "height": 46.897249999999985,
+              "right": 326.3286298828125,
+              "bottom": 480.3920148925781
+            },
+            "hitWidth": 112,
+            "hitHeight": 52.897249999999985
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 322.1340026855469,
+              "y": 502.05596923828125,
+              "width": 86,
+              "height": 19,
+              "right": 408.1340026855469,
+              "bottom": 521.0559692382812
+            },
+            "hitWidth": 158,
+            "hitHeight": 62.328
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "mode": "TABLET_LANDSCAPE",
+        "mechanic": {
+          "x": 26.880000000000003,
+          "y": 102.06063999999999,
+          "width": 286.72,
+          "height": 386.28496000000007,
+          "right": 313.6,
+          "bottom": 488.34560000000005
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_LANDSCAPE",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 289,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 32.279998779296875,
+              "y": 46.832000732421875,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 934.719970703125,
+              "y": 46.832000732421875,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 421.5,
+              "y": 42.832,
+              "width": 181,
+              "height": 27.999999999999993
+            },
+            {
+              "name": "memory-task-card",
+              "x": 26.880000000000003,
+              "y": 102.06063999999999,
+              "width": 286.72,
+              "height": 386.28496000000007
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 371.2545082192576,
+            "y": 260.3227582049751,
+            "width": 279.1574554461435,
+            "height": 288.78256297932626,
+            "right": 650.4119636654011,
+            "bottom": 549.1053211843014
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 32.279998779296875,
+              "y": 46.832000732421875,
+              "width": 66,
+              "height": 18,
+              "right": 98.27999877929688,
+              "bottom": 64.83200073242188
+            },
+            "hitWidth": 84.8,
+            "hitHeight": 65.6
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 934.719970703125,
+              "y": 46.832000732421875,
+              "width": 48,
+              "height": 18,
+              "right": 982.719970703125,
+              "bottom": 64.83200073242188
+            },
+            "hitWidth": 84.8,
+            "hitHeight": 65.6
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 45.305036901855466,
+              "y": 246.338003515625,
+              "width": 50.89870000000001,
+              "height": 50.89869999999999,
+              "right": 96.20373690185548,
+              "bottom": 297.236703515625
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 111.62877499999999,
+              "y": 246.338003515625,
+              "width": 50.89870000000002,
+              "height": 50.89869999999999,
+              "right": 162.527475,
+              "bottom": 297.236703515625
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 177.95252072753905,
+              "y": 246.338003515625,
+              "width": 50.89870000000002,
+              "height": 50.89869999999999,
+              "right": 228.85122072753907,
+              "bottom": 297.236703515625
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 244.27626645507812,
+              "y": 246.338003515625,
+              "width": 50.89869999999999,
+              "height": 50.89869999999999,
+              "right": 295.1749664550781,
+              "bottom": 297.236703515625
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 45.305036901855466,
+              "y": 352.1407073730469,
+              "width": 50.89870000000001,
+              "height": 50.89869999999996,
+              "right": 96.20373690185548,
+              "bottom": 403.03940737304686
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 111.62877499999999,
+              "y": 352.1407073730469,
+              "width": 50.89870000000002,
+              "height": 50.89869999999996,
+              "right": 162.527475,
+              "bottom": 403.03940737304686
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 177.95252072753905,
+              "y": 352.1407073730469,
+              "width": 50.89870000000002,
+              "height": 50.89869999999996,
+              "right": 228.85122072753907,
+              "bottom": 403.03940737304686
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 244.27626645507812,
+              "y": 352.1407073730469,
+              "width": 50.89869999999999,
+              "height": 50.89869999999996,
+              "right": 295.1749664550781,
+              "bottom": 403.03940737304686
+            },
+            "hitWidth": 56.898700000000005,
+            "hitHeight": 96.37766
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 197.96376037597656,
+              "y": 444.0622253417969,
+              "width": 80,
+              "height": 18,
+              "right": 277.96376037597656,
+              "bottom": 462.0622253417969
+            },
+            "hitWidth": 128.4224,
+            "hitHeight": 60.566720000000004
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "mode": "DESKTOP",
+        "mechanic": {
+          "x": 25.200000000000003,
+          "y": 92.94746666666667,
+          "width": 358.40000000000003,
+          "height": 479.56453333333343,
+          "right": 383.6,
+          "bottom": 572.5120000000001
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 361,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 529,
+              "y": 36.28,
+              "width": 222,
+              "height": 34
+            },
+            {
+              "name": "memory-task-card",
+              "x": 25.200000000000003,
+              "y": 92.94746666666667,
+              "width": 358.40000000000003,
+              "height": 479.56453333333343
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 464.06814047415594,
+            "y": 205.40056156599059,
+            "width": 348.9468089937278,
+            "height": 360.98108972576125,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21,
+              "right": 108.19999694824219,
+              "bottom": 62.779998779296875
+            },
+            "hitWidth": 100,
+            "hitHeight": 62
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21,
+              "right": 1235.800048828125,
+              "bottom": 62.779998779296875
+            },
+            "hitWidth": 100,
+            "hitHeight": 62
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 45.918800646972656,
+              "y": 269.9612124511719,
+              "width": 67.2406,
+              "height": 67.24059999999997,
+              "right": 113.15940064697266,
+              "bottom": 337.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 129.15939360351564,
+              "y": 269.9612124511719,
+              "width": 67.24059999999997,
+              "height": 67.24059999999997,
+              "right": 196.3999936035156,
+              "bottom": 337.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 212.39999418945314,
+              "y": 269.9612124511719,
+              "width": 67.24059999999997,
+              "height": 67.24059999999997,
+              "right": 279.6405941894531,
+              "bottom": 337.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 295.64062529296876,
+              "y": 269.9612124511719,
+              "width": 67.24059999999997,
+              "height": 67.24059999999997,
+              "right": 362.88122529296874,
+              "bottom": 337.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 45.918800646972656,
+              "y": 405.9612124511719,
+              "width": 67.2406,
+              "height": 67.24059999999997,
+              "right": 113.15940064697266,
+              "bottom": 473.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 129.15939360351564,
+              "y": 405.9612124511719,
+              "width": 67.24059999999997,
+              "height": 67.24059999999997,
+              "right": 196.3999936035156,
+              "bottom": 473.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 212.39999418945314,
+              "y": 405.9612124511719,
+              "width": 67.24059999999997,
+              "height": 67.24059999999997,
+              "right": 279.6405941894531,
+              "bottom": 473.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 295.64062529296876,
+              "y": 405.9612124511719,
+              "width": 67.24059999999997,
+              "height": 67.24059999999997,
+              "right": 362.88122529296874,
+              "bottom": 473.20181245117186
+            },
+            "hitWidth": 73.2406,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 245.8812255859375,
+              "y": 525.199462890625,
+              "width": 90,
+              "height": 21,
+              "right": 335.8812255859375,
+              "bottom": 546.199462890625
+            },
+            "hitWidth": 158,
+            "hitHeight": 63.62506666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1438x914",
+      "width": 1438,
+      "height": 914,
+      "safeInsets": null,
+      "mission": 5,
+      "state": {
+        "mission": 5,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "mode": "DESKTOP",
+        "mechanic": {
+          "x": 28,
+          "y": 108.28,
+          "width": 400,
+          "height": 501,
+          "right": 428,
+          "bottom": 609.28
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 406,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 603,
+              "y": 41,
+              "width": 232,
+              "height": 36
+            },
+            {
+              "name": "memory-task-card",
+              "x": 28,
+              "y": 108.28,
+              "width": 400,
+              "height": 501
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 521.3515500689105,
+            "y": 283.322111324689,
+            "width": 392.0199336941521,
+            "height": 405.53477510261814,
+            "right": 913.3714837630625,
+            "bottom": 688.8568864273071
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21,
+              "right": 111,
+              "bottom": 68.5
+            },
+            "hitWidth": 100,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21,
+              "right": 1391,
+              "bottom": 68.5
+            },
+            "hitWidth": 100,
+            "hitHeight": 68
+          },
+          {
+            "name": "memory-card-star-1",
+            "bounds": {
+              "x": 49,
+              "y": 292.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 126.5,
+              "bottom": 369.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-banana-0",
+            "bounds": {
+              "x": 142.5,
+              "y": 292.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 220,
+              "bottom": 369.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-apple-1",
+            "bounds": {
+              "x": 236,
+              "y": 292.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 313.5,
+              "bottom": 369.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-star-0",
+            "bounds": {
+              "x": 329.5,
+              "y": 292.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 407,
+              "bottom": 369.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-battery-0",
+            "bounds": {
+              "x": 49,
+              "y": 428.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 126.5,
+              "bottom": 505.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-apple-0",
+            "bounds": {
+              "x": 142.5,
+              "y": 428.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 220,
+              "bottom": 505.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-banana-1",
+            "bounds": {
+              "x": 236,
+              "y": 428.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 313.5,
+              "bottom": 505.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-card-battery-1",
+            "bounds": {
+              "x": 329.5,
+              "y": 428.0299987792969,
+              "width": 77.5,
+              "height": 77.5,
+              "right": 407,
+              "bottom": 505.5299987792969
+            },
+            "hitWidth": 83.5,
+            "hitHeight": 126
+          },
+          {
+            "name": "memory-hint-button",
+            "bounds": {
+              "x": 289.5,
+              "y": 561.780029296875,
+              "width": 91,
+              "height": 21,
+              "right": 380.5,
+              "bottom": 582.780029296875
+            },
+            "hitWidth": 158,
+            "hitHeight": 64
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    }
+  ],
+  "orientation": {
+    "preserved": [],
+    "errors": {},
+    "checks": {
+      "statePreserved": true,
+      "errors": true
+    }
+  },
+  "failures": []
+}

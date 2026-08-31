@@ -1,0 +1,6921 @@
+{
+  "cases": [
+    {
+      "mission": 1,
+      "portrait": "390x844",
+      "landscape": "844x390",
+      "cycles": 5,
+      "states": [
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 1
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 2
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 3
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 4
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 5
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 6
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 7
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 8
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 9
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 10
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 11
+          },
+          "mechanic": {
+            "selectedKey": "odd-ball",
+            "result": "idle",
+            "hintShown": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "allGeometrySynced": true,
+        "noNonUniformRobotScale": true,
+        "deterministicPortrait": true,
+        "statePreserved": true,
+        "listenerStable": true,
+        "errors": true
+      }
+    },
+    {
+      "mission": 5,
+      "portrait": "390x844",
+      "landscape": "844x390",
+      "cycles": 5,
+      "states": [
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 1
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 2
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 3
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 4
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 5
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 6
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 7
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 8
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 9
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 10
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 11
+          },
+          "mechanic": {
+            "cards": [
+              {
+                "id": "star-0",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-1",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "star-1",
+                "pairId": "star",
+                "textureKey": "sequence-star",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              }
+            ],
+            "firstCardId": "star-0",
+            "secondCardId": null,
+            "matchedPairs": 0,
+            "totalPairs": 4,
+            "locked": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "x": 640,
+              "y": 560,
+              "scaleX": 0.252,
+              "scaleY": 0.252
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "allGeometrySynced": true,
+        "noNonUniformRobotScale": true,
+        "deterministicPortrait": true,
+        "statePreserved": true,
+        "listenerStable": true,
+        "errors": true
+      }
+    },
+    {
+      "mission": 7,
+      "portrait": "390x844",
+      "landscape": "844x390",
+      "cycles": 5,
+      "states": [
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 1
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 195,
+              "y": 347.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 376.35,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 42,
+              "y": 105
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 42,
+              "y": 339.98
+            },
+            {
+              "name": "connection-source-green",
+              "x": 42,
+              "y": 574.96
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 320.7,
+              "y": 105
+            },
+            {
+              "name": "connection-target-green",
+              "x": 320.7,
+              "y": 339.98
+            },
+            {
+              "name": "connection-target-red",
+              "x": 320.7,
+              "y": 574.96
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 2
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 754.39,
+              "y": 314.35,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 68.332,
+              "y": 98.5
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 68.332,
+              "y": 169.986
+            },
+            {
+              "name": "connection-source-green",
+              "x": 68.332,
+              "y": 241.473
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 582.448,
+              "y": 98.5
+            },
+            {
+              "name": "connection-target-green",
+              "x": 582.448,
+              "y": 169.986
+            },
+            {
+              "name": "connection-target-red",
+              "x": 582.448,
+              "y": 241.473
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 3
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 195,
+              "y": 347.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 376.35,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 42,
+              "y": 105
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 42,
+              "y": 339.98
+            },
+            {
+              "name": "connection-source-green",
+              "x": 42,
+              "y": 574.96
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 320.7,
+              "y": 105
+            },
+            {
+              "name": "connection-target-green",
+              "x": 320.7,
+              "y": 339.98
+            },
+            {
+              "name": "connection-target-red",
+              "x": 320.7,
+              "y": 574.96
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 4
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 754.39,
+              "y": 314.35,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 68.332,
+              "y": 98.5
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 68.332,
+              "y": 169.986
+            },
+            {
+              "name": "connection-source-green",
+              "x": 68.332,
+              "y": 241.473
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 582.448,
+              "y": 98.5
+            },
+            {
+              "name": "connection-target-green",
+              "x": 582.448,
+              "y": 169.986
+            },
+            {
+              "name": "connection-target-red",
+              "x": 582.448,
+              "y": 241.473
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 5
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 195,
+              "y": 347.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 376.35,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 42,
+              "y": 105
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 42,
+              "y": 339.98
+            },
+            {
+              "name": "connection-source-green",
+              "x": 42,
+              "y": 574.96
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 320.7,
+              "y": 105
+            },
+            {
+              "name": "connection-target-green",
+              "x": 320.7,
+              "y": 339.98
+            },
+            {
+              "name": "connection-target-red",
+              "x": 320.7,
+              "y": 574.96
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 6
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 754.39,
+              "y": 314.35,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 68.332,
+              "y": 98.5
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 68.332,
+              "y": 169.986
+            },
+            {
+              "name": "connection-source-green",
+              "x": 68.332,
+              "y": 241.473
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 582.448,
+              "y": 98.5
+            },
+            {
+              "name": "connection-target-green",
+              "x": 582.448,
+              "y": 169.986
+            },
+            {
+              "name": "connection-target-red",
+              "x": 582.448,
+              "y": 241.473
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 7
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 195,
+              "y": 347.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 376.35,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 42,
+              "y": 105
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 42,
+              "y": 339.98
+            },
+            {
+              "name": "connection-source-green",
+              "x": 42,
+              "y": 574.96
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 320.7,
+              "y": 105
+            },
+            {
+              "name": "connection-target-green",
+              "x": 320.7,
+              "y": 339.98
+            },
+            {
+              "name": "connection-target-red",
+              "x": 320.7,
+              "y": 574.96
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 8
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 754.39,
+              "y": 314.35,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 68.332,
+              "y": 98.5
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 68.332,
+              "y": 169.986
+            },
+            {
+              "name": "connection-source-green",
+              "x": 68.332,
+              "y": 241.473
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 582.448,
+              "y": 98.5
+            },
+            {
+              "name": "connection-target-green",
+              "x": 582.448,
+              "y": 169.986
+            },
+            {
+              "name": "connection-target-red",
+              "x": 582.448,
+              "y": 241.473
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 9
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 195,
+              "y": 347.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 376.35,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 42,
+              "y": 105
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 42,
+              "y": 339.98
+            },
+            {
+              "name": "connection-source-green",
+              "x": 42,
+              "y": 574.96
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 320.7,
+              "y": 105
+            },
+            {
+              "name": "connection-target-green",
+              "x": 320.7,
+              "y": 339.98
+            },
+            {
+              "name": "connection-target-red",
+              "x": 320.7,
+              "y": 574.96
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 10
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 754.39,
+              "y": 314.35,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 0,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 68.332,
+              "y": 98.5
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 68.332,
+              "y": 169.986
+            },
+            {
+              "name": "connection-source-green",
+              "x": 68.332,
+              "y": 241.473
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 582.448,
+              "y": 98.5
+            },
+            {
+              "name": "connection-target-green",
+              "x": 582.448,
+              "y": 169.986
+            },
+            {
+              "name": "connection-target-red",
+              "x": 582.448,
+              "y": 241.473
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 11
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "basic",
+              "colors": [
+                "red",
+                "blue",
+                "green"
+              ],
+              "staggered": false
+            },
+            "destinationOrder": [
+              "blue",
+              "green",
+              "red"
+            ],
+            "connected": [
+              "red"
+            ],
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 195,
+              "y": 347.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "x": 376.35,
+              "y": 0,
+              "scaleX": 0,
+              "scaleY": 0
+            }
+          ],
+          "ports": [
+            {
+              "name": "connection-source-red",
+              "x": 42,
+              "y": 105
+            },
+            {
+              "name": "connection-source-blue",
+              "x": 42,
+              "y": 339.98
+            },
+            {
+              "name": "connection-source-green",
+              "x": 42,
+              "y": 574.96
+            },
+            {
+              "name": "connection-target-blue",
+              "x": 320.7,
+              "y": 105
+            },
+            {
+              "name": "connection-target-green",
+              "x": 320.7,
+              "y": 339.98
+            },
+            {
+              "name": "connection-target-red",
+              "x": 320.7,
+              "y": 574.96
+            }
+          ],
+          "wireConnected": [
+            "red"
+          ],
+          "previewChildren": 0,
+          "previewStepCount": 0,
+          "previewVisualCount": 0,
+          "slotCommands": [],
+          "previewCommands": [],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "allGeometrySynced": true,
+        "noNonUniformRobotScale": true,
+        "deterministicPortrait": true,
+        "statePreserved": true,
+        "listenerStable": true,
+        "errors": true,
+        "wirePreserved": true,
+        "wireRedrawn": true
+      }
+    },
+    {
+      "mission": 8,
+      "portrait": "390x844",
+      "landscape": "844x390",
+      "cycles": 5,
+      "states": [
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 1
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.35,
+              "y": 290.888,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 328.35,
+              "y": 264.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 2
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 68,
+              "y": 225.343,
+              "scaleX": 0.06,
+              "scaleY": 0.06
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 445.65,
+              "y": 186.23,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 3
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.35,
+              "y": 290.888,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 328.35,
+              "y": 264.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 4
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 68,
+              "y": 225.343,
+              "scaleX": 0.06,
+              "scaleY": 0.06
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 445.65,
+              "y": 186.23,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 5
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.35,
+              "y": 290.888,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 328.35,
+              "y": 264.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 6
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 68,
+              "y": 225.343,
+              "scaleX": 0.06,
+              "scaleY": 0.06
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 445.65,
+              "y": 186.23,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 7
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.35,
+              "y": 290.888,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 328.35,
+              "y": 264.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 8
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 68,
+              "y": 225.343,
+              "scaleX": 0.06,
+              "scaleY": 0.06
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 445.65,
+              "y": 186.23,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 9
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.35,
+              "y": 290.888,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 328.35,
+              "y": 264.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 844,
+              "height": 390
+            },
+            "inner": {
+              "width": 844,
+              "height": 390
+            },
+            "parentSize": {
+              "width": 844,
+              "height": 390
+            },
+            "displaySize": {
+              "width": 844,
+              "height": 390
+            },
+            "gameSize": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasCss": {
+              "width": 844,
+              "height": 390
+            },
+            "canvasPixels": {
+              "width": 844,
+              "height": 390
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 10
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 68,
+              "y": 225.343,
+              "scaleX": 0.06,
+              "scaleY": 0.06
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 445.65,
+              "y": 186.23,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 390,
+              "height": 844
+            },
+            "inner": {
+              "width": 390,
+              "height": 844
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasCss": {
+              "width": 390,
+              "height": 844
+            },
+            "canvasPixels": {
+              "width": 390,
+              "height": 844
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 11
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.35,
+              "y": 290.888,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 328.35,
+              "y": 264.81,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "allGeometrySynced": true,
+        "noNonUniformRobotScale": true,
+        "deterministicPortrait": true,
+        "statePreserved": true,
+        "listenerStable": true,
+        "errors": true,
+        "commandsPreserved": true,
+        "routePreviewRebuilt": true
+      }
+    },
+    {
+      "mission": 8,
+      "portrait": "412x915",
+      "landscape": "915x412",
+      "cycles": 5,
+      "states": [
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 412,
+              "height": 915
+            },
+            "inner": {
+              "width": 412,
+              "height": 915
+            },
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasCss": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasPixels": {
+              "width": 412,
+              "height": 915
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 1
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 58.08,
+              "y": 319.562,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 349.58,
+              "y": 266.548,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 915,
+              "height": 412
+            },
+            "inner": {
+              "width": 915,
+              "height": 412
+            },
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasCss": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasPixels": {
+              "width": 915,
+              "height": 412
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 2
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 76.08,
+              "y": 249.123,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 516.58,
+              "y": 187.484,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 412,
+              "height": 915
+            },
+            "inner": {
+              "width": 412,
+              "height": 915
+            },
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasCss": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasPixels": {
+              "width": 412,
+              "height": 915
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 3
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 58.08,
+              "y": 319.562,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 349.58,
+              "y": 266.548,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 915,
+              "height": 412
+            },
+            "inner": {
+              "width": 915,
+              "height": 412
+            },
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasCss": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasPixels": {
+              "width": 915,
+              "height": 412
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 4
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 76.08,
+              "y": 249.123,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 516.58,
+              "y": 187.484,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 412,
+              "height": 915
+            },
+            "inner": {
+              "width": 412,
+              "height": 915
+            },
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasCss": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasPixels": {
+              "width": 412,
+              "height": 915
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 5
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 58.08,
+              "y": 319.562,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 349.58,
+              "y": 266.548,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 915,
+              "height": 412
+            },
+            "inner": {
+              "width": 915,
+              "height": 412
+            },
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasCss": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasPixels": {
+              "width": 915,
+              "height": 412
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 6
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 76.08,
+              "y": 249.123,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 516.58,
+              "y": 187.484,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 412,
+              "height": 915
+            },
+            "inner": {
+              "width": 412,
+              "height": 915
+            },
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasCss": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasPixels": {
+              "width": 412,
+              "height": 915
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 7
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 58.08,
+              "y": 319.562,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 349.58,
+              "y": 266.548,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 915,
+              "height": 412
+            },
+            "inner": {
+              "width": 915,
+              "height": 412
+            },
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasCss": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasPixels": {
+              "width": 915,
+              "height": 412
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 8
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 76.08,
+              "y": 249.123,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 516.58,
+              "y": 187.484,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 412,
+              "height": 915
+            },
+            "inner": {
+              "width": 412,
+              "height": 915
+            },
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasCss": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasPixels": {
+              "width": 412,
+              "height": 915
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 9
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 58.08,
+              "y": 319.562,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 349.58,
+              "y": 266.548,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 915,
+              "height": 412
+            },
+            "inner": {
+              "width": 915,
+              "height": 412
+            },
+            "parentSize": {
+              "width": 915,
+              "height": 412
+            },
+            "displaySize": {
+              "width": 915,
+              "height": 412
+            },
+            "gameSize": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasCss": {
+              "width": 915,
+              "height": 412
+            },
+            "canvasPixels": {
+              "width": 915,
+              "height": 412
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 10
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 76.08,
+              "y": 249.123,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 516.58,
+              "y": 187.484,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 412,
+              "height": 915
+            },
+            "inner": {
+              "width": 412,
+              "height": 915
+            },
+            "parentSize": {
+              "width": 412,
+              "height": 915
+            },
+            "displaySize": {
+              "width": 412,
+              "height": 915
+            },
+            "gameSize": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasCss": {
+              "width": 412,
+              "height": 915
+            },
+            "canvasPixels": {
+              "width": 412,
+              "height": 915
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 11
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 58.08,
+              "y": 319.562,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 349.58,
+              "y": 266.548,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "allGeometrySynced": true,
+        "noNonUniformRobotScale": true,
+        "deterministicPortrait": true,
+        "statePreserved": true,
+        "listenerStable": true,
+        "errors": true,
+        "commandsPreserved": true,
+        "routePreviewRebuilt": true
+      }
+    },
+    {
+      "mission": 8,
+      "portrait": "393x852",
+      "landscape": "852x393",
+      "cycles": 5,
+      "states": [
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 393,
+              "height": 852
+            },
+            "inner": {
+              "width": 393,
+              "height": 852
+            },
+            "parentSize": {
+              "width": 393,
+              "height": 852
+            },
+            "displaySize": {
+              "width": 393,
+              "height": 852
+            },
+            "gameSize": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasCss": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasPixels": {
+              "width": 393,
+              "height": 852
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 1
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.245,
+              "y": 294.424,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 331.245,
+              "y": 265.047,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 852,
+              "height": 393
+            },
+            "inner": {
+              "width": 852,
+              "height": 393
+            },
+            "parentSize": {
+              "width": 852,
+              "height": 393
+            },
+            "displaySize": {
+              "width": 852,
+              "height": 393
+            },
+            "gameSize": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasCss": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasPixels": {
+              "width": 852,
+              "height": 393
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 2
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 69,
+              "y": 228.238,
+              "scaleX": 0.061,
+              "scaleY": 0.061
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 453.755,
+              "y": 186.401,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 393,
+              "height": 852
+            },
+            "inner": {
+              "width": 393,
+              "height": 852
+            },
+            "parentSize": {
+              "width": 393,
+              "height": 852
+            },
+            "displaySize": {
+              "width": 393,
+              "height": 852
+            },
+            "gameSize": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasCss": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasPixels": {
+              "width": 393,
+              "height": 852
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 3
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.245,
+              "y": 294.424,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 331.245,
+              "y": 265.047,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 852,
+              "height": 393
+            },
+            "inner": {
+              "width": 852,
+              "height": 393
+            },
+            "parentSize": {
+              "width": 852,
+              "height": 393
+            },
+            "displaySize": {
+              "width": 852,
+              "height": 393
+            },
+            "gameSize": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasCss": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasPixels": {
+              "width": 852,
+              "height": 393
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 4
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 69,
+              "y": 228.238,
+              "scaleX": 0.061,
+              "scaleY": 0.061
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 453.755,
+              "y": 186.401,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 393,
+              "height": 852
+            },
+            "inner": {
+              "width": 393,
+              "height": 852
+            },
+            "parentSize": {
+              "width": 393,
+              "height": 852
+            },
+            "displaySize": {
+              "width": 393,
+              "height": 852
+            },
+            "gameSize": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasCss": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasPixels": {
+              "width": 393,
+              "height": 852
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 5
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.245,
+              "y": 294.424,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 331.245,
+              "y": 265.047,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 852,
+              "height": 393
+            },
+            "inner": {
+              "width": 852,
+              "height": 393
+            },
+            "parentSize": {
+              "width": 852,
+              "height": 393
+            },
+            "displaySize": {
+              "width": 852,
+              "height": 393
+            },
+            "gameSize": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasCss": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasPixels": {
+              "width": 852,
+              "height": 393
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 6
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 69,
+              "y": 228.238,
+              "scaleX": 0.061,
+              "scaleY": 0.061
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 453.755,
+              "y": 186.401,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 393,
+              "height": 852
+            },
+            "inner": {
+              "width": 393,
+              "height": 852
+            },
+            "parentSize": {
+              "width": 393,
+              "height": 852
+            },
+            "displaySize": {
+              "width": 393,
+              "height": 852
+            },
+            "gameSize": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasCss": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasPixels": {
+              "width": 393,
+              "height": 852
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 7
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.245,
+              "y": 294.424,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 331.245,
+              "y": 265.047,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 852,
+              "height": 393
+            },
+            "inner": {
+              "width": 852,
+              "height": 393
+            },
+            "parentSize": {
+              "width": 852,
+              "height": 393
+            },
+            "displaySize": {
+              "width": 852,
+              "height": 393
+            },
+            "gameSize": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasCss": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasPixels": {
+              "width": 852,
+              "height": 393
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 8
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 69,
+              "y": 228.238,
+              "scaleX": 0.061,
+              "scaleY": 0.061
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 453.755,
+              "y": 186.401,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 393,
+              "height": 852
+            },
+            "inner": {
+              "width": 393,
+              "height": 852
+            },
+            "parentSize": {
+              "width": 393,
+              "height": 852
+            },
+            "displaySize": {
+              "width": 393,
+              "height": 852
+            },
+            "gameSize": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasCss": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasPixels": {
+              "width": 393,
+              "height": 852
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 9
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.245,
+              "y": 294.424,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 331.245,
+              "y": 265.047,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 852,
+              "height": 393
+            },
+            "inner": {
+              "width": 852,
+              "height": 393
+            },
+            "parentSize": {
+              "width": 852,
+              "height": 393
+            },
+            "displaySize": {
+              "width": 852,
+              "height": 393
+            },
+            "gameSize": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasCss": {
+              "width": 852,
+              "height": 393
+            },
+            "canvasPixels": {
+              "width": 852,
+              "height": 393
+            },
+            "compositionMode": "PHONE_LANDSCAPE_SHORT",
+            "generation": 10
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 69,
+              "y": 228.238,
+              "scaleX": 0.061,
+              "scaleY": 0.061
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 453.755,
+              "y": 186.401,
+              "scaleX": 0.065,
+              "scaleY": 0.065
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        },
+        {
+          "geometry": {
+            "visualViewport": {
+              "width": 393,
+              "height": 852
+            },
+            "inner": {
+              "width": 393,
+              "height": 852
+            },
+            "parentSize": {
+              "width": 393,
+              "height": 852
+            },
+            "displaySize": {
+              "width": 393,
+              "height": 852
+            },
+            "gameSize": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasCss": {
+              "width": 393,
+              "height": 852
+            },
+            "canvasPixels": {
+              "width": 393,
+              "height": 852
+            },
+            "compositionMode": "PHONE_PORTRAIT_TALL",
+            "generation": 11
+          },
+          "mechanic": {
+            "challengeIndex": 0,
+            "challengeCount": 3,
+            "challenge": {
+              "id": "straight",
+              "columns": 4,
+              "rows": 2,
+              "start": {
+                "column": 0,
+                "row": 1
+              },
+              "targetCell": {
+                "column": 2,
+                "row": 1
+              },
+              "obstacles": [],
+              "shortestPathLength": 2,
+              "longestSimplePathLength": 6,
+              "simpleRouteCount": 6,
+              "maxCommands": 6
+            },
+            "commands": [
+              "RIGHT",
+              "RIGHT"
+            ],
+            "robotPosition": {
+              "column": 0,
+              "row": 1
+            },
+            "running": false,
+            "routeComplete": false,
+            "completed": false
+          },
+          "robots": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "x": 55.245,
+              "y": 294.424,
+              "scaleX": 0.055,
+              "scaleY": 0.055
+            },
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "x": 331.245,
+              "y": 265.047,
+              "scaleX": 0.07,
+              "scaleY": 0.07
+            }
+          ],
+          "ports": [],
+          "wireConnected": [],
+          "previewChildren": 6,
+          "previewStepCount": 2,
+          "previewVisualCount": 6,
+          "slotCommands": [
+            "→",
+            "→",
+            "·",
+            "·",
+            "·",
+            "·"
+          ],
+          "previewCommands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "resizeListeners": 14,
+          "checks": {
+            "sync": true,
+            "uniformRobots": true
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "allGeometrySynced": true,
+        "noNonUniformRobotScale": true,
+        "deterministicPortrait": true,
+        "statePreserved": true,
+        "listenerStable": true,
+        "errors": true,
+        "commandsPreserved": true,
+        "routePreviewRebuilt": true
+      }
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,3653 @@
+{
+  "inputModels": {
+    "mission7": "Phaser unified pointer",
+    "mission8": "Phaser unified pointer"
+  },
+  "mission8": [
+    {
+      "name": "minimum-320x568",
+      "checks": {
+        "routesExact": true,
+        "previewMatches": true,
+        "robotReadable": true,
+        "controlsTappable": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "route": "МАРШРУТ 1 ИЗ 3",
+        "board": {
+          "x": 0,
+          "y": 0,
+          "width": 294,
+          "height": 301.4593766183913,
+          "right": 294,
+          "bottom": 301.4593766183913
+        },
+        "robot": {
+          "x": 14.623394105422932,
+          "y": 215.54063373882488,
+          "width": 83.05890722569222,
+          "height": 85.9187428795664,
+          "right": 97.68230133111516,
+          "bottom": 301.4593766183913
+        },
+        "target": {
+          "x": 164.14,
+          "y": 228.14,
+          "width": 60.72,
+          "height": 60.72000000000003,
+          "right": 224.85999999999999,
+          "bottom": 288.86
+        },
+        "cellSize": 69,
+        "robotCell": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "visualCenter": {
+          "x": 46.5,
+          "y": 126.5
+        },
+        "targetCenter": {
+          "x": 194.5,
+          "y": 258.5
+        },
+        "previewEndpoint": null,
+        "preview": {
+          "steps": 0,
+          "valid": 0,
+          "invalid": false
+        },
+        "controls": [
+          {
+            "name": "program-command-UP",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 89,
+            "height": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 89,
+            "height": 56
+          },
+          {
+            "name": "programming-run-button",
+            "width": 132,
+            "height": 56
+          }
+        ]
+      },
+      "routeResults": [
+        {
+          "preview": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 14.623394105422932,
+              "y": 155,
+              "width": 279.3766058945771,
+              "height": 146.45937661839127,
+              "right": 294,
+              "bottom": 301.4593766183913
+            },
+            "robot": {
+              "x": 14.623394105422932,
+              "y": 215.54063373882488,
+              "width": 83.05890722569222,
+              "height": 85.9187428795664,
+              "right": 97.68230133111516,
+              "bottom": 301.4593766183913
+            },
+            "target": {
+              "x": 164.14,
+              "y": 228.14,
+              "width": 60.72,
+              "height": 60.72000000000003,
+              "right": 224.85999999999999,
+              "bottom": 288.86
+            },
+            "cellSize": 69,
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 46.5,
+              "y": 126.5
+            },
+            "targetCenter": {
+              "x": 194.5,
+              "y": 258.5
+            },
+            "previewEndpoint": {
+              "x": 194.5,
+              "y": 258.5
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-run-button",
+                "width": 132,
+                "height": 56
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 22,
+              "y": 155,
+              "width": 272,
+              "height": 146.45937661839127,
+              "right": 294,
+              "bottom": 301.4593766183913
+            },
+            "robot": {
+              "x": 152.62339410542293,
+              "y": 215.54063373882488,
+              "width": 83.05890722569222,
+              "height": 85.9187428795664,
+              "right": 235.68230133111516,
+              "bottom": 301.4593766183913
+            },
+            "target": {
+              "x": 164.14,
+              "y": 228.14,
+              "width": 60.72,
+              "height": 60.72000000000003,
+              "right": 224.85999999999999,
+              "bottom": 288.86
+            },
+            "cellSize": 69,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 184.5,
+              "y": 126.5
+            },
+            "targetCenter": {
+              "x": 194.5,
+              "y": 258.5
+            },
+            "previewEndpoint": {
+              "x": 194.5,
+              "y": 258.5
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-run-button",
+                "width": 132,
+                "height": 56
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 38.62339410542293,
+              "y": 144.5,
+              "width": 223.37660589457707,
+              "height": 175.45937661839127,
+              "right": 262,
+              "bottom": 319.9593766183913
+            },
+            "robot": {
+              "x": 38.62339410542293,
+              "y": 234.04063373882488,
+              "width": 83.05890722569222,
+              "height": 85.9187428795664,
+              "right": 121.68230133111516,
+              "bottom": 319.9593766183913
+            },
+            "target": {
+              "x": 163.18,
+              "y": 200.68,
+              "width": 46.639999999999986,
+              "height": 46.639999999999986,
+              "right": 209.82,
+              "bottom": 247.32
+            },
+            "cellSize": 53,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 70.5,
+              "y": 145
+            },
+            "targetCenter": {
+              "x": 186.5,
+              "y": 224
+            },
+            "previewEndpoint": {
+              "x": 186.5,
+              "y": 224
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-run-button",
+                "width": 132,
+                "height": 56
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 54,
+              "y": 144.5,
+              "width": 208,
+              "height": 156.88,
+              "right": 262,
+              "bottom": 301.38
+            },
+            "robot": {
+              "x": 144.62339410542293,
+              "y": 181.04063373882488,
+              "width": 83.05890722569222,
+              "height": 85.9187428795664,
+              "right": 227.68230133111516,
+              "bottom": 266.9593766183913
+            },
+            "target": {
+              "x": 163.18,
+              "y": 200.68,
+              "width": 46.639999999999986,
+              "height": 46.639999999999986,
+              "right": 209.82,
+              "bottom": 247.32
+            },
+            "cellSize": 53,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 176.5,
+              "y": 92
+            },
+            "targetCenter": {
+              "x": 186.5,
+              "y": 224
+            },
+            "previewEndpoint": {
+              "x": 186.5,
+              "y": 224
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-run-button",
+                "width": 132,
+                "height": 56
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 12.123394105422932,
+              "y": 142.4199981689453,
+              "width": 276.3766058945771,
+              "height": 177.53937844944596,
+              "right": 288.5,
+              "bottom": 319.9593766183913
+            },
+            "robot": {
+              "x": 12.123394105422932,
+              "y": 234.04063373882488,
+              "width": 83.05890722569222,
+              "height": 85.9187428795664,
+              "right": 95.18230133111516,
+              "bottom": 319.9593766183913
+            },
+            "target": {
+              "x": 189.68,
+              "y": 147.68,
+              "width": 46.639999999999986,
+              "height": 46.639999999999986,
+              "right": 236.32,
+              "bottom": 194.32
+            },
+            "cellSize": 53,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 44,
+              "y": 145
+            },
+            "targetCenter": {
+              "x": 213,
+              "y": 171
+            },
+            "previewEndpoint": {
+              "x": 213,
+              "y": 171
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-run-button",
+                "width": 132,
+                "height": 56
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 27.5,
+              "y": 128.04063373882488,
+              "width": 261,
+              "height": 173.33936626117512,
+              "right": 288.5,
+              "bottom": 301.38
+            },
+            "robot": {
+              "x": 171.12339410542293,
+              "y": 128.04063373882488,
+              "width": 83.05890722569222,
+              "height": 85.9187428795664,
+              "right": 254.18230133111516,
+              "bottom": 213.95937661839127
+            },
+            "target": {
+              "x": 189.68,
+              "y": 147.68,
+              "width": 46.639999999999986,
+              "height": 46.639999999999986,
+              "right": 236.32,
+              "bottom": 194.32
+            },
+            "cellSize": 53,
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 203,
+              "y": 39
+            },
+            "targetCenter": {
+              "x": 213,
+              "y": 171
+            },
+            "previewEndpoint": {
+              "x": 213,
+              "y": 171
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 60,
+                "height": 60
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 89,
+                "height": 56
+              },
+              {
+                "name": "programming-run-button",
+                "width": 132,
+                "height": 56
+              }
+            ]
+          },
+          "exactTarget": true
+        }
+      ]
+    },
+    {
+      "name": "mobile-390x844",
+      "checks": {
+        "routesExact": true,
+        "previewMatches": true,
+        "robotReadable": true,
+        "controlsTappable": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "route": "МАРШРУТ 1 ИЗ 3",
+        "board": {
+          "x": 0,
+          "y": 0,
+          "width": 357.0000003814697,
+          "height": 403.5965279328108,
+          "right": 357.0000003814697,
+          "bottom": 403.5965279328108
+        },
+        "robot": {
+          "x": 21.58812518874808,
+          "y": 303.2434380418819,
+          "width": 97.01280190686465,
+          "height": 100.35308989092886,
+          "right": 118.60092709561273,
+          "bottom": 403.5965279328108
+        },
+        "target": {
+          "x": 199.98000038146972,
+          "y": 316.9,
+          "width": 73.04000000000002,
+          "height": 73.04000000000002,
+          "right": 273.02000038146974,
+          "bottom": 389.94
+        },
+        "cellSize": 83,
+        "robotCell": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "visualCenter": {
+          "x": 54.900000000000006,
+          "y": 193.42
+        },
+        "targetCenter": {
+          "x": 236.5,
+          "y": 353.41999999999996
+        },
+        "previewEndpoint": null,
+        "preview": {
+          "steps": 0,
+          "valid": 0,
+          "invalid": false
+        },
+        "controls": [
+          {
+            "name": "program-command-UP",
+            "width": 66.4,
+            "height": 66.4
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 66.4,
+            "height": 66.4
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 66.4,
+            "height": 66.4
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 66.4,
+            "height": 66.4
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 107,
+            "height": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 107,
+            "height": 62
+          },
+          {
+            "name": "programming-run-button",
+            "width": 156,
+            "height": 62
+          }
+        ]
+      },
+      "routeResults": [
+        {
+          "preview": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 21.58812518874808,
+              "y": 228.92,
+              "width": 335.4118751927216,
+              "height": 174.67652793281079,
+              "right": 357.0000003814697,
+              "bottom": 403.5965279328108
+            },
+            "robot": {
+              "x": 21.58812518874808,
+              "y": 303.2434380418819,
+              "width": 97.01280190686465,
+              "height": 100.35308989092886,
+              "right": 118.60092709561273,
+              "bottom": 403.5965279328108
+            },
+            "target": {
+              "x": 199.98000038146972,
+              "y": 316.9,
+              "width": 73.04000000000002,
+              "height": 73.04000000000002,
+              "right": 273.02000038146974,
+              "bottom": 389.94
+            },
+            "cellSize": 83,
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 54.900000000000006,
+              "y": 193.42
+            },
+            "targetCenter": {
+              "x": 236.5,
+              "y": 353.41999999999996
+            },
+            "previewEndpoint": {
+              "x": 236.5,
+              "y": 353.41999999999996
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 29.000000381469732,
+              "y": 228.92,
+              "width": 328,
+              "height": 174.67652793281079,
+              "right": 357.0000003814697,
+              "bottom": 403.5965279328108
+            },
+            "robot": {
+              "x": 187.58812518874808,
+              "y": 303.2434380418819,
+              "width": 97.01280190686467,
+              "height": 100.35308989092886,
+              "right": 284.60092709561275,
+              "bottom": 403.5965279328108
+            },
+            "target": {
+              "x": 199.98000038146972,
+              "y": 316.9,
+              "width": 73.04000000000002,
+              "height": 73.04000000000002,
+              "right": 273.02000038146974,
+              "bottom": 389.94
+            },
+            "cellSize": 83,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 220.9,
+              "y": 193.42
+            },
+            "targetCenter": {
+              "x": 236.5,
+              "y": 353.41999999999996
+            },
+            "previewEndpoint": {
+              "x": 236.5,
+              "y": 353.41999999999996
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 21.58812518874808,
+              "y": 187.42,
+              "width": 335.4118751927216,
+              "height": 257.67655845038894,
+              "right": 357.0000003814697,
+              "bottom": 445.0965584503889
+            },
+            "robot": {
+              "x": 21.58812518874808,
+              "y": 344.74346855946004,
+              "width": 97.01280190686465,
+              "height": 100.35308989092886,
+              "right": 118.60092709561273,
+              "bottom": 445.0965584503889
+            },
+            "target": {
+              "x": 199.98000038146972,
+              "y": 275.4,
+              "width": 73.04000000000002,
+              "height": 73.04000000000002,
+              "right": 273.02000038146974,
+              "bottom": 348.44
+            },
+            "cellSize": 83,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 54.900000000000006,
+              "y": 234.92
+            },
+            "targetCenter": {
+              "x": 236.5,
+              "y": 311.91999999999996
+            },
+            "previewEndpoint": {
+              "x": 236.5,
+              "y": 311.91999999999996
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 29.000000381469732,
+              "y": 187.42,
+              "width": 328,
+              "height": 245.68000000000004,
+              "right": 357.0000003814697,
+              "bottom": 433.1
+            },
+            "robot": {
+              "x": 187.58812518874808,
+              "y": 261.7434380418819,
+              "width": 97.01280190686467,
+              "height": 100.35308989092886,
+              "right": 284.60092709561275,
+              "bottom": 362.0965279328108
+            },
+            "target": {
+              "x": 199.98000038146972,
+              "y": 275.4,
+              "width": 73.04000000000002,
+              "height": 73.04000000000002,
+              "right": 273.02000038146974,
+              "bottom": 348.44
+            },
+            "cellSize": 83,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 220.9,
+              "y": 151.92
+            },
+            "targetCenter": {
+              "x": 236.5,
+              "y": 311.91999999999996
+            },
+            "previewEndpoint": {
+              "x": 236.5,
+              "y": 311.91999999999996
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 21.123394105422932,
+              "y": 212.2100036621094,
+              "width": 334.8766062760468,
+              "height": 208.66935586643814,
+              "right": 356.0000003814697,
+              "bottom": 420.8793595285475
+            },
+            "robot": {
+              "x": 21.123394105422932,
+              "y": 334.96061664898116,
+              "width": 83.05890722569222,
+              "height": 85.91874287956637,
+              "right": 104.18230133111516,
+              "bottom": 420.8793595285475
+            },
+            "target": {
+              "x": 231.96000038146974,
+              "y": 216.88,
+              "width": 58.079999999999984,
+              "height": 58.079999999999984,
+              "right": 290.0400003814697,
+              "bottom": 274.96
+            },
+            "cellSize": 66,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 47.400000000000006,
+              "y": 217.92
+            },
+            "targetCenter": {
+              "x": 261,
+              "y": 245.92
+            },
+            "previewEndpoint": {
+              "x": 261,
+              "y": 245.92
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 30.000000381469732,
+              "y": 202.96061664898113,
+              "width": 326,
+              "height": 205.31938335101884,
+              "right": 356.0000003814697,
+              "bottom": 408.28
+            },
+            "robot": {
+              "x": 219.12339410542293,
+              "y": 202.96061664898113,
+              "width": 83.0589072256922,
+              "height": 85.9187428795664,
+              "right": 302.1823013311151,
+              "bottom": 288.8793595285475
+            },
+            "target": {
+              "x": 231.96000038146974,
+              "y": 216.88,
+              "width": 58.079999999999984,
+              "height": 58.079999999999984,
+              "right": 290.0400003814697,
+              "bottom": 274.96
+            },
+            "cellSize": 66,
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 245.4,
+              "y": 85.91999999999999
+            },
+            "targetCenter": {
+              "x": 261,
+              "y": 245.92
+            },
+            "previewEndpoint": {
+              "x": 261,
+              "y": 245.92
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66.4,
+                "height": 66.4
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        }
+      ]
+    },
+    {
+      "name": "tablet-768x1024",
+      "checks": {
+        "routesExact": true,
+        "previewMatches": true,
+        "robotReadable": true,
+        "controlsTappable": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "route": "МАРШРУТ 1 ИЗ 3",
+        "board": {
+          "x": 0,
+          "y": 0,
+          "width": 674,
+          "height": 475.66934557691815,
+          "right": 674,
+          "bottom": 475.66934557691815
+        },
+        "robot": {
+          "x": 82.42689065529342,
+          "y": 309.33065867925677,
+          "width": 160.80204504903307,
+          "height": 166.33868689766138,
+          "right": 243.2289357043265,
+          "bottom": 475.66934557691815
+        },
+        "target": {
+          "x": 392.82,
+          "y": 327.82,
+          "width": 129.36000000000007,
+          "height": 129.36,
+          "right": 522.1800000000001,
+          "bottom": 457.18
+        },
+        "cellSize": 147,
+        "robotCell": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "visualCenter": {
+          "x": 145.5,
+          "y": 232.5
+        },
+        "targetCenter": {
+          "x": 457.5,
+          "y": 392.5
+        },
+        "previewEndpoint": null,
+        "preview": {
+          "steps": 0,
+          "valid": 0,
+          "invalid": false
+        },
+        "controls": [
+          {
+            "name": "program-command-UP",
+            "width": 70,
+            "height": 70
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 70,
+            "height": 70
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 70,
+            "height": 70
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 70,
+            "height": 70
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 107,
+            "height": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 107,
+            "height": 62
+          },
+          {
+            "name": "programming-run-button",
+            "width": 156,
+            "height": 62
+          }
+        ]
+      },
+      "routeResults": [
+        {
+          "preview": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 82.42689065529342,
+              "y": 172,
+              "width": 591.5731093447066,
+              "height": 303.66934557691815,
+              "right": 674,
+              "bottom": 475.66934557691815
+            },
+            "robot": {
+              "x": 82.42689065529342,
+              "y": 309.33065867925677,
+              "width": 160.80204504903307,
+              "height": 166.33868689766138,
+              "right": 243.2289357043265,
+              "bottom": 475.66934557691815
+            },
+            "target": {
+              "x": 392.82,
+              "y": 327.82,
+              "width": 129.36000000000007,
+              "height": 129.36,
+              "right": 522.1800000000001,
+              "bottom": 457.18
+            },
+            "cellSize": 147,
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 145.5,
+              "y": 232.5
+            },
+            "targetCenter": {
+              "x": 457.5,
+              "y": 392.5
+            },
+            "previewEndpoint": {
+              "x": 457.5,
+              "y": 392.5
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 90,
+              "y": 172,
+              "width": 584,
+              "height": 303.66934557691815,
+              "right": 674,
+              "bottom": 475.66934557691815
+            },
+            "robot": {
+              "x": 376.4268906552934,
+              "y": 309.33065867925677,
+              "width": 160.80204504903304,
+              "height": 166.33868689766138,
+              "right": 537.2289357043264,
+              "bottom": 475.66934557691815
+            },
+            "target": {
+              "x": 392.82,
+              "y": 327.82,
+              "width": 129.36000000000007,
+              "height": 129.36,
+              "right": 522.1800000000001,
+              "bottom": 457.18
+            },
+            "cellSize": 147,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 439.5,
+              "y": 232.5
+            },
+            "targetCenter": {
+              "x": 457.5,
+              "y": 392.5
+            },
+            "previewEndpoint": {
+              "x": 457.5,
+              "y": 392.5
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 180.55033316367638,
+              "y": 172,
+              "width": 395.4496668363236,
+              "height": 302.9092255972624,
+              "right": 576,
+              "bottom": 474.9092255972624
+            },
+            "robot": {
+              "x": 180.55033316367638,
+              "y": 359.0907559066385,
+              "width": 111.96341108644168,
+              "height": 115.81846969062389,
+              "right": 292.51374425011807,
+              "bottom": 474.9092255972624
+            },
+            "target": {
+              "x": 389.88,
+              "y": 275.88,
+              "width": 86.24000000000001,
+              "height": 86.24000000000001,
+              "right": 476.12,
+              "bottom": 362.12
+            },
+            "cellSize": 98,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 219,
+              "y": 257
+            },
+            "targetCenter": {
+              "x": 433,
+              "y": 319
+            },
+            "previewEndpoint": {
+              "x": 433,
+              "y": 319
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 188,
+              "y": 172,
+              "width": 388,
+              "height": 290.08,
+              "right": 576,
+              "bottom": 462.08
+            },
+            "robot": {
+              "x": 376.5503331636764,
+              "y": 261.0907864242166,
+              "width": 111.96341108644168,
+              "height": 115.81846969062389,
+              "right": 488.51374425011807,
+              "bottom": 376.9092561148405
+            },
+            "target": {
+              "x": 389.88,
+              "y": 275.88,
+              "width": 86.24000000000001,
+              "height": 86.24000000000001,
+              "right": 476.12,
+              "bottom": 362.12
+            },
+            "cellSize": 98,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 415,
+              "y": 159
+            },
+            "targetCenter": {
+              "x": 433,
+              "y": 319
+            },
+            "previewEndpoint": {
+              "x": 433,
+              "y": 319
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 131.55033316367638,
+              "y": 172,
+              "width": 493.4496668363236,
+              "height": 302.9092255972624,
+              "right": 625,
+              "bottom": 474.9092255972624
+            },
+            "robot": {
+              "x": 131.55033316367638,
+              "y": 359.0907559066385,
+              "width": 111.96341108644168,
+              "height": 115.81846969062389,
+              "right": 243.51374425011807,
+              "bottom": 474.9092255972624
+            },
+            "target": {
+              "x": 438.88,
+              "y": 177.88,
+              "width": 86.24000000000001,
+              "height": 86.24000000000001,
+              "right": 525.12,
+              "bottom": 264.12
+            },
+            "cellSize": 98,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 170,
+              "y": 257
+            },
+            "targetCenter": {
+              "x": 482,
+              "y": 221
+            },
+            "previewEndpoint": {
+              "x": 482,
+              "y": 221
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 139,
+              "y": 163.0907559066385,
+              "width": 486,
+              "height": 298.9892440933615,
+              "right": 625,
+              "bottom": 462.08
+            },
+            "robot": {
+              "x": 425.5503331636764,
+              "y": 163.0907559066385,
+              "width": 111.96341108644168,
+              "height": 115.81846969062389,
+              "right": 537.5137442501181,
+              "bottom": 278.9092255972624
+            },
+            "target": {
+              "x": 438.88,
+              "y": 177.88,
+              "width": 86.24000000000001,
+              "height": 86.24000000000001,
+              "right": 525.12,
+              "bottom": 264.12
+            },
+            "cellSize": 98,
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 464,
+              "y": 61
+            },
+            "targetCenter": {
+              "x": 482,
+              "y": 221
+            },
+            "previewEndpoint": {
+              "x": 482,
+              "y": 221
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 70,
+                "height": 70
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 107,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 156,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        }
+      ]
+    },
+    {
+      "name": "desktop-1280x720",
+      "checks": {
+        "routesExact": true,
+        "previewMatches": true,
+        "robotReadable": true,
+        "controlsTappable": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "route": "МАРШРУТ 1 ИЗ 3",
+        "board": {
+          "x": 0,
+          "y": 0,
+          "width": 942,
+          "height": 446.586747652483,
+          "right": 942,
+          "bottom": 446.586747652483
+        },
+        "robot": {
+          "x": 328.1426727339607,
+          "y": 277.61321518825173,
+          "width": 163.34918885180628,
+          "height": 168.97353246423125,
+          "right": 491.49186158576697,
+          "bottom": 446.586747652483
+        },
+        "target": {
+          "x": 649.1800000000001,
+          "y": 294.78,
+          "width": 134.64,
+          "height": 134.64,
+          "right": 783.82,
+          "bottom": 429.41999999999996
+        },
+        "cellSize": 153,
+        "robotCell": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "visualCenter": {
+          "x": 95.5,
+          "y": 242.1
+        },
+        "targetCenter": {
+          "x": 716.5,
+          "y": 362.1
+        },
+        "previewEndpoint": null,
+        "preview": {
+          "steps": 0,
+          "valid": 0,
+          "invalid": false
+        },
+        "controls": [
+          {
+            "name": "program-command-UP",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 132,
+            "height": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 132,
+            "height": 62
+          },
+          {
+            "name": "programming-run-button",
+            "width": 196,
+            "height": 62
+          }
+        ]
+      },
+      "routeResults": [
+        {
+          "preview": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 328.1426727339607,
+              "y": 132.6,
+              "width": 613.8573272660393,
+              "height": 313.986747652483,
+              "right": 942,
+              "bottom": 446.58674765248304
+            },
+            "robot": {
+              "x": 328.1426727339607,
+              "y": 277.61321518825173,
+              "width": 163.34918885180628,
+              "height": 168.97353246423125,
+              "right": 491.49186158576697,
+              "bottom": 446.586747652483
+            },
+            "target": {
+              "x": 649.1800000000001,
+              "y": 294.78,
+              "width": 134.64,
+              "height": 134.64,
+              "right": 783.82,
+              "bottom": 429.41999999999996
+            },
+            "cellSize": 153,
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 95.5,
+              "y": 242.1
+            },
+            "targetCenter": {
+              "x": 716.5,
+              "y": 362.1
+            },
+            "previewEndpoint": {
+              "x": 716.5,
+              "y": 362.1
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 334,
+              "y": 132.6,
+              "width": 608,
+              "height": 313.986747652483,
+              "right": 942,
+              "bottom": 446.58674765248304
+            },
+            "robot": {
+              "x": 634.1426727339607,
+              "y": 277.61321518825173,
+              "width": 163.34918885180628,
+              "height": 168.97353246423125,
+              "right": 797.491861585767,
+              "bottom": 446.586747652483
+            },
+            "target": {
+              "x": 649.1800000000001,
+              "y": 294.78,
+              "width": 134.64,
+              "height": 134.64,
+              "right": 783.82,
+              "bottom": 429.41999999999996
+            },
+            "cellSize": 153,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 401.5,
+              "y": 242.1
+            },
+            "targetCenter": {
+              "x": 716.5,
+              "y": 362.1
+            },
+            "previewEndpoint": {
+              "x": 716.5,
+              "y": 362.1
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 428.5402563303407,
+              "y": 132.6,
+              "width": 411.4597436696593,
+              "height": 314.9712798162818,
+              "right": 840,
+              "bottom": 447.57127981628184
+            },
+            "robot": {
+              "x": 428.5402563303407,
+              "y": 327.62871097955434,
+              "width": 115.95023813820518,
+              "height": 119.94256883672745,
+              "right": 544.4904944685459,
+              "bottom": 447.5712798162818
+            },
+            "target": {
+              "x": 646.12,
+              "y": 240.72,
+              "width": 89.75999999999999,
+              "height": 89.76000000000002,
+              "right": 735.88,
+              "bottom": 330.48
+            },
+            "cellSize": 102,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 172,
+              "y": 267.6
+            },
+            "targetCenter": {
+              "x": 691,
+              "y": 285.6
+            },
+            "previewEndpoint": {
+              "x": 691,
+              "y": 285.6
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 436,
+              "y": 132.6,
+              "width": 404,
+              "height": 302,
+              "right": 840,
+              "bottom": 434.6
+            },
+            "robot": {
+              "x": 632.5402563303408,
+              "y": 225.62871097955434,
+              "width": 115.95023813820512,
+              "height": 119.94256883672745,
+              "right": 748.4904944685459,
+              "bottom": 345.5712798162818
+            },
+            "target": {
+              "x": 646.12,
+              "y": 240.72,
+              "width": 89.75999999999999,
+              "height": 89.76000000000002,
+              "right": 735.88,
+              "bottom": 330.48
+            },
+            "cellSize": 102,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 376,
+              "y": 165.6
+            },
+            "targetCenter": {
+              "x": 691,
+              "y": 285.6
+            },
+            "previewEndpoint": {
+              "x": 691,
+              "y": 285.6
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 377.5402563303407,
+              "y": 132.6,
+              "width": 513.4597436696592,
+              "height": 314.9712798162818,
+              "right": 891,
+              "bottom": 447.57127981628184
+            },
+            "robot": {
+              "x": 377.5402563303407,
+              "y": 327.62871097955434,
+              "width": 115.95023813820524,
+              "height": 119.94256883672745,
+              "right": 493.49049446854593,
+              "bottom": 447.5712798162818
+            },
+            "target": {
+              "x": 697.12,
+              "y": 138.72,
+              "width": 89.75999999999999,
+              "height": 89.75999999999999,
+              "right": 786.88,
+              "bottom": 228.48
+            },
+            "cellSize": 102,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 121,
+              "y": 267.6
+            },
+            "targetCenter": {
+              "x": 742,
+              "y": 183.6
+            },
+            "previewEndpoint": {
+              "x": 742,
+              "y": 183.6
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 385,
+              "y": 123.62871097955436,
+              "width": 506,
+              "height": 310.9712890204457,
+              "right": 891,
+              "bottom": 434.6
+            },
+            "robot": {
+              "x": 683.5402563303408,
+              "y": 123.62871097955436,
+              "width": 115.95023813820512,
+              "height": 119.94256883672743,
+              "right": 799.4904944685459,
+              "bottom": 243.5712798162818
+            },
+            "target": {
+              "x": 697.12,
+              "y": 138.72,
+              "width": 89.75999999999999,
+              "height": 89.75999999999999,
+              "right": 786.88,
+              "bottom": 228.48
+            },
+            "cellSize": 102,
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 427,
+              "y": 63.599999999999994
+            },
+            "targetCenter": {
+              "x": 742,
+              "y": 183.6
+            },
+            "previewEndpoint": {
+              "x": 742,
+              "y": 183.6
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        }
+      ]
+    },
+    {
+      "name": "wide-1438x914",
+      "checks": {
+        "routesExact": true,
+        "previewMatches": true,
+        "robotReadable": true,
+        "controlsTappable": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "route": "МАРШРУТ 1 ИЗ 3",
+        "board": {
+          "x": 0,
+          "y": 0,
+          "width": 1027,
+          "height": 482.4867720665455,
+          "right": 1027,
+          "bottom": 482.4867720665455
+        },
+        "robot": {
+          "x": 402.6426727339607,
+          "y": 313.51323960231423,
+          "width": 163.34918885180628,
+          "height": 168.97353246423125,
+          "right": 565.991861585767,
+          "bottom": 482.4867720665455
+        },
+        "target": {
+          "x": 728.36,
+          "y": 329.36,
+          "width": 137.27999999999997,
+          "height": 137.27999999999997,
+          "right": 865.64,
+          "bottom": 466.64
+        },
+        "cellSize": 156,
+        "robotCell": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "visualCenter": {
+          "x": 91,
+          "y": 248
+        },
+        "targetCenter": {
+          "x": 797,
+          "y": 398
+        },
+        "previewEndpoint": null,
+        "preview": {
+          "steps": 0,
+          "valid": 0,
+          "invalid": false
+        },
+        "controls": [
+          {
+            "name": "program-command-UP",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 132,
+            "height": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 132,
+            "height": 62
+          },
+          {
+            "name": "programming-run-button",
+            "width": 196,
+            "height": 62
+          }
+        ]
+      },
+      "routeResults": [
+        {
+          "preview": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 402.6426727339607,
+              "y": 164,
+              "width": 624.3573272660393,
+              "height": 318.4867720665455,
+              "right": 1027,
+              "bottom": 482.4867720665455
+            },
+            "robot": {
+              "x": 402.6426727339607,
+              "y": 313.51323960231423,
+              "width": 163.34918885180628,
+              "height": 168.97353246423125,
+              "right": 565.991861585767,
+              "bottom": 482.4867720665455
+            },
+            "target": {
+              "x": 728.36,
+              "y": 329.36,
+              "width": 137.27999999999997,
+              "height": 137.27999999999997,
+              "right": 865.64,
+              "bottom": 466.64
+            },
+            "cellSize": 156,
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 91,
+              "y": 248
+            },
+            "targetCenter": {
+              "x": 797,
+              "y": 398
+            },
+            "previewEndpoint": {
+              "x": 797,
+              "y": 398
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 1 ИЗ 3",
+            "board": {
+              "x": 407,
+              "y": 164,
+              "width": 620,
+              "height": 318.4867720665455,
+              "right": 1027,
+              "bottom": 482.4867720665455
+            },
+            "robot": {
+              "x": 714.6426727339607,
+              "y": 313.51323960231423,
+              "width": 163.34918885180628,
+              "height": 168.97353246423125,
+              "right": 877.991861585767,
+              "bottom": 482.4867720665455
+            },
+            "target": {
+              "x": 728.36,
+              "y": 329.36,
+              "width": 137.27999999999997,
+              "height": 137.27999999999997,
+              "right": 865.64,
+              "bottom": 466.64
+            },
+            "cellSize": 156,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 403,
+              "y": 248
+            },
+            "targetCenter": {
+              "x": 797,
+              "y": 398
+            },
+            "previewEndpoint": {
+              "x": 797,
+              "y": 398
+            },
+            "preview": {
+              "steps": 2,
+              "valid": 2,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 501.5327000053599,
+              "y": 162.5,
+              "width": 423.4672999946401,
+              "height": 324.0178097522378,
+              "right": 925,
+              "bottom": 486.5178097522378
+            },
+            "robot": {
+              "x": 501.5327000053599,
+              "y": 363.4821692232016,
+              "width": 118.94035584854004,
+              "height": 123.03564052903619,
+              "right": 620.4730558539,
+              "bottom": 486.5178097522378
+            },
+            "target": {
+              "x": 725.3,
+              "y": 273.8,
+              "width": 92.40000000000009,
+              "height": 92.39999999999998,
+              "right": 817.7,
+              "bottom": 366.2
+            },
+            "cellSize": 105,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 167.5,
+              "y": 275
+            },
+            "targetCenter": {
+              "x": 771.5,
+              "y": 320
+            },
+            "previewEndpoint": {
+              "x": 771.5,
+              "y": 320
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 2 ИЗ 3",
+            "board": {
+              "x": 509,
+              "y": 162.5,
+              "width": 416,
+              "height": 311,
+              "right": 925,
+              "bottom": 473.5
+            },
+            "robot": {
+              "x": 711.53270000536,
+              "y": 258.4821692232016,
+              "width": 118.94035584853998,
+              "height": 123.03564052903619,
+              "right": 830.4730558539,
+              "bottom": 381.5178097522378
+            },
+            "target": {
+              "x": 725.3,
+              "y": 273.8,
+              "width": 92.40000000000009,
+              "height": 92.39999999999998,
+              "right": 817.7,
+              "bottom": 366.2
+            },
+            "cellSize": 105,
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "visualCenter": {
+              "x": 377.5,
+              "y": 170
+            },
+            "targetCenter": {
+              "x": 771.5,
+              "y": 320
+            },
+            "previewEndpoint": {
+              "x": 771.5,
+              "y": 320
+            },
+            "preview": {
+              "steps": 3,
+              "valid": 3,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        },
+        {
+          "preview": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 449.0327000053599,
+              "y": 162.5,
+              "width": 528.4672999946401,
+              "height": 324.0178097522378,
+              "right": 977.5,
+              "bottom": 486.5178097522378
+            },
+            "robot": {
+              "x": 449.0327000053599,
+              "y": 363.4821692232016,
+              "width": 118.94035584854004,
+              "height": 123.03564052903619,
+              "right": 567.9730558539,
+              "bottom": 486.5178097522378
+            },
+            "target": {
+              "x": 777.8,
+              "y": 168.8,
+              "width": 92.40000000000009,
+              "height": 92.39999999999998,
+              "right": 870.2,
+              "bottom": 261.2
+            },
+            "cellSize": 105,
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 115,
+              "y": 275
+            },
+            "targetCenter": {
+              "x": 824,
+              "y": 215
+            },
+            "previewEndpoint": {
+              "x": 824,
+              "y": 215
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "arrival": {
+            "route": "МАРШРУТ 3 ИЗ 3",
+            "board": {
+              "x": 456.5,
+              "y": 153.48216922320157,
+              "width": 521,
+              "height": 320.0178307767984,
+              "right": 977.5,
+              "bottom": 473.5
+            },
+            "robot": {
+              "x": 764.03270000536,
+              "y": 153.48216922320157,
+              "width": 118.94035584853998,
+              "height": 123.03564052903621,
+              "right": 882.9730558539,
+              "bottom": 276.5178097522378
+            },
+            "target": {
+              "x": 777.8,
+              "y": 168.8,
+              "width": 92.40000000000009,
+              "height": 92.39999999999998,
+              "right": 870.2,
+              "bottom": 261.2
+            },
+            "cellSize": 105,
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "visualCenter": {
+              "x": 430,
+              "y": 65
+            },
+            "targetCenter": {
+              "x": 824,
+              "y": 215
+            },
+            "previewEndpoint": {
+              "x": 824,
+              "y": 215
+            },
+            "preview": {
+              "steps": 5,
+              "valid": 5,
+              "invalid": false
+            },
+            "controls": [
+              {
+                "name": "program-command-UP",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-RIGHT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-DOWN",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "program-command-LEFT",
+                "width": 66,
+                "height": 66
+              },
+              {
+                "name": "programming-hint-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-delete-button",
+                "width": 132,
+                "height": 62
+              },
+              {
+                "name": "programming-run-button",
+                "width": 196,
+                "height": 62
+              }
+            ]
+          },
+          "exactTarget": true
+        }
+      ]
+    }
+  ],
+  "mission7": [
+    {
+      "name": "mobile-390x844",
+      "checks": {
+        "pointerModel": true,
+        "hitAreas": true,
+        "activeWire": true,
+        "wrongRecovery": true,
+        "emptyRecovery": true,
+        "completedLocks": true,
+        "noGhost": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 7,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "wrongRecovery": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 0,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "emptyRecovery": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 0,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "during": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 279,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "completed": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [
+          "green"
+        ],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 0,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": true,
+            "targetLocked": true
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "tablet-768x1024",
+      "checks": {
+        "pointerModel": true,
+        "hitAreas": true,
+        "activeWire": true,
+        "wrongRecovery": true,
+        "emptyRecovery": true,
+        "completedLocks": true,
+        "noGhost": true,
+        "errors": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "initial": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 7,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "wrongRecovery": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 0,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "emptyRecovery": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 0,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "during": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 279,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      },
+      "completed": {
+        "order": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "connected": [
+          "green"
+        ],
+        "temporaryAlpha": 1,
+        "temporaryCommands": 0,
+        "ports": [
+          {
+            "color": "green",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": true,
+            "targetLocked": true
+          },
+          {
+            "color": "blue",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          },
+          {
+            "color": "red",
+            "sourceHit": 76,
+            "targetHit": 76,
+            "sourceLocked": false,
+            "targetLocked": false
+          }
+        ]
+      }
+    }
+  ],
+  "failures": []
+}

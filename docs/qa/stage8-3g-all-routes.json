@@ -1,0 +1,1928 @@
+{
+  "routeDefinition": "all simple non-repeating routes",
+  "results": [
+    {
+      "name": "mobile-360x600",
+      "width": 360,
+      "height": 600,
+      "touch": true,
+      "routes": [
+        {
+          "route": 1,
+          "commands": [
+            "RIGHT",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "LEFT"
+          ],
+          "built": {
+            "commandCount": 6,
+            "maxCommands": 6,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "LEFT"
+              ],
+              "maxCommands": 6
+            },
+            "strip": {
+              "x": 68,
+              "y": 386.3999938964844,
+              "width": 224,
+              "height": 51,
+              "right": 292,
+              "bottom": 437.3999938964844
+            },
+            "slots": [
+              {
+                "x": 68,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 102,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 106,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 140,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 144,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 178,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 182,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 216,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 220,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 254,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 258,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 292,
+                "bottom": 437.3999938964844
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 90.50179660320282,
+                "y": 470.4038437604904,
+                "width": 13.99640679359436,
+                "height": 27.99281358718872,
+                "right": 104.49820339679718,
+                "bottom": 498.39665734767914
+              },
+              {
+                "x": 139.13008579611778,
+                "y": 470.5445336699486,
+                "width": 26.739828407764435,
+                "height": 27.73019242286682,
+                "right": 165.86991420388222,
+                "bottom": 498.2747260928154
+              },
+              {
+                "x": 200.63218301534653,
+                "y": 470.6832432150841,
+                "width": 13.735633969306946,
+                "height": 27.47126793861389,
+                "right": 214.36781698465347,
+                "bottom": 498.15451115369797
+              },
+              {
+                "x": 249.4049996137619,
+                "y": 470.84999346733093,
+                "width": 26.190000772476196,
+                "height": 27.160000801086426,
+                "right": 275.5950003862381,
+                "bottom": 498.00999426841736
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              }
+            ],
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": ""
+          },
+          "arrived": {
+            "commandCount": 6,
+            "maxCommands": 6,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "LEFT"
+              ],
+              "maxCommands": 6
+            },
+            "strip": {
+              "x": 68,
+              "y": 386.3999938964844,
+              "width": 224,
+              "height": 51,
+              "right": 292,
+              "bottom": 437.3999938964844
+            },
+            "slots": [
+              {
+                "x": 68,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 102,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 106,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 140,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 144,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 178,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 182,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 216,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 220,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 254,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 258,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 292,
+                "bottom": 437.3999938964844
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 90.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 104.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 139,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 166,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 200.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 214.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 249,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 276,
+                "bottom": 498.3999938964844
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              }
+            ],
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": "ПРОГРАММА РАБОТАЕТ!"
+          },
+          "checks": {
+            "fullProgramAccepted": true,
+            "capacityMatchesLongestRoute": true,
+            "allSlotsRendered": true,
+            "slotsInsideViewport": true,
+            "touchControlsAtLeast48": true,
+            "exactTargetCell": true,
+            "successFeedback": true
+          }
+        },
+        {
+          "route": 2,
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "DOWN",
+            "LEFT",
+            "UP"
+          ],
+          "built": {
+            "commandCount": 9,
+            "maxCommands": 9,
+            "stripData": {
+              "commands": [
+                "UP",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "DOWN",
+                "LEFT",
+                "UP"
+              ],
+              "maxCommands": 9
+            },
+            "strip": {
+              "x": 24.5,
+              "y": 386.3999938964844,
+              "width": 311,
+              "height": 49.5,
+              "right": 335.5,
+              "bottom": 435.8999938964844
+            },
+            "slots": [
+              {
+                "x": 24.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 55.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 59.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 90.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 94.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 125.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 129.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 160.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 164.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 195.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 199.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 230.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 234.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 265.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 269.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 300.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 304.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 335.5,
+                "bottom": 435.8999938964844
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 90.7099997997284,
+                "y": 470.84999346733093,
+                "width": 13.580000400543213,
+                "height": 27.160000801086426,
+                "right": 104.2900002002716,
+                "bottom": 498.00999426841736
+              },
+              {
+                "x": 139,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 166,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 200.5433959364891,
+                "y": 470.49298518896103,
+                "width": 13.91320812702179,
+                "height": 27.82641625404358,
+                "right": 214.4566040635109,
+                "bottom": 498.3194014430046
+              },
+              {
+                "x": 249.20249980688095,
+                "y": 470.62499368190765,
+                "width": 26.595000386238098,
+                "height": 27.580000400543213,
+                "right": 275.79750019311905,
+                "bottom": 498.20499408245087
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              }
+            ],
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": ""
+          },
+          "arrived": {
+            "commandCount": 9,
+            "maxCommands": 9,
+            "stripData": {
+              "commands": [
+                "UP",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "DOWN",
+                "LEFT",
+                "UP"
+              ],
+              "maxCommands": 9
+            },
+            "strip": {
+              "x": 24.5,
+              "y": 386.3999938964844,
+              "width": 311,
+              "height": 49.5,
+              "right": 335.5,
+              "bottom": 435.8999938964844
+            },
+            "slots": [
+              {
+                "x": 24.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 55.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 59.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 90.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 94.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 125.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 129.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 160.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 164.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 195.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 199.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 230.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 234.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 265.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 269.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 300.5,
+                "bottom": 435.8999938964844
+              },
+              {
+                "x": 304.5,
+                "y": 404.8999938964844,
+                "width": 31,
+                "height": 31,
+                "right": 335.5,
+                "bottom": 435.8999938964844
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 90.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 104.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 139,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 166,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 200.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 214.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 249,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 276,
+                "bottom": 498.3999938964844
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              }
+            ],
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": "ПРОГРАММА РАБОТАЕТ!"
+          },
+          "checks": {
+            "fullProgramAccepted": true,
+            "capacityMatchesLongestRoute": true,
+            "allSlotsRendered": true,
+            "slotsInsideViewport": true,
+            "touchControlsAtLeast48": true,
+            "exactTargetCell": true,
+            "successFeedback": true
+          }
+        },
+        {
+          "route": 3,
+          "commands": [
+            "RIGHT",
+            "UP",
+            "LEFT",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "built": {
+            "commandCount": 7,
+            "maxCommands": 7,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "LEFT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT"
+              ],
+              "maxCommands": 7
+            },
+            "strip": {
+              "x": 49,
+              "y": 386.3999938964844,
+              "width": 262,
+              "height": 51,
+              "right": 311,
+              "bottom": 437.3999938964844
+            },
+            "slots": [
+              {
+                "x": 49,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 83,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 87,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 121,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 125,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 159,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 163,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 197,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 201,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 235,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 239,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 273,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 277,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 311,
+                "bottom": 437.3999938964844
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 90.52165687084198,
+                "y": 470.44640147686005,
+                "width": 13.95668625831604,
+                "height": 27.91337251663208,
+                "right": 104.47834312915802,
+                "bottom": 498.3597739934921
+              },
+              {
+                "x": 139.4049996137619,
+                "y": 470.84999346733093,
+                "width": 26.190000772476196,
+                "height": 27.160000801086426,
+                "right": 165.5950003862381,
+                "bottom": 498.00999426841736
+              },
+              {
+                "x": 200.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 214.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 249,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 276,
+                "bottom": 498.3999938964844
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              }
+            ],
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "feedback": ""
+          },
+          "arrived": {
+            "commandCount": 7,
+            "maxCommands": 7,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "LEFT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT"
+              ],
+              "maxCommands": 7
+            },
+            "strip": {
+              "x": 49,
+              "y": 386.3999938964844,
+              "width": 262,
+              "height": 51,
+              "right": 311,
+              "bottom": 437.3999938964844
+            },
+            "slots": [
+              {
+                "x": 49,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 83,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 87,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 121,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 125,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 159,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 163,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 197,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 201,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 235,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 239,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 273,
+                "bottom": 437.3999938964844
+              },
+              {
+                "x": 277,
+                "y": 403.3999938964844,
+                "width": 34,
+                "height": 34,
+                "right": 311,
+                "bottom": 437.3999938964844
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 90.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 104.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 139,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 166,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 200.5,
+                "y": 470.3999938964844,
+                "width": 14,
+                "height": 28,
+                "right": 214.5,
+                "bottom": 498.3999938964844
+              },
+              {
+                "x": 249,
+                "y": 470.3999938964844,
+                "width": 27,
+                "height": 28,
+                "right": 276,
+                "bottom": 498.3999938964844
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              },
+              {
+                "width": 52,
+                "height": 52
+              }
+            ],
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "feedback": "ПРОГРАММА РАБОТАЕТ!"
+          },
+          "checks": {
+            "fullProgramAccepted": true,
+            "capacityMatchesLongestRoute": true,
+            "allSlotsRendered": true,
+            "slotsInsideViewport": true,
+            "touchControlsAtLeast48": true,
+            "exactTargetCell": true,
+            "successFeedback": true
+          }
+        }
+      ],
+      "completion": {
+        "modalVisible": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "missionCompleted": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "desktop-1280x720",
+      "width": 1280,
+      "height": 720,
+      "touch": false,
+      "routes": [
+        {
+          "route": 1,
+          "commands": [
+            "RIGHT",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "LEFT"
+          ],
+          "built": {
+            "commandCount": 6,
+            "maxCommands": 6,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "LEFT"
+              ],
+              "maxCommands": 6
+            },
+            "strip": {
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 376,
+              "height": 49,
+              "right": 780,
+              "bottom": 542.7999877929688
+            },
+            "slots": [
+              {
+                "x": 500,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 540,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 548,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 588,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 596,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 636,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 644,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 684,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 692,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 732,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 740,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 780,
+                "bottom": 542.7999877929688
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 523.0379602313042,
+                "y": 582.3822349607944,
+                "width": 17.924079537391663,
+                "height": 36.843941271305084,
+                "right": 540.9620397686958,
+                "bottom": 619.2261762320995
+              },
+              {
+                "x": 586.7684734761715,
+                "y": 582.5991439521313,
+                "width": 34.46305304765701,
+                "height": 36.432370364665985,
+                "right": 621.2315265238285,
+                "bottom": 619.0315143167973
+              },
+              {
+                "x": 667.2001190781593,
+                "y": 582.7335791289806,
+                "width": 17.599761843681335,
+                "height": 36.177288234233856,
+                "right": 684.7998809218407,
+                "bottom": 618.9108673632145
+              },
+              {
+                "x": 731.024999499321,
+                "y": 582.8849872350693,
+                "width": 33.95000100135803,
+                "height": 35.89000105857849,
+                "right": 764.975000500679,
+                "bottom": 618.7749882936478
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              }
+            ],
+            "robotCell": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": ""
+          },
+          "arrived": {
+            "commandCount": 6,
+            "maxCommands": 6,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "LEFT"
+              ],
+              "maxCommands": 6
+            },
+            "strip": {
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 376,
+              "height": 49,
+              "right": 780,
+              "bottom": 542.7999877929688
+            },
+            "slots": [
+              {
+                "x": 500,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 540,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 548,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 588,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 596,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 636,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 644,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 684,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 692,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 732,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 740,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 780,
+                "bottom": 542.7999877929688
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 523,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 541,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 586.5,
+                "y": 582.2999877929688,
+                "width": 35,
+                "height": 37,
+                "right": 621.5,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 667,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 685,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 730.5,
+                "y": 582.2999877929688,
+                "width": 35,
+                "height": 37,
+                "right": 765.5,
+                "bottom": 619.2999877929688
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              }
+            ],
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": "ПРОГРАММА РАБОТАЕТ!"
+          },
+          "checks": {
+            "fullProgramAccepted": true,
+            "capacityMatchesLongestRoute": true,
+            "allSlotsRendered": true,
+            "slotsInsideViewport": true,
+            "touchControlsAtLeast48": true,
+            "exactTargetCell": true,
+            "successFeedback": true
+          }
+        },
+        {
+          "route": 2,
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "DOWN",
+            "LEFT",
+            "UP"
+          ],
+          "built": {
+            "commandCount": 9,
+            "maxCommands": 9,
+            "stripData": {
+              "commands": [
+                "UP",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "DOWN",
+                "LEFT",
+                "UP"
+              ],
+              "maxCommands": 9
+            },
+            "strip": {
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 498,
+              "height": 49,
+              "right": 902,
+              "bottom": 542.7999877929688
+            },
+            "slots": [
+              {
+                "x": 478,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 518,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 526,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 566,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 574,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 614,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 622,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 662,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 670,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 710,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 718,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 758,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 766,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 806,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 814,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 854,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 862,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 902,
+                "bottom": 542.7999877929688
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 523.2699997425079,
+                "y": 582.8849872350693,
+                "width": 17.46000051498413,
+                "height": 35.89000105857849,
+                "right": 540.7300002574921,
+                "bottom": 618.7749882936478
+              },
+              {
+                "x": 586.6127091050148,
+                "y": 582.4255779385567,
+                "width": 34.7745817899704,
+                "height": 36.76170074939728,
+                "right": 621.3872908949852,
+                "bottom": 619.187278687954
+              },
+              {
+                "x": 667.1505818963051,
+                "y": 582.6262485682964,
+                "width": 17.69883620738983,
+                "height": 36.38094109296799,
+                "right": 684.8494181036949,
+                "bottom": 619.0071896612644
+              },
+              {
+                "x": 730.9024416208267,
+                "y": 582.74842274189,
+                "width": 34.19511675834656,
+                "height": 36.149123430252075,
+                "right": 765.0975583791733,
+                "bottom": 618.897546172142
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              }
+            ],
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": ""
+          },
+          "arrived": {
+            "commandCount": 9,
+            "maxCommands": 9,
+            "stripData": {
+              "commands": [
+                "UP",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT",
+                "DOWN",
+                "DOWN",
+                "LEFT",
+                "UP"
+              ],
+              "maxCommands": 9
+            },
+            "strip": {
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 498,
+              "height": 49,
+              "right": 902,
+              "bottom": 542.7999877929688
+            },
+            "slots": [
+              {
+                "x": 478,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 518,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 526,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 566,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 574,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 614,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 622,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 662,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 670,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 710,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 718,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 758,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 766,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 806,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 814,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 854,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 862,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 902,
+                "bottom": 542.7999877929688
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 523,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 541,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 586.5,
+                "y": 582.2999877929688,
+                "width": 35,
+                "height": 37,
+                "right": 621.5,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 667,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 685,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 730.5,
+                "y": 582.2999877929688,
+                "width": 35,
+                "height": 37,
+                "right": 765.5,
+                "bottom": 619.2999877929688
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              }
+            ],
+            "robotCell": {
+              "column": 2,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "feedback": "ПРОГРАММА РАБОТАЕТ!"
+          },
+          "checks": {
+            "fullProgramAccepted": true,
+            "capacityMatchesLongestRoute": true,
+            "allSlotsRendered": true,
+            "slotsInsideViewport": true,
+            "touchControlsAtLeast48": true,
+            "exactTargetCell": true,
+            "successFeedback": true
+          }
+        },
+        {
+          "route": 3,
+          "commands": [
+            "RIGHT",
+            "UP",
+            "LEFT",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "built": {
+            "commandCount": 7,
+            "maxCommands": 7,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "LEFT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT"
+              ],
+              "maxCommands": 7
+            },
+            "strip": {
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 402,
+              "height": 49,
+              "right": 806,
+              "bottom": 542.7999877929688
+            },
+            "slots": [
+              {
+                "x": 478,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 518,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 526,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 566,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 574,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 614,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 622,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 662,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 670,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 710,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 718,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 758,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 766,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 806,
+                "bottom": 542.7999877929688
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 523.1056345105171,
+                "y": 582.5288625657558,
+                "width": 17.78873097896576,
+                "height": 36.56572479009628,
+                "right": 540.8943654894829,
+                "bottom": 619.0945873558521
+              },
+              {
+                "x": 587.024999499321,
+                "y": 582.8849872350693,
+                "width": 33.95000100135803,
+                "height": 35.89000105857849,
+                "right": 620.975000500679,
+                "bottom": 618.7749882936478
+              },
+              {
+                "x": 667,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 685,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 730.6127091050148,
+                "y": 582.4255779385567,
+                "width": 34.7745817899704,
+                "height": 36.76170074939728,
+                "right": 765.3872908949852,
+                "bottom": 619.187278687954
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              }
+            ],
+            "robotCell": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "feedback": ""
+          },
+          "arrived": {
+            "commandCount": 7,
+            "maxCommands": 7,
+            "stripData": {
+              "commands": [
+                "RIGHT",
+                "UP",
+                "LEFT",
+                "UP",
+                "RIGHT",
+                "RIGHT",
+                "RIGHT"
+              ],
+              "maxCommands": 7
+            },
+            "strip": {
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 402,
+              "height": 49,
+              "right": 806,
+              "bottom": 542.7999877929688
+            },
+            "slots": [
+              {
+                "x": 478,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 518,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 526,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 566,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 574,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 614,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 622,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 662,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 670,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 710,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 718,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 758,
+                "bottom": 542.7999877929688
+              },
+              {
+                "x": 766,
+                "y": 502.79998779296875,
+                "width": 40,
+                "height": 40,
+                "right": 806,
+                "bottom": 542.7999877929688
+              }
+            ],
+            "commandControls": [
+              {
+                "x": 523,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 541,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 586.5,
+                "y": 582.2999877929688,
+                "width": 35,
+                "height": 37,
+                "right": 621.5,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 667,
+                "y": 582.2999877929688,
+                "width": 18,
+                "height": 37,
+                "right": 685,
+                "bottom": 619.2999877929688
+              },
+              {
+                "x": 730.5,
+                "y": 582.2999877929688,
+                "width": 35,
+                "height": 37,
+                "right": 765.5,
+                "bottom": 619.2999877929688
+              }
+            ],
+            "commandHitAreas": [
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              },
+              {
+                "width": 66,
+                "height": 66
+              }
+            ],
+            "robotCell": {
+              "column": 3,
+              "row": 0
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "feedback": "ПРОГРАММА РАБОТАЕТ!"
+          },
+          "checks": {
+            "fullProgramAccepted": true,
+            "capacityMatchesLongestRoute": true,
+            "allSlotsRendered": true,
+            "slotsInsideViewport": true,
+            "touchControlsAtLeast48": true,
+            "exactTargetCell": true,
+            "successFeedback": true
+          }
+        }
+      ],
+      "completion": {
+        "modalVisible": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "missionCompleted": true,
+        "errors": true
+      }
+    }
+  ],
+  "failures": []
+}

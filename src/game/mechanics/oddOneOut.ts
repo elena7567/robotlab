@@ -57,4 +57,13 @@ export class OddOneOutMechanic {
     if (!this.completed) this.hintShown = true;
     return this.snapshot;
   }
+
+  reset(completed = false): void {
+    this.completed = completed;
+    this.result = completed ? 'correct' : 'idle';
+    this.selectedKey = completed ? CORRECT_KEY : null;
+    this.hintShown = false;
+  }
 }
+
+export const oddOneOutMechanic = new OddOneOutMechanic();

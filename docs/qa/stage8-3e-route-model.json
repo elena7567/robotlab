@@ -1,0 +1,451 @@
+{
+  "exactSequenceValidation": "REMOVED",
+  "capacityRule": "LONGEST_SIMPLE_ROUTE",
+  "simulatorConsumers": [
+    "preview",
+    "execution",
+    "validation",
+    "QA"
+  ],
+  "routes": [
+    {
+      "route": 1,
+      "board": {
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "target": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": []
+      },
+      "shortestLength": 2,
+      "longestSimpleLength": 6,
+      "simpleRouteCount": 6,
+      "capacity": 6,
+      "bfsPath": [
+        "RIGHT",
+        "RIGHT"
+      ],
+      "longestPath": [
+        "RIGHT",
+        "UP",
+        "RIGHT",
+        "RIGHT",
+        "DOWN",
+        "LEFT"
+      ],
+      "verifiedSimplePaths": [
+        {
+          "commands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 2
+        },
+        {
+          "commands": [
+            "RIGHT",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "LEFT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 6
+        },
+        {
+          "commands": [
+            "RIGHT",
+            "UP",
+            "RIGHT",
+            "DOWN"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 4
+        },
+        {
+          "commands": [
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "LEFT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 6
+        },
+        {
+          "commands": [
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "DOWN"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 4
+        },
+        {
+          "commands": [
+            "UP",
+            "RIGHT",
+            "DOWN",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 4
+        }
+      ]
+    },
+    {
+      "route": 2,
+      "board": {
+        "columns": 4,
+        "rows": 3,
+        "start": {
+          "column": 0,
+          "row": 2
+        },
+        "target": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [
+          {
+            "column": 1,
+            "row": 1
+          }
+        ]
+      },
+      "shortestLength": 3,
+      "longestSimpleLength": 9,
+      "simpleRouteCount": 6,
+      "capacity": 9,
+      "bfsPath": [
+        "RIGHT",
+        "RIGHT",
+        "UP"
+      ],
+      "longestPath": [
+        "UP",
+        "UP",
+        "RIGHT",
+        "RIGHT",
+        "RIGHT",
+        "DOWN",
+        "DOWN",
+        "LEFT",
+        "UP"
+      ],
+      "verifiedSimplePaths": [
+        {
+          "commands": [
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "UP",
+            "UP",
+            "LEFT",
+            "DOWN"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 7
+        },
+        {
+          "commands": [
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "UP",
+            "LEFT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 5
+        },
+        {
+          "commands": [
+            "RIGHT",
+            "RIGHT",
+            "UP"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 3
+        },
+        {
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "LEFT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 7
+        },
+        {
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT",
+            "DOWN",
+            "DOWN",
+            "LEFT",
+            "UP"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 9
+        },
+        {
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "DOWN"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 2,
+            "row": 1
+          },
+          "executedSteps": 5
+        }
+      ]
+    },
+    {
+      "route": 3,
+      "board": {
+        "columns": 5,
+        "rows": 3,
+        "start": {
+          "column": 0,
+          "row": 2
+        },
+        "target": {
+          "column": 3,
+          "row": 0
+        },
+        "obstacles": [
+          {
+            "column": 2,
+            "row": 2
+          },
+          {
+            "column": 3,
+            "row": 1
+          }
+        ]
+      },
+      "shortestLength": 5,
+      "longestSimpleLength": 7,
+      "simpleRouteCount": 7,
+      "capacity": 7,
+      "bfsPath": [
+        "RIGHT",
+        "UP",
+        "RIGHT",
+        "UP",
+        "RIGHT"
+      ],
+      "longestPath": [
+        "RIGHT",
+        "UP",
+        "LEFT",
+        "UP",
+        "RIGHT",
+        "RIGHT",
+        "RIGHT"
+      ],
+      "verifiedSimplePaths": [
+        {
+          "commands": [
+            "RIGHT",
+            "UP",
+            "RIGHT",
+            "UP",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 5
+        },
+        {
+          "commands": [
+            "RIGHT",
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 5
+        },
+        {
+          "commands": [
+            "RIGHT",
+            "UP",
+            "LEFT",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 7
+        },
+        {
+          "commands": [
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "UP",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 5
+        },
+        {
+          "commands": [
+            "UP",
+            "RIGHT",
+            "UP",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 5
+        },
+        {
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 5
+        },
+        {
+          "commands": [
+            "UP",
+            "UP",
+            "RIGHT",
+            "DOWN",
+            "RIGHT",
+            "UP",
+            "RIGHT"
+          ],
+          "reachedTarget": true,
+          "finalCell": {
+            "column": 3,
+            "row": 0
+          },
+          "executedSteps": 7
+        }
+      ]
+    }
+  ],
+  "earlyArrival": {
+    "queuedSteps": 4,
+    "executedSteps": 2,
+    "reachedTarget": true,
+    "finalCell": {
+      "column": 2,
+      "row": 1
+    }
+  },
+  "failures": {
+    "obstacle": "obstacle",
+    "boundary": "boundary"
+  },
+  "nextMoveHint": {
+    "command": "RIGHT",
+    "from": {
+      "column": 0,
+      "row": 0
+    },
+    "to": {
+      "column": 1,
+      "row": 0
+    }
+  }
+}

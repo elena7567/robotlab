@@ -1,0 +1,5777 @@
+{
+  "matrix": [
+    {
+      "name": "320x568",
+      "width": 320,
+      "height": 568,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12,
+          "y": 112.96666666666667,
+          "width": 296,
+          "height": 310.03333333333336,
+          "right": 308,
+          "bottom": 423
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 148,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17,
+              "y": 28,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 246,
+              "y": 28,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 12,
+              "y": 112.96666666666667,
+              "width": 296,
+              "height": 310.03333333333336
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 87.82282499449539,
+            "y": 418.3293937933256,
+            "width": 143.1576689306402,
+            "height": 148.08870741781698,
+            "right": 230.9804939251356,
+            "bottom": 566.4181012111426
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17,
+              "y": 28,
+              "width": 66,
+              "height": 18,
+              "right": 83,
+              "bottom": 46
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 246,
+              "y": 28,
+              "width": 48,
+              "height": 18,
+              "right": 294,
+              "bottom": 46
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 78.32291412353516,
+              "y": 222.69166564941406,
+              "width": 46.4375,
+              "height": 46.4375,
+              "right": 124.76041412353516,
+              "bottom": 269.12916564941406
+            },
+            "hitWidth": 117.36666666666667,
+            "hitHeight": 66.4375
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 195.2395782470703,
+              "y": 222.69166564941406,
+              "width": 46.4375,
+              "height": 46.4375,
+              "right": 241.6770782470703,
+              "bottom": 269.12916564941406
+            },
+            "hitWidth": 117.36666666666667,
+            "hitHeight": 66.4375
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 78.32291412353516,
+              "y": 288.6791687011719,
+              "width": 46.4375,
+              "height": 46.4375,
+              "right": 124.76041412353516,
+              "bottom": 335.1166687011719
+            },
+            "hitWidth": 117.36666666666667,
+            "hitHeight": 66.4375
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 195.2395782470703,
+              "y": 288.6791687011719,
+              "width": 46.4375,
+              "height": 46.4375,
+              "right": 241.6770782470703,
+              "bottom": 335.1166687011719
+            },
+            "hitWidth": 117.36666666666667,
+            "hitHeight": 66.4375
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 54.38749694824219,
+              "y": 380.9666748046875,
+              "width": 72,
+              "height": 16,
+              "right": 126.38749694824219,
+              "bottom": 396.9666748046875
+            },
+            "hitWidth": 137.67499999999998,
+            "hitHeight": 58.06666666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 192.6125030517578,
+              "y": 380.9666748046875,
+              "width": 74,
+              "height": 16,
+              "right": 266.6125030517578,
+              "bottom": 396.9666748046875
+            },
+            "hitWidth": 137.67499999999998,
+            "hitHeight": 58.06666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "333x885",
+      "width": 333,
+      "height": 885,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 333,
+          "height": 885
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 12,
+          "y": 122.66666666666667,
+          "width": 309,
+          "height": 450.3333333333333,
+          "right": 321,
+          "bottom": 573
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 197,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17,
+              "y": 33,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 259,
+              "y": 33,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 12,
+              "y": 122.66666666666667,
+              "width": 309,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 70.45852159364651,
+            "y": 590.6861318879869,
+            "width": 190.49064129581237,
+            "height": 197.0517725183222,
+            "right": 260.9491628894589,
+            "bottom": 787.7379044063091
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17,
+              "y": 33,
+              "width": 66,
+              "height": 18,
+              "right": 83,
+              "bottom": 51
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 259,
+              "y": 33,
+              "width": 48,
+              "height": 18,
+              "right": 307,
+              "bottom": 51
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 55.04166666666668,
+              "y": 275.83335367838544,
+              "width": 79.91666666666663,
+              "height": 79.91666666666663,
+              "right": 134.95833333333331,
+              "bottom": 355.75002034505206
+            },
+            "hitWidth": 140,
+            "hitHeight": 99.91666666666664
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 198.04166666666669,
+              "y": 275.83335367838544,
+              "width": 79.91666666666663,
+              "height": 79.91666666666663,
+              "right": 277.9583333333333,
+              "bottom": 355.75002034505206
+            },
+            "hitWidth": 140,
+            "hitHeight": 99.91666666666664
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 55.04166666666668,
+              "y": 378.75001017252606,
+              "width": 79.91666666666663,
+              "height": 79.91666666666663,
+              "right": 134.95833333333331,
+              "bottom": 458.6666768391927
+            },
+            "hitWidth": 140,
+            "hitHeight": 99.91666666666664
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 198.04166666666669,
+              "y": 378.75001017252606,
+              "width": 79.91666666666663,
+              "height": 79.91666666666663,
+              "right": 277.9583333333333,
+              "bottom": 458.6666768391927
+            },
+            "hitWidth": 140,
+            "hitHeight": 99.91666666666664
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 51,
+              "y": 527.1666259765625,
+              "width": 87,
+              "height": 19,
+              "right": 138,
+              "bottom": 546.1666259765625
+            },
+            "hitWidth": 139,
+            "hitHeight": 62.666666666666664
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 194,
+              "y": 527.1666259765625,
+              "width": 89,
+              "height": 19,
+              "right": 283,
+              "bottom": 546.1666259765625
+            },
+            "hitWidth": 139,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "360x800",
+      "width": 360,
+      "height": 800,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 122.68333333333332,
+          "width": 334.79999999999995,
+          "height": 424.9166666666667,
+          "right": 347.4,
+          "bottom": 547.6
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 213,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 33.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 285.3999938964844,
+              "y": 33.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 12.600000000000023,
+              "y": 122.68333333333332,
+              "width": 334.79999999999995,
+              "height": 424.9166666666667
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 76.17135988635958,
+            "y": 566.3474315506343,
+            "width": 205.93582508283987,
+            "height": 213.0286522269364,
+            "right": 282.10718496919947,
+            "bottom": 779.3760837775707
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 33.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 51.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 33.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 51.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 70.66145324707031,
+              "y": 259.245849609375,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 148.8802032470703,
+              "bottom": 337.464599609375
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 211.1197967529297,
+              "y": 259.245849609375,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 289.3385467529297,
+              "bottom": 337.464599609375
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 70.66145324707031,
+              "y": 359.839599609375,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 148.8802032470703,
+              "bottom": 438.058349609375
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 211.1197967529297,
+              "y": 359.839599609375,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 289.3385467529297,
+              "bottom": 438.058349609375
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 59.39374542236328,
+              "y": 502.183349609375,
+              "width": 84,
+              "height": 19,
+              "right": 143.39374542236328,
+              "bottom": 521.183349609375
+            },
+            "hitWidth": 152.83749999999998,
+            "hitHeight": 61.833333333333336
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 215.60626220703125,
+              "y": 502.183349609375,
+              "width": 86,
+              "height": 19,
+              "right": 301.60626220703125,
+              "bottom": 521.183349609375
+            },
+            "hitWidth": 152.83749999999998,
+            "hitHeight": 61.833333333333336
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 360,
+          "height": 600
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 113.53666666666666,
+          "width": 334.79999999999995,
+          "height": 311.8633333333333,
+          "right": 347.4,
+          "bottom": 425.4
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 167,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 12.600000000000023,
+              "y": 113.53666666666666,
+              "width": 334.79999999999995,
+              "height": 311.8633333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 98.80067941882828,
+            "y": 430.20742035228113,
+            "width": 161.05237496848235,
+            "height": 166.59946842647696,
+            "right": 259.85305438731064,
+            "bottom": 596.8068887787581
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 97.88228912353516,
+              "y": 223.6891662597656,
+              "width": 46.94375000000001,
+              "height": 46.94375000000002,
+              "right": 144.82603912353517,
+              "bottom": 270.63291625976564
+            },
+            "hitWidth": 117.69666666666666,
+            "hitHeight": 66.94375
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 215.17396850585936,
+              "y": 223.6891662597656,
+              "width": 46.94375000000002,
+              "height": 46.94375000000002,
+              "right": 262.1177185058594,
+              "bottom": 270.63291625976564
+            },
+            "hitWidth": 117.69666666666666,
+            "hitHeight": 66.94375
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 97.88228912353516,
+              "y": 290.22792358398436,
+              "width": 46.94375000000001,
+              "height": 46.94375000000002,
+              "right": 144.82603912353517,
+              "bottom": 337.1716735839844
+            },
+            "hitWidth": 117.69666666666666,
+            "hitHeight": 66.94375
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 215.17396850585936,
+              "y": 290.22792358398436,
+              "width": 46.94375000000002,
+              "height": 46.94375000000002,
+              "right": 262.1177185058594,
+              "bottom": 337.1716735839844
+            },
+            "hitWidth": 117.69666666666666,
+            "hitHeight": 66.94375
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 64.69874572753906,
+              "y": 383.336669921875,
+              "width": 72,
+              "height": 16,
+              "right": 136.69874572753906,
+              "bottom": 399.336669921875
+            },
+            "hitWidth": 157.0075,
+            "hitHeight": 58.126666666666665
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 222.30123901367188,
+              "y": 383.336669921875,
+              "width": 74,
+              "height": 16,
+              "right": 296.3012390136719,
+              "bottom": 399.336669921875
+            },
+            "hitWidth": 157.0075,
+            "hitHeight": 58.126666666666665
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "360x640",
+      "width": 360,
+      "height": 640,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 113.05,
+          "width": 334.79999999999995,
+          "height": 341.54999999999995,
+          "right": 347.4,
+          "bottom": 454.59999999999997
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 167,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 12.600000000000023,
+              "y": 113.05,
+              "width": 334.79999999999995,
+              "height": 341.54999999999995
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 98.80067941882828,
+            "y": 459.4068551674334,
+            "width": 161.05237496848235,
+            "height": 166.60004581835597,
+            "right": 259.85305438731064,
+            "bottom": 626.0069009857893
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 90.734375,
+              "y": 230.13751220703125,
+              "width": 55.15625,
+              "height": 55.15625,
+              "right": 145.890625,
+              "bottom": 285.29376220703125
+            },
+            "hitWidth": 123.04999999999998,
+            "hitHeight": 75.15624999999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 214.109375,
+              "y": 230.13751220703125,
+              "width": 55.15625,
+              "height": 55.15625,
+              "right": 269.265625,
+              "bottom": 285.29376220703125
+            },
+            "hitWidth": 123.04999999999998,
+            "hitHeight": 75.15624999999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 90.734375,
+              "y": 305.6187744140625,
+              "width": 55.15625,
+              "height": 55.15625,
+              "right": 145.890625,
+              "bottom": 360.7750244140625
+            },
+            "hitWidth": 123.04999999999998,
+            "hitHeight": 75.15624999999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 214.109375,
+              "y": 305.6187744140625,
+              "width": 55.15625,
+              "height": 55.15625,
+              "right": 269.265625,
+              "bottom": 360.7750244140625
+            },
+            "hitWidth": 123.04999999999998,
+            "hitHeight": 75.15624999999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 63.381248474121094,
+              "y": 411.5500183105469,
+              "width": 75,
+              "height": 17,
+              "right": 138.3812484741211,
+              "bottom": 428.5500183105469
+            },
+            "hitWidth": 155.9125,
+            "hitHeight": 59.1
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 220.61874389648438,
+              "y": 411.5500183105469,
+              "width": 77,
+              "height": 17,
+              "right": 297.6187438964844,
+              "bottom": 428.5500183105469
+            },
+            "hitWidth": 155.9125,
+            "hitHeight": 59.1
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x650",
+      "width": 390,
+      "height": 650,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 650
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 115.19266666666667,
+          "width": 362.70000000000005,
+          "height": 345.6573333333333,
+          "right": 376.35,
+          "bottom": 460.85
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 173,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 115.19266666666667,
+              "width": 362.70000000000005,
+              "height": 345.6573333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 110.55270701158813,
+            "y": 465.8494282075666,
+            "width": 167.4944691421055,
+            "height": 173.2637522205331,
+            "right": 278.0471761536936,
+            "bottom": 639.1131804280997
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 104.74541259765624,
+              "y": 233.23967529296874,
+              "width": 56.29250000000002,
+              "height": 56.29250000000002,
+              "right": 161.03791259765626,
+              "bottom": 289.53217529296876
+            },
+            "hitWidth": 123.79066666666667,
+            "hitHeight": 76.29250000000002
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 228.96208740234374,
+              "y": 233.23967529296874,
+              "width": 56.29250000000002,
+              "height": 56.29250000000002,
+              "right": 285.25458740234376,
+              "bottom": 289.53217529296876
+            },
+            "hitWidth": 123.79066666666667,
+            "hitHeight": 76.29250000000002
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 104.74541259765624,
+              "y": 309.95818115234374,
+              "width": 56.29250000000002,
+              "height": 56.29250000000002,
+              "right": 161.03791259765626,
+              "bottom": 366.25068115234376
+            },
+            "hitWidth": 123.79066666666667,
+            "hitHeight": 76.29250000000002
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 228.96208740234374,
+              "y": 309.95818115234374,
+              "width": 56.29250000000002,
+              "height": 56.29250000000002,
+              "right": 285.25458740234376,
+              "bottom": 366.25068115234376
+            },
+            "hitWidth": 123.79066666666667,
+            "hitHeight": 76.29250000000002
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 70.93150329589844,
+              "y": 417.732666015625,
+              "width": 76,
+              "height": 17,
+              "right": 146.93150329589844,
+              "bottom": 434.732666015625
+            },
+            "hitWidth": 169.71100000000004,
+            "hitHeight": 59.23466666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 242.0684814453125,
+              "y": 417.732666015625,
+              "width": 78,
+              "height": 17,
+              "right": 320.0684814453125,
+              "bottom": 434.732666015625
+            },
+            "hitWidth": 169.71100000000004,
+            "hitHeight": 59.23466666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x700",
+      "width": 390,
+      "height": 700,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 700
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 115.36766666666666,
+          "width": 362.70000000000005,
+          "height": 395.9823333333333,
+          "right": 376.35,
+          "bottom": 511.34999999999997
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 30.950000762939453,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 30.950000762939453,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 115.36766666666666,
+              "width": 362.70000000000005,
+              "height": 395.9823333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.51897147686158,
+            "y": 468.52104695387516,
+            "width": 223.09714727772712,
+            "height": 230.7815594930347,
+            "right": 305.6161187545887,
+            "bottom": 699.3026064469099
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 30.950000762939453,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 48.95000076293945
+            },
+            "hitWidth": 84,
+            "hitHeight": 60.5
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 30.950000762939453,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 48.95000076293945
+            },
+            "hitWidth": 84,
+            "hitHeight": 60.5
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 92.62823272705077,
+              "y": 245.17091918945312,
+              "width": 70.21437500000002,
+              "height": 70.21437500000002,
+              "right": 162.8426077270508,
+              "bottom": 315.38529418945313
+            },
+            "hitWidth": 132.86566666666664,
+            "hitHeight": 90.214375
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 227.15739990234374,
+              "y": 245.17091918945312,
+              "width": 70.21437500000002,
+              "height": 70.21437500000002,
+              "right": 297.37177490234376,
+              "bottom": 315.38529418945313
+            },
+            "hitWidth": 132.86566666666664,
+            "hitHeight": 90.214375
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 92.62823272705077,
+              "y": 337.04878784179687,
+              "width": 70.21437500000002,
+              "height": 70.21437500000002,
+              "right": 162.8426077270508,
+              "bottom": 407.2631628417969
+            },
+            "hitWidth": 132.86566666666664,
+            "hitHeight": 90.214375
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 227.15739990234374,
+              "y": 337.04878784179687,
+              "width": 70.21437500000002,
+              "height": 70.21437500000002,
+              "right": 297.37177490234376,
+              "bottom": 407.2631628417969
+            },
+            "hitWidth": 132.86566666666664,
+            "hitHeight": 90.214375
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 68.74087524414062,
+              "y": 466.90765380859375,
+              "width": 81,
+              "height": 18,
+              "right": 149.74087524414062,
+              "bottom": 484.90765380859375
+            },
+            "hitWidth": 167.85475000000002,
+            "hitHeight": 60.88466666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 239.25912475585938,
+              "y": 466.90765380859375,
+              "width": 83,
+              "height": 18,
+              "right": 322.2591247558594,
+              "bottom": 484.90765380859375
+            },
+            "hitWidth": 167.85475000000002,
+            "hitHeight": 60.88466666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 125.47666666666667,
+          "width": 362.70000000000005,
+          "height": 450.3333333333333,
+          "right": 376.35,
+          "bottom": 575.81
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.51897147686158,
+            "y": 596.1199997737583,
+            "width": 223.09714727772712,
+            "height": 230.78075120440155,
+            "right": 305.6161187545887,
+            "bottom": 826.9007509781599
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 52.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 52.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 79.54167175292969,
+              "y": 267.9766845703125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 164.7916717529297,
+              "bottom": 353.2266845703125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 225.20834350585938,
+              "y": 267.9766845703125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 310.4583435058594,
+              "bottom": 353.2266845703125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 79.54167175292969,
+              "y": 376.2266540527344,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 164.7916717529297,
+              "bottom": 461.4766540527344
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 225.20834350585938,
+              "y": 376.2266540527344,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 310.4583435058594,
+              "bottom": 461.4766540527344
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 66.07500457763672,
+              "y": 529.9766845703125,
+              "width": 87,
+              "height": 19,
+              "right": 153.07500457763672,
+              "bottom": 548.9766845703125
+            },
+            "hitWidth": 165.85000000000002,
+            "hitHeight": 62.666666666666664
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 235.92498779296875,
+              "y": 529.9766845703125,
+              "width": 89,
+              "height": 19,
+              "right": 324.92498779296875,
+              "bottom": 548.9766845703125
+            },
+            "hitWidth": 165.85000000000002,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "393x852",
+      "width": 393,
+      "height": 852,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 13.754999999999995,
+          "y": 125.71366666666667,
+          "width": 365.49,
+          "height": 450.3333333333333,
+          "right": 379.245,
+          "bottom": 576.047
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 233,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.755001068115234,
+              "y": 34.755001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 317.2449951171875,
+              "y": 34.755001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.754999999999995,
+              "y": 125.71366666666667,
+              "width": 365.49,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 83.1537447746505,
+            "y": 596.512241951166,
+            "width": 224.8132856855868,
+            "height": 232.55697927819654,
+            "right": 307.9670304602373,
+            "bottom": 829.0692212293625
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.755001068115234,
+              "y": 34.755001068115234,
+              "width": 66,
+              "height": 18,
+              "right": 84.75500106811523,
+              "bottom": 52.755001068115234
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 317.2449951171875,
+              "y": 34.755001068115234,
+              "width": 48,
+              "height": 18,
+              "right": 365.2449951171875,
+              "bottom": 52.755001068115234
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 81.04166412353516,
+              "y": 268.21368408203125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 166.29166412353516,
+              "bottom": 353.46368408203125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 226.70834350585938,
+              "y": 268.21368408203125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 311.9583435058594,
+              "bottom": 353.46368408203125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 81.04166412353516,
+              "y": 376.4636535644531,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 166.29166412353516,
+              "bottom": 461.7136535644531
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 226.70834350585938,
+              "y": 376.4636535644531,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 311.9583435058594,
+              "bottom": 461.7136535644531
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 66.87749481201172,
+              "y": 530.213623046875,
+              "width": 87,
+              "height": 19,
+              "right": 153.87749481201172,
+              "bottom": 549.213623046875
+            },
+            "hitWidth": 167.245,
+            "hitHeight": 62.666666666666664
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 238.12249755859375,
+              "y": 530.213623046875,
+              "width": 89,
+              "height": 19,
+              "right": 327.12249755859375,
+              "bottom": 549.213623046875
+            },
+            "hitWidth": 167.245,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "400x824",
+      "width": 400,
+      "height": 824,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 400,
+          "height": 824
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 14,
+          "y": 126.28333333333332,
+          "width": 372,
+          "height": 424.9166666666667,
+          "right": 386,
+          "bottom": 551.2
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 237,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 19,
+              "y": 35,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 324,
+              "y": 35,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 14,
+              "y": 126.28333333333332,
+              "width": 372,
+              "height": 424.9166666666667
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 84.63484894047413,
+            "y": 572.0302089750462,
+            "width": 228.8175742574207,
+            "height": 236.6987307859249,
+            "right": 313.4524231978948,
+            "bottom": 808.7289397609711
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 19,
+              "y": 35,
+              "width": 66,
+              "height": 18,
+              "right": 85,
+              "bottom": 53
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 324,
+              "y": 35,
+              "width": 48,
+              "height": 18,
+              "right": 372,
+              "bottom": 53
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 90.66146850585938,
+              "y": 262.8458251953125,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 168.88021850585938,
+              "bottom": 341.0645751953125
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 231.11978149414062,
+              "y": 262.8458251953125,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 309.3385314941406,
+              "bottom": 341.0645751953125
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 90.66146850585938,
+              "y": 363.4395751953125,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 168.88021850585938,
+              "bottom": 441.6583251953125
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 231.11978149414062,
+              "y": 363.4395751953125,
+              "width": 78.21875,
+              "height": 78.21875,
+              "right": 309.3385314941406,
+              "bottom": 441.6583251953125
+            },
+            "hitWidth": 138.08333333333331,
+            "hitHeight": 98.21875000000001
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 70.09375,
+              "y": 505.7833251953125,
+              "width": 84,
+              "height": 19,
+              "right": 154.09375,
+              "bottom": 524.7833251953125
+            },
+            "hitWidth": 171.4375,
+            "hitHeight": 61.833333333333336
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 244.90625,
+              "y": 505.7833251953125,
+              "width": 86,
+              "height": 19,
+              "right": 330.90625,
+              "bottom": 524.7833251953125
+            },
+            "hitWidth": 171.4375,
+            "hitHeight": 61.833333333333336
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "412x915",
+      "width": 412,
+      "height": 915,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 14.420000000000016,
+          "y": 127.21466666666667,
+          "width": 383.15999999999997,
+          "height": 450.3333333333333,
+          "right": 397.58,
+          "bottom": 577.548
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 244,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 19.419998168945312,
+              "y": 35.41999816894531,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 335.5799865722656,
+              "y": 35.41999816894531,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 14.420000000000016,
+              "y": 127.21466666666667,
+              "width": 383.15999999999997,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 87.17389149664136,
+            "y": 599.0028459143148,
+            "width": 235.68210726095617,
+            "height": 243.79999888827945,
+            "right": 322.85599875759755,
+            "bottom": 842.8028448025942
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 19.419998168945312,
+              "y": 35.41999816894531,
+              "width": 66,
+              "height": 18,
+              "right": 85.41999816894531,
+              "bottom": 53.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 335.5799865722656,
+              "y": 35.41999816894531,
+              "width": 48,
+              "height": 18,
+              "right": 383.5799865722656,
+              "bottom": 53.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 90.54167175292969,
+              "y": 269.71466064453125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 175.7916717529297,
+              "bottom": 354.96466064453125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 236.20834350585938,
+              "y": 269.71466064453125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 321.4583435058594,
+              "bottom": 354.96466064453125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 90.54167175292969,
+              "y": 377.96466064453125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 175.7916717529297,
+              "bottom": 463.21466064453125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 236.20834350585938,
+              "y": 377.96466064453125,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 321.4583435058594,
+              "bottom": 463.21466064453125
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 71.95999908447266,
+              "y": 531.7146606445312,
+              "width": 87,
+              "height": 19,
+              "right": 158.95999908447266,
+              "bottom": 550.7146606445312
+            },
+            "hitWidth": 176.07999999999998,
+            "hitHeight": 62.666666666666664
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 252.04000854492188,
+              "y": 531.7146606445312,
+              "width": 89,
+              "height": 19,
+              "right": 341.0400085449219,
+              "bottom": 550.7146606445312
+            },
+            "hitWidth": 176.07999999999998,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "430x932",
+      "width": 430,
+      "height": 932,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 15.050000000000011,
+          "y": 128.63666666666663,
+          "width": 399.9,
+          "height": 450.3333333333333,
+          "right": 414.95,
+          "bottom": 578.9699999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 254,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 20.049999237060547,
+              "y": 36.04999923706055,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 352.95001220703125,
+              "y": 36.04999923706055,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 15.050000000000011,
+              "y": 128.63666666666663,
+              "width": 399.9,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 90.98246053097613,
+            "y": 601.3624646576068,
+            "width": 245.97889645230782,
+            "height": 254.45113986254717,
+            "right": 336.96135698328396,
+            "bottom": 855.813604520154
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 20.049999237060547,
+              "y": 36.04999923706055,
+              "width": 66,
+              "height": 18,
+              "right": 86.04999923706055,
+              "bottom": 54.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 352.95001220703125,
+              "y": 36.04999923706055,
+              "width": 48,
+              "height": 18,
+              "right": 400.95001220703125,
+              "bottom": 54.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 99.54167175292969,
+              "y": 271.13665771484375,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 184.7916717529297,
+              "bottom": 356.38665771484375
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 245.20831298828125,
+              "y": 271.13665771484375,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 330.45831298828125,
+              "bottom": 356.38665771484375
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 99.54167175292969,
+              "y": 379.38665771484375,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 184.7916717529297,
+              "bottom": 464.63665771484375
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 245.20831298828125,
+              "y": 379.38665771484375,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 330.45831298828125,
+              "bottom": 464.63665771484375
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 76.7750015258789,
+              "y": 533.1366577148438,
+              "width": 87,
+              "height": 19,
+              "right": 163.7750015258789,
+              "bottom": 552.1366577148438
+            },
+            "hitWidth": 184.45,
+            "hitHeight": 62.666666666666664
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 265.2249755859375,
+              "y": 533.1366577148438,
+              "width": 89,
+              "height": 19,
+              "right": 354.2249755859375,
+              "bottom": 552.1366577148438
+            },
+            "hitWidth": 184.45,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "568x320",
+      "width": 568,
+      "height": 320,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 568,
+          "height": 320
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 12,
+          "y": 78,
+          "width": 210,
+          "height": 230,
+          "right": 222,
+          "bottom": 308
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 160,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17,
+              "y": 28,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 494,
+              "y": 28,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 193.5,
+              "y": 24,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 12,
+              "y": 78,
+              "width": 210,
+              "height": 230
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 205.93024071546122,
+            "y": 91.40341890369575,
+            "width": 154.84513978689816,
+            "height": 160.178438734413,
+            "right": 360.7753805023594,
+            "bottom": 251.58185763810874
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17,
+              "y": 28,
+              "width": 66,
+              "height": 18,
+              "right": 83,
+              "bottom": 46
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 494,
+              "y": 28,
+              "width": 48,
+              "height": 18,
+              "right": 542,
+              "bottom": 46
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 57,
+              "y": 192,
+              "width": 24,
+              "height": 24,
+              "right": 81,
+              "bottom": 216
+            },
+            "hitWidth": 98,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 153,
+              "y": 192,
+              "width": 24,
+              "height": 24,
+              "right": 177,
+              "bottom": 216
+            },
+            "hitWidth": 98,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 57,
+              "y": 234,
+              "width": 24,
+              "height": 24,
+              "right": 81,
+              "bottom": 258
+            },
+            "hitWidth": 98,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 153,
+              "y": 234,
+              "width": 24,
+              "height": 24,
+              "right": 177,
+              "bottom": 258
+            },
+            "hitWidth": 98,
+            "hitHeight": 48
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 35.5,
+              "y": 267,
+              "width": 66,
+              "height": 16,
+              "right": 101.5,
+              "bottom": 283
+            },
+            "hitWidth": 97,
+            "hitHeight": 56
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 131.5,
+              "y": 267,
+              "width": 68,
+              "height": 16,
+              "right": 199.5,
+              "bottom": 283
+            },
+            "hitWidth": 97,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "740x360",
+      "width": 740,
+      "height": 360,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 740,
+          "height": 360
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 12.600000000000001,
+          "y": 78.23666666666666,
+          "width": 210,
+          "height": 269.1633333333333,
+          "right": 222.6,
+          "bottom": 347.4
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 180,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 665.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 279.5,
+              "y": 24.6,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 12.600000000000001,
+              "y": 78.23666666666666,
+              "width": 210,
+              "height": 269.1633333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 282.03407023707797,
+            "y": 102.70781691551193,
+            "width": 174.4734044968639,
+            "height": 180.483008730364,
+            "right": 456.5074747339419,
+            "bottom": 283.1908256458759
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 665.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 713.4000244140625,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 56.648543497721356,
+              "y": 196.32583536783855,
+              "width": 26.175416666666656,
+              "height": 26.17541666666665,
+              "right": 82.82396016438801,
+              "bottom": 222.5012520345052
+            },
+            "hitWidth": 97.1825,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 152.37605204264324,
+              "y": 196.32583536783855,
+              "width": 26.17541666666665,
+              "height": 26.17541666666665,
+              "right": 178.5514687093099,
+              "bottom": 222.5012520345052
+            },
+            "hitWidth": 97.1825,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 56.648543497721356,
+              "y": 241.0462333170573,
+              "width": 26.175416666666656,
+              "height": 26.175416666666678,
+              "right": 82.82396016438801,
+              "bottom": 267.221649983724
+            },
+            "hitWidth": 97.1825,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 152.37605204264324,
+              "y": 241.0462333170573,
+              "width": 26.17541666666665,
+              "height": 26.175416666666678,
+              "right": 178.5514687093099,
+              "bottom": 267.221649983724
+            },
+            "hitWidth": 97.1825,
+            "hitHeight": 48
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 35.23625183105469,
+              "y": 306.0366516113281,
+              "width": 68,
+              "height": 16,
+              "right": 103.23625183105469,
+              "bottom": 322.0366516113281
+            },
+            "hitWidth": 96.1825,
+            "hitHeight": 56.72666666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 130.96376037597656,
+              "y": 306.0366516113281,
+              "width": 70,
+              "height": 16,
+              "right": 200.96376037597656,
+              "bottom": 322.0366516113281
+            },
+            "hitWidth": 96.1825,
+            "hitHeight": 56.72666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "800x360",
+      "width": 800,
+      "height": 360,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 800,
+          "height": 360
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 12.600000000000001,
+          "y": 78.23666666666666,
+          "width": 224.00000000000003,
+          "height": 269.1633333333333,
+          "right": 236.60000000000002,
+          "bottom": 347.4
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 180,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 725.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 309.5,
+              "y": 24.6,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 12.600000000000001,
+              "y": 78.23666666666666,
+              "width": 224.00000000000003,
+              "height": 269.1633333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 312.03407023707797,
+            "y": 102.7080081106217,
+            "width": 174.4734044968639,
+            "height": 180.4828175352542,
+            "right": 486.5074747339419,
+            "bottom": 283.1908256458759
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 725.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 773.4000244140625,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 60.148543497721356,
+              "y": 196.32583536783855,
+              "width": 26.175416666666656,
+              "height": 26.17541666666665,
+              "right": 86.32396016438801,
+              "bottom": 222.5012520345052
+            },
+            "hitWidth": 104.18250000000002,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 162.87605204264324,
+              "y": 196.32583536783855,
+              "width": 26.17541666666665,
+              "height": 26.17541666666665,
+              "right": 189.0514687093099,
+              "bottom": 222.5012520345052
+            },
+            "hitWidth": 104.18250000000002,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 60.148543497721356,
+              "y": 241.0462333170573,
+              "width": 26.175416666666656,
+              "height": 26.175416666666678,
+              "right": 86.32396016438801,
+              "bottom": 267.221649983724
+            },
+            "hitWidth": 104.18250000000002,
+            "hitHeight": 48
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 162.87605204264324,
+              "y": 241.0462333170573,
+              "width": 26.17541666666665,
+              "height": 26.175416666666678,
+              "right": 189.0514687093099,
+              "bottom": 267.221649983724
+            },
+            "hitWidth": 104.18250000000002,
+            "hitHeight": 48
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 38.73625183105469,
+              "y": 306.0366516113281,
+              "width": 68,
+              "height": 16,
+              "right": 106.73625183105469,
+              "bottom": 322.0366516113281
+            },
+            "hitWidth": 103.18250000000002,
+            "hitHeight": 56.72666666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 141.46376037597656,
+              "y": 306.0366516113281,
+              "width": 70,
+              "height": 16,
+              "right": 211.46376037597656,
+              "bottom": 322.0366516113281
+            },
+            "hitWidth": 103.18250000000002,
+            "hitHeight": 56.72666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 13.650000000000002,
+          "y": 78.82166666666667,
+          "width": 236.32000000000002,
+          "height": 297.52833333333336,
+          "right": 249.97000000000003,
+          "bottom": 376.35
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 196,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 13.650000000000002,
+              "y": 78.82166666666667,
+              "width": 236.32000000000002,
+              "height": 297.52833333333336
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 326.7035743568065,
+            "y": 111.26730896013513,
+            "width": 189.01285830958648,
+            "height": 195.52276239163146,
+            "right": 515.716432666393,
+            "bottom": 306.7900713517666
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 816.3499755859375,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 60.791355692545565,
+              "y": 204.58459147135414,
+              "width": 33.49854166666668,
+              "height": 33.49854166666671,
+              "right": 94.28989735921225,
+              "bottom": 238.08313313802086
+            },
+            "hitWidth": 109.29625,
+            "hitHeight": 53.49854166666668
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 169.33010538736977,
+              "y": 204.58459147135414,
+              "width": 33.49854166666671,
+              "height": 33.49854166666671,
+              "right": 202.82864705403648,
+              "bottom": 238.08313313802086
+            },
+            "hitWidth": 109.29625,
+            "hitHeight": 53.49854166666668
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 60.791355692545565,
+              "y": 257.3256193033854,
+              "width": 33.49854166666668,
+              "height": 33.49854166666671,
+              "right": 94.28989735921225,
+              "bottom": 290.8241609700521
+            },
+            "hitWidth": 109.29625,
+            "hitHeight": 53.49854166666668
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 169.33010538736977,
+              "y": 257.3256193033854,
+              "width": 33.49854166666671,
+              "height": 33.49854166666671,
+              "right": 202.82864705403648,
+              "bottom": 290.8241609700521
+            },
+            "hitWidth": 109.29625,
+            "hitHeight": 53.49854166666668
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 41.540626525878906,
+              "y": 334.52166748046875,
+              "width": 71,
+              "height": 16,
+              "right": 112.5406265258789,
+              "bottom": 350.52166748046875
+            },
+            "hitWidth": 108.29625,
+            "hitHeight": 57.656666666666666
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 150.07937622070312,
+              "y": 334.52166748046875,
+              "width": 73,
+              "height": 16,
+              "right": 223.07937622070312,
+              "bottom": 350.52166748046875
+            },
+            "hitWidth": 108.29625,
+            "hitHeight": 57.656666666666666
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "824x400",
+      "width": 824,
+      "height": 400,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 824,
+          "height": 400
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 14.000000000000002,
+          "y": 79.01666666666667,
+          "width": 230.72000000000003,
+          "height": 306.98333333333335,
+          "right": 244.72000000000003,
+          "bottom": 386
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 201,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 19,
+              "y": 30,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 748,
+              "y": 30,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 321.5,
+              "y": 26,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 14.000000000000002,
+              "y": 79.01666666666667,
+              "width": 230.72000000000003,
+              "height": 306.98333333333335
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 314.2600757300493,
+            "y": 114.12004223717796,
+            "width": 193.85934291382728,
+            "height": 200.5364341773595,
+            "right": 508.1194186438766,
+            "bottom": 314.65647641453745
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 19,
+              "y": 30,
+              "width": 66,
+              "height": 18,
+              "right": 85,
+              "bottom": 48
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 748,
+              "y": 30,
+              "width": 48,
+              "height": 18,
+              "right": 796,
+              "bottom": 48
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 58.16229349772136,
+              "y": 205.6708231608073,
+              "width": 36.77291666666667,
+              "height": 36.772916666666674,
+              "right": 94.93521016438802,
+              "bottom": 242.44373982747396
+            },
+            "hitWidth": 106.14750000000002,
+            "hitHeight": 56.77291666666666
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 163.7847910563151,
+              "y": 205.6708231608073,
+              "width": 36.772916666666674,
+              "height": 36.772916666666674,
+              "right": 200.55770772298177,
+              "bottom": 242.44373982747396
+            },
+            "hitWidth": 106.14750000000002,
+            "hitHeight": 56.77291666666666
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 58.16229349772136,
+              "y": 261.9187479654948,
+              "width": 36.77291666666667,
+              "height": 36.772916666666674,
+              "right": 94.93521016438802,
+              "bottom": 298.69166463216146
+            },
+            "hitWidth": 106.14750000000002,
+            "hitHeight": 56.77291666666666
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 163.7847910563151,
+              "y": 261.9187479654948,
+              "width": 36.772916666666674,
+              "height": 36.772916666666674,
+              "right": 200.55770772298177,
+              "bottom": 298.69166463216146
+            },
+            "hitWidth": 106.14750000000002,
+            "hitHeight": 56.77291666666666
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 40.04875183105469,
+              "y": 344.01666259765625,
+              "width": 72,
+              "height": 16,
+              "right": 112.04875183105469,
+              "bottom": 360.01666259765625
+            },
+            "hitWidth": 105.14750000000002,
+            "hitHeight": 57.96666666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 145.67124938964844,
+              "y": 344.01666259765625,
+              "width": 74,
+              "height": 16,
+              "right": 219.67124938964844,
+              "bottom": 360.01666259765625
+            },
+            "hitWidth": 105.14750000000002,
+            "hitHeight": 57.96666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "915x412",
+      "width": 915,
+      "height": 412,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 14.420000000000002,
+          "y": 79.25066666666666,
+          "width": 256.20000000000005,
+          "height": 318.3293333333333,
+          "right": 270.62000000000006,
+          "bottom": 397.5799999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 207,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 19.419998168945312,
+              "y": 30.419998168945312,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 838.5800170898438,
+              "y": 30.419998168945312,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 367,
+              "y": 26.42,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 14.420000000000002,
+              "y": 79.25066666666666,
+              "width": 256.20000000000005,
+              "height": 318.3293333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 356.8278836180414,
+            "y": 117.54380431125179,
+            "width": 199.67511206217438,
+            "height": 206.55237626280768,
+            "right": 556.5029956802158,
+            "bottom": 324.0961805740595
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 19.419998168945312,
+              "y": 30.419998168945312,
+              "width": 66,
+              "height": 18,
+              "right": 85.41999816894531,
+              "bottom": 48.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 838.5800170898438,
+              "y": 30.419998168945312,
+              "width": 48,
+              "height": 18,
+              "right": 886.5800170898438,
+              "bottom": 48.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 63.05741733805339,
+              "y": 206.97432560221355,
+              "width": 40.70216666666665,
+              "height": 40.70216666666664,
+              "right": 103.75958400472004,
+              "bottom": 247.6764922688802
+            },
+            "hitWidth": 118.46900000000002,
+            "hitHeight": 60.702166666666656
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 181.2804169108073,
+              "y": 206.97432560221355,
+              "width": 40.70216666666664,
+              "height": 40.70216666666664,
+              "right": 221.98258357747395,
+              "bottom": 247.6764922688802
+            },
+            "hitWidth": 118.46900000000002,
+            "hitHeight": 60.702166666666656
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 63.05741733805339,
+              "y": 267.430502360026,
+              "width": 40.70216666666665,
+              "height": 40.7021666666667,
+              "right": 103.75958400472004,
+              "bottom": 308.1326690266927
+            },
+            "hitWidth": 118.46900000000002,
+            "hitHeight": 60.702166666666656
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 181.2804169108073,
+              "y": 267.430502360026,
+              "width": 40.70216666666664,
+              "height": 40.7021666666667,
+              "right": 221.98258357747395,
+              "bottom": 308.1326690266927
+            },
+            "hitWidth": 118.46900000000002,
+            "hitHeight": 60.702166666666656
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 46.40850067138672,
+              "y": 355.41064453125,
+              "width": 73,
+              "height": 16,
+              "right": 119.40850067138672,
+              "bottom": 371.41064453125
+            },
+            "hitWidth": 117.46900000000002,
+            "hitHeight": 58.33866666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 164.63150024414062,
+              "y": 355.41064453125,
+              "width": 75,
+              "height": 16,
+              "right": 239.63150024414062,
+              "bottom": 371.41064453125
+            },
+            "hitWidth": 117.46900000000002,
+            "hitHeight": 58.33866666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "932x430",
+      "width": 932,
+      "height": 430,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 932,
+          "height": 430
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 15.05,
+          "y": 79.60166666666666,
+          "width": 260.96000000000004,
+          "height": 335.3483333333333,
+          "right": 276.01000000000005,
+          "bottom": 414.94999999999993
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 216,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 20.049999237060547,
+              "y": 31.049999237060547,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 854.9500122070312,
+              "y": 31.049999237060547,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 375.5,
+              "y": 27.049999999999997,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 15.05,
+              "y": 79.60166666666666,
+              "width": 260.96000000000004,
+              "height": 335.3483333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 360.92959024994565,
+            "y": 122.67893054162263,
+            "width": 208.39877609864658,
+            "height": 215.5767606839776,
+            "right": 569.3283663485922,
+            "bottom": 338.25569122560023
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 20.049999237060547,
+              "y": 31.049999237060547,
+              "width": 66,
+              "height": 18,
+              "right": 86.04999923706055,
+              "bottom": 49.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 854.9500122070312,
+              "y": 31.049999237060547,
+              "width": 48,
+              "height": 18,
+              "right": 902.9500122070312,
+              "bottom": 49.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 62.785109049479175,
+              "y": 211.9295792643229,
+              "width": 45.09604166666665,
+              "height": 45.09604166666668,
+              "right": 107.88115071614583,
+              "bottom": 257.0256209309896
+            },
+            "hitWidth": 120.22125000000003,
+            "hitHeight": 65.09604166666665
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 183.17886210123697,
+              "y": 211.9295792643229,
+              "width": 45.09604166666668,
+              "height": 45.09604166666668,
+              "right": 228.27490376790365,
+              "bottom": 257.0256209309896
+            },
+            "hitWidth": 120.22125000000003,
+            "hitHeight": 65.09604166666665
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 62.785109049479175,
+              "y": 277.1981339518229,
+              "width": 45.09604166666665,
+              "height": 45.09604166666668,
+              "right": 107.88115071614583,
+              "bottom": 322.2941756184896
+            },
+            "hitWidth": 120.22125000000003,
+            "hitHeight": 65.09604166666665
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 183.17886210123697,
+              "y": 277.1981339518229,
+              "width": 45.09604166666668,
+              "height": 45.09604166666668,
+              "right": 228.27490376790365,
+              "bottom": 322.2941756184896
+            },
+            "hitWidth": 120.22125000000003,
+            "hitHeight": 65.09604166666665
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 47.3331298828125,
+              "y": 372.00164794921875,
+              "width": 75,
+              "height": 17,
+              "right": 122.3331298828125,
+              "bottom": 389.00164794921875
+            },
+            "hitWidth": 119.22125000000003,
+            "hitHeight": 58.89666666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 167.7268829345703,
+              "y": 372.00164794921875,
+              "width": 77,
+              "height": 17,
+              "right": 244.7268829345703,
+              "bottom": 389.00164794921875
+            },
+            "hitWidth": 119.22125000000003,
+            "hitHeight": 58.89666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844-ios-safe",
+      "width": 390,
+      "height": 844,
+      "safeInsets": {
+        "top": 47,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 173.00100000000003,
+          "width": 362.70000000000005,
+          "height": 418.34899999999993,
+          "right": 376.35,
+          "bottom": 591.3499999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 81.6500015258789,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 81.6500015258789,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 173.00100000000003,
+              "width": 362.70000000000005,
+              "height": 418.34899999999993
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.51897147686158,
+            "y": 600.620501184319,
+            "width": 223.09714727772712,
+            "height": 230.78208084852838,
+            "right": 305.6161187545887,
+            "bottom": 831.4025820328474
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 81.6500015258789,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 99.6500015258789
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 81.6500015258789,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 99.6500015258789
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 87.2428109741211,
+              "y": 308.02922607421874,
+              "width": 76.401875,
+              "height": 76.40187500000002,
+              "right": 163.6446859741211,
+              "bottom": 384.43110107421876
+            },
+            "hitWidth": 136.899,
+            "hitHeight": 96.40187499999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 226.35530639648437,
+              "y": 308.02922607421874,
+              "width": 76.40187500000002,
+              "height": 76.40187500000002,
+              "right": 302.7571813964844,
+              "bottom": 384.43110107421876
+            },
+            "hitWidth": 136.899,
+            "hitHeight": 96.40187499999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 87.2428109741211,
+              "y": 406.6446435546875,
+              "width": 76.401875,
+              "height": 76.40187500000002,
+              "right": 163.6446859741211,
+              "bottom": 483.0465185546875
+            },
+            "hitWidth": 136.899,
+            "hitHeight": 96.40187499999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 226.35530639648437,
+              "y": 406.6446435546875,
+              "width": 76.40187500000002,
+              "height": 76.40187500000002,
+              "right": 302.7571813964844,
+              "bottom": 483.0465185546875
+            },
+            "hitWidth": 136.899,
+            "hitHeight": 96.40187499999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 67.87837982177734,
+              "y": 546.041015625,
+              "width": 83,
+              "height": 19,
+              "right": 150.87837982177734,
+              "bottom": 565.041015625
+            },
+            "hitWidth": 167.02975,
+            "hitHeight": 61.617999999999995
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 237.62161254882812,
+              "y": 546.041015625,
+              "width": 86,
+              "height": 19,
+              "right": 323.6216125488281,
+              "bottom": 565.041015625
+            },
+            "hitWidth": 167.02975,
+            "hitHeight": 61.617999999999995
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390-ios-safe",
+      "width": 844,
+      "height": 390,
+      "safeInsets": {
+        "top": 0,
+        "right": 47,
+        "bottom": 21,
+        "left": 47
+      },
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 60.650000000000006,
+          "y": 79.17166666666667,
+          "width": 236.32000000000002,
+          "height": 276.1783333333334,
+          "right": 296.97,
+          "bottom": 355.3500000000001
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 196,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 65.6500015258789,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 721.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 60.650000000000006,
+              "y": 79.17166666666667,
+              "width": 236.32000000000002,
+              "height": 276.1783333333334
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 326.7035743568065,
+            "y": 111.26609211328582,
+            "width": 189.01285830958648,
+            "height": 195.52397923848076,
+            "right": 515.716432666393,
+            "bottom": 306.7900713517666
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 65.6500015258789,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 131.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 721.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 769.3499755859375,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 110.35698221842448,
+              "y": 198.92209147135415,
+              "width": 28.104791666666685,
+              "height": 28.1047916666667,
+              "right": 138.46177388509116,
+              "bottom": 227.02688313802085
+            },
+            "hitWidth": 110.08375000000001,
+            "hitHeight": 48.10479166666668
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 219.1582364908854,
+              "y": 198.92209147135415,
+              "width": 28.1047916666667,
+              "height": 28.1047916666667,
+              "right": 247.2630281575521,
+              "bottom": 227.02688313802085
+            },
+            "hitWidth": 110.08375000000001,
+            "hitHeight": 48.10479166666668
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 110.35698221842448,
+              "y": 245.74438761393228,
+              "width": 28.104791666666685,
+              "height": 28.10479166666667,
+              "right": 138.46177388509116,
+              "bottom": 273.84917928059895
+            },
+            "hitWidth": 110.08375000000001,
+            "hitHeight": 48.10479166666668
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 219.1582364908854,
+              "y": 245.74438761393228,
+              "width": 28.1047916666667,
+              "height": 28.10479166666667,
+              "right": 247.2630281575521,
+              "bottom": 273.84917928059895
+            },
+            "hitWidth": 110.08375000000001,
+            "hitHeight": 48.10479166666668
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 89.40937805175781,
+              "y": 313.8716735839844,
+              "width": 69,
+              "height": 16,
+              "right": 158.4093780517578,
+              "bottom": 329.8716735839844
+            },
+            "hitWidth": 109.08375000000001,
+            "hitHeight": 56.95666666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 198.21063232421875,
+              "y": 313.8716735839844,
+              "width": 71,
+              "height": 16,
+              "right": 269.21063232421875,
+              "bottom": 329.8716735839844
+            },
+            "hitWidth": 109.08375000000001,
+            "hitHeight": 56.95666666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "mode": "TABLET_PORTRAIT",
+        "mechanic": {
+          "x": 26.880000000000003,
+          "y": 107.716,
+          "width": 430,
+          "height": 440.00399999999996,
+          "right": 456.88,
+          "bottom": 547.7199999999999
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 325,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 26.880000000000003,
+              "y": 107.716,
+              "width": 430,
+              "height": 440.00399999999996
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 225.6613347468746,
+            "y": 583.97313593585,
+            "width": 314.0521115920325,
+            "height": 324.8703255108644,
+            "right": 539.713446338907,
+            "bottom": 908.8434614467144
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18,
+              "right": 97.87999725341797,
+              "bottom": 65.88000106811523
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18,
+              "right": 727.1199951171875,
+              "bottom": 65.88000106811523
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 128.90876098632813,
+              "y": 247.80298706054688,
+              "width": 82.39249999999998,
+              "height": 82.39249999999996,
+              "right": 211.30126098632812,
+              "bottom": 330.19548706054684
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 272.4587487792969,
+              "y": 247.80298706054688,
+              "width": 82.39249999999993,
+              "height": 82.39249999999996,
+              "right": 354.85124877929684,
+              "bottom": 330.19548706054684
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 128.90876098632813,
+              "y": 352.9415063476563,
+              "width": 82.39249999999998,
+              "height": 82.39249999999993,
+              "right": 211.30126098632812,
+              "bottom": 435.3340063476562
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 272.4587487792969,
+              "y": 352.9415063476563,
+              "width": 82.39249999999993,
+              "height": 82.39249999999993,
+              "right": 354.85124877929684,
+              "bottom": 435.3340063476562
+            },
+            "hitWidth": 140.804,
+            "hitHeight": 102.39249999999998
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 96.56649780273438,
+              "y": 502.05596923828125,
+              "width": 86,
+              "height": 19,
+              "right": 182.56649780273438,
+              "bottom": 521.0559692382812
+            },
+            "hitWidth": 199.881,
+            "hitHeight": 62.328
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 300.1935119628906,
+              "y": 502.05596923828125,
+              "width": 88,
+              "height": 19,
+              "right": 388.1935119628906,
+              "bottom": 521.0559692382812
+            },
+            "hitWidth": 199.881,
+            "hitHeight": 62.328
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "820x1180",
+      "width": 820,
+      "height": 1180,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 820,
+          "height": 1180
+        },
+        "mode": "TABLET_PORTRAIT",
+        "mechanic": {
+          "x": 28,
+          "y": 108.66666666666667,
+          "width": 430,
+          "height": 450.3333333333333,
+          "right": 458,
+          "bottom": 559
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 325,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 33,
+              "y": 49,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 730,
+              "y": 49,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 28,
+              "y": 108.66666666666667,
+              "width": 430,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 251.6613347468746,
+            "y": 596.3751247306707,
+            "width": 314.0521115920325,
+            "height": 324.8683611301062,
+            "right": 565.713446338907,
+            "bottom": 921.2434858607769
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 33,
+              "y": 49,
+              "width": 66,
+              "height": 18,
+              "right": 99,
+              "bottom": 67
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 730,
+              "y": 49,
+              "width": 48,
+              "height": 18,
+              "right": 778,
+              "bottom": 67
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 127.54167175292969,
+              "y": 251.16668701171875,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 212.7916717529297,
+              "bottom": 336.41668701171875
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 273.2083435058594,
+              "y": 251.16668701171875,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 358.4583435058594,
+              "bottom": 336.41668701171875
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 127.54167175292969,
+              "y": 359.4166564941406,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 212.7916717529297,
+              "bottom": 444.6666564941406
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 273.2083435058594,
+              "y": 359.4166564941406,
+              "width": 85.25,
+              "height": 85.25,
+              "right": 358.4583435058594,
+              "bottom": 444.6666564941406
+            },
+            "hitWidth": 142.66666666666669,
+            "hitHeight": 105.24999999999999
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 97.25,
+              "y": 513.1666259765625,
+              "width": 87,
+              "height": 19,
+              "right": 184.25,
+              "bottom": 532.1666259765625
+            },
+            "hitWidth": 199.5,
+            "hitHeight": 62.666666666666664
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 300.75,
+              "y": 513.1666259765625,
+              "width": 89,
+              "height": 19,
+              "right": 389.75,
+              "bottom": 532.1666259765625
+            },
+            "hitWidth": 199.5,
+            "hitHeight": 62.666666666666664
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "mode": "TABLET_LANDSCAPE",
+        "mechanic": {
+          "x": 26.880000000000003,
+          "y": 102.06063999999999,
+          "width": 286.72,
+          "height": 386.28496000000007,
+          "right": 313.6,
+          "bottom": 488.34560000000005
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_LANDSCAPE",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 289,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 32.279998779296875,
+              "y": 46.832000732421875,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 934.719970703125,
+              "y": 46.832000732421875,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 421.5,
+              "y": 42.832,
+              "width": 181,
+              "height": 27.999999999999993
+            },
+            {
+              "name": "task-card",
+              "x": 26.880000000000003,
+              "y": 102.06063999999999,
+              "width": 286.72,
+              "height": 386.28496000000007
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 371.2545082192576,
+            "y": 260.3318463175827,
+            "width": 279.1574554461435,
+            "height": 288.7734748667187,
+            "right": 650.4119636654011,
+            "bottom": 549.1053211843014
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 32.279998779296875,
+              "y": 46.832000732421875,
+              "width": 66,
+              "height": 18,
+              "right": 98.27999877929688,
+              "bottom": 64.83200073242188
+            },
+            "hitWidth": 84.8,
+            "hitHeight": 65.6
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 934.719970703125,
+              "y": 46.832000732421875,
+              "width": 48,
+              "height": 18,
+              "right": 982.719970703125,
+              "bottom": 64.83200073242188
+            },
+            "hitWidth": 84.8,
+            "hitHeight": 65.6
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 73.10100414062498,
+              "y": 241.18996288085935,
+              "width": 61.73598000000004,
+              "height": 61.73598000000004,
+              "right": 134.83698414062502,
+              "bottom": 302.9259428808594
+            },
+            "hitWidth": 131.11696,
+            "hitHeight": 81.73598000000003
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 205.64301158691404,
+              "y": 241.18996288085935,
+              "width": 61.73598000000004,
+              "height": 61.73598000000004,
+              "right": 267.3789915869141,
+              "bottom": 302.9259428808594
+            },
+            "hitWidth": 131.11696,
+            "hitHeight": 81.73598000000003
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 73.10100414062498,
+              "y": 324.35097362304685,
+              "width": 61.73598000000004,
+              "height": 61.73598000000004,
+              "right": 134.83698414062502,
+              "bottom": 386.0869536230469
+            },
+            "hitWidth": 131.11696,
+            "hitHeight": 81.73598000000003
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 205.64301158691404,
+              "y": 324.35097362304685,
+              "width": 61.73598000000004,
+              "height": 61.73598000000004,
+              "right": 267.3789915869141,
+              "bottom": 386.0869536230469
+            },
+            "hitWidth": 131.11696,
+            "hitHeight": 81.73598000000003
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 63.416259765625,
+              "y": 444.0622253417969,
+              "width": 80,
+              "height": 18,
+              "right": 143.416259765625,
+              "bottom": 462.0622253417969
+            },
+            "hitWidth": 130.22244,
+            "hitHeight": 60.566720000000004
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 196.06375122070312,
+              "y": 444.0622253417969,
+              "width": 82,
+              "height": 18,
+              "right": 278.0637512207031,
+              "bottom": 462.0622253417969
+            },
+            "hitWidth": 130.22244,
+            "hitHeight": 60.566720000000004
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1180x820",
+      "width": 1180,
+      "height": 820,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1180,
+          "height": 820
+        },
+        "mode": "TABLET_LANDSCAPE",
+        "mechanic": {
+          "x": 28,
+          "y": 106.68480000000001,
+          "width": 330.40000000000003,
+          "height": 443.1272,
+          "right": 358.40000000000003,
+          "bottom": 549.812
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_LANDSCAPE",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 333,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 35.75,
+              "y": 47.5,
+              "width": 73,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1081.25,
+              "y": 47.5,
+              "width": 53,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 487.5,
+              "y": 43,
+              "width": 205,
+              "height": 32
+            },
+            {
+              "name": "task-card",
+              "x": 28,
+              "y": 106.68480000000001,
+              "width": 330.40000000000003,
+              "height": 443.1272
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 427.812815049581,
+            "y": 267.49311236600334,
+            "width": 321.6853434088247,
+            "height": 332.76497248931474,
+            "right": 749.4981584584057,
+            "bottom": 600.2580848553181
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 35.75,
+              "y": 47.5,
+              "width": 73,
+              "height": 21,
+              "right": 108.75,
+              "bottom": 68.5
+            },
+            "hitWidth": 96.5,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 1081.25,
+              "y": 47.5,
+              "width": 53,
+              "height": 21,
+              "right": 1134.25,
+              "bottom": 68.5
+            },
+            "hitWidth": 96.5,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 79.47675335693359,
+              "y": 247.501388671875,
+              "width": 83.25650000000002,
+              "height": 83.25649999999999,
+              "right": 162.7332533569336,
+              "bottom": 330.757888671875
+            },
+            "hitWidth": 141.36720000000003,
+            "hitHeight": 103.2565
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 223.66673291015624,
+              "y": 247.501388671875,
+              "width": 83.25649999999999,
+              "height": 83.25649999999999,
+              "right": 306.92323291015623,
+              "bottom": 330.757888671875
+            },
+            "hitWidth": 141.36720000000003,
+            "hitHeight": 103.2565
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 79.47675335693359,
+              "y": 353.5807038574219,
+              "width": 83.25650000000002,
+              "height": 83.25649999999996,
+              "right": 162.7332533569336,
+              "bottom": 436.83720385742185
+            },
+            "hitWidth": 141.36720000000003,
+            "hitHeight": 103.2565
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 223.66673291015624,
+              "y": 353.5807038574219,
+              "width": 83.25649999999999,
+              "height": 83.25649999999996,
+              "right": 306.92323291015623,
+              "bottom": 436.83720385742185
+            },
+            "hitWidth": 141.36720000000003,
+            "hitHeight": 103.2565
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 72.80570220947266,
+              "y": 504.0968017578125,
+              "width": 86,
+              "height": 19,
+              "right": 158.80570220947266,
+              "bottom": 523.0968017578125
+            },
+            "hitWidth": 149.9658,
+            "hitHeight": 62.4304
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 226.59429931640625,
+              "y": 504.0968017578125,
+              "width": 88,
+              "height": 19,
+              "right": 314.59429931640625,
+              "bottom": 523.0968017578125
+            },
+            "hitWidth": 149.9658,
+            "hitHeight": 62.4304
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "mode": "DESKTOP",
+        "mechanic": {
+          "x": 25.200000000000003,
+          "y": 92.94746666666667,
+          "width": 358.40000000000003,
+          "height": 479.56453333333343,
+          "right": 383.6,
+          "bottom": 572.5120000000001
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 361,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 529,
+              "y": 36.28,
+              "width": 222,
+              "height": 34
+            },
+            {
+              "name": "task-card",
+              "x": 25.200000000000003,
+              "y": 92.94746666666667,
+              "width": 358.40000000000003,
+              "height": 479.56453333333343
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 464.06814047415594,
+            "y": 205.4159536643898,
+            "width": 348.9468089937278,
+            "height": 360.96569762736203,
+            "right": 813.0149494678838,
+            "bottom": 566.3816512917518
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21,
+              "right": 108.19999694824219,
+              "bottom": 62.779998779296875
+            },
+            "hitWidth": 100,
+            "hitHeight": 62
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21,
+              "right": 1235.800048828125,
+              "bottom": 62.779998779296875
+            },
+            "hitWidth": 100,
+            "hitHeight": 62
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 81.90342053222655,
+              "y": 242.27605541992187,
+              "width": 93.33650000000002,
+              "height": 93.3365,
+              "right": 175.23992053222656,
+              "bottom": 335.6125554199219
+            },
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 233.56008251953125,
+              "y": 242.27605541992187,
+              "width": 93.3365,
+              "height": 93.3365,
+              "right": 326.89658251953125,
+              "bottom": 335.6125554199219
+            },
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 81.90342053222655,
+              "y": 359.3313837890625,
+              "width": 93.33650000000002,
+              "height": 93.3365,
+              "right": 175.23992053222656,
+              "bottom": 452.6678837890625
+            },
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 233.56008251953125,
+              "y": 359.3313837890625,
+              "width": 93.3365,
+              "height": 93.3365,
+              "right": 326.89658251953125,
+              "bottom": 452.6678837890625
+            },
+            "hitWidth": 147.93786666666668,
+            "hitHeight": 113.33650000000003
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 75.22970581054688,
+              "y": 525.199462890625,
+              "width": 90,
+              "height": 21,
+              "right": 165.22970581054688,
+              "bottom": 546.199462890625
+            },
+            "hitWidth": 162.6218,
+            "hitHeight": 63.62506666666667
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 242.5703125,
+              "y": 525.199462890625,
+              "width": 92,
+              "height": 21,
+              "right": 334.5703125,
+              "bottom": 546.199462890625
+            },
+            "hitWidth": 162.6218,
+            "hitHeight": 63.62506666666667
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1438x914",
+      "width": 1438,
+      "height": 914,
+      "safeInsets": null,
+      "mission": 1,
+      "state": {
+        "mission": 1,
+        "sceneKey": "GameScene",
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "mode": "DESKTOP",
+        "mechanic": {
+          "x": 28,
+          "y": 108.28,
+          "width": 400,
+          "height": 501,
+          "right": 428,
+          "bottom": 609.28
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 406,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 603,
+              "y": 41,
+              "width": 232,
+              "height": 36
+            },
+            {
+              "name": "task-card",
+              "x": 28,
+              "y": 108.28,
+              "width": 400,
+              "height": 501
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 521.3515500689105,
+            "y": 283.3346224608233,
+            "width": 392.0199336941521,
+            "height": 405.5222639664838,
+            "right": 913.3714837630625,
+            "bottom": 688.8568864273071
+          }
+        ],
+        "interactive": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21,
+              "right": 111,
+              "bottom": 68.5
+            },
+            "hitWidth": 100,
+            "hitHeight": 68
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21,
+              "right": 1391,
+              "bottom": 68.5
+            },
+            "hitWidth": 100,
+            "hitHeight": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "bounds": {
+              "x": 101,
+              "y": 261.7799987792969,
+              "width": 100,
+              "height": 100,
+              "right": 201,
+              "bottom": 361.7799987792969
+            },
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "name": "choice-odd-banana",
+            "bounds": {
+              "x": 255,
+              "y": 261.7799987792969,
+              "width": 100,
+              "height": 100,
+              "right": 355,
+              "bottom": 361.7799987792969
+            },
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "name": "choice-odd-carrot",
+            "bounds": {
+              "x": 101,
+              "y": 385.7799987792969,
+              "width": 100,
+              "height": 100,
+              "right": 201,
+              "bottom": 485.7799987792969
+            },
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "name": "choice-odd-ball",
+            "bounds": {
+              "x": 255,
+              "y": 385.7799987792969,
+              "width": 100,
+              "height": 100,
+              "right": 355,
+              "bottom": 485.7799987792969
+            },
+            "hitWidth": 150,
+            "hitHeight": 120
+          },
+          {
+            "name": "hint-button",
+            "bounds": {
+              "x": 88,
+              "y": 561.780029296875,
+              "width": 91,
+              "height": 21,
+              "right": 179,
+              "bottom": 582.780029296875
+            },
+            "hitWidth": 183,
+            "hitHeight": 64
+          },
+          {
+            "name": "check-button",
+            "bounds": {
+              "x": 276,
+              "y": 561.780029296875,
+              "width": 93,
+              "height": 21,
+              "right": 369,
+              "bottom": 582.780029296875
+            },
+            "hitWidth": 183,
+            "hitHeight": 64
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    }
+  ],
+  "orientation": {
+    "preserved": [],
+    "errors": {},
+    "checks": {
+      "statePreserved": true,
+      "errors": true
+    }
+  },
+  "failures": []
+}

@@ -6,19 +6,32 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.3 — Mission 8: Запрограммируй робота
+Stage 8.3O Mission 2 visible task-first enlargement
 
 ## CURRENT STATUS
 
-PASS — Mission 8 adds deterministic command programming, animated repaired-robot grid movement, non-punitive correction, a programmed-state reward, and a clean Mission 9 handoff seam. Ready for manual visual review.
+READY_FOR_FRESH_PAGE_RECHECK — the first Mission 2 enlargement was technically present but not visually substantial enough. The corrected phone-landscape composition now expands the task card from the former 360 px side column to 523.28 px at 844×390, uses 88 px answer frames, hides the assembly panel and robot speech, and keeps wrong feedback outside all choices. Fresh-page focused QA and production build pass.
 
 ## CANONICAL LOCAL URL
 
 `http://127.0.0.1:4198/`
 
 - `npm run dev` and `npm run preview` bind strictly to port 4198.
+- Both Vite servers listen on `0.0.0.0`, preserving the canonical desktop URL while allowing same-LAN device access.
 - Automatic fallback to changing ports is disabled.
 - All future manual browser review, screenshots, and automated level QA must use this address.
+
+## LAN TESTING ENABLEMENT
+
+- Vite development and preview host: `0.0.0.0`.
+- Canonical desktop URL remains `http://127.0.0.1:4198/`.
+- Detected active physical Wi-Fi LAN IPv4: `192.168.0.114` (gateway `192.168.0.1`, subnet mask `255.255.255.0`). VPN adapter addresses were not selected as the phone/tablet LAN address.
+- Same-network phone/tablet URL: `http://192.168.0.114:4198/`.
+- Gameplay, Missions, production assets, and public deployment configuration were not changed.
+- Verification on 2026-08-30: both `http://127.0.0.1:4198/` and `http://192.168.0.114:4198/` returned HTTP 200. Headless Chrome at 390×844 loaded the active `StartScene`, one 390×844 game canvas, and 82 resources through each URL with zero console, page, failed-request, or non-2xx response errors; both captures were visually inspected and matched.
+- Strict-port verification: a second direct Vite launch on `0.0.0.0:4198` failed with `Port 4198 is already in use`, confirming that no fallback port is selected.
+- Build verification: `npm run build` PASS (TypeScript clean; 52 modules transformed; existing non-blocking Phaser chunk-size advisory only).
+- Files changed for LAN enablement: `package.json` and `ROBOTLAB-PROJECT-STATUS.md`. Files moved or deleted: none.
 
 ## FIRST FIVE MISSIONS
 
@@ -27,6 +40,176 @@ LOCKED
 ## MISSION 6–10
 
 MISSIONS 6–8 IMPLEMENTED; MISSIONS 9–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.3O — MISSION 2 VISIBLE TASK-FIRST ENLARGEMENT (2026-08-31)
+
+- User review correctly rejected Stage 8.3N's first Mission 2 adjustment as not visibly substantial. The remaining constraint was the old 360 px phone-landscape side column; increasing only internal maxima could not produce a large visual change inside it.
+- Phone landscape now uses a centralized task-first width of 390–540 px (`62%` of the safe width). At the reviewed 844×390 profile the configured card is 523.28 px wide and each answer frame is 88 px wide. The secondary assembly panel is hidden in all phone-landscape modes.
+- Robot dialogue is also suppressed in phone landscape. Wrong feedback is the single local line `Попробуй ещё раз`; measured bounds do not intersect any answer, and no speech bubble or progress panel can cover the card.
+- Focused canonical-URL QA PASS with nine checks and no browser errors: wide landscape card, child-sized choices, unobstructed feedback, cleared battery state, single route robot, and portrait behavior. Evidence: `docs/qa/stage8-3n-feedback-fixes.json` and `docs/qa/screenshots/stage8-3n-mission2-landscape-large-wrong.png`.
+- The older Stage 8.3J harness was rerun and exposed stale confirm-flow assertions after the later direct-response interaction change; those interaction-timing assertions are not claimed as a PASS for this stage. Its screenshots were still used for visual inspection. The focused direct-response harness is the acceptance evidence.
+- Server check: `http://127.0.0.1:4198/` returns 200 and exposes `/@vite/client`, confirming a Vite HMR development server. An already-open Phaser scene can retain its constructed TaskCard after source HMR; physical review must use a full page reload before reopening Mission 2.
+- Verification: `npm run typecheck` PASS; focused Playwright QA PASS; `npm run build` PASS (55 modules, existing non-blocking large-chunk advisory only); `git diff --check` reports no whitespace errors.
+- Files modified for this correction: `src/game/ui/responsiveLayout.ts`, `src/game/scenes/GameScene.ts`, `docs/decisions/0008-child-clarity-for-missions-2-6-8.md`, `qa/stage8-3n-feedback-fixes-playtest.cjs`, `docs/qa/stage8-3n-feedback-fixes.json`, `ROBOTLAB-PROJECT-STATUS.md`, and refreshed Stage 8.3J QA evidence. File created: `docs/qa/screenshots/stage8-3n-mission2-landscape-large-wrong.png`. Files moved or deleted: none. Approved production artwork was not modified. No commit or push was performed.
+
+## STAGE 8.3N — CHILD READABILITY AND ANSWER-STATE CORRECTION (2026-08-31)
+
+- Mission 2 `ПРОДОЛЖИ РЯД`: sequence artwork now receives a larger share of the existing content band. At 390×844 the four sequence images measure 56.94 px and answer images 60.175 px. Sequence progress is always in the ribbon, leaving the feedback line as the short `Попробуй ещё раз`; its measured bounds do not intersect any answer bounds.
+- Mission 6 `ЗАРЯДИ РОБОТА`: battery selection emphasis now has a dedicated graphics layer that is cleared on every redraw. After choosing the wrong medium battery, all three selection layers contain zero drawing commands and all scales return to 1. Selecting the correct full battery then highlights only that battery at scale 1.06.
+- Mission 8 `ДОВЕДИ РОБОТА`: removed the non-participating helper actor from route play. Focused QA finds exactly one `programming-robot`, zero `grounded-robot` helpers, and zero Mission 8 helper layers; the board robot still owns all route execution.
+- Focused visual QA PASS: `qa/stage8-3n-feedback-fixes-playtest.cjs` on the canonical `http://127.0.0.1:4198/`; all seven assertions pass and browser errors are empty. Three 390×844 screenshots were generated and visually inspected.
+- Regression PASS: `npm run typecheck`; `npm run build` (55 modules, existing non-blocking large-chunk advisory only); layout contract 17/17; short-landscape task-card playtest exit 0; `git diff --check` has no whitespace errors (only existing line-ending notices).
+- Files modified for this stage: `src/game/ui/TaskCard.ts`, `src/game/ui/responsiveLayout.ts`, `src/game/ui/EnergyTaskCard.ts`, `src/game/scenes/Mission8Scene.ts`, and this status document. Files created: `docs/decisions/0008-child-clarity-for-missions-2-6-8.md`, `qa/stage8-3n-feedback-fixes-playtest.cjs`, `docs/qa/stage8-3n-feedback-fixes.json`, and three `docs/qa/screenshots/stage8-3n-*` screenshots. Files moved or deleted: none. Approved production artwork was not modified. No commit or push was performed.
+
+## STAGE 8.3L — POST-ROTATION NEXT PROGRESSION FIX (2026-08-31)
+
+- Exact reproduction FAIL before the fix at 412×180: Task 1 ball selection showed the correct check, `Дальше` was visible/active/enabled, touch was delivered, but the screen remained `ЗАДАНИЕ 1 ИЗ 10`. This reproduced both when Task 1 was completed before rotation and when it was completed after rotation.
+- Root cause: viewport reflow restarts `GameScene` with a presentation payload that deliberately preserves completed Task 1. Phaser may retain prior init data when a later `Scene.restart()` receives no replacement data, so the explicit `Дальше` transition accidentally reapplied the preservation payload.
+- `GameScene.renderCurrentTask()` now restarts with `{ viewportReflow: false }`. Only viewport lifecycle restarts carry `{ viewportReflow: true, presentationState }`.
+- Exact reproduction PASS after the fix in both sequences: before `Дальше`, `ЗАДАНИЕ 1 ИЗ 10`; after the real touch, `ЗАДАНИЕ 2/10 · РЯД 1/3`; `failures: []`, browser errors empty.
+- Verification: TypeScript PASS; responsive layout contract 17/17 PASS; production build PASS (54 modules, existing non-blocking bundle-size advisory only).
+- Files modified: `src/game/scenes/GameScene.ts`, `package.json`, `docs/decisions/0007-real-device-mobile-reflow.md`, and this status document. Files created: `qa/stage8-3k-next-after-rotation-playtest.cjs`, `docs/qa/stage8-3k-next-after-rotation.json`, and four `stage8-3k-*` screenshots. Files moved or deleted: none. Gameplay rules and approved assets were not changed.
+
+## STAGE 8.3K — REAL TOUCH DELIVERY VERIFICATION (2026-08-31)
+
+- The earlier Stage 8.3J test contained an acceptance gap: it issued a touch tap but only measured layout afterward, so it did not prove that Phaser delivered the input event. The harness now records TaskCard selection/result state and requires visible feedback after each real browser touch action.
+- Verified the full answer → Hint → Check chain for Tasks 2–4. A case passes only when the answer changes `selectedKey` and displays `Выбрано`, Hint displays its feedback, and Check produces `correct` or `wrong`.
+- The user's follow-up confirmed that the generated 412×180 screenshot represented the failing physical orientation. Root cause: Android browser chrome can change the canvas' rendered CSS bounds before Phaser refreshes its cached `canvasBounds` and `displayScale`; visible controls then render in one coordinate space while touch hit testing uses another.
+- `viewport.ts` now refreshes live canvas bounds and derives the current input display scale in capture phase before every `pointerdown` and `touchstart`, plus one animation frame after a committed viewport change. This updates coordinate conversion only and does not restart the scene.
+- PASS with `failures: []` for 13 cases: direct short-landscape cases, Android-browser-chrome constrained viewports down to 412×180 CSS px, and portrait 390×844 → landscape 844×390 reflow for Tasks 2, 3, and 4. The constrained cases deliberately corrupt Phaser's stored input transform before answer, Hint, and Check taps; every tap restores the transform and reaches the intended action. Browser errors are empty.
+- Regression: TypeScript PASS; responsive layout contract 17/17 PASS; orientation lifecycle PASS for six profiles with five portrait/landscape cycles each; production build PASS (54 modules, existing non-blocking bundle-size advisory only).
+- Files modified in this follow-up: `src/game/ui/viewport.ts`, `qa/stage8-3j-task-card-landscape-playtest.cjs`, `docs/decisions/0007-real-device-mobile-reflow.md`, its JSON/screenshots, and this status document. Files moved or deleted: none. Gameplay rules and approved assets were not changed.
+
+## STAGE 8.3J — CHILD-SIZED SHORT-LANDSCAPE TASK CARDS (2026-08-31)
+
+- The user's physical screenshot `photo_2026-08-31_11-58-22.jpg` confirmed a real usability defect in Task 2: the short-landscape card remained too narrow for a 4–6-year-old, four answer frames were visually small, and the persistent `РЯД …` text occupied the same lower band as answers and transient feedback.
+- `responsiveLayout.ts` now gives `PHONE_LANDSCAPE_SHORT` a 300–360 px task-first card and a compact 150–190 px assembly panel. Primary action faces are 52 px high with 60 px hit height; answer containers have a minimum 56×56 px hit area. At 844×390, Task 2 answer faces measure about 75×50 px with 83×58 px hit areas, while Hint/Check faces measure about 153×52 px with 161×60 px hit areas.
+- Internal challenge progress moves into the wide task ribbon only in short landscape (`ЗАДАНИЕ 2/10 · РЯД 1/3`, with equivalent Comparison/Shadow labels). The feedback band now contains only transient feedback. TaskCard derives the content bottom from the actual feedback and action bounds, so answer/status/action rows cannot share the same vertical space.
+- Shadow matching no longer forces an 84 px content band when less height exists. On the 568×320 minimum it compresses the non-interactive target preview first and retains 88×48 px answer faces with 96×56 px hit areas.
+- Focused visual QA PASS with `failures: []` for eight cases: Task 2 at 568×320, 740×360, 844×390, and 932×430; Tasks 3 and 4 at 568×320 and 844×390. Every card stayed inside the canvas; answer/action targets met the new contract; internal progress was present in the ribbon and absent from feedback; selected-state feedback cleared choices and actions; browser errors were empty. Sixteen initial/selected screenshots were generated and visually inspected.
+- Regression PASS: Stage 8.3E layout contract 17/17; special states `failures: []`; Stage 8.3F exhaustive touch audit 40 cases / 284 probes / zero failures; Stage 8.3H orientation lifecycle six cases with five cycles each / zero failures; `npm run typecheck` PASS; production `npm run build` PASS (54 modules, existing non-blocking bundle-size advisory only).
+- The legacy Stage 4/5/6 standalone harnesses were not used as acceptance evidence: they still wait for pre-Stage-8 text contracts such as internal progress in `feedbackText` and `ЗАДАНИЕ N ИЗ 5`, while the active game has ten tasks and Stage 8.3J intentionally moves short-landscape internal progress into the ribbon. Current focused, touch, special-state, and orientation suites cover the changed runtime contract.
+- Files materially modified: `src/game/ui/responsiveLayout.ts`, `src/game/ui/TaskCard.ts`, `qa/stage8-3e-layout-contract.cjs`, `package.json`, `docs/decisions/0001-responsive-layout.md`, and this status document. Files created: `qa/stage8-3j-task-card-landscape-playtest.cjs`, `docs/qa/stage8-3j-task-card-landscape.json`, and Stage 8.3J screenshots under `docs/qa/screenshots/`. Files moved or deleted: none. Gameplay rules and approved assets were not changed. No commit or push was performed.
+
+## STAGE 8.3I — SAMSUNG ROTATION FOLLOW-UP (2026-08-31)
+
+- Real Samsung screenshot `photo_2026-08-31_11-26-43.jpg` confirmed two visible failures: the completed Mission 1 feedback/controls overlapped a cramped 2×2 choice grid in short landscape, and the scene did not reliably reconstruct the same visible mission after rotating back. The user's repeated reload report also identified that final phone review was still being served by Vite development/HMR.
+- Root lifecycle correction: two stable frames were too permissive because Chrome browser chrome can pause at multiple intermediate heights during one orientation animation. The viewport bridge now waits 140 ms after the final resize/orientation/VisualViewport event, requires three identical animation-frame samples, ignores VisualViewport scroll-only changes, and skips already-synchronized commits. A simulated four-step Samsung geometry burst now produces exactly one landscape commit and one portrait commit.
+- Presentation correction: canonical repair progress advances when a task succeeds, before the child presses `Дальше`. Viewport reflow now carries the visible mechanic's presentation snapshot, so rotating a completed Mission 1 card keeps Mission 1 on screen; only the existing explicit `Дальше` action advances to Mission 2. Normal gameplay restart behavior is unchanged.
+- Compact-card correction: when the measured generic four-choice content band cannot safely contain two rows plus feedback and actions, `TaskCard` composes the choices in one horizontal row. The completed 844×390 Mission 1 card now has separate choice, feedback, and action bands; the returned 390×844 card restores its normal two-row portrait grid.
+- Review-server correction: verified PID 34968 was `vite dev` with HMR on `0.0.0.0:4198`. It was stopped and replaced by hidden strict-port production preview PID 23348. Both `http://127.0.0.1:4198/` and `http://192.168.0.114:4198/` return HTTP 200; production preview has no HMR reload channel.
+- Focused production-preview QA PASS: ordinary Start → Play → Mission 1 completion, a four-intermediate-size portrait-to-landscape burst, completed landscape review, a four-intermediate-size return burst, and completed portrait review. Visual/inner/parent/display/game/canvas geometry matched exactly; there was one commit per direction; the mission stayed completed and visible; all measured choice/feedback/action overlaps were false; console/page/network errors were empty.
+- Full regression PASS after the changes: Missions 1, 5, 7, and 8 completed five 390×844 ↔ 844×390 cycles; Mission 8 also completed five cycles at 412×915 ↔ 915×412 and 393×852 ↔ 852×393. Mission 7 wire redraw and Mission 8 command/route-preview preservation remain PASS with `failures: []`.
+- Verification: `npm run build` PASS (54 modules; existing non-blocking bundle-size advisory only); `qa/stage8-3i-samsung-orientation-regression.cjs` PASS against production preview; `qa/stage8-3h-orientation-lifecycle-playtest.cjs` PASS after the lifecycle/presentation changes. Both new Mission 1 screenshots were visually inspected.
+- Files modified: `src/game/ui/viewport.ts`, `src/game/ui/sceneLayout.ts`, `src/game/scenes/GameScene.ts`, `src/game/ui/TaskCard.ts`, `docs/decisions/0007-real-device-mobile-reflow.md`, and this status document. Files created: `qa/stage8-3i-samsung-orientation-regression.cjs`, `docs/qa/stage8-3i-samsung-orientation-regression.json`, and two `docs/qa/screenshots/stage8-3i-*` captures. Files moved or deleted: none. Gameplay rules, Missions 1–8 logic, and approved assets were not changed. No commit or push was performed.
+
+## STAGE 8.3H — ORIENTATION LIFECYCLE STABILIZATION (2026-08-31)
+
+- Root cause: the prior VisualViewport bridge accepted the first animation frame after a rotation and changed host CSS plus Phaser size in the same frame. In `Scale.RESIZE`, Phaser's refresh consumes `parentSize`; if the host box had not committed yet, stale portrait dimensions could overwrite a landscape resize (or vice versa), and the scene could rebuild from transient geometry.
+- `viewport.ts` now coalesces window resize/orientation and VisualViewport resize/scroll bursts, samples live VisualViewport width/height/offset and `innerWidth`/`innerHeight`, requires two identical consecutive animation-frame samples, and uses a bounded 12-frame retry. It commits host CSS first, refreshes Phaser parent bounds, then resizes Phaser and publishes one committed generation with viewport, parent, display, and game geometry.
+- `sceneLayout.ts` now ignores transient Phaser resize emissions. Active scenes rebuild only after the centralized stable-viewport commit, from canonical mechanic/session state through the existing `create()` layout pass. No previous-orientation transform is multiplied or retained. The scene commit listener is removed on shutdown; global viewport listeners are registered once and removed on Phaser game destruction.
+- Mission 7 rotation cancels any temporary drag through scene teardown, retains canonical connected colors, and redraws completed Graphics wires against the new port coordinates. Mission 8 reconstructs its grid and route preview from the live command sequence and places the board robot from the canonical logical cell.
+- Acceptance PASS: Missions 1, 5, 7, and 8 each completed five 390×844 ↔ 844×390 cycles. Mission 7 began with a completed red wire; Mission 8 began with two touch-entered commands and a visible route preview. Mission 8 also completed five cycles at 412×915 ↔ 915×412 and 393×852 ↔ 852×393. Every state reported exact VisualViewport, inner, parent, display, game, canvas CSS, and canvas-pixel agreement; portrait geometry was deterministic after cycle 5; robot scale X/Y remained equal; state and listener counts remained stable; console/page/network errors were empty.
+- Visual review PASS for Mission 7 and Mission 8 initial portrait, first landscape, first returned portrait, and cycle-5 portrait captures. Wires, grid cells, route preview, robot proportions, and controls recompose cleanly without stale dimensions or cumulative drift.
+- Verification: existing focused orientation preflight PASS at 390×844 and 412×915; `qa/stage8-3h-orientation-lifecycle-playtest.cjs` PASS with `failures: []`; `npm run build` PASS (54 modules; existing non-blocking bundle-size advisory only).
+- Files modified: `src/game/ui/viewport.ts`, `src/game/ui/sceneLayout.ts`, `src/main.ts`, `docs/decisions/0007-real-device-mobile-reflow.md`, and this status document. Files created: `qa/stage8-3h-orientation-lifecycle-playtest.cjs`, `docs/qa/stage8-3h-orientation-lifecycle.json`, and eight `docs/qa/screenshots/stage8-3h-*` captures. Files moved or deleted: none. Approved assets and gameplay/Missions 1–8 logic were not changed. No commit or push was performed.
+
+## LEVEL 01 — RESPONSIVE ORIENTATION STABILIZATION (2026-08-31)
+
+- Audited the existing responsive architecture before editing. `responsiveLayout.ts` remains the single geometry/classification contract; `viewport.ts` owns visual-viewport and safe-area metrics; `sceneLayout.ts` owns the resize lifecycle; and `GameScene.create()` remains the authoritative Level 01 composition pass. No second responsive service, device-model branch, Phaser upgrade, scale-mode change, or desktop redesign was introduced.
+- Replaced the immediate one-shot resize restart with a persistent shutdown-scoped listener that reads current Phaser `parentSize`, `displaySize`, and `gameSize`, compares a normalized signature, coalesces same-frame resize bursts, ignores unchanged metrics, and rebuilds once from serializable session/mechanic state when geometry changes.
+- Repeated orientation QA PASS for 390×844 → 844×390 → 390×844 → 844×390 and 412×915 → 915×412 → 412×915 → 915×412. Portrait and landscape geometry returned exactly, live ScaleManager metrics matched each target, Mission 1 selection survived, listener counts stayed stable, and browser/page/network errors were empty.
+- Level 01 responsive matrix PASS with `failures: []` at 27 profiles: all requested 320×568, 333×885, 360×800, 390×844, 400×824, 412×915, 568×320, 800×360, 844×390, 824×400, 915×412, 768×1024, 1024×768, 820×1180, 1180×820, and 1280×720 sizes, plus existing regression, wide-desktop, and iOS safe-area profiles. Every profile passed viewport, mechanic/control containment, touch size, readability, overlap, safe-rect, real touch, and error checks.
+- Representative 390×844 portrait, 844×390 landscape, and 1280×720 desktop captures were visually inspected. The phone compositions remain readable and unobstructed, and the approved desktop composition is unchanged.
+- Verification: `npm run typecheck` PASS; `node --check qa/stage8-3c-mobile-reflow-playtest.cjs` PASS; `node qa/stage8-3e-layout-contract.cjs` PASS (17/17); production `npm run build` PASS (54 modules; existing non-blocking bundle-size advisory only); focused orientation QA PASS; Level 01 27-profile Chrome/Playwright matrix PASS.
+- Files materially modified for this change: `src/game/ui/sceneLayout.ts`, `qa/stage8-3c-mobile-reflow-playtest.cjs`, `docs/decisions/0007-real-device-mobile-reflow.md`, and this status document. QA outputs created: `docs/qa/stage8-3g-level01-orientation-results.json` and `docs/qa/stage8-3g-level01-responsive-results.json`. Existing representative Stage 8.3E Mission 1 screenshots were refreshed. Files moved or deleted: none. Approved production/reference assets were not changed. No commit or push was performed.
+
+## STAGE 8.3G — MISSION 8 COMPLETE ROUTE SPACE
+
+- The reported defect was confirmed. Stage 8.3E accepted multiple paths but still capped each program at `shortestPathLength + 3`; this excluded a valid six-command path on Route 1 and three valid 7/9-command detours on Route 2 before simulation could evaluate them.
+- `analyzeSimpleGridRoutes` now enumerates the finite set of legal non-repeating paths outside Phaser. Each challenge stores `simpleRouteCount`, `shortestPathLength`, and `longestSimplePathLength`; `maxCommands` is the actual longest simple route, not an allowance derived from one preferred path.
+- Complete route space: Route 1 has 6 paths (2–6 commands), Route 2 has 6 paths (3–9 commands), and Route 3 has 7 paths (5–7 commands). All 19 were independently enumerated and executed through `simulateProgram`; every route reaches the exact charger cell without collision.
+- Arbitrary paths with repeated loops are not used to size the strip because they create infinitely many sequences. They remain valid when they fit within the finite capacity, and reaching the charger still succeeds immediately and ignores later queued commands.
+- The existing fluid strip supports the new 6/9/7 capacities without a device-specific layout branch. Focused Chrome QA fills and executes the longest route on all three boards through visible controls at 360×600 touch and 1280×720 mouse, checks every slot stays in the viewport, verifies 48 px input hit areas, exact charger arrival, final completion, and zero browser/network errors.
+- Verification: `npm run typecheck` PASS; `npm run qa:stage8-3e:routes` PASS (19/19 routes); `npm run qa:stage8-3e:layout` PASS (17/17); `npm run build` PASS (54 modules, existing non-blocking chunk-size advisory only); `npm run qa:stage8-3g:routes` PASS.
+- Files modified: `src/game/mechanics/programming.ts`, `qa/stage8-3e-route-model.mjs`, `docs/decisions/0006-mission8-grid-programming.md`, `package.json`, and this status document. Files created: `qa/stage8-3g-all-routes-playtest.cjs`, `docs/qa/stage8-3g-all-routes.json`, and six `stage8-3g-*` screenshots. Files moved or deleted: none. Approved production/reference assets were not changed. No commit or push was performed; Mission 9 was not started.
+
+## STAGE 8.3F — MOBILE BUTTON HIT-AREA RECOVERY
+
+- Real-phone feedback that buttons stopped responding was reproduced with a new exhaustive Chrome touch harness. The root cause was a centered custom Phaser hit rectangle added during Stage 8.3E: Container hit areas use local coordinates from 0..width and 0..height, so Missions 1–4 taps were redirected to neighboring/last choices and Mission 5 memory cards could become unreachable.
+- TaskCard now enlarges the interactive container itself to at least 48 px and uses Phaser's canonical generated hit area. MemoryTaskCard keeps separate visual dimensions while its interactive container owns the enlarged hit size, preserving layout without misaligned touch coordinates.
+- The previously unnamed Missions 1–4 hint control now has the stable hint-button ID so it participates in runtime and automated button audits.
+- qa/stage8-3f-mobile-button-playtest.cjs recreates each scene before every tap, converts the target through its actual world transform and canvas DOM rectangle, and verifies the exact object's own pointerdown. Final result: 40 scene/profile cases, 284 individual button/card/port probes, failures: [] at 320×568, 360×600, 390×844, and 844×390. It covers Start, Missions 1–8, and the Mission 5→6 transition; minimum observed hit dimension is 48 px.
+- Existing stateful full-flow regression still reaches Missions 1–7 and Mission 8, and its mobile Mission 8 touch route passes. The older fixed-route assertions in that legacy suite are obsolete under Stage 8.3E's open-route model and are not used as Stage 8.3F acceptance evidence.
+- A 320×568 StartScene audit found and fixed a title/subtitle stroke overlap by increasing the centralized title gap. Final Start audit: no overlaps, no safe-rect escape, no undersized targets, no browser errors; the updated screenshot was visually inspected.
+- Verification: npm run typecheck PASS; npm run build PASS (54 modules; existing non-blocking chunk-size advisory only); Stage 8.3E layout contract 17/17 PASS; exhaustive mobile button audit 284/284 PASS.
+- Files created: qa/stage8-3f-mobile-button-playtest.cjs, docs/qa/stage8-3f-mobile-buttons.json, and Stage 8.3F screenshots under docs/qa/screenshots/. Files materially modified: src/game/ui/TaskCard.ts, src/game/ui/MemoryTaskCard.ts, src/game/ui/responsiveLayout.ts, qa/stage8-3e-layout-contract.cjs, package.json, and this status document. Files moved or deleted: none. No commit or push was performed.
+
+## STAGE 8.3E — RESPONSIVE ARCHITECTURE RESET + MISSION 8 OPEN ROUTES
+
+- The active implementation now reads `visualViewport` width, height, offsets, orientation, aspect ratio, inner dimensions, DPR, and CSS safe-area insets through `src/game/ui/viewport.ts`. The app host uses dynamic viewport sizing and follows visual-viewport offsets while retaining Phaser `Scale.RESIZE`.
+- `ResponsiveLayout` publishes one `VisibleSafeRect`, semantic gaps, semantic zones (`headerZone`, `gameplayZone`, `controlsZone`, `characterZone`, `modalZone`), and seven width-plus-height modes: short/normal/tall phone portrait, short phone landscape, tablet portrait, tablet landscape, and desktop. Existing broad modes remain compatibility fields only. Shared Missions 1–6, Mission 7, Mission 8, and the Mission 5→6 transition now obtain scene geometry from this module.
+- Phone portrait Home and Sound occupy row 1. Mission 6–8 status chips use row 2; Mission 7 and Mission 8 mechanics start below that row. Mission 7 phone removes full-body secondary robots and extends the wire board to the hint row. Short phone landscape has an independent board/control composition.
+- Mission 5→6 transition actors are composed directly inside the visible phone safe area at readable `HERO` scale instead of inheriting desktop logical-world coordinates. Mission 8 hides the helper on phone layouts and enlarges the desktop helper.
+- Runtime bounds auditing now records actual major-element intersections, safe-rect escapes, undersized touch targets, and semantic character-role readability in the Phaser registry. Modal input blockers prevent gameplay interaction under Mission 7 and Mission 8 completion surfaces.
+- Mission 8 uses one canonical pure `simulateGridProgram` result for preview, execution, validation, and QA. Reaching the charger succeeds immediately and ignores remaining queued commands. Stage 8.3E originally used BFS shortest length plus three commands; Stage 8.3G supersedes that remaining capacity restriction with complete simple-route analysis.
+- Stage 8.3E pure route QA originally sampled two alternatives per board. Stage 8.3G supersedes that sample with independent enumeration and execution of all 19 simple routes.
+- TypeScript `npm run typecheck` PASS after the current architecture and scene changes. Pure layout contract QA `qa/stage8-3e-layout-contract.cjs` PASS with 17 cases: all 15 required viewport sizes plus portrait and landscape iOS safe-area injections. It checks Start title/hero/button spacing, shared card/progress separation, visible ribbon clearance, semantic zones, Mission 7 status/board/hint geometry, Mission 8 board/feedback/arrows/actions geometry, transition robot/button spacing, modal containment, touch sizes, and safe-bottom bounds. The contract caught and drove fixes for the short-phone Start title/Sound collision and tablet/desktop Mission 8 arrow/action collision.
+- Full Chrome/Playwright matrix `qa/stage8-3c-mobile-reflow-playtest.cjs` PASS with `failures: []`: 17 viewport profiles × Missions 1–8 = 136 scene cases. It covers 360×600 through 430×932 phone portraits, 740×360 through 932×430 phone landscapes, injected iOS portrait/landscape safe areas, 768×1024 and 1024×768 tablets, and 1280×720/1438×914 desktops. Every case passed viewport, mechanic/control containment, 48 px touch targets, mechanic/robot readability, semantic-overlap audit, safe-rect audit, real touch activation, and console/page/request/response checks.
+- Orientation QA PASS: a Mission 8 partial command queue and a Mission 1 selected answer both survived portrait → landscape → portrait scene reconstruction. Touch drag on Mission 7 and tap actions on Missions 1–6/8 passed in the phone profiles.
+- Special-state Chrome QA `qa/stage8-3e-special-states.cjs` PASS with `failures: []` at 360×600, 390×844, 844×390, 768×1024, and 1280×720. The transition keeps both robots readable and inside the viewport; Mission 7 completion blocks underlying ports; Mission 8 accepts the alternate `UP RIGHT RIGHT DOWN` route, places the robot on the charger, and reports early success.
+- Fresh `stage8-3e-*` evidence was captured for every Mission 1–8 at representative minimum phone, iOS-safe phone portrait/landscape, tablet portrait/landscape, and desktop/wide profiles, plus transition, Mission 7 completion, and Mission 8 alternative-arrival states. Representative captures were visually inspected after the final run; no browser-edge clipping, unintended overlap, microscopic character, or dead mobile control layout remained.
+- Final verification on 2026-08-30: `npm run build` PASS (TypeScript clean; 54 modules transformed; existing non-blocking Phaser chunk-size advisory only), pure layout contract 17/17 PASS, pure open-route model PASS, full browser matrix PASS, special states PASS, and `git diff --check` reported only the repository's CRLF normalization warnings. `http://127.0.0.1:4198/` returned HTTP 200; Vite remained bound to `0.0.0.0:4198`, and active connections from LAN client `192.168.0.108` were observed. Same-device URL remains `http://192.168.0.114:4198/`.
+- No production/reference asset was modified or replaced. No files were moved or deleted. No commit or push was performed. Mission 9 and Character Art Migration v2 were not started.
+
+## STAGE 8.3C — REAL DEVICE MOBILE REFLOW FOUNDATION
+
+- Added `viewport-fit=cover`, `100dvh` fallback sizing, CSS safe-area insets, and a `visualViewport` bridge that keeps the host and Phaser `Scale.RESIZE` surface aligned to the actually visible browser area rather than nominal `100vh`.
+- Visual viewport resize/scroll, window resize, and orientation changes recompute presentation. Scene rebuilds retain canonical session/mechanic state; the Mission 8 orientation round-trip preserved its partially built command route.
+- Added width-plus-height classification. Phone portrait publishes compact/regular/tall pressure, and widths below 430 px use compact/ultra behavior below 720 px visible height. No brand, model, or exact-device checks were added.
+- Reworked Missions 1–5 phone composition so the task card follows the small Home/Sound header, consumes the main viewport, and leaves a bottom support zone for one readable helper plus a compact assembly station. The prior large assembly panel above the mechanic is removed on phone portrait.
+- Mission 6 uses the same mechanic-first portrait contract and combines `СИСТЕМЫ 1/4 • ЭНЕРГИЯ` into the header row. The battery task remains dominant and both reward robots stay readable below it.
+- Mission 7 combines `СИСТЕМЫ 2/4 • СОЕДИНЕНИЯ` into the header and gives the wire board nearly the full remaining width/height. Secondary robots are intentionally omitted on phone portrait instead of becoming tiny or reducing the 64 px socket targets.
+- Mission 8 combines `СИСТЕМЫ 3/4 • МАРШРУТ N/3` into the header, then budgets visible height in the required board → `ТВОЙ ПУТЬ` → arrows → actions order. The helper is omitted on phone portrait; the board robot remains the primary readable character.
+- Added a development-only diagnostic console report and opt-in overlay at `?viewportDebug=1` with inner size, visual viewport size, DPR, canvas CSS size, Phaser size/display scale, and composition mode. It is excluded from production behavior.
+- Added `qa/stage8-3c-mobile-reflow-playtest.cjs` and `docs/qa/stage8-3c-mobile-reflow-results.json`. The suite covers Missions 1–8 at 320×568, 360×620, 360×640, 360×740, 390×650, 390×700, 390×844, 412×915, 768×1024, 1280×720, and 1438×914; it audits bounds, touch targets, mechanic/robot readability, console/network errors, and orientation state.
+- Final consolidated QA PASS with `failures: []`: all 88 mission/viewport cases passed viewport, mechanic bounds, control bounds, touch-target, mechanic readability, robot readability, real interaction, and console/page/request/response checks. Mission 7 used CDP touch start/move/end and verified the matching wire; orientation preserved Mission 1 selection and the Mission 8 command queue.
+- Captured the required Mission 1, 5, 7, and 8 screenshots at 360×640, 390×700, and 390×844, plus Mission 8 at 768×1024 and 1280×720. Captures were visually inspected; gameplay dominates phone layouts without overlap or browser-edge control placement.
+- `npm run build` PASS after the expected restricted Windows `spawn EPERM` rerun with approval: TypeScript clean, 53 modules transformed, existing non-blocking Phaser chunk-size advisory only.
+- No production artwork or approved reference was changed. No files were moved or deleted. No commit or push was performed. Mission 9 and Character Art Migration v2 were not started.
+- Final status remains `WAITING FOR REAL DEVICE REVIEW`; use `http://192.168.0.114:4198/` on the Samsung phone, optionally adding `?viewportDebug=1` while collecting metrics.
+
+## STAGE 8.3B — TARGET REACH + ROBOT SCALE + TOUCH VALIDATION
+
+- Mission 8 challenges now expose one canonical `targetCell`. The charging marker, preview endpoint, execution final position, and success equality all use that same column/row pair. Target cells are explicitly exempt from obstacle classification and success is never inferred from adjacency.
+- Preview warnings and execution simulation share the exported command-to-delta mapping. All three approved routes produced a preview endpoint exactly equal to the target center and an execution `robotCell` exactly equal to `targetCell`.
+- `ProgrammingBoard` uses fluid cell-derived active-robot sizing and derives a stable vertical offset from the rendered robot bounds, so every move settles the visual center on the destination cell. Wide/tablet active robots are larger; mobile retains a readable contained scale. The Mission 8 landscape helper cap was reduced so the active board robot remains the hero.
+- Mission 7 keeps unified Phaser Pointer events and now handles pointer-up-outside, suppresses the active pointer's native gesture, provides at least 64 px source/target hit areas, resolves overlapping hit areas to the nearest eligible target, and clears wrong/empty releases without a ghost wire. Touch/text-selection suppression is scoped to `#app`/canvas instead of the body.
+- Dedicated QA: `qa/stage8-3b-target-touch-playtest.cjs` used real Chrome CDP `touchStart`/`touchMove`/`touchEnd` drag input at 390×844 and 768×1024. Wrong target, empty release, active wire following, correct release, completed lock, no ghost, and 64 px hit areas all PASS.
+- Mission 8 touch/visual QA PASS at 320×568, 390×844, 768×1024, 1280×720, and 1438×914. Routes 1–3 each PASS exact preview/execution target equality; controls remain tappable; console/page/request/response errors are empty.
+- Visual review PASS for the required 13 `docs/qa/screenshots/stage8-3b-*` captures: desktop Route 1 initial/full preview/on-target/close-up; mobile active scale/full preview/on-target; tablet active scale/on-target; Mission 7 mobile/tablet active drag and completed connection.
+- Existing `qa/stage8-3-mission8-playtest.cjs` full regression rerun PASS with `failures: []`: five responsive viewports, interaction/safety/audio, real mobile Mission 8 touch, and ordinary Start → Missions 1–8 all passed. Missions 1–6 source was not modified.
+- `npm run build` PASS: TypeScript clean, 52 modules transformed, only the existing non-blocking Phaser bundle-size advisory. Canonical QA URL was `http://127.0.0.1:4198/` with strict port binding.
+- Files moved or deleted: none. No approved source/reference asset was modified. No commit or push was performed. Mission 9 remains unimplemented.
+
+## STAGE 8.3A — MISSION 8 TUTORIAL + VISIBLE ROUTE PREVIEW
+
+- Reworked only Mission 8 presentation/onboarding; the three approved route definitions and the pure programming mechanic remain unchanged, and Missions 1–7 were not modified.
+- The board now gives `СТАРТ` and `ЗАРЯДКА` distinct labeled pads, a persistent start ring, a dominant energy target, and stronger full-cell obstacle treatment.
+- Every accepted arrow immediately updates both `ТВОЙ ПУТЬ` and a large on-board planned route made from glowing future cells, thick connectors, directional arrows, and a yellow predicted-endpoint ring. `УДАЛИТЬ` and empty-program cleanup rebuild both views from the same queue.
+- Boundary/obstacle commands show a red blocked marker during planning without playing `answer-wrong.wav`; the child remains free to edit. Run is visibly disabled when the queue is empty.
+- Route 1 has one lightweight first-action tutorial: the right arrow and first future cell pulse, with `НАЖМИ →, ЧТОБЫ РОБОТ ПОШЁЛ ВПРАВО` plus the short Run instruction. The tutorial is destroyed after the correct first command and is not repeated on Routes 2–3.
+- Execution dims the planned route and highlights the current board step and matching command slot while the real robot moves exactly one cell per simulated step. Success keeps the route visible through the charging-pad reward; wrong/collision recovery preserves the program for correction.
+- The active board robot now uses cell-derived responsive scale with a larger desktop cap and readable mobile floor. The helper remains recognizable but moves into a compact portrait header position so it cannot cover Home, the board, or controls.
+- Mission 8 composition now gives the board more desktop space and keeps `ТВОЙ ПУТЬ`, `СОСТАВЬ ПУТЬ`, arrows, and actions as one compact console. The palette caption has a dedicated band and all actions remain in bounds at 320×568.
+- `qa/stage8-3-mission8-playtest.cjs` now verifies tutorial dismissal, marker/label copy, empty Run state, first/full/invalid previews, endpoint state, delete/empty synchronization, execution highlighting, obstacle treatment, robot readability, touch targets, live resize, reduced motion, audio counts, Home interruption, all three routes, and the ordinary Missions 1–8 flow.
+- Stage 8.3A QA result: `docs/qa/stage8-3a-mission8-results.json` PASS with `failures: []` at 320×568, 390×844, 768×1024, 1280×720, and 1438×914; console/page/request/response errors are empty.
+- Required visual evidence: 12 `docs/qa/screenshots/stage8-3a-*` captures covering desktop initial/first/full/invalid/executing/success, wide full preview, tablet full preview, mobile initial/first/full preview, and minimum playable state. Each capture was visually inspected after generation.
+- Full flow: ordinary Start → Missions 1–8 PASS; Routes 1, 2, and 3 PASS; Mission 8 completion PASS; real touch completion at 390×844 PASS.
+- Missions 1–7 regression: `qa/stage8-2-mission7-playtest.cjs` rerun PASS with `failures: []` across all five viewports and full Mission 6 → Mission 7 flow.
+- Build: `npm run build` PASS (52 modules; only the existing non-blocking Phaser bundle-size advisory). The first sandboxed Vite attempt hit the known Windows `spawn EPERM`; the approved identical rerun passed.
+- Canonical URL: `http://127.0.0.1:4198/` returned HTTP 200 and was used for all screenshots and browser QA.
+- Files moved or deleted: none. Approved visual assets and robot source assets were not modified. No commit or push was performed. Mission 9 remains unimplemented.
 
 ## STAGE 8.3 — MISSION 8: ЗАПРОГРАММИРУЙ РОБОТА
 
@@ -614,6 +797,15 @@ PASS
 - `qa/stage5-size-comparison-playtest.cjs`
 - `docs/qa/stage5-size-comparison-results.json`
 - `docs/qa/screenshots/stage5-*.png` (16 files: 14 required viewport screens and 2 completed-flow screens)
+- `src/game/ui/viewport.ts`
+- `qa/stage8-3c-mobile-reflow-playtest.cjs`
+- `docs/decisions/0007-real-device-mobile-reflow.md`
+- `docs/qa/stage8-3c-mobile-reflow-results.json`
+- `docs/qa/stage8-3c-orientation-results.json`
+- `docs/qa/stage8-3c-touch-results.json`
+- `docs/qa/screenshots/stage8-3c-mission{1,5,7,8}-{360x640,390x700,390x844}.png`
+- `docs/qa/screenshots/stage8-3c-mission8-{768x1024,1280x720}.png`
+- `docs/qa/screenshots/stage8-3c-mission6-390x700.png` (supplementary visual check)
 - `src/game/state/repairProgression.ts`
 - `src/game/ui/RobotActor.ts`
 - `src/game/ui/RepairReward.ts`
@@ -643,6 +835,24 @@ PASS
 Generated build output under `dist/` is ignored project output and is not a source deliverable.
 
 ## FILES CHANGED
+
+- `index.html`, `src/main.ts`, and `src/style.css` — connect the app shell to the real visual viewport, dynamic viewport units, safe areas, and the dev-only metric surface.
+- `src/game/ui/responsiveLayout.ts` — centralizes width-plus-height composition selection, phone task-first geometry, compact support zones, and readable robot framing.
+- `src/game/scenes/GameScene.ts`, `src/game/scenes/Mission6Scene.ts`, `src/game/scenes/Mission7Scene.ts`, and `src/game/scenes/Mission8Scene.ts` — apply the Stage 8.3C mission-specific mobile reflows and compact semantic headers while preserving desktop branches.
+- `src/game/mechanics/oddOneOut.ts` and `src/game/scenes/StartScene.ts` — preserve/reset Mission 1 selection through the same singleton lifecycle used by later mechanics so orientation reflow cannot discard it.
+- `docs/decisions/0001-responsive-layout.md` — records that Decision 0007 amends the original four-mode contract with visual-height pressure.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 8.3C implementation, QA, evidence, file inventory, and real-device gate.
+
+- `src/game/mechanics/programming.ts` — defines the canonical walkable `targetCell`, exact equality contract, and shared command delta.
+- `src/game/ui/ProgrammingBoard.ts` — uses the canonical target for rendering, fluid active-robot scale, rendered-bounds cell centering, and shared preview deltas.
+- `src/game/scenes/Mission8Scene.ts` — reduces only the landscape helper scale through the existing responsive composition.
+- `src/game/ui/ConnectionTaskCard.ts` — hardens unified pointer drag/release handling, 64 px hit areas, nearest-target selection, and outside release cleanup.
+- `src/style.css` — scopes touch-action and text-selection suppression to the game host/canvas.
+- `docs/decisions/0005-mission7-wire-connections.md` and `docs/decisions/0006-mission8-grid-programming.md` — record the Stage 8.3B touch and target/scale contracts.
+- `qa/stage8-3b-target-touch-playtest.cjs` — adds exact target, responsive scale/control, CDP touch drag, recovery, lock, ghost-wire, and error assertions.
+- `docs/qa/stage8-3b-target-touch-results.json` and 13 `docs/qa/screenshots/stage8-3b-*` files — record the dedicated PASS evidence.
+- Existing Stage 8.2/8.3/8.3A QA outputs were refreshed by the required full regression run; no production assets were changed.
+- `ROBOTLAB-PROJECT-STATUS.md` — records Stage 8.3B implementation, verification, evidence, and manual-review readiness.
 
 - `src/game/ui/responsiveLayout.ts` — replaces the tube/strip dimensions with centralized wide station compositions and portrait ribbon clearance.
 - `src/game/ui/responsiveCamera.ts` — slightly reduces the ultra-narrow world scale so the expanded station/task stack and helper remain separated at 320 px.
@@ -762,7 +972,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- None for Stage 8.3.
+- No implementation or automated-QA blocker remains. Final physical-device acceptance belongs to the user's Samsung Android review at `http://192.168.0.114:4198/`.
 
 ## GIT
 
@@ -777,8 +987,12 @@ main
 
 ## NEXT
 
-Stage 8.3 is ready for manual visual review. Mission 9 remains design-only and must be implemented as a separately authorized stage.
+Review all three Mission 8 maps on the real Samsung, especially the nine-command Route 2 detour. Mission 9 remains design-only and requires separate authorization.
 
 ## LAST VERIFIED
 
-2026-08-30 — Stage 8.3 Mission 8 QA passed with `failures: []`: five responsive viewports, real 390×844 touch completion, deterministic route/collision/edit/run behavior, mute, Home interruption, reduced motion, autonomous reward, clean console/network, and ordinary Start → Missions 1–8 flow. Production build and locked-mission regression results are recorded in the Stage 8.3 section.
+2026-08-31 — Stage 8.3M systemic child UI and interaction correction completed. Tasks 1–4 now use direct answer validation and automatic continuation, removing the repeated answer → Check → Next carousel. The exact rotated 412×180 regression passes ball selection → correct state → Task 2 without a confirm/next button; hidden secondary chrome no longer covers answers. Task 4 short-landscape reference and shadows use comparable 48.75–49.5 px visible extents with 74.75×69.5 interactive answer regions. Tasks 5–8 pass portrait 390×844 and landscape 844×390 browser checks for readable named text, touch targets, canvas sizing, console cleanliness, and layout overlap. The 17-case centralized layout contract, TypeScript check, `git diff --check`, and production build pass (Vite reports only its existing large-chunk advisory).
+
+Stage 8.3M files added: `src/game/ui/childUi.ts`, `qa/stage8-3m-child-ui-flow-playtest.cjs`, `qa/stage8-3m-missions5-8-playtest.cjs`, `docs/qa/stage8-3m-child-ui-flow.json`, `docs/qa/stage8-3m-missions5-8.json`, and `docs/qa/screenshots/stage8-3m-*.png`. Files modified: `src/game/ui/responsiveLayout.ts`, `src/game/ui/TaskCard.ts`, `src/game/ui/MemoryTaskCard.ts`, `src/game/ui/EnergyTaskCard.ts`, `src/game/ui/ConnectionTaskCard.ts`, `src/game/scenes/GameScene.ts`, `src/game/scenes/Mission6Scene.ts`, `src/game/scenes/Mission7Scene.ts`, `src/game/scenes/Mission8Scene.ts`, `src/game/scenes/VictoryScene.ts`, `docs/decisions/0001-responsive-layout.md`, and this status file. No files moved or deleted. No commit or push was performed.
+
+Stage 8.3M character-preservation follow-up: removed the phone-only character suppression from Missions 7 and 8. The helper now reflows into reserved center/edge playfield space in portrait and short landscape while ports, grid cells, command controls, and the board actor remain usable. Repeated orientation lifecycle QA passes six cases over five portrait↔landscape cycles each, including 390×844↔844×390, 412×915↔915×412, and 393×852↔852×393. Mission 7 preserves and redraws the connected wire; Mission 8 preserves commands and rebuilds the route preview; state, listener counts, deterministic portrait geometry, uniform robot scale, and console cleanliness all pass.

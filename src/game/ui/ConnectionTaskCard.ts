@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import type { ConnectionResult, ConnectionsSnapshot, WireColor } from '../mechanics/connections';
 import { audioManager } from '../audio/AudioManager';
 import { UI_COLORS, UI_FONT } from './visualTheme';
+import { CHILD_UI } from './childUi';
 
 const COLOR_VALUES: Readonly<Record<WireColor, number>> = {
   red: 0xff5f66,
@@ -42,7 +43,9 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
   constructor(scene: Phaser.Scene, options: ConnectionTaskCardOptions) {
     super(scene, options.x, options.y);
     scene.add.existing(this);
-    this.setName('connection-task-card').setSize(options.width, options.height).setDepth(5);
+    this.setName('connection-task-card').setSize(options.width, options.height).setDepth(5).setData('auditBounds', {
+      x: options.x, y: options.y - 17, width: options.width, height: options.height + 17,
+    });
     this.snapshot = options.snapshot;
     const background = scene.add.graphics();
     background.fillStyle(0x173c58, 0.97).fillRoundedRect(0, 0, options.width, options.height, 24);
@@ -59,10 +62,10 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${Math.min(25, Math.max(17, options.width * 0.043))}px`, fontStyle: 'bold',
     }).setOrigin(0.5).setName('connection-title');
     const progress = scene.add.text(options.width / 2, 68, `ПОДКЛЮЧЕНИЕ ${this.snapshot.challengeIndex + 1} ИЗ 3`, {
-      color: '#8ff4ff', fontFamily: UI_FONT, fontSize: `${Math.min(16, Math.max(12, options.width * 0.027))}px`, fontStyle: 'bold',
+      color: '#8ff4ff', fontFamily: UI_FONT, fontSize: `${Math.min(16, Math.max(CHILD_UI.typography.statusMin, options.width * 0.027))}px`, fontStyle: 'bold',
     }).setOrigin(0.5).setName('connection-progress');
     this.feedback = scene.add.text(options.width / 2, options.height - 20, '', {
-      color: '#bdf8ff', fontFamily: UI_FONT, fontSize: `${Math.min(16, Math.max(12, options.width * 0.027))}px`, fontStyle: 'bold',
+      color: '#bdf8ff', fontFamily: UI_FONT, fontSize: `${Math.min(16, Math.max(CHILD_UI.typography.statusMin, options.width * 0.027))}px`, fontStyle: 'bold',
     }).setOrigin(0.5).setName('connection-feedback');
     this.wireLayer = scene.add.graphics().setName('connection-wires');
     this.temporaryWire = scene.add.graphics().setName('connection-temporary-wire');
@@ -77,17 +80,21 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
 
     this.pointerMove = (pointer) => {
       if (!this.activeWire || pointer.id !== this.activeWire.pointerId) return;
+      pointer.event?.preventDefault();
       const local = this.getWorldTransformMatrix().applyInverse(pointer.x, pointer.y);
       this.drawTemporary(this.activeWire.x, this.activeWire.y, local.x, local.y, this.activeWire.source);
     };
     this.pointerUp = (pointer) => {
       if (!this.activeWire || pointer.id !== this.activeWire.pointerId) return;
+      pointer.event?.preventDefault();
       const active = this.activeWire;
       this.activeWire = undefined;
       const local = this.getWorldTransformMatrix().applyInverse(pointer.x, pointer.y);
-      const target = [...this.ports.values()].find((port) => port.side === 'target'
-        && !this.snapshot.connected.includes(port.color)
-        && Phaser.Math.Distance.Between(local.x, local.y, port.x, port.y) <= port.hitRadius);
+      const target = [...this.ports.values()]
+        .filter((port) => port.side === 'target' && !this.snapshot.connected.includes(port.color))
+        .map((port) => ({ port, distance: Phaser.Math.Distance.Between(local.x, local.y, port.x, port.y) }))
+        .filter(({ port, distance }) => distance <= port.hitRadius)
+        .sort((a, b) => a.distance - b.distance)[0]?.port;
       if (!target) {
         options.onCancel();
         this.retractTemporary(false);
@@ -103,10 +110,12 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
     };
     scene.input.on(Phaser.Input.Events.POINTER_MOVE, this.pointerMove);
     scene.input.on(Phaser.Input.Events.POINTER_UP, this.pointerUp);
+    scene.input.on(Phaser.Input.Events.POINTER_UP_OUTSIDE, this.pointerUp);
     scene.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
       this.activeWire = undefined;
       scene.input.off(Phaser.Input.Events.POINTER_MOVE, this.pointerMove);
       scene.input.off(Phaser.Input.Events.POINTER_UP, this.pointerUp);
+      scene.input.off(Phaser.Input.Events.POINTER_UP_OUTSIDE, this.pointerUp);
     });
   }
 
@@ -125,6 +134,16 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
       if (locked) port.container.disableInteractive();
     }
     this.redrawWires();
+  }
+
+  setInteractionEnabled(enabled: boolean): void {
+    if (!enabled) this.activeWire = undefined;
+    this.temporaryWire.clear();
+    for (const port of this.ports.values()) {
+      const locked = this.snapshot.connected.includes(port.color);
+      if (enabled && !locked) port.container.setInteractive();
+      else port.container.disableInteractive();
+    }
   }
 
   pulseHint(color: WireColor): void {
@@ -167,7 +186,7 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
     const bottom = options.height - Phaser.Math.Linear(34, 48, compactness);
     const rows = this.snapshot.challenge.colors.length;
     const rowGap = rows === 1 ? 0 : (bottom - top) / (rows - 1);
-    const hitRadius = Math.max(24, Math.min(36, rowGap * 0.43, options.width * 0.1));
+    const hitRadius = Math.max(32, Math.min(38, rowGap * 0.46, options.width * 0.11));
     const sourceX = Math.max(42, options.width * 0.105);
     const targetX = options.width - sourceX;
     const makePort = (color: WireColor, side: 'source' | 'target', x: number, y: number): void => {
@@ -180,6 +199,7 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
       if (side === 'source') {
         port.on(Phaser.Input.Events.POINTER_DOWN, (pointer: Phaser.Input.Pointer) => {
           if (this.activeWire || this.snapshot.connected.includes(color)) return;
+          pointer.event?.preventDefault();
           audioManager.registerUserGesture();
           this.activeWire = { pointerId: pointer.id, source: color, x, y };
           this.drawTemporary(x, y, x, y, color);

@@ -1,0 +1,1197 @@
+{
+  "results": [
+    {
+      "view": "portrait",
+      "mission": 5,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission5-portrait.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "interactive": [
+          {
+            "name": "game-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "game-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "memory-card-battery-0",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-banana-0",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-apple-0",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-star-1",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-banana-1",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-star-0",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-apple-1",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-card-battery-1",
+            "width": 74.67500000000001,
+            "height": 115.58333333333334
+          },
+          {
+            "name": "memory-hint-button",
+            "width": 158,
+            "height": 70.66666666666666
+          }
+        ],
+        "namedText": [
+          {
+            "name": "memory-task-label",
+            "text": "ЗАДАНИЕ 5 ИЗ 10",
+            "font": 19.166666666666668
+          },
+          {
+            "name": "memory-title",
+            "text": "НАЙДИ ПАРЫ",
+            "font": 23.333333333333332
+          },
+          {
+            "name": "memory-instruction",
+            "text": "ОТКРОЙ ОДИНАКОВЫЕ КАРТОЧКИ",
+            "font": 17.666666666666668
+          },
+          {
+            "name": "memory-progress",
+            "text": "ПАРЫ 0 ИЗ 4",
+            "font": 15.666666666666666
+          },
+          {
+            "name": "assembly-progress-label",
+            "text": "СБОРКА 4/5",
+            "font": 14
+          }
+        ],
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "portrait",
+      "mission": 6,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission6-portrait.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "interactive": [
+          {
+            "name": "mission6-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "mission6-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "energy-battery-low",
+            "width": 102.23333333333335,
+            "height": 92
+          },
+          {
+            "name": "energy-battery-medium",
+            "width": 102.23333333333335,
+            "height": 92
+          },
+          {
+            "name": "energy-battery-full",
+            "width": 102.23333333333335,
+            "height": 92
+          },
+          {
+            "name": "energy-hint-button",
+            "width": 165.85000000000002,
+            "height": 70.66666666666666
+          },
+          {
+            "name": "energy-check-button",
+            "width": 165.85000000000002,
+            "height": 70.66666666666666
+          }
+        ],
+        "namedText": [
+          {
+            "name": "energy-task-label",
+            "text": "ЗАДАНИЕ 6 ИЗ 10",
+            "font": 19.166666666666668
+          },
+          {
+            "name": "energy-title",
+            "text": "ЗАРЯДИ РОБОТА",
+            "font": 23.333333333333332
+          },
+          {
+            "name": "energy-instruction",
+            "text": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+            "font": 17.666666666666668
+          },
+          {
+            "name": "energy-progress",
+            "text": "ЭНЕРГИЯ 1 ИЗ 3",
+            "font": 15.666666666666666
+          }
+        ],
+        "boundsAudit": {
+          "scene": "Mission6Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 156,
+              "readable": true
+            },
+            {
+              "name": "mission6-repaired-robot",
+              "role": "HERO",
+              "height": 156,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission6-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission6-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 105.5,
+              "y": 91.2300033569336,
+              "width": 179,
+              "height": 16
+            },
+            {
+              "name": "energy-task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "portrait",
+      "mission": 7,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission7-portrait.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "interactive": [
+          {
+            "name": "mission7-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "mission7-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "connection-source-red",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-source-blue",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-source-green",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-blue",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-red",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-green",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-hint-button",
+            "width": 238,
+            "height": 64
+          }
+        ],
+        "namedText": [
+          {
+            "name": "connection-task-number",
+            "text": "ЗАДАНИЕ 7 ИЗ 10",
+            "font": 14
+          },
+          {
+            "name": "connection-title",
+            "text": "ПОДКЛЮЧИ ПРОВОДА",
+            "font": 17
+          },
+          {
+            "name": "connection-progress",
+            "text": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "font": 14
+          },
+          {
+            "name": "connection-feedback",
+            "text": "",
+            "font": 14
+          }
+        ],
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 100,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission7-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 77,
+              "y": 91.2300033569336,
+              "width": 236,
+              "height": 16
+            },
+            {
+              "name": "connection-task-card",
+              "x": 13.650000000000002,
+              "y": 125.81,
+              "width": 362.70000000000005,
+              "height": 639.96
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 143.5,
+              "y": 790.8499755859375,
+              "width": 103,
+              "height": 21
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "portrait",
+      "mission": 8,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission8-portrait.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "mission8-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "program-command-UP",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 105,
+            "height": 64
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 105,
+            "height": 64
+          },
+          {
+            "name": "programming-run-button",
+            "width": 152.70000000000005,
+            "height": 64
+          }
+        ],
+        "namedText": [
+          {
+            "name": "programming-target-icon",
+            "text": "⚡",
+            "font": 37.800000000000004
+          },
+          {
+            "name": "programming-instruction",
+            "text": "ДОВЕДИ РОБОТА ДО ЗАРЯДКИ",
+            "font": 16
+          },
+          {
+            "name": "programming-strip-label",
+            "text": "ТВОЙ ПУТЬ",
+            "font": 14
+          },
+          {
+            "name": "programming-feedback",
+            "text": "",
+            "font": 14
+          }
+        ],
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 100,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 89.5,
+              "y": 91.2300033569336,
+              "width": 211,
+              "height": 16
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 148.81,
+              "width": 362.70000000000005,
+              "height": 453.52000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 75,
+              "y": 119.81,
+              "width": 240,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 83,
+              "y": 610.9099731445312,
+              "width": 224,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 15.150001525878906,
+              "y": 792.3499755859375,
+              "width": 94,
+              "height": 18
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 133.64999389648438,
+              "y": 792.3499755859375,
+              "width": 75,
+              "height": 18
+            },
+            {
+              "name": "programming-run-button",
+              "x": 255.5,
+              "y": 791.8499755859375,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "landscape",
+      "mission": 5,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission5-landscape.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "interactive": [
+          {
+            "name": "game-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "game-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "memory-card-apple-0",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-banana-0",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-battery-1",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-star-1",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-apple-1",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-battery-0",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-banana-1",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-card-star-0",
+            "width": 73.9,
+            "height": 74.75999999999999
+          },
+          {
+            "name": "memory-hint-button",
+            "width": 149.792,
+            "height": 64
+          }
+        ],
+        "namedText": [
+          {
+            "name": "game-header",
+            "text": "Почини робота",
+            "font": 25
+          },
+          {
+            "name": "memory-task-label",
+            "text": "ЗАДАНИЕ 5 ИЗ 10",
+            "font": 14
+          },
+          {
+            "name": "memory-title",
+            "text": "НАЙДИ ПАРЫ",
+            "font": 20
+          },
+          {
+            "name": "memory-instruction",
+            "text": "ОТКРОЙ ОДИНАКОВЫЕ КАРТОЧКИ",
+            "font": 16
+          },
+          {
+            "name": "memory-progress",
+            "text": "ПАРЫ 0 ИЗ 4",
+            "font": 14
+          },
+          {
+            "name": "assembly-progress-label",
+            "text": "СБОРКА 4/5",
+            "font": 14
+          }
+        ],
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 196,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "memory-task-card",
+              "x": 13.650000000000002,
+              "y": 61.83000000000001,
+              "width": 337.6,
+              "height": 314.52
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "landscape",
+      "mission": 6,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission6-landscape.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "interactive": [
+          {
+            "name": "mission6-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "mission6-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "energy-battery-low",
+            "width": 100.53333333333335,
+            "height": 92
+          },
+          {
+            "name": "energy-battery-medium",
+            "width": 100.53333333333335,
+            "height": 92
+          },
+          {
+            "name": "energy-battery-full",
+            "width": 100.53333333333335,
+            "height": 92
+          },
+          {
+            "name": "energy-hint-button",
+            "width": 160.8,
+            "height": 64
+          },
+          {
+            "name": "energy-check-button",
+            "width": 160.8,
+            "height": 64
+          }
+        ],
+        "namedText": [
+          {
+            "name": "mission6-header",
+            "text": "ОЖИВИ РОБОТА",
+            "font": 25
+          },
+          {
+            "name": "energy-task-label",
+            "text": "ЗАДАНИЕ 6 ИЗ 10",
+            "font": 14
+          },
+          {
+            "name": "energy-title",
+            "text": "ЗАРЯДИ РОБОТА",
+            "font": 20
+          },
+          {
+            "name": "energy-instruction",
+            "text": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+            "font": 16
+          },
+          {
+            "name": "energy-progress",
+            "text": "ЭНЕРГИЯ 1 ИЗ 3",
+            "font": 14
+          }
+        ],
+        "boundsAudit": {
+          "scene": "Mission6Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 147,
+              "readable": true
+            },
+            {
+              "name": "mission6-repaired-robot",
+              "role": "HERO",
+              "height": 147,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission6-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission6-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "mission6-header",
+              "x": 321.5,
+              "y": 23.150000000000006,
+              "width": 201,
+              "height": 33
+            },
+            {
+              "name": "systems-progress",
+              "x": 678.8499755859375,
+              "y": 142.3300018310547,
+              "width": 113,
+              "height": 42.5
+            },
+            {
+              "name": "energy-task-card",
+              "x": 13.650000000000002,
+              "y": 61.83000000000001,
+              "width": 337.6,
+              "height": 314.52
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "landscape",
+      "mission": 7,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission7-landscape.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "interactive": [
+          {
+            "name": "mission7-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "mission7-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "connection-source-red",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-source-blue",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-source-green",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-target-blue",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-target-green",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-target-red",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-hint-button",
+            "width": 159.92,
+            "height": 60
+          }
+        ],
+        "namedText": [
+          {
+            "name": "connection-task-number",
+            "text": "ЗАДАНИЕ 7 ИЗ 10",
+            "font": 18
+          },
+          {
+            "name": "connection-title",
+            "text": "ПОДКЛЮЧИ ПРОВОДА",
+            "font": 25
+          },
+          {
+            "name": "connection-progress",
+            "text": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "font": 16
+          },
+          {
+            "name": "connection-feedback",
+            "text": "",
+            "font": 16
+          }
+        ],
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 100,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission7-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 368.5,
+              "y": 24.650001525878906,
+              "width": 107,
+              "height": 40
+            },
+            {
+              "name": "connection-task-card",
+              "x": 13.650000000000002,
+              "y": 75.23,
+              "width": 650.7800000000001,
+              "height": 301.12
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 707.3900146484375,
+              "y": 338.3500061035156,
+              "width": 94,
+              "height": 18
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    },
+    {
+      "view": "landscape",
+      "mission": 8,
+      "file": "docs\\qa\\screenshots\\stage8-3m-mission8-landscape.png",
+      "errors": [],
+      "audit": {
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "mission8-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "program-command-UP",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 102,
+            "height": 64
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 102,
+            "height": 64
+          },
+          {
+            "name": "programming-run-button",
+            "width": 146,
+            "height": 64
+          }
+        ],
+        "namedText": [
+          {
+            "name": "programming-target-icon",
+            "text": "⚡",
+            "font": 49.5
+          },
+          {
+            "name": "programming-instruction",
+            "text": "ДОВЕДИ РОБОТА ДО ЗАРЯДКИ",
+            "font": 16
+          },
+          {
+            "name": "programming-strip-label",
+            "text": "ТВОЙ ПУТЬ",
+            "font": 14
+          },
+          {
+            "name": "programming-feedback",
+            "text": "",
+            "font": 14
+          }
+        ],
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 93,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 86,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 316.5,
+              "y": 31.650001525878906,
+              "width": 211,
+              "height": 16
+            },
+            {
+              "name": "programming-board",
+              "x": 13.650000000000002,
+              "y": 94.23,
+              "width": 466,
+              "height": 282.12
+            },
+            {
+              "name": "programming-instruction",
+              "x": 126.65,
+              "y": 65.23,
+              "width": 239.99999999999997,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 556.6500244140625,
+              "y": 94.2300033569336,
+              "width": 224,
+              "height": 55.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 493.6500244140625,
+              "y": 337.3500061035156,
+              "width": 94,
+              "height": 18
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 609.1500244140625,
+              "y": 337.3500061035156,
+              "width": 75,
+              "height": 18
+            },
+            {
+              "name": "programming-run-button",
+              "x": 726.1500244140625,
+              "y": 336.8500061035156,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "touchTargets": true,
+        "keyTextReadable": true,
+        "canvasMatches": true
+      }
+    }
+  ],
+  "failures": []
+}

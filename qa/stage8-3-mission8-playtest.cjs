@@ -65,6 +65,8 @@ async function snapshot(page) {
     const board = find('programming-board');
     const strip = find('program-strip');
     const robot = find('programming-robot');
+    const preview = find('programming-route-preview');
+    const run = find('programming-run-button');
     const controls = ['program-command-UP', 'program-command-RIGHT', 'program-command-DOWN', 'program-command-LEFT',
       'programming-hint-button', 'programming-delete-button', 'programming-run-button'].map((name) => {
         const control = find(name);
@@ -77,6 +79,13 @@ async function snapshot(page) {
       routeLabel: find('programming-route-label')?.text, commands: strip?.getData('commands') || [], maxCommands: strip?.getData('maxCommands'),
       challengeId: board?.getData('challengeId'), columns: board?.getData('columns'), rows: board?.getData('rows'), cellSize: board?.getData('cellSize'),
       robot: { bounds: bounds(robot), column: robot?.getData('gridColumn'), row: robot?.getData('gridRow'), moving: robot?.getData('moving') || false },
+      preview: { steps: preview?.getData('stepCount') || 0, valid: preview?.getData('validCount') || 0, invalid: preview?.getData('invalid') || false,
+        endpoint: Boolean(find('programming-preview-endpoint')), executing: Boolean(find('programming-execution-step')) },
+      labels: { start: Boolean(find('programming-start-label')), target: Boolean(find('programming-target-label')),
+        program: find('programming-strip-label')?.text, palette: find('programming-palette-label')?.text, tutorial: Boolean(find('programming-tutorial-message')) },
+      activeCommand: [...Array(strip?.getData('maxCommands') || 0).keys()].find((index) => (find(`program-slot-${index}`)?.scaleX || 1) > 1.05) ?? -1,
+      obstacleReadable: Boolean(find('programming-blocked-tile-1-1')),
+      runEnabled: (run?.alpha || 0) > 0.8,
       controls, feedback: find('programming-feedback')?.text, completion: Boolean(find('mission8-completion')),
       autonomous: { visible: Boolean(find('mission8-autonomous-robot')), played: find('mission8-autonomous-robot')?.getData('autonomousRewardPlayed') || false,
         programmed: find('mission8-autonomous-robot')?.getData('programmed') || false },
@@ -119,10 +128,13 @@ async function responsiveRun(browser, [name, width, height, touch]) {
   const errors = captureErrors(page);
   await startDirect(page);
   const initial = await snapshot(page);
-  if (name === 'desktop-1280x720') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3-desktop-1280x720-route1-empty.png') });
-  if (name === 'mobile-390x844') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3-mobile-390x844-route-board.png') });
+  if (name === 'desktop-1280x720') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-desktop-1280x720-route1-initial.png') });
+  if (name === 'mobile-390x844') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-mobile-390x844-route1-initial.png') });
   await command(page, 'RIGHT');
-  const queueBeforeResize = (await snapshot(page)).commands;
+  const first = await snapshot(page);
+  if (name === 'desktop-1280x720') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-desktop-1280x720-after-first-command.png') });
+  if (name === 'mobile-390x844') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-mobile-390x844-after-first-command.png') });
+  const queueBeforeResize = first.commands;
   await page.setViewportSize({ width: width === 320 ? 321 : width - 1, height });
   await page.waitForFunction(() => window.__ROBOTLAB_GAME__.scene.isActive('Mission8Scene'));
   await sleep(160);
@@ -133,11 +145,17 @@ async function responsiveRun(browser, [name, width, height, touch]) {
   const edited = await snapshot(page);
   await command(page, 'RIGHT');
   const built = await snapshot(page);
-  if (name === 'desktop-1280x720') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3-desktop-1280x720-program-built.png') });
-  if (name === 'mobile-390x844') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3-mobile-390x844-command-strip.png') });
+  const evidenceName = name.replace('desktop-', 'desktop-').replace('mobile-', 'mobile-');
+  if (['desktop-1280x720', 'wide-1438x914', 'tablet-768x1024', 'mobile-390x844'].includes(name))
+    await page.screenshot({ path: path.join(screenshotDir, `stage8-3a-${evidenceName}-full-route-preview.png`) });
+  if (name === 'minimum-320x568') await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-minimum-320x568-playable.png') });
   const inside = (b, viewport = resized.viewport) => b && b.x >= -1 && b.y >= -1 && b.right <= viewport.width + 1 && b.bottom <= viewport.height + 1;
   const checks = {
     route1: initial.challengeId === 'straight' && initial.columns === 4 && initial.rows === 2 && initial.maxCommands === 3,
+    markers: initial.labels.start && initial.labels.target && initial.labels.program === 'ТВОЙ ПУТЬ' && initial.labels.palette === 'СОСТАВЬ ПУТЬ',
+    tutorial: initial.labels.tutorial && !first.labels.tutorial,
+    emptyRunDisabled: !initial.runEnabled && first.runEnabled,
+    firstPreview: first.preview.steps === 1 && first.preview.valid === 1 && first.preview.endpoint,
     responsive: [resized.board, resized.strip, resized.systems, ...resized.controls.map((item) => item.bounds)].every((b) => inside(b)),
     touchTargets: resized.controls.every((control) => control.targetWidth >= 56 && control.targetHeight >= 48),
     boardReadable: resized.cellSize >= (width <= 390 ? 45 : 64),
@@ -145,10 +163,12 @@ async function responsiveRun(browser, [name, width, height, touch]) {
     hint: hinted.audio.filter((key) => key === 'audio-hint').length === 1 && hinted.feedback.includes('→'),
     deleteEdit: JSON.stringify(edited.commands) === JSON.stringify(['RIGHT']),
     programStrip: JSON.stringify(built.commands) === JSON.stringify(['RIGHT', 'RIGHT']),
+    fullPreview: built.preview.steps === 2 && built.preview.valid === 2 && built.preview.endpoint && !built.preview.invalid,
+    robotReadable: initial.robot.bounds.height >= Math.min(initial.cellSize * 0.72, 72),
     errors: Object.values(errors).every((items) => items.length === 0),
   };
   await context.close();
-  return { name, checks, errors, initial, resized, hinted, edited, built };
+  return { name, checks, errors, initial, first, resized, hinted, edited, built };
 }
 
 async function interactionRun(browser) {
@@ -157,6 +177,11 @@ async function interactionRun(browser) {
   const errors = captureErrors(page);
   await startDirect(page);
   await command(page, 'RIGHT');
+  await command(page, 'DOWN');
+  const invalidPreview = await snapshot(page);
+  await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-desktop-1280x720-invalid-route-preview.png') });
+  await activate(page, 'programming-delete-button');
+  const correctedPreview = await snapshot(page);
   await activate(page, 'programming-run-button', 'Mission8Scene', 1200);
   const tooFew = await snapshot(page);
   await command(page, 'RIGHT'); await command(page, 'RIGHT');
@@ -166,9 +191,10 @@ async function interactionRun(browser) {
   const runPoint = await pointFor(page, 'programming-run-button', 'Mission8Scene');
   await page.mouse.click(runPoint.x, runPoint.y); await page.mouse.click(runPoint.x, runPoint.y);
   await sleep(180);
-  await page.screenshot({ path: path.join(screenshotDir, 'stage8-3-desktop-1280x720-robot-executing.png') });
+  await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-desktop-1280x720-robot-executing.png') });
+  const executing = await snapshot(page);
   await sleep(650);
-  await page.screenshot({ path: path.join(screenshotDir, 'stage8-3-desktop-1280x720-route-success.png') });
+  await page.screenshot({ path: path.join(screenshotDir, 'stage8-3a-desktop-1280x720-route-success.png') });
   await page.waitForFunction(() => window.__ROBOTLAB_GAME__.scene.getScene('Mission8Scene').children.getByName('programming-route-label')?.text === 'МАРШРУТ 2 ИЗ 3', null, { timeout: 6000 });
   const route2 = await snapshot(page);
   await build(page, ['RIGHT', 'UP']);
@@ -192,11 +218,14 @@ async function interactionRun(browser) {
   const complete = await snapshot(page);
   const checks = {
     tooFewRecovery: tooFew.feedback.includes('ИЗМЕНИТЬ') && JSON.stringify(tooFew.commands) === JSON.stringify(['RIGHT']),
+    invalidPreview: invalidPreview.preview.invalid && invalidPreview.preview.steps === 2,
+    deletePreviewSync: !correctedPreview.preview.invalid && correctedPreview.preview.steps === 1 && correctedPreview.preview.endpoint,
+    executionSync: executing.preview.executing && executing.activeCommand >= 0,
     extraCommandRecovery: extra.feedback.includes('ИЗМЕНИТЬ') && extra.commands.length === 3,
     rapidRunGuard: route2.routeLabel === 'МАРШРУТ 2 ИЗ 3' && route2.audio.filter((key) => key === 'audio-answer-correct').length === 1,
     obstacleCollision: obstacle.feedback === 'ТУДА НЕЛЬЗЯ' && obstacle.commands.length === 2,
     boundaryCollision: boundary.feedback === 'ТУДА НЕЛЬЗЯ' && boundary.commands.length === 1,
-    route2: route2.challengeId === 'turn' && route2.maxCommands === 4,
+    route2: route2.challengeId === 'turn' && route2.maxCommands === 4 && route2.obstacleReadable,
     route3: route3.challengeId === 'navigation' && route3.maxCommands === 5,
     completion: complete.mission8Complete && complete.completion,
     autonomousReward: complete.autonomous.visible && complete.autonomous.played && complete.autonomous.programmed,
@@ -220,6 +249,7 @@ async function safetyRun(browser) {
   await page.evaluate(() => window.__ROBOTLAB_GAME__.scene.start('Mission8Scene'));
   await page.waitForFunction(() => window.__ROBOTLAB_GAME__.scene.isActive('Mission8Scene')); await sleep(150);
   const recovered = await snapshot(page); await activate(page, 'programming-delete-button'); const editable = await snapshot(page);
+  await activate(page, 'programming-delete-button'); const empty = await snapshot(page);
   await context.close();
 
   const reducedContext = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true, reducedMotion: 'reduce' });
@@ -232,9 +262,10 @@ async function safetyRun(browser) {
       mute: muted.soundText === '× Звук',
       homeInterrupt: JSON.stringify(recovered.commands) === JSON.stringify(['RIGHT', 'RIGHT']) && !recovered.robot.moving,
       interruptedQueueEditable: JSON.stringify(editable.commands) === JSON.stringify(['RIGHT']),
+      emptyProgram: empty.commands.length === 0 && empty.preview.steps === 0 && !empty.preview.endpoint && !empty.runEnabled,
       reducedMotion: reduced.routeLabel === 'МАРШРУТ 2 ИЗ 3',
       errors: Object.values(errors).every((items) => items.length === 0) && Object.values(reducedErrors).every((items) => items.length === 0),
-    }, errors, reducedErrors, muted, recovered, editable, reduced,
+    }, errors, reducedErrors, muted, recovered, editable, empty, reduced,
   };
 }
 
@@ -338,7 +369,7 @@ async function fullFlow(browser) {
     ...Object.entries(flow.checks).filter(([, ok]) => !ok).map(([key]) => `full-flow:${key}`),
   ];
   const report = { matrix, interactions, safety, touch, flow, failures };
-  fs.writeFileSync(path.join('docs', 'qa', 'stage8-3-mission8-results.json'), JSON.stringify(report, null, 2));
+  fs.writeFileSync(path.join('docs', 'qa', 'stage8-3a-mission8-results.json'), JSON.stringify(report, null, 2));
   process.stdout.write(JSON.stringify({ matrix: matrix.map(({ name, checks }) => ({ name, checks })), interactions: interactions.checks, safety: safety.checks, touch: touch.checks, flow: flow.checks, failures }, null, 2));
   if (failures.length) process.exitCode = 1;
 })().catch((error) => { console.error(error); process.exit(1); });

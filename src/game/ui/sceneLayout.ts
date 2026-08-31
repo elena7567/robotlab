@@ -14,6 +14,12 @@ export interface LogicalSceneTransform {
   offsetY: number;
 }
 
+export interface ScaleManagerMetrics {
+  readonly parentSize: { readonly width: number; readonly height: number };
+  readonly displaySize: { readonly width: number; readonly height: number };
+  readonly gameSize: { readonly width: number; readonly height: number };
+}
+
 export const LOGICAL_SCENE_WIDTH = 1280;
 export const LOGICAL_SCENE_HEIGHT = 720;
 export const PLATFORM_CENTER_X = 640;
@@ -103,8 +109,53 @@ export function addPlatformAlignedCoverImage(
   };
 }
 
+export function readScaleManagerMetrics(scene: Phaser.Scene): ScaleManagerMetrics {
+  const { parentSize, displaySize, gameSize } = scene.scale;
+  return {
+    parentSize: { width: parentSize.width, height: parentSize.height },
+    displaySize: { width: displaySize.width, height: displaySize.height },
+    gameSize: { width: gameSize.width, height: gameSize.height },
+  };
+}
+
+function scaleMetricsSignature(metrics: ScaleManagerMetrics): string {
+  const size = (value: { readonly width: number; readonly height: number }): string =>
+    `${Math.round(value.width * 100) / 100}x${Math.round(value.height * 100) / 100}`;
+  return `${size(metrics.parentSize)}|${size(metrics.displaySize)}|${size(metrics.gameSize)}`;
+}
+
 export function restartOnViewportResize(scene: Phaser.Scene): void {
-  const onResize = (): void => { scene.scene.restart(); };
-  scene.scale.once('resize', onResize);
-  scene.events.once(Phaser.Scenes.Events.SHUTDOWN, () => scene.scale.off('resize', onResize));
+  let scheduledFrame = 0;
+  let appliedSignature = scaleMetricsSignature(readScaleManagerMetrics(scene));
+
+  const applyLatestLayout = (): void => {
+    scheduledFrame = 0;
+    if (!scene.sys.isActive()) return;
+    const metrics = readScaleManagerMetrics(scene);
+    const nextSignature = scaleMetricsSignature(metrics);
+    if (nextSignature === appliedSignature) return;
+    appliedSignature = nextSignature;
+    scene.game.registry.set('scaleManagerMetrics', metrics);
+
+    // create() is the authoritative Level layout pass. Restarting reconstructs
+    // every responsive object from serializable session/mechanic state, so no
+    // coordinate or scale from the previous orientation can survive.
+    const presentationState = scene.data.get('viewportPresentationState') as unknown;
+    scene.scene.restart({ viewportReflow: true, presentationState });
+  };
+  const onViewportCommit = (): void => {
+    if (scheduledFrame) return;
+    scheduledFrame = requestAnimationFrame(applyLatestLayout);
+  };
+  const cleanup = (): void => {
+    if (scheduledFrame) cancelAnimationFrame(scheduledFrame);
+    scheduledFrame = 0;
+    window.removeEventListener('robotlab:viewport', onViewportCommit);
+  };
+
+  // The Scale Manager can emit several transient RESIZE events while mobile
+  // browser chrome and orientation settle. Rebuild only after the centralized
+  // viewport lifecycle has committed stable parent/canvas geometry.
+  window.addEventListener('robotlab:viewport', onViewportCommit);
+  scene.events.once(Phaser.Scenes.Events.SHUTDOWN, cleanup);
 }

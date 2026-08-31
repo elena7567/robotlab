@@ -1,0 +1,4597 @@
+{
+  "matrix": [
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 360,
+          "height": 600
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 134.6,
+          "width": 334.79999999999995,
+          "height": 239.79999999999998,
+          "right": 347.4,
+          "bottom": 374.4
+        },
+        "boardCellSize": 77,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 89.5,
+              "y": 82.5999984741211,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 12.600000000000023,
+              "y": 134.6,
+              "width": 334.79999999999995,
+              "height": 239.79999999999998
+            },
+            {
+              "name": "programming-instruction",
+              "x": 96.5,
+              "y": 116.1,
+              "width": 167,
+              "height": 17
+            },
+            {
+              "name": "program-strip",
+              "x": 87,
+              "y": 386.3999938964844,
+              "width": 186,
+              "height": 51
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 25.099998474121094,
+              "y": 555.9000244140625,
+              "width": 65,
+              "height": 13
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 126.60000610351562,
+              "y": 555.4000244140625,
+              "width": 56,
+              "height": 14
+            },
+            {
+              "name": "programming-run-button",
+              "x": 239.5,
+              "y": 554.4000244140625,
+              "width": 75,
+              "height": 16
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 26.113110613293863,
+            "y": 235.80117755828053,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 102.25044352608901,
+            "bottom": 314.5600265315175
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 90.5,
+              "y": 470.3999938964844,
+              "width": 14,
+              "height": 28,
+              "right": 104.5,
+              "bottom": 498.3999938964844
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 138.43726235628128,
+              "y": 469.774729847908,
+              "width": 28.12547528743744,
+              "height": 29.16715955734253,
+              "right": 166.56273764371872,
+              "bottom": 498.94188940525055
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 200.5,
+              "y": 470.3999938964844,
+              "width": 14,
+              "height": 28,
+              "right": 214.5,
+              "bottom": 498.3999938964844
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 249,
+              "y": 470.3999938964844,
+              "width": 27,
+              "height": 28,
+              "right": 276,
+              "bottom": 498.3999938964844
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 25.099998474121094,
+              "y": 555.9000244140625,
+              "width": 65,
+              "height": 13,
+              "right": 90.0999984741211,
+              "bottom": 568.9000244140625
+            },
+            "hitWidth": 98,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 126.60000610351562,
+              "y": 555.4000244140625,
+              "width": 56,
+              "height": 14,
+              "right": 182.60000610351562,
+              "bottom": 569.4000244140625
+            },
+            "hitWidth": 98,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 239.5,
+              "y": 554.4000244140625,
+              "width": 75,
+              "height": 16,
+              "right": 314.5,
+              "bottom": 570.4000244140625
+            },
+            "hitWidth": 148.79999999999995,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "360x640",
+      "width": 360,
+      "height": 640,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 12.600000000000023,
+          "y": 134.6,
+          "width": 334.79999999999995,
+          "height": 279.79999999999995,
+          "right": 347.4,
+          "bottom": 414.4
+        },
+        "boardCellSize": 77,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 89.5,
+              "y": 82.5999984741211,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 12.600000000000023,
+              "y": 134.6,
+              "width": 334.79999999999995,
+              "height": 279.79999999999995
+            },
+            {
+              "name": "programming-instruction",
+              "x": 96.5,
+              "y": 116.1,
+              "width": 167,
+              "height": 17
+            },
+            {
+              "name": "program-strip",
+              "x": 87,
+              "y": 426.3999938964844,
+              "width": 186,
+              "height": 51
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 25.099998474121094,
+              "y": 595.9000244140625,
+              "width": 65,
+              "height": 13
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 126.60000610351562,
+              "y": 595.4000244140625,
+              "width": 56,
+              "height": 14
+            },
+            {
+              "name": "programming-run-button",
+              "x": 239.5,
+              "y": 594.4000244140625,
+              "width": 75,
+              "height": 16
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 26.113110613293863,
+            "y": 255.80117755828053,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 102.25044352608901,
+            "bottom": 334.5600265315175
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 333.3999938964844,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 90.5,
+              "y": 510.4000244140625,
+              "width": 14,
+              "height": 28,
+              "right": 104.5,
+              "bottom": 538.4000244140625
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 138.44579017162323,
+              "y": 509.7842357158661,
+              "width": 28.10841965675354,
+              "height": 29.1494722366333,
+              "right": 166.55420982837677,
+              "bottom": 538.9337079524994
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 200.5,
+              "y": 510.4000244140625,
+              "width": 14,
+              "height": 28,
+              "right": 214.5,
+              "bottom": 538.4000244140625
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 249,
+              "y": 510.4000244140625,
+              "width": 27,
+              "height": 28,
+              "right": 276,
+              "bottom": 538.4000244140625
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 25.099998474121094,
+              "y": 595.9000244140625,
+              "width": 65,
+              "height": 13,
+              "right": 90.0999984741211,
+              "bottom": 608.9000244140625
+            },
+            "hitWidth": 98,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 126.60000610351562,
+              "y": 595.4000244140625,
+              "width": 56,
+              "height": 14,
+              "right": 182.60000610351562,
+              "bottom": 609.4000244140625
+            },
+            "hitWidth": 98,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 239.5,
+              "y": 594.4000244140625,
+              "width": 75,
+              "height": 16,
+              "right": 314.5,
+              "bottom": 610.4000244140625
+            },
+            "hitWidth": 148.79999999999995,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x650",
+      "width": 390,
+      "height": 650,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 390,
+          "height": 650
+        },
+        "mode": "PHONE_PORTRAIT_SHORT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 136.81,
+          "width": 362.70000000000005,
+          "height": 285.96000000000004,
+          "right": 376.35,
+          "bottom": 422.77000000000004
+        },
+        "boardCellSize": 84,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 104.5,
+              "y": 84.2300033569336,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 136.81,
+              "width": 362.70000000000005,
+              "height": 285.96000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 111.5,
+              "y": 118.31,
+              "width": 167,
+              "height": 17
+            },
+            {
+              "name": "program-strip",
+              "x": 102,
+              "y": 435.3500061035156,
+              "width": 186,
+              "height": 51
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 29.650001525878906,
+              "y": 604.8499755859375,
+              "width": 65,
+              "height": 13
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 138.14999389648438,
+              "y": 604.3499755859375,
+              "width": 56,
+              "height": 14
+            },
+            {
+              "name": "programming-run-button",
+              "x": 261.5,
+              "y": 603.3499755859375,
+              "width": 75,
+              "height": 16
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 30.613110613293863,
+            "y": 266.5511470407024,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 106.75044352608901,
+            "bottom": 345.3099960139394
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 105.5,
+              "y": 519.3499755859375,
+              "width": 14,
+              "height": 28,
+              "right": 119.5,
+              "bottom": 547.3499755859375
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 153.36905270814896,
+              "y": 518.6489230394363,
+              "width": 28.261894583702087,
+              "height": 29.308631420135498,
+              "right": 181.63094729185104,
+              "bottom": 547.9575544595718
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 215.5,
+              "y": 519.3499755859375,
+              "width": 14,
+              "height": 28,
+              "right": 229.5,
+              "bottom": 547.3499755859375
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 264,
+              "y": 519.3499755859375,
+              "width": 27,
+              "height": 28,
+              "right": 291,
+              "bottom": 547.3499755859375
+            },
+            "hitWidth": 52,
+            "hitHeight": 52
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 29.650001525878906,
+              "y": 604.8499755859375,
+              "width": 65,
+              "height": 13,
+              "right": 94.6500015258789,
+              "bottom": 617.8499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 138.14999389648438,
+              "y": 604.3499755859375,
+              "width": 56,
+              "height": 14,
+              "right": 194.14999389648438,
+              "bottom": 618.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 261.5,
+              "y": 603.3499755859375,
+              "width": 75,
+              "height": 16,
+              "right": 336.5,
+              "bottom": 619.3499755859375
+            },
+            "hitWidth": 162.70000000000005,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x700",
+      "width": 390,
+      "height": 700,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 390,
+          "height": 700
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 141.31,
+          "width": 362.70000000000005,
+          "height": 331.46000000000004,
+          "right": 376.35,
+          "bottom": 472.77000000000004
+        },
+        "boardCellSize": 84,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 30.950000762939453,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 30.950000762939453,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 104.5,
+              "y": 84.7300033569336,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 141.31,
+              "width": 362.70000000000005,
+              "height": 331.46000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 104.5,
+              "y": 122.31,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 102,
+              "y": 481.3500061035156,
+              "width": 186,
+              "height": 54.999969482421875
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 24.150001525878906,
+              "y": 653.3499755859375,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 138.14999389648438,
+              "y": 653.3499755859375,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 255.5,
+              "y": 651.8499755859375,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 30.613110613293863,
+            "y": 293.8011470407024,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 106.75044352608901,
+            "bottom": 372.5599960139394
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 30.950000762939453,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 48.95000076293945
+            },
+            "hitWidth": 84,
+            "hitHeight": 60.5
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 30.950000762939453,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 48.95000076293945
+            },
+            "hitWidth": 84,
+            "hitHeight": 60.5
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 90.0999984741211,
+              "y": 574.8499755859375,
+              "width": 16,
+              "height": 33,
+              "right": 106.0999984741211,
+              "bottom": 607.8499755859375
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 146.58815532922745,
+              "y": 574.1591866612434,
+              "width": 32.22368323802948,
+              "height": 34.3026305437088,
+              "right": 178.81183856725693,
+              "bottom": 608.4618172049522
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 219.3000030517578,
+              "y": 574.8499755859375,
+              "width": 16,
+              "height": 33,
+              "right": 235.3000030517578,
+              "bottom": 607.8499755859375
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 276.3999938964844,
+              "y": 574.8499755859375,
+              "width": 31,
+              "height": 33,
+              "right": 307.3999938964844,
+              "bottom": 607.8499755859375
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 24.150001525878906,
+              "y": 653.3499755859375,
+              "width": 76,
+              "height": 16,
+              "right": 100.1500015258789,
+              "bottom": 669.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 138.14999389648438,
+              "y": 653.3499755859375,
+              "width": 66,
+              "height": 16,
+              "right": 204.14999389648438,
+              "bottom": 669.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 255.5,
+              "y": 651.8499755859375,
+              "width": 97,
+              "height": 19,
+              "right": 352.5,
+              "bottom": 670.8499755859375
+            },
+            "hitWidth": 152.70000000000005,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 148.81,
+          "width": 362.70000000000005,
+          "height": 453.52000000000004,
+          "right": 376.35,
+          "bottom": 602.33
+        },
+        "boardCellSize": 84,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 104.5,
+              "y": 92.2300033569336,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 148.81,
+              "width": 362.70000000000005,
+              "height": 453.52000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 104.5,
+              "y": 129.81,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 102,
+              "y": 610.9099731445312,
+              "width": 186,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 24.150001525878906,
+              "y": 797.3499755859375,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 138.14999389648438,
+              "y": 797.3499755859375,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 255.5,
+              "y": 795.8499755859375,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 30.613110613293863,
+            "y": 362.3311458199993,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 106.75044352608901,
+            "bottom": 441.08999479323626
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 52.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 52.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 90.0999984741211,
+              "y": 704.4099731445312,
+              "width": 16,
+              "height": 33,
+              "right": 106.0999984741211,
+              "bottom": 737.4099731445312
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 146.5636819601059,
+              "y": 703.6915529966354,
+              "width": 32.27262997627258,
+              "height": 34.354735136032104,
+              "right": 178.83631193637848,
+              "bottom": 738.0462881326675
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 219.3000030517578,
+              "y": 704.4099731445312,
+              "width": 16,
+              "height": 33,
+              "right": 235.3000030517578,
+              "bottom": 737.4099731445312
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 276.3999938964844,
+              "y": 704.4099731445312,
+              "width": 31,
+              "height": 33,
+              "right": 307.3999938964844,
+              "bottom": 737.4099731445312
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 24.150001525878906,
+              "y": 797.3499755859375,
+              "width": 76,
+              "height": 16,
+              "right": 100.1500015258789,
+              "bottom": 813.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 138.14999389648438,
+              "y": 797.3499755859375,
+              "width": 66,
+              "height": 16,
+              "right": 204.14999389648438,
+              "bottom": 813.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 255.5,
+              "y": 795.8499755859375,
+              "width": 97,
+              "height": 19,
+              "right": 352.5,
+              "bottom": 814.8499755859375
+            },
+            "hitWidth": 152.70000000000005,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "393x852",
+      "width": 393,
+      "height": 852,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 13.754999999999995,
+          "y": 149.047,
+          "width": 365.49,
+          "height": 459.03200000000004,
+          "right": 379.245,
+          "bottom": 608.0790000000001
+        },
+        "boardCellSize": 85,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.755001068115234,
+              "y": 34.755001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 317.2449951171875,
+              "y": 34.755001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 106,
+              "y": 92.4010009765625,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.754999999999995,
+              "y": 149.047,
+              "width": 365.49,
+              "height": 459.03200000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 106,
+              "y": 130.047,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 103.5,
+              "y": 616.7249755859375,
+              "width": 186,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 24.755001068115234,
+              "y": 805.2449951171875,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 139.7550048828125,
+              "y": 805.2449951171875,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 258,
+              "y": 803.7449951171875,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 30.613110613293863,
+            "y": 366.10415607390553,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 106.75044352608901,
+            "bottom": 444.8630050471425
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 18.755001068115234,
+              "y": 34.755001068115234,
+              "width": 66,
+              "height": 18,
+              "right": 84.75500106811523,
+              "bottom": 52.755001068115234
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 317.2449951171875,
+              "y": 34.755001068115234,
+              "width": 48,
+              "height": 18,
+              "right": 365.2449951171875,
+              "bottom": 52.755001068115234
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 90.97000122070312,
+              "y": 710.2249755859375,
+              "width": 16,
+              "height": 33,
+              "right": 106.97000122070312,
+              "bottom": 743.2249755859375
+            },
+            "hitWidth": 59.02,
+            "hitHeight": 59.02
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 147.88305854797363,
+              "y": 709.5397129058838,
+              "width": 32.21389389038086,
+              "height": 34.29220962524414,
+              "right": 180.0969524383545,
+              "bottom": 743.8319225311279
+            },
+            "hitWidth": 59.02,
+            "hitHeight": 59.02
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 221.00999450683594,
+              "y": 710.2249755859375,
+              "width": 16,
+              "height": 33,
+              "right": 237.00999450683594,
+              "bottom": 743.2249755859375
+            },
+            "hitWidth": 59.02,
+            "hitHeight": 59.02
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 278.5299987792969,
+              "y": 710.2249755859375,
+              "width": 31,
+              "height": 33,
+              "right": 309.5299987792969,
+              "bottom": 743.2249755859375
+            },
+            "hitWidth": 59.02,
+            "hitHeight": 59.02
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 24.755001068115234,
+              "y": 805.2449951171875,
+              "width": 76,
+              "height": 16,
+              "right": 100.75500106811523,
+              "bottom": 821.2449951171875
+            },
+            "hitWidth": 106,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 139.7550048828125,
+              "y": 805.2449951171875,
+              "width": 66,
+              "height": 16,
+              "right": 205.7550048828125,
+              "bottom": 821.2449951171875
+            },
+            "hitWidth": 106,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 258,
+              "y": 803.7449951171875,
+              "width": 97,
+              "height": 19,
+              "right": 355,
+              "bottom": 822.7449951171875
+            },
+            "hitWidth": 153.49,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "412x915",
+      "width": 412,
+      "height": 915,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 14.420000000000016,
+          "y": 150.548,
+          "width": 383.15999999999997,
+          "height": 503.0680000000001,
+          "right": 397.58,
+          "bottom": 653.6160000000001
+        },
+        "boardCellSize": 89,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 19.419998168945312,
+              "y": 35.41999816894531,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 335.5799865722656,
+              "y": 35.41999816894531,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 115.5,
+              "y": 93.48400115966797,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 14.420000000000016,
+              "y": 150.548,
+              "width": 383.15999999999997,
+              "height": 503.0680000000001
+            },
+            {
+              "name": "programming-instruction",
+              "x": 115.5,
+              "y": 131.548,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 113,
+              "y": 662.6799926757812,
+              "width": 186,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 27.919998168945312,
+              "y": 867.5800170898438,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 147.9199981689453,
+              "y": 867.5800170898438,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 272.5,
+              "y": 866.0800170898438,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 34.11311061329386,
+            "y": 392.7431636422649,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 110.25044352608901,
+            "bottom": 471.5020126155019
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 19.419998168945312,
+              "y": 35.41999816894531,
+              "width": 66,
+              "height": 18,
+              "right": 85.41999816894531,
+              "bottom": 53.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 335.5799865722656,
+              "y": 35.41999816894531,
+              "width": 48,
+              "height": 18,
+              "right": 383.5799865722656,
+              "bottom": 53.41999816894531
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 99,
+              "y": 755.6799926757812,
+              "width": 16,
+              "height": 34,
+              "right": 115,
+              "bottom": 789.6799926757812
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 156.8000524044037,
+              "y": 754.8671503067017,
+              "width": 32.39989519119263,
+              "height": 35.53536891937256,
+              "right": 189.1999475955963,
+              "bottom": 790.4025192260742
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 231,
+              "y": 755.6799926757812,
+              "width": 16,
+              "height": 34,
+              "right": 247,
+              "bottom": 789.6799926757812
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 289.5,
+              "y": 755.6799926757812,
+              "width": 31,
+              "height": 34,
+              "right": 320.5,
+              "bottom": 789.6799926757812
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 27.919998168945312,
+              "y": 867.5800170898438,
+              "width": 76,
+              "height": 16,
+              "right": 103.91999816894531,
+              "bottom": 883.5800170898438
+            },
+            "hitWidth": 111,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 147.9199981689453,
+              "y": 867.5800170898438,
+              "width": 66,
+              "height": 16,
+              "right": 213.9199981689453,
+              "bottom": 883.5800170898438
+            },
+            "hitWidth": 111,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 272.5,
+              "y": 866.0800170898438,
+              "width": 97,
+              "height": 19,
+              "right": 369.5,
+              "bottom": 885.0800170898438
+            },
+            "hitWidth": 161.15999999999997,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "430x932",
+      "width": 430,
+      "height": 932,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "mode": "PHONE_PORTRAIT_TALL",
+        "mechanic": {
+          "x": 15.050000000000011,
+          "y": 151.96999999999997,
+          "width": 399.9,
+          "height": 515.52,
+          "right": 414.95,
+          "bottom": 667.49
+        },
+        "boardCellSize": 93,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 20.049999237060547,
+              "y": 36.04999923706055,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 352.95001220703125,
+              "y": 36.04999923706055,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 124.5,
+              "y": 94.51000213623047,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 15.050000000000011,
+              "y": 151.96999999999997,
+              "width": 399.9,
+              "height": 515.52
+            },
+            {
+              "name": "programming-instruction",
+              "x": 124.5,
+              "y": 132.96999999999997,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 122,
+              "y": 676.9500122070312,
+              "width": 186,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 34.5,
+              "y": 883.9500122070312,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 156.5,
+              "y": 883.9500122070312,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 283.5,
+              "y": 882.4500122070312,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 37.11311061329386,
+            "y": 403.51113849578053,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 113.25044352608901,
+            "bottom": 482.2699874690175
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 20.049999237060547,
+              "y": 36.04999923706055,
+              "width": 66,
+              "height": 18,
+              "right": 86.04999923706055,
+              "bottom": 54.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 352.95001220703125,
+              "y": 36.04999923706055,
+              "width": 48,
+              "height": 18,
+              "right": 400.95001220703125,
+              "bottom": 54.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 108,
+              "y": 769.9500122070312,
+              "width": 16,
+              "height": 34,
+              "right": 124,
+              "bottom": 803.9500122070312
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 165.8636850118637,
+              "y": 769.2110657691956,
+              "width": 32.27262997627258,
+              "height": 35.395787715911865,
+              "right": 198.1363149881363,
+              "bottom": 804.6068534851074
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 240,
+              "y": 769.9500122070312,
+              "width": 16,
+              "height": 34,
+              "right": 256,
+              "bottom": 803.9500122070312
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 298.5,
+              "y": 769.9500122070312,
+              "width": 31,
+              "height": 34,
+              "right": 329.5,
+              "bottom": 803.9500122070312
+            },
+            "hitWidth": 60,
+            "hitHeight": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 34.5,
+              "y": 883.9500122070312,
+              "width": 76,
+              "height": 16,
+              "right": 110.5,
+              "bottom": 899.9500122070312
+            },
+            "hitWidth": 113,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 156.5,
+              "y": 883.9500122070312,
+              "width": 66,
+              "height": 16,
+              "right": 222.5,
+              "bottom": 899.9500122070312
+            },
+            "hitWidth": 113,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 283.5,
+              "y": 882.4500122070312,
+              "width": 97,
+              "height": 19,
+              "right": 380.5,
+              "bottom": 901.4500122070312
+            },
+            "hitWidth": 164,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "740x360",
+      "width": 740,
+      "height": 360,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 740,
+          "height": 360
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 12.600000000000001,
+          "y": 92.6,
+          "width": 400.4,
+          "height": 254.79999999999998,
+          "right": 413,
+          "bottom": 347.4
+        },
+        "boardCellSize": 94,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 665.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 279.5,
+              "y": 31.599998474121094,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 12.600000000000001,
+              "y": 92.6,
+              "width": 400.4,
+              "height": 254.79999999999998
+            },
+            {
+              "name": "programming-instruction",
+              "x": 114.79999999999998,
+              "y": 72.6,
+              "width": 195.99999999999997,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 496.79998779296875,
+              "y": 92.5999984741211,
+              "width": 186,
+              "height": 55.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 432.5,
+              "y": 309.3999938964844,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 536.5,
+              "y": 309.3999938964844,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 640.2999877929688,
+              "y": 307.8999938964844,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 33.413113665051675,
+            "y": 214.5611568063274,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 109.55044657784683,
+            "bottom": 293.3200057795644
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18,
+              "right": 83.5999984741211,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 665.4000244140625,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18,
+              "right": 713.4000244140625,
+              "bottom": 46.599998474121094
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 492.79998779296875,
+              "y": 197.9040069580078,
+              "width": 14,
+              "height": 32,
+              "right": 506.79998779296875,
+              "bottom": 229.9040069580078
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 545.1898820400238,
+              "y": 197.16316425800323,
+              "width": 29.220211505889893,
+              "height": 33.394527435302734,
+              "right": 574.4100935459137,
+              "bottom": 230.55769169330597
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 612.7999877929688,
+              "y": 197.9040069580078,
+              "width": 14,
+              "height": 32,
+              "right": 626.7999877929688,
+              "bottom": 229.9040069580078
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 665.7999877929688,
+              "y": 197.9040069580078,
+              "width": 28,
+              "height": 32,
+              "right": 693.7999877929688,
+              "bottom": 229.9040069580078
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 432.5,
+              "y": 309.3999938964844,
+              "width": 76,
+              "height": 16,
+              "right": 508.5,
+              "bottom": 325.3999938964844
+            },
+            "hitWidth": 95,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 536.5,
+              "y": 309.3999938964844,
+              "width": 66,
+              "height": 16,
+              "right": 602.5,
+              "bottom": 325.3999938964844
+            },
+            "hitWidth": 95,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 640.2999877929688,
+              "y": 307.8999938964844,
+              "width": 97,
+              "height": 19,
+              "right": 737.2999877929688,
+              "bottom": 326.8999938964844
+            },
+            "hitWidth": 135.60000000000002,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 13.650000000000002,
+          "y": 94.23,
+          "width": 480,
+          "height": 282.12,
+          "right": 493.65,
+          "bottom": 376.35
+        },
+        "boardCellSize": 114,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 89,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 331.5,
+              "y": 32.650001525878906,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.650000000000002,
+              "y": 94.23,
+              "width": 480,
+              "height": 282.12
+            },
+            {
+              "name": "programming-instruction",
+              "x": 155.65,
+              "y": 74.23,
+              "width": 195.99999999999997,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 589.6500244140625,
+              "y": 94.2300033569336,
+              "width": 186,
+              "height": 55.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 516.6500244140625,
+              "y": 338.3500061035156,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 627.6500244140625,
+              "y": 338.3500061035156,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 740.1500244140625,
+              "y": 336.8500061035156,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 39.31059122840993,
+            "y": 235.2900118387647,
+            "width": 85.96026306849865,
+            "height": 88.9199965077035,
+            "right": 125.27085429690858,
+            "bottom": 324.2100083464682
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 816.3499755859375,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 585.6500244140625,
+              "y": 212.64759826660156,
+              "width": 14,
+              "height": 32,
+              "right": 599.6500244140625,
+              "bottom": 244.64759826660156
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 638.031076669693,
+              "y": 211.8960188627243,
+              "width": 29.237895488739014,
+              "height": 33.414737701416016,
+              "right": 667.268972158432,
+              "bottom": 245.31075656414032
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 705.6500244140625,
+              "y": 212.64759826660156,
+              "width": 14,
+              "height": 32,
+              "right": 719.6500244140625,
+              "bottom": 244.64759826660156
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 758.6500244140625,
+              "y": 212.64759826660156,
+              "width": 28,
+              "height": 32,
+              "right": 786.6500244140625,
+              "bottom": 244.64759826660156
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 516.6500244140625,
+              "y": 338.3500061035156,
+              "width": 76,
+              "height": 16,
+              "right": 592.6500244140625,
+              "bottom": 354.3500061035156
+            },
+            "hitWidth": 102,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 627.6500244140625,
+              "y": 338.3500061035156,
+              "width": 66,
+              "height": 16,
+              "right": 693.6500244140625,
+              "bottom": 354.3500061035156
+            },
+            "hitWidth": 102,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 740.1500244140625,
+              "y": 336.8500061035156,
+              "width": 97,
+              "height": 19,
+              "right": 837.1500244140625,
+              "bottom": 355.8500061035156
+            },
+            "hitWidth": 146,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "932x430",
+      "width": 932,
+      "height": 430,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 932,
+          "height": 430
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 15.05,
+          "y": 96.50999999999999,
+          "width": 566.95,
+          "height": 318.44,
+          "right": 582,
+          "bottom": 414.95
+        },
+        "boardCellSize": 135,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 105,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 20.049999237060547,
+              "y": 31.049999237060547,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 854.9500122070312,
+              "y": 31.049999237060547,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 375.5,
+              "y": 34.04999923706055,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 15.05,
+              "y": 96.50999999999999,
+              "width": 566.95,
+              "height": 318.44
+            },
+            {
+              "name": "programming-instruction",
+              "x": 200.52500000000003,
+              "y": 76.50999999999999,
+              "width": 196,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 679.0499877929688,
+              "y": 96.51000213623047,
+              "width": 186,
+              "height": 55.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 606.0499877929688,
+              "y": 376.95001220703125,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 717.0499877929688,
+              "y": 376.95001220703125,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 829.5499877929688,
+              "y": 375.45001220703125,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 44.70201421043193,
+            "y": 255.72999673222841,
+            "width": 101.79505122049818,
+            "height": 105.29999881241974,
+            "right": 146.49706543093012,
+            "bottom": 361.02999554464816
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 20.049999237060547,
+              "y": 31.049999237060547,
+              "width": 66,
+              "height": 18,
+              "right": 86.04999923706055,
+              "bottom": 49.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 854.9500122070312,
+              "y": 31.049999237060547,
+              "width": 48,
+              "height": 18,
+              "right": 902.9500122070312,
+              "bottom": 49.04999923706055
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 675.0499877929688,
+              "y": 232.3612060546875,
+              "width": 14,
+              "height": 32,
+              "right": 689.0499877929688,
+              "bottom": 264.3612060546875
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 727.4398820400238,
+              "y": 231.62036335468292,
+              "width": 29.220211505889893,
+              "height": 33.394527435302734,
+              "right": 756.6600935459137,
+              "bottom": 265.01489078998566
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 795.0499877929688,
+              "y": 232.3612060546875,
+              "width": 14,
+              "height": 32,
+              "right": 809.0499877929688,
+              "bottom": 264.3612060546875
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 848.0499877929688,
+              "y": 232.3612060546875,
+              "width": 28,
+              "height": 32,
+              "right": 876.0499877929688,
+              "bottom": 264.3612060546875
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 606.0499877929688,
+              "y": 376.95001220703125,
+              "width": 76,
+              "height": 16,
+              "right": 682.0499877929688,
+              "bottom": 392.95001220703125
+            },
+            "hitWidth": 102,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 717.0499877929688,
+              "y": 376.95001220703125,
+              "width": 66,
+              "height": 16,
+              "right": 783.0499877929688,
+              "bottom": 392.95001220703125
+            },
+            "hitWidth": 102,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 829.5499877929688,
+              "y": 375.45001220703125,
+              "width": 97,
+              "height": 19,
+              "right": 926.5499877929688,
+              "bottom": 394.45001220703125
+            },
+            "hitWidth": 146,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844-ios-safe",
+      "width": 390,
+      "height": 844,
+      "safeInsets": {
+        "top": 47,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mode": "PHONE_PORTRAIT",
+        "mechanic": {
+          "x": 13.649999999999977,
+          "y": 195.81000000000003,
+          "width": 362.70000000000005,
+          "height": 372.52,
+          "right": 376.35,
+          "bottom": 568.33
+        },
+        "boardCellSize": 84,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 81.6500015258789,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 81.6500015258789,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 104.5,
+              "y": 139.22999572753906,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 195.81000000000003,
+              "width": 362.70000000000005,
+              "height": 372.52
+            },
+            {
+              "name": "programming-instruction",
+              "x": 104.5,
+              "y": 176.81000000000003,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 102,
+              "y": 576.9099731445312,
+              "width": 186,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 24.150001525878906,
+              "y": 763.3499755859375,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 138.14999389648438,
+              "y": 763.3499755859375,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 255.5,
+              "y": 761.8499755859375,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 30.613110613293863,
+            "y": 368.8311458199993,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 106.75044352608901,
+            "bottom": 447.58999479323626
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 81.6500015258789,
+              "width": 66,
+              "height": 18,
+              "right": 84.6500015258789,
+              "bottom": 99.6500015258789
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 314.3500061035156,
+              "y": 81.6500015258789,
+              "width": 48,
+              "height": 18,
+              "right": 362.3500061035156,
+              "bottom": 99.6500015258789
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 90.0999984741211,
+              "y": 670.4099731445312,
+              "width": 16,
+              "height": 33,
+              "right": 106.0999984741211,
+              "bottom": 703.4099731445312
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 146.57836598157883,
+              "y": 669.7081317305565,
+              "width": 32.24326193332672,
+              "height": 34.32347238063812,
+              "right": 178.82162791490555,
+              "bottom": 704.0316041111946
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 219.3000030517578,
+              "y": 670.4099731445312,
+              "width": 16,
+              "height": 33,
+              "right": 235.3000030517578,
+              "bottom": 703.4099731445312
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 276.3999938964844,
+              "y": 670.4099731445312,
+              "width": 31,
+              "height": 33,
+              "right": 307.3999938964844,
+              "bottom": 703.4099731445312
+            },
+            "hitWidth": 58.60000000000001,
+            "hitHeight": 58.60000000000001
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 24.150001525878906,
+              "y": 763.3499755859375,
+              "width": 76,
+              "height": 16,
+              "right": 100.1500015258789,
+              "bottom": 779.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 138.14999389648438,
+              "y": 763.3499755859375,
+              "width": 66,
+              "height": 16,
+              "right": 204.14999389648438,
+              "bottom": 779.3499755859375
+            },
+            "hitWidth": 105,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 255.5,
+              "y": 761.8499755859375,
+              "width": 97,
+              "height": 19,
+              "right": 352.5,
+              "bottom": 780.8499755859375
+            },
+            "hitWidth": 152.70000000000005,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390-ios-safe",
+      "width": 844,
+      "height": 390,
+      "safeInsets": {
+        "top": 0,
+        "right": 47,
+        "bottom": 21,
+        "left": 47
+      },
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "mode": "PHONE_LANDSCAPE_SHORT",
+        "mechanic": {
+          "x": 60.650000000000006,
+          "y": 94.23,
+          "width": 406,
+          "height": 261.12,
+          "right": 466.65,
+          "bottom": 355.35
+        },
+        "boardCellSize": 95,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 65.6500015258789,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 721.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 331.5,
+              "y": 32.650001525878906,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 60.650000000000006,
+              "y": 94.23,
+              "width": 406,
+              "height": 261.12
+            },
+            {
+              "name": "programming-instruction",
+              "x": 165.64999999999998,
+              "y": 74.23,
+              "width": 196,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 552.6500244140625,
+              "y": 94.2300033569336,
+              "width": 186,
+              "height": 55.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 487.1500244140625,
+              "y": 317.3500061035156,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 593.1500244140625,
+              "y": 317.3500061035156,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 698.1500244140625,
+              "y": 315.8500061035156,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 82.76311213917276,
+            "y": 220.13116413054615,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 158.90044505196792,
+            "bottom": 298.89001310378313
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 65.6500015258789,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18,
+              "right": 131.6500015258789,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 721.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18,
+              "right": 769.3499755859375,
+              "bottom": 47.650001525878906
+            },
+            "hitWidth": 84,
+            "hitHeight": 60
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 548.6500244140625,
+              "y": 202.56759643554688,
+              "width": 14,
+              "height": 32,
+              "right": 562.6500244140625,
+              "bottom": 234.56759643554688
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 601.062023639679,
+              "y": 201.853595495224,
+              "width": 29.17600154876709,
+              "height": 33.34400177001953,
+              "right": 630.238025188446,
+              "bottom": 235.19759726524353
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 668.6500244140625,
+              "y": 202.56759643554688,
+              "width": 14,
+              "height": 32,
+              "right": 682.6500244140625,
+              "bottom": 234.56759643554688
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 721.6500244140625,
+              "y": 202.56759643554688,
+              "width": 28,
+              "height": 32,
+              "right": 749.6500244140625,
+              "bottom": 234.56759643554688
+            },
+            "hitWidth": 54,
+            "hitHeight": 54
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 487.1500244140625,
+              "y": 317.3500061035156,
+              "width": 76,
+              "height": 16,
+              "right": 563.1500244140625,
+              "bottom": 333.3500061035156
+            },
+            "hitWidth": 97,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 593.1500244140625,
+              "y": 317.3500061035156,
+              "width": 66,
+              "height": 16,
+              "right": 659.1500244140625,
+              "bottom": 333.3500061035156
+            },
+            "hitWidth": 97,
+            "hitHeight": 56
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 698.1500244140625,
+              "y": 315.8500061035156,
+              "width": 97,
+              "height": 19,
+              "right": 795.1500244140625,
+              "bottom": 334.8500061035156
+            },
+            "hitWidth": 136,
+            "hitHeight": 56
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "mode": "TABLET_PORTRAIT",
+        "mechanic": {
+          "x": 184.32,
+          "y": 193.88,
+          "width": 399.36,
+          "height": 340,
+          "right": 583.6800000000001,
+          "bottom": 533.88
+        },
+        "boardCellSize": 93,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 329,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "mission8-header",
+              "x": 215,
+              "y": 41.38,
+              "width": 338,
+              "height": 32.99999999999999
+            },
+            {
+              "name": "systems-progress",
+              "x": 330.5,
+              "y": 119.8800048828125,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 184.32,
+              "y": 193.88,
+              "width": 399.36,
+              "height": 340
+            },
+            {
+              "name": "programming-instruction",
+              "x": 166,
+              "y": 174.88,
+              "width": 436,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 148,
+              "y": 547.8800048828125,
+              "width": 352,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 178,
+              "y": 712.8800048828125,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 319,
+              "y": 712.8800048828125,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 471.5,
+              "y": 711.3800048828125,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 206.11311061329386,
+            "y": 357.66116290984303,
+            "width": 76.13733291279519,
+            "height": 78.75884897323698,
+            "right": 282.25044352608904,
+            "bottom": 436.42001188308
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18,
+              "right": 97.87999725341797,
+              "bottom": 65.88000106811523
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18,
+              "right": 727.1199951171875,
+              "bottom": 65.88000106811523
+            },
+            "hitWidth": 84,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 267,
+              "y": 636.3800048828125,
+              "width": 18,
+              "height": 37,
+              "right": 285,
+              "bottom": 673.3800048828125
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 329.7705252766609,
+              "y": 635.5671616196632,
+              "width": 36.45894944667816,
+              "height": 38.54231798648834,
+              "right": 366.2294747233391,
+              "bottom": 674.1094796061516
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 411,
+              "y": 636.3800048828125,
+              "width": 18,
+              "height": 37,
+              "right": 429,
+              "bottom": 673.3800048828125
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 474.5,
+              "y": 636.3800048828125,
+              "width": 35,
+              "height": 37,
+              "right": 509.5,
+              "bottom": 673.3800048828125
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 178,
+              "y": 712.8800048828125,
+              "width": 76,
+              "height": 16,
+              "right": 254,
+              "bottom": 728.8800048828125
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 319,
+              "y": 712.8800048828125,
+              "width": 66,
+              "height": 16,
+              "right": 385,
+              "bottom": 728.8800048828125
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 471.5,
+              "y": 711.3800048828125,
+              "width": 97,
+              "height": 19,
+              "right": 568.5,
+              "bottom": 730.3800048828125
+            },
+            "hitWidth": 196,
+            "hitHeight": 62
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "mode": "TABLET_LANDSCAPE",
+        "mechanic": {
+          "x": 245.76,
+          "y": 190.736,
+          "width": 532.48,
+          "height": 335.384,
+          "right": 778.24,
+          "bottom": 526.12
+        },
+        "boardCellSize": 127,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "TABLET_LANDSCAPE",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 308,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 99,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 32.279998779296875,
+              "y": 46.832000732421875,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 934.719970703125,
+              "y": 46.832000732421875,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "mission8-header",
+              "x": 343,
+              "y": 40.332,
+              "width": 338,
+              "height": 32.99999999999999
+            },
+            {
+              "name": "systems-progress",
+              "x": 458.5,
+              "y": 116.73599243164062,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 245.76,
+              "y": 190.736,
+              "width": 532.48,
+              "height": 335.384
+            },
+            {
+              "name": "programming-instruction",
+              "x": 276,
+              "y": 170.736,
+              "width": 472,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 276,
+              "y": 540.1199951171875,
+              "width": 352,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 306,
+              "y": 705.1199951171875,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 447,
+              "y": 705.1199951171875,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 599.5,
+              "y": 703.6199951171875,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 273.21837535806844,
+            "y": 358.4280058236879,
+            "width": 95.76275097211743,
+            "height": 99.05999793443266,
+            "right": 368.9811263301859,
+            "bottom": 457.48800375812056
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 32.279998779296875,
+              "y": 46.832000732421875,
+              "width": 66,
+              "height": 18,
+              "right": 98.27999877929688,
+              "bottom": 64.83200073242188
+            },
+            "hitWidth": 84.8,
+            "hitHeight": 65.6
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 934.719970703125,
+              "y": 46.832000732421875,
+              "width": 48,
+              "height": 18,
+              "right": 982.719970703125,
+              "bottom": 64.83200073242188
+            },
+            "hitWidth": 84.8,
+            "hitHeight": 65.6
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 395,
+              "y": 628.6199951171875,
+              "width": 18,
+              "height": 37,
+              "right": 413,
+              "bottom": 665.6199951171875
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 457.7042103409767,
+              "y": 627.7332580685616,
+              "width": 36.59157931804657,
+              "height": 38.68252670764923,
+              "right": 494.2957896590233,
+              "bottom": 666.4157847762108
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 539,
+              "y": 628.6199951171875,
+              "width": 18,
+              "height": 37,
+              "right": 557,
+              "bottom": 665.6199951171875
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 602.5,
+              "y": 628.6199951171875,
+              "width": 35,
+              "height": 37,
+              "right": 637.5,
+              "bottom": 665.6199951171875
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 306,
+              "y": 705.1199951171875,
+              "width": 76,
+              "height": 16,
+              "right": 382,
+              "bottom": 721.1199951171875
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 447,
+              "y": 705.1199951171875,
+              "width": 66,
+              "height": 16,
+              "right": 513,
+              "bottom": 721.1199951171875
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 599.5,
+              "y": 703.6199951171875,
+              "width": 97,
+              "height": 19,
+              "right": 696.5,
+              "bottom": 722.6199951171875
+            },
+            "hitWidth": 196,
+            "hitHeight": 62
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "mode": "DESKTOP",
+        "mechanic": {
+          "x": 315,
+          "y": 183.44,
+          "width": 650,
+          "height": 296.35999999999996,
+          "right": 965,
+          "bottom": 479.79999999999995
+        },
+        "boardCellSize": 136,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 289,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 106,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission8-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission8-header",
+              "x": 438,
+              "y": 34.28,
+              "width": 404,
+              "height": 38
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 109.44000244140625,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 315,
+              "y": 183.44,
+              "width": 650,
+              "height": 296.35999999999996
+            },
+            {
+              "name": "programming-instruction",
+              "x": 404,
+              "y": 163.44,
+              "width": 472,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 352,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 434,
+              "y": 658.7999877929688,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 575,
+              "y": 658.7999877929688,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 727.5,
+              "y": 657.2999877929688,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 384.29684495040556,
+            "y": 331.62001142562093,
+            "width": 102.54908359456999,
+            "height": 106.07999358763038,
+            "right": 486.84592854497555,
+            "bottom": 437.7000050132513
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21,
+              "right": 108.19999694824219,
+              "bottom": 62.779998779296875
+            },
+            "hitWidth": 100,
+            "hitHeight": 62
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21,
+              "right": 1235.800048828125,
+              "bottom": 62.779998779296875
+            },
+            "hitWidth": 100,
+            "hitHeight": 62
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 523,
+              "y": 582.2999877929688,
+              "width": 18,
+              "height": 37,
+              "right": 541,
+              "bottom": 619.2999877929688
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 585.6157904267311,
+              "y": 581.3147256970406,
+              "width": 36.76841914653778,
+              "height": 38.86947166919708,
+              "right": 622.3842095732689,
+              "bottom": 620.1841973662376
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 667,
+              "y": 582.2999877929688,
+              "width": 18,
+              "height": 37,
+              "right": 685,
+              "bottom": 619.2999877929688
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 730.5,
+              "y": 582.2999877929688,
+              "width": 35,
+              "height": 37,
+              "right": 765.5,
+              "bottom": 619.2999877929688
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 434,
+              "y": 658.7999877929688,
+              "width": 76,
+              "height": 16,
+              "right": 510,
+              "bottom": 674.7999877929688
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 575,
+              "y": 658.7999877929688,
+              "width": 66,
+              "height": 16,
+              "right": 641,
+              "bottom": 674.7999877929688
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 727.5,
+              "y": 657.2999877929688,
+              "width": 97,
+              "height": 19,
+              "right": 824.5,
+              "bottom": 676.2999877929688
+            },
+            "hitWidth": 196,
+            "hitHeight": 62
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1438x914",
+      "width": 1438,
+      "height": 914,
+      "safeInsets": null,
+      "mission": 8,
+      "state": {
+        "mission": 8,
+        "sceneKey": "Mission8Scene",
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "mode": "DESKTOP",
+        "mechanic": {
+          "x": 394,
+          "y": 195,
+          "width": 650,
+          "height": 340,
+          "right": 1044,
+          "bottom": 535
+        },
+        "boardCellSize": 156,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 329,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 122,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission8-sound",
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission8-header",
+              "x": 517,
+              "y": 40,
+              "width": 404,
+              "height": 38
+            },
+            {
+              "name": "systems-progress",
+              "x": 665.5,
+              "y": 121,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 394,
+              "y": 195,
+              "width": 650,
+              "height": 340
+            },
+            {
+              "name": "programming-instruction",
+              "x": 483,
+              "y": 175,
+              "width": 472,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 483,
+              "y": 549,
+              "width": 352,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 513,
+              "y": 714,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 654,
+              "y": 714,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 806.5,
+              "y": 712.5,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "robots": [
+          {
+            "x": 425.69343826661697,
+            "y": 365.0000039557612,
+            "width": 117.62983421552195,
+            "height": 121.67999578259827,
+            "right": 543.3232724821389,
+            "bottom": 486.67999973835947
+          }
+        ],
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "bounds": {
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21,
+              "right": 111,
+              "bottom": 68.5
+            },
+            "hitWidth": 100,
+            "hitHeight": 68
+          },
+          {
+            "name": "mission8-sound",
+            "bounds": {
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21,
+              "right": 1391,
+              "bottom": 68.5
+            },
+            "hitWidth": 100,
+            "hitHeight": 68
+          },
+          {
+            "name": "program-command-UP",
+            "bounds": {
+              "x": 602,
+              "y": 637.5,
+              "width": 18,
+              "height": 37,
+              "right": 620,
+              "bottom": 674.5
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "bounds": {
+              "x": 664.7152628302574,
+              "y": 636.6255785822868,
+              "width": 36.56947433948517,
+              "height": 38.65915858745575,
+              "right": 701.2847371697426,
+              "bottom": 675.2847371697426
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "bounds": {
+              "x": 746,
+              "y": 637.5,
+              "width": 18,
+              "height": 37,
+              "right": 764,
+              "bottom": 674.5
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "bounds": {
+              "x": 809.5,
+              "y": 637.5,
+              "width": 35,
+              "height": 37,
+              "right": 844.5,
+              "bottom": 674.5
+            },
+            "hitWidth": 66,
+            "hitHeight": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "bounds": {
+              "x": 513,
+              "y": 714,
+              "width": 76,
+              "height": 16,
+              "right": 589,
+              "bottom": 730
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-delete-button",
+            "bounds": {
+              "x": 654,
+              "y": 714,
+              "width": 66,
+              "height": 16,
+              "right": 720,
+              "bottom": 730
+            },
+            "hitWidth": 132,
+            "hitHeight": 62
+          },
+          {
+            "name": "programming-run-button",
+            "bounds": {
+              "x": 806.5,
+              "y": 712.5,
+              "width": 97,
+              "height": 19,
+              "right": 903.5,
+              "bottom": 731.5
+            },
+            "hitWidth": 196,
+            "hitHeight": 62
+          }
+        ],
+        "checks": {
+          "viewport": true,
+          "mechanicInside": true,
+          "controlsInside": true,
+          "touchTargets": true,
+          "mechanicReadable": true,
+          "robotReadable": true,
+          "noMajorOverlaps": true,
+          "safeRect": true,
+          "auditedTouchTargets": true
+        }
+      },
+      "touch": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "viewport": true,
+        "mechanicInside": true,
+        "controlsInside": true,
+        "touchTargets": true,
+        "mechanicReadable": true,
+        "robotReadable": true,
+        "noMajorOverlaps": true,
+        "safeRect": true,
+        "auditedTouchTargets": true,
+        "touch": true,
+        "errors": true
+      }
+    }
+  ],
+  "orientation": {
+    "preserved": [],
+    "errors": {},
+    "checks": {
+      "statePreserved": true,
+      "errors": true
+    }
+  },
+  "failures": []
+}

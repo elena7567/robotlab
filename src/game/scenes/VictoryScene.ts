@@ -11,6 +11,9 @@ import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
 import { energyMechanic } from '../mechanics/energy';
+import { oddOneOutMechanic } from '../mechanics/oddOneOut';
+import { connectionsMechanic } from '../mechanics/connections';
+import { programmingMechanic } from '../mechanics/programming';
 
 const LABORATORY_SOURCE_WIDTH = 1672;
 const LABORATORY_SOURCE_HEIGHT = 941;
@@ -56,11 +59,14 @@ const getVictoryPlatformPlacement = (
 
 const resetFullSession = (): void => {
   sessionState.reset();
+  oddOneOutMechanic.reset();
   sequenceMechanic.reset();
   sizeComparisonMechanic.reset();
   shadowMatchingMechanic.reset();
   memoryMechanic.reset();
   energyMechanic.reset();
+  connectionsMechanic.reset();
+  programmingMechanic.reset();
 };
 
 export class VictoryScene extends Phaser.Scene {

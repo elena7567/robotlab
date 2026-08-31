@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { scheduleSceneBoundsAudit } from './layoutAudit';
 
 export function addSceneTitle(scene: Phaser.Scene, title: string, subtitle: string): void {
   const { width } = scene.scale;
@@ -29,4 +30,5 @@ export function addTextButton(
 
 export function markSceneReady(scene: Phaser.Scene): void {
   scene.game.registry.set('activeScene', scene.scene.key);
+  scheduleSceneBoundsAudit(scene);
 }

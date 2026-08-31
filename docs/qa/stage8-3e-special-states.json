@@ -1,0 +1,4408 @@
+{
+  "transitions": [
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "state": {
+        "scene": "TransitionScene",
+        "audit": {
+          "scene": "TransitionScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 215,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "HERO",
+              "height": 215,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 51,
+              "y": 123.29999999999998,
+              "width": 258,
+              "height": 43
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 62.5,
+              "y": 172.03199999999998,
+              "width": 235,
+              "height": 22
+            },
+            {
+              "name": "transition-continue",
+              "x": 110.5,
+              "y": 547.9000244140625,
+              "width": 139,
+              "height": 23
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 360,
+            "innerHeight": 600,
+            "visualViewportWidth": 360,
+            "visualViewportHeight": 600,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.6,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 360,
+          "viewportHeight": 600,
+          "aspectRatio": 0.6,
+          "mode": "ultra-narrow-portrait",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "compositionName": "portrait-compact",
+          "heightPressure": "compact",
+          "portrait": true,
+          "safe": {
+            "top": 12.600000000000001,
+            "right": 12.600000000000001,
+            "bottom": 12.600000000000001,
+            "left": 12.600000000000001
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 600
+          },
+          "zones": {
+            "headerZone": {
+              "x": 12.600000000000001,
+              "y": 12.600000000000001,
+              "width": 334.79999999999995,
+              "height": 94
+            },
+            "gameplayZone": {
+              "x": 12.600000000000001,
+              "y": 114.6,
+              "width": 334.79999999999995,
+              "height": 259.79999999999995
+            },
+            "controlsZone": {
+              "x": 12.600000000000001,
+              "y": 382.4,
+              "width": 334.79999999999995,
+              "height": 205
+            },
+            "characterZone": {
+              "x": 12.600000000000001,
+              "y": 291.264,
+              "width": 334.79999999999995,
+              "height": 83.13599999999998
+            },
+            "modalZone": {
+              "x": 14,
+              "y": 14,
+              "width": 332,
+              "height": 572
+            }
+          },
+          "headerZone": {
+            "x": 12.600000000000001,
+            "y": 12.600000000000001,
+            "width": 334.79999999999995,
+            "height": 94
+          },
+          "gameplayZone": {
+            "x": 12.600000000000001,
+            "y": 114.6,
+            "width": 334.79999999999995,
+            "height": 259.79999999999995
+          },
+          "controlsZone": {
+            "x": 12.600000000000001,
+            "y": 382.4,
+            "width": 334.79999999999995,
+            "height": 205
+          },
+          "characterZone": {
+            "x": 12.600000000000001,
+            "y": 291.264,
+            "width": 334.79999999999995,
+            "height": 83.13599999999998
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 332,
+            "height": 572
+          },
+          "statusY": 89.6,
+          "gapXS": 4.32,
+          "gapS": 8,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 12.600000000000001,
+          "headerY": 38.6,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12.600000000000023,
+            "y": 131.6,
+            "width": 334.79999999999995,
+            "height": 293.79999999999995
+          },
+          "taskCardSizing": {
+            "radius": 21.860833333333332,
+            "ribbonHeight": 36.126666666666665,
+            "ribbonWidth": 227.664,
+            "taskFontSize": 16.329166666666666,
+            "titleFontSize": 18.126666666666665,
+            "instructionFontSize": 14.329166666666666,
+            "feedbackFontSize": 12.7975,
+            "titleY": 34.05083333333333,
+            "instructionY": 61.03833333333333,
+            "areaTop": 86.08916666666666,
+            "footerSpace": 82.22833333333332,
+            "cellGap": 7.594999999999999,
+            "cellMaxWidth": 109.69666666666666,
+            "cellMaxHeight": 67.94999999999999,
+            "sequenceGap": 4.594999999999999,
+            "sequenceIconMaxSize": 35.974999999999994,
+            "sequenceOptionMaxHeight": 45.03833333333333,
+            "actionHeight": 50.126666666666665,
+            "actionFontSize": 14.329166666666666,
+            "actionGap": 9.594999999999999,
+            "horizontalPadding": 13.594999999999999,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 255.39999999999998,
+            "y": 433.79999999999995,
+            "width": 92,
+            "height": 152,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 10,
+              "stepRadius": 14,
+              "borderRadius": 16
+            }
+          },
+          "dialogue": {
+            "width": 162,
+            "height": 72,
+            "fontSize": 14,
+            "gap": 9
+          }
+        },
+        "transition": {
+          "title": {
+            "x": 51,
+            "y": 123.29999999999998,
+            "width": 258,
+            "height": 43,
+            "right": 309,
+            "bottom": 166.29999999999998,
+            "centerX": 180,
+            "centerY": 144.79999999999998
+          },
+          "subtitle": {
+            "x": 62.5,
+            "y": 172.03199999999998,
+            "width": 235,
+            "height": 22,
+            "right": 297.5,
+            "bottom": 194.03199999999998,
+            "centerX": 180,
+            "centerY": 183.03199999999998
+          },
+          "helper": {
+            "x": 3.3084787634524417,
+            "y": 308.0783293824735,
+            "width": 207.6472809566701,
+            "height": 215.11921518248892,
+            "right": 210.95575972012256,
+            "bottom": 523.1975445649624,
+            "centerX": 107.13211924178749,
+            "centerY": 415.63793697371796
+          },
+          "repaired": {
+            "x": 147.30847876345246,
+            "y": 308.4006740297019,
+            "width": 207.64728095667004,
+            "height": 214.7968705352605,
+            "right": 354.9557597201225,
+            "bottom": 523.1975445649624,
+            "centerX": 251.13211924178748,
+            "centerY": 415.79910929733217
+          },
+          "button": {
+            "x": 110.5,
+            "y": 547.9000244140625,
+            "width": 139,
+            "height": 23,
+            "right": 249.5,
+            "bottom": 570.9000244140625,
+            "centerX": 180,
+            "centerY": 559.4000244140625
+          }
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contentInside": true,
+        "robotsReadable": true,
+        "robotsClearButton": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "state": {
+        "scene": "TransitionScene",
+        "audit": {
+          "scene": "TransitionScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 223,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "HERO",
+              "height": 223,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 55.5,
+              "y": 133.28000000000003,
+              "width": 279,
+              "height": 45
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 68,
+              "y": 184.69800000000004,
+              "width": 254,
+              "height": 25
+            },
+            {
+              "name": "transition-continue",
+              "x": 120,
+              "y": 785.8499755859375,
+              "width": 150,
+              "height": 23
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "visualViewportWidth": 390,
+            "visualViewportHeight": 844,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.46208530805687204,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionName": "portrait-tall",
+          "heightPressure": "tall",
+          "portrait": true,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 362.70000000000005,
+              "height": 102.58
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 124.81,
+              "width": 362.70000000000005,
+              "height": 477.52000000000004
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 610.9100000000001,
+              "width": 362.70000000000005,
+              "height": 219.44
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 449.52360000000004,
+              "width": 362.70000000000005,
+              "height": 152.80640000000002
+            },
+            "modalZone": {
+              "x": 14,
+              "y": 14,
+              "width": 362,
+              "height": 816
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 362.70000000000005,
+            "height": 102.58
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 124.81,
+            "width": 362.70000000000005,
+            "height": 477.52000000000004
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 610.9100000000001,
+            "width": 362.70000000000005,
+            "height": 219.44
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 449.52360000000004,
+            "width": 362.70000000000005,
+            "height": 152.80640000000002
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 362,
+            "height": 816
+          },
+          "statusY": 99.23,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 145.81,
+            "width": 362.70000000000005,
+            "height": 430
+          },
+          "taskCardSizing": {
+            "radius": 25.833333333333336,
+            "ribbonHeight": 40.666666666666664,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 19.166666666666668,
+            "titleFontSize": 22.666666666666668,
+            "instructionFontSize": 17.166666666666668,
+            "feedbackFontSize": 14.5,
+            "titleY": 44.833333333333336,
+            "instructionY": 80.33333333333334,
+            "areaTop": 116.16666666666667,
+            "footerSpace": 108.33333333333334,
+            "cellGap": 11,
+            "cellMaxWidth": 134.66666666666669,
+            "cellMaxHeight": 102,
+            "sequenceGap": 8,
+            "sequenceIconMaxSize": 53,
+            "sequenceOptionMaxHeight": 64.33333333333334,
+            "actionHeight": 54.666666666666664,
+            "actionFontSize": 17.166666666666668,
+            "actionGap": 13,
+            "horizontalPadding": 17,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 267.15,
+            "y": 587.626,
+            "width": 109.20000000000002,
+            "height": 164,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 11,
+              "stepRadius": 14,
+              "borderRadius": 16
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          }
+        },
+        "transition": {
+          "title": {
+            "x": 55.5,
+            "y": 133.28000000000003,
+            "width": 279,
+            "height": 45,
+            "right": 334.5,
+            "bottom": 178.28000000000003,
+            "centerX": 195,
+            "centerY": 155.78000000000003
+          },
+          "subtitle": {
+            "x": 68,
+            "y": 184.69800000000004,
+            "width": 254,
+            "height": 25,
+            "right": 322,
+            "bottom": 209.69800000000004,
+            "centerX": 195,
+            "centerY": 197.19800000000004
+          },
+          "helper": {
+            "x": 11.120819994024103,
+            "y": 532.6125131893,
+            "width": 215.95316806935625,
+            "height": 223.68688327812345,
+            "right": 227.07398806338034,
+            "bottom": 756.2993964674234,
+            "centerX": 119.09740402870223,
+            "centerY": 644.4559548283617
+          },
+          "repaired": {
+            "x": 161.1208199940241,
+            "y": 532.9106553783828,
+            "width": 215.95316806935625,
+            "height": 223.38874108904065,
+            "right": 377.07398806338034,
+            "bottom": 756.2993964674234,
+            "centerX": 269.0974040287022,
+            "centerY": 644.6050259229031
+          },
+          "button": {
+            "x": 120,
+            "y": 785.8499755859375,
+            "width": 150,
+            "height": 23,
+            "right": 270,
+            "bottom": 808.8499755859375,
+            "centerX": 195,
+            "centerY": 797.3499755859375
+          }
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contentInside": true,
+        "robotsReadable": true,
+        "robotsClearButton": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "state": {
+        "scene": "TransitionScene",
+        "audit": {
+          "scene": "TransitionScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 178,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "HERO",
+              "height": 178,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 294.5,
+              "y": 48.7,
+              "width": 255,
+              "height": 43
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 306,
+              "y": 96.96000000000001,
+              "width": 232,
+              "height": 22
+            },
+            {
+              "name": "transition-continue",
+              "x": 331,
+              "y": 334.3500061035156,
+              "width": 182,
+              "height": 28
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 39.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 39.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 337.6,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 317.6,
+            "taskFontSize": 12,
+            "titleFontSize": 17,
+            "instructionFontSize": 13,
+            "feedbackFontSize": 12,
+            "titleY": 25,
+            "instructionY": 48,
+            "areaTop": 68,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 56,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 38,
+            "sequenceOptionMaxHeight": 50,
+            "actionHeight": 52,
+            "actionFontSize": 15,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 13,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": {
+            "x": 294.5,
+            "y": 48.7,
+            "width": 255,
+            "height": 43,
+            "right": 549.5,
+            "bottom": 91.7,
+            "centerX": 422,
+            "centerY": 70.2
+          },
+          "subtitle": {
+            "x": 306,
+            "y": 96.96000000000001,
+            "width": 232,
+            "height": 22,
+            "right": 538,
+            "bottom": 118.96000000000001,
+            "centerX": 422,
+            "centerY": 107.96000000000001
+          },
+          "helper": {
+            "x": 248.38121690102753,
+            "y": 127.84366483888451,
+            "width": 172.46260680554883,
+            "height": 178.64373019899304,
+            "right": 420.84382370657636,
+            "bottom": 306.48739503787755,
+            "centerX": 334.61252030380194,
+            "centerY": 217.16552993838104
+          },
+          "repaired": {
+            "x": 421.7145604068869,
+            "y": 128.08665674978465,
+            "width": 172.46260680554883,
+            "height": 178.4007382880929,
+            "right": 594.1771672124357,
+            "bottom": 306.48739503787755,
+            "centerX": 507.9458638096613,
+            "centerY": 217.2870258938311
+          },
+          "button": {
+            "x": 331,
+            "y": 334.3500061035156,
+            "width": 182,
+            "height": 28,
+            "right": 513,
+            "bottom": 362.3500061035156,
+            "centerX": 422,
+            "centerY": 348.3500061035156
+          }
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contentInside": true,
+        "robotsReadable": true,
+        "robotsClearButton": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "scene": "TransitionScene",
+        "audit": {
+          "scene": "TransitionScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 258,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "HERO",
+              "height": 258,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 202.5,
+              "y": 155.82,
+              "width": 363,
+              "height": 57
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 225,
+              "y": 224.1,
+              "width": 318,
+              "height": 29
+            },
+            {
+              "name": "transition-continue",
+              "x": 293,
+              "y": 950.1199951171875,
+              "width": 182,
+              "height": 28
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "visualViewportWidth": 768,
+            "visualViewportHeight": 1024,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.75,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 768,
+          "viewportHeight": 1024,
+          "aspectRatio": 0.75,
+          "mode": "large-portrait-tablet",
+          "semanticMode": "TABLET_PORTRAIT",
+          "compositionName": "large-portrait-tablet",
+          "heightPressure": "tall",
+          "portrait": true,
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 1024
+          },
+          "zones": {
+            "headerZone": {
+              "x": 26.880000000000003,
+              "y": 26.880000000000003,
+              "width": 714.24,
+              "height": 62
+            },
+            "gameplayZone": {
+              "x": 26.880000000000003,
+              "y": 102.88,
+              "width": 714.24,
+              "height": 720.24
+            },
+            "controlsZone": {
+              "x": 26.880000000000003,
+              "y": 837.12,
+              "width": 714.24,
+              "height": 160
+            },
+            "characterZone": {
+              "x": 26.880000000000003,
+              "y": 102.88,
+              "width": 714.24,
+              "height": 720.24
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 724,
+              "height": 980
+            }
+          },
+          "headerZone": {
+            "x": 26.880000000000003,
+            "y": 26.880000000000003,
+            "width": 714.24,
+            "height": 62
+          },
+          "gameplayZone": {
+            "x": 26.880000000000003,
+            "y": 102.88,
+            "width": 714.24,
+            "height": 720.24
+          },
+          "controlsZone": {
+            "x": 26.880000000000003,
+            "y": 837.12,
+            "width": 714.24,
+            "height": 160
+          },
+          "characterZone": {
+            "x": 26.880000000000003,
+            "y": 102.88,
+            "width": 714.24,
+            "height": 720.24
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 724,
+            "height": 980
+          },
+          "statusY": 57.88,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 26.880000000000003,
+          "headerY": 57.88,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 26.880000000000003,
+            "y": 127.88,
+            "width": 430,
+            "height": 419.84
+          },
+          "taskCardSizing": {
+            "radius": 25.537,
+            "ribbonHeight": 40.328,
+            "ribbonWidth": 250,
+            "taskFontSize": 18.955,
+            "titleFontSize": 22.328,
+            "instructionFontSize": 16.955,
+            "feedbackFontSize": 14.373,
+            "titleY": 44.028999999999996,
+            "instructionY": 78.894,
+            "areaTop": 113.923,
+            "footerSpace": 106.386,
+            "cellGap": 10.745999999999999,
+            "cellMaxWidth": 132.804,
+            "cellMaxHeight": 99.46,
+            "sequenceGap": 7.7459999999999996,
+            "sequenceIconMaxSize": 51.73,
+            "sequenceOptionMaxHeight": 62.894,
+            "actionHeight": 54.328,
+            "actionFontSize": 16.955,
+            "actionGap": 12.745999999999999,
+            "horizontalPadding": 16.746,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 503.04,
+            "y": 163.72,
+            "width": 238.07999999999998,
+            "height": 180.36363636363635,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14.284799999999999,
+              "stepRadius": 15.4752,
+              "borderRadius": 20.2368
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": {
+            "x": 202.5,
+            "y": 155.82,
+            "width": 363,
+            "height": 57,
+            "right": 565.5,
+            "bottom": 212.82,
+            "centerX": 384,
+            "centerY": 184.32
+          },
+          "subtitle": {
+            "x": 225,
+            "y": 224.1,
+            "width": 318,
+            "height": 29,
+            "right": 543,
+            "bottom": 253.1,
+            "centerX": 384,
+            "centerY": 238.6
+          },
+          "helper": {
+            "x": 136.87018491631073,
+            "y": 649.526537666696,
+            "width": 249.1767165201009,
+            "height": 258.1304617230717,
+            "right": 386.04690143641164,
+            "bottom": 907.6569993897676,
+            "centerX": 261.4585431763612,
+            "centerY": 778.5917685282318
+          },
+          "repaired": {
+            "x": 379.8701543987326,
+            "y": 649.9007760856063,
+            "width": 249.1767165201009,
+            "height": 257.7562233041614,
+            "right": 629.0468709188335,
+            "bottom": 907.6569993897676,
+            "centerX": 504.4585126587831,
+            "centerY": 778.778887737687
+          },
+          "button": {
+            "x": 293,
+            "y": 950.1199951171875,
+            "width": 182,
+            "height": 28,
+            "right": 475,
+            "bottom": 978.1199951171875,
+            "centerX": 384,
+            "centerY": 964.1199951171875
+          }
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contentInside": true,
+        "robotsReadable": true,
+        "robotsClearButton": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": {
+        "scene": "TransitionScene",
+        "audit": {
+          "scene": "TransitionScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 329,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "HERO",
+              "height": 329,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "transition-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "transition-title",
+              "x": 443,
+              "y": 98.6,
+              "width": 394,
+              "height": 62
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 473.5,
+              "y": 173.6,
+              "width": 333,
+              "height": 30
+            },
+            {
+              "name": "transition-continue",
+              "x": 549,
+              "y": 650.280029296875,
+              "width": 182,
+              "height": 28
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 1280,
+            "innerHeight": 720,
+            "visualViewportWidth": 1280,
+            "visualViewportHeight": 720,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 1.7777777777777777,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "semanticMode": "DESKTOP",
+          "compositionName": "landscape",
+          "heightPressure": "regular",
+          "portrait": false,
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "zones": {
+            "headerZone": {
+              "x": 25.200000000000003,
+              "y": 25.200000000000003,
+              "width": 1229.6,
+              "height": 56.16
+            },
+            "gameplayZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "controlsZone": {
+              "x": 25.200000000000003,
+              "y": 572.4,
+              "width": 1229.6,
+              "height": 122.4
+            },
+            "characterZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 1236,
+              "height": 676
+            }
+          },
+          "headerZone": {
+            "x": 25.200000000000003,
+            "y": 25.200000000000003,
+            "width": 1229.6,
+            "height": 56.16
+          },
+          "gameplayZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "controlsZone": {
+            "x": 25.200000000000003,
+            "y": 572.4,
+            "width": 1229.6,
+            "height": 122.4
+          },
+          "characterZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 1236,
+            "height": 676
+          },
+          "statusY": 53.28,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 113.76,
+            "width": 358.40000000000003,
+            "height": 458.75200000000007
+          },
+          "taskCardSizing": {
+            "radius": 26.671933333333335,
+            "ribbonHeight": 41.62506666666667,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 19.765666666666668,
+            "titleFontSize": 23.62506666666667,
+            "instructionFontSize": 17.765666666666668,
+            "feedbackFontSize": 14.8594,
+            "titleY": 47.10953333333334,
+            "instructionY": 84.40653333333334,
+            "areaTop": 122.51606666666669,
+            "footerSpace": 113.84413333333335,
+            "cellGap": 11.718800000000002,
+            "cellMaxWidth": 139.93786666666668,
+            "cellMaxHeight": 109.18800000000002,
+            "sequenceGap": 8.718800000000002,
+            "sequenceIconMaxSize": 56.59400000000001,
+            "sequenceOptionMaxHeight": 68.40653333333334,
+            "actionHeight": 55.62506666666667,
+            "actionFontSize": 17.765666666666668,
+            "actionGap": 13.718800000000002,
+            "horizontalPadding": 17.7188,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 980.8799999999999,
+            "y": 178.56,
+            "width": 256,
+            "height": 193.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 15.36,
+              "stepRadius": 16.64,
+              "borderRadius": 21.76
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": {
+            "x": 443,
+            "y": 98.6,
+            "width": 394,
+            "height": 62,
+            "right": 837,
+            "bottom": 160.6,
+            "centerX": 640,
+            "centerY": 129.6
+          },
+          "subtitle": {
+            "x": 473.5,
+            "y": 173.6,
+            "width": 333,
+            "height": 30,
+            "right": 806.5,
+            "bottom": 203.6,
+            "centerX": 640,
+            "centerY": 188.6
+          },
+          "helper": {
+            "x": 319.4730042373497,
+            "y": 236.09013146681457,
+            "width": 318.39249059092634,
+            "height": 329.7327326388154,
+            "right": 637.865494828276,
+            "bottom": 565.82286410563,
+            "centerX": 478.66924953281284,
+            "centerY": 400.95649778622226
+          },
+          "repaired": {
+            "x": 639.4730042373496,
+            "y": 236.4676697309476,
+            "width": 318.3924905909264,
+            "height": 329.35519437468236,
+            "right": 957.865494828276,
+            "bottom": 565.82286410563,
+            "centerX": 798.6692495328128,
+            "centerY": 401.14526691828877
+          },
+          "button": {
+            "x": 549,
+            "y": 650.280029296875,
+            "width": 182,
+            "height": 28,
+            "right": 731,
+            "bottom": 678.280029296875,
+            "centerX": 640,
+            "centerY": 664.280029296875
+          }
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "contentInside": true,
+        "robotsReadable": true,
+        "robotsClearButton": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    }
+  ],
+  "mission7Completion": [
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "state": {
+        "scene": "Mission7Scene",
+        "audit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "mission7-completion",
+              "x": 58,
+              "y": 228.5,
+              "width": 244,
+              "height": 83.5
+            },
+            {
+              "name": "mission7-continue",
+              "x": 120.5,
+              "y": 367,
+              "width": 119,
+              "height": 19
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 360,
+            "innerHeight": 600,
+            "visualViewportWidth": 360,
+            "visualViewportHeight": 600,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.6,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 360,
+          "viewportHeight": 600,
+          "aspectRatio": 0.6,
+          "mode": "ultra-narrow-portrait",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "compositionName": "portrait-compact",
+          "heightPressure": "compact",
+          "portrait": true,
+          "safe": {
+            "top": 12.600000000000001,
+            "right": 12.600000000000001,
+            "bottom": 12.600000000000001,
+            "left": 12.600000000000001
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 600
+          },
+          "zones": {
+            "headerZone": {
+              "x": 12.600000000000001,
+              "y": 12.600000000000001,
+              "width": 334.79999999999995,
+              "height": 94
+            },
+            "gameplayZone": {
+              "x": 12.600000000000001,
+              "y": 114.6,
+              "width": 334.79999999999995,
+              "height": 259.79999999999995
+            },
+            "controlsZone": {
+              "x": 12.600000000000001,
+              "y": 382.4,
+              "width": 334.79999999999995,
+              "height": 205
+            },
+            "characterZone": {
+              "x": 12.600000000000001,
+              "y": 291.264,
+              "width": 334.79999999999995,
+              "height": 83.13599999999998
+            },
+            "modalZone": {
+              "x": 14,
+              "y": 14,
+              "width": 332,
+              "height": 572
+            }
+          },
+          "headerZone": {
+            "x": 12.600000000000001,
+            "y": 12.600000000000001,
+            "width": 334.79999999999995,
+            "height": 94
+          },
+          "gameplayZone": {
+            "x": 12.600000000000001,
+            "y": 114.6,
+            "width": 334.79999999999995,
+            "height": 259.79999999999995
+          },
+          "controlsZone": {
+            "x": 12.600000000000001,
+            "y": 382.4,
+            "width": 334.79999999999995,
+            "height": 205
+          },
+          "characterZone": {
+            "x": 12.600000000000001,
+            "y": 291.264,
+            "width": 334.79999999999995,
+            "height": 83.13599999999998
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 332,
+            "height": 572
+          },
+          "statusY": 89.6,
+          "gapXS": 4.32,
+          "gapS": 8,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 12.600000000000001,
+          "headerY": 38.6,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12.600000000000023,
+            "y": 131.6,
+            "width": 334.79999999999995,
+            "height": 293.79999999999995
+          },
+          "taskCardSizing": {
+            "radius": 21.860833333333332,
+            "ribbonHeight": 36.126666666666665,
+            "ribbonWidth": 227.664,
+            "taskFontSize": 16.329166666666666,
+            "titleFontSize": 18.126666666666665,
+            "instructionFontSize": 14.329166666666666,
+            "feedbackFontSize": 12.7975,
+            "titleY": 34.05083333333333,
+            "instructionY": 61.03833333333333,
+            "areaTop": 86.08916666666666,
+            "footerSpace": 82.22833333333332,
+            "cellGap": 7.594999999999999,
+            "cellMaxWidth": 109.69666666666666,
+            "cellMaxHeight": 67.94999999999999,
+            "sequenceGap": 4.594999999999999,
+            "sequenceIconMaxSize": 35.974999999999994,
+            "sequenceOptionMaxHeight": 45.03833333333333,
+            "actionHeight": 50.126666666666665,
+            "actionFontSize": 14.329166666666666,
+            "actionGap": 9.594999999999999,
+            "horizontalPadding": 13.594999999999999,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 255.39999999999998,
+            "y": 433.79999999999995,
+            "width": 92,
+            "height": 152,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 10,
+              "stepRadius": 14,
+              "borderRadius": 16
+            }
+          },
+          "dialogue": {
+            "width": 162,
+            "height": 72,
+            "fontSize": 14,
+            "gap": 9
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 12.600000381469727,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 12.600000381469727,
+            "bottom": 0,
+            "centerX": 12.600000381469727,
+            "centerY": 0
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": {
+            "x": 58,
+            "y": 228.5,
+            "width": 244,
+            "height": 83.5,
+            "right": 302,
+            "bottom": 312,
+            "centerX": 180,
+            "centerY": 270.25
+          },
+          "button": {
+            "x": 120.5,
+            "y": 367,
+            "width": 119,
+            "height": 19,
+            "right": 239.5,
+            "bottom": 386,
+            "centerX": 180,
+            "centerY": 376.5
+          },
+          "blocker": true,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "modalInside": true,
+        "inputBlocked": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "state": {
+        "scene": "Mission7Scene",
+        "audit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "mission7-completion",
+              "x": 67,
+              "y": 350.5,
+              "width": 256,
+              "height": 83.5
+            },
+            {
+              "name": "mission7-continue",
+              "x": 133.5,
+              "y": 488,
+              "width": 123,
+              "height": 21
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "visualViewportWidth": 390,
+            "visualViewportHeight": 844,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.46208530805687204,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionName": "portrait-tall",
+          "heightPressure": "tall",
+          "portrait": true,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 362.70000000000005,
+              "height": 102.58
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 124.81,
+              "width": 362.70000000000005,
+              "height": 477.52000000000004
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 610.9100000000001,
+              "width": 362.70000000000005,
+              "height": 219.44
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 449.52360000000004,
+              "width": 362.70000000000005,
+              "height": 152.80640000000002
+            },
+            "modalZone": {
+              "x": 14,
+              "y": 14,
+              "width": 362,
+              "height": 816
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 362.70000000000005,
+            "height": 102.58
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 124.81,
+            "width": 362.70000000000005,
+            "height": 477.52000000000004
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 610.9100000000001,
+            "width": 362.70000000000005,
+            "height": 219.44
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 449.52360000000004,
+            "width": 362.70000000000005,
+            "height": 152.80640000000002
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 362,
+            "height": 816
+          },
+          "statusY": 99.23,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 145.81,
+            "width": 362.70000000000005,
+            "height": 430
+          },
+          "taskCardSizing": {
+            "radius": 25.833333333333336,
+            "ribbonHeight": 40.666666666666664,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 19.166666666666668,
+            "titleFontSize": 22.666666666666668,
+            "instructionFontSize": 17.166666666666668,
+            "feedbackFontSize": 14.5,
+            "titleY": 44.833333333333336,
+            "instructionY": 80.33333333333334,
+            "areaTop": 116.16666666666667,
+            "footerSpace": 108.33333333333334,
+            "cellGap": 11,
+            "cellMaxWidth": 134.66666666666669,
+            "cellMaxHeight": 102,
+            "sequenceGap": 8,
+            "sequenceIconMaxSize": 53,
+            "sequenceOptionMaxHeight": 64.33333333333334,
+            "actionHeight": 54.666666666666664,
+            "actionFontSize": 17.166666666666668,
+            "actionGap": 13,
+            "horizontalPadding": 17,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 267.15,
+            "y": 587.626,
+            "width": 109.20000000000002,
+            "height": 164,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 11,
+              "stepRadius": 14,
+              "borderRadius": 16
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 13.649999618530273,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 13.649999618530273,
+            "bottom": 0,
+            "centerX": 13.649999618530273,
+            "centerY": 0
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": {
+            "x": 67,
+            "y": 350.5,
+            "width": 256,
+            "height": 83.5,
+            "right": 323,
+            "bottom": 434,
+            "centerX": 195,
+            "centerY": 392.25
+          },
+          "button": {
+            "x": 133.5,
+            "y": 488,
+            "width": 123,
+            "height": 21,
+            "right": 256.5,
+            "bottom": 509,
+            "centerX": 195,
+            "centerY": 498.5
+          },
+          "blocker": true,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "modalInside": true,
+        "inputBlocked": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "state": {
+        "scene": "Mission7Scene",
+        "audit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "mission7-completion",
+              "x": 248.5,
+              "y": 132.9,
+              "width": 347,
+              "height": 76.6
+            },
+            {
+              "name": "mission7-continue",
+              "x": 345,
+              "y": 240.39999389648438,
+              "width": 154,
+              "height": 25
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 39.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 39.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 337.6,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 317.6,
+            "taskFontSize": 12,
+            "titleFontSize": 17,
+            "instructionFontSize": 13,
+            "feedbackFontSize": 12,
+            "titleY": 25,
+            "instructionY": 48,
+            "areaTop": 68,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 56,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 38,
+            "sequenceOptionMaxHeight": 50,
+            "actionHeight": 52,
+            "actionFontSize": 15,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 13,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 0,
+            "bottom": 0,
+            "centerX": 0,
+            "centerY": 0
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": {
+            "x": 248.5,
+            "y": 132.9,
+            "width": 347,
+            "height": 76.6,
+            "right": 595.5,
+            "bottom": 209.5,
+            "centerX": 422,
+            "centerY": 171.2
+          },
+          "button": {
+            "x": 345,
+            "y": 240.39999389648438,
+            "width": 154,
+            "height": 25,
+            "right": 499,
+            "bottom": 265.3999938964844,
+            "centerX": 422,
+            "centerY": 252.89999389648438
+          },
+          "blocker": true,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "modalInside": true,
+        "inputBlocked": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "scene": "Mission7Scene",
+        "audit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "mission7-completion",
+              "x": 210.5,
+              "y": 435.5,
+              "width": 347,
+              "height": 91
+            },
+            {
+              "name": "mission7-continue",
+              "x": 307,
+              "y": 576,
+              "width": 154,
+              "height": 25
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "visualViewportWidth": 768,
+            "visualViewportHeight": 1024,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.75,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 768,
+          "viewportHeight": 1024,
+          "aspectRatio": 0.75,
+          "mode": "large-portrait-tablet",
+          "semanticMode": "TABLET_PORTRAIT",
+          "compositionName": "large-portrait-tablet",
+          "heightPressure": "tall",
+          "portrait": true,
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 1024
+          },
+          "zones": {
+            "headerZone": {
+              "x": 26.880000000000003,
+              "y": 26.880000000000003,
+              "width": 714.24,
+              "height": 62
+            },
+            "gameplayZone": {
+              "x": 26.880000000000003,
+              "y": 102.88,
+              "width": 714.24,
+              "height": 720.24
+            },
+            "controlsZone": {
+              "x": 26.880000000000003,
+              "y": 837.12,
+              "width": 714.24,
+              "height": 160
+            },
+            "characterZone": {
+              "x": 26.880000000000003,
+              "y": 102.88,
+              "width": 714.24,
+              "height": 720.24
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 724,
+              "height": 980
+            }
+          },
+          "headerZone": {
+            "x": 26.880000000000003,
+            "y": 26.880000000000003,
+            "width": 714.24,
+            "height": 62
+          },
+          "gameplayZone": {
+            "x": 26.880000000000003,
+            "y": 102.88,
+            "width": 714.24,
+            "height": 720.24
+          },
+          "controlsZone": {
+            "x": 26.880000000000003,
+            "y": 837.12,
+            "width": 714.24,
+            "height": 160
+          },
+          "characterZone": {
+            "x": 26.880000000000003,
+            "y": 102.88,
+            "width": 714.24,
+            "height": 720.24
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 724,
+            "height": 980
+          },
+          "statusY": 57.88,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 26.880000000000003,
+          "headerY": 57.88,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 26.880000000000003,
+            "y": 127.88,
+            "width": 430,
+            "height": 419.84
+          },
+          "taskCardSizing": {
+            "radius": 25.537,
+            "ribbonHeight": 40.328,
+            "ribbonWidth": 250,
+            "taskFontSize": 18.955,
+            "titleFontSize": 22.328,
+            "instructionFontSize": 16.955,
+            "feedbackFontSize": 14.373,
+            "titleY": 44.028999999999996,
+            "instructionY": 78.894,
+            "areaTop": 113.923,
+            "footerSpace": 106.386,
+            "cellGap": 10.745999999999999,
+            "cellMaxWidth": 132.804,
+            "cellMaxHeight": 99.46,
+            "sequenceGap": 7.7459999999999996,
+            "sequenceIconMaxSize": 51.73,
+            "sequenceOptionMaxHeight": 62.894,
+            "actionHeight": 54.328,
+            "actionFontSize": 16.955,
+            "actionGap": 12.745999999999999,
+            "horizontalPadding": 16.746,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 503.04,
+            "y": 163.72,
+            "width": 238.07999999999998,
+            "height": 180.36363636363635,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14.284799999999999,
+              "stepRadius": 15.4752,
+              "borderRadius": 20.2368
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": -1.4787677104745,
+            "y": 728.3323193809483,
+            "width": 264.50648718864807,
+            "height": 273.62505530853537,
+            "right": 263.0277194781736,
+            "bottom": 1001.9573746894837,
+            "centerX": 130.77447588384953,
+            "centerY": 865.144847035216
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": {
+            "x": 210.5,
+            "y": 435.5,
+            "width": 347,
+            "height": 91,
+            "right": 557.5,
+            "bottom": 526.5,
+            "centerX": 384,
+            "centerY": 481
+          },
+          "button": {
+            "x": 307,
+            "y": 576,
+            "width": 154,
+            "height": 25,
+            "right": 461,
+            "bottom": 601,
+            "centerX": 384,
+            "centerY": 588.5
+          },
+          "blocker": true,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "modalInside": true,
+        "inputBlocked": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": {
+        "scene": "Mission7Scene",
+        "audit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 152,
+              "readable": true
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "height": 152,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-completion",
+              "x": 466.5,
+              "y": 283.5,
+              "width": 347,
+              "height": 91
+            },
+            {
+              "name": "mission7-continue",
+              "x": 563,
+              "y": 424,
+              "width": 154,
+              "height": 25
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 1280,
+            "innerHeight": 720,
+            "visualViewportWidth": 1280,
+            "visualViewportHeight": 720,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 1.7777777777777777,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "semanticMode": "DESKTOP",
+          "compositionName": "landscape",
+          "heightPressure": "regular",
+          "portrait": false,
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "zones": {
+            "headerZone": {
+              "x": 25.200000000000003,
+              "y": 25.200000000000003,
+              "width": 1229.6,
+              "height": 56.16
+            },
+            "gameplayZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "controlsZone": {
+              "x": 25.200000000000003,
+              "y": 572.4,
+              "width": 1229.6,
+              "height": 122.4
+            },
+            "characterZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 1236,
+              "height": 676
+            }
+          },
+          "headerZone": {
+            "x": 25.200000000000003,
+            "y": 25.200000000000003,
+            "width": 1229.6,
+            "height": 56.16
+          },
+          "gameplayZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "controlsZone": {
+            "x": 25.200000000000003,
+            "y": 572.4,
+            "width": 1229.6,
+            "height": 122.4
+          },
+          "characterZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 1236,
+            "height": 676
+          },
+          "statusY": 53.28,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 113.76,
+            "width": 358.40000000000003,
+            "height": 458.75200000000007
+          },
+          "taskCardSizing": {
+            "radius": 26.671933333333335,
+            "ribbonHeight": 41.62506666666667,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 19.765666666666668,
+            "titleFontSize": 23.62506666666667,
+            "instructionFontSize": 17.765666666666668,
+            "feedbackFontSize": 14.8594,
+            "titleY": 47.10953333333334,
+            "instructionY": 84.40653333333334,
+            "areaTop": 122.51606666666669,
+            "footerSpace": 113.84413333333335,
+            "cellGap": 11.718800000000002,
+            "cellMaxWidth": 139.93786666666668,
+            "cellMaxHeight": 109.18800000000002,
+            "sequenceGap": 8.718800000000002,
+            "sequenceIconMaxSize": 56.59400000000001,
+            "sequenceOptionMaxHeight": 68.40653333333334,
+            "actionHeight": 55.62506666666667,
+            "actionFontSize": 17.765666666666668,
+            "actionGap": 13.718800000000002,
+            "horizontalPadding": 17.7188,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 980.8799999999999,
+            "y": 178.56,
+            "width": 256,
+            "height": 193.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 15.36,
+              "stepRadius": 16.64,
+              "borderRadius": 21.76
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 72.53219671314078,
+            "y": 545.1111637356703,
+            "width": 147.3042694067451,
+            "height": 152.3827718364771,
+            "right": 219.83646611988587,
+            "bottom": 697.4939355721474,
+            "centerX": 146.18433141651332,
+            "centerY": 621.3025496539088
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": {
+            "x": 466.5,
+            "y": 283.5,
+            "width": 347,
+            "height": 91,
+            "right": 813.5,
+            "bottom": 374.5,
+            "centerX": 640,
+            "centerY": 329
+          },
+          "button": {
+            "x": 563,
+            "y": 424,
+            "width": 154,
+            "height": 25,
+            "right": 717,
+            "bottom": 449,
+            "centerX": 640,
+            "centerY": 436.5
+          },
+          "blocker": true,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": null,
+          "target": null,
+          "robotCell": null,
+          "targetCell": null,
+          "feedback": ""
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "modalInside": true,
+        "inputBlocked": true,
+        "noMajorOverlaps": true,
+        "errors": true
+      }
+    }
+  ],
+  "mission8Arrival": [
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "state": {
+        "scene": "Mission8Scene",
+        "audit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 89.5,
+              "y": 82.5999984741211,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 12.600000000000023,
+              "y": 134.6,
+              "width": 334.79999999999995,
+              "height": 239.79999999999998
+            },
+            {
+              "name": "programming-instruction",
+              "x": 96.5,
+              "y": 116.1,
+              "width": 167,
+              "height": 17
+            },
+            {
+              "name": "program-strip",
+              "x": 68,
+              "y": 386.3999938964844,
+              "width": 224,
+              "height": 51
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 25.099998474121094,
+              "y": 555.9000244140625,
+              "width": 65,
+              "height": 13
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 126.60000610351562,
+              "y": 555.4000244140625,
+              "width": 56,
+              "height": 14
+            },
+            {
+              "name": "programming-run-button",
+              "x": 239.5,
+              "y": 554.4000244140625,
+              "width": 75,
+              "height": 16
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 360,
+            "innerHeight": 600,
+            "visualViewportWidth": 360,
+            "visualViewportHeight": 600,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.6,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 360,
+          "viewportHeight": 600,
+          "aspectRatio": 0.6,
+          "mode": "ultra-narrow-portrait",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "compositionName": "portrait-compact",
+          "heightPressure": "compact",
+          "portrait": true,
+          "safe": {
+            "top": 12.600000000000001,
+            "right": 12.600000000000001,
+            "bottom": 12.600000000000001,
+            "left": 12.600000000000001
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 600
+          },
+          "zones": {
+            "headerZone": {
+              "x": 12.600000000000001,
+              "y": 12.600000000000001,
+              "width": 334.79999999999995,
+              "height": 94
+            },
+            "gameplayZone": {
+              "x": 12.600000000000001,
+              "y": 114.6,
+              "width": 334.79999999999995,
+              "height": 259.79999999999995
+            },
+            "controlsZone": {
+              "x": 12.600000000000001,
+              "y": 382.4,
+              "width": 334.79999999999995,
+              "height": 205
+            },
+            "characterZone": {
+              "x": 12.600000000000001,
+              "y": 291.264,
+              "width": 334.79999999999995,
+              "height": 83.13599999999998
+            },
+            "modalZone": {
+              "x": 14,
+              "y": 14,
+              "width": 332,
+              "height": 572
+            }
+          },
+          "headerZone": {
+            "x": 12.600000000000001,
+            "y": 12.600000000000001,
+            "width": 334.79999999999995,
+            "height": 94
+          },
+          "gameplayZone": {
+            "x": 12.600000000000001,
+            "y": 114.6,
+            "width": 334.79999999999995,
+            "height": 259.79999999999995
+          },
+          "controlsZone": {
+            "x": 12.600000000000001,
+            "y": 382.4,
+            "width": 334.79999999999995,
+            "height": 205
+          },
+          "characterZone": {
+            "x": 12.600000000000001,
+            "y": 291.264,
+            "width": 334.79999999999995,
+            "height": 83.13599999999998
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 332,
+            "height": 572
+          },
+          "statusY": 89.6,
+          "gapXS": 4.32,
+          "gapS": 8,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 12.600000000000001,
+          "headerY": 38.6,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 12.600000000000023,
+            "y": 131.6,
+            "width": 334.79999999999995,
+            "height": 293.79999999999995
+          },
+          "taskCardSizing": {
+            "radius": 21.860833333333332,
+            "ribbonHeight": 36.126666666666665,
+            "ribbonWidth": 227.664,
+            "taskFontSize": 16.329166666666666,
+            "titleFontSize": 18.126666666666665,
+            "instructionFontSize": 14.329166666666666,
+            "feedbackFontSize": 12.7975,
+            "titleY": 34.05083333333333,
+            "instructionY": 61.03833333333333,
+            "areaTop": 86.08916666666666,
+            "footerSpace": 82.22833333333332,
+            "cellGap": 7.594999999999999,
+            "cellMaxWidth": 109.69666666666666,
+            "cellMaxHeight": 67.94999999999999,
+            "sequenceGap": 4.594999999999999,
+            "sequenceIconMaxSize": 35.974999999999994,
+            "sequenceOptionMaxHeight": 45.03833333333333,
+            "actionHeight": 50.126666666666665,
+            "actionFontSize": 14.329166666666666,
+            "actionGap": 9.594999999999999,
+            "horizontalPadding": 13.594999999999999,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 255.39999999999998,
+            "y": 433.79999999999995,
+            "width": 92,
+            "height": 152,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 10,
+              "stepRadius": 14,
+              "borderRadius": 16
+            }
+          },
+          "dialogue": {
+            "width": 162,
+            "height": 72,
+            "fontSize": 14,
+            "gap": 9
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 0,
+            "bottom": 0,
+            "centerX": 0,
+            "centerY": 0
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": {
+            "x": 180.11311061329386,
+            "y": 235.80117755828053,
+            "width": 76.13733291279519,
+            "height": 78.75884897323698,
+            "right": 256.25044352608904,
+            "bottom": 314.5600265315175,
+            "centerX": 218.18177706969146,
+            "centerY": 275.18060204489905
+          },
+          "target": {
+            "x": 184.6200003814697,
+            "y": 259.1200061035156,
+            "width": 67.75999999999999,
+            "height": 67.75999999999999,
+            "right": 252.3800003814697,
+            "bottom": 326.8800061035156,
+            "centerX": 218.5000003814697,
+            "centerY": 293.0000061035156
+          },
+          "robotCell": {
+            "column": 2,
+            "row": 1
+          },
+          "targetCell": {
+            "column": 2,
+            "row": 1
+          },
+          "feedback": "ПРОГРАММА РАБОТАЕТ!"
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "exactTargetCell": true,
+        "robotOverCharger": true,
+        "robotReadable": true,
+        "successFeedback": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "state": {
+        "scene": "Mission8Scene",
+        "audit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 104.5,
+              "y": 92.2300033569336,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 148.81,
+              "width": 362.70000000000005,
+              "height": 453.52000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 104.5,
+              "y": 129.81,
+              "width": 181,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 83,
+              "y": 610.9099731445312,
+              "width": 224,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 24.150001525878906,
+              "y": 797.3499755859375,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 138.14999389648438,
+              "y": 797.3499755859375,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 255.5,
+              "y": 795.8499755859375,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "visualViewportWidth": 390,
+            "visualViewportHeight": 844,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.46208530805687204,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "aspectRatio": 0.46208530805687204,
+          "mode": "portrait",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionName": "portrait-tall",
+          "heightPressure": "tall",
+          "portrait": true,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 362.70000000000005,
+              "height": 102.58
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 124.81,
+              "width": 362.70000000000005,
+              "height": 477.52000000000004
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 610.9100000000001,
+              "width": 362.70000000000005,
+              "height": 219.44
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 449.52360000000004,
+              "width": 362.70000000000005,
+              "height": 152.80640000000002
+            },
+            "modalZone": {
+              "x": 14,
+              "y": 14,
+              "width": 362,
+              "height": 816
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 362.70000000000005,
+            "height": 102.58
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 124.81,
+            "width": 362.70000000000005,
+            "height": 477.52000000000004
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 610.9100000000001,
+            "width": 362.70000000000005,
+            "height": 219.44
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 449.52360000000004,
+            "width": 362.70000000000005,
+            "height": 152.80640000000002
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 362,
+            "height": 816
+          },
+          "statusY": 99.23,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 44.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.649999999999977,
+            "y": 145.81,
+            "width": 362.70000000000005,
+            "height": 430
+          },
+          "taskCardSizing": {
+            "radius": 25.833333333333336,
+            "ribbonHeight": 40.666666666666664,
+            "ribbonWidth": 246.63600000000005,
+            "taskFontSize": 19.166666666666668,
+            "titleFontSize": 22.666666666666668,
+            "instructionFontSize": 17.166666666666668,
+            "feedbackFontSize": 14.5,
+            "titleY": 44.833333333333336,
+            "instructionY": 80.33333333333334,
+            "areaTop": 116.16666666666667,
+            "footerSpace": 108.33333333333334,
+            "cellGap": 11,
+            "cellMaxWidth": 134.66666666666669,
+            "cellMaxHeight": 102,
+            "sequenceGap": 8,
+            "sequenceIconMaxSize": 53,
+            "sequenceOptionMaxHeight": 64.33333333333334,
+            "actionHeight": 54.666666666666664,
+            "actionFontSize": 17.166666666666668,
+            "actionGap": 13,
+            "horizontalPadding": 17,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 267.15,
+            "y": 587.626,
+            "width": 109.20000000000002,
+            "height": 164,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 11,
+              "stepRadius": 14,
+              "borderRadius": 16
+            }
+          },
+          "dialogue": {
+            "width": 175.5,
+            "height": 84.4,
+            "fontSize": 14.43,
+            "gap": 9.75
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 0,
+            "bottom": 0,
+            "centerX": 0,
+            "centerY": 0
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": {
+            "x": 198.61311061329386,
+            "y": 362.3311458199993,
+            "width": 76.13733291279519,
+            "height": 78.75884897323698,
+            "right": 274.75044352608904,
+            "bottom": 441.08999479323626,
+            "centerX": 236.68177706969146,
+            "centerY": 401.7105703066178
+          },
+          "target": {
+            "x": 200.0399996185303,
+            "y": 380.6099975585937,
+            "width": 73.91999999999999,
+            "height": 73.92000000000002,
+            "right": 273.9599996185303,
+            "bottom": 454.5299975585937,
+            "centerX": 236.9999996185303,
+            "centerY": 417.56999755859374
+          },
+          "robotCell": {
+            "column": 2,
+            "row": 1
+          },
+          "targetCell": {
+            "column": 2,
+            "row": 1
+          },
+          "feedback": "ПРОГРАММА РАБОТАЕТ!"
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "exactTargetCell": true,
+        "robotOverCharger": true,
+        "robotReadable": true,
+        "successFeedback": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "state": {
+        "scene": "Mission8Scene",
+        "audit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 86,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 331.5,
+              "y": 32.650001525878906,
+              "width": 181,
+              "height": 14
+            },
+            {
+              "name": "programming-board",
+              "x": 13.650000000000002,
+              "y": 94.23,
+              "width": 466,
+              "height": 282.12
+            },
+            {
+              "name": "programming-instruction",
+              "x": 148.65,
+              "y": 74.23,
+              "width": 195.99999999999997,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 556.6500244140625,
+              "y": 94.2300033569336,
+              "width": 224,
+              "height": 55.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 502.6500244140625,
+              "y": 338.3500061035156,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 613.6500244140625,
+              "y": 338.3500061035156,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 726.1500244140625,
+              "y": 336.8500061035156,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 39.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 39.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 52,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 337.6,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 317.6,
+            "taskFontSize": 12,
+            "titleFontSize": 17,
+            "instructionFontSize": 13,
+            "feedbackFontSize": 12,
+            "titleY": 25,
+            "instructionY": 48,
+            "areaTop": 68,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 56,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 38,
+            "sequenceOptionMaxHeight": 50,
+            "actionHeight": 52,
+            "actionFontSize": 15,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 13,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 0,
+            "bottom": 0,
+            "centerX": 0,
+            "centerY": 0
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": {
+            "x": 259.8312649357731,
+            "y": 235.2900021022679,
+            "width": 82.94411294430824,
+            "height": 85.79999606870993,
+            "right": 342.77537788008135,
+            "bottom": 321.0899981709778,
+            "centerX": 301.3033214079272,
+            "centerY": 278.19000013662287
+          },
+          "target": {
+            "x": 253.24999961853027,
+            "y": 241.8900033569336,
+            "width": 96.79999999999998,
+            "height": 96.79999999999998,
+            "right": 350.04999961853025,
+            "bottom": 338.6900033569336,
+            "centerX": 301.6499996185303,
+            "centerY": 290.2900033569336
+          },
+          "robotCell": {
+            "column": 2,
+            "row": 1
+          },
+          "targetCell": {
+            "column": 2,
+            "row": 1
+          },
+          "feedback": "ПРОГРАММА РАБОТАЕТ!"
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "exactTargetCell": true,
+        "robotOverCharger": true,
+        "robotReadable": true,
+        "successFeedback": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "state": {
+        "scene": "Mission8Scene",
+        "audit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 329,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 79,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "mission8-header",
+              "x": 215,
+              "y": 41.38,
+              "width": 338,
+              "height": 32.99999999999999
+            },
+            {
+              "name": "systems-progress",
+              "x": 330.5,
+              "y": 119.8800048828125,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 184.32,
+              "y": 193.88,
+              "width": 399.36,
+              "height": 340
+            },
+            {
+              "name": "programming-instruction",
+              "x": 166,
+              "y": 174.88,
+              "width": 436,
+              "height": 18
+            },
+            {
+              "name": "program-strip",
+              "x": 148,
+              "y": 547.8800048828125,
+              "width": 376,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 178,
+              "y": 712.8800048828125,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 319,
+              "y": 712.8800048828125,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 471.5,
+              "y": 711.3800048828125,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "visualViewportWidth": 768,
+            "visualViewportHeight": 1024,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "portrait",
+            "aspectRatio": 0.75,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 768,
+          "viewportHeight": 1024,
+          "aspectRatio": 0.75,
+          "mode": "large-portrait-tablet",
+          "semanticMode": "TABLET_PORTRAIT",
+          "compositionName": "large-portrait-tablet",
+          "heightPressure": "tall",
+          "portrait": true,
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 1024
+          },
+          "zones": {
+            "headerZone": {
+              "x": 26.880000000000003,
+              "y": 26.880000000000003,
+              "width": 714.24,
+              "height": 62
+            },
+            "gameplayZone": {
+              "x": 26.880000000000003,
+              "y": 102.88,
+              "width": 714.24,
+              "height": 720.24
+            },
+            "controlsZone": {
+              "x": 26.880000000000003,
+              "y": 837.12,
+              "width": 714.24,
+              "height": 160
+            },
+            "characterZone": {
+              "x": 26.880000000000003,
+              "y": 102.88,
+              "width": 714.24,
+              "height": 720.24
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 724,
+              "height": 980
+            }
+          },
+          "headerZone": {
+            "x": 26.880000000000003,
+            "y": 26.880000000000003,
+            "width": 714.24,
+            "height": 62
+          },
+          "gameplayZone": {
+            "x": 26.880000000000003,
+            "y": 102.88,
+            "width": 714.24,
+            "height": 720.24
+          },
+          "controlsZone": {
+            "x": 26.880000000000003,
+            "y": 837.12,
+            "width": 714.24,
+            "height": 160
+          },
+          "characterZone": {
+            "x": 26.880000000000003,
+            "y": 102.88,
+            "width": 714.24,
+            "height": 720.24
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 724,
+            "height": 980
+          },
+          "statusY": 57.88,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 26.880000000000003,
+          "headerY": 57.88,
+          "headerWidth": 300,
+          "headerHeight": 62,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 60,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 26.880000000000003,
+            "y": 127.88,
+            "width": 430,
+            "height": 419.84
+          },
+          "taskCardSizing": {
+            "radius": 25.537,
+            "ribbonHeight": 40.328,
+            "ribbonWidth": 250,
+            "taskFontSize": 18.955,
+            "titleFontSize": 22.328,
+            "instructionFontSize": 16.955,
+            "feedbackFontSize": 14.373,
+            "titleY": 44.028999999999996,
+            "instructionY": 78.894,
+            "areaTop": 113.923,
+            "footerSpace": 106.386,
+            "cellGap": 10.745999999999999,
+            "cellMaxWidth": 132.804,
+            "cellMaxHeight": 99.46,
+            "sequenceGap": 7.7459999999999996,
+            "sequenceIconMaxSize": 51.73,
+            "sequenceOptionMaxHeight": 62.894,
+            "actionHeight": 54.328,
+            "actionFontSize": 16.955,
+            "actionGap": 12.745999999999999,
+            "horizontalPadding": 16.746,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 503.04,
+            "y": 163.72,
+            "width": 238.07999999999998,
+            "height": 180.36363636363635,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14.284799999999999,
+              "stepRadius": 15.4752,
+              "borderRadius": 20.2368
+            }
+          },
+          "dialogue": {
+            "width": 230,
+            "height": 86,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": -50.5269957626503,
+            "y": 673.5876648481351,
+            "width": 318.39249059092634,
+            "height": 329.35519437468236,
+            "right": 267.86549482827604,
+            "bottom": 1002.9428592228174,
+            "centerX": 108.66924953281287,
+            "centerY": 838.2652620354763
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": {
+            "x": 392.1131106132939,
+            "y": 357.66116290984303,
+            "width": 76.13733291279516,
+            "height": 78.75884897323698,
+            "right": 468.25044352608904,
+            "bottom": 436.42001188308,
+            "centerX": 430.18177706969146,
+            "centerY": 397.04058739646155
+          },
+          "target": {
+            "x": 389.58000732421874,
+            "y": 369.4600048828125,
+            "width": 81.84000000000003,
+            "height": 81.83999999999997,
+            "right": 471.4200073242188,
+            "bottom": 451.30000488281246,
+            "centerX": 430.50000732421876,
+            "centerY": 410.3800048828125
+          },
+          "robotCell": {
+            "column": 2,
+            "row": 1
+          },
+          "targetCell": {
+            "column": 2,
+            "row": 1
+          },
+          "feedback": "ПРОГРАММА РАБОТАЕТ!"
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "exactTargetCell": true,
+        "robotOverCharger": true,
+        "robotReadable": true,
+        "successFeedback": true,
+        "errors": true
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": {
+        "scene": "Mission8Scene",
+        "audit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 289,
+              "readable": true
+            },
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 106,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission8-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission8-header",
+              "x": 438,
+              "y": 34.28,
+              "width": 404,
+              "height": 38
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 109.44000244140625,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 315,
+              "y": 183.44,
+              "width": 650,
+              "height": 296.35999999999996
+            },
+            {
+              "name": "programming-instruction",
+              "x": 404,
+              "y": 163.44,
+              "width": 472,
+              "height": 20
+            },
+            {
+              "name": "program-strip",
+              "x": 404,
+              "y": 493.79998779296875,
+              "width": 376,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 434,
+              "y": 658.7999877929688,
+              "width": 76,
+              "height": 16
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 575,
+              "y": 658.7999877929688,
+              "width": 66,
+              "height": 16
+            },
+            {
+              "name": "programming-run-button",
+              "x": 727.5,
+              "y": 657.2999877929688,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 1280,
+            "innerHeight": 720,
+            "visualViewportWidth": 1280,
+            "visualViewportHeight": 720,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 1.7777777777777777,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "semanticMode": "DESKTOP",
+          "compositionName": "landscape",
+          "heightPressure": "regular",
+          "portrait": false,
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "zones": {
+            "headerZone": {
+              "x": 25.200000000000003,
+              "y": 25.200000000000003,
+              "width": 1229.6,
+              "height": 56.16
+            },
+            "gameplayZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "controlsZone": {
+              "x": 25.200000000000003,
+              "y": 572.4,
+              "width": 1229.6,
+              "height": 122.4
+            },
+            "characterZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 1236,
+              "height": 676
+            }
+          },
+          "headerZone": {
+            "x": 25.200000000000003,
+            "y": 25.200000000000003,
+            "width": 1229.6,
+            "height": 56.16
+          },
+          "gameplayZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "controlsZone": {
+            "x": 25.200000000000003,
+            "y": 572.4,
+            "width": 1229.6,
+            "height": 122.4
+          },
+          "characterZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 1236,
+            "height": 676
+          },
+          "statusY": 53.28,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 113.76,
+            "width": 358.40000000000003,
+            "height": 458.75200000000007
+          },
+          "taskCardSizing": {
+            "radius": 26.671933333333335,
+            "ribbonHeight": 41.62506666666667,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 19.765666666666668,
+            "titleFontSize": 23.62506666666667,
+            "instructionFontSize": 17.765666666666668,
+            "feedbackFontSize": 14.8594,
+            "titleY": 47.10953333333334,
+            "instructionY": 84.40653333333334,
+            "areaTop": 122.51606666666669,
+            "footerSpace": 113.84413333333335,
+            "cellGap": 11.718800000000002,
+            "cellMaxWidth": 139.93786666666668,
+            "cellMaxHeight": 109.18800000000002,
+            "sequenceGap": 8.718800000000002,
+            "sequenceIconMaxSize": 56.59400000000001,
+            "sequenceOptionMaxHeight": 68.40653333333334,
+            "actionHeight": 55.62506666666667,
+            "actionFontSize": 17.765666666666668,
+            "actionGap": 13.718800000000002,
+            "horizontalPadding": 17.7188,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 980.8799999999999,
+            "y": 178.56,
+            "width": 256,
+            "height": 193.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 15.36,
+              "stepRadius": 16.64,
+              "borderRadius": 21.76
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "transition": {
+          "title": null,
+          "subtitle": null,
+          "helper": {
+            "x": 10.49459781440953,
+            "y": 411.2168717760569,
+            "width": 279.07793487925494,
+            "height": 288.68698290355144,
+            "right": 289.57253269366447,
+            "bottom": 699.9038546796083,
+            "centerX": 150.033565254037,
+            "centerY": 555.5603632278326
+          },
+          "repaired": null,
+          "button": null
+        },
+        "mission7": {
+          "modal": null,
+          "button": null,
+          "blocker": false,
+          "enabledPorts": []
+        },
+        "mission8": {
+          "robot": {
+            "x": 656.2968449504056,
+            "y": 331.62001142562093,
+            "width": 102.54908359456999,
+            "height": 106.07999358763038,
+            "right": 758.8459285449755,
+            "bottom": 437.7000050132513,
+            "centerX": 707.5713867476906,
+            "centerY": 384.6600082194361
+          },
+          "target": {
+            "x": 648.16,
+            "y": 339.7800024414062,
+            "width": 119.67999999999995,
+            "height": 119.68,
+            "right": 767.8399999999999,
+            "bottom": 459.46000244140623,
+            "centerX": 708,
+            "centerY": 399.6200024414062
+          },
+          "robotCell": {
+            "column": 2,
+            "row": 1
+          },
+          "targetCell": {
+            "column": 2,
+            "row": 1
+          },
+          "feedback": "ПРОГРАММА РАБОТАЕТ!"
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "exactTargetCell": true,
+        "robotOverCharger": true,
+        "robotReadable": true,
+        "successFeedback": true,
+        "errors": true
+      }
+    }
+  ],
+  "failures": []
+}

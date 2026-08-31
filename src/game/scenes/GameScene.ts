@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { OddOneOutMechanic, ODD_ONE_OUT_OBJECTS, type OddOneOutObjectKey } from '../mechanics/oddOneOut';
+import { oddOneOutMechanic, ODD_ONE_OUT_OBJECTS, type OddOneOutObjectKey } from '../mechanics/oddOneOut';
 import { sequenceMechanic, type SequenceAssetKey } from '../mechanics/sequence';
 import {
   sizeComparisonMechanic,
@@ -61,23 +61,38 @@ const MEMORY_MATCH_DIALOGUE = ['ПАРА!', 'ТОЧНО!', 'НАШЁЛ!'] as con
 const MEMORY_WRONG_DIALOGUE = ['ЗАПОМНИ ИХ', 'ПОПРОБУЙ ЕЩЁ', 'ГДЕ ЖЕ ПАРА?'] as const;
 
 export class GameScene extends Phaser.Scene {
+  private reflowCompletedTasks?: number;
+
   constructor() { super('GameScene'); }
+
+  init(data?: { viewportReflow?: boolean; presentationState?: { completedTasks?: unknown } }): void {
+    const value = data?.viewportReflow ? data.presentationState?.completedTasks : undefined;
+    this.reflowCompletedTasks = typeof value === 'number' && Number.isInteger(value) && value >= 0 && value <= 4
+      ? value
+      : undefined;
+  }
+
   create(): void {
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
     const portrait = layout.mode !== 'landscape';
+    const phoneLandscape = layout.semanticMode.startsWith('PHONE_LANDSCAPE');
+    const tightPhoneLandscape = layout.semanticMode === 'PHONE_LANDSCAPE_SHORT' && layout.safeRect.width < 620;
     const state = sessionState.snapshot;
+    const displayedCompletedTasks = this.reflowCompletedTasks ?? state.completedTasks;
+    this.data.set('viewportPresentationState', { completedTasks: displayedCompletedTasks });
     this.game.registry.set('sessionSnapshot', state);
-    const isMemoryTask = state.completedTasks === 4;
-    const isShadowMatchingTask = state.completedTasks === 3;
-    const isSizeComparisonTask = state.completedTasks === 2;
-    const isSequenceTask = state.completedTasks === 1;
-    const oddMechanic = state.completedTasks === 0 ? new OddOneOutMechanic(false) : undefined;
+    const isMemoryTask = displayedCompletedTasks === 4;
+    const isShadowMatchingTask = displayedCompletedTasks === 3;
+    const isSizeComparisonTask = displayedCompletedTasks === 2;
+    const isSequenceTask = displayedCompletedTasks === 1;
+    const oddMechanic = displayedCompletedTasks === 0 ? oddOneOutMechanic : undefined;
     this.cameras.main.setBackgroundColor('#173b52');
     const worldLayer = this.add.container(0, 0).setName('logical-world').setDepth(-2);
     const actorLayer = this.add.container(0, 0).setName('logical-actors');
     addLogicalLaboratoryImage(this, worldLayer, 'bg-main-laboratory');
     const robot = createGroundedRobot(this, actorLayer, state.completedTasks);
+    robot?.setData('characterRole', 'HERO');
     const frame = configureResponsiveCamera(this, worldLayer, layout);
     actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
     this.game.registry.set('responsiveLayout', { ...layout, worldFrame: frame });
@@ -86,15 +101,15 @@ export class GameScene extends Phaser.Scene {
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
     const homeX = layout.safe.left + layout.iconWidth / 2;
     const topY = layout.headerY;
-    addIconControl(this, homeX, topY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing);
+    addIconControl(this, homeX, topY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing).setName('game-home');
     const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
     let soundControl: Phaser.GameObjects.Container;
     soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, topY, soundLabel(), () => {
       audioManager.toggleMuted();
       (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
-    }, UI_COLORS.green, iconSizing);
+    }, UI_COLORS.green, iconSizing).setName('game-sound');
 
-    if (!portrait) {
+    if (!portrait && !tightPhoneLandscape) {
       const headerWidth = layout.headerWidth;
       const headerX = width / 2 - headerWidth / 2;
       const header = this.add.graphics();
@@ -103,7 +118,7 @@ export class GameScene extends Phaser.Scene {
       header.lineStyle(2, 0x72d9ec, 0.8).strokeRoundedRect(headerX, headerTop, headerWidth, layout.headerHeight, 18);
       this.add.text(width / 2, topY, 'Почини робота', {
         color: '#ffffff', fontFamily: UI_FONT, fontSize: `${layout.headerFontSize}px`, fontStyle: 'bold',
-      }).setOrigin(0.5);
+      }).setOrigin(0.5).setName('game-header');
     }
 
     const { x: cardX, y: cardY, width: cardWidth, height: cardHeight } = layout.taskCard;
@@ -112,8 +127,9 @@ export class GameScene extends Phaser.Scene {
       x: layout.progress.x, y: layout.progress.y, width: layout.progress.width, height: layout.progress.height,
       value: state.assemblyProgress, horizontal: layout.progress.horizontal, sizing: layout.progress.sizing,
     });
+    progressPanel.setVisible(!phoneLandscape);
 
-    const robotDialogue = robot ? new RobotDialogue(this, robot, layout) : undefined;
+    const robotDialogue = robot && !phoneLandscape ? new RobotDialogue(this, robot, layout) : undefined;
     let wrongAttempt = 0;
     let completionFlowActive = false;
     let taskTransitionActive = false;
@@ -123,7 +139,12 @@ export class GameScene extends Phaser.Scene {
       robotDialogue?.hide();
       // Restart is the normal task renderer. It synchronously destroys the old
       // TaskCard before create() chooses the card for the updated session state.
-      this.scene.restart();
+      // A viewport reflow restarts this scene with presentation data that keeps
+      // the currently visible completed task on screen. Phaser may retain that
+      // init payload when restart() receives no replacement data, so an
+      // explicit child action must clear reflow mode before rendering the next
+      // canonical task.
+      this.scene.restart({ viewportReflow: false });
     };
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const releaseCompletedRobot = async (): Promise<void> => {
@@ -284,8 +305,9 @@ export class GameScene extends Phaser.Scene {
         internalProgress: { current: shadowState.challengeIndex + 1, total: shadowState.challengeCount },
         internalProgressLabel: 'ТЕНЬ',
         choiceLayout: 'shadow-matching',
-        showContinueOnComplete: !shadowState.isFinalChallenge,
-        continueDelayMs: 180,
+        responseMode: 'direct',
+        showContinueOnComplete: false,
+        continueDelayMs: shadowState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 720,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
           shadowMatchingMechanic.select(key as ShadowChoiceKey);
@@ -301,9 +323,7 @@ export class GameScene extends Phaser.Scene {
           if (result === 'correct') {
             audioManager.playCorrect();
             if (shadowMatchingMechanic.snapshot.completed) {
-              void playCompletionFlow().then(() => {
-                this.time.delayedCall(reducedMotion ? 120 : 180, renderCurrentTask);
-              });
+              void playCompletionFlow();
             } else {
               void robot?.playCorrect();
               const challengeIndex = shadowMatchingMechanic.snapshot.challengeIndex;
@@ -318,7 +338,7 @@ export class GameScene extends Phaser.Scene {
           return result;
         },
         onContinue: () => {
-          shadowMatchingMechanic.continue();
+          if (!shadowMatchingMechanic.snapshot.completed) shadowMatchingMechanic.continue();
           renderCurrentTask();
         },
       });
@@ -338,8 +358,9 @@ export class GameScene extends Phaser.Scene {
         hintShown: sequenceState.hintShown,
         hintText: sequenceState.challenge.hint,
         hintFeedbackText: 'Подсказка у робота',
-        showContinueOnComplete: true,
-        continueDelayMs: sequenceState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 180,
+        responseMode: 'direct',
+        showContinueOnComplete: false,
+        continueDelayMs: sequenceState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 720,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
           sequenceMechanic.select(key as SequenceAssetKey);
@@ -392,8 +413,9 @@ export class GameScene extends Phaser.Scene {
         choiceLayout: 'size-comparison',
         choiceTextureKey: () => 'size-battery',
         choiceVisualScale: (key) => SIZE_SCALE_MULTIPLIERS[key.replace('size-', '') as SizeId],
-        showContinueOnComplete: true,
-        continueDelayMs: sizeState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 180,
+        responseMode: 'direct',
+        showContinueOnComplete: false,
+        continueDelayMs: sizeState.isFinalChallenge ? (reducedMotion ? 650 : 1550) : 720,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
           sizeComparisonMechanic.select(key as SizeChoiceKey);
@@ -432,13 +454,15 @@ export class GameScene extends Phaser.Scene {
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
         sizing: layout.taskCardSizing,
-        taskNumber: state.currentTask, totalTasks: state.totalTasks,
+        taskNumber: displayedCompletedTasks + 1, totalTasks: state.totalTasks,
         title: 'Найди лишний предмет', instruction: 'Какой предмет не подходит?',
         objectKeys: ODD_ONE_OUT_OBJECTS.map((item) => item.key),
         initialSelection: oddMechanic.snapshot.selectedKey,
         completed: oddMechanic.snapshot.completed,
         hintText: 'Три предмета можно съесть',
         hintKeys: ODD_ONE_OUT_OBJECTS.filter((item) => item.edible).map((item) => item.key),
+        responseMode: 'direct',
+        showContinueOnComplete: false,
         onSelect: (key: TaskObjectKey) => {
           robotDialogue?.hide();
           oddMechanic.select(key as OddOneOutObjectKey);

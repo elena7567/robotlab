@@ -11,6 +11,7 @@ import { createMission7SceneLayout, createResponsiveLayout } from '../ui/respons
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
+import { CHILD_UI } from '../ui/childUi';
 
 const CORRECT_LINES = ['ЕСТЬ КОНТАКТ!', 'ПОДКЛЮЧЕНО!', 'ОТЛИЧНО!'] as const;
 
@@ -20,6 +21,7 @@ export class Mission7Scene extends Phaser.Scene {
   create(): void {
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
+    this.game.registry.set('responsiveLayout', layout);
     const missionLayout = createMission7SceneLayout(layout);
     const portrait = layout.mode !== 'landscape';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
@@ -39,7 +41,7 @@ export class Mission7Scene extends Phaser.Scene {
       .lineTo(width * 0.82, height * 0.66).lineTo(width, height * 0.58).strokePath();
     labConduit.setAlpha(session.connectionsCompleted ? 0.8 : 0.13).setData('active', session.connectionsCompleted);
 
-    const actors = this.add.container(0, 0).setName('mission7-actors').setDepth(2);
+    const actors = this.add.container(0, 0).setName('mission7-actors').setDepth(portrait || layout.semanticMode === 'PHONE_LANDSCAPE_SHORT' ? 6 : 2);
     const helper = createGroundedRobot(this, actors, 5);
     helper?.setPosition(missionLayout.helper.x, missionLayout.helper.feetY).setScale(missionLayout.helper.scale).setData({
       baseX: missionLayout.helper.x,
@@ -47,7 +49,9 @@ export class Mission7Scene extends Phaser.Scene {
       groundedScale: missionLayout.helper.scale,
       platformContactX: missionLayout.helper.x,
       platformContactY: missionLayout.helper.feetY,
+      characterRole: 'HELPER',
     });
+    helper?.setVisible(missionLayout.showHelper);
     const repaired = new RobotAssemblyPreview(this, missionLayout.repaired.x, missionLayout.repaired.feetY, 5, {
       scale: missionLayout.repaired.scale,
       blueprintAlpha: 0,
@@ -57,31 +61,37 @@ export class Mission7Scene extends Phaser.Scene {
       groundedScale: missionLayout.repaired.scale,
       platformContactX: missionLayout.repaired.x,
       platformContactY: missionLayout.repaired.feetY,
+      characterRole: 'HERO',
     });
     repaired.setPowered(true);
     repaired.setSystemsConnected(session.connectionsCompleted);
+    repaired.setVisible(missionLayout.showRepaired);
     actors.add(repaired);
 
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
-    addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing);
+    addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing).setName('mission7-home');
     const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
     let soundControl: Phaser.GameObjects.Container;
     soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, layout.headerY, soundLabel(), () => {
       audioManager.toggleMuted();
       (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
-    }, UI_COLORS.green, iconSizing);
+    }, UI_COLORS.green, iconSizing).setName('mission7-sound');
     if (missionLayout.showHeader) this.add.text(width / 2, layout.headerY, 'ОЖИВИ РОБОТА', {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${layout.headerFontSize}px`, fontStyle: 'bold', stroke: '#31567a', strokeThickness: 5,
     }).setOrigin(0.5).setName('mission7-header');
 
     const systems = this.add.container(missionLayout.systems.x, missionLayout.systems.y).setName('systems-progress').setDepth(8);
     const systemsWidth = missionLayout.systems.width;
-    const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.96).fillRoundedRect(-systemsWidth / 2, -19, systemsWidth, 52, 15)
-      .lineStyle(2, 0x67e9f5, 0.85).strokeRoundedRect(-systemsWidth / 2, -19, systemsWidth, 52, 15);
-    systems.add([
+    const systemsHeight = portrait ? 38 : 52;
+    const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.96).fillRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 15)
+      .lineStyle(2, 0x67e9f5, 0.85).strokeRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 15);
+    systems.add(portrait ? [
       systemsBody,
-      this.add.text(0, -6, 'СИСТЕМЫ 2/4', { color: '#ffffff', fontFamily: UI_FONT, fontSize: `${portrait ? 13 : 16}px`, fontStyle: 'bold' }).setOrigin(0.5),
-      this.add.text(0, 17, 'СОЕДИНЕНИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: `${portrait ? 11 : 13}px`, fontStyle: 'bold' }).setOrigin(0.5),
+      this.add.text(0, 0, `СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ ${connectionsMechanic.snapshot.challengeIndex + 1}/3`, { color: '#ffffff', fontFamily: UI_FONT, fontSize: `${CHILD_UI.typography.statusMin}px`, fontStyle: 'bold' }).setOrigin(0.5),
+    ] : [
+      systemsBody,
+      this.add.text(0, -6, 'СИСТЕМЫ 2/4', { color: '#ffffff', fontFamily: UI_FONT, fontSize: '16px', fontStyle: 'bold' }).setOrigin(0.5),
+      this.add.text(0, 17, 'СОЕДИНЕНИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: '13px', fontStyle: 'bold' }).setOrigin(0.5),
     ]);
 
     const { x: boardX, y: boardTop, width: boardWidth, height: boardHeight } = missionLayout.board;
@@ -108,7 +118,7 @@ export class Mission7Scene extends Phaser.Scene {
         void card.playCompletionPulse(reducedMotion).then(() => repaired.playSystemsConnection(reducedMotion)).then(() => {
           if (!this.sys.isActive()) return;
           void helper?.playCorrect();
-          this.showCompletion(width, height, layout.safe.bottom);
+          this.showCompletion(layout);
         });
       });
     };
@@ -149,17 +159,22 @@ export class Mission7Scene extends Phaser.Scene {
 
     if (session.connectionsCompleted || connectionsMechanic.snapshot.completed) {
       this.game.registry.set('mission7Complete', true);
-      this.showCompletion(width, height, layout.safe.bottom);
+      this.showCompletion(layout);
     }
     restartOnViewportResize(this);
     markSceneReady(this);
   }
 
-  private showCompletion(width: number, height: number, safeBottom: number): void {
+  private showCompletion(layout: ReturnType<typeof createResponsiveLayout>): void {
     if (this.children.getByName('mission7-completion')) return;
-    const overlay = this.add.container(width / 2, height / 2).setName('mission7-completion').setDepth(30);
-    const panelWidth = Math.min(520, width - 30);
-    const panelHeight = Math.min(250, height * 0.38);
+    const { viewportWidth: width, viewportHeight: height, modalZone } = layout;
+    (this.children.getByName('connection-task-card') as ConnectionTaskCard | null)?.setInteractionEnabled(false);
+    const blocker = this.add.rectangle(0, 0, width, height, 0x071a2b, 0.54).setOrigin(0).setInteractive().setName('mission7-modal-blocker').setDepth(29);
+    const panelWidth = Math.min(520, modalZone.width);
+    const panelHeight = Math.min(250, Math.max(190, modalZone.height * 0.44));
+    const centerX = modalZone.x + modalZone.width / 2;
+    const centerY = modalZone.y + modalZone.height / 2;
+    const overlay = this.add.container(centerX, centerY).setName('mission7-completion').setDepth(30);
     const panel = this.add.graphics().fillStyle(0x153852, 0.97).fillRoundedRect(-panelWidth / 2, -panelHeight / 2, panelWidth, panelHeight, 24)
       .lineStyle(4, 0x7af3c0, 1).strokeRoundedRect(-panelWidth / 2, -panelHeight / 2, panelWidth, panelHeight, 24);
     const title = this.add.text(0, -panelHeight * 0.24, 'СИСТЕМЫ СОЕДИНЕНЫ!', {
@@ -167,15 +182,17 @@ export class Mission7Scene extends Phaser.Scene {
       wordWrap: { width: panelWidth - 30 },
     }).setOrigin(0.5);
     const subtitle = this.add.text(0, 4, 'ДАЛЬШЕ НАУЧИМ РОБОТА ДВИГАТЬСЯ', {
-      color: '#bfffea', fontFamily: UI_FONT, fontSize: `${Math.min(18, Math.max(13, width * 0.035))}px`, fontStyle: 'bold', align: 'center',
+      color: '#bfffea', fontFamily: UI_FONT, fontSize: `${Math.min(18, Math.max(CHILD_UI.typography.statusMin, width * 0.035))}px`, fontStyle: 'bold', align: 'center',
       wordWrap: { width: panelWidth - 38 },
     }).setOrigin(0.5);
-    const button = addControl(this, width / 2, Math.min(height - safeBottom - 32, height / 2 + panelHeight * 0.3), 'ПРОДОЛЖИТЬ', () => {
+    const buttonY = Math.min(modalZone.y + modalZone.height - 29, centerY + panelHeight * 0.31);
+    const button = addControl(this, centerX, buttonY, 'ПРОДОЛЖИТЬ', () => {
       this.scene.start('Mission8Scene');
     }, {
       width: Math.min(260, panelWidth - 50), height: 54, fontSize: Math.min(22, Math.max(17, width * 0.045)),
     }).setName('mission7-continue').setDepth(31);
     overlay.add([panel, title, subtitle]);
+    blocker.setData('modalInputBlocker', true);
     button.setData('nextMission', 8);
   }
 }

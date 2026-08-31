@@ -1,0 +1,30 @@
+# Decision 0007 — Real-device visual viewport and portrait recomposition
+
+Date: 2026-08-30  
+Status: Accepted pending real Samsung review
+
+RobotLab sizes its Phaser host from the browser's `visualViewport` when available, falling back to `innerWidth`/`innerHeight`. The host also uses `100dvh`, `viewport-fit=cover`, and CSS safe-area insets. Visual-viewport resize/scroll, window resize, and orientation changes update the Phaser scale; scenes rebuild presentation from serializable mechanic/session state rather than resetting progress.
+
+Window resize, orientation change, and VisualViewport resize events feed one stabilization lifecycle. It waits for a 140 ms quiet window after the last browser event, then samples live VisualViewport and inner-window geometry on animation frames, requires three identical consecutive samples (with a short bounded retry), and only then commits the dimensions. VisualViewport scroll offsets are diagnostic data, not reflow triggers. Identical already-synchronized geometry is ignored. The CSS host variables are updated first; a forced parent-bounds refresh follows before `ScaleManager.resize()`, preventing RESIZE mode from replacing final landscape dimensions with a stale portrait `parentSize` (or vice versa).
+
+Scenes do not rebuild from Phaser's transient resize burst. A shutdown-scoped listener receives only the centralized `robotlab:viewport` commit, reads the synchronized `parentSize`, `displaySize`, and `gameSize`, compares one normalized signature, and restarts the active scene once through its existing `create()` composition path. That path is the authoritative full layout pass for every Phaser object and reconstructs from serializable state. Mission 7 therefore redraws completed Graphics wires from logical connections and new ports; Mission 8 rebuilds the grid, route preview, and board robot from commands and logical cells. Scene listeners are removed on shutdown and the global viewport listeners are removed on Phaser game destruction.
+
+Viewport reflow also carries a presentation snapshot distinct from canonical progression. For Missions 1–5 this preserves the mechanic currently visible while a completed card waits for the child's explicit `Дальше` action; canonical repair progress can already be incremented without allowing rotation to advance the visible mission. Short landscape cards may switch a four-choice 2×2 grid to one row when the measured content band cannot contain two rows plus feedback and actions.
+
+An explicit child progression action must clear the viewport-reflow payload. Phaser can retain the previous scene init data when `Scene.restart()` is called without replacement data; doing that after a rotation would reconstruct the preserved completed task instead of the next canonical task. Normal `Дальше` rendering therefore restarts with `{ viewportReflow: false }`, while only the centralized viewport lifecycle may restart with `{ viewportReflow: true, presentationState }`.
+
+Phone portrait is a separate vertical gameplay composition. Home, Sound, and compact mission semantics share the header budget. The mechanic receives the central majority of the visible height. Supporting assembly/robot presentation moves below the mechanic or is omitted where it would reduce the primary board below its touch/readability contract. Desktop remains a horizontal composition and 768×1024 remains the large-portrait/tablet composition.
+
+The existing four broad layout modes remain compatibility APIs for older UI components. The canonical contract classifies the usable safe width, safe height, orientation, and aspect ratio into `PHONE_PORTRAIT_SHORT`, `PHONE_PORTRAIT`, `PHONE_PORTRAIT_TALL`, `PHONE_LANDSCAPE_SHORT`, `TABLET_PORTRAIT`, `TABLET_LANDSCAPE`, or `DESKTOP`. `ResponsiveLayout` publishes a `VisibleSafeRect`, semantic gaps, and header/gameplay/control/character/modal zones; scenes consume those zones instead of inventing independent viewport coordinates.
+
+Phone portrait header construction is two rows by contract. Home and Sound are the only row-1 items. A compact mission status line may occupy row 2 and the active mechanic begins below it. Short phone landscape is a separate wide-board composition rather than a rotated portrait or scaled desktop layout.
+
+Character scaling uses explicit `HERO`, `HELPER`, `BOARD_ACTOR`, and `ASSEMBLY_PREVIEW` roles. A character is never uniformly reduced with the entire interface merely to consume leftover height. Mission 7 omits both secondary full-body robots on phone layouts because the finger-drag board is the mechanic; Mission 8 hides its helper on phone layouts because the board robot is primary.
+
+A runtime bounds audit reports intersections between major UI surfaces, objects leaving `VisibleSafeRect`, touch targets below the finger-size contract, and character role/readability measurements. Completion modals are sized inside `modalZone` and install input blockers above the underlying mechanic.
+
+The development build reports viewport metrics to the console and exposes an opt-in overlay at `?viewportDebug=1`. It includes inner size, visual size, device-pixel ratio, canvas CSS size, Phaser game size/display scale, and current composition name. Vite removes the diagnostic surface from production builds.
+
+Android browser chrome may change the canvas' rendered CSS rectangle before Phaser receives or completes a corresponding scale refresh. Because Phaser converts `pageX/pageY` through cached `canvasBounds` and `displayScale`, that short stale interval can make visible controls miss their hit areas in a vertically compressed landscape canvas. RobotLab therefore refreshes the live canvas bounds and derives the input display scale in the capture phase of every `pointerdown` and `touchstart`. This updates only input coordinate conversion; it does not restart the scene or change gameplay state. The same synchronization also runs one animation frame after each committed viewport resize.
+
+No device brand/model checks, exact Samsung dimensions, global scale-down, backend, or runtime network dependency are introduced.

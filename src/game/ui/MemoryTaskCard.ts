@@ -3,6 +3,7 @@ import type { MemoryCardStateData, MemorySelectionResult, MemorySnapshot } from 
 import { addControl, setControlEnabled } from './controls';
 import type { CompositionMode, TaskCardSizing } from './responsiveLayout';
 import { UI_COLORS, UI_FONT } from './visualTheme';
+import { CHILD_UI } from './childUi';
 
 export interface MemoryTaskCardConfig {
   readonly x: number;
@@ -22,6 +23,8 @@ interface MemoryCardView {
   readonly frame: Phaser.GameObjects.Graphics;
   readonly cover: Phaser.GameObjects.Image;
   readonly face: Phaser.GameObjects.Image;
+  readonly visualWidth: number;
+  readonly visualHeight: number;
   state: MemoryCardStateData['state'];
 }
 
@@ -36,7 +39,12 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
   constructor(scene: Phaser.Scene, config: MemoryTaskCardConfig) {
     super(scene, config.x, config.y);
     scene.add.existing(this);
-    this.setName('memory-task-card');
+    this.setName('memory-task-card').setData('auditBounds', {
+      x: config.x,
+      y: config.y - config.sizing.ribbonHeight / 2,
+      width: config.width,
+      height: config.height + config.sizing.ribbonHeight / 2,
+    });
     this.reducedMotion = config.reducedMotion;
     const { sizing } = config;
     const body = scene.add.graphics();
@@ -55,7 +63,7 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
       color: '#243548', fontFamily: UI_FONT, fontSize: `${sizing.titleFontSize}px`, fontStyle: 'bold',
     }).setOrigin(0.5, 0).setName('memory-title'));
     this.add(scene.add.text(config.width / 2, sizing.instructionY, 'ОТКРОЙ ОДИНАКОВЫЕ КАРТОЧКИ', {
-      color: '#425166', fontFamily: UI_FONT, fontSize: `${Math.max(11, sizing.instructionFontSize - 1)}px`,
+      color: '#425166', fontFamily: UI_FONT, fontSize: `${Math.max(CHILD_UI.typography.instructionMin, sizing.instructionFontSize)}px`,
       align: 'center', wordWrap: { width: config.width - 24 },
     }).setOrigin(0.5, 0).setName('memory-instruction'));
 
@@ -144,9 +152,11 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
     height: number,
     onPress: () => void,
   ): MemoryCardView {
+    const hitWidth = Math.max(CHILD_UI.touch.minimum, width);
+    const hitHeight = Math.max(CHILD_UI.touch.minimum, height);
     const container = this.scene.add.container(x, y)
       .setName(`memory-card-${card.id}`)
-      .setSize(width, height)
+      .setSize(hitWidth, hitHeight)
       .setInteractive();
     const frame = this.scene.add.graphics();
     const cover = this.scene.add.image(0, 0, 'memory-cover').setName(`memory-cover-${card.id}`);
@@ -155,17 +165,17 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
       image.setScale(Math.min((width - padding) / image.width, (height - padding) / image.height));
     };
     fit(cover, 6);
-    fit(face, Math.max(12, Math.min(width, height) * 0.24));
+    fit(face, Math.max(8, Math.min(width, height) * 0.14));
     container.add([frame, cover, face]);
-    const view = { container, frame, cover, face, state: card.state };
+    const view = { container, frame, cover, face, visualWidth: width, visualHeight: height, state: card.state };
     this.drawCard(view, card.state);
     container.on('pointerdown', onPress);
     return view;
   }
 
   private drawCard(view: MemoryCardView, state: MemoryCardStateData['state']): void {
-    const width = view.container.width;
-    const height = view.container.height;
+    const width = view.visualWidth;
+    const height = view.visualHeight;
     view.frame.clear();
     view.frame.fillStyle(state === 'MATCHED' ? 0xdff5d2 : 0xffffff, 1)
       .fillRoundedRect(-width / 2, -height / 2, width, height, 10);

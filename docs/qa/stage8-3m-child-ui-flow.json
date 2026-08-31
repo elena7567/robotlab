@@ -1,0 +1,96 @@
+{
+  "before": "ЗАДАНИЕ 1 ИЗ 10",
+  "after": "ЗАДАНИЕ 2/10 · РЯД 1/3",
+  "controls": {
+    "check": {
+      "visible": false,
+      "active": false,
+      "width": 284,
+      "height": 64
+    },
+    "next": {
+      "visible": false,
+      "active": false,
+      "width": 284,
+      "height": 64
+    },
+    "hint": {
+      "visible": true,
+      "active": true,
+      "width": 284,
+      "height": 64
+    }
+  },
+  "shadow": {
+    "target": {
+      "width": 48.75,
+      "height": 48.75,
+      "x": 33,
+      "y": 159.875
+    },
+    "choices": [
+      {
+        "width": 49.5,
+        "height": 49.5,
+        "x": 102.375,
+        "y": 159.5
+      },
+      {
+        "width": 49.5,
+        "height": 49.5,
+        "x": 172.125,
+        "y": 159.5
+      },
+      {
+        "width": 49.5,
+        "height": 49.5,
+        "x": 241.875,
+        "y": 159.5
+      }
+    ],
+    "choiceHits": [
+      {
+        "width": 74.75,
+        "height": 69.5
+      },
+      {
+        "width": 74.75,
+        "height": 69.5
+      },
+      {
+        "width": 74.75,
+        "height": 69.5
+      }
+    ],
+    "images": [
+      {
+        "width": 49.5,
+        "height": 49.5,
+        "x": 102.375,
+        "y": 159.5
+      },
+      {
+        "width": 49.5,
+        "height": 49.5,
+        "x": 172.125,
+        "y": 159.5
+      },
+      {
+        "width": 49.5,
+        "height": 49.5,
+        "x": 241.875,
+        "y": 159.5
+      }
+    ]
+  },
+  "errors": [],
+  "checks": {
+    "startedAtTask1": true,
+    "directAdvancedToTask2": true,
+    "noConfirmCarousel": true,
+    "largeHintTarget": true,
+    "shadowChoiceTargetsLarge": true,
+    "shadowReferenceComparable": true,
+    "browserClean": true
+  }
+}

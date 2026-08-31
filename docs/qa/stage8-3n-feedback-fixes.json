@@ -1,0 +1,148 @@
+{
+  "sequenceInitial": {
+    "choices": [
+      {
+        "x": 38.65000305175781,
+        "y": 382.05584106445315,
+        "width": 60.17500000000001,
+        "height": 60.174999999999955,
+        "bottom": 442.2308410644531
+      },
+      {
+        "x": 122.82499084472656,
+        "y": 382.05584106445315,
+        "width": 60.17500000000001,
+        "height": 60.174999999999955,
+        "bottom": 442.2308410644531
+      },
+      {
+        "x": 206.99999389648437,
+        "y": 382.05584106445315,
+        "width": 60.17499999999998,
+        "height": 60.174999999999955,
+        "bottom": 442.2308410644531
+      },
+      {
+        "x": 291.17498168945315,
+        "y": 382.05584106445315,
+        "width": 60.174999999999955,
+        "height": 60.174999999999955,
+        "bottom": 442.2308410644531
+      }
+    ],
+    "row": [
+      {
+        "x": 36.64999961853027,
+        "y": 292.3399975585937,
+        "width": 56.94000000000001,
+        "height": 56.940000000000055,
+        "bottom": 349.2799975585938
+      },
+      {
+        "x": 101.5899996185303,
+        "y": 292.3399975585937,
+        "width": 56.940000000000026,
+        "height": 56.940000000000055,
+        "bottom": 349.2799975585938
+      },
+      {
+        "x": 166.5299996185303,
+        "y": 292.3399975585937,
+        "width": 56.940000000000026,
+        "height": 56.940000000000055,
+        "bottom": 349.2799975585938
+      },
+      {
+        "x": 231.46999961853032,
+        "y": 292.3399975585937,
+        "width": 56.94,
+        "height": 56.940000000000055,
+        "bottom": 349.2799975585938
+      }
+    ],
+    "feedback": {
+      "x": 30.649999618530273,
+      "y": 482.3099975585938,
+      "width": 0,
+      "height": 18,
+      "bottom": 500.3099975585938
+    },
+    "label": "ЗАДАНИЕ 2/10 · РЯД 1/3"
+  },
+  "sequenceWrong": {
+    "text": "Попробуй ещё раз",
+    "overlapsChoice": false
+  },
+  "sequenceLandscape": {
+    "configuredWidth": 523.28,
+    "choiceWidths": [
+      88,
+      88,
+      88,
+      88
+    ],
+    "feedback": {
+      "text": "Попробуй ещё раз",
+      "x": 25.649999618530273,
+      "y": 291.35000183105467,
+      "width": 125,
+      "height": 16,
+      "right": 150.64999961853027,
+      "bottom": 307.35000183105467
+    },
+    "overlapsChoice": false,
+    "robotDialoguePresent": false,
+    "progressVisible": false
+  },
+  "afterWrong": [
+    {
+      "level": "low",
+      "scale": 1,
+      "selectionCommands": 0
+    },
+    {
+      "level": "medium",
+      "scale": 1,
+      "selectionCommands": 0
+    },
+    {
+      "level": "full",
+      "scale": 1,
+      "selectionCommands": 0
+    }
+  ],
+  "afterCorrectSelected": [
+    {
+      "level": "low",
+      "scale": 1,
+      "selectionCommands": 0
+    },
+    {
+      "level": "medium",
+      "scale": 1,
+      "selectionCommands": 0
+    },
+    {
+      "level": "full",
+      "scale": 1.06,
+      "selectionCommands": 65
+    }
+  ],
+  "routeActors": {
+    "programmingRobots": 1,
+    "groundedRobots": 0,
+    "helperLayers": 0
+  },
+  "errors": [],
+  "checks": {
+    "sequenceArtworkReadable": true,
+    "sequenceProgressInRibbon": true,
+    "wrongFeedbackClearOfChoices": true,
+    "landscapeTaskCardClearlyLarger": true,
+    "landscapeFeedbackUnobstructed": true,
+    "wrongBatteryCleared": true,
+    "onlyCorrectBatterySelected": true,
+    "singleRouteRobot": true,
+    "browserClean": true
+  }
+}

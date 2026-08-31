@@ -6,6 +6,7 @@ import type { ShadowChoiceKey } from '../mechanics/shadowMatching';
 import { addControl, setControlEnabled } from './controls';
 import { UI_COLORS, UI_FONT } from './visualTheme';
 import type { TaskCardSizing } from './responsiveLayout';
+import { CHILD_UI } from './childUi';
 
 export type TaskObjectKey = OddOneOutObjectKey | SequenceAssetKey | SizeChoiceKey | ShadowChoiceKey;
 
@@ -37,6 +38,7 @@ export interface TaskCardConfig {
   targetTextureKey?: TaskObjectKey;
   showContinueOnComplete?: boolean;
   continueDelayMs?: number;
+  responseMode?: 'confirm' | 'direct';
   onSelect: (key: TaskObjectKey) => void;
   onCheck: () => OddOneOutResult;
   onHint: () => void;
@@ -68,15 +70,24 @@ export class TaskCard extends Phaser.GameObjects.Container {
   constructor(scene: Phaser.Scene, config: TaskCardConfig) {
     super(scene, config.x, config.y);
     scene.add.existing(this);
-    this.setName('task-card');
+    this.setName('task-card').setData('auditBounds', {
+      x: config.x,
+      y: config.y - config.sizing.ribbonHeight / 2,
+      width: config.width,
+      height: config.height + config.sizing.ribbonHeight / 2,
+    });
+    const sizing = config.sizing;
+    const sequenceMode = Boolean(config.sequenceKeys);
+    const progressInRibbon = sizing.internalProgressPlacement === 'ribbon' || sequenceMode;
     this.configuredHintKeys = new Set(config.hintKeys ?? []);
-    this.feedbackPrefix = config.internalProgress
+    const internalProgressText = config.internalProgress
       ? `${config.internalProgressLabel ?? 'РЯД'} ${config.internalProgress.current} ИЗ ${config.internalProgress.total}`
       : '';
+    this.feedbackPrefix = progressInRibbon ? '' : internalProgressText;
     this.selectedKey = config.initialSelection ?? null;
     this.result = config.completed ? 'correct' : 'idle';
     const showContinueOnComplete = config.showContinueOnComplete ?? true;
-    const sizing = config.sizing;
+    const directResponse = config.responseMode === 'direct';
     const body = scene.add.graphics();
     body.fillStyle(0x2a3451, 0.2).fillRoundedRect(5, 8, config.width, config.height, sizing.radius);
     body.fillStyle(UI_COLORS.cream, 0.98).fillRoundedRect(0, 0, config.width, config.height, sizing.radius);
@@ -87,7 +98,10 @@ export class TaskCard extends Phaser.GameObjects.Container {
     body.lineStyle(2, UI_COLORS.purpleDark, 1).strokeRoundedRect((config.width - ribbonWidth) / 2, ribbonY, ribbonWidth, sizing.ribbonHeight, 14);
     this.add(body);
 
-    this.add(scene.add.text(config.width / 2, 1, `ЗАДАНИЕ ${config.taskNumber} ИЗ ${config.totalTasks}`, {
+    const taskLabel = progressInRibbon && config.internalProgress
+      ? `ЗАДАНИЕ ${config.taskNumber}/${config.totalTasks} · ${config.internalProgressLabel ?? 'РЯД'} ${config.internalProgress.current}/${config.internalProgress.total}`
+      : `ЗАДАНИЕ ${config.taskNumber} ИЗ ${config.totalTasks}`;
+    this.add(scene.add.text(config.width / 2, 1, taskLabel, {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${sizing.taskFontSize}px`, fontStyle: 'bold',
     }).setOrigin(0.5));
     const title = scene.add.text(config.width / 2, sizing.titleY, config.title.toUpperCase(), {
@@ -103,17 +117,19 @@ export class TaskCard extends Phaser.GameObjects.Container {
     this.add(instruction);
 
     const areaTop = Math.max(sizing.areaTop, instructionY + instruction.height + 7);
-    const footerSpace = sizing.footerSpace;
-    const areaHeight = config.height - areaTop - footerSpace;
+    const actionY = config.height - sizing.actionHeight / 2 - 8;
+    const actionTop = actionY - sizing.actionHeight / 2;
+    const feedbackY = actionTop - sizing.feedbackFontSize / 2 - 6;
+    const contentBottom = feedbackY - sizing.feedbackFontSize / 2 - 8;
+    const areaHeight = Math.max(1, contentBottom - areaTop);
     const cellGap = sizing.cellGap;
-    const sequenceMode = Boolean(config.sequenceKeys);
     let cellWidth: number;
     let cellHeight: number;
     let choicePositions: readonly { x: number; y: number }[];
 
     if (sequenceMode && config.sequenceKeys) {
       const contentWidth = config.width - sizing.horizontalPadding * 2;
-      const sequenceHeight = Math.max(30, Math.min(areaHeight * 0.44, sizing.sequenceIconMaxSize + 14));
+      const sequenceHeight = Math.max(30, Math.min(areaHeight * 0.52, sizing.sequenceIconMaxSize + 14));
       const optionGap = sizing.sequenceGap;
       cellHeight = Math.max(36, Math.min(areaHeight - sequenceHeight - optionGap, sizing.sequenceOptionMaxHeight));
       cellWidth = Math.max(36, Math.min(
@@ -168,34 +184,59 @@ export class TaskCard extends Phaser.GameObjects.Container {
       }
     } else if (config.choiceLayout === 'shadow-matching' && config.targetTextureKey) {
       const contentWidth = config.width - sizing.horizontalPadding * 2;
-      const shadowAreaHeight = Math.max(84, Math.min(
+      const compactShadowLayout = sizing.internalProgressPlacement === 'ribbon';
+      const shadowAreaHeight = Math.max(compactShadowLayout ? CHILD_UI.visuals.referenceMin : 84, Math.min(
         areaHeight,
         config.height - sizing.actionHeight - 24 - sizing.feedbackFontSize - areaTop,
       ));
-      const targetHeight = Math.max(30, Math.min(shadowAreaHeight * 0.34, sizing.cellMaxHeight));
-      const optionGap = sizing.cellGap;
-      cellWidth = Math.max(56, Math.min(
-        (contentWidth - optionGap * (config.objectKeys.length - 1)) / config.objectKeys.length,
-        sizing.cellMaxWidth,
-      ));
-      cellHeight = Math.max(48, Math.min(shadowAreaHeight - targetHeight - optionGap, sizing.cellMaxHeight));
-      const rowWidth = cellWidth * config.objectKeys.length + optionGap * (config.objectKeys.length - 1);
-      const rowX = (config.width - rowWidth) / 2;
-      const optionsY = areaTop + targetHeight + optionGap + cellHeight / 2;
-      choicePositions = config.objectKeys.map((_, index) => ({
-        x: rowX + index * (cellWidth + optionGap) + cellWidth / 2,
-        y: optionsY,
-      }));
-
+      const optionGap = compactShadowLayout ? 3 : sizing.cellGap;
+      let targetWidth: number;
+      let targetHeight: number;
+      let targetX: number;
+      let targetY: number;
+      if (compactShadowLayout) {
+        cellWidth = Math.max(CHILD_UI.visuals.choiceMin, Math.min(
+          (contentWidth - optionGap * config.objectKeys.length) / (config.objectKeys.length + 1),
+          sizing.cellMaxWidth,
+        ));
+        cellHeight = Math.max(CHILD_UI.visuals.choiceMin, Math.min(shadowAreaHeight, sizing.cellMaxHeight));
+        const rowWidth = cellWidth * (config.objectKeys.length + 1) + optionGap * config.objectKeys.length;
+        const rowX = (config.width - rowWidth) / 2;
+        const rowY = areaTop + Math.max(0, (areaHeight - cellHeight) / 2) + cellHeight / 2;
+        targetWidth = cellWidth;
+        targetHeight = cellHeight;
+        targetX = rowX + cellWidth / 2;
+        targetY = rowY;
+        choicePositions = config.objectKeys.map((_, index) => ({
+          x: rowX + (index + 1) * (cellWidth + optionGap) + cellWidth / 2,
+          y: rowY,
+        }));
+      } else {
+        targetHeight = Math.max(CHILD_UI.visuals.referenceMin, Math.min(shadowAreaHeight * 0.42, sizing.cellMaxHeight));
+        cellWidth = Math.max(CHILD_UI.touch.minimum, Math.min(
+          (contentWidth - optionGap * (config.objectKeys.length - 1)) / config.objectKeys.length,
+          sizing.cellMaxWidth,
+        ));
+        cellHeight = Math.max(CHILD_UI.visuals.choiceMin, Math.min(shadowAreaHeight - targetHeight - optionGap, sizing.cellMaxHeight));
+        const rowWidth = cellWidth * config.objectKeys.length + optionGap * (config.objectKeys.length - 1);
+        const rowX = (config.width - rowWidth) / 2;
+        const optionsY = areaTop + targetHeight + optionGap + cellHeight / 2;
+        choicePositions = config.objectKeys.map((_, index) => ({
+          x: rowX + index * (cellWidth + optionGap) + cellWidth / 2,
+          y: optionsY,
+        }));
+        targetWidth = Math.min(contentWidth, Math.max(92, targetHeight * 1.5));
+        targetX = config.width / 2;
+        targetY = areaTop + targetHeight / 2;
+      }
       const targetBackground = scene.add.graphics();
-      const targetWidth = Math.min(contentWidth, Math.max(92, targetHeight * 1.5));
       targetBackground.fillStyle(0xe8f4f4, 0.96)
-        .fillRoundedRect(config.width / 2 - targetWidth / 2, areaTop, targetWidth, targetHeight, 12);
+        .fillRoundedRect(targetX - targetWidth / 2, targetY - targetHeight / 2, targetWidth, targetHeight, 12);
       targetBackground.lineStyle(2, UI_COLORS.cyan, 0.7)
-        .strokeRoundedRect(config.width / 2 - targetWidth / 2, areaTop, targetWidth, targetHeight, 12);
+        .strokeRoundedRect(targetX - targetWidth / 2, targetY - targetHeight / 2, targetWidth, targetHeight, 12);
       this.add(targetBackground);
       if (scene.textures.exists(config.targetTextureKey)) {
-        this.targetImage = scene.add.image(config.width / 2, areaTop + targetHeight / 2, config.targetTextureKey)
+        this.targetImage = scene.add.image(targetX, targetY, config.targetTextureKey)
           .setName('shadow-target-object');
         this.targetImage.setScale(Math.min(
           (targetWidth - 18) / this.targetImage.width,
@@ -218,21 +259,37 @@ export class TaskCard extends Phaser.GameObjects.Container {
         y: rowY,
       }));
     } else {
-      cellWidth = Math.min((config.width - sizing.horizontalPadding * 2 - cellGap) / 2, sizing.cellMaxWidth);
-      cellHeight = Math.max(36, Math.min((areaHeight - cellGap) / 2, sizing.cellMaxHeight));
-      const gridWidth = cellWidth * 2 + cellGap;
-      const gridHeight = cellHeight * 2 + cellGap;
-      const gridX = (config.width - gridWidth) / 2;
-      const gridY = areaTop + Math.max(0, (areaHeight - gridHeight) / 2);
-      choicePositions = config.objectKeys.map((_, index) => ({
-        x: gridX + (index % 2) * (cellWidth + cellGap) + cellWidth / 2,
-        y: gridY + Math.floor(index / 2) * (cellHeight + cellGap) + cellHeight / 2,
-      }));
+      const contentWidth = config.width - sizing.horizontalPadding * 2;
+      const compactSingleRow = config.objectKeys.length === 4 && areaHeight < 96 + cellGap;
+      if (compactSingleRow) {
+        cellWidth = Math.max(36, Math.min((contentWidth - cellGap * 3) / 4, sizing.cellMaxWidth));
+        cellHeight = Math.max(36, Math.min(areaHeight, sizing.cellMaxHeight));
+        const rowWidth = cellWidth * 4 + cellGap * 3;
+        const rowX = (config.width - rowWidth) / 2;
+        const rowY = areaTop + Math.max(0, (areaHeight - cellHeight) / 2) + cellHeight / 2;
+        choicePositions = config.objectKeys.map((_, index) => ({
+          x: rowX + index * (cellWidth + cellGap) + cellWidth / 2,
+          y: rowY,
+        }));
+      } else {
+        cellWidth = Math.min((contentWidth - cellGap) / 2, sizing.cellMaxWidth);
+        cellHeight = Math.max(36, Math.min((areaHeight - cellGap) / 2, sizing.cellMaxHeight));
+        const gridWidth = cellWidth * 2 + cellGap;
+        const gridHeight = cellHeight * 2 + cellGap;
+        const gridX = (config.width - gridWidth) / 2;
+        const gridY = areaTop + Math.max(0, (areaHeight - gridHeight) / 2);
+        choicePositions = config.objectKeys.map((_, index) => ({
+          x: gridX + (index % 2) * (cellWidth + cellGap) + cellWidth / 2,
+          y: gridY + Math.floor(index / 2) * (cellHeight + cellGap) + cellHeight / 2,
+        }));
+      }
     }
 
     config.objectKeys.slice(0, 4).forEach((key, index) => {
       const { x: cx, y: cy } = choicePositions[index];
-      const choice = scene.add.container(cx, cy).setSize(cellWidth + 8, cellHeight + 8).setName(`choice-${key}`);
+      const choice = scene.add.container(cx, cy)
+        .setSize(Math.max(56, cellWidth + 8), Math.max(56, cellHeight + 8))
+        .setName(`choice-${key}`);
       const frame = scene.add.graphics();
       choice.add(frame);
       const textureKey = config.choiceTextureKey?.(key) ?? key;
@@ -260,6 +317,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
         this.setFeedback('Выбрано');
         this.drawChoices();
         this.setCheckEnabled(true);
+        if (directResponse) scene.time.delayedCall(CHILD_UI.flow.selectionResolveMs, () => this.checkButton.emit('pointerdown'));
       });
       const release = (): void => {
         scene.tweens.killTweensOf(choice);
@@ -277,13 +335,15 @@ export class TaskCard extends Phaser.GameObjects.Container {
       this.add(choice);
     });
 
-    this.feedbackText = scene.add.text(sizing.horizontalPadding, config.height - sizing.actionHeight - 24, '', {
+    this.feedbackText = scene.add.text(sizing.horizontalPadding, feedbackY, '', {
       color: '#536274', fontFamily: UI_FONT, fontSize: `${sizing.feedbackFontSize}px`, fontStyle: 'bold',
+      wordWrap: { width: config.width - sizing.horizontalPadding * 2 },
     }).setOrigin(0, 0.5).setName('task-feedback');
     this.add(this.feedbackText);
 
-    const actionY = config.height - sizing.actionHeight / 2 - 8;
-    const actionWidth = (config.width - sizing.horizontalPadding * 2 - sizing.actionGap) / 2;
+    const actionWidth = directResponse
+      ? config.width - sizing.horizontalPadding * 2
+      : (config.width - sizing.horizontalPadding * 2 - sizing.actionGap) / 2;
     const hint = addControl(scene, sizing.horizontalPadding + actionWidth / 2, actionY, 'Подсказка', () => {
       if (this.result === 'correct') return;
       config.onHint();
@@ -293,7 +353,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
     }, {
       width: actionWidth, height: sizing.actionHeight, fill: UI_COLORS.purple, hoverFill: 0x916ee1,
       stroke: UI_COLORS.purpleDark, fontSize: sizing.actionFontSize,
-    });
+    }).setName('hint-button');
     this.add(hint);
 
     this.checkButton = addControl(scene, config.width - sizing.horizontalPadding - actionWidth / 2, actionY, 'Проверить', () => {
@@ -314,10 +374,16 @@ export class TaskCard extends Phaser.GameObjects.Container {
             ease: 'Back.easeOut',
           });
         }
-        scene.time.delayedCall(config.continueDelayMs ?? 180, () => {
-          if (!this.active || !showContinueOnComplete) return;
-          this.continueButton.setVisible(true).setActive(true);
-          setControlEnabled(this.continueButton, true);
+        scene.time.delayedCall(config.continueDelayMs ?? CHILD_UI.flow.correctHoldMs, () => {
+          if (!this.active) return;
+          if (directResponse) {
+            config.onContinue();
+            return;
+          }
+          if (showContinueOnComplete) {
+            this.continueButton.setVisible(true).setActive(true);
+            setControlEnabled(this.continueButton, true);
+          }
         });
       } else {
         this.selectedKey = null;
@@ -352,6 +418,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
       stroke: UI_COLORS.greenDark, fontSize: sizing.actionFontSize,
     });
     this.checkButton.setName('check-button');
+    if (directResponse) this.checkButton.setVisible(false).setActive(false);
     this.add(this.checkButton);
 
     this.continueButton = addControl(scene, config.width - sizing.horizontalPadding - actionWidth / 2, actionY, 'Дальше', config.onContinue, {
@@ -359,7 +426,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
       stroke: UI_COLORS.greenDark, fontSize: sizing.actionFontSize,
     });
     this.continueButton.setName('continue-button');
-    const continueVisible = this.result === 'correct' && showContinueOnComplete;
+    const continueVisible = !directResponse && this.result === 'correct' && showContinueOnComplete;
     this.continueButton.setVisible(continueVisible).setActive(continueVisible);
     setControlEnabled(this.continueButton, continueVisible);
     this.add(this.continueButton);

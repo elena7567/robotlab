@@ -1,0 +1,61 @@
+{
+  "landscapeCommits": 1,
+  "portraitCommits": 1,
+  "landscape": {
+    "generation": 2,
+    "geometry": {
+      "visual": "844x390",
+      "inner": "844x390",
+      "parent": "844x390",
+      "display": "844x390",
+      "game": "844x390",
+      "canvas": "844x390",
+      "mode": "PHONE_LANDSCAPE_SHORT"
+    },
+    "completed": true,
+    "choiceRows": 1,
+    "checks": {
+      "feedbackClearOfChoices": true,
+      "actionsClearOfChoices": true,
+      "feedbackClearOfActions": true,
+      "uniformCanvas": true
+    }
+  },
+  "portrait": {
+    "generation": 3,
+    "geometry": {
+      "visual": "390x844",
+      "inner": "390x844",
+      "parent": "390x844",
+      "display": "390x844",
+      "game": "390x844",
+      "canvas": "390x844",
+      "mode": "PHONE_PORTRAIT_TALL"
+    },
+    "completed": true,
+    "choiceRows": 2,
+    "checks": {
+      "feedbackClearOfChoices": true,
+      "actionsClearOfChoices": true,
+      "feedbackClearOfActions": true,
+      "uniformCanvas": true
+    }
+  },
+  "errors": {
+    "console": [],
+    "page": [],
+    "requests": [],
+    "responses": []
+  },
+  "checks": {
+    "oneLandscapeCommit": true,
+    "onePortraitCommit": true,
+    "landscapeComplete": true,
+    "portraitComplete": true,
+    "compactLandscapeSingleRow": true,
+    "landscapeNoOverlap": true,
+    "portraitNoOverlap": true,
+    "errors": true
+  },
+  "failures": []
+}

@@ -6,9 +6,17 @@
   --safe-area-right: env(safe-area-inset-right, 0px);
   --safe-area-bottom: env(safe-area-inset-bottom, 0px);
   --safe-area-left: env(safe-area-inset-left, 0px);
+  --app-visible-width: 100vw;
+  --app-visible-height: 100dvh;
 }
 * { box-sizing: border-box; }
-html, body, #app { width: 100%; height: 100%; min-width: 320px; margin: 0; overflow: hidden; }
-body { touch-action: none; overscroll-behavior: none; }
-#app { background: #173b52; }
-canvas { display: block; width: 100%; height: 100%; }
+html, body { width: 100%; height: 100%; min-width: 320px; margin: 0; overflow: hidden; }
+body { min-height: 100dvh; }
+body { overscroll-behavior: none; }
+#app { position: fixed; left: 0; top: 0; width: var(--app-visible-width); min-height: var(--app-visible-height); height: var(--app-visible-height); background: #173b52; user-select: none; -webkit-user-select: none; }
+canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+#robotlab-viewport-debug {
+  position: fixed; z-index: 9999; left: max(6px, env(safe-area-inset-left)); bottom: max(6px, env(safe-area-inset-bottom));
+  margin: 0; padding: 6px 8px; pointer-events: none; color: #d8fbff; background: rgb(5 20 34 / 88%);
+  border: 1px solid rgb(112 232 244 / 75%); border-radius: 6px; font: 11px/1.25 monospace;
+}

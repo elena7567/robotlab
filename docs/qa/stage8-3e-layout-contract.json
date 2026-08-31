@@ -1,0 +1,1807 @@
+{
+  "matrix": [
+    {
+      "name": "360x600",
+      "width": 360,
+      "height": 600,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_SHORT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 600
+      },
+      "headerZone": {
+        "x": 12.600000000000001,
+        "y": 12.600000000000001,
+        "width": 334.79999999999995,
+        "height": 94
+      },
+      "gameplayZone": {
+        "x": 12.600000000000001,
+        "y": 114.6,
+        "width": 334.79999999999995,
+        "height": 259.79999999999995
+      },
+      "controlsZone": {
+        "x": 12.600000000000001,
+        "y": 382.4,
+        "width": 334.79999999999995,
+        "height": 205
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 14,
+        "width": 332,
+        "height": 572
+      },
+      "mission7": {
+        "board": {
+          "x": 12.600000000000001,
+          "y": 132.6,
+          "width": 334.79999999999995,
+          "height": 390.79999999999995
+        },
+        "hint": {
+          "x": 180,
+          "y": 559.4,
+          "width": 230,
+          "height": 56,
+          "fontSize": 16.2
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 12.600000000000023,
+          "y": 134.6,
+          "width": 334.79999999999995,
+          "height": 239.79999999999998
+        },
+        "helper": {
+          "x": 299.4,
+          "feetY": 211.33599999999998,
+          "scale": 0.06
+        },
+        "systemsY": 89.6,
+        "routeY": 89.6,
+        "stripY": 410.4,
+        "arrowsY": 493.4,
+        "actionsY": 559.4,
+        "controlCenterX": 180,
+        "controlWidth": 334.79999999999995,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 144.79999999999998,
+        "titleSize": 32.4,
+        "subtitleY": 183.03199999999998,
+        "buttonHeight": 54,
+        "buttonY": 560.4,
+        "actorFeetY": 519.4,
+        "pairScale": 0.15,
+        "pairSpan": 144
+      },
+      "start": {
+        "titleY": 132.744,
+        "titleFontSize": 32.4,
+        "titleMaxWidth": 308.19999999999993,
+        "subtitleY": 180.723,
+        "subtitleFontSize": 16.2,
+        "subtitleMaxWidth": 314.79999999999995,
+        "robotHeight": 295.2,
+        "platformY": 504.558,
+        "playY": 545.758,
+        "playWidth": 250,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "360x640",
+      "width": 360,
+      "height": 640,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_SHORT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 640
+      },
+      "headerZone": {
+        "x": 12.600000000000001,
+        "y": 12.600000000000001,
+        "width": 334.79999999999995,
+        "height": 94
+      },
+      "gameplayZone": {
+        "x": 12.600000000000001,
+        "y": 114.6,
+        "width": 334.79999999999995,
+        "height": 299.79999999999995
+      },
+      "controlsZone": {
+        "x": 12.600000000000001,
+        "y": 422.4,
+        "width": 334.79999999999995,
+        "height": 205
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 14,
+        "width": 332,
+        "height": 612
+      },
+      "mission7": {
+        "board": {
+          "x": 12.600000000000001,
+          "y": 132.6,
+          "width": 334.79999999999995,
+          "height": 430.79999999999995
+        },
+        "hint": {
+          "x": 180,
+          "y": 599.4,
+          "width": 230,
+          "height": 56,
+          "fontSize": 16.2
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 12.600000000000023,
+          "y": 134.6,
+          "width": 334.79999999999995,
+          "height": 279.79999999999995
+        },
+        "helper": {
+          "x": 299.4,
+          "feetY": 224.13599999999997,
+          "scale": 0.06
+        },
+        "systemsY": 89.6,
+        "routeY": 89.6,
+        "stripY": 450.4,
+        "arrowsY": 533.4,
+        "actionsY": 599.4,
+        "controlCenterX": 180,
+        "controlWidth": 334.79999999999995,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 144.79999999999998,
+        "titleSize": 32.4,
+        "subtitleY": 183.03199999999998,
+        "buttonHeight": 54,
+        "buttonY": 600.4,
+        "actorFeetY": 559.4,
+        "pairScale": 0.15,
+        "pairSpan": 144
+      },
+      "start": {
+        "titleY": 132.744,
+        "titleFontSize": 32.4,
+        "titleMaxWidth": 308.19999999999993,
+        "subtitleY": 181.443,
+        "subtitleFontSize": 16.2,
+        "subtitleMaxWidth": 314.79999999999995,
+        "robotHeight": 295.2,
+        "platformY": 505.918,
+        "playY": 547.998,
+        "playWidth": 250,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "390x650",
+      "width": 390,
+      "height": 650,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_SHORT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 650
+      },
+      "headerZone": {
+        "x": 13.650000000000002,
+        "y": 13.650000000000002,
+        "width": 362.70000000000005,
+        "height": 94.58
+      },
+      "gameplayZone": {
+        "x": 13.650000000000002,
+        "y": 116.81,
+        "width": 362.70000000000005,
+        "height": 305.96000000000004
+      },
+      "controlsZone": {
+        "x": 13.650000000000002,
+        "y": 431.35,
+        "width": 362.70000000000005,
+        "height": 205
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 14,
+        "width": 362,
+        "height": 622
+      },
+      "mission7": {
+        "board": {
+          "x": 13.650000000000002,
+          "y": 134.81,
+          "width": 362.70000000000005,
+          "height": 436.96
+        },
+        "hint": {
+          "x": 195,
+          "y": 608.35,
+          "width": 230,
+          "height": 56,
+          "fontSize": 17.55
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 13.649999999999977,
+          "y": 136.81,
+          "width": 362.70000000000005,
+          "height": 285.96000000000004
+        },
+        "helper": {
+          "x": 328.35,
+          "feetY": 228.3172,
+          "scale": 0.06
+        },
+        "systemsY": 91.23,
+        "routeY": 91.23,
+        "stripY": 459.35,
+        "arrowsY": 542.35,
+        "actionsY": 608.35,
+        "controlCenterX": 195,
+        "controlWidth": 362.70000000000005,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 147.78000000000003,
+        "titleSize": 35.1,
+        "subtitleY": 189.19800000000004,
+        "buttonHeight": 54,
+        "buttonY": 609.35,
+        "actorFeetY": 568.35,
+        "pairScale": 0.156,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 136.466,
+        "titleFontSize": 35.1,
+        "titleMaxWidth": 336.1,
+        "subtitleY": 188.44325,
+        "subtitleFontSize": 17.55,
+        "subtitleMaxWidth": 342.70000000000005,
+        "robotHeight": 319.79999999999995,
+        "platformY": 539.2645,
+        "playY": 581.5645,
+        "playWidth": 250,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "390x700",
+      "width": 390,
+      "height": 700,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 700
+      },
+      "headerZone": {
+        "x": 13.650000000000002,
+        "y": 13.650000000000002,
+        "width": 362.70000000000005,
+        "height": 95.08
+      },
+      "gameplayZone": {
+        "x": 13.650000000000002,
+        "y": 117.31,
+        "width": 362.70000000000005,
+        "height": 355.46000000000004
+      },
+      "controlsZone": {
+        "x": 13.650000000000002,
+        "y": 481.35,
+        "width": 362.70000000000005,
+        "height": 205
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 14,
+        "width": 362,
+        "height": 672
+      },
+      "mission7": {
+        "board": {
+          "x": 13.650000000000002,
+          "y": 135.31,
+          "width": 362.70000000000005,
+          "height": 486.46
+        },
+        "hint": {
+          "x": 195,
+          "y": 658.35,
+          "width": 230,
+          "height": 56,
+          "fontSize": 17.55
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 13.649999999999977,
+          "y": 141.31,
+          "width": 362.70000000000005,
+          "height": 331.46000000000004
+        },
+        "helper": {
+          "x": 328.35,
+          "feetY": 247.37720000000002,
+          "scale": 0.07
+        },
+        "systemsY": 91.73,
+        "routeY": 91.73,
+        "stripY": 509.35,
+        "arrowsY": 592.35,
+        "actionsY": 658.35,
+        "controlCenterX": 195,
+        "controlWidth": 362.70000000000005,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 148.28000000000003,
+        "titleSize": 35.1,
+        "subtitleY": 189.69800000000004,
+        "buttonHeight": 57.400000000000006,
+        "buttonY": 657.65,
+        "actorFeetY": 614.95,
+        "pairScale": 0.156,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 136.966,
+        "titleFontSize": 35.1,
+        "titleMaxWidth": 336.1,
+        "subtitleY": 189.84325,
+        "subtitleFontSize": 17.55,
+        "subtitleMaxWidth": 342.70000000000005,
+        "robotHeight": 319.79999999999995,
+        "platformY": 541.4644999999999,
+        "playY": 586.6144999999999,
+        "playWidth": 250,
+        "playHeight": 59.50000000000001,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_TALL",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "headerZone": {
+        "x": 13.650000000000002,
+        "y": 13.650000000000002,
+        "width": 362.70000000000005,
+        "height": 102.58
+      },
+      "gameplayZone": {
+        "x": 13.650000000000002,
+        "y": 124.81,
+        "width": 362.70000000000005,
+        "height": 477.52000000000004
+      },
+      "controlsZone": {
+        "x": 13.650000000000002,
+        "y": 610.9100000000001,
+        "width": 362.70000000000005,
+        "height": 219.44
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 14,
+        "width": 362,
+        "height": 816
+      },
+      "mission7": {
+        "board": {
+          "x": 13.650000000000002,
+          "y": 142.81,
+          "width": 362.70000000000005,
+          "height": 622.96
+        },
+        "hint": {
+          "x": 195,
+          "y": 802.3500000000001,
+          "width": 230,
+          "height": 56,
+          "fontSize": 17.55
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 13.649999999999977,
+          "y": 148.81,
+          "width": 362.70000000000005,
+          "height": 453.52000000000004
+        },
+        "helper": {
+          "x": 328.35,
+          "feetY": 264.81,
+          "scale": 0.07
+        },
+        "systemsY": 99.23,
+        "routeY": 99.23,
+        "stripY": 638.9100000000001,
+        "arrowsY": 721.9100000000001,
+        "actionsY": 802.3500000000001,
+        "controlCenterX": 195,
+        "controlWidth": 362.70000000000005,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 155.78000000000003,
+        "titleSize": 35.1,
+        "subtitleY": 197.19800000000004,
+        "buttonHeight": 64,
+        "buttonY": 798.35,
+        "actorFeetY": 752.35,
+        "pairScale": 0.156,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 144.466,
+        "titleFontSize": 35.1,
+        "titleMaxWidth": 336.1,
+        "subtitleY": 198.74325000000002,
+        "subtitleFontSize": 17.55,
+        "subtitleMaxWidth": 342.70000000000005,
+        "robotHeight": 319.79999999999995,
+        "platformY": 552.6685,
+        "playY": 604.2365,
+        "playWidth": 250,
+        "playHeight": 66,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "393x852",
+      "width": 393,
+      "height": 852,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_TALL",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 393,
+        "height": 852
+      },
+      "headerZone": {
+        "x": 13.755,
+        "y": 13.755,
+        "width": 365.49,
+        "height": 102.646
+      },
+      "gameplayZone": {
+        "x": 13.755,
+        "y": 125.047,
+        "width": 365.49,
+        "height": 483.03200000000004
+      },
+      "controlsZone": {
+        "x": 13.755,
+        "y": 616.725,
+        "width": 365.49,
+        "height": 221.52
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 14,
+        "width": 365,
+        "height": 824
+      },
+      "mission7": {
+        "board": {
+          "x": 13.755,
+          "y": 143.047,
+          "width": 365.49,
+          "height": 630.552
+        },
+        "hint": {
+          "x": 196.5,
+          "y": 810.245,
+          "width": 230,
+          "height": 56,
+          "fontSize": 17.685
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 13.754999999999995,
+          "y": 149.047,
+          "width": 365.49,
+          "height": 459.03200000000004
+        },
+        "helper": {
+          "x": 331.245,
+          "feetY": 265.047,
+          "scale": 0.07
+        },
+        "systemsY": 99.401,
+        "routeY": 99.401,
+        "stripY": 644.725,
+        "arrowsY": 727.725,
+        "actionsY": 810.245,
+        "controlCenterX": 196.5,
+        "controlWidth": 365.49,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 156.086,
+        "titleSize": 35.37,
+        "subtitleY": 197.82260000000002,
+        "buttonHeight": 64,
+        "buttonY": 806.245,
+        "actorFeetY": 760.245,
+        "pairScale": 0.1572,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 144.8542,
+        "titleFontSize": 35.37,
+        "titleMaxWidth": 338.89,
+        "subtitleY": 199.44127500000002,
+        "subtitleFontSize": 17.685,
+        "subtitleMaxWidth": 345.49,
+        "robotHeight": 322.26,
+        "platformY": 556.11315,
+        "playY": 607.85715,
+        "playWidth": 250,
+        "playHeight": 66,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "412x915",
+      "width": 412,
+      "height": 915,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_TALL",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 412,
+        "height": 915
+      },
+      "headerZone": {
+        "x": 14.420000000000002,
+        "y": 14.420000000000002,
+        "width": 383.15999999999997,
+        "height": 103.064
+      },
+      "gameplayZone": {
+        "x": 14.420000000000002,
+        "y": 126.548,
+        "width": 383.15999999999997,
+        "height": 527.0680000000001
+      },
+      "controlsZone": {
+        "x": 14.420000000000002,
+        "y": 662.6800000000001,
+        "width": 383.15999999999997,
+        "height": 237.9
+      },
+      "modalZone": {
+        "x": 14.420000000000002,
+        "y": 14.420000000000002,
+        "width": 383.15999999999997,
+        "height": 886.16
+      },
+      "mission7": {
+        "board": {
+          "x": 14.420000000000002,
+          "y": 144.548,
+          "width": 383.15999999999997,
+          "height": 690.9680000000001
+        },
+        "hint": {
+          "x": 206,
+          "y": 872.58,
+          "width": 230,
+          "height": 56,
+          "fontSize": 18.54
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 14.420000000000016,
+          "y": 150.548,
+          "width": 383.15999999999997,
+          "height": 503.0680000000001
+        },
+        "helper": {
+          "x": 349.58,
+          "feetY": 266.548,
+          "scale": 0.07
+        },
+        "systemsY": 100.48400000000001,
+        "routeY": 100.48400000000001,
+        "stripY": 690.6800000000001,
+        "arrowsY": 773.6800000000001,
+        "actionsY": 872.58,
+        "controlCenterX": 206,
+        "controlWidth": 383.15999999999997,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 158.684,
+        "titleSize": 37.08,
+        "subtitleY": 202.4384,
+        "buttonHeight": 64,
+        "buttonY": 868.58,
+        "actorFeetY": 822.1600000000001,
+        "pairScale": 0.1648,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 147.3128,
+        "titleFontSize": 37.08,
+        "titleMaxWidth": 356.55999999999995,
+        "subtitleY": 203.86210000000003,
+        "subtitleFontSize": 18.54,
+        "subtitleMaxWidth": 363.15999999999997,
+        "robotHeight": 337.84,
+        "platformY": 578.1266,
+        "playY": 631.2566,
+        "playWidth": 250,
+        "playHeight": 66,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "430x932",
+      "width": 430,
+      "height": 932,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT_TALL",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 932
+      },
+      "headerZone": {
+        "x": 15.05,
+        "y": 15.05,
+        "width": 399.9,
+        "height": 103.46
+      },
+      "gameplayZone": {
+        "x": 15.05,
+        "y": 127.96999999999998,
+        "width": 399.9,
+        "height": 539.52
+      },
+      "controlsZone": {
+        "x": 15.05,
+        "y": 676.95,
+        "width": 399.9,
+        "height": 240
+      },
+      "modalZone": {
+        "x": 15.05,
+        "y": 15.05,
+        "width": 399.9,
+        "height": 901.9
+      },
+      "mission7": {
+        "board": {
+          "x": 15.05,
+          "y": 145.96999999999997,
+          "width": 399.9,
+          "height": 705.52
+        },
+        "hint": {
+          "x": 215,
+          "y": 888.95,
+          "width": 230,
+          "height": 56,
+          "fontSize": 19
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 15.050000000000011,
+          "y": 151.96999999999997,
+          "width": 399.9,
+          "height": 515.52
+        },
+        "helper": {
+          "x": 366.95,
+          "feetY": 267.96999999999997,
+          "scale": 0.07
+        },
+        "systemsY": 101.50999999999999,
+        "routeY": 101.50999999999999,
+        "stripY": 704.95,
+        "arrowsY": 787.95,
+        "actionsY": 888.95,
+        "controlCenterX": 215,
+        "controlWidth": 399.9,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 161.51,
+        "titleSize": 38.699999999999996,
+        "subtitleY": 207.176,
+        "buttonHeight": 64,
+        "buttonY": 884.95,
+        "actorFeetY": 837.9000000000001,
+        "pairScale": 0.17200000000000001,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 149.642,
+        "titleFontSize": 38.699999999999996,
+        "titleMaxWidth": 373.29999999999995,
+        "subtitleY": 208.05025,
+        "subtitleFontSize": 19.349999999999998,
+        "subtitleMaxWidth": 379.9,
+        "robotHeight": 352.59999999999997,
+        "platformY": 598.2985,
+        "playY": 651.8025,
+        "playWidth": 250,
+        "playHeight": 66,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "740x360",
+      "width": 740,
+      "height": 360,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_LANDSCAPE_SHORT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 740,
+        "height": 360
+      },
+      "headerZone": {
+        "x": 12.600000000000001,
+        "y": 12.600000000000001,
+        "width": 714.8,
+        "height": 52
+      },
+      "gameplayZone": {
+        "x": 12.600000000000001,
+        "y": 72.6,
+        "width": 714.8,
+        "height": 155.2
+      },
+      "controlsZone": {
+        "x": 12.600000000000001,
+        "y": 235.79999999999998,
+        "width": 714.8,
+        "height": 111.6
+      },
+      "modalZone": {
+        "x": 8,
+        "y": 8,
+        "width": 724,
+        "height": 344
+      },
+      "mission7": {
+        "board": {
+          "x": 12.600000000000001,
+          "y": 90.6,
+          "width": 567.5999999999999,
+          "height": 256.79999999999995
+        },
+        "hint": {
+          "x": 660.8,
+          "y": 319.4,
+          "width": 133.2,
+          "height": 52,
+          "fontSize": 16
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 12.600000000000001,
+          "y": 92.6,
+          "width": 392.56,
+          "height": 254.79999999999998
+        },
+        "helper": {
+          "x": 371.16,
+          "feetY": 184.6,
+          "scale": 0.06480000000000001
+        },
+        "systemsY": 38.6,
+        "routeY": 38.6,
+        "stripY": 120.6,
+        "arrowsY": 214.904,
+        "actionsY": 318.4,
+        "controlCenterX": 578.88,
+        "controlWidth": 319.44,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 64.8,
+        "titleSize": 32,
+        "subtitleY": 102.56,
+        "buttonHeight": 54,
+        "buttonY": 320.4,
+        "actorFeetY": 279.4,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 29.400000000000002,
+        "titleFontSize": 30,
+        "titleMaxWidth": 631.1999999999999,
+        "subtitleY": 73.825,
+        "subtitleFontSize": 15,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 165.6,
+        "platformY": 263.05,
+        "playY": 299.05,
+        "playWidth": 210,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_LANDSCAPE_SHORT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390
+      },
+      "headerZone": {
+        "x": 13.650000000000002,
+        "y": 13.650000000000002,
+        "width": 816.7,
+        "height": 52
+      },
+      "gameplayZone": {
+        "x": 13.650000000000002,
+        "y": 74.23,
+        "width": 816.7,
+        "height": 172.64
+      },
+      "controlsZone": {
+        "x": 13.650000000000002,
+        "y": 255.45000000000002,
+        "width": 816.7,
+        "height": 120.9
+      },
+      "modalZone": {
+        "x": 8.58,
+        "y": 8.58,
+        "width": 826.84,
+        "height": 372.84
+      },
+      "mission7": {
+        "board": {
+          "x": 13.650000000000002,
+          "y": 92.23,
+          "width": 650.7800000000001,
+          "height": 284.12
+        },
+        "hint": {
+          "x": 754.3900000000001,
+          "y": 348.35,
+          "width": 151.92,
+          "height": 52,
+          "fontSize": 16
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 13.650000000000002,
+          "y": 94.23,
+          "width": 466,
+          "height": 282.12
+        },
+        "helper": {
+          "x": 445.65,
+          "feetY": 186.23000000000002,
+          "scale": 0.065
+        },
+        "systemsY": 39.650000000000006,
+        "routeY": 39.650000000000006,
+        "stripY": 122.23,
+        "arrowsY": 229.6476,
+        "actionsY": 347.35,
+        "controlCenterX": 668.65,
+        "controlWidth": 350,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 70.2,
+        "titleSize": 32,
+        "subtitleY": 107.96000000000001,
+        "buttonHeight": 54,
+        "buttonY": 349.35,
+        "actorFeetY": 308.35,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 32.0325,
+        "titleFontSize": 30,
+        "titleMaxWidth": 733.1,
+        "subtitleY": 76.45750000000001,
+        "subtitleFontSize": 15,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 179.4,
+        "platformY": 279.7225,
+        "playY": 316.3025,
+        "playWidth": 210,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "932x430",
+      "width": 932,
+      "height": 430,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "PHONE_LANDSCAPE_SHORT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 932,
+        "height": 430
+      },
+      "headerZone": {
+        "x": 15.05,
+        "y": 15.05,
+        "width": 901.9000000000001,
+        "height": 52
+      },
+      "gameplayZone": {
+        "x": 15.05,
+        "y": 76.50999999999999,
+        "width": 901.9000000000001,
+        "height": 200.98000000000002
+      },
+      "controlsZone": {
+        "x": 15.05,
+        "y": 286.95,
+        "width": 901.9000000000001,
+        "height": 128
+      },
+      "modalZone": {
+        "x": 9.459999999999999,
+        "y": 9.459999999999999,
+        "width": 913.08,
+        "height": 411.08
+      },
+      "mission7": {
+        "board": {
+          "x": 15.05,
+          "y": 94.50999999999999,
+          "width": 719.0900000000001,
+          "height": 320.44
+        },
+        "hint": {
+          "x": 833.07,
+          "y": 386.95,
+          "width": 167.76,
+          "height": 52,
+          "fontSize": 16
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 15.05,
+          "y": 96.50999999999999,
+          "width": 551.9000000000001,
+          "height": 318.44
+        },
+        "helper": {
+          "x": 532.95,
+          "feetY": 188.51,
+          "scale": 0.065
+        },
+        "systemsY": 41.05,
+        "routeY": 41.05,
+        "stripY": 124.50999999999999,
+        "arrowsY": 249.3612,
+        "actionsY": 385.95,
+        "controlCenterX": 757,
+        "controlWidth": 350,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 77.39999999999999,
+        "titleSize": 32,
+        "subtitleY": 115.16,
+        "buttonHeight": 54,
+        "buttonY": 387.95,
+        "actorFeetY": 345.9,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 37.682500000000005,
+        "titleFontSize": 32.25,
+        "titleMaxWidth": 818.3000000000001,
+        "subtitleY": 83.3675,
+        "subtitleFontSize": 15,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 197.8,
+        "platformY": 305.6725,
+        "playY": 343.1325,
+        "playWidth": 210,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "TABLET_PORTRAIT",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1024
+      },
+      "headerZone": {
+        "x": 26.880000000000003,
+        "y": 26.880000000000003,
+        "width": 714.24,
+        "height": 62
+      },
+      "gameplayZone": {
+        "x": 26.880000000000003,
+        "y": 102.88,
+        "width": 714.24,
+        "height": 720.24
+      },
+      "controlsZone": {
+        "x": 26.880000000000003,
+        "y": 837.12,
+        "width": 714.24,
+        "height": 160
+      },
+      "modalZone": {
+        "x": 22,
+        "y": 22,
+        "width": 724,
+        "height": 980
+      },
+      "mission7": {
+        "board": {
+          "x": 34,
+          "y": 123.88,
+          "width": 700,
+          "height": 805.24
+        },
+        "hint": {
+          "x": 384,
+          "y": 970.12,
+          "width": 220,
+          "height": 54,
+          "fontSize": 19
+        },
+        "helperVisible": false,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 184.32,
+          "y": 193.88,
+          "width": 399.36,
+          "height": 340
+        },
+        "helper": {
+          "x": 110,
+          "feetY": 997.12,
+          "scale": 0.23
+        },
+        "systemsY": 133.88,
+        "routeY": 175.88,
+        "stripY": 553.88,
+        "arrowsY": 639.88,
+        "actionsY": 713.88,
+        "controlCenterX": 384,
+        "controlWidth": 500,
+        "arrowSize": 62,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 184.32,
+        "titleSize": 46,
+        "subtitleY": 238.6,
+        "buttonHeight": 64,
+        "buttonY": 965.12,
+        "actorFeetY": 911.12,
+        "pairScale": 0.2,
+        "pairSpan": 270
+      },
+      "start": {
+        "titleY": 149.76,
+        "titleFontSize": 48,
+        "titleMaxWidth": 687.64,
+        "subtitleY": 216.48999999999998,
+        "subtitleFontSize": 22,
+        "subtitleMaxWidth": 520,
+        "robotHeight": 360,
+        "platformY": 618.7239999999999,
+        "playY": 673.7239999999999,
+        "playWidth": 250,
+        "playHeight": 66,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "TABLET_LANDSCAPE",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "headerZone": {
+        "x": 26.880000000000003,
+        "y": 26.880000000000003,
+        "width": 970.24,
+        "height": 59.903999999999996
+      },
+      "gameplayZone": {
+        "x": 26.880000000000003,
+        "y": 100.78399999999999,
+        "width": 970.24,
+        "height": 495.77599999999995
+      },
+      "controlsZone": {
+        "x": 26.880000000000003,
+        "y": 610.56,
+        "width": 970.24,
+        "height": 130.56
+      },
+      "modalZone": {
+        "x": 22,
+        "y": 22,
+        "width": 980,
+        "height": 724
+      },
+      "mission7": {
+        "board": {
+          "x": 176.88,
+          "y": 123.88,
+          "width": 670.24,
+          "height": 549.24
+        },
+        "hint": {
+          "x": 512,
+          "y": 714.12,
+          "width": 220,
+          "height": 54,
+          "fontSize": 19
+        },
+        "helperVisible": true,
+        "repairedVisible": true
+      },
+      "mission8": {
+        "board": {
+          "x": 245.76,
+          "y": 190.736,
+          "width": 532.48,
+          "height": 335.384
+        },
+        "helper": {
+          "x": 117.9648,
+          "feetY": 741.12,
+          "scale": 0.21503999999999998
+        },
+        "systemsY": 130.736,
+        "routeY": 172.736,
+        "stripY": 546.12,
+        "arrowsY": 632.12,
+        "actionsY": 706.12,
+        "controlCenterX": 512,
+        "controlWidth": 500,
+        "arrowSize": 62,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 138.24,
+        "titleSize": 50,
+        "subtitleY": 197.24,
+        "buttonHeight": 62.976,
+        "buttonY": 709.6320000000001,
+        "actorFeetY": 656.144,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 78.19199999999998,
+        "titleFontSize": 54,
+        "titleMaxWidth": 885.76,
+        "subtitleY": 149.32799999999997,
+        "subtitleFontSize": 23.04,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 353.28000000000003,
+        "platformY": 541.9680000000001,
+        "playY": 591.504,
+        "playWidth": 210,
+        "playHeight": 65.28,
+        "playFontSize": 23.552
+      }
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "DESKTOP",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "headerZone": {
+        "x": 25.200000000000003,
+        "y": 25.200000000000003,
+        "width": 1229.6,
+        "height": 56.16
+      },
+      "gameplayZone": {
+        "x": 25.200000000000003,
+        "y": 95.36,
+        "width": 1229.6,
+        "height": 463.03999999999996
+      },
+      "controlsZone": {
+        "x": 25.200000000000003,
+        "y": 572.4,
+        "width": 1229.6,
+        "height": 122.4
+      },
+      "modalZone": {
+        "x": 22,
+        "y": 22,
+        "width": 1236,
+        "height": 676
+      },
+      "mission7": {
+        "board": {
+          "x": 280,
+          "y": 178.36,
+          "width": 720,
+          "height": 448.43999999999994
+        },
+        "hint": {
+          "x": 640,
+          "y": 667.8,
+          "width": 220,
+          "height": 54,
+          "fontSize": 19
+        },
+        "helperVisible": true,
+        "repairedVisible": true
+      },
+      "mission8": {
+        "board": {
+          "x": 315,
+          "y": 183.44,
+          "width": 650,
+          "height": 296.35999999999996
+        },
+        "helper": {
+          "x": 151.2,
+          "feetY": 694.8,
+          "scale": 0.20159999999999997
+        },
+        "systemsY": 123.44,
+        "routeY": 165.44,
+        "stripY": 499.79999999999995,
+        "arrowsY": 585.8,
+        "actionsY": 659.8,
+        "controlCenterX": 640,
+        "controlWidth": 500,
+        "arrowSize": 62,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 129.6,
+        "titleSize": 50,
+        "subtitleY": 188.6,
+        "buttonHeight": 59.04,
+        "buttonY": 665.28,
+        "actorFeetY": 613.76,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 74.25000000000003,
+        "titleFontSize": 54,
+        "titleMaxWidth": 1128.3999999999999,
+        "subtitleY": 142.83,
+        "subtitleFontSize": 21.599999999999998,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 331.2,
+        "platformY": 510.93,
+        "playY": 557.37,
+        "playWidth": 243.2,
+        "playHeight": 61.2,
+        "playFontSize": 29
+      }
+    },
+    {
+      "name": "1438x914",
+      "width": 1438,
+      "height": 914,
+      "insets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "semanticMode": "DESKTOP",
+      "safeRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1438,
+        "height": 914
+      },
+      "headerZone": {
+        "x": 28,
+        "y": 28,
+        "width": 1382,
+        "height": 62
+      },
+      "gameplayZone": {
+        "x": 28,
+        "y": 104,
+        "width": 1382,
+        "height": 612.62
+      },
+      "controlsZone": {
+        "x": 28,
+        "y": 730.62,
+        "width": 1382,
+        "height": 155.38000000000002
+      },
+      "modalZone": {
+        "x": 22,
+        "y": 22,
+        "width": 1394,
+        "height": 870
+      },
+      "mission7": {
+        "board": {
+          "x": 359,
+          "y": 187,
+          "width": 720,
+          "height": 631
+        },
+        "hint": {
+          "x": 719,
+          "y": 859,
+          "width": 220,
+          "height": 54,
+          "fontSize": 19
+        },
+        "helperVisible": true,
+        "repairedVisible": true
+      },
+      "mission8": {
+        "board": {
+          "x": 394,
+          "y": 195,
+          "width": 650,
+          "height": 340
+        },
+        "helper": {
+          "x": 189.12,
+          "feetY": 886,
+          "scale": 0.23
+        },
+        "systemsY": 135,
+        "routeY": 177,
+        "stripY": 555,
+        "arrowsY": 641,
+        "actionsY": 715,
+        "controlCenterX": 719,
+        "controlWidth": 500,
+        "arrowSize": 62,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 164.51999999999998,
+        "titleSize": 50,
+        "subtitleY": 223.51999999999998,
+        "buttonHeight": 64,
+        "buttonY": 854,
+        "actorFeetY": 800,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 110.83700000000002,
+        "titleFontSize": 54,
+        "titleMaxWidth": 1280.8,
+        "subtitleY": 183.277,
+        "subtitleFontSize": 24,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 360,
+        "platformY": 586.101,
+        "playY": 639.209,
+        "playWidth": 270,
+        "playHeight": 66,
+        "playFontSize": 29
+      }
+    },
+    {
+      "name": "390x844-ios-safe",
+      "width": 390,
+      "height": 844,
+      "insets": {
+        "top": 47,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "semanticMode": "PHONE_PORTRAIT",
+      "safeRect": {
+        "x": 0,
+        "y": 47,
+        "width": 390,
+        "height": 763
+      },
+      "headerZone": {
+        "x": 13.650000000000002,
+        "y": 60.650000000000006,
+        "width": 362.70000000000005,
+        "height": 102.58
+      },
+      "gameplayZone": {
+        "x": 13.650000000000002,
+        "y": 171.81000000000003,
+        "width": 362.70000000000005,
+        "height": 396.52
+      },
+      "controlsZone": {
+        "x": 13.650000000000002,
+        "y": 576.9100000000001,
+        "width": 362.70000000000005,
+        "height": 219.44
+      },
+      "modalZone": {
+        "x": 14,
+        "y": 61,
+        "width": 362,
+        "height": 735
+      },
+      "mission7": {
+        "board": {
+          "x": 13.650000000000002,
+          "y": 189.81000000000003,
+          "width": 362.70000000000005,
+          "height": 541.96
+        },
+        "hint": {
+          "x": 195,
+          "y": 768.3500000000001,
+          "width": 230,
+          "height": 56,
+          "fontSize": 17.55
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 13.649999999999977,
+          "y": 195.81000000000003,
+          "width": 362.70000000000005,
+          "height": 372.52
+        },
+        "helper": {
+          "x": 328.35,
+          "feetY": 311.81000000000006,
+          "scale": 0.07
+        },
+        "systemsY": 146.23000000000002,
+        "routeY": 146.23000000000002,
+        "stripY": 604.9100000000001,
+        "arrowsY": 687.9100000000001,
+        "actionsY": 768.3500000000001,
+        "controlCenterX": 195,
+        "controlWidth": 362.70000000000005,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": true,
+        "titleY": 202.78000000000003,
+        "titleSize": 35.1,
+        "subtitleY": 244.19800000000004,
+        "buttonHeight": 64,
+        "buttonY": 764.35,
+        "actorFeetY": 718.35,
+        "pairScale": 0.156,
+        "pairSpan": 150
+      },
+      "start": {
+        "titleY": 191.46600000000004,
+        "titleFontSize": 35.1,
+        "titleMaxWidth": 336.1,
+        "subtitleY": 245.74325000000005,
+        "subtitleFontSize": 17.55,
+        "subtitleMaxWidth": 342.70000000000005,
+        "robotHeight": 319.79999999999995,
+        "platformY": 599.6685,
+        "playY": 651.2365,
+        "playWidth": 250,
+        "playHeight": 66,
+        "playFontSize": 23
+      }
+    },
+    {
+      "name": "844x390-ios-safe",
+      "width": 844,
+      "height": 390,
+      "insets": {
+        "top": 0,
+        "right": 47,
+        "bottom": 21,
+        "left": 47
+      },
+      "semanticMode": "PHONE_LANDSCAPE_SHORT",
+      "safeRect": {
+        "x": 47,
+        "y": 0,
+        "width": 750,
+        "height": 369
+      },
+      "headerZone": {
+        "x": 60.650000000000006,
+        "y": 13.650000000000002,
+        "width": 722.7,
+        "height": 52
+      },
+      "gameplayZone": {
+        "x": 60.650000000000006,
+        "y": 74.23,
+        "width": 722.7,
+        "height": 151.64
+      },
+      "controlsZone": {
+        "x": 60.650000000000006,
+        "y": 234.45000000000002,
+        "width": 722.7,
+        "height": 120.9
+      },
+      "modalZone": {
+        "x": 55.58,
+        "y": 8.58,
+        "width": 732.84,
+        "height": 351.84
+      },
+      "mission7": {
+        "board": {
+          "x": 60.650000000000006,
+          "y": 92.23,
+          "width": 573.7,
+          "height": 263.12
+        },
+        "hint": {
+          "x": 715.85,
+          "y": 327.35,
+          "width": 135,
+          "height": 52,
+          "fontSize": 16
+        },
+        "helperVisible": true,
+        "repairedVisible": false
+      },
+      "mission8": {
+        "board": {
+          "x": 60.650000000000006,
+          "y": 94.23,
+          "width": 398.16,
+          "height": 261.12
+        },
+        "helper": {
+          "x": 424.81000000000006,
+          "feetY": 186.23000000000002,
+          "scale": 0.065
+        },
+        "systemsY": 39.650000000000006,
+        "routeY": 39.650000000000006,
+        "stripY": 122.23,
+        "arrowsY": 219.5676,
+        "actionsY": 326.35,
+        "controlCenterX": 634.73,
+        "controlWidth": 323.84,
+        "arrowSize": 56,
+        "actionHeight": 56
+      },
+      "transition": {
+        "phonePortrait": false,
+        "titleY": 70.2,
+        "titleSize": 32,
+        "subtitleY": 107.96000000000001,
+        "buttonHeight": 54,
+        "buttonY": 328.35,
+        "actorFeetY": 287.35,
+        "pairScale": 0.23,
+        "pairSpan": 320
+      },
+      "start": {
+        "titleY": 32.0325,
+        "titleFontSize": 30,
+        "titleMaxWidth": 639.1,
+        "subtitleY": 76.45750000000001,
+        "subtitleFontSize": 15,
+        "subtitleMaxWidth": 620,
+        "robotHeight": 179.4,
+        "platformY": 279.7225,
+        "playY": 316.3025,
+        "playWidth": 210,
+        "playHeight": 56,
+        "playFontSize": 23
+      }
+    }
+  ],
+  "failures": []
+}

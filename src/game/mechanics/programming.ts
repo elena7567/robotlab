@@ -11,9 +11,18 @@ export interface ProgrammingChallenge {
   readonly columns: number;
   readonly rows: number;
   readonly start: GridCell;
-  readonly target: GridCell;
+  readonly targetCell: GridCell;
   readonly obstacles: readonly GridCell[];
+  readonly shortestPathLength: number;
+  readonly longestSimplePathLength: number;
+  readonly simpleRouteCount: number;
   readonly maxCommands: number;
+}
+
+export interface SimpleGridRouteAnalysis {
+  readonly routeCount: number;
+  readonly shortestPathLength: number;
+  readonly longestPathLength: number;
 }
 
 export interface ProgrammingStep {
@@ -25,9 +34,12 @@ export interface ProgrammingStep {
 
 export interface ProgrammingExecution {
   readonly steps: readonly ProgrammingStep[];
+  readonly visitedCells: readonly GridCell[];
   readonly finalPosition: GridCell;
+  readonly finalCell: GridCell;
   readonly reachedTarget: boolean;
   readonly collision?: ProgrammingCollision;
+  readonly failureReason?: ProgrammingCollision;
 }
 
 export interface ProgrammingSnapshot {
@@ -41,25 +53,114 @@ export interface ProgrammingSnapshot {
   readonly completed: boolean;
 }
 
-const CHALLENGES: readonly ProgrammingChallenge[] = [
-  {
-    id: 'straight', columns: 4, rows: 2, start: { column: 0, row: 1 }, target: { column: 2, row: 1 },
-    obstacles: [], maxCommands: 3,
-  },
-  {
-    id: 'turn', columns: 4, rows: 3, start: { column: 0, row: 2 }, target: { column: 2, row: 1 },
-    obstacles: [{ column: 1, row: 1 }], maxCommands: 4,
-  },
-  {
-    id: 'navigation', columns: 5, rows: 3, start: { column: 0, row: 2 }, target: { column: 3, row: 0 },
-    obstacles: [{ column: 2, row: 2 }, { column: 3, row: 1 }], maxCommands: 5,
-  },
-] as const;
+type ProgrammingBoardDefinition = Omit<ProgrammingChallenge, 'shortestPathLength' | 'longestSimplePathLength' | 'simpleRouteCount' | 'maxCommands'>;
 
 const DELTAS: Readonly<Record<RobotCommand, GridCell>> = {
   UP: { column: 0, row: -1 }, RIGHT: { column: 1, row: 0 },
   DOWN: { column: 0, row: 1 }, LEFT: { column: -1, row: 0 },
 };
+
+const COMMAND_ORDER: readonly RobotCommand[] = ['RIGHT', 'UP', 'LEFT', 'DOWN'];
+
+export const sameGridCell = (a: GridCell, b: GridCell): boolean => a.column === b.column && a.row === b.row;
+export const commandDelta = (command: RobotCommand): GridCell => DELTAS[command];
+const cloneCell = (cell: GridCell): GridCell => ({ column: cell.column, row: cell.row });
+const cellKey = (cell: GridCell): string => `${cell.column},${cell.row}`;
+
+function isWalkable(board: Pick<ProgrammingChallenge, 'columns' | 'rows' | 'targetCell' | 'obstacles'>, cell: GridCell): boolean {
+  if (cell.column < 0 || cell.column >= board.columns || cell.row < 0 || cell.row >= board.rows) return false;
+  return sameGridCell(cell, board.targetCell) || !board.obstacles.some((obstacle) => sameGridCell(obstacle, cell));
+}
+
+export function findShortestGridPath(
+  board: Pick<ProgrammingChallenge, 'columns' | 'rows' | 'targetCell' | 'obstacles'>,
+  startCell: GridCell,
+  targetCell: GridCell = board.targetCell,
+): readonly RobotCommand[] | null {
+  if (sameGridCell(startCell, targetCell)) return [];
+  const queue: Array<{ cell: GridCell; commands: RobotCommand[] }> = [{ cell: cloneCell(startCell), commands: [] }];
+  const visited = new Set<string>([cellKey(startCell)]);
+  while (queue.length > 0) {
+    const current = queue.shift()!;
+    for (const command of COMMAND_ORDER) {
+      const delta = commandDelta(command);
+      const next = { column: current.cell.column + delta.column, row: current.cell.row + delta.row };
+      if (!isWalkable(board, next) || visited.has(cellKey(next))) continue;
+      const commands = [...current.commands, command];
+      if (sameGridCell(next, targetCell)) return commands;
+      visited.add(cellKey(next));
+      queue.push({ cell: next, commands });
+    }
+  }
+  return null;
+}
+
+/**
+ * Counts every legal simple route from start to charger. A simple route never
+ * revisits a cell, so the authored route space is finite while still covering
+ * every geometrically distinct way through the board. Commands with loops are
+ * still accepted by the simulator when they fit within the same capacity.
+ */
+export function analyzeSimpleGridRoutes(
+  board: Pick<ProgrammingChallenge, 'columns' | 'rows' | 'targetCell' | 'obstacles'>,
+  startCell: GridCell,
+  targetCell: GridCell = board.targetCell,
+): SimpleGridRouteAnalysis | null {
+  if (sameGridCell(startCell, targetCell)) return { routeCount: 1, shortestPathLength: 0, longestPathLength: 0 };
+  const visited = new Set<string>([cellKey(startCell)]);
+  let routeCount = 0;
+  let shortestPathLength = Number.POSITIVE_INFINITY;
+  let longestPathLength = 0;
+
+  const visit = (cell: GridCell, pathLength: number): void => {
+    for (const command of COMMAND_ORDER) {
+      const delta = commandDelta(command);
+      const next = { column: cell.column + delta.column, row: cell.row + delta.row };
+      const key = cellKey(next);
+      if (!isWalkable(board, next) || visited.has(key)) continue;
+      const nextLength = pathLength + 1;
+      if (sameGridCell(next, targetCell)) {
+        routeCount += 1;
+        shortestPathLength = Math.min(shortestPathLength, nextLength);
+        longestPathLength = Math.max(longestPathLength, nextLength);
+        continue;
+      }
+      visited.add(key);
+      visit(next, nextLength);
+      visited.delete(key);
+    }
+  };
+
+  visit(startCell, 0);
+  return routeCount === 0 ? null : { routeCount, shortestPathLength, longestPathLength };
+}
+
+function createChallenge(definition: ProgrammingBoardDefinition): ProgrammingChallenge {
+  const routeAnalysis = analyzeSimpleGridRoutes(definition, definition.start, definition.targetCell);
+  if (!routeAnalysis) throw new Error(`Programming challenge ${definition.id} has no legal route`);
+  return {
+    ...definition,
+    shortestPathLength: routeAnalysis.shortestPathLength,
+    longestSimplePathLength: routeAnalysis.longestPathLength,
+    simpleRouteCount: routeAnalysis.routeCount,
+    maxCommands: routeAnalysis.longestPathLength,
+  };
+}
+
+export const PROGRAMMING_CHALLENGES: readonly ProgrammingChallenge[] = [
+  createChallenge({
+    id: 'straight', columns: 4, rows: 2, start: { column: 0, row: 1 }, targetCell: { column: 2, row: 1 },
+    obstacles: [],
+  }),
+  createChallenge({
+    id: 'turn', columns: 4, rows: 3, start: { column: 0, row: 2 }, targetCell: { column: 2, row: 1 },
+    obstacles: [{ column: 1, row: 1 }],
+  }),
+  createChallenge({
+    id: 'navigation', columns: 5, rows: 3, start: { column: 0, row: 2 }, targetCell: { column: 3, row: 0 },
+    obstacles: [{ column: 2, row: 2 }, { column: 3, row: 1 }],
+  }),
+] as const;
 
 interface MutableProgrammingState {
   challengeIndex: number;
@@ -70,39 +171,58 @@ interface MutableProgrammingState {
   completed: boolean;
 }
 
-const sameCell = (a: GridCell, b: GridCell): boolean => a.column === b.column && a.row === b.row;
-const cloneCell = (cell: GridCell): GridCell => ({ column: cell.column, row: cell.row });
-
 function initialState(): MutableProgrammingState {
   return {
-    challengeIndex: 0, commands: [], robotPosition: cloneCell(CHALLENGES[0].start),
+    challengeIndex: 0, commands: [], robotPosition: cloneCell(PROGRAMMING_CHALLENGES[0].start),
     running: false, routeComplete: false, completed: false,
   };
 }
 
 let state = initialState();
 
-export function simulateProgram(challenge: ProgrammingChallenge, commands: readonly RobotCommand[]): ProgrammingExecution {
-  let position = cloneCell(challenge.start);
+/** Canonical Mission 8 movement rule used by preview, execution, validation, hints, and QA. */
+export function simulateGridProgram(
+  board: ProgrammingChallenge,
+  startCell: GridCell,
+  targetCell: GridCell,
+  obstacles: readonly GridCell[],
+  commands: readonly RobotCommand[],
+): ProgrammingExecution {
+  let position = cloneCell(startCell);
   const steps: ProgrammingStep[] = [];
+  const visitedCells: GridCell[] = [cloneCell(startCell)];
   let collision: ProgrammingCollision | undefined;
   for (const command of commands) {
-    const delta = DELTAS[command];
+    const delta = commandDelta(command);
     const candidate = { column: position.column + delta.column, row: position.row + delta.row };
-    const outside = candidate.column < 0 || candidate.column >= challenge.columns || candidate.row < 0 || candidate.row >= challenge.rows;
-    const blocked = challenge.obstacles.some((cell) => sameCell(cell, candidate));
+    const outside = candidate.column < 0 || candidate.column >= board.columns || candidate.row < 0 || candidate.row >= board.rows;
+    // The authored target cell is always a walkable destination. This keeps a
+    // malformed obstacle list from splitting the visual and logical contracts.
+    const blocked = !sameGridCell(candidate, targetCell)
+      && obstacles.some((cell) => sameGridCell(cell, candidate));
     collision = outside ? 'boundary' : (blocked ? 'obstacle' : undefined);
     const to = collision ? cloneCell(position) : candidate;
     steps.push({ command, from: cloneCell(position), to: cloneCell(to), ...(collision ? { collision } : {}) });
     if (collision) break;
     position = candidate;
+    visitedCells.push(cloneCell(position));
+    // Reaching the charger is immediate success. Remaining authored commands are
+    // intentionally ignored because arrival, not efficiency, is the learning goal.
+    if (sameGridCell(position, targetCell)) break;
   }
   return {
     steps,
+    visitedCells,
     finalPosition: cloneCell(position),
-    reachedTarget: !collision && sameCell(position, challenge.target),
+    finalCell: cloneCell(position),
+    reachedTarget: !collision && sameGridCell(position, targetCell),
     ...(collision ? { collision } : {}),
+    ...(collision ? { failureReason: collision } : {}),
   };
+}
+
+export function simulateProgram(challenge: ProgrammingChallenge, commands: readonly RobotCommand[]): ProgrammingExecution {
+  return simulateGridProgram(challenge, challenge.start, challenge.targetCell, challenge.obstacles, commands);
 }
 
 export const programmingMechanic = {
@@ -110,7 +230,7 @@ export const programmingMechanic = {
     return {
       challengeIndex: state.challengeIndex,
       challengeCount: 3,
-      challenge: CHALLENGES[state.challengeIndex],
+      challenge: PROGRAMMING_CHALLENGES[state.challengeIndex],
       commands: [...state.commands],
       robotPosition: cloneCell(state.robotPosition),
       running: state.running,
@@ -120,7 +240,7 @@ export const programmingMechanic = {
   },
   reset(): void { state = initialState(); },
   add(command: RobotCommand): boolean {
-    const challenge = CHALLENGES[state.challengeIndex];
+    const challenge = PROGRAMMING_CHALLENGES[state.challengeIndex];
     if (state.running || state.routeComplete || state.completed || state.commands.length >= challenge.maxCommands) return false;
     state.commands.push(command);
     return true;
@@ -138,8 +258,8 @@ export const programmingMechanic = {
   beginRun(): ProgrammingExecution | null {
     if (state.running || state.routeComplete || state.completed || state.commands.length === 0) return null;
     state.running = true;
-    state.robotPosition = cloneCell(CHALLENGES[state.challengeIndex].start);
-    return simulateProgram(CHALLENGES[state.challengeIndex], state.commands);
+    state.robotPosition = cloneCell(PROGRAMMING_CHALLENGES[state.challengeIndex].start);
+    return simulateProgram(PROGRAMMING_CHALLENGES[state.challengeIndex], state.commands);
   },
   applyStep(step: ProgrammingStep): void {
     if (!state.running) return;
@@ -153,39 +273,38 @@ export const programmingMechanic = {
       state.robotPosition = cloneCell(execution.finalPosition);
       return 'success';
     }
-    state.robotPosition = cloneCell(CHALLENGES[state.challengeIndex].start);
+    state.robotPosition = cloneCell(PROGRAMMING_CHALLENGES[state.challengeIndex].start);
     return execution.collision ? 'collision' : 'wrong';
   },
   recoverInterruptedRun(): void {
     if (!state.running) return;
     state.running = false;
-    state.robotPosition = cloneCell(CHALLENGES[state.challengeIndex].start);
+    state.robotPosition = cloneCell(PROGRAMMING_CHALLENGES[state.challengeIndex].start);
   },
   hint(): { readonly command: RobotCommand; readonly from: GridCell; readonly to: GridCell } | null {
     if (state.running || state.routeComplete || state.completed) return null;
-    const challenge = CHALLENGES[state.challengeIndex];
+    const challenge = PROGRAMMING_CHALLENGES[state.challengeIndex];
     const preview = simulateProgram(challenge, state.commands);
     if (preview.collision || preview.reachedTarget) return null;
-    const candidates: readonly RobotCommand[] = ['RIGHT', 'UP', 'LEFT', 'DOWN'];
-    for (const command of candidates) {
-      const trial = simulateProgram(challenge, [...state.commands, command]);
-      const step = trial.steps.at(-1);
-      if (!step || step.collision) continue;
-      const currentDistance = Math.abs(preview.finalPosition.column - challenge.target.column) + Math.abs(preview.finalPosition.row - challenge.target.row);
-      const nextDistance = Math.abs(step.to.column - challenge.target.column) + Math.abs(step.to.row - challenge.target.row);
-      if (nextDistance < currentDistance) return { command, from: cloneCell(step.from), to: cloneCell(step.to) };
-    }
-    return null;
+    const route = findShortestGridPath(challenge, preview.finalPosition, challenge.targetCell);
+    const command = route?.[0];
+    if (!command) return null;
+    const delta = commandDelta(command);
+    return {
+      command,
+      from: cloneCell(preview.finalPosition),
+      to: { column: preview.finalPosition.column + delta.column, row: preview.finalPosition.row + delta.row },
+    };
   },
   continue(): 'next' | 'mission-complete' | 'ignored' {
     if (!state.routeComplete || state.running || state.completed) return 'ignored';
-    if (state.challengeIndex === CHALLENGES.length - 1) {
+    if (state.challengeIndex === PROGRAMMING_CHALLENGES.length - 1) {
       state.completed = true;
       return 'mission-complete';
     }
     state.challengeIndex += 1;
     state.commands = [];
-    state.robotPosition = cloneCell(CHALLENGES[state.challengeIndex].start);
+    state.robotPosition = cloneCell(PROGRAMMING_CHALLENGES[state.challengeIndex].start);
     state.routeComplete = false;
     return 'next';
   },

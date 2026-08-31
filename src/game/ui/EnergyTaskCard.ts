@@ -3,6 +3,7 @@ import type { BatteryLevel, EnergyResult, EnergySnapshot } from '../mechanics/en
 import { addControl, setControlEnabled } from './controls';
 import type { TaskCardSizing } from './responsiveLayout';
 import { UI_COLORS, UI_FONT } from './visualTheme';
+import { CHILD_UI } from './childUi';
 
 export interface EnergyTaskCardConfig {
   readonly x: number;
@@ -20,6 +21,7 @@ export interface EnergyTaskCardConfig {
 interface BatteryView {
   readonly container: Phaser.GameObjects.Container;
   readonly frame: Phaser.GameObjects.Graphics;
+  readonly selectionFrame: Phaser.GameObjects.Graphics;
   readonly fill: Phaser.GameObjects.Rectangle;
 }
 
@@ -39,7 +41,12 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
   constructor(scene: Phaser.Scene, config: EnergyTaskCardConfig) {
     super(scene, config.x, config.y);
     scene.add.existing(this);
-    this.setName('energy-task-card');
+    this.setName('energy-task-card').setData('auditBounds', {
+      x: config.x,
+      y: config.y - config.sizing.ribbonHeight / 2,
+      width: config.width,
+      height: config.height + config.sizing.ribbonHeight / 2,
+    });
     this.snapshot = config.snapshot;
     const { sizing } = config;
     const body = scene.add.graphics();
@@ -64,7 +71,7 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
     this.add(instruction);
 
     const compact = config.height < 260;
-    const actionHeight = Math.min(sizing.actionHeight, compact ? 44 : 54);
+    const actionHeight = Math.max(CHILD_UI.touch.minimum, sizing.actionHeight);
     const footerY = config.height - actionHeight / 2 - (compact ? 8 : 14);
     const feedbackY = footerY - actionHeight / 2 - (compact ? 6 : 11);
     const areaTop = Math.max(sizing.areaTop, instructionY + instruction.height + 4);
@@ -85,7 +92,7 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
       for (let index = 0; index < 3; index += 1) {
         const x = rowX + index * (cardWidth + gap) + cardWidth / 2;
         const slot = scene.add.text(x, orderY, `${index + 1}: —`, {
-          color: '#7659bb', fontFamily: UI_FONT, fontSize: `${Math.max(11, sizing.feedbackFontSize)}px`, fontStyle: 'bold',
+          color: '#7659bb', fontFamily: UI_FONT, fontSize: `${Math.max(CHILD_UI.typography.statusMin, sizing.feedbackFontSize)}px`, fontStyle: 'bold',
         }).setOrigin(0.5).setName(`energy-order-slot-${index + 1}`);
         this.orderLabels.push(slot);
         this.add(slot);
@@ -119,7 +126,7 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
       if (this.locked) return;
       const level = config.onHint();
       this.pulse(level);
-    }, { width: buttonWidth, height: actionHeight, fontSize: Math.min(16, sizing.actionFontSize), fill: UI_COLORS.purple,
+    }, { width: buttonWidth, height: actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, sizing.actionFontSize), fill: UI_COLORS.purple,
       hoverFill: 0x916ee1, stroke: UI_COLORS.purpleDark }).setName('energy-hint-button');
     this.add(hintButton);
     this.checkButton = addControl(scene, config.width - sizing.horizontalPadding - buttonWidth / 2, footerY, 'ПРОВЕРИТЬ', () => {
@@ -138,7 +145,7 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
         this.feedback.setColor('#a45a32').setText('ПОПРОБУЙ ЕЩЁ');
         this.redraw();
       }
-    }, { width: buttonWidth, height: actionHeight, fontSize: Math.min(16, sizing.actionFontSize) }).setName('energy-check-button');
+    }, { width: buttonWidth, height: actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, sizing.actionFontSize) }).setName('energy-check-button');
     this.add(this.checkButton);
     this.redraw();
     this.setData({ challengeIndex: config.snapshot.challengeIndex, challengeKind: config.snapshot.challenge.kind });
@@ -147,6 +154,7 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
   private createBattery(level: BatteryLevel, x: number, y: number, width: number, height: number): BatteryView {
     const container = this.scene.add.container(x, y).setName(`energy-battery-${level}`).setSize(width, Math.max(56, height)).setInteractive();
     const frame = this.scene.add.graphics();
+    const selectionFrame = this.scene.add.graphics().setName(`energy-selection-${level}`);
     const batteryWidth = Math.min(width - 18, height * 0.74);
     const batteryHeight = Math.min(height - 8, batteryWidth * 1.18);
     const terminalHeight = Math.max(4, batteryHeight * 0.09);
@@ -158,9 +166,9 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
     const fillHeight = innerHeight * FILL[level];
     const fill = this.scene.add.rectangle(0, bodyTop + batteryHeight - terminalHeight - 5, batteryWidth - 10, fillHeight, FILL_COLOR[level])
       .setOrigin(0.5, 1).setName(`energy-fill-${level}`);
-    container.add([frame, fill]);
+    container.add([frame, fill, selectionFrame]);
     this.add(container);
-    const view = { container, frame, fill };
+    const view = { container, frame, selectionFrame, fill };
     this.views.set(level, view);
     return view;
   }
@@ -171,9 +179,12 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
         ? this.snapshot.selection === level
         : this.snapshot.order.includes(level);
       view.container.setScale(selected ? 1.06 : 1).setAlpha(selected ? 1 : 0.86);
-      view.frame.lineStyle(selected ? 5 : 0, selected ? UI_COLORS.purple : 0, 1)
-        .strokeRoundedRect(-view.container.width / 2 + 2, -view.container.height / 2 + 2,
-          view.container.width - 4, view.container.height - 4, 12);
+      view.selectionFrame.clear();
+      if (selected) {
+        view.selectionFrame.lineStyle(5, UI_COLORS.purple, 1)
+          .strokeRoundedRect(-view.container.width / 2 + 2, -view.container.height / 2 + 2,
+            view.container.width - 4, view.container.height - 4, 12);
+      }
     }
     this.orderLabels.forEach((label, index) => {
       const level = this.snapshot.order[index];

@@ -4,10 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1 --port 4198 --strictPort",
+    "dev": "vite --host 0.0.0.0 --port 4198 --strictPort",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 127.0.0.1 --port 4198 --strictPort",
-    "typecheck": "tsc --noEmit"
+    "preview": "vite preview --host 0.0.0.0 --port 4198 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "qa:stage8-3e:layout": "node qa/stage8-3e-layout-contract.cjs",
+    "qa:stage8-3e:routes": "node --experimental-strip-types qa/stage8-3e-route-model.mjs",
+    "qa:stage8-3e:responsive": "node qa/stage8-3c-mobile-reflow-playtest.cjs",
+    "qa:stage8-3e:special": "node qa/stage8-3e-special-states.cjs",
+    "qa:stage8-3f:buttons": "node qa/stage8-3f-mobile-button-playtest.cjs",
+    "qa:stage8-3g:routes": "node qa/stage8-3g-all-routes-playtest.cjs",
+    "qa:stage8-3j:task-card": "node qa/stage8-3j-task-card-landscape-playtest.cjs",
+    "qa:stage8-3k:next": "node qa/stage8-3k-next-after-rotation-playtest.cjs"
   },
   "dependencies": {
     "phaser": "^3.90.0"
