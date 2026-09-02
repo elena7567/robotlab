@@ -19,8 +19,9 @@ const LABORATORY_SOURCE_WIDTH = 1672;
 const LABORATORY_SOURCE_HEIGHT = 941;
 const VICTORY_PLATFORM_SOURCE_X = 836;
 const VICTORY_PLATFORM_CONTACT_SOURCE_Y = 700;
-const ROBOT_SOURCE_HEIGHT = 1448;
-const ROBOT_FEET_CONTACT_SOURCE_Y = 1423;
+const HELPER_SOURCE_HEIGHT = 1534;
+const HELPER_VISIBLE_HEIGHT = 1502;
+const HELPER_FEET_CONTACT_SOURCE_Y = 1518;
 const PLATFORM_TO_CONTROLS_GAP = 30;
 
 interface VictoryPlatformPlacement {
@@ -117,9 +118,9 @@ export class VictoryScene extends Phaser.Scene {
     const pairSpan = Math.min(pairWidthBudget * 0.52, robotHeight * 0.92, portrait ? 170 : 270);
     const helperX = platform.contactX - pairSpan / 2;
     const assembledX = platform.contactX + pairSpan / 2;
-    const robot = this.add.image(helperX, platform.contactY, 'robot-complete')
-      .setOrigin(0.5, ROBOT_FEET_CONTACT_SOURCE_Y / ROBOT_SOURCE_HEIGHT)
-      .setScale(robotHeight / 1448)
+    const robot = this.add.image(helperX, platform.contactY, 'robot-v2-helper')
+      .setOrigin(0.5, HELPER_FEET_CONTACT_SOURCE_Y / HELPER_SOURCE_HEIGHT)
+      .setScale(robotHeight / HELPER_VISIBLE_HEIGHT)
       .setName('victory-robot')
       .setData({
         role: 'helper',
@@ -127,9 +128,9 @@ export class VictoryScene extends Phaser.Scene {
         platformContactY: platform.contactY,
         robotFeetContactX: helperX,
         robotFeetContactY: platform.contactY,
-        feetContactSourceY: ROBOT_FEET_CONTACT_SOURCE_Y,
+        feetContactSourceY: HELPER_FEET_CONTACT_SOURCE_Y,
       });
-    const assembledScale = (robotHeight / ROBOT_SOURCE_HEIGHT) * 0.92;
+    const assembledScale = (robotHeight / HELPER_VISIBLE_HEIGHT) * 0.92;
     const assembledRobot = new RobotAssemblyPreview(this, assembledX, platform.contactY, 5, {
       scale: assembledScale,
       blueprintAlpha: 0,

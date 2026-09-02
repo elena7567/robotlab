@@ -41,6 +41,11 @@ function rectIntersection(a: Phaser.Geom.Rectangle, b: Phaser.Geom.Rectangle): b
   return a.right > b.left && a.left < b.right && a.bottom > b.top && a.top < b.bottom;
 }
 
+function isIntentionalOverlap(leftName: string, rightName: string): boolean {
+  const pair = new Set([leftName, rightName]);
+  return pair.has('programming-board') && pair.has('program-strip');
+}
+
 function insideRect(inner: Phaser.Geom.Rectangle, outer: Phaser.Geom.Rectangle, tolerance = 1): boolean {
   return inner.left >= outer.left - tolerance && inner.top >= outer.top - tolerance
     && inner.right <= outer.right + tolerance && inner.bottom <= outer.bottom + tolerance;
@@ -74,6 +79,7 @@ export function auditSceneBounds(scene: Phaser.Scene): SceneBoundsAudit {
     for (let right = left + 1; right < items.length; right += 1) {
       if (/completion/.test(items[left].item.name) && /continue/.test(items[right].item.name)
         || /continue/.test(items[left].item.name) && /completion/.test(items[right].item.name)) continue;
+      if (isIntentionalOverlap(items[left].item.name, items[right].item.name)) continue;
       if (rectIntersection(items[left].bounds, items[right].bounds)) overlaps.push(`${items[left].item.name} × ${items[right].item.name}`);
     }
   }

@@ -18,8 +18,8 @@ import { connectionsMechanic } from '../mechanics/connections';
 import { programmingMechanic } from '../mechanics/programming';
 import { oddOneOutMechanic } from '../mechanics/oddOneOut';
 
-const COMPLETE_ROBOT_SOURCE_HEIGHT = 1448;
-const COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX = 25;
+const HELPER_VISIBLE_HEIGHT = 1502;
+const HELPER_BOTTOM_TRANSPARENT_PX = 16;
 
 export class StartScene extends Phaser.Scene {
   constructor() { super('StartScene'); }
@@ -42,11 +42,11 @@ export class StartScene extends Phaser.Scene {
     ).setScale(worldScale);
     this.add.rectangle(0, 0, width, height, 0x17334d, portrait ? 0.18 : 0.08).setOrigin(0).setDepth(-1);
 
-    const heroScale = startLayout.robotHeight / COMPLETE_ROBOT_SOURCE_HEIGHT;
+    const heroScale = startLayout.robotHeight / HELPER_VISIBLE_HEIGHT;
     const robot = this.add.image(
       width / 2,
-      startLayout.platformY + COMPLETE_ROBOT_BOTTOM_TRANSPARENT_PX * heroScale,
-      'robot-complete',
+      startLayout.platformY + HELPER_BOTTOM_TRANSPARENT_PX * heroScale,
+      'robot-v2-helper',
     ).setOrigin(0.5, 1).setScale(heroScale).setName('start-hero-robot').setData('characterRole', 'HERO');
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     if (!reducedMotion) {

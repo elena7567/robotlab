@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import { commandDelta, type GridCell, type ProgrammingChallenge, type ProgrammingStep } from '../mechanics/programming';
 import { RobotAssemblyPreview } from './RobotAssemblyPreview';
+
 import { UI_FONT } from './visualTheme';
 
 export interface ProgrammingBoardOptions {

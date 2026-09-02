@@ -22,13 +22,13 @@ interface AssemblyPartLayout {
 // Dedicated static assembly layout, measured against the opaque pixels in the
 // approved modular sources. It intentionally does not inherit RobotActor poses.
 const ASSEMBLY_LAYOUT: Readonly<Record<AssemblyPartName, AssemblyPartLayout>> = {
-  legLeft: { texture: 'robot-part-leg-left', x: -142, y: -365, originX: 0.481, originY: 0.024, scale: 0.27 },
-  legRight: { texture: 'robot-part-leg-right', x: 142, y: -365, originX: 0.49, originY: 0.04, scale: 0.29 },
-  armRight: { texture: 'robot-part-arm-right', x: -266.64, y: -583.88, originX: 1006 / 1254, originY: 183 / 1254, scale: 0.4, angle: 4 },
-  armLeft: { texture: 'robot-part-arm-left', x: 266.64, y: -583.88, originX: 277 / 1254, originY: 183 / 1254, scale: 0.4, angle: -4 },
-  body: { texture: 'robot-part-body', x: 0, y: -770, originX: 0.5, originY: 0.082, scale: 0.44 },
-  head: { texture: 'robot-part-head', x: 0, y: -765, originX: 0.5, originY: 0.869, scale: 0.52 },
-  antenna: { texture: 'robot-part-antenna', x: 0, y: -1220, originX: 0.5, originY: 0.951, scale: 0.14 },
+  legLeft: { texture: 'robot-v2-leg-left', x: -112, y: 0, originX: 0.5, originY: 1, scale: 1 },
+  legRight: { texture: 'robot-v2-leg-right', x: 112, y: 0, originX: 0.5, originY: 1, scale: 1 },
+  armLeft: { texture: 'robot-v2-arm-left', x: -205, y: -650, originX: 0.91, originY: 0.18, scale: 1 },
+  armRight: { texture: 'robot-v2-arm-right', x: 205, y: -650, originX: 0.09, originY: 0.18, scale: 1 },
+  body: { texture: 'robot-v2-body', x: 0, y: -355, originX: 0.5, originY: 1, scale: 1 },
+  head: { texture: 'robot-v2-head', x: 0, y: -680, originX: 0.5, originY: 1, scale: 1 },
+  antenna: { texture: 'robot-v2-antenna', x: 0, y: -1072, originX: 0.5, originY: 1, scale: 1 },
 };
 
 const DRAW_ORDER: readonly AssemblyPartName[] = [
@@ -91,8 +91,8 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
       headCenterX: 0,
       bodyCenterX: 0,
       antennaCenterX: 0,
-      shoulderLeftX: -266.64,
-      shoulderRightX: 266.64,
+      shoulderLeftX: -205,
+      shoulderRightX: 205,
     });
   }
 

@@ -7,120 +7,34 @@ export const ROBOT_ANIMATION_STATES = [
 
 export type RobotAnimationState = (typeof ROBOT_ANIMATION_STATES)[number];
 
-interface BaseTransform {
+interface SpriteTransform {
   readonly x: number;
   readonly y: number;
-  readonly originX: number;
-  readonly originY: number;
-  readonly rotation: number;
+  readonly angle: number;
   readonly scaleX: number;
   readonly scaleY: number;
   readonly alpha: number;
 }
 
-export interface RestingArmPose {
-  readonly x: number;
-  readonly y: number;
-  readonly rotation: number;
-  readonly originX: number;
-  readonly originY: number;
-  readonly scale: number;
-}
-
-interface TexturePoint {
-  readonly x: number;
-  readonly y: number;
-}
-
-interface RobotPoint {
-  readonly x: number;
-  readonly y: number;
-}
-
-type RobotPartName = 'body' | 'head' | 'armLeft' | 'armRight' | 'legLeft' | 'legRight' | 'antenna';
-
-const BODY_TRANSFORM = {
-  x: 0,
-  y: -770,
-  originX: 0.5,
-  originY: 0.082,
-  scale: 0.44,
-  textureWidth: 1254,
-  textureHeight: 1254,
-} as const;
-
-const BODY_SHOULDER_SOCKET_PIXELS: Readonly<Record<'screenLeft' | 'screenRight', TexturePoint>> = {
-  screenLeft: { x: 21, y: 526 },
-  screenRight: { x: 1233, y: 526 },
-};
-
-const ARM_SHOULDER_ROOT_PIXELS: Readonly<Record<'screenLeft' | 'screenRight', TexturePoint>> = {
-  screenLeft: { x: 1006, y: 183 },
-  screenRight: { x: 277, y: 183 },
-};
-
-function bodyTexturePointToRobotPoint(point: TexturePoint): RobotPoint {
-  return {
-    x: BODY_TRANSFORM.x + (point.x - BODY_TRANSFORM.textureWidth * BODY_TRANSFORM.originX) * BODY_TRANSFORM.scale,
-    y: BODY_TRANSFORM.y + (point.y - BODY_TRANSFORM.textureHeight * BODY_TRANSFORM.originY) * BODY_TRANSFORM.scale,
-  };
-}
-
-export const BODY_SHOULDER_ANCHORS: Readonly<Record<'screenLeft' | 'screenRight', RobotPoint>> = {
-  screenLeft: bodyTexturePointToRobotPoint(BODY_SHOULDER_SOCKET_PIXELS.screenLeft),
-  screenRight: bodyTexturePointToRobotPoint(BODY_SHOULDER_SOCKET_PIXELS.screenRight),
-};
-
-export const RESTING_ARM_POSES: Readonly<Record<'screenLeft' | 'screenRight', RestingArmPose>> = {
-  screenLeft: {
-    x: BODY_SHOULDER_ANCHORS.screenLeft.x,
-    y: BODY_SHOULDER_ANCHORS.screenLeft.y,
-    rotation: 4,
-    originX: ARM_SHOULDER_ROOT_PIXELS.screenLeft.x / 1254,
-    originY: ARM_SHOULDER_ROOT_PIXELS.screenLeft.y / 1254,
-    scale: 0.4,
-  },
-  screenRight: {
-    x: BODY_SHOULDER_ANCHORS.screenRight.x,
-    y: BODY_SHOULDER_ANCHORS.screenRight.y,
-    rotation: -4,
-    originX: ARM_SHOULDER_ROOT_PIXELS.screenRight.x / 1254,
-    originY: ARM_SHOULDER_ROOT_PIXELS.screenRight.y / 1254,
-    scale: 0.4,
-  },
-};
-
-const PART_TEXTURES: Readonly<Record<RobotPartName, string>> = {
-  body: 'robot-part-body',
-  head: 'robot-part-head',
-  armLeft: 'robot-part-arm-left',
-  armRight: 'robot-part-arm-right',
-  legLeft: 'robot-part-leg-left',
-  legRight: 'robot-part-leg-right',
-  antenna: 'robot-part-antenna',
-};
+const HELPER_TEXTURE = 'robot-v2-helper';
+const HELPER_SOURCE_HEIGHT = 1534;
+const HELPER_VISIBLE_HEIGHT = 1502;
+const HELPER_BOTTOM_TRANSPARENT_PX = 16;
+const HELPER_LOGICAL_HEIGHT = 1448;
+const HELPER_INTERNAL_SCALE = HELPER_LOGICAL_HEIGHT / HELPER_VISIBLE_HEIGHT;
 
 export class RobotActor extends Phaser.GameObjects.Container {
-  // Kept as an explicit bottom-grounded contract for runtime QA and integrations.
   readonly originX = 0.5;
   readonly originY = 1;
+  readonly sprite: Phaser.GameObjects.Image;
 
-  readonly bodyPart: Phaser.GameObjects.Image;
-  readonly head: Phaser.GameObjects.Image;
-  readonly armLeft: Phaser.GameObjects.Image;
-  readonly armRight: Phaser.GameObjects.Image;
-  readonly legLeft: Phaser.GameObjects.Image;
-  readonly legRight: Phaser.GameObjects.Image;
-  readonly antenna: Phaser.GameObjects.Image;
-
-  private readonly parts: Readonly<Record<RobotPartName, Phaser.GameObjects.Image>>;
-  private readonly baseTransforms = new Map<Phaser.GameObjects.Image, BaseTransform>();
+  private readonly baseTransform: SpriteTransform;
   private idleTweens: Phaser.Tweens.Tween[] = [];
   private reactionTimer?: Phaser.Time.TimerEvent;
   private microTimer?: Phaser.Time.TimerEvent;
   private activeReactionResolve?: () => void;
   private energy: RobotEnergyProfile;
-  private reducedMotion: boolean;
+  private readonly reducedMotion: boolean;
   private currentAnimationState: RobotAnimationState = 'IDLE';
   private disposed = false;
 
@@ -129,60 +43,39 @@ export class RobotActor extends Phaser.GameObjects.Container {
     scene.add.existing(this);
     this.setName('grounded-robot');
 
-    this.legLeft = this.createPart('legLeft', -142, -365, 0.481, 0.024, 0.27);
-    this.legRight = this.createPart('legRight', 142, -365, 0.49, 0.04, 0.29);
-    const screenLeftArmPose = RESTING_ARM_POSES.screenLeft;
-    const screenRightArmPose = RESTING_ARM_POSES.screenRight;
-    this.armRight = this.createPart(
-      'armRight',
-      screenLeftArmPose.x,
-      screenLeftArmPose.y,
-      screenLeftArmPose.originX,
-      screenLeftArmPose.originY,
-      screenLeftArmPose.scale,
-      screenLeftArmPose.rotation,
-    );
-    this.armLeft = this.createPart(
-      'armLeft',
-      screenRightArmPose.x,
-      screenRightArmPose.y,
-      screenRightArmPose.originX,
-      screenRightArmPose.originY,
-      screenRightArmPose.scale,
-      screenRightArmPose.rotation,
-    );
-    this.bodyPart = this.createPart(
-      'body',
-      BODY_TRANSFORM.x,
-      BODY_TRANSFORM.y,
-      BODY_TRANSFORM.originX,
-      BODY_TRANSFORM.originY,
-      BODY_TRANSFORM.scale,
-    );
-    this.head = this.createPart('head', 0, -765, 0.5, 0.869, 0.52);
-    this.antenna = this.createPart('antenna', 0, -1220, 0.5, 0.951, 0.14);
-    this.parts = {
-      body: this.bodyPart,
-      head: this.head,
-      armLeft: this.armLeft,
-      armRight: this.armRight,
-      legLeft: this.legLeft,
-      legRight: this.legRight,
-      antenna: this.antenna,
+    const groundedImageY = HELPER_BOTTOM_TRANSPARENT_PX * HELPER_INTERNAL_SCALE;
+    this.sprite = scene.add.image(0, groundedImageY, HELPER_TEXTURE)
+      .setOrigin(0.5, 1)
+      .setScale(HELPER_INTERNAL_SCALE)
+      .setName('robot-v2-helper-sprite')
+      .setData({
+        characterIdentity: 'MAIN_HELPER',
+        sourceHeight: HELPER_SOURCE_HEIGHT,
+        visibleHeight: HELPER_VISIBLE_HEIGHT,
+      });
+    this.add(this.sprite);
+    this.baseTransform = {
+      x: this.sprite.x,
+      y: this.sprite.y,
+      angle: this.sprite.angle,
+      scaleX: this.sprite.scaleX,
+      scaleY: this.sprite.scaleY,
+      alpha: this.sprite.alpha,
     };
 
-    Object.values(this.parts).forEach((part) => this.captureBase(part));
     this.energy = getRobotEnergyProfile(completedTasks);
     this.reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
-    this.setData('animationState', this.currentAnimationState);
-    this.setData('completedTasks', this.energy.completedTasks);
-    this.setData('bodyShoulderLeftAnchor', BODY_SHOULDER_ANCHORS.screenLeft);
-    this.setData('bodyShoulderRightAnchor', BODY_SHOULDER_ANCHORS.screenRight);
+    this.setData({
+      animationState: this.currentAnimationState,
+      completedTasks: this.energy.completedTasks,
+      characterIdentity: 'MAIN_HELPER',
+      robotV2: true,
+    });
     this.startIdle();
   }
 
   static canCreate(scene: Phaser.Scene): boolean {
-    return Object.values(PART_TEXTURES).every((key) => scene.textures.exists(key));
+    return scene.textures.exists(HELPER_TEXTURE);
   }
 
   setRepairProgress(completedTasks: number): void {
@@ -203,19 +96,23 @@ export class RobotActor extends Phaser.GameObjects.Container {
   }
 
   playThinking(): Promise<void> {
+    const motion = this.reducedMotion ? 0.35 : 1;
     return this.runReaction('THINKING', this.reducedMotion ? 220 : 520, () => {
-      const amount = this.reducedMotion ? 1.5 : 5;
-      this.addReactionTween({ targets: this.head, angle: this.base(this.head).rotation * Phaser.Math.RAD_TO_DEG - amount, duration: 240, yoyo: true });
-      this.addReactionTween({ targets: this.antenna, angle: amount * 0.7, duration: 180, yoyo: true, repeat: 1 });
+      this.addReactionTween({ targets: this.sprite, angle: -3.5 * motion, duration: 240, yoyo: true });
     });
   }
 
   playWrong(): Promise<void> {
+    const motion = this.reducedMotion ? 0.45 : 1;
     return this.runReaction('WRONG', this.reducedMotion ? 260 : 440, () => {
-      const motion = this.reducedMotion ? 0.45 : 1;
-      this.addReactionTween({ targets: this.head, angle: -5 * motion, duration: 180, yoyo: true, ease: 'Sine.easeInOut' });
-      this.addReactionTween({ targets: this.bodyPart, angle: 2.2 * motion, x: this.base(this.bodyPart).x + 7 * motion, duration: 105, yoyo: true, repeat: 1, ease: 'Sine.easeInOut' });
-      this.addReactionTween({ targets: this.antenna, angle: -8 * motion, y: this.base(this.antenna).y + 10 * motion, duration: 170, yoyo: true, ease: 'Sine.easeInOut' });
+      this.addReactionTween({
+        targets: this.sprite,
+        angle: -4.5 * motion,
+        x: this.baseTransform.x - 7 * motion,
+        duration: 105,
+        yoyo: true,
+        repeat: 1,
+      });
     });
   }
 
@@ -223,16 +120,14 @@ export class RobotActor extends Phaser.GameObjects.Container {
     const strength = this.energy.reactionStrength * (this.reducedMotion ? 0.45 : 1);
     return this.runReaction('CORRECT', this.reducedMotion ? 420 : 620, () => {
       this.addActorPulse(8 * strength, 0.018 * strength, this.reducedMotion ? 150 : 190);
-      this.addReactionTween({ targets: this.head, y: this.base(this.head).y - 18 * strength, angle: 3 * strength, duration: 210, yoyo: true, ease: 'Sine.easeOut' });
-      this.addReactionTween({ targets: this.antenna, y: this.base(this.antenna).y - 12 * strength, scaleX: this.base(this.antenna).scaleX * (1 + 0.12 * strength), scaleY: this.base(this.antenna).scaleY * (1 + 0.12 * strength), duration: 140, yoyo: true, repeat: 1 });
+      this.addReactionTween({ targets: this.sprite, angle: 2.5 * strength, duration: 210, yoyo: true });
     });
   }
 
   playHint(): Promise<void> {
+    const motion = this.reducedMotion ? 0.45 : 1;
     return this.runReaction('HINT', this.reducedMotion ? 360 : 520, () => {
-      const motion = this.reducedMotion ? 0.45 : 1;
-      this.addReactionTween({ targets: this.head, angle: -6 * motion, duration: 260, yoyo: true, ease: 'Sine.easeInOut' });
-      this.addReactionTween({ targets: this.antenna, angle: -7 * motion, scaleX: this.base(this.antenna).scaleX * (1 + 0.1 * motion), scaleY: this.base(this.antenna).scaleY * (1 + 0.1 * motion), duration: 150, yoyo: true, repeat: 1 });
+      this.addReactionTween({ targets: this.sprite, angle: -5 * motion, duration: 260, yoyo: true });
     });
   }
 
@@ -240,21 +135,17 @@ export class RobotActor extends Phaser.GameObjects.Container {
     const motion = this.reducedMotion ? 0.4 : 1;
     return this.runReaction('CELEBRATE', this.reducedMotion ? 540 : 760, () => {
       this.addActorPulse(12 * motion, 0.025 * motion, this.reducedMotion ? 160 : 210, 1);
-      this.addReactionTween({ targets: this.head, angle: 5 * motion, y: this.base(this.head).y - 22 * motion, duration: 220, yoyo: true, repeat: 1 });
-      this.addReactionTween({ targets: this.antenna, angle: 9 * motion, y: this.base(this.antenna).y - 15 * motion, scaleX: this.base(this.antenna).scaleX * (1 + 0.16 * motion), scaleY: this.base(this.antenna).scaleY * (1 + 0.16 * motion), duration: 130, yoyo: true, repeat: 2 });
+      this.addReactionTween({ targets: this.sprite, angle: 4 * motion, duration: 220, yoyo: true, repeat: 1 });
     });
   }
 
   restoreBaseTransforms(): void {
     this.killControlledTweens();
-    Object.values(this.parts).forEach((part) => {
-      const base = this.base(part);
-      part.setPosition(base.x, base.y)
-        .setOrigin(base.originX, base.originY)
-        .setRotation(base.rotation)
-        .setScale(base.scaleX, base.scaleY)
-        .setAlpha(base.alpha);
-    });
+    this.sprite
+      .setPosition(this.baseTransform.x, this.baseTransform.y)
+      .setAngle(this.baseTransform.angle)
+      .setScale(this.baseTransform.scaleX, this.baseTransform.scaleY)
+      .setAlpha(this.baseTransform.alpha);
     const baseX = this.getData('baseX') as number | undefined;
     const baseY = this.getData('baseY') as number | undefined;
     const groundedScale = this.getData('groundedScale') as number | undefined;
@@ -273,45 +164,6 @@ export class RobotActor extends Phaser.GameObjects.Container {
     super.destroy(fromScene);
   }
 
-  private createPart(
-    name: RobotPartName,
-    x: number,
-    y: number,
-    originX: number,
-    originY: number,
-    scale: number,
-    angle = 0,
-  ): Phaser.GameObjects.Image {
-    const part = this.scene.add.image(x, y, PART_TEXTURES[name])
-      .setName(`robot-${name}`)
-      .setOrigin(originX, originY)
-      .setScale(scale)
-      .setAngle(angle);
-    this.add(part);
-    return part;
-  }
-
-  private captureBase(part: Phaser.GameObjects.Image): void {
-    const transform = {
-      x: part.x,
-      y: part.y,
-      originX: part.originX,
-      originY: part.originY,
-      rotation: part.rotation,
-      scaleX: part.scaleX,
-      scaleY: part.scaleY,
-      alpha: part.alpha,
-    };
-    this.baseTransforms.set(part, transform);
-    part.setData('baseTransform', transform);
-  }
-
-  private base(part: Phaser.GameObjects.Image): BaseTransform {
-    const base = this.baseTransforms.get(part);
-    if (!base) throw new Error(`Missing RobotActor base transform for ${part.name}`);
-    return base;
-  }
-
   private applyAnimationState(state: RobotAnimationState): void {
     this.currentAnimationState = state;
     this.setData('animationState', state);
@@ -324,9 +176,15 @@ export class RobotActor extends Phaser.GameObjects.Container {
     const amplitude = this.reducedMotion ? 0.6 : this.energy.idleAmplitude;
     const duration = this.energy.idleDurationMs;
     this.idleTweens = [
-      this.scene.tweens.add({ targets: this.bodyPart, y: this.base(this.bodyPart).y - amplitude, duration, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' }),
-      this.scene.tweens.add({ targets: this.head, angle: 1.15 * (this.reducedMotion ? 0.35 : 1), duration: duration * 1.12, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' }),
-      this.scene.tweens.add({ targets: this.antenna, angle: this.energy.antennaAmplitude * (this.reducedMotion ? 0.3 : 1), duration: duration * 0.68, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' }),
+      this.scene.tweens.add({
+        targets: this.sprite,
+        y: this.baseTransform.y - amplitude,
+        angle: 0.7 * (this.reducedMotion ? 0.35 : 1),
+        duration,
+        yoyo: true,
+        repeat: -1,
+        ease: 'Sine.easeInOut',
+      }),
     ];
     this.scheduleMicroReaction();
   }
@@ -341,16 +199,13 @@ export class RobotActor extends Phaser.GameObjects.Container {
   private scheduleMicroReaction(): void {
     this.microTimer?.remove(false);
     if (this.reducedMotion || this.disposed || this.currentAnimationState !== 'IDLE') return;
-    const delay = Phaser.Math.Between(5000, 9000);
-    this.microTimer = this.scene.time.delayedCall(delay, () => this.playMicroReaction());
+    this.microTimer = this.scene.time.delayedCall(Phaser.Math.Between(5000, 9000), () => this.playMicroReaction());
   }
 
   private playMicroReaction(): void {
-    const choice = Phaser.Math.Between(0, 2);
-    this.runReaction('THINKING', 420, () => {
-      if (choice === 0) this.addReactionTween({ targets: this.head, angle: -3.5, duration: 190, yoyo: true });
-      else if (choice === 1) this.addReactionTween({ targets: this.antenna, y: this.base(this.antenna).y - 14, duration: 115, yoyo: true, repeat: 1 });
-      else this.addReactionTween({ targets: this.bodyPart, x: this.base(this.bodyPart).x + 7, duration: 190, yoyo: true });
+    const direction = Phaser.Math.Between(0, 1) === 0 ? -1 : 1;
+    void this.runReaction('THINKING', 420, () => {
+      this.addReactionTween({ targets: this.sprite, angle: 2.2 * direction, duration: 190, yoyo: true });
     });
   }
 
@@ -363,7 +218,6 @@ export class RobotActor extends Phaser.GameObjects.Container {
       duration,
       yoyo: true,
       repeat,
-      ease: 'Sine.easeInOut',
     });
   }
 
@@ -398,6 +252,6 @@ export class RobotActor extends Phaser.GameObjects.Container {
   }
 
   private killControlledTweens(): void {
-    this.scene.tweens.killTweensOf([this, ...Object.values(this.parts)]);
+    this.scene.tweens.killTweensOf([this, this.sprite]);
   }
 }

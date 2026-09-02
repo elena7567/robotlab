@@ -419,7 +419,7 @@ export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7Sce
     const boardY = layout.gameplayZone.y + 18;
     return {
       showHeader: false,
-      showHelper: true,
+      showHelper: false,
       systems: { x: width / 2, y: layout.statusY, width: systemsWidth },
       board: {
         x: layout.gameplayZone.x,
@@ -448,7 +448,7 @@ export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7Sce
     const boardWidth = layout.gameplayZone.width - hintWidth - layout.gapM;
     return {
       showHeader: false,
-      showHelper: true,
+      showHelper: false,
       systems: { x: width / 2, y: layout.headerY, width: systemsWidth },
       board: { x: safe.left, y: layout.gameplayZone.y + 18, width: boardWidth, height: height - safe.bottom - layout.gameplayZone.y - 18 },
       helper: {
@@ -470,19 +470,21 @@ export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7Sce
   const boardTop = systemsY + 43 + layout.gapS;
   const hintHeight = 54;
   const boardBottom = height - safe.bottom - hintHeight - layout.gapS;
-  const boardWidth = Math.min(tabletPortrait ? 700 : 720, width - safe.left - safe.right - (tabletPortrait ? 0 : 300));
+  const boardWidth = Math.min(tabletPortrait ? 540 : 720, width - safe.left - safe.right - (tabletPortrait ? 180 : 300));
   const boardHeight = Math.max(330, boardBottom - boardTop);
-  const actorZoneHeight = Math.max(1, boardHeight);
-  const robotScale = characterScaleForRole('HELPER', actorZoneHeight);
-  const actorInset = fluidValue(105, width, 0.095, 150);
+  const helperVisibleHeight = height * (tabletPortrait ? 0.158 : 0.223);
+  const repairedVisibleHeight = height * (tabletPortrait ? 0.145 : 0.205);
+  const helperScale = helperVisibleHeight / 1448;
+  const repairedScale = repairedVisibleHeight / 1402;
+  const actorInset = tabletPortrait ? 70 : fluidValue(105, width, 0.095, 150);
   return {
     showHeader: semanticMode === 'DESKTOP',
-    showHelper: !tabletPortrait,
+    showHelper: true,
     systems: { x: width / 2, y: systemsY, width: systemsWidth },
     board: { x: (width - boardWidth) / 2, y: boardTop, width: boardWidth, height: boardHeight },
-    helper: { x: safe.left + actorInset, feetY: height - safe.bottom, scale: robotScale },
-    repaired: { x: width - safe.right - actorInset, feetY: height - safe.bottom, scale: robotScale },
-    showRepaired: !tabletPortrait,
+    helper: { x: safe.left + actorInset, feetY: height - safe.bottom, scale: helperScale },
+    repaired: { x: width - safe.right - actorInset, feetY: height - safe.bottom, scale: repairedScale },
+    showRepaired: true,
     hint: { x: width / 2, y: height - safe.bottom - hintHeight / 2, width: 220, height: hintHeight, fontSize: 19 },
   };
 }
