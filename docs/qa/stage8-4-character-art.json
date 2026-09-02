@@ -1,0 +1,4500 @@
+{
+  "results": [
+    {
+      "name": "start-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "StartScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-start-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "StartScene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "start-hero-robot",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 173.9792276964048,
+            "height": 338.25619174434087
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": null,
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "StartScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "start-hero-robot",
+              "role": "HERO",
+              "height": 338,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "start-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "start-title",
+              "x": 441,
+              "y": 41.25000000000003,
+              "width": 398,
+              "height": 66
+            },
+            {
+              "name": "start-subtitle",
+              "x": 447.5,
+              "y": 128.83,
+              "width": 385,
+              "height": 28
+            },
+            {
+              "name": "start-play-button",
+              "x": 592,
+              "y": 540.3699951171875,
+              "width": 96,
+              "height": 32
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "start-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "StartScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-start-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "StartScene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "start-hero-robot",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 167.99081225033285,
+            "height": 326.6133155792277
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": null,
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "StartScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "start-hero-robot",
+              "role": "HERO",
+              "height": 327,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "start-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "start-title",
+              "x": 64.5,
+              "y": 121.96600000000001,
+              "width": 261,
+              "height": 45
+            },
+            {
+              "name": "start-subtitle",
+              "x": 38.5,
+              "y": 186.24325000000002,
+              "width": 313,
+              "height": 25
+            },
+            {
+              "name": "start-play-button",
+              "x": 156.5,
+              "y": 590.2365112304688,
+              "width": 77,
+              "height": 26
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission1-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission1-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 191.75450495117866,
+            "height": 372.7866346614106
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.35305418074131,
+            "height": 42.28494444489479
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 29.8297256603837,
+            "height": 42.38961014896631
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 34.853679455816746,
+            "height": 39.04030761867767
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.27234227210283,
+            "height": 39.14497332274908
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.529581271111965,
+            "height": 39.87763325124979
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 67.71871053427458,
+            "height": 47.72756105661392
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.363155253231525,
+            "height": 34.53968234360218
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 30.35305418074131,
+            "height": 42.28494444489479
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 29.8297256603837,
+            "height": 42.38961014896631
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 34.853679455816746,
+            "height": 39.04030761867767
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 35.27234227210283,
+            "height": 39.14497332274908
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": false,
+            "width": 45.529581271111965,
+            "height": 39.87763325124979
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 67.71871053427458,
+            "height": 47.72756105661392
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 19.363155253231525,
+            "height": 34.53968234360218
+          }
+        ],
+        "old": [],
+        "assemblyState": 0,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 191.75450495117866,
+          "height": 372.7866346614106,
+          "ratio": 0.5143813836709644
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 544.1328326867035,
+            "y": 191.1047874997251,
+            "width": 191.75450495117866,
+            "height": 372.7866346614106,
+            "right": 735.8873376378822,
+            "bottom": 563.8914221611357
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 373,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 529,
+              "y": 36.28,
+              "width": 222,
+              "height": 34
+            },
+            {
+              "name": "task-card",
+              "x": 25.200000000000003,
+              "y": 92.94746666666667,
+              "width": 358.40000000000003,
+              "height": 479.56453333333343
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission1-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission1-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 122.59714641216198,
+            "height": 238.33900351763884
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 25.667301267385483,
+            "height": 35.75720590353012
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 25.224761590361595,
+            "height": 35.8457138389349
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 29.473142489790916,
+            "height": 33.01345990598202
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 29.827174231410027,
+            "height": 33.101967841386795
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 38.500951901078224,
+            "height": 33.72152338922024
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 57.26463420689106,
+            "height": 40.35961854457855
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 16.373968049883842,
+            "height": 29.207618683576584
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 25.667301267385483,
+            "height": 35.75720590353012
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 25.224761590361595,
+            "height": 35.8457138389349
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 29.473142489790916,
+            "height": 33.01345990598202
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 29.827174231410027,
+            "height": 33.101967841386795
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": false,
+            "width": 38.500951901078224,
+            "height": 33.72152338922024
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 57.26463420689106,
+            "height": 40.35961854457855
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 16.373968049883842,
+            "height": 29.207618683576584
+          }
+        ],
+        "old": [],
+        "assemblyState": 0,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 122.59714641216198,
+          "height": 238.33900351763884,
+          "ratio": 0.5143813836709646
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 133.7078746847705,
+            "y": 586.9696337033829,
+            "width": 122.59714641216198,
+            "height": 238.33900351763884,
+            "right": 256.3050210969325,
+            "bottom": 825.3086372210217
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 238,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission1-360x640",
+      "width": 360,
+      "height": 640,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission1-360x640.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 360,
+          "height": 640
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 88.5022326538589,
+            "height": 172.05545000775362
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 25.479491651058197,
+            "height": 35.49556767940521
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 25.04019007086754,
+            "height": 35.583427995443344
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 29.25748524069786,
+            "height": 32.77189788222313
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 29.608926504850388,
+            "height": 32.85975819826126
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 38.219237476587296,
+            "height": 33.47478041052818
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 56.84562447667122,
+            "height": 40.06430411338806
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 16.254158467054367,
+            "height": 28.993904292583466
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 25.479491651058197,
+            "height": 35.49556767940521
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 25.04019007086754,
+            "height": 35.583427995443344
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 29.25748524069786,
+            "height": 32.77189788222313
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 29.608926504850388,
+            "height": 32.85975819826126
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": false,
+            "width": 38.219237476587296,
+            "height": 33.47478041052818
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 56.84562447667122,
+            "height": 40.06430411338806
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 16.254158467054367,
+            "height": 28.993904292583466
+          }
+        ],
+        "old": [],
+        "assemblyState": 0,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 88.5022326538589,
+          "height": 172.05545000775362,
+          "ratio": 0.514382035848737
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 135.75361465237572,
+            "y": 452.8021392065799,
+            "width": 88.5022326538589,
+            "height": 172.05545000775362,
+            "right": 224.2558473062346,
+            "bottom": 624.8575892143335
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 172,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 17.599998474121094,
+              "y": 28.599998474121094,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 285.3999938964844,
+              "y": 28.599998474121094,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 12.600000000000023,
+              "y": 113.05,
+              "width": 334.79999999999995,
+              "height": 341.54999999999995
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission1-landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission1-landscape-844x390.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 103.86684777923193,
+            "height": 201.92600609475664
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 22.527657821774483,
+            "height": 31.383357793092728
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 22.139249928295612,
+            "height": 31.4610393717885
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 25.867965705692768,
+            "height": 28.97522885352373
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 26.178692020475864,
+            "height": 29.052910432219534
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 33.791486732661724,
+            "height": 29.596681483089924
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 50.25998141616583,
+            "height": 35.42279988527298
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 14.371092058718204,
+            "height": 25.634920969605446
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 22.527657821774483,
+            "height": 31.383357793092728
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 22.139249928295612,
+            "height": 31.4610393717885
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 25.867965705692768,
+            "height": 28.97522885352373
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 26.178692020475864,
+            "height": 29.052910432219534
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": false,
+            "width": 33.791486732661724,
+            "height": 29.596681483089924
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 50.25998141616583,
+            "height": 35.42279988527298
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 14.371092058718204,
+            "height": 25.634920969605446
+          }
+        ],
+        "old": [],
+        "assemblyState": 0,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 103.86684777923193,
+          "height": 201.92600609475664,
+          "ratio": 0.5143807367263578
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 370.0719500916522,
+            "y": 103.51516229267475,
+            "width": 103.86684777923193,
+            "height": 201.92600609475664,
+            "right": 473.9387978708841,
+            "bottom": 305.4411683874314
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 202,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 13.650000000000002,
+              "y": 61.83000000000001,
+              "width": 523.28,
+              "height": 314.52
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission1-tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission1-tablet-768x1024.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 172.5793429062627,
+            "height": 335.5081065797808
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 28.22834149003029,
+            "height": 39.32499986886978
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 27.741645947098732,
+            "height": 39.42233897745609
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 32.413923159241676,
+            "height": 36.30748750269413
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 32.80327959358692,
+            "height": 36.40482661128044
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 42.34251223504543,
+            "height": 37.08620037138462
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 62.97840325534344,
+            "height": 44.38663351535797
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 18.007735088467598,
+            "height": 32.12190583348274
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 28.22834149003029,
+            "height": 39.32499986886978
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 27.741645947098732,
+            "height": 39.42233897745609
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 32.413923159241676,
+            "height": 36.30748750269413
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 32.80327959358692,
+            "height": 36.40482661128044
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": false,
+            "width": 42.34251223504543,
+            "height": 37.08620037138462
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 62.97840325534344,
+            "height": 44.38663351535797
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 18.007735088467598,
+            "height": 32.12190583348274
+          }
+        ],
+        "old": [],
+        "assemblyState": 0,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 172.5793429062627,
+          "height": 335.5081065797808,
+          "ratio": 0.514382035848737
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 297.71955395593807,
+            "y": 571.0941970524407,
+            "width": 172.5793429062627,
+            "height": 335.5081065797808,
+            "right": 470.29889686220076,
+            "bottom": 906.6023036322215
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 335,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 26.880000000000003,
+              "y": 107.716,
+              "width": 430,
+              "height": 440.00399999999996
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission1-wide-1438x914",
+      "width": 1438,
+      "height": 914,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission1-wide-1438x914.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 1438,
+          "height": 914
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 215.42401871217783,
+            "height": 418.8023931188171
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 34.09975901246071,
+            "height": 47.50449186563492
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 33.511832132935524,
+            "height": 47.622077241539955
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 39.1559301763773,
+            "height": 43.85934521257877
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 39.626271679997444,
+            "height": 43.97693058848381
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 51.14963851869106,
+            "height": 44.80002821981907
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 76.07773821055889,
+            "height": 53.61893141269684
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 21.75329454243183,
+            "height": 38.803174048662186
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 34.09975901246071,
+            "height": 47.50449186563492
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 33.511832132935524,
+            "height": 47.622077241539955
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 39.1559301763773,
+            "height": 43.85934521257877
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 39.626271679997444,
+            "height": 43.97693058848381
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": false,
+            "width": 51.14963851869106,
+            "height": 44.80002821981907
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 76.07773821055889,
+            "height": 53.61893141269684
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 21.75329454243183,
+            "height": 38.803174048662186
+          }
+        ],
+        "old": [],
+        "assemblyState": 0,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 215.42401871217783,
+          "height": 418.8023931188171,
+          "ratio": 0.514381059544377
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 611.2992284042557,
+            "y": 267.2568465433775,
+            "width": 215.42401871217783,
+            "height": 418.8023931188171,
+            "right": 826.7232471164335,
+            "bottom": 686.0592396621946
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 419,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 603,
+              "y": 41,
+              "width": 232,
+              "height": 36
+            },
+            {
+              "name": "task-card",
+              "x": 28,
+              "y": 108.28,
+              "width": 400,
+              "height": 501
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission2-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission2-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 122.59790188530164,
+            "height": 238.33939205795025
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 25.667301267385483,
+            "height": 35.75720590353012
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 25.224761590361595,
+            "height": 35.8457138389349
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 29.473142489790916,
+            "height": 33.01345990598202
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 29.827174231410027,
+            "height": 33.101967841386795
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 38.500951901078224,
+            "height": 33.72152338922024
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 57.26463420689106,
+            "height": 40.35961854457855
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 16.373968049883842,
+            "height": 29.207618683576584
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 25.667301267385483,
+            "height": 35.75720590353012
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 25.224761590361595,
+            "height": 35.8457138389349
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 29.473142489790916,
+            "height": 33.01345990598202
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 29.827174231410027,
+            "height": 33.101967841386795
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 38.500951901078224,
+            "height": 33.72152338922024
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": false,
+            "width": 57.26463420689106,
+            "height": 40.35961854457855
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 16.373968049883842,
+            "height": 29.207618683576584
+          }
+        ],
+        "old": [],
+        "assemblyState": 1,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 122.59790188530164,
+          "height": 238.33939205795025,
+          "ratio": 0.5143837148644441
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 133.70787469559124,
+            "y": 586.9693677714127,
+            "width": 122.59790188530164,
+            "height": 238.33939205795025,
+            "right": 256.3057765808929,
+            "bottom": 825.308759829363
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 238,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission3-tablet",
+      "width": 768,
+      "height": 1024,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission3-tablet.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 172.58253248579354,
+            "height": 335.50974697302775
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 28.22834149003029,
+            "height": 39.32499986886978
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 27.741645947098732,
+            "height": 39.42233897745609
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 32.413923159241676,
+            "height": 36.30748750269413
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 32.80327959358692,
+            "height": 36.40482661128044
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 42.34251223504543,
+            "height": 37.08620037138462
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 62.97840325534344,
+            "height": 44.38663351535797
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 18.007735088467598,
+            "height": 32.12190583348274
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": false,
+            "width": 28.22834149003029,
+            "height": 39.32499986886978
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": false,
+            "width": 27.741645947098732,
+            "height": 39.42233897745609
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 32.413923159241676,
+            "height": 36.30748750269413
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 32.80327959358692,
+            "height": 36.40482661128044
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 42.34251223504543,
+            "height": 37.08620037138462
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 62.97840325534344,
+            "height": 44.38663351535797
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 18.007735088467598,
+            "height": 32.12190583348274
+          }
+        ],
+        "old": [],
+        "assemblyState": 2,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 172.58253248579354,
+          "height": 335.50974697302775,
+          "ratio": 0.5143890275702415
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 297.71955400494954,
+            "y": 571.0930743081353,
+            "width": 172.58253248579354,
+            "height": 335.50974697302775,
+            "right": 470.3020864907431,
+            "bottom": 906.6028212811631
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 335,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 26.880000000000003,
+              "y": 107.716,
+              "width": 430,
+              "height": 440.00399999999996
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission4-landscape",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission4-landscape.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 103.8692092165183,
+            "height": 201.92722057756419
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 22.527657821774483,
+            "height": 31.383357793092728
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 22.139249928295612,
+            "height": 31.4610393717885
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 25.867965705692768,
+            "height": 28.97522885352373
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 26.178692020475864,
+            "height": 29.052910432219534
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 33.791486732661724,
+            "height": 29.596681483089924
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 50.25998141616583,
+            "height": 35.42279988527298
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 14.371092058718204,
+            "height": 25.634920969605446
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 22.527657821774483,
+            "height": 31.383357793092728
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 22.139249928295612,
+            "height": 31.4610393717885
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": false,
+            "width": 25.867965705692768,
+            "height": 28.97522885352373
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": false,
+            "width": 26.178692020475864,
+            "height": 29.052910432219534
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 33.791486732661724,
+            "height": 29.596681483089924
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 50.25998141616583,
+            "height": 35.42279988527298
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 14.371092058718204,
+            "height": 25.634920969605446
+          }
+        ],
+        "old": [],
+        "assemblyState": 3,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 103.8692092165183,
+          "height": 201.92722057756419,
+          "ratio": 0.514389337502024
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 370.0719501275299,
+            "y": 103.5143310563351,
+            "width": 103.8692092165183,
+            "height": 201.92722057756419,
+            "right": 473.9411593440482,
+            "bottom": 305.4415516338993
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 202,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 13.650000000000002,
+              "y": 61.83000000000001,
+              "width": 523.28,
+              "height": 314.52
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission5-assembly-4of5",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission5-assembly-4of5.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 191.7673925449169,
+            "height": 372.79326261015115
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.35305418074131,
+            "height": 42.28494444489479
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 29.8297256603837,
+            "height": 42.38961014896631
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 34.853679455816746,
+            "height": 39.04030761867767
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.27234227210283,
+            "height": 39.14497332274908
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.529581271111965,
+            "height": 39.87763325124979
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 67.71871053427458,
+            "height": 47.72756105661392
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.363155253231525,
+            "height": 34.53968234360218
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.35305418074131,
+            "height": 42.28494444489479
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 29.8297256603837,
+            "height": 42.38961014896631
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 34.853679455816746,
+            "height": 39.04030761867767
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.27234227210283,
+            "height": 39.14497332274908
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.529581271111965,
+            "height": 39.87763325124979
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 67.71871053427458,
+            "height": 47.72756105661392
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": false,
+            "width": 19.363155253231525,
+            "height": 34.53968234360218
+          }
+        ],
+        "old": [],
+        "assemblyState": 4,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 191.7673925449169,
+          "height": 372.79326261015115,
+          "ratio": 0.5144068087557092
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 544.1328329233376,
+            "y": 191.10025113990855,
+            "width": 191.7673925449169,
+            "height": 372.79326261015115,
+            "right": 735.9002254682545,
+            "bottom": 563.8935137500597
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 373,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 529,
+              "y": 36.28,
+              "width": 222,
+              "height": 34
+            },
+            {
+              "name": "memory-task-card",
+              "x": 25.200000000000003,
+              "y": 92.94746666666667,
+              "width": 358.40000000000003,
+              "height": 479.56453333333343
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission5-completed-5of5",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission5-completed-5of5.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 191.7705781912132,
+            "height": 372.7949009027411
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.35305418074131,
+            "height": 42.28494444489479
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 29.8297256603837,
+            "height": 42.38961014896631
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 34.853679455816746,
+            "height": 39.04030761867767
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.27234227210283,
+            "height": 39.14497332274908
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.529581271111965,
+            "height": 39.87763325124979
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 67.71871053427458,
+            "height": 47.72756105661392
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.363155253231525,
+            "height": 34.53968234360218
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.35305418074131,
+            "height": 42.28494444489479
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 29.8297256603837,
+            "height": 42.38961014896631
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 34.853679455816746,
+            "height": 39.04030761867767
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.27234227210283,
+            "height": 39.14497332274908
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.529581271111965,
+            "height": 39.87763325124979
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 67.71871053427458,
+            "height": 47.72756105661392
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.363155253231525,
+            "height": 34.53968234360218
+          }
+        ],
+        "old": [],
+        "assemblyState": 5,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 191.7705781912132,
+          "height": 372.7949009027411,
+          "ratio": 0.5144130934377894
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 544.1328329994948,
+            "y": 191.09912986675045,
+            "width": 191.7705781912132,
+            "height": 372.7949009027411,
+            "right": 735.903411190708,
+            "bottom": 563.8940307694916
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 373,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 529,
+              "y": 36.28,
+              "width": 222,
+              "height": 34
+            },
+            {
+              "name": "memory-task-card",
+              "x": 25.200000000000003,
+              "y": 92.94746666666667,
+              "width": 358.40000000000003,
+              "height": 479.56453333333343
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission5-transition-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "TransitionScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission5-transition-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "TransitionScene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 118.68099669765088,
+            "height": 230.71190752769292
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 45.24000093340874,
+            "height": 63.02400130033493
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 44.46000091731548,
+            "height": 63.18000130355358
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 51.948001071810666,
+            "height": 58.188001200556755
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 52.572001084685326,
+            "height": 58.344001203775406
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 67.8600014001131,
+            "height": 59.43600122630596
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 100.93200208246708,
+            "height": 71.13600146770477
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 28.8600005954504,
+            "height": 51.48000106215477
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 45.24000093340874,
+            "height": 63.02400130033493
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 44.46000091731548,
+            "height": 63.18000130355358
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 51.948001071810666,
+            "height": 58.188001200556755
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 52.572001084685326,
+            "height": 58.344001203775406
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 67.8600014001131,
+            "height": 59.43600122630596
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 100.93200208246708,
+            "height": 71.13600146770477
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 28.8600005954504,
+            "height": 51.48000106215477
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 118.68099669765088,
+          "height": 230.71190752769292,
+          "ratio": 0.5144120993555797
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 60.67056096601998,
+            "y": 524.0479213622244,
+            "width": 118.68099669765088,
+            "height": 230.71190752769292,
+            "right": 179.35155766367086,
+            "bottom": 754.7598288899173
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "TransitionScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HERO",
+              "height": 231,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "HERO",
+              "height": 219,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 55.5,
+              "y": 133.28000000000003,
+              "width": 279,
+              "height": 45
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 68,
+              "y": 184.69800000000004,
+              "width": 254,
+              "height": 25
+            },
+            {
+              "name": "transition-continue",
+              "x": 120,
+              "y": 785.8499755859375,
+              "width": 150,
+              "height": 23
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission6-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "Mission6Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission6-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission6Scene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 82.68708148249112,
+            "height": 160.74164552075183
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 31.519672498106956,
+            "height": 43.91016444563866
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 30.97622986882925,
+            "height": 44.0188529714942
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 36.19327910989523,
+            "height": 40.54082014411688
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 36.628033213317394,
+            "height": 40.64950866997242
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 47.279508747160435,
+            "height": 41.41032835096121
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 70.32147622853518,
+            "height": 49.5619677901268
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 20.107377283275127,
+            "height": 35.867213532328606
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 31.519672498106956,
+            "height": 43.91016444563866
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 30.97622986882925,
+            "height": 44.0188529714942
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 36.19327910989523,
+            "height": 40.54082014411688
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 36.628033213317394,
+            "height": 40.64950866997242
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 47.279508747160435,
+            "height": 41.41032835096121
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 70.32147622853518,
+            "height": 49.5619677901268
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 20.107377283275127,
+            "height": 35.867213532328606
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 82.68708148249112,
+          "height": 160.74164552075183,
+          "ratio": 0.5144098233821812
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 75.34425178522974,
+            "y": 663.7579485965598,
+            "width": 82.68708148249112,
+            "height": 160.74164552075183,
+            "right": 158.03133326772087,
+            "bottom": 824.4995941173116
+          },
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "Mission6Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 161,
+              "readable": true
+            },
+            {
+              "name": "mission6-repaired-robot",
+              "role": "HERO",
+              "height": 152,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission6-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission6-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 105.5,
+              "y": 91.2300033569336,
+              "width": 179,
+              "height": 16
+            },
+            {
+              "name": "energy-task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission7-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission7-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 84.3579557720664,
+            "height": 163.98887513436705
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.530669763684273,
+            "height": 42.53238132596016
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 30.004278905689716,
+            "height": 42.63765949755907
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 35.05763114243746,
+            "height": 39.26875800639391
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.4787438288331,
+            "height": 39.37403617799282
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.79600464552641,
+            "height": 40.1109833791852
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 68.1149770244956,
+            "height": 48.006846249103546
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.476461745798588,
+            "height": 34.741796627640724
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.530669763684273,
+            "height": 42.53238132596016
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 30.004278905689716,
+            "height": 42.63765949755907
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 35.05763114243746,
+            "height": 39.26875800639391
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.4787438288331,
+            "height": 39.37403617799282
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 45.79600464552641,
+            "height": 40.1109833791852
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 68.1149770244956,
+            "height": 48.006846249103546
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.476461745798588,
+            "height": 34.741796627640724
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 84.3579557720664,
+          "height": 163.98887513436705,
+          "ratio": 0.5144126740484456
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 104.62895014323139,
+            "y": 532.5240444970614,
+            "width": 84.3579557720664,
+            "height": 163.98887513436705,
+            "right": 188.9869059152978,
+            "bottom": 696.5129196314284
+          },
+          "repaired": {
+            "x": 1079.3322691098601,
+            "y": 547.1999912112951,
+            "width": 107.35215157940979,
+            "height": 147.59999658167362,
+            "right": 1186.68442068927,
+            "bottom": 694.7999877929688
+          }
+        },
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 164,
+              "readable": true
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "height": 148,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission7-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission7-header",
+              "x": 517,
+              "y": 33.78,
+              "width": 246,
+              "height": 39
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 106.36000061035156,
+              "width": 107,
+              "height": 40
+            },
+            {
+              "name": "connection-task-card",
+              "x": 280,
+              "y": 161.36,
+              "width": 720,
+              "height": 465.43999999999994
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 584.5,
+              "y": 655.7999877929688,
+              "width": 111,
+              "height": 22
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission7-wide-1438x914",
+      "width": 1438,
+      "height": 914,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission7-wide-1438x914.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 1438,
+          "height": 914
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 107.08692680285506,
+            "height": 208.17434258695084
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 38.75698894262314,
+            "height": 53.99249494075775
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 38.08876499533653,
+            "height": 54.12613973021507
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 44.50371488928795,
+            "height": 49.849506467580795
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 45.03829404711723,
+            "height": 49.98315125703812
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 58.13548341393471,
+            "height": 50.918664783239365
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 86.4681787788868,
+            "height": 60.94202399253845
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 24.724286049604416,
+            "height": 44.102780520915985
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 38.75698894262314,
+            "height": 53.99249494075775
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 38.08876499533653,
+            "height": 54.12613973021507
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 44.50371488928795,
+            "height": 49.849506467580795
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 45.03829404711723,
+            "height": 49.98315125703812
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 58.13548341393471,
+            "height": 50.918664783239365
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 86.4681787788868,
+            "height": 60.94202399253845
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 24.724286049604416,
+            "height": 44.102780520915985
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 107.08692680285506,
+          "height": 208.17434258695084,
+          "ratio": 0.5144098233821812
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 111.07619405794341,
+            "y": 679.9999981686682,
+            "width": 107.08692680285506,
+            "height": 208.17434258695084,
+            "right": 218.16312086079847,
+            "bottom": 888.174340755619
+          },
+          "repaired": {
+            "x": 1205.00798522681,
+            "y": 698.6300051808357,
+            "width": 136.2775918096304,
+            "height": 187.36999481916428,
+            "right": 1341.2855770364404,
+            "bottom": 886
+          }
+        },
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 208,
+              "readable": true
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "height": 187,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission7-sound",
+              "x": 1337,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission7-header",
+              "x": 591,
+              "y": 38.5,
+              "width": 256,
+              "height": 41
+            },
+            {
+              "name": "systems-progress",
+              "x": 665.5,
+              "y": 115,
+              "width": 107,
+              "height": 40
+            },
+            {
+              "name": "connection-task-card",
+              "x": 359,
+              "y": 170,
+              "width": 720,
+              "height": 648
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 663.5,
+              "y": 847,
+              "width": 111,
+              "height": 22
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission7-tablet-768x1024",
+      "width": 768,
+      "height": 1024,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission7-tablet-768x1024.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 85.00563525110412,
+            "height": 165.2473828542344
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.71269527077675,
+            "height": 42.78596168756485
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 30.183166041970253,
+            "height": 42.89186753332615
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 35.26664663851261,
+            "height": 39.50288046896458
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.69027002155781,
+            "height": 39.608786314725876
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 46.06904290616512,
+            "height": 40.35012723505497
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 68.52108220756054,
+            "height": 48.293065667152405
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.59258146584034,
+            "height": 34.948929101228714
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 30.71269527077675,
+            "height": 42.78596168756485
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 30.183166041970253,
+            "height": 42.89186753332615
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 35.26664663851261,
+            "height": 39.50288046896458
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 35.69027002155781,
+            "height": 39.608786314725876
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 46.06904290616512,
+            "height": 40.35012723505497
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 68.52108220756054,
+            "height": 48.293065667152405
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 19.59258146584034,
+            "height": 34.948929101228714
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 85.00563525110412,
+          "height": 165.2473828542344,
+          "ratio": 0.514414411791853
+        },
+        "mission7Actors": {
+          "helper": {
+            "x": 54.38536064943112,
+            "y": 833.5987510081076,
+            "width": 85.00563525110412,
+            "height": 165.2473828542344,
+            "right": 139.39099590053524,
+            "bottom": 998.846133862342
+          },
+          "repaired": {
+            "x": 616.9311510165036,
+            "y": 848.6399993598461,
+            "width": 107.99219092279668,
+            "height": 148.47999575734138,
+            "right": 724.9233419393003,
+            "bottom": 997.1199951171875
+          }
+        },
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "HELPER",
+              "height": 165,
+              "readable": true
+            },
+            {
+              "name": "mission7-repaired-robot",
+              "role": "HERO",
+              "height": 148,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission7-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 266,
+              "y": 58.87999725341797,
+              "width": 236,
+              "height": 16
+            },
+            {
+              "name": "connection-task-card",
+              "x": 116.88,
+              "y": 106.88,
+              "width": 534.24,
+              "height": 822.24
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 328.5,
+              "y": 958.1199951171875,
+              "width": 111,
+              "height": 22
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission7-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission7-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 53.25397214522948,
+            "height": 103.52440743664496
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 0,
+            "height": 0
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": {
+          "width": 53.25397214522948,
+          "height": 103.52440743664496,
+          "ratio": 0.514409823382181
+        },
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission7-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 77,
+              "y": 91.2300033569336,
+              "width": 236,
+              "height": 16
+            },
+            {
+              "name": "connection-task-card",
+              "x": 13.650000000000002,
+              "y": 125.81,
+              "width": 362.70000000000005,
+              "height": 639.96
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 143.5,
+              "y": 790.8499755859375,
+              "width": 103,
+              "height": 21
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission8-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "Mission8Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission8-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission8Scene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 21.94236733019352,
+            "height": 30.567987591028214
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 21.564050652086735,
+            "height": 30.64365092664957
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 25.19589076191187,
+            "height": 28.222424186766148
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 25.498544104397297,
+            "height": 28.298087522387505
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 32.91355099529028,
+            "height": 28.827730871737003
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 48.954178147017956,
+            "height": 34.502481043338776
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 13.997717089951038,
+            "height": 24.968900755047798
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 21.94236733019352,
+            "height": 30.567987591028214
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 21.564050652086735,
+            "height": 30.64365092664957
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 25.19589076191187,
+            "height": 28.222424186766148
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 25.498544104397297,
+            "height": 28.298087522387505
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 32.91355099529028,
+            "height": 28.827730871737003
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 48.954178147017956,
+            "height": 34.502481043338776
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 13.997717089951038,
+            "height": 24.968900755047798
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": {
+          "width": 77.15390333309773,
+          "height": 106.07999654114246
+        },
+        "groundedRobot": null,
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 106,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission8-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission8-header",
+              "x": 438,
+              "y": 34.28,
+              "width": 404,
+              "height": 38
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 109.44000244140625,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 315,
+              "y": 183.44,
+              "width": 650,
+              "height": 296.35999999999996
+            },
+            {
+              "name": "programming-instruction",
+              "x": 350,
+              "y": 154.44,
+              "width": 580,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 404,
+              "y": 477.79998779296875,
+              "width": 376,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 425,
+              "y": 649.7999877929688,
+              "width": 94,
+              "height": 18
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 570.5,
+              "y": 649.7999877929688,
+              "width": 75,
+              "height": 18
+            },
+            {
+              "name": "programming-run-button",
+              "x": 727.5,
+              "y": 649.2999877929688,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission8-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "Mission8Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission8-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission8Scene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "robots": [
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 15.949999913573265,
+            "height": 22.219999879598618
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 15.674999915063381,
+            "height": 22.274999879300594
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 18.314999900758266,
+            "height": 20.514999888837337
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 18.534999899566174,
+            "height": 20.569999888539314
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 23.924999870359898,
+            "height": 20.95499988645315
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 35.584999807178974,
+            "height": 25.07999986410141
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 10.174999944865704,
+            "height": 18.149999901652336
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 15.949999913573265,
+            "height": 22.219999879598618
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 15.674999915063381,
+            "height": 22.274999879300594
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 18.314999900758266,
+            "height": 20.514999888837337
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 18.534999899566174,
+            "height": 20.569999888539314
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 23.924999870359898,
+            "height": 20.95499988645315
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 35.584999807178974,
+            "height": 25.07999986410141
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 10.174999944865704,
+            "height": 18.149999901652336
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": {
+          "width": 56.08349969610572,
+          "height": 77.10999958217144
+        },
+        "groundedRobot": null,
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 77,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 89.5,
+              "y": 91.2300033569336,
+              "width": 211,
+              "height": 16
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 148.81,
+              "width": 362.70000000000005,
+              "height": 453.52000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 75,
+              "y": 119.81,
+              "width": 240,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 83,
+              "y": 610.9099731445312,
+              "width": 224,
+              "height": 55
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 15.150001525878906,
+              "y": 792.3499755859375,
+              "width": 94,
+              "height": 18
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 133.64999389648438,
+              "y": 792.3499755859375,
+              "width": 75,
+              "height": 18
+            },
+            {
+              "name": "programming-run-button",
+              "x": 255.5,
+              "y": 791.8499755859375,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "victory-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "VictoryScene",
+      "file": "docs\\qa\\screenshots\\stage8-4-victory-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "VictoryScene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "victory-robot",
+            "texture": "robot-v2-helper",
+            "visible": true,
+            "width": 173.34886817576563,
+            "height": 337.03062583222373
+          },
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 58.617843985557556,
+            "height": 81.66072058677673
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 57.60719150304794,
+            "height": 81.86285108327866
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 67.30945533514023,
+            "height": 75.39467519521713
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 68.11797732114792,
+            "height": 75.59680569171906
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 87.92676597833633,
+            "height": 77.01171916723251
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 130.77843123674393,
+            "height": 92.17150640487671
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 37.39414185285568,
+            "height": 66.70306384563446
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 58.617843985557556,
+            "height": 81.66072058677673
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 57.60719150304794,
+            "height": 81.86285108327866
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 67.30945533514023,
+            "height": 75.39467519521713
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 68.11797732114792,
+            "height": 75.59680569171906
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 87.92676597833633,
+            "height": 77.01171916723251
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 130.77843123674393,
+            "height": 92.17150640487671
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 37.39414185285568,
+            "height": 66.70306384563446
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": null,
+        "groundedRobot": null,
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "VictoryScene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "victory-home",
+              "x": 702.7000122070312,
+              "y": 644.4199829101562,
+              "width": 123,
+              "height": 25
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatches": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "expectedAssemblyState": true,
+        "boardActorReadable": true
+      }
+    },
+    {
+      "name": "mission8-robot-on-charger",
+      "file": "docs\\qa\\screenshots\\stage8-4-mission8-robot-on-charger.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission8Scene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "robots": [
+          {
+            "name": "assembly-blueprint-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 21.94236733019352,
+            "height": 30.567987591028214
+          },
+          {
+            "name": "assembly-blueprint-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 21.564050652086735,
+            "height": 30.64365092664957
+          },
+          {
+            "name": "assembly-blueprint-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 25.19589076191187,
+            "height": 28.222424186766148
+          },
+          {
+            "name": "assembly-blueprint-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 25.498544104397297,
+            "height": 28.298087522387505
+          },
+          {
+            "name": "assembly-blueprint-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 32.91355099529028,
+            "height": 28.827730871737003
+          },
+          {
+            "name": "assembly-blueprint-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 48.954178147017956,
+            "height": 34.502481043338776
+          },
+          {
+            "name": "assembly-blueprint-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 13.997717089951038,
+            "height": 24.968900755047798
+          },
+          {
+            "name": "assembly-installed-legLeft",
+            "texture": "robot-v2-leg-left",
+            "visible": true,
+            "width": 21.94236733019352,
+            "height": 30.567987591028214
+          },
+          {
+            "name": "assembly-installed-legRight",
+            "texture": "robot-v2-leg-right",
+            "visible": true,
+            "width": 21.564050652086735,
+            "height": 30.64365092664957
+          },
+          {
+            "name": "assembly-installed-armRight",
+            "texture": "robot-v2-arm-right",
+            "visible": true,
+            "width": 25.19589076191187,
+            "height": 28.222424186766148
+          },
+          {
+            "name": "assembly-installed-armLeft",
+            "texture": "robot-v2-arm-left",
+            "visible": true,
+            "width": 25.498544104397297,
+            "height": 28.298087522387505
+          },
+          {
+            "name": "assembly-installed-body",
+            "texture": "robot-v2-body",
+            "visible": true,
+            "width": 32.91355099529028,
+            "height": 28.827730871737003
+          },
+          {
+            "name": "assembly-installed-head",
+            "texture": "robot-v2-head",
+            "visible": true,
+            "width": 48.954178147017956,
+            "height": 34.502481043338776
+          },
+          {
+            "name": "assembly-installed-antenna",
+            "texture": "robot-v2-antenna",
+            "visible": true,
+            "width": 13.997717089951038,
+            "height": 24.968900755047798
+          }
+        ],
+        "old": [],
+        "assemblyState": null,
+        "boardRobot": {
+          "width": 77.15390333309767,
+          "height": 106.07999654114246
+        },
+        "groundedRobot": null,
+        "mission7Actors": {
+          "helper": null,
+          "repaired": null
+        },
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 106,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission8-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission8-header",
+              "x": 438,
+              "y": 34.28,
+              "width": 404,
+              "height": 38
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 109.44000244140625,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 315,
+              "y": 183.44,
+              "width": 650,
+              "height": 296.35999999999996
+            },
+            {
+              "name": "programming-instruction",
+              "x": 350,
+              "y": 154.44,
+              "width": 580,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 404,
+              "y": 477.79998779296875,
+              "width": 376,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 425,
+              "y": 649.7999877929688,
+              "width": 94,
+              "height": 18
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 570.5,
+              "y": 649.7999877929688,
+              "width": 75,
+              "height": 18
+            },
+            {
+              "name": "programming-run-button",
+              "x": 727.5,
+              "y": 649.2999877929688,
+              "width": 97,
+              "height": 19
+            }
+          ]
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "oldRobotTexturesAbsent": true,
+        "robotV2Present": true,
+        "boardActorReadable": true
+      }
+    }
+  ],
+  "orientation": {
+    "name": "portrait-landscape-portrait",
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "samples": [
+      {
+        "width": 122.627856888655,
+        "height": 238.35479651544335,
+        "ratio": 0.5144761451473865
+      },
+      {
+        "width": 103.86266627846334,
+        "height": 201.92385550685378,
+        "ratio": 0.5143655068280825
+      },
+      {
+        "width": 122.59175772544202,
+        "height": 238.33623206157813,
+        "ratio": 0.5143647554760722
+      }
+    ],
+    "checks": {
+      "browserClean": true,
+      "robotPresent": true,
+      "ratioStable": true,
+      "portraitRestored": true
+    }
+  },
+  "failures": []
+}
