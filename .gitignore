@@ -5,3 +5,19 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
+
+# Security hardening
+build/
+.cache/
+.tmp/
+coverage/
+.env
+.env.*
+auth.json
+credentials*
+secrets*
+*.pem
+*.key
+.npmrc
+.netrc
+desktop.ini
