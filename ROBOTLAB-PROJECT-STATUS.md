@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.3O Mission 2 visible task-first enlargement
+Stage 8.4 Character Art Migration v2 — Mission 7 character review follow-up
 
 ## CURRENT STATUS
 
-READY_FOR_FRESH_PAGE_RECHECK — the first Mission 2 enlargement was technically present but not visually substantial enough. The corrected phone-landscape composition now expands the task card from the former 360 px side column to 523.28 px at 844×390, uses 88 px answer frames, hides the assembly panel and robot speech, and keeps wrong feedback outside all choices. Fresh-page focused QA and production build pass.
+READY_FOR_MISSION7_CHARACTER_REVIEW — Robot v2 production art is active. Mission 7 desktop now uses measured readable side-character heights with a 1.111 helper/repaired hierarchy; tablet uses a slightly smaller 1.113 hierarchy; phone keeps the mechanic clear of miniature full-body robots. The helper extraction halo at the collar was removed in the production PNG and alpha bounds were re-normalized. Manual approval remains pending; no commit or push was performed.
 
 ## CANONICAL LOCAL URL
 
@@ -40,6 +40,16 @@ LOCKED
 ## MISSION 6–10
 
 MISSIONS 6–8 IMPLEMENTED; MISSIONS 9–10 DESIGN ONLY / NOT IMPLEMENTED
+
+## STAGE 8.4 — CHARACTER ART MIGRATION V2 / MISSION 7 FOLLOW-UP (2026-08-31)
+
+- The fixed Robot v2 references were preserved under `docs/references/robot-style-v2/`; runtime-ready helper, repaired, duo, and seven modular assembly assets were created under `public/assets/characters/robot-v2/` with semantic `robot-v2-*` Phaser keys. Old robot assets remain on disk as rollback fallback and are not active runtime consumers.
+- The helper is the dark-visor antenna identity. The repaired robot is the white-face identity assembled from the disassembled source. The locked 5/5 mechanic still installs an antenna, which remains a documented story/art mismatch against the canonical antenna-free repaired reference; gameplay was not redesigned.
+- Mission 7 manual failure evidence showed desktop characters reading as miniatures and a translucent circular collar/neck extraction artifact. The helper production PNG was alpha-cleaned at source level, re-trimmed to `789×1534` with a `757×1502` visible-alpha region and 16 px safety padding, preserving antenna and feet baselines.
+- Mission 7 measured visible bounds at 1280×720: helper `163.99 px` (22.8% viewport height), repaired `147.60 px` (20.5%), ratio `1.111`. At 1438×914: `208.17/187.37 px`, ratio `1.111`. At 768×1024: `165.25/148.48 px`, ratio `1.113`. Phone 390×844 hides both full-body side actors to protect the wire mechanic.
+- Focused and regression browser QA PASS: 23 fresh-page cases, required 360×640, 390×844, 844×390, 768×1024, 1280×720, and 1438×914 profiles, Mission 1–8 character states, Mission 8 charger arrival, Victory, and portrait→landscape→portrait. Browser console/page/request/response failures: none; old active robot textures: none; orientation ratio remained stable.
+- Evidence: `qa/stage8-4-character-art-playtest.cjs`, `docs/qa/stage8-4-character-art.json`, and `docs/qa/screenshots/stage8-4-*.png`. Required Mission 7 review captures: `stage8-4-mission7-desktop.png`, `stage8-4-mission7-wide-1438x914.png`, `stage8-4-mission7-tablet-768x1024.png`, and `stage8-4-mission7-phone.png`.
+- Files moved or deleted: none. No commit or push was performed. Status is review-ready, not final visual approval.
 
 ## STAGE 8.3O — MISSION 2 VISIBLE TASK-FIRST ENLARGEMENT (2026-08-31)
 
