@@ -7,7 +7,8 @@ import { addControl, addIconControl } from '../ui/controls';
 import { ConnectionTaskCard } from '../ui/ConnectionTaskCard';
 import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
-import { createMission7SceneLayout, createResponsiveLayout } from '../ui/responsiveLayout';
+import { createResponsiveLayout } from '../ui/responsiveLayout';
+import { composeScene } from '../ui/sceneCompositionDirector';
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
@@ -22,7 +23,9 @@ export class Mission7Scene extends Phaser.Scene {
     const { width, height } = this.scale;
     const layout = createResponsiveLayout(width, height);
     this.game.registry.set('responsiveLayout', layout);
-    const missionLayout = createMission7SceneLayout(layout);
+    const sceneComposition = composeScene(layout, 7);
+    const missionLayout = sceneComposition.mission7!;
+    this.game.registry.set('sceneComposition', sceneComposition);
     const portrait = layout.mode !== 'landscape';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const session = sessionState.snapshot;
@@ -49,7 +52,9 @@ export class Mission7Scene extends Phaser.Scene {
       groundedScale: missionLayout.helper.scale,
       platformContactX: missionLayout.helper.x,
       platformContactY: missionLayout.helper.feetY,
-      characterRole: 'HELPER',
+      characterRole: missionLayout.showHelper ? 'SUPPORTING_CHARACTER' : 'HIDDEN_FOR_MECHANIC_FOCUS',
+      compositionRegion: 'SECONDARY_CHARACTER',
+      visibleBoundsId: 'ROBOT_V2_HELPER',
     });
     helper?.setVisible(missionLayout.showHelper);
     const repaired = new RobotAssemblyPreview(this, missionLayout.repaired.x, missionLayout.repaired.feetY, 5, {
@@ -61,7 +66,9 @@ export class Mission7Scene extends Phaser.Scene {
       groundedScale: missionLayout.repaired.scale,
       platformContactX: missionLayout.repaired.x,
       platformContactY: missionLayout.repaired.feetY,
-      characterRole: 'HERO',
+      characterRole: missionLayout.showRepaired ? 'PRIMARY_CHARACTER' : 'HIDDEN_FOR_MECHANIC_FOCUS',
+      compositionRegion: 'CHARACTER',
+      visibleBoundsId: 'ROBOT_V2_ASSEMBLED',
     });
     repaired.setPowered(true);
     repaired.setSystemsConnected(session.connectionsCompleted);

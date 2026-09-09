@@ -269,7 +269,7 @@ async function orientationProbe(browser) {
 
 (async () => {
   fs.mkdirSync(outputDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const matrix = [];
   const requestedViewport = process.env.ROBOTLAB_QA_VIEWPORT;
   const requestedMission = Number(process.env.ROBOTLAB_QA_MISSION || 0);

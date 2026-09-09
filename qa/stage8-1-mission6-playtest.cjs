@@ -254,7 +254,6 @@ async function runViewport(browser, [name, width, height, touch]) {
   fs.mkdirSync(screenshotDir, { recursive: true });
   const browser = await chromium.launch({
     headless: true,
-    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     args: ['--autoplay-policy=user-gesture-required'],
   });
   const matrix = [];

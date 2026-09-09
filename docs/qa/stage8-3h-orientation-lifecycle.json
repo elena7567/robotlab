@@ -48,7 +48,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -110,11 +110,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -172,7 +172,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -234,11 +234,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -296,7 +296,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -358,11 +358,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -420,7 +420,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -482,11 +482,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -544,7 +544,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -606,11 +606,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -668,7 +668,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -746,10 +746,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -762,39 +792,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -804,7 +804,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -860,10 +860,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -876,39 +906,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -918,11 +918,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -974,10 +974,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -990,39 +1020,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1032,7 +1032,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -1088,10 +1088,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1104,39 +1134,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1146,11 +1146,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -1202,10 +1202,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1218,39 +1248,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1260,7 +1260,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -1316,10 +1316,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1332,39 +1362,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1374,11 +1374,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -1430,10 +1430,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1446,39 +1476,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1488,7 +1488,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -1544,10 +1544,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1560,39 +1590,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1602,11 +1602,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -1658,10 +1658,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1674,39 +1704,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1716,7 +1716,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -1772,10 +1772,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1788,39 +1818,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1830,11 +1830,11 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "x": 640,
-              "y": 560,
-              "scaleX": 0.252,
-              "scaleY": 0.252
+              "role": "PRIMARY_CHARACTER",
+              "x": 1105.249,
+              "y": 671.575,
+              "scaleX": 0.283,
+              "scaleY": 0.283
             }
           ],
           "ports": [],
@@ -1886,10 +1886,40 @@
           "mechanic": {
             "cards": [
               {
+                "id": "apple-0",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_UP"
+              },
+              {
+                "id": "battery-0",
+                "pairId": "battery",
+                "textureKey": "size-battery",
+                "state": "FACE_DOWN"
+              },
+              {
                 "id": "star-0",
                 "pairId": "star",
                 "textureKey": "sequence-star",
-                "state": "FACE_UP"
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-0",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "banana-1",
+                "pairId": "banana",
+                "textureKey": "odd-banana",
+                "state": "FACE_DOWN"
+              },
+              {
+                "id": "apple-1",
+                "pairId": "apple",
+                "textureKey": "odd-apple",
+                "state": "FACE_DOWN"
               },
               {
                 "id": "battery-1",
@@ -1902,39 +1932,9 @@
                 "pairId": "star",
                 "textureKey": "sequence-star",
                 "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-1",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-0",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "apple-0",
-                "pairId": "apple",
-                "textureKey": "odd-apple",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "banana-1",
-                "pairId": "banana",
-                "textureKey": "odd-banana",
-                "state": "FACE_DOWN"
-              },
-              {
-                "id": "battery-0",
-                "pairId": "battery",
-                "textureKey": "size-battery",
-                "state": "FACE_DOWN"
               }
             ],
-            "firstCardId": "star-0",
+            "firstCardId": "apple-0",
             "secondCardId": null,
             "matchedPairs": 0,
             "totalPairs": 4,
@@ -1944,7 +1944,7 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
+              "role": "PRIMARY_CHARACTER",
               "x": 640,
               "y": 560,
               "scaleX": 0.252,
@@ -2044,17 +2044,17 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
               "x": 195,
-              "y": 347.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "y": 765.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 376.35,
-              "y": 0,
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 195,
+              "y": 765.77,
               "scaleX": 0,
               "scaleY": 0
             }
@@ -2163,50 +2163,50 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 754.39,
-              "y": 314.35,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 0,
-              "y": 0,
-              "scaleX": 0,
-              "scaleY": 0
+              "role": "PRIMARY_CHARACTER",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0.124,
+              "scaleY": 0.124
             }
           ],
           "ports": [
             {
               "name": "connection-source-red",
-              "x": 68.332,
+              "x": 60.273,
               "y": 98.5
             },
             {
               "name": "connection-source-blue",
-              "x": 68.332,
+              "x": 60.273,
               "y": 169.986
             },
             {
               "name": "connection-source-green",
-              "x": 68.332,
+              "x": 60.273,
               "y": 241.473
             },
             {
               "name": "connection-target-blue",
-              "x": 582.448,
+              "x": 513.751,
               "y": 98.5
             },
             {
               "name": "connection-target-green",
-              "x": 582.448,
+              "x": 513.751,
               "y": 169.986
             },
             {
               "name": "connection-target-red",
-              "x": 582.448,
+              "x": 513.751,
               "y": 241.473
             }
           ],
@@ -2282,17 +2282,17 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
               "x": 195,
-              "y": 347.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "y": 765.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 376.35,
-              "y": 0,
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 195,
+              "y": 765.77,
               "scaleX": 0,
               "scaleY": 0
             }
@@ -2401,50 +2401,50 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 754.39,
-              "y": 314.35,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 0,
-              "y": 0,
-              "scaleX": 0,
-              "scaleY": 0
+              "role": "PRIMARY_CHARACTER",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0.124,
+              "scaleY": 0.124
             }
           ],
           "ports": [
             {
               "name": "connection-source-red",
-              "x": 68.332,
+              "x": 60.273,
               "y": 98.5
             },
             {
               "name": "connection-source-blue",
-              "x": 68.332,
+              "x": 60.273,
               "y": 169.986
             },
             {
               "name": "connection-source-green",
-              "x": 68.332,
+              "x": 60.273,
               "y": 241.473
             },
             {
               "name": "connection-target-blue",
-              "x": 582.448,
+              "x": 513.751,
               "y": 98.5
             },
             {
               "name": "connection-target-green",
-              "x": 582.448,
+              "x": 513.751,
               "y": 169.986
             },
             {
               "name": "connection-target-red",
-              "x": 582.448,
+              "x": 513.751,
               "y": 241.473
             }
           ],
@@ -2520,17 +2520,17 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
               "x": 195,
-              "y": 347.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "y": 765.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 376.35,
-              "y": 0,
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 195,
+              "y": 765.77,
               "scaleX": 0,
               "scaleY": 0
             }
@@ -2639,50 +2639,50 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 754.39,
-              "y": 314.35,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 0,
-              "y": 0,
-              "scaleX": 0,
-              "scaleY": 0
+              "role": "PRIMARY_CHARACTER",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0.124,
+              "scaleY": 0.124
             }
           ],
           "ports": [
             {
               "name": "connection-source-red",
-              "x": 68.332,
+              "x": 60.273,
               "y": 98.5
             },
             {
               "name": "connection-source-blue",
-              "x": 68.332,
+              "x": 60.273,
               "y": 169.986
             },
             {
               "name": "connection-source-green",
-              "x": 68.332,
+              "x": 60.273,
               "y": 241.473
             },
             {
               "name": "connection-target-blue",
-              "x": 582.448,
+              "x": 513.751,
               "y": 98.5
             },
             {
               "name": "connection-target-green",
-              "x": 582.448,
+              "x": 513.751,
               "y": 169.986
             },
             {
               "name": "connection-target-red",
-              "x": 582.448,
+              "x": 513.751,
               "y": 241.473
             }
           ],
@@ -2758,17 +2758,17 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
               "x": 195,
-              "y": 347.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "y": 765.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 376.35,
-              "y": 0,
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 195,
+              "y": 765.77,
               "scaleX": 0,
               "scaleY": 0
             }
@@ -2877,50 +2877,50 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 754.39,
-              "y": 314.35,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 0,
-              "y": 0,
-              "scaleX": 0,
-              "scaleY": 0
+              "role": "PRIMARY_CHARACTER",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0.124,
+              "scaleY": 0.124
             }
           ],
           "ports": [
             {
               "name": "connection-source-red",
-              "x": 68.332,
+              "x": 60.273,
               "y": 98.5
             },
             {
               "name": "connection-source-blue",
-              "x": 68.332,
+              "x": 60.273,
               "y": 169.986
             },
             {
               "name": "connection-source-green",
-              "x": 68.332,
+              "x": 60.273,
               "y": 241.473
             },
             {
               "name": "connection-target-blue",
-              "x": 582.448,
+              "x": 513.751,
               "y": 98.5
             },
             {
               "name": "connection-target-green",
-              "x": 582.448,
+              "x": 513.751,
               "y": 169.986
             },
             {
               "name": "connection-target-red",
-              "x": 582.448,
+              "x": 513.751,
               "y": 241.473
             }
           ],
@@ -2996,17 +2996,17 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
               "x": 195,
-              "y": 347.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "y": 765.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 376.35,
-              "y": 0,
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 195,
+              "y": 765.77,
               "scaleX": 0,
               "scaleY": 0
             }
@@ -3115,50 +3115,50 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 754.39,
-              "y": 314.35,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 0,
-              "y": 0,
-              "scaleX": 0,
-              "scaleY": 0
+              "role": "PRIMARY_CHARACTER",
+              "x": 716.012,
+              "y": 315.77,
+              "scaleX": 0.124,
+              "scaleY": 0.124
             }
           ],
           "ports": [
             {
               "name": "connection-source-red",
-              "x": 68.332,
+              "x": 60.273,
               "y": 98.5
             },
             {
               "name": "connection-source-blue",
-              "x": 68.332,
+              "x": 60.273,
               "y": 169.986
             },
             {
               "name": "connection-source-green",
-              "x": 68.332,
+              "x": 60.273,
               "y": 241.473
             },
             {
               "name": "connection-target-blue",
-              "x": 582.448,
+              "x": 513.751,
               "y": 98.5
             },
             {
               "name": "connection-target-green",
-              "x": 582.448,
+              "x": 513.751,
               "y": 169.986
             },
             {
               "name": "connection-target-red",
-              "x": 582.448,
+              "x": 513.751,
               "y": 241.473
             }
           ],
@@ -3234,17 +3234,17 @@
           "robots": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
               "x": 195,
-              "y": 347.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "y": 765.77,
+              "scaleX": 0,
+              "scaleY": 0
             },
             {
               "name": "mission7-repaired-robot",
-              "role": "HERO",
-              "x": 376.35,
-              "y": 0,
+              "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+              "x": 195,
+              "y": 765.77,
               "scaleX": 0,
               "scaleY": 0
             }
@@ -3389,18 +3389,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.35,
-              "y": 290.888,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 328.35,
-              "y": 264.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.436,
+              "y": 281.754,
+              "scaleX": 0.047,
+              "scaleY": 0.047
             }
           ],
           "ports": [],
@@ -3496,18 +3488,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 68,
-              "y": 225.343,
-              "scaleX": 0.06,
-              "scaleY": 0.06
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 445.65,
-              "y": 186.23,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 71.966,
+              "y": 235.552,
+              "scaleX": 0.067,
+              "scaleY": 0.067
             }
           ],
           "ports": [],
@@ -3603,18 +3587,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.35,
-              "y": 290.888,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 328.35,
-              "y": 264.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.436,
+              "y": 281.754,
+              "scaleX": 0.047,
+              "scaleY": 0.047
             }
           ],
           "ports": [],
@@ -3710,18 +3686,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 68,
-              "y": 225.343,
-              "scaleX": 0.06,
-              "scaleY": 0.06
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 445.65,
-              "y": 186.23,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 71.966,
+              "y": 235.552,
+              "scaleX": 0.067,
+              "scaleY": 0.067
             }
           ],
           "ports": [],
@@ -3817,18 +3785,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.35,
-              "y": 290.888,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 328.35,
-              "y": 264.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.436,
+              "y": 281.754,
+              "scaleX": 0.047,
+              "scaleY": 0.047
             }
           ],
           "ports": [],
@@ -3924,18 +3884,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 68,
-              "y": 225.343,
-              "scaleX": 0.06,
-              "scaleY": 0.06
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 445.65,
-              "y": 186.23,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 71.966,
+              "y": 235.552,
+              "scaleX": 0.067,
+              "scaleY": 0.067
             }
           ],
           "ports": [],
@@ -4031,18 +3983,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.35,
-              "y": 290.888,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 328.35,
-              "y": 264.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.436,
+              "y": 281.754,
+              "scaleX": 0.047,
+              "scaleY": 0.047
             }
           ],
           "ports": [],
@@ -4138,18 +4082,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 68,
-              "y": 225.343,
-              "scaleX": 0.06,
-              "scaleY": 0.06
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 445.65,
-              "y": 186.23,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 71.966,
+              "y": 235.552,
+              "scaleX": 0.067,
+              "scaleY": 0.067
             }
           ],
           "ports": [],
@@ -4245,18 +4181,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.35,
-              "y": 290.888,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 328.35,
-              "y": 264.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.436,
+              "y": 281.754,
+              "scaleX": 0.047,
+              "scaleY": 0.047
             }
           ],
           "ports": [],
@@ -4352,18 +4280,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 68,
-              "y": 225.343,
-              "scaleX": 0.06,
-              "scaleY": 0.06
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 445.65,
-              "y": 186.23,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 71.966,
+              "y": 235.552,
+              "scaleX": 0.067,
+              "scaleY": 0.067
             }
           ],
           "ports": [],
@@ -4459,18 +4379,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.35,
-              "y": 290.888,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 328.35,
-              "y": 264.81,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.436,
+              "y": 281.754,
+              "scaleX": 0.047,
+              "scaleY": 0.047
             }
           ],
           "ports": [],
@@ -4590,18 +4502,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 58.08,
-              "y": 319.562,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 349.58,
-              "y": 266.548,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 58.171,
+              "y": 310.456,
+              "scaleX": 0.05,
+              "scaleY": 0.05
             }
           ],
           "ports": [],
@@ -4697,18 +4601,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 76.08,
-              "y": 249.123,
-              "scaleX": 0.07,
-              "scaleY": 0.07
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 516.58,
-              "y": 187.484,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 77.375,
+              "y": 254.182,
+              "scaleX": 0.073,
+              "scaleY": 0.073
             }
           ],
           "ports": [],
@@ -4804,18 +4700,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 58.08,
-              "y": 319.562,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 349.58,
-              "y": 266.548,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 58.171,
+              "y": 310.456,
+              "scaleX": 0.05,
+              "scaleY": 0.05
             }
           ],
           "ports": [],
@@ -4911,18 +4799,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 76.08,
-              "y": 249.123,
-              "scaleX": 0.07,
-              "scaleY": 0.07
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 516.58,
-              "y": 187.484,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 77.375,
+              "y": 254.182,
+              "scaleX": 0.073,
+              "scaleY": 0.073
             }
           ],
           "ports": [],
@@ -5018,18 +4898,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 58.08,
-              "y": 319.562,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 349.58,
-              "y": 266.548,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 58.171,
+              "y": 310.456,
+              "scaleX": 0.05,
+              "scaleY": 0.05
             }
           ],
           "ports": [],
@@ -5125,18 +4997,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 76.08,
-              "y": 249.123,
-              "scaleX": 0.07,
-              "scaleY": 0.07
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 516.58,
-              "y": 187.484,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 77.375,
+              "y": 254.182,
+              "scaleX": 0.073,
+              "scaleY": 0.073
             }
           ],
           "ports": [],
@@ -5232,18 +5096,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 58.08,
-              "y": 319.562,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 349.58,
-              "y": 266.548,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 58.171,
+              "y": 310.456,
+              "scaleX": 0.05,
+              "scaleY": 0.05
             }
           ],
           "ports": [],
@@ -5339,18 +5195,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 76.08,
-              "y": 249.123,
-              "scaleX": 0.07,
-              "scaleY": 0.07
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 516.58,
-              "y": 187.484,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 77.375,
+              "y": 254.182,
+              "scaleX": 0.073,
+              "scaleY": 0.073
             }
           ],
           "ports": [],
@@ -5446,18 +5294,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 58.08,
-              "y": 319.562,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 349.58,
-              "y": 266.548,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 58.171,
+              "y": 310.456,
+              "scaleX": 0.05,
+              "scaleY": 0.05
             }
           ],
           "ports": [],
@@ -5553,18 +5393,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 76.08,
-              "y": 249.123,
-              "scaleX": 0.07,
-              "scaleY": 0.07
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 516.58,
-              "y": 187.484,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 77.375,
+              "y": 254.182,
+              "scaleX": 0.073,
+              "scaleY": 0.073
             }
           ],
           "ports": [],
@@ -5660,18 +5492,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 58.08,
-              "y": 319.562,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 349.58,
-              "y": 266.548,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 58.171,
+              "y": 310.456,
+              "scaleX": 0.05,
+              "scaleY": 0.05
             }
           ],
           "ports": [],
@@ -5791,18 +5615,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.245,
-              "y": 294.424,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 331.245,
-              "y": 265.047,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.332,
+              "y": 285.296,
+              "scaleX": 0.048,
+              "scaleY": 0.048
             }
           ],
           "ports": [],
@@ -5898,18 +5714,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 69,
-              "y": 228.238,
-              "scaleX": 0.061,
-              "scaleY": 0.061
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 453.755,
-              "y": 186.401,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 72.96,
+              "y": 237.699,
+              "scaleX": 0.068,
+              "scaleY": 0.068
             }
           ],
           "ports": [],
@@ -6005,18 +5813,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.245,
-              "y": 294.424,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 331.245,
-              "y": 265.047,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.332,
+              "y": 285.296,
+              "scaleX": 0.048,
+              "scaleY": 0.048
             }
           ],
           "ports": [],
@@ -6112,18 +5912,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 69,
-              "y": 228.238,
-              "scaleX": 0.061,
-              "scaleY": 0.061
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 453.755,
-              "y": 186.401,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 72.96,
+              "y": 237.699,
+              "scaleX": 0.068,
+              "scaleY": 0.068
             }
           ],
           "ports": [],
@@ -6219,18 +6011,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.245,
-              "y": 294.424,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 331.245,
-              "y": 265.047,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.332,
+              "y": 285.296,
+              "scaleX": 0.048,
+              "scaleY": 0.048
             }
           ],
           "ports": [],
@@ -6326,18 +6110,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 69,
-              "y": 228.238,
-              "scaleX": 0.061,
-              "scaleY": 0.061
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 453.755,
-              "y": 186.401,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 72.96,
+              "y": 237.699,
+              "scaleX": 0.068,
+              "scaleY": 0.068
             }
           ],
           "ports": [],
@@ -6433,18 +6209,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.245,
-              "y": 294.424,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 331.245,
-              "y": 265.047,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.332,
+              "y": 285.296,
+              "scaleX": 0.048,
+              "scaleY": 0.048
             }
           ],
           "ports": [],
@@ -6540,18 +6308,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 69,
-              "y": 228.238,
-              "scaleX": 0.061,
-              "scaleY": 0.061
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 453.755,
-              "y": 186.401,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 72.96,
+              "y": 237.699,
+              "scaleX": 0.068,
+              "scaleY": 0.068
             }
           ],
           "ports": [],
@@ -6647,18 +6407,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.245,
-              "y": 294.424,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 331.245,
-              "y": 265.047,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.332,
+              "y": 285.296,
+              "scaleX": 0.048,
+              "scaleY": 0.048
             }
           ],
           "ports": [],
@@ -6754,18 +6506,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 69,
-              "y": 228.238,
-              "scaleX": 0.061,
-              "scaleY": 0.061
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 453.755,
-              "y": 186.401,
-              "scaleX": 0.065,
-              "scaleY": 0.065
+              "x": 72.96,
+              "y": 237.699,
+              "scaleX": 0.068,
+              "scaleY": 0.068
             }
           ],
           "ports": [],
@@ -6861,18 +6605,10 @@
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "x": 55.245,
-              "y": 294.424,
-              "scaleX": 0.055,
-              "scaleY": 0.055
-            },
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "x": 331.245,
-              "y": 265.047,
-              "scaleX": 0.07,
-              "scaleY": 0.07
+              "x": 55.332,
+              "y": 285.296,
+              "scaleX": 0.048,
+              "scaleY": 0.048
             }
           ],
           "ports": [],

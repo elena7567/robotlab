@@ -358,7 +358,7 @@ async function fullFlow(browser) {
 
 (async () => {
   fs.mkdirSync(screenshotDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', args: ['--autoplay-policy=user-gesture-required'] });
+  const browser = await chromium.launch({ headless: true, args: ['--autoplay-policy=user-gesture-required'] });
   const matrix = []; for (const viewport of viewports) matrix.push(await responsiveRun(browser, viewport));
   const interactions = await interactionRun(browser); const safety = await safetyRun(browser); const touch = await touchFlow(browser); const flow = await fullFlow(browser); await browser.close();
   const failures = [

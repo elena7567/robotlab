@@ -24,46 +24,46 @@
           {
             "name": "memory-card-battery-0",
             "width": 74.67500000000001,
-            "height": 115.58333333333334
-          },
-          {
-            "name": "memory-card-banana-0",
-            "width": 74.67500000000001,
-            "height": 115.58333333333334
-          },
-          {
-            "name": "memory-card-apple-0",
-            "width": 74.67500000000001,
-            "height": 115.58333333333334
-          },
-          {
-            "name": "memory-card-star-1",
-            "width": 74.67500000000001,
-            "height": 115.58333333333334
+            "height": 81.7
           },
           {
             "name": "memory-card-banana-1",
             "width": 74.67500000000001,
-            "height": 115.58333333333334
+            "height": 81.7
+          },
+          {
+            "name": "memory-card-apple-0",
+            "width": 74.67500000000001,
+            "height": 81.7
           },
           {
             "name": "memory-card-star-0",
             "width": 74.67500000000001,
-            "height": 115.58333333333334
+            "height": 81.7
+          },
+          {
+            "name": "memory-card-star-1",
+            "width": 74.67500000000001,
+            "height": 81.7
           },
           {
             "name": "memory-card-apple-1",
             "width": 74.67500000000001,
-            "height": 115.58333333333334
+            "height": 81.7
+          },
+          {
+            "name": "memory-card-banana-0",
+            "width": 74.67500000000001,
+            "height": 81.7
           },
           {
             "name": "memory-card-battery-1",
             "width": 74.67500000000001,
-            "height": 115.58333333333334
+            "height": 81.7
           },
           {
             "name": "memory-hint-button",
-            "width": 158,
+            "width": 124,
             "height": 70.66666666666666
           }
         ],
@@ -97,15 +97,230 @@
         "boundsAudit": {
           "scene": "GameScene",
           "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_5_PHONE_PORTRAIT_TALL",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [
+            {
+              "name": "memory-card-battery-0",
+              "role": "MEMORY_CARD",
+              "x": 30.650003051757807,
+              "y": 296.8599914550781,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-battery-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 37.68714176118374,
+              "y": 297.0701703876257,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-banana-1",
+              "role": "MEMORY_CARD",
+              "x": 115.32499084472656,
+              "y": 296.8599914550781,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-banana-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 122.36212955415249,
+              "y": 297.0701703876257,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-apple-0",
+              "role": "MEMORY_CARD",
+              "x": 199.99999389648437,
+              "y": 296.8599914550781,
+              "width": 74.67499999999998,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-apple-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 207.0371326059103,
+              "y": 297.0701703876257,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-star-0",
+              "role": "MEMORY_CARD",
+              "x": 284.67498168945315,
+              "y": 296.8599914550781,
+              "width": 74.67499999999995,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-star-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 291.71212039887905,
+              "y": 297.0701703876257,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-star-1",
+              "role": "MEMORY_CARD",
+              "x": 30.650003051757807,
+              "y": 388.56000366210935,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-star-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 37.68714176118374,
+              "y": 388.77018259465694,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-apple-1",
+              "role": "MEMORY_CARD",
+              "x": 115.32499084472656,
+              "y": 388.56000366210935,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-apple-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 122.36212955415249,
+              "y": 388.77018259465694,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-banana-0",
+              "role": "MEMORY_CARD",
+              "x": 199.99999389648437,
+              "y": 388.56000366210935,
+              "width": 74.67499999999998,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-banana-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 207.0371326059103,
+              "y": 388.77018259465694,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-card-battery-1",
+              "role": "MEMORY_CARD",
+              "x": 284.67498168945315,
+              "y": 388.56000366210935,
+              "width": 74.67499999999995,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-cover-battery-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 291.71212039887905,
+              "y": 388.77018259465694,
+              "width": 60.60072258114815,
+              "height": 79.70000244677067
+            },
+            {
+              "name": "memory-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 243.35000610351562,
+              "y": 505.1433512369792,
+              "width": 116,
+              "height": 62.666666666666686
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "memory-card-battery-0",
+              "role": "MEMORY_CARD",
+              "x": 30.650003051757807,
+              "y": 296.8599914550781,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-banana-1",
+              "role": "MEMORY_CARD",
+              "x": 115.32499084472656,
+              "y": 296.8599914550781,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-apple-0",
+              "role": "MEMORY_CARD",
+              "x": 199.99999389648437,
+              "y": 296.8599914550781,
+              "width": 74.67499999999998,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-star-0",
+              "role": "MEMORY_CARD",
+              "x": 284.67498168945315,
+              "y": 296.8599914550781,
+              "width": 74.67499999999995,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-star-1",
+              "role": "MEMORY_CARD",
+              "x": 30.650003051757807,
+              "y": 388.56000366210935,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-apple-1",
+              "role": "MEMORY_CARD",
+              "x": 115.32499084472656,
+              "y": 388.56000366210935,
+              "width": 74.67500000000001,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-banana-0",
+              "role": "MEMORY_CARD",
+              "x": 199.99999389648437,
+              "y": 388.56000366210935,
+              "width": 74.67499999999998,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-card-battery-1",
+              "role": "MEMORY_CARD",
+              "x": 284.67498168945315,
+              "y": 388.56000366210935,
+              "width": 74.67499999999995,
+              "height": 81.70000000000005
+            },
+            {
+              "name": "memory-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 239.35000610351562,
+              "y": 501.1433512369792,
+              "width": 124,
+              "height": 70.66666666666669
+            }
+          ],
           "characters": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "height": 231,
+              "role": "PRIMARY_CHARACTER",
+              "height": 238,
               "readable": true
             }
           ],
@@ -213,21 +428,60 @@
         "boundsAudit": {
           "scene": "Mission6Scene",
           "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_6_PHONE_PORTRAIT_TALL",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [
+            {
+              "name": "energy-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 30.650004577636707,
+              "y": 499.1433512369792,
+              "width": 157.85000000000002,
+              "height": 62.666666666666686
+            },
+            {
+              "name": "energy-check-button",
+              "role": "PRIMARY_ACTION",
+              "x": 201.49998779296874,
+              "y": 499.1433512369792,
+              "width": 157.85000000000002,
+              "height": 62.666666666666686
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "energy-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 26.650004577636707,
+              "y": 495.1433512369792,
+              "width": 165.85000000000002,
+              "height": 70.66666666666669
+            },
+            {
+              "name": "energy-check-button",
+              "role": "PRIMARY_ACTION",
+              "x": 197.49998779296874,
+              "y": 495.1433512369792,
+              "width": 165.85000000000002,
+              "height": 70.66666666666669
+            }
+          ],
           "characters": [
             {
               "name": "grounded-robot",
-              "role": "HELPER",
-              "height": 156,
+              "role": "SUPPORTING_CHARACTER",
+              "height": 161,
               "readable": true
             },
             {
               "name": "mission6-repaired-robot",
-              "role": "HERO",
-              "height": 156,
+              "role": "PRIMARY_CHARACTER",
+              "height": 152,
               "readable": true
             }
           ],
@@ -307,17 +561,17 @@
             "height": 76
           },
           {
+            "name": "connection-target-green",
+            "width": 76,
+            "height": 76
+          },
+          {
             "name": "connection-target-blue",
             "width": 76,
             "height": 76
           },
           {
             "name": "connection-target-red",
-            "width": 76,
-            "height": 76
-          },
-          {
-            "name": "connection-target-green",
             "width": 76,
             "height": 76
           },
@@ -352,18 +606,16 @@
         "boundsAudit": {
           "scene": "Mission7Scene",
           "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_7_PHONE_PORTRAIT_TALL",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
-          "characters": [
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "height": 100,
-              "readable": true
-            }
-          ],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [],
           "items": [
             {
               "name": "mission7-home",
@@ -453,17 +705,17 @@
           },
           {
             "name": "programming-hint-button",
-            "width": 105,
+            "width": 91,
             "height": 64
           },
           {
             "name": "programming-delete-button",
-            "width": 105,
+            "width": 95,
             "height": 64
           },
           {
             "name": "programming-run-button",
-            "width": 152.70000000000005,
+            "width": 176.70000000000005,
             "height": 64
           }
         ],
@@ -484,6 +736,41 @@
             "font": 14
           },
           {
+            "name": "programming-strip-count",
+            "text": "0/6",
+            "font": 14
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
             "name": "programming-feedback",
             "text": "",
             "font": 14
@@ -492,21 +779,20 @@
         "boundsAudit": {
           "scene": "Mission8Scene",
           "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_8_PHONE_PORTRAIT_TALL",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
           "characters": [
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "height": 100,
-              "readable": true
-            },
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "height": 79,
+              "height": 66,
               "readable": true
             }
           ],
@@ -548,31 +834,31 @@
             },
             {
               "name": "program-strip",
-              "x": 83,
-              "y": 610.9099731445312,
-              "width": 224,
-              "height": 55
+              "x": 25.649999999999977,
+              "y": 609.9099731445312,
+              "width": 338.70000000000005,
+              "height": 53
             },
             {
               "name": "programming-hint-button",
-              "x": 15.150001525878906,
-              "y": 792.3499755859375,
-              "width": 94,
-              "height": 18
+              "x": 13.649999999999977,
+              "y": 774.3500000000001,
+              "width": 83,
+              "height": 56
             },
             {
               "name": "programming-delete-button",
-              "x": 133.64999389648438,
-              "y": 792.3499755859375,
-              "width": 75,
-              "height": 18
+              "x": 108.64999999999998,
+              "y": 774.3500000000001,
+              "width": 87,
+              "height": 56
             },
             {
               "name": "programming-run-button",
-              "x": 255.5,
-              "y": 791.8499755859375,
-              "width": 97,
-              "height": 19
+              "x": 207.64999999999998,
+              "y": 774.3500000000001,
+              "width": 168.70000000000005,
+              "height": 56
             }
           ]
         }
@@ -606,48 +892,48 @@
             "height": 60
           },
           {
-            "name": "memory-card-apple-0",
-            "width": 73.9,
-            "height": 74.75999999999999
-          },
-          {
-            "name": "memory-card-banana-0",
-            "width": 73.9,
-            "height": 74.75999999999999
-          },
-          {
             "name": "memory-card-battery-1",
-            "width": 73.9,
-            "height": 74.75999999999999
-          },
-          {
-            "name": "memory-card-star-1",
-            "width": 73.9,
-            "height": 74.75999999999999
-          },
-          {
-            "name": "memory-card-apple-1",
-            "width": 73.9,
-            "height": 74.75999999999999
-          },
-          {
-            "name": "memory-card-battery-0",
-            "width": 73.9,
-            "height": 74.75999999999999
+            "width": 91.174,
+            "height": 72.9392
           },
           {
             "name": "memory-card-banana-1",
-            "width": 73.9,
-            "height": 74.75999999999999
+            "width": 91.174,
+            "height": 72.9392
+          },
+          {
+            "name": "memory-card-star-1",
+            "width": 91.174,
+            "height": 72.9392
+          },
+          {
+            "name": "memory-card-apple-1",
+            "width": 91.174,
+            "height": 72.9392
           },
           {
             "name": "memory-card-star-0",
-            "width": 73.9,
-            "height": 74.75999999999999
+            "width": 91.174,
+            "height": 72.9392
+          },
+          {
+            "name": "memory-card-apple-0",
+            "width": 91.174,
+            "height": 72.9392
+          },
+          {
+            "name": "memory-card-banana-0",
+            "width": 91.174,
+            "height": 72.9392
+          },
+          {
+            "name": "memory-card-battery-0",
+            "width": 91.174,
+            "height": 72.9392
           },
           {
             "name": "memory-hint-button",
-            "width": 149.792,
+            "width": 126.16000000000001,
             "height": 64
           }
         ],
@@ -676,25 +962,235 @@
             "name": "memory-progress",
             "text": "ПАРЫ 0 ИЗ 4",
             "font": 14
-          },
-          {
-            "name": "assembly-progress-label",
-            "text": "СБОРКА 4/5",
-            "font": 14
           }
         ],
         "boundsAudit": {
           "scene": "GameScene",
           "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_5_PHONE_LANDSCAPE_SHORT",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [
+            {
+              "name": "memory-card-battery-1",
+              "role": "MEMORY_CARD",
+              "x": 67.31200207519531,
+              "y": 149.85080405273436,
+              "width": 91.17399999999999,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-battery-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 85.92932477593422,
+              "y": 150.14780369400978,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-banana-1",
+              "role": "MEMORY_CARD",
+              "x": 164.485998046875,
+              "y": 149.85080405273436,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-banana-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 183.1033207476139,
+              "y": 150.14780369400978,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-star-1",
+              "role": "MEMORY_CARD",
+              "x": 261.65997875976564,
+              "y": 149.85080405273436,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-star-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 280.27730146050453,
+              "y": 150.14780369400978,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-apple-1",
+              "role": "MEMORY_CARD",
+              "x": 358.8339899902344,
+              "y": 149.85080405273436,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-apple-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 377.4513126909733,
+              "y": 150.14780369400978,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-star-0",
+              "role": "MEMORY_CARD",
+              "x": 67.31200207519531,
+              "y": 228.78998251953124,
+              "width": 91.17399999999999,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-star-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 85.92932477593422,
+              "y": 229.08698216080666,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-apple-0",
+              "role": "MEMORY_CARD",
+              "x": 164.485998046875,
+              "y": 228.78998251953124,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-apple-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 183.1033207476139,
+              "y": 229.08698216080666,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-banana-0",
+              "role": "MEMORY_CARD",
+              "x": 261.65997875976564,
+              "y": 228.78998251953124,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-banana-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 280.27730146050453,
+              "y": 229.08698216080666,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-card-battery-0",
+              "role": "MEMORY_CARD",
+              "x": 358.8339899902344,
+              "y": 228.78998251953124,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-cover-battery-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 377.4513126909733,
+              "y": 229.08698216080666,
+              "width": 53.939354598522186,
+              "height": 70.93919858336449
+            },
+            {
+              "name": "memory-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 373.50999633789064,
+              "y": 303.77001953125,
+              "width": 118.15999999999997,
+              "height": 56
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "memory-card-battery-1",
+              "role": "MEMORY_CARD",
+              "x": 67.31200207519531,
+              "y": 149.85080405273436,
+              "width": 91.17399999999999,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-banana-1",
+              "role": "MEMORY_CARD",
+              "x": 164.485998046875,
+              "y": 149.85080405273436,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-star-1",
+              "role": "MEMORY_CARD",
+              "x": 261.65997875976564,
+              "y": 149.85080405273436,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-apple-1",
+              "role": "MEMORY_CARD",
+              "x": 358.8339899902344,
+              "y": 149.85080405273436,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-star-0",
+              "role": "MEMORY_CARD",
+              "x": 67.31200207519531,
+              "y": 228.78998251953124,
+              "width": 91.17399999999999,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-apple-0",
+              "role": "MEMORY_CARD",
+              "x": 164.485998046875,
+              "y": 228.78998251953124,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-banana-0",
+              "role": "MEMORY_CARD",
+              "x": 261.65997875976564,
+              "y": 228.78998251953124,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-card-battery-0",
+              "role": "MEMORY_CARD",
+              "x": 358.8339899902344,
+              "y": 228.78998251953124,
+              "width": 91.17399999999998,
+              "height": 72.93920000000003
+            },
+            {
+              "name": "memory-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 369.50999633789064,
+              "y": 299.77001953125,
+              "width": 126.15999999999997,
+              "height": 64
+            }
+          ],
           "characters": [
             {
               "name": "grounded-robot",
-              "role": "HERO",
-              "height": 196,
+              "role": "PRIMARY_CHARACTER",
+              "height": 227,
               "readable": true
             }
           ],
@@ -702,30 +1198,30 @@
             {
               "name": "game-home",
               "x": 18.650001525878906,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 66,
               "height": 18
             },
             {
               "name": "game-sound",
               "x": 768.3499755859375,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 48,
               "height": 18
             },
             {
               "name": "game-header",
               "x": 331.5,
-              "y": 25.650000000000006,
+              "y": 21.650000000000006,
               "width": 181,
               "height": 28
             },
             {
               "name": "memory-task-card",
               "x": 13.650000000000002,
-              "y": 61.83000000000001,
-              "width": 337.6,
-              "height": 314.52
+              "y": 65.81,
+              "width": 490.02,
+              "height": 301.96
             }
           ]
         }
@@ -760,27 +1256,27 @@
           },
           {
             "name": "energy-battery-low",
-            "width": 100.53333333333335,
+            "width": 104,
             "height": 92
           },
           {
             "name": "energy-battery-medium",
-            "width": 100.53333333333335,
+            "width": 104,
             "height": 92
           },
           {
             "name": "energy-battery-full",
-            "width": 100.53333333333335,
+            "width": 104,
             "height": 92
           },
           {
             "name": "energy-hint-button",
-            "width": 160.8,
+            "width": 160.34000000000003,
             "height": 64
           },
           {
             "name": "energy-check-button",
-            "width": 160.8,
+            "width": 160.34000000000003,
             "height": 64
           }
         ],
@@ -814,21 +1310,54 @@
         "boundsAudit": {
           "scene": "Mission6Scene",
           "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_6_PHONE_LANDSCAPE_SHORT",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
-          "characters": [
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [
             {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "height": 147,
-              "readable": true
+              "name": "energy-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 517.6700268554687,
+              "y": 82.80999755859375,
+              "width": 152.34000000000015,
+              "height": 56
             },
             {
+              "name": "energy-check-button",
+              "role": "PRIMARY_ACTION",
+              "x": 678.0100537109374,
+              "y": 82.80999755859375,
+              "width": 152.34000000000015,
+              "height": 56
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "energy-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 513.6700268554687,
+              "y": 78.80999755859375,
+              "width": 160.34000000000015,
+              "height": 64
+            },
+            {
+              "name": "energy-check-button",
+              "role": "PRIMARY_ACTION",
+              "x": 674.0100537109374,
+              "y": 78.80999755859375,
+              "width": 160.34000000000015,
+              "height": 64
+            }
+          ],
+          "characters": [
+            {
               "name": "mission6-repaired-robot",
-              "role": "HERO",
-              "height": 147,
+              "role": "PRIMARY_CHARACTER",
+              "height": 167,
               "readable": true
             }
           ],
@@ -836,37 +1365,30 @@
             {
               "name": "mission6-home",
               "x": 18.650001525878906,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 66,
               "height": 18
             },
             {
               "name": "mission6-sound",
               "x": 768.3499755859375,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 48,
               "height": 18
             },
             {
               "name": "mission6-header",
               "x": 321.5,
-              "y": 23.150000000000006,
+              "y": 19.150000000000006,
               "width": 201,
               "height": 33
             },
             {
-              "name": "systems-progress",
-              "x": 678.8499755859375,
-              "y": 142.3300018310547,
-              "width": 113,
-              "height": 42.5
-            },
-            {
               "name": "energy-task-card",
               "x": 13.650000000000002,
-              "y": 61.83000000000001,
-              "width": 337.6,
-              "height": 314.52
+              "y": 65.81,
+              "width": 490.02,
+              "height": 301.96
             }
           ]
         }
@@ -931,7 +1453,7 @@
           },
           {
             "name": "connection-hint-button",
-            "width": 159.92,
+            "width": 198,
             "height": 60
           }
         ],
@@ -944,31 +1466,36 @@
           {
             "name": "connection-title",
             "text": "ПОДКЛЮЧИ ПРОВОДА",
-            "font": 25
+            "font": 24.683031999999997
           },
           {
             "name": "connection-progress",
             "text": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
-            "font": 16
+            "font": 15.498648
           },
           {
             "name": "connection-feedback",
             "text": "",
-            "font": 16
+            "font": 15.498648
           }
         ],
         "boundsAudit": {
           "scene": "Mission7Scene",
           "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_7_PHONE_LANDSCAPE_SHORT",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
           "characters": [
             {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "height": 100,
+              "name": "mission7-repaired-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 174,
               "readable": true
             }
           ],
@@ -976,21 +1503,21 @@
             {
               "name": "mission7-home",
               "x": 18.650001525878906,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 66,
               "height": 18
             },
             {
               "name": "mission7-sound",
               "x": 768.3499755859375,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 48,
               "height": 18
             },
             {
               "name": "systems-progress",
               "x": 368.5,
-              "y": 24.650001525878906,
+              "y": 25.229999542236328,
               "width": 107,
               "height": 40
             },
@@ -998,13 +1525,13 @@
               "name": "connection-task-card",
               "x": 13.650000000000002,
               "y": 75.23,
-              "width": 650.7800000000001,
+              "width": 574.024,
               "height": 301.12
             },
             {
               "name": "connection-hint-button",
-              "x": 707.3900146484375,
-              "y": 338.3500061035156,
+              "x": 669.0120239257812,
+              "y": 340.3500061035156,
               "width": 94,
               "height": 18
             }
@@ -1061,17 +1588,17 @@
           },
           {
             "name": "programming-hint-button",
-            "width": 102,
+            "width": 86,
             "height": 64
           },
           {
             "name": "programming-delete-button",
-            "width": 102,
+            "width": 90,
             "height": 64
           },
           {
             "name": "programming-run-button",
-            "width": 146,
+            "width": 118.012,
             "height": 64
           }
         ],
@@ -1079,7 +1606,7 @@
           {
             "name": "programming-target-icon",
             "text": "⚡",
-            "font": 49.5
+            "font": 53.550000000000004
           },
           {
             "name": "programming-instruction",
@@ -1092,6 +1619,41 @@
             "font": 14
           },
           {
+            "name": "programming-strip-count",
+            "text": "0/6",
+            "font": 14
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
+            "name": "slot-label",
+            "text": "·",
+            "font": 21.08
+          },
+          {
             "name": "programming-feedback",
             "text": "",
             "font": 14
@@ -1100,21 +1662,20 @@
         "boundsAudit": {
           "scene": "Mission8Scene",
           "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_8_PHONE_LANDSCAPE_SHORT",
           "overlapCount": 0,
           "overlaps": [],
           "outsideSafeRect": [],
           "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
           "characters": [
-            {
-              "name": "grounded-robot",
-              "role": "HELPER",
-              "height": 93,
-              "readable": true
-            },
             {
               "name": "programming-robot",
               "role": "BOARD_ACTOR",
-              "height": 86,
+              "height": 94,
               "readable": true
             }
           ],
@@ -1122,65 +1683,65 @@
             {
               "name": "mission8-home",
               "x": 18.650001525878906,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 66,
               "height": 18
             },
             {
               "name": "mission8-sound",
               "x": 768.3499755859375,
-              "y": 29.650001525878906,
+              "y": 25.650001525878906,
               "width": 48,
               "height": 18
             },
             {
               "name": "systems-progress",
               "x": 316.5,
-              "y": 31.650001525878906,
+              "y": 41.22999954223633,
               "width": 211,
               "height": 16
             },
             {
               "name": "programming-board",
               "x": 13.650000000000002,
-              "y": 94.23,
-              "width": 466,
-              "height": 282.12
+              "y": 92.23,
+              "width": 500.6880000000001,
+              "height": 284.12
             },
             {
               "name": "programming-instruction",
-              "x": 126.65,
-              "y": 65.23,
-              "width": 239.99999999999997,
+              "x": 143.99400000000003,
+              "y": 63.230000000000004,
+              "width": 240,
               "height": 22
             },
             {
               "name": "program-strip",
-              "x": 556.6500244140625,
+              "x": 548.337994140625,
               "y": 94.2300033569336,
-              "width": 224,
-              "height": 55.00000762939453
+              "width": 270.01199999999994,
+              "height": 53.00000762939453
             },
             {
               "name": "programming-hint-button",
-              "x": 493.6500244140625,
-              "y": 337.3500061035156,
-              "width": 94,
-              "height": 18
+              "x": 536.3380000000001,
+              "y": 282.23,
+              "width": 78,
+              "height": 56
             },
             {
               "name": "programming-delete-button",
-              "x": 609.1500244140625,
-              "y": 337.3500061035156,
-              "width": 75,
-              "height": 18
+              "x": 626.3380000000001,
+              "y": 282.23,
+              "width": 82,
+              "height": 56
             },
             {
               "name": "programming-run-button",
-              "x": 726.1500244140625,
-              "y": 336.8500061035156,
-              "width": 97,
-              "height": 19
+              "x": 720.3380000000001,
+              "y": 282.23,
+              "width": 110.012,
+              "height": 56
             }
           ]
         }

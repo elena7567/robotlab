@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import { commandDelta, type GridCell, type ProgrammingChallenge, type ProgrammingStep } from '../mechanics/programming';
+import { CHARACTER_VISIBLE_BOUNDS, fitVisibleBoundsInRect } from '../assets/characterBounds';
 import { RobotAssemblyPreview } from './RobotAssemblyPreview';
 
 import { UI_FONT } from './visualTheme';
@@ -62,10 +63,10 @@ export class ProgrammingBoard extends Phaser.GameObjects.Container {
 
     const start = this.centerOf(options.challenge.start);
     const target = this.centerOf(options.challenge.targetCell);
-    const startRing = scene.add.circle(start.x, start.y + this.cellSize * 0.12, this.cellSize * 0.34, 0x4be6ff, 0.12)
-      .setStrokeStyle(Math.max(3, this.cellSize * 0.045), 0x8af5ff, 0.98).setName('programming-start-pad');
-    const startCore = scene.add.ellipse(start.x, start.y + this.cellSize * 0.3, this.cellSize * 0.64, this.cellSize * 0.2, 0x5cecff, 0.34)
-      .setStrokeStyle(2, 0xb9faff, 0.9);
+    const startRing = scene.add.rectangle(start.x, start.y, this.cellSize * 0.78, this.cellSize * 0.78, 0x4be6ff, 0.055)
+      .setStrokeStyle(Math.max(2, this.cellSize * 0.032), 0x8af5ff, 0.72).setName('programming-start-pad');
+    const startCore = scene.add.rectangle(start.x, start.y + this.cellSize * 0.31, this.cellSize * 0.58, Math.max(4, this.cellSize * 0.06), 0x5cecff, 0.28)
+      .setStrokeStyle(1, 0xb9faff, 0.75);
     this.targetGlow = scene.add.rectangle(target.x, target.y, this.cellSize * 0.88, this.cellSize * 0.88, 0x65ffac, 0.24)
       .setStrokeStyle(Math.max(4, this.cellSize * 0.055), 0xc5ff9c, 1).setName('programming-target-pad');
     const targetCore = scene.add.circle(target.x, target.y, this.cellSize * 0.28, 0xbaff65, 0.36)
@@ -90,22 +91,28 @@ export class ProgrammingBoard extends Phaser.GameObjects.Container {
     }
 
     const robotPoint = this.centerOf(options.robotPosition);
-    const measurementScale = 0.1;
-    this.robot = new RobotAssemblyPreview(scene, robotPoint.x, robotPoint.y, 5, { scale: measurementScale, blueprintAlpha: 0 })
+    const actorZone = {
+      x: robotPoint.x - this.cellSize * 0.43,
+      y: robotPoint.y - this.cellSize * 0.5,
+      width: this.cellSize * 0.86,
+      height: this.cellSize * 0.78,
+    };
+    const actorFit = fitVisibleBoundsInRect(CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED, actorZone, 0.5, 1);
+    this.robot = new RobotAssemblyPreview(scene, actorFit.x, actorFit.y, 5, { scale: actorFit.scale, blueprintAlpha: 0 })
       .setName('programming-robot');
     this.robot.setPowered(true);
     this.robot.setSystemsConnected(true);
-    const measuredBounds = this.robot.getBounds();
-    const robotScale = Phaser.Math.Clamp(measurementScale * (this.cellSize * 0.78) / Math.max(1, measuredBounds.height), 0.055, 0.15);
-    this.robot.setScale(robotScale);
-    const robotBounds = this.robot.getBounds();
-    this.robotCellOffsetY = this.cellSize * 0.28 - (robotBounds.bottom - this.robot.y);
-    this.robot.setY(robotPoint.y + this.robotCellOffsetY);
+    this.robotCellOffsetY = actorFit.y - robotPoint.y;
     this.robot.setData({
-      gridColumn: options.robotPosition.column, gridRow: options.robotPosition.row, groundedScale: robotScale,
+      gridColumn: options.robotPosition.column, gridRow: options.robotPosition.row, groundedScale: actorFit.scale,
       cellCenterX: robotPoint.x, cellCenterY: robotPoint.y, targetColumn: options.challenge.targetCell.column,
-      targetRow: options.challenge.targetCell.row, visualScale: robotScale,
+      targetRow: options.challenge.targetCell.row, visualScale: actorFit.scale,
       characterRole: 'BOARD_ACTOR', targetCellHeightRatio: 0.78,
+      visibleBoundsId: 'ROBOT_V2_ASSEMBLED',
+      visibleWidth: actorFit.visibleRect.width,
+      visibleHeight: actorFit.visibleRect.height,
+      visibleCellWidthRatio: actorFit.visibleRect.width / this.cellSize,
+      visibleCellHeightRatio: actorFit.visibleRect.height / this.cellSize,
       cellSize: this.cellSize,
     });
     this.add(this.robot);

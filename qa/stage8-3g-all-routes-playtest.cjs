@@ -139,7 +139,7 @@ async function runViewport(browser, [name, width, height, touch]) {
 
 (async () => {
   fs.mkdirSync(outputDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const results = [];
   for (const viewport of viewports) results.push(await runViewport(browser, viewport));
   await browser.close();

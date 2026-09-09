@@ -3,13 +3,15 @@ import { preferencesState } from '../state/preferencesState';
 import { addControl, addIconControl } from '../ui/controls';
 import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
-import { createResponsiveLayout, createTransitionSceneLayout } from '../ui/responsiveLayout';
+import { createResponsiveLayout } from '../ui/responsiveLayout';
+import { composeScene } from '../ui/sceneCompositionDirector';
 import { configureResponsiveCamera } from '../ui/responsiveCamera';
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { fluidValue } from '../ui/fluidSizing';
 import { audioManager } from '../audio/AudioManager';
+import { CHARACTER_VISIBLE_BOUNDS, fitVisibleBoundsInRect } from '../assets/characterBounds';
 
 export class TransitionScene extends Phaser.Scene {
   constructor() { super('TransitionScene'); }
@@ -18,25 +20,53 @@ export class TransitionScene extends Phaser.Scene {
     const layout = createResponsiveLayout(width, height);
     this.game.registry.set('responsiveLayout', layout);
     const portrait = layout.mode !== 'landscape';
-    const transitionLayout = createTransitionSceneLayout(layout);
+    const sceneComposition = composeScene(layout, 'MISSION5_TRANSITION');
+    const transitionLayout = sceneComposition.transition!;
+    this.game.registry.set('sceneComposition', sceneComposition);
     const { phonePortrait } = transitionLayout;
     this.cameras.main.setBackgroundColor('#173b52');
     const worldLayer = this.add.container(0, 0).setName('transition-world').setDepth(-2);
     const actorLayer = this.add.container(0, 0).setName('transition-actors');
     addLogicalLaboratoryImage(this, worldLayer, 'bg-main-laboratory');
     const frame = configureResponsiveCamera(this, worldLayer, layout);
-    const { buttonHeight, titleSize, titleY, actorFeetY, pairScale, pairSpan } = transitionLayout;
+    const { buttonHeight, titleSize, titleY, pairScale, pairSpan } = transitionLayout;
+    const screenActors = phonePortrait || layout.semanticMode === 'PHONE_LANDSCAPE_SHORT';
+    const fitActors = screenActors;
+    const characterRegion = sceneComposition.regions.CHARACTER;
+    const actorGap = layout.gapS;
+    const actorAvailableWidth = characterRegion.width - actorGap;
+    const helperAspect = CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_HELPER.width / CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_HELPER.height;
+    const repairedAspect = CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.width / CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.height;
+    const actorWidth = actorAvailableWidth * helperAspect / (helperAspect + repairedAspect);
+    const repairedWidth = actorAvailableWidth - actorWidth;
+    const helperFit = fitVisibleBoundsInRect(CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_HELPER, {
+      x: characterRegion.x,
+      y: characterRegion.y,
+      width: actorWidth,
+      height: characterRegion.height,
+    }, 0.5, 1);
+    const repairedFit = fitVisibleBoundsInRect(CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED, {
+      x: characterRegion.x + actorWidth + actorGap,
+      y: characterRegion.y,
+      width: repairedWidth,
+      height: characterRegion.height,
+    }, 0.5, 1);
     const helper = createGroundedRobot(this, actorLayer, 5);
-    const helperX = phonePortrait ? width / 2 - pairSpan / 2 : 640 - pairSpan / 2;
-    const repairedX = phonePortrait ? width / 2 + pairSpan / 2 : 640 + pairSpan / 2;
-    const logicalFeetY = phonePortrait ? actorFeetY : 560;
-    helper?.setPosition(helperX, logicalFeetY).setScale(pairScale).setData({ baseX: helperX, baseY: logicalFeetY, characterRole: 'HERO' });
-    const repaired = new RobotAssemblyPreview(this, repairedX, logicalFeetY, 5, { scale: pairScale, blueprintAlpha: 0 })
+    const helperX = fitActors ? helperFit.x : phonePortrait ? width / 2 - pairSpan / 2 : 640 - pairSpan / 2;
+    const repairedX = fitActors ? repairedFit.x : phonePortrait ? width / 2 + pairSpan / 2 : 640 + pairSpan / 2;
+    const helperY = fitActors ? helperFit.y : phonePortrait ? transitionLayout.actorFeetY : 560;
+    const repairedY = fitActors ? repairedFit.y : phonePortrait ? transitionLayout.actorFeetY : 560;
+    const helperScale = fitActors ? helperFit.scale : pairScale;
+    const repairedScale = fitActors ? repairedFit.scale : pairScale;
+    helper?.setPosition(helperX, helperY).setScale(helperScale).setData({
+      baseX: helperX, baseY: helperY, characterRole: 'PRIMARY_CHARACTER', compositionRegion: 'CHARACTER', visibleBoundsId: 'ROBOT_V2_HELPER',
+    });
+    const repaired = new RobotAssemblyPreview(this, repairedX, repairedY, 5, { scale: repairedScale, blueprintAlpha: 0 })
       .setName('transition-assembled-robot');
-    repaired.setData({ characterRole: 'HERO' });
+    repaired.setData({ characterRole: 'PRIMARY_CHARACTER', compositionRegion: 'SECONDARY_CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED' });
     repaired.setPowered(false);
     actorLayer.add(repaired);
-    if (!phonePortrait) actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
+    if (!screenActors) actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
     this.add.rectangle(0, 0, width, height, 0x102b47, portrait ? 0.3 : 0.22).setOrigin(0).setDepth(-1);
 
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };

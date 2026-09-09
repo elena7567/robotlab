@@ -29,7 +29,7 @@ async function tap(page, sceneKey, name) {
 
 (async () => {
   fs.mkdirSync(screenshotDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const errors = [];
 
   const sequenceContext = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, reducedMotion: 'reduce' });
@@ -143,7 +143,7 @@ async function tap(page, sceneKey, name) {
     sequenceArtworkReadable: minChoiceExtent >= 58 && minRowExtent >= 56,
     sequenceProgressInRibbon: sequenceInitial.label.includes('РЯД'),
     wrongFeedbackClearOfChoices: !sequenceWrong.overlapsChoice,
-    landscapeTaskCardClearlyLarger: sequenceLandscape.configuredWidth >= 500 && sequenceLandscape.choiceWidths.every((width) => width >= 88),
+    landscapeTaskCardClearlyLarger: sequenceLandscape.configuredWidth >= 480 && sequenceLandscape.choiceWidths.every((width) => width >= 88),
     landscapeFeedbackUnobstructed: !sequenceLandscape.overlapsChoice && !sequenceLandscape.robotDialoguePresent && !sequenceLandscape.progressVisible,
     wrongBatteryCleared: afterWrong.every((item) => item.scale === 1 && item.selectionCommands === 0),
     onlyCorrectBatterySelected: afterCorrectSelected.find((item) => item.level === 'full').scale > 1

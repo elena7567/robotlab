@@ -77,7 +77,7 @@ const reports = matrix.map(([name, width, height, expected, insets]) => {
     const ribbonOverhang = Math.min(21, Math.max(17, height * 0.025));
     assert(layout.taskCard.y - ribbonOverhang >= layout.headerZone.y + layout.headerZone.height + layout.gapS - 0.01, `${name} shared mission ribbon clears two-row header`);
     assert(layout.statusY > layout.headerY + layout.iconHeight / 2, `${name} status occupies row 2`);
-    assert.equal(mission7.showHelper, true, `${name} Mission 7 preserves the helper character`);
+    assert.equal(mission7.showHelper, false, `${name} Mission 7 uses board-focused portrait composition`);
     assert.equal(mission7.showRepaired, false, `${name} Mission 7 omits tiny repaired robot`);
   }
   assert(mission7.board.width > 0 && mission7.board.height > 0, `${name} Mission 7 board is positive`);

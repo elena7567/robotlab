@@ -4,6 +4,8 @@ import { addControl, setControlEnabled } from './controls';
 import type { CompositionMode, TaskCardSizing } from './responsiveLayout';
 import { UI_COLORS, UI_FONT } from './visualTheme';
 import { CHILD_UI } from './childUi';
+import type { ChildInteractionMetrics } from './childInteractionMetrics';
+import { fitImageByVisibleAlpha } from '../assets/objectBounds';
 
 export interface MemoryTaskCardConfig {
   readonly x: number;
@@ -11,6 +13,8 @@ export interface MemoryTaskCardConfig {
   readonly width: number;
   readonly height: number;
   readonly sizing: TaskCardSizing;
+  readonly interactionMetrics: ChildInteractionMetrics;
+  readonly secondaryActionRect?: { readonly x: number; readonly y: number; readonly width: number; readonly height: number };
   readonly mode: CompositionMode;
   readonly snapshot: MemorySnapshot;
   readonly reducedMotion: boolean;
@@ -47,6 +51,7 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
     });
     this.reducedMotion = config.reducedMotion;
     const { sizing } = config;
+    const interaction = config.interactionMetrics;
     const body = scene.add.graphics();
     body.fillStyle(0x2a3451, 0.2).fillRoundedRect(5, 8, config.width, config.height, sizing.radius);
     body.fillStyle(UI_COLORS.cream, 0.98).fillRoundedRect(0, 0, config.width, config.height, sizing.radius);
@@ -67,16 +72,22 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
       align: 'center', wordWrap: { width: config.width - 24 },
     }).setOrigin(0.5, 0).setName('memory-instruction'));
 
-    const columns = config.mode === 'large-portrait-tablet' ? 2 : 4;
+    const columns = 4;
     const rows = 8 / columns;
-    const footerHeight = sizing.actionHeight + 10;
-    const areaTop = Math.max(sizing.areaTop, sizing.instructionY + sizing.instructionFontSize + 12);
+    const externalSecondaryAction = config.secondaryActionRect;
+    const footerHeight = externalSecondaryAction ? interaction.feedbackHeight + 8 : sizing.actionHeight + 8;
+    const areaTop = Math.max(sizing.areaTop, sizing.instructionY + sizing.instructionFontSize + interaction.instructionGap);
     const areaBottom = config.height - footerHeight;
     const availableWidth = config.width - sizing.horizontalPadding * 2;
     const availableHeight = Math.max(80, areaBottom - areaTop);
-    const gap = Math.max(5, Math.min(sizing.cellGap, 10));
-    const cellWidth = Math.min(112, (availableWidth - gap * (columns - 1)) / columns);
-    const cellHeight = Math.min(126, (availableHeight - gap * (rows - 1)) / rows);
+    const gap = Math.max(6, Math.min(interaction.mechanicGap, 12));
+    const availableCellWidth = (availableWidth - gap * (columns - 1)) / columns;
+    const availableCellHeight = (availableHeight - gap * (rows - 1)) / rows;
+    const cellHeight = Math.min(interaction.memoryCardIdeal.height, availableCellHeight);
+    const cellWidth = Math.min(
+      interaction.memoryCardIdeal.width,
+      availableCellWidth,
+    );
     const gridWidth = cellWidth * columns + gap * (columns - 1);
     const gridHeight = cellHeight * rows + gap * (rows - 1);
     const gridX = (config.width - gridWidth) / 2;
@@ -102,9 +113,14 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
       this.add(cardView.container);
     });
 
-    const actionY = config.height - sizing.actionHeight / 2 - 8;
-    const hintWidth = Math.min(150, config.width * 0.42);
-    this.hintButton = addControl(scene, config.width - sizing.horizontalPadding - hintWidth / 2, actionY, 'Подсказка', () => {
+    const actionY = externalSecondaryAction
+      ? externalSecondaryAction.y + externalSecondaryAction.height / 2 - config.y
+      : config.height - sizing.actionHeight / 2 - 8;
+    const hintWidth = externalSecondaryAction?.width ?? Math.min(interaction.secondaryActionWidth, config.width * 0.34);
+    const hintX = externalSecondaryAction
+      ? externalSecondaryAction.x + externalSecondaryAction.width / 2 - config.x
+      : config.width - sizing.horizontalPadding - hintWidth / 2;
+    this.hintButton = addControl(scene, hintX, actionY, 'Подсказка', () => {
       if (this.hintLocked) return;
       const ids = config.onHint();
       if (ids.length) this.playHint(ids);
@@ -115,9 +131,15 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
       hoverFill: 0x916ee1,
       stroke: UI_COLORS.purpleDark,
       fontSize: sizing.actionFontSize,
-    }).setName('memory-hint-button');
+    }).setName('memory-hint-button').setData({
+      childVisualRole: 'SECONDARY_ACTION',
+      visualLocalBounds: { x: -hintWidth / 2, y: -sizing.actionHeight / 2, width: hintWidth, height: sizing.actionHeight },
+    });
     this.add(this.hintButton);
-    this.progressText = scene.add.text(sizing.horizontalPadding, actionY, '', {
+    const progressY = externalSecondaryAction
+      ? config.height - interaction.feedbackHeight / 2 - 4
+      : actionY;
+    this.progressText = scene.add.text(sizing.horizontalPadding, progressY, '', {
       color: '#425166', fontFamily: UI_FONT, fontSize: `${sizing.feedbackFontSize}px`, fontStyle: 'bold',
     }).setOrigin(0, 0.5).setName('memory-progress');
     this.add(this.progressText);
@@ -157,15 +179,20 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
     const container = this.scene.add.container(x, y)
       .setName(`memory-card-${card.id}`)
       .setSize(hitWidth, hitHeight)
-      .setInteractive();
+      .setInteractive()
+      .setData({
+        childVisualRole: 'MEMORY_CARD',
+        visualLocalBounds: { x: -width / 2, y: -height / 2, width, height },
+        memoryState: card.state,
+      });
     const frame = this.scene.add.graphics();
     const cover = this.scene.add.image(0, 0, 'memory-cover').setName(`memory-cover-${card.id}`);
     const face = this.scene.add.image(0, 0, card.textureKey).setName(`memory-face-${card.id}`);
-    const fit = (image: Phaser.GameObjects.Image, padding: number): void => {
-      image.setScale(Math.min((width - padding) / image.width, (height - padding) / image.height));
-    };
-    fit(cover, 6);
-    fit(face, Math.max(8, Math.min(width, height) * 0.14));
+    cover.setData('childVisualRole', 'MEMORY_ARTWORK');
+    face.setData('childVisualRole', 'MEMORY_ARTWORK');
+    fitImageByVisibleAlpha(cover, width - 4, height - 2);
+    const facePadding = Math.max(7, Math.min(width, height) * 0.1);
+    fitImageByVisibleAlpha(face, width - facePadding, height - facePadding);
     container.add([frame, cover, face]);
     const view = { container, frame, cover, face, visualWidth: width, visualHeight: height, state: card.state };
     this.drawCard(view, card.state);
@@ -185,6 +212,7 @@ export class MemoryTaskCard extends Phaser.GameObjects.Container {
     view.face.setVisible(state !== 'FACE_DOWN').setAlpha(state === 'MATCHED' ? 0.88 : 1);
     view.container.input!.enabled = state === 'FACE_DOWN';
     view.container.setAlpha(state === 'MATCHED' ? 0.92 : 1);
+    view.container.setData('memoryState', state);
     view.state = state;
   }
 

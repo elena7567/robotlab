@@ -18,6 +18,8 @@ import { RobotDialogue } from '../ui/RobotDialogue';
 import { TaskCard, type TaskObjectKey } from '../ui/TaskCard';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
+import { composeScene } from '../ui/sceneCompositionDirector';
+import { resolveChildInteractionMetrics } from '../ui/childInteractionMetrics';
 import { configureResponsiveCamera } from '../ui/responsiveCamera';
 import { audioManager } from '../audio/AudioManager';
 import { shadowMatchingMechanic, type ShadowChoiceKey } from '../mechanics/shadowMatching';
@@ -74,12 +76,20 @@ export class GameScene extends Phaser.Scene {
 
   create(): void {
     const { width, height } = this.scale;
-    const layout = createResponsiveLayout(width, height);
+    const baseLayout = createResponsiveLayout(width, height);
+    const state = sessionState.snapshot;
+    const displayedCompletedTasks = this.reflowCompletedTasks ?? state.completedTasks;
+    const composition = composeScene(baseLayout, (displayedCompletedTasks + 1) as 1 | 2 | 3 | 4 | 5);
+    const layout = {
+      ...baseLayout,
+      taskCard: composition.taskCard,
+      progress: composition.progress,
+      characterZone: composition.regions.CHARACTER,
+      zones: { ...baseLayout.zones, characterZone: composition.regions.CHARACTER },
+    };
     const portrait = layout.mode !== 'landscape';
     const phoneLandscape = layout.semanticMode.startsWith('PHONE_LANDSCAPE');
     const tightPhoneLandscape = layout.semanticMode === 'PHONE_LANDSCAPE_SHORT' && layout.safeRect.width < 620;
-    const state = sessionState.snapshot;
-    const displayedCompletedTasks = this.reflowCompletedTasks ?? state.completedTasks;
     this.data.set('viewportPresentationState', { completedTasks: displayedCompletedTasks });
     this.game.registry.set('sessionSnapshot', state);
     const isMemoryTask = displayedCompletedTasks === 4;
@@ -92,11 +102,35 @@ export class GameScene extends Phaser.Scene {
     const actorLayer = this.add.container(0, 0).setName('logical-actors');
     addLogicalLaboratoryImage(this, worldLayer, 'bg-main-laboratory');
     const robot = createGroundedRobot(this, actorLayer, state.completedTasks);
-    robot?.setData('characterRole', 'HERO');
+    robot?.setData({ characterRole: 'PRIMARY_CHARACTER', compositionRegion: 'CHARACTER', visibleBoundsId: 'ROBOT_V2_HELPER' });
     const frame = configureResponsiveCamera(this, worldLayer, layout);
     actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
+    if (robot && layout.semanticMode === 'PHONE_LANDSCAPE_SHORT') {
+      const zone = composition.regions.CHARACTER;
+      const desiredVisibleHeight = Math.min(236, zone.height * 0.78);
+      const groundedScale = desiredVisibleHeight / Math.max(1, 1448 * frame.scale);
+      const logicalX = (zone.x + zone.width / 2 - frame.offsetX) / frame.scale;
+      const logicalY = (zone.y + zone.height - 4 - frame.offsetY) / frame.scale;
+      robot.setPosition(logicalX, logicalY).setScale(groundedScale).setData({
+        baseX: logicalX,
+        baseY: logicalY,
+        groundedScale,
+        platformContactX: logicalX,
+        platformContactY: logicalY,
+      });
+    }
     this.game.registry.set('responsiveLayout', { ...layout, worldFrame: frame });
+    this.game.registry.set('sceneComposition', composition);
     this.add.rectangle(0, 0, width, height, 0x163852, portrait ? 0.12 : 0.05).setOrigin(0).setDepth(-1);
+    if (composition.surface) {
+      const { outer, support } = composition.surface;
+      const surface = this.add.graphics().setName('short-landscape-game-surface').setDepth(-0.8);
+      surface.fillStyle(0x123e58, 0.94).fillRoundedRect(outer.x, outer.y, outer.width, outer.height, 22);
+      surface.lineStyle(3, 0x72d9ec, 0.72).strokeRoundedRect(outer.x, outer.y, outer.width, outer.height, 22);
+      surface.fillStyle(0x164d67, 0.9).fillRoundedRect(support.x, support.y, support.width, support.height, 18);
+      surface.lineStyle(2, 0x72d9ec, 0.42).strokeRoundedRect(support.x, support.y, support.width, support.height, 18);
+      surface.setData('auditBounds', outer);
+    }
 
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
     const homeX = layout.safe.left + layout.iconWidth / 2;
@@ -122,6 +156,15 @@ export class GameScene extends Phaser.Scene {
     }
 
     const { x: cardX, y: cardY, width: cardWidth, height: cardHeight } = layout.taskCard;
+    const childInteractionMetrics = resolveChildInteractionMetrics({
+      availableMechanicWidth: cardWidth - layout.taskCardSizing.horizontalPadding * 2,
+      availableMechanicHeight: cardHeight,
+      semanticMode: layout.semanticMode,
+      safeRect: layout.safeRect,
+    });
+    const secondaryActionRect = composition.regions.SECONDARY_ACTIONS.x >= cardX + cardWidth
+      ? composition.regions.SECONDARY_ACTIONS
+      : undefined;
     let progressPanel: ProgressPanel;
     progressPanel = new ProgressPanel(this, {
       x: layout.progress.x, y: layout.progress.y, width: layout.progress.width, height: layout.progress.height,
@@ -259,6 +302,8 @@ export class GameScene extends Phaser.Scene {
       memoryCard = new MemoryTaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
         sizing: layout.taskCardSizing,
+        interactionMetrics: childInteractionMetrics,
+        secondaryActionRect,
         mode: layout.mode,
         snapshot: memoryMechanic.snapshot,
         reducedMotion,
@@ -291,6 +336,8 @@ export class GameScene extends Phaser.Scene {
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
         sizing: layout.taskCardSizing,
+        interactionMetrics: childInteractionMetrics,
+        secondaryActionRect,
         taskNumber: 4, totalTasks: state.totalTasks,
         title: 'Найди тень', instruction: 'Какая тень подходит?',
         objectKeys: shadowState.orderedKeys,
@@ -347,6 +394,8 @@ export class GameScene extends Phaser.Scene {
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
         sizing: layout.taskCardSizing,
+        interactionMetrics: childInteractionMetrics,
+        secondaryActionRect,
         taskNumber: 2, totalTasks: state.totalTasks,
         title: 'Продолжи ряд', instruction: 'Какая картинка должна быть следующей?',
         objectKeys: sequenceState.optionKeys,
@@ -399,6 +448,8 @@ export class GameScene extends Phaser.Scene {
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
         sizing: layout.taskCardSizing,
+        interactionMetrics: childInteractionMetrics,
+        secondaryActionRect,
         taskNumber: 3, totalTasks: state.totalTasks,
         title: 'Сравни по размеру', instruction: sizeState.challenge.instruction,
         objectKeys: sizeState.orderedKeys,
@@ -454,6 +505,8 @@ export class GameScene extends Phaser.Scene {
       new TaskCard(this, {
         x: cardX, y: cardY, width: cardWidth, height: cardHeight,
         sizing: layout.taskCardSizing,
+        interactionMetrics: childInteractionMetrics,
+        secondaryActionRect,
         taskNumber: displayedCompletedTasks + 1, totalTasks: state.totalTasks,
         title: 'Найди лишний предмет', instruction: 'Какой предмет не подходит?',
         objectKeys: ODD_ONE_OUT_OBJECTS.map((item) => item.key),

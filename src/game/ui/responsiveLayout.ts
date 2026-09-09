@@ -1,6 +1,7 @@
 import { clampValue, fluidValue, lerpClamped } from './fluidSizing';
 import { readViewportMetrics, type ViewportMetrics } from './viewport';
 import { CHILD_UI } from './childUi';
+import { composeScene, type Mission7SceneLayout, type Mission8SceneLayout, type TransitionSceneLayout } from './sceneCompositionDirector';
 
 export type CompositionMode = 'ultra-narrow-portrait' | 'portrait' | 'large-portrait-tablet' | 'landscape';
 export type SemanticCompositionMode =
@@ -121,43 +122,6 @@ export interface StartSceneLayout {
   readonly playFontSize: number;
 }
 
-export interface Mission7SceneLayout {
-  readonly showHeader: boolean;
-  readonly showHelper: boolean;
-  readonly systems: { readonly x: number; readonly y: number; readonly width: number };
-  readonly board: RectLayout;
-  readonly helper: { readonly x: number; readonly feetY: number; readonly scale: number };
-  readonly repaired: { readonly x: number; readonly feetY: number; readonly scale: number };
-  readonly showRepaired: boolean;
-  readonly hint: { readonly x: number; readonly y: number; readonly width: number; readonly height: number; readonly fontSize: number };
-}
-
-export interface Mission8SceneLayout {
-  readonly board: RectLayout;
-  readonly helper: { readonly x: number; readonly feetY: number; readonly scale: number };
-  readonly systemsY: number;
-  readonly routeY: number;
-  readonly stripY: number;
-  readonly arrowsY: number;
-  readonly actionsY: number;
-  readonly controlCenterX: number;
-  readonly controlWidth: number;
-  readonly arrowSize: number;
-  readonly actionHeight: number;
-}
-
-export interface TransitionSceneLayout {
-  readonly phonePortrait: boolean;
-  readonly titleY: number;
-  readonly titleSize: number;
-  readonly subtitleY: number;
-  readonly buttonHeight: number;
-  readonly buttonY: number;
-  readonly actorFeetY: number;
-  readonly pairScale: number;
-  readonly pairSpan: number;
-}
-
 function viewportForLayout(width: number, height: number): ViewportMetrics {
   if (typeof window !== 'undefined') return { ...readViewportMetrics(), visualViewportWidth: width, visualViewportHeight: height, aspectRatio: width / Math.max(1, height) };
   return {
@@ -213,7 +177,9 @@ export function createResponsiveLayout(width: number, height: number, viewportOv
   const iconWidth = fluidValue(76, width, 0.075, 92);
   const iconHeight = fluidValue(52, height, 0.075, 60);
   const iconFontSize = fluidValue(16, width, 0.015, 18);
-  const headerHeight = fluidValue(52, height, 0.078, 62);
+  const headerHeight = semanticMode === 'PHONE_LANDSCAPE_SHORT'
+    ? fluidValue(44, height, 0.07, 50)
+    : fluidValue(52, height, 0.078, 62);
   const headerY = safe.top + headerHeight / 2;
   const portrait = mode !== 'landscape';
   const ultra = mode === 'ultra-narrow-portrait';
@@ -340,13 +306,13 @@ export function createResponsiveLayout(width: number, height: number, viewportOv
     titleFontSize: phoneLandscape ? CHILD_UI.typography.titleMin : lerpClamped(CHILD_UI.typography.titleMin, 24, density, 0, 1),
     instructionFontSize: phoneLandscape ? CHILD_UI.typography.instructionMin : lerpClamped(CHILD_UI.typography.instructionMin, 18, density, 0, 1),
     feedbackFontSize: phoneLandscape ? CHILD_UI.typography.feedbackMin : lerpClamped(CHILD_UI.typography.feedbackMin, 16, density, 0, 1),
-    titleY: phoneLandscape ? 25 : lerpClamped(29, 48, density, 0, 1),
-    instructionY: phoneLandscape ? 48 : lerpClamped(52, 86, density, 0, 1),
-    areaTop: phoneLandscape ? 68 : lerpClamped(72, 125, density, 0, 1),
+    titleY: phoneLandscape ? 20 : lerpClamped(29, 48, density, 0, 1),
+    instructionY: phoneLandscape ? 44 : lerpClamped(52, 86, density, 0, 1),
+    areaTop: phoneLandscape ? 64 : lerpClamped(72, 125, density, 0, 1),
     footerSpace: phoneLandscape ? 78 : lerpClamped(70, 116, density, 0, 1),
     cellGap: phoneLandscape ? 6 : lerpClamped(6, 12, density, 0, 1),
     cellMaxWidth: phoneLandscape ? 88 : lerpClamped(98, 142, density, 0, 1),
-    cellMaxHeight: phoneLandscape ? 64 : lerpClamped(64, 112, density, 0, 1),
+    cellMaxHeight: phoneLandscape ? 80 : lerpClamped(64, 112, density, 0, 1),
     sequenceGap: phoneLandscape ? 4 : lerpClamped(3, 9, density, 0, 1),
     sequenceIconMaxSize: phoneLandscape ? 72 : lerpClamped(48, 76, density, 0, 1),
     sequenceOptionMaxHeight: phoneLandscape ? 72 : lerpClamped(64, 92, density, 0, 1),
@@ -404,173 +370,6 @@ export function characterScaleForRole(role: CharacterRole, zoneHeight: number, s
   return clampValue(role === 'BOARD_ACTOR' ? 0.055 : 0.09, (zoneHeight * heightShare[role]) / sourceHeight, role === 'HERO' ? 0.42 : 0.28);
 }
 
-export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7SceneLayout {
-  const { viewportWidth: width, viewportHeight: height, safe, semanticMode } = layout;
-  const phonePortrait = semanticMode.startsWith('PHONE_PORTRAIT');
-  const shortLandscape = semanticMode === 'PHONE_LANDSCAPE_SHORT';
-  const tabletPortrait = semanticMode === 'TABLET_PORTRAIT';
-  const systemsWidth = phonePortrait
-    ? Math.min(270, layout.headerZone.width)
-    : fluidValue(210, width, 0.19, 260);
-
-  if (phonePortrait) {
-    const hintHeight = clampValue(48, layout.controlsZone.height * 0.34, 56);
-    const hintY = layout.controlsZone.y + layout.controlsZone.height - hintHeight / 2;
-    const boardY = layout.gameplayZone.y + 18;
-    return {
-      showHeader: false,
-      showHelper: false,
-      systems: { x: width / 2, y: layout.statusY, width: systemsWidth },
-      board: {
-        x: layout.gameplayZone.x,
-        y: boardY,
-        width: layout.gameplayZone.width,
-        height: hintY - hintHeight / 2 - layout.gapS - boardY,
-      },
-      helper: {
-        x: width / 2,
-        feetY: boardY + Math.min(205, Math.max(150, (hintY - hintHeight / 2 - layout.gapS - boardY) * 0.38)),
-        scale: 0.07,
-      },
-      repaired: { x: width - safe.right, feetY: 0, scale: 0 },
-      showRepaired: false,
-      hint: {
-        x: width / 2,
-        y: hintY,
-        width: Math.min(230, layout.controlsZone.width), height: hintHeight,
-        fontSize: fluidValue(15, width, 0.045, 19),
-      },
-    };
-  }
-
-  if (shortLandscape) {
-    const hintWidth = clampValue(128, layout.safeRect.width * 0.18, 170);
-    const boardWidth = layout.gameplayZone.width - hintWidth - layout.gapM;
-    return {
-      showHeader: false,
-      showHelper: false,
-      systems: { x: width / 2, y: layout.headerY, width: systemsWidth },
-      board: { x: safe.left, y: layout.gameplayZone.y + 18, width: boardWidth, height: height - safe.bottom - layout.gameplayZone.y - 18 },
-      helper: {
-        x: safe.left + boardWidth + layout.gapM + hintWidth / 2,
-        feetY: height - safe.bottom - 62,
-        scale: clampValue(0.045, height * 0.00019, 0.07),
-      },
-      repaired: { x: 0, feetY: 0, scale: 0 }, showRepaired: false,
-      hint: {
-        x: safe.left + boardWidth + layout.gapM + hintWidth / 2,
-        y: height - safe.bottom - 28,
-        width: hintWidth, height: 52, fontSize: 16,
-      },
-    };
-  }
-
-  const titleRowHeight = semanticMode === 'DESKTOP' ? layout.headerHeight : 0;
-  const systemsY = layout.headerZone.y + titleRowHeight + layout.gapS + 26;
-  const boardTop = systemsY + 43 + layout.gapS;
-  const hintHeight = 54;
-  const boardBottom = height - safe.bottom - hintHeight - layout.gapS;
-  const boardWidth = Math.min(tabletPortrait ? 540 : 720, width - safe.left - safe.right - (tabletPortrait ? 180 : 300));
-  const boardHeight = Math.max(330, boardBottom - boardTop);
-  const helperVisibleHeight = height * (tabletPortrait ? 0.158 : 0.223);
-  const repairedVisibleHeight = height * (tabletPortrait ? 0.145 : 0.205);
-  const helperScale = helperVisibleHeight / 1448;
-  const repairedScale = repairedVisibleHeight / 1402;
-  const actorInset = tabletPortrait ? 70 : fluidValue(105, width, 0.095, 150);
-  return {
-    showHeader: semanticMode === 'DESKTOP',
-    showHelper: true,
-    systems: { x: width / 2, y: systemsY, width: systemsWidth },
-    board: { x: (width - boardWidth) / 2, y: boardTop, width: boardWidth, height: boardHeight },
-    helper: { x: safe.left + actorInset, feetY: height - safe.bottom, scale: helperScale },
-    repaired: { x: width - safe.right - actorInset, feetY: height - safe.bottom, scale: repairedScale },
-    showRepaired: true,
-    hint: { x: width / 2, y: height - safe.bottom - hintHeight / 2, width: 220, height: hintHeight, fontSize: 19 },
-  };
-}
-
-export function createMission8SceneLayout(layout: ResponsiveLayout): Mission8SceneLayout {
-  const { viewportWidth: width, viewportHeight: height, safe, semanticMode } = layout;
-  const phonePortrait = semanticMode.startsWith('PHONE_PORTRAIT');
-  const shortLandscape = semanticMode === 'PHONE_LANDSCAPE_SHORT';
-  const ultra = semanticMode === 'PHONE_PORTRAIT_SHORT';
-  if (shortLandscape) {
-    const availableWidth = layout.safeRect.width - layout.gapM;
-    const controlWidth = Math.min(350, availableWidth * 0.44);
-    const boardWidth = availableWidth - controlWidth - layout.gapM;
-    const boardY = layout.gameplayZone.y + 20;
-    const boardHeight = height - safe.bottom - boardY;
-    const controlCenterX = safe.left + boardWidth + layout.gapM + controlWidth / 2;
-    return {
-      board: { x: safe.left, y: boardY, width: boardWidth, height: boardHeight },
-      helper: {
-        x: safe.left + boardWidth - 34,
-        feetY: boardY + Math.min(92, boardHeight * 0.42),
-        scale: clampValue(0.045, height * 0.00018, 0.065),
-      }, systemsY: layout.headerY, routeY: layout.headerY,
-      stripY: boardY + 28, arrowsY: boardY + boardHeight * 0.48, actionsY: height - safe.bottom - 29,
-      controlCenterX, controlWidth, arrowSize: CHILD_UI.touch.minimum, actionHeight: CHILD_UI.touch.minimum,
-    };
-  }
-  if (!phonePortrait) {
-    const boardWidth = Math.min(650, width * 0.52);
-    const systemsY = layout.headerY + layout.headerHeight + layout.gapS;
-    const boardY = systemsY + 60;
-    const boardHeight = Math.min(340, height * 0.46, height - safe.bottom - boardY - 215);
-    const stripY = boardY + boardHeight + 20;
-    return {
-      board: { x: (width - boardWidth) / 2, y: boardY, width: boardWidth, height: boardHeight },
-      helper: { x: Math.max(110, (width - boardWidth) * 0.24), feetY: height - safe.bottom, scale: clampValue(0.18, height * 0.00028, 0.23) },
-      systemsY, routeY: systemsY + 42, stripY, arrowsY: stripY + 86,
-      actionsY: Math.min(stripY + 160, height - safe.bottom - CHILD_UI.touch.minimum / 2),
-      controlCenterX: width / 2, controlWidth: Math.min(500, width - safe.left - safe.right),
-      arrowSize: 62, actionHeight: CHILD_UI.touch.minimum,
-    };
-  }
-  const boardWidth = layout.gameplayZone.width;
-  const boardY = layout.gameplayZone.y + (ultra ? 20 : 24);
-  const boardHeight = layout.gameplayZone.y + layout.gameplayZone.height - boardY;
-  const arrowSize = CHILD_UI.touch.minimum;
-  const actionHeight = CHILD_UI.touch.minimum;
-  const stripY = layout.controlsZone.y + 28;
-  return {
-    board: { x: (width - boardWidth) / 2, y: boardY, width: boardWidth, height: boardHeight },
-    helper: {
-      x: layout.gameplayZone.x + layout.gameplayZone.width - 48,
-      feetY: boardY + Math.min(116, boardHeight * 0.32),
-      scale: ultra ? 0.06 : 0.07,
-    },
-    systemsY: layout.statusY, routeY: layout.statusY, stripY, arrowsY: stripY + 83,
-    actionsY: layout.controlsZone.y + layout.controlsZone.height - actionHeight / 2,
-    controlCenterX: width / 2, controlWidth: layout.controlsZone.width,
-    arrowSize, actionHeight,
-  };
-}
-
-export function createTransitionSceneLayout(layout: ResponsiveLayout): TransitionSceneLayout {
-  const { viewportWidth: width, viewportHeight: height, semanticMode, safe } = layout;
-  const portrait = layout.mode !== 'landscape';
-  const phonePortrait = semanticMode.startsWith('PHONE_PORTRAIT');
-  const buttonHeight = fluidValue(54, height, 0.082, 64);
-  const titleSize = phonePortrait
-    ? fluidValue(28, width, 0.09, 42)
-    : portrait ? fluidValue(28, width, 0.09, 46) : fluidValue(32, height, 0.07, 50);
-  const titleY = phonePortrait ? layout.headerZone.y + layout.headerZone.height + layout.gapL + titleSize / 2 : height * 0.18;
-  const subtitleY = titleY + titleSize * 1.18;
-  const subtitleBottom = subtitleY + titleSize * 0.52;
-  const actorFeetY = height - safe.bottom - buttonHeight - layout.gapM;
-  const actorAvailableHeight = Math.max(180, actorFeetY - subtitleBottom - layout.gapS);
-  const pairSpan = phonePortrait ? Math.min(150, width * 0.4) : (portrait ? 270 : 320);
-  const pairScale = phonePortrait
-    ? Math.min(clampValue(0.15, width * 0.0004, 0.18), actorAvailableHeight / 1120)
-    : (portrait ? 0.2 : 0.23);
-  return {
-    phonePortrait, titleY, titleSize, subtitleY, buttonHeight,
-    buttonY: height - safe.bottom - buttonHeight / 2,
-    actorFeetY, pairScale, pairSpan,
-  };
-}
-
 export function createStartSceneLayout(layout: ResponsiveLayout): StartSceneLayout {
   const { viewportWidth: width, viewportHeight: height, mode, safe } = layout;
   const portrait = mode !== 'landscape';
@@ -617,4 +416,16 @@ export function createStartSceneLayout(layout: ResponsiveLayout): StartSceneLayo
     playHeight,
     playFontSize: fluidValue(23, width, 0.023, 29),
   };
+}
+
+export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7SceneLayout {
+  return composeScene(layout, 7).mission7!;
+}
+
+export function createMission8SceneLayout(layout: ResponsiveLayout): Mission8SceneLayout {
+  return composeScene(layout, 8).mission8!;
+}
+
+export function createTransitionSceneLayout(layout: ResponsiveLayout): TransitionSceneLayout {
+  return composeScene(layout, 'MISSION5_TRANSITION').transition!;
 }

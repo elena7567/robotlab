@@ -1,0 +1,122 @@
+{
+  "baseUrl": "http://192.168.0.107:4198/",
+  "viewport": {
+    "width": 915,
+    "height": 350
+  },
+  "initial": {
+    "header": {
+      "x": 0,
+      "y": 12.25,
+      "width": 915,
+      "height": 44
+    },
+    "ribbon": {
+      "x": 2.2500000000000018,
+      "y": 63.25,
+      "width": 520,
+      "height": 34
+    },
+    "answers": [
+      {
+        "name": "choice-sequence-gear",
+        "role": "ANSWER_CARD",
+        "x": 33.25,
+        "y": 245.75,
+        "width": 110,
+        "height": 56
+      },
+      {
+        "name": "choice-sequence-lightning",
+        "role": "ANSWER_CARD",
+        "x": 149.25,
+        "y": 245.75,
+        "width": 110,
+        "height": 56
+      },
+      {
+        "name": "choice-sequence-planet",
+        "role": "ANSWER_CARD",
+        "x": 265.25,
+        "y": 245.75,
+        "width": 110,
+        "height": 56
+      },
+      {
+        "name": "choice-sequence-star",
+        "role": "ANSWER_CARD",
+        "x": 381.25,
+        "y": 245.75,
+        "width": 110,
+        "height": 56
+      }
+    ],
+    "hint": {
+      "name": "hint-button",
+      "role": "SECONDARY_ACTION",
+      "x": 652.5,
+      "y": 80.25,
+      "width": 124,
+      "height": 56
+    },
+    "sound": {
+      "x": 840.75,
+      "y": 24.25,
+      "width": 48,
+      "height": 18
+    },
+    "homeControl": {
+      "x": 8.25,
+      "y": 4.25,
+      "width": 84,
+      "height": 60
+    },
+    "soundControl": {
+      "x": 822.75,
+      "y": 4.25,
+      "width": 84,
+      "height": 60
+    },
+    "surface": {
+      "outer": {
+        "x": 2.1,
+        "y": 2.1,
+        "width": 910.8,
+        "height": 345.8
+      },
+      "support": {
+        "x": 526.25,
+        "y": 80.25,
+        "width": 376.5,
+        "height": 249.5
+      }
+    },
+    "safeRect": {
+      "x": 0,
+      "y": 0,
+      "width": 915,
+      "height": 350
+    },
+    "childVisualReadability": "PASS"
+  },
+  "feedback": {
+    "x": 24.25,
+    "y": 307.75,
+    "width": 125,
+    "height": 16
+  },
+  "checks": {
+    "headerAndRibbonSeparated": true,
+    "hintDoesNotOverlapAnswers": true,
+    "feedbackDoesNotOverlapAnswers": true,
+    "childVisualReadabilityPass": true,
+    "soundInsideSafeRect": true,
+    "unifiedSurfacePresent": true,
+    "homeInsideUnifiedSurface": true,
+    "soundInsideUnifiedSurface": true,
+    "ribbonInsideUnifiedSurface": true,
+    "hintInsideUnifiedSurface": true,
+    "browserClean": true
+  },
+  "browserErrors": []
+}

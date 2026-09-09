@@ -159,7 +159,7 @@ async function mission8ArrivalCase(browser, viewport) {
 
 (async () => {
   fs.mkdirSync(outputDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const transitions = [], mission7Completion = [], mission8Arrival = [];
   for (const viewport of viewports) transitions.push(await transitionCase(browser, viewport));
   for (const viewport of viewports) mission7Completion.push(await mission7CompletionCase(browser, viewport));

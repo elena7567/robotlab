@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import type { BatteryLevel, EnergyResult, EnergySnapshot } from '../mechanics/energy';
 import { addControl, setControlEnabled } from './controls';
 import type { TaskCardSizing } from './responsiveLayout';
+import type { RectLayout } from './responsiveLayout';
 import { UI_COLORS, UI_FONT } from './visualTheme';
 import { CHILD_UI } from './childUi';
 
@@ -11,6 +12,7 @@ export interface EnergyTaskCardConfig {
   readonly width: number;
   readonly height: number;
   readonly sizing: TaskCardSizing;
+  readonly actionRect?: RectLayout;
   readonly snapshot: EnergySnapshot;
   readonly onSelect: (level: BatteryLevel) => void;
   readonly onOrder: (level: BatteryLevel) => void;
@@ -72,8 +74,13 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
 
     const compact = config.height < 260;
     const actionHeight = Math.max(CHILD_UI.touch.minimum, sizing.actionHeight);
-    const footerY = config.height - actionHeight / 2 - (compact ? 8 : 14);
-    const feedbackY = footerY - actionHeight / 2 - (compact ? 6 : 11);
+    const externalActions = config.actionRect;
+    const footerY = externalActions
+      ? externalActions.y + externalActions.height / 2 - config.y
+      : config.height - actionHeight / 2 - (compact ? 8 : 14);
+    const feedbackY = externalActions
+      ? config.height - sizing.feedbackFontSize / 2 - 8
+      : footerY - actionHeight / 2 - (compact ? 8 : 12) - sizing.feedbackFontSize / 2;
     const areaTop = Math.max(sizing.areaTop, instructionY + instruction.height + 4);
     const areaBottom = feedbackY - sizing.feedbackFontSize - 3;
     const areaHeight = Math.max(48, areaBottom - areaTop);
@@ -121,15 +128,20 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
     }).setOrigin(0.5).setName('energy-progress');
     this.add(this.feedback);
     const buttonGap = Math.max(7, sizing.actionGap);
-    const buttonWidth = Math.min(168, (config.width - sizing.horizontalPadding * 2 - buttonGap) / 2);
-    const hintButton = addControl(scene, buttonWidth / 2 + sizing.horizontalPadding, footerY, 'ПОДСКАЗКА', () => {
+    const actionAvailableWidth = externalActions?.width ?? (config.width - sizing.horizontalPadding * 2);
+    const buttonWidth = Math.min(168, (actionAvailableWidth - buttonGap) / 2);
+    const actionLeft = externalActions ? externalActions.x - config.x : sizing.horizontalPadding;
+    const hintButton = addControl(scene, actionLeft + buttonWidth / 2, footerY, 'ПОДСКАЗКА', () => {
       if (this.locked) return;
       const level = config.onHint();
       this.pulse(level);
     }, { width: buttonWidth, height: actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, sizing.actionFontSize), fill: UI_COLORS.purple,
-      hoverFill: 0x916ee1, stroke: UI_COLORS.purpleDark }).setName('energy-hint-button');
+      hoverFill: 0x916ee1, stroke: UI_COLORS.purpleDark }).setName('energy-hint-button').setData({
+        childVisualRole: 'SECONDARY_ACTION',
+        visualLocalBounds: { x: -buttonWidth / 2, y: -actionHeight / 2, width: buttonWidth, height: actionHeight },
+      });
     this.add(hintButton);
-    this.checkButton = addControl(scene, config.width - sizing.horizontalPadding - buttonWidth / 2, footerY, 'ПРОВЕРИТЬ', () => {
+    this.checkButton = addControl(scene, actionLeft + buttonWidth + buttonGap + buttonWidth / 2, footerY, 'ПРОВЕРИТЬ', () => {
       if (this.locked) return;
       const result = config.onCheck();
       if (result === 'idle') {
@@ -145,7 +157,10 @@ export class EnergyTaskCard extends Phaser.GameObjects.Container {
         this.feedback.setColor('#a45a32').setText('ПОПРОБУЙ ЕЩЁ');
         this.redraw();
       }
-    }, { width: buttonWidth, height: actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, sizing.actionFontSize) }).setName('energy-check-button');
+    }, { width: buttonWidth, height: actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, sizing.actionFontSize) }).setName('energy-check-button').setData({
+      childVisualRole: 'PRIMARY_ACTION',
+      visualLocalBounds: { x: -buttonWidth / 2, y: -actionHeight / 2, width: buttonWidth, height: actionHeight },
+    });
     this.add(this.checkButton);
     this.redraw();
     this.setData({ challengeIndex: config.snapshot.challengeIndex, challengeKind: config.snapshot.challenge.kind });

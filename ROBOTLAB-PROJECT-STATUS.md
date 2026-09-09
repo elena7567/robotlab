@@ -6,11 +6,11 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Stage 8.4 Character Art Migration v2 — Mission 7 character review follow-up
+Stage 8.4C Full Mobile Interaction and Composition Regression
 
 ## CURRENT STATUS
 
-READY_FOR_MISSION7_CHARACTER_REVIEW — Robot v2 production art is active. Mission 7 desktop now uses measured readable side-character heights with a 1.111 helper/repaired hierarchy; tablet uses a slightly smaller 1.113 hierarchy; phone keeps the mechanic clear of miniature full-body robots. The helper extraction halo at the collar was removed in the production PNG and alpha bounds were re-normalized. Manual approval remains pending; no commit or push was performed.
+READY_FOR_REAL_SAMSUNG_REVIEW — The 2026-09-09 physical-device overlap reports for Missions 2, 6, 8 and the transition were reproduced and corrected. Missions 1–8 complete in one real-input browser flow; child readability, Samsung short-landscape overlap, orientation lifecycle, all Mission 8 routes, special states, build, console and network checks pass. Final approval still belongs to a fresh physical Samsung review. No commit or push was performed.
 
 ## CANONICAL LOCAL URL
 
@@ -25,8 +25,8 @@ READY_FOR_MISSION7_CHARACTER_REVIEW — Robot v2 production art is active. Missi
 
 - Vite development and preview host: `0.0.0.0`.
 - Canonical desktop URL remains `http://127.0.0.1:4198/`.
-- Detected active physical Wi-Fi LAN IPv4: `192.168.0.114` (gateway `192.168.0.1`, subnet mask `255.255.255.0`). VPN adapter addresses were not selected as the phone/tablet LAN address.
-- Same-network phone/tablet URL: `http://192.168.0.114:4198/`.
+- Detected active physical LAN IPv4 on 2026-09-09: `192.168.0.107` (gateway `192.168.0.1`, subnet mask `255.255.255.0`). VPN adapter addresses were not selected as the phone/tablet LAN address.
+- Same-network phone/tablet URL: `http://192.168.0.107:4198/`.
 - Gameplay, Missions, production assets, and public deployment configuration were not changed.
 - Verification on 2026-08-30: both `http://127.0.0.1:4198/` and `http://192.168.0.114:4198/` returned HTTP 200. Headless Chrome at 390×844 loaded the active `StartScene`, one 390×844 game canvas, and 82 resources through each URL with zero console, page, failed-request, or non-2xx response errors; both captures were visually inspected and matched.
 - Strict-port verification: a second direct Vite launch on `0.0.0.0:4198` failed with `Port 4198 is already in use`, confirming that no fallback port is selected.
@@ -50,6 +50,64 @@ MISSIONS 6–8 IMPLEMENTED; MISSIONS 9–10 DESIGN ONLY / NOT IMPLEMENTED
 - Focused and regression browser QA PASS: 23 fresh-page cases, required 360×640, 390×844, 844×390, 768×1024, 1280×720, and 1438×914 profiles, Mission 1–8 character states, Mission 8 charger arrival, Victory, and portrait→landscape→portrait. Browser console/page/request/response failures: none; old active robot textures: none; orientation ratio remained stable.
 - Evidence: `qa/stage8-4-character-art-playtest.cjs`, `docs/qa/stage8-4-character-art.json`, and `docs/qa/screenshots/stage8-4-*.png`. Required Mission 7 review captures: `stage8-4-mission7-desktop.png`, `stage8-4-mission7-wide-1438x914.png`, `stage8-4-mission7-tablet-768x1024.png`, and `stage8-4-mission7-phone.png`.
 - Files moved or deleted: none. No commit or push was performed. Status is review-ready, not final visual approval.
+
+## STAGE 8.4A — SCENE COMPOSITION DIRECTOR (2026-09-09)
+
+- Added a pure `sceneCompositionDirector.ts` layer that consumes the existing centralized `ResponsiveLayout` and returns semantic regions, component size contracts, mission character declarations, whitespace allocation, and Mission 7 / Mission 8 / transition layout payloads.
+- Kept viewport classification, safe-area handling, camera/framing, route logic, educational mechanics, and approved production artwork unchanged. `responsiveLayout.ts` now retains compatibility wrappers for older Mission 7, Mission 8, and transition QA entry points by delegating to the Director.
+- Mission 7 phone portrait is intentionally board-focused with full-body side actors hidden. Non-portrait Mission 7 reserves a bounded support region for the repaired robot and keeps the hint grouped with that support column.
+- Mission 8 keeps the board robot as the only active route actor. Compact phone layouts use short action labels (`СОВЕТ`, `УБРАТЬ`, `ПУСК`) so controls stay readable, and the command strip uses stable pooled slots instead of recreation churn.
+- Mission 8 board actor no longer appears to have a transparent circular neck artifact on the START cell. The cause was the previous circular start-pad highlight drawn behind the tiny robot, not the helper PNG; it is now a quieter rectangular cell highlight.
+- Transition placement now uses Robot v2 visible-alpha bounds for short landscape and controlled screen placement for phone portrait so the title, robot pair, and continue action read as one composed state.
+- QA evidence: `qa/stage8-4a-composition-contract.cjs`, `qa/stage8-4a-scene-composition-playtest.cjs`, `docs/qa/stage8-4a-composition-contract.json`, `docs/qa/stage8-4a-scene-composition.json`, and `docs/qa/screenshots/stage8-4a-*.png`.
+- Verification PASS: `npm run typecheck`; `npm run build`; `npm run qa:stage8-3e:layout`; `npm run qa:stage8-4a:contract`; shared-runner browser QA for `qa/stage8-4a-scene-composition-playtest.cjs` against `http://127.0.0.1:4198/`. Browser console/page/request/response failures: none in the final run.
+- Files moved or deleted: none. No commit or push was performed.
+
+## STAGE 8.4B — CHILD INTERACTION SCALE + SHORT-LANDSCAPE READABILITY (2026-09-09)
+
+- Five independent preimplementation reviews (mobile responsive, game design, UI/frontend, child UX, and game QA) agreed that the previous short-landscape result failed: interactive bounds were being treated as visible size, Mission 2 feedback/actions competed with answers, and Mission 5 artwork was not measured by visible alpha.
+- Added a shared post-composition `ChildInteractionMetrics` layer. It publishes separate visible-object, answer-card, memory-card, touch-target, spacing, feedback, artwork-occupancy, secondary-action, and compact-footer policies from the actual task-card geometry.
+- Added visible-alpha artwork fitting and auditing. `TOUCH_TARGET_PASS` now means measured interactive hit bounds meet the 56 px child target, while `CHILD_VISUAL_READABILITY_PASS` means visible artwork and explicit visual-card bounds meet the mission-specific child-facing thresholds.
+- Mission 2 keeps the task-first left mechanic/right helper composition. The sequence and four answers use visible-alpha sizing; the Hint action is secondary. Under Samsung browser-chrome height pressure, transient feedback and Hint share one reserved footer row, so neither can overlap answer cards.
+- The short-landscape global title surface is slightly shallower while Home/Sound sizing remains intact, creating visible separation from the mission ribbon without introducing a device-specific branch.
+- Mission 5 uses a stable 4×2 grid in short landscape, including the constrained browser-chrome case. Cards stay at least 90 px wide, existing cover/face artwork fills the usable card height, and Hint remains in the secondary footer position.
+- Required 18-case Mission 2/Mission 5 matrix plus two 915×350 browser-chrome cases passes with `failures: []`. Missions 1–8 all report child visual readability PASS, no undersized touch targets, and clean console/page/network results. Real touch at 844×390 and real mouse input at 1280×720 are exercised for Missions 2 and 5.
+- Evidence: `qa/stage8-4b-child-readability-playtest.cjs`, `docs/qa/stage8-4b-child-readability.json`, and `docs/qa/screenshots/stage8-4b-*`. Required Mission 2 and Mission 5 initial/state captures were visually inspected; the additional `stage8-4b-mission2-browser-chrome-915x350-*` captures reproduce the physical-device pressure case.
+- Verification: `npm run typecheck`; `npm run build`; `npm run qa:stage8-3e:layout`; `npm run qa:stage8-4a:contract`; shared-runner Stage 8.4B browser QA. Production build retains only the existing non-blocking Phaser chunk-size advisory.
+- Files moved or deleted: none. Approved production artwork, gameplay rules, Scene Composition Director decisions, and Mission 8 route logic were not changed. No commit or push was performed.
+
+## STAGE 8.4C — FULL MOBILE INTERACTION AND COMPOSITION REGRESSION (2026-09-09)
+
+- Treated the user's phone photographs as current defect evidence rather than as a replacement visual design. Reproduced Mission 2 feedback overlap, Mission 6 Energy/action collision, transition character overflow, and Mission 8 status/tutorial/control pressure across portrait, 360×600 short portrait, 844×390 landscape, and 915×350/320 Android-browser-chrome profiles.
+- Mission 6 now separates Energy progress from Hint/Check and uses a bounded support/action region inside the unified short-landscape game surface. Battery choices and both actions remain contained and keep at least 56 px touch targets.
+- Mission 2 sequence and option geometry now fits the card's actual content width. Wrong feedback occupies its own reserved row and no longer crosses an answer card.
+- Transition characters are fitted by visible alpha into explicit character slots in both portrait and short landscape, preventing cropped or giant robots and keeping title/subtitle/action regions clear.
+- Mission 8 no longer renders `НАЖМИ → И СОСТАВЬ ПУТЬ` as a free-floating card over gameplay. It uses the reserved feedback row between the program strip and direction controls; the systems ribbon and task heading have an explicit composition gap. All four direction controls expose 60×60 px hit regions in the 360×600 pressure case and real touch on `→` adds the command.
+- Mission 8 dense command strips center all slots and suppress the redundant left label when necessary, removing Route 2 desktop overflow without changing the route model.
+- Automated evidence PASS: 24-case child-readability matrix for Missions 1–8; focused 5-profile defect regression; Samsung 915×350 LAN overlap regression; 17-case layout contract; transition/completion special states; six orientation-lifecycle profiles over five cycles; all three Mission 8 routes on mobile and desktop; and one continuous real-input Mission 1→8 completion flow using touch, drag, battery checks, and route execution. Browser console errors: none.
+- QA added: `qa/stage8-4c-user-repro.cjs` and `qa/stage8-4c-full-mechanics-playtest.cjs`; focused screenshots are under `docs/qa/screenshots/stage8-4c-*`.
+- Final review service is the strict-port production preview on `0.0.0.0:4198` (listener PID 21520), not the Vite HMR development server. `http://127.0.0.1:4198/` and `http://192.168.0.107:4198/` both return HTTP 200; 100 sequential requests produced zero failures (average 3.7 ms, maximum 54 ms). The production LAN smoke test completed Start → Mission 2 plus portrait↔landscape reflow with no console, page, request, or HMR-client errors.
+- Files materially modified for this correction: `src/game/ui/sceneCompositionDirector.ts`, `src/game/ui/EnergyTaskCard.ts`, `src/game/ui/TaskCard.ts`, `src/game/scenes/Mission6Scene.ts`, `src/game/scenes/Mission8Scene.ts`, `src/game/scenes/TransitionScene.ts`, focused QA harnesses, and this status document. Files moved or deleted: none. No commit or push was performed.
+
+### Samsung overlap evidence follow-up
+
+- The user-provided 11:47/11:50 photographs remain valid evidence of the pre-correction scene: the centered Hint overlaps the answer row and wrong feedback crosses the first answer card.
+- The 12:31 physical-device follow-up proved that 915×350 was not the limiting geometry. The current layout reproduced the exact Hint/answer overlap at 915×330: answers ended at `y=263`, Hint began at `y=250`, producing a deterministic 13 px intersection.
+- Root cause: below a 260 px composed task-card height, independent minimums for sequence, answers, and the internal Hint footer could not all fit vertically. The visual-readability audit passed each object independently but did not assert cross-region intersections.
+- The Scene Composition Director now assigns `SECONDARY_ACTIONS` to the top of the right support column only under this severe height pressure and starts the `CHARACTER` region below it. TaskCard and MemoryTaskCard consume that region; their left panels use the recovered footer space for mechanic/feedback only. This is a composition-height policy, not a Samsung-model check.
+- Focused LAN regression PASS at 915×320, 915×330, 915×340, and 915×350: global-title/ribbon separation PASS; Hint/answer intersections `0`; feedback/answer intersections `0`; Sound inside safe rect; child visual readability PASS; browser errors none.
+- Full Stage 8.4B regression PASS: 24 Mission 2/Mission 5 cases, Missions 1–8 audit PASS, no undersized visual or touch objects, and `failures: []`. Stage 8.4A Director contract remains 81/81 PASS and the centralized layout contract remains 17/17 PASS.
+- Evidence: `qa/stage8-4b-samsung-overlap-regression.cjs`, `docs/qa/stage8-4b-samsung-overlap-915x{320,330,340,350}.json`, and matching `docs/qa/screenshots/stage8-4b-samsung-lan-overlap-915x*.png` captures.
+- The remaining gate is a fresh physical-device load and user approval.
+
+### Unified short-landscape game surface follow-up
+
+- The 12:54 Samsung screenshot confirmed a composition defect beyond overlap: the cream task card read as the only container while Home, global title, Sound, Hint, and the robot appeared as unrelated elements floating directly on laboratory scenery.
+- The Scene Composition Director now publishes a full-safe-width `surface` for shared Missions 1–6 in phone short landscape. It contains one outer game surface and one right support surface; the task card remains the primary inner mechanic panel.
+- `GameScene` renders the surface as a restrained dark-blue/cyan framed module behind all screen-space controls and the character. Home, global title, Sound, mission ribbon, task card, Hint, and robot now read as one bounded composition while the existing laboratory remains a subdued contextual layer.
+- The mission content starts below the top-control row with an explicit gap, so Home/global-title/Sound do not visually collide with the task ribbon.
+- Focused 915×330 LAN QA verifies the unified surface exists and fully contains Home, Sound, ribbon, and Hint. Hint/answer and feedback/answer intersections remain zero; Sound remains inside the safe rect.
+- Full Stage 8.4B matrix, Missions 1–8 audit, 81-case Director contract, 17-case centralized layout contract, TypeScript, and production build all PASS. Required short-landscape screenshots were visually inspected after the change.
 
 ## STAGE 8.3O — MISSION 2 VISIBLE TASK-FIRST ENLARGEMENT (2026-08-31)
 
@@ -982,7 +1040,7 @@ Generated build output under `dist/` is ignored project output and is not a sour
 
 ## BLOCKERS
 
-- No implementation or automated-QA blocker remains. Final physical-device acceptance belongs to the user's Samsung Android review at `http://192.168.0.114:4198/`.
+- No implementation or automated-QA blocker remains. Final physical-device acceptance belongs to the user's Samsung Android review at `http://192.168.0.107:4198/`.
 
 ## GIT
 
@@ -997,7 +1055,7 @@ main
 
 ## NEXT
 
-Review all three Mission 8 maps on the real Samsung, especially the nine-command Route 2 detour. Mission 9 remains design-only and requires separate authorization.
+Review Missions 2, 6, 8 and the transition on the real Samsung at `http://192.168.0.107:4198/`, then complete all three Mission 8 maps, especially the nine-command Route 2 detour. Mission 9 remains design-only and requires separate authorization.
 
 ## LAST VERIFIED
 

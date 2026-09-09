@@ -1,0 +1,78 @@
+{
+  "baseUrl": "http://192.168.0.107:4198/",
+  "viewport": {
+    "width": 915,
+    "height": 350
+  },
+  "initial": {
+    "header": {
+      "x": 0,
+      "y": 12.25,
+      "width": 915,
+      "height": 44
+    },
+    "ribbon": {
+      "x": 2.2500000000000018,
+      "y": 59.45,
+      "width": 520,
+      "height": 34
+    },
+    "answers": [
+      {
+        "name": "choice-sequence-gear",
+        "role": "ANSWER_CARD",
+        "x": 33.25,
+        "y": 208.75,
+        "width": 110,
+        "height": 56
+      },
+      {
+        "name": "choice-sequence-lightning",
+        "role": "ANSWER_CARD",
+        "x": 149.25,
+        "y": 208.75,
+        "width": 110,
+        "height": 56
+      },
+      {
+        "name": "choice-sequence-planet",
+        "role": "ANSWER_CARD",
+        "x": 265.25,
+        "y": 208.75,
+        "width": 110,
+        "height": 56
+      },
+      {
+        "name": "choice-sequence-star",
+        "role": "ANSWER_CARD",
+        "x": 381.25,
+        "y": 208.75,
+        "width": 110,
+        "height": 56
+      }
+    ],
+    "hint": {
+      "name": "hint-button",
+      "role": "SECONDARY_ACTION",
+      "x": 376.25,
+      "y": 269.75,
+      "width": 124,
+      "height": 56
+    },
+    "childVisualReadability": "PASS"
+  },
+  "feedback": {
+    "x": 24.25,
+    "y": 289.7499969482422,
+    "width": 59,
+    "height": 16
+  },
+  "checks": {
+    "headerAndRibbonSeparated": true,
+    "hintDoesNotOverlapAnswers": true,
+    "feedbackDoesNotOverlapAnswers": true,
+    "childVisualReadabilityPass": true,
+    "browserClean": true
+  },
+  "browserErrors": []
+}

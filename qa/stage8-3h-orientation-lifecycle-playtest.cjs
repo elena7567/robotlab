@@ -169,7 +169,7 @@ async function runCase(browser, mission, portrait, cycles, capture) {
 
 (async () => {
   fs.mkdirSync(screenshotDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const cases = [];
   for (const mission of [1, 5, 7, 8]) cases.push(await runCase(browser, mission, [390, 844], 5, mission === 7 || mission === 8));
   cases.push(await runCase(browser, 8, [412, 915], 5, false));

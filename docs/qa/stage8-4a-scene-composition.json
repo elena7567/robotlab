@@ -1,0 +1,3312 @@
+{
+  "results": [
+    {
+      "name": "mission1-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission1-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_1_DESKTOP",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "CHARACTER",
+            "coordinateSpace": "LOGICAL_WORLD",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": true,
+            "occupancy": {
+              "min": 0.48,
+              "ideal": 0.72,
+              "max": 0.86
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "grounded-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "bounds": {
+              "x": 544.1328373670269,
+              "y": 191.0702879413576,
+              "width": 191.85254269701386,
+              "height": 372.83704616683315,
+              "right": 735.9853800640408,
+              "bottom": 563.9073341081908
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "DESKTOP",
+          "compositionPolicyId": "MISSION_1_DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [
+            {
+              "name": "choice-odd-apple",
+              "role": "ANSWER_CARD",
+              "x": 58.60273719889322,
+              "y": 236.27606780598958,
+              "width": 139.93786666666665,
+              "height": 109.44603333333336
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "role": "ANSWER_SYMBOL",
+              "x": 92.04883421957493,
+              "y": 246.23918294906616,
+              "width": 74.13358689844608,
+              "height": 87.2662663385272
+            },
+            {
+              "name": "choice-odd-banana",
+              "role": "ANSWER_CARD",
+              "x": 210.25939918619792,
+              "y": 236.27606780598958,
+              "width": 139.93786666666665,
+              "height": 109.44603333333336
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "role": "ANSWER_SYMBOL",
+              "x": 236.16780445724726,
+              "y": 246.39459927380085,
+              "width": 88.89813774824142,
+              "height": 86.87772552669048
+            },
+            {
+              "name": "choice-odd-carrot",
+              "role": "ANSWER_CARD",
+              "x": 58.60273719889322,
+              "y": 357.4409237630208,
+              "width": 139.93786666666665,
+              "height": 109.44603333333339
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "role": "ANSWER_SYMBOL",
+              "x": 79.84865272790194,
+              "y": 363.4409226253629,
+              "width": 97.44603560864925,
+              "height": 97.44603560864925
+            },
+            {
+              "name": "choice-odd-ball",
+              "role": "ANSWER_CARD",
+              "x": 210.25939918619792,
+              "y": 357.4409237630208,
+              "width": 139.93786666666665,
+              "height": 109.44603333333339
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "role": "ANSWER_SYMBOL",
+              "x": 231.50531471520662,
+              "y": 363.4409226253629,
+              "width": 97.44603560864925,
+              "height": 97.44603560864925
+            },
+            {
+              "name": "hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 146.39999389648438,
+              "y": 500.88692955729164,
+              "width": 116,
+              "height": 63.625066666666726
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "choice-odd-apple",
+              "role": "ANSWER_CARD",
+              "x": 54.60273719889322,
+              "y": 232.27606780598958,
+              "width": 147.93786666666665,
+              "height": 117.44603333333336
+            },
+            {
+              "name": "choice-odd-banana",
+              "role": "ANSWER_CARD",
+              "x": 206.25939918619792,
+              "y": 232.27606780598958,
+              "width": 147.93786666666665,
+              "height": 117.44603333333336
+            },
+            {
+              "name": "choice-odd-carrot",
+              "role": "ANSWER_CARD",
+              "x": 54.60273719889322,
+              "y": 353.4409237630208,
+              "width": 147.93786666666665,
+              "height": 117.44603333333339
+            },
+            {
+              "name": "choice-odd-ball",
+              "role": "ANSWER_CARD",
+              "x": 206.25939918619792,
+              "y": 353.4409237630208,
+              "width": 147.93786666666665,
+              "height": 117.44603333333339
+            },
+            {
+              "name": "hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 142.39999389648438,
+              "y": 496.88692955729164,
+              "width": 124,
+              "height": 71.62506666666673
+            }
+          ],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 373,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "game-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "game-header",
+              "x": 529,
+              "y": 36.28,
+              "width": 222,
+              "height": 34
+            },
+            {
+              "name": "task-card",
+              "x": 25.200000000000003,
+              "y": 92.94746666666667,
+              "width": 358.40000000000003,
+              "height": 479.56453333333343
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "game-home",
+            "width": 100,
+            "height": 62
+          },
+          {
+            "name": "game-sound",
+            "width": 100,
+            "height": 62
+          },
+          {
+            "name": "choice-odd-apple",
+            "width": 147.93786666666668,
+            "height": 117.44603333333333
+          },
+          {
+            "name": "choice-odd-banana",
+            "width": 147.93786666666668,
+            "height": 117.44603333333333
+          },
+          {
+            "name": "choice-odd-carrot",
+            "width": 147.93786666666668,
+            "height": 117.44603333333333
+          },
+          {
+            "name": "choice-odd-ball",
+            "width": 147.93786666666668,
+            "height": 117.44603333333333
+          },
+          {
+            "name": "hint-button",
+            "width": 124,
+            "height": 71.62506666666667
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission1-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission1-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_1_PHONE_PORTRAIT_TALL",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "CHARACTER",
+            "coordinateSpace": "LOGICAL_WORLD",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": true,
+            "occupancy": {
+              "min": 0.48,
+              "ideal": 0.72,
+              "max": 0.86
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "grounded-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "bounds": {
+              "x": 133.7078756120998,
+              "y": 586.95889196436,
+              "width": 122.62766652799272,
+              "height": 238.35469863060018,
+              "right": 256.3355421400925,
+              "bottom": 825.3135905949601
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_1_PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [
+            {
+              "name": "choice-odd-apple",
+              "role": "ANSWER_CARD",
+              "x": 54.833338419596345,
+              "y": 261.9766438802083,
+              "width": 134.66666666666669,
+              "height": 99.08333333333337
+            },
+            {
+              "name": "choice-image-odd-apple",
+              "role": "ANSWER_SYMBOL",
+              "x": 89.5277813076973,
+              "y": 271.51830863952637,
+              "width": 66.25000315904617,
+              "height": 77.98611482977867
+            },
+            {
+              "name": "choice-odd-banana",
+              "role": "ANSWER_CARD",
+              "x": 200.50001017252603,
+              "y": 261.9766438802083,
+              "width": 134.6666666666667,
+              "height": 99.08333333333337
+            },
+            {
+              "name": "choice-image-odd-banana",
+              "role": "ANSWER_SYMBOL",
+              "x": 228.45834162831306,
+              "y": 271.657197535038,
+              "width": 79.44444823265076,
+              "height": 77.6388925909996
+            },
+            {
+              "name": "choice-odd-carrot",
+              "role": "ANSWER_CARD",
+              "x": 54.833338419596345,
+              "y": 372.0599873860677,
+              "width": 134.66666666666669,
+              "height": 99.08333333333337
+            },
+            {
+              "name": "choice-image-odd-carrot",
+              "role": "ANSWER_SYMBOL",
+              "x": 78.62500301003456,
+              "y": 378.05998530983925,
+              "width": 87.08333748579025,
+              "height": 87.08333748579025
+            },
+            {
+              "name": "choice-odd-ball",
+              "role": "ANSWER_CARD",
+              "x": 200.50001017252603,
+              "y": 372.0599873860677,
+              "width": 134.6666666666667,
+              "height": 99.08333333333337
+            },
+            {
+              "name": "choice-image-odd-ball",
+              "role": "ANSWER_SYMBOL",
+              "x": 224.29167476296425,
+              "y": 378.05998530983925,
+              "width": 87.08333748579025,
+              "height": 87.08333748579025
+            },
+            {
+              "name": "hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 137,
+              "y": 505.1433512369792,
+              "width": 116,
+              "height": 62.666666666666686
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "choice-odd-apple",
+              "role": "ANSWER_CARD",
+              "x": 50.833338419596345,
+              "y": 257.9766438802083,
+              "width": 142.66666666666669,
+              "height": 107.08333333333337
+            },
+            {
+              "name": "choice-odd-banana",
+              "role": "ANSWER_CARD",
+              "x": 196.50001017252603,
+              "y": 257.9766438802083,
+              "width": 142.6666666666667,
+              "height": 107.08333333333337
+            },
+            {
+              "name": "choice-odd-carrot",
+              "role": "ANSWER_CARD",
+              "x": 50.833338419596345,
+              "y": 368.0599873860677,
+              "width": 142.66666666666669,
+              "height": 107.08333333333337
+            },
+            {
+              "name": "choice-odd-ball",
+              "role": "ANSWER_CARD",
+              "x": 196.50001017252603,
+              "y": 368.0599873860677,
+              "width": 142.6666666666667,
+              "height": 107.08333333333337
+            },
+            {
+              "name": "hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 133,
+              "y": 501.1433512369792,
+              "width": 124,
+              "height": 70.66666666666669
+            }
+          ],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 238,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "task-card",
+              "x": 13.649999999999977,
+              "y": 125.47666666666667,
+              "width": 362.70000000000005,
+              "height": 450.3333333333333
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "game-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "game-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "choice-odd-apple",
+            "width": 142.66666666666669,
+            "height": 107.08333333333334
+          },
+          {
+            "name": "choice-odd-banana",
+            "width": 142.66666666666669,
+            "height": 107.08333333333334
+          },
+          {
+            "name": "choice-odd-carrot",
+            "width": 142.66666666666669,
+            "height": 107.08333333333334
+          },
+          {
+            "name": "choice-odd-ball",
+            "width": 142.66666666666669,
+            "height": 107.08333333333334
+          },
+          {
+            "name": "hint-button",
+            "width": 124,
+            "height": 70.66666666666666
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission2-short-landscape",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission2-short-landscape.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "policyId": "MISSION_2_PHONE_LANDSCAPE_SHORT",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "SUPPORTING_CHARACTER",
+            "presentation": "REACTION_PORTRAIT",
+            "region": "CHARACTER",
+            "coordinateSpace": "LOGICAL_WORLD",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": true,
+            "occupancy": {
+              "min": 0.48,
+              "ideal": 0.72,
+              "max": 0.86
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "grounded-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "bounds": {
+              "x": 614.8322345392116,
+              "y": 136.04619244598393,
+              "width": 118.3923529312658,
+              "height": 230.12989496731268,
+              "right": 733.2245874704774,
+              "bottom": 366.1760874132966
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_2_PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "FAIL",
+          "undersizedVisibleObjects": [
+            "choice-image-sequence-gear",
+            "choice-image-sequence-lightning",
+            "choice-image-sequence-star"
+          ],
+          "visibleObjectBounds": [
+            {
+              "name": "sequence-symbol-0-sequence-star",
+              "role": "SEQUENCE_SYMBOL",
+              "x": 114.51000326871872,
+              "y": 160.1806114912033,
+              "width": 52.85999834537506,
+              "height": 51.23631238937378
+            },
+            {
+              "name": "sequence-symbol-1-sequence-gear",
+              "role": "SEQUENCE_SYMBOL",
+              "x": 173.36998783797026,
+              "y": 159.8663104325533,
+              "width": 52.859999909996986,
+              "height": 52.728942058980465
+            },
+            {
+              "name": "sequence-symbol-2-sequence-star",
+              "role": "SEQUENCE_SYMBOL",
+              "x": 232.23000448942184,
+              "y": 160.1806114912033,
+              "width": 52.85999834537506,
+              "height": 51.23631238937378
+            },
+            {
+              "name": "sequence-symbol-3-sequence-gear",
+              "role": "SEQUENCE_SYMBOL",
+              "x": 291.0899890586734,
+              "y": 159.8663104325533,
+              "width": 52.859999909996986,
+              "height": 52.728942058980465
+            },
+            {
+              "name": "choice-sequence-gear",
+              "role": "ANSWER_CARD",
+              "x": 34.65000396728516,
+              "y": 219.77000427246094,
+              "width": 107.505,
+              "height": 56
+            },
+            {
+              "name": "choice-image-sequence-gear",
+              "role": "ANSWER_SYMBOL",
+              "x": 67.3503089658916,
+              "y": 226.68301225453615,
+              "width": 42.10439000278711,
+              "height": 41.999998953193426
+            },
+            {
+              "name": "choice-sequence-lightning",
+              "role": "ANSWER_CARD",
+              "x": 148.15500122070313,
+              "y": 219.77000427246094,
+              "width": 107.505,
+              "height": 56
+            },
+            {
+              "name": "choice-image-sequence-lightning",
+              "role": "ANSWER_SYMBOL",
+              "x": 189.63946051895618,
+              "y": 226.40918046236038,
+              "width": 26.26804009079933,
+              "height": 41.99999816715717
+            },
+            {
+              "name": "choice-sequence-planet",
+              "role": "ANSWER_CARD",
+              "x": 261.6600061035156,
+              "y": 219.77000427246094,
+              "width": 107.505,
+              "height": 56
+            },
+            {
+              "name": "choice-image-sequence-planet",
+              "role": "ANSWER_SYMBOL",
+              "x": 287.68882224708796,
+              "y": 225.43447824195027,
+              "width": 55.907894022762775,
+              "height": 41.9999994635582
+            },
+            {
+              "name": "choice-sequence-star",
+              "role": "ANSWER_CARD",
+              "x": 375.16498046875,
+              "y": 219.77000427246094,
+              "width": 107.505,
+              "height": 56
+            },
+            {
+              "name": "choice-image-sequence-star",
+              "role": "ANSWER_SYMBOL",
+              "x": 407.2519881874323,
+              "y": 226.32634297013283,
+              "width": 43.33098456263542,
+              "height": 41.999998688697815
+            },
+            {
+              "name": "hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 199.58000366210936,
+              "y": 303.77001953125,
+              "width": 118.16,
+              "height": 56
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "choice-sequence-gear",
+              "role": "ANSWER_CARD",
+              "x": 30.65000396728516,
+              "y": 215.77000427246094,
+              "width": 115.505,
+              "height": 64
+            },
+            {
+              "name": "choice-sequence-lightning",
+              "role": "ANSWER_CARD",
+              "x": 144.15500122070313,
+              "y": 215.77000427246094,
+              "width": 115.505,
+              "height": 64
+            },
+            {
+              "name": "choice-sequence-planet",
+              "role": "ANSWER_CARD",
+              "x": 257.6600061035156,
+              "y": 215.77000427246094,
+              "width": 115.505,
+              "height": 64
+            },
+            {
+              "name": "choice-sequence-star",
+              "role": "ANSWER_CARD",
+              "x": 371.16498046875,
+              "y": 215.77000427246094,
+              "width": 115.505,
+              "height": 64
+            },
+            {
+              "name": "hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 195.58000366210936,
+              "y": 299.77001953125,
+              "width": 126.16,
+              "height": 64
+            }
+          ],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 230,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "game-header",
+              "x": 331.5,
+              "y": 25.650000000000006,
+              "width": 181,
+              "height": 28
+            },
+            {
+              "name": "task-card",
+              "x": 13.650000000000002,
+              "y": 61.91,
+              "width": 490.02,
+              "height": 305.85999999999996
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "game-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "game-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "choice-sequence-gear",
+            "width": 115.505,
+            "height": 64
+          },
+          {
+            "name": "choice-sequence-lightning",
+            "width": 115.505,
+            "height": 64
+          },
+          {
+            "name": "choice-sequence-planet",
+            "width": 115.505,
+            "height": 64
+          },
+          {
+            "name": "choice-sequence-star",
+            "width": 115.505,
+            "height": 64
+          },
+          {
+            "name": "hint-button",
+            "width": 126.16000000000001,
+            "height": 64
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission5-tablet",
+      "width": 768,
+      "height": 1024,
+      "sceneKey": "GameScene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission5-tablet.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "GameScene",
+        "canvas": {
+          "width": 768,
+          "height": 1024
+        },
+        "semanticMode": "TABLET_PORTRAIT",
+        "policyId": "MISSION_5_TABLET_PORTRAIT",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "CHARACTER",
+            "coordinateSpace": "LOGICAL_WORLD",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": true,
+            "occupancy": {
+              "min": 0.48,
+              "ideal": 0.72,
+              "max": 0.86
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "grounded-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "bounds": {
+              "x": 297.719557148745,
+              "y": 571.0679227086962,
+              "width": 172.65400361446586,
+              "height": 335.54649855645835,
+              "right": 470.3735607632109,
+              "bottom": 906.6144212651545
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "GameScene",
+          "semanticMode": "TABLET_PORTRAIT",
+          "compositionPolicyId": "MISSION_5_TABLET_PORTRAIT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "FAIL",
+          "undersizedVisibleObjects": [
+            "memory-cover-star-1",
+            "memory-cover-battery-1",
+            "memory-cover-apple-1",
+            "memory-cover-star-0",
+            "memory-cover-banana-1",
+            "memory-cover-apple-0",
+            "memory-cover-battery-0",
+            "memory-cover-banana-0"
+          ],
+          "visibleObjectBounds": [
+            {
+              "name": "memory-card-star-1",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 241.80299243164063,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-star-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 188.25795551389456,
+              "y": 245.37293054908514,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-battery-1",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 241.80299243164063,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-battery-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 262.50449176877737,
+              "y": 245.37293054908514,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-apple-1",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 303.20023974609376,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-apple-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 188.25795551389456,
+              "y": 306.77017786353827,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-star-0",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 303.20023974609376,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-star-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 262.50449176877737,
+              "y": 306.77017786353827,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-banana-1",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 364.597517578125,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-banana-1",
+              "role": "MEMORY_ARTWORK",
+              "x": 188.25795551389456,
+              "y": 368.1674556955695,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-apple-0",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 364.597517578125,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-apple-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 262.50449176877737,
+              "y": 368.1674556955695,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-battery-0",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 425.99476489257813,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-battery-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 188.25795551389456,
+              "y": 429.56470301002264,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-card-banana-0",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 425.99476489257813,
+              "width": 64.24656249999998,
+              "height": 51.397249999999985
+            },
+            {
+              "name": "memory-cover-banana-0",
+              "role": "MEMORY_ARTWORK",
+              "x": 262.50449176877737,
+              "y": 429.56470301002264,
+              "width": 32.99754722416401,
+              "height": 43.39724812656641
+            },
+            {
+              "name": "memory-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 305.32127061523437,
+              "y": 477.3919997558594,
+              "width": 134.81272,
+              "height": 62.327999999999975
+            }
+          ],
+          "interactiveHitBounds": [
+            {
+              "name": "memory-card-star-1",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 239.50161743164062,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-battery-1",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 239.50161743164062,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-apple-1",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 300.89886474609375,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-star-0",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 300.89886474609375,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-banana-1",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 362.296142578125,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-apple-0",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 362.296142578125,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-battery-0",
+              "role": "MEMORY_CARD",
+              "x": 172.63344787597657,
+              "y": 423.6933898925781,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-card-banana-0",
+              "role": "MEMORY_CARD",
+              "x": 246.87998413085938,
+              "y": 423.6933898925781,
+              "width": 64.24656249999998,
+              "height": 56
+            },
+            {
+              "name": "memory-hint-button",
+              "role": "SECONDARY_ACTION",
+              "x": 301.32127061523437,
+              "y": 473.3919997558594,
+              "width": 142.81272,
+              "height": 70.32799999999997
+            }
+          ],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 335,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "game-home",
+              "x": 31.87999725341797,
+              "y": 47.880001068115234,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "game-sound",
+              "x": 679.1199951171875,
+              "y": 47.880001068115234,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "memory-task-card",
+              "x": 26.880000000000003,
+              "y": 107.716,
+              "width": 430,
+              "height": 440.00399999999996
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "game-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "game-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "memory-card-star-1",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-battery-1",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-apple-1",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-star-0",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-banana-1",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-apple-0",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-battery-0",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-card-banana-0",
+            "width": 64.24656249999998,
+            "height": 56
+          },
+          {
+            "name": "memory-hint-button",
+            "width": 142.81272,
+            "height": 70.328
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission6-short-landscape",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "Mission6Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission6-short-landscape.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission6Scene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "policyId": "MISSION_6_PHONE_LANDSCAPE_SHORT",
+        "characters": [
+          {
+            "id": "REPAIRED",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "REACTION_PORTRAIT",
+            "region": "CHARACTER",
+            "coordinateSpace": "LOGICAL_WORLD",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.48,
+              "ideal": 0.72,
+              "max": 0.86
+            }
+          },
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "LOGICAL_WORLD",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0.34,
+              "ideal": 0.46,
+              "max": 0.58
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "mission6-repaired-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 593.8897013410926,
+              "y": 144.2364178299904,
+              "width": 159.6707658022642,
+              "height": 219.5336017012596,
+              "right": 753.5604671433568,
+              "bottom": 363.77001953125
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission6Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_6_PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "mission6-repaired-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 220,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission6-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission6-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "mission6-header",
+              "x": 321.5,
+              "y": 23.150000000000006,
+              "width": 201,
+              "height": 33
+            },
+            {
+              "name": "systems-progress",
+              "x": 617.510009765625,
+              "y": 90.41000366210938,
+              "width": 113,
+              "height": 42.5
+            },
+            {
+              "name": "energy-task-card",
+              "x": 13.650000000000002,
+              "y": 61.91,
+              "width": 490.02,
+              "height": 305.85999999999996
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission6-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "mission6-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "energy-battery-low",
+            "width": 104,
+            "height": 92
+          },
+          {
+            "name": "energy-battery-medium",
+            "width": 104,
+            "height": 92
+          },
+          {
+            "name": "energy-battery-full",
+            "width": 104,
+            "height": 92
+          },
+          {
+            "name": "energy-hint-button",
+            "width": 176,
+            "height": 64
+          },
+          {
+            "name": "energy-check-button",
+            "width": 176,
+            "height": 64
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission7-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission7-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_7_DESKTOP",
+        "characters": [
+          {
+            "id": "REPAIRED",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.45,
+              "ideal": 0.72,
+              "max": 0.88
+            }
+          },
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "mission7-repaired-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 1019.6583202548325,
+              "y": 384.79999420046806,
+              "width": 174.5563434138894,
+              "height": 239.9999935925007,
+              "right": 1194.2146636687219,
+              "bottom": 624.7999877929688
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "DESKTOP",
+          "compositionPolicyId": "MISSION_7_DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "mission7-repaired-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 240,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission7-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission7-header",
+              "x": 517,
+              "y": 33.78,
+              "width": 246,
+              "height": 39
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 106.36000061035156,
+              "width": 107,
+              "height": 40
+            },
+            {
+              "name": "connection-task-card",
+              "x": 257.69599999999986,
+              "y": 156.36,
+              "width": 680,
+              "height": 538.4399999999999
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 1051.748046875,
+              "y": 654.7999877929688,
+              "width": 111,
+              "height": 22
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission7-home",
+            "width": 100,
+            "height": 62
+          },
+          {
+            "name": "mission7-sound",
+            "width": 100,
+            "height": 62
+          },
+          {
+            "name": "connection-source-red",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-source-blue",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-source-green",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-red",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-green",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-blue",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-hint-button",
+            "width": 238,
+            "height": 64
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": {
+            "x": 302.4960083007812,
+            "y": 165.86000061035156,
+            "width": 590.4000122070313,
+            "height": 517.9399999999999,
+            "right": 892.8960205078125,
+            "bottom": 683.8000006103515
+          },
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission7-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission7-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_7_PHONE_PORTRAIT_TALL",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          },
+          {
+            "id": "REPAIRED",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          }
+        ],
+        "visibleCharacters": [],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_7_PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission7-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 77,
+              "y": 91.2300033569336,
+              "width": 236,
+              "height": 16
+            },
+            {
+              "name": "connection-task-card",
+              "x": 13.650000000000002,
+              "y": 125.81,
+              "width": 362.70000000000005,
+              "height": 639.96
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 143.5,
+              "y": 790.8499755859375,
+              "width": 103,
+              "height": 21
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission7-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "mission7-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "connection-source-red",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-source-blue",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-source-green",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-green",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-red",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-target-blue",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "name": "connection-hint-button",
+            "width": 238,
+            "height": 64
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": {
+            "x": 29.05000152587891,
+            "y": 137.80999755859375,
+            "width": 331.90000457763676,
+            "height": 615.96,
+            "right": 360.95000610351565,
+            "bottom": 753.7699975585938
+          },
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission7-short-landscape",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "Mission7Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission7-short-landscape.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission7Scene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "policyId": "MISSION_7_PHONE_LANDSCAPE_SHORT",
+        "characters": [
+          {
+            "id": "REPAIRED",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "REACTION_PORTRAIT",
+            "region": "CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.45,
+              "ideal": 0.72,
+              "max": 0.88
+            }
+          },
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "mission7-repaired-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 652.3776496815682,
+              "y": 141.408793926239,
+              "width": 126.8160560846328,
+              "height": 174.36119508743286,
+              "right": 779.193705766201,
+              "bottom": 315.7699890136719
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission7Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_7_PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "mission7-repaired-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 174,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission7-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission7-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 368.5,
+              "y": 25.229999542236328,
+              "width": 107,
+              "height": 40
+            },
+            {
+              "name": "connection-task-card",
+              "x": 13.650000000000002,
+              "y": 75.23,
+              "width": 574.024,
+              "height": 301.12
+            },
+            {
+              "name": "connection-hint-button",
+              "x": 669.0120239257812,
+              "y": 340.3500061035156,
+              "width": 94,
+              "height": 18
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission7-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "mission7-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "connection-source-red",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-source-blue",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-source-green",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-target-green",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-target-blue",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-target-red",
+            "width": 65.76727333333334,
+            "height": 65.76727333333334
+          },
+          {
+            "name": "connection-hint-button",
+            "width": 198,
+            "height": 60
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": {
+            "x": 50.90397020247396,
+            "y": 84.7300033569336,
+            "width": 499.51606472200524,
+            "height": 280.12,
+            "right": 550.4200349244792,
+            "bottom": 364.8500033569336
+          },
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission8-desktop",
+      "width": 1280,
+      "height": 720,
+      "sceneKey": "Mission8Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission8-desktop.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission8Scene",
+        "canvas": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_8_DESKTOP",
+        "characters": [
+          {
+            "id": "BOARD_ROBOT",
+            "role": "BOARD_ACTOR",
+            "presentation": "BOARD_CELL",
+            "region": "PRIMARY_GAMEPLAY",
+            "coordinateSpace": "BOARD_LOCAL",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.65,
+              "ideal": 0.74,
+              "max": 0.8
+            }
+          },
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "programming-robot",
+            "role": "BOARD_ACTOR",
+            "region": null,
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 137.6531067597121,
+              "y": 363.4908301383257,
+              "width": 88.62978710755706,
+              "height": 121.85835199058056,
+              "right": 226.28289386726917,
+              "bottom": 485.34918212890625
+            }
+          }
+        ],
+        "robotTextureCount": 14,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "DESKTOP",
+          "compositionPolicyId": "MISSION_8_DESKTOP",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 122,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21
+            },
+            {
+              "name": "mission8-sound",
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21
+            },
+            {
+              "name": "mission8-header",
+              "x": 438,
+              "y": 34.28,
+              "width": 404,
+              "height": 38
+            },
+            {
+              "name": "systems-progress",
+              "x": 586.5,
+              "y": 77.36000061035156,
+              "width": 107,
+              "height": 39
+            },
+            {
+              "name": "programming-board",
+              "x": 92.96799999999992,
+              "y": 149.36,
+              "width": 640,
+              "height": 430
+            },
+            {
+              "name": "programming-instruction",
+              "x": 122.9679999999999,
+              "y": 120.36000000000001,
+              "width": 580,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 850.7359443359375,
+              "y": 169.36000061035156,
+              "width": 392.06399999999996,
+              "height": 49
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 836.7359999999998,
+              "y": 393.36,
+              "width": 91,
+              "height": 56
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 939.7359999999998,
+              "y": 393.36,
+              "width": 100,
+              "height": 56
+            },
+            {
+              "name": "programming-run-button",
+              "x": 1051.7359999999999,
+              "y": 393.36,
+              "width": 203.06400000000002,
+              "height": 56
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "width": 100,
+            "height": 62
+          },
+          {
+            "name": "mission8-sound",
+            "width": 100,
+            "height": 62
+          },
+          {
+            "name": "program-command-UP",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 66,
+            "height": 66
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 99,
+            "height": 64
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 108,
+            "height": 64
+          },
+          {
+            "name": "programming-run-button",
+            "width": 211.06400000000002,
+            "height": 64
+          }
+        ],
+        "stripSlots": 6,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": {
+            "x": 0,
+            "y": 0,
+            "width": 716.9680023193359,
+            "height": 514.3600006103516,
+            "right": 716.9680023193359,
+            "bottom": 514.3600006103516
+          },
+          "strip": {
+            "x": 850.7359443359375,
+            "y": 169.36000061035156,
+            "width": 392.06399999999996,
+            "height": 49,
+            "right": 1242.7999443359374,
+            "bottom": 218.36000061035156
+          },
+          "stripMaxCommands": 6,
+          "run": {
+            "x": 1104.7679443359375,
+            "y": 410.8599853515625,
+            "width": 97,
+            "height": 19,
+            "right": 1201.7679443359375,
+            "bottom": 429.8599853515625
+          }
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission8-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "Mission8Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission8-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission8Scene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_8_PHONE_PORTRAIT_TALL",
+        "characters": [
+          {
+            "id": "BOARD_ROBOT",
+            "role": "BOARD_ACTOR",
+            "presentation": "BOARD_CELL",
+            "region": "PRIMARY_GAMEPLAY",
+            "coordinateSpace": "BOARD_LOCAL",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.65,
+              "ideal": 0.74,
+              "max": 0.8
+            }
+          },
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "programming-robot",
+            "role": "BOARD_ACTOR",
+            "region": null,
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 44.828242427296935,
+              "y": 375.09589349478483,
+              "width": 48.34352127648891,
+              "height": 66.46819341927767,
+              "right": 93.17176370378584,
+              "bottom": 441.5640869140625
+            }
+          }
+        ],
+        "robotTextureCount": 14,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_8_PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 66,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 89.5,
+              "y": 91.2300033569336,
+              "width": 211,
+              "height": 16
+            },
+            {
+              "name": "programming-board",
+              "x": 13.649999999999977,
+              "y": 148.81,
+              "width": 362.70000000000005,
+              "height": 453.52000000000004
+            },
+            {
+              "name": "programming-instruction",
+              "x": 75,
+              "y": 119.81,
+              "width": 240,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 25.649999999999977,
+              "y": 609.9099731445312,
+              "width": 338.70000000000005,
+              "height": 53
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 13.649999999999977,
+              "y": 774.3500000000001,
+              "width": 83,
+              "height": 56
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 108.64999999999998,
+              "y": 774.3500000000001,
+              "width": 87,
+              "height": 56
+            },
+            {
+              "name": "programming-run-button",
+              "x": 207.64999999999998,
+              "y": 774.3500000000001,
+              "width": 168.70000000000005,
+              "height": 56
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "mission8-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "program-command-UP",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 91,
+            "height": 64
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 95,
+            "height": 64
+          },
+          {
+            "name": "programming-run-button",
+            "width": 176.70000000000005,
+            "height": 64
+          }
+        ],
+        "stripSlots": 6,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": {
+            "x": 0,
+            "y": 0,
+            "width": 358.9999996185303,
+            "height": 455.56999755859374,
+            "right": 358.9999996185303,
+            "bottom": 455.56999755859374
+          },
+          "strip": {
+            "x": 25.649999999999977,
+            "y": 609.9099731445312,
+            "width": 338.70000000000005,
+            "height": 53,
+            "right": 364.35,
+            "bottom": 662.9099731445312
+          },
+          "stripMaxCommands": 6,
+          "run": {
+            "x": 270,
+            "y": 791.8499755859375,
+            "width": 44,
+            "height": 19,
+            "right": 314,
+            "bottom": 810.8499755859375
+          }
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "mission8-short-landscape",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "Mission8Scene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-mission8-short-landscape.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "Mission8Scene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "policyId": "MISSION_8_PHONE_LANDSCAPE_SHORT",
+        "characters": [
+          {
+            "id": "BOARD_ROBOT",
+            "role": "BOARD_ACTOR",
+            "presentation": "BOARD_CELL",
+            "region": "PRIMARY_GAMEPLAY",
+            "coordinateSpace": "BOARD_LOCAL",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.65,
+              "ideal": 0.74,
+              "max": 0.8
+            }
+          },
+          {
+            "id": "HELPER",
+            "role": "HIDDEN_FOR_MECHANIC_FOCUS",
+            "presentation": "HIDDEN",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": false,
+            "occupancy": {
+              "min": 0,
+              "ideal": 0,
+              "max": 0
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "programming-robot",
+            "role": "BOARD_ACTOR",
+            "region": null,
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 51.250675776675344,
+              "y": 233.618371412158,
+              "width": 68.48665609136225,
+              "height": 94.16327531635761,
+              "right": 119.73733186803759,
+              "bottom": 327.7816467285156
+            }
+          }
+        ],
+        "robotTextureCount": 14,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "Mission8Scene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_8_PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "programming-robot",
+              "role": "BOARD_ACTOR",
+              "height": 94,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "mission8-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "mission8-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "systems-progress",
+              "x": 316.5,
+              "y": 41.22999954223633,
+              "width": 211,
+              "height": 16
+            },
+            {
+              "name": "programming-board",
+              "x": 13.650000000000002,
+              "y": 92.23,
+              "width": 500.6880000000001,
+              "height": 284.12
+            },
+            {
+              "name": "programming-instruction",
+              "x": 143.99400000000003,
+              "y": 63.230000000000004,
+              "width": 240,
+              "height": 22
+            },
+            {
+              "name": "program-strip",
+              "x": 548.337994140625,
+              "y": 94.2300033569336,
+              "width": 270.01199999999994,
+              "height": 53.00000762939453
+            },
+            {
+              "name": "programming-hint-button",
+              "x": 536.3380000000001,
+              "y": 282.23,
+              "width": 78,
+              "height": 56
+            },
+            {
+              "name": "programming-delete-button",
+              "x": 626.3380000000001,
+              "y": 282.23,
+              "width": 82,
+              "height": 56
+            },
+            {
+              "name": "programming-run-button",
+              "x": 720.3380000000001,
+              "y": 282.23,
+              "width": 110.012,
+              "height": 56
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "mission8-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "mission8-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "program-command-UP",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-RIGHT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-DOWN",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "program-command-LEFT",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "name": "programming-hint-button",
+            "width": 86,
+            "height": 64
+          },
+          {
+            "name": "programming-delete-button",
+            "width": 90,
+            "height": 64
+          },
+          {
+            "name": "programming-run-button",
+            "width": 118.012,
+            "height": 64
+          }
+        ],
+        "stripSlots": 6,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": {
+            "x": 0,
+            "y": 0,
+            "width": 497.9939996185303,
+            "height": 349.2900033569336,
+            "right": 497.9939996185303,
+            "bottom": 349.2900033569336
+          },
+          "strip": {
+            "x": 548.337994140625,
+            "y": 94.2300033569336,
+            "width": 270.01199999999994,
+            "height": 53.00000762939453,
+            "right": 818.349994140625,
+            "bottom": 147.23001098632812
+          },
+          "stripMaxCommands": 6,
+          "run": {
+            "x": 753.343994140625,
+            "y": 299.7300109863281,
+            "width": 44,
+            "height": 19,
+            "right": 797.343994140625,
+            "bottom": 318.7300109863281
+          }
+        },
+        "transition": {
+          "title": null,
+          "button": null
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "transition-phone",
+      "width": 390,
+      "height": 844,
+      "sceneKey": "TransitionScene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-transition-phone.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "TransitionScene",
+        "canvas": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_5_TRANSITION_PHONE_PORTRAIT_TALL",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": true,
+            "occupancy": {
+              "min": 0.5,
+              "ideal": 0.72,
+              "max": 0.9
+            }
+          },
+          {
+            "id": "REPAIRED",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.5,
+              "ideal": 0.72,
+              "max": 0.9
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "grounded-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "bounds": {
+              "x": 32.63345371318486,
+              "y": 352.1635562092275,
+              "width": 159.81055751095408,
+              "height": 310.5982262121455,
+              "right": 192.44401122413893,
+              "bottom": 662.761782421373
+            }
+          },
+          {
+            "name": "transition-assembled-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "SECONDARY_CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 170.04930335476996,
+              "y": 365.0900189578533,
+              "width": 214.13699331432582,
+              "height": 294.4199908077717,
+              "right": 384.1862966690958,
+              "bottom": 659.510009765625
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "TransitionScene",
+          "semanticMode": "PHONE_PORTRAIT_TALL",
+          "compositionPolicyId": "MISSION_5_TRANSITION_PHONE_PORTRAIT_TALL",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 311,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 294,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 18.650001525878906,
+              "y": 34.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 314.3500061035156,
+              "y": 34.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 55.5,
+              "y": 133.28000000000003,
+              "width": 279,
+              "height": 45
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 68,
+              "y": 182.59200000000004,
+              "width": 254,
+              "height": 25
+            },
+            {
+              "name": "transition-continue",
+              "x": 120,
+              "y": 785.8499755859375,
+              "width": 150,
+              "height": 23
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "transition-home",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "transition-sound",
+            "width": 84,
+            "height": 68
+          },
+          {
+            "name": "transition-continue",
+            "width": 288,
+            "height": 72
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": {
+            "x": 55.5,
+            "y": 133.28000000000003,
+            "width": 279,
+            "height": 45,
+            "right": 334.5,
+            "bottom": 178.28000000000003
+          },
+          "button": {
+            "x": 120,
+            "y": 785.8499755859375,
+            "width": 150,
+            "height": 23,
+            "right": 270,
+            "bottom": 808.8499755859375
+          }
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    },
+    {
+      "name": "transition-short-landscape",
+      "width": 844,
+      "height": 390,
+      "sceneKey": "TransitionScene",
+      "file": "docs\\qa\\screenshots\\stage8-4a-transition-short-landscape.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "audit": {
+        "scene": "TransitionScene",
+        "canvas": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "policyId": "MISSION_5_TRANSITION_PHONE_LANDSCAPE_SHORT",
+        "characters": [
+          {
+            "id": "HELPER",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "visible": true,
+            "occupancy": {
+              "min": 0.5,
+              "ideal": 0.72,
+              "max": 0.9
+            }
+          },
+          {
+            "id": "REPAIRED",
+            "role": "PRIMARY_CHARACTER",
+            "presentation": "FULL_BODY",
+            "region": "SECONDARY_CHARACTER",
+            "coordinateSpace": "SCREEN",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "visible": true,
+            "occupancy": {
+              "min": 0.5,
+              "ideal": 0.72,
+              "max": 0.9
+            }
+          }
+        ],
+        "visibleCharacters": [
+          {
+            "name": "grounded-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_HELPER",
+            "bounds": {
+              "x": 167.95914976457564,
+              "y": 124.71014393108521,
+              "width": 95.48262698604648,
+              "height": 185.58195261214684,
+              "right": 263.4417767506221,
+              "bottom": 310.29209654323205
+            }
+          },
+          {
+            "name": "transition-assembled-robot",
+            "role": "PRIMARY_CHARACTER",
+            "region": "SECONDARY_CHARACTER",
+            "visibleBoundsId": "ROBOT_V2_ASSEMBLED",
+            "bounds": {
+              "x": 561.2905771172046,
+              "y": 125.34531664848328,
+              "width": 134.05882927179334,
+              "height": 184.31938672065735,
+              "right": 695.349406388998,
+              "bottom": 309.6647033691406
+            }
+          }
+        ],
+        "robotTextureCount": 15,
+        "legacyRobotTextureCount": 0,
+        "boundsAudit": {
+          "scene": "TransitionScene",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionPolicyId": "MISSION_5_TRANSITION_PHONE_LANDSCAPE_SHORT",
+          "overlapCount": 0,
+          "overlaps": [],
+          "outsideSafeRect": [],
+          "undersizedTouchTargets": [],
+          "childVisualReadability": "PASS",
+          "undersizedVisibleObjects": [],
+          "visibleObjectBounds": [],
+          "interactiveHitBounds": [],
+          "characters": [
+            {
+              "name": "grounded-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 186,
+              "readable": true
+            },
+            {
+              "name": "transition-assembled-robot",
+              "role": "PRIMARY_CHARACTER",
+              "height": 184,
+              "readable": true
+            }
+          ],
+          "items": [
+            {
+              "name": "transition-home",
+              "x": 18.650001525878906,
+              "y": 29.650001525878906,
+              "width": 66,
+              "height": 18
+            },
+            {
+              "name": "transition-sound",
+              "x": 768.3499755859375,
+              "y": 29.650001525878906,
+              "width": 48,
+              "height": 18
+            },
+            {
+              "name": "transition-title",
+              "x": 294.5,
+              "y": 40.9,
+              "width": 255,
+              "height": 43.00000000000001
+            },
+            {
+              "name": "transition-subtitle",
+              "x": 306,
+              "y": 87.24000000000001,
+              "width": 232,
+              "height": 22
+            },
+            {
+              "name": "transition-continue",
+              "x": 331,
+              "y": 334.3500061035156,
+              "width": 182,
+              "height": 28
+            }
+          ]
+        },
+        "interactive": [
+          {
+            "name": "transition-home",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "transition-sound",
+            "width": 84,
+            "height": 60
+          },
+          {
+            "name": "transition-continue",
+            "width": 288,
+            "height": 62
+          }
+        ],
+        "stripSlots": 0,
+        "mission7": {
+          "board": null,
+          "hint": null
+        },
+        "mission8": {
+          "board": null,
+          "strip": null,
+          "stripMaxCommands": null,
+          "run": null
+        },
+        "transition": {
+          "title": {
+            "x": 294.5,
+            "y": 40.9,
+            "width": 255,
+            "height": 43.00000000000001,
+            "right": 549.5,
+            "bottom": 83.9
+          },
+          "button": {
+            "x": 331,
+            "y": 334.3500061035156,
+            "width": 182,
+            "height": 28,
+            "right": 513,
+            "bottom": 362.3500061035156
+          }
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "canvasMatchesViewport": true,
+        "policyRegistered": true,
+        "boundsAuditClean": true,
+        "touchTargetsUsable": true,
+        "robotV2Only": true,
+        "characterRolesCanonical": true,
+        "mission7PortraitBoardFocus": true,
+        "mission7NonPortraitCharacter": true,
+        "mission8BoardActorPrimary": true,
+        "mission8StableStripSlots": true,
+        "transitionGrouped": true
+      }
+    }
+  ],
+  "pool": {
+    "name": "mission8-strip-pool",
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "result": {
+      "before": 6,
+      "afterAdds": 6,
+      "afterDeletes": 6
+    },
+    "checks": {
+      "browserClean": true,
+      "stableSlotCount": true
+    }
+  },
+  "failures": []
+}

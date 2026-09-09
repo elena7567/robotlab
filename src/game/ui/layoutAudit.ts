@@ -1,5 +1,7 @@
 import Phaser from 'phaser';
 import type { ResponsiveLayout } from './responsiveLayout';
+import type { SceneComposition } from './sceneCompositionDirector';
+import { getImageVisibleAlphaBounds } from '../assets/objectBounds';
 
 export interface BoundsAuditItem {
   readonly name: string;
@@ -12,10 +14,15 @@ export interface BoundsAuditItem {
 export interface SceneBoundsAudit {
   readonly scene: string;
   readonly semanticMode: string;
+  readonly compositionPolicyId?: string;
   readonly overlapCount: number;
   readonly overlaps: readonly string[];
   readonly outsideSafeRect: readonly string[];
   readonly undersizedTouchTargets: readonly string[];
+  readonly childVisualReadability: 'PASS' | 'FAIL';
+  readonly undersizedVisibleObjects: readonly string[];
+  readonly visibleObjectBounds: readonly (BoundsAuditItem & { role: string })[];
+  readonly interactiveHitBounds: readonly (BoundsAuditItem & { role: string })[];
   readonly characters: readonly { name: string; role: string; height: number; readable: boolean }[];
   readonly items: readonly BoundsAuditItem[];
 }
@@ -59,8 +66,31 @@ function descendants(root: Phaser.GameObjects.GameObject): Phaser.GameObjects.Ga
   return result;
 }
 
+function transformedLocalRect(object: Phaser.GameObjects.GameObject, local: AuditRect): Phaser.Geom.Rectangle {
+  const transformable = object as Phaser.GameObjects.GameObject & { getWorldTransformMatrix: () => Phaser.GameObjects.Components.TransformMatrix };
+  const matrix = transformable.getWorldTransformMatrix();
+  const corners = [
+    matrix.transformPoint(local.x, local.y),
+    matrix.transformPoint(local.x + local.width, local.y),
+    matrix.transformPoint(local.x + local.width, local.y + local.height),
+    matrix.transformPoint(local.x, local.y + local.height),
+  ];
+  const xs = corners.map(({ x }) => x);
+  const ys = corners.map(({ y }) => y);
+  return new Phaser.Geom.Rectangle(Math.min(...xs), Math.min(...ys), Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
+}
+
+function minimumReadableCharacterHeight(object: Phaser.GameObjects.GameObject, role: string): number {
+  if (role === 'BOARD_ACTOR') return Number(object.getData('cellSize') ?? 44) * 0.65;
+  if (role === 'PRIMARY_CHARACTER') return 120;
+  if (role === 'SUPPORTING_CHARACTER') return 72;
+  if (role === 'HERO') return 120;
+  return 72;
+}
+
 export function auditSceneBounds(scene: Phaser.Scene): SceneBoundsAudit {
   const layout = scene.game.registry.get('responsiveLayout') as ResponsiveLayout | undefined;
+  const composition = scene.game.registry.get('sceneComposition') as SceneComposition | undefined;
   const safe = layout?.safeRect ?? { x: 0, y: 0, width: scene.scale.width, height: scene.scale.height };
   const safeRect = new Phaser.Geom.Rectangle(safe.x, safe.y, safe.width, safe.height);
   const modalActive = Boolean(scene.children.getByName('mission7-completion') || scene.children.getByName('mission8-completion'));
@@ -100,16 +130,60 @@ export function auditSceneBounds(scene: Phaser.Scene): SceneBoundsAudit {
     const bounded = object as Phaser.GameObjects.GameObject & { getBounds?: () => Phaser.Geom.Rectangle };
     if (!role || typeof bounded.getBounds !== 'function' || !(object as Phaser.GameObjects.GameObject & { visible?: boolean }).visible) return [];
     const height = bounded.getBounds().height;
-    const minimum = role === 'BOARD_ACTOR' ? Number(object.getData('cellSize') ?? 44) * 0.65 : role === 'HERO' ? 120 : 72;
+    const minimum = minimumReadableCharacterHeight(object, role);
     return [{ name: object.name || role, role, height: Math.round(height), readable: height >= minimum }];
   });
+  const allObjects = scene.children.list.flatMap(descendants);
+  const visibleObjectBounds = allObjects.flatMap((object) => {
+    const visible = (object as Phaser.GameObjects.GameObject & { visible?: boolean }).visible;
+    const role = object.getData?.('childVisualRole') as string | undefined;
+    if (!visible || !role) return [];
+    let bounds: Phaser.Geom.Rectangle | undefined;
+    if (object instanceof Phaser.GameObjects.Image) bounds = getImageVisibleAlphaBounds(object);
+    else {
+      const local = object.getData?.('visualLocalBounds') as AuditRect | undefined;
+      if (local && 'getWorldTransformMatrix' in object) bounds = transformedLocalRect(object, local);
+    }
+    return bounds ? [{ name: object.name || role, role, x: bounds.x, y: bounds.y, width: bounds.width, height: bounds.height }] : [];
+  });
+  const interactiveHitBounds = allObjects.flatMap((object) => {
+    const input = (object as Phaser.GameObjects.GameObject & { input?: Phaser.Types.Input.InteractiveObject | null }).input;
+    const role = object.getData?.('childVisualRole') as string | undefined;
+    if (!input?.enabled || !role || !('getWorldTransformMatrix' in object)) return [];
+    const area = input.hitArea as { x?: number; y?: number; width?: number; height?: number };
+    const width = Number(area.width ?? 0);
+    const height = Number(area.height ?? 0);
+    const displayOriginX = Number((object as Phaser.GameObjects.GameObject & { displayOriginX?: number }).displayOriginX ?? width / 2);
+    const displayOriginY = Number((object as Phaser.GameObjects.GameObject & { displayOriginY?: number }).displayOriginY ?? height / 2);
+    const bounds = transformedLocalRect(object, {
+      x: Number(area.x ?? 0) - displayOriginX,
+      y: Number(area.y ?? 0) - displayOriginY,
+      width,
+      height,
+    });
+    return [{ name: object.name || role, role, x: bounds.x, y: bounds.y, width: bounds.width, height: bounds.height }];
+  });
+  const shortLandscape = layout?.semanticMode === 'PHONE_LANDSCAPE_SHORT';
+  const undersizedVisibleObjects = visibleObjectBounds.filter((item) => {
+    if (item.role === 'SEQUENCE_SYMBOL') return Math.max(item.width, item.height) < 47.5;
+    if (item.role === 'ANSWER_CARD') return shortLandscape && (item.width < 80 || item.height < 56);
+    if (item.role === 'ANSWER_SYMBOL') return Math.max(item.width, item.height) < 39.5;
+    if (item.role === 'MEMORY_CARD') return shortLandscape && (item.width < 90 || item.height < 58);
+    if (item.role === 'MEMORY_ARTWORK') return Math.max(item.width, item.height) < 52;
+    return false;
+  }).map((item) => item.name);
   return {
     scene: scene.scene.key,
     semanticMode: layout?.semanticMode ?? 'UNKNOWN',
+    compositionPolicyId: composition?.policyId,
     overlapCount: overlaps.length,
     overlaps,
     outsideSafeRect,
     undersizedTouchTargets,
+    childVisualReadability: undersizedVisibleObjects.length === 0 ? 'PASS' : 'FAIL',
+    undersizedVisibleObjects,
+    visibleObjectBounds,
+    interactiveHitBounds,
     characters,
     items: items.map(({ item }) => item),
   };

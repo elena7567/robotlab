@@ -9,6 +9,7 @@ import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
 import { RobotDialogue } from '../ui/RobotDialogue';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
+import { composeScene } from '../ui/sceneCompositionDirector';
 import { configureResponsiveCamera } from '../ui/responsiveCamera';
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
@@ -22,8 +23,17 @@ export class Mission6Scene extends Phaser.Scene {
 
   create(): void {
     const { width, height } = this.scale;
-    const layout = createResponsiveLayout(width, height);
+    const baseLayout = createResponsiveLayout(width, height);
+    const composition = composeScene(baseLayout, 6);
+    const layout = {
+      ...baseLayout,
+      taskCard: composition.taskCard,
+      progress: composition.progress,
+      characterZone: composition.regions.CHARACTER,
+      zones: { ...baseLayout.zones, characterZone: composition.regions.CHARACTER },
+    };
     this.game.registry.set('responsiveLayout', layout);
+    this.game.registry.set('sceneComposition', composition);
     const portrait = layout.mode !== 'landscape';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const state = sessionState.snapshot;
@@ -43,16 +53,39 @@ export class Mission6Scene extends Phaser.Scene {
     const pairScale = portrait ? 0.17 : 0.19;
     const pairSpan = portrait ? 245 : 275;
     if (helper) helper.setPosition(640 - pairSpan / 2, 560).setScale(pairScale).setData({
-      baseX: 640 - pairSpan / 2, baseY: 560, groundedScale: pairScale, characterRole: 'HELPER',
+      baseX: 640 - pairSpan / 2, baseY: 560, groundedScale: pairScale, characterRole: 'SUPPORTING_CHARACTER',
+      compositionRegion: 'SECONDARY_CHARACTER', visibleBoundsId: 'ROBOT_V2_HELPER',
     });
     const repaired = new RobotAssemblyPreview(this, 640 + pairSpan / 2, 560, 5, { scale: pairScale, blueprintAlpha: 0 })
       .setName('mission6-repaired-robot');
     repaired.setPowered(state.powerActivated);
-    repaired.setData('characterRole', 'HERO');
+    repaired.setData({ characterRole: 'PRIMARY_CHARACTER', compositionRegion: 'CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED' });
     actorLayer.add(repaired);
     const frame = configureResponsiveCamera(this, worldLayer, layout);
     actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
+    if (layout.semanticMode === 'PHONE_LANDSCAPE_SHORT') {
+      const zone = composition.regions.CHARACTER;
+      const desiredVisibleHeight = Math.min(228, zone.height * 0.76);
+      const repairedScale = desiredVisibleHeight / Math.max(1, 1402 * frame.scale);
+      const logicalX = (zone.x + zone.width / 2 - frame.offsetX) / frame.scale;
+      const logicalY = (zone.y + zone.height - 4 - frame.offsetY) / frame.scale;
+      repaired.setPosition(logicalX, logicalY).setScale(repairedScale).setData({
+        groundedScale: repairedScale,
+        platformContactX: logicalX,
+        platformContactY: logicalY,
+      });
+      helper?.setVisible(false).setData('characterRole', 'HIDDEN_FOR_MECHANIC_FOCUS');
+    }
     this.add.rectangle(0, 0, width, height, 0x163852, portrait ? 0.12 : 0.05).setOrigin(0).setDepth(-1);
+    if (composition.surface) {
+      const { outer, support } = composition.surface;
+      this.add.graphics().setName('mission6-game-surface').setDepth(-0.8)
+        .fillStyle(0x123e58, 0.94).fillRoundedRect(outer.x, outer.y, outer.width, outer.height, 22)
+        .lineStyle(3, 0x72d9ec, 0.72).strokeRoundedRect(outer.x, outer.y, outer.width, outer.height, 22)
+        .fillStyle(0x164d67, 0.9).fillRoundedRect(support.x, support.y, support.width, support.height, 18)
+        .lineStyle(2, 0x72d9ec, 0.42).strokeRoundedRect(support.x, support.y, support.width, support.height, 18)
+        .setData('auditBounds', outer);
+    }
 
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
     addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing).setName('mission6-home');
@@ -70,6 +103,7 @@ export class Mission6Scene extends Phaser.Scene {
     const systemsX = portrait ? width / 2 : layout.progress.x + layout.progress.width / 2;
     const systemsY = portrait ? layout.statusY : layout.progress.y + 28;
     const systems = this.add.container(systemsX, systemsY).setName('systems-progress');
+    systems.setVisible(layout.semanticMode !== 'PHONE_LANDSCAPE_SHORT');
     const systemsWidth = Math.min(portrait ? layout.headerZone.width : layout.progress.width, 270);
     const systemsHeight = portrait ? 38 : 58;
     const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.94).fillRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 14)
@@ -83,7 +117,7 @@ export class Mission6Scene extends Phaser.Scene {
       this.add.text(0, 18, 'ЭНЕРГИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: '14px', fontStyle: 'bold' }).setOrigin(0.5),
     ]);
 
-    const dialogue = helper ? new RobotDialogue(this, helper, layout, {
+    const dialogue = helper?.visible ? new RobotDialogue(this, helper, layout, {
       placement: 'above-robot',
       onVisibilityChange: (visible) => {
         if (portrait) systems.setVisible(!visible);
@@ -108,6 +142,7 @@ export class Mission6Scene extends Phaser.Scene {
     new EnergyTaskCard(this, {
       ...layout.taskCard,
       sizing: layout.taskCardSizing,
+      actionRect: layout.semanticMode === 'PHONE_LANDSCAPE_SHORT' ? composition.regions.PRIMARY_ACTIONS : undefined,
       snapshot: energyMechanic.snapshot,
       onSelect: (level) => { dialogue?.hide(); energyMechanic.select(level); },
       onOrder: (level) => { dialogue?.hide(); energyMechanic.toggleOrder(level); },

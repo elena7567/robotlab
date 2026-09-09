@@ -27,7 +27,7 @@ async function taskNumber(page) {
 
 (async () => {
   fs.mkdirSync(screenshotDir, { recursive: true });
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, reducedMotion: 'reduce' });
   const page = await context.newPage();
   const errors = [];

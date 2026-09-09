@@ -7,7 +7,7 @@ const views = [['portrait', 390, 844], ['landscape', 844, 390]];
 const missions = [5, 6, 7, 8];
 
 (async () => {
-  const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ headless: true });
   const results = [];
   for (const [view, width, height] of views) for (const mission of missions) {
     const context = await browser.newContext({ viewport: { width, height }, isMobile: true, hasTouch: true, reducedMotion: 'reduce' });
