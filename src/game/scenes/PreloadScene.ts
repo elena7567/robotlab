@@ -1,6 +1,8 @@
 import Phaser from 'phaser';
 import { AUDIO_ASSETS, IMAGE_ASSETS, MISSING_ASSET_IDS } from '../assets/manifest';
 import { audioManager } from '../audio/AudioManager';
+import { robotTestCourse } from '../mechanics/robotTestCourse';
+import { sessionState } from '../state/sessionState';
 
 export class PreloadScene extends Phaser.Scene {
   constructor() { super('PreloadScene'); }
@@ -18,6 +20,13 @@ export class PreloadScene extends Phaser.Scene {
   create(): void {
     audioManager.initialize(this.game);
     for (const assetId of MISSING_ASSET_IDS) console.warn(`MISSING_ASSET: ${assetId}`);
+    const query = new URLSearchParams(globalThis.location?.search ?? '');
+    if (query.get('qaMission') === '9') {
+      sessionState.enterMission9Qa();
+      robotTestCourse.reset();
+      this.scene.start('Mission9Scene');
+      return;
+    }
     this.scene.start('StartScene');
   }
 }

@@ -1,6 +1,12 @@
 import { clampValue, fluidValue } from './fluidSizing';
 import { CHILD_UI } from './childUi';
 import type { ProgressSizing, RectLayout, ResponsiveLayout } from './responsiveLayout';
+import {
+  LOGICAL_SCENE_HEIGHT,
+  LOGICAL_SCENE_WIDTH,
+  PLATFORM_CENTER_X,
+  PLATFORM_CONTACT_Y,
+} from './sceneLayout';
 
 export const SEMANTIC_REGIONS = [
   'HEADER',
@@ -15,7 +21,7 @@ export const SEMANTIC_REGIONS = [
 ] as const;
 
 export type SemanticRegionName = (typeof SEMANTIC_REGIONS)[number];
-export type MissionId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 'MISSION5_TRANSITION';
+export type MissionId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 'MISSION5_TRANSITION';
 export type MissionCharacterRole =
   | 'PRIMARY_CHARACTER'
   | 'SUPPORTING_CHARACTER'
@@ -84,6 +90,29 @@ export interface Mission8SceneLayout {
   readonly actionHeight: number;
 }
 
+export interface Mission9SceneLayout {
+  readonly showHeader: boolean;
+  /** Stage title, independent from transient instructional feedback. */
+  readonly title: RectLayout;
+  /** Compact three-dot mission progress. Status is retained as its legacy alias. */
+  readonly progress: RectLayout;
+  /** Active puzzle art, centered on the physical laboratory platform. */
+  readonly puzzleStage: RectLayout;
+  /** Grounded Robot v2 side region. */
+  readonly robot: RectLayout;
+  /** Three candidate slots below the physical platform contact line. */
+  readonly choices: RectLayout;
+  readonly platformCenterX: number;
+  readonly platformContactY: number;
+  readonly status: RectLayout;
+  readonly world: RectLayout;
+  readonly controls: RectLayout;
+  readonly feedback: RectLayout;
+  readonly controlGap: number;
+  readonly controlHeight: number;
+  readonly robotScale: number;
+}
+
 export interface TransitionSceneLayout {
   readonly phonePortrait: boolean;
   readonly titleY: number;
@@ -114,6 +143,7 @@ export interface SceneComposition {
   readonly progress: RectLayout & { readonly horizontal: boolean; readonly sizing: ProgressSizing };
   readonly mission7?: Mission7SceneLayout;
   readonly mission8?: Mission8SceneLayout;
+  readonly mission9?: Mission9SceneLayout;
   readonly transition?: TransitionSceneLayout;
   readonly surface?: SceneSurfaceLayout;
 }
@@ -428,6 +458,120 @@ function composeMission8(layout: ResponsiveLayout): SceneComposition {
   };
 }
 
+function composeMission9(layout: ResponsiveLayout): SceneComposition {
+  const { viewportWidth: width, viewportHeight: height, safe, semanticMode } = layout;
+  const regions = commonRegions(layout);
+  const portrait = layout.mode !== 'landscape';
+  const phonePortrait = semanticMode.startsWith('PHONE_PORTRAIT');
+  const shortLandscape = semanticMode === 'PHONE_LANDSCAPE_SHORT';
+  const desktop = semanticMode === 'DESKTOP';
+
+  const backgroundScale = Math.max(width / LOGICAL_SCENE_WIDTH, height / LOGICAL_SCENE_HEIGHT);
+  const backgroundOffsetX = (width - LOGICAL_SCENE_WIDTH * backgroundScale) / 2;
+  const backgroundOffsetY = (height - LOGICAL_SCENE_HEIGHT * backgroundScale) / 2;
+  const platformCenterX = backgroundOffsetX + PLATFORM_CENTER_X * backgroundScale;
+  const platformContactY = backgroundOffsetY + PLATFORM_CONTACT_Y * backgroundScale;
+
+  const safeLeft = safe.left;
+  const safeRight = width - safe.right;
+  const safeBottom = height - safe.bottom;
+  const safeWidth = Math.max(1, safeRight - safeLeft);
+  const horizontalInset = desktop ? Math.max(layout.gapM, (safeWidth - Math.min(1180, safeWidth)) / 2) : layout.gapXS;
+  const contentLeft = safeLeft + horizontalInset;
+  const contentRight = safeRight - horizontalInset;
+  const contentWidth = Math.max(1, contentRight - contentLeft);
+
+  const titleHeight = shortLandscape ? 30 : clampValue(30, height * 0.042, 38);
+  const statusHeight = shortLandscape ? 28 : 34;
+  const statusWidth = shortLandscape ? 94 : 118;
+  const titleTop = shortLandscape
+    ? safe.top + Math.max(layout.iconHeight, layout.headerHeight) + layout.gapXS
+    : layout.headerZone.y + layout.headerZone.height + layout.gapS;
+  const titleSideReserve = shortLandscape ? layout.iconWidth + layout.gapS : 0;
+  const titleAvailableWidth = Math.max(1, contentWidth - titleSideReserve * 2);
+  const titleWidth = Math.min(shortLandscape ? 430 : 560, titleAvailableWidth);
+  const title = rect(platformCenterX - titleWidth / 2, titleTop, titleWidth, titleHeight);
+  const progress = shortLandscape
+    ? rect(contentRight - statusWidth, title.y + title.height + layout.gapXS, statusWidth, statusHeight)
+    : rect(contentRight - statusWidth, title.y, statusWidth, statusHeight);
+
+  const feedbackHeight = shortLandscape ? 26 : 30;
+  const feedbackTop = title.y + title.height + layout.gapXS;
+  const feedbackRight = shortLandscape ? progress.x - layout.gapS : contentRight;
+  const feedbackWidth = Math.min(shortLandscape ? 360 : 520, Math.max(1, feedbackRight - contentLeft));
+  const feedback = rect(platformCenterX - feedbackWidth / 2, feedbackTop, feedbackWidth, feedbackHeight);
+
+  const desiredControlHeight = shortLandscape
+    ? clampValue(56, height * 0.15, 64)
+    : phonePortrait ? 58 : clampValue(62, height * 0.075, 72);
+  const belowPlatformHeight = Math.max(CHILD_UI.touch.minimum, safeBottom - platformContactY - layout.gapXS);
+  const controlHeight = Math.min(desiredControlHeight, belowPlatformHeight);
+  const controlGap = shortLandscape ? 8 : 12;
+  const choicesTop = Math.max(
+    platformContactY + layout.gapXS,
+    safeBottom - controlHeight - (shortLandscape ? 0 : layout.gapM),
+  );
+  const choices = rect(contentLeft, choicesTop, contentWidth, controlHeight);
+
+  const stageTop = Math.max(feedback.y + feedback.height, progress.y + progress.height) + layout.gapXS;
+  const stageBottom = Math.min(platformContactY, choices.y - layout.gapXS);
+  const stageHeight = Math.max(1, stageBottom - stageTop);
+  const puzzleWidth = Math.min(
+    shortLandscape ? 540 : 760,
+    contentWidth * (shortLandscape ? 0.62 : 0.61),
+  );
+  const puzzleStage = rect(platformCenterX - puzzleWidth / 2, stageTop, puzzleWidth, stageHeight);
+  const robotGap = shortLandscape ? layout.gapXS : layout.gapS;
+  const robotRight = puzzleStage.x - robotGap;
+  const robotWidth = Math.min(
+    shortLandscape ? 138 : 230,
+    Math.max(1, robotRight - contentLeft),
+  );
+  const robot = rect(robotRight - robotWidth, stageTop, robotWidth, stageHeight);
+  const world = rect(contentLeft, stageTop, contentWidth, stageHeight);
+  const robotVisibleHeight = shortLandscape
+    ? clampValue(118, stageHeight * 0.64, 172)
+    : clampValue(128, stageHeight * 0.52, 270);
+
+  regions.PRIMARY_GAMEPLAY = puzzleStage;
+  regions.CHARACTER = robot;
+  regions.STATUS = progress;
+  regions.FEEDBACK = feedback;
+  regions.PRIMARY_ACTIONS = choices;
+  regions.SECONDARY_ACTIONS = choices;
+  const mission9: Mission9SceneLayout = {
+    showHeader: !phonePortrait && !shortLandscape,
+    title,
+    progress,
+    status: progress,
+    puzzleStage,
+    robot,
+    choices,
+    world,
+    controls: choices,
+    feedback,
+    platformCenterX,
+    platformContactY,
+    controlGap,
+    controlHeight,
+    robotScale: robotVisibleHeight / 1402,
+  };
+  return {
+    missionId: 9, policyId: `MISSION_9_${semanticMode}`, semanticMode,
+    regions, sizeContracts: COMPONENT_SIZE_CONTRACTS,
+    components: {
+      taskCard: { contract: 'taskCard', rect: puzzleStage }, statusPanel: { contract: 'statusPanel', rect: progress },
+      actionRow: { contract: 'actionRow', rect: choices }, modal: { contract: 'modal', rect: regions.MODAL },
+      characterZone: { contract: 'characterZone', rect: robot },
+    },
+    characters: [
+      { id: 'REPAIRED', role: 'PRIMARY_CHARACTER', presentation: phonePortrait ? 'REACTION_PORTRAIT' : 'FULL_BODY', region: 'CHARACTER', coordinateSpace: 'SCREEN', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', visible: true, occupancy: { min: 0.45, ideal: 0.7, max: 0.86 } },
+      { id: 'HELPER', role: 'HIDDEN_FOR_MECHANIC_FOCUS', presentation: 'HIDDEN', region: 'SECONDARY_CHARACTER', coordinateSpace: 'SCREEN', visibleBoundsId: 'ROBOT_V2_HELPER', visible: false, occupancy: { min: 0, ideal: 0, max: 0 } },
+    ],
+    whitespaceAllocation: portrait ? ['BREATHING_ROOM'] : ['CHARACTER_PRESENCE', 'BACKGROUND_VISIBILITY'],
+    taskCard: puzzleStage, progress: layout.progress, mission9,
+  };
+}
 function composeTransition(layout: ResponsiveLayout): SceneComposition {
   const { viewportWidth: width, viewportHeight: height, semanticMode, safe } = layout;
   const regions = commonRegions(layout);
@@ -466,6 +610,7 @@ function composeTransition(layout: ResponsiveLayout): SceneComposition {
 export function composeScene(layout: ResponsiveLayout, missionId: MissionId): SceneComposition {
   if (missionId === 7) return composeMission7(layout);
   if (missionId === 8) return composeMission8(layout);
+  if (missionId === 9) return composeMission9(layout);
   if (missionId === 'MISSION5_TRANSITION') return composeTransition(layout);
   return composeSharedMission(layout, missionId);
 }

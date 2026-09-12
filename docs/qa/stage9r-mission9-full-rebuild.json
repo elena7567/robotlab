@@ -1,0 +1,5179 @@
+{
+  "result": "PASS",
+  "testedAt": "2026-09-12T16:43:11.476Z",
+  "baseUrl": "http://127.0.0.1:4198/",
+  "primaryInteraction": "TAP_SELECT_THEN_TAP_TARGET",
+  "drag": "DISABLED",
+  "mouseFlow": {
+    "viewport": "1600x900",
+    "input": "MOUSE",
+    "checks": [
+      {
+        "name": "1600x900-BRIDGE-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "1600x900-BRIDGE-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "1600x900-BRIDGE-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "1600x900-BRIDGE-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "1600x900-BRIDGE-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "bridge-gap",
+          "clueId": "bridge-flat-span",
+          "bounds": {
+            "x": 695.629,
+            "y": 587.2823839285713,
+            "width": 208.74199999999996,
+            "height": 102.5072321428571
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "1600x900-BRIDGE-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "bridge-flat-span",
+          "assetKey": "MISSION9_BRIDGE_CORRECT",
+          "assetFamily": "bridge",
+          "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+          "bounds": {
+            "x": 489.8741935483871,
+            "y": 789.925,
+            "width": 156.2516129032258,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 458,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 568,
+          "baseY": 816.25,
+          "x": 568,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ]
+      },
+      {
+        "name": "1600x900-BRIDGE-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "1600x900-BRIDGE-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 700,
+          "groundY": 700,
+          "delta": 0
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 800,
+          "y": 638.5359999999998
+        },
+        "platformCenterX": 800
+      },
+      {
+        "name": "1600x900-BRIDGE-platform-centered-row",
+        "ok": true,
+        "rowCenter": 800,
+        "platformCenterX": 800
+      },
+      {
+        "name": "1600x900-BRIDGE-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "1600x900-BRIDGE-target-before-selection",
+        "ok": true
+      },
+      {
+        "name": "1600x900-BRIDGE-between-cards-empty",
+        "ok": true
+      },
+      {
+        "name": "1600x900-BRIDGE-bridge-arc-span-selected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-arc-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-bridge-arc-span-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "attempts": 1,
+          "interaction": {
+            "stage": "BRIDGE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-bridge-truss-span-selected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-truss-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-bridge-truss-span-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "attempts": 2,
+          "interaction": {
+            "stage": "BRIDGE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-selection-switch",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-flat-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-rapid-taps",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-flat-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-double-target-lock",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "interaction": {
+            "stage": "BRIDGE",
+            "state": "TRANSITIONING",
+            "selectedCandidateId": "bridge-flat-span",
+            "targetHighlighted": false
+          },
+          "snapshot": {
+            "courseStage": "BRIDGE",
+            "bridgeRepaired": true,
+            "gateOpened": false,
+            "stationPowered": false,
+            "wrongAttempts": 2,
+            "lastAction": "bridge-flat-span",
+            "lastResult": "correct",
+            "transitioning": true,
+            "completed": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-BRIDGE-solved-world-reaction",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ",
+          "МОСТ ГОТОВ"
+        ]
+      },
+      {
+        "name": "1600x900-BRIDGE-advance-one",
+        "ok": true,
+        "actual": "GATE"
+      },
+      {
+        "name": "1600x900-BRIDGE-cleanup",
+        "ok": true,
+        "textures": [
+          "MISSION9_GATE_CLOSED",
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ]
+      },
+      {
+        "name": "1600x900-GATE-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "1600x900-GATE-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "1600x900-GATE-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "1600x900-GATE-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "1600x900-GATE-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "GATE",
+          "clueId": "gate-truss-profile",
+          "targetId": "gate-lock",
+          "correctCandidateId": "gate-truss-profile",
+          "targetTextureKey": "MISSION9_GATE_CLOSED",
+          "candidateIds": [
+            "gate-triangle-profile",
+            "gate-truss-profile",
+            "gate-round-lightning-profile"
+          ],
+          "candidateTextures": [
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "assetFamily": "gate",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 718.01478,
+            "y": 545.67488,
+            "width": 163.97044000000005,
+            "height": 91.63054
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "1600x900-GATE-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "1600x900-GATE-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 736.510294117647,
+            "y": 789.925,
+            "width": 126.9794117647059,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 690,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 800,
+          "baseY": 816.25,
+          "x": 800,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "1600x900-GATE-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_GATE_CLOSED",
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ]
+      },
+      {
+        "name": "1600x900-GATE-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "1600x900-GATE-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 700,
+          "groundY": 700,
+          "delta": 0
+        }
+      },
+      {
+        "name": "1600x900-GATE-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 800,
+          "y": 591.4901500000001
+        },
+        "platformCenterX": 800
+      },
+      {
+        "name": "1600x900-GATE-platform-centered-row",
+        "ok": true,
+        "rowCenter": 800,
+        "platformCenterX": 800
+      },
+      {
+        "name": "1600x900-GATE-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "1600x900-GATE-target-before-selection",
+        "ok": true
+      },
+      {
+        "name": "1600x900-GATE-between-cards-empty",
+        "ok": true
+      },
+      {
+        "name": "1600x900-GATE-gate-triangle-profile-selected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-triangle-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-GATE-gate-triangle-profile-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "attempts": 1,
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-GATE-gate-round-lightning-profile-selected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-round-lightning-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-GATE-gate-round-lightning-profile-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "attempts": 2,
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-GATE-selection-switch",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-truss-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-GATE-rapid-taps",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-truss-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-GATE-double-target-lock",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "interaction": {
+            "stage": "GATE",
+            "state": "TRANSITIONING",
+            "selectedCandidateId": "gate-truss-profile",
+            "targetHighlighted": false
+          },
+          "snapshot": {
+            "courseStage": "GATE",
+            "bridgeRepaired": true,
+            "gateOpened": true,
+            "stationPowered": false,
+            "wrongAttempts": 2,
+            "lastAction": "gate-truss-profile",
+            "lastResult": "correct",
+            "transitioning": true,
+            "completed": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-GATE-solved-world-reaction",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "НАЙДИ КЛЮЧ",
+          "ВОРОТА ОТКРЫТЫ"
+        ]
+      },
+      {
+        "name": "1600x900-GATE-advance-one",
+        "ok": true,
+        "actual": "POWER"
+      },
+      {
+        "name": "1600x900-GATE-cleanup",
+        "ok": true,
+        "textures": [
+          "MISSION9_POWER_STATION_OFF",
+          "MISSION9_ENERGY_CORRECT",
+          "MISSION9_ENERGY_WRONG_1",
+          "MISSION9_ENERGY_WRONG_2"
+        ]
+      },
+      {
+        "name": "1600x900-POWER-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "1600x900-POWER-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "1600x900-POWER-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "1600x900-POWER-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "1600x900-POWER-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "POWER",
+          "clueId": "power-capsule-module",
+          "targetId": "power-socket",
+          "correctCandidateId": "power-capsule-module",
+          "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+          "candidateIds": [
+            "power-orb-module",
+            "power-capsule-module",
+            "power-triangle-module"
+          ],
+          "candidateTextures": [
+            "MISSION9_ENERGY_CORRECT",
+            "MISSION9_ENERGY_WRONG_1",
+            "MISSION9_ENERGY_WRONG_2"
+          ],
+          "assetFamily": "power",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "power-socket",
+          "clueId": "power-capsule-module",
+          "bounds": {
+            "x": 700.23572,
+            "y": 532.9828963265306,
+            "width": 199.52855999999997,
+            "height": 73.0699828571428
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "1600x900-POWER-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "1600x900-POWER-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "power-capsule-module",
+          "assetKey": "MISSION9_ENERGY_WRONG_1",
+          "assetFamily": "power",
+          "runtimeTexture": "MISSION9_ENERGY_WRONG_1",
+          "bounds": {
+            "x": 737.268085106383,
+            "y": 789.925,
+            "width": 125.46382978723409,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 690,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 800,
+          "baseY": 816.25,
+          "x": 800,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "1600x900-POWER-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_POWER_STATION_OFF",
+          "MISSION9_ENERGY_CORRECT",
+          "MISSION9_ENERGY_WRONG_1",
+          "MISSION9_ENERGY_WRONG_2"
+        ]
+      },
+      {
+        "name": "1600x900-POWER-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "1600x900-POWER-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 700,
+          "groundY": 700,
+          "delta": 0
+        }
+      },
+      {
+        "name": "1600x900-POWER-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 800,
+          "y": 569.517887755102
+        },
+        "platformCenterX": 800
+      },
+      {
+        "name": "1600x900-POWER-platform-centered-row",
+        "ok": true,
+        "rowCenter": 800,
+        "platformCenterX": 800
+      },
+      {
+        "name": "1600x900-POWER-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "1600x900-POWER-target-before-selection",
+        "ok": true
+      },
+      {
+        "name": "1600x900-POWER-between-cards-empty",
+        "ok": true
+      },
+      {
+        "name": "1600x900-POWER-power-orb-module-selected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-orb-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-POWER-power-orb-module-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "attempts": 1,
+          "interaction": {
+            "stage": "POWER",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-POWER-power-triangle-module-selected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-triangle-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-POWER-power-triangle-module-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "attempts": 2,
+          "interaction": {
+            "stage": "POWER",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "1600x900-POWER-selection-switch",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-capsule-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-POWER-rapid-taps",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-capsule-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "1600x900-POWER-double-target-lock",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "interaction": {
+            "stage": "POWER",
+            "state": "TRANSITIONING",
+            "selectedCandidateId": "power-capsule-module",
+            "targetHighlighted": false
+          },
+          "snapshot": {
+            "courseStage": "POWER",
+            "bridgeRepaired": true,
+            "gateOpened": true,
+            "stationPowered": true,
+            "wrongAttempts": 2,
+            "lastAction": "power-capsule-module",
+            "lastResult": "complete",
+            "transitioning": true,
+            "completed": true
+          }
+        }
+      },
+      {
+        "name": "1600x900-POWER-solved-world-reaction",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ЗАПУСТИ СТАНЦИЮ",
+          "СТАНЦИЯ ЗАПУЩЕНА"
+        ]
+      },
+      {
+        "name": "1600x900-completion-once-clean",
+        "ok": true,
+        "actual": {
+          "stage": "COMPLETE",
+          "snapshot": {
+            "courseStage": "COMPLETE",
+            "bridgeRepaired": true,
+            "gateOpened": true,
+            "stationPowered": true,
+            "wrongAttempts": 2,
+            "lastAction": "power-capsule-module",
+            "lastResult": "complete",
+            "transitioning": false,
+            "completed": true
+          },
+          "contract": {
+            "stage": "POWER",
+            "clueId": "power-capsule-module",
+            "targetId": "power-socket",
+            "correctCandidateId": "power-capsule-module",
+            "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+            "candidateIds": [
+              "power-orb-module",
+              "power-capsule-module",
+              "power-triangle-module"
+            ],
+            "candidateTextures": [
+              "MISSION9_ENERGY_CORRECT",
+              "MISSION9_ENERGY_WRONG_1",
+              "MISSION9_ENERGY_WRONG_2"
+            ],
+            "assetFamily": "power",
+            "dragEnabled": false
+          },
+          "interaction": {
+            "stage": "POWER",
+            "state": "LOCKED",
+            "selectedCandidateId": "power-capsule-module",
+            "targetHighlighted": false
+          },
+          "selectedCandidateId": null,
+          "dragEnabled": false,
+          "grounding": {
+            "visibleBottomY": 700,
+            "groundY": 700,
+            "delta": 0
+          },
+          "layout": {
+            "platformCenterX": 800,
+            "platformContactY": 700
+          },
+          "cards": [],
+          "targets": [],
+          "missionTextures": [],
+          "labels": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ИСПЫТАЙ РОБОТА",
+            "ИСПЫТАНИЕ ПРОЙДЕНО",
+            "СТАНЦИЯ ЗАПУЩЕНА",
+            "ИСПЫТАНИЕ ПРОЙДЕНО",
+            "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+            "НА ГЛАВНУЮ"
+          ],
+          "rootCount": 0,
+          "completionCount": 1,
+          "completionRegions": [
+            "TITLE",
+            "SUBTITLE",
+            "CHARACTER",
+            "ACTION"
+          ],
+          "orientationCount": 0
+        }
+      },
+      {
+        "name": "1600x900-completion-contract",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "СТАНЦИЯ ЗАПУЩЕНА",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+          "НА ГЛАВНУЮ"
+        ],
+        "regions": [
+          "TITLE",
+          "SUBTITLE",
+          "CHARACTER",
+          "ACTION"
+        ]
+      },
+      {
+        "name": "1600x900-runtime-clean",
+        "ok": true,
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        }
+      }
+    ],
+    "final": {
+      "stage": "COMPLETE",
+      "snapshot": {
+        "courseStage": "COMPLETE",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": true,
+        "wrongAttempts": 2,
+        "lastAction": "power-capsule-module",
+        "lastResult": "complete",
+        "transitioning": false,
+        "completed": true
+      },
+      "contract": {
+        "stage": "POWER",
+        "clueId": "power-capsule-module",
+        "targetId": "power-socket",
+        "correctCandidateId": "power-capsule-module",
+        "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+        "candidateIds": [
+          "power-orb-module",
+          "power-capsule-module",
+          "power-triangle-module"
+        ],
+        "candidateTextures": [
+          "MISSION9_ENERGY_CORRECT",
+          "MISSION9_ENERGY_WRONG_1",
+          "MISSION9_ENERGY_WRONG_2"
+        ],
+        "assetFamily": "power",
+        "dragEnabled": false
+      },
+      "interaction": {
+        "stage": "POWER",
+        "state": "LOCKED",
+        "selectedCandidateId": "power-capsule-module",
+        "targetHighlighted": false
+      },
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {
+        "visibleBottomY": 700,
+        "groundY": 700,
+        "delta": 0
+      },
+      "layout": {
+        "platformCenterX": 800,
+        "platformContactY": 700
+      },
+      "cards": [],
+      "targets": [],
+      "missionTextures": [],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ИСПЫТАЙ РОБОТА",
+        "ИСПЫТАНИЕ ПРОЙДЕНО",
+        "СТАНЦИЯ ЗАПУЩЕНА",
+        "ИСПЫТАНИЕ ПРОЙДЕНО",
+        "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+        "НА ГЛАВНУЮ"
+      ],
+      "rootCount": 0,
+      "completionCount": 1,
+      "completionRegions": [
+        "TITLE",
+        "SUBTITLE",
+        "CHARACTER",
+        "ACTION"
+      ],
+      "orientationCount": 0
+    },
+    "screenshots": {
+      "idle": [
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-bridge-idle.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-gate-idle.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-power-idle.png"
+      ],
+      "selected": [
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-bridge-selected.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-gate-selected.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-power-selected.png"
+      ],
+      "solved": [
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-bridge-solved.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-gate-solved.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-power-solved.png"
+      ],
+      "completion": "docs\\qa\\screenshots\\stage9r-mission9-1600x900-completion.png"
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "ok": true
+  },
+  "touchFlow": {
+    "viewport": "844x390",
+    "input": "CDP_TOUCH",
+    "checks": [
+      {
+        "name": "844x390-BRIDGE-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "844x390-BRIDGE-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "844x390-BRIDGE-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "844x390-BRIDGE-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "844x390-BRIDGE-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "bridge-gap",
+          "clueId": "bridge-flat-span",
+          "bounds": {
+            "x": 356.5075927272727,
+            "y": 272.01135,
+            "width": 130.98481454545453,
+            "height": 64.3229
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "844x390-BRIDGE-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "bridge-flat-span",
+          "assetKey": "MISSION9_BRIDGE_CORRECT",
+          "assetFamily": "bridge",
+          "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+          "bounds": {
+            "x": 129.18451612903226,
+            "y": 337.7149926757813,
+            "width": 129.63096774193548,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 84,
+            "y": 331.555,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 194,
+          "baseY": 359.555,
+          "x": 194,
+          "y": 359.555,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ]
+      },
+      {
+        "name": "844x390-BRIDGE-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "844x390-BRIDGE-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 326.875,
+          "groundY": 326.875,
+          "delta": 0
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 422,
+          "y": 304.1728
+        },
+        "platformCenterX": 422
+      },
+      {
+        "name": "844x390-BRIDGE-platform-centered-row",
+        "ok": true,
+        "rowCenter": 422,
+        "platformCenterX": 422
+      },
+      {
+        "name": "844x390-BRIDGE-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "844x390-BRIDGE-target-before-selection",
+        "ok": true
+      },
+      {
+        "name": "844x390-BRIDGE-between-cards-empty",
+        "ok": true
+      },
+      {
+        "name": "844x390-BRIDGE-bridge-arc-span-selected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-arc-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-bridge-arc-span-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "attempts": 1,
+          "interaction": {
+            "stage": "BRIDGE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-bridge-truss-span-selected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-truss-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-bridge-truss-span-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "attempts": 2,
+          "interaction": {
+            "stage": "BRIDGE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-selection-switch",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-flat-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-rapid-taps",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "state": "SELECTED",
+          "selectedCandidateId": "bridge-flat-span",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-double-target-lock",
+        "ok": true,
+        "actual": {
+          "stage": "BRIDGE",
+          "interaction": {
+            "stage": "BRIDGE",
+            "state": "TRANSITIONING",
+            "selectedCandidateId": "bridge-flat-span",
+            "targetHighlighted": false
+          },
+          "snapshot": {
+            "courseStage": "BRIDGE",
+            "bridgeRepaired": true,
+            "gateOpened": false,
+            "stationPowered": false,
+            "wrongAttempts": 2,
+            "lastAction": "bridge-flat-span",
+            "lastResult": "correct",
+            "transitioning": true,
+            "completed": false
+          }
+        }
+      },
+      {
+        "name": "844x390-BRIDGE-solved-world-reaction",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ",
+          "МОСТ ГОТОВ"
+        ]
+      },
+      {
+        "name": "844x390-BRIDGE-advance-one",
+        "ok": true,
+        "actual": "GATE"
+      },
+      {
+        "name": "844x390-BRIDGE-cleanup",
+        "ok": true,
+        "textures": [
+          "MISSION9_GATE_CLOSED",
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ]
+      },
+      {
+        "name": "844x390-GATE-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "844x390-GATE-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "844x390-GATE-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "844x390-GATE-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "844x390-GATE-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "GATE",
+          "clueId": "gate-truss-profile",
+          "targetId": "gate-lock",
+          "correctCandidateId": "gate-truss-profile",
+          "targetTextureKey": "MISSION9_GATE_CLOSED",
+          "candidateIds": [
+            "gate-triangle-profile",
+            "gate-truss-profile",
+            "gate-round-lightning-profile"
+          ],
+          "candidateTextures": [
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "assetFamily": "gate",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 364.98726388,
+            "y": 219.55690847999998,
+            "width": 114.02547224,
+            "height": 63.72011684000003
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "844x390-GATE-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "844x390-GATE-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 369.3270588235294,
+            "y": 337.7149926757813,
+            "width": 105.3458823529412,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 312,
+            "y": 331.555,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 422,
+          "baseY": 359.555,
+          "x": 422,
+          "y": 359.555,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "844x390-GATE-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_GATE_CLOSED",
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ]
+      },
+      {
+        "name": "844x390-GATE-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "844x390-GATE-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 326.875,
+          "groundY": 326.875,
+          "delta": 0
+        }
+      },
+      {
+        "name": "844x390-GATE-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 422,
+          "y": 251.41696689999998
+        },
+        "platformCenterX": 422
+      },
+      {
+        "name": "844x390-GATE-platform-centered-row",
+        "ok": true,
+        "rowCenter": 422,
+        "platformCenterX": 422
+      },
+      {
+        "name": "844x390-GATE-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "844x390-GATE-target-before-selection",
+        "ok": true
+      },
+      {
+        "name": "844x390-GATE-between-cards-empty",
+        "ok": true
+      },
+      {
+        "name": "844x390-GATE-gate-triangle-profile-selected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-triangle-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-GATE-gate-triangle-profile-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "attempts": 1,
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "844x390-GATE-gate-round-lightning-profile-selected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-round-lightning-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-GATE-gate-round-lightning-profile-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "attempts": 2,
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "844x390-GATE-selection-switch",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-truss-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-GATE-rapid-taps",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "state": "SELECTED",
+          "selectedCandidateId": "gate-truss-profile",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-GATE-double-target-lock",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "interaction": {
+            "stage": "GATE",
+            "state": "TRANSITIONING",
+            "selectedCandidateId": "gate-truss-profile",
+            "targetHighlighted": false
+          },
+          "snapshot": {
+            "courseStage": "GATE",
+            "bridgeRepaired": true,
+            "gateOpened": true,
+            "stationPowered": false,
+            "wrongAttempts": 2,
+            "lastAction": "gate-truss-profile",
+            "lastResult": "correct",
+            "transitioning": true,
+            "completed": false
+          }
+        }
+      },
+      {
+        "name": "844x390-GATE-solved-world-reaction",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "НАЙДИ КЛЮЧ",
+          "ВОРОТА ОТКРЫТЫ"
+        ]
+      },
+      {
+        "name": "844x390-GATE-advance-one",
+        "ok": true,
+        "actual": "POWER"
+      },
+      {
+        "name": "844x390-GATE-cleanup",
+        "ok": true,
+        "textures": [
+          "MISSION9_POWER_STATION_OFF",
+          "MISSION9_ENERGY_CORRECT",
+          "MISSION9_ENERGY_WRONG_1",
+          "MISSION9_ENERGY_WRONG_2"
+        ]
+      },
+      {
+        "name": "844x390-POWER-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "844x390-POWER-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "844x390-POWER-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "844x390-POWER-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "844x390-POWER-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "POWER",
+          "clueId": "power-capsule-module",
+          "targetId": "power-socket",
+          "correctCandidateId": "power-capsule-module",
+          "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+          "candidateIds": [
+            "power-orb-module",
+            "power-capsule-module",
+            "power-triangle-module"
+          ],
+          "candidateTextures": [
+            "MISSION9_ENERGY_CORRECT",
+            "MISSION9_ENERGY_WRONG_1",
+            "MISSION9_ENERGY_WRONG_2"
+          ],
+          "assetFamily": "power",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "power-socket",
+          "clueId": "power-capsule-module",
+          "bounds": {
+            "x": 354.0156966811146,
+            "y": 209.95805000000001,
+            "width": 135.96860663777085,
+            "height": 56
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "844x390-POWER-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "844x390-POWER-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "power-capsule-module",
+          "assetKey": "MISSION9_ENERGY_WRONG_1",
+          "assetFamily": "power",
+          "runtimeTexture": "MISSION9_ENERGY_WRONG_1",
+          "bounds": {
+            "x": 369.95574468085107,
+            "y": 337.7149926757813,
+            "width": 104.08851063829786,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 312,
+            "y": 331.555,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 422,
+          "baseY": 359.555,
+          "x": 422,
+          "y": 359.555,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "844x390-POWER-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_POWER_STATION_OFF",
+          "MISSION9_ENERGY_CORRECT",
+          "MISSION9_ENERGY_WRONG_1",
+          "MISSION9_ENERGY_WRONG_2"
+        ]
+      },
+      {
+        "name": "844x390-POWER-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "844x390-POWER-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 326.875,
+          "groundY": 326.875,
+          "delta": 0
+        }
+      },
+      {
+        "name": "844x390-POWER-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 422,
+          "y": 237.95805000000001
+        },
+        "platformCenterX": 422
+      },
+      {
+        "name": "844x390-POWER-platform-centered-row",
+        "ok": true,
+        "rowCenter": 422,
+        "platformCenterX": 422
+      },
+      {
+        "name": "844x390-POWER-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "844x390-POWER-target-before-selection",
+        "ok": true
+      },
+      {
+        "name": "844x390-POWER-between-cards-empty",
+        "ok": true
+      },
+      {
+        "name": "844x390-POWER-power-orb-module-selected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-orb-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-POWER-power-orb-module-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "attempts": 1,
+          "interaction": {
+            "stage": "POWER",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "844x390-POWER-power-triangle-module-selected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-triangle-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-POWER-power-triangle-module-rejected",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "attempts": 2,
+          "interaction": {
+            "stage": "POWER",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          }
+        }
+      },
+      {
+        "name": "844x390-POWER-selection-switch",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-capsule-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-POWER-rapid-taps",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "state": "SELECTED",
+          "selectedCandidateId": "power-capsule-module",
+          "targetHighlighted": true
+        }
+      },
+      {
+        "name": "844x390-POWER-double-target-lock",
+        "ok": true,
+        "actual": {
+          "stage": "POWER",
+          "interaction": {
+            "stage": "POWER",
+            "state": "TRANSITIONING",
+            "selectedCandidateId": "power-capsule-module",
+            "targetHighlighted": false
+          },
+          "snapshot": {
+            "courseStage": "POWER",
+            "bridgeRepaired": true,
+            "gateOpened": true,
+            "stationPowered": true,
+            "wrongAttempts": 2,
+            "lastAction": "power-capsule-module",
+            "lastResult": "complete",
+            "transitioning": true,
+            "completed": true
+          }
+        }
+      },
+      {
+        "name": "844x390-POWER-solved-world-reaction",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАПУСТИ СТАНЦИЮ",
+          "СТАНЦИЯ ЗАПУЩЕНА"
+        ]
+      },
+      {
+        "name": "844x390-completion-once-clean",
+        "ok": true,
+        "actual": {
+          "stage": "COMPLETE",
+          "snapshot": {
+            "courseStage": "COMPLETE",
+            "bridgeRepaired": true,
+            "gateOpened": true,
+            "stationPowered": true,
+            "wrongAttempts": 2,
+            "lastAction": "power-capsule-module",
+            "lastResult": "complete",
+            "transitioning": false,
+            "completed": true
+          },
+          "contract": {
+            "stage": "POWER",
+            "clueId": "power-capsule-module",
+            "targetId": "power-socket",
+            "correctCandidateId": "power-capsule-module",
+            "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+            "candidateIds": [
+              "power-orb-module",
+              "power-capsule-module",
+              "power-triangle-module"
+            ],
+            "candidateTextures": [
+              "MISSION9_ENERGY_CORRECT",
+              "MISSION9_ENERGY_WRONG_1",
+              "MISSION9_ENERGY_WRONG_2"
+            ],
+            "assetFamily": "power",
+            "dragEnabled": false
+          },
+          "interaction": {
+            "stage": "POWER",
+            "state": "LOCKED",
+            "selectedCandidateId": "power-capsule-module",
+            "targetHighlighted": false
+          },
+          "selectedCandidateId": null,
+          "dragEnabled": false,
+          "grounding": {
+            "visibleBottomY": 326.875,
+            "groundY": 326.875,
+            "delta": 0
+          },
+          "layout": {
+            "platformCenterX": 422,
+            "platformContactY": 326.875
+          },
+          "cards": [],
+          "targets": [],
+          "missionTextures": [],
+          "labels": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ИСПЫТАНИЕ ПРОЙДЕНО",
+            "СТАНЦИЯ ЗАПУЩЕНА",
+            "ИСПЫТАНИЕ ПРОЙДЕНО",
+            "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+            "НА ГЛАВНУЮ"
+          ],
+          "rootCount": 0,
+          "completionCount": 1,
+          "completionRegions": [
+            "TITLE",
+            "SUBTITLE",
+            "CHARACTER",
+            "ACTION"
+          ],
+          "orientationCount": 0
+        }
+      },
+      {
+        "name": "844x390-completion-contract",
+        "ok": true,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "СТАНЦИЯ ЗАПУЩЕНА",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+          "НА ГЛАВНУЮ"
+        ],
+        "regions": [
+          "TITLE",
+          "SUBTITLE",
+          "CHARACTER",
+          "ACTION"
+        ]
+      },
+      {
+        "name": "844x390-runtime-clean",
+        "ok": true,
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        }
+      }
+    ],
+    "final": {
+      "stage": "COMPLETE",
+      "snapshot": {
+        "courseStage": "COMPLETE",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": true,
+        "wrongAttempts": 2,
+        "lastAction": "power-capsule-module",
+        "lastResult": "complete",
+        "transitioning": false,
+        "completed": true
+      },
+      "contract": {
+        "stage": "POWER",
+        "clueId": "power-capsule-module",
+        "targetId": "power-socket",
+        "correctCandidateId": "power-capsule-module",
+        "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+        "candidateIds": [
+          "power-orb-module",
+          "power-capsule-module",
+          "power-triangle-module"
+        ],
+        "candidateTextures": [
+          "MISSION9_ENERGY_CORRECT",
+          "MISSION9_ENERGY_WRONG_1",
+          "MISSION9_ENERGY_WRONG_2"
+        ],
+        "assetFamily": "power",
+        "dragEnabled": false
+      },
+      "interaction": {
+        "stage": "POWER",
+        "state": "LOCKED",
+        "selectedCandidateId": "power-capsule-module",
+        "targetHighlighted": false
+      },
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {
+        "visibleBottomY": 326.875,
+        "groundY": 326.875,
+        "delta": 0
+      },
+      "layout": {
+        "platformCenterX": 422,
+        "platformContactY": 326.875
+      },
+      "cards": [],
+      "targets": [],
+      "missionTextures": [],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ИСПЫТАНИЕ ПРОЙДЕНО",
+        "СТАНЦИЯ ЗАПУЩЕНА",
+        "ИСПЫТАНИЕ ПРОЙДЕНО",
+        "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+        "НА ГЛАВНУЮ"
+      ],
+      "rootCount": 0,
+      "completionCount": 1,
+      "completionRegions": [
+        "TITLE",
+        "SUBTITLE",
+        "CHARACTER",
+        "ACTION"
+      ],
+      "orientationCount": 0
+    },
+    "screenshots": {
+      "idle": [
+        "docs\\qa\\screenshots\\stage9r-mission9-844x390-bridge-idle.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-844x390-gate-idle.png",
+        "docs\\qa\\screenshots\\stage9r-mission9-844x390-power-idle.png"
+      ],
+      "selected": [],
+      "solved": [],
+      "completion": "docs\\qa\\screenshots\\stage9r-mission9-844x390-completion.png"
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "ok": true
+  },
+  "responsive": [
+    {
+      "viewport": "1280x720",
+      "checks": [
+        {
+          "name": "responsive-1280x720-contract-stage",
+          "ok": true
+        },
+        {
+          "name": "responsive-1280x720-one-stage-root",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-1280x720-three-candidates",
+          "ok": true,
+          "actual": 3
+        },
+        {
+          "name": "responsive-1280x720-one-target",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-1280x720-semantic-clue",
+          "ok": true,
+          "contract": {
+            "stage": "BRIDGE",
+            "clueId": "bridge-flat-span",
+            "targetId": "bridge-gap",
+            "correctCandidateId": "bridge-flat-span",
+            "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+            "candidateIds": [
+              "bridge-flat-span",
+              "bridge-arc-span",
+              "bridge-truss-span"
+            ],
+            "candidateTextures": [
+              "MISSION9_BRIDGE_CORRECT",
+              "MISSION9_BRIDGE_WRONG_ARC",
+              "MISSION9_BRIDGE_WRONG_TRUSS"
+            ],
+            "assetFamily": "bridge",
+            "dragEnabled": false
+          },
+          "target": {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 535.629,
+              "y": 462.1383839285715,
+              "width": 208.74199999999996,
+              "height": 102.50723214285716
+            },
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-1280x720-unique-semantic-ids",
+          "ok": true
+        },
+        {
+          "name": "responsive-1280x720-correct-runtime-texture",
+          "ok": true,
+          "correct": {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 336.24,
+              "y": 617.6199877929688,
+              "width": 143.51999999999998,
+              "height": 48.3599999999999
+            },
+            "auditBounds": {
+              "x": 297.99999999999994,
+              "y": 610.8,
+              "width": 220,
+              "height": 62
+            },
+            "baseX": 407.99999999999994,
+            "baseY": 641.8,
+            "x": 407.99999999999994,
+            "y": 641.8,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-1280x720-asset-family",
+          "ok": true,
+          "textures": [
+            "MISSION9_BRIDGE_LEFT",
+            "MISSION9_BRIDGE_RIGHT",
+            "MISSION9_BRIDGE_GAP_TARGET",
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ]
+        },
+        {
+          "name": "responsive-1280x720-drag-disabled",
+          "ok": true,
+          "actual": false
+        },
+        {
+          "name": "responsive-1280x720-grounding-delta",
+          "ok": true,
+          "grounding": {
+            "visibleBottomY": 560,
+            "groundY": 560,
+            "delta": 0
+          }
+        },
+        {
+          "name": "responsive-1280x720-platform-centered-target",
+          "ok": true,
+          "targetCenter": {
+            "x": 640,
+            "y": 513.392
+          },
+          "platformCenterX": 640
+        },
+        {
+          "name": "responsive-1280x720-platform-centered-row",
+          "ok": true,
+          "rowCenter": 640,
+          "platformCenterX": 640
+        },
+        {
+          "name": "responsive-1280x720-cards-interactive",
+          "ok": true
+        },
+        {
+          "name": "responsive-1280x720-canvas",
+          "ok": true
+        },
+        {
+          "name": "responsive-1280x720-runtime-clean",
+          "ok": true,
+          "errors": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-1280x720-bridge.png",
+      "state": {
+        "stage": "BRIDGE",
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "selectedCandidateId": null,
+        "dragEnabled": false,
+        "grounding": {
+          "visibleBottomY": 560,
+          "groundY": 560,
+          "delta": 0
+        },
+        "layout": {
+          "platformCenterX": 640,
+          "platformContactY": 560
+        },
+        "cards": [
+          {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 336.24,
+              "y": 617.6199877929688,
+              "width": 143.51999999999998,
+              "height": 48.3599999999999
+            },
+            "auditBounds": {
+              "x": 297.99999999999994,
+              "y": 610.8,
+              "width": 220,
+              "height": 62
+            },
+            "baseX": 407.99999999999994,
+            "baseY": 641.8,
+            "x": 407.99999999999994,
+            "y": 641.8,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-arc-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
+            "bounds": {
+              "x": 577.6080829015544,
+              "y": 617.6199877929688,
+              "width": 124.78383419689112,
+              "height": 48.3599999999999
+            },
+            "auditBounds": {
+              "x": 530,
+              "y": 610.8,
+              "width": 220,
+              "height": 62
+            },
+            "baseX": 640,
+            "baseY": 641.8,
+            "x": 640,
+            "y": 641.8,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-truss-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "bounds": {
+              "x": 814.969393939394,
+              "y": 617.6199877929688,
+              "width": 114.06121212121207,
+              "height": 48.3599999999999
+            },
+            "auditBounds": {
+              "x": 762,
+              "y": 610.8,
+              "width": 220,
+              "height": 62
+            },
+            "baseX": 872,
+            "baseY": 641.8,
+            "x": 872,
+            "y": 641.8,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 535.629,
+              "y": 462.1383839285715,
+              "width": 208.74199999999996,
+              "height": 102.50723214285716
+            },
+            "interactive": true
+          }
+        ],
+        "missionTextures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ],
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ",
+          ""
+        ],
+        "rootCount": 1,
+        "completionCount": 0,
+        "completionRegions": [],
+        "orientationCount": 0
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "viewport": "1600x900",
+      "checks": [
+        {
+          "name": "responsive-1600x900-contract-stage",
+          "ok": true
+        },
+        {
+          "name": "responsive-1600x900-one-stage-root",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-1600x900-three-candidates",
+          "ok": true,
+          "actual": 3
+        },
+        {
+          "name": "responsive-1600x900-one-target",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-1600x900-semantic-clue",
+          "ok": true,
+          "contract": {
+            "stage": "BRIDGE",
+            "clueId": "bridge-flat-span",
+            "targetId": "bridge-gap",
+            "correctCandidateId": "bridge-flat-span",
+            "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+            "candidateIds": [
+              "bridge-flat-span",
+              "bridge-arc-span",
+              "bridge-truss-span"
+            ],
+            "candidateTextures": [
+              "MISSION9_BRIDGE_CORRECT",
+              "MISSION9_BRIDGE_WRONG_ARC",
+              "MISSION9_BRIDGE_WRONG_TRUSS"
+            ],
+            "assetFamily": "bridge",
+            "dragEnabled": false
+          },
+          "target": {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 695.629,
+              "y": 587.2823839285713,
+              "width": 208.74199999999996,
+              "height": 102.5072321428571
+            },
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-1600x900-unique-semantic-ids",
+          "ok": true
+        },
+        {
+          "name": "responsive-1600x900-correct-runtime-texture",
+          "ok": true,
+          "correct": {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 489.8741935483871,
+              "y": 789.925,
+              "width": 156.2516129032258,
+              "height": 52.65000000000009
+            },
+            "auditBounds": {
+              "x": 458,
+              "y": 782.5,
+              "width": 220,
+              "height": 67.5
+            },
+            "baseX": 568,
+            "baseY": 816.25,
+            "x": 568,
+            "y": 816.25,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-1600x900-asset-family",
+          "ok": true,
+          "textures": [
+            "MISSION9_BRIDGE_LEFT",
+            "MISSION9_BRIDGE_RIGHT",
+            "MISSION9_BRIDGE_GAP_TARGET",
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ]
+        },
+        {
+          "name": "responsive-1600x900-drag-disabled",
+          "ok": true,
+          "actual": false
+        },
+        {
+          "name": "responsive-1600x900-grounding-delta",
+          "ok": true,
+          "grounding": {
+            "visibleBottomY": 700,
+            "groundY": 700,
+            "delta": 0
+          }
+        },
+        {
+          "name": "responsive-1600x900-platform-centered-target",
+          "ok": true,
+          "targetCenter": {
+            "x": 800,
+            "y": 638.5359999999998
+          },
+          "platformCenterX": 800
+        },
+        {
+          "name": "responsive-1600x900-platform-centered-row",
+          "ok": true,
+          "rowCenter": 800,
+          "platformCenterX": 800
+        },
+        {
+          "name": "responsive-1600x900-cards-interactive",
+          "ok": true
+        },
+        {
+          "name": "responsive-1600x900-canvas",
+          "ok": true
+        },
+        {
+          "name": "responsive-1600x900-runtime-clean",
+          "ok": true,
+          "errors": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-1600x900-bridge.png",
+      "state": {
+        "stage": "BRIDGE",
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "selectedCandidateId": null,
+        "dragEnabled": false,
+        "grounding": {
+          "visibleBottomY": 700,
+          "groundY": 700,
+          "delta": 0
+        },
+        "layout": {
+          "platformCenterX": 800,
+          "platformContactY": 700
+        },
+        "cards": [
+          {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 489.8741935483871,
+              "y": 789.925,
+              "width": 156.2516129032258,
+              "height": 52.65000000000009
+            },
+            "auditBounds": {
+              "x": 458,
+              "y": 782.5,
+              "width": 220,
+              "height": 67.5
+            },
+            "baseX": 568,
+            "baseY": 816.25,
+            "x": 568,
+            "y": 816.25,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-arc-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
+            "bounds": {
+              "x": 732.0733160621762,
+              "y": 789.925,
+              "width": 135.85336787564756,
+              "height": 52.65000000000009
+            },
+            "auditBounds": {
+              "x": 690,
+              "y": 782.5,
+              "width": 220,
+              "height": 67.5
+            },
+            "baseX": 800,
+            "baseY": 816.25,
+            "x": 800,
+            "y": 816.25,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-truss-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "bounds": {
+              "x": 969.9102272727273,
+              "y": 789.925,
+              "width": 124.1795454545454,
+              "height": 52.65000000000009
+            },
+            "auditBounds": {
+              "x": 922,
+              "y": 782.5,
+              "width": 220,
+              "height": 67.5
+            },
+            "baseX": 1032,
+            "baseY": 816.25,
+            "x": 1032,
+            "y": 816.25,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 695.629,
+              "y": 587.2823839285713,
+              "width": 208.74199999999996,
+              "height": 102.5072321428571
+            },
+            "interactive": true
+          }
+        ],
+        "missionTextures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ],
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ",
+          ""
+        ],
+        "rootCount": 1,
+        "completionCount": 0,
+        "completionRegions": [],
+        "orientationCount": 0
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "viewport": "1920x1080",
+      "checks": [
+        {
+          "name": "responsive-1920x1080-contract-stage",
+          "ok": true
+        },
+        {
+          "name": "responsive-1920x1080-one-stage-root",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-1920x1080-three-candidates",
+          "ok": true,
+          "actual": 3
+        },
+        {
+          "name": "responsive-1920x1080-one-target",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-1920x1080-semantic-clue",
+          "ok": true,
+          "contract": {
+            "stage": "BRIDGE",
+            "clueId": "bridge-flat-span",
+            "targetId": "bridge-gap",
+            "correctCandidateId": "bridge-flat-span",
+            "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+            "candidateIds": [
+              "bridge-flat-span",
+              "bridge-arc-span",
+              "bridge-truss-span"
+            ],
+            "candidateTextures": [
+              "MISSION9_BRIDGE_CORRECT",
+              "MISSION9_BRIDGE_WRONG_ARC",
+              "MISSION9_BRIDGE_WRONG_TRUSS"
+            ],
+            "assetFamily": "bridge",
+            "dragEnabled": false
+          },
+          "target": {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 855.629,
+              "y": 710.5063839285714,
+              "width": 208.74200000000008,
+              "height": 102.5072321428571
+            },
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-1920x1080-unique-semantic-ids",
+          "ok": true
+        },
+        {
+          "name": "responsive-1920x1080-correct-runtime-texture",
+          "ok": true,
+          "correct": {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 644.6658064516129,
+              "y": 965.92,
+              "width": 166.66838709677427,
+              "height": 56.16000000000008
+            },
+            "auditBounds": {
+              "x": 618,
+              "y": 958,
+              "width": 220,
+              "height": 72
+            },
+            "baseX": 728,
+            "baseY": 994,
+            "x": 728,
+            "y": 994,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-1920x1080-asset-family",
+          "ok": true,
+          "textures": [
+            "MISSION9_BRIDGE_LEFT",
+            "MISSION9_BRIDGE_RIGHT",
+            "MISSION9_BRIDGE_GAP_TARGET",
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ]
+        },
+        {
+          "name": "responsive-1920x1080-drag-disabled",
+          "ok": true,
+          "actual": false
+        },
+        {
+          "name": "responsive-1920x1080-grounding-delta",
+          "ok": true,
+          "grounding": {
+            "visibleBottomY": 840,
+            "groundY": 840,
+            "delta": 0
+          }
+        },
+        {
+          "name": "responsive-1920x1080-platform-centered-target",
+          "ok": true,
+          "targetCenter": {
+            "x": 960,
+            "y": 761.76
+          },
+          "platformCenterX": 960
+        },
+        {
+          "name": "responsive-1920x1080-platform-centered-row",
+          "ok": true,
+          "rowCenter": 960,
+          "platformCenterX": 960
+        },
+        {
+          "name": "responsive-1920x1080-cards-interactive",
+          "ok": true
+        },
+        {
+          "name": "responsive-1920x1080-canvas",
+          "ok": true
+        },
+        {
+          "name": "responsive-1920x1080-runtime-clean",
+          "ok": true,
+          "errors": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-1920x1080-bridge.png",
+      "state": {
+        "stage": "BRIDGE",
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "selectedCandidateId": null,
+        "dragEnabled": false,
+        "grounding": {
+          "visibleBottomY": 840,
+          "groundY": 840,
+          "delta": 0
+        },
+        "layout": {
+          "platformCenterX": 960,
+          "platformContactY": 840
+        },
+        "cards": [
+          {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 644.6658064516129,
+              "y": 965.92,
+              "width": 166.66838709677427,
+              "height": 56.16000000000008
+            },
+            "auditBounds": {
+              "x": 618,
+              "y": 958,
+              "width": 220,
+              "height": 72
+            },
+            "baseX": 728,
+            "baseY": 994,
+            "x": 728,
+            "y": 994,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-arc-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
+            "bounds": {
+              "x": 887.5448704663213,
+              "y": 965.92,
+              "width": 144.9102590673574,
+              "height": 56.16000000000008
+            },
+            "auditBounds": {
+              "x": 850,
+              "y": 958,
+              "width": 220,
+              "height": 72
+            },
+            "baseX": 960,
+            "baseY": 994,
+            "x": 960,
+            "y": 994,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-truss-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "bounds": {
+              "x": 1125.770909090909,
+              "y": 965.92,
+              "width": 132.45818181818186,
+              "height": 56.16000000000008
+            },
+            "auditBounds": {
+              "x": 1082,
+              "y": 958,
+              "width": 220,
+              "height": 72
+            },
+            "baseX": 1192,
+            "baseY": 994,
+            "x": 1192,
+            "y": 994,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 855.629,
+              "y": 710.5063839285714,
+              "width": 208.74200000000008,
+              "height": 102.5072321428571
+            },
+            "interactive": true
+          }
+        ],
+        "missionTextures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ],
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ",
+          ""
+        ],
+        "rootCount": 1,
+        "completionCount": 0,
+        "completionRegions": [],
+        "orientationCount": 0
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "viewport": "740x360",
+      "checks": [
+        {
+          "name": "responsive-740x360-contract-stage",
+          "ok": true
+        },
+        {
+          "name": "responsive-740x360-one-stage-root",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-740x360-three-candidates",
+          "ok": true,
+          "actual": 3
+        },
+        {
+          "name": "responsive-740x360-one-target",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-740x360-semantic-clue",
+          "ok": true,
+          "contract": {
+            "stage": "BRIDGE",
+            "clueId": "bridge-flat-span",
+            "targetId": "bridge-gap",
+            "correctCandidateId": "bridge-flat-span",
+            "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+            "candidateIds": [
+              "bridge-flat-span",
+              "bridge-arc-span",
+              "bridge-truss-span"
+            ],
+            "candidateTextures": [
+              "MISSION9_BRIDGE_CORRECT",
+              "MISSION9_BRIDGE_WRONG_ARC",
+              "MISSION9_BRIDGE_WRONG_TRUSS"
+            ],
+            "assetFamily": "bridge",
+            "dragEnabled": false
+          },
+          "target": {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 314.58840727272724,
+              "y": 248.41719999999998,
+              "width": 110.82318545454547,
+              "height": 56
+            },
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-740x360-unique-semantic-ids",
+          "ok": true
+        },
+        {
+          "name": "responsive-740x360-correct-runtime-texture",
+          "ok": true,
+          "correct": {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 77.18451612903226,
+              "y": 306.1050073242188,
+              "width": 129.63096774193548,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 32,
+              "y": 299.945,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 142,
+            "baseY": 327.945,
+            "x": 142,
+            "y": 327.945,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-740x360-asset-family",
+          "ok": true,
+          "textures": [
+            "MISSION9_BRIDGE_LEFT",
+            "MISSION9_BRIDGE_RIGHT",
+            "MISSION9_BRIDGE_GAP_TARGET",
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ]
+        },
+        {
+          "name": "responsive-740x360-drag-disabled",
+          "ok": true,
+          "actual": false
+        },
+        {
+          "name": "responsive-740x360-grounding-delta",
+          "ok": true,
+          "grounding": {
+            "visibleBottomY": 295.625,
+            "groundY": 295.625,
+            "delta": 0
+          }
+        },
+        {
+          "name": "responsive-740x360-platform-centered-target",
+          "ok": true,
+          "targetCenter": {
+            "x": 370,
+            "y": 276.4172
+          },
+          "platformCenterX": 370
+        },
+        {
+          "name": "responsive-740x360-platform-centered-row",
+          "ok": true,
+          "rowCenter": 370,
+          "platformCenterX": 370
+        },
+        {
+          "name": "responsive-740x360-cards-interactive",
+          "ok": true
+        },
+        {
+          "name": "responsive-740x360-canvas",
+          "ok": true
+        },
+        {
+          "name": "responsive-740x360-runtime-clean",
+          "ok": true,
+          "errors": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-740x360-bridge.png",
+      "state": {
+        "stage": "BRIDGE",
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "selectedCandidateId": null,
+        "dragEnabled": false,
+        "grounding": {
+          "visibleBottomY": 295.625,
+          "groundY": 295.625,
+          "delta": 0
+        },
+        "layout": {
+          "platformCenterX": 370,
+          "platformContactY": 295.625
+        },
+        "cards": [
+          {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 77.18451612903226,
+              "y": 306.1050073242188,
+              "width": 129.63096774193548,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 32,
+              "y": 299.945,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 142,
+            "baseY": 327.945,
+            "x": 142,
+            "y": 327.945,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-arc-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
+            "bounds": {
+              "x": 313.6460103626943,
+              "y": 306.1050073242188,
+              "width": 112.70797927461138,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 260,
+              "y": 299.945,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 370,
+            "baseY": 327.945,
+            "x": 370,
+            "y": 327.945,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-truss-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "bounds": {
+              "x": 546.4884848484849,
+              "y": 306.1050073242188,
+              "width": 103.02303030303028,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 488,
+              "y": 299.945,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 598,
+            "baseY": 327.945,
+            "x": 598,
+            "y": 327.945,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 314.58840727272724,
+              "y": 248.41719999999998,
+              "width": 110.82318545454547,
+              "height": 56
+            },
+            "interactive": true
+          }
+        ],
+        "missionTextures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ],
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ",
+          ""
+        ],
+        "rootCount": 1,
+        "completionCount": 0,
+        "completionRegions": [],
+        "orientationCount": 0
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "viewport": "844x390",
+      "checks": [
+        {
+          "name": "responsive-844x390-contract-stage",
+          "ok": true
+        },
+        {
+          "name": "responsive-844x390-one-stage-root",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-844x390-three-candidates",
+          "ok": true,
+          "actual": 3
+        },
+        {
+          "name": "responsive-844x390-one-target",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-844x390-semantic-clue",
+          "ok": true,
+          "contract": {
+            "stage": "BRIDGE",
+            "clueId": "bridge-flat-span",
+            "targetId": "bridge-gap",
+            "correctCandidateId": "bridge-flat-span",
+            "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+            "candidateIds": [
+              "bridge-flat-span",
+              "bridge-arc-span",
+              "bridge-truss-span"
+            ],
+            "candidateTextures": [
+              "MISSION9_BRIDGE_CORRECT",
+              "MISSION9_BRIDGE_WRONG_ARC",
+              "MISSION9_BRIDGE_WRONG_TRUSS"
+            ],
+            "assetFamily": "bridge",
+            "dragEnabled": false
+          },
+          "target": {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 356.5075927272727,
+              "y": 272.01135,
+              "width": 130.98481454545453,
+              "height": 64.3229
+            },
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-844x390-unique-semantic-ids",
+          "ok": true
+        },
+        {
+          "name": "responsive-844x390-correct-runtime-texture",
+          "ok": true,
+          "correct": {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 129.18451612903226,
+              "y": 337.7149926757813,
+              "width": 129.63096774193548,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 84,
+              "y": 331.555,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 194,
+            "baseY": 359.555,
+            "x": 194,
+            "y": 359.555,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-844x390-asset-family",
+          "ok": true,
+          "textures": [
+            "MISSION9_BRIDGE_LEFT",
+            "MISSION9_BRIDGE_RIGHT",
+            "MISSION9_BRIDGE_GAP_TARGET",
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ]
+        },
+        {
+          "name": "responsive-844x390-drag-disabled",
+          "ok": true,
+          "actual": false
+        },
+        {
+          "name": "responsive-844x390-grounding-delta",
+          "ok": true,
+          "grounding": {
+            "visibleBottomY": 326.875,
+            "groundY": 326.875,
+            "delta": 0
+          }
+        },
+        {
+          "name": "responsive-844x390-platform-centered-target",
+          "ok": true,
+          "targetCenter": {
+            "x": 422,
+            "y": 304.1728
+          },
+          "platformCenterX": 422
+        },
+        {
+          "name": "responsive-844x390-platform-centered-row",
+          "ok": true,
+          "rowCenter": 422,
+          "platformCenterX": 422
+        },
+        {
+          "name": "responsive-844x390-cards-interactive",
+          "ok": true
+        },
+        {
+          "name": "responsive-844x390-canvas",
+          "ok": true
+        },
+        {
+          "name": "responsive-844x390-runtime-clean",
+          "ok": true,
+          "errors": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-844x390-bridge.png",
+      "state": {
+        "stage": "BRIDGE",
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "selectedCandidateId": null,
+        "dragEnabled": false,
+        "grounding": {
+          "visibleBottomY": 326.875,
+          "groundY": 326.875,
+          "delta": 0
+        },
+        "layout": {
+          "platformCenterX": 422,
+          "platformContactY": 326.875
+        },
+        "cards": [
+          {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 129.18451612903226,
+              "y": 337.7149926757813,
+              "width": 129.63096774193548,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 84,
+              "y": 331.555,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 194,
+            "baseY": 359.555,
+            "x": 194,
+            "y": 359.555,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-arc-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
+            "bounds": {
+              "x": 365.6460103626943,
+              "y": 337.7149926757813,
+              "width": 112.70797927461138,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 312,
+              "y": 331.555,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 422,
+            "baseY": 359.555,
+            "x": 422,
+            "y": 359.555,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-truss-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "bounds": {
+              "x": 598.4884848484849,
+              "y": 337.7149926757813,
+              "width": 103.02303030303028,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 540,
+              "y": 331.555,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 650,
+            "baseY": 359.555,
+            "x": 650,
+            "y": 359.555,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 356.5075927272727,
+              "y": 272.01135,
+              "width": 130.98481454545453,
+              "height": 64.3229
+            },
+            "interactive": true
+          }
+        ],
+        "missionTextures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ],
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ",
+          ""
+        ],
+        "rootCount": 1,
+        "completionCount": 0,
+        "completionRegions": [],
+        "orientationCount": 0
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "viewport": "915x412",
+      "checks": [
+        {
+          "name": "responsive-915x412-contract-stage",
+          "ok": true
+        },
+        {
+          "name": "responsive-915x412-one-stage-root",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-915x412-three-candidates",
+          "ok": true,
+          "actual": 3
+        },
+        {
+          "name": "responsive-915x412-one-target",
+          "ok": true,
+          "actual": 1
+        },
+        {
+          "name": "responsive-915x412-semantic-clue",
+          "ok": true,
+          "contract": {
+            "stage": "BRIDGE",
+            "clueId": "bridge-flat-span",
+            "targetId": "bridge-gap",
+            "correctCandidateId": "bridge-flat-span",
+            "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+            "candidateIds": [
+              "bridge-flat-span",
+              "bridge-arc-span",
+              "bridge-truss-span"
+            ],
+            "candidateTextures": [
+              "MISSION9_BRIDGE_CORRECT",
+              "MISSION9_BRIDGE_WRONG_ARC",
+              "MISSION9_BRIDGE_WRONG_TRUSS"
+            ],
+            "assetFamily": "bridge",
+            "dragEnabled": false
+          },
+          "target": {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 384.8998741818182,
+              "y": 288.15089249999994,
+              "width": 145.20025163636365,
+              "height": 71.303695
+            },
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-915x412-unique-semantic-ids",
+          "ok": true
+        },
+        {
+          "name": "responsive-915x412-correct-runtime-texture",
+          "ok": true,
+          "correct": {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 164.68451612903226,
+              "y": 360.07275024414065,
+              "width": 129.63096774193548,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 119.50000000000003,
+              "y": 353.91275,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 229.50000000000003,
+            "baseY": 381.91275,
+            "x": 229.50000000000003,
+            "y": 381.91275,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        },
+        {
+          "name": "responsive-915x412-asset-family",
+          "ok": true,
+          "textures": [
+            "MISSION9_BRIDGE_LEFT",
+            "MISSION9_BRIDGE_RIGHT",
+            "MISSION9_BRIDGE_GAP_TARGET",
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ]
+        },
+        {
+          "name": "responsive-915x412-drag-disabled",
+          "ok": true,
+          "actual": false
+        },
+        {
+          "name": "responsive-915x412-grounding-delta",
+          "ok": true,
+          "grounding": {
+            "visibleBottomY": 348.96875,
+            "groundY": 348.96875,
+            "delta": 0
+          }
+        },
+        {
+          "name": "responsive-915x412-platform-centered-target",
+          "ok": true,
+          "targetCenter": {
+            "x": 457.5,
+            "y": 323.80274
+          },
+          "platformCenterX": 457.5
+        },
+        {
+          "name": "responsive-915x412-platform-centered-row",
+          "ok": true,
+          "rowCenter": 457.5,
+          "platformCenterX": 457.5
+        },
+        {
+          "name": "responsive-915x412-cards-interactive",
+          "ok": true
+        },
+        {
+          "name": "responsive-915x412-canvas",
+          "ok": true
+        },
+        {
+          "name": "responsive-915x412-runtime-clean",
+          "ok": true,
+          "errors": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-915x412-bridge.png",
+      "state": {
+        "stage": "BRIDGE",
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "selectedCandidateId": null,
+        "dragEnabled": false,
+        "grounding": {
+          "visibleBottomY": 348.96875,
+          "groundY": 348.96875,
+          "delta": 0
+        },
+        "layout": {
+          "platformCenterX": 457.5,
+          "platformContactY": 348.96875
+        },
+        "cards": [
+          {
+            "candidateId": "bridge-flat-span",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
+            "bounds": {
+              "x": 164.68451612903226,
+              "y": 360.07275024414065,
+              "width": 129.63096774193548,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 119.50000000000003,
+              "y": 353.91275,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 229.50000000000003,
+            "baseY": 381.91275,
+            "x": 229.50000000000003,
+            "y": 381.91275,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-arc-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
+            "bounds": {
+              "x": 401.1460103626943,
+              "y": 360.07275024414065,
+              "width": 112.70797927461143,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 347.5,
+              "y": 353.91275,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 457.5,
+            "baseY": 381.91275,
+            "x": 457.5,
+            "y": 381.91275,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          },
+          {
+            "candidateId": "bridge-truss-span",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "bounds": {
+              "x": 633.9884848484849,
+              "y": 360.07275024414065,
+              "width": 103.02303030303028,
+              "height": 43.67999999999995
+            },
+            "auditBounds": {
+              "x": 575.5,
+              "y": 353.91275,
+              "width": 220,
+              "height": 56
+            },
+            "baseX": 685.5,
+            "baseY": 381.91275,
+            "x": 685.5,
+            "y": 381.91275,
+            "alpha": 1,
+            "depth": 0,
+            "interactive": true
+          }
+        ],
+        "targets": [
+          {
+            "targetId": "bridge-gap",
+            "clueId": "bridge-flat-span",
+            "bounds": {
+              "x": 384.8998741818182,
+              "y": 288.15089249999994,
+              "width": 145.20025163636365,
+              "height": 71.303695
+            },
+            "interactive": true
+          }
+        ],
+        "missionTextures": [
+          "MISSION9_BRIDGE_LEFT",
+          "MISSION9_BRIDGE_RIGHT",
+          "MISSION9_BRIDGE_GAP_TARGET",
+          "MISSION9_BRIDGE_CORRECT",
+          "MISSION9_BRIDGE_WRONG_ARC",
+          "MISSION9_BRIDGE_WRONG_TRUSS"
+        ],
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ",
+          ""
+        ],
+        "rootCount": 1,
+        "completionCount": 0,
+        "completionRegions": [],
+        "orientationCount": 0
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    }
+  ],
+  "portrait": {
+    "viewport": "390x844",
+    "checks": [
+      {
+        "name": "portrait-one-gate",
+        "ok": true
+      },
+      {
+        "name": "portrait-no-gameplay",
+        "ok": true
+      },
+      {
+        "name": "portrait-copy",
+        "ok": true
+      },
+      {
+        "name": "portrait-runtime-clean",
+        "ok": true,
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        }
+      }
+    ],
+    "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-390x844-orientation-gate.png",
+    "state": {
+      "stage": "BRIDGE",
+      "snapshot": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": false,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "contract": null,
+      "interaction": {},
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {},
+      "layout": {
+        "platformCenterX": 195,
+        "platformContactY": 656.4444444444445
+      },
+      "cards": [],
+      "targets": [],
+      "missionTextures": [],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ПОВЕРНИ ТЕЛЕФОН",
+        "ИГРАЕМ ГОРИЗОНТАЛЬНО"
+      ],
+      "rootCount": 0,
+      "completionCount": 0,
+      "completionRegions": [],
+      "orientationCount": 1
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "ok": true
+  },
+  "lifecycle": {
+    "checks": [
+      {
+        "name": "resize-portrait-gates-gameplay",
+        "ok": true,
+        "evidence": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "visualWidth": 390,
+          "visualHeight": 844,
+          "committed": {
+            "generation": 2,
+            "viewport": {
+              "innerWidth": 390,
+              "innerHeight": 844,
+              "visualViewportWidth": 390,
+              "visualViewportHeight": 844,
+              "visualViewportOffsetLeft": 0,
+              "visualViewportOffsetTop": 0,
+              "safeTop": 0,
+              "safeRight": 0,
+              "safeBottom": 0,
+              "safeLeft": 0,
+              "orientation": "portrait",
+              "aspectRatio": 0.46208530805687204,
+              "devicePixelRatio": 1
+            },
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "scale": {
+            "parentSize": {
+              "width": 390,
+              "height": 844
+            },
+            "displaySize": {
+              "width": 390,
+              "height": 844
+            },
+            "gameSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "missionScene": {
+            "exists": true,
+            "active": true,
+            "status": 5
+          }
+        },
+        "state": {
+          "stage": "GATE",
+          "snapshot": {
+            "courseStage": "GATE",
+            "bridgeRepaired": true,
+            "gateOpened": false,
+            "stationPowered": false,
+            "wrongAttempts": 0,
+            "lastAction": null,
+            "lastResult": "idle",
+            "transitioning": false,
+            "completed": false
+          },
+          "contract": {
+            "stage": "GATE",
+            "clueId": "gate-truss-profile",
+            "targetId": "gate-lock",
+            "correctCandidateId": "gate-truss-profile",
+            "targetTextureKey": "MISSION9_GATE_CLOSED",
+            "candidateIds": [
+              "gate-triangle-profile",
+              "gate-truss-profile",
+              "gate-round-lightning-profile"
+            ],
+            "candidateTextures": [
+              "MISSION9_GATE_KEY_CORRECT",
+              "MISSION9_GATE_KEY_WRONG_1",
+              "MISSION9_GATE_KEY_WRONG_2"
+            ],
+            "assetFamily": "gate",
+            "dragEnabled": false
+          },
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          },
+          "selectedCandidateId": null,
+          "dragEnabled": false,
+          "grounding": {
+            "visibleBottomY": 326.875,
+            "groundY": 326.875,
+            "delta": 0
+          },
+          "layout": {
+            "platformCenterX": 195,
+            "platformContactY": 656.4444444444445
+          },
+          "cards": [],
+          "targets": [],
+          "missionTextures": [],
+          "labels": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ГОРИЗОНТАЛЬНО"
+          ],
+          "rootCount": 0,
+          "completionCount": 0,
+          "completionRegions": [],
+          "orientationCount": 1
+        }
+      },
+      {
+        "name": "resize-landscape-restores-stage",
+        "ok": true
+      },
+      {
+        "name": "resize-915x412-contract-stage",
+        "ok": true
+      },
+      {
+        "name": "resize-915x412-one-stage-root",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "resize-915x412-three-candidates",
+        "ok": true,
+        "actual": 3
+      },
+      {
+        "name": "resize-915x412-one-target",
+        "ok": true,
+        "actual": 1
+      },
+      {
+        "name": "resize-915x412-semantic-clue",
+        "ok": true,
+        "contract": {
+          "stage": "GATE",
+          "clueId": "gate-truss-profile",
+          "targetId": "gate-lock",
+          "correctCandidateId": "gate-truss-profile",
+          "targetTextureKey": "MISSION9_GATE_CLOSED",
+          "candidateIds": [
+            "gate-triangle-profile",
+            "gate-truss-profile",
+            "gate-round-lightning-profile"
+          ],
+          "candidateTextures": [
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "assetFamily": "gate",
+          "dragEnabled": false
+        },
+        "target": {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 395.994,
+            "y": 233.19275000000005,
+            "width": 123.01200000000006,
+            "height": 68.74199999999996
+          },
+          "interactive": true
+        }
+      },
+      {
+        "name": "resize-915x412-unique-semantic-ids",
+        "ok": true
+      },
+      {
+        "name": "resize-915x412-correct-runtime-texture",
+        "ok": true,
+        "correct": {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 404.8270588235294,
+            "y": 360.07275024414065,
+            "width": 105.3458823529412,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 347.5,
+            "y": 353.91275,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 457.5,
+          "baseY": 381.91275,
+          "x": 457.5,
+          "y": 381.91275,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      },
+      {
+        "name": "resize-915x412-asset-family",
+        "ok": true,
+        "textures": [
+          "MISSION9_GATE_CLOSED",
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ]
+      },
+      {
+        "name": "resize-915x412-drag-disabled",
+        "ok": true,
+        "actual": false
+      },
+      {
+        "name": "resize-915x412-grounding-delta",
+        "ok": true,
+        "grounding": {
+          "visibleBottomY": 348.96875,
+          "groundY": 348.96875,
+          "delta": 0
+        }
+      },
+      {
+        "name": "resize-915x412-platform-centered-target",
+        "ok": true,
+        "targetCenter": {
+          "x": 457.50000000000006,
+          "y": 267.56375
+        },
+        "platformCenterX": 457.5
+      },
+      {
+        "name": "resize-915x412-platform-centered-row",
+        "ok": true,
+        "rowCenter": 457.5,
+        "platformCenterX": 457.5
+      },
+      {
+        "name": "resize-915x412-cards-interactive",
+        "ok": true
+      },
+      {
+        "name": "resize-runtime-clean",
+        "ok": true,
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        }
+      }
+    ],
+    "before": {
+      "stage": "GATE",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "contract": {
+        "stage": "GATE",
+        "clueId": "gate-truss-profile",
+        "targetId": "gate-lock",
+        "correctCandidateId": "gate-truss-profile",
+        "targetTextureKey": "MISSION9_GATE_CLOSED",
+        "candidateIds": [
+          "gate-triangle-profile",
+          "gate-truss-profile",
+          "gate-round-lightning-profile"
+        ],
+        "candidateTextures": [
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ],
+        "assetFamily": "gate",
+        "dragEnabled": false
+      },
+      "interaction": {
+        "stage": "GATE",
+        "state": "IDLE",
+        "selectedCandidateId": null,
+        "targetHighlighted": false
+      },
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {
+        "visibleBottomY": 326.875,
+        "groundY": 326.875,
+        "delta": 0
+      },
+      "layout": {
+        "platformCenterX": 422,
+        "platformContactY": 326.875
+      },
+      "cards": [
+        {
+          "candidateId": "gate-triangle-profile",
+          "assetKey": "MISSION9_GATE_KEY_CORRECT",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
+          "bounds": {
+            "x": 162.04294117647058,
+            "y": 337.7149926757813,
+            "width": 63.914117647058845,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 84,
+            "y": 331.555,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 194,
+          "baseY": 359.555,
+          "x": 194,
+          "y": 359.555,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 369.3270588235294,
+            "y": 337.7149926757813,
+            "width": 105.3458823529412,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 312,
+            "y": 331.555,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 422,
+          "baseY": 359.555,
+          "x": 422,
+          "y": 359.555,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-round-lightning-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
+          "bounds": {
+            "x": 618.8742857142857,
+            "y": 337.7149926757813,
+            "width": 62.251428571428505,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 540,
+            "y": 331.555,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 650,
+          "baseY": 359.555,
+          "x": 650,
+          "y": 359.555,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      ],
+      "targets": [
+        {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 364.98726388,
+            "y": 219.55690847999998,
+            "width": 114.02547224,
+            "height": 63.72011684000003
+          },
+          "interactive": true
+        }
+      ],
+      "missionTextures": [
+        "MISSION9_GATE_CLOSED",
+        "MISSION9_GATE_KEY_CORRECT",
+        "MISSION9_GATE_KEY_WRONG_1",
+        "MISSION9_GATE_KEY_WRONG_2"
+      ],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "НАЙДИ КЛЮЧ",
+        ""
+      ],
+      "rootCount": 1,
+      "completionCount": 0,
+      "completionRegions": [],
+      "orientationCount": 0
+    },
+    "after": {
+      "stage": "GATE",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "contract": {
+        "stage": "GATE",
+        "clueId": "gate-truss-profile",
+        "targetId": "gate-lock",
+        "correctCandidateId": "gate-truss-profile",
+        "targetTextureKey": "MISSION9_GATE_CLOSED",
+        "candidateIds": [
+          "gate-triangle-profile",
+          "gate-truss-profile",
+          "gate-round-lightning-profile"
+        ],
+        "candidateTextures": [
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ],
+        "assetFamily": "gate",
+        "dragEnabled": false
+      },
+      "interaction": {
+        "stage": "GATE",
+        "state": "IDLE",
+        "selectedCandidateId": null,
+        "targetHighlighted": false
+      },
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {
+        "visibleBottomY": 348.96875,
+        "groundY": 348.96875,
+        "delta": 0
+      },
+      "layout": {
+        "platformCenterX": 457.5,
+        "platformContactY": 348.96875
+      },
+      "cards": [
+        {
+          "candidateId": "gate-triangle-profile",
+          "assetKey": "MISSION9_GATE_KEY_CORRECT",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
+          "bounds": {
+            "x": 197.54294117647058,
+            "y": 360.07275024414065,
+            "width": 63.914117647058816,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 119.50000000000003,
+            "y": 353.91275,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 229.50000000000003,
+          "baseY": 381.91275,
+          "x": 229.50000000000003,
+          "y": 381.91275,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 404.8270588235294,
+            "y": 360.07275024414065,
+            "width": 105.3458823529412,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 347.5,
+            "y": 353.91275,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 457.5,
+          "baseY": 381.91275,
+          "x": 457.5,
+          "y": 381.91275,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-round-lightning-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
+          "bounds": {
+            "x": 654.3742857142857,
+            "y": 360.07275024414065,
+            "width": 62.251428571428505,
+            "height": 43.67999999999995
+          },
+          "auditBounds": {
+            "x": 575.5,
+            "y": 353.91275,
+            "width": 220,
+            "height": 56
+          },
+          "baseX": 685.5,
+          "baseY": 381.91275,
+          "x": 685.5,
+          "y": 381.91275,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      ],
+      "targets": [
+        {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 395.994,
+            "y": 233.19275000000005,
+            "width": 123.01200000000006,
+            "height": 68.74199999999996
+          },
+          "interactive": true
+        }
+      ],
+      "missionTextures": [
+        "MISSION9_GATE_CLOSED",
+        "MISSION9_GATE_KEY_CORRECT",
+        "MISSION9_GATE_KEY_WRONG_1",
+        "MISSION9_GATE_KEY_WRONG_2"
+      ],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "НАЙДИ КЛЮЧ",
+        ""
+      ],
+      "rootCount": 1,
+      "completionCount": 0,
+      "completionRegions": [],
+      "orientationCount": 0
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "ok": true
+  },
+  "manualVisualReview": "REQUIRED",
+  "homeInterruption": {
+    "viewport": "1600x900",
+    "input": "MOUSE",
+    "checks": [
+      {
+        "name": "home-live-gate-ready",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "snapshot": {
+            "courseStage": "GATE",
+            "bridgeRepaired": true,
+            "gateOpened": false,
+            "stationPowered": false,
+            "wrongAttempts": 0,
+            "lastAction": null,
+            "lastResult": "idle",
+            "transitioning": false,
+            "completed": false
+          },
+          "contract": {
+            "stage": "GATE",
+            "clueId": "gate-truss-profile",
+            "targetId": "gate-lock",
+            "correctCandidateId": "gate-truss-profile",
+            "targetTextureKey": "MISSION9_GATE_CLOSED",
+            "candidateIds": [
+              "gate-triangle-profile",
+              "gate-truss-profile",
+              "gate-round-lightning-profile"
+            ],
+            "candidateTextures": [
+              "MISSION9_GATE_KEY_CORRECT",
+              "MISSION9_GATE_KEY_WRONG_1",
+              "MISSION9_GATE_KEY_WRONG_2"
+            ],
+            "assetFamily": "gate",
+            "dragEnabled": false
+          },
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          },
+          "selectedCandidateId": null,
+          "dragEnabled": false,
+          "grounding": {
+            "visibleBottomY": 700,
+            "groundY": 700,
+            "delta": 0
+          },
+          "layout": {
+            "platformCenterX": 800,
+            "platformContactY": 700
+          },
+          "cards": [
+            {
+              "candidateId": "gate-triangle-profile",
+              "assetKey": "MISSION9_GATE_KEY_CORRECT",
+              "assetFamily": "gate",
+              "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
+              "bounds": {
+                "x": 529.480330882353,
+                "y": 789.925,
+                "width": 77.03933823529405,
+                "height": 52.65000000000009
+              },
+              "auditBounds": {
+                "x": 458,
+                "y": 782.5,
+                "width": 220,
+                "height": 67.5
+              },
+              "baseX": 568,
+              "baseY": 816.25,
+              "x": 568,
+              "y": 816.25,
+              "alpha": 1,
+              "depth": 0,
+              "interactive": true
+            },
+            {
+              "candidateId": "gate-truss-profile",
+              "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+              "assetFamily": "gate",
+              "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+              "bounds": {
+                "x": 736.510294117647,
+                "y": 789.925,
+                "width": 126.9794117647059,
+                "height": 52.65000000000009
+              },
+              "auditBounds": {
+                "x": 690,
+                "y": 782.5,
+                "width": 220,
+                "height": 67.5
+              },
+              "baseX": 800,
+              "baseY": 816.25,
+              "x": 800,
+              "y": 816.25,
+              "alpha": 1,
+              "depth": 0,
+              "interactive": true
+            },
+            {
+              "candidateId": "gate-round-lightning-profile",
+              "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+              "assetFamily": "gate",
+              "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
+              "bounds": {
+                "x": 994.4823979591837,
+                "y": 789.925,
+                "width": 75.03520408163274,
+                "height": 52.65000000000009
+              },
+              "auditBounds": {
+                "x": 922,
+                "y": 782.5,
+                "width": 220,
+                "height": 67.5
+              },
+              "baseX": 1032,
+              "baseY": 816.25,
+              "x": 1032,
+              "y": 816.25,
+              "alpha": 1,
+              "depth": 0,
+              "interactive": true
+            }
+          ],
+          "targets": [
+            {
+              "targetId": "gate-lock",
+              "clueId": "gate-truss-profile",
+              "bounds": {
+                "x": 718.01478,
+                "y": 545.67488,
+                "width": 163.97044000000005,
+                "height": 91.63054
+              },
+              "interactive": true
+            }
+          ],
+          "missionTextures": [
+            "MISSION9_GATE_CLOSED",
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "labels": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ИСПЫТАЙ РОБОТА",
+            "НАЙДИ КЛЮЧ",
+            ""
+          ],
+          "rootCount": 1,
+          "completionCount": 0,
+          "completionRegions": [],
+          "orientationCount": 0
+        }
+      },
+      {
+        "name": "home-semantic-control-ready",
+        "ok": true,
+        "actual": {
+          "name": "mission9-home",
+          "interactive": true,
+          "bounds": {
+            "x": 37,
+            "y": 47.5,
+            "width": 74,
+            "height": 21
+          }
+        }
+      },
+      {
+        "name": "home-real-input-departs-cleanly",
+        "ok": true,
+        "actual": {
+          "startActive": true,
+          "missionActive": false,
+          "missionStatus": 8,
+          "rootCount": 0,
+          "cardCount": 0,
+          "targetCount": 0
+        }
+      },
+      {
+        "name": "home-direct-return-same-stage-clean",
+        "ok": true,
+        "actual": {
+          "stage": "GATE",
+          "snapshot": {
+            "courseStage": "GATE",
+            "bridgeRepaired": true,
+            "gateOpened": false,
+            "stationPowered": false,
+            "wrongAttempts": 0,
+            "lastAction": null,
+            "lastResult": "idle",
+            "transitioning": false,
+            "completed": false
+          },
+          "contract": {
+            "stage": "GATE",
+            "clueId": "gate-truss-profile",
+            "targetId": "gate-lock",
+            "correctCandidateId": "gate-truss-profile",
+            "targetTextureKey": "MISSION9_GATE_CLOSED",
+            "candidateIds": [
+              "gate-triangle-profile",
+              "gate-truss-profile",
+              "gate-round-lightning-profile"
+            ],
+            "candidateTextures": [
+              "MISSION9_GATE_KEY_CORRECT",
+              "MISSION9_GATE_KEY_WRONG_1",
+              "MISSION9_GATE_KEY_WRONG_2"
+            ],
+            "assetFamily": "gate",
+            "dragEnabled": false
+          },
+          "interaction": {
+            "stage": "GATE",
+            "state": "IDLE",
+            "selectedCandidateId": null,
+            "targetHighlighted": false
+          },
+          "selectedCandidateId": null,
+          "dragEnabled": false,
+          "grounding": {
+            "visibleBottomY": 700,
+            "groundY": 700,
+            "delta": 0
+          },
+          "layout": {
+            "platformCenterX": 800,
+            "platformContactY": 700
+          },
+          "cards": [
+            {
+              "candidateId": "gate-triangle-profile",
+              "assetKey": "MISSION9_GATE_KEY_CORRECT",
+              "assetFamily": "gate",
+              "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
+              "bounds": {
+                "x": 529.480330882353,
+                "y": 789.925,
+                "width": 77.03933823529405,
+                "height": 52.65000000000009
+              },
+              "auditBounds": {
+                "x": 458,
+                "y": 782.5,
+                "width": 220,
+                "height": 67.5
+              },
+              "baseX": 568,
+              "baseY": 816.25,
+              "x": 568,
+              "y": 816.25,
+              "alpha": 1,
+              "depth": 0,
+              "interactive": true
+            },
+            {
+              "candidateId": "gate-truss-profile",
+              "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+              "assetFamily": "gate",
+              "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+              "bounds": {
+                "x": 736.510294117647,
+                "y": 789.925,
+                "width": 126.9794117647059,
+                "height": 52.65000000000009
+              },
+              "auditBounds": {
+                "x": 690,
+                "y": 782.5,
+                "width": 220,
+                "height": 67.5
+              },
+              "baseX": 800,
+              "baseY": 816.25,
+              "x": 800,
+              "y": 816.25,
+              "alpha": 1,
+              "depth": 0,
+              "interactive": true
+            },
+            {
+              "candidateId": "gate-round-lightning-profile",
+              "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+              "assetFamily": "gate",
+              "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
+              "bounds": {
+                "x": 994.4823979591837,
+                "y": 789.925,
+                "width": 75.03520408163274,
+                "height": 52.65000000000009
+              },
+              "auditBounds": {
+                "x": 922,
+                "y": 782.5,
+                "width": 220,
+                "height": 67.5
+              },
+              "baseX": 1032,
+              "baseY": 816.25,
+              "x": 1032,
+              "y": 816.25,
+              "alpha": 1,
+              "depth": 0,
+              "interactive": true
+            }
+          ],
+          "targets": [
+            {
+              "targetId": "gate-lock",
+              "clueId": "gate-truss-profile",
+              "bounds": {
+                "x": 718.01478,
+                "y": 545.67488,
+                "width": 163.97044000000005,
+                "height": 91.63054
+              },
+              "interactive": true
+            }
+          ],
+          "missionTextures": [
+            "MISSION9_GATE_CLOSED",
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "labels": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ИСПЫТАЙ РОБОТА",
+            "НАЙДИ КЛЮЧ",
+            ""
+          ],
+          "rootCount": 1,
+          "completionCount": 0,
+          "completionRegions": [],
+          "orientationCount": 0
+        }
+      },
+      {
+        "name": "home-interruption-runtime-clean",
+        "ok": true,
+        "errors": {
+          "console": [],
+          "page": [],
+          "requests": [],
+          "responses": []
+        }
+      }
+    ],
+    "before": {
+      "stage": "GATE",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "contract": {
+        "stage": "GATE",
+        "clueId": "gate-truss-profile",
+        "targetId": "gate-lock",
+        "correctCandidateId": "gate-truss-profile",
+        "targetTextureKey": "MISSION9_GATE_CLOSED",
+        "candidateIds": [
+          "gate-triangle-profile",
+          "gate-truss-profile",
+          "gate-round-lightning-profile"
+        ],
+        "candidateTextures": [
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ],
+        "assetFamily": "gate",
+        "dragEnabled": false
+      },
+      "interaction": {
+        "stage": "GATE",
+        "state": "IDLE",
+        "selectedCandidateId": null,
+        "targetHighlighted": false
+      },
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {
+        "visibleBottomY": 700,
+        "groundY": 700,
+        "delta": 0
+      },
+      "layout": {
+        "platformCenterX": 800,
+        "platformContactY": 700
+      },
+      "cards": [
+        {
+          "candidateId": "gate-triangle-profile",
+          "assetKey": "MISSION9_GATE_KEY_CORRECT",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
+          "bounds": {
+            "x": 529.480330882353,
+            "y": 789.925,
+            "width": 77.03933823529405,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 458,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 568,
+          "baseY": 816.25,
+          "x": 568,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 736.510294117647,
+            "y": 789.925,
+            "width": 126.9794117647059,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 690,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 800,
+          "baseY": 816.25,
+          "x": 800,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-round-lightning-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
+          "bounds": {
+            "x": 994.4823979591837,
+            "y": 789.925,
+            "width": 75.03520408163274,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 922,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 1032,
+          "baseY": 816.25,
+          "x": 1032,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      ],
+      "targets": [
+        {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 718.01478,
+            "y": 545.67488,
+            "width": 163.97044000000005,
+            "height": 91.63054
+          },
+          "interactive": true
+        }
+      ],
+      "missionTextures": [
+        "MISSION9_GATE_CLOSED",
+        "MISSION9_GATE_KEY_CORRECT",
+        "MISSION9_GATE_KEY_WRONG_1",
+        "MISSION9_GATE_KEY_WRONG_2"
+      ],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ИСПЫТАЙ РОБОТА",
+        "НАЙДИ КЛЮЧ",
+        ""
+      ],
+      "rootCount": 1,
+      "completionCount": 0,
+      "completionRegions": [],
+      "orientationCount": 0
+    },
+    "home": {
+      "name": "mission9-home",
+      "interactive": true,
+      "bounds": {
+        "x": 37,
+        "y": 47.5,
+        "width": 74,
+        "height": 21
+      }
+    },
+    "departed": {
+      "startActive": true,
+      "missionActive": false,
+      "missionStatus": 8,
+      "rootCount": 0,
+      "cardCount": 0,
+      "targetCount": 0
+    },
+    "returned": {
+      "stage": "GATE",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "contract": {
+        "stage": "GATE",
+        "clueId": "gate-truss-profile",
+        "targetId": "gate-lock",
+        "correctCandidateId": "gate-truss-profile",
+        "targetTextureKey": "MISSION9_GATE_CLOSED",
+        "candidateIds": [
+          "gate-triangle-profile",
+          "gate-truss-profile",
+          "gate-round-lightning-profile"
+        ],
+        "candidateTextures": [
+          "MISSION9_GATE_KEY_CORRECT",
+          "MISSION9_GATE_KEY_WRONG_1",
+          "MISSION9_GATE_KEY_WRONG_2"
+        ],
+        "assetFamily": "gate",
+        "dragEnabled": false
+      },
+      "interaction": {
+        "stage": "GATE",
+        "state": "IDLE",
+        "selectedCandidateId": null,
+        "targetHighlighted": false
+      },
+      "selectedCandidateId": null,
+      "dragEnabled": false,
+      "grounding": {
+        "visibleBottomY": 700,
+        "groundY": 700,
+        "delta": 0
+      },
+      "layout": {
+        "platformCenterX": 800,
+        "platformContactY": 700
+      },
+      "cards": [
+        {
+          "candidateId": "gate-triangle-profile",
+          "assetKey": "MISSION9_GATE_KEY_CORRECT",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
+          "bounds": {
+            "x": 529.480330882353,
+            "y": 789.925,
+            "width": 77.03933823529405,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 458,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 568,
+          "baseY": 816.25,
+          "x": 568,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-truss-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
+          "bounds": {
+            "x": 736.510294117647,
+            "y": 789.925,
+            "width": 126.9794117647059,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 690,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 800,
+          "baseY": 816.25,
+          "x": 800,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        },
+        {
+          "candidateId": "gate-round-lightning-profile",
+          "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+          "assetFamily": "gate",
+          "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
+          "bounds": {
+            "x": 994.4823979591837,
+            "y": 789.925,
+            "width": 75.03520408163274,
+            "height": 52.65000000000009
+          },
+          "auditBounds": {
+            "x": 922,
+            "y": 782.5,
+            "width": 220,
+            "height": 67.5
+          },
+          "baseX": 1032,
+          "baseY": 816.25,
+          "x": 1032,
+          "y": 816.25,
+          "alpha": 1,
+          "depth": 0,
+          "interactive": true
+        }
+      ],
+      "targets": [
+        {
+          "targetId": "gate-lock",
+          "clueId": "gate-truss-profile",
+          "bounds": {
+            "x": 718.01478,
+            "y": 545.67488,
+            "width": 163.97044000000005,
+            "height": 91.63054
+          },
+          "interactive": true
+        }
+      ],
+      "missionTextures": [
+        "MISSION9_GATE_CLOSED",
+        "MISSION9_GATE_KEY_CORRECT",
+        "MISSION9_GATE_KEY_WRONG_1",
+        "MISSION9_GATE_KEY_WRONG_2"
+      ],
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ИСПЫТАЙ РОБОТА",
+        "НАЙДИ КЛЮЧ",
+        ""
+      ],
+      "rootCount": 1,
+      "completionCount": 0,
+      "completionRegions": [],
+      "orientationCount": 0
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "ok": true
+  }
+}

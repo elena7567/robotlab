@@ -35,9 +35,10 @@ export function addLogicalLaboratoryImage(
   if (!scene.textures.exists(key)) return undefined;
   const image = scene.add.image(0, 0, key).setOrigin(0);
   const logicalScale = Math.max(LOGICAL_SCENE_WIDTH / image.width, LOGICAL_SCENE_HEIGHT / image.height);
+  const alignedY = PLATFORM_CONTACT_Y - LAB_PLATFORM_SOURCE_Y * logicalScale;
   image.setScale(logicalScale).setPosition(
     (LOGICAL_SCENE_WIDTH - image.width * logicalScale) / 2,
-    PLATFORM_CONTACT_Y - LAB_PLATFORM_SOURCE_Y * logicalScale,
+    Math.min(0, alignedY),
   );
   parent.add(image);
   return image;

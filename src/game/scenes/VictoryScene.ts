@@ -14,6 +14,7 @@ import { energyMechanic } from '../mechanics/energy';
 import { oddOneOutMechanic } from '../mechanics/oddOneOut';
 import { connectionsMechanic } from '../mechanics/connections';
 import { programmingMechanic } from '../mechanics/programming';
+import { robotTestCourse } from '../mechanics/robotTestCourse';
 
 const LABORATORY_SOURCE_WIDTH = 1672;
 const LABORATORY_SOURCE_HEIGHT = 941;
@@ -68,6 +69,7 @@ const resetFullSession = (): void => {
   energyMechanic.reset();
   connectionsMechanic.reset();
   programmingMechanic.reset();
+  robotTestCourse.reset();
 };
 
 export class VictoryScene extends Phaser.Scene {

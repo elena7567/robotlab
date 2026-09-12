@@ -330,7 +330,9 @@ export class Mission8Scene extends Phaser.Scene {
     }).setOrigin(0.5);
     overlay.add(subtitle);
     const buttonY = Math.min(modalZone.y + modalZone.height - 29, centerY + panelHeight * 0.42);
-    const continueButton = addControl(this, centerX, buttonY, 'ПРОДОЛЖИТЬ', () => undefined, {
+    const continueButton = addControl(this, centerX, buttonY, 'ПРОДОЛЖИТЬ', () => {
+      this.scene.start('Mission9Scene');
+    }, {
       width: Math.min(260, panelWidth - 48), height: 52, fontSize: Math.min(21, Math.max(16, width * 0.044)),
     }).setName('mission8-continue').setDepth(31).setData('nextMission', 9);
     setControlEnabled(continueButton, alreadyComplete);

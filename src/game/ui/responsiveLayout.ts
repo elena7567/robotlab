@@ -1,7 +1,7 @@
 import { clampValue, fluidValue, lerpClamped } from './fluidSizing';
 import { readViewportMetrics, type ViewportMetrics } from './viewport';
 import { CHILD_UI } from './childUi';
-import { composeScene, type Mission7SceneLayout, type Mission8SceneLayout, type TransitionSceneLayout } from './sceneCompositionDirector';
+import { composeScene, type Mission7SceneLayout, type Mission8SceneLayout, type Mission9SceneLayout, type TransitionSceneLayout } from './sceneCompositionDirector';
 
 export type CompositionMode = 'ultra-narrow-portrait' | 'portrait' | 'large-portrait-tablet' | 'landscape';
 export type SemanticCompositionMode =
@@ -424,6 +424,10 @@ export function createMission7SceneLayout(layout: ResponsiveLayout): Mission7Sce
 
 export function createMission8SceneLayout(layout: ResponsiveLayout): Mission8SceneLayout {
   return composeScene(layout, 8).mission8!;
+}
+
+export function createMission9SceneLayout(layout: ResponsiveLayout): Mission9SceneLayout {
+  return composeScene(layout, 9).mission9!;
 }
 
 export function createTransitionSceneLayout(layout: ResponsiveLayout): TransitionSceneLayout {

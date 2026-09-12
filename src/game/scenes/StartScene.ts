@@ -17,6 +17,7 @@ import { energyMechanic } from '../mechanics/energy';
 import { connectionsMechanic } from '../mechanics/connections';
 import { programmingMechanic } from '../mechanics/programming';
 import { oddOneOutMechanic } from '../mechanics/oddOneOut';
+import { robotTestCourse } from '../mechanics/robotTestCourse';
 
 const HELPER_VISIBLE_HEIGHT = 1502;
 const HELPER_BOTTOM_TRANSPARENT_PX = 16;
@@ -92,6 +93,7 @@ export class StartScene extends Phaser.Scene {
       energyMechanic.reset();
       connectionsMechanic.reset();
       programmingMechanic.reset();
+      robotTestCourse.reset();
       this.scene.start('GameScene');
     }, {
       width: startLayout.playWidth,
