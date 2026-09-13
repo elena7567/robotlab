@@ -186,14 +186,14 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
     const bottom = options.height - Phaser.Math.Linear(34, 48, compactness);
     const rows = this.snapshot.challenge.colors.length;
     const rowGap = rows === 1 ? 0 : (bottom - top) / (rows - 1);
-    const hitRadius = Math.max(32, Math.min(38, rowGap * 0.46, options.width * 0.11));
+    const hitRadius = Math.max(36, Math.min(46, rowGap * 0.48, options.width * 0.13));
     const sourceX = Math.max(42, options.width * 0.105);
     const targetX = options.width - sourceX;
     const makePort = (color: WireColor, side: 'source' | 'target', x: number, y: number): void => {
       const port = this.scene.add.container(x, y).setName(`connection-${side}-${color}`).setSize(hitRadius * 2, hitRadius * 2);
-      const glow = this.scene.add.circle(0, 0, Math.max(16, hitRadius * 0.7), COLOR_VALUES[color], 0.16).setBlendMode(Phaser.BlendModes.ADD);
-      const rim = this.scene.add.circle(0, 0, Math.max(13, hitRadius * 0.48), 0x10283d, 1).setStrokeStyle(5, COLOR_VALUES[color], 1);
-      const core = this.scene.add.circle(0, 0, Math.max(6, hitRadius * 0.2), COLOR_VALUES[color], 1);
+      const glow = this.scene.add.circle(0, 0, Math.max(22, hitRadius * 0.82), COLOR_VALUES[color], 0.18).setBlendMode(Phaser.BlendModes.ADD);
+      const rim = this.scene.add.circle(0, 0, Math.max(18, hitRadius * 0.54), 0x10283d, 1).setStrokeStyle(6, COLOR_VALUES[color], 1);
+      const core = this.scene.add.circle(0, 0, Math.max(8, hitRadius * 0.24), COLOR_VALUES[color], 1);
       port.add([glow, rim, core]).setInteractive();
       port.setData({ color, side, hitWidth: hitRadius * 2, hitHeight: hitRadius * 2, locked: false });
       if (side === 'source') {
@@ -232,9 +232,9 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
 
   private strokeCurve(graphics: Phaser.GameObjects.Graphics, x1: number, y1: number, x2: number, y2: number, color: number, alpha = 1): void {
     const points = this.makeCurve(x1, y1, x2, y2).getPoints(28);
-    graphics.lineStyle(13, color, 0.16 * alpha).strokePoints(points, false, false);
-    graphics.lineStyle(6, color, 0.96 * alpha).strokePoints(points, false, false);
-    graphics.lineStyle(2, 0xffffff, 0.35 * alpha).strokePoints(points, false, false);
+    graphics.lineStyle(17, color, 0.17 * alpha).strokePoints(points, false, false);
+    graphics.lineStyle(8, color, 0.96 * alpha).strokePoints(points, false, false);
+    graphics.lineStyle(3, 0xffffff, 0.38 * alpha).strokePoints(points, false, false);
   }
 
   private redrawWires(): void {

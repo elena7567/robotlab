@@ -130,7 +130,7 @@ export class Mission6Scene extends Phaser.Scene {
       continueShown = true;
       const buttonHeight = Math.min(60, Math.max(50, height * 0.075));
       addControl(this, width / 2, height - layout.safe.bottom - buttonHeight / 2, 'ПРОДОЛЖИТЬ', () => {
-        this.scene.start('Mission7Scene');
+        this.scene.start('Mission7OrientationGuardScene');
       }, { width: Math.min(270, width - 40), height: buttonHeight, fontSize: Math.min(24, Math.max(17, width * 0.052)) })
         .setName('mission6-continue');
     };

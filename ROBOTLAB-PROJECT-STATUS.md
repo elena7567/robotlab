@@ -6,12 +6,46 @@ RobotLab — «Почини робота», a browser educational 2D mini-game f
 
 ## CURRENT DESIGN STAGE
 
-Mission 10 Intro Stabilization
+Mission 7 Portrait Orientation Review
 
 ## CURRENT STATUS
 
-READY_FOR_FINAL_VICTORY_REVIEW — Final Victory screen now has zero visible or interactive Home controls. Production preview QA passed on PC/LAN URLs; physical Samsung review remains user-owned.
+READY_FOR_MISSION7_PORTRAIT_REVIEW — Mission 7 now plays in portrait on phones/tablets and shows the existing animated RobotLab orientation gate in landscape with `ИГРАЕМ ВЕРТИКАЛЬНО`. Production preview QA passed on PC/LAN URLs; physical Samsung review remains user-owned.
 
+
+
+## 2026-09-13 — MISSION 7 PORTRAIT GAMEPLAY ORIENTATION
+
+- Result: `READY_FOR_MISSION7_PORTRAIT_REVIEW`. This supersedes the earlier Mission 7 landscape-only orientation decision; physical Samsung hardware review remains NOT TESTED by Codex.
+- Mission 7 now treats portrait as the playable orientation. Landscape shows the existing shared RobotLab animated orientation gate with `ПОВЕРНИ ТЕЛЕФОН` / `ИГРАЕМ ВЕРТИКАЛЬНО`; the wire card, terminals, Hint, and gameplay input are absent while the gate is active.
+- The gate animation direction for Mission 7 is landscape phone -> portrait phone. No new orientation system was added.
+- The Mission 7 wire mechanic remains canonical in `connectionsMechanic`; rotating portrait -> landscape -> portrait preserves completed connections at 0, 1, and 2 connected wires and safely cancels active drags by rebuilding the scene from preserved state.
+- Portrait connector visibility and usability were strengthened with larger port hit radii, larger visible terminal rings/cores, and thicker wire strokes. Mission 7 gameplay rules were not changed.
+- Verification PASS: `npm run typecheck`; `npm run build`; `npm run review` production preview on strict `0.0.0.0:4198`, HMR absent, localhost/LAN/direct QA HTTP PASS, server left running; shared-runner Playwright QA `qa/mission7-orientation-review.cjs` PASS. Covered 390x844, 412x915, 360x800 portrait gameplay; 740x360, 844x390, 915x412 landscape gate; tablet 768x1024 portrait and 1024x768 landscape; `orientationDebug=1`; wire input; Mission 6->7 handoff in portrait/landscape; state preservation at 0, 1, and 2 connected wires with five rotation cycles at 2 connected wires; final completion modal.
+- Evidence refreshed: `docs/qa/mission7-orientation-review.json` and `docs/qa/screenshots/mission7-orientation-*.png`.
+- Manual review URLs: PC `http://127.0.0.1:4198/`; Samsung `http://192.168.0.107:4198/`; Mission 7 direct PC `http://127.0.0.1:4198/?qaMission=7`; Mission 7 direct Samsung `http://192.168.0.107:4198/?qaMission=7`.
+- Files changed for this fix: `src/game/scenes/Mission7Scene.ts`, `src/game/scenes/Mission7OrientationGuardScene.ts`, `src/game/ui/sceneLayout.ts`, `src/game/ui/ConnectionTaskCard.ts`, `qa/mission7-orientation-review.cjs`, `docs/decisions/0013-mission7-landscape-orientation.md`, `docs/decisions/0014-mission7-portrait-orientation.md`, `docs/qa/mission7-orientation-review.json`, refreshed `docs/qa/screenshots/mission7-orientation-*.png`, and this status file. Files moved/deleted: none. No commit or push performed.
+
+## 2026-09-13 — MISSION 7 REAL SAMSUNG ORIENTATION ROOT-CAUSE FIX
+
+- Result: `READY_FOR_REAL_SAMSUNG_MISSION7_ORIENTATION_REVIEW`. This does not claim physical Samsung PASS; it prepares the exact physical review URLs and keeps the production preview running for user-owned real-device validation.
+- Root cause: Mission 7's previous portrait/landscape gate used `createResponsiveLayout(this.scale.width, this.scale.height)` and `layout.mode`. On direct `?qaMission=7` entry, Phaser can still be at the configured/default landscape scale before the centralized VisualViewport commit/restart finishes, so a real portrait Samsung runtime could build the Mission 7 gameplay path before the gate state won. The canonical VisualViewport data already knew portrait, but Mission 7 was not using it as the gate source.
+- Fix: Mission 7 now reads the existing VisualViewport-based viewport metrics at scene creation, synchronizes Phaser scale to that canonical visible viewport when needed, and decides the gate from `readViewportMetrics().orientation` before creating Mission 7 gameplay objects. Portrait sets `mission7OrientationGate=true`, `mission7InputActive=false`, shows the existing animated RobotLab orientation gate, and does not mount the task card, terminals, header, or Hint control. Landscape sets `mission7OrientationGate=false`, `mission7InputActive=true` and mounts normal gameplay.
+- The shared RobotLab orientation gate now includes a full-screen interactive blocker so the gate owns pointer input while active. Added production/off-by-default `?orientationDebug=1` overlay diagnostics showing inner/visual viewport, screen orientation, Phaser game/gameSize, resolved orientation, gate state, and Mission 7 input state.
+- Verification PASS: `npm run typecheck`; `npm run build`; `npm run review` production preview on strict `0.0.0.0:4198`, HMR absent, localhost/LAN/direct QA HTTP PASS, server left running; shared-runner Playwright QA `qa/mission7-orientation-review.cjs` PASS. Covered 390x844, 412x915, 360x800 portrait; 740x360, 844x390, 915x412 landscape; tablet 768x1024 portrait and 1024x768 landscape; `orientationDebug=1`; wire input; Mission 6->7 handoff in portrait/landscape; state preservation at 0, 1, and 2 connected wires with five rotation cycles at 2 connected wires; final completion modal.
+- Evidence refreshed: `docs/qa/mission7-orientation-review.json` and `docs/qa/screenshots/mission7-orientation-*.png`. Codex direct visual inspection of the saved screenshots was blocked by a Windows sandbox ACL helper error, but browser automation verified runtime object visibility/input state and captured fresh screenshots. Physical Samsung hardware review remains NOT TESTED by Codex.
+- Manual review URLs: PC `http://127.0.0.1:4198/`; Samsung `http://192.168.0.107:4198/`; Mission 7 direct `http://192.168.0.107:4198/?qaMission=7`; Mission 7 debug `http://192.168.0.107:4198/?qaMission=7&orientationDebug=1`.
+- Files changed for this fix: `src/game/scenes/Mission7Scene.ts`, `src/game/ui/sceneLayout.ts`, `src/game/ui/viewport.ts`, `qa/mission7-orientation-review.cjs`, `docs/qa/mission7-orientation-review.json`, refreshed `docs/qa/screenshots/mission7-orientation-*.png`, and this status file. Files moved/deleted: none. No commit or push performed.
+## 2026-09-13 — MISSION 7 LANDSCAPE-ONLY ORIENTATION GATE
+
+- Scope: Mission 7 only. Mission 1-6, Mission 8-10 gameplay rules were not redesigned.
+- Mission 7 now treats portrait as presentation-only on phones/tablets: Home/Sound remain in the existing positions, the existing RobotLab animated orientation gate is shown with `ПОВЕРНИ ТЕЛЕФОН` / `ИГРАЕМ ГОРИЗОНТАЛЬНО`, and the wire task card/ports are not rendered as playable content.
+- Landscape automatically restores Mission 7 through the existing centralized VisualViewport/restart lifecycle. Canonical `connectionsMechanic` and `sessionState` remain the only progress sources; no orientation-specific state store was added.
+- Added `?qaMission=7` through the existing preload QA shortcut architecture. It enters Mission 7 at the post-Mission-6 session checkpoint and resets only the connection mechanic for review.
+- Verification PASS: `npm run typecheck`; `npm run build` with only the existing Vite chunk-size advisory; `npm run review` production preview, strict `0.0.0.0:4198`, HMR absent, localhost/LAN/direct QA HTTP PASS, server left running; shared-runner Playwright QA `qa/mission7-orientation-review.cjs` PASS. Covered portrait 390x844, 412x915, tablet 768x1024; landscape 740x360, 844x390, 915x412, tablet 1024x768; wrong/correct/duplicate wire input; touch targets and hit overlap; state preservation at 0/3, 1/3, 2/3 with five rotation cycles; Mission 6 landscape and portrait handoff; final completion modal.
+- Evidence: `docs/qa/mission7-orientation-review.json` and `docs/qa/screenshots/mission7-orientation-*.png` including completion capture. Physical Samsung hardware review remains NOT TESTED by Codex.
+- Manual review URLs: PC `http://127.0.0.1:4198/?qaMission=7`; Samsung `http://192.168.0.107:4198/?qaMission=7`.
+- Files modified/created by this change: `src/game/scenes/Mission7Scene.ts`, `src/game/scenes/PreloadScene.ts`, `src/game/state/sessionState.ts`, `src/game/ui/sceneLayout.ts`, `qa/mission7-orientation-review.cjs`, `docs/decisions/0013-mission7-landscape-orientation.md`, `docs/qa/mission7-orientation-review.json`, the `docs/qa/screenshots/mission7-orientation-*.png` screenshot set, and this status file. Files moved/deleted: none. No commit or push performed.
 ## 2026-09-13 — FINAL VICTORY NO-HOME FIX
 
 - Scope: VictoryScene / final `МИССИЯ ВЫПОЛНЕНА` screen only. Mission 9 and Mission 10 gameplay Home controls remain unchanged.

@@ -1,0 +1,2646 @@
+{
+  "viewports": [
+    {
+      "viewport": "390x844",
+      "expected": "portrait",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "red",
+            "green",
+            "blue"
+          ],
+          "connected": []
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-390x844.png",
+      "errors": {
+        "console": [],
+        "page": [
+          "Framebuffer status: Framebuffer Unsupported"
+        ],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "412x915",
+      "expected": "portrait",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "red",
+            "green",
+            "blue"
+          ],
+          "connected": []
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 18.699998168945314,
+              "y": 211.82800415039063,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 94.13999816894531,
+              "bottom": 287.26800415039065
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 317.8600170898437,
+              "y": 211.82800415039063,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 393.3000170898438,
+              "bottom": 287.26800415039065
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 18.699998168945314,
+              "y": 480.811982421875,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 94.13999816894531,
+              "bottom": 556.251982421875
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 317.8600170898437,
+              "y": 749.7959912109375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 393.3000170898438,
+              "bottom": 825.2359912109375
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 18.699998168945314,
+              "y": 749.7959912109375,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 94.13999816894531,
+              "bottom": 825.2359912109375
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 317.8600170898437,
+              "y": 480.811982421875,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 393.3000170898438,
+              "bottom": 556.251982421875
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 18.699998168945314,
+          "y": 139.54800415039062,
+          "width": 374.6000189208985,
+          "height": 685.6879870605469,
+          "right": 393.3000170898438,
+          "bottom": 825.2359912109375
+        },
+        "hintBounds": {
+          "x": 152,
+          "y": 860.5800170898438,
+          "width": 108,
+          "height": 22,
+          "right": 260,
+          "bottom": 882.5800170898438
+        },
+        "repairedBounds": {
+          "x": 206,
+          "y": 835.5159912109375,
+          "width": 0,
+          "height": 0,
+          "right": 206,
+          "bottom": 835.5159912109375
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-412x915.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "360x800",
+      "expected": "portrait",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "red",
+            "green",
+            "blue"
+          ],
+          "connected": []
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 18.910318474121098,
+              "y": 209.91032610351562,
+              "width": 71.37935999999999,
+              "height": 71.37936000000002,
+              "right": 90.28967847412109,
+              "bottom": 281.28968610351563
+            },
+            "hitWidth": 87.04799999999999,
+            "hitHeight": 87.04799999999999,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 269.71031389648437,
+              "y": 209.91032610351562,
+              "width": 71.37936000000002,
+              "height": 71.37936000000002,
+              "right": 341.0896738964844,
+              "bottom": 281.28968610351563
+            },
+            "hitWidth": 87.04799999999999,
+            "hitHeight": 87.04799999999999,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 18.910318474121098,
+              "y": 424.81032,
+              "width": 71.37935999999999,
+              "height": 71.37936000000002,
+              "right": 90.28967847412109,
+              "bottom": 496.18968
+            },
+            "hitWidth": 87.04799999999999,
+            "hitHeight": 87.04799999999999,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 269.71031389648437,
+              "y": 639.7103444140625,
+              "width": 71.37936000000002,
+              "height": 71.3793599999999,
+              "right": 341.0896738964844,
+              "bottom": 711.0897044140625
+            },
+            "hitWidth": 87.04799999999999,
+            "hitHeight": 87.04799999999999,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 18.910318474121098,
+              "y": 639.7103444140625,
+              "width": 71.37935999999999,
+              "height": 71.3793599999999,
+              "right": 90.28967847412109,
+              "bottom": 711.0897044140625
+            },
+            "hitWidth": 87.04799999999999,
+            "hitHeight": 87.04799999999999,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 269.71031389648437,
+              "y": 424.81032,
+              "width": 71.37936000000002,
+              "height": 71.37936000000002,
+              "right": 341.0896738964844,
+              "bottom": 496.18968
+            },
+            "hitWidth": 87.04799999999999,
+            "hitHeight": 87.04799999999999,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 18.910318474121098,
+          "y": 135.60000610351562,
+          "width": 322.1793554223633,
+          "height": 575.8,
+          "right": 341.0896738964844,
+          "bottom": 711.4000061035156
+        },
+        "hintBounds": {
+          "x": 132.5,
+          "y": 749.4000244140625,
+          "width": 95,
+          "height": 18,
+          "right": 227.5,
+          "bottom": 767.4000244140625
+        },
+        "repairedBounds": {
+          "x": 180,
+          "y": 723.4000244140625,
+          "width": 0,
+          "height": 0,
+          "right": 180,
+          "bottom": 723.4000244140625
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-360x800.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "740x360",
+      "expected": "landscape",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 740,
+          "height": 360
+        },
+        "activeScene": "Mission7OrientationGuardScene",
+        "snapshot": null,
+        "gateCount": 1,
+        "gatePhoneCount": 1,
+        "gateBlockerCount": 1,
+        "mission7OrientationGate": true,
+        "mission7InputActive": false,
+        "cardCount": 0,
+        "sourcePortCount": 0,
+        "targetPortCount": 0,
+        "hintCount": 0,
+        "headerCount": 0,
+        "systemsCount": 0,
+        "completionCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ],
+        "ports": [],
+        "cardBounds": null,
+        "hintBounds": null,
+        "repairedBounds": null,
+        "gateBounds": {
+          "x": 0,
+          "y": 0,
+          "width": 740,
+          "height": 360,
+          "right": 740,
+          "bottom": 360
+        },
+        "lineGraphicsCount": 0,
+        "temporaryWireCount": 0,
+        "temporaryWireCommandCount": 0
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-740x360.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "844x390",
+      "expected": "landscape",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "activeScene": "Mission7OrientationGuardScene",
+        "snapshot": null,
+        "gateCount": 1,
+        "gatePhoneCount": 1,
+        "gateBlockerCount": 1,
+        "mission7OrientationGate": true,
+        "mission7InputActive": false,
+        "cardCount": 0,
+        "sourcePortCount": 0,
+        "targetPortCount": 0,
+        "hintCount": 0,
+        "headerCount": 0,
+        "systemsCount": 0,
+        "completionCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ],
+        "ports": [],
+        "cardBounds": null,
+        "hintBounds": null,
+        "repairedBounds": null,
+        "gateBounds": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "right": 844,
+          "bottom": 390
+        },
+        "lineGraphicsCount": 0,
+        "temporaryWireCount": 0,
+        "temporaryWireCommandCount": 0
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-844x390.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "915x412",
+      "expected": "landscape",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "activeScene": "Mission7OrientationGuardScene",
+        "snapshot": null,
+        "gateCount": 1,
+        "gatePhoneCount": 1,
+        "gateBlockerCount": 1,
+        "mission7OrientationGate": true,
+        "mission7InputActive": false,
+        "cardCount": 0,
+        "sourcePortCount": 0,
+        "targetPortCount": 0,
+        "hintCount": 0,
+        "headerCount": 0,
+        "systemsCount": 0,
+        "completionCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ],
+        "ports": [],
+        "cardBounds": null,
+        "hintBounds": null,
+        "repairedBounds": null,
+        "gateBounds": {
+          "x": 0,
+          "y": 0,
+          "width": 915,
+          "height": 412,
+          "right": 915,
+          "bottom": 412
+        },
+        "lineGraphicsCount": 0,
+        "temporaryWireCount": 0,
+        "temporaryWireCommandCount": 0
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-915x412.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "768x1024",
+      "expected": "portrait",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "green",
+            "red",
+            "blue"
+          ],
+          "connected": []
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 39.79519775390625,
+              "y": 186.1600048828125,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 115.23519775390625,
+              "bottom": 261.6000048828125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 420.7648022460937,
+              "y": 404.6600048828125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 496.2048022460938,
+              "bottom": 480.1000048828125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 39.79519775390625,
+              "y": 404.6600048828125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 115.23519775390625,
+              "bottom": 480.1000048828125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 420.7648022460937,
+              "y": 623.1600048828125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 496.2048022460938,
+              "bottom": 698.6000048828125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 39.79519775390625,
+              "y": 623.1600048828125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 115.23519775390625,
+              "bottom": 698.6000048828125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 420.7648022460937,
+              "y": 186.1600048828125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 496.2048022460938,
+              "bottom": 261.6000048828125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 39.79519775390625,
+          "y": 112.37999725341797,
+          "width": 456.40960449218755,
+          "height": 586.2200076293946,
+          "right": 496.2048022460938,
+          "bottom": 698.6000048828125
+        },
+        "hintBounds": {
+          "x": 580.6199951171875,
+          "y": 957.1199951171875,
+          "width": 111,
+          "height": 22,
+          "right": 691.6199951171875,
+          "bottom": 979.1199951171875
+        },
+        "repairedBounds": {
+          "x": 548.53026849702,
+          "y": 687.1200015246868,
+          "width": 174.5563434138894,
+          "height": 239.9999935925007,
+          "right": 723.0866119109094,
+          "bottom": 927.1199951171875
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-768x1024.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "viewport": "1024x768",
+      "expected": "landscape",
+      "ok": true,
+      "state": {
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "activeScene": "Mission7OrientationGuardScene",
+        "snapshot": null,
+        "gateCount": 1,
+        "gatePhoneCount": 1,
+        "gateBlockerCount": 1,
+        "mission7OrientationGate": true,
+        "mission7InputActive": false,
+        "cardCount": 0,
+        "sourcePortCount": 0,
+        "targetPortCount": 0,
+        "hintCount": 0,
+        "headerCount": 0,
+        "systemsCount": 0,
+        "completionCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ],
+        "ports": [],
+        "cardBounds": null,
+        "hintBounds": null,
+        "repairedBounds": null,
+        "gateBounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768,
+          "right": 1024,
+          "bottom": 768
+        },
+        "lineGraphicsCount": 0,
+        "temporaryWireCount": 0,
+        "temporaryWireCommandCount": 0
+      },
+      "screenshot": "docs\\qa\\screenshots\\mission7-orientation-1024x768.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "debugOverlay": {
+    "ok": true,
+    "debugText": "inner 390×844\nvisual 390×844\nscreen portrait-primary\nsafe 0/0/0/0\ndpr 1\ncanvas 390×844\ngame 390×844\ngameSize 390×844\nscale 1.000×1.000\nresolved portrait\nmode portrait-tall\ngate inactive\nmission7 input active",
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "wireInput": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "initial-portrait-playable",
+        "ok": true
+      },
+      {
+        "name": "touch-targets",
+        "ok": true,
+        "details": {
+          "touch": true,
+          "overlaps": []
+        }
+      },
+      {
+        "name": "wrong-does-not-progress",
+        "ok": true,
+        "connected": []
+      },
+      {
+        "name": "correct-progresses-once",
+        "ok": true,
+        "connected": [
+          "red"
+        ]
+      },
+      {
+        "name": "duplicate-ignored",
+        "ok": true,
+        "connected": [
+          "red"
+        ]
+      },
+      {
+        "name": "challenge-advance-after-all-correct",
+        "ok": true,
+        "snapshot": {
+          "challengeIndex": 1,
+          "destinationOrder": [
+            "blue",
+            "green",
+            "red",
+            "yellow"
+          ],
+          "connected": []
+        }
+      }
+    ],
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "hitAreaOverlap": []
+  },
+  "statePreservation": [
+    {
+      "completedCount": 0,
+      "cycles": 1,
+      "ok": true,
+      "before": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "green",
+            "blue",
+            "red"
+          ],
+          "connected": []
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "after": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "green",
+            "blue",
+            "red"
+          ],
+          "connected": []
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "cycleStates": [
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "completedCount": 1,
+      "cycles": 1,
+      "ok": true,
+      "before": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "blue",
+            "green",
+            "red"
+          ],
+          "connected": [
+            "red"
+          ]
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "ПОДКЛЮЧЕНО!",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 0
+      },
+      "after": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "blue",
+            "green",
+            "red"
+          ],
+          "connected": [
+            "red"
+          ]
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "cycleStates": [
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": [
+              "red"
+            ]
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "completedCount": 2,
+      "cycles": 5,
+      "ok": true,
+      "before": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "red",
+            "green",
+            "blue"
+          ],
+          "connected": [
+            "red",
+            "blue"
+          ]
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "ОТЛИЧНО!",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": true
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": true
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": true
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 0
+      },
+      "after": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "activeScene": "Mission7Scene",
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "snapshot": {
+          "challengeIndex": 0,
+          "destinationOrder": [
+            "red",
+            "green",
+            "blue"
+          ],
+          "connected": [
+            "red",
+            "blue"
+          ]
+        },
+        "gateCount": 0,
+        "gatePhoneCount": 0,
+        "gateBlockerCount": 0,
+        "mission7OrientationGate": false,
+        "mission7InputActive": true,
+        "cardCount": 1,
+        "sourcePortCount": 3,
+        "targetPortCount": 3,
+        "hintCount": 1,
+        "headerCount": 0,
+        "systemsCount": 1,
+        "completionCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ],
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 210.08999755859375,
+              "width": 75.44,
+              "height": 75.44000000000003,
+              "right": 93.3700015258789,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 210.08999755859375,
+              "width": 75.44000000000005,
+              "height": 75.44000000000003,
+              "right": 372.07000610351565,
+              "bottom": 285.5299975585938
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 445.07000854492185,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 680.05001953125,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "bounds": {
+              "x": 17.930001525878907,
+              "y": 680.05001953125,
+              "width": 75.44,
+              "height": 75.44000000000005,
+              "right": 93.3700015258789,
+              "bottom": 755.49001953125
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "bounds": {
+              "x": 296.6300061035156,
+              "y": 445.07000854492185,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 372.07000610351565,
+              "bottom": 520.5100085449219
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardBounds": {
+          "x": 17.930001525878907,
+          "y": 137.80999755859375,
+          "width": 354.1400045776368,
+          "height": 617.6800219726563,
+          "right": 372.07000610351565,
+          "bottom": 755.49001953125
+        },
+        "hintBounds": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "repairedBounds": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "gateBounds": null,
+        "lineGraphicsCount": 3,
+        "temporaryWireCount": 1,
+        "temporaryWireCommandCount": 7
+      },
+      "cycleStates": [
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": [
+              "red",
+              "blue"
+            ]
+          }
+        },
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": [
+              "red",
+              "blue"
+            ]
+          }
+        },
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": [
+              "red",
+              "blue"
+            ]
+          }
+        },
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": [
+              "red",
+              "blue"
+            ]
+          }
+        },
+        {
+          "landscape": {
+            "gateCount": 1,
+            "cardCount": 0
+          },
+          "portrait": {
+            "gateCount": 0,
+            "cardCount": 1,
+            "connected": [
+              "red",
+              "blue"
+            ]
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "handoffLandscape": {
+    "viewport": "844x390",
+    "ok": true,
+    "state": {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "activeScene": "Mission7OrientationGuardScene",
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "snapshot": null,
+      "gateCount": 1,
+      "gatePhoneCount": 1,
+      "gateBlockerCount": 1,
+      "mission7OrientationGate": true,
+      "mission7InputActive": false,
+      "cardCount": 0,
+      "sourcePortCount": 0,
+      "targetPortCount": 0,
+      "hintCount": 0,
+      "headerCount": 0,
+      "systemsCount": 0,
+      "completionCount": 0,
+      "labels": [
+        "ПОВЕРНИ ТЕЛЕФОН",
+        "ИГРАЕМ ВЕРТИКАЛЬНО"
+      ],
+      "ports": [],
+      "cardBounds": null,
+      "hintBounds": null,
+      "repairedBounds": null,
+      "gateBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 844,
+        "height": 390,
+        "right": 844,
+        "bottom": 390
+      },
+      "lineGraphicsCount": 0,
+      "temporaryWireCount": 0,
+      "temporaryWireCommandCount": 0
+    },
+    "errors": {
+      "console": [
+        "[RobotLab layout] unintended overlaps {scene: Mission6Scene, semanticMode: PHONE_LANDSCAPE_SHORT, compositionPolicyId: MISSION_6_PHONE_LANDSCAPE_SHORT, overlapCount: 1, overlaps: Array(1)}"
+      ],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "handoffPortrait": {
+    "viewport": "390x844",
+    "ok": true,
+    "state": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "activeScene": "Mission7Scene",
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "snapshot": {
+        "challengeIndex": 0,
+        "destinationOrder": [
+          "blue",
+          "green",
+          "red"
+        ],
+        "connected": []
+      },
+      "gateCount": 0,
+      "gatePhoneCount": 0,
+      "gateBlockerCount": 0,
+      "mission7OrientationGate": false,
+      "mission7InputActive": true,
+      "cardCount": 1,
+      "sourcePortCount": 3,
+      "targetPortCount": 3,
+      "hintCount": 1,
+      "headerCount": 0,
+      "systemsCount": 1,
+      "completionCount": 0,
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ЗАДАНИЕ 7 ИЗ 10",
+        "ПОДКЛЮЧИ ПРОВОДА",
+        "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+        "",
+        "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+        "ПОДСКАЗКА"
+      ],
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "bounds": {
+            "x": 17.930001525878907,
+            "y": 210.08999755859375,
+            "width": 75.44,
+            "height": 75.44000000000003,
+            "right": 93.3700015258789,
+            "bottom": 285.5299975585938
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": false
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "bounds": {
+            "x": 296.6300061035156,
+            "y": 680.05001953125,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 372.07000610351565,
+            "bottom": 755.49001953125
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": false
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "bounds": {
+            "x": 17.930001525878907,
+            "y": 445.07000854492185,
+            "width": 75.44,
+            "height": 75.44000000000005,
+            "right": 93.3700015258789,
+            "bottom": 520.5100085449219
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": false
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "bounds": {
+            "x": 296.6300061035156,
+            "y": 210.08999755859375,
+            "width": 75.44000000000005,
+            "height": 75.44000000000003,
+            "right": 372.07000610351565,
+            "bottom": 285.5299975585938
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": false
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "bounds": {
+            "x": 17.930001525878907,
+            "y": 680.05001953125,
+            "width": 75.44,
+            "height": 75.44000000000005,
+            "right": 93.3700015258789,
+            "bottom": 755.49001953125
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": false
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "bounds": {
+            "x": 296.6300061035156,
+            "y": 445.07000854492185,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 372.07000610351565,
+            "bottom": 520.5100085449219
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": false
+        }
+      ],
+      "cardBounds": {
+        "x": 17.930001525878907,
+        "y": 137.80999755859375,
+        "width": 354.1400045776368,
+        "height": 617.6800219726563,
+        "right": 372.07000610351565,
+        "bottom": 755.49001953125
+      },
+      "hintBounds": {
+        "x": 143.5,
+        "y": 790.8499755859375,
+        "width": 103,
+        "height": 21,
+        "right": 246.5,
+        "bottom": 811.8499755859375
+      },
+      "repairedBounds": {
+        "x": 195,
+        "y": 765.77001953125,
+        "width": 0,
+        "height": 0,
+        "right": 195,
+        "bottom": 765.77001953125
+      },
+      "gateBounds": null,
+      "lineGraphicsCount": 3,
+      "temporaryWireCount": 1,
+      "temporaryWireCommandCount": 7
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "completion": {
+    "ok": true,
+    "state": {
+      "viewport": {
+        "width": 412,
+        "height": 915
+      },
+      "activeScene": "Mission7Scene",
+      "session": {
+        "currentTask": 8,
+        "completedTasks": 7,
+        "totalTasks": 10,
+        "score": 7,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "snapshot": {
+        "challengeIndex": 2,
+        "destinationOrder": [
+          "red",
+          "green",
+          "blue",
+          "yellow"
+        ],
+        "connected": [
+          "red",
+          "blue",
+          "green",
+          "yellow"
+        ]
+      },
+      "gateCount": 0,
+      "gatePhoneCount": 0,
+      "gateBlockerCount": 0,
+      "mission7OrientationGate": false,
+      "mission7InputActive": true,
+      "cardCount": 1,
+      "sourcePortCount": 4,
+      "targetPortCount": 4,
+      "hintCount": 1,
+      "headerCount": 0,
+      "systemsCount": 1,
+      "completionCount": 1,
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ЗАДАНИЕ 7 ИЗ 10",
+        "ПОДКЛЮЧИ ПРОВОДА",
+        "ПОДКЛЮЧЕНИЕ 3 ИЗ 3",
+        "ПОДКЛЮЧЕНО!",
+        "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 3/3",
+        "ПОДСКАЗКА",
+        "СИСТЕМЫ СОЕДИНЕНЫ!",
+        "ДАЛЬШЕ НАУЧИМ РОБОТА ДВИГАТЬСЯ",
+        "ПРОДОЛЖИТЬ"
+      ],
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "bounds": {
+            "x": 18.699998168945314,
+            "y": 211.82800415039063,
+            "width": 75.44,
+            "height": 75.44000000000003,
+            "right": 94.13999816894531,
+            "bottom": 287.26800415039065
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "bounds": {
+            "x": 317.8600170898437,
+            "y": 229.82800415039063,
+            "width": 75.44000000000005,
+            "height": 75.44000000000003,
+            "right": 393.3000170898438,
+            "bottom": 305.26800415039065
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "bounds": {
+            "x": 18.699998168945314,
+            "y": 409.1506665039062,
+            "width": 75.44,
+            "height": 75.44000000000005,
+            "right": 94.13999816894531,
+            "bottom": 484.5906665039063
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "bounds": {
+            "x": 317.8600170898437,
+            "y": 588.473359375,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 393.3000170898438,
+            "bottom": 663.913359375
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "bounds": {
+            "x": 18.699998168945314,
+            "y": 570.473359375,
+            "width": 75.44,
+            "height": 75.44000000000005,
+            "right": 94.13999816894531,
+            "bottom": 645.913359375
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "bounds": {
+            "x": 317.8600170898437,
+            "y": 391.1506665039062,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 393.3000170898438,
+            "bottom": 466.5906665039063
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "yellow",
+          "side": "source",
+          "bounds": {
+            "x": 18.699998168945314,
+            "y": 767.7959912109375,
+            "width": 75.44,
+            "height": 75.44000000000005,
+            "right": 94.13999816894531,
+            "bottom": 843.2359912109375
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        },
+        {
+          "color": "yellow",
+          "side": "target",
+          "bounds": {
+            "x": 317.8600170898437,
+            "y": 749.7959912109375,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 393.3000170898438,
+            "bottom": 825.2359912109375
+          },
+          "hitWidth": 92,
+          "hitHeight": 92,
+          "locked": true
+        }
+      ],
+      "cardBounds": {
+        "x": 18.699998168945314,
+        "y": 139.54800415039062,
+        "width": 374.6000189208985,
+        "height": 703.6879870605469,
+        "right": 393.3000170898438,
+        "bottom": 843.2359912109375
+      },
+      "hintBounds": {
+        "x": 152,
+        "y": 860.5800170898438,
+        "width": 108,
+        "height": 22,
+        "right": 260,
+        "bottom": 882.5800170898438
+      },
+      "repairedBounds": {
+        "x": 206,
+        "y": 835.5159912109375,
+        "width": 0,
+        "height": 0,
+        "right": 206,
+        "bottom": 835.5159912109375
+      },
+      "gateBounds": null,
+      "lineGraphicsCount": 3,
+      "temporaryWireCount": 1,
+      "temporaryWireCommandCount": 0
+    },
+    "screenshot": "docs\\qa\\screenshots\\mission7-orientation-completion-412x915.png",
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "result": "PASS"
+}

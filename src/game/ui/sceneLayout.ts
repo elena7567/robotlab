@@ -1,4 +1,6 @@
 import Phaser from 'phaser';
+import { CHILD_UI } from './childUi';
+import { UI_FONT } from './visualTheme';
 
 export interface CoverImageMetrics {
   scale: number;
@@ -26,6 +28,57 @@ export const PLATFORM_CENTER_X = 640;
 export const PLATFORM_CONTACT_Y = 560;
 
 const LAB_PLATFORM_SOURCE_Y = 730;
+export interface OrientationGateOptions {
+  readonly name: string;
+  readonly reducedMotion?: boolean;
+  readonly targetOrientation?: 'landscape' | 'portrait';
+}
+
+export function addRobotLabOrientationGate(
+  scene: Phaser.Scene,
+  options: OrientationGateOptions,
+): Phaser.GameObjects.Container {
+  const { width, height } = scene.scale;
+  const targetOrientation = options.targetOrientation ?? 'landscape';
+  const reducedMotion = options.reducedMotion
+    ?? (globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false);
+  const panelWidth = Math.min(350, width - 28);
+  const panelHeight = Math.min(292, height - 112);
+  const root = scene.add.container(width / 2, height / 2).setName(options.name).setDepth(30);
+  const inputBlocker = scene.add.rectangle(-width / 2, -height / 2, width, height, 0x071f35, 0.34)
+    .setOrigin(0)
+    .setInteractive()
+    .setName(`${options.name}-input-blocker`);
+  const panel = scene.add.graphics();
+  panel.fillStyle(0x071f35, 0.94).fillRoundedRect(-panelWidth / 2, -panelHeight / 2, panelWidth, panelHeight, 24)
+    .lineStyle(4, 0x7af3c0, 0.95).strokeRoundedRect(-panelWidth / 2, -panelHeight / 2, panelWidth, panelHeight, 24);
+  const iconSize = Math.min(98, panelHeight * 0.34);
+  const phone = scene.add.graphics().setName(`${options.name}-phone-icon`);
+  phone.fillStyle(0xffffff, 0.08).fillRoundedRect(-iconSize * 0.26, -iconSize * 0.48, iconSize * 0.52, iconSize * 0.96, 11)
+    .lineStyle(7, 0x8df4ff, 0.96).strokeRoundedRect(-iconSize * 0.26, -iconSize * 0.48, iconSize * 0.52, iconSize * 0.96, 11)
+    .lineStyle(3, 0xffffff, 0.9).strokeRoundedRect(-iconSize * 0.18, -iconSize * 0.36, iconSize * 0.36, iconSize * 0.68, 7);
+  phone.setY(-panelHeight * 0.23);
+  phone.setAngle(targetOrientation === 'portrait' ? 88 : 0);
+  root.add([
+    inputBlocker,
+    panel,
+    phone,
+    scene.add.text(0, panelHeight * 0.1, 'ПОВЕРНИ ТЕЛЕФОН', {
+      color: '#ffffff', fontFamily: UI_FONT, fontSize: `${Math.min(28, Math.max(23, width * 0.07))}px`,
+      stroke: '#06243b', strokeThickness: 5, fontStyle: 'bold', align: 'center',
+    }).setOrigin(0.5),
+    scene.add.text(0, panelHeight * 0.29, targetOrientation === 'portrait' ? 'ИГРАЕМ ВЕРТИКАЛЬНО' : 'ИГРАЕМ ГОРИЗОНТАЛЬНО', {
+      color: '#c6f8ff', fontFamily: UI_FONT, fontSize: `${Math.min(17, Math.max(CHILD_UI.typography.statusMin, width * 0.04))}px`,
+      fontStyle: 'bold', align: 'center',
+    }).setOrigin(0.5),
+  ]);
+  if (!reducedMotion) {
+    scene.tweens.add({ targets: phone, angle: targetOrientation === 'portrait' ? 0 : 88, duration: 760, hold: 360, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+  } else {
+    phone.setAngle(targetOrientation === 'portrait' ? 0 : 90);
+  }
+  return root;
+}
 
 export function addLogicalLaboratoryImage(
   scene: Phaser.Scene,

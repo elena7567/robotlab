@@ -33,6 +33,9 @@ export const sessionState = {
     };
   },
   reset(): void { state = createInitialState(); },
+  enterMission7Qa(): void {
+    state = { currentTask: 7, completedTasks: 6, totalTasks: 10, score: 6 };
+  },
   enterMission9Qa(): void {
     state = { currentTask: 9, completedTasks: 8, totalTasks: 10, score: 8 };
   },

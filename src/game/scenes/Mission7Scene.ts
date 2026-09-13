@@ -9,24 +9,34 @@ import { createGroundedRobot } from '../ui/robotGrounding';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
 import { composeScene } from '../ui/sceneCompositionDirector';
-import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
+import { addLogicalLaboratoryImage, addRobotLabOrientationGate, restartOnViewportResize } from '../ui/sceneLayout';
+import { readViewportMetrics, type ViewportMetrics } from '../ui/viewport';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { CHILD_UI } from '../ui/childUi';
 
 const CORRECT_LINES = ['ЕСТЬ КОНТАКТ!', 'ПОДКЛЮЧЕНО!', 'ОТЛИЧНО!'] as const;
 
+const syncScaleToCanonicalViewport = (scene: Phaser.Scene, viewport: ViewportMetrics): void => {
+  const width = Math.max(320, viewport.visualViewportWidth);
+  const height = Math.max(320, viewport.visualViewportHeight);
+  if (Math.round(scene.scale.width) === width && Math.round(scene.scale.height) === height) return;
+  scene.scale.resize(width, height);
+};
+
 export class Mission7Scene extends Phaser.Scene {
   constructor() { super('Mission7Scene'); }
 
   create(): void {
+    const canonicalViewport = readViewportMetrics();
+    syncScaleToCanonicalViewport(this, canonicalViewport);
     const { width, height } = this.scale;
-    const layout = createResponsiveLayout(width, height);
+    const layout = createResponsiveLayout(width, height, canonicalViewport);
     this.game.registry.set('responsiveLayout', layout);
     const sceneComposition = composeScene(layout, 7);
     const missionLayout = sceneComposition.mission7!;
     this.game.registry.set('sceneComposition', sceneComposition);
-    const portrait = layout.mode !== 'landscape';
+    const portrait = canonicalViewport.orientation === 'portrait';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const session = sessionState.snapshot;
     this.game.registry.set('sessionSnapshot', session);
@@ -44,7 +54,25 @@ export class Mission7Scene extends Phaser.Scene {
       .lineTo(width * 0.82, height * 0.66).lineTo(width, height * 0.58).strokePath();
     labConduit.setAlpha(session.connectionsCompleted ? 0.8 : 0.13).setData('active', session.connectionsCompleted);
 
-    const actors = this.add.container(0, 0).setName('mission7-actors').setDepth(portrait || layout.semanticMode === 'PHONE_LANDSCAPE_SHORT' ? 6 : 2);
+    const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
+    addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing).setName('mission7-home');
+    const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
+    let soundControl: Phaser.GameObjects.Container;
+    soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, layout.headerY, soundLabel(), () => {
+      audioManager.toggleMuted();
+      (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
+    }, UI_COLORS.green, iconSizing).setName('mission7-sound');
+
+    if (!portrait) {
+      addRobotLabOrientationGate(this, { name: 'mission7-orientation-gate', reducedMotion, targetOrientation: 'portrait' });
+      this.game.registry.set('mission7OrientationGate', true);
+      this.game.registry.set('mission7InputActive', false);
+      restartOnViewportResize(this);
+      markSceneReady(this);
+      return;
+    }
+
+    const actors = this.add.container(0, 0).setName('mission7-actors').setDepth(layout.semanticMode === 'PHONE_LANDSCAPE_SHORT' ? 6 : 2);
     const helper = createGroundedRobot(this, actors, 5);
     helper?.setPosition(missionLayout.helper.x, missionLayout.helper.feetY).setScale(missionLayout.helper.scale).setData({
       baseX: missionLayout.helper.x,
@@ -75,14 +103,6 @@ export class Mission7Scene extends Phaser.Scene {
     repaired.setVisible(missionLayout.showRepaired);
     actors.add(repaired);
 
-    const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
-    addIconControl(this, layout.safe.left + layout.iconWidth / 2, layout.headerY, '⌂ Домой', () => this.scene.start('StartScene'), UI_COLORS.purple, iconSizing).setName('mission7-home');
-    const soundLabel = (): string => preferencesState.soundEnabled ? '♪ Звук' : '× Звук';
-    let soundControl: Phaser.GameObjects.Container;
-    soundControl = addIconControl(this, width - layout.safe.right - layout.iconWidth / 2, layout.headerY, soundLabel(), () => {
-      audioManager.toggleMuted();
-      (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
-    }, UI_COLORS.green, iconSizing).setName('mission7-sound');
     if (missionLayout.showHeader) this.add.text(width / 2, layout.headerY, 'ОЖИВИ РОБОТА', {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${layout.headerFontSize}px`, fontStyle: 'bold', stroke: '#31567a', strokeThickness: 5,
     }).setOrigin(0.5).setName('mission7-header');
@@ -151,6 +171,9 @@ export class Mission7Scene extends Phaser.Scene {
       },
       onCancel: () => card.refresh(connectionsMechanic.snapshot, ''),
     });
+    this.game.registry.set('mission7OrientationGate', false);
+    this.game.registry.set('mission7InputActive', true);
+
     addControl(this, missionLayout.hint.x, missionLayout.hint.y, 'ПОДСКАЗКА', () => {
       if (resolving) return;
       const color = connectionsMechanic.hint();

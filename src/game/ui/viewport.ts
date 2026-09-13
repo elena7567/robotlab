@@ -180,10 +180,10 @@ export function installVisualViewportSizing(game: Phaser.Game): () => void {
 
 export function installViewportDebugOverlay(game: Phaser.Game): void {
   const dev = (import.meta as ImportMeta & { env?: { DEV?: boolean } }).env?.DEV ?? false;
-  if (!dev) return;
-  const enabled = new URLSearchParams(location.search).has('viewportDebug');
+  const params = new URLSearchParams(location.search);
+  const enabled = params.has('viewportDebug') || params.has('orientationDebug');
   if (!enabled) {
-    console.info('[RobotLab viewport]', readViewportMetrics());
+    if (dev) console.info('[RobotLab viewport]', readViewportMetrics());
     return;
   }
   const overlay = document.createElement('pre');
@@ -196,12 +196,17 @@ export function installViewportDebugOverlay(game: Phaser.Game): void {
     overlay.textContent = [
       `inner ${metrics.innerWidth}×${metrics.innerHeight}`,
       `visual ${metrics.visualViewportWidth}×${metrics.visualViewportHeight}`,
+      `screen ${screen.orientation?.type ?? 'unknown'}`,
       `safe ${metrics.safeTop}/${metrics.safeRight}/${metrics.safeBottom}/${metrics.safeLeft}`,
       `dpr ${metrics.devicePixelRatio}`,
       `canvas ${Math.round(canvas?.width ?? 0)}×${Math.round(canvas?.height ?? 0)}`,
       `game ${game.scale.width}×${game.scale.height}`,
+      `gameSize ${game.scale.gameSize.width}×${game.scale.gameSize.height}`,
       `scale ${game.scale.displayScale.x.toFixed(3)}×${game.scale.displayScale.y.toFixed(3)}`,
+      `resolved ${metrics.orientation}`,
       `mode ${layout?.compositionName ?? layout?.mode ?? 'boot'}`,
+      `gate ${game.registry.get('mission7OrientationGate') === true ? 'active' : 'inactive'}`,
+      `mission7 input ${game.registry.get('mission7InputActive') === true ? 'active' : 'inactive'}`,
     ].join('\n');
   };
   window.addEventListener('robotlab:viewport', render);
