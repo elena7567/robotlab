@@ -1,0 +1,123 @@
+{
+  "result": "PASS",
+  "baseline": false,
+  "outputEvidence": "PCM sampled after Phaser master mute and volume gain; physical speakers not observed",
+  "checks": [
+    {
+      "name": "home-before-delayed-unlock-no-stale-intro",
+      "ok": true,
+      "data": {
+        "peak": 0.05779752507805824,
+        "samples": 53,
+        "plays": [
+          {
+            "key": "audio-ui-click",
+            "at": 8816.40000000596,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-start-lab-theme",
+            "at": 8816.699999988079,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          }
+        ],
+        "states": [],
+        "locked": false,
+        "context": "running",
+        "muted": false,
+        "stage": "INTRO"
+      }
+    },
+    {
+      "name": "repeated-intro-cue-once-per-entry",
+      "ok": true,
+      "data": [
+        {
+          "cueInstances": 1,
+          "cuePlays": 2,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 3,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 4,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 5,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        }
+      ]
+    },
+    {
+      "name": "intro-lifecycle-counts-bounded",
+      "ok": true,
+      "data": [
+        {
+          "cueInstances": 1,
+          "cuePlays": 2,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 3,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 4,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 5,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 7
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

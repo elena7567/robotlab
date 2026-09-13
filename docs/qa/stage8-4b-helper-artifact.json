@@ -1,0 +1,1029 @@
+{
+  "baseUrl": "http://127.0.0.1:4198/",
+  "results": [
+    {
+      "name": "mission1-desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "GameScene",
+      "completedTasks": 0,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission1-desktop-1280x720.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission1-desktop-1280x720-neck-crop.png",
+      "audit": {
+        "scene": "GameScene",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_1_DESKTOP",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 544.1328428892715,
+          "y": 191.05096645472338,
+          "width": 191.90747500137104,
+          "height": 372.86528434320985
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 544.1328428892715,
+              "y": 191.05096645472338,
+              "width": 191.90747500137104,
+              "height": 372.86528434320985
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "GameScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission1-phone-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": "GameScene",
+      "completedTasks": 0,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission1-phone-390x844.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission1-phone-390x844-neck-crop.png",
+      "audit": {
+        "scene": "GameScene",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_1_PHONE_PORTRAIT_TALL",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 133.70787720325967,
+          "y": 586.9497055482017,
+          "width": 122.65377477981303,
+          "height": 238.3681226399973
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 133.70787720325967,
+              "y": 586.9497055482017,
+              "width": 122.65377477981303,
+              "height": 238.3681226399973
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "GameScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission1-landscape-844x390",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "scene": "GameScene",
+      "completedTasks": 0,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission1-landscape-844x390.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission1-landscape-844x390-neck-crop.png",
+      "audit": {
+        "scene": "GameScene",
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "policyId": "MISSION_1_PHONE_LANDSCAPE_SHORT",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 615.6312146923987,
+          "y": 139.1153130895932,
+          "width": 116.80939635758443,
+          "height": 227.03080452058492
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 615.6312146923987,
+              "y": 139.1153130895932,
+              "width": 116.80939635758443,
+              "height": 227.03080452058492
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [
+          {
+            "name": "robot-system-chest-light",
+            "type": "Arc",
+            "bounds": {
+              "type": 5,
+              "x": 672.4749799147248,
+              "y": 139.81520710885525,
+              "width": 3.0700597018003464,
+              "height": 3.0700597018003464
+            }
+          },
+          {
+            "name": "robot-system-arm-left-light",
+            "type": "Arc",
+            "bounds": {
+              "type": 5,
+              "x": 661.8652147687972,
+              "y": 143.74307760968804,
+              "width": 2.257396839559078,
+              "height": 2.257396839559078
+            }
+          },
+          {
+            "name": "robot-system-arm-right-light",
+            "type": "Arc",
+            "bounds": {
+              "type": 5,
+              "x": 683.8974079228938,
+              "y": 143.74307760968804,
+              "width": 2.257396839559078,
+              "height": 2.257396839559078
+            }
+          }
+        ],
+        "currentScene": [
+          "StartScene",
+          "GameScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "assembly-preview-complete-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "RobotAssemblyPreviewScene",
+      "completedTasks": 5,
+      "previewState": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-assembly-preview-complete-1280x720.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-assembly-preview-complete-1280x720-neck-crop.png",
+      "audit": {
+        "scene": "RobotAssemblyPreviewScene",
+        "semanticMode": "DESKTOP",
+        "policyId": null,
+        "helperVisible": false,
+        "helperSpriteVisible": false,
+        "helperBounds": null,
+        "helperImages": [],
+        "previews": [
+          {
+            "name": "assembly-robot",
+            "state": 5,
+            "installedParts": [
+              "body",
+              "head",
+              "legLeft",
+              "legRight",
+              "armLeft",
+              "armRight",
+              "antenna"
+            ],
+            "blueprintParts": [
+              {
+                "name": "assembly-blueprint-legLeft",
+                "part": "legLeft",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-legRight",
+                "part": "legRight",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-armRight",
+                "part": "armRight",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-armLeft",
+                "part": "armLeft",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-body",
+                "part": "body",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-head",
+                "part": "head",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-antenna",
+                "part": "antenna",
+                "visible": false,
+                "alpha": 0.024
+              }
+            ],
+            "installedBlueprintsVisible": [],
+            "visibleForbiddenOverlays": [],
+            "bounds": {
+              "type": 5,
+              "x": 548.3087392693758,
+              "y": 212.44910895824432,
+              "width": 182.73023348450658,
+              "height": 251.23839104175568
+            }
+          }
+        ],
+        "assembledPreview": {
+          "name": "assembly-robot",
+          "state": 5,
+          "installedParts": [
+            "body",
+            "head",
+            "legLeft",
+            "legRight",
+            "armLeft",
+            "armRight",
+            "antenna"
+          ],
+          "blueprintParts": [
+            {
+              "name": "assembly-blueprint-legLeft",
+              "part": "legLeft",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-legRight",
+              "part": "legRight",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-armRight",
+              "part": "armRight",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-armLeft",
+              "part": "armLeft",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-body",
+              "part": "body",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-head",
+              "part": "head",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-antenna",
+              "part": "antenna",
+              "visible": false,
+              "alpha": 0.024
+            }
+          ],
+          "installedBlueprintsVisible": [],
+          "visibleForbiddenOverlays": [],
+          "bounds": {
+            "type": 5,
+            "x": 548.3087392693758,
+            "y": 212.44910895824432,
+            "width": 182.73023348450658,
+            "height": 251.23839104175568
+          }
+        },
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "RobotAssemblyPreviewScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "assembly-preview-complete-phone-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": "RobotAssemblyPreviewScene",
+      "completedTasks": 5,
+      "previewState": 5,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-assembly-preview-complete-phone-390x844.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-assembly-preview-complete-phone-390x844-neck-crop.png",
+      "audit": {
+        "scene": "RobotAssemblyPreviewScene",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": null,
+        "helperVisible": false,
+        "helperSpriteVisible": false,
+        "helperBounds": null,
+        "helperImages": [],
+        "previews": [
+          {
+            "name": "assembly-robot",
+            "state": 5,
+            "installedParts": [
+              "body",
+              "head",
+              "legLeft",
+              "legRight",
+              "armLeft",
+              "armRight",
+              "antenna"
+            ],
+            "blueprintParts": [
+              {
+                "name": "assembly-blueprint-legLeft",
+                "part": "legLeft",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-legRight",
+                "part": "legRight",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-armRight",
+                "part": "armRight",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-armLeft",
+                "part": "armLeft",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-body",
+                "part": "body",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-head",
+                "part": "head",
+                "visible": false,
+                "alpha": 0.024
+              },
+              {
+                "name": "assembly-blueprint-antenna",
+                "part": "antenna",
+                "visible": false,
+                "alpha": 0.024
+              }
+            ],
+            "installedBlueprintsVisible": [],
+            "visibleForbiddenOverlays": [],
+            "bounds": {
+              "type": 5,
+              "x": 103.30873926937579,
+              "y": 201.53785407543182,
+              "width": 182.73023348450658,
+              "height": 251.23839104175568
+            }
+          }
+        ],
+        "assembledPreview": {
+          "name": "assembly-robot",
+          "state": 5,
+          "installedParts": [
+            "body",
+            "head",
+            "legLeft",
+            "legRight",
+            "armLeft",
+            "armRight",
+            "antenna"
+          ],
+          "blueprintParts": [
+            {
+              "name": "assembly-blueprint-legLeft",
+              "part": "legLeft",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-legRight",
+              "part": "legRight",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-armRight",
+              "part": "armRight",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-armLeft",
+              "part": "armLeft",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-body",
+              "part": "body",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-head",
+              "part": "head",
+              "visible": false,
+              "alpha": 0.024
+            },
+            {
+              "name": "assembly-blueprint-antenna",
+              "part": "antenna",
+              "visible": false,
+              "alpha": 0.024
+            }
+          ],
+          "installedBlueprintsVisible": [],
+          "visibleForbiddenOverlays": [],
+          "bounds": {
+            "type": 5,
+            "x": 103.30873926937579,
+            "y": 201.53785407543182,
+            "width": 182.73023348450658,
+            "height": 251.23839104175568
+          }
+        },
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "RobotAssemblyPreviewScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission5-transition-desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "TransitionScene",
+      "completedTasks": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission5-transition-desktop-1280x720.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission5-transition-desktop-1280x720-neck-crop.png",
+      "audit": {
+        "scene": "TransitionScene",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_5_TRANSITION_DESKTOP",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 388.72395849214365,
+          "y": 208.70639059827477,
+          "width": 182.75583558616916,
+          "height": 355.0286201526163
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 388.72395849214365,
+              "y": 208.70639059827477,
+              "width": 182.75583558616916,
+              "height": 355.0286201526163
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "TransitionScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission5-transition-phone-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": "TransitionScene",
+      "completedTasks": 5,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission5-transition-phone-390x844.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission5-transition-phone-390x844-neck-crop.png",
+      "audit": {
+        "scene": "TransitionScene",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_5_TRANSITION_PHONE_PORTRAIT_TALL",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 10.57657284362061,
+          "y": 367.8346083828405,
+          "width": 151.79209670243995,
+          "height": 294.78660433516126
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 10.57657284362061,
+              "y": 367.8346083828405,
+              "width": 151.79209670243995,
+              "height": 294.78660433516126
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "TransitionScene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission6-desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "Mission6Scene",
+      "completedTasks": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission6-desktop-1280x720.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission6-desktop-1280x720-neck-crop.png",
+      "audit": {
+        "scene": "Mission6Scene",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_6_DESKTOP",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 430.2398088944882,
+          "y": 281.8738976794964,
+          "width": 144.73478722526636,
+          "height": 281.09160353990137
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 430.2398088944882,
+              "y": 281.8738976794964,
+              "width": 144.73478722526636,
+              "height": 281.09160353990137
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission6Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission6-complete-desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "Mission6Scene",
+      "completedTasks": 6,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission6-complete-desktop-1280x720.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission6-complete-desktop-1280x720-neck-crop.png",
+      "audit": {
+        "scene": "Mission6Scene",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_6_DESKTOP",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 430.23980573858444,
+          "y": 281.8797771186396,
+          "width": 144.71805823345733,
+          "height": 281.0830081488459
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 430.23980573858444,
+              "y": 281.8797771186396,
+              "width": 144.71805823345733,
+              "height": 281.0830081488459
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission6Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission6-phone-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": "Mission6Scene",
+      "completedTasks": 5,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission6-phone-390x844.png",
+      "crop": "docs\\qa\\screenshots\\stage8-4b-artifact-mission6-phone-390x844-neck-crop.png",
+      "audit": {
+        "scene": "Mission6Scene",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_6_PHONE_PORTRAIT_TALL",
+        "helperVisible": true,
+        "helperSpriteVisible": true,
+        "helperBounds": {
+          "type": 5,
+          "x": 75.34425554738216,
+          "y": 663.7385065382529,
+          "width": 82.74234034894504,
+          "height": 160.77005669507878
+        },
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 75.34425554738216,
+              "y": 663.7385065382529,
+              "width": 82.74234034894504,
+              "height": 160.77005669507878
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission6Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission7-desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "Mission7Scene",
+      "completedTasks": 6,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission7-desktop-1280x720.png",
+      "crop": null,
+      "audit": {
+        "scene": "Mission7Scene",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_7_DESKTOP",
+        "helperVisible": false,
+        "helperSpriteVisible": true,
+        "helperBounds": null,
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 1107.248046875,
+              "y": 624.7999877929688,
+              "width": 0,
+              "height": 0
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission7Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission7-phone-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": "Mission7Scene",
+      "completedTasks": 6,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission7-phone-390x844.png",
+      "crop": null,
+      "audit": {
+        "scene": "Mission7Scene",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_7_PHONE_PORTRAIT_TALL",
+        "helperVisible": false,
+        "helperSpriteVisible": true,
+        "helperBounds": null,
+        "helperImages": [
+          {
+            "name": "robot-v2-helper-sprite",
+            "texture": "robot-v2-helper",
+            "bounds": {
+              "type": 5,
+              "x": 195,
+              "y": 765.77001953125,
+              "width": 0,
+              "height": 0
+            }
+          }
+        ],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission7Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission8-desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "scene": "Mission8Scene",
+      "completedTasks": 7,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission8-desktop-1280x720.png",
+      "crop": null,
+      "audit": {
+        "scene": "Mission8Scene",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_8_DESKTOP",
+        "helperVisible": false,
+        "helperSpriteVisible": false,
+        "helperBounds": null,
+        "helperImages": [],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission8Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission8-phone-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scene": "Mission8Scene",
+      "completedTasks": 7,
+      "mobile": true,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4b-artifact-mission8-phone-390x844.png",
+      "crop": null,
+      "audit": {
+        "scene": "Mission8Scene",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "policyId": "MISSION_8_PHONE_PORTRAIT_TALL",
+        "helperVisible": false,
+        "helperSpriteVisible": false,
+        "helperBounds": null,
+        "helperImages": [],
+        "previews": [],
+        "shapesNearHelper": [],
+        "currentScene": [
+          "StartScene",
+          "Mission8Scene"
+        ]
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "helperTextureWhenVisible": true,
+        "installedBlueprintsHidden": true,
+        "noCircleOrRectangleOverlay": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "failures": []
+}

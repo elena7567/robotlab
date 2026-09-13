@@ -18,6 +18,7 @@ import { connectionsMechanic } from '../mechanics/connections';
 import { programmingMechanic } from '../mechanics/programming';
 import { oddOneOutMechanic } from '../mechanics/oddOneOut';
 import { robotTestCourse } from '../mechanics/robotTestCourse';
+import { mission10Controller } from '../mechanics/mission10/mission10Controller.ts';
 
 const HELPER_VISIBLE_HEIGHT = 1502;
 const HELPER_BOTTOM_TRANSPARENT_PX = 16;
@@ -36,17 +37,23 @@ export class StartScene extends Phaser.Scene {
     addLogicalLaboratoryImage(this, worldLayer, 'bg-start-laboratory');
     const worldScale = portrait
       ? clampValue(0.5, width / 610, 0.9)
-      : Math.min(width / LOGICAL_SCENE_WIDTH, height / 720);
-    worldLayer.setPosition(
-      width / 2 - PLATFORM_CENTER_X * worldScale,
-      startLayout.platformY - PLATFORM_CONTACT_Y * worldScale,
-    ).setScale(worldScale);
+      : Math.max(width / LOGICAL_SCENE_WIDTH, height / 720);
+    const worldOffsetX = width / 2 - PLATFORM_CENTER_X * worldScale;
+    const worldOffsetY = portrait
+      ? startLayout.platformY - PLATFORM_CONTACT_Y * worldScale
+      : (height - 720 * worldScale) / 2;
+    const platformY = portrait ? startLayout.platformY : worldOffsetY + PLATFORM_CONTACT_Y * worldScale;
+    const playY = portrait ? startLayout.playY : Math.min(
+      height - layout.safe.bottom - startLayout.playHeight / 2,
+      platformY + layout.gapM + startLayout.playHeight / 2,
+    );
+    worldLayer.setPosition(worldOffsetX, worldOffsetY).setScale(worldScale);
     this.add.rectangle(0, 0, width, height, 0x17334d, portrait ? 0.18 : 0.08).setOrigin(0).setDepth(-1);
 
     const heroScale = startLayout.robotHeight / HELPER_VISIBLE_HEIGHT;
     const robot = this.add.image(
       width / 2,
-      startLayout.platformY + HELPER_BOTTOM_TRANSPARENT_PX * heroScale,
+      platformY + HELPER_BOTTOM_TRANSPARENT_PX * heroScale,
       'robot-v2-helper',
     ).setOrigin(0.5, 1).setScale(heroScale).setName('start-hero-robot').setData('characterRole', 'HERO');
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
@@ -82,7 +89,7 @@ export class StartScene extends Phaser.Scene {
       wordWrap: { width: startLayout.subtitleMaxWidth },
     }).setOrigin(0.5).setName('start-subtitle');
 
-    const playButton = addControl(this, width / 2, startLayout.playY, 'Играть', () => {
+    const playButton = addControl(this, width / 2, playY, 'Играть', () => {
       audioManager.stopMusic(180);
       sessionState.reset();
       oddOneOutMechanic.reset();
@@ -94,13 +101,14 @@ export class StartScene extends Phaser.Scene {
       connectionsMechanic.reset();
       programmingMechanic.reset();
       robotTestCourse.reset();
+      mission10Controller.reset();
       this.scene.start('GameScene');
     }, {
       width: startLayout.playWidth,
       height: startLayout.playHeight,
       fontSize: startLayout.playFontSize,
     }).setName('start-play-button');
-    playButton.setData('platformY', startLayout.platformY);
+    playButton.setData('platformY', platformY);
     restartOnViewportResize(this);
     markSceneReady(this);
   }

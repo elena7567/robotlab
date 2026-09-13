@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "visual": "PENDING INDEPENDENT REVIEW",
+  "bundle": "index-yrT2Eun-.js",
+  "checks": 286,
+  "failed": [],
+  "landscape": [
+    "1280x720",
+    "1600x900",
+    "1920x1080",
+    "740x360",
+    "844x390",
+    "915x412",
+    "1024x768"
+  ],
+  "portrait": [
+    "390x844",
+    "412x915"
+  ],
+  "evidence": [
+    "stage10-remediation-full-mission-bright-final/report.json",
+    "stage10-remediation-full-mission-bright-remaining/report.json",
+    "stage10-remediation-full-mission-bright-orientation-verified/report.json"
+  ],
+  "notes": [
+    "First three desktop full flows accepted from original run. Original740 readiness timeout cause remains unproven; isolated740 full flow passed without production changes.",
+    "Remaining run completed all four mobile/tablet full flows with zero runtime/network errors. Its915 portrait sample used stale landscape geometry because fixed300ms wait raced resize; excluded portrait samples and replaced both orientation runs with explicit Phaser dimension and gate readiness.",
+    "Focused orientation rerun36/36PASS, actual portrait gates captured and exact state persisted after return.",
+    "Browser emulation only. No physical device or speaker-audibility claim."
+  ]
+}

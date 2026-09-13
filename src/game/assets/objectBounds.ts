@@ -11,6 +11,9 @@ export interface VisibleTextureBounds {
 
 /** Alpha >= 16 bounds measured from the immutable production PNG sources. */
 export const OBJECT_VISIBLE_BOUNDS: Readonly<Record<string, VisibleTextureBounds>> = {
+  'MISSION10_LAUNCH_CONSOLE': { sourceWidth: 1448, sourceHeight: 1086, x: 179, y: 79, width: 1091, height: 958 },
+  'MISSION10_BEACON_OFF': { sourceWidth: 1086, sourceHeight: 1448, x: 61, y: 64, width: 964, height: 1337 },
+  'MISSION10_BEACON_ON': { sourceWidth: 1024, sourceHeight: 1536, x: 16, y: 56, width: 993, height: 1420 },
   'sequence-gear': { sourceWidth: 1254, sourceHeight: 1254, x: 22, y: 21, width: 1210, height: 1207 },
   'sequence-lightning': { sourceWidth: 1254, sourceHeight: 1254, x: 287, y: 35, width: 728, height: 1164 },
   'sequence-planet': { sourceWidth: 1254, sourceHeight: 1254, x: 25, y: 142, width: 1214, height: 912 },

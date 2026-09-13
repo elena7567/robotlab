@@ -1,0 +1,16 @@
+{
+  "result": "FAIL",
+  "checks": [
+    {
+      "name": "exact-final-bundle",
+      "ok": true,
+      "actual": [
+        "http://127.0.0.1:4198/assets/index-BOK0S7-n.js"
+      ]
+    }
+  ],
+  "errors": [
+    "page.waitForFunction: Timeout 15000ms exceeded.\n    at D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-final-bundle-smoke.cjs:2:1107"
+  ],
+  "shots": []
+}

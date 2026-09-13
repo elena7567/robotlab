@@ -3,6 +3,8 @@ import { AUDIO_ASSETS, IMAGE_ASSETS, MISSING_ASSET_IDS } from '../assets/manifes
 import { audioManager } from '../audio/AudioManager';
 import { robotTestCourse } from '../mechanics/robotTestCourse';
 import { sessionState } from '../state/sessionState';
+import { mission10Controller } from '../mechanics/mission10/mission10Controller.ts';
+import type { Mission10StageShortcut } from '../mechanics/mission10/mission10State.ts';
 
 export class PreloadScene extends Phaser.Scene {
   constructor() { super('PreloadScene'); }
@@ -25,6 +27,15 @@ export class PreloadScene extends Phaser.Scene {
       sessionState.enterMission9Qa();
       robotTestCourse.reset();
       this.scene.start('Mission9Scene');
+      return;
+    }
+    if (query.get('qaMission') === '10') {
+      sessionState.enterMission10Qa();
+      const requested = (query.get('stage') ?? 'intro').toLowerCase();
+      const shortcuts: readonly Mission10StageShortcut[] = ['intro', 'path', 'energy', 'signal', 'launch', 'final', 'complete'];
+      const stage = shortcuts.includes(requested as Mission10StageShortcut) ? requested as Mission10StageShortcut : 'intro';
+      mission10Controller.initializeStageShortcut(stage, 1010);
+      this.scene.start('Mission10Scene');
       return;
     }
     this.scene.start('StartScene');

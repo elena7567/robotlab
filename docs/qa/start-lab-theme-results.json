@@ -1,0 +1,215 @@
+{
+  "checks": {
+    "correctAssetDecoded": true,
+    "noAutoplayBeforeGesture": true,
+    "gestureUnlocksAudio": true,
+    "musicStartsAfterAllowedGesture": true,
+    "mute": true,
+    "unmute": true,
+    "configuredVolume": true,
+    "duration": true,
+    "loopBoundary": true,
+    "startSceneExit": true,
+    "returnToStartScene": true,
+    "noDuplicatePlayback": true,
+    "refresh": true,
+    "noRuntimeErrors": true
+  },
+  "failures": [],
+  "errors": {
+    "console": [],
+    "page": [],
+    "requests": [],
+    "responses": []
+  },
+  "snapshots": {
+    "beforeGesture": {
+      "activeScenes": [
+        "StartScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": false,
+      "storedMuted": "false",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 0,
+      "musicPlaying": 0,
+      "musicPaused": 0,
+      "musicLooping": 0,
+      "musicVolumes": [],
+      "musicSeek": null,
+      "duration": null,
+      "events": []
+    },
+    "afterMuteGesture": {
+      "activeScenes": [
+        "StartScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": true,
+      "storedMuted": "true",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "musicPaused": 0,
+      "musicLooping": 1,
+      "musicVolumes": [
+        0.25999999046325684
+      ],
+      "musicSeek": 0.21066666666666656,
+      "duration": 20.035916666666665,
+      "events": [
+        {
+          "key": "audio-start-lab-theme",
+          "type": "play",
+          "at": 2857.39999999851
+        }
+      ]
+    },
+    "afterUnmute": {
+      "activeScenes": [
+        "StartScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": false,
+      "storedMuted": "false",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "musicPaused": 0,
+      "musicLooping": 1,
+      "musicVolumes": [
+        0.25999999046325684
+      ],
+      "musicSeek": 0.6400000000000001,
+      "duration": 20.035916666666665,
+      "events": [
+        {
+          "key": "audio-start-lab-theme",
+          "type": "play",
+          "at": 2857.39999999851
+        }
+      ]
+    },
+    "afterLoopBoundary": {
+      "activeScenes": [
+        "StartScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": false,
+      "storedMuted": "false",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "musicPaused": 0,
+      "musicLooping": 1,
+      "musicVolumes": [
+        0.25999999046325684
+      ],
+      "musicSeek": 0.128000000000001,
+      "duration": 20.035916666666665,
+      "events": [
+        {
+          "key": "audio-start-lab-theme",
+          "type": "play",
+          "at": 2857.39999999851
+        }
+      ]
+    },
+    "afterExit": {
+      "activeScenes": [
+        "GameScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": false,
+      "storedMuted": "false",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 1,
+      "musicPlaying": 0,
+      "musicPaused": 0,
+      "musicLooping": 1,
+      "musicVolumes": [
+        0.25999999046325684
+      ],
+      "musicSeek": 0,
+      "duration": 20.035916666666665,
+      "events": [
+        {
+          "key": "audio-start-lab-theme",
+          "type": "play",
+          "at": 2857.39999999851
+        },
+        {
+          "key": "audio-start-lab-theme",
+          "type": "stop",
+          "at": 4255.29999999702
+        }
+      ]
+    },
+    "afterReturn": {
+      "activeScenes": [
+        "StartScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": false,
+      "storedMuted": "false",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 1,
+      "musicPlaying": 1,
+      "musicPaused": 0,
+      "musicLooping": 1,
+      "musicVolumes": [
+        0.25999999046325684
+      ],
+      "musicSeek": 0.4213333333333331,
+      "duration": 20.035916666666665,
+      "events": [
+        {
+          "key": "audio-start-lab-theme",
+          "type": "play",
+          "at": 2857.39999999851
+        },
+        {
+          "key": "audio-start-lab-theme",
+          "type": "stop",
+          "at": 4255.29999999702
+        },
+        {
+          "key": "audio-start-lab-theme",
+          "type": "play",
+          "at": 4680.19999999553
+        }
+      ]
+    },
+    "afterRefresh": {
+      "activeScenes": [
+        "StartScene"
+      ],
+      "audioContextState": "running",
+      "locked": false,
+      "muted": false,
+      "storedMuted": "false",
+      "newKeyDecoded": true,
+      "oldKeyDecoded": false,
+      "musicInstances": 0,
+      "musicPlaying": 0,
+      "musicPaused": 0,
+      "musicLooping": 0,
+      "musicVolumes": [],
+      "musicSeek": null,
+      "duration": null,
+      "events": []
+    }
+  }
+}

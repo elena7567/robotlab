@@ -100,6 +100,7 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
     this.assemblyState = state;
     const installed = new Set(ROBOT_ASSEMBLY_PARTS_BY_PROGRESS[state]);
     for (const [name, part] of this.installedParts) part.setVisible(installed.has(name));
+    for (const [name, part] of this.silhouetteParts) part.setVisible(!installed.has(name));
     this.setData('assemblyState', state);
     this.setData('installedParts', [...installed]);
   }
@@ -275,8 +276,6 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
       this.powerVisuals.push(visual);
       return visual;
     };
-    addPowerVisual(this.scene.add.ellipse(0, -720, 320, 270, 0x58e9ff).setName('robot-chest-glow'), 0.015, 0.16);
-    addPowerVisual(this.scene.add.rectangle(0, -704, 154, 74, 0x6ff3ff).setName('robot-chest-display'), 0.08, 0.92);
     addPowerVisual(this.scene.add.circle(-62, -1004, 25, 0xa8fbff).setName('robot-eye-left'), 0.12, 0.96);
     addPowerVisual(this.scene.add.circle(62, -1004, 25, 0xa8fbff).setName('robot-eye-right'), 0.12, 0.96);
     addPowerVisual(this.scene.add.circle(0, -1234, 46, 0xffef83).setName('robot-antenna-glow'), 0.025, 0.85);

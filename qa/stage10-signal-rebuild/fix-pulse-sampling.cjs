@@ -1,0 +1,6 @@
+const fs=require('node:fs');const f='qa/stage10-signal-rebuild/capture-final.cjs';let s=fs.readFileSync(f,'utf8');
+const first="await p.evaluate(()=>new Promise(resolve=>{const s=window.__ROBOTLAB_GAME__.scene.getScene('Mission10Scene');s.time.delayedCall(180,()=>{s.time.timeScale=0;s.tweens.timeScale=0;resolve();});s.time.timeScale=1;s.tweens.timeScale=1;}));";
+const second="await p.evaluate(()=>new Promise(resolve=>{const s=window.__ROBOTLAB_GAME__.scene.getScene('Mission10Scene');s.time.delayedCall(220,()=>{s.time.timeScale=0;s.tweens.timeScale=0;resolve();});s.time.timeScale=1;s.tweens.timeScale=1;}));";
+const advance=threshold=>`await p.evaluate(threshold=>new Promise(resolve=>{const g=window.__ROBOTLAB_GAME__,s=g.scene.getScene('Mission10Scene');const cb=()=>{const t=s.tweens.getTweens().find(t=>t.targets.some(o=>o.name==='mission10-signal-success-pulse'));if(!t||t.elapsed>=threshold){g.events.off('poststep',cb);s.time.timeScale=0;s.tweens.timeScale=0;resolve();}};g.events.on('poststep',cb);s.time.timeScale=1;s.tweens.timeScale=1;cb();}),${threshold});`;
+s=s.replace(first,advance('180'));s=s.replace(second,advance('400'));fs.writeFileSync(f,s);
+const main='qa/stage10-signal-rebuild-browser.cjs';let m=fs.readFileSync(main,'utf8');m=m.replace(first,advance('180')).replace(second,advance('400'));fs.writeFileSync(main,m);

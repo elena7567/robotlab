@@ -172,6 +172,9 @@ async function main() {
   const lanUrl = `http://${adapter.address}:${PORT}/`;
   const mission9Local = `${LOOPBACK_URL}?qaMission=9`;
   const mission9Lan = `${lanUrl}?qaMission=9`;
+  const mission10Stages = ['path', 'energy', 'signal', 'launch', 'final'];
+  const mission10Local = `${LOOPBACK_URL}?qaMission=10`;
+  const mission10Lan = `${lanUrl}?qaMission=10`;
   let listener = getListener();
   let startedPid = null;
 
@@ -214,6 +217,12 @@ async function main() {
   await verify(lanUrl);
   await verify(mission9Local);
   await verify(mission9Lan);
+  await verify(mission10Local);
+  await verify(mission10Lan);
+  for (const stage of mission10Stages) {
+    await verify(`${mission10Local}&stage=${stage}`);
+    await verify(`${mission10Lan}&stage=${stage}`);
+  }
   if (!listener || !listenerBelongsToRobotLab(listener) || !listenerIsPreview(listener) || !listenerIsPublic(listener)) {
     throw new Error('The verified preview listener identity, mode, or bind address could not be confirmed.');
   }
@@ -230,6 +239,12 @@ async function main() {
   console.log(`SAMSUNG URL: ${lanUrl}`);
   console.log(`MISSION 9 PC DIRECT: ${mission9Local}`);
   console.log(`MISSION 9 SAMSUNG DIRECT: ${mission9Lan}`);
+  console.log(`MISSION 10 PC DIRECT: ${mission10Local}`);
+  console.log(`MISSION 10 SAMSUNG DIRECT: ${mission10Lan}`);
+  for (const stage of mission10Stages) {
+    console.log(`MISSION 10 ${stage.toUpperCase()} PC: ${mission10Local}&stage=${stage}`);
+    console.log(`MISSION 10 ${stage.toUpperCase()} SAMSUNG: ${mission10Lan}&stage=${stage}`);
+  }
   console.log('PC HTTP: PASS');
   console.log('LAN HTTP: PASS');
   console.log('DIRECT QA HTTP: PASS');

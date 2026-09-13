@@ -1,0 +1,4583 @@
+{
+  "result": "READY_FOR_PHYSICAL_SAMSUNG_REVIEW",
+  "evaluation": {
+    "titleStyle": true,
+    "titleContrast": true,
+    "dragThreshold": true,
+    "pointerDownFeedback": true,
+    "pointerOffset": true,
+    "targetHighlight": true,
+    "wrongDropFeedback": true,
+    "correctSnapFeedback": true,
+    "candidateHitAreas": true,
+    "hitAreaOverlap": true,
+    "browserGestureConflict": true,
+    "orientationStyle": true,
+    "orientationAnimation": true,
+    "reducedMotion": true,
+    "runtimeClean": true
+  },
+  "bounds": {
+    "844x390": {
+      "bridge": {
+        "visible": {
+          "x": 308.17500000000007,
+          "y": 183.46080000000003,
+          "width": 243.98399999999998,
+          "height": 82.212
+        },
+        "acceptance": {
+          "x": 286.9408000000001,
+          "y": 167.46080000000003,
+          "width": 286.4524,
+          "height": 114.212
+        }
+      },
+      "gate": {
+        "visible": {
+          "x": 604.4129634782608,
+          "y": 185.44276521739133,
+          "width": 82.86386086956523,
+          "height": 77.6848695652174
+        },
+        "acceptance": {
+          "x": 583.1787634782609,
+          "y": 167.44276521739133,
+          "width": 125.33226086956523,
+          "height": 113.6848695652174
+        }
+      },
+      "power": {
+        "visible": {
+          "x": 516.046424347826,
+          "y": 225.2994191304348,
+          "width": 40.58315130434784,
+          "height": 35.14521043478262
+        },
+        "acceptance": {
+          "x": 494.046424347826,
+          "y": 207.2994191304348,
+          "width": 84.58315130434784,
+          "height": 71.14521043478263
+        }
+      }
+    },
+    "915x412": {
+      "bridge": {
+        "visible": {
+          "x": 344.3696000000001,
+          "y": 198.83528,
+          "width": 243.98399999999998,
+          "height": 82.212
+        },
+        "acceptance": {
+          "x": 321.3294400000001,
+          "y": 182.83528,
+          "width": 290.06431999999995,
+          "height": 114.212
+        }
+      },
+      "gate": {
+        "visible": {
+          "x": 657.5311624347826,
+          "y": 193.62741565217388,
+          "width": 92.47254260869565,
+          "height": 86.69300869565217
+        },
+        "acceptance": {
+          "x": 634.4910024347826,
+          "y": 175.62741565217388,
+          "width": 138.55286260869565,
+          "height": 122.69300869565217
+        }
+      },
+      "power": {
+        "visible": {
+          "x": 558.9178650434783,
+          "y": 238.1057453913043,
+          "width": 45.28906991304348,
+          "height": 39.22055930434782
+        },
+        "acceptance": {
+          "x": 535.8777050434783,
+          "y": 220.1057453913043,
+          "width": 91.36938991304348,
+          "height": 75.22055930434783
+        }
+      }
+    }
+  },
+  "screenshots": [
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-idle.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-wrong-return.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-grabbed.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-dragging.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-over-target.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-correct-snap.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-idle.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-wrong-return.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-grabbed.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-dragging.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-over-target.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-correct-snap.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-idle.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-wrong-return.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-grabbed.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-dragging.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-over-target.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-correct-snap.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-idle.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-wrong-return.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-grabbed.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-dragging.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-over-target.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-correct-snap.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-idle.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-wrong-return.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-grabbed.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-dragging.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-over-target.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-correct-snap.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-idle.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-wrong-return.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-grabbed.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-dragging.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-over-target.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-correct-snap.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-390x844-orientation.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-412x915-orientation.png",
+    "docs\\qa\\screenshots\\stage9-6-mission9-390x844-orientation-reduced-motion.png"
+  ],
+  "results": [
+    {
+      "viewport": "844x390",
+      "shots": [
+        {
+          "state": "idle",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-idle.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "IDLE",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 308.17500000000007,
+                "y": 183.46080000000003,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 286.9408000000001,
+                "y": 167.46080000000003,
+                "width": 286.4524,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "wrong-return",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-wrong-return.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НЕ ПОДХОДИТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "RETURNING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 440,
+                "y": 224.35000000000002
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 308.17500000000007,
+                "y": 183.46080000000003,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 286.9408000000001,
+                "y": 167.46080000000003,
+                "width": 286.4524,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "НЕ ПОДХОДИТ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "grabbed",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-grabbed.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "GRABBED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 308.17500000000007,
+                "y": 183.46080000000003,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 286.9408000000001,
+                "y": 167.46080000000003,
+                "width": 286.4524,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "dragging",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-dragging.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "DRAGGING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 152,
+                "y": 301.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 308.17500000000007,
+                "y": 183.46080000000003,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 286.9408000000001,
+                "y": 167.46080000000003,
+                "width": 286.4524,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "over-target",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-over-target.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 430,
+                "y": 224.35000000000002
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 308.17500000000007,
+                "y": 183.46080000000003,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 286.9408000000001,
+                "y": 167.46080000000003,
+                "width": 286.4524,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "correct-snap",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-bridge-correct-snap.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "МОСТ ГОТОВ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "SNAPPING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.02,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 430.16700000000003,
+                "y": 224.56680000000003
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 308.17500000000007,
+                "y": 183.46080000000003,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 286.9408000000001,
+                "y": 167.46080000000003,
+                "width": 286.4524,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "МОСТ ГОТОВ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "idle",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-idle.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "LOCKED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 604.4129634782608,
+                "y": 185.44276521739133,
+                "width": 82.86386086956523,
+                "height": 77.6848695652174
+              },
+              "acceptance": {
+                "x": 583.1787634782609,
+                "y": 167.44276521739133,
+                "width": 125.33226086956523,
+                "height": 113.6848695652174
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "wrong-return",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-wrong-return.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НЕ ТОТ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "RETURNING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 645,
+                "y": 224.35000000000002
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 604.4129634782608,
+                "y": 185.44276521739133,
+                "width": 82.86386086956523,
+                "height": 77.6848695652174
+              },
+              "acceptance": {
+                "x": 583.1787634782609,
+                "y": 167.44276521739133,
+                "width": 125.33226086956523,
+                "height": 113.6848695652174
+              }
+            },
+            "title": {
+              "text": "НЕ ТОТ КЛЮЧ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "grabbed",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-grabbed.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "GRABBED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 604.4129634782608,
+                "y": 185.44276521739133,
+                "width": 82.86386086956523,
+                "height": 77.6848695652174
+              },
+              "acceptance": {
+                "x": 583.1787634782609,
+                "y": 167.44276521739133,
+                "width": 125.33226086956523,
+                "height": 113.6848695652174
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "dragging",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-dragging.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 608,
+                "y": 301.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 604.4129634782608,
+                "y": 185.44276521739133,
+                "width": 82.86386086956523,
+                "height": 77.6848695652174
+              },
+              "acceptance": {
+                "x": 583.1787634782609,
+                "y": 167.44276521739133,
+                "width": 125.33226086956523,
+                "height": 113.6848695652174
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "over-target",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-over-target.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 645,
+                "y": 224.35000000000002
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 604.4129634782608,
+                "y": 185.44276521739133,
+                "width": 82.86386086956523,
+                "height": 77.6848695652174
+              },
+              "acceptance": {
+                "x": 583.1787634782609,
+                "y": 167.44276521739133,
+                "width": 125.33226086956523,
+                "height": 113.6848695652174
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "correct-snap",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-gate-correct-snap.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ВОРОТА ОТКРЫТЫ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "SNAPPING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.02,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 645.8448939130435,
+                "y": 224.28520000000003
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 604.4129634782608,
+                "y": 185.44276521739133,
+                "width": 82.86386086956523,
+                "height": 77.6848695652174
+              },
+              "acceptance": {
+                "x": 583.1787634782609,
+                "y": 167.44276521739133,
+                "width": 125.33226086956523,
+                "height": 113.6848695652174
+              }
+            },
+            "title": {
+              "text": "ВОРОТА ОТКРЫТЫ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "idle",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-idle.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "LOCKED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 516.046424347826,
+                "y": 225.2994191304348,
+                "width": 40.58315130434784,
+                "height": 35.14521043478262
+              },
+              "acceptance": {
+                "x": 494.046424347826,
+                "y": 207.2994191304348,
+                "width": 84.58315130434784,
+                "height": 71.14521043478263
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "wrong-return",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-wrong-return.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НЕ ПОДХОДИТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "RETURNING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 546,
+                "y": 242.35000000000002
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 516.046424347826,
+                "y": 225.2994191304348,
+                "width": 40.58315130434784,
+                "height": 35.14521043478262
+              },
+              "acceptance": {
+                "x": 494.046424347826,
+                "y": 207.2994191304348,
+                "width": 84.58315130434784,
+                "height": 71.14521043478263
+              }
+            },
+            "title": {
+              "text": "НЕ ПОДХОДИТ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "grabbed",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-grabbed.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "GRABBED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 422,
+                "y": 339.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 516.046424347826,
+                "y": 225.2994191304348,
+                "width": 40.58315130434784,
+                "height": 35.14521043478262
+              },
+              "acceptance": {
+                "x": 494.046424347826,
+                "y": 207.2994191304348,
+                "width": 84.58315130434784,
+                "height": 71.14521043478263
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "dragging",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-dragging.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "DRAGGING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 380,
+                "y": 301.35
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 516.046424347826,
+                "y": 225.2994191304348,
+                "width": 40.58315130434784,
+                "height": 35.14521043478262
+              },
+              "acceptance": {
+                "x": 494.046424347826,
+                "y": 207.2994191304348,
+                "width": 84.58315130434784,
+                "height": 71.14521043478263
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "over-target",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-over-target.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 536,
+                "y": 242.35000000000002
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 516.046424347826,
+                "y": 225.2994191304348,
+                "width": 40.58315130434784,
+                "height": 35.14521043478262
+              },
+              "acceptance": {
+                "x": 494.046424347826,
+                "y": 207.2994191304348,
+                "width": 84.58315130434784,
+                "height": 71.14521043478263
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "correct-snap",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-844x390-power-correct-snap.png",
+          "inspect": {
+            "viewport": {
+              "width": 844,
+              "height": 390
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "СТАНЦИЯ ЗАПУСКАЕТСЯ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "SNAPPING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 540,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 650,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 84,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 194,
+                "y": 339.35
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.02,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 312,
+                  "y": 302.35,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 536.338,
+                "y": 242.8720243478261
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 516.046424347826,
+                "y": 225.2994191304348,
+                "width": 40.58315130434784,
+                "height": 35.14521043478262
+              },
+              "acceptance": {
+                "x": 494.046424347826,
+                "y": 207.2994191304348,
+                "width": 84.58315130434784,
+                "height": 71.14521043478263
+              }
+            },
+            "title": {
+              "text": "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+              "bounds": {
+                "x": 242.00000000000003,
+                "y": 60.970000000000006,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        }
+      ],
+      "final": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "stage": "COMPLETE",
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "РОБОТ ГОТОВ К ЗАПУСКУ!",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "ВПЕРЕДИ - ПЕРВЫЙ ЗАПУСК",
+          "НА ГЛАВНУЮ"
+        ],
+        "dragThreshold": 6,
+        "interactionState": "SNAPPING",
+        "touchAction": "none",
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "alpha": 1,
+            "scaleX": 1,
+            "depth": 22,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            },
+            "x": 650,
+            "y": 339.35
+          },
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "alpha": 1,
+            "scaleX": 1,
+            "depth": 22,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            },
+            "x": 194,
+            "y": 339.35
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "alpha": 1,
+            "scaleX": 1.02,
+            "depth": 22,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            },
+            "x": 536.338,
+            "y": 242.8720243478261
+          }
+        ],
+        "target": {
+          "visible": {
+            "x": 516.046424347826,
+            "y": 225.2994191304348,
+            "width": 40.58315130434784,
+            "height": 35.14521043478262
+          },
+          "acceptance": {
+            "x": 494.046424347826,
+            "y": 207.2994191304348,
+            "width": 84.58315130434784,
+            "height": 71.14521043478263
+          }
+        },
+        "title": {
+          "text": "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "bounds": {
+            "x": 242.00000000000003,
+            "y": 60.970000000000006,
+            "width": 360,
+            "height": 28
+          },
+          "color": "#f7fdff",
+          "stroke": "#06243b",
+          "strokeThickness": 6
+        },
+        "orientation": {
+          "gate": false,
+          "icon": false,
+          "helper": false,
+          "animated": null,
+          "reducedMotion": null,
+          "oldCopy": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "915x412",
+      "shots": [
+        {
+          "state": "idle",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-idle.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "IDLE",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 344.3696000000001,
+                "y": 198.83528,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 321.3294400000001,
+                "y": 182.83528,
+                "width": 290.06431999999995,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "wrong-return",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-wrong-return.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НЕ ПОДХОДИТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "RETURNING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 466.50000000000006,
+                "y": 239.57999999999998
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 344.3696000000001,
+                "y": 198.83528,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 321.3294400000001,
+                "y": 182.83528,
+                "width": 290.06431999999995,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "НЕ ПОДХОДИТ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "grabbed",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-grabbed.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "GRABBED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 344.3696000000001,
+                "y": 198.83528,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 321.3294400000001,
+                "y": 182.83528,
+                "width": 290.06431999999995,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "dragging",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-dragging.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "DRAGGING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 187.50000000000006,
+                "y": 322.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 344.3696000000001,
+                "y": 198.83528,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 321.3294400000001,
+                "y": 182.83528,
+                "width": 290.06431999999995,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "over-target",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-over-target.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ПОЧИНИ МОСТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 466.50000000000006,
+                "y": 239.57999999999998
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 344.3696000000001,
+                "y": 198.83528,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 321.3294400000001,
+                "y": 182.83528,
+                "width": 290.06431999999995,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "ПОЧИНИ МОСТ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "correct-snap",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-bridge-correct-snap.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "BRIDGE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "МОСТ ГОТОВ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "SNAPPING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-bridge-wrong-truss",
+                "action": "bridge-wrong-truss",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-wrong-arc",
+                "action": "bridge-wrong-arc",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-bridge-correct",
+                "action": "bridge-correct",
+                "alpha": 1,
+                "scaleX": 1.02,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 466.36160000000007,
+                "y": 239.94128
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 344.3696000000001,
+                "y": 198.83528,
+                "width": 243.98399999999998,
+                "height": 82.212
+              },
+              "acceptance": {
+                "x": 321.3294400000001,
+                "y": 182.83528,
+                "width": 290.06431999999995,
+                "height": 114.212
+              }
+            },
+            "title": {
+              "text": "МОСТ ГОТОВ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "idle",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-idle.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "LOCKED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 657.5311624347826,
+                "y": 193.62741565217388,
+                "width": 92.47254260869565,
+                "height": 86.69300869565217
+              },
+              "acceptance": {
+                "x": 634.4910024347826,
+                "y": 175.62741565217388,
+                "width": 138.55286260869565,
+                "height": 122.69300869565217
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "wrong-return",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-wrong-return.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НЕ ТОТ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "RETURNING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 703.5,
+                "y": 236.57999999999998
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 657.5311624347826,
+                "y": 193.62741565217388,
+                "width": 92.47254260869565,
+                "height": 86.69300869565217
+              },
+              "acceptance": {
+                "x": 634.4910024347826,
+                "y": 175.62741565217388,
+                "width": 138.55286260869565,
+                "height": 122.69300869565217
+              }
+            },
+            "title": {
+              "text": "НЕ ТОТ КЛЮЧ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "grabbed",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-grabbed.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "GRABBED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 657.5311624347826,
+                "y": 193.62741565217388,
+                "width": 92.47254260869565,
+                "height": 86.69300869565217
+              },
+              "acceptance": {
+                "x": 634.4910024347826,
+                "y": 175.62741565217388,
+                "width": 138.55286260869565,
+                "height": 122.69300869565217
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "dragging",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-dragging.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 643.5,
+                "y": 322.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 657.5311624347826,
+                "y": 193.62741565217388,
+                "width": 92.47254260869565,
+                "height": 86.69300869565217
+              },
+              "acceptance": {
+                "x": 634.4910024347826,
+                "y": 175.62741565217388,
+                "width": 138.55286260869565,
+                "height": 122.69300869565217
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "over-target",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-over-target.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НАЙДИ КЛЮЧ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 703.5,
+                "y": 236.57999999999998
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 657.5311624347826,
+                "y": 193.62741565217388,
+                "width": 92.47254260869565,
+                "height": 86.69300869565217
+              },
+              "acceptance": {
+                "x": 634.4910024347826,
+                "y": 175.62741565217388,
+                "width": 138.55286260869565,
+                "height": 122.69300869565217
+              }
+            },
+            "title": {
+              "text": "НАЙДИ КЛЮЧ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "correct-snap",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-gate-correct-snap.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "GATE",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ВОРОТА ОТКРЫТЫ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "SNAPPING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-gate-wrong-2",
+                "action": "gate-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-wrong-1",
+                "action": "gate-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-gate-correct",
+                "action": "gate-correct",
+                "alpha": 1,
+                "scaleX": 1.02,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 703.7674337391304,
+                "y": 236.97391999999996
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 657.5311624347826,
+                "y": 193.62741565217388,
+                "width": 92.47254260869565,
+                "height": 86.69300869565217
+              },
+              "acceptance": {
+                "x": 634.4910024347826,
+                "y": 175.62741565217388,
+                "width": 138.55286260869565,
+                "height": 122.69300869565217
+              }
+            },
+            "title": {
+              "text": "ВОРОТА ОТКРЫТЫ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "idle",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-idle.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "LOCKED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 558.9178650434783,
+                "y": 238.1057453913043,
+                "width": 45.28906991304348,
+                "height": 39.22055930434782
+              },
+              "acceptance": {
+                "x": 535.8777050434783,
+                "y": 220.1057453913043,
+                "width": 91.36938991304348,
+                "height": 75.22055930434783
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "wrong-return",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-wrong-return.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "НЕ ПОДХОДИТ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "RETURNING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 581.5,
+                "y": 257.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 558.9178650434783,
+                "y": 238.1057453913043,
+                "width": 45.28906991304348,
+                "height": 39.22055930434782
+              },
+              "acceptance": {
+                "x": 535.8777050434783,
+                "y": 220.1057453913043,
+                "width": 91.36938991304348,
+                "height": 75.22055930434783
+              }
+            },
+            "title": {
+              "text": "НЕ ПОДХОДИТ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "grabbed",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-grabbed.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "GRABBED",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 457.50000000000006,
+                "y": 360.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 558.9178650434783,
+                "y": 238.1057453913043,
+                "width": 45.28906991304348,
+                "height": 39.22055930434782
+              },
+              "acceptance": {
+                "x": 535.8777050434783,
+                "y": 220.1057453913043,
+                "width": 91.36938991304348,
+                "height": 75.22055930434783
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "dragging",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-dragging.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "DRAGGING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 415.50000000000006,
+                "y": 322.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 558.9178650434783,
+                "y": 238.1057453913043,
+                "width": 45.28906991304348,
+                "height": 39.22055930434782
+              },
+              "acceptance": {
+                "x": 535.8777050434783,
+                "y": 220.1057453913043,
+                "width": 91.36938991304348,
+                "height": 75.22055930434783
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "over-target",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-over-target.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАПУСТИ СТАНЦИЮ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "OVER_TARGET",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 0.42,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.12,
+                "depth": 42,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 581.5,
+                "y": 257.58
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 558.9178650434783,
+                "y": 238.1057453913043,
+                "width": 45.28906991304348,
+                "height": 39.22055930434782
+              },
+              "acceptance": {
+                "x": 535.8777050434783,
+                "y": 220.1057453913043,
+                "width": 91.36938991304348,
+                "height": 75.22055930434783
+              }
+            },
+            "title": {
+              "text": "ЗАПУСТИ СТАНЦИЮ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        },
+        {
+          "state": "correct-snap",
+          "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-915x412-power-correct-snap.png",
+          "inspect": {
+            "viewport": {
+              "width": 915,
+              "height": 412
+            },
+            "stage": "POWER",
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "СТАНЦИЯ ЗАПУСКАЕТСЯ"
+            ],
+            "dragThreshold": 6,
+            "interactionState": "SNAPPING",
+            "touchAction": "none",
+            "actions": [
+              {
+                "name": "mission9-choice-power-wrong-2",
+                "action": "power-wrong-2",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 575.5,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 685.5,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-wrong-1",
+                "action": "power-wrong-1",
+                "alpha": 1,
+                "scaleX": 1,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 119.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 229.50000000000006,
+                "y": 360.58
+              },
+              {
+                "name": "mission9-choice-power-correct",
+                "action": "power-correct",
+                "alpha": 1,
+                "scaleX": 1.02,
+                "depth": 22,
+                "hit": {
+                  "width": 220,
+                  "height": 74
+                },
+                "bounds": {
+                  "x": 347.50000000000006,
+                  "y": 323.58,
+                  "width": 220,
+                  "height": 74
+                },
+                "x": 581.5624,
+                "y": 257.7160250434782
+              }
+            ],
+            "target": {
+              "visible": {
+                "x": 558.9178650434783,
+                "y": 238.1057453913043,
+                "width": 45.28906991304348,
+                "height": 39.22055930434782
+              },
+              "acceptance": {
+                "x": 535.8777050434783,
+                "y": 220.1057453913043,
+                "width": 91.36938991304348,
+                "height": 75.22055930434783
+              }
+            },
+            "title": {
+              "text": "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+              "bounds": {
+                "x": 277.50000000000006,
+                "y": 62.004000000000005,
+                "width": 360,
+                "height": 28
+              },
+              "color": "#f7fdff",
+              "stroke": "#06243b",
+              "strokeThickness": 6
+            },
+            "orientation": {
+              "gate": false,
+              "icon": false,
+              "helper": false,
+              "animated": null,
+              "reducedMotion": null,
+              "oldCopy": false
+            }
+          }
+        }
+      ],
+      "final": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "stage": "COMPLETE",
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "РОБОТ ГОТОВ К ЗАПУСКУ!",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "ВПЕРЕДИ - ПЕРВЫЙ ЗАПУСК",
+          "НА ГЛАВНУЮ"
+        ],
+        "dragThreshold": 6,
+        "interactionState": "SNAPPING",
+        "touchAction": "none",
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "alpha": 1,
+            "scaleX": 1,
+            "depth": 22,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 575.5,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            },
+            "x": 685.5,
+            "y": 360.58
+          },
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "alpha": 1,
+            "scaleX": 1,
+            "depth": 22,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 119.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            },
+            "x": 229.50000000000006,
+            "y": 360.58
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "alpha": 1,
+            "scaleX": 1.02,
+            "depth": 22,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 347.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            },
+            "x": 581.5624,
+            "y": 257.7160250434782
+          }
+        ],
+        "target": {
+          "visible": {
+            "x": 558.9178650434783,
+            "y": 238.1057453913043,
+            "width": 45.28906991304348,
+            "height": 39.22055930434782
+          },
+          "acceptance": {
+            "x": 535.8777050434783,
+            "y": 220.1057453913043,
+            "width": 91.36938991304348,
+            "height": 75.22055930434783
+          }
+        },
+        "title": {
+          "text": "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "bounds": {
+            "x": 277.50000000000006,
+            "y": 62.004000000000005,
+            "width": 360,
+            "height": 28
+          },
+          "color": "#f7fdff",
+          "stroke": "#06243b",
+          "strokeThickness": 6
+        },
+        "orientation": {
+          "gate": false,
+          "icon": false,
+          "helper": false,
+          "animated": null,
+          "reducedMotion": null,
+          "oldCopy": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    }
+  ],
+  "orientation": [
+    {
+      "viewport": "390x844",
+      "reducedMotion": false,
+      "state": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "stage": "BRIDGE",
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "↻",
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ГОРИЗОНТАЛЬНО"
+        ],
+        "dragThreshold": 6,
+        "interactionState": "IDLE",
+        "touchAction": "none",
+        "actions": [],
+        "target": {
+          "visible": null,
+          "acceptance": null
+        },
+        "title": {
+          "text": null,
+          "bounds": null,
+          "color": null,
+          "stroke": null,
+          "strokeThickness": null
+        },
+        "orientation": {
+          "gate": true,
+          "icon": true,
+          "helper": true,
+          "animated": true,
+          "reducedMotion": false,
+          "oldCopy": false
+        }
+      },
+      "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-390x844-orientation.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "412x915",
+      "reducedMotion": false,
+      "state": {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "stage": "BRIDGE",
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "↻",
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ГОРИЗОНТАЛЬНО"
+        ],
+        "dragThreshold": 6,
+        "interactionState": "IDLE",
+        "touchAction": "none",
+        "actions": [],
+        "target": {
+          "visible": null,
+          "acceptance": null
+        },
+        "title": {
+          "text": null,
+          "bounds": null,
+          "color": null,
+          "stroke": null,
+          "strokeThickness": null
+        },
+        "orientation": {
+          "gate": true,
+          "icon": true,
+          "helper": true,
+          "animated": true,
+          "reducedMotion": false,
+          "oldCopy": false
+        }
+      },
+      "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-412x915-orientation.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    }
+  ],
+  "orientationReduced": {
+    "viewport": "390x844",
+    "reducedMotion": true,
+    "state": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stage": "BRIDGE",
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "→",
+        "ПОВЕРНИ ТЕЛЕФОН",
+        "ИГРАЕМ ГОРИЗОНТАЛЬНО"
+      ],
+      "dragThreshold": 6,
+      "interactionState": "IDLE",
+      "touchAction": "none",
+      "actions": [],
+      "target": {
+        "visible": null,
+        "acceptance": null
+      },
+      "title": {
+        "text": null,
+        "bounds": null,
+        "color": null,
+        "stroke": null,
+        "strokeThickness": null
+      },
+      "orientation": {
+        "gate": true,
+        "icon": true,
+        "helper": true,
+        "animated": false,
+        "reducedMotion": true,
+        "oldCopy": false
+      }
+    },
+    "screenshot": "docs\\qa\\screenshots\\stage9-6-mission9-390x844-orientation-reduced-motion.png",
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "clean": true
+  },
+  "failures": []
+}

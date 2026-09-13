@@ -1,0 +1,127 @@
+{
+  "result": "READY_FOR_REVIEW",
+  "clean": true,
+  "errors": {
+    "console": [],
+    "page": [],
+    "requests": [],
+    "responses": []
+  },
+  "captures": [
+    {
+      "stage": "BRIDGE",
+      "state": {
+        "stage": "BRIDGE",
+        "counts": {
+          "bridgeLeft": 1,
+          "bridgeRight": 1,
+          "bridgeGap": 1,
+          "bridgeVisibleGap": 1,
+          "gateClosed": 0,
+          "gateOpen": 0,
+          "gateLock": 0,
+          "powerStation": 0,
+          "powerSocket": 0
+        },
+        "bounds": {
+          "bridgeLeft": {
+            "x": 238.65999999999994,
+            "y": 388.64799999999997,
+            "width": 332.28,
+            "height": 165.36000000000007
+          },
+          "bridgeRight": {
+            "x": 728.92,
+            "y": 389.2512,
+            "width": 331.7599999999999,
+            "height": 164.32
+          },
+          "bridgeGap": {
+            "x": 527.808,
+            "y": 420.57079999999996,
+            "width": 243.98399999999998,
+            "height": 82.212
+          },
+          "visibleGap": null,
+          "gateLock": null,
+          "powerSocket": null
+        },
+        "robot": {
+          "visibleFeetGroundY": 441.91679999999997,
+          "visibleBottomY": 441.91679999999997
+        }
+      },
+      "screenshot": "docs\\qa\\screenshots\\stage9-8-mission9-1280x720-bridge.png"
+    },
+    {
+      "stage": "GATE",
+      "state": {
+        "stage": "GATE",
+        "counts": {
+          "bridgeLeft": 0,
+          "bridgeRight": 0,
+          "bridgeGap": 0,
+          "bridgeVisibleGap": 0,
+          "gateClosed": 1,
+          "gateOpen": 0,
+          "gateLock": 1,
+          "powerStation": 0,
+          "powerSocket": 0
+        },
+        "bounds": {
+          "bridgeLeft": null,
+          "bridgeRight": null,
+          "bridgeGap": null,
+          "visibleGap": null,
+          "gateLock": {
+            "x": 871.84,
+            "y": 363.43519999999995,
+            "width": 115.19999999999999,
+            "height": 108
+          },
+          "powerSocket": null
+        },
+        "robot": {
+          "visibleFeetGroundY": 508.5288,
+          "visibleBottomY": 508.5288
+        }
+      },
+      "screenshot": "docs\\qa\\screenshots\\stage9-8-mission9-1280x720-gate.png"
+    },
+    {
+      "stage": "POWER",
+      "state": {
+        "stage": "POWER",
+        "counts": {
+          "bridgeLeft": 0,
+          "bridgeRight": 0,
+          "bridgeGap": 0,
+          "bridgeVisibleGap": 0,
+          "gateClosed": 0,
+          "gateOpen": 0,
+          "gateLock": 0,
+          "powerStation": 1,
+          "powerSocket": 1
+        },
+        "bounds": {
+          "bridgeLeft": null,
+          "bridgeRight": null,
+          "bridgeGap": null,
+          "visibleGap": null,
+          "gateLock": null,
+          "powerSocket": {
+            "x": 747.8616000000001,
+            "y": 418.9016,
+            "width": 58.6768,
+            "height": 50.8144
+          }
+        },
+        "robot": {
+          "visibleFeetGroundY": 513.3232,
+          "visibleBottomY": 513.3232
+        }
+      },
+      "screenshot": "docs\\qa\\screenshots\\stage9-8-mission9-1280x720-power.png"
+    }
+  ]
+}

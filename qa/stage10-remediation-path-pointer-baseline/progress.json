@@ -1,0 +1,668 @@
+{
+  "stage": "path",
+  "tag": "pointer-baseline",
+  "result": "FAIL",
+  "visual": "NOT VERIFIED",
+  "checks": [
+    {
+      "name": "down-other-up-safe-does-not-activate",
+      "ok": false,
+      "actual": {
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 0,
+          "pathConfigId": "PATH_C",
+          "energyConfigId": "ENERGY_C",
+          "signalConfigId": "SIGNAL_C",
+          "pathDecisionIndex": 1,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0,
+            "M3": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "rendered": {
+          "stage": "PATH",
+          "runSeed": 0,
+          "pathConfigId": "PATH_C",
+          "energyConfigId": "ENERGY_C",
+          "signalConfigId": "SIGNAL_C",
+          "pathDecisionIndex": 1,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0,
+            "M3": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "contract": {
+          "stage": "PATH",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 6,
+          "targetCount": 3,
+          "timerCount": 0
+        },
+        "robot": {
+          "x": 164.2,
+          "y": 686.8,
+          "angle": 0,
+          "bounds": {
+            "x": 55.81995898838004,
+            "y": 359.80068352699925,
+            "width": 216.76008202323987,
+            "height": 326.9993164730007,
+            "right": 272.5800410116199,
+            "bottom": 686.8
+          }
+        },
+        "title": {
+          "x": 446,
+          "y": 88.86,
+          "width": 388,
+          "height": 37,
+          "right": 834,
+          "bottom": 125.86
+        },
+        "feedback": "ШАГ 2 ИЗ 3",
+        "lanes": [
+          {
+            "name": "mission10-path-target-left",
+            "laneId": "LEFT",
+            "kind": "LASER",
+            "bounds": {
+              "x": 301.19999999999993,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 606.4,
+              "bottom": 686.8
+            },
+            "enabled": true
+          },
+          {
+            "name": "mission10-path-target-center",
+            "laneId": "CENTER",
+            "kind": "SAFE",
+            "bounds": {
+              "x": 618.4,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 923.6,
+              "bottom": 686.8
+            },
+            "enabled": true
+          },
+          {
+            "name": "mission10-path-target-right",
+            "laneId": "RIGHT",
+            "kind": "HAZARD",
+            "bounds": {
+              "x": 935.5999999999998,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 1240.7999999999997,
+              "bottom": 686.8
+            },
+            "enabled": true
+          }
+        ],
+        "art": [
+          {
+            "name": "mission10-path-left",
+            "texture": "MISSION10_PATH_LASER",
+            "bounds": {
+              "x": 301.19999999999993,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 606.3999999999999,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          },
+          {
+            "name": "mission10-path-center",
+            "texture": "MISSION10_PATH_SAFE",
+            "bounds": {
+              "x": 618.4,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 923.5999999999999,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          },
+          {
+            "name": "mission10-path-right",
+            "texture": "MISSION10_PATH_HAZARD",
+            "bounds": {
+              "x": 935.5999999999998,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 1240.7999999999997,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          }
+        ],
+        "texts": [
+          {
+            "text": "ВЫБЕРИ БЕЗОПАСНЫЙ ПУТЬ",
+            "bounds": {
+              "x": 446,
+              "y": 88.86,
+              "width": 388,
+              "height": 37,
+              "right": 834,
+              "bottom": 125.86
+            }
+          },
+          {
+            "text": "ШАГ 2 ИЗ 3",
+            "bounds": {
+              "x": 590.5,
+              "y": 137.86,
+              "width": 99,
+              "height": 21,
+              "right": 689.5,
+              "bottom": 158.86
+            }
+          },
+          {
+            "text": "⌂ Домой",
+            "bounds": {
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21,
+              "right": 108.19999694824219,
+              "bottom": 62.779998779296875
+            }
+          },
+          {
+            "text": "♪ Звук",
+            "bounds": {
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21,
+              "right": 1235.800048828125,
+              "bottom": 62.779998779296875
+            }
+          }
+        ],
+        "pointerOwner": null,
+        "locked": false
+      }
+    },
+    {
+      "name": "release-outside-clears-owner",
+      "ok": false,
+      "actual": {
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 0,
+          "pathConfigId": "PATH_C",
+          "energyConfigId": "ENERGY_C",
+          "signalConfigId": "SIGNAL_C",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0,
+            "M3": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "rendered": {
+          "stage": "PATH",
+          "runSeed": 0,
+          "pathConfigId": "PATH_C",
+          "energyConfigId": "ENERGY_C",
+          "signalConfigId": "SIGNAL_C",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0,
+            "M3": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "contract": {
+          "stage": "PATH",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 9,
+          "targetCount": 3,
+          "timerCount": 0
+        },
+        "robot": {
+          "x": 164.2,
+          "y": 686.8,
+          "angle": 0,
+          "bounds": {
+            "x": 55.81995898838004,
+            "y": 359.80068352699925,
+            "width": 216.76008202323987,
+            "height": 326.9993164730007,
+            "right": 272.5800410116199,
+            "bottom": 686.8
+          }
+        },
+        "title": {
+          "x": 446,
+          "y": 88.86,
+          "width": 388,
+          "height": 37,
+          "right": 834,
+          "bottom": 125.86
+        },
+        "feedback": "ШАГ 1 ИЗ 3",
+        "lanes": [
+          {
+            "name": "mission10-path-target-left",
+            "laneId": "LEFT",
+            "kind": "HAZARD",
+            "bounds": {
+              "x": 301.19999999999993,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 606.4,
+              "bottom": 686.8
+            },
+            "enabled": true
+          },
+          {
+            "name": "mission10-path-target-center",
+            "laneId": "CENTER",
+            "kind": "LASER",
+            "bounds": {
+              "x": 618.4,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 923.6,
+              "bottom": 686.8
+            },
+            "enabled": true
+          },
+          {
+            "name": "mission10-path-target-right",
+            "laneId": "RIGHT",
+            "kind": "SAFE",
+            "bounds": {
+              "x": 935.5999999999998,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 1240.7999999999997,
+              "bottom": 686.8
+            },
+            "enabled": true
+          }
+        ],
+        "art": [
+          {
+            "name": "mission10-path-left",
+            "texture": "MISSION10_PATH_HAZARD",
+            "bounds": {
+              "x": 301.19999999999993,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 606.3999999999999,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          },
+          {
+            "name": "mission10-path-center",
+            "texture": "MISSION10_PATH_LASER",
+            "bounds": {
+              "x": 618.4,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 923.5999999999999,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          },
+          {
+            "name": "mission10-path-right",
+            "texture": "MISSION10_PATH_SAFE",
+            "bounds": {
+              "x": 935.5999999999998,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 1240.7999999999997,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          }
+        ],
+        "texts": [
+          {
+            "text": "ВЫБЕРИ БЕЗОПАСНЫЙ ПУТЬ",
+            "bounds": {
+              "x": 446,
+              "y": 88.86,
+              "width": 388,
+              "height": 37,
+              "right": 834,
+              "bottom": 125.86
+            }
+          },
+          {
+            "text": "ШАГ 1 ИЗ 3",
+            "bounds": {
+              "x": 590.5,
+              "y": 137.86,
+              "width": 99,
+              "height": 21,
+              "right": 689.5,
+              "bottom": 158.86
+            }
+          },
+          {
+            "text": "⌂ Домой",
+            "bounds": {
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21,
+              "right": 108.19999694824219,
+              "bottom": 62.779998779296875
+            }
+          },
+          {
+            "text": "♪ Звук",
+            "bounds": {
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21,
+              "right": 1235.800048828125,
+              "bottom": 62.779998779296875
+            }
+          }
+        ],
+        "pointerOwner": 0,
+        "locked": false
+      }
+    },
+    {
+      "name": "tap-after-cancel-works",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 0,
+          "pathConfigId": "PATH_C",
+          "energyConfigId": "ENERGY_C",
+          "signalConfigId": "SIGNAL_C",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 1,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0,
+            "M3": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "rendered": {
+          "stage": "PATH",
+          "runSeed": 0,
+          "pathConfigId": "PATH_C",
+          "energyConfigId": "ENERGY_C",
+          "signalConfigId": "SIGNAL_C",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0,
+            "M3": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "contract": {
+          "stage": "PATH",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 9,
+          "targetCount": 3,
+          "timerCount": 0
+        },
+        "robot": {
+          "x": 164.2,
+          "y": 686.8,
+          "angle": 0,
+          "bounds": {
+            "x": 55.81995898838004,
+            "y": 359.80068352699925,
+            "width": 216.76008202323987,
+            "height": 326.9993164730007,
+            "right": 272.5800410116199,
+            "bottom": 686.8
+          }
+        },
+        "title": {
+          "x": 446,
+          "y": 88.86,
+          "width": 388,
+          "height": 37,
+          "right": 834,
+          "bottom": 125.86
+        },
+        "feedback": "ЭНЕРГИЯ НЕСТАБИЛЬНА",
+        "lanes": [
+          {
+            "name": "mission10-path-target-left",
+            "laneId": "LEFT",
+            "kind": "HAZARD",
+            "bounds": {
+              "x": 301.19999999999993,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 606.4,
+              "bottom": 686.8
+            },
+            "enabled": true
+          },
+          {
+            "name": "mission10-path-target-center",
+            "laneId": "CENTER",
+            "kind": "LASER",
+            "bounds": {
+              "x": 618.4,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 923.6,
+              "bottom": 686.8
+            },
+            "enabled": true
+          },
+          {
+            "name": "mission10-path-target-right",
+            "laneId": "RIGHT",
+            "kind": "SAFE",
+            "bounds": {
+              "x": 935.5999999999998,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999,
+              "right": 1240.7999999999997,
+              "bottom": 686.8
+            },
+            "enabled": true
+          }
+        ],
+        "art": [
+          {
+            "name": "mission10-path-left",
+            "texture": "MISSION10_PATH_HAZARD",
+            "bounds": {
+              "x": 301.19999999999993,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 606.3999999999999,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          },
+          {
+            "name": "mission10-path-center",
+            "texture": "MISSION10_PATH_LASER",
+            "bounds": {
+              "x": 618.4,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 923.5999999999999,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          },
+          {
+            "name": "mission10-path-right",
+            "texture": "MISSION10_PATH_SAFE",
+            "bounds": {
+              "x": 935.5999999999998,
+              "y": 314.63,
+              "width": 305.19999999999993,
+              "height": 228.89999999999998,
+              "right": 1240.7999999999997,
+              "bottom": 543.53
+            },
+            "alpha": 1
+          }
+        ],
+        "texts": [
+          {
+            "text": "ВЫБЕРИ БЕЗОПАСНЫЙ ПУТЬ",
+            "bounds": {
+              "x": 446,
+              "y": 88.86,
+              "width": 388,
+              "height": 37,
+              "right": 834,
+              "bottom": 125.86
+            }
+          },
+          {
+            "text": "ЭНЕРГИЯ НЕСТАБИЛЬНА",
+            "bounds": {
+              "x": 534,
+              "y": 137.86,
+              "width": 212,
+              "height": 21,
+              "right": 746,
+              "bottom": 158.86
+            }
+          },
+          {
+            "text": "⌂ Домой",
+            "bounds": {
+              "x": 34.19999694824219,
+              "y": 41.779998779296875,
+              "width": 74,
+              "height": 21,
+              "right": 108.19999694824219,
+              "bottom": 62.779998779296875
+            }
+          },
+          {
+            "text": "♪ Звук",
+            "bounds": {
+              "x": 1181.800048828125,
+              "y": 41.779998779296875,
+              "width": 54,
+              "height": 21,
+              "right": 1235.800048828125,
+              "bottom": 62.779998779296875
+            }
+          }
+        ],
+        "pointerOwner": null,
+        "locked": false
+      }
+    }
+  ],
+  "errors": [
+    {
+      "label": "1280x720",
+      "error": "The AudioContext encountered an error from the audio device or the WebAudio renderer."
+    }
+  ],
+  "screenshots": [],
+  "runs": [],
+  "physicalDevice": "NOT TESTED"
+}

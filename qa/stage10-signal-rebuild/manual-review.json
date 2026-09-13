@@ -1,0 +1,19 @@
+{
+  "build": "index-Cl30iuE_.js",
+  "mode": "PRODUCTION PREVIEW",
+  "hmr": "ABSENT",
+  "listen": "0.0.0.0:4198",
+  "process": 40840,
+  "adapter": "Ethernet (active default route)",
+  "currentLanIpv4": "192.168.0.107",
+  "pcUrl": "http://127.0.0.1:4198/",
+  "samsungUrl": "http://192.168.0.107:4198/",
+  "pcDirect": "http://127.0.0.1:4198/?qaMission=10&stage=signal",
+  "samsungDirect": "http://192.168.0.107:4198/?qaMission=10&stage=signal",
+  "pcHttp": "PASS",
+  "lanHttp": "PASS",
+  "directQaHttp": "PASS",
+  "serverLeftRunning": true,
+  "source": "npm run review followed by node scripts/review-server.mjs; adapter detected afresh by launcher",
+  "physicalSamsung": "NOT TESTED"
+}

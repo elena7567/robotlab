@@ -1,0 +1,6663 @@
+{
+  "result": "READY_FOR_PHYSICAL_SAMSUNG_REVIEW",
+  "captures": [
+    {
+      "viewport": "844x390",
+      "stageName": "bridge",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-844x390-bridge.png",
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 64.4968190147759,
+            "y": 49.53690449068989,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 289.047,
+            "y": 145.31740000000002,
+            "width": 282.24,
+            "height": 138.60000000000002
+          },
+          "targetDrop": {
+            "x": 251.04700000000003,
+            "y": 123.31740000000002,
+            "width": 358.24,
+            "height": 182.6
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 84,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "stageName": "gate",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-844x390-gate.png",
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "НАЙДИ КЛЮЧ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "assetKey": "MISSION9_GATE_KEY_CORRECT",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 105.33181809924855,
+            "y": 106.35891071627583,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 597.615854883721,
+            "y": 149.93617674418607,
+            "width": 122.66031627906978,
+            "height": 114.99404651162791
+          },
+          "targetDrop": {
+            "x": 569.031354883721,
+            "y": 125.93617674418607,
+            "width": 179.8293162790698,
+            "height": 162.99404651162791
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 540,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "stageName": "power",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-844x390-power.png",
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАПУСТИ СТАНЦИЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 97.16482591174855,
+            "y": 108.32109943697895,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 259.8515581395349,
+            "y": 63.964437209302304,
+            "width": 536.6388837209302,
+            "height": 294.7863255813953
+          },
+          "targetDrop": {
+            "x": 229.85155813953492,
+            "y": 39.964437209302304,
+            "width": 596.6388837209303,
+            "height": 342.7863255813954
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 312,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "stageName": "completion",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-844x390-completion.png",
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-correct",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "РОБОТ ГОТОВ К ЗАПУСКУ!",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "ВПЕРЕДИ - ПЕРВЫЙ ЗАПУСК",
+          "НА ГЛАВНУЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 97.16482591174855,
+            "y": 108.32109943697895,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 259.8515581395349,
+            "y": 63.964437209302304,
+            "width": 536.6388837209302,
+            "height": 294.7863255813953
+          },
+          "targetDrop": {
+            "x": 229.85155813953492,
+            "y": 39.964437209302304,
+            "width": 596.6388837209303,
+            "height": 342.7863255813954
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 312,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": {
+            "x": 231,
+            "y": 94.83470399999999,
+            "width": 382,
+            "height": 168.61872000000005
+          },
+          "completionRobot": {
+            "x": 402.28713544079886,
+            "y": 203.9766681654779,
+            "width": 39.42572911840227,
+            "height": 59.47675583452215
+          },
+          "completionText": [
+            {
+              "x": 231,
+              "y": 94.83470399999999,
+              "width": 382,
+              "height": 33
+            },
+            {
+              "x": 310,
+              "y": 145.97032000000002,
+              "width": 224,
+              "height": 22
+            },
+            {
+              "x": 314.5,
+              "y": 178.39406400000001,
+              "width": 215,
+              "height": 18
+            }
+          ],
+          "homeFinal": {
+            "x": 352,
+            "y": 280.3771667480469,
+            "width": 140,
+            "height": 25
+          }
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": true,
+          "hasMission10Button": false,
+          "hasHomeFinal": true,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "915x412",
+      "stageName": "bridge",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-915x412-bridge.png",
+      "state": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 915,
+            "innerHeight": 412,
+            "visualViewportWidth": 915,
+            "visualViewportHeight": 412,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.220873786407767,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 915,
+          "viewportHeight": 412,
+          "aspectRatio": 2.220873786407767,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 915,
+            "height": 412
+          },
+          "zones": {
+            "headerZone": {
+              "x": 14.420000000000002,
+              "y": 14.420000000000002,
+              "width": 886.1600000000001,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "controlsZone": {
+              "x": 14.420000000000002,
+              "y": 269.86,
+              "width": 886.1600000000001,
+              "height": 127.72
+            },
+            "characterZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "modalZone": {
+              "x": 9.064,
+              "y": 9.064,
+              "width": 896.872,
+              "height": 393.872
+            }
+          },
+          "headerZone": {
+            "x": 14.420000000000002,
+            "y": 14.420000000000002,
+            "width": 886.1600000000001,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "controlsZone": {
+            "x": 14.420000000000002,
+            "y": 269.86,
+            "width": 886.1600000000001,
+            "height": 127.72
+          },
+          "characterZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "modalZone": {
+            "x": 9.064,
+            "y": 9.064,
+            "width": 896.872,
+            "height": 393.872
+          },
+          "statusY": 36.42,
+          "gapXS": 4.944,
+          "gapS": 9.064,
+          "gapM": 14.420000000000002,
+          "gapL": 22.66,
+          "margin": 14.420000000000002,
+          "headerY": 36.42,
+          "headerWidth": 301.95,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000002,
+            "y": 79.864,
+            "width": 540,
+            "height": 300
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 520,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 710.58,
+            "y": 131.864,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 119.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 347.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 575.5,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 796.58,
+            "y": 62.004000000000005,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 61.54,
+            "y": 62.004000000000005,
+            "width": 678.8560000000001,
+            "height": 28
+          },
+          "robot": {
+            "x": 68.98099197705149,
+            "y": 49.995304122633144,
+            "width": 103.55641814550641,
+            "height": 156.22285078459342
+          },
+          "targetVisible": {
+            "x": 325.24160000000006,
+            "y": 159.71816,
+            "width": 282.24,
+            "height": 138.60000000000002
+          },
+          "targetDrop": {
+            "x": 285.36440000000005,
+            "y": 137.71816,
+            "width": 361.99440000000004,
+            "height": 182.6
+          },
+          "world": {
+            "x": 14.420000000000002,
+            "y": 99.06800000000001,
+            "width": 886.1600000000001,
+            "height": 215.44799999999995
+          },
+          "controls": {
+            "x": 119.50000000000006,
+            "y": 323.58,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "915x412",
+      "stageName": "gate",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-915x412-gate.png",
+      "state": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 915,
+            "innerHeight": 412,
+            "visualViewportWidth": 915,
+            "visualViewportHeight": 412,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.220873786407767,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 915,
+          "viewportHeight": 412,
+          "aspectRatio": 2.220873786407767,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 915,
+            "height": 412
+          },
+          "zones": {
+            "headerZone": {
+              "x": 14.420000000000002,
+              "y": 14.420000000000002,
+              "width": 886.1600000000001,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "controlsZone": {
+              "x": 14.420000000000002,
+              "y": 269.86,
+              "width": 886.1600000000001,
+              "height": 127.72
+            },
+            "characterZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "modalZone": {
+              "x": 9.064,
+              "y": 9.064,
+              "width": 896.872,
+              "height": 393.872
+            }
+          },
+          "headerZone": {
+            "x": 14.420000000000002,
+            "y": 14.420000000000002,
+            "width": 886.1600000000001,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "controlsZone": {
+            "x": 14.420000000000002,
+            "y": 269.86,
+            "width": 886.1600000000001,
+            "height": 127.72
+          },
+          "characterZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "modalZone": {
+            "x": 9.064,
+            "y": 9.064,
+            "width": 896.872,
+            "height": 393.872
+          },
+          "statusY": 36.42,
+          "gapXS": 4.944,
+          "gapS": 9.064,
+          "gapM": 14.420000000000002,
+          "gapL": 22.66,
+          "margin": 14.420000000000002,
+          "headerY": 36.42,
+          "headerWidth": 301.95,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000002,
+            "y": 79.864,
+            "width": 540,
+            "height": 300
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 520,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 710.58,
+            "y": 131.864,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "НАЙДИ КЛЮЧ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 119.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 347.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "assetKey": "MISSION9_GATE_KEY_CORRECT",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 575.5,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 796.58,
+            "y": 62.004000000000005,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 61.54,
+            "y": 62.004000000000005,
+            "width": 678.8560000000001,
+            "height": 28
+          },
+          "robot": {
+            "x": 113.28899063427805,
+            "y": 108.74010087556283,
+            "width": 103.55641814550641,
+            "height": 156.22285078459342
+          },
+          "targetVisible": {
+            "x": 649.0563996279069,
+            "y": 156.5876055813954,
+            "width": 134.68005209302316,
+            "height": 126.2625488372093
+          },
+          "targetDrop": {
+            "x": 618.0407996279068,
+            "y": 132.5876055813954,
+            "width": 196.71125209302323,
+            "height": 174.26254883720927
+          },
+          "world": {
+            "x": 14.420000000000002,
+            "y": 99.06800000000001,
+            "width": 886.1600000000001,
+            "height": 215.44799999999995
+          },
+          "controls": {
+            "x": 575.5,
+            "y": 323.58,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "915x412",
+      "stageName": "power",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-915x412-power.png",
+      "state": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 915,
+            "innerHeight": 412,
+            "visualViewportWidth": 915,
+            "visualViewportHeight": 412,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.220873786407767,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 915,
+          "viewportHeight": 412,
+          "aspectRatio": 2.220873786407767,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 915,
+            "height": 412
+          },
+          "zones": {
+            "headerZone": {
+              "x": 14.420000000000002,
+              "y": 14.420000000000002,
+              "width": 886.1600000000001,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "controlsZone": {
+              "x": 14.420000000000002,
+              "y": 269.86,
+              "width": 886.1600000000001,
+              "height": 127.72
+            },
+            "characterZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "modalZone": {
+              "x": 9.064,
+              "y": 9.064,
+              "width": 896.872,
+              "height": 393.872
+            }
+          },
+          "headerZone": {
+            "x": 14.420000000000002,
+            "y": 14.420000000000002,
+            "width": 886.1600000000001,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "controlsZone": {
+            "x": 14.420000000000002,
+            "y": 269.86,
+            "width": 886.1600000000001,
+            "height": 127.72
+          },
+          "characterZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "modalZone": {
+            "x": 9.064,
+            "y": 9.064,
+            "width": 896.872,
+            "height": 393.872
+          },
+          "statusY": 36.42,
+          "gapXS": 4.944,
+          "gapS": 9.064,
+          "gapM": 14.420000000000002,
+          "gapL": 22.66,
+          "margin": 14.420000000000002,
+          "headerY": 36.42,
+          "headerWidth": 301.95,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000002,
+            "y": 79.864,
+            "width": 540,
+            "height": 300
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 520,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 710.58,
+            "y": 131.864,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАПУСТИ СТАНЦИЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 119.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 347.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 575.5,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 796.58,
+            "y": 62.004000000000005,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 61.54,
+            "y": 62.004000000000005,
+            "width": 678.8560000000001,
+            "height": 28
+          },
+          "robot": {
+            "x": 104.42738785107493,
+            "y": 110.89458085603158,
+            "width": 103.55641814550641,
+            "height": 156.22285078459342
+          },
+          "targetVisible": {
+            "x": 278.0881860465117,
+            "y": 62.191319069767474,
+            "width": 589.2252279069764,
+            "height": 323.673041860465
+          },
+          "targetDrop": {
+            "x": 247.07258604651167,
+            "y": 38.191319069767474,
+            "width": 651.2564279069766,
+            "height": 371.673041860465
+          },
+          "world": {
+            "x": 14.420000000000002,
+            "y": 99.06800000000001,
+            "width": 886.1600000000001,
+            "height": 215.44799999999995
+          },
+          "controls": {
+            "x": 347.50000000000006,
+            "y": 323.58,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "915x412",
+      "stageName": "completion",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-915x412-completion.png",
+      "state": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 915,
+            "innerHeight": 412,
+            "visualViewportWidth": 915,
+            "visualViewportHeight": 412,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.220873786407767,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 915,
+          "viewportHeight": 412,
+          "aspectRatio": 2.220873786407767,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 14.420000000000002,
+            "right": 14.420000000000002,
+            "bottom": 14.420000000000002,
+            "left": 14.420000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 915,
+            "height": 412
+          },
+          "zones": {
+            "headerZone": {
+              "x": 14.420000000000002,
+              "y": 14.420000000000002,
+              "width": 886.1600000000001,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "controlsZone": {
+              "x": 14.420000000000002,
+              "y": 269.86,
+              "width": 886.1600000000001,
+              "height": 127.72
+            },
+            "characterZone": {
+              "x": 14.420000000000002,
+              "y": 75.48400000000001,
+              "width": 886.1600000000001,
+              "height": 185.31199999999998
+            },
+            "modalZone": {
+              "x": 9.064,
+              "y": 9.064,
+              "width": 896.872,
+              "height": 393.872
+            }
+          },
+          "headerZone": {
+            "x": 14.420000000000002,
+            "y": 14.420000000000002,
+            "width": 886.1600000000001,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "controlsZone": {
+            "x": 14.420000000000002,
+            "y": 269.86,
+            "width": 886.1600000000001,
+            "height": 127.72
+          },
+          "characterZone": {
+            "x": 14.420000000000002,
+            "y": 75.48400000000001,
+            "width": 886.1600000000001,
+            "height": 185.31199999999998
+          },
+          "modalZone": {
+            "x": 9.064,
+            "y": 9.064,
+            "width": 896.872,
+            "height": 393.872
+          },
+          "statusY": 36.42,
+          "gapXS": 4.944,
+          "gapS": 9.064,
+          "gapM": 14.420000000000002,
+          "gapL": 22.66,
+          "margin": 14.420000000000002,
+          "headerY": 36.42,
+          "headerWidth": 301.95,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 14.420000000000002,
+            "y": 79.864,
+            "width": 540,
+            "height": 300
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 520,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 710.58,
+            "y": 131.864,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-correct",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "РОБОТ ГОТОВ К ЗАПУСКУ!",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "ВПЕРЕДИ - ПЕРВЫЙ ЗАПУСК",
+          "НА ГЛАВНУЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 119.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 347.50000000000006,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 575.5,
+              "y": 323.58,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 796.58,
+            "y": 62.004000000000005,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 61.54,
+            "y": 62.004000000000005,
+            "width": 678.8560000000001,
+            "height": 28
+          },
+          "robot": {
+            "x": 104.42738785107493,
+            "y": 110.89458085603158,
+            "width": 103.55641814550641,
+            "height": 156.22285078459342
+          },
+          "targetVisible": {
+            "x": 278.0881860465117,
+            "y": 62.191319069767474,
+            "width": 589.2252279069764,
+            "height": 323.673041860465
+          },
+          "targetDrop": {
+            "x": 247.07258604651167,
+            "y": 38.191319069767474,
+            "width": 651.2564279069766,
+            "height": 371.673041860465
+          },
+          "world": {
+            "x": 14.420000000000002,
+            "y": 99.06800000000001,
+            "width": 886.1600000000001,
+            "height": 215.44799999999995
+          },
+          "controls": {
+            "x": 347.50000000000006,
+            "y": 323.58,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": {
+            "x": 266.5,
+            "y": 101.11512319999999,
+            "width": 382,
+            "height": 177.19977600000004
+          },
+          "completionRobot": {
+            "x": 436.67512769643366,
+            "y": 215.48304431840228,
+            "width": 41.649744607132675,
+            "height": 62.831854881597735
+          },
+          "completionText": [
+            {
+              "x": 266.5,
+              "y": 101.11512319999999,
+              "width": 382,
+              "height": 32.999999999999986
+            },
+            {
+              "x": 345.5,
+              "y": 154.825056,
+              "width": 224,
+              "height": 22
+            },
+            {
+              "x": 350,
+              "y": 188.9650112,
+              "width": 215,
+              "height": 18
+            }
+          ],
+          "homeFinal": {
+            "x": 387.5,
+            "y": 296.9548645019531,
+            "width": 140,
+            "height": 25
+          }
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": true,
+          "hasMission10Button": false,
+          "hasHomeFinal": true,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1024x768",
+      "stageName": "bridge",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-1024x768-bridge.png",
+      "state": {
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 1024,
+            "innerHeight": 768,
+            "visualViewportWidth": 1024,
+            "visualViewportHeight": 768,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 1.3333333333333333,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 1024,
+          "viewportHeight": 768,
+          "aspectRatio": 1.3333333333333333,
+          "mode": "landscape",
+          "semanticMode": "TABLET_LANDSCAPE",
+          "compositionName": "landscape",
+          "heightPressure": "tall",
+          "portrait": false,
+          "safe": {
+            "top": 26.880000000000003,
+            "right": 26.880000000000003,
+            "bottom": 26.880000000000003,
+            "left": 26.880000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1024,
+            "height": 768
+          },
+          "zones": {
+            "headerZone": {
+              "x": 26.880000000000003,
+              "y": 26.880000000000003,
+              "width": 970.24,
+              "height": 59.903999999999996
+            },
+            "gameplayZone": {
+              "x": 26.880000000000003,
+              "y": 100.78399999999999,
+              "width": 970.24,
+              "height": 495.77599999999995
+            },
+            "controlsZone": {
+              "x": 26.880000000000003,
+              "y": 610.56,
+              "width": 970.24,
+              "height": 130.56
+            },
+            "characterZone": {
+              "x": 26.880000000000003,
+              "y": 100.78399999999999,
+              "width": 970.24,
+              "height": 495.77599999999995
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 980,
+              "height": 724
+            }
+          },
+          "headerZone": {
+            "x": 26.880000000000003,
+            "y": 26.880000000000003,
+            "width": 970.24,
+            "height": 59.903999999999996
+          },
+          "gameplayZone": {
+            "x": 26.880000000000003,
+            "y": 100.78399999999999,
+            "width": 970.24,
+            "height": 495.77599999999995
+          },
+          "controlsZone": {
+            "x": 26.880000000000003,
+            "y": 610.56,
+            "width": 970.24,
+            "height": 130.56
+          },
+          "characterZone": {
+            "x": 26.880000000000003,
+            "y": 100.78399999999999,
+            "width": 970.24,
+            "height": 495.77599999999995
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 980,
+            "height": 724
+          },
+          "statusY": 56.832,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 26.880000000000003,
+          "headerY": 56.832,
+          "headerWidth": 337.92,
+          "headerHeight": 59.903999999999996,
+          "headerFontSize": 25,
+          "iconWidth": 76.8,
+          "iconHeight": 57.599999999999994,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 26.880000000000003,
+            "y": 121.344,
+            "width": 286.72,
+            "height": 367.00160000000005
+          },
+          "taskCardSizing": {
+            "radius": 23.99588,
+            "ribbonHeight": 38.566720000000004,
+            "ribbonWidth": 194.96960000000004,
+            "taskFontSize": 17.854200000000002,
+            "titleFontSize": 22.283360000000002,
+            "instructionFontSize": 17.14168,
+            "feedbackFontSize": 15.141680000000001,
+            "titleY": 39.845960000000005,
+            "instructionY": 71.40856000000001,
+            "areaTop": 102.25452000000001,
+            "footerSpace": 96.25864000000001,
+            "cellGap": 9.425040000000001,
+            "cellMaxWidth": 123.11696,
+            "cellMaxHeight": 91.40032000000001,
+            "sequenceGap": 6.425040000000001,
+            "sequenceIconMaxSize": 63.983520000000006,
+            "sequenceOptionMaxHeight": 79.98352,
+            "actionHeight": 60.566720000000004,
+            "actionFontSize": 17.14168,
+            "actionGap": 11.425040000000001,
+            "horizontalPadding": 15.425040000000001,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 762.784,
+            "y": 190.464,
+            "width": 220,
+            "height": 166.66666666666666,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14.3,
+              "borderRadius": 18.700000000000003
+            }
+          },
+          "dialogue": {
+            "width": 163.84,
+            "height": 76.80000000000001,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "visible": {
+              "x": 170,
+              "y": 679.12,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "visible": {
+              "x": 402,
+              "y": 679.12,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "visible": {
+              "x": 634,
+              "y": 679.12,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 879.12,
+            "y": 100.78399999999999,
+            "width": 118,
+            "height": 34
+          },
+          "title": {
+            "x": 74.49600000000001,
+            "y": 100.78399999999999,
+            "width": 743.008,
+            "height": 30
+          },
+          "robot": {
+            "x": 51.359275276042595,
+            "y": 178.78317206585461,
+            "width": 183.8990641940086,
+            "height": 277.4259343794579
+          },
+          "targetVisible": {
+            "x": 380.5824,
+            "y": 409.70912000000004,
+            "width": 282.24,
+            "height": 138.59999999999997
+          },
+          "targetDrop": {
+            "x": 336.9216,
+            "y": 378.48896,
+            "width": 369.5616,
+            "height": 201.04032
+          },
+          "world": {
+            "x": 26.880000000000003,
+            "y": 144.784,
+            "width": 970.24,
+            "height": 520.336
+          },
+          "controls": {
+            "x": 170,
+            "y": 679.12,
+            "width": 220,
+            "height": 62
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1280x720",
+      "stageName": "bridge",
+      "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-1280x720-bridge.png",
+      "state": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 1280,
+            "innerHeight": 720,
+            "visualViewportWidth": 1280,
+            "visualViewportHeight": 720,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 1.7777777777777777,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 1280,
+          "viewportHeight": 720,
+          "aspectRatio": 1.7777777777777777,
+          "mode": "landscape",
+          "semanticMode": "DESKTOP",
+          "compositionName": "landscape",
+          "heightPressure": "regular",
+          "portrait": false,
+          "safe": {
+            "top": 25.200000000000003,
+            "right": 25.200000000000003,
+            "bottom": 25.200000000000003,
+            "left": 25.200000000000003
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720
+          },
+          "zones": {
+            "headerZone": {
+              "x": 25.200000000000003,
+              "y": 25.200000000000003,
+              "width": 1229.6,
+              "height": 56.16
+            },
+            "gameplayZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "controlsZone": {
+              "x": 25.200000000000003,
+              "y": 572.4,
+              "width": 1229.6,
+              "height": 122.4
+            },
+            "characterZone": {
+              "x": 25.200000000000003,
+              "y": 95.36,
+              "width": 1229.6,
+              "height": 463.03999999999996
+            },
+            "modalZone": {
+              "x": 22,
+              "y": 22,
+              "width": 1236,
+              "height": 676
+            }
+          },
+          "headerZone": {
+            "x": 25.200000000000003,
+            "y": 25.200000000000003,
+            "width": 1229.6,
+            "height": 56.16
+          },
+          "gameplayZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "controlsZone": {
+            "x": 25.200000000000003,
+            "y": 572.4,
+            "width": 1229.6,
+            "height": 122.4
+          },
+          "characterZone": {
+            "x": 25.200000000000003,
+            "y": 95.36,
+            "width": 1229.6,
+            "height": 463.03999999999996
+          },
+          "modalZone": {
+            "x": 22,
+            "y": 22,
+            "width": 1236,
+            "height": 676
+          },
+          "statusY": 53.28,
+          "gapXS": 8,
+          "gapS": 14,
+          "gapM": 22,
+          "gapL": 36,
+          "margin": 25.200000000000003,
+          "headerY": 53.28,
+          "headerWidth": 422.40000000000003,
+          "headerHeight": 56.16,
+          "headerFontSize": 30.72,
+          "iconWidth": 92,
+          "iconHeight": 54,
+          "iconFontSize": 18,
+          "taskCard": {
+            "x": 25.200000000000003,
+            "y": 113.76,
+            "width": 358.40000000000003,
+            "height": 458.75200000000007
+          },
+          "taskCardSizing": {
+            "radius": 26.671933333333335,
+            "ribbonHeight": 41.62506666666667,
+            "ribbonWidth": 243.71200000000005,
+            "taskFontSize": 19.765666666666668,
+            "titleFontSize": 23.812533333333334,
+            "instructionFontSize": 17.906266666666667,
+            "feedbackFontSize": 15.906266666666667,
+            "titleY": 47.10953333333334,
+            "instructionY": 84.40653333333334,
+            "areaTop": 122.51606666666669,
+            "footerSpace": 113.84413333333335,
+            "cellGap": 11.718800000000002,
+            "cellMaxWidth": 139.93786666666668,
+            "cellMaxHeight": 109.75040000000001,
+            "sequenceGap": 8.718800000000002,
+            "sequenceIconMaxSize": 74.68773333333334,
+            "sequenceOptionMaxHeight": 90.68773333333334,
+            "actionHeight": 63.62506666666667,
+            "actionFontSize": 17.906266666666667,
+            "actionGap": 13.718800000000002,
+            "horizontalPadding": 17.7188,
+            "internalProgressPlacement": "feedback"
+          },
+          "progress": {
+            "x": 980.8799999999999,
+            "y": 178.56,
+            "width": 256,
+            "height": 193.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 15.36,
+              "stepRadius": 16.64,
+              "borderRadius": 21.76
+            }
+          },
+          "dialogue": {
+            "width": 204.8,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "visible": {
+              "x": 298,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "visible": {
+              "x": 530,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "visible": {
+              "x": 762,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 1012,
+            "y": 95.36,
+            "width": 118,
+            "height": 34
+          },
+          "title": {
+            "x": 207.03999999999994,
+            "y": 95.36,
+            "width": 733.92,
+            "height": 30
+          },
+          "robot": {
+            "x": 182.87728142448566,
+            "y": 167.7632554863727,
+            "width": 169.44544935805993,
+            "height": 255.6215406562054
+          },
+          "targetVisible": {
+            "x": 508.67999999999995,
+            "y": 376.8848,
+            "width": 282.24,
+            "height": 138.59999999999997
+          },
+          "targetDrop": {
+            "x": 464.5799999999999,
+            "y": 348.1184,
+            "width": 370.44,
+            "height": 196.13279999999997
+          },
+          "world": {
+            "x": 149.99999999999994,
+            "y": 139.36,
+            "width": 980,
+            "height": 479.43999999999994
+          },
+          "controls": {
+            "x": 298,
+            "y": 632.8,
+            "width": 220,
+            "height": 62
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    }
+  ],
+  "interactions": {
+    "checks": {
+      "wrongBridge1": true,
+      "wrongBridge2": true,
+      "bridgeOutside": true,
+      "wrongGate1": true,
+      "wrongGate2": true,
+      "wrongPower1": true,
+      "wrongPower2": true,
+      "completion": true,
+      "clean": true
+    },
+    "states": {
+      "bridgeWrong1": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 517.67,
+              "y": 82.81,
+              "width": 312.68000000000006,
+              "height": 284.96
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 517.67,
+            "y": 82.81,
+            "width": 312.68000000000006,
+            "height": 284.96
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 82.81,
+            "width": 490.02,
+            "height": 284.96
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 517.67,
+            "y": 82.81,
+            "width": 312.68000000000006,
+            "height": 96.8864,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.659375,
+            "offsetX": 0,
+            "offsetY": -42.375,
+            "platformScreenX": 422,
+            "platformScreenY": 326.875
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 64.4968190147759,
+            "y": 49.53690449068989,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 289.047,
+            "y": 145.31740000000002,
+            "width": 282.24,
+            "height": 138.60000000000002
+          },
+          "targetDrop": {
+            "x": 251.04700000000003,
+            "y": 123.31740000000002,
+            "width": 358.24,
+            "height": 182.6
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 84,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "bridgeWrong2": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 517.67,
+              "y": 82.81,
+              "width": 312.68000000000006,
+              "height": 284.96
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 517.67,
+            "y": 82.81,
+            "width": 312.68000000000006,
+            "height": 284.96
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 82.81,
+            "width": 490.02,
+            "height": 284.96
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 517.67,
+            "y": 82.81,
+            "width": 312.68000000000006,
+            "height": 96.8864,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.659375,
+            "offsetX": 0,
+            "offsetY": -42.375,
+            "platformScreenX": 422,
+            "platformScreenY": 326.875
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 64.4968190147759,
+            "y": 49.53690449068989,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 289.047,
+            "y": 145.31740000000002,
+            "width": 282.24,
+            "height": 138.60000000000002
+          },
+          "targetDrop": {
+            "x": 251.04700000000003,
+            "y": 123.31740000000002,
+            "width": 358.24,
+            "height": 182.6
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 84,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "bridgeOutside": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 517.67,
+              "y": 82.81,
+              "width": 312.68000000000006,
+              "height": 284.96
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 517.67,
+            "y": 82.81,
+            "width": 312.68000000000006,
+            "height": 284.96
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 82.81,
+            "width": 490.02,
+            "height": 284.96
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 517.67,
+            "y": 82.81,
+            "width": 312.68000000000006,
+            "height": 96.8864,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          },
+          "worldFrame": {
+            "scale": 0.659375,
+            "offsetX": 0,
+            "offsetY": -42.375,
+            "platformScreenX": 422,
+            "platformScreenY": 326.875
+          }
+        },
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "assetKey": "MISSION9_BRIDGE_CORRECT",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+            "assetFamily": "bridge",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 64.4968190147759,
+            "y": 49.53690449068989,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 289.047,
+            "y": 145.31740000000002,
+            "width": 282.24,
+            "height": 138.60000000000002
+          },
+          "targetDrop": {
+            "x": 251.04700000000003,
+            "y": 123.31740000000002,
+            "width": 358.24,
+            "height": 182.6
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 84,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "gateWrong1": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "НАЙДИ КЛЮЧ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "assetKey": "MISSION9_GATE_KEY_CORRECT",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 105.33181809924855,
+            "y": 106.35891071627583,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 597.615854883721,
+            "y": 149.93617674418607,
+            "width": 122.66031627906978,
+            "height": 114.99404651162791
+          },
+          "targetDrop": {
+            "x": 569.031354883721,
+            "y": 125.93617674418607,
+            "width": 179.8293162790698,
+            "height": 162.99404651162791
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 540,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "gateWrong2": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "НАЙДИ КЛЮЧ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_1",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "assetKey": "MISSION9_GATE_KEY_WRONG_2",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "assetKey": "MISSION9_GATE_KEY_CORRECT",
+            "assetFamily": "gate",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 105.33181809924855,
+            "y": 106.35891071627583,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 597.615854883721,
+            "y": 149.93617674418607,
+            "width": 122.66031627906978,
+            "height": 114.99404651162791
+          },
+          "targetDrop": {
+            "x": 569.031354883721,
+            "y": 125.93617674418607,
+            "width": 179.8293162790698,
+            "height": 162.99404651162791
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 540,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "powerWrong1": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАПУСТИ СТАНЦИЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 97.16482591174855,
+            "y": 108.32109943697895,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 259.8515581395349,
+            "y": 63.964437209302304,
+            "width": 536.6388837209302,
+            "height": 294.7863255813953
+          },
+          "targetDrop": {
+            "x": 229.85155813953492,
+            "y": 39.964437209302304,
+            "width": 596.6388837209303,
+            "height": 342.7863255813954
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 312,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "powerWrong2": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАПУСТИ СТАНЦИЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 97.16482591174855,
+            "y": 108.32109943697895,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 259.8515581395349,
+            "y": 63.964437209302304,
+            "width": 536.6388837209302,
+            "height": 294.7863255813953
+          },
+          "targetDrop": {
+            "x": 229.85155813953492,
+            "y": 39.964437209302304,
+            "width": 596.6388837209303,
+            "height": 342.7863255813954
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 312,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": null,
+          "completionRobot": null,
+          "completionText": [],
+          "homeFinal": null
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": false,
+          "hasMission10Button": false,
+          "hasHomeFinal": false,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      },
+      "complete": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "layout": {
+          "viewport": {
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "visualViewportWidth": 844,
+            "visualViewportHeight": 390,
+            "visualViewportOffsetLeft": 0,
+            "visualViewportOffsetTop": 0,
+            "safeTop": 0,
+            "safeRight": 0,
+            "safeBottom": 0,
+            "safeLeft": 0,
+            "orientation": "landscape",
+            "aspectRatio": 2.164102564102564,
+            "devicePixelRatio": 1
+          },
+          "viewportWidth": 844,
+          "viewportHeight": 390,
+          "aspectRatio": 2.164102564102564,
+          "mode": "landscape",
+          "semanticMode": "PHONE_LANDSCAPE_SHORT",
+          "compositionName": "short-landscape",
+          "heightPressure": "compact",
+          "portrait": false,
+          "safe": {
+            "top": 13.650000000000002,
+            "right": 13.650000000000002,
+            "bottom": 13.650000000000002,
+            "left": 13.650000000000002
+          },
+          "safeRect": {
+            "x": 0,
+            "y": 0,
+            "width": 844,
+            "height": 390
+          },
+          "zones": {
+            "headerZone": {
+              "x": 13.650000000000002,
+              "y": 13.650000000000002,
+              "width": 816.7,
+              "height": 52
+            },
+            "gameplayZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "controlsZone": {
+              "x": 13.650000000000002,
+              "y": 255.45000000000002,
+              "width": 816.7,
+              "height": 120.9
+            },
+            "characterZone": {
+              "x": 13.650000000000002,
+              "y": 74.23,
+              "width": 816.7,
+              "height": 172.64
+            },
+            "modalZone": {
+              "x": 8.58,
+              "y": 8.58,
+              "width": 826.84,
+              "height": 372.84
+            }
+          },
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          },
+          "statusY": 35.650000000000006,
+          "gapXS": 4.68,
+          "gapS": 8.58,
+          "gapM": 14,
+          "gapL": 22,
+          "margin": 13.650000000000002,
+          "headerY": 35.650000000000006,
+          "headerWidth": 300,
+          "headerHeight": 44,
+          "headerFontSize": 25,
+          "iconWidth": 76,
+          "iconHeight": 52,
+          "iconFontSize": 16,
+          "taskCard": {
+            "x": 13.650000000000002,
+            "y": 78.83000000000001,
+            "width": 523.28,
+            "height": 297.52
+          },
+          "taskCardSizing": {
+            "radius": 20,
+            "ribbonHeight": 34,
+            "ribbonWidth": 503.28,
+            "taskFontSize": 14,
+            "titleFontSize": 20,
+            "instructionFontSize": 16,
+            "feedbackFontSize": 14,
+            "titleY": 20,
+            "instructionY": 44,
+            "areaTop": 64,
+            "footerSpace": 78,
+            "cellGap": 6,
+            "cellMaxWidth": 88,
+            "cellMaxHeight": 80,
+            "sequenceGap": 4,
+            "sequenceIconMaxSize": 72,
+            "sequenceOptionMaxHeight": 72,
+            "actionHeight": 56,
+            "actionFontSize": 16,
+            "actionGap": 8,
+            "horizontalPadding": 12,
+            "internalProgressPlacement": "ribbon"
+          },
+          "progress": {
+            "x": 640.35,
+            "y": 130.83,
+            "width": 190,
+            "height": 143.93939393939394,
+            "horizontal": false,
+            "sizing": {
+              "titleFontSize": 14,
+              "stepRadius": 14,
+              "borderRadius": 18
+            }
+          },
+          "dialogue": {
+            "width": 150,
+            "height": 72,
+            "fontSize": 17,
+            "gap": 16
+          }
+        },
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-correct",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 2,
+          "completedTasks": 1,
+          "totalTasks": 10,
+          "score": 1,
+          "assemblyProgress": 1,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "РОБОТ ГОТОВ К ЗАПУСКУ!",
+          "ИСПЫТАНИЕ ПРОЙДЕНО",
+          "ВПЕРЕДИ - ПЕРВЫЙ ЗАПУСК",
+          "НА ГЛАВНУЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "assetKey": "MISSION9_ENERGY_WRONG_1",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "assetKey": "MISSION9_ENERGY_CORRECT",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "assetKey": "MISSION9_ENERGY_WRONG_2",
+            "assetFamily": "power",
+            "draggable": true,
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "visible": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "bounds": {
+          "status": {
+            "x": 726.35,
+            "y": 60.970000000000006,
+            "width": 104,
+            "height": 30
+          },
+          "title": {
+            "x": 60.769999999999996,
+            "y": 60.970000000000006,
+            "width": 609.88,
+            "height": 28
+          },
+          "robot": {
+            "x": 97.16482591174855,
+            "y": 108.32109943697895,
+            "width": 94.31436062767477,
+            "height": 142.28049358059917
+          },
+          "targetVisible": {
+            "x": 259.8515581395349,
+            "y": 63.964437209302304,
+            "width": 536.6388837209302,
+            "height": 294.7863255813953
+          },
+          "targetDrop": {
+            "x": 229.85155813953492,
+            "y": 39.964437209302304,
+            "width": 596.6388837209303,
+            "height": 342.7863255813954
+          },
+          "world": {
+            "x": 13.650000000000002,
+            "y": 97.55,
+            "width": 816.7,
+            "height": 196.22000000000003
+          },
+          "controls": {
+            "x": 312,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          },
+          "orientationGate": null,
+          "completion": {
+            "x": 231,
+            "y": 94.83470399999999,
+            "width": 382,
+            "height": 168.61872000000005
+          },
+          "completionRobot": {
+            "x": 402.28713544079886,
+            "y": 203.9766681654779,
+            "width": 39.42572911840227,
+            "height": 59.47675583452215
+          },
+          "completionText": [
+            {
+              "x": 231,
+              "y": 94.83470399999999,
+              "width": 382,
+              "height": 33
+            },
+            {
+              "x": 310,
+              "y": 145.97032000000002,
+              "width": 224,
+              "height": 22
+            },
+            {
+              "x": 314.5,
+              "y": 178.39406400000001,
+              "width": 215,
+              "height": 18
+            }
+          ],
+          "homeFinal": {
+            "x": 352,
+            "y": 280.3771667480469,
+            "width": 140,
+            "height": 25
+          }
+        },
+        "flags": {
+          "hasOrientationGate": false,
+          "hasGameplayWorld": true,
+          "hasCompletion": true,
+          "hasMission10Button": false,
+          "hasHomeFinal": true,
+          "progressDots": 3,
+          "statusHasPanelGraphic": false
+        },
+        "overlap": {
+          "statusRobot": false,
+          "titleStatus": false,
+          "robotTarget": false,
+          "completionRobotText": false,
+          "choiceZones": false
+        }
+      }
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "portrait": {
+    "screenshot": "docs\\qa\\screenshots\\stage9-4-mission9-390x844-orientation-gate.png",
+    "state": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layout": {
+        "viewport": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "visualViewportWidth": 390,
+          "visualViewportHeight": 844,
+          "visualViewportOffsetLeft": 0,
+          "visualViewportOffsetTop": 0,
+          "safeTop": 0,
+          "safeRight": 0,
+          "safeBottom": 0,
+          "safeLeft": 0,
+          "orientation": "portrait",
+          "aspectRatio": 0.46208530805687204,
+          "devicePixelRatio": 1
+        },
+        "viewportWidth": 390,
+        "viewportHeight": 844,
+        "aspectRatio": 0.46208530805687204,
+        "mode": "portrait",
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "compositionName": "portrait-tall",
+        "heightPressure": "tall",
+        "portrait": true,
+        "safe": {
+          "top": 13.650000000000002,
+          "right": 13.650000000000002,
+          "bottom": 13.650000000000002,
+          "left": 13.650000000000002
+        },
+        "safeRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "zones": {
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 362.70000000000005,
+            "height": 102.58
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 124.81,
+            "width": 362.70000000000005,
+            "height": 477.52000000000004
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 610.9100000000001,
+            "width": 362.70000000000005,
+            "height": 219.44
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 449.52360000000004,
+            "width": 362.70000000000005,
+            "height": 152.80640000000002
+          },
+          "modalZone": {
+            "x": 14,
+            "y": 14,
+            "width": 362,
+            "height": 816
+          }
+        },
+        "headerZone": {
+          "x": 13.650000000000002,
+          "y": 13.650000000000002,
+          "width": 362.70000000000005,
+          "height": 102.58
+        },
+        "gameplayZone": {
+          "x": 13.650000000000002,
+          "y": 124.81,
+          "width": 362.70000000000005,
+          "height": 477.52000000000004
+        },
+        "controlsZone": {
+          "x": 13.650000000000002,
+          "y": 610.9100000000001,
+          "width": 362.70000000000005,
+          "height": 219.44
+        },
+        "characterZone": {
+          "x": 13.650000000000002,
+          "y": 449.52360000000004,
+          "width": 362.70000000000005,
+          "height": 152.80640000000002
+        },
+        "modalZone": {
+          "x": 14,
+          "y": 14,
+          "width": 362,
+          "height": 816
+        },
+        "statusY": 99.23,
+        "gapXS": 4.68,
+        "gapS": 8.58,
+        "gapM": 14,
+        "gapL": 22,
+        "margin": 13.650000000000002,
+        "headerY": 44.650000000000006,
+        "headerWidth": 300,
+        "headerHeight": 62,
+        "headerFontSize": 25,
+        "iconWidth": 76,
+        "iconHeight": 60,
+        "iconFontSize": 16,
+        "taskCard": {
+          "x": 13.649999999999977,
+          "y": 145.81,
+          "width": 362.70000000000005,
+          "height": 430
+        },
+        "taskCardSizing": {
+          "radius": 25.833333333333336,
+          "ribbonHeight": 40.666666666666664,
+          "ribbonWidth": 246.63600000000005,
+          "taskFontSize": 19.166666666666668,
+          "titleFontSize": 23.333333333333332,
+          "instructionFontSize": 17.666666666666668,
+          "feedbackFontSize": 15.666666666666666,
+          "titleY": 44.833333333333336,
+          "instructionY": 80.33333333333334,
+          "areaTop": 116.16666666666667,
+          "footerSpace": 108.33333333333334,
+          "cellGap": 11,
+          "cellMaxWidth": 134.66666666666669,
+          "cellMaxHeight": 104,
+          "sequenceGap": 8,
+          "sequenceIconMaxSize": 71.33333333333334,
+          "sequenceOptionMaxHeight": 87.33333333333334,
+          "actionHeight": 62.666666666666664,
+          "actionFontSize": 17.666666666666668,
+          "actionGap": 13,
+          "horizontalPadding": 17,
+          "internalProgressPlacement": "feedback"
+        },
+        "progress": {
+          "x": 267.15,
+          "y": 587.626,
+          "width": 109.20000000000002,
+          "height": 164,
+          "horizontal": false,
+          "sizing": {
+            "titleFontSize": 14,
+            "stepRadius": 14,
+            "borderRadius": 16
+          }
+        },
+        "dialogue": {
+          "width": 175.5,
+          "height": 84.4,
+          "fontSize": 14.43,
+          "gap": 9.75
+        }
+      },
+      "mechanic": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": false,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "session": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ПОВЕРНИ ЭКРАН",
+        "МИССИЯ 9 ИГРАЕТСЯ ГОРИЗОНТАЛЬНО"
+      ],
+      "actions": [],
+      "bounds": {
+        "status": null,
+        "title": null,
+        "robot": null,
+        "targetVisible": null,
+        "targetDrop": null,
+        "world": null,
+        "controls": null,
+        "orientationGate": {
+          "x": 30,
+          "y": 292,
+          "width": 330,
+          "height": 260
+        },
+        "completion": null,
+        "completionRobot": null,
+        "completionText": [],
+        "homeFinal": null
+      },
+      "flags": {
+        "hasOrientationGate": true,
+        "hasGameplayWorld": false,
+        "hasCompletion": false,
+        "hasMission10Button": false,
+        "hasHomeFinal": false,
+        "progressDots": 0,
+        "statusHasPanelGraphic": false
+      },
+      "overlap": {
+        "statusRobot": false,
+        "titleStatus": false,
+        "robotTarget": false,
+        "completionRobotText": false,
+        "choiceZones": false
+      }
+    },
+    "landscape": {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "layout": {
+        "viewport": {
+          "innerWidth": 844,
+          "innerHeight": 390,
+          "visualViewportWidth": 844,
+          "visualViewportHeight": 390,
+          "visualViewportOffsetLeft": 0,
+          "visualViewportOffsetTop": 0,
+          "safeTop": 0,
+          "safeRight": 0,
+          "safeBottom": 0,
+          "safeLeft": 0,
+          "orientation": "landscape",
+          "aspectRatio": 2.164102564102564,
+          "devicePixelRatio": 1
+        },
+        "viewportWidth": 844,
+        "viewportHeight": 390,
+        "aspectRatio": 2.164102564102564,
+        "mode": "landscape",
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "compositionName": "short-landscape",
+        "heightPressure": "compact",
+        "portrait": false,
+        "safe": {
+          "top": 13.650000000000002,
+          "right": 13.650000000000002,
+          "bottom": 13.650000000000002,
+          "left": 13.650000000000002
+        },
+        "safeRect": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        },
+        "zones": {
+          "headerZone": {
+            "x": 13.650000000000002,
+            "y": 13.650000000000002,
+            "width": 816.7,
+            "height": 52
+          },
+          "gameplayZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "controlsZone": {
+            "x": 13.650000000000002,
+            "y": 255.45000000000002,
+            "width": 816.7,
+            "height": 120.9
+          },
+          "characterZone": {
+            "x": 13.650000000000002,
+            "y": 74.23,
+            "width": 816.7,
+            "height": 172.64
+          },
+          "modalZone": {
+            "x": 8.58,
+            "y": 8.58,
+            "width": 826.84,
+            "height": 372.84
+          }
+        },
+        "headerZone": {
+          "x": 13.650000000000002,
+          "y": 13.650000000000002,
+          "width": 816.7,
+          "height": 52
+        },
+        "gameplayZone": {
+          "x": 13.650000000000002,
+          "y": 74.23,
+          "width": 816.7,
+          "height": 172.64
+        },
+        "controlsZone": {
+          "x": 13.650000000000002,
+          "y": 255.45000000000002,
+          "width": 816.7,
+          "height": 120.9
+        },
+        "characterZone": {
+          "x": 13.650000000000002,
+          "y": 74.23,
+          "width": 816.7,
+          "height": 172.64
+        },
+        "modalZone": {
+          "x": 8.58,
+          "y": 8.58,
+          "width": 826.84,
+          "height": 372.84
+        },
+        "statusY": 35.650000000000006,
+        "gapXS": 4.68,
+        "gapS": 8.58,
+        "gapM": 14,
+        "gapL": 22,
+        "margin": 13.650000000000002,
+        "headerY": 35.650000000000006,
+        "headerWidth": 300,
+        "headerHeight": 44,
+        "headerFontSize": 25,
+        "iconWidth": 76,
+        "iconHeight": 52,
+        "iconFontSize": 16,
+        "taskCard": {
+          "x": 13.650000000000002,
+          "y": 78.83000000000001,
+          "width": 523.28,
+          "height": 297.52
+        },
+        "taskCardSizing": {
+          "radius": 20,
+          "ribbonHeight": 34,
+          "ribbonWidth": 503.28,
+          "taskFontSize": 14,
+          "titleFontSize": 20,
+          "instructionFontSize": 16,
+          "feedbackFontSize": 14,
+          "titleY": 20,
+          "instructionY": 44,
+          "areaTop": 64,
+          "footerSpace": 78,
+          "cellGap": 6,
+          "cellMaxWidth": 88,
+          "cellMaxHeight": 80,
+          "sequenceGap": 4,
+          "sequenceIconMaxSize": 72,
+          "sequenceOptionMaxHeight": 72,
+          "actionHeight": 56,
+          "actionFontSize": 16,
+          "actionGap": 8,
+          "horizontalPadding": 12,
+          "internalProgressPlacement": "ribbon"
+        },
+        "progress": {
+          "x": 640.35,
+          "y": 130.83,
+          "width": 190,
+          "height": 143.93939393939394,
+          "horizontal": false,
+          "sizing": {
+            "titleFontSize": 14,
+            "stepRadius": 14,
+            "borderRadius": 18
+          }
+        },
+        "dialogue": {
+          "width": 150,
+          "height": 72,
+          "fontSize": 17,
+          "gap": 16
+        }
+      },
+      "mechanic": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": false,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      },
+      "session": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ПОЧИНИ МОСТ"
+      ],
+      "actions": [
+        {
+          "name": "mission9-choice-bridge-correct",
+          "action": "bridge-correct",
+          "assetKey": "MISSION9_BRIDGE_CORRECT",
+          "assetFamily": "bridge",
+          "draggable": true,
+          "hit": {
+            "width": 220,
+            "height": 74
+          },
+          "visible": {
+            "x": 84,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-wrong-arc",
+          "action": "bridge-wrong-arc",
+          "assetKey": "MISSION9_BRIDGE_WRONG_ARC",
+          "assetFamily": "bridge",
+          "draggable": true,
+          "hit": {
+            "width": 220,
+            "height": 74
+          },
+          "visible": {
+            "x": 312,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-wrong-truss",
+          "action": "bridge-wrong-truss",
+          "assetKey": "MISSION9_BRIDGE_WRONG_TRUSS",
+          "assetFamily": "bridge",
+          "draggable": true,
+          "hit": {
+            "width": 220,
+            "height": 74
+          },
+          "visible": {
+            "x": 540,
+            "y": 302.35,
+            "width": 220,
+            "height": 74
+          }
+        }
+      ],
+      "bounds": {
+        "status": {
+          "x": 726.35,
+          "y": 60.970000000000006,
+          "width": 104,
+          "height": 30
+        },
+        "title": {
+          "x": 60.769999999999996,
+          "y": 60.970000000000006,
+          "width": 609.88,
+          "height": 28
+        },
+        "robot": {
+          "x": 64.4968190147759,
+          "y": 49.53690449068989,
+          "width": 94.31436062767477,
+          "height": 142.28049358059917
+        },
+        "targetVisible": {
+          "x": 289.047,
+          "y": 145.31740000000002,
+          "width": 282.24,
+          "height": 138.60000000000002
+        },
+        "targetDrop": {
+          "x": 251.04700000000003,
+          "y": 123.31740000000002,
+          "width": 358.24,
+          "height": 182.6
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 97.55,
+          "width": 816.7,
+          "height": 196.22000000000003
+        },
+        "controls": {
+          "x": 84,
+          "y": 302.35,
+          "width": 220,
+          "height": 74
+        },
+        "orientationGate": null,
+        "completion": null,
+        "completionRobot": null,
+        "completionText": [],
+        "homeFinal": null
+      },
+      "flags": {
+        "hasOrientationGate": false,
+        "hasGameplayWorld": true,
+        "hasCompletion": false,
+        "hasMission10Button": false,
+        "hasHomeFinal": false,
+        "progressDots": 3,
+        "statusHasPanelGraphic": false
+      },
+      "overlap": {
+        "statusRobot": false,
+        "titleStatus": false,
+        "robotTarget": false,
+        "completionRobotText": false,
+        "choiceZones": false
+      }
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "checks": {
+      "gateVisible": true,
+      "stateRestoredLandscape": true,
+      "clean": true
+    }
+  },
+  "staticAssets": {
+    "manifestChecks": {
+      "bridgeCorrect": true,
+      "gateCorrect": true,
+      "powerCorrect": true
+    },
+    "sceneChecks": {
+      "gateUsesOnlyGateChoiceKeys": true,
+      "powerUsesOnlyEnergyChoiceKeys": true,
+      "bridgeUsesOnlyBridgeChoiceKeys": true
+    },
+    "pass": true
+  },
+  "evaluation": {
+    "correctAssets": {
+      "bridge": "MISSION9_BRIDGE_CORRECT / public/assets/missions/mission9/bridge/bridge-piece-correct.png",
+      "gate": "MISSION9_GATE_KEY_CORRECT / public/assets/missions/mission9/gate/gate-key-correct.png",
+      "power": "MISSION9_ENERGY_CORRECT / public/assets/missions/mission9/power/energy-module-correct.png"
+    },
+    "bounds": {
+      "bridge": {
+        "status": {
+          "x": 726.35,
+          "y": 60.970000000000006,
+          "width": 104,
+          "height": 30
+        },
+        "title": {
+          "x": 60.769999999999996,
+          "y": 60.970000000000006,
+          "width": 609.88,
+          "height": 28
+        },
+        "robot": {
+          "x": 64.4968190147759,
+          "y": 49.53690449068989,
+          "width": 94.31436062767477,
+          "height": 142.28049358059917
+        },
+        "targetVisible": {
+          "x": 289.047,
+          "y": 145.31740000000002,
+          "width": 282.24,
+          "height": 138.60000000000002
+        },
+        "targetDrop": {
+          "x": 251.04700000000003,
+          "y": 123.31740000000002,
+          "width": 358.24,
+          "height": 182.6
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 97.55,
+          "width": 816.7,
+          "height": 196.22000000000003
+        },
+        "controls": {
+          "x": 84,
+          "y": 302.35,
+          "width": 220,
+          "height": 74
+        },
+        "orientationGate": null,
+        "completion": null,
+        "completionRobot": null,
+        "completionText": [],
+        "homeFinal": null
+      },
+      "gate": {
+        "status": {
+          "x": 726.35,
+          "y": 60.970000000000006,
+          "width": 104,
+          "height": 30
+        },
+        "title": {
+          "x": 60.769999999999996,
+          "y": 60.970000000000006,
+          "width": 609.88,
+          "height": 28
+        },
+        "robot": {
+          "x": 105.33181809924855,
+          "y": 106.35891071627583,
+          "width": 94.31436062767477,
+          "height": 142.28049358059917
+        },
+        "targetVisible": {
+          "x": 597.615854883721,
+          "y": 149.93617674418607,
+          "width": 122.66031627906978,
+          "height": 114.99404651162791
+        },
+        "targetDrop": {
+          "x": 569.031354883721,
+          "y": 125.93617674418607,
+          "width": 179.8293162790698,
+          "height": 162.99404651162791
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 97.55,
+          "width": 816.7,
+          "height": 196.22000000000003
+        },
+        "controls": {
+          "x": 540,
+          "y": 302.35,
+          "width": 220,
+          "height": 74
+        },
+        "orientationGate": null,
+        "completion": null,
+        "completionRobot": null,
+        "completionText": [],
+        "homeFinal": null
+      },
+      "power": {
+        "status": {
+          "x": 726.35,
+          "y": 60.970000000000006,
+          "width": 104,
+          "height": 30
+        },
+        "title": {
+          "x": 60.769999999999996,
+          "y": 60.970000000000006,
+          "width": 609.88,
+          "height": 28
+        },
+        "robot": {
+          "x": 97.16482591174855,
+          "y": 108.32109943697895,
+          "width": 94.31436062767477,
+          "height": 142.28049358059917
+        },
+        "targetVisible": {
+          "x": 259.8515581395349,
+          "y": 63.964437209302304,
+          "width": 536.6388837209302,
+          "height": 294.7863255813953
+        },
+        "targetDrop": {
+          "x": 229.85155813953492,
+          "y": 39.964437209302304,
+          "width": 596.6388837209303,
+          "height": 342.7863255813954
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 97.55,
+          "width": 816.7,
+          "height": 196.22000000000003
+        },
+        "controls": {
+          "x": 312,
+          "y": 302.35,
+          "width": 220,
+          "height": 74
+        },
+        "orientationGate": null,
+        "completion": null,
+        "completionRobot": null,
+        "completionText": [],
+        "homeFinal": null
+      }
+    },
+    "checks": {
+      "portraitGate": true,
+      "progressHud": true,
+      "titleOverlap": true,
+      "crossPuzzleAssetMixing": true,
+      "hitAreas": true,
+      "noChoiceOverlap": true,
+      "noRobotClueOverlap": true,
+      "bottomSafeArea": true,
+      "completion": true,
+      "phoneLandscape": true,
+      "tablet": true,
+      "desktop": true,
+      "staticAssets": true,
+      "interactions": true
+    }
+  },
+  "randomization": "NONE",
+  "failures": []
+}

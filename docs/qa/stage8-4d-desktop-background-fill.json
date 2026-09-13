@@ -1,0 +1,504 @@
+{
+  "baseUrl": "http://127.0.0.1:4198/",
+  "results": [
+    {
+      "name": "start-1920x900",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "scene": "StartScene",
+      "completedTasks": 0,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4d-bg-fill-start-1920x900.png",
+      "audit": {
+        "activeScenes": [
+          "StartScene"
+        ],
+        "backgrounds": [
+          {
+            "name": "",
+            "texture": "bg-start-laboratory",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": -90,
+              "width": 1920,
+              "height": 1080.5741626794259
+            }
+          }
+        ],
+        "coveringBackground": {
+          "name": "",
+          "texture": "bg-start-laboratory",
+          "bounds": {
+            "type": 5,
+            "x": 0,
+            "y": -90,
+            "width": 1920,
+            "height": 1080.5741626794259
+          }
+        },
+        "uiObjects": [
+          {
+            "name": "start-sound",
+            "bounds": {
+              "type": 5,
+              "x": 1819,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            }
+          },
+          {
+            "name": "start-play-button",
+            "bounds": {
+              "type": 5,
+              "x": 912,
+              "y": 788,
+              "width": 96,
+              "height": 32
+            }
+          }
+        ],
+        "outsideBackground": [],
+        "canvas": {
+          "width": 1920,
+          "height": 900
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "canvasFillsViewport": true,
+        "laboratoryCoversViewport": true,
+        "uiInsideLaboratory": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "start-1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "scene": "StartScene",
+      "completedTasks": 0,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4d-bg-fill-start-1920x1080.png",
+      "audit": {
+        "activeScenes": [
+          "StartScene"
+        ],
+        "backgrounds": [
+          {
+            "name": "",
+            "texture": "bg-start-laboratory",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": 0,
+              "width": 1920,
+              "height": 1080.5741626794259
+            }
+          }
+        ],
+        "coveringBackground": {
+          "name": "",
+          "texture": "bg-start-laboratory",
+          "bounds": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080.5741626794259
+          }
+        },
+        "uiObjects": [
+          {
+            "name": "start-sound",
+            "bounds": {
+              "type": 5,
+              "x": 1819,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            }
+          },
+          {
+            "name": "start-play-button",
+            "bounds": {
+              "type": 5,
+              "x": 912,
+              "y": 878,
+              "width": 96,
+              "height": 32
+            }
+          }
+        ],
+        "outsideBackground": [],
+        "canvas": {
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "canvasFillsViewport": true,
+        "laboratoryCoversViewport": true,
+        "uiInsideLaboratory": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission1-1920x900",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "scene": "GameScene",
+      "completedTasks": 0,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4d-bg-fill-mission1-1920x900.png",
+      "audit": {
+        "activeScenes": [
+          "StartScene",
+          "GameScene"
+        ],
+        "backgrounds": [
+          {
+            "name": "",
+            "texture": "bg-main-laboratory",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": -90,
+              "width": 1920,
+              "height": 1080.5741626794259
+            }
+          }
+        ],
+        "coveringBackground": {
+          "name": "",
+          "texture": "bg-main-laboratory",
+          "bounds": {
+            "type": 5,
+            "x": 0,
+            "y": -90,
+            "width": 1920,
+            "height": 1080.5741626794259
+          }
+        },
+        "uiObjects": [
+          {
+            "name": "game-home",
+            "bounds": {
+              "type": 5,
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            }
+          },
+          {
+            "name": "game-sound",
+            "bounds": {
+              "type": 5,
+              "x": 1819,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            }
+          },
+          {
+            "name": "task-card",
+            "bounds": {
+              "type": 5,
+              "x": 46,
+              "y": 118.5,
+              "width": 348.6199951171875,
+              "height": 460
+            }
+          }
+        ],
+        "outsideBackground": [],
+        "canvas": {
+          "width": 1920,
+          "height": 900
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "canvasFillsViewport": true,
+        "laboratoryCoversViewport": true,
+        "uiInsideLaboratory": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission6-1920x900",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "scene": "Mission6Scene",
+      "completedTasks": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4d-bg-fill-mission6-1920x900.png",
+      "audit": {
+        "activeScenes": [
+          "StartScene",
+          "Mission6Scene"
+        ],
+        "backgrounds": [
+          {
+            "name": "",
+            "texture": "bg-main-laboratory",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": -90,
+              "width": 1920,
+              "height": 1080.5741626794259
+            }
+          }
+        ],
+        "coveringBackground": {
+          "name": "",
+          "texture": "bg-main-laboratory",
+          "bounds": {
+            "type": 5,
+            "x": 0,
+            "y": -90,
+            "width": 1920,
+            "height": 1080.5741626794259
+          }
+        },
+        "uiObjects": [
+          {
+            "name": "mission6-home",
+            "bounds": {
+              "type": 5,
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            }
+          },
+          {
+            "name": "mission6-sound",
+            "bounds": {
+              "type": 5,
+              "x": 1819,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            }
+          },
+          {
+            "name": "energy-task-card",
+            "bounds": {
+              "type": 5,
+              "x": 77.5,
+              "y": 118.5,
+              "width": 295.5400000000001,
+              "height": 454
+            }
+          }
+        ],
+        "outsideBackground": [],
+        "canvas": {
+          "width": 1920,
+          "height": 900
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "canvasFillsViewport": true,
+        "laboratoryCoversViewport": true,
+        "uiInsideLaboratory": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "transition-1920x900",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "scene": "TransitionScene",
+      "completedTasks": 5,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4d-bg-fill-transition-1920x900.png",
+      "audit": {
+        "activeScenes": [
+          "StartScene",
+          "TransitionScene"
+        ],
+        "backgrounds": [
+          {
+            "name": "",
+            "texture": "bg-main-laboratory",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": -90,
+              "width": 1920,
+              "height": 1080.5741626794259
+            }
+          }
+        ],
+        "coveringBackground": {
+          "name": "",
+          "texture": "bg-main-laboratory",
+          "bounds": {
+            "type": 5,
+            "x": 0,
+            "y": -90,
+            "width": 1920,
+            "height": 1080.5741626794259
+          }
+        },
+        "uiObjects": [
+          {
+            "name": "transition-home",
+            "bounds": {
+              "type": 5,
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            }
+          }
+        ],
+        "outsideBackground": [],
+        "canvas": {
+          "width": 1920,
+          "height": 900
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "canvasFillsViewport": true,
+        "laboratoryCoversViewport": true,
+        "uiInsideLaboratory": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "mission9-1920x900",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "scene": "Mission9Scene",
+      "completedTasks": 8,
+      "screenshot": "docs\\qa\\screenshots\\stage8-4d-bg-fill-mission9-1920x900.png",
+      "audit": {
+        "activeScenes": [
+          "StartScene",
+          "Mission9Scene"
+        ],
+        "backgrounds": [
+          {
+            "name": "",
+            "texture": "bg-main-laboratory",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": -90,
+              "width": 1920,
+              "height": 1080.5741626794259
+            }
+          }
+        ],
+        "coveringBackground": {
+          "name": "",
+          "texture": "bg-main-laboratory",
+          "bounds": {
+            "type": 5,
+            "x": 0,
+            "y": -90,
+            "width": 1920,
+            "height": 1080.5741626794259
+          }
+        },
+        "uiObjects": [
+          {
+            "name": "mission9-home",
+            "bounds": {
+              "type": 5,
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            }
+          },
+          {
+            "name": "mission9-sound",
+            "bounds": {
+              "type": 5,
+              "x": 1819,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            }
+          },
+          {
+            "name": "mission9-course-world",
+            "bounds": {
+              "type": 5,
+              "x": 0,
+              "y": 0,
+              "width": 1339.52001953125,
+              "height": 585.16
+            }
+          }
+        ],
+        "outsideBackground": [],
+        "canvas": {
+          "width": 1920,
+          "height": 900
+        }
+      },
+      "checks": {
+        "browserClean": true,
+        "requiredSceneActive": true,
+        "canvasFillsViewport": true,
+        "laboratoryCoversViewport": true,
+        "uiInsideLaboratory": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "failures": []
+}

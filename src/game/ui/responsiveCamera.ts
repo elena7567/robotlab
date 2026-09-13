@@ -24,7 +24,7 @@ export function configureResponsiveCamera(
     ? layout.mode === 'ultra-narrow-portrait'
       ? clampValue(0.4, layout.viewportWidth / 780, 0.48)
       : clampValue(0.5, layout.viewportWidth / 610, 0.9)
-    : Math.min(layout.viewportWidth / LOGICAL_SCENE_WIDTH, layout.viewportHeight / LOGICAL_SCENE_HEIGHT);
+    : Math.max(layout.viewportWidth / LOGICAL_SCENE_WIDTH, layout.viewportHeight / LOGICAL_SCENE_HEIGHT);
   const platformScreenX = portrait ? layout.viewportWidth / 2 : layout.viewportWidth / 2;
   const robotDisplayHeight = 365 * scale;
   const desiredGap = layout.mode === 'ultra-narrow-portrait' ? 0 : layout.margin;

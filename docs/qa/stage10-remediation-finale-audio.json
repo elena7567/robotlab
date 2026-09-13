@@ -1,0 +1,590 @@
+{
+  "result": "FAIL",
+  "mode": "launch-and-victory",
+  "evidence": "Continuous AudioWorklet PCM after Phaser master mute/volume; physical speakers and subjective listening not observed",
+  "checks": [
+    {
+      "name": "launch-output",
+      "ok": true,
+      "data": {
+        "peak": 0.05896327644586563,
+        "sumSquares": 23.867466012015136,
+        "samples": 77824,
+        "clipped": 0,
+        "events": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "play",
+            "at": 5963,
+            "audioTime": 1.832,
+            "stage": "FINALE",
+            "finaleStep": 0
+          }
+        ],
+        "lastPcmAt": 6988.700000017881,
+        "assets": {
+          "launch": {
+            "key": "audio-mission10-beacon-launch",
+            "duration": 3.2,
+            "channels": 1,
+            "sampleRate": 48000,
+            "decodedPeak": 0.6296157836914062
+          },
+          "victory": {
+            "key": "audio-mission10-victory-theme",
+            "duration": 20.035916666666665,
+            "channels": 2,
+            "sampleRate": 48000,
+            "decodedPeak": 0.47446754574775696
+          }
+        },
+        "context": "running",
+        "muted": false,
+        "activeScenes": [
+          "Mission10Scene"
+        ],
+        "sounds": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "playing": true,
+            "paused": false,
+            "volume": 0.5799999833106995,
+            "loop": false
+          }
+        ],
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        }
+      }
+    },
+    {
+      "name": "launch-once-despite-double-tap",
+      "ok": true,
+      "data": [
+        {
+          "key": "audio-mission10-beacon-launch",
+          "event": "play",
+          "at": 5963,
+          "audioTime": 1.832,
+          "stage": "FINALE",
+          "finaleStep": 0
+        }
+      ]
+    },
+    {
+      "name": "launch-synchronized-with-finale-start",
+      "ok": true,
+      "data": [
+        {
+          "key": "audio-mission10-beacon-launch",
+          "event": "play",
+          "at": 5963,
+          "audioTime": 1.832,
+          "stage": "FINALE",
+          "finaleStep": 0
+        }
+      ]
+    },
+    {
+      "name": "launch-no-output-clipping",
+      "ok": true,
+      "data": {
+        "peak": 0.05896327644586563,
+        "clipped": 0,
+        "samples": 77824
+      }
+    },
+    {
+      "name": "victory-continues-into-victory-scene",
+      "ok": true,
+      "data": {
+        "peak": 0.15125064551830292,
+        "sumSquares": 520.8796788516721,
+        "samples": 331776,
+        "clipped": 0,
+        "events": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "play",
+            "at": 5963,
+            "audioTime": 1.832,
+            "stage": "FINALE",
+            "finaleStep": 0
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "play",
+            "at": 8995.40000000596,
+            "audioTime": 4.650666666666667,
+            "stage": "FINALE",
+            "finaleStep": 4
+          },
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "complete",
+            "at": 9375.100000023842,
+            "audioTime": 5.032,
+            "stage": "FINALE",
+            "finaleStep": 4
+          }
+        ],
+        "lastPcmAt": 14351.5,
+        "assets": {
+          "launch": {
+            "key": "audio-mission10-beacon-launch",
+            "duration": 3.2,
+            "channels": 1,
+            "sampleRate": 48000,
+            "decodedPeak": 0.6296157836914062
+          },
+          "victory": {
+            "key": "audio-mission10-victory-theme",
+            "duration": 20.035916666666665,
+            "channels": 2,
+            "sampleRate": 48000,
+            "decodedPeak": 0.47446754574775696
+          }
+        },
+        "context": "running",
+        "muted": false,
+        "activeScenes": [
+          "VictoryScene"
+        ],
+        "sounds": [
+          {
+            "key": "audio-mission10-victory-theme",
+            "playing": true,
+            "paused": false,
+            "volume": 0.47999998927116394,
+            "loop": false
+          }
+        ],
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 10,
+          "totalTasks": 10,
+          "score": 10,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        }
+      }
+    },
+    {
+      "name": "victory-one-instance-one-start",
+      "ok": true,
+      "data": [
+        {
+          "key": "audio-mission10-beacon-launch",
+          "event": "play",
+          "at": 5963,
+          "audioTime": 1.832,
+          "stage": "FINALE",
+          "finaleStep": 0
+        },
+        {
+          "key": "audio-mission10-victory-theme",
+          "event": "play",
+          "at": 8995.40000000596,
+          "audioTime": 4.650666666666667,
+          "stage": "FINALE",
+          "finaleStep": 4
+        },
+        {
+          "key": "audio-mission10-beacon-launch",
+          "event": "complete",
+          "at": 9375.100000023842,
+          "audioTime": 5.032,
+          "stage": "FINALE",
+          "finaleStep": 4
+        }
+      ]
+    },
+    {
+      "name": "victory-resize-keeps-same-track",
+      "ok": true,
+      "data": {
+        "peak": 0.15384931862354279,
+        "sumSquares": 806.362648260325,
+        "samples": 512000,
+        "clipped": 0,
+        "events": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "play",
+            "at": 5963,
+            "audioTime": 1.832,
+            "stage": "FINALE",
+            "finaleStep": 0
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "play",
+            "at": 8995.40000000596,
+            "audioTime": 4.650666666666667,
+            "stage": "FINALE",
+            "finaleStep": 4
+          },
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "complete",
+            "at": 9375.100000023842,
+            "audioTime": 5.032,
+            "stage": "FINALE",
+            "finaleStep": 4
+          }
+        ],
+        "lastPcmAt": 16455.20000001788,
+        "assets": {
+          "launch": {
+            "key": "audio-mission10-beacon-launch",
+            "duration": 3.2,
+            "channels": 1,
+            "sampleRate": 48000,
+            "decodedPeak": 0.6296157836914062
+          },
+          "victory": {
+            "key": "audio-mission10-victory-theme",
+            "duration": 20.035916666666665,
+            "channels": 2,
+            "sampleRate": 48000,
+            "decodedPeak": 0.47446754574775696
+          }
+        },
+        "context": "running",
+        "muted": false,
+        "activeScenes": [
+          "VictoryScene"
+        ],
+        "sounds": [
+          {
+            "key": "audio-mission10-victory-theme",
+            "playing": true,
+            "paused": false,
+            "volume": 0.47999998927116394,
+            "loop": false
+          }
+        ],
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 10,
+          "totalTasks": 10,
+          "score": 10,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        }
+      }
+    },
+    {
+      "name": "victory-natural-ending",
+      "ok": true,
+      "data": {
+        "duration": 20.035916666666665,
+        "started": 8995.40000000596,
+        "ending": {
+          "key": "audio-mission10-victory-theme",
+          "event": "complete",
+          "at": 29069,
+          "audioTime": 24.730666666666668,
+          "stage": "COMPLETE",
+          "finaleStep": 5
+        },
+        "events": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "play",
+            "at": 5963,
+            "audioTime": 1.832,
+            "stage": "FINALE",
+            "finaleStep": 0
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "play",
+            "at": 8995.40000000596,
+            "audioTime": 4.650666666666667,
+            "stage": "FINALE",
+            "finaleStep": 4
+          },
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "complete",
+            "at": 9375.100000023842,
+            "audioTime": 5.032,
+            "stage": "FINALE",
+            "finaleStep": 4
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "complete",
+            "at": 29069,
+            "audioTime": 24.730666666666668,
+            "stage": "COMPLETE",
+            "finaleStep": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "victory-no-output-clipping",
+      "ok": true,
+      "data": {
+        "peak": 0.22774441540241241,
+        "clipped": 0,
+        "samples": 1740800
+      }
+    },
+    {
+      "name": "replay-resets-and-stops-theme",
+      "ok": true,
+      "data": {
+        "peak": 0.22774441540241241,
+        "sumSquares": 3056.70535112164,
+        "samples": 1761280,
+        "clipped": 0,
+        "events": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "play",
+            "at": 5963,
+            "audioTime": 1.832,
+            "stage": "FINALE",
+            "finaleStep": 0
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "play",
+            "at": 8995.40000000596,
+            "audioTime": 4.650666666666667,
+            "stage": "FINALE",
+            "finaleStep": 4
+          },
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "complete",
+            "at": 9375.100000023842,
+            "audioTime": 5.032,
+            "stage": "FINALE",
+            "finaleStep": 4
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "complete",
+            "at": 29069,
+            "audioTime": 24.730666666666668,
+            "stage": "COMPLETE",
+            "finaleStep": 5
+          },
+          {
+            "key": "audio-ui-click",
+            "event": "play",
+            "at": 30325.100000023842,
+            "audioTime": 25.981333333333332,
+            "stage": "COMPLETE",
+            "finaleStep": 5
+          },
+          {
+            "key": "audio-ui-click",
+            "event": "complete",
+            "at": 30494.20000001788,
+            "audioTime": 26.152,
+            "stage": "INTRO",
+            "finaleStep": 0
+          }
+        ],
+        "lastPcmAt": 30571.70000001788,
+        "assets": {
+          "launch": {
+            "key": "audio-mission10-beacon-launch",
+            "duration": 3.2,
+            "channels": 1,
+            "sampleRate": 48000,
+            "decodedPeak": 0.6296157836914062
+          },
+          "victory": {
+            "key": "audio-mission10-victory-theme",
+            "duration": 20.035916666666665,
+            "channels": 2,
+            "sampleRate": 48000,
+            "decodedPeak": 0.47446754574775696
+          }
+        },
+        "context": "running",
+        "muted": false,
+        "activeScenes": [
+          "GameScene"
+        ],
+        "sounds": [
+          {
+            "key": "audio-mission10-victory-theme",
+            "playing": false,
+            "paused": false,
+            "volume": 0.47999998927116394,
+            "loop": false
+          }
+        ],
+        "session": {
+          "currentTask": 1,
+          "completedTasks": 0,
+          "totalTasks": 10,
+          "score": 0,
+          "assemblyProgress": 0,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        }
+      }
+    },
+    {
+      "name": "muted-launch-silent",
+      "ok": true,
+      "data": {
+        "peak": 0,
+        "sumSquares": 0,
+        "samples": 32768,
+        "clipped": 0,
+        "events": [],
+        "lastPcmAt": 6815.4000000059605,
+        "assets": {
+          "launch": {
+            "key": "audio-mission10-beacon-launch",
+            "duration": 3.2,
+            "channels": 1,
+            "sampleRate": 48000,
+            "decodedPeak": 0.6296157836914062
+          },
+          "victory": {
+            "key": "audio-mission10-victory-theme",
+            "duration": 20.035916666666665,
+            "channels": 2,
+            "sampleRate": 48000,
+            "decodedPeak": 0.47446754574775696
+          }
+        },
+        "context": "running",
+        "muted": true,
+        "activeScenes": [
+          "Mission10Scene"
+        ],
+        "sounds": [],
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        }
+      }
+    },
+    {
+      "name": "finale-resize-keeps-track-victory-home",
+      "ok": true,
+      "data": {
+        "peak": 0,
+        "sumSquares": 0,
+        "samples": 0,
+        "clipped": 0,
+        "events": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "event": "play",
+            "at": 5316.5,
+            "audioTime": 4.330666666666667,
+            "stage": "FINALE",
+            "finaleStep": 0
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "event": "play",
+            "at": 10253.199999988079,
+            "audioTime": 4.330666666666667,
+            "stage": "FINALE",
+            "finaleStep": 4
+          }
+        ],
+        "lastPcmAt": 0,
+        "assets": {
+          "launch": {
+            "key": "audio-mission10-beacon-launch",
+            "duration": 3.2,
+            "channels": 1,
+            "sampleRate": 48000,
+            "decodedPeak": 0.6296157836914062
+          },
+          "victory": {
+            "key": "audio-mission10-victory-theme",
+            "duration": 20.035916666666665,
+            "channels": 2,
+            "sampleRate": 48000,
+            "decodedPeak": 0.47446754574775696
+          }
+        },
+        "context": "running",
+        "muted": false,
+        "activeScenes": [
+          "Mission10Scene"
+        ],
+        "sounds": [
+          {
+            "key": "audio-mission10-beacon-launch",
+            "playing": true,
+            "paused": false,
+            "volume": 1,
+            "loop": false
+          },
+          {
+            "key": "audio-mission10-victory-theme",
+            "playing": true,
+            "paused": false,
+            "volume": 1,
+            "loop": false
+          }
+        ],
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        }
+      }
+    }
+  ],
+  "errors": [
+    "page.evaluate: Error: Missing victory-home\n    at eval (eval at evaluate (:303:30), <anonymous>:1:228)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at point (D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-finale-audio.cjs:24:45)\n    at tap (D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-finale-audio.cjs:25:45)\n    at D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-finale-audio.cjs:57:169"
+  ]
+}

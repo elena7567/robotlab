@@ -20,12 +20,17 @@
     "qa:stage8-3k:next": "node qa/stage8-3k-next-after-rotation-playtest.cjs",
     "qa:stage8-4a:contract": "node qa/stage8-4a-composition-contract.cjs",
     "qa:stage8-4b:child": "node qa/stage8-4b-child-readability-playtest.cjs",
-    "qa:stage8-4b:samsung": "node qa/stage8-4b-samsung-overlap-regression.cjs"
+    "qa:stage8-4b:samsung": "node qa/stage8-4b-samsung-overlap-regression.cjs",
+    "qa:mission10:core": "node --experimental-strip-types qa/stage10-mission10-core-logic.mjs",
+    "qa:mission10:browser": "node qa/stage10-mission10-gold-candidate.cjs",
+    "qa:mission10:handoff": "node qa/stage10-mission9-handoff.cjs",
+    "qa:mission10:victory": "node qa/stage10-victory-actions.cjs"
   },
   "dependencies": {
     "phaser": "^3.90.0"
   },
   "devDependencies": {
+    "@breezystack/lamejs": "^1.2.7",
     "typescript": "^5.9.2",
     "vite": "^7.1.3"
   }

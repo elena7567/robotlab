@@ -1,0 +1,319 @@
+{
+  "shots": [
+    "qa\\stage10-remediation-victory-candidate\\1280x720.png",
+    "qa\\stage10-remediation-victory-candidate\\740x360.png",
+    "qa\\stage10-remediation-victory-candidate\\390x844.png",
+    "qa\\stage10-remediation-victory-candidate\\320x568.png"
+  ],
+  "runs": [
+    {
+      "width": 1280,
+      "height": 720,
+      "objects": [
+        {
+          "name": "victory-background",
+          "tint": 16777215,
+          "bounds": {
+            "x": 0,
+            "y": -0.19138755980861788,
+            "width": 1280,
+            "height": 720.3827751196172
+          }
+        },
+        {
+          "name": "victory-title",
+          "text": "МИССИЯ ВЫПОЛНЕНА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 383.5,
+            "y": 64.10000000000001,
+            "width": 513,
+            "height": 59
+          }
+        },
+        {
+          "name": "victory-subtitle",
+          "text": "ТЫ СОБРАЛ, ОЖИВИЛ И ЗАПУСТИЛ РОБОТА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 389,
+            "y": 133.10000000000002,
+            "width": 502,
+            "height": 30
+          }
+        },
+        {
+          "name": "victory-robot-shadow",
+          "bounds": {
+            "x": 579.8439799331104,
+            "y": 530.9187799043062,
+            "width": 120.3120401337793,
+            "height": 11.549999999999955
+          }
+        },
+        {
+          "name": "victory-robot-v2",
+          "tint": 14804198,
+          "bounds": {
+            "x": 530.6254180602007,
+            "y": 205.6937799043062,
+            "width": 218.74916387959865,
+            "height": 330
+          }
+        },
+        {
+          "name": "victory-play-again",
+          "text": "ИГРАТЬ ЕЩЁ РАЗ",
+          "bounds": {
+            "x": 420.5,
+            "y": 645.4199829101562,
+            "width": 165,
+            "height": 23
+          }
+        },
+        {
+          "name": "victory-home",
+          "text": "ДОМОЙ",
+          "bounds": {
+            "x": 737,
+            "y": 644.4199829101562,
+            "width": 80,
+            "height": 25
+          }
+        }
+      ]
+    },
+    {
+      "width": 740,
+      "height": 360,
+      "objects": [
+        {
+          "name": "victory-background",
+          "tint": 16777215,
+          "bounds": {
+            "x": -25.452282157676336,
+            "y": -85.12033195020746,
+            "width": 790.9045643153527,
+            "height": 445.12033195020746
+          }
+        },
+        {
+          "name": "victory-title",
+          "text": "МИССИЯ ВЫПОЛНЕНА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 193.5,
+            "y": 25.300000000000004,
+            "width": 353,
+            "height": 43.00000000000001
+          }
+        },
+        {
+          "name": "victory-subtitle",
+          "text": "ТЫ СОБРАЛ, ОЖИВИЛ И ЗАПУСТИЛ РОБОТА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 205.5,
+            "y": 78.30000000000001,
+            "width": 329,
+            "height": 21
+          }
+        },
+        {
+          "name": "victory-robot-shadow",
+          "bounds": {
+            "x": 351.0237305734093,
+            "y": 244,
+            "width": 37.952538853181466,
+            "height": 6
+          }
+        },
+        {
+          "name": "victory-robot-v2",
+          "tint": 14804198,
+          "bounds": {
+            "x": 329.33254180602006,
+            "y": 116.58289645249576,
+            "width": 81.33491638795988,
+            "height": 122.69999999999999
+          }
+        },
+        {
+          "name": "victory-play-again",
+          "text": "ИГРАТЬ ЕЩЁ РАЗ",
+          "bounds": {
+            "x": 185,
+            "y": 291,
+            "width": 132,
+            "height": 18
+          }
+        },
+        {
+          "name": "victory-home",
+          "text": "ДОМОЙ",
+          "bounds": {
+            "x": 458,
+            "y": 290.5,
+            "width": 62,
+            "height": 19
+          }
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "objects": [
+        {
+          "name": "victory-background",
+          "tint": 16777215,
+          "bounds": {
+            "x": -554.8235919234857,
+            "y": 0,
+            "width": 1499.6471838469713,
+            "height": 844
+          }
+        },
+        {
+          "name": "victory-title",
+          "text": "МИССИЯ ВЫПОЛНЕНА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 16,
+            "y": 67.04191780821917,
+            "width": 358,
+            "height": 43.156164383561645
+          }
+        },
+        {
+          "name": "victory-subtitle",
+          "text": "ТЫ СОБРАЛ, ОЖИВИЛ И ЗАПУСТИЛ РОБОТА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 47,
+            "y": 120.19808219178081,
+            "width": 296,
+            "height": 46.000000000000014
+          }
+        },
+        {
+          "name": "victory-robot-shadow",
+          "bounds": {
+            "x": 149.4272575250836,
+            "y": 624.4677205100957,
+            "width": 91.14548494983279,
+            "height": 8.75
+          }
+        },
+        {
+          "name": "victory-robot-v2",
+          "tint": 14804198,
+          "bounds": {
+            "x": 112.14046822742475,
+            "y": 377.84272051009566,
+            "width": 165.71906354515048,
+            "height": 250
+          }
+        },
+        {
+          "name": "victory-play-again",
+          "text": "ИГРАТЬ ЕЩЁ РАЗ",
+          "bounds": {
+            "x": 114.5,
+            "y": 711.5,
+            "width": 161,
+            "height": 23
+          }
+        },
+        {
+          "name": "victory-home",
+          "text": "ДОМОЙ",
+          "bounds": {
+            "x": 158,
+            "y": 783.5,
+            "width": 74,
+            "height": 23
+          }
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "objects": [
+        {
+          "name": "victory-background",
+          "tint": 16777215,
+          "bounds": {
+            "x": -395.02074688796677,
+            "y": -56.73029045643153,
+            "width": 1110.0414937759335,
+            "height": 624.7302904564315
+          }
+        },
+        {
+          "name": "victory-title",
+          "text": "МИССИЯ ВЫПОЛНЕНА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 16,
+            "y": 41.93900332225914,
+            "width": 288,
+            "height": 35.40199335548172
+          }
+        },
+        {
+          "name": "victory-subtitle",
+          "text": "ТЫ СОБРАЛ, ОЖИВИЛ И ЗАПУСТИЛ РОБОТА!",
+          "tint": 16777215,
+          "bounds": {
+            "x": 36,
+            "y": 87.34099667774086,
+            "width": 248,
+            "height": 40
+          }
+        },
+        {
+          "name": "victory-robot-shadow",
+          "bounds": {
+            "x": 114.4272575250836,
+            "y": 404.625,
+            "width": 91.14548494983279,
+            "height": 8.75
+          }
+        },
+        {
+          "name": "victory-robot-v2",
+          "tint": 14804198,
+          "bounds": {
+            "x": 77.14046822742475,
+            "y": 158,
+            "width": 165.7190635451505,
+            "height": 250
+          }
+        },
+        {
+          "name": "victory-play-again",
+          "text": "ИГРАТЬ ЕЩЁ РАЗ",
+          "bounds": {
+            "x": 94,
+            "y": 453,
+            "width": 132,
+            "height": 18
+          }
+        },
+        {
+          "name": "victory-home",
+          "text": "ДОМОЙ",
+          "bounds": {
+            "x": 129,
+            "y": 514.5,
+            "width": 62,
+            "height": 19
+          }
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1275 @@
+{
+  "required": {
+    "gate": true,
+    "path": true,
+    "energyModule": true,
+    "station": true,
+    "final": true,
+    "oneEventAtATime": true,
+    "childComprehension": true,
+    "wrongFeedback": true
+  },
+  "captures": [
+    {
+      "viewport": "844x390",
+      "stateName": "gate",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-844x390-gate.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "GATE",
+          "gateOpened": false,
+          "pathChosen": false,
+          "moduleCollected": false,
+          "moduleDelivered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "★",
+          "НАЙДИ ЗНАК НА ВОРОТАХ",
+          "★",
+          "●",
+          "▲"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 13.650000000000002,
+          "y": 70.33000000000001,
+          "width": 816.7,
+          "height": 32,
+          "right": 830.35,
+          "bottom": 102.33000000000001
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 107.01000000000002,
+          "width": 816.7,
+          "height": 172.76000000000002,
+          "right": 830.35,
+          "bottom": 279.77000000000004
+        },
+        "feedback": {
+          "x": 13.650000000000002,
+          "y": 288.35,
+          "width": 816.7,
+          "height": 24,
+          "right": 830.35,
+          "bottom": 312.35
+        },
+        "robot": {
+          "x": 189.3124519598467,
+          "y": 74.90233040672226,
+          "width": 106.0271041369472,
+          "height": 159.95007132667618,
+          "right": 295.3395560967939,
+          "bottom": 234.85240173339844
+        },
+        "actions": [
+          {
+            "name": "mission9-action-gate-star",
+            "action": "gate-star",
+            "bounds": {
+              "x": 174,
+              "y": 320.35,
+              "width": 160,
+              "height": 56,
+              "right": 334,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 168,
+              "height": 64
+            }
+          },
+          {
+            "name": "mission9-action-gate-circle",
+            "action": "gate-circle",
+            "bounds": {
+              "x": 342,
+              "y": 320.35,
+              "width": 160,
+              "height": 56,
+              "right": 502,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 168,
+              "height": 64
+            }
+          },
+          {
+            "name": "mission9-action-gate-triangle",
+            "action": "gate-triangle",
+            "bounds": {
+              "x": 510,
+              "y": 320.35,
+              "width": 160,
+              "height": 56,
+              "right": 670,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 168,
+              "height": 64
+            }
+          }
+        ],
+        "hasGate": true,
+        "hasBlockedPath": false,
+        "hasModule": false,
+        "hasStation": false,
+        "hasCompletion": false,
+        "hasFinalButton": false,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "844x390",
+      "stateName": "fork",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-844x390-fork.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "FORK",
+          "gateOpened": true,
+          "pathChosen": false,
+          "moduleCollected": false,
+          "moduleDelivered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "КУДА ЕХАТЬ?",
+          "←",
+          "→"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 13.650000000000002,
+          "y": 70.33000000000001,
+          "width": 816.7,
+          "height": 32,
+          "right": 830.35,
+          "bottom": 102.33000000000001
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 107.01000000000002,
+          "width": 816.7,
+          "height": 172.76000000000002,
+          "right": 830.35,
+          "bottom": 279.77000000000004
+        },
+        "feedback": {
+          "x": 13.650000000000002,
+          "y": 288.35,
+          "width": 816.7,
+          "height": 24,
+          "right": 830.35,
+          "bottom": 312.35
+        },
+        "robot": {
+          "x": 156.64445269226857,
+          "y": 73.174730309066,
+          "width": 106.0271041369472,
+          "height": 159.95007132667618,
+          "right": 262.6715568292158,
+          "bottom": 233.1248016357422
+        },
+        "actions": [
+          {
+            "name": "mission9-action-path-left",
+            "action": "path-left",
+            "bounds": {
+              "x": 258,
+              "y": 320.35,
+              "width": 160,
+              "height": 56,
+              "right": 418,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 168,
+              "height": 64
+            }
+          },
+          {
+            "name": "mission9-action-path-right",
+            "action": "path-right",
+            "bounds": {
+              "x": 426,
+              "y": 320.35,
+              "width": 160,
+              "height": 56,
+              "right": 586,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 168,
+              "height": 64
+            }
+          }
+        ],
+        "hasGate": false,
+        "hasBlockedPath": true,
+        "hasModule": false,
+        "hasStation": false,
+        "hasCompletion": false,
+        "hasFinalButton": false,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "844x390",
+      "stateName": "pickup",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-844x390-pickup.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "PICKUP",
+          "gateOpened": true,
+          "pathChosen": true,
+          "moduleCollected": false,
+          "moduleDelivered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "⚡",
+          "ВОЗЬМИ МОДУЛЬ",
+          "ЗАБРАТЬ"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 13.650000000000002,
+          "y": 70.33000000000001,
+          "width": 816.7,
+          "height": 32,
+          "right": 830.35,
+          "bottom": 102.33000000000001
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 107.01000000000002,
+          "width": 816.7,
+          "height": 172.76000000000002,
+          "right": 830.35,
+          "bottom": 279.77000000000004
+        },
+        "feedback": {
+          "x": 13.650000000000002,
+          "y": 288.35,
+          "width": 816.7,
+          "height": 24,
+          "right": 830.35,
+          "bottom": 312.35
+        },
+        "robot": {
+          "x": 238.31445086121388,
+          "y": 71.44713021140976,
+          "width": 106.0271041369472,
+          "height": 159.95007132667618,
+          "right": 344.3415549981611,
+          "bottom": 231.39720153808594
+        },
+        "actions": [
+          {
+            "name": "mission9-action-pickup-module",
+            "action": "pickup-module",
+            "bounds": {
+              "x": 267,
+              "y": 320.35,
+              "width": 310,
+              "height": 56,
+              "right": 577,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 318,
+              "height": 64
+            }
+          }
+        ],
+        "hasGate": false,
+        "hasBlockedPath": false,
+        "hasModule": true,
+        "hasStation": false,
+        "hasCompletion": false,
+        "hasFinalButton": false,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "844x390",
+      "stateName": "station",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-844x390-station.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "DELIVERY",
+          "gateOpened": true,
+          "pathChosen": true,
+          "moduleCollected": true,
+          "moduleDelivered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "УСТАНОВИ МОДУЛЬ",
+          "УСТАНОВИТЬ"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 13.650000000000002,
+          "y": 70.33000000000001,
+          "width": 816.7,
+          "height": 32,
+          "right": 830.35,
+          "bottom": 102.33000000000001
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 107.01000000000002,
+          "width": 816.7,
+          "height": 172.76000000000002,
+          "right": 830.35,
+          "bottom": 279.77000000000004
+        },
+        "feedback": {
+          "x": 13.650000000000002,
+          "y": 288.35,
+          "width": 816.7,
+          "height": 24,
+          "right": 830.35,
+          "bottom": 312.35
+        },
+        "robot": {
+          "x": 0,
+          "y": 0,
+          "width": 368.8425620782392,
+          "height": 234.85240173339844,
+          "right": 368.8425620782392,
+          "bottom": 234.85240173339844
+        },
+        "actions": [
+          {
+            "name": "mission9-action-deliver-module",
+            "action": "deliver-module",
+            "bounds": {
+              "x": 267,
+              "y": 320.35,
+              "width": 310,
+              "height": 56,
+              "right": 577,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 318,
+              "height": 64
+            }
+          }
+        ],
+        "hasGate": false,
+        "hasBlockedPath": false,
+        "hasModule": false,
+        "hasStation": true,
+        "hasCompletion": false,
+        "hasFinalButton": false,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "844x390",
+      "stateName": "final",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-844x390-final.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "gateOpened": true,
+          "pathChosen": true,
+          "moduleCollected": true,
+          "moduleDelivered": true,
+          "wrongAttempts": 0,
+          "lastAction": "deliver-module",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "УСТАНОВИТЬ",
+          "ИСПЫТАНИЕ ПРОЙДЕНО!",
+          "РОБОТ ГОТОВ К ЗАПУСКУ",
+          "ПРОДОЛЖИТЬ"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 13.650000000000002,
+          "y": 70.33000000000001,
+          "width": 816.7,
+          "height": 32,
+          "right": 830.35,
+          "bottom": 102.33000000000001
+        },
+        "world": {
+          "x": 13.650000000000002,
+          "y": 107.01000000000002,
+          "width": 816.7,
+          "height": 172.76000000000002,
+          "right": 830.35,
+          "bottom": 279.77000000000004
+        },
+        "feedback": {
+          "x": 13.650000000000002,
+          "y": 288.35,
+          "width": 816.7,
+          "height": 24,
+          "right": 830.35,
+          "bottom": 312.35
+        },
+        "robot": {
+          "x": 251.78704240081697,
+          "y": 71.59391811660646,
+          "width": 116.92638276663001,
+          "height": 166.9565219041518,
+          "right": 368.713425167447,
+          "bottom": 238.55044002075826
+        },
+        "actions": [
+          {
+            "name": "mission9-action-deliver-module",
+            "action": "deliver-module",
+            "bounds": {
+              "x": 267,
+              "y": 320.35,
+              "width": 310,
+              "height": 56,
+              "right": 577,
+              "bottom": 376.35
+            },
+            "hit": {
+              "width": 318,
+              "height": 64
+            }
+          }
+        ],
+        "hasGate": false,
+        "hasBlockedPath": false,
+        "hasModule": false,
+        "hasStation": true,
+        "hasCompletion": true,
+        "hasFinalButton": true,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "1280x720",
+      "stateName": "gate",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-1280x720-gate.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "GATE",
+          "gateOpened": false,
+          "pathChosen": false,
+          "moduleCollected": false,
+          "moduleDelivered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "★",
+          "НАЙДИ ЗНАК НА ВОРОТАХ",
+          "★",
+          "●",
+          "▲"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 149.99999999999994,
+          "y": 95.36,
+          "width": 980,
+          "height": 46,
+          "right": 1130,
+          "bottom": 141.36
+        },
+        "world": {
+          "x": 149.99999999999994,
+          "y": 149.36,
+          "width": 980,
+          "height": 427.43999999999994,
+          "right": 1130,
+          "bottom": 576.8
+        },
+        "feedback": {
+          "x": 149.99999999999994,
+          "y": 590.8,
+          "width": 980,
+          "height": 30,
+          "right": 1130,
+          "bottom": 620.8
+        },
+        "robot": {
+          "x": 342.8235881903503,
+          "y": 219.5369778225582,
+          "width": 163.1528114122682,
+          "height": 246.12861055634804,
+          "right": 505.97639960261847,
+          "bottom": 465.66558837890625
+        },
+        "actions": [
+          {
+            "name": "mission9-action-gate-star",
+            "action": "gate-star",
+            "bounds": {
+              "x": 388,
+              "y": 632.8,
+              "width": 160,
+              "height": 62,
+              "right": 548,
+              "bottom": 694.8
+            },
+            "hit": {
+              "width": 168,
+              "height": 70
+            }
+          },
+          {
+            "name": "mission9-action-gate-circle",
+            "action": "gate-circle",
+            "bounds": {
+              "x": 560,
+              "y": 632.8,
+              "width": 160,
+              "height": 62,
+              "right": 720,
+              "bottom": 694.8
+            },
+            "hit": {
+              "width": 168,
+              "height": 70
+            }
+          },
+          {
+            "name": "mission9-action-gate-triangle",
+            "action": "gate-triangle",
+            "bounds": {
+              "x": 732,
+              "y": 632.8,
+              "width": 160,
+              "height": 62,
+              "right": 892,
+              "bottom": 694.8
+            },
+            "hit": {
+              "width": 168,
+              "height": 70
+            }
+          }
+        ],
+        "hasGate": true,
+        "hasBlockedPath": false,
+        "hasModule": false,
+        "hasStation": false,
+        "hasCompletion": false,
+        "hasFinalButton": false,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "1280x720",
+      "stateName": "fork",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-1280x720-fork.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "FORK",
+          "gateOpened": true,
+          "pathChosen": false,
+          "moduleCollected": false,
+          "moduleDelivered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "КУДА ЕХАТЬ?",
+          "←",
+          "→"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 149.99999999999994,
+          "y": 95.36,
+          "width": 980,
+          "height": 46,
+          "right": 1130,
+          "bottom": 141.36
+        },
+        "world": {
+          "x": 149.99999999999994,
+          "y": 149.36,
+          "width": 980,
+          "height": 427.43999999999994,
+          "right": 1130,
+          "bottom": 576.8
+        },
+        "feedback": {
+          "x": 149.99999999999994,
+          "y": 590.8,
+          "width": 980,
+          "height": 30,
+          "right": 1130,
+          "bottom": 620.8
+        },
+        "robot": {
+          "x": 303.62360650089715,
+          "y": 215.26259427763634,
+          "width": 163.1528114122682,
+          "height": 246.12861055634804,
+          "right": 466.77641791316535,
+          "bottom": 461.3912048339844
+        },
+        "actions": [
+          {
+            "name": "mission9-action-path-left",
+            "action": "path-left",
+            "bounds": {
+              "x": 474,
+              "y": 632.8,
+              "width": 160,
+              "height": 62,
+              "right": 634,
+              "bottom": 694.8
+            },
+            "hit": {
+              "width": 168,
+              "height": 70
+            }
+          },
+          {
+            "name": "mission9-action-path-right",
+            "action": "path-right",
+            "bounds": {
+              "x": 646,
+              "y": 632.8,
+              "width": 160,
+              "height": 62,
+              "right": 806,
+              "bottom": 694.8
+            },
+            "hit": {
+              "width": 168,
+              "height": 70
+            }
+          }
+        ],
+        "hasGate": false,
+        "hasBlockedPath": true,
+        "hasModule": false,
+        "hasStation": false,
+        "hasCompletion": false,
+        "hasFinalButton": false,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    },
+    {
+      "viewport": "1280x720",
+      "stateName": "final",
+      "screenshot": "docs\\qa\\screenshots\\stage9-1-mission9-1280x720-final.png",
+      "state": {
+        "scene": "Mission9Scene",
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "gateOpened": true,
+          "pathChosen": true,
+          "moduleCollected": true,
+          "moduleDelivered": true,
+          "wrongAttempts": 0,
+          "lastAction": "deliver-module",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "УСТАНОВИТЬ",
+          "ИСПЫТАНИЕ ПРОЙДЕНО!",
+          "РОБОТ ГОТОВ К ЗАПУСКУ",
+          "ПРОДОЛЖИТЬ"
+        ],
+        "progressDots": 4,
+        "status": {
+          "x": 149.99999999999994,
+          "y": 95.36,
+          "width": 980,
+          "height": 46,
+          "right": 1130,
+          "bottom": 141.36
+        },
+        "world": {
+          "x": 149.99999999999994,
+          "y": 149.36,
+          "width": 980,
+          "height": 427.43999999999994,
+          "right": 1130,
+          "bottom": 576.8
+        },
+        "feedback": {
+          "x": 149.99999999999994,
+          "y": 590.8,
+          "width": 980,
+          "height": 30,
+          "right": 1130,
+          "bottom": 620.8
+        },
+        "robot": {
+          "x": 414.05322050076904,
+          "y": 214.44604592512465,
+          "width": 179.92444697916596,
+          "height": 256.9100246017583,
+          "right": 593.977667479935,
+          "bottom": 471.35607052688295
+        },
+        "actions": [
+          {
+            "name": "mission9-action-deliver-module",
+            "action": "deliver-module",
+            "bounds": {
+              "x": 485,
+              "y": 632.8,
+              "width": 310,
+              "height": 62,
+              "right": 795,
+              "bottom": 694.8
+            },
+            "hit": {
+              "width": 318,
+              "height": 70
+            }
+          }
+        ],
+        "hasGate": false,
+        "hasBlockedPath": false,
+        "hasModule": false,
+        "hasStation": true,
+        "hasCompletion": true,
+        "hasFinalButton": true,
+        "mission10": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "checks": {
+        "insideViewport": true,
+        "controlTargets": true,
+        "feedbackClear": true,
+        "compactProgress": true,
+        "noTechnicalRouteText": true,
+        "minimalControls": true,
+        "errors": true
+      }
+    }
+  ],
+  "wrongFeedback": {
+    "checks": {
+      "wrongGateRetry": true,
+      "wrongPathRetry": true,
+      "noProgressLoss": true,
+      "errors": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "wrongGate": {
+      "scene": "Mission9Scene",
+      "mechanic": {
+        "courseStage": "GATE",
+        "gateOpened": false,
+        "pathChosen": false,
+        "moduleCollected": false,
+        "moduleDelivered": false,
+        "wrongAttempts": 1,
+        "lastAction": "gate-circle",
+        "lastResult": "wrong",
+        "transitioning": false,
+        "completed": false
+      },
+      "session": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "★",
+        "ЕЩЁ РАЗ",
+        "★",
+        "●",
+        "▲"
+      ],
+      "progressDots": 4,
+      "status": {
+        "x": 13.650000000000002,
+        "y": 70.33000000000001,
+        "width": 816.7,
+        "height": 32,
+        "right": 830.35,
+        "bottom": 102.33000000000001
+      },
+      "world": {
+        "x": 13.650000000000002,
+        "y": 107.01000000000002,
+        "width": 816.7,
+        "height": 172.76000000000002,
+        "right": 830.35,
+        "bottom": 279.77000000000004
+      },
+      "feedback": {
+        "x": 13.650000000000002,
+        "y": 288.35,
+        "width": 816.7,
+        "height": 24,
+        "right": 830.35,
+        "bottom": 312.35
+      },
+      "robot": {
+        "x": 189.3124519598467,
+        "y": 74.90233040672226,
+        "width": 106.0271041369472,
+        "height": 159.95007132667618,
+        "right": 295.3395560967939,
+        "bottom": 234.85240173339844
+      },
+      "actions": [
+        {
+          "name": "mission9-action-gate-star",
+          "action": "gate-star",
+          "bounds": {
+            "x": 174,
+            "y": 320.35,
+            "width": 160,
+            "height": 56,
+            "right": 334,
+            "bottom": 376.35
+          },
+          "hit": {
+            "width": 168,
+            "height": 64
+          }
+        },
+        {
+          "name": "mission9-action-gate-circle",
+          "action": "gate-circle",
+          "bounds": {
+            "x": 342,
+            "y": 320.35,
+            "width": 160,
+            "height": 56,
+            "right": 502,
+            "bottom": 376.35
+          },
+          "hit": {
+            "width": 168,
+            "height": 64
+          }
+        },
+        {
+          "name": "mission9-action-gate-triangle",
+          "action": "gate-triangle",
+          "bounds": {
+            "x": 510,
+            "y": 320.35,
+            "width": 160,
+            "height": 56,
+            "right": 670,
+            "bottom": 376.35
+          },
+          "hit": {
+            "width": 168,
+            "height": 64
+          }
+        }
+      ],
+      "hasGate": true,
+      "hasBlockedPath": false,
+      "hasModule": false,
+      "hasStation": false,
+      "hasCompletion": false,
+      "hasFinalButton": false,
+      "mission10": false
+    },
+    "wrongPath": {
+      "scene": "Mission9Scene",
+      "mechanic": {
+        "courseStage": "FORK",
+        "gateOpened": true,
+        "pathChosen": false,
+        "moduleCollected": false,
+        "moduleDelivered": false,
+        "wrongAttempts": 1,
+        "lastAction": "path-left",
+        "lastResult": "wrong",
+        "transitioning": false,
+        "completed": false
+      },
+      "session": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "labels": [
+        "⌂ Домой",
+        "♪ Звук",
+        "ТУТ НЕ ПРОЕХАТЬ",
+        "←",
+        "→"
+      ],
+      "progressDots": 4,
+      "status": {
+        "x": 13.650000000000002,
+        "y": 70.33000000000001,
+        "width": 816.7,
+        "height": 32,
+        "right": 830.35,
+        "bottom": 102.33000000000001
+      },
+      "world": {
+        "x": 13.650000000000002,
+        "y": 107.01000000000002,
+        "width": 816.7,
+        "height": 172.76000000000002,
+        "right": 830.35,
+        "bottom": 279.77000000000004
+      },
+      "feedback": {
+        "x": 13.650000000000002,
+        "y": 288.35,
+        "width": 816.7,
+        "height": 24,
+        "right": 830.35,
+        "bottom": 312.35
+      },
+      "robot": {
+        "x": 156.64445269226857,
+        "y": 73.174730309066,
+        "width": 106.0271041369472,
+        "height": 159.95007132667618,
+        "right": 262.6715568292158,
+        "bottom": 233.1248016357422
+      },
+      "actions": [
+        {
+          "name": "mission9-action-path-left",
+          "action": "path-left",
+          "bounds": {
+            "x": 258,
+            "y": 320.35,
+            "width": 160,
+            "height": 56,
+            "right": 418,
+            "bottom": 376.35
+          },
+          "hit": {
+            "width": 168,
+            "height": 64
+          }
+        },
+        {
+          "name": "mission9-action-path-right",
+          "action": "path-right",
+          "bounds": {
+            "x": 426,
+            "y": 320.35,
+            "width": 160,
+            "height": 56,
+            "right": 586,
+            "bottom": 376.35
+          },
+          "hit": {
+            "width": 168,
+            "height": 64
+          }
+        }
+      ],
+      "hasGate": false,
+      "hasBlockedPath": true,
+      "hasModule": false,
+      "hasStation": false,
+      "hasCompletion": false,
+      "hasFinalButton": false,
+      "mission10": false
+    }
+  },
+  "failures": []
+}

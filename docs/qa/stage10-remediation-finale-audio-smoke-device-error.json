@@ -1,0 +1,11 @@
+{
+  "result": "FAIL",
+  "mode": "launch-and-victory",
+  "evidence": "Continuous AudioWorklet PCM after Phaser master mute/volume; physical speakers and subjective listening not observed",
+  "checks": [],
+  "errors": [
+    "The AudioContext encountered an error from the audio device or the WebAudio renderer.",
+    "The AudioContext encountered an error from the audio device or the WebAudio renderer.",
+    "page.waitForFunction: Timeout 4000ms exceeded.\n    at D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-finale-audio.cjs:28:266"
+  ]
+}

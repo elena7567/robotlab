@@ -1,0 +1,1902 @@
+{
+  "result": "NOT RUN",
+  "visual": "NOT VERIFIED",
+  "checks": [
+    {
+      "name": "740x360-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 255,
+        "y": 293.4,
+        "width": 230,
+        "height": 48
+      }
+    },
+    {
+      "name": "740x360-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 136.92000000000002,
+        "y": 158.73000000000002,
+        "width": 190.0533333333333,
+        "height": 146.54
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 334.97333333333336,
+        "y": 158.73000000000002,
+        "width": 190.0533333333333,
+        "height": 146.54
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 533.0266666666666,
+        "y": 158.73000000000002,
+        "width": 190.0533333333333,
+        "height": 146.54
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "740x360-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 330.97333333333336,
+        "y": 232
+      }
+    },
+    {
+      "name": "740x360-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 274.6676,
+        "y": 199.178,
+        "width": 87.92399999999999,
+        "height": 87.92399999999999
+      }
+    },
+    {
+      "name": "740x360-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 386.038,
+        "y": 199.178,
+        "width": 87.92399999999999,
+        "height": 87.92399999999999
+      }
+    },
+    {
+      "name": "740x360-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 497.40840000000003,
+        "y": 199.178,
+        "width": 87.92399999999999,
+        "height": 87.92399999999999
+      }
+    },
+    {
+      "name": "740x360-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "740x360-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "740x360-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "740x360-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "740x360-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "740x360-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 349.3253333333334,
+        "y": 245.306,
+        "width": 68.93333333333332,
+        "height": 68.93333333333332
+      }
+    },
+    {
+      "name": "740x360-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 349.3253333333334,
+        "y": 164.926,
+        "width": 68.93333333333332,
+        "height": 68.93333333333332
+      }
+    },
+    {
+      "name": "740x360-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 335.6501925850681,
+        "y": 204.86006559860732,
+        "width": 68.49395198329853,
+        "height": 49.1369655532359
+      }
+    },
+    {
+      "name": "740x360-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "740x360-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "740x360-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    },
+    {
+      "name": "844x390-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 307,
+        "y": 322.35,
+        "width": 230,
+        "height": 48
+      }
+    },
+    {
+      "name": "844x390-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 138.33000000000004,
+        "y": 161.08249999999998,
+        "width": 223.78,
+        "height": 171.835
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 370.11,
+        "y": 161.08249999999998,
+        "width": 223.78,
+        "height": 171.835
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 601.89,
+        "y": 161.08249999999998,
+        "width": 223.78,
+        "height": 171.835
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "844x390-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 366.11,
+        "y": 247
+      }
+    },
+    {
+      "name": "844x390-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-portrait-gate",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-home",
+          "bounds": {
+            "x": 9.650000000000006,
+            "y": 10.650000000000006,
+            "width": 84,
+            "height": 68
+          }
+        },
+        {
+          "name": "mission10-sound",
+          "bounds": {
+            "x": 296.35,
+            "y": 10.650000000000006,
+            "width": 84,
+            "height": 68
+          }
+        }
+      ]
+    },
+    {
+      "name": "844x390-portrait-state-preserved",
+      "ok": true
+    },
+    {
+      "name": "844x390-landscape-state-restored",
+      "ok": true
+    },
+    {
+      "name": "844x390-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 299.8549,
+        "y": 207.98450000000003,
+        "width": 103.101,
+        "height": 103.101
+      }
+    },
+    {
+      "name": "844x390-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 430.4495,
+        "y": 207.98450000000003,
+        "width": 103.101,
+        "height": 103.101
+      }
+    },
+    {
+      "name": "844x390-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 561.0441000000001,
+        "y": 207.98450000000003,
+        "width": 103.101,
+        "height": 103.101
+      }
+    },
+    {
+      "name": "844x390-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "844x390-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "844x390-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "844x390-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "844x390-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "844x390-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 388.23133333333334,
+        "y": 261.5615,
+        "width": 78.23333333333333,
+        "height": 78.23333333333333
+      }
+    },
+    {
+      "name": "844x390-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 388.23133333333334,
+        "y": 171.4165,
+        "width": 78.23333333333333,
+        "height": 78.23333333333333
+      }
+    },
+    {
+      "name": "844x390-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 382.38505271322845,
+        "y": 218.82545153576547,
+        "width": 78.99270772442588,
+        "height": 56.66868162839248
+      }
+    },
+    {
+      "name": "844x390-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "844x390-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "844x390-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    },
+    {
+      "name": "915x412-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 342.5,
+        "y": 343.58,
+        "width": 230,
+        "height": 48
+      }
+    },
+    {
+      "name": "915x412-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 139.36399999999998,
+        "y": 163.466,
+        "width": 246.75733333333335,
+        "height": 189.068
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 394.1213333333333,
+        "y": 163.466,
+        "width": 246.75733333333335,
+        "height": 189.068
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 648.8786666666667,
+        "y": 163.466,
+        "width": 246.75733333333335,
+        "height": 189.068
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "915x412-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 390.1213333333333,
+        "y": 258
+      }
+    },
+    {
+      "name": "915x412-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-portrait-gate",
+      "ok": false,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "bounds": {
+            "x": 139.36399999999998,
+            "y": 163.466,
+            "width": 246.75733333333335,
+            "height": 189.068
+          },
+          "laneId": "LEFT",
+          "hazardKind": "SAFE"
+        },
+        {
+          "name": "mission10-path-target-center",
+          "bounds": {
+            "x": 394.1213333333333,
+            "y": 163.466,
+            "width": 246.75733333333335,
+            "height": 189.068
+          },
+          "laneId": "CENTER",
+          "hazardKind": "HAZARD"
+        },
+        {
+          "name": "mission10-path-target-right",
+          "bounds": {
+            "x": 648.8786666666667,
+            "y": 163.466,
+            "width": 246.75733333333335,
+            "height": 189.068
+          },
+          "laneId": "RIGHT",
+          "hazardKind": "LASER"
+        },
+        {
+          "name": "mission10-home",
+          "bounds": {
+            "x": 10.420000000000002,
+            "y": 6.420000000000002,
+            "width": 84,
+            "height": 60
+          }
+        },
+        {
+          "name": "mission10-sound",
+          "bounds": {
+            "x": 820.58,
+            "y": 6.420000000000002,
+            "width": 84,
+            "height": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "915x412-portrait-state-preserved",
+      "ok": true
+    },
+    {
+      "name": "915x412-landscape-state-restored",
+      "ok": true
+    },
+    {
+      "name": "915x412-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 317.08792,
+        "y": 214.83759999999998,
+        "width": 113.44080000000001,
+        "height": 113.44080000000001
+      }
+    },
+    {
+      "name": "915x412-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 460.7796,
+        "y": 214.83759999999998,
+        "width": 113.44080000000001,
+        "height": 113.44080000000001
+      }
+    },
+    {
+      "name": "915x412-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 604.47128,
+        "y": 214.83759999999998,
+        "width": 113.44080000000001,
+        "height": 113.44080000000001
+      }
+    },
+    {
+      "name": "915x412-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "915x412-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "915x412-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "915x412-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "915x412-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "915x412-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 414.6557333333334,
+        "y": 273.48220000000003,
+        "width": 85.05333333333333,
+        "height": 85.05333333333333
+      }
+    },
+    {
+      "name": "915x412-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 414.6557333333334,
+        "y": 176.1762,
+        "width": 85.05333333333333,
+        "height": 85.05333333333333
+      }
+    },
+    {
+      "name": "915x412-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 414.05235341639775,
+        "y": 228.9970580079441,
+        "width": 86.63515876826723,
+        "height": 62.15130955114823
+      }
+    },
+    {
+      "name": "915x412-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "915x412-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "915x412-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    },
+    {
+      "name": "1024x768-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1024x768-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 374,
+        "y": 619.3333333333334,
+        "width": 276,
+        "height": 58
+      }
+    },
+    {
+      "name": "1024x768-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 22.880000000000003,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 916.32,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1024x768-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 232.88,
+        "y": 362.37200000000007,
+        "width": 242.08,
+        "height": 187.56
+      }
+    },
+    {
+      "name": "1024x768-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 486.96,
+        "y": 362.37200000000007,
+        "width": 242.08,
+        "height": 187.56
+      }
+    },
+    {
+      "name": "1024x768-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 741.04,
+        "y": 362.37200000000007,
+        "width": 242.08,
+        "height": 187.56
+      }
+    },
+    {
+      "name": "1024x768-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 22.880000000000003,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 916.32,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1024x768-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1024x768-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "1024x768-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 480.96000000000004,
+        "y": 456.15200000000004
+      }
+    },
+    {
+      "name": "1024x768-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1024x768-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1024x768-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1024x768-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1024x768-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 409.18639999999994,
+        "y": 427.58080000000007,
+        "width": 112.536,
+        "height": 112.536
+      }
+    },
+    {
+      "name": "1024x768-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 551.732,
+        "y": 427.58080000000007,
+        "width": 112.536,
+        "height": 112.536
+      }
+    },
+    {
+      "name": "1024x768-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 694.2775999999999,
+        "y": 427.58080000000007,
+        "width": 112.536,
+        "height": 112.536
+      }
+    },
+    {
+      "name": "1024x768-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 22.880000000000003,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 916.32,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "1024x768-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "1024x768-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "1024x768-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "1024x768-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "1024x768-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1024x768-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 490.736,
+        "y": 513.456,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1024x768-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 490.736,
+        "y": 295.888,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1024x768-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 22.880000000000003,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 916.32,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1024x768-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 450.76443629018706,
+        "y": 432.3067732253845,
+        "width": 122.10449129239231,
+        "height": 87.59670027497708
+      }
+    },
+    {
+      "name": "1024x768-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 22.880000000000003,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 916.32,
+        "y": 24.032000000000004,
+        "width": 84.8,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "1024x768-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "1024x768-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "1024x768-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    }
+  ],
+  "runs": [
+    {
+      "label": "740x360",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "844x390",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "915x412",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "1024x768",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    }
+  ],
+  "shots": [
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-path.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\740x360-victory.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-path.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-portrait-gate.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\844x390-victory.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-path.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-portrait-gate.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\915x412-victory.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-path.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-remaining\\1024x768-victory.png"
+  ],
+  "errors": [],
+  "limitations": [
+    "Browser emulation only; physical Samsung and speaker audibility are separate gates.",
+    "Direct Mission 10 intro entry followed only by actual input; not a missions 1–10 natural-flow claim."
+  ]
+}

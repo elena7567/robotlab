@@ -1,0 +1,140 @@
+{
+  "runs": [
+    {
+      "width": 740,
+      "stage": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      },
+      "feedback": [
+        {
+          "text": "ШАГ 1 ИЗ 3",
+          "stroke": "#173b52",
+          "strokeThickness": 4
+        }
+      ],
+      "robots": [
+        {
+          "alpha": 1,
+          "tint": 16777215
+        }
+      ],
+      "backdrops": [
+        "bg-main-laboratory"
+      ],
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-BOK0S7-n.js"
+      ]
+    },
+    {
+      "width": 740,
+      "stage": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 4,
+        "completed": false
+      },
+      "feedback": [
+        {
+          "text": "ЛАБОРАТОРИЯ ОЖИЛА!",
+          "stroke": "#173b52",
+          "strokeThickness": 4
+        }
+      ],
+      "robots": [
+        {
+          "alpha": 1,
+          "tint": 16777215
+        }
+      ],
+      "backdrops": [
+        "MISSION10_FINAL_LAB_ACTIVE"
+      ],
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-BOK0S7-n.js"
+      ]
+    },
+    {
+      "width": 1280,
+      "stage": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 4,
+        "completed": false
+      },
+      "feedback": [
+        {
+          "text": "ЛАБОРАТОРИЯ ОЖИЛА!",
+          "stroke": "#173b52",
+          "strokeThickness": 4
+        }
+      ],
+      "robots": [
+        {
+          "alpha": 1,
+          "tint": 16777215
+        }
+      ],
+      "backdrops": [
+        "MISSION10_FINAL_LAB_ACTIVE"
+      ],
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-BOK0S7-n.js"
+      ]
+    }
+  ],
+  "errors": []
+}

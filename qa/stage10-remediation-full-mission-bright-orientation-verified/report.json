@@ -1,0 +1,479 @@
+{
+  "result": "PASS",
+  "visual": "NOT VERIFIED",
+  "checks": [
+    {
+      "name": "844x390-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 307,
+        "y": 322.35,
+        "width": 230,
+        "height": 48
+      }
+    },
+    {
+      "name": "844x390-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 138.33000000000004,
+        "y": 161.08249999999998,
+        "width": 223.78,
+        "height": 171.835
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 370.11,
+        "y": 161.08249999999998,
+        "width": 223.78,
+        "height": 171.835
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 601.89,
+        "y": 161.08249999999998,
+        "width": 223.78,
+        "height": 171.835
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 9.650000000000006,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 750.35,
+        "y": 5.650000000000006,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "844x390-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "844x390-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 366.11,
+        "y": 247
+      }
+    },
+    {
+      "name": "844x390-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-portrait-gate",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-home",
+          "bounds": {
+            "x": 9.650000000000006,
+            "y": 10.650000000000006,
+            "width": 84,
+            "height": 68
+          }
+        },
+        {
+          "name": "mission10-sound",
+          "bounds": {
+            "x": 296.35,
+            "y": 10.650000000000006,
+            "width": 84,
+            "height": 68
+          }
+        }
+      ]
+    },
+    {
+      "name": "844x390-portrait-state-preserved",
+      "ok": true
+    },
+    {
+      "name": "844x390-landscape-state-restored",
+      "ok": true
+    },
+    {
+      "name": "915x412-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 342.5,
+        "y": 343.58,
+        "width": 230,
+        "height": 48
+      }
+    },
+    {
+      "name": "915x412-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 139.36399999999998,
+        "y": 163.466,
+        "width": 246.75733333333335,
+        "height": 189.068
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 394.1213333333333,
+        "y": 163.466,
+        "width": 246.75733333333335,
+        "height": 189.068
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 648.8786666666667,
+        "y": 163.466,
+        "width": 246.75733333333335,
+        "height": 189.068
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 10.420000000000002,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 820.58,
+        "y": 6.420000000000002,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "915x412-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "915x412-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 390.1213333333333,
+        "y": 258
+      }
+    },
+    {
+      "name": "915x412-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-portrait-gate",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-home",
+          "bounds": {
+            "x": 10.420000000000002,
+            "y": 11.420000000000002,
+            "width": 84,
+            "height": 68
+          }
+        },
+        {
+          "name": "mission10-sound",
+          "bounds": {
+            "x": 317.58,
+            "y": 11.420000000000002,
+            "width": 84,
+            "height": 68
+          }
+        }
+      ]
+    },
+    {
+      "name": "915x412-portrait-state-preserved",
+      "ok": true
+    },
+    {
+      "name": "915x412-landscape-state-restored",
+      "ok": true
+    }
+  ],
+  "runs": [
+    {
+      "label": "844x390",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "915x412",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    }
+  ],
+  "shots": [
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\844x390-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\844x390-path.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\844x390-portrait-gate.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\844x390-landscape-restored.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\915x412-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\915x412-path.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\915x412-portrait-gate.png",
+    "qa\\stage10-remediation-full-mission-bright-orientation-verified\\915x412-landscape-restored.png"
+  ],
+  "errors": [],
+  "limitations": [
+    "Browser emulation only; physical Samsung and speaker audibility are separate gates.",
+    "Direct Mission 10 intro entry followed only by actual input; not a missions 1–10 natural-flow claim."
+  ]
+}

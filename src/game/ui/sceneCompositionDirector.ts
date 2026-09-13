@@ -21,7 +21,7 @@ export const SEMANTIC_REGIONS = [
 ] as const;
 
 export type SemanticRegionName = (typeof SEMANTIC_REGIONS)[number];
-export type MissionId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 'MISSION5_TRANSITION';
+export type MissionId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 'MISSION5_TRANSITION';
 export type MissionCharacterRole =
   | 'PRIMARY_CHARACTER'
   | 'SUPPORTING_CHARACTER'
@@ -113,6 +113,40 @@ export interface Mission9SceneLayout {
   readonly robotScale: number;
 }
 
+export interface Mission10SignalRegions {
+  readonly TITLE: RectLayout;
+  readonly PROGRESS: RectLayout;
+  /** Bounded beam grid; apparatus bodies may extend beyond aperture anchors. */
+  readonly APPARATUS_FIELD: RectLayout;
+  readonly ROBOT_VISIBLE: RectLayout;
+  readonly ROBOT_GROUND_Y: number;
+  readonly PROP_VISIBLE_HEIGHT: number;
+  readonly BEAM_CORE_WIDTH: number;
+}
+
+export interface Mission10SceneLayout {
+  readonly signalRegions: Mission10SignalRegions;
+  readonly introRegions: Readonly<Record<'TOP_LEFT_CONTROL' | 'TOP_CENTER_TITLE' | 'TOP_RIGHT_CONTROL' | 'INTRO_MESSAGE' | 'HERO_GROUP' | 'CTA', RectLayout>>;
+  readonly introGroundY: number;
+  readonly launchGroundY: number;
+  readonly portraitGate: boolean;
+  readonly showExtendedHeader: boolean;
+  readonly title: RectLayout;
+  readonly progress: RectLayout;
+  readonly feedback: RectLayout;
+  readonly world: RectLayout;
+  readonly robot: RectLayout;
+  readonly puzzleStage: RectLayout;
+  readonly pathLanes: readonly [RectLayout, RectLayout, RectLayout];
+  readonly relayBoard: RectLayout;
+  readonly signalBoard: RectLayout;
+  readonly launchConsole: RectLayout;
+  readonly beacon: RectLayout;
+  readonly platformContactY: number;
+  readonly robotScale: number;
+  readonly targetGap: number;
+}
+
 export interface TransitionSceneLayout {
   readonly phonePortrait: boolean;
   readonly titleY: number;
@@ -144,6 +178,7 @@ export interface SceneComposition {
   readonly mission7?: Mission7SceneLayout;
   readonly mission8?: Mission8SceneLayout;
   readonly mission9?: Mission9SceneLayout;
+  readonly mission10?: Mission10SceneLayout;
   readonly transition?: TransitionSceneLayout;
   readonly surface?: SceneSurfaceLayout;
 }
@@ -572,6 +607,181 @@ function composeMission9(layout: ResponsiveLayout): SceneComposition {
     taskCard: puzzleStage, progress: layout.progress, mission9,
   };
 }
+
+function composeMission10(layout: ResponsiveLayout): SceneComposition {
+  const { viewportWidth: width, viewportHeight: height, safe, semanticMode } = layout;
+  const regions = commonRegions(layout);
+  const portraitGate = layout.mode !== 'landscape';
+  const shortLandscape = semanticMode === 'PHONE_LANDSCAPE_SHORT';
+  const desktop = semanticMode === 'DESKTOP';
+  const safeLeft = safe.left + (shortLandscape ? layout.gapXS : layout.gapS);
+  const safeRight = width - safe.right - (shortLandscape ? layout.gapXS : layout.gapS);
+  const safeBottom = height - safe.bottom;
+  const safeWidth = Math.max(1, safeRight - safeLeft);
+  const headerBottom = layout.headerZone.y + layout.headerZone.height;
+  const titleHeight = shortLandscape ? 28 : clampValue(30, height * 0.05, 42);
+  const titleTop = headerBottom + (shortLandscape ? 2 : layout.gapXS);
+  const progressWidth = shortLandscape ? 112 : 148;
+  const progress = rect(safeRight - progressWidth, titleTop, progressWidth, titleHeight);
+  const titleSideReserve = progressWidth + layout.gapS;
+  const title = rect(
+    safeLeft + titleSideReserve,
+    titleTop,
+    Math.max(1, safeWidth - titleSideReserve * 2),
+    titleHeight,
+  );
+  const feedbackHeight = shortLandscape ? 24 : 30;
+  const feedback = rect(
+    safeLeft,
+    title.y + title.height + (shortLandscape ? 1 : layout.gapXS),
+    safeWidth,
+    feedbackHeight,
+  );
+  const worldTop = feedback.y + feedback.height + (shortLandscape ? 1 : layout.gapXS);
+  const worldBottom = safeBottom - (shortLandscape ? 4 : layout.gapXS);
+  const world = rect(safeLeft, worldTop, safeWidth, Math.max(1, worldBottom - worldTop));
+  const robotWidth = Math.min(desktop ? 250 : shortLandscape ? 112 : 180, world.width * (shortLandscape ? 0.22 : 0.24));
+  const robot = rect(world.x, world.y, robotWidth, world.height);
+  const targetGap = shortLandscape ? 8 : 12;
+  const puzzleStage = rect(
+    robot.x + robot.width + targetGap,
+    world.y,
+    Math.max(1, world.width - robot.width - targetGap),
+    world.height,
+  );
+  const laneGap = targetGap;
+  const laneWidth = (puzzleStage.width - laneGap * 2) / 3;
+  const pathLanes = [0, 1, 2].map((index) =>
+    rect(puzzleStage.x + index * (laneWidth + laneGap), puzzleStage.y, laneWidth, puzzleStage.height),
+  ) as unknown as readonly [RectLayout, RectLayout, RectLayout];
+  const relayBoard = rect(puzzleStage.x, puzzleStage.y, puzzleStage.width, puzzleStage.height);
+  const signalBoard = rect(puzzleStage.x, puzzleStage.y, puzzleStage.width, puzzleStage.height);
+  const laboratoryScale = Math.max(width / LOGICAL_SCENE_WIDTH, height / LOGICAL_SCENE_HEIGHT);
+  const introPlatformY = (height - LOGICAL_SCENE_HEIGHT * laboratoryScale) / 2 + PLATFORM_CONTACT_Y * laboratoryScale;
+  const launchGroundY = Math.min(worldBottom, introPlatformY + layout.gapL);
+  const launchHeight = Math.max(1, launchGroundY - world.y);
+  const consoleWidth = Math.min(desktop ? 460 : shortLandscape ? 340 : 400, world.width * 0.48);
+  const consoleVisibleWidth = Math.min(consoleWidth, launchHeight * 1091 / 958);
+  const beaconHeight = Math.min(desktop ? 360 : shortLandscape ? 220 : 320, launchHeight * 0.92);
+  const beaconWidth = beaconHeight * 964 / 1337;
+  const beacon = rect(Math.min(safeRight - beaconWidth, width / 2 + consoleVisibleWidth / 2 + targetGap * 2),
+    launchGroundY - beaconHeight, beaconWidth, beaconHeight);
+  const launchConsole = rect(width / 2 - consoleWidth / 2, world.y, consoleWidth, launchHeight);
+  const platformContactY = world.y + world.height;
+  const robotVisibleHeight = clampValue(shortLandscape ? 118 : 150, world.height * 0.86, desktop ? 320 : 240);
+  // Intro hierarchy starts at the controls, independently of actor dimensions.
+  const introTitleHeight = shortLandscape ? 28 : 40;
+  const introTitle = rect(safe.left + layout.iconWidth + layout.gapM, layout.headerY - introTitleHeight / 2,
+    width - safe.left - safe.right - 2 * (layout.iconWidth + layout.gapM), introTitleHeight);
+  const introMessageWidth = Math.min(introTitle.width, shortLandscape ? 410 : 540);
+  const introMessage = rect((width - introMessageWidth) / 2, introTitle.y + introTitle.height + layout.gapXS,
+    introMessageWidth, shortLandscape ? 48 : 70);
+  const introCtaHeight = shortLandscape ? 48 : 58;
+  const introCtaWidth = shortLandscape ? 230 : 276;
+  const introCtaTop = Math.min(worldBottom - introCtaHeight - 2, introPlatformY + layout.gapM);
+  const introGroundY = Math.min(introPlatformY, introCtaTop - layout.gapS);
+  const heroWidth = Math.min(safeWidth, 600 * laboratoryScale);
+  const heroTop = introMessage.y + introMessage.height + layout.gapM;
+  const introRegions: Mission10SceneLayout['introRegions'] = {
+    TOP_LEFT_CONTROL: rect(safe.left, layout.headerY - layout.iconHeight / 2, layout.iconWidth, layout.iconHeight),
+    TOP_CENTER_TITLE: introTitle,
+    TOP_RIGHT_CONTROL: rect(width - safe.right - layout.iconWidth, layout.headerY - layout.iconHeight / 2, layout.iconWidth, layout.iconHeight),
+    INTRO_MESSAGE: introMessage,
+    HERO_GROUP: rect((width - heroWidth) / 2, heroTop, heroWidth, Math.max(1, introGroundY - heroTop)),
+    CTA: rect((width - introCtaWidth) / 2, introCtaTop, introCtaWidth, introCtaHeight),
+  };
+  // SIGNAL has a compact world composition and its own HUD, leaving other stages intact.
+  // Short phone landscape gets a dedicated enlarged apparatus policy because
+  // the signal chain is the primary learning object on this stage.
+  const signalScale = shortLandscape
+    ? clampValue(0.92, Math.min(width / 844, height / 390), 1.08)
+    : Math.min(1.45, laboratoryScale);
+  const signalPropHeight = shortLandscape
+    ? clampValue(88, 104 * signalScale, 118)
+    : clampValue(60, 98 * signalScale, 128);
+  const signalProgressWidth = clampValue(88, (shortLandscape ? 100 : 108) * signalScale, 138);
+  const signalProgress = rect((width - signalProgressWidth) / 2,
+    introTitle.y + introTitle.height + layout.gapXS, signalProgressWidth, 22);
+  const signalFieldWidth = shortLandscape
+    ? Math.min(safeWidth * 0.78, 632 * signalScale)
+    : Math.min(760, 530 * signalScale, safeWidth * 0.69);
+  // Two occupied rows in A/B are 2/5 of the grid apart: reserve a full body plus air.
+  const signalFieldHeight = shortLandscape
+    ? Math.min(Math.max(244 * signalScale, signalPropHeight * 2.72), Math.max(1, safeBottom - signalProgress.y - signalProgress.height - layout.gapXS * 2))
+    : Math.max(205 * signalScale, signalPropHeight * 2.7);
+  const signalGroundY = Math.min(safeBottom, introPlatformY + (shortLandscape ? 2 : 3) * signalScale);
+  const signalFieldTop = shortLandscape
+    ? Math.max(signalProgress.y + signalProgress.height + layout.gapXS, signalGroundY - signalFieldHeight - layout.gapXS)
+    : Math.max(signalProgress.y + signalProgress.height + signalPropHeight * 0.4,
+      introPlatformY - signalFieldHeight + 31 * signalScale);
+  const signalFieldCenterX = shortLandscape ? width / 2 + safeWidth * 0.035 : width / 2 + 58 * signalScale;
+  const signalField = rect(signalFieldCenterX - signalFieldWidth / 2,
+    signalFieldTop, signalFieldWidth, signalFieldHeight);
+  const signalRobotHeight = shortLandscape ? clampValue(112, signalFieldHeight * 0.58, 142) : 190 * signalScale;
+  const signalRobotWidth = signalRobotHeight * 958 / 1463;
+  const signalRobotRight = shortLandscape ? Math.max(safeLeft + signalRobotWidth, signalField.x - layout.gapXS) : signalField.x - signalPropHeight * 0.55;
+  const signalRegions: Mission10SignalRegions = {
+    TITLE: introTitle,
+    PROGRESS: signalProgress,
+    APPARATUS_FIELD: signalField,
+    ROBOT_VISIBLE: rect(signalRobotRight - signalRobotWidth, signalGroundY - signalRobotHeight,
+      signalRobotWidth, signalRobotHeight),
+    ROBOT_GROUND_Y: signalGroundY,
+    PROP_VISIBLE_HEIGHT: signalPropHeight,
+    BEAM_CORE_WIDTH: shortLandscape ? clampValue(6, 7 * signalScale, 8) : clampValue(3, 4 * signalScale, 5),
+  };
+  const mission10: Mission10SceneLayout = {
+    signalRegions,
+    introRegions,
+    introGroundY,
+    launchGroundY,
+    portraitGate,
+    showExtendedHeader: !shortLandscape && !portraitGate,
+    title,
+    progress,
+    feedback,
+    world,
+    robot,
+    puzzleStage,
+    pathLanes,
+    relayBoard,
+    signalBoard,
+    launchConsole,
+    beacon,
+    platformContactY,
+    robotScale: Math.min(robotVisibleHeight / 1463, robot.width / 958),
+    targetGap,
+  };
+  regions.HEADER = layout.headerZone;
+  regions.PRIMARY_GAMEPLAY = puzzleStage;
+  regions.CHARACTER = robot;
+  regions.FEEDBACK = feedback;
+  regions.STATUS = progress;
+  regions.PRIMARY_ACTIONS = puzzleStage;
+  regions.SECONDARY_ACTIONS = puzzleStage;
+  return {
+    missionId: 10,
+    policyId: `MISSION_10_${semanticMode}`,
+    semanticMode,
+    regions,
+    sizeContracts: COMPONENT_SIZE_CONTRACTS,
+    components: {
+      taskCard: { contract: 'taskCard', rect: puzzleStage },
+      statusPanel: { contract: 'statusPanel', rect: progress },
+      actionRow: { contract: 'actionRow', rect: puzzleStage },
+      modal: { contract: 'modal', rect: regions.MODAL },
+      characterZone: { contract: 'characterZone', rect: robot },
+    },
+    characters: [
+      { id: 'REPAIRED', role: 'PRIMARY_CHARACTER', presentation: portraitGate ? 'REACTION_PORTRAIT' : 'FULL_BODY', region: 'CHARACTER', coordinateSpace: 'SCREEN', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', visible: true, occupancy: { min: 0.52, ideal: 0.72, max: 0.9 } },
+    ],
+    whitespaceAllocation: portraitGate ? ['BREATHING_ROOM'] : ['CHARACTER_PRESENCE', 'BACKGROUND_VISIBILITY'],
+    taskCard: puzzleStage,
+    progress: layout.progress,
+    mission10,
+  };
+}
+
 function composeTransition(layout: ResponsiveLayout): SceneComposition {
   const { viewportWidth: width, viewportHeight: height, semanticMode, safe } = layout;
   const regions = commonRegions(layout);
@@ -611,6 +821,7 @@ export function composeScene(layout: ResponsiveLayout, missionId: MissionId): Sc
   if (missionId === 7) return composeMission7(layout);
   if (missionId === 8) return composeMission8(layout);
   if (missionId === 9) return composeMission9(layout);
+  if (missionId === 10) return composeMission10(layout);
   if (missionId === 'MISSION5_TRANSITION') return composeTransition(layout);
   return composeSharedMission(layout, missionId);
 }

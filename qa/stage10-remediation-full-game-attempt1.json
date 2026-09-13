@@ -1,0 +1,102 @@
+{
+  "result": "FAIL",
+  "completed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "checks": [
+    {
+      "name": "fresh-session-cannot-enter-m10",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-1-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 2,
+        "completedTasks": 1,
+        "totalTasks": 10,
+        "score": 1,
+        "assemblyProgress": 1,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-2-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 3,
+        "completedTasks": 2,
+        "totalTasks": 10,
+        "score": 2,
+        "assemblyProgress": 2,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-3-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 4,
+        "completedTasks": 3,
+        "totalTasks": 10,
+        "score": 3,
+        "assemblyProgress": 3,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-4-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 5,
+        "completedTasks": 4,
+        "totalTasks": 10,
+        "score": 4,
+        "assemblyProgress": 4,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    }
+  ],
+  "errors": [
+    "page.waitForFunction: Timeout 15000ms exceeded.\n    at completed (D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-full-game.cjs:19:45)\n    at D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-full-game.cjs:43:9"
+  ],
+  "screenshots": [
+    "docs/qa/screenshots/stage10-remediation-natural-failure.png"
+  ]
+}

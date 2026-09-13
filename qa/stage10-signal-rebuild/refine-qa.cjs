@@ -1,0 +1,25 @@
+const fs=require('node:fs');const f='qa/stage10-signal-rebuild-browser.cjs';let s=fs.readFileSync(f,'utf8');
+s=s.replace("return {snapshot:window.__ROBOTLAB_QA__",`const robot=all.find(o=>o.name==='mission10-robot-v2'), rb=robot?{x:robot.x+(17-robot.displayOriginX)*robot.scaleX,y:robot.y+(17-robot.displayOriginY)*robot.scaleY,width:958*robot.scaleX,height:1462*robot.scaleY}:null;
+  const progress=all.find(o=>o.name==='mission10-progress');
+  return {robotVisible:rb,signalRegions:g.registry.get('sceneComposition').mission10.signalRegions,progress:progress?{x:progress.x,y:progress.y,dots:progress.list.map(o=>({lit:o.commandBuffer.includes(0x69f6c0)}))}:null,snapshot:window.__ROBOTLAB_QA__`);
+s=s.replace('for(const[width,height]of[[844,390],[915,412],[1280,720],[1920,1080],[1024,768],[568,320]])','for(const[width,height,reduced=false]of[[844,390],[915,412],[1280,720],[1920,1080],[1024,768],[568,320],[844,390,true]])');
+s=s.replace("hasTouch:touch,isMobile:touch}),p=await c.newPage(),label=width+'x'+height;","hasTouch:touch,isMobile:touch,reducedMotion:reduced?'reduce':'no-preference'}),p=await c.newPage(),label=width+'x'+height+(reduced?'-reduced':'');");
+s=s.replace('for(const config of logic.MISSION10_SIGNAL_CONFIGS){p.__capture=',"for(const config of logic.MISSION10_SIGNAL_CONFIGS){if(reduced&&config.id!=='SIGNAL_C')continue;p.__capture=");
+s=s.replace("await shot(p,tag+'-initial');",`const regions=state.signalRegions,progress=state.progress,rb=state.robotVisible,source=state.presentation.source,targets=state.targets.filter(o=>o.data?.reflectorId);
+  check(tag+'-progress-four-three-lit',progress?.dots.length===4&&progress.dots.filter(o=>o.lit).length===3,progress);
+  check(tag+'-progress-centered-below-title',Math.abs(progress.x-(regions.TITLE.x+regions.TITLE.width/2))<0.1&&progress.y>=regions.TITLE.y+regions.TITLE.height,progress);
+  check(tag+'-beam-core-visible',state.presentation.coreWidth>=3,state.presentation.coreWidth);
+  check(tag+'-beam-viewport',state.presentation.points.every(s=>[s.from,s.to].every(p=>p.x>=0&&p.x<=width&&p.y>=0&&p.y<=height)),state.presentation.points);
+  check(tag+'-targets-child-size',targets.every(t=>t.width>=60&&t.height>=60),targets);
+  const intersects=(a,b)=>a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y;
+  check(tag+'-targets-nonoverlap',targets.every((a,i)=>targets.slice(i+1).every(b=>!intersects(a.bounds,b.bounds))));
+  check(tag+'-robot-viewport-grounded',rb&&rb.x>0&&rb.y>=0&&rb.x+rb.width<width&&rb.y+rb.height<=height&&Math.abs(rb.y+rb.height-regions.ROBOT_GROUND_Y)<0.1,rb);
+  check(tag+'-robot-clear-source',!(source.x>=rb.x&&source.x<=rb.x+rb.width&&source.y>=rb.y&&source.y<=rb.y+rb.height));
+  check(tag+'-receiver-inactive',state.objects.find(o=>o.name==='mission10-signal-receiver')?.data.active===false);
+  await shot(p,tag+'-initial');
+  const crossTargets=targets.slice(0,2).map(t=>({x:t.bounds.x+t.bounds.width/2,y:t.bounds.y+t.bounds.height/2}));
+  if(touch){const cdp=await c.newCDPSession(p);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[crossTargets[0]]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[crossTargets[1]]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await cdp.detach();}else{await p.mouse.move(crossTargets[0].x,crossTargets[0].y);await p.mouse.down();await p.mouse.move(crossTargets[1].x,crossTargets[1].y,{steps:5});await p.mouse.up();}
+  check(tag+'-cross-target-drag-neutral',JSON.stringify((await p.evaluate(inspect)).snapshot)===JSON.stringify(initial.snapshot));`);
+s=s.replace("check(tag+'-2-to-6-taps'", "check(tag+'-receiver-visually-active',final.objects.find(o=>o.name==='mission10-signal-receiver')?.data.active===true);if(reduced)check(tag+'-reduced-motion-no-tweens',final.counts.tweens===0,final.counts);\n  check(tag+'-2-to-6-taps'");
+s=s.replace('if(width===844){','if(width===844&&!reduced){');
+fs.writeFileSync(f,s);

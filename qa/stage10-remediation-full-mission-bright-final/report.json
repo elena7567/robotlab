@@ -1,0 +1,1583 @@
+{
+  "result": "FAIL",
+  "visual": "NOT VERIFIED",
+  "checks": [
+    {
+      "name": "1280x720-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1280x720-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 502,
+        "y": 582,
+        "width": 276,
+        "height": 58
+      }
+    },
+    {
+      "name": "1280x720-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 21.200000000000003,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1158.8,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1280x720-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 301.19999999999993,
+        "y": 311.63,
+        "width": 305.2,
+        "height": 234.89999999999998
+      }
+    },
+    {
+      "name": "1280x720-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 618.4,
+        "y": 311.63,
+        "width": 305.2,
+        "height": 234.89999999999998
+      }
+    },
+    {
+      "name": "1280x720-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 935.5999999999998,
+        "y": 311.63,
+        "width": 305.2,
+        "height": 234.89999999999998
+      }
+    },
+    {
+      "name": "1280x720-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 21.200000000000003,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1158.8,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "1280x720-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 612.3999999999999,
+        "y": 429.08
+      }
+    },
+    {
+      "name": "1280x720-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 3,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 3,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1280x720-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 532.4759999999999,
+        "y": 394.85200000000003,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1280x720-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 711,
+        "y": 394.85200000000003,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1280x720-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 889.5239999999999,
+        "y": 394.85200000000003,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1280x720-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 21.200000000000003,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1158.8,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "1280x720-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "1280x720-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "1280x720-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "1280x720-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "1280x720-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1280x720-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 634.8,
+        "y": 476.76,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1280x720-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 634.8,
+        "y": 278.44,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1280x720-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 21.200000000000003,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1158.8,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1280x720-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 569.5791017344602,
+        "y": 364.8194324060332,
+        "width": 140.42016498625114,
+        "height": 100.73620531622366
+      }
+    },
+    {
+      "name": "1280x720-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 21.200000000000003,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1158.8,
+        "y": 22.28,
+        "width": 100,
+        "height": 62
+      }
+    },
+    {
+      "name": "1280x720-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "1280x720-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "1280x720-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    },
+    {
+      "name": "1600x900-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1600x900-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 662,
+        "y": 722,
+        "width": 276,
+        "height": 58
+      }
+    },
+    {
+      "name": "1600x900-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1476,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1600x900-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 304,
+        "y": 368.25,
+        "width": 410,
+        "height": 313.5
+      }
+    },
+    {
+      "name": "1600x900-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 726,
+        "y": 368.25,
+        "width": 410,
+        "height": 313.5
+      }
+    },
+    {
+      "name": "1600x900-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 1148,
+        "y": 368.25,
+        "width": 410,
+        "height": 313.5
+      }
+    },
+    {
+      "name": "1600x900-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1476,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1600x900-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1600x900-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "1600x900-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 720,
+        "y": 525
+      }
+    },
+    {
+      "name": "1600x900-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 3,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1600x900-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 3,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1600x900-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 3,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1600x900-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1600x900-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 632.74,
+        "y": 498.9000000000001,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1600x900-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 871,
+        "y": 498.9000000000001,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1600x900-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 1109.2599999999998,
+        "y": 498.9000000000001,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1600x900-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1476,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "1600x900-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "1600x900-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "1600x900-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "1600x900-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "1600x900-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1600x900-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 763.36,
+        "y": 613.32,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1600x900-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 763.36,
+        "y": 333.72,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1600x900-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1476,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1600x900-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 729.5791017344602,
+        "y": 504.8194324060332,
+        "width": 140.42016498625114,
+        "height": 100.73620531622366
+      }
+    },
+    {
+      "name": "1600x900-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1476,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1600x900-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "1600x900-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "1600x900-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    },
+    {
+      "name": "1920x1080-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1920x1080-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 822,
+        "y": 862,
+        "width": 276,
+        "height": 58
+      }
+    },
+    {
+      "name": "1920x1080-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1796,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1920x1080-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 303.99999999999994,
+        "y": 418.25,
+        "width": 516.6666666666666,
+        "height": 393.5
+      }
+    },
+    {
+      "name": "1920x1080-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 832.6666666666667,
+        "y": 418.25,
+        "width": 516.6666666666666,
+        "height": 393.5
+      }
+    },
+    {
+      "name": "1920x1080-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 1361.3333333333333,
+        "y": 418.25,
+        "width": 516.6666666666666,
+        "height": 393.5
+      }
+    },
+    {
+      "name": "1920x1080-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1796,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1920x1080-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1920x1080-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 826.6666666666666,
+        "y": 615
+      }
+    },
+    {
+      "name": "1920x1080-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1920x1080-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1920x1080-safe-rapid-round-2",
+      "ok": true,
+      "actual": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1920x1080-energy-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1920x1080-energy-target-contained-mission10-relay-r1",
+      "ok": true,
+      "actual": {
+        "x": 731.94,
+        "y": 597.9000000000001,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1920x1080-energy-target-contained-mission10-relay-r2",
+      "ok": true,
+      "actual": {
+        "x": 1031,
+        "y": 597.9000000000001,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1920x1080-energy-target-contained-mission10-relay-r3",
+      "ok": true,
+      "actual": {
+        "x": 1330.06,
+        "y": 597.9000000000001,
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "1920x1080-energy-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-energy-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1796,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-relay-isolation-R1-0",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-relay-isolation-R1-1",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-relay-isolation-R2-0",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-relay-isolation-R3-0",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-relay-isolation-R3-1",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-signal-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1920x1080-signal-target-contained-mission10-reflector-target-m1",
+      "ok": true,
+      "actual": {
+        "x": 891.3600000000001,
+        "y": 748.32,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1920x1080-signal-target-contained-mission10-reflector-target-m2",
+      "ok": true,
+      "actual": {
+        "x": 891.3600000000001,
+        "y": 378.72,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "name": "1920x1080-signal-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-signal-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1796,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-launch-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "1920x1080-launch-target-contained-mission10-launch-target",
+      "ok": true,
+      "actual": {
+        "x": 889.5791017344602,
+        "y": 644.8194324060331,
+        "width": 140.42016498625114,
+        "height": 100.73620531622366
+      }
+    },
+    {
+      "name": "1920x1080-launch-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 24,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-launch-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 1796,
+        "y": 25,
+        "width": 100,
+        "height": 68
+      }
+    },
+    {
+      "name": "1920x1080-launch-side-led-rejected",
+      "ok": true
+    },
+    {
+      "name": "1920x1080-actual-active-backdrop",
+      "ok": true,
+      "actual": {
+        "paused": true,
+        "step": 4,
+        "worlds": 1,
+        "active": 1,
+        "old": 0
+      }
+    },
+    {
+      "name": "1920x1080-full-flow-complete",
+      "ok": true,
+      "actual": {
+        "completed": 10,
+        "targets": [
+          "victory-play-again",
+          "victory-home"
+        ]
+      }
+    },
+    {
+      "name": "740x360-intro-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-intro-target-contained-mission10-intro-start",
+      "ok": true,
+      "actual": {
+        "x": 255,
+        "y": 293.4,
+        "width": 230,
+        "height": 48
+      }
+    },
+    {
+      "name": "740x360-intro-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-intro-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-path-single-stage-robot",
+      "ok": true,
+      "actual": {
+        "roots": 1,
+        "robots": 1
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-path-target-left",
+      "ok": true,
+      "actual": {
+        "x": 136.92000000000002,
+        "y": 158.73000000000002,
+        "width": 190.0533333333333,
+        "height": 146.54
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-path-target-center",
+      "ok": true,
+      "actual": {
+        "x": 334.97333333333336,
+        "y": 158.73000000000002,
+        "width": 190.0533333333333,
+        "height": 146.54
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-path-target-right",
+      "ok": true,
+      "actual": {
+        "x": 533.0266666666666,
+        "y": 158.73000000000002,
+        "width": 190.0533333333333,
+        "height": 146.54
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-home",
+      "ok": true,
+      "actual": {
+        "x": 8.600000000000001,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-path-target-contained-mission10-sound",
+      "ok": true,
+      "actual": {
+        "x": 647.4,
+        "y": 4.600000000000001,
+        "width": 84,
+        "height": 60
+      }
+    },
+    {
+      "name": "740x360-wrong-LASER",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 1,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-wrong-HAZARD",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-cross-target-cancel",
+      "ok": true
+    },
+    {
+      "name": "740x360-gap-cancel",
+      "ok": true,
+      "actual": {
+        "x": 330.97333333333336,
+        "y": 232
+      }
+    },
+    {
+      "name": "740x360-safe-rapid-round-0",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-safe-rapid-round-1",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 2,
+        "pathWrongAttempts": 2,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    }
+  ],
+  "runs": [
+    {
+      "label": "1280x720",
+      "touch": false,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "1600x900",
+      "touch": false,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "1920x1080",
+      "touch": false,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    },
+    {
+      "label": "740x360",
+      "touch": true,
+      "bundle": [
+        "http://127.0.0.1:4198/assets/index-yrT2Eun-.js"
+      ]
+    }
+  ],
+  "shots": [
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-path.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1280x720-victory.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-path.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1600x900-victory.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-path.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-energy.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-signal.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-launch.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-active-lab.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\1920x1080-victory.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\740x360-intro.png",
+    "qa\\stage10-remediation-full-mission-bright-final\\740x360-path.png"
+  ],
+  "errors": [
+    "page.waitForFunction: Timeout 20000ms exceeded.\n    at ready (D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-full-mission.cjs:7:45)\n    at D:\\Projects\\codex\\RobotLab\\qa\\stage10-remediation-full-mission.cjs:16:413"
+  ],
+  "limitations": [
+    "Browser emulation only; physical Samsung and speaker audibility are separate gates.",
+    "Direct Mission 10 intro entry followed only by actual input; not a missions 1–10 natural-flow claim."
+  ]
+}

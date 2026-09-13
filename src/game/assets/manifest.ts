@@ -76,15 +76,29 @@ export const ASSET_GROUPS = {
     { key: 'MISSION9_POWER_ENERGY_GLOW', path: 'assets/missions/mission9/power/power-energy-glow.png' },
     { key: 'MISSION9_POWER_CHANNEL_GLOW', path: 'assets/missions/mission9/power/power-channel-glow.png' },
   ],
+  mission10: [
+    { key: 'MISSION10_BEACON_OFF', path: 'assets/missions/mission10/mission10_beacon_off.png' },
+    { key: 'MISSION10_BEACON_ON', path: 'assets/missions/mission10/mission10_beacon_on.png' },
+    { key: 'MISSION10_PATH_SAFE', path: 'assets/missions/mission10/mission10_path_safe.png' },
+    { key: 'MISSION10_PATH_LASER', path: 'assets/missions/mission10/mission10_path_laser.png' },
+    { key: 'MISSION10_PATH_HAZARD', path: 'assets/missions/mission10/mission10_path_hazard.png' },
+    { key: 'MISSION10_SIGNAL_EMITTER', path: 'assets/missions/mission10/signal/signal-emitter.png' },
+    { key: 'MISSION10_SIGNAL_REFLECTOR', path: 'assets/missions/mission10/signal/signal-reflector.png' },
+    { key: 'MISSION10_SIGNAL_RECEIVER', path: 'assets/missions/mission10/signal/signal-receiver.png' },
+    { key: 'MISSION10_LAUNCH_CONSOLE', path: 'assets/missions/mission10/mission10_launch_console.png' },
+    { key: 'MISSION10_FINAL_LAB_ACTIVE', path: 'assets/missions/mission10/mission10_final_lab_active.png' },
+  ],
 } satisfies Record<string, readonly ImageAsset[]>;
 
 export const IMAGE_ASSETS = Object.values(ASSET_GROUPS).flat();
 export const AUDIO_ASSETS = [
-  { key: 'audio-start-theme', path: 'assets/audio/music/start-theme.wav' },
+  { key: 'audio-start-lab-theme', path: 'assets/audio/music/start-lab-theme.mp3' },
   { key: 'audio-ui-click', path: 'assets/audio/sfx/ui-click.wav' },
   { key: 'audio-answer-correct', path: 'assets/audio/sfx/answer-correct.wav' },
   { key: 'audio-answer-wrong', path: 'assets/audio/sfx/answer-wrong.wav' },
   { key: 'audio-hint', path: 'assets/audio/sfx/hint.wav' },
   { key: 'audio-repair-reward', path: 'assets/audio/sfx/repair-reward.wav' },
+  { key: 'audio-mission10-victory-theme', path: 'assets/audio/music/mission10-victory-theme.mp3' },
+  { key: 'audio-mission10-beacon-launch', path: 'assets/audio/sfx/mission10-beacon-launch.wav' },
 ] satisfies readonly AudioAsset[];
 export const MISSING_ASSET_IDS = [] as const;

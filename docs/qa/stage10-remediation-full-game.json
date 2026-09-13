@@ -1,0 +1,321 @@
+{
+  "result": "PASS",
+  "completed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "checks": [
+    {
+      "name": "exact-final-bundle",
+      "ok": true
+    },
+    {
+      "name": "fresh-session-cannot-enter-m10",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-1-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 2,
+        "completedTasks": 1,
+        "totalTasks": 10,
+        "score": 1,
+        "assemblyProgress": 1,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-2-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 3,
+        "completedTasks": 2,
+        "totalTasks": 10,
+        "score": 2,
+        "assemblyProgress": 2,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-3-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 4,
+        "completedTasks": 3,
+        "totalTasks": 10,
+        "score": 3,
+        "assemblyProgress": 3,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-4-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 5,
+        "completedTasks": 4,
+        "totalTasks": 10,
+        "score": 4,
+        "assemblyProgress": 4,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-5-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 6,
+        "completedTasks": 5,
+        "totalTasks": 10,
+        "score": 5,
+        "assemblyProgress": 5,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-6-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-7-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 8,
+        "completedTasks": 7,
+        "totalTasks": 10,
+        "score": 7,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-8-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-9-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 9,
+        "totalTasks": 10,
+        "score": 9,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "m9-handoff-intro",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 9,
+        "totalTasks": 10,
+        "score": 9,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "path-to-energy",
+      "ok": true,
+      "data": {
+        "stage": "ENERGY",
+        "runSeed": 0,
+        "pathConfigId": "PATH_C",
+        "energyConfigId": "ENERGY_C",
+        "signalConfigId": "SIGNAL_C",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 1,
+          "R2": 1,
+          "R3": 3
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0,
+          "M3": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "mission-10-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 10,
+        "totalTasks": 10,
+        "score": 10,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "victory-once",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 10,
+        "totalTasks": 10,
+        "score": 10,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "play-again-resets",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "play-again-stops-victory-audio",
+      "ok": true,
+      "data": null
+    },
+    {
+      "name": "home-after-replay",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "console-network-clean",
+      "ok": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "docs/qa/screenshots/stage10-remediation-natural-final-mission9-complete.png",
+    "docs/qa/screenshots/stage10-remediation-natural-final-mission10-intro.png",
+    "docs/qa/screenshots/stage10-remediation-natural-final-mission10-launch.png",
+    "docs/qa/screenshots/stage10-remediation-natural-final-victory.png"
+  ]
+}

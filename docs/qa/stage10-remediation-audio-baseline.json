@@ -1,0 +1,60 @@
+{
+  "result": "PASS",
+  "baseline": true,
+  "outputEvidence": "PCM sampled after Phaser master mute and volume gain; physical speakers not observed",
+  "checks": [
+    {
+      "name": "direct-delayed-unlock-mouse",
+      "ok": true,
+      "data": {
+        "before": {
+          "peak": 0,
+          "samples": 46,
+          "plays": [],
+          "states": [],
+          "locked": true,
+          "context": "suspended",
+          "muted": false,
+          "stage": "INTRO"
+        },
+        "after": {
+          "peak": 0,
+          "samples": 52,
+          "plays": [],
+          "states": [],
+          "locked": false,
+          "context": "running",
+          "muted": false,
+          "stage": "PATH"
+        }
+      }
+    },
+    {
+      "name": "direct-delayed-unlock-touch",
+      "ok": true,
+      "data": {
+        "before": {
+          "peak": 0,
+          "samples": 46,
+          "plays": [],
+          "states": [],
+          "locked": true,
+          "context": "suspended",
+          "muted": false,
+          "stage": "INTRO"
+        },
+        "after": {
+          "peak": 0,
+          "samples": 55,
+          "plays": [],
+          "states": [],
+          "locked": false,
+          "context": "running",
+          "muted": false,
+          "stage": "PATH"
+        }
+      }
+    }
+  ],
+  "errors": []
+}

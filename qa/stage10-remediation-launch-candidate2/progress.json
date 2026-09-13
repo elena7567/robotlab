@@ -1,0 +1,4739 @@
+{
+  "result": "FAIL",
+  "visual": "NOT VERIFIED",
+  "checks": [
+    {
+      "name": "1280x720-side-led-not-launch-button",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 478.0007281887531,
+          "y": 424.34539291739463
+        },
+        "before": {
+          "x": 639.7891842275858,
+          "y": 415.187535064145,
+          "width": 140.42016498625114,
+          "height": 100.73620531622366,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 140.42016498625114,
+            "height": 100.73620531622366
+          },
+          "bounds": {
+            "x": 569.5791017344602,
+            "y": 364.8194324060332,
+            "width": 140.42016498625117,
+            "height": 100.73620531622367,
+            "right": 709.9992667207114,
+            "bottom": 465.55563772225685
+          }
+        },
+        "after": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "1280x720-step0-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-step2-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 2,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-step3-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 3,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-rings-centered-on-dome",
+      "ok": true,
+      "actual": [
+        {
+          "x": 1023.7831027656794,
+          "y": 289.99999049305916,
+          "radius": 48
+        },
+        {
+          "x": 1023.7831027656794,
+          "y": 289.99999049305916,
+          "radius": 70
+        }
+      ]
+    },
+    {
+      "name": "1280x720-beacon-visible-geometry-stable",
+      "ok": true,
+      "actual": {
+        "off": {
+          "x": 894.0000427365303,
+          "y": 236.00000596046448,
+          "width": 259.5661987066269,
+          "height": 360.0000079572201,
+          "right": 1153.5662414431572,
+          "bottom": 596.0000139176846,
+          "centerX": 1023.7831420898438
+        },
+        "on": {
+          "x": 894.0000081062317,
+          "y": 235.9999930858612,
+          "width": 259.56618931889534,
+          "height": 359.999982714653,
+          "right": 1153.566197425127,
+          "bottom": 595.9999758005142,
+          "centerX": 1023.7831027656794
+        }
+      }
+    },
+    {
+      "name": "1280x720-console-centered-grounded",
+      "ok": true,
+      "actual": {
+        "x": 409.99999263882637,
+        "y": 192.07700750231743,
+        "width": 460.0000154078007,
+        "height": 403.9230199456215,
+        "right": 870.000008046627,
+        "bottom": 596.0000274479389,
+        "centerX": 640.0000003427267
+      }
+    },
+    {
+      "name": "1280x720-launch-target-touch-size",
+      "ok": true,
+      "actual": {
+        "x": 639.7891842275858,
+        "y": 415.187535064145,
+        "width": 140.42016498625114,
+        "height": 100.73620531622366,
+        "hitArea": {
+          "type": 5,
+          "x": 0,
+          "y": 0,
+          "width": 140.42016498625114,
+          "height": 100.73620531622366
+        },
+        "bounds": {
+          "x": 569.5791017344602,
+          "y": 364.8194324060332,
+          "width": 140.42016498625117,
+          "height": 100.73620531622367,
+          "right": 709.9992667207114,
+          "bottom": 465.55563772225685
+        }
+      }
+    },
+    {
+      "name": "1280x720-buttonLeft-works",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 606.2104483401775,
+          "y": 406.02971861004835
+        },
+        "snapshot": {
+          "stage": "FINALE",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": true,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "1280x720-buttonRight-works",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 673.3679208004476,
+          "y": 406.02971861004835
+        },
+        "snapshot": {
+          "stage": "FINALE",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": true,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "740x360-side-led-not-launch-button",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 290.98020827770233,
+          "y": 233.8955465555191
+        },
+        "before": {
+          "x": 369.8971685767174,
+          "y": 229.42854837522526,
+          "width": 68.49395198329853,
+          "height": 49.1369655532359,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 68.49395198329853,
+            "height": 49.1369655532359
+          },
+          "bounds": {
+            "x": 335.6501925850681,
+            "y": 204.86006559860732,
+            "width": 68.49395198329853,
+            "height": 49.13696555323591,
+            "right": 404.14414456836664,
+            "bottom": 253.99703115184323
+          }
+        },
+        "after": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "740x360-step0-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-step2-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 2,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-step3-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 3,
+        "completed": false
+      }
+    },
+    {
+      "name": "740x360-rings-centered-on-dome",
+      "ok": true,
+      "actual": [
+        {
+          "x": 563.535961329937,
+          "y": 163.55145582556725,
+          "radius": 48
+        },
+        {
+          "x": 563.535961329937,
+          "y": 163.55145582556725,
+          "radius": 70
+        }
+      ]
+    },
+    {
+      "name": "740x360-beacon-visible-geometry-stable",
+      "ok": true,
+      "actual": {
+        "off": {
+          "x": 498.18908151984215,
+          "y": 136.3620184659958,
+          "width": 130.6937363743782,
+          "height": 181.2629932910204,
+          "right": 628.8828178942204,
+          "bottom": 317.6250117570162,
+          "centerX": 563.5359497070312
+        },
+        "on": {
+          "x": 498.1890926361084,
+          "y": 136.36200737953186,
+          "width": 130.69373738765717,
+          "height": 181.2629896402359,
+          "right": 628.8828300237656,
+          "bottom": 317.62499701976776,
+          "centerX": 563.535961329937
+        }
+      }
+    },
+    {
+      "name": "740x360-console-centered-grounded",
+      "ok": true,
+      "actual": {
+        "x": 257.81090438365936,
+        "y": 120.59999763965607,
+        "width": 224.37816560268402,
+        "height": 197.02500700950623,
+        "right": 482.1890699863434,
+        "bottom": 317.6250046491623,
+        "centerX": 369.9999871850014
+      }
+    },
+    {
+      "name": "740x360-launch-target-touch-size",
+      "ok": true,
+      "actual": {
+        "x": 369.8971685767174,
+        "y": 229.42854837522526,
+        "width": 68.49395198329853,
+        "height": 49.1369655532359,
+        "hitArea": {
+          "type": 5,
+          "x": 0,
+          "y": 0,
+          "width": 68.49395198329853,
+          "height": 49.1369655532359
+        },
+        "bounds": {
+          "x": 335.6501925850681,
+          "y": 204.86006559860732,
+          "width": 68.49395198329853,
+          "height": 49.13696555323591,
+          "right": 404.14414456836664,
+          "bottom": 253.99703115184323
+        }
+      }
+    },
+    {
+      "name": "740x360-buttonLeft-works",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 353.5181666612625,
+          "y": 224.9615525007248
+        },
+        "snapshot": {
+          "stage": "FINALE",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": true,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "740x360-buttonRight-works",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 386.276144862175,
+          "y": 224.9615525007248
+        },
+        "snapshot": {
+          "stage": "FINALE",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": true,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "844x390-side-led-not-launch-button",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 330.86807094812394,
+          "y": 252.31149624586106
+        },
+        "before": {
+          "x": 421.88140657544136,
+          "y": 247.15979234996172,
+          "width": 78.99270772442588,
+          "height": 56.66868162839248,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 78.99270772442588,
+            "height": 56.66868162839248
+          },
+          "bounds": {
+            "x": 382.38505271322845,
+            "y": 218.82545153576547,
+            "width": 78.99270772442588,
+            "height": 56.66868162839245,
+            "right": 461.37776043765433,
+            "bottom": 275.4941331641579
+          }
+        },
+        "after": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "844x390-step0-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-step2-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 2,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-step3-expected-state",
+      "ok": true,
+      "actual": {
+        "stage": "FINALE",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": true,
+        "finaleStep": 3,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-rings-centered-on-dome",
+      "ok": true,
+      "actual": [
+        {
+          "x": 642.7486850321293,
+          "y": 171.18505084514618,
+          "radius": 48
+        },
+        {
+          "x": 642.7486850321293,
+          "y": 171.18505084514618,
+          "radius": 70
+        }
+      ]
+    },
+    {
+      "name": "844x390-beacon-visible-geometry-stable",
+      "ok": true,
+      "actual": {
+        "off": {
+          "x": 567.3854138553143,
+          "y": 139.82799088954926,
+          "width": 150.7264867424965,
+          "height": 209.04700495302677,
+          "right": 718.1119005978107,
+          "bottom": 348.874995842576,
+          "centerX": 642.7486572265625
+        },
+        "on": {
+          "x": 567.3854417800903,
+          "y": 139.82800006866455,
+          "width": 150.7264865040779,
+          "height": 209.0470051765442,
+          "right": 718.1119282841682,
+          "bottom": 348.87500524520874,
+          "centerX": 642.7486850321293
+        }
+      }
+    },
+    {
+      "name": "844x390-console-centered-grounded",
+      "ok": true,
+      "actual": {
+        "x": 292.61457592248917,
+        "y": 121.65000480413437,
+        "width": 258.77085238695145,
+        "height": 227.22500145435333,
+        "right": 551.3854283094406,
+        "bottom": 348.8750062584877,
+        "centerX": 422.0000021159649
+      }
+    },
+    {
+      "name": "844x390-launch-target-touch-size",
+      "ok": true,
+      "actual": {
+        "x": 421.88140657544136,
+        "y": 247.15979234996172,
+        "width": 78.99270772442588,
+        "height": 56.66868162839248,
+        "hitArea": {
+          "type": 5,
+          "x": 0,
+          "y": 0,
+          "width": 78.99270772442588,
+          "height": 56.66868162839248
+        },
+        "bounds": {
+          "x": 382.38505271322845,
+          "y": 218.82545153576547,
+          "width": 78.99270772442588,
+          "height": 56.66868162839245,
+          "right": 461.37776043765433,
+          "bottom": 275.4941331641579
+        }
+      }
+    },
+    {
+      "name": "844x390-buttonLeft-works",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 402.99184802770617,
+          "y": 242.00809952020649
+        },
+        "snapshot": {
+          "stage": "FINALE",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": true,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "844x390-buttonRight-works",
+      "ok": true,
+      "actual": {
+        "point": {
+          "x": 440.7709693551064,
+          "y": 242.00809952020649
+        },
+        "snapshot": {
+          "stage": "FINALE",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": true,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    }
+  ],
+  "runs": [
+    {
+      "label": "1280x720",
+      "initial": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "layout": {
+          "introRegions": {
+            "TOP_LEFT_CONTROL": {
+              "x": 25.200000000000003,
+              "y": 26.28,
+              "width": 92,
+              "height": 54
+            },
+            "TOP_CENTER_TITLE": {
+              "x": 139.2,
+              "y": 33.28,
+              "width": 1001.5999999999999,
+              "height": 40
+            },
+            "TOP_RIGHT_CONTROL": {
+              "x": 1162.8,
+              "y": 26.28,
+              "width": 92,
+              "height": 54
+            },
+            "INTRO_MESSAGE": {
+              "x": 370,
+              "y": 81.28,
+              "width": 540,
+              "height": 70
+            },
+            "HERO_GROUP": {
+              "x": 340,
+              "y": 173.28,
+              "width": 600,
+              "height": 386.72
+            },
+            "CTA": {
+              "x": 502,
+              "y": 582,
+              "width": 276,
+              "height": 58
+            }
+          },
+          "introGroundY": 560,
+          "launchGroundY": 596,
+          "portraitGate": false,
+          "showExtendedHeader": true,
+          "title": {
+            "x": 201.2,
+            "y": 89.36,
+            "width": 877.5999999999999,
+            "height": 36
+          },
+          "progress": {
+            "x": 1092.8,
+            "y": 89.36,
+            "width": 148,
+            "height": 36
+          },
+          "feedback": {
+            "x": 39.2,
+            "y": 133.36,
+            "width": 1201.6,
+            "height": 30
+          },
+          "world": {
+            "x": 39.2,
+            "y": 171.36,
+            "width": 1201.6,
+            "height": 515.4399999999999
+          },
+          "robot": {
+            "x": 39.2,
+            "y": 171.36,
+            "width": 250,
+            "height": 515.4399999999999
+          },
+          "puzzleStage": {
+            "x": 301.2,
+            "y": 171.36,
+            "width": 939.5999999999999,
+            "height": 515.4399999999999
+          },
+          "pathLanes": [
+            {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999
+            },
+            {
+              "x": 618.4,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999
+            },
+            {
+              "x": 935.5999999999999,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999
+            }
+          ],
+          "relayBoard": {
+            "x": 301.2,
+            "y": 171.36,
+            "width": 939.5999999999999,
+            "height": 515.4399999999999
+          },
+          "signalBoard": {
+            "x": 301.2,
+            "y": 171.36,
+            "width": 939.5999999999999,
+            "height": 515.4399999999999
+          },
+          "launchConsole": {
+            "x": 410,
+            "y": 171.36,
+            "width": 460,
+            "height": 424.64
+          },
+          "beacon": {
+            "x": 894,
+            "y": 236,
+            "width": 259.56619296933434,
+            "height": 360
+          },
+          "platformContactY": 686.8,
+          "robotScale": 0.21872863978127136,
+          "targetGap": 12
+        },
+        "console": {
+          "name": "mission10-launch-console",
+          "x": 639.7891842275858,
+          "y": 616.6599456965923,
+          "scale": 0.4216315307057745,
+          "scaleY": 0.4216315307057745,
+          "visibleBounds": {
+            "x": 409.99999263882637,
+            "y": 192.07700750231743,
+            "width": 460.0000154078007,
+            "height": 403.9230199456215,
+            "right": 870.000008046627,
+            "bottom": 596.0000274479389,
+            "centerX": 640.0000003427267
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1448,
+          "height": 1086,
+          "bounds": {
+            "x": 334.52795599660504,
+            "y": 158.76810335012118,
+            "width": 610.5224564619616,
+            "height": 457.89184234647115,
+            "right": 945.0504124585666,
+            "bottom": 616.6599456965923
+          },
+          "texture": "MISSION10_LAUNCH_CONSOLE",
+          "data": {
+            "visibleAlphaSourceBounds": {
+              "sourceWidth": 1448,
+              "sourceHeight": 1086,
+              "x": 179,
+              "y": 79,
+              "width": 1091,
+              "height": 958
+            }
+          }
+        },
+        "beacon": {
+          "name": "mission10-beacon-off",
+          "x": 1023.7831119146467,
+          "y": 608.6551984846592,
+          "scale": 0.26925953627524307,
+          "scaleY": 0.26925953627524307,
+          "visibleBounds": {
+            "x": 894.0000427365303,
+            "y": 236.00000596046448,
+            "width": 259.5661987066269,
+            "height": 360.0000079572201,
+            "right": 1153.5662414431572,
+            "bottom": 596.0000139176846,
+            "centerX": 1023.7831420898438
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1086,
+          "height": 1448,
+          "bounds": {
+            "x": 877.5751837171897,
+            "y": 218.76738995810723,
+            "width": 292.41585639491404,
+            "height": 389.88780852655196,
+            "right": 1169.9910401121037,
+            "bottom": 608.6551984846592
+          },
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {}
+        },
+        "target": {
+          "x": 639.7891842275858,
+          "y": 415.187535064145,
+          "width": 140.42016498625114,
+          "height": 100.73620531622366,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 140.42016498625114,
+            "height": 100.73620531622366
+          },
+          "bounds": {
+            "x": 569.5791017344602,
+            "y": 364.8194324060332,
+            "width": 140.42016498625117,
+            "height": 100.73620531622367,
+            "right": 709.9992667207114,
+            "bottom": 465.55563772225685
+          }
+        },
+        "button": {
+          "x": 639.7891845703125,
+          "y": 406.02971861004835
+        },
+        "buttonLeft": {
+          "x": 606.2104483401775,
+          "y": 406.02971861004835
+        },
+        "buttonRight": {
+          "x": 673.3679208004476,
+          "y": 406.02971861004835
+        },
+        "sideLed": {
+          "x": 478.0007281887531,
+          "y": 424.34539291739463
+        },
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "paused": false,
+        "ringCenters": []
+      },
+      "outside": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "layout": {
+          "introRegions": {
+            "TOP_LEFT_CONTROL": {
+              "x": 25.200000000000003,
+              "y": 26.28,
+              "width": 92,
+              "height": 54
+            },
+            "TOP_CENTER_TITLE": {
+              "x": 139.2,
+              "y": 33.28,
+              "width": 1001.5999999999999,
+              "height": 40
+            },
+            "TOP_RIGHT_CONTROL": {
+              "x": 1162.8,
+              "y": 26.28,
+              "width": 92,
+              "height": 54
+            },
+            "INTRO_MESSAGE": {
+              "x": 370,
+              "y": 81.28,
+              "width": 540,
+              "height": 70
+            },
+            "HERO_GROUP": {
+              "x": 340,
+              "y": 173.28,
+              "width": 600,
+              "height": 386.72
+            },
+            "CTA": {
+              "x": 502,
+              "y": 582,
+              "width": 276,
+              "height": 58
+            }
+          },
+          "introGroundY": 560,
+          "launchGroundY": 596,
+          "portraitGate": false,
+          "showExtendedHeader": true,
+          "title": {
+            "x": 201.2,
+            "y": 89.36,
+            "width": 877.5999999999999,
+            "height": 36
+          },
+          "progress": {
+            "x": 1092.8,
+            "y": 89.36,
+            "width": 148,
+            "height": 36
+          },
+          "feedback": {
+            "x": 39.2,
+            "y": 133.36,
+            "width": 1201.6,
+            "height": 30
+          },
+          "world": {
+            "x": 39.2,
+            "y": 171.36,
+            "width": 1201.6,
+            "height": 515.4399999999999
+          },
+          "robot": {
+            "x": 39.2,
+            "y": 171.36,
+            "width": 250,
+            "height": 515.4399999999999
+          },
+          "puzzleStage": {
+            "x": 301.2,
+            "y": 171.36,
+            "width": 939.5999999999999,
+            "height": 515.4399999999999
+          },
+          "pathLanes": [
+            {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999
+            },
+            {
+              "x": 618.4,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999
+            },
+            {
+              "x": 935.5999999999999,
+              "y": 171.36,
+              "width": 305.2,
+              "height": 515.4399999999999
+            }
+          ],
+          "relayBoard": {
+            "x": 301.2,
+            "y": 171.36,
+            "width": 939.5999999999999,
+            "height": 515.4399999999999
+          },
+          "signalBoard": {
+            "x": 301.2,
+            "y": 171.36,
+            "width": 939.5999999999999,
+            "height": 515.4399999999999
+          },
+          "launchConsole": {
+            "x": 410,
+            "y": 171.36,
+            "width": 460,
+            "height": 424.64
+          },
+          "beacon": {
+            "x": 894,
+            "y": 236,
+            "width": 259.56619296933434,
+            "height": 360
+          },
+          "platformContactY": 686.8,
+          "robotScale": 0.21872863978127136,
+          "targetGap": 12
+        },
+        "console": {
+          "name": "mission10-launch-console",
+          "x": 639.7891842275858,
+          "y": 616.6599456965923,
+          "scale": 0.4216315307057745,
+          "scaleY": 0.4216315307057745,
+          "visibleBounds": {
+            "x": 409.99999263882637,
+            "y": 192.07700750231743,
+            "width": 460.0000154078007,
+            "height": 403.9230199456215,
+            "right": 870.000008046627,
+            "bottom": 596.0000274479389,
+            "centerX": 640.0000003427267
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1448,
+          "height": 1086,
+          "bounds": {
+            "x": 334.52795599660504,
+            "y": 158.76810335012118,
+            "width": 610.5224564619616,
+            "height": 457.89184234647115,
+            "right": 945.0504124585666,
+            "bottom": 616.6599456965923
+          },
+          "texture": "MISSION10_LAUNCH_CONSOLE",
+          "data": {
+            "visibleAlphaSourceBounds": {
+              "sourceWidth": 1448,
+              "sourceHeight": 1086,
+              "x": 179,
+              "y": 79,
+              "width": 1091,
+              "height": 958
+            }
+          }
+        },
+        "beacon": {
+          "name": "mission10-beacon-off",
+          "x": 1023.7831119146467,
+          "y": 608.6551984846592,
+          "scale": 0.26925953627524307,
+          "scaleY": 0.26925953627524307,
+          "visibleBounds": {
+            "x": 894.0000427365303,
+            "y": 236.00000596046448,
+            "width": 259.5661987066269,
+            "height": 360.0000079572201,
+            "right": 1153.5662414431572,
+            "bottom": 596.0000139176846,
+            "centerX": 1023.7831420898438
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1086,
+          "height": 1448,
+          "bounds": {
+            "x": 877.5751837171897,
+            "y": 218.76738995810723,
+            "width": 292.41585639491404,
+            "height": 389.88780852655196,
+            "right": 1169.9910401121037,
+            "bottom": 608.6551984846592
+          },
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {}
+        },
+        "target": {
+          "x": 639.7891842275858,
+          "y": 415.187535064145,
+          "width": 140.42016498625114,
+          "height": 100.73620531622366,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 140.42016498625114,
+            "height": 100.73620531622366
+          },
+          "bounds": {
+            "x": 569.5791017344602,
+            "y": 364.8194324060332,
+            "width": 140.42016498625117,
+            "height": 100.73620531622367,
+            "right": 709.9992667207114,
+            "bottom": 465.55563772225685
+          }
+        },
+        "button": {
+          "x": 639.7891845703125,
+          "y": 406.02971861004835
+        },
+        "buttonLeft": {
+          "x": 606.2104483401775,
+          "y": 406.02971861004835
+        },
+        "buttonRight": {
+          "x": 673.3679208004476,
+          "y": 406.02971861004835
+        },
+        "sideLed": {
+          "x": 478.0007281887531,
+          "y": 424.34539291739463
+        },
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "paused": false,
+        "ringCenters": []
+      },
+      "frames": [
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 0,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 25.200000000000003,
+                "y": 26.28,
+                "width": 92,
+                "height": 54
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 139.2,
+                "y": 33.28,
+                "width": 1001.5999999999999,
+                "height": 40
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 1162.8,
+                "y": 26.28,
+                "width": 92,
+                "height": 54
+              },
+              "INTRO_MESSAGE": {
+                "x": 370,
+                "y": 81.28,
+                "width": 540,
+                "height": 70
+              },
+              "HERO_GROUP": {
+                "x": 340,
+                "y": 173.28,
+                "width": 600,
+                "height": 386.72
+              },
+              "CTA": {
+                "x": 502,
+                "y": 582,
+                "width": 276,
+                "height": 58
+              }
+            },
+            "introGroundY": 560,
+            "launchGroundY": 596,
+            "portraitGate": false,
+            "showExtendedHeader": true,
+            "title": {
+              "x": 201.2,
+              "y": 89.36,
+              "width": 877.5999999999999,
+              "height": 36
+            },
+            "progress": {
+              "x": 1092.8,
+              "y": 89.36,
+              "width": 148,
+              "height": 36
+            },
+            "feedback": {
+              "x": 39.2,
+              "y": 133.36,
+              "width": 1201.6,
+              "height": 30
+            },
+            "world": {
+              "x": 39.2,
+              "y": 171.36,
+              "width": 1201.6,
+              "height": 515.4399999999999
+            },
+            "robot": {
+              "x": 39.2,
+              "y": 171.36,
+              "width": 250,
+              "height": 515.4399999999999
+            },
+            "puzzleStage": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "pathLanes": [
+              {
+                "x": 301.2,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              },
+              {
+                "x": 618.4,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              },
+              {
+                "x": 935.5999999999999,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              }
+            ],
+            "relayBoard": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "signalBoard": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "launchConsole": {
+              "x": 410,
+              "y": 171.36,
+              "width": 460,
+              "height": 424.64
+            },
+            "beacon": {
+              "x": 894,
+              "y": 236,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "platformContactY": 686.8,
+            "robotScale": 0.21872863978127136,
+            "targetGap": 12
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 639.7891842275858,
+            "y": 616.6599456965923,
+            "scale": 0.4216315307057745,
+            "scaleY": 0.4216315307057745,
+            "visibleBounds": {
+              "x": 409.99999263882637,
+              "y": 192.07700750231743,
+              "width": 460.0000154078007,
+              "height": 403.9230199456215,
+              "right": 870.000008046627,
+              "bottom": 596.0000274479389,
+              "centerX": 640.0000003427267
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 334.52795599660504,
+              "y": 158.76810335012118,
+              "width": 610.5224564619616,
+              "height": 457.89184234647115,
+              "right": 945.0504124585666,
+              "bottom": 616.6599456965923
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-off",
+            "x": 1023.7831119146467,
+            "y": 608.6551984846592,
+            "scale": 0.26925953627524307,
+            "scaleY": 0.26925953627524307,
+            "visibleBounds": {
+              "x": 894.0000427365303,
+              "y": 236.00000596046448,
+              "width": 259.5661987066269,
+              "height": 360.0000079572201,
+              "right": 1153.5662414431572,
+              "bottom": 596.0000139176846,
+              "centerX": 1023.7831420898438
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1086,
+            "height": 1448,
+            "bounds": {
+              "x": 877.5751837171897,
+              "y": 218.76738995810723,
+              "width": 292.41585639491404,
+              "height": 389.88780852655196,
+              "right": 1169.9910401121037,
+              "bottom": 608.6551984846592
+            },
+            "texture": "MISSION10_BEACON_OFF",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 639.7891845703125,
+            "y": 406.02971861004835
+          },
+          "buttonLeft": {
+            "x": 606.2104483401775,
+            "y": 406.02971861004835
+          },
+          "buttonRight": {
+            "x": 673.3679208004476,
+            "y": 406.02971861004835
+          },
+          "sideLed": {
+            "x": 478.0007281887531,
+            "y": 424.34539291739463
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": []
+        },
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 2,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 25.200000000000003,
+                "y": 26.28,
+                "width": 92,
+                "height": 54
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 139.2,
+                "y": 33.28,
+                "width": 1001.5999999999999,
+                "height": 40
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 1162.8,
+                "y": 26.28,
+                "width": 92,
+                "height": 54
+              },
+              "INTRO_MESSAGE": {
+                "x": 370,
+                "y": 81.28,
+                "width": 540,
+                "height": 70
+              },
+              "HERO_GROUP": {
+                "x": 340,
+                "y": 173.28,
+                "width": 600,
+                "height": 386.72
+              },
+              "CTA": {
+                "x": 502,
+                "y": 582,
+                "width": 276,
+                "height": 58
+              }
+            },
+            "introGroundY": 560,
+            "launchGroundY": 596,
+            "portraitGate": false,
+            "showExtendedHeader": true,
+            "title": {
+              "x": 201.2,
+              "y": 89.36,
+              "width": 877.5999999999999,
+              "height": 36
+            },
+            "progress": {
+              "x": 1092.8,
+              "y": 89.36,
+              "width": 148,
+              "height": 36
+            },
+            "feedback": {
+              "x": 39.2,
+              "y": 133.36,
+              "width": 1201.6,
+              "height": 30
+            },
+            "world": {
+              "x": 39.2,
+              "y": 171.36,
+              "width": 1201.6,
+              "height": 515.4399999999999
+            },
+            "robot": {
+              "x": 39.2,
+              "y": 171.36,
+              "width": 250,
+              "height": 515.4399999999999
+            },
+            "puzzleStage": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "pathLanes": [
+              {
+                "x": 301.2,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              },
+              {
+                "x": 618.4,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              },
+              {
+                "x": 935.5999999999999,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              }
+            ],
+            "relayBoard": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "signalBoard": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "launchConsole": {
+              "x": 410,
+              "y": 171.36,
+              "width": 460,
+              "height": 424.64
+            },
+            "beacon": {
+              "x": 894,
+              "y": 236,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "platformContactY": 686.8,
+            "robotScale": 0.21872863978127136,
+            "targetGap": 12
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 639.7891842275858,
+            "y": 616.6599456965923,
+            "scale": 0.4216315307057745,
+            "scaleY": 0.4216315307057745,
+            "visibleBounds": {
+              "x": 409.99999263882637,
+              "y": 192.07700750231743,
+              "width": 460.0000154078007,
+              "height": 403.9230199456215,
+              "right": 870.000008046627,
+              "bottom": 596.0000274479389,
+              "centerX": 640.0000003427267
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 334.52795599660504,
+              "y": 158.76810335012118,
+              "width": 610.5224564619616,
+              "height": 457.89184234647115,
+              "right": 945.0504124585666,
+              "bottom": 616.6599456965923
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-off",
+            "x": 1023.7831119146467,
+            "y": 608.6551984846592,
+            "scale": 0.26925953627524307,
+            "scaleY": 0.26925953627524307,
+            "visibleBounds": {
+              "x": 894.0000427365303,
+              "y": 236.00000596046448,
+              "width": 259.5661987066269,
+              "height": 360.0000079572201,
+              "right": 1153.5662414431572,
+              "bottom": 596.0000139176846,
+              "centerX": 1023.7831420898438
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1086,
+            "height": 1448,
+            "bounds": {
+              "x": 877.5751837171897,
+              "y": 218.76738995810723,
+              "width": 292.41585639491404,
+              "height": 389.88780852655196,
+              "right": 1169.9910401121037,
+              "bottom": 608.6551984846592
+            },
+            "texture": "MISSION10_BEACON_OFF",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 639.7891845703125,
+            "y": 406.02971861004835
+          },
+          "buttonLeft": {
+            "x": 606.2104483401775,
+            "y": 406.02971861004835
+          },
+          "buttonRight": {
+            "x": 673.3679208004476,
+            "y": 406.02971861004835
+          },
+          "sideLed": {
+            "x": 478.0007281887531,
+            "y": 424.34539291739463
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": []
+        },
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 3,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 25.200000000000003,
+                "y": 26.28,
+                "width": 92,
+                "height": 54
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 139.2,
+                "y": 33.28,
+                "width": 1001.5999999999999,
+                "height": 40
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 1162.8,
+                "y": 26.28,
+                "width": 92,
+                "height": 54
+              },
+              "INTRO_MESSAGE": {
+                "x": 370,
+                "y": 81.28,
+                "width": 540,
+                "height": 70
+              },
+              "HERO_GROUP": {
+                "x": 340,
+                "y": 173.28,
+                "width": 600,
+                "height": 386.72
+              },
+              "CTA": {
+                "x": 502,
+                "y": 582,
+                "width": 276,
+                "height": 58
+              }
+            },
+            "introGroundY": 560,
+            "launchGroundY": 596,
+            "portraitGate": false,
+            "showExtendedHeader": true,
+            "title": {
+              "x": 201.2,
+              "y": 89.36,
+              "width": 877.5999999999999,
+              "height": 36
+            },
+            "progress": {
+              "x": 1092.8,
+              "y": 89.36,
+              "width": 148,
+              "height": 36
+            },
+            "feedback": {
+              "x": 39.2,
+              "y": 133.36,
+              "width": 1201.6,
+              "height": 30
+            },
+            "world": {
+              "x": 39.2,
+              "y": 171.36,
+              "width": 1201.6,
+              "height": 515.4399999999999
+            },
+            "robot": {
+              "x": 39.2,
+              "y": 171.36,
+              "width": 250,
+              "height": 515.4399999999999
+            },
+            "puzzleStage": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "pathLanes": [
+              {
+                "x": 301.2,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              },
+              {
+                "x": 618.4,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              },
+              {
+                "x": 935.5999999999999,
+                "y": 171.36,
+                "width": 305.2,
+                "height": 515.4399999999999
+              }
+            ],
+            "relayBoard": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "signalBoard": {
+              "x": 301.2,
+              "y": 171.36,
+              "width": 939.5999999999999,
+              "height": 515.4399999999999
+            },
+            "launchConsole": {
+              "x": 410,
+              "y": 171.36,
+              "width": 460,
+              "height": 424.64
+            },
+            "beacon": {
+              "x": 894,
+              "y": 236,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "platformContactY": 686.8,
+            "robotScale": 0.21872863978127136,
+            "targetGap": 12
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 639.7891842275858,
+            "y": 616.6599456965923,
+            "scale": 0.4216315307057745,
+            "scaleY": 0.4216315307057745,
+            "visibleBounds": {
+              "x": 409.99999263882637,
+              "y": 192.07700750231743,
+              "width": 460.0000154078007,
+              "height": 403.9230199456215,
+              "right": 870.000008046627,
+              "bottom": 596.0000274479389,
+              "centerX": 640.0000003427267
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 334.52795599660504,
+              "y": 158.76810335012118,
+              "width": 610.5224564619616,
+              "height": 457.89184234647115,
+              "right": 945.0504124585666,
+              "bottom": 616.6599456965923
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-on",
+            "x": 1023.6524139341236,
+            "y": 611.211266875267,
+            "scale": 0.26139596472239107,
+            "scaleY": 0.2535211267605634,
+            "visibleBounds": {
+              "x": 894.0000081062317,
+              "y": 235.9999930858612,
+              "width": 259.56618931889534,
+              "height": 359.999982714653,
+              "right": 1153.566197425127,
+              "bottom": 595.9999758005142,
+              "centerX": 1023.7831027656794
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1024,
+            "height": 1536,
+            "bounds": {
+              "x": 889.8176799962594,
+              "y": 221.80281617104168,
+              "width": 267.6694678757285,
+              "height": 389.40845070422534,
+              "right": 1157.4871478719879,
+              "bottom": 611.211266875267
+            },
+            "texture": "MISSION10_BEACON_ON",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 639.7891845703125,
+            "y": 406.02971861004835
+          },
+          "buttonLeft": {
+            "x": 606.2104483401775,
+            "y": 406.02971861004835
+          },
+          "buttonRight": {
+            "x": 673.3679208004476,
+            "y": 406.02971861004835
+          },
+          "sideLed": {
+            "x": 478.0007281887531,
+            "y": 424.34539291739463
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": [
+            {
+              "x": 1023.7831027656794,
+              "y": 289.99999049305916,
+              "radius": 48
+            },
+            {
+              "x": 1023.7831027656794,
+              "y": 289.99999049305916,
+              "radius": 70
+            }
+          ]
+        }
+      ],
+      "rawTextureDisplayHeightDelta": -0.4793578223266195
+    },
+    {
+      "label": "740x360",
+      "initial": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "layout": {
+          "introRegions": {
+            "TOP_LEFT_CONTROL": {
+              "x": 12.600000000000001,
+              "y": 8.600000000000001,
+              "width": 76,
+              "height": 52
+            },
+            "TOP_CENTER_TITLE": {
+              "x": 102.6,
+              "y": 20.6,
+              "width": 534.8,
+              "height": 28
+            },
+            "TOP_RIGHT_CONTROL": {
+              "x": 651.4,
+              "y": 8.600000000000001,
+              "width": 76,
+              "height": 52
+            },
+            "INTRO_MESSAGE": {
+              "x": 165,
+              "y": 52.92,
+              "width": 410,
+              "height": 48
+            },
+            "HERO_GROUP": {
+              "x": 196.5625,
+              "y": 114.92,
+              "width": 346.875,
+              "height": 170.47999999999996
+            },
+            "CTA": {
+              "x": 255,
+              "y": 293.4,
+              "width": 230,
+              "height": 48
+            }
+          },
+          "introGroundY": 285.4,
+          "launchGroundY": 317.625,
+          "portraitGate": false,
+          "showExtendedHeader": false,
+          "title": {
+            "x": 136.92000000000002,
+            "y": 66.6,
+            "width": 466.15999999999997,
+            "height": 28
+          },
+          "progress": {
+            "x": 611.0799999999999,
+            "y": 66.6,
+            "width": 112,
+            "height": 28
+          },
+          "feedback": {
+            "x": 16.92,
+            "y": 95.6,
+            "width": 706.16,
+            "height": 24
+          },
+          "world": {
+            "x": 16.92,
+            "y": 120.6,
+            "width": 706.16,
+            "height": 222.79999999999998
+          },
+          "robot": {
+            "x": 16.92,
+            "y": 120.6,
+            "width": 112,
+            "height": 222.79999999999998
+          },
+          "puzzleStage": {
+            "x": 136.92000000000002,
+            "y": 120.6,
+            "width": 586.16,
+            "height": 222.79999999999998
+          },
+          "pathLanes": [
+            {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 190.0533333333333,
+              "height": 222.79999999999998
+            },
+            {
+              "x": 334.97333333333336,
+              "y": 120.6,
+              "width": 190.0533333333333,
+              "height": 222.79999999999998
+            },
+            {
+              "x": 533.0266666666666,
+              "y": 120.6,
+              "width": 190.0533333333333,
+              "height": 222.79999999999998
+            }
+          ],
+          "relayBoard": {
+            "x": 136.92000000000002,
+            "y": 120.6,
+            "width": 586.16,
+            "height": 222.79999999999998
+          },
+          "signalBoard": {
+            "x": 136.92000000000002,
+            "y": 120.6,
+            "width": 586.16,
+            "height": 222.79999999999998
+          },
+          "launchConsole": {
+            "x": 200.5216,
+            "y": 120.6,
+            "width": 338.9568,
+            "height": 197.025
+          },
+          "beacon": {
+            "x": 498.1890788100209,
+            "y": 136.362,
+            "width": 130.6937412116679,
+            "height": 181.263
+          },
+          "platformContactY": 343.4,
+          "robotScale": 0.11691022964509394,
+          "targetGap": 8
+        },
+        "console": {
+          "name": "mission10-launch-console",
+          "x": 369.8971685767174,
+          "y": 327.7024794816971,
+          "scale": 0.20566283924843423,
+          "scaleY": 0.20566283924843423,
+          "visibleBounds": {
+            "x": 257.81090438365936,
+            "y": 120.59999763965607,
+            "width": 224.37816560268402,
+            "height": 197.02500700950623,
+            "right": 482.1890699863434,
+            "bottom": 317.6250046491623,
+            "centerX": 369.9999871850014
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1448,
+          "height": 1086,
+          "bounds": {
+            "x": 220.997272960851,
+            "y": 104.35263605789751,
+            "width": 297.7997912317328,
+            "height": 223.34984342379957,
+            "right": 518.7970641925838,
+            "bottom": 327.7024794816971
+          },
+          "texture": "MISSION10_LAUNCH_CONSOLE",
+          "data": {
+            "visibleAlphaSourceBounds": {
+              "sourceWidth": 1448,
+              "sourceHeight": 1086,
+              "x": 179,
+              "y": 79,
+              "width": 1091,
+              "height": 958
+            }
+          }
+        },
+        "beacon": {
+          "name": "mission10-beacon-off",
+          "x": 563.5359491246784,
+          "y": 323.99699752032757,
+          "scale": 0.13557442034405384,
+          "scaleY": 0.13557442034405384,
+          "visibleBounds": {
+            "x": 498.18908151984215,
+            "y": 136.3620184659958,
+            "width": 130.6937363743782,
+            "height": 181.2629932910204,
+            "right": 628.8828178942204,
+            "bottom": 317.6250117570162,
+            "centerX": 563.5359497070312
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1086,
+          "height": 1448,
+          "bounds": {
+            "x": 489.91903887785713,
+            "y": 127.6852368621376,
+            "width": 147.2338204936425,
+            "height": 196.31176065818997,
+            "right": 637.1528593714996,
+            "bottom": 323.99699752032757
+          },
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {}
+        },
+        "target": {
+          "x": 369.8971685767174,
+          "y": 229.42854837522526,
+          "width": 68.49395198329853,
+          "height": 49.1369655532359,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 68.49395198329853,
+            "height": 49.1369655532359
+          },
+          "bounds": {
+            "x": 335.6501925850681,
+            "y": 204.86006559860732,
+            "width": 68.49395198329853,
+            "height": 49.13696555323591,
+            "right": 404.14414456836664,
+            "bottom": 253.99703115184323
+          }
+        },
+        "button": {
+          "x": 369.89715576171875,
+          "y": 224.9615525007248
+        },
+        "buttonLeft": {
+          "x": 353.5181666612625,
+          "y": 224.9615525007248
+        },
+        "buttonRight": {
+          "x": 386.276144862175,
+          "y": 224.9615525007248
+        },
+        "sideLed": {
+          "x": 290.98020827770233,
+          "y": 233.8955465555191
+        },
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "paused": false,
+        "ringCenters": []
+      },
+      "outside": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "layout": {
+          "introRegions": {
+            "TOP_LEFT_CONTROL": {
+              "x": 12.600000000000001,
+              "y": 8.600000000000001,
+              "width": 76,
+              "height": 52
+            },
+            "TOP_CENTER_TITLE": {
+              "x": 102.6,
+              "y": 20.6,
+              "width": 534.8,
+              "height": 28
+            },
+            "TOP_RIGHT_CONTROL": {
+              "x": 651.4,
+              "y": 8.600000000000001,
+              "width": 76,
+              "height": 52
+            },
+            "INTRO_MESSAGE": {
+              "x": 165,
+              "y": 52.92,
+              "width": 410,
+              "height": 48
+            },
+            "HERO_GROUP": {
+              "x": 196.5625,
+              "y": 114.92,
+              "width": 346.875,
+              "height": 170.47999999999996
+            },
+            "CTA": {
+              "x": 255,
+              "y": 293.4,
+              "width": 230,
+              "height": 48
+            }
+          },
+          "introGroundY": 285.4,
+          "launchGroundY": 317.625,
+          "portraitGate": false,
+          "showExtendedHeader": false,
+          "title": {
+            "x": 136.92000000000002,
+            "y": 66.6,
+            "width": 466.15999999999997,
+            "height": 28
+          },
+          "progress": {
+            "x": 611.0799999999999,
+            "y": 66.6,
+            "width": 112,
+            "height": 28
+          },
+          "feedback": {
+            "x": 16.92,
+            "y": 95.6,
+            "width": 706.16,
+            "height": 24
+          },
+          "world": {
+            "x": 16.92,
+            "y": 120.6,
+            "width": 706.16,
+            "height": 222.79999999999998
+          },
+          "robot": {
+            "x": 16.92,
+            "y": 120.6,
+            "width": 112,
+            "height": 222.79999999999998
+          },
+          "puzzleStage": {
+            "x": 136.92000000000002,
+            "y": 120.6,
+            "width": 586.16,
+            "height": 222.79999999999998
+          },
+          "pathLanes": [
+            {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 190.0533333333333,
+              "height": 222.79999999999998
+            },
+            {
+              "x": 334.97333333333336,
+              "y": 120.6,
+              "width": 190.0533333333333,
+              "height": 222.79999999999998
+            },
+            {
+              "x": 533.0266666666666,
+              "y": 120.6,
+              "width": 190.0533333333333,
+              "height": 222.79999999999998
+            }
+          ],
+          "relayBoard": {
+            "x": 136.92000000000002,
+            "y": 120.6,
+            "width": 586.16,
+            "height": 222.79999999999998
+          },
+          "signalBoard": {
+            "x": 136.92000000000002,
+            "y": 120.6,
+            "width": 586.16,
+            "height": 222.79999999999998
+          },
+          "launchConsole": {
+            "x": 200.5216,
+            "y": 120.6,
+            "width": 338.9568,
+            "height": 197.025
+          },
+          "beacon": {
+            "x": 498.1890788100209,
+            "y": 136.362,
+            "width": 130.6937412116679,
+            "height": 181.263
+          },
+          "platformContactY": 343.4,
+          "robotScale": 0.11691022964509394,
+          "targetGap": 8
+        },
+        "console": {
+          "name": "mission10-launch-console",
+          "x": 369.8971685767174,
+          "y": 327.7024794816971,
+          "scale": 0.20566283924843423,
+          "scaleY": 0.20566283924843423,
+          "visibleBounds": {
+            "x": 257.81090438365936,
+            "y": 120.59999763965607,
+            "width": 224.37816560268402,
+            "height": 197.02500700950623,
+            "right": 482.1890699863434,
+            "bottom": 317.6250046491623,
+            "centerX": 369.9999871850014
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1448,
+          "height": 1086,
+          "bounds": {
+            "x": 220.997272960851,
+            "y": 104.35263605789751,
+            "width": 297.7997912317328,
+            "height": 223.34984342379957,
+            "right": 518.7970641925838,
+            "bottom": 327.7024794816971
+          },
+          "texture": "MISSION10_LAUNCH_CONSOLE",
+          "data": {
+            "visibleAlphaSourceBounds": {
+              "sourceWidth": 1448,
+              "sourceHeight": 1086,
+              "x": 179,
+              "y": 79,
+              "width": 1091,
+              "height": 958
+            }
+          }
+        },
+        "beacon": {
+          "name": "mission10-beacon-off",
+          "x": 563.5359491246784,
+          "y": 323.99699752032757,
+          "scale": 0.13557442034405384,
+          "scaleY": 0.13557442034405384,
+          "visibleBounds": {
+            "x": 498.18908151984215,
+            "y": 136.3620184659958,
+            "width": 130.6937363743782,
+            "height": 181.2629932910204,
+            "right": 628.8828178942204,
+            "bottom": 317.6250117570162,
+            "centerX": 563.5359497070312
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1086,
+          "height": 1448,
+          "bounds": {
+            "x": 489.91903887785713,
+            "y": 127.6852368621376,
+            "width": 147.2338204936425,
+            "height": 196.31176065818997,
+            "right": 637.1528593714996,
+            "bottom": 323.99699752032757
+          },
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {}
+        },
+        "target": {
+          "x": 369.8971685767174,
+          "y": 229.42854837522526,
+          "width": 68.49395198329853,
+          "height": 49.1369655532359,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 68.49395198329853,
+            "height": 49.1369655532359
+          },
+          "bounds": {
+            "x": 335.6501925850681,
+            "y": 204.86006559860732,
+            "width": 68.49395198329853,
+            "height": 49.13696555323591,
+            "right": 404.14414456836664,
+            "bottom": 253.99703115184323
+          }
+        },
+        "button": {
+          "x": 369.89715576171875,
+          "y": 224.9615525007248
+        },
+        "buttonLeft": {
+          "x": 353.5181666612625,
+          "y": 224.9615525007248
+        },
+        "buttonRight": {
+          "x": 386.276144862175,
+          "y": 224.9615525007248
+        },
+        "sideLed": {
+          "x": 290.98020827770233,
+          "y": 233.8955465555191
+        },
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "paused": false,
+        "ringCenters": []
+      },
+      "frames": [
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 0,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 12.600000000000001,
+                "y": 8.600000000000001,
+                "width": 76,
+                "height": 52
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 102.6,
+                "y": 20.6,
+                "width": 534.8,
+                "height": 28
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 651.4,
+                "y": 8.600000000000001,
+                "width": 76,
+                "height": 52
+              },
+              "INTRO_MESSAGE": {
+                "x": 165,
+                "y": 52.92,
+                "width": 410,
+                "height": 48
+              },
+              "HERO_GROUP": {
+                "x": 196.5625,
+                "y": 114.92,
+                "width": 346.875,
+                "height": 170.47999999999996
+              },
+              "CTA": {
+                "x": 255,
+                "y": 293.4,
+                "width": 230,
+                "height": 48
+              }
+            },
+            "introGroundY": 285.4,
+            "launchGroundY": 317.625,
+            "portraitGate": false,
+            "showExtendedHeader": false,
+            "title": {
+              "x": 136.92000000000002,
+              "y": 66.6,
+              "width": 466.15999999999997,
+              "height": 28
+            },
+            "progress": {
+              "x": 611.0799999999999,
+              "y": 66.6,
+              "width": 112,
+              "height": 28
+            },
+            "feedback": {
+              "x": 16.92,
+              "y": 95.6,
+              "width": 706.16,
+              "height": 24
+            },
+            "world": {
+              "x": 16.92,
+              "y": 120.6,
+              "width": 706.16,
+              "height": 222.79999999999998
+            },
+            "robot": {
+              "x": 16.92,
+              "y": 120.6,
+              "width": 112,
+              "height": 222.79999999999998
+            },
+            "puzzleStage": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "pathLanes": [
+              {
+                "x": 136.92000000000002,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              },
+              {
+                "x": 334.97333333333336,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              },
+              {
+                "x": 533.0266666666666,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              }
+            ],
+            "relayBoard": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "signalBoard": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "launchConsole": {
+              "x": 200.5216,
+              "y": 120.6,
+              "width": 338.9568,
+              "height": 197.025
+            },
+            "beacon": {
+              "x": 498.1890788100209,
+              "y": 136.362,
+              "width": 130.6937412116679,
+              "height": 181.263
+            },
+            "platformContactY": 343.4,
+            "robotScale": 0.11691022964509394,
+            "targetGap": 8
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 369.8971685767174,
+            "y": 327.7024794816971,
+            "scale": 0.20566283924843423,
+            "scaleY": 0.20566283924843423,
+            "visibleBounds": {
+              "x": 257.81090438365936,
+              "y": 120.59999763965607,
+              "width": 224.37816560268402,
+              "height": 197.02500700950623,
+              "right": 482.1890699863434,
+              "bottom": 317.6250046491623,
+              "centerX": 369.9999871850014
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 220.997272960851,
+              "y": 104.35263605789751,
+              "width": 297.7997912317328,
+              "height": 223.34984342379957,
+              "right": 518.7970641925838,
+              "bottom": 327.7024794816971
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-off",
+            "x": 563.5359491246784,
+            "y": 323.99699752032757,
+            "scale": 0.13557442034405384,
+            "scaleY": 0.13557442034405384,
+            "visibleBounds": {
+              "x": 498.18908151984215,
+              "y": 136.3620184659958,
+              "width": 130.6937363743782,
+              "height": 181.2629932910204,
+              "right": 628.8828178942204,
+              "bottom": 317.6250117570162,
+              "centerX": 563.5359497070312
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1086,
+            "height": 1448,
+            "bounds": {
+              "x": 489.91903887785713,
+              "y": 127.6852368621376,
+              "width": 147.2338204936425,
+              "height": 196.31176065818997,
+              "right": 637.1528593714996,
+              "bottom": 323.99699752032757
+            },
+            "texture": "MISSION10_BEACON_OFF",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 369.89715576171875,
+            "y": 224.9615525007248
+          },
+          "buttonLeft": {
+            "x": 353.5181666612625,
+            "y": 224.9615525007248
+          },
+          "buttonRight": {
+            "x": 386.276144862175,
+            "y": 224.9615525007248
+          },
+          "sideLed": {
+            "x": 290.98020827770233,
+            "y": 233.8955465555191
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": []
+        },
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 2,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 12.600000000000001,
+                "y": 8.600000000000001,
+                "width": 76,
+                "height": 52
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 102.6,
+                "y": 20.6,
+                "width": 534.8,
+                "height": 28
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 651.4,
+                "y": 8.600000000000001,
+                "width": 76,
+                "height": 52
+              },
+              "INTRO_MESSAGE": {
+                "x": 165,
+                "y": 52.92,
+                "width": 410,
+                "height": 48
+              },
+              "HERO_GROUP": {
+                "x": 196.5625,
+                "y": 114.92,
+                "width": 346.875,
+                "height": 170.47999999999996
+              },
+              "CTA": {
+                "x": 255,
+                "y": 293.4,
+                "width": 230,
+                "height": 48
+              }
+            },
+            "introGroundY": 285.4,
+            "launchGroundY": 317.625,
+            "portraitGate": false,
+            "showExtendedHeader": false,
+            "title": {
+              "x": 136.92000000000002,
+              "y": 66.6,
+              "width": 466.15999999999997,
+              "height": 28
+            },
+            "progress": {
+              "x": 611.0799999999999,
+              "y": 66.6,
+              "width": 112,
+              "height": 28
+            },
+            "feedback": {
+              "x": 16.92,
+              "y": 95.6,
+              "width": 706.16,
+              "height": 24
+            },
+            "world": {
+              "x": 16.92,
+              "y": 120.6,
+              "width": 706.16,
+              "height": 222.79999999999998
+            },
+            "robot": {
+              "x": 16.92,
+              "y": 120.6,
+              "width": 112,
+              "height": 222.79999999999998
+            },
+            "puzzleStage": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "pathLanes": [
+              {
+                "x": 136.92000000000002,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              },
+              {
+                "x": 334.97333333333336,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              },
+              {
+                "x": 533.0266666666666,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              }
+            ],
+            "relayBoard": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "signalBoard": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "launchConsole": {
+              "x": 200.5216,
+              "y": 120.6,
+              "width": 338.9568,
+              "height": 197.025
+            },
+            "beacon": {
+              "x": 498.1890788100209,
+              "y": 136.362,
+              "width": 130.6937412116679,
+              "height": 181.263
+            },
+            "platformContactY": 343.4,
+            "robotScale": 0.11691022964509394,
+            "targetGap": 8
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 369.8971685767174,
+            "y": 327.7024794816971,
+            "scale": 0.20566283924843423,
+            "scaleY": 0.20566283924843423,
+            "visibleBounds": {
+              "x": 257.81090438365936,
+              "y": 120.59999763965607,
+              "width": 224.37816560268402,
+              "height": 197.02500700950623,
+              "right": 482.1890699863434,
+              "bottom": 317.6250046491623,
+              "centerX": 369.9999871850014
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 220.997272960851,
+              "y": 104.35263605789751,
+              "width": 297.7997912317328,
+              "height": 223.34984342379957,
+              "right": 518.7970641925838,
+              "bottom": 327.7024794816971
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-off",
+            "x": 563.5359491246784,
+            "y": 323.99699752032757,
+            "scale": 0.13557442034405384,
+            "scaleY": 0.13557442034405384,
+            "visibleBounds": {
+              "x": 498.18908151984215,
+              "y": 136.3620184659958,
+              "width": 130.6937363743782,
+              "height": 181.2629932910204,
+              "right": 628.8828178942204,
+              "bottom": 317.6250117570162,
+              "centerX": 563.5359497070312
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1086,
+            "height": 1448,
+            "bounds": {
+              "x": 489.91903887785713,
+              "y": 127.6852368621376,
+              "width": 147.2338204936425,
+              "height": 196.31176065818997,
+              "right": 637.1528593714996,
+              "bottom": 323.99699752032757
+            },
+            "texture": "MISSION10_BEACON_OFF",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 369.89715576171875,
+            "y": 224.9615525007248
+          },
+          "buttonLeft": {
+            "x": 353.5181666612625,
+            "y": 224.9615525007248
+          },
+          "buttonRight": {
+            "x": 386.276144862175,
+            "y": 224.9615525007248
+          },
+          "sideLed": {
+            "x": 290.98020827770233,
+            "y": 233.8955465555191
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": []
+        },
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 3,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 12.600000000000001,
+                "y": 8.600000000000001,
+                "width": 76,
+                "height": 52
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 102.6,
+                "y": 20.6,
+                "width": 534.8,
+                "height": 28
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 651.4,
+                "y": 8.600000000000001,
+                "width": 76,
+                "height": 52
+              },
+              "INTRO_MESSAGE": {
+                "x": 165,
+                "y": 52.92,
+                "width": 410,
+                "height": 48
+              },
+              "HERO_GROUP": {
+                "x": 196.5625,
+                "y": 114.92,
+                "width": 346.875,
+                "height": 170.47999999999996
+              },
+              "CTA": {
+                "x": 255,
+                "y": 293.4,
+                "width": 230,
+                "height": 48
+              }
+            },
+            "introGroundY": 285.4,
+            "launchGroundY": 317.625,
+            "portraitGate": false,
+            "showExtendedHeader": false,
+            "title": {
+              "x": 136.92000000000002,
+              "y": 66.6,
+              "width": 466.15999999999997,
+              "height": 28
+            },
+            "progress": {
+              "x": 611.0799999999999,
+              "y": 66.6,
+              "width": 112,
+              "height": 28
+            },
+            "feedback": {
+              "x": 16.92,
+              "y": 95.6,
+              "width": 706.16,
+              "height": 24
+            },
+            "world": {
+              "x": 16.92,
+              "y": 120.6,
+              "width": 706.16,
+              "height": 222.79999999999998
+            },
+            "robot": {
+              "x": 16.92,
+              "y": 120.6,
+              "width": 112,
+              "height": 222.79999999999998
+            },
+            "puzzleStage": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "pathLanes": [
+              {
+                "x": 136.92000000000002,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              },
+              {
+                "x": 334.97333333333336,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              },
+              {
+                "x": 533.0266666666666,
+                "y": 120.6,
+                "width": 190.0533333333333,
+                "height": 222.79999999999998
+              }
+            ],
+            "relayBoard": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "signalBoard": {
+              "x": 136.92000000000002,
+              "y": 120.6,
+              "width": 586.16,
+              "height": 222.79999999999998
+            },
+            "launchConsole": {
+              "x": 200.5216,
+              "y": 120.6,
+              "width": 338.9568,
+              "height": 197.025
+            },
+            "beacon": {
+              "x": 498.1890788100209,
+              "y": 136.362,
+              "width": 130.6937412116679,
+              "height": 181.263
+            },
+            "platformContactY": 343.4,
+            "robotScale": 0.11691022964509394,
+            "targetGap": 8
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 369.8971685767174,
+            "y": 327.7024794816971,
+            "scale": 0.20566283924843423,
+            "scaleY": 0.20566283924843423,
+            "visibleBounds": {
+              "x": 257.81090438365936,
+              "y": 120.59999763965607,
+              "width": 224.37816560268402,
+              "height": 197.02500700950623,
+              "right": 482.1890699863434,
+              "bottom": 317.6250046491623,
+              "centerX": 369.9999871850014
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 220.997272960851,
+              "y": 104.35263605789751,
+              "width": 297.7997912317328,
+              "height": 223.34984342379957,
+              "right": 518.7970641925838,
+              "bottom": 327.7024794816971
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-on",
+            "x": 563.4701416033352,
+            "y": 325.2839995622635,
+            "scale": 0.13161504653742992,
+            "scaleY": 0.12765,
+            "visibleBounds": {
+              "x": 498.1890926361084,
+              "y": 136.36200737953186,
+              "width": 130.69373738765717,
+              "height": 181.2629896402359,
+              "right": 628.8828300237656,
+              "bottom": 317.62499701976776,
+              "centerX": 563.535961329937
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1024,
+            "height": 1536,
+            "bounds": {
+              "x": 496.083237776171,
+              "y": 129.21359956226348,
+              "width": 134.77380765432827,
+              "height": 196.0704,
+              "right": 630.8570454304993,
+              "bottom": 325.2839995622635
+            },
+            "texture": "MISSION10_BEACON_ON",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 369.89715576171875,
+            "y": 224.9615525007248
+          },
+          "buttonLeft": {
+            "x": 353.5181666612625,
+            "y": 224.9615525007248
+          },
+          "buttonRight": {
+            "x": 386.276144862175,
+            "y": 224.9615525007248
+          },
+          "sideLed": {
+            "x": 290.98020827770233,
+            "y": 233.8955465555191
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": [
+            {
+              "x": 563.535961329937,
+              "y": 163.55145582556725,
+              "radius": 48
+            },
+            {
+              "x": 563.535961329937,
+              "y": 163.55145582556725,
+              "radius": 70
+            }
+          ]
+        }
+      ],
+      "rawTextureDisplayHeightDelta": -0.24136065818996144
+    },
+    {
+      "label": "844x390",
+      "initial": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "layout": {
+          "introRegions": {
+            "TOP_LEFT_CONTROL": {
+              "x": 13.650000000000002,
+              "y": 9.650000000000006,
+              "width": 76,
+              "height": 52
+            },
+            "TOP_CENTER_TITLE": {
+              "x": 103.65,
+              "y": 21.650000000000006,
+              "width": 636.7,
+              "height": 28
+            },
+            "TOP_RIGHT_CONTROL": {
+              "x": 754.35,
+              "y": 9.650000000000006,
+              "width": 76,
+              "height": 52
+            },
+            "INTRO_MESSAGE": {
+              "x": 217,
+              "y": 54.330000000000005,
+              "width": 410,
+              "height": 48
+            },
+            "HERO_GROUP": {
+              "x": 224.1875,
+              "y": 116.33000000000001,
+              "width": 395.625,
+              "height": 197.44000000000003
+            },
+            "CTA": {
+              "x": 307,
+              "y": 322.35,
+              "width": 230,
+              "height": 48
+            }
+          },
+          "introGroundY": 313.77000000000004,
+          "launchGroundY": 348.875,
+          "portraitGate": false,
+          "showExtendedHeader": false,
+          "title": {
+            "x": 138.91,
+            "y": 67.65,
+            "width": 566.1800000000001,
+            "height": 28
+          },
+          "progress": {
+            "x": 713.6700000000001,
+            "y": 67.65,
+            "width": 112,
+            "height": 28
+          },
+          "feedback": {
+            "x": 18.330000000000002,
+            "y": 96.65,
+            "width": 807.34,
+            "height": 24
+          },
+          "world": {
+            "x": 18.330000000000002,
+            "y": 121.65,
+            "width": 807.34,
+            "height": 250.70000000000002
+          },
+          "robot": {
+            "x": 18.330000000000002,
+            "y": 121.65,
+            "width": 112,
+            "height": 250.70000000000002
+          },
+          "puzzleStage": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "pathLanes": [
+            {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 223.78,
+              "height": 250.70000000000002
+            },
+            {
+              "x": 370.11,
+              "y": 121.65,
+              "width": 223.78,
+              "height": 250.70000000000002
+            },
+            {
+              "x": 601.89,
+              "y": 121.65,
+              "width": 223.78,
+              "height": 250.70000000000002
+            }
+          ],
+          "relayBoard": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "signalBoard": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "launchConsole": {
+            "x": 252,
+            "y": 121.65,
+            "width": 340,
+            "height": 227.225
+          },
+          "beacon": {
+            "x": 567.3854253653444,
+            "y": 139.828,
+            "width": 150.72648317127897,
+            "height": 209.047
+          },
+          "platformContactY": 372.35,
+          "robotScale": 0.11691022964509394,
+          "targetGap": 8
+        },
+        "console": {
+          "name": "mission10-launch-console",
+          "x": 421.88140657544136,
+          "y": 360.4971556067467,
+          "scale": 0.23718684759916492,
+          "scaleY": 0.23718684759916492,
+          "visibleBounds": {
+            "x": 292.61457592248917,
+            "y": 121.65000480413437,
+            "width": 258.77085238695145,
+            "height": 227.22500145435333,
+            "right": 551.3854283094406,
+            "bottom": 348.8750062584877,
+            "centerX": 422.0000021159649
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1448,
+          "height": 1086,
+          "bounds": {
+            "x": 250.15812891364595,
+            "y": 102.91223911405359,
+            "width": 343.44655532359087,
+            "height": 257.5849164926931,
+            "right": 593.6046842372368,
+            "bottom": 360.4971556067467
+          },
+          "texture": "MISSION10_LAUNCH_CONSOLE",
+          "data": {
+            "visibleAlphaSourceBounds": {
+              "sourceWidth": 1448,
+              "sourceHeight": 1086,
+              "x": 179,
+              "y": 79,
+              "width": 1091,
+              "height": 958
+            }
+          }
+        },
+        "beacon": {
+          "name": "mission10-beacon-off",
+          "x": 642.7486766754052,
+          "y": 356.2236980050802,
+          "scale": 0.15635527299925203,
+          "scaleY": 0.15635527299925206,
+          "visibleBounds": {
+            "x": 567.3854138553143,
+            "y": 139.82799088954926,
+            "width": 150.7264867424965,
+            "height": 209.04700495302677,
+            "right": 718.1119005978107,
+            "bottom": 348.874995842576,
+            "centerX": 642.7486572265625
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1086,
+          "height": 1448,
+          "bounds": {
+            "x": 557.8477634368114,
+            "y": 129.82126270216324,
+            "width": 169.80182647718766,
+            "height": 226.40243530291698,
+            "right": 727.6495899139991,
+            "bottom": 356.2236980050802
+          },
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {}
+        },
+        "target": {
+          "x": 421.88140657544136,
+          "y": 247.15979234996172,
+          "width": 78.99270772442588,
+          "height": 56.66868162839248,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 78.99270772442588,
+            "height": 56.66868162839248
+          },
+          "bounds": {
+            "x": 382.38505271322845,
+            "y": 218.82545153576547,
+            "width": 78.99270772442588,
+            "height": 56.66868162839245,
+            "right": 461.37776043765433,
+            "bottom": 275.4941331641579
+          }
+        },
+        "button": {
+          "x": 421.88140869140625,
+          "y": 242.00809952020649
+        },
+        "buttonLeft": {
+          "x": 402.99184802770617,
+          "y": 242.00809952020649
+        },
+        "buttonRight": {
+          "x": 440.7709693551064,
+          "y": 242.00809952020649
+        },
+        "sideLed": {
+          "x": 330.86807094812394,
+          "y": 252.31149624586106
+        },
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "paused": false,
+        "ringCenters": []
+      },
+      "outside": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "layout": {
+          "introRegions": {
+            "TOP_LEFT_CONTROL": {
+              "x": 13.650000000000002,
+              "y": 9.650000000000006,
+              "width": 76,
+              "height": 52
+            },
+            "TOP_CENTER_TITLE": {
+              "x": 103.65,
+              "y": 21.650000000000006,
+              "width": 636.7,
+              "height": 28
+            },
+            "TOP_RIGHT_CONTROL": {
+              "x": 754.35,
+              "y": 9.650000000000006,
+              "width": 76,
+              "height": 52
+            },
+            "INTRO_MESSAGE": {
+              "x": 217,
+              "y": 54.330000000000005,
+              "width": 410,
+              "height": 48
+            },
+            "HERO_GROUP": {
+              "x": 224.1875,
+              "y": 116.33000000000001,
+              "width": 395.625,
+              "height": 197.44000000000003
+            },
+            "CTA": {
+              "x": 307,
+              "y": 322.35,
+              "width": 230,
+              "height": 48
+            }
+          },
+          "introGroundY": 313.77000000000004,
+          "launchGroundY": 348.875,
+          "portraitGate": false,
+          "showExtendedHeader": false,
+          "title": {
+            "x": 138.91,
+            "y": 67.65,
+            "width": 566.1800000000001,
+            "height": 28
+          },
+          "progress": {
+            "x": 713.6700000000001,
+            "y": 67.65,
+            "width": 112,
+            "height": 28
+          },
+          "feedback": {
+            "x": 18.330000000000002,
+            "y": 96.65,
+            "width": 807.34,
+            "height": 24
+          },
+          "world": {
+            "x": 18.330000000000002,
+            "y": 121.65,
+            "width": 807.34,
+            "height": 250.70000000000002
+          },
+          "robot": {
+            "x": 18.330000000000002,
+            "y": 121.65,
+            "width": 112,
+            "height": 250.70000000000002
+          },
+          "puzzleStage": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "pathLanes": [
+            {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 223.78,
+              "height": 250.70000000000002
+            },
+            {
+              "x": 370.11,
+              "y": 121.65,
+              "width": 223.78,
+              "height": 250.70000000000002
+            },
+            {
+              "x": 601.89,
+              "y": 121.65,
+              "width": 223.78,
+              "height": 250.70000000000002
+            }
+          ],
+          "relayBoard": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "signalBoard": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "launchConsole": {
+            "x": 252,
+            "y": 121.65,
+            "width": 340,
+            "height": 227.225
+          },
+          "beacon": {
+            "x": 567.3854253653444,
+            "y": 139.828,
+            "width": 150.72648317127897,
+            "height": 209.047
+          },
+          "platformContactY": 372.35,
+          "robotScale": 0.11691022964509394,
+          "targetGap": 8
+        },
+        "console": {
+          "name": "mission10-launch-console",
+          "x": 421.88140657544136,
+          "y": 360.4971556067467,
+          "scale": 0.23718684759916492,
+          "scaleY": 0.23718684759916492,
+          "visibleBounds": {
+            "x": 292.61457592248917,
+            "y": 121.65000480413437,
+            "width": 258.77085238695145,
+            "height": 227.22500145435333,
+            "right": 551.3854283094406,
+            "bottom": 348.8750062584877,
+            "centerX": 422.0000021159649
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1448,
+          "height": 1086,
+          "bounds": {
+            "x": 250.15812891364595,
+            "y": 102.91223911405359,
+            "width": 343.44655532359087,
+            "height": 257.5849164926931,
+            "right": 593.6046842372368,
+            "bottom": 360.4971556067467
+          },
+          "texture": "MISSION10_LAUNCH_CONSOLE",
+          "data": {
+            "visibleAlphaSourceBounds": {
+              "sourceWidth": 1448,
+              "sourceHeight": 1086,
+              "x": 179,
+              "y": 79,
+              "width": 1091,
+              "height": 958
+            }
+          }
+        },
+        "beacon": {
+          "name": "mission10-beacon-off",
+          "x": 642.7486766754052,
+          "y": 356.2236980050802,
+          "scale": 0.15635527299925203,
+          "scaleY": 0.15635527299925206,
+          "visibleBounds": {
+            "x": 567.3854138553143,
+            "y": 139.82799088954926,
+            "width": 150.7264867424965,
+            "height": 209.04700495302677,
+            "right": 718.1119005978107,
+            "bottom": 348.874995842576,
+            "centerX": 642.7486572265625
+          },
+          "originX": 0.5,
+          "originY": 1,
+          "width": 1086,
+          "height": 1448,
+          "bounds": {
+            "x": 557.8477634368114,
+            "y": 129.82126270216324,
+            "width": 169.80182647718766,
+            "height": 226.40243530291698,
+            "right": 727.6495899139991,
+            "bottom": 356.2236980050802
+          },
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {}
+        },
+        "target": {
+          "x": 421.88140657544136,
+          "y": 247.15979234996172,
+          "width": 78.99270772442588,
+          "height": 56.66868162839248,
+          "hitArea": {
+            "type": 5,
+            "x": 0,
+            "y": 0,
+            "width": 78.99270772442588,
+            "height": 56.66868162839248
+          },
+          "bounds": {
+            "x": 382.38505271322845,
+            "y": 218.82545153576547,
+            "width": 78.99270772442588,
+            "height": 56.66868162839245,
+            "right": 461.37776043765433,
+            "bottom": 275.4941331641579
+          }
+        },
+        "button": {
+          "x": 421.88140869140625,
+          "y": 242.00809952020649
+        },
+        "buttonLeft": {
+          "x": 402.99184802770617,
+          "y": 242.00809952020649
+        },
+        "buttonRight": {
+          "x": 440.7709693551064,
+          "y": 242.00809952020649
+        },
+        "sideLed": {
+          "x": 330.86807094812394,
+          "y": 252.31149624586106
+        },
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "paused": false,
+        "ringCenters": []
+      },
+      "frames": [
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 0,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 13.650000000000002,
+                "y": 9.650000000000006,
+                "width": 76,
+                "height": 52
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 103.65,
+                "y": 21.650000000000006,
+                "width": 636.7,
+                "height": 28
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 754.35,
+                "y": 9.650000000000006,
+                "width": 76,
+                "height": 52
+              },
+              "INTRO_MESSAGE": {
+                "x": 217,
+                "y": 54.330000000000005,
+                "width": 410,
+                "height": 48
+              },
+              "HERO_GROUP": {
+                "x": 224.1875,
+                "y": 116.33000000000001,
+                "width": 395.625,
+                "height": 197.44000000000003
+              },
+              "CTA": {
+                "x": 307,
+                "y": 322.35,
+                "width": 230,
+                "height": 48
+              }
+            },
+            "introGroundY": 313.77000000000004,
+            "launchGroundY": 348.875,
+            "portraitGate": false,
+            "showExtendedHeader": false,
+            "title": {
+              "x": 138.91,
+              "y": 67.65,
+              "width": 566.1800000000001,
+              "height": 28
+            },
+            "progress": {
+              "x": 713.6700000000001,
+              "y": 67.65,
+              "width": 112,
+              "height": 28
+            },
+            "feedback": {
+              "x": 18.330000000000002,
+              "y": 96.65,
+              "width": 807.34,
+              "height": 24
+            },
+            "world": {
+              "x": 18.330000000000002,
+              "y": 121.65,
+              "width": 807.34,
+              "height": 250.70000000000002
+            },
+            "robot": {
+              "x": 18.330000000000002,
+              "y": 121.65,
+              "width": 112,
+              "height": 250.70000000000002
+            },
+            "puzzleStage": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "pathLanes": [
+              {
+                "x": 138.33,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              },
+              {
+                "x": 370.11,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              },
+              {
+                "x": 601.89,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              }
+            ],
+            "relayBoard": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "signalBoard": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "launchConsole": {
+              "x": 252,
+              "y": 121.65,
+              "width": 340,
+              "height": 227.225
+            },
+            "beacon": {
+              "x": 567.3854253653444,
+              "y": 139.828,
+              "width": 150.72648317127897,
+              "height": 209.047
+            },
+            "platformContactY": 372.35,
+            "robotScale": 0.11691022964509394,
+            "targetGap": 8
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 421.88140657544136,
+            "y": 360.4971556067467,
+            "scale": 0.23718684759916492,
+            "scaleY": 0.23718684759916492,
+            "visibleBounds": {
+              "x": 292.61457592248917,
+              "y": 121.65000480413437,
+              "width": 258.77085238695145,
+              "height": 227.22500145435333,
+              "right": 551.3854283094406,
+              "bottom": 348.8750062584877,
+              "centerX": 422.0000021159649
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 250.15812891364595,
+              "y": 102.91223911405359,
+              "width": 343.44655532359087,
+              "height": 257.5849164926931,
+              "right": 593.6046842372368,
+              "bottom": 360.4971556067467
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-off",
+            "x": 642.7486766754052,
+            "y": 356.2236980050802,
+            "scale": 0.15635527299925203,
+            "scaleY": 0.15635527299925206,
+            "visibleBounds": {
+              "x": 567.3854138553143,
+              "y": 139.82799088954926,
+              "width": 150.7264867424965,
+              "height": 209.04700495302677,
+              "right": 718.1119005978107,
+              "bottom": 348.874995842576,
+              "centerX": 642.7486572265625
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1086,
+            "height": 1448,
+            "bounds": {
+              "x": 557.8477634368114,
+              "y": 129.82126270216324,
+              "width": 169.80182647718766,
+              "height": 226.40243530291698,
+              "right": 727.6495899139991,
+              "bottom": 356.2236980050802
+            },
+            "texture": "MISSION10_BEACON_OFF",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 421.88140869140625,
+            "y": 242.00809952020649
+          },
+          "buttonLeft": {
+            "x": 402.99184802770617,
+            "y": 242.00809952020649
+          },
+          "buttonRight": {
+            "x": 440.7709693551064,
+            "y": 242.00809952020649
+          },
+          "sideLed": {
+            "x": 330.86807094812394,
+            "y": 252.31149624586106
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": []
+        },
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 2,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 13.650000000000002,
+                "y": 9.650000000000006,
+                "width": 76,
+                "height": 52
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 103.65,
+                "y": 21.650000000000006,
+                "width": 636.7,
+                "height": 28
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 754.35,
+                "y": 9.650000000000006,
+                "width": 76,
+                "height": 52
+              },
+              "INTRO_MESSAGE": {
+                "x": 217,
+                "y": 54.330000000000005,
+                "width": 410,
+                "height": 48
+              },
+              "HERO_GROUP": {
+                "x": 224.1875,
+                "y": 116.33000000000001,
+                "width": 395.625,
+                "height": 197.44000000000003
+              },
+              "CTA": {
+                "x": 307,
+                "y": 322.35,
+                "width": 230,
+                "height": 48
+              }
+            },
+            "introGroundY": 313.77000000000004,
+            "launchGroundY": 348.875,
+            "portraitGate": false,
+            "showExtendedHeader": false,
+            "title": {
+              "x": 138.91,
+              "y": 67.65,
+              "width": 566.1800000000001,
+              "height": 28
+            },
+            "progress": {
+              "x": 713.6700000000001,
+              "y": 67.65,
+              "width": 112,
+              "height": 28
+            },
+            "feedback": {
+              "x": 18.330000000000002,
+              "y": 96.65,
+              "width": 807.34,
+              "height": 24
+            },
+            "world": {
+              "x": 18.330000000000002,
+              "y": 121.65,
+              "width": 807.34,
+              "height": 250.70000000000002
+            },
+            "robot": {
+              "x": 18.330000000000002,
+              "y": 121.65,
+              "width": 112,
+              "height": 250.70000000000002
+            },
+            "puzzleStage": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "pathLanes": [
+              {
+                "x": 138.33,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              },
+              {
+                "x": 370.11,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              },
+              {
+                "x": 601.89,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              }
+            ],
+            "relayBoard": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "signalBoard": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "launchConsole": {
+              "x": 252,
+              "y": 121.65,
+              "width": 340,
+              "height": 227.225
+            },
+            "beacon": {
+              "x": 567.3854253653444,
+              "y": 139.828,
+              "width": 150.72648317127897,
+              "height": 209.047
+            },
+            "platformContactY": 372.35,
+            "robotScale": 0.11691022964509394,
+            "targetGap": 8
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 421.88140657544136,
+            "y": 360.4971556067467,
+            "scale": 0.23718684759916492,
+            "scaleY": 0.23718684759916492,
+            "visibleBounds": {
+              "x": 292.61457592248917,
+              "y": 121.65000480413437,
+              "width": 258.77085238695145,
+              "height": 227.22500145435333,
+              "right": 551.3854283094406,
+              "bottom": 348.8750062584877,
+              "centerX": 422.0000021159649
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 250.15812891364595,
+              "y": 102.91223911405359,
+              "width": 343.44655532359087,
+              "height": 257.5849164926931,
+              "right": 593.6046842372368,
+              "bottom": 360.4971556067467
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-off",
+            "x": 642.7486766754052,
+            "y": 356.2236980050802,
+            "scale": 0.15635527299925203,
+            "scaleY": 0.15635527299925206,
+            "visibleBounds": {
+              "x": 567.3854138553143,
+              "y": 139.82799088954926,
+              "width": 150.7264867424965,
+              "height": 209.04700495302677,
+              "right": 718.1119005978107,
+              "bottom": 348.874995842576,
+              "centerX": 642.7486572265625
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1086,
+            "height": 1448,
+            "bounds": {
+              "x": 557.8477634368114,
+              "y": 129.82126270216324,
+              "width": 169.80182647718766,
+              "height": 226.40243530291698,
+              "right": 727.6495899139991,
+              "bottom": 356.2236980050802
+            },
+            "texture": "MISSION10_BEACON_OFF",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 421.88140869140625,
+            "y": 242.00809952020649
+          },
+          "buttonLeft": {
+            "x": 402.99184802770617,
+            "y": 242.00809952020649
+          },
+          "buttonRight": {
+            "x": 440.7709693551064,
+            "y": 242.00809952020649
+          },
+          "sideLed": {
+            "x": 330.86807094812394,
+            "y": 252.31149624586106
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": []
+        },
+        {
+          "snapshot": {
+            "stage": "FINALE",
+            "runSeed": 1010,
+            "pathConfigId": "PATH_B",
+            "energyConfigId": "ENERGY_B",
+            "signalConfigId": "SIGNAL_B",
+            "pathDecisionIndex": 3,
+            "pathWrongAttempts": 0,
+            "relayOrientations": {
+              "R1": 0,
+              "R2": 0,
+              "R3": 0
+            },
+            "energyWrongAttempts": 0,
+            "reflectorOrientations": {
+              "M1": 0,
+              "M2": 0
+            },
+            "signalWrongAttempts": 0,
+            "launchPressed": true,
+            "finaleStep": 3,
+            "completed": false
+          },
+          "layout": {
+            "introRegions": {
+              "TOP_LEFT_CONTROL": {
+                "x": 13.650000000000002,
+                "y": 9.650000000000006,
+                "width": 76,
+                "height": 52
+              },
+              "TOP_CENTER_TITLE": {
+                "x": 103.65,
+                "y": 21.650000000000006,
+                "width": 636.7,
+                "height": 28
+              },
+              "TOP_RIGHT_CONTROL": {
+                "x": 754.35,
+                "y": 9.650000000000006,
+                "width": 76,
+                "height": 52
+              },
+              "INTRO_MESSAGE": {
+                "x": 217,
+                "y": 54.330000000000005,
+                "width": 410,
+                "height": 48
+              },
+              "HERO_GROUP": {
+                "x": 224.1875,
+                "y": 116.33000000000001,
+                "width": 395.625,
+                "height": 197.44000000000003
+              },
+              "CTA": {
+                "x": 307,
+                "y": 322.35,
+                "width": 230,
+                "height": 48
+              }
+            },
+            "introGroundY": 313.77000000000004,
+            "launchGroundY": 348.875,
+            "portraitGate": false,
+            "showExtendedHeader": false,
+            "title": {
+              "x": 138.91,
+              "y": 67.65,
+              "width": 566.1800000000001,
+              "height": 28
+            },
+            "progress": {
+              "x": 713.6700000000001,
+              "y": 67.65,
+              "width": 112,
+              "height": 28
+            },
+            "feedback": {
+              "x": 18.330000000000002,
+              "y": 96.65,
+              "width": 807.34,
+              "height": 24
+            },
+            "world": {
+              "x": 18.330000000000002,
+              "y": 121.65,
+              "width": 807.34,
+              "height": 250.70000000000002
+            },
+            "robot": {
+              "x": 18.330000000000002,
+              "y": 121.65,
+              "width": 112,
+              "height": 250.70000000000002
+            },
+            "puzzleStage": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "pathLanes": [
+              {
+                "x": 138.33,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              },
+              {
+                "x": 370.11,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              },
+              {
+                "x": 601.89,
+                "y": 121.65,
+                "width": 223.78,
+                "height": 250.70000000000002
+              }
+            ],
+            "relayBoard": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "signalBoard": {
+              "x": 138.33,
+              "y": 121.65,
+              "width": 687.34,
+              "height": 250.70000000000002
+            },
+            "launchConsole": {
+              "x": 252,
+              "y": 121.65,
+              "width": 340,
+              "height": 227.225
+            },
+            "beacon": {
+              "x": 567.3854253653444,
+              "y": 139.828,
+              "width": 150.72648317127897,
+              "height": 209.047
+            },
+            "platformContactY": 372.35,
+            "robotScale": 0.11691022964509394,
+            "targetGap": 8
+          },
+          "console": {
+            "name": "mission10-launch-console",
+            "x": 421.88140657544136,
+            "y": 360.4971556067467,
+            "scale": 0.23718684759916492,
+            "scaleY": 0.23718684759916492,
+            "visibleBounds": {
+              "x": 292.61457592248917,
+              "y": 121.65000480413437,
+              "width": 258.77085238695145,
+              "height": 227.22500145435333,
+              "right": 551.3854283094406,
+              "bottom": 348.8750062584877,
+              "centerX": 422.0000021159649
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1448,
+            "height": 1086,
+            "bounds": {
+              "x": 250.15812891364595,
+              "y": 102.91223911405359,
+              "width": 343.44655532359087,
+              "height": 257.5849164926931,
+              "right": 593.6046842372368,
+              "bottom": 360.4971556067467
+            },
+            "texture": "MISSION10_LAUNCH_CONSOLE",
+            "data": {
+              "visibleAlphaSourceBounds": {
+                "sourceWidth": 1448,
+                "sourceHeight": 1086,
+                "x": 179,
+                "y": 79,
+                "width": 1091,
+                "height": 958
+              }
+            }
+          },
+          "beacon": {
+            "name": "mission10-beacon-on",
+            "x": 642.6727821706197,
+            "y": 357.70797204971313,
+            "scale": 0.15178900621478245,
+            "scaleY": 0.14721619718309858,
+            "visibleBounds": {
+              "x": 567.3854417800903,
+              "y": 139.82800006866455,
+              "width": 150.7264865040779,
+              "height": 209.0470051765442,
+              "right": 718.1119282841682,
+              "bottom": 348.87500524520874,
+              "centerX": 642.7486850321293
+            },
+            "originX": 0.5,
+            "originY": 1,
+            "width": 1024,
+            "height": 1536,
+            "bounds": {
+              "x": 564.9568109886511,
+              "y": 131.5838931764737,
+              "width": 155.4319423639372,
+              "height": 226.12407887323943,
+              "right": 720.3887533525883,
+              "bottom": 357.70797204971313
+            },
+            "texture": "MISSION10_BEACON_ON",
+            "data": {}
+          },
+          "target": null,
+          "button": {
+            "x": 421.88140869140625,
+            "y": 242.00809952020649
+          },
+          "buttonLeft": {
+            "x": 402.99184802770617,
+            "y": 242.00809952020649
+          },
+          "buttonRight": {
+            "x": 440.7709693551064,
+            "y": 242.00809952020649
+          },
+          "sideLed": {
+            "x": 330.86807094812394,
+            "y": 252.31149624586106
+          },
+          "text": [
+            "МАЯК ЗАПУСКАЕТСЯ",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "paused": true,
+          "ringCenters": [
+            {
+              "x": 642.7486850321293,
+              "y": 171.18505084514618,
+              "radius": 48
+            },
+            {
+              "x": 642.7486850321293,
+              "y": 171.18505084514618,
+              "radius": 70
+            }
+          ]
+        }
+      ],
+      "rawTextureDisplayHeightDelta": -0.278356429677558
+    }
+  ],
+  "shots": [
+    "qa\\stage10-remediation-launch-candidate2\\1280x720-initial.png",
+    "qa\\stage10-remediation-launch-candidate2\\1280x720-step0-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\1280x720-step2-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\1280x720-step3-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\740x360-initial.png",
+    "qa\\stage10-remediation-launch-candidate2\\740x360-step0-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\740x360-step2-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\740x360-step3-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\844x390-initial.png",
+    "qa\\stage10-remediation-launch-candidate2\\844x390-step0-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\844x390-step2-paused-frame.png",
+    "qa\\stage10-remediation-launch-candidate2\\844x390-step3-paused-frame.png"
+  ],
+  "errors": []
+}

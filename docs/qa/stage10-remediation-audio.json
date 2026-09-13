@@ -1,0 +1,218 @@
+{
+  "result": "PASS",
+  "baseline": false,
+  "outputEvidence": "PCM sampled after Phaser master mute and volume gain; physical speakers not observed",
+  "checks": [
+    {
+      "name": "direct-delayed-unlock-mouse",
+      "ok": true,
+      "data": {
+        "before": {
+          "peak": 0,
+          "samples": 45,
+          "plays": [],
+          "states": [],
+          "locked": true,
+          "context": "suspended",
+          "muted": false,
+          "stage": "INTRO"
+        },
+        "after": {
+          "peak": 0.054259076714515686,
+          "samples": 51,
+          "plays": [
+            {
+              "key": "audio-answer-wrong",
+              "at": 8785.899999976158,
+              "muted": false,
+              "locked": false,
+              "context": "running",
+              "volume": 1
+            }
+          ],
+          "states": [],
+          "locked": false,
+          "context": "running",
+          "muted": false,
+          "stage": "PATH"
+        }
+      }
+    },
+    {
+      "name": "direct-delayed-unlock-touch",
+      "ok": true,
+      "data": {
+        "before": {
+          "peak": 0,
+          "samples": 46,
+          "plays": [],
+          "states": [],
+          "locked": true,
+          "context": "suspended",
+          "muted": false,
+          "stage": "INTRO"
+        },
+        "after": {
+          "peak": 0.046560149639844894,
+          "samples": 54,
+          "plays": [
+            {
+              "key": "audio-answer-wrong",
+              "at": 8879.199999988079,
+              "muted": false,
+              "locked": false,
+              "context": "running",
+              "volume": 1
+            }
+          ],
+          "states": [],
+          "locked": false,
+          "context": "running",
+          "muted": false,
+          "stage": "PATH"
+        }
+      }
+    },
+    {
+      "name": "muted-entry-unmute-first-gesture",
+      "ok": true,
+      "data": {
+        "peak": 0.04359017685055733,
+        "samples": 52,
+        "plays": [
+          {
+            "key": "audio-answer-wrong",
+            "at": 8877.90000000596,
+            "muted": true,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          }
+        ],
+        "states": [],
+        "locked": false,
+        "context": "running",
+        "muted": false,
+        "stage": "INTRO"
+      }
+    },
+    {
+      "name": "master-mute-zero-output",
+      "ok": true,
+      "data": {
+        "peak": 0,
+        "samples": 4,
+        "plays": [
+          {
+            "key": "audio-answer-wrong",
+            "at": 8877.90000000596,
+            "muted": true,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-ui-click",
+            "at": 9758.5,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-answer-wrong",
+            "at": 9952,
+            "muted": true,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          }
+        ],
+        "states": [],
+        "locked": false,
+        "context": "running",
+        "muted": true,
+        "stage": "INTRO"
+      }
+    },
+    {
+      "name": "master-unmute-restores-output",
+      "ok": true,
+      "data": {
+        "peak": 0.05514197424054146,
+        "samples": 4,
+        "plays": [
+          {
+            "key": "audio-answer-wrong",
+            "at": 8877.90000000596,
+            "muted": true,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-ui-click",
+            "at": 9758.5,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-answer-wrong",
+            "at": 9952,
+            "muted": true,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-answer-wrong",
+            "at": 10861.300000011921,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          }
+        ],
+        "states": [],
+        "locked": false,
+        "context": "running",
+        "muted": false,
+        "stage": "INTRO"
+      }
+    },
+    {
+      "name": "natural-m9-to-m10-cue-output",
+      "ok": true,
+      "data": {
+        "peak": 0.046560149639844894,
+        "samples": 7,
+        "plays": [
+          {
+            "key": "audio-ui-click",
+            "at": 12344.700000017881,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-answer-wrong",
+            "at": 13078.200000017881,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          }
+        ],
+        "states": [],
+        "locked": false,
+        "context": "running",
+        "muted": false,
+        "stage": "INTRO"
+      }
+    }
+  ],
+  "errors": []
+}

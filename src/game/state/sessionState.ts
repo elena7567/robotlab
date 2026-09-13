@@ -36,6 +36,9 @@ export const sessionState = {
   enterMission9Qa(): void {
     state = { currentTask: 9, completedTasks: 8, totalTasks: 10, score: 8 };
   },
+  enterMission10Qa(): void {
+    state = { currentTask: 10, completedTasks: 9, totalTasks: 10, score: 9 };
+  },
   completeCurrentTask(points = 1): void {
     if (state.currentTask <= state.completedTasks || state.completedTasks >= state.totalTasks) return;
     state.completedTasks += 1;

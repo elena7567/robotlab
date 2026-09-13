@@ -1,0 +1,218 @@
+{
+  "mission": 9,
+  "mechanic": "robotTestCourse",
+  "tested": [
+    "initial bridge state",
+    "wrong bridge input",
+    "correct bridge input",
+    "duplicate bridge input",
+    "wrong gate input",
+    "correct gate input",
+    "duplicate gate input",
+    "wrong power input",
+    "correct power input",
+    "duplicate power input",
+    "completion",
+    "rapid taps",
+    "idempotency"
+  ],
+  "failures": [],
+  "snapshots": [
+    {
+      "name": "initial",
+      "snapshot": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": false,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      }
+    },
+    {
+      "name": "wrong-bridge-input",
+      "snapshot": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": false,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "bridge-wrong-arc",
+        "lastResult": "wrong",
+        "transitioning": false,
+        "completed": false
+      }
+    },
+    {
+      "name": "correct-bridge-input",
+      "snapshot": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "bridge-correct",
+        "lastResult": "correct",
+        "transitioning": true,
+        "completed": false
+      }
+    },
+    {
+      "name": "duplicate-bridge-input",
+      "snapshot": {
+        "courseStage": "BRIDGE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "bridge-correct",
+        "lastResult": "correct",
+        "transitioning": true,
+        "completed": false
+      }
+    },
+    {
+      "name": "after-bridge-world-reaction",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      }
+    },
+    {
+      "name": "wrong-gate-input",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": false,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "gate-wrong-1",
+        "lastResult": "wrong",
+        "transitioning": false,
+        "completed": false
+      }
+    },
+    {
+      "name": "correct-gate-input",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "gate-correct",
+        "lastResult": "correct",
+        "transitioning": true,
+        "completed": false
+      }
+    },
+    {
+      "name": "duplicate-gate-input",
+      "snapshot": {
+        "courseStage": "GATE",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "gate-correct",
+        "lastResult": "correct",
+        "transitioning": true,
+        "completed": false
+      }
+    },
+    {
+      "name": "after-gate-world-reaction",
+      "snapshot": {
+        "courseStage": "POWER",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      }
+    },
+    {
+      "name": "wrong-power-input",
+      "snapshot": {
+        "courseStage": "POWER",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": false,
+        "wrongAttempts": 1,
+        "lastAction": "power-wrong-2",
+        "lastResult": "wrong",
+        "transitioning": false,
+        "completed": false
+      }
+    },
+    {
+      "name": "correct-power-input",
+      "snapshot": {
+        "courseStage": "POWER",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": true,
+        "wrongAttempts": 1,
+        "lastAction": "power-correct",
+        "lastResult": "complete",
+        "transitioning": true,
+        "completed": true
+      }
+    },
+    {
+      "name": "duplicate-power-input",
+      "snapshot": {
+        "courseStage": "POWER",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": true,
+        "wrongAttempts": 1,
+        "lastAction": "power-correct",
+        "lastResult": "complete",
+        "transitioning": true,
+        "completed": true
+      }
+    },
+    {
+      "name": "completion",
+      "snapshot": {
+        "courseStage": "COMPLETE",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": true,
+        "wrongAttempts": 1,
+        "lastAction": "power-correct",
+        "lastResult": "complete",
+        "transitioning": false,
+        "completed": true
+      }
+    },
+    {
+      "name": "rapid-tap-idempotency",
+      "snapshot": {
+        "courseStage": "POWER",
+        "bridgeRepaired": true,
+        "gateOpened": true,
+        "stationPowered": false,
+        "wrongAttempts": 0,
+        "lastAction": null,
+        "lastResult": "idle",
+        "transitioning": false,
+        "completed": false
+      }
+    }
+  ]
+}

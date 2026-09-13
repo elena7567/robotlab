@@ -582,9 +582,9 @@ export class Mission9Scene extends Phaser.Scene {
       this.add.image(0, height * 0.28, 'robot-v2-repaired').setOrigin(0.5, 1).setScale(robotHeight / 1402)
         .setName('mission9-completion-robot').setData('completionRegion', 'CHARACTER'),
     ]);
-    addControl(this, centerX, centerY + height * 0.39, 'НА ГЛАВНУЮ', () => this.scene.start('StartScene'), {
+    addControl(this, centerX, centerY + height * 0.39, 'К МАЯКУ', () => this.scene.start('Mission10Scene'), {
       width: Math.min(260, width - 48), height: 54,
       fontSize: Math.min(22, Math.max(17, layout.viewportWidth * 0.04)),
-    }).setName('mission9-home-final').setDepth(31).setData('completionRegion', 'ACTION');
+    }).setName('mission9-continue-mission10').setDepth(31).setData('completionRegion', 'ACTION');
   }
 }

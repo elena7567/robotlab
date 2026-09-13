@@ -1,0 +1,4785 @@
+{
+  "result": "READY_FOR_MISSION10_INTRO_REVIEW",
+  "checks": [
+    {
+      "name": "1280x720-opening-animation",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": true,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 8
+        },
+        "storyPhase": "ENTER",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 375.5313855037093,
+            "y": 207.71982777491212,
+            "width": 238.73092626035213,
+            "height": 344.28014735877514,
+            "right": 614.2623117640615,
+            "bottom": 551.9999751336873
+          },
+          "alpha": 0,
+          "angle": 4,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON"
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 0,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "WEAK_PULSE",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 0,
+          "subtitleAlpha": 0
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 591,
+            "y": 596.5,
+            "width": 98,
+            "height": 29,
+            "right": 689,
+            "bottom": 625.5
+          },
+          "alpha": 0.38,
+          "enabled": false,
+          "ready": false
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 0,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 0,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1280x720-weak-pulse-before-failure",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": true,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 8
+        },
+        "storyPhase": "WEAK_PULSE",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 375.5313855037093,
+            "y": 215.71982777491212,
+            "width": 238.73092626035213,
+            "height": 344.28014735877514,
+            "right": 614.2623117640615,
+            "bottom": 559.9999751336873
+          },
+          "alpha": 1,
+          "angle": 4,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON"
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "WEAK_PULSE",
+            "tint": 9545901
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 0,
+          "subtitleAlpha": 0
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 591,
+            "y": 596.5,
+            "width": 98,
+            "height": 29,
+            "right": 689,
+            "bottom": 625.5
+          },
+          "alpha": 0.38,
+          "enabled": false,
+          "ready": false
+        },
+        "failedPulseAlpha": 0.12,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1280x720-failure-event",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": true,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 8
+        },
+        "storyPhase": "ROBOT_CONCERN",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 385.26155761629343,
+            "y": 206.10696817748249,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 640.1046659350395,
+            "bottom": 559.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 0
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 591,
+            "y": 596.5,
+            "width": 98,
+            "height": 29,
+            "right": 689,
+            "bottom": 625.5
+          },
+          "alpha": 0.38,
+          "enabled": false,
+          "ready": false
+        },
+        "failedPulseAlpha": 0,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1280x720-intro-stage-only",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 385.26155761629343,
+            "y": 206.10696817748249,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 640.1046659350395,
+            "bottom": 559.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 502,
+            "y": 582,
+            "width": 276,
+            "height": 58,
+            "right": 778,
+            "bottom": 640
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 0,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1280x720-semantic-composition",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 385.26155761629343,
+            "y": 206.10696817748249,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 640.1046659350395,
+            "bottom": 559.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 502,
+            "y": 582,
+            "width": 276,
+            "height": 58,
+            "right": 778,
+            "bottom": 640
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 0,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1280x720-message-copy",
+      "ok": true,
+      "actual": {
+        "headline": "МАЯК ПОГАС!",
+        "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+      }
+    },
+    {
+      "name": "1280x720-robot-left-center",
+      "ok": true,
+      "actual": {
+        "x": 385.26155761629343,
+        "y": 206.10696817748249,
+        "width": 254.8431083187461,
+        "height": 353.8930169865489,
+        "right": 640.1046659350395,
+        "bottom": 559.9999851640314
+      }
+    },
+    {
+      "name": "1280x720-beacon-right-center",
+      "ok": true,
+      "actual": {
+        "x": 643.2543994784355,
+        "y": 197.00003218650818,
+        "width": 261.72923815250397,
+        "height": 362.9999910891056,
+        "right": 904.9836376309395,
+        "bottom": 560.0000232756138
+      }
+    },
+    {
+      "name": "1280x720-actors-bounded-together",
+      "ok": true,
+      "actual": {
+        "actorLeft": 385.26155761629343,
+        "actorRight": 904.9836376309395,
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        }
+      }
+    },
+    {
+      "name": "1280x720-beacon-large",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 385.26155761629343,
+          "y": 206.10696817748249,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 640.1046659350395,
+          "bottom": 559.9999851640314
+        },
+        "beacon": {
+          "x": 643.2543994784355,
+          "y": 197.00003218650818,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 904.9836376309395,
+          "bottom": 560.0000232756138
+        }
+      }
+    },
+    {
+      "name": "1280x720-robot-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 385.26155761629343,
+          "y": 206.10696817748249,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 640.1046659350395,
+          "bottom": 559.9999851640314
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 560,
+          "visibleBottomY": 560,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "1280x720-beacon-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 643.2543994784355,
+          "y": 197.00003218650818,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 904.9836376309395,
+          "bottom": 560.0000232756138
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 560,
+          "visibleBottomY": 560,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "1280x720-soft-contact-shadows",
+      "ok": true,
+      "actual": {
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        }
+      }
+    },
+    {
+      "name": "1280x720-message-clear",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 482.5,
+          "y": 107.1,
+          "width": 315,
+          "height": 60.900000000000006,
+          "right": 797.5,
+          "bottom": 168
+        },
+        "headlineAlpha": 1,
+        "subtitleAlpha": 1
+      }
+    },
+    {
+      "name": "1280x720-title-correct",
+      "ok": true,
+      "actual": {
+        "text": "ПЕРВЫЙ ЗАПУСК",
+        "bounds": {
+          "x": 524.5,
+          "y": 56.49999999999994,
+          "width": 231,
+          "height": 37,
+          "right": 755.5,
+          "bottom": 93.49999999999994
+        }
+      }
+    },
+    {
+      "name": "1280x720-button-connected",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 502,
+          "y": 582,
+          "width": 276,
+          "height": 58,
+          "right": 778,
+          "bottom": 640
+        },
+        "alpha": 1,
+        "enabled": true,
+        "ready": true
+      }
+    },
+    {
+      "name": "1280x720-beacon-off",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 643.2543994784355,
+          "y": 197.00003218650818,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 904.9836376309395,
+          "bottom": 560.0000232756138
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 560,
+          "visibleBottomY": 560,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "1280x720-robot-reaction",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 385.26155761629343,
+          "y": 206.10696817748249,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 640.1046659350395,
+          "bottom": 559.9999851640314
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 560,
+          "visibleBottomY": 560,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "1280x720-no-overlap",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 385.26155761629343,
+          "y": 206.10696817748249,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 640.1046659350395,
+          "bottom": 559.9999851640314
+        },
+        "beacon": {
+          "x": 643.2543994784355,
+          "y": 197.00003218650818,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 904.9836376309395,
+          "bottom": 560.0000232756138
+        },
+        "message": {
+          "x": 482.5,
+          "y": 107.1,
+          "width": 315,
+          "height": 60.900000000000006,
+          "right": 797.5,
+          "bottom": 168
+        },
+        "start": {
+          "x": 502,
+          "y": 582,
+          "width": 276,
+          "height": 58,
+          "right": 778,
+          "bottom": 640
+        }
+      }
+    },
+    {
+      "name": "1280x720-path-restored-unchanged",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 164.2,
+        "robotY": 686.8,
+        "robotScale": 0.21872863978127136,
+        "expectedX": 164.2,
+        "expectedY": 686.8,
+        "expectedScale": 0.21872863978127136,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "1280x720-intro-audio-started",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 164.2,
+        "robotY": 686.8,
+        "robotScale": 0.21872863978127136,
+        "expectedX": 164.2,
+        "expectedY": 686.8,
+        "expectedScale": 0.21872863978127136,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "1600x900-responsive-final-immediate",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1516,
+          "height": 678
+        },
+        "robot": {
+          "bounds": {
+            "x": 536.2615576162934,
+            "y": 346.1069681774825,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 791.1046659350395,
+            "bottom": 699.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 700,
+            "visibleBottomY": 700,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 803.2543994784355,
+            "y": 337.0000321865082,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 1064.9836376309395,
+            "bottom": 700.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 700,
+            "visibleBottomY": 700,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 642.5,
+            "y": 247.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 957.5,
+            "bottom": 308
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 666,
+            "y": 190.99999999999994,
+            "width": 268,
+            "height": 42,
+            "right": 934,
+            "bottom": 232.99999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 662,
+            "y": 722,
+            "width": 276,
+            "height": 58,
+            "right": 938,
+            "bottom": 780
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 580.4263489835239,
+          "y": 696.5,
+          "width": 125.41805745554029,
+          "height": 11,
+          "right": 705.8444064390642,
+          "bottom": 707.5
+        },
+        "beaconShadow": {
+          "x": 860.8348265662042,
+          "y": 696.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 1007.4032035295551,
+          "bottom": 707.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1600x900-intro-stage-only",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1516,
+          "height": 678
+        },
+        "robot": {
+          "bounds": {
+            "x": 536.2615576162934,
+            "y": 346.1069681774825,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 791.1046659350395,
+            "bottom": 699.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 700,
+            "visibleBottomY": 700,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 803.2543994784355,
+            "y": 337.0000321865082,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 1064.9836376309395,
+            "bottom": 700.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 700,
+            "visibleBottomY": 700,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 642.5,
+            "y": 247.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 957.5,
+            "bottom": 308
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 666,
+            "y": 190.99999999999994,
+            "width": 268,
+            "height": 42,
+            "right": 934,
+            "bottom": 232.99999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 662,
+            "y": 722,
+            "width": 276,
+            "height": 58,
+            "right": 938,
+            "bottom": 780
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 580.4263489835239,
+          "y": 696.5,
+          "width": 125.41805745554029,
+          "height": 11,
+          "right": 705.8444064390642,
+          "bottom": 707.5
+        },
+        "beaconShadow": {
+          "x": 860.8348265662042,
+          "y": 696.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 1007.4032035295551,
+          "bottom": 707.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1600x900-semantic-composition",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1516,
+          "height": 678
+        },
+        "robot": {
+          "bounds": {
+            "x": 536.2615576162934,
+            "y": 346.1069681774825,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 791.1046659350395,
+            "bottom": 699.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 700,
+            "visibleBottomY": 700,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 803.2543994784355,
+            "y": 337.0000321865082,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 1064.9836376309395,
+            "bottom": 700.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 700,
+            "visibleBottomY": 700,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 642.5,
+            "y": 247.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 957.5,
+            "bottom": 308
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 666,
+            "y": 190.99999999999994,
+            "width": 268,
+            "height": 42,
+            "right": 934,
+            "bottom": 232.99999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 662,
+            "y": 722,
+            "width": 276,
+            "height": 58,
+            "right": 938,
+            "bottom": 780
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 580.4263489835239,
+          "y": 696.5,
+          "width": 125.41805745554029,
+          "height": 11,
+          "right": 705.8444064390642,
+          "bottom": 707.5
+        },
+        "beaconShadow": {
+          "x": 860.8348265662042,
+          "y": 696.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 1007.4032035295551,
+          "bottom": 707.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1600x900-message-copy",
+      "ok": true,
+      "actual": {
+        "headline": "МАЯК ПОГАС!",
+        "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+      }
+    },
+    {
+      "name": "1600x900-robot-left-center",
+      "ok": true,
+      "actual": {
+        "x": 536.2615576162934,
+        "y": 346.1069681774825,
+        "width": 254.8431083187461,
+        "height": 353.8930169865489,
+        "right": 791.1046659350395,
+        "bottom": 699.9999851640314
+      }
+    },
+    {
+      "name": "1600x900-beacon-right-center",
+      "ok": true,
+      "actual": {
+        "x": 803.2543994784355,
+        "y": 337.0000321865082,
+        "width": 261.72923815250397,
+        "height": 362.9999910891056,
+        "right": 1064.9836376309395,
+        "bottom": 700.0000232756138
+      }
+    },
+    {
+      "name": "1600x900-actors-bounded-together",
+      "ok": true,
+      "actual": {
+        "actorLeft": 536.2615576162934,
+        "actorRight": 1064.9836376309395,
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1516,
+          "height": 678
+        }
+      }
+    },
+    {
+      "name": "1600x900-beacon-large",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 536.2615576162934,
+          "y": 346.1069681774825,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 791.1046659350395,
+          "bottom": 699.9999851640314
+        },
+        "beacon": {
+          "x": 803.2543994784355,
+          "y": 337.0000321865082,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 1064.9836376309395,
+          "bottom": 700.0000232756138
+        }
+      }
+    },
+    {
+      "name": "1600x900-robot-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 536.2615576162934,
+          "y": 346.1069681774825,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 791.1046659350395,
+          "bottom": 699.9999851640314
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 700,
+          "visibleBottomY": 700,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "1600x900-beacon-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 803.2543994784355,
+          "y": 337.0000321865082,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 1064.9836376309395,
+          "bottom": 700.0000232756138
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 700,
+          "visibleBottomY": 700,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "1600x900-soft-contact-shadows",
+      "ok": true,
+      "actual": {
+        "robotShadow": {
+          "x": 580.4263489835239,
+          "y": 696.5,
+          "width": 125.41805745554029,
+          "height": 11,
+          "right": 705.8444064390642,
+          "bottom": 707.5
+        },
+        "beaconShadow": {
+          "x": 860.8348265662042,
+          "y": 696.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 1007.4032035295551,
+          "bottom": 707.5
+        }
+      }
+    },
+    {
+      "name": "1600x900-message-clear",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 642.5,
+          "y": 247.1,
+          "width": 315,
+          "height": 60.900000000000006,
+          "right": 957.5,
+          "bottom": 308
+        },
+        "headlineAlpha": 1,
+        "subtitleAlpha": 1
+      }
+    },
+    {
+      "name": "1600x900-title-correct",
+      "ok": true,
+      "actual": {
+        "text": "ПЕРВЫЙ ЗАПУСК",
+        "bounds": {
+          "x": 666,
+          "y": 190.99999999999994,
+          "width": 268,
+          "height": 42,
+          "right": 934,
+          "bottom": 232.99999999999994
+        }
+      }
+    },
+    {
+      "name": "1600x900-button-connected",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 662,
+          "y": 722,
+          "width": 276,
+          "height": 58,
+          "right": 938,
+          "bottom": 780
+        },
+        "alpha": 1,
+        "enabled": true,
+        "ready": true
+      }
+    },
+    {
+      "name": "1600x900-beacon-off",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 803.2543994784355,
+          "y": 337.0000321865082,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 1064.9836376309395,
+          "bottom": 700.0000232756138
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 700,
+          "visibleBottomY": 700,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "1600x900-robot-reaction",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 536.2615576162934,
+          "y": 346.1069681774825,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 791.1046659350395,
+          "bottom": 699.9999851640314
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 700,
+          "visibleBottomY": 700,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "1600x900-no-overlap",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 536.2615576162934,
+          "y": 346.1069681774825,
+          "width": 254.8431083187461,
+          "height": 353.8930169865489,
+          "right": 791.1046659350395,
+          "bottom": 699.9999851640314
+        },
+        "beacon": {
+          "x": 803.2543994784355,
+          "y": 337.0000321865082,
+          "width": 261.72923815250397,
+          "height": 362.9999910891056,
+          "right": 1064.9836376309395,
+          "bottom": 700.0000232756138
+        },
+        "message": {
+          "x": 642.5,
+          "y": 247.1,
+          "width": 315,
+          "height": 60.900000000000006,
+          "right": 957.5,
+          "bottom": 308
+        },
+        "start": {
+          "x": 662,
+          "y": 722,
+          "width": 276,
+          "height": 58,
+          "right": 938,
+          "bottom": 780
+        }
+      }
+    },
+    {
+      "name": "1600x900-path-restored-unchanged",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 167,
+        "robotY": 864,
+        "robotScale": 0.21872863978127136,
+        "expectedX": 167,
+        "expectedY": 864,
+        "expectedScale": 0.21872863978127136,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "1600x900-intro-audio-started",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 167,
+        "robotY": 864,
+        "robotScale": 0.21872863978127136,
+        "expectedX": 167,
+        "expectedY": 864,
+        "expectedScale": 0.21872863978127136,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "1920x1080-responsive-final-immediate",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1836,
+          "height": 858
+        },
+        "robot": {
+          "bounds": {
+            "x": 663.8426534235477,
+            "y": 437.8488822225481,
+            "width": 289.5944288149476,
+            "height": 402.1511390283704,
+            "right": 953.4370822384953,
+            "bottom": 840.0000212509185
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 840,
+            "visibleBottomY": 840,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 961.2625432610512,
+            "y": 430.5783932209015,
+            "width": 295.20001113414764,
+            "height": 409.42159220576286,
+            "right": 1256.4625543951988,
+            "bottom": 839.9999854266644
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 840,
+            "visibleBottomY": 840,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 802.5,
+            "y": 337.6,
+            "width": 315,
+            "height": 60.89999999999998,
+            "right": 1117.5,
+            "bottom": 398.5
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 826,
+            "y": 281.49999999999994,
+            "width": 268,
+            "height": 42,
+            "right": 1094,
+            "bottom": 323.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 822,
+            "y": 862,
+            "width": 276,
+            "height": 58,
+            "right": 1098,
+            "bottom": 920
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 714.0299420267315,
+          "y": 836.5,
+          "width": 142.52051983584124,
+          "height": 11,
+          "right": 856.5504618625728,
+          "bottom": 847.5
+        },
+        "beaconShadow": {
+          "x": 1025.5850301888684,
+          "y": 836.5,
+          "width": 166.5549738219895,
+          "height": 11,
+          "right": 1192.1400040108579,
+          "bottom": 847.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1920x1080-intro-stage-only",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1836,
+          "height": 858
+        },
+        "robot": {
+          "bounds": {
+            "x": 663.8426534235477,
+            "y": 437.8488822225481,
+            "width": 289.5944288149476,
+            "height": 402.1511390283704,
+            "right": 953.4370822384953,
+            "bottom": 840.0000212509185
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 840,
+            "visibleBottomY": 840,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 961.2625432610512,
+            "y": 430.5783932209015,
+            "width": 295.20001113414764,
+            "height": 409.42159220576286,
+            "right": 1256.4625543951988,
+            "bottom": 839.9999854266644
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 840,
+            "visibleBottomY": 840,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 802.5,
+            "y": 337.6,
+            "width": 315,
+            "height": 60.89999999999998,
+            "right": 1117.5,
+            "bottom": 398.5
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 826,
+            "y": 281.49999999999994,
+            "width": 268,
+            "height": 42,
+            "right": 1094,
+            "bottom": 323.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 822,
+            "y": 862,
+            "width": 276,
+            "height": 58,
+            "right": 1098,
+            "bottom": 920
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 714.0299420267315,
+          "y": 836.5,
+          "width": 142.52051983584124,
+          "height": 11,
+          "right": 856.5504618625728,
+          "bottom": 847.5
+        },
+        "beaconShadow": {
+          "x": 1025.5850301888684,
+          "y": 836.5,
+          "width": 166.5549738219895,
+          "height": 11,
+          "right": 1192.1400040108579,
+          "bottom": 847.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1920x1080-semantic-composition",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1836,
+          "height": 858
+        },
+        "robot": {
+          "bounds": {
+            "x": 663.8426534235477,
+            "y": 437.8488822225481,
+            "width": 289.5944288149476,
+            "height": 402.1511390283704,
+            "right": 953.4370822384953,
+            "bottom": 840.0000212509185
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 840,
+            "visibleBottomY": 840,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 961.2625432610512,
+            "y": 430.5783932209015,
+            "width": 295.20001113414764,
+            "height": 409.42159220576286,
+            "right": 1256.4625543951988,
+            "bottom": 839.9999854266644
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 840,
+            "visibleBottomY": 840,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 802.5,
+            "y": 337.6,
+            "width": 315,
+            "height": 60.89999999999998,
+            "right": 1117.5,
+            "bottom": 398.5
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 826,
+            "y": 281.49999999999994,
+            "width": 268,
+            "height": 42,
+            "right": 1094,
+            "bottom": 323.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 822,
+            "y": 862,
+            "width": 276,
+            "height": 58,
+            "right": 1098,
+            "bottom": 920
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 714.0299420267315,
+          "y": 836.5,
+          "width": 142.52051983584124,
+          "height": 11,
+          "right": 856.5504618625728,
+          "bottom": 847.5
+        },
+        "beaconShadow": {
+          "x": 1025.5850301888684,
+          "y": 836.5,
+          "width": 166.5549738219895,
+          "height": 11,
+          "right": 1192.1400040108579,
+          "bottom": 847.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "1920x1080-message-copy",
+      "ok": true,
+      "actual": {
+        "headline": "МАЯК ПОГАС!",
+        "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+      }
+    },
+    {
+      "name": "1920x1080-robot-left-center",
+      "ok": true,
+      "actual": {
+        "x": 663.8426534235477,
+        "y": 437.8488822225481,
+        "width": 289.5944288149476,
+        "height": 402.1511390283704,
+        "right": 953.4370822384953,
+        "bottom": 840.0000212509185
+      }
+    },
+    {
+      "name": "1920x1080-beacon-right-center",
+      "ok": true,
+      "actual": {
+        "x": 961.2625432610512,
+        "y": 430.5783932209015,
+        "width": 295.20001113414764,
+        "height": 409.42159220576286,
+        "right": 1256.4625543951988,
+        "bottom": 839.9999854266644
+      }
+    },
+    {
+      "name": "1920x1080-actors-bounded-together",
+      "ok": true,
+      "actual": {
+        "actorLeft": 663.8426534235477,
+        "actorRight": 1256.4625543951988,
+        "world": {
+          "x": 42,
+          "y": 186,
+          "width": 1836,
+          "height": 858
+        }
+      }
+    },
+    {
+      "name": "1920x1080-beacon-large",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 663.8426534235477,
+          "y": 437.8488822225481,
+          "width": 289.5944288149476,
+          "height": 402.1511390283704,
+          "right": 953.4370822384953,
+          "bottom": 840.0000212509185
+        },
+        "beacon": {
+          "x": 961.2625432610512,
+          "y": 430.5783932209015,
+          "width": 295.20001113414764,
+          "height": 409.42159220576286,
+          "right": 1256.4625543951988,
+          "bottom": 839.9999854266644
+        }
+      }
+    },
+    {
+      "name": "1920x1080-robot-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 663.8426534235477,
+          "y": 437.8488822225481,
+          "width": 289.5944288149476,
+          "height": 402.1511390283704,
+          "right": 953.4370822384953,
+          "bottom": 840.0000212509185
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 840,
+          "visibleBottomY": 840,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "1920x1080-beacon-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 961.2625432610512,
+          "y": 430.5783932209015,
+          "width": 295.20001113414764,
+          "height": 409.42159220576286,
+          "right": 1256.4625543951988,
+          "bottom": 839.9999854266644
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 840,
+          "visibleBottomY": 840,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "1920x1080-soft-contact-shadows",
+      "ok": true,
+      "actual": {
+        "robotShadow": {
+          "x": 714.0299420267315,
+          "y": 836.5,
+          "width": 142.52051983584124,
+          "height": 11,
+          "right": 856.5504618625728,
+          "bottom": 847.5
+        },
+        "beaconShadow": {
+          "x": 1025.5850301888684,
+          "y": 836.5,
+          "width": 166.5549738219895,
+          "height": 11,
+          "right": 1192.1400040108579,
+          "bottom": 847.5
+        }
+      }
+    },
+    {
+      "name": "1920x1080-message-clear",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 802.5,
+          "y": 337.6,
+          "width": 315,
+          "height": 60.89999999999998,
+          "right": 1117.5,
+          "bottom": 398.5
+        },
+        "headlineAlpha": 1,
+        "subtitleAlpha": 1
+      }
+    },
+    {
+      "name": "1920x1080-title-correct",
+      "ok": true,
+      "actual": {
+        "text": "ПЕРВЫЙ ЗАПУСК",
+        "bounds": {
+          "x": 826,
+          "y": 281.49999999999994,
+          "width": 268,
+          "height": 42,
+          "right": 1094,
+          "bottom": 323.49999999999994
+        }
+      }
+    },
+    {
+      "name": "1920x1080-button-connected",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 822,
+          "y": 862,
+          "width": 276,
+          "height": 58,
+          "right": 1098,
+          "bottom": 920
+        },
+        "alpha": 1,
+        "enabled": true,
+        "ready": true
+      }
+    },
+    {
+      "name": "1920x1080-beacon-off",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 961.2625432610512,
+          "y": 430.5783932209015,
+          "width": 295.20001113414764,
+          "height": 409.42159220576286,
+          "right": 1256.4625543951988,
+          "bottom": 839.9999854266644
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 840,
+          "visibleBottomY": 840,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "1920x1080-robot-reaction",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 663.8426534235477,
+          "y": 437.8488822225481,
+          "width": 289.5944288149476,
+          "height": 402.1511390283704,
+          "right": 953.4370822384953,
+          "bottom": 840.0000212509185
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 840,
+          "visibleBottomY": 840,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "1920x1080-no-overlap",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 663.8426534235477,
+          "y": 437.8488822225481,
+          "width": 289.5944288149476,
+          "height": 402.1511390283704,
+          "right": 953.4370822384953,
+          "bottom": 840.0000212509185
+        },
+        "beacon": {
+          "x": 961.2625432610512,
+          "y": 430.5783932209015,
+          "width": 295.20001113414764,
+          "height": 409.42159220576286,
+          "right": 1256.4625543951988,
+          "bottom": 839.9999854266644
+        },
+        "message": {
+          "x": 802.5,
+          "y": 337.6,
+          "width": 315,
+          "height": 60.89999999999998,
+          "right": 1117.5,
+          "bottom": 398.5
+        },
+        "start": {
+          "x": 822,
+          "y": 862,
+          "width": 276,
+          "height": 58,
+          "right": 1098,
+          "bottom": 920
+        }
+      }
+    },
+    {
+      "name": "1920x1080-path-restored-unchanged",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 167,
+        "robotY": 1044,
+        "robotScale": 0.21872863978127136,
+        "expectedX": 167,
+        "expectedY": 1044,
+        "expectedScale": 0.21872863978127136,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "1920x1080-intro-audio-started",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 167,
+        "robotY": 1044,
+        "robotScale": 0.21872863978127136,
+        "expectedX": 167,
+        "expectedY": 1044,
+        "expectedScale": 0.21872863978127136,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "740x360-responsive-final-immediate",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 16.92,
+          "y": 120.6,
+          "width": 706.16,
+          "height": 222.79999999999998
+        },
+        "robot": {
+          "bounds": {
+            "x": 270.32487949356437,
+            "y": 150.37703924579546,
+            "width": 92.91116273216903,
+            "height": 129.0229586120695,
+            "right": 363.2360422257334,
+            "bottom": 279.39999785786495
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 279.4,
+            "visibleBottomY": 279.4,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 374.7073524147272,
+            "y": 147.05680733919144,
+            "width": 95.42172095179558,
+            "height": 132.34319596737623,
+            "right": 470.1290733665228,
+            "bottom": 279.40000330656767
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 279.4,
+            "visibleBottomY": 279.4,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 256,
+            "y": 83.39680084228516,
+            "width": 228,
+            "height": 43.16,
+            "right": 484,
+            "bottom": 126.55680084228516
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 290,
+            "y": 49.55679999999998,
+            "width": 160,
+            "height": 27,
+            "right": 450,
+            "bottom": 76.55679999999998
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 255,
+            "y": 293.4,
+            "width": 230,
+            "height": 48,
+            "right": 485,
+            "bottom": 341.4
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 286.4265663603204,
+          "y": 277.9,
+          "width": 45.72514341997265,
+          "height": 7,
+          "right": 332.15170978029306,
+          "bottom": 284.9
+        },
+        "beaconShadow": {
+          "x": 395.7001444055551,
+          "y": 277.9,
+          "width": 53.43616536125654,
+          "height": 7,
+          "right": 449.1363097668116,
+          "bottom": 284.9
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "740x360-intro-stage-only",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 16.92,
+          "y": 120.6,
+          "width": 706.16,
+          "height": 222.79999999999998
+        },
+        "robot": {
+          "bounds": {
+            "x": 270.32487949356437,
+            "y": 150.37703924579546,
+            "width": 92.91116273216903,
+            "height": 129.0229586120695,
+            "right": 363.2360422257334,
+            "bottom": 279.39999785786495
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 279.4,
+            "visibleBottomY": 279.4,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 374.7073524147272,
+            "y": 147.05680733919144,
+            "width": 95.42172095179558,
+            "height": 132.34319596737623,
+            "right": 470.1290733665228,
+            "bottom": 279.40000330656767
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 279.4,
+            "visibleBottomY": 279.4,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 256,
+            "y": 83.39680084228516,
+            "width": 228,
+            "height": 43.16,
+            "right": 484,
+            "bottom": 126.55680084228516
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 290,
+            "y": 49.55679999999998,
+            "width": 160,
+            "height": 27,
+            "right": 450,
+            "bottom": 76.55679999999998
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 255,
+            "y": 293.4,
+            "width": 230,
+            "height": 48,
+            "right": 485,
+            "bottom": 341.4
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 286.4265663603204,
+          "y": 277.9,
+          "width": 45.72514341997265,
+          "height": 7,
+          "right": 332.15170978029306,
+          "bottom": 284.9
+        },
+        "beaconShadow": {
+          "x": 395.7001444055551,
+          "y": 277.9,
+          "width": 53.43616536125654,
+          "height": 7,
+          "right": 449.1363097668116,
+          "bottom": 284.9
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "740x360-semantic-composition",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 16.92,
+          "y": 120.6,
+          "width": 706.16,
+          "height": 222.79999999999998
+        },
+        "robot": {
+          "bounds": {
+            "x": 270.32487949356437,
+            "y": 150.37703924579546,
+            "width": 92.91116273216903,
+            "height": 129.0229586120695,
+            "right": 363.2360422257334,
+            "bottom": 279.39999785786495
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 279.4,
+            "visibleBottomY": 279.4,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 374.7073524147272,
+            "y": 147.05680733919144,
+            "width": 95.42172095179558,
+            "height": 132.34319596737623,
+            "right": 470.1290733665228,
+            "bottom": 279.40000330656767
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 279.4,
+            "visibleBottomY": 279.4,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 256,
+            "y": 83.39680084228516,
+            "width": 228,
+            "height": 43.16,
+            "right": 484,
+            "bottom": 126.55680084228516
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 290,
+            "y": 49.55679999999998,
+            "width": 160,
+            "height": 27,
+            "right": 450,
+            "bottom": 76.55679999999998
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 255,
+            "y": 293.4,
+            "width": 230,
+            "height": 48,
+            "right": 485,
+            "bottom": 341.4
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 286.4265663603204,
+          "y": 277.9,
+          "width": 45.72514341997265,
+          "height": 7,
+          "right": 332.15170978029306,
+          "bottom": 284.9
+        },
+        "beaconShadow": {
+          "x": 395.7001444055551,
+          "y": 277.9,
+          "width": 53.43616536125654,
+          "height": 7,
+          "right": 449.1363097668116,
+          "bottom": 284.9
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "740x360-message-copy",
+      "ok": true,
+      "actual": {
+        "headline": "МАЯК ПОГАС!",
+        "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+      }
+    },
+    {
+      "name": "740x360-robot-left-center",
+      "ok": true,
+      "actual": {
+        "x": 270.32487949356437,
+        "y": 150.37703924579546,
+        "width": 92.91116273216903,
+        "height": 129.0229586120695,
+        "right": 363.2360422257334,
+        "bottom": 279.39999785786495
+      }
+    },
+    {
+      "name": "740x360-beacon-right-center",
+      "ok": true,
+      "actual": {
+        "x": 374.7073524147272,
+        "y": 147.05680733919144,
+        "width": 95.42172095179558,
+        "height": 132.34319596737623,
+        "right": 470.1290733665228,
+        "bottom": 279.40000330656767
+      }
+    },
+    {
+      "name": "740x360-actors-bounded-together",
+      "ok": true,
+      "actual": {
+        "actorLeft": 270.32487949356437,
+        "actorRight": 470.1290733665228,
+        "world": {
+          "x": 16.92,
+          "y": 120.6,
+          "width": 706.16,
+          "height": 222.79999999999998
+        }
+      }
+    },
+    {
+      "name": "740x360-beacon-large",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 270.32487949356437,
+          "y": 150.37703924579546,
+          "width": 92.91116273216903,
+          "height": 129.0229586120695,
+          "right": 363.2360422257334,
+          "bottom": 279.39999785786495
+        },
+        "beacon": {
+          "x": 374.7073524147272,
+          "y": 147.05680733919144,
+          "width": 95.42172095179558,
+          "height": 132.34319596737623,
+          "right": 470.1290733665228,
+          "bottom": 279.40000330656767
+        }
+      }
+    },
+    {
+      "name": "740x360-robot-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 270.32487949356437,
+          "y": 150.37703924579546,
+          "width": 92.91116273216903,
+          "height": 129.0229586120695,
+          "right": 363.2360422257334,
+          "bottom": 279.39999785786495
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 279.4,
+          "visibleBottomY": 279.4,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "740x360-beacon-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 374.7073524147272,
+          "y": 147.05680733919144,
+          "width": 95.42172095179558,
+          "height": 132.34319596737623,
+          "right": 470.1290733665228,
+          "bottom": 279.40000330656767
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 279.4,
+          "visibleBottomY": 279.4,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "740x360-soft-contact-shadows",
+      "ok": true,
+      "actual": {
+        "robotShadow": {
+          "x": 286.4265663603204,
+          "y": 277.9,
+          "width": 45.72514341997265,
+          "height": 7,
+          "right": 332.15170978029306,
+          "bottom": 284.9
+        },
+        "beaconShadow": {
+          "x": 395.7001444055551,
+          "y": 277.9,
+          "width": 53.43616536125654,
+          "height": 7,
+          "right": 449.1363097668116,
+          "bottom": 284.9
+        }
+      }
+    },
+    {
+      "name": "740x360-message-clear",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 256,
+          "y": 83.39680084228516,
+          "width": 228,
+          "height": 43.16,
+          "right": 484,
+          "bottom": 126.55680084228516
+        },
+        "headlineAlpha": 1,
+        "subtitleAlpha": 1
+      }
+    },
+    {
+      "name": "740x360-title-correct",
+      "ok": true,
+      "actual": {
+        "text": "ПЕРВЫЙ ЗАПУСК",
+        "bounds": {
+          "x": 290,
+          "y": 49.55679999999998,
+          "width": 160,
+          "height": 27,
+          "right": 450,
+          "bottom": 76.55679999999998
+        }
+      }
+    },
+    {
+      "name": "740x360-button-connected",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 255,
+          "y": 293.4,
+          "width": 230,
+          "height": 48,
+          "right": 485,
+          "bottom": 341.4
+        },
+        "alpha": 1,
+        "enabled": true,
+        "ready": true
+      }
+    },
+    {
+      "name": "740x360-beacon-off",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 374.7073524147272,
+          "y": 147.05680733919144,
+          "width": 95.42172095179558,
+          "height": 132.34319596737623,
+          "right": 470.1290733665228,
+          "bottom": 279.40000330656767
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 279.4,
+          "visibleBottomY": 279.4,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "740x360-robot-reaction",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 270.32487949356437,
+          "y": 150.37703924579546,
+          "width": 92.91116273216903,
+          "height": 129.0229586120695,
+          "right": 363.2360422257334,
+          "bottom": 279.39999785786495
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 279.4,
+          "visibleBottomY": 279.4,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "740x360-no-overlap",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 270.32487949356437,
+          "y": 150.37703924579546,
+          "width": 92.91116273216903,
+          "height": 129.0229586120695,
+          "right": 363.2360422257334,
+          "bottom": 279.39999785786495
+        },
+        "beacon": {
+          "x": 374.7073524147272,
+          "y": 147.05680733919144,
+          "width": 95.42172095179558,
+          "height": 132.34319596737623,
+          "right": 470.1290733665228,
+          "bottom": 279.40000330656767
+        },
+        "message": {
+          "x": 256,
+          "y": 83.39680084228516,
+          "width": 228,
+          "height": 43.16,
+          "right": 484,
+          "bottom": 126.55680084228516
+        },
+        "start": {
+          "x": 255,
+          "y": 293.4,
+          "width": 230,
+          "height": 48,
+          "right": 485,
+          "bottom": 341.4
+        }
+      }
+    },
+    {
+      "name": "740x360-path-restored-unchanged",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 72.92,
+        "robotY": 343.4,
+        "robotScale": 0.13096924128503074,
+        "expectedX": 72.92,
+        "expectedY": 343.4,
+        "expectedScale": 0.13096924128503074,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "740x360-intro-audio-started",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 72.92,
+        "robotY": 343.4,
+        "robotScale": 0.13096924128503074,
+        "expectedX": 72.92,
+        "expectedY": 343.4,
+        "expectedScale": 0.13096924128503074,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "844x390-responsive-final-immediate",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 18.330000000000002,
+          "y": 121.65,
+          "width": 807.34,
+          "height": 250.70000000000002
+        },
+        "robot": {
+          "bounds": {
+            "x": 311.4710517041385,
+            "y": 163.17023097956553,
+            "width": 104.54590729810297,
+            "height": 145.17978003807366,
+            "right": 416.0169590022415,
+            "bottom": 308.3500110176392
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 308.35,
+            "visibleBottomY": 308.35,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 425.668912217021,
+            "y": 159.43421214818954,
+            "width": 107.37085476517677,
+            "height": 148.91580168157816,
+            "right": 533.0397669821978,
+            "bottom": 308.3500138297677
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 308.35,
+            "visibleBottomY": 308.35,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 308,
+            "y": 95.77419647216797,
+            "width": 228,
+            "height": 43.16,
+            "right": 536,
+            "bottom": 138.93419647216797
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 331.5,
+            "y": 60.434200000000004,
+            "width": 181,
+            "height": 30,
+            "right": 512.5,
+            "bottom": 90.4342
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 307,
+            "y": 322.35,
+            "width": 230,
+            "height": 48,
+            "right": 537,
+            "bottom": 370.35
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 329.5890493111863,
+          "y": 306.85,
+          "width": 51.45104782489739,
+          "height": 7,
+          "right": 381.04009713608366,
+          "bottom": 313.85
+        },
+        "beaconShadow": {
+          "x": 449.290512578423,
+          "y": 306.85,
+          "width": 60.12767798952882,
+          "height": 7,
+          "right": 509.4181905679518,
+          "bottom": 313.85
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "844x390-intro-stage-only",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 18.330000000000002,
+          "y": 121.65,
+          "width": 807.34,
+          "height": 250.70000000000002
+        },
+        "robot": {
+          "bounds": {
+            "x": 311.4710517041385,
+            "y": 163.17023097956553,
+            "width": 104.54590729810297,
+            "height": 145.17978003807366,
+            "right": 416.0169590022415,
+            "bottom": 308.3500110176392
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 308.35,
+            "visibleBottomY": 308.35,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 425.668912217021,
+            "y": 159.43421214818954,
+            "width": 107.37085476517677,
+            "height": 148.91580168157816,
+            "right": 533.0397669821978,
+            "bottom": 308.3500138297677
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 308.35,
+            "visibleBottomY": 308.35,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 308,
+            "y": 95.77419647216797,
+            "width": 228,
+            "height": 43.16,
+            "right": 536,
+            "bottom": 138.93419647216797
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 331.5,
+            "y": 60.434200000000004,
+            "width": 181,
+            "height": 30,
+            "right": 512.5,
+            "bottom": 90.4342
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 307,
+            "y": 322.35,
+            "width": 230,
+            "height": 48,
+            "right": 537,
+            "bottom": 370.35
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 329.5890493111863,
+          "y": 306.85,
+          "width": 51.45104782489739,
+          "height": 7,
+          "right": 381.04009713608366,
+          "bottom": 313.85
+        },
+        "beaconShadow": {
+          "x": 449.290512578423,
+          "y": 306.85,
+          "width": 60.12767798952882,
+          "height": 7,
+          "right": 509.4181905679518,
+          "bottom": 313.85
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "844x390-semantic-composition",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 18.330000000000002,
+          "y": 121.65,
+          "width": 807.34,
+          "height": 250.70000000000002
+        },
+        "robot": {
+          "bounds": {
+            "x": 311.4710517041385,
+            "y": 163.17023097956553,
+            "width": 104.54590729810297,
+            "height": 145.17978003807366,
+            "right": 416.0169590022415,
+            "bottom": 308.3500110176392
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 308.35,
+            "visibleBottomY": 308.35,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 425.668912217021,
+            "y": 159.43421214818954,
+            "width": 107.37085476517677,
+            "height": 148.91580168157816,
+            "right": 533.0397669821978,
+            "bottom": 308.3500138297677
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 308.35,
+            "visibleBottomY": 308.35,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 308,
+            "y": 95.77419647216797,
+            "width": 228,
+            "height": 43.16,
+            "right": 536,
+            "bottom": 138.93419647216797
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 331.5,
+            "y": 60.434200000000004,
+            "width": 181,
+            "height": 30,
+            "right": 512.5,
+            "bottom": 90.4342
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 307,
+            "y": 322.35,
+            "width": 230,
+            "height": 48,
+            "right": 537,
+            "bottom": 370.35
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 329.5890493111863,
+          "y": 306.85,
+          "width": 51.45104782489739,
+          "height": 7,
+          "right": 381.04009713608366,
+          "bottom": 313.85
+        },
+        "beaconShadow": {
+          "x": 449.290512578423,
+          "y": 306.85,
+          "width": 60.12767798952882,
+          "height": 7,
+          "right": 509.4181905679518,
+          "bottom": 313.85
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "844x390-message-copy",
+      "ok": true,
+      "actual": {
+        "headline": "МАЯК ПОГАС!",
+        "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+      }
+    },
+    {
+      "name": "844x390-robot-left-center",
+      "ok": true,
+      "actual": {
+        "x": 311.4710517041385,
+        "y": 163.17023097956553,
+        "width": 104.54590729810297,
+        "height": 145.17978003807366,
+        "right": 416.0169590022415,
+        "bottom": 308.3500110176392
+      }
+    },
+    {
+      "name": "844x390-beacon-right-center",
+      "ok": true,
+      "actual": {
+        "x": 425.668912217021,
+        "y": 159.43421214818954,
+        "width": 107.37085476517677,
+        "height": 148.91580168157816,
+        "right": 533.0397669821978,
+        "bottom": 308.3500138297677
+      }
+    },
+    {
+      "name": "844x390-actors-bounded-together",
+      "ok": true,
+      "actual": {
+        "actorLeft": 311.4710517041385,
+        "actorRight": 533.0397669821978,
+        "world": {
+          "x": 18.330000000000002,
+          "y": 121.65,
+          "width": 807.34,
+          "height": 250.70000000000002
+        }
+      }
+    },
+    {
+      "name": "844x390-beacon-large",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 311.4710517041385,
+          "y": 163.17023097956553,
+          "width": 104.54590729810297,
+          "height": 145.17978003807366,
+          "right": 416.0169590022415,
+          "bottom": 308.3500110176392
+        },
+        "beacon": {
+          "x": 425.668912217021,
+          "y": 159.43421214818954,
+          "width": 107.37085476517677,
+          "height": 148.91580168157816,
+          "right": 533.0397669821978,
+          "bottom": 308.3500138297677
+        }
+      }
+    },
+    {
+      "name": "844x390-robot-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 311.4710517041385,
+          "y": 163.17023097956553,
+          "width": 104.54590729810297,
+          "height": 145.17978003807366,
+          "right": 416.0169590022415,
+          "bottom": 308.3500110176392
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 308.35,
+          "visibleBottomY": 308.35,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "844x390-beacon-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 425.668912217021,
+          "y": 159.43421214818954,
+          "width": 107.37085476517677,
+          "height": 148.91580168157816,
+          "right": 533.0397669821978,
+          "bottom": 308.3500138297677
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 308.35,
+          "visibleBottomY": 308.35,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "844x390-soft-contact-shadows",
+      "ok": true,
+      "actual": {
+        "robotShadow": {
+          "x": 329.5890493111863,
+          "y": 306.85,
+          "width": 51.45104782489739,
+          "height": 7,
+          "right": 381.04009713608366,
+          "bottom": 313.85
+        },
+        "beaconShadow": {
+          "x": 449.290512578423,
+          "y": 306.85,
+          "width": 60.12767798952882,
+          "height": 7,
+          "right": 509.4181905679518,
+          "bottom": 313.85
+        }
+      }
+    },
+    {
+      "name": "844x390-message-clear",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 308,
+          "y": 95.77419647216797,
+          "width": 228,
+          "height": 43.16,
+          "right": 536,
+          "bottom": 138.93419647216797
+        },
+        "headlineAlpha": 1,
+        "subtitleAlpha": 1
+      }
+    },
+    {
+      "name": "844x390-title-correct",
+      "ok": true,
+      "actual": {
+        "text": "ПЕРВЫЙ ЗАПУСК",
+        "bounds": {
+          "x": 331.5,
+          "y": 60.434200000000004,
+          "width": 181,
+          "height": 30,
+          "right": 512.5,
+          "bottom": 90.4342
+        }
+      }
+    },
+    {
+      "name": "844x390-button-connected",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 307,
+          "y": 322.35,
+          "width": 230,
+          "height": 48,
+          "right": 537,
+          "bottom": 370.35
+        },
+        "alpha": 1,
+        "enabled": true,
+        "ready": true
+      }
+    },
+    {
+      "name": "844x390-beacon-off",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 425.668912217021,
+          "y": 159.43421214818954,
+          "width": 107.37085476517677,
+          "height": 148.91580168157816,
+          "right": 533.0397669821978,
+          "bottom": 308.3500138297677
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 308.35,
+          "visibleBottomY": 308.35,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "844x390-robot-reaction",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 311.4710517041385,
+          "y": 163.17023097956553,
+          "width": 104.54590729810297,
+          "height": 145.17978003807366,
+          "right": 416.0169590022415,
+          "bottom": 308.3500110176392
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 308.35,
+          "visibleBottomY": 308.35,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "844x390-no-overlap",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 311.4710517041385,
+          "y": 163.17023097956553,
+          "width": 104.54590729810297,
+          "height": 145.17978003807366,
+          "right": 416.0169590022415,
+          "bottom": 308.3500110176392
+        },
+        "beacon": {
+          "x": 425.668912217021,
+          "y": 159.43421214818954,
+          "width": 107.37085476517677,
+          "height": 148.91580168157816,
+          "right": 533.0397669821978,
+          "bottom": 308.3500138297677
+        },
+        "message": {
+          "x": 308,
+          "y": 95.77419647216797,
+          "width": 228,
+          "height": 43.16,
+          "right": 536,
+          "bottom": 138.93419647216797
+        },
+        "start": {
+          "x": 307,
+          "y": 322.35,
+          "width": 230,
+          "height": 48,
+          "right": 537,
+          "bottom": 370.35
+        }
+      }
+    },
+    {
+      "name": "844x390-path-restored-unchanged",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 74.33,
+        "robotY": 372.35,
+        "robotScale": 0.1473697881066302,
+        "expectedX": 74.33,
+        "expectedY": 372.35,
+        "expectedScale": 0.1473697881066302,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "844x390-intro-audio-started",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 74.33,
+        "robotY": 372.35,
+        "robotScale": 0.1473697881066302,
+        "expectedX": 74.33,
+        "expectedY": 372.35,
+        "expectedScale": 0.1473697881066302,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "915x412-responsive-final-immediate",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 19.364,
+          "y": 122.42,
+          "width": 876.272,
+          "height": 271.15999999999997
+        },
+        "robot": {
+          "bounds": {
+            "x": 339.01156302541494,
+            "y": 172.55187458870932,
+            "width": 113.07805365137756,
+            "height": 157.02811721526086,
+            "right": 452.0896166767925,
+            "bottom": 329.5799918039702
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 329.58,
+            "visibleBottomY": 329.58,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 460.40740759670734,
+            "y": 168.51097303628922,
+            "width": 116.13354906439781,
+            "height": 161.06904055923223,
+            "right": 576.5409566611052,
+            "bottom": 329.58001359552145
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 329.58,
+            "visibleBottomY": 329.58,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 343.5,
+            "y": 104.85096343994141,
+            "width": 228,
+            "height": 43.16,
+            "right": 571.5,
+            "bottom": 148.0109634399414
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 367,
+            "y": 69.51095999999998,
+            "width": 181,
+            "height": 30,
+            "right": 548,
+            "bottom": 99.51095999999998
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 342.5,
+            "y": 343.58,
+            "width": 230,
+            "height": 48,
+            "right": 572.5,
+            "bottom": 391.58
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 358.6082034751547,
+          "y": 328.08,
+          "width": 55.65004438850889,
+          "height": 7,
+          "right": 414.2582478636636,
+          "bottom": 335.08
+        },
+        "beaconShadow": {
+          "x": 485.95678257185943,
+          "y": 328.08,
+          "width": 65.03478725026173,
+          "height": 7,
+          "right": 550.9915698221212,
+          "bottom": 335.08
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "915x412-intro-stage-only",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 19.364,
+          "y": 122.42,
+          "width": 876.272,
+          "height": 271.15999999999997
+        },
+        "robot": {
+          "bounds": {
+            "x": 339.01156302541494,
+            "y": 172.55187458870932,
+            "width": 113.07805365137756,
+            "height": 157.02811721526086,
+            "right": 452.0896166767925,
+            "bottom": 329.5799918039702
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 329.58,
+            "visibleBottomY": 329.58,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 460.40740759670734,
+            "y": 168.51097303628922,
+            "width": 116.13354906439781,
+            "height": 161.06904055923223,
+            "right": 576.5409566611052,
+            "bottom": 329.58001359552145
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 329.58,
+            "visibleBottomY": 329.58,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 343.5,
+            "y": 104.85096343994141,
+            "width": 228,
+            "height": 43.16,
+            "right": 571.5,
+            "bottom": 148.0109634399414
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 367,
+            "y": 69.51095999999998,
+            "width": 181,
+            "height": 30,
+            "right": 548,
+            "bottom": 99.51095999999998
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 342.5,
+            "y": 343.58,
+            "width": 230,
+            "height": 48,
+            "right": 572.5,
+            "bottom": 391.58
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 358.6082034751547,
+          "y": 328.08,
+          "width": 55.65004438850889,
+          "height": 7,
+          "right": 414.2582478636636,
+          "bottom": 335.08
+        },
+        "beaconShadow": {
+          "x": 485.95678257185943,
+          "y": 328.08,
+          "width": 65.03478725026173,
+          "height": 7,
+          "right": 550.9915698221212,
+          "bottom": 335.08
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "915x412-semantic-composition",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 19.364,
+          "y": 122.42,
+          "width": 876.272,
+          "height": 271.15999999999997
+        },
+        "robot": {
+          "bounds": {
+            "x": 339.01156302541494,
+            "y": 172.55187458870932,
+            "width": 113.07805365137756,
+            "height": 157.02811721526086,
+            "right": 452.0896166767925,
+            "bottom": 329.5799918039702
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 329.58,
+            "visibleBottomY": 329.58,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 460.40740759670734,
+            "y": 168.51097303628922,
+            "width": 116.13354906439781,
+            "height": 161.06904055923223,
+            "right": 576.5409566611052,
+            "bottom": 329.58001359552145
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 329.58,
+            "visibleBottomY": 329.58,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 343.5,
+            "y": 104.85096343994141,
+            "width": 228,
+            "height": 43.16,
+            "right": 571.5,
+            "bottom": 148.0109634399414
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 367,
+            "y": 69.51095999999998,
+            "width": 181,
+            "height": 30,
+            "right": 548,
+            "bottom": 99.51095999999998
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 342.5,
+            "y": 343.58,
+            "width": 230,
+            "height": 48,
+            "right": 572.5,
+            "bottom": 391.58
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 358.6082034751547,
+          "y": 328.08,
+          "width": 55.65004438850889,
+          "height": 7,
+          "right": 414.2582478636636,
+          "bottom": 335.08
+        },
+        "beaconShadow": {
+          "x": 485.95678257185943,
+          "y": 328.08,
+          "width": 65.03478725026173,
+          "height": 7,
+          "right": 550.9915698221212,
+          "bottom": 335.08
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "915x412-message-copy",
+      "ok": true,
+      "actual": {
+        "headline": "МАЯК ПОГАС!",
+        "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+      }
+    },
+    {
+      "name": "915x412-robot-left-center",
+      "ok": true,
+      "actual": {
+        "x": 339.01156302541494,
+        "y": 172.55187458870932,
+        "width": 113.07805365137756,
+        "height": 157.02811721526086,
+        "right": 452.0896166767925,
+        "bottom": 329.5799918039702
+      }
+    },
+    {
+      "name": "915x412-beacon-right-center",
+      "ok": true,
+      "actual": {
+        "x": 460.40740759670734,
+        "y": 168.51097303628922,
+        "width": 116.13354906439781,
+        "height": 161.06904055923223,
+        "right": 576.5409566611052,
+        "bottom": 329.58001359552145
+      }
+    },
+    {
+      "name": "915x412-actors-bounded-together",
+      "ok": true,
+      "actual": {
+        "actorLeft": 339.01156302541494,
+        "actorRight": 576.5409566611052,
+        "world": {
+          "x": 19.364,
+          "y": 122.42,
+          "width": 876.272,
+          "height": 271.15999999999997
+        }
+      }
+    },
+    {
+      "name": "915x412-beacon-large",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 339.01156302541494,
+          "y": 172.55187458870932,
+          "width": 113.07805365137756,
+          "height": 157.02811721526086,
+          "right": 452.0896166767925,
+          "bottom": 329.5799918039702
+        },
+        "beacon": {
+          "x": 460.40740759670734,
+          "y": 168.51097303628922,
+          "width": 116.13354906439781,
+          "height": 161.06904055923223,
+          "right": 576.5409566611052,
+          "bottom": 329.58001359552145
+        }
+      }
+    },
+    {
+      "name": "915x412-robot-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 339.01156302541494,
+          "y": 172.55187458870932,
+          "width": 113.07805365137756,
+          "height": 157.02811721526086,
+          "right": 452.0896166767925,
+          "bottom": 329.5799918039702
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 329.58,
+          "visibleBottomY": 329.58,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "915x412-beacon-grounded",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 460.40740759670734,
+          "y": 168.51097303628922,
+          "width": 116.13354906439781,
+          "height": 161.06904055923223,
+          "right": 576.5409566611052,
+          "bottom": 329.58001359552145
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 329.58,
+          "visibleBottomY": 329.58,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "915x412-soft-contact-shadows",
+      "ok": true,
+      "actual": {
+        "robotShadow": {
+          "x": 358.6082034751547,
+          "y": 328.08,
+          "width": 55.65004438850889,
+          "height": 7,
+          "right": 414.2582478636636,
+          "bottom": 335.08
+        },
+        "beaconShadow": {
+          "x": 485.95678257185943,
+          "y": 328.08,
+          "width": 65.03478725026173,
+          "height": 7,
+          "right": 550.9915698221212,
+          "bottom": 335.08
+        }
+      }
+    },
+    {
+      "name": "915x412-message-clear",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 343.5,
+          "y": 104.85096343994141,
+          "width": 228,
+          "height": 43.16,
+          "right": 571.5,
+          "bottom": 148.0109634399414
+        },
+        "headlineAlpha": 1,
+        "subtitleAlpha": 1
+      }
+    },
+    {
+      "name": "915x412-title-correct",
+      "ok": true,
+      "actual": {
+        "text": "ПЕРВЫЙ ЗАПУСК",
+        "bounds": {
+          "x": 367,
+          "y": 69.51095999999998,
+          "width": 181,
+          "height": 30,
+          "right": 548,
+          "bottom": 99.51095999999998
+        }
+      }
+    },
+    {
+      "name": "915x412-button-connected",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 342.5,
+          "y": 343.58,
+          "width": 230,
+          "height": 48,
+          "right": 572.5,
+          "bottom": 391.58
+        },
+        "alpha": 1,
+        "enabled": true,
+        "ready": true
+      }
+    },
+    {
+      "name": "915x412-beacon-off",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 460.40740759670734,
+          "y": 168.51097303628922,
+          "width": 116.13354906439781,
+          "height": 161.06904055923223,
+          "right": 576.5409566611052,
+          "bottom": 329.58001359552145
+        },
+        "alpha": 1,
+        "texture": "MISSION10_BEACON_OFF",
+        "data": {
+          "groundY": 329.58,
+          "visibleBottomY": 329.58,
+          "groundingDelta": 0,
+          "objectiveState": "OFF",
+          "tint": 7372935
+        }
+      }
+    },
+    {
+      "name": "915x412-robot-reaction",
+      "ok": true,
+      "actual": {
+        "bounds": {
+          "x": 339.01156302541494,
+          "y": 172.55187458870932,
+          "width": 113.07805365137756,
+          "height": 157.02811721526086,
+          "right": 452.0896166767925,
+          "bottom": 329.5799918039702
+        },
+        "alpha": 1,
+        "angle": 7,
+        "data": {
+          "groundY": 329.58,
+          "visibleBottomY": 329.58,
+          "groundingDelta": 0,
+          "reactingTo": "BEACON",
+          "concernReactionPlayed": true
+        }
+      }
+    },
+    {
+      "name": "915x412-no-overlap",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 339.01156302541494,
+          "y": 172.55187458870932,
+          "width": 113.07805365137756,
+          "height": 157.02811721526086,
+          "right": 452.0896166767925,
+          "bottom": 329.5799918039702
+        },
+        "beacon": {
+          "x": 460.40740759670734,
+          "y": 168.51097303628922,
+          "width": 116.13354906439781,
+          "height": 161.06904055923223,
+          "right": 576.5409566611052,
+          "bottom": 329.58001359552145
+        },
+        "message": {
+          "x": 343.5,
+          "y": 104.85096343994141,
+          "width": 228,
+          "height": 43.16,
+          "right": 571.5,
+          "bottom": 148.0109634399414
+        },
+        "start": {
+          "x": 342.5,
+          "y": 343.58,
+          "width": 230,
+          "height": 48,
+          "right": 572.5,
+          "bottom": 391.58
+        }
+      }
+    },
+    {
+      "name": "915x412-path-restored-unchanged",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 75.364,
+        "robotY": 393.58,
+        "robotScale": 0.15939685577580312,
+        "expectedX": 75.364,
+        "expectedY": 393.58,
+        "expectedScale": 0.15939685577580312,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "915x412-intro-audio-started",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "introBeaconCount": 0,
+        "introMessageCount": 0,
+        "robotX": 75.364,
+        "robotY": 393.58,
+        "robotScale": 0.15939685577580312,
+        "expectedX": 75.364,
+        "expectedY": 393.58,
+        "expectedScale": 0.15939685577580312,
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "progressCount": 1,
+        "soundMuted": false,
+        "introSoundCount": 1,
+        "introSoundPlayingCount": 1,
+        "introSoundVolume": 0.46000000834465027
+      }
+    },
+    {
+      "name": "reduced-motion-immediate-final",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 376.26155761629343,
+            "y": 206.10696817748249,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 631.1046659350395,
+            "bottom": 559.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 502,
+            "y": 582,
+            "width": 276,
+            "height": 58,
+            "right": 778,
+            "bottom": 640
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "390x844-orientation-gate",
+      "ok": true,
+      "actual": {
+        "gateCount": 1,
+        "introCompositionCount": 0,
+        "introStartCount": 0
+      }
+    },
+    {
+      "name": "mute-unmute-plays-pending-intro-once",
+      "ok": true,
+      "actual": {
+        "muted": false,
+        "cueCount": 1,
+        "cuePlaying": true,
+        "cueVolume": 0.46000000834465027,
+        "label": "♪ Звук"
+      }
+    },
+    {
+      "name": "mute-button-disables-sound",
+      "ok": true,
+      "actual": {
+        "muted": true,
+        "label": "× Звук"
+      }
+    },
+    {
+      "name": "mute-button-reenables-sound",
+      "ok": true
+    },
+    {
+      "name": "home-return-single-instance",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 5,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 376.26155761629343,
+            "y": 206.10696817748249,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 631.1046659350395,
+            "bottom": 559.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 502,
+            "y": 582,
+            "width": 276,
+            "height": 58,
+            "right": 778,
+            "bottom": 640
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "scene-restart-single-instance",
+      "ok": true,
+      "actual": {
+        "stage": "INTRO",
+        "contract": {
+          "stage": "INTRO",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 8,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "storyPhase": "READY",
+        "world": {
+          "x": 39.2,
+          "y": 171.36,
+          "width": 1201.6,
+          "height": 515.4399999999999
+        },
+        "robot": {
+          "bounds": {
+            "x": 376.26155761629343,
+            "y": 206.10696817748249,
+            "width": 254.8431083187461,
+            "height": 353.8930169865489,
+            "right": 631.1046659350395,
+            "bottom": 559.9999851640314
+          },
+          "alpha": 1,
+          "angle": 7,
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "reactingTo": "BEACON",
+            "concernReactionPlayed": true
+          }
+        },
+        "beacon": {
+          "bounds": {
+            "x": 643.2543994784355,
+            "y": 197.00003218650818,
+            "width": 261.72923815250397,
+            "height": 362.9999910891056,
+            "right": 904.9836376309395,
+            "bottom": 560.0000232756138
+          },
+          "alpha": 1,
+          "texture": "MISSION10_BEACON_OFF",
+          "data": {
+            "groundY": 560,
+            "visibleBottomY": 560,
+            "groundingDelta": 0,
+            "objectiveState": "OFF",
+            "tint": 7372935
+          }
+        },
+        "message": {
+          "bounds": {
+            "x": 482.5,
+            "y": 107.1,
+            "width": 315,
+            "height": 60.900000000000006,
+            "right": 797.5,
+            "bottom": 168
+          },
+          "headlineAlpha": 1,
+          "subtitleAlpha": 1
+        },
+        "messageCopy": {
+          "headline": "МАЯК ПОГАС!",
+          "subtitle": "ПОМОГИ РОБОТУ ЗАПУСТИТЬ МАЯК"
+        },
+        "title": {
+          "text": "ПЕРВЫЙ ЗАПУСК",
+          "bounds": {
+            "x": 524.5,
+            "y": 56.49999999999994,
+            "width": 231,
+            "height": 37,
+            "right": 755.5,
+            "bottom": 93.49999999999994
+          }
+        },
+        "start": {
+          "bounds": {
+            "x": 502,
+            "y": 582,
+            "width": 276,
+            "height": 58,
+            "right": 778,
+            "bottom": 640
+          },
+          "alpha": 1,
+          "enabled": true,
+          "ready": true
+        },
+        "failedPulseAlpha": 1,
+        "progressCount": 0,
+        "heroGroupCount": 1,
+        "beaconTextureCount": 1,
+        "visibleBeaconTextureCount": 1,
+        "robotTextureCount": 1,
+        "visibleRobotTextureCount": 1,
+        "robotShadow": {
+          "x": 420.4263489835238,
+          "y": 556.5,
+          "width": 125.4180574555404,
+          "height": 11,
+          "right": 545.8444064390642,
+          "bottom": 567.5
+        },
+        "beaconShadow": {
+          "x": 700.8348265662042,
+          "y": 556.5,
+          "width": 146.56837696335083,
+          "height": 11,
+          "right": 847.4032035295551,
+          "bottom": 567.5
+        },
+        "introObjectCount": 12
+      }
+    },
+    {
+      "name": "runtime-errors-empty",
+      "ok": true,
+      "actual": []
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\stage10-1280x720-intro-before-flicker.png",
+    "docs\\qa\\screenshots\\stage10-1280x720-intro-off-message.png",
+    "docs\\qa\\screenshots\\stage10-1280x720-intro.png",
+    "docs\\qa\\screenshots\\stage10-1600x900-intro.png",
+    "docs\\qa\\screenshots\\stage10-1920x1080-intro.png",
+    "docs\\qa\\screenshots\\stage10-740x360-intro.png",
+    "docs\\qa\\screenshots\\stage10-844x390-intro.png",
+    "docs\\qa\\screenshots\\stage10-915x412-intro.png",
+    "docs\\qa\\screenshots\\stage10-390x844-orientation.png"
+  ],
+  "errors": [],
+  "viewports": [
+    "1280x720",
+    "1600x900",
+    "1920x1080",
+    "740x360",
+    "844x390",
+    "915x412"
+  ],
+  "failedChecks": []
+}

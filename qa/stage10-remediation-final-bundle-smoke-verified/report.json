@@ -1,0 +1,68 @@
+{
+  "result": "FAIL",
+  "checks": [
+    {
+      "name": "exact-final-bundle",
+      "ok": false,
+      "actual": [
+        "http://127.0.0.1:4198/assets/index-2HhaQEWP.js"
+      ]
+    },
+    {
+      "name": "path-feedback-stroke4",
+      "ok": true,
+      "actual": 4
+    },
+    {
+      "name": "path-full-screen-shade0",
+      "ok": true,
+      "actual": []
+    },
+    {
+      "name": "safe-transition",
+      "ok": true,
+      "actual": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "final-feedback-stroke4",
+      "ok": true,
+      "actual": 4
+    },
+    {
+      "name": "final-full-screen-shade0",
+      "ok": true,
+      "actual": []
+    },
+    {
+      "name": "direct-final-victory",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "shots": [
+    "qa\\stage10-remediation-final-bundle-smoke-verified\\740-path.png",
+    "qa\\stage10-remediation-final-bundle-smoke-verified\\740-victory.png"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "390x844-hash",
+      "ok": true
+    },
+    {
+      "name": "390x844-gate-title-stroke5",
+      "ok": true
+    },
+    {
+      "name": "390x844-gate-caption-stroke4",
+      "ok": true
+    },
+    {
+      "name": "390x844-state-neutral",
+      "ok": true
+    },
+    {
+      "name": "390x844-gameplay-targets-absent",
+      "ok": true,
+      "actual": [
+        "mission10-home",
+        "mission10-sound"
+      ]
+    },
+    {
+      "name": "412x915-hash",
+      "ok": true
+    },
+    {
+      "name": "412x915-gate-title-stroke5",
+      "ok": true
+    },
+    {
+      "name": "412x915-gate-caption-stroke4",
+      "ok": true
+    },
+    {
+      "name": "412x915-state-neutral",
+      "ok": true
+    },
+    {
+      "name": "412x915-gameplay-targets-absent",
+      "ok": true,
+      "actual": [
+        "mission10-home",
+        "mission10-sound"
+      ]
+    },
+    {
+      "name": "740x360-hash",
+      "ok": true
+    },
+    {
+      "name": "740x360-feedback-stroke4",
+      "ok": true,
+      "actual": 4
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,629 @@
+{
+  "result": "FAIL",
+  "captures": [
+    {
+      "tag": "844x390-SIGNAL_A",
+      "state": {
+        "bundle": [
+          "http://127.0.0.1:4198/assets/index-Cl30iuE_.js"
+        ],
+        "title": "НАСТРОЙ СИГНАЛ",
+        "receiverActive": true,
+        "evaluation": {
+          "segments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 1
+              },
+              "to": {
+                "x": 1,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 2
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 2
+              },
+              "to": {
+                "x": 2,
+                "y": 3
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 3
+              },
+              "to": {
+                "x": 1,
+                "y": 3
+              },
+              "direction": "W"
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 3
+              },
+              "to": {
+                "x": 0,
+                "y": 3
+              },
+              "direction": "W"
+            }
+          ],
+          "firstIncompleteReflectorId": null,
+          "receiverHit": true
+        },
+        "pulse": {
+          "x": 460.24375,
+          "y": 232.49900328947786
+        },
+        "firstPulse": {
+          "x": 382.2383826315854,
+          "y": 225.1861875,
+          "clock": 5082.4
+        },
+        "clock": 6315.7,
+        "clockScale": 0
+      }
+    },
+    {
+      "tag": "844x390-SIGNAL_B",
+      "state": {
+        "bundle": [
+          "http://127.0.0.1:4198/assets/index-Cl30iuE_.js"
+        ],
+        "title": "НАСТРОЙ СИГНАЛ",
+        "receiverActive": true,
+        "evaluation": {
+          "segments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 3
+              },
+              "to": {
+                "x": 1,
+                "y": 3
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 3
+              },
+              "to": {
+                "x": 2,
+                "y": 3
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 3
+              },
+              "to": {
+                "x": 2,
+                "y": 2
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 2
+              },
+              "to": {
+                "x": 2,
+                "y": 1
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 1
+              },
+              "to": {
+                "x": 3,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 3,
+                "y": 1
+              },
+              "to": {
+                "x": 4,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 1
+              },
+              "to": {
+                "x": 5,
+                "y": 1
+              },
+              "direction": "E"
+            }
+          ],
+          "firstIncompleteReflectorId": null,
+          "receiverHit": true
+        },
+        "pulse": {
+          "x": 431.12135416666666,
+          "y": 263.2590089912506
+        },
+        "firstPulse": {
+          "x": 379.6139683333563,
+          "y": 294.9744375,
+          "clock": 8482.2
+        },
+        "clock": 10165.5,
+        "clockScale": 0
+      }
+    },
+    {
+      "tag": "844x390-SIGNAL_C",
+      "state": {
+        "bundle": [
+          "http://127.0.0.1:4198/assets/index-Cl30iuE_.js"
+        ],
+        "title": "НАСТРОЙ СИГНАЛ",
+        "receiverActive": true,
+        "evaluation": {
+          "segments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 1
+              },
+              "to": {
+                "x": 1,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 2
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 2
+              },
+              "to": {
+                "x": 2,
+                "y": 3
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 3
+              },
+              "to": {
+                "x": 2,
+                "y": 4
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 4
+              },
+              "to": {
+                "x": 3,
+                "y": 4
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 3,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 4
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 3
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 3
+              },
+              "to": {
+                "x": 4,
+                "y": 2
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 2
+              },
+              "to": {
+                "x": 4,
+                "y": 1
+              },
+              "direction": "N"
+            }
+          ],
+          "firstIncompleteReflectorId": null,
+          "receiverHit": true
+        },
+        "pulse": {
+          "x": 431.12135416666666,
+          "y": 259.521833442986
+        },
+        "firstPulse": {
+          "x": 384.5415771929749,
+          "y": 216.46265624999998,
+          "clock": 12932.1
+        },
+        "clock": 14415.3,
+        "clockScale": 0
+      }
+    },
+    {
+      "tag": "915x412-SIGNAL_C",
+      "state": {
+        "bundle": [
+          "http://127.0.0.1:4198/assets/index-Cl30iuE_.js"
+        ],
+        "title": "НАСТРОЙ СИГНАЛ",
+        "receiverActive": true,
+        "evaluation": {
+          "segments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 1
+              },
+              "to": {
+                "x": 1,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 2
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 2
+              },
+              "to": {
+                "x": 2,
+                "y": 3
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 3
+              },
+              "to": {
+                "x": 2,
+                "y": 4
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 4
+              },
+              "to": {
+                "x": 3,
+                "y": 4
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 3,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 4
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 3
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 3
+              },
+              "to": {
+                "x": 4,
+                "y": 2
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 2
+              },
+              "to": {
+                "x": 4,
+                "y": 1
+              },
+              "direction": "N"
+            }
+          ],
+          "firstIncompleteReflectorId": null,
+          "receiverHit": true
+        },
+        "pulse": {
+          "x": 467.388671875,
+          "y": 281.0643375822467
+        },
+        "firstPulse": {
+          "x": 420.1452754934258,
+          "y": 229.26816406249998,
+          "clock": 3128.8
+        },
+        "clock": 4595.4,
+        "clockScale": 0
+      }
+    },
+    {
+      "tag": "1280x720-SIGNAL_C",
+      "state": {
+        "bundle": [
+          "http://127.0.0.1:4198/assets/index-Cl30iuE_.js"
+        ],
+        "title": "НАСТРОЙ СИГНАЛ",
+        "receiverActive": true,
+        "evaluation": {
+          "segments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 1
+              },
+              "to": {
+                "x": 1,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 1
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 1
+              },
+              "to": {
+                "x": 2,
+                "y": 2
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 2
+              },
+              "to": {
+                "x": 2,
+                "y": 3
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 3
+              },
+              "to": {
+                "x": 2,
+                "y": 4
+              },
+              "direction": "S"
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 4
+              },
+              "to": {
+                "x": 3,
+                "y": 4
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 3,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 4
+              },
+              "direction": "E"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 3
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 3
+              },
+              "to": {
+                "x": 4,
+                "y": 2
+              },
+              "direction": "N"
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 2
+              },
+              "to": {
+                "x": 4,
+                "y": 1
+              },
+              "direction": "N"
+            }
+          ],
+          "firstIncompleteReflectorId": null,
+          "receiverHit": true
+        },
+        "pulse": {
+          "x": 735.7908070175877,
+          "y": 524.85
+        },
+        "firstPulse": {
+          "x": 653.8333333333334,
+          "y": 470.86214035090404,
+          "clock": 3260.2
+        },
+        "clock": 6310.1,
+        "clockScale": 0
+      }
+    }
+  ],
+  "files": [
+    "qa/stage10-signal-rebuild/844x390-SIGNAL_A-complete.png",
+    "qa/stage10-signal-rebuild/844x390-SIGNAL_A-receiver-activated.png",
+    "qa/stage10-signal-rebuild/844x390-SIGNAL_B-complete.png",
+    "qa/stage10-signal-rebuild/844x390-SIGNAL_B-receiver-activated.png",
+    "qa/stage10-signal-rebuild/844x390-SIGNAL_C-complete.png",
+    "qa/stage10-signal-rebuild/844x390-SIGNAL_C-receiver-activated.png",
+    "qa/stage10-signal-rebuild/915x412-SIGNAL_C-complete.png",
+    "qa/stage10-signal-rebuild/915x412-SIGNAL_C-receiver-activated.png",
+    "qa/stage10-signal-rebuild/1280x720-SIGNAL_C-complete.png",
+    "qa/stage10-signal-rebuild/1280x720-SIGNAL_C-receiver-activated.png",
+    "qa/stage10-signal-rebuild/1920x1080-SIGNAL_C-complete.png"
+  ],
+  "errors": [
+    "Error: Pulse did not move 1920x1080-SIGNAL_C\n    at D:\\Projects\\codex\\RobotLab\\qa\\stage10-signal-rebuild\\capture-final.cjs:9:986"
+  ]
+}

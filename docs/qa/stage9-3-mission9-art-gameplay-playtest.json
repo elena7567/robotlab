@@ -1,0 +1,1430 @@
+{
+  "required": {
+    "referencesLoadedAsRuntimeAssets": true,
+    "rawPrototypeArtRemoved": true,
+    "bridgePuzzle": true,
+    "gatePuzzle": true,
+    "powerPuzzle": true,
+    "completion": true,
+    "compactCopy": true,
+    "touchTargets": true,
+    "cleanRuntime": true,
+    "interactions": true
+  },
+  "captures": [
+    {
+      "viewport": "844x390",
+      "name": "bridge-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-bridge-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "name": "bridge-solved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-bridge-solved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": "bridge-correct",
+          "lastResult": "correct",
+          "transitioning": true,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "МОСТ ГОТОВ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": true,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "name": "gate-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-gate-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "НАЙДИ КЛЮЧ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": true,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "name": "gate-open",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-gate-open.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": "gate-correct",
+          "lastResult": "correct",
+          "transitioning": true,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ВОРОТА ОТКРЫТЫ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": true,
+        "hasGateOpen": true,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "name": "power-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-power-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАПУСТИ СТАНЦИЮ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": true,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "name": "power-active",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-power-active.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-correct",
+          "lastResult": "complete",
+          "transitioning": true,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": true,
+        "hasPowerActive": true,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "844x390",
+      "name": "final",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-844x390-final.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-correct",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "ИСПЫТАНИЕ ПРОЙДЕНО!",
+          "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+          "ПРОДОЛЖИТЬ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 84,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 312,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 540,
+              "y": 302.35,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": true,
+        "hasPowerActive": true,
+        "hasCompletion": true,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1280x720",
+      "name": "bridge-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-1280x720-bridge-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 298,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 530,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 762,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1280x720",
+      "name": "gate-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-1280x720-gate-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "НАЙДИ КЛЮЧ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-gate-wrong-1",
+            "action": "gate-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 298,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-gate-wrong-2",
+            "action": "gate-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 530,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-gate-correct",
+            "action": "gate-correct",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 762,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": true,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1280x720",
+      "name": "final",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-1280x720-final.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "COMPLETE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-correct",
+          "lastResult": "complete",
+          "transitioning": false,
+          "completed": true
+        },
+        "session": {
+          "currentTask": 10,
+          "completedTasks": 9,
+          "totalTasks": 10,
+          "score": 9,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": true,
+          "robotTested": true,
+          "robotReadyForFirstLaunch": true
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "СТАНЦИЯ ЗАПУСКАЕТСЯ",
+          "ИСПЫТАНИЕ ПРОЙДЕНО!",
+          "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
+          "ПРОДОЛЖИТЬ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-power-wrong-1",
+            "action": "power-wrong-1",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 298,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-power-correct",
+            "action": "power-correct",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 530,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-power-wrong-2",
+            "action": "power-wrong-2",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 762,
+              "y": 632.8,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": false,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": true,
+        "hasPowerActive": true,
+        "hasCompletion": true,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "740x360",
+      "name": "bridge-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-740x360-bridge-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 32,
+              "y": 273.4,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 260,
+              "y": 273.4,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 488,
+              "y": 273.4,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "915x412",
+      "name": "bridge-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-915x412-bridge-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 119.50000000000006,
+              "y": 323.58000000000004,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 347.50000000000006,
+              "y": 323.58000000000004,
+              "width": 220,
+              "height": 74
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 74
+            },
+            "bounds": {
+              "x": 575.5,
+              "y": 323.58000000000004,
+              "width": 220,
+              "height": 74
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1024x768",
+      "name": "bridge-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-1024x768-bridge-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 170,
+              "y": 679.12,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 402,
+              "y": 679.12,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 634,
+              "y": 679.12,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    },
+    {
+      "viewport": "1438x914",
+      "name": "bridge-unsolved",
+      "screenshot": "docs\\qa\\screenshots\\stage9-3-mission9-1438x914-bridge-unsolved.png",
+      "state": {
+        "mechanic": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        },
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ИСПЫТАЙ РОБОТА",
+          "ПОЧИНИ МОСТ"
+        ],
+        "actions": [
+          {
+            "name": "mission9-choice-bridge-correct",
+            "action": "bridge-correct",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 377,
+              "y": 824,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-arc",
+            "action": "bridge-wrong-arc",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 609,
+              "y": 824,
+              "width": 220,
+              "height": 62
+            }
+          },
+          {
+            "name": "mission9-choice-bridge-wrong-truss",
+            "action": "bridge-wrong-truss",
+            "hit": {
+              "width": 220,
+              "height": 62
+            },
+            "bounds": {
+              "x": 841,
+              "y": 824,
+              "width": 220,
+              "height": 62
+            }
+          }
+        ],
+        "hasRawPrototypeGate": false,
+        "hasRawPrototypePath": false,
+        "hasRawPrototypeStation": false,
+        "hasBridge": true,
+        "hasBridgeSolved": false,
+        "hasGate": false,
+        "hasGateOpen": false,
+        "hasPower": false,
+        "hasPowerActive": false,
+        "hasCompletion": false,
+        "hasRobot": true,
+        "progressDots": 3
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "clean": true
+    }
+  ],
+  "interactions": {
+    "checks": {
+      "wrongBridgeRetry": true,
+      "dropOutsideDoesNotAdvance": true,
+      "wrongGateRetry": true,
+      "wrongPowerRetry": true,
+      "duplicatePowerSafe": true,
+      "clean": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "failures": []
+}
