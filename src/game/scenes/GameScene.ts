@@ -27,6 +27,9 @@ import { memoryMechanic } from '../mechanics/memory';
 import { MemoryTaskCard } from '../ui/MemoryTaskCard';
 import { HELPER_ASSEMBLY_DIALOGUE } from '../state/robotAssemblyState';
 import { RobotAssemblyPreview } from '../ui/RobotAssemblyPreview';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 
 const WRONG_DIALOGUE = [
   'Почти! Попробуй ещё раз',
@@ -105,6 +108,38 @@ export class GameScene extends Phaser.Scene {
     robot?.setData({ characterRole: 'PRIMARY_CHARACTER', compositionRegion: 'CHARACTER', visibleBoundsId: 'ROBOT_V2_HELPER' });
     const frame = configureResponsiveCamera(this, worldLayer, layout);
     actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
+    if (robot && layout.semanticMode === 'DESKTOP') {
+      const helperSizing = resolveWorldCharacterScale({
+        profile: CHARACTER_VISUAL_PROFILES.helper,
+        role: DesktopCharacterRole.ASSEMBLY_ENVELOPE,
+        viewportHeight: height,
+        parentScale: frame.scale,
+      });
+      const characterZone = composition.regions.CHARACTER;
+      const robotScreenX = characterZone.x + characterZone.width / 2;
+      const robotScreenFeetY = characterZone.y + characterZone.height;
+      const robotLogicalX = (robotScreenX - frame.offsetX) / frame.scale;
+      const robotLogicalY = (robotScreenFeetY - frame.offsetY) / frame.scale;
+      robot.setPosition(robotLogicalX, robotLogicalY).setScale(helperSizing.resolvedScale).setData({
+        baseX: robotLogicalX,
+        baseY: robotLogicalY,
+        groundedScale: helperSizing.resolvedScale,
+        desktopCharacterRole: DesktopCharacterRole.ASSEMBLY_ENVELOPE,
+        targetVisibleHeight: helperSizing.targetVisibleHeight,
+        platformContactX: robotLogicalX,
+        platformContactY: robotLogicalY,
+        screenX: robotScreenX,
+        screenFeetY: robotScreenFeetY,
+      });
+      publishCharacterTelemetry(this, [{
+        characterId: `mission${displayedCompletedTasks + 1}-assembly-envelope`,
+        object: robot,
+        profileId: 'helper',
+        role: DesktopCharacterRole.ASSEMBLY_ENVELOPE,
+        sizing: helperSizing,
+        groundY: robotScreenFeetY,
+      }]);
+    }
     if (robot && layout.semanticMode === 'PHONE_LANDSCAPE_SHORT') {
       const zone = composition.regions.CHARACTER;
       const desiredVisibleHeight = Math.min(236, zone.height * 0.78);
@@ -196,7 +231,16 @@ export class GameScene extends Phaser.Scene {
       const startScreenY = panelBounds.centerY;
       const startLogicalX = (startScreenX - frame.offsetX) / frame.scale;
       const startLogicalY = (startScreenY - frame.offsetY) / frame.scale;
-      const pairScale = layout.mode === 'landscape' ? 0.19 : (layout.mode === 'large-portrait-tablet' ? 0.19 : 0.17);
+      const desktopReleaseSizing = layout.semanticMode === 'DESKTOP'
+        ? resolveWorldCharacterScale({
+          profile: CHARACTER_VISUAL_PROFILES.assembled,
+          role: DesktopCharacterRole.WORLD_SECONDARY,
+          viewportHeight: height,
+          parentScale: frame.scale,
+        })
+        : undefined;
+      const pairScale = desktopReleaseSizing?.resolvedScale
+        ?? (layout.mode === 'landscape' ? 0.19 : (layout.mode === 'large-portrait-tablet' ? 0.19 : 0.17));
       const pairSpan = layout.mode === 'landscape' ? 270 : 250;
       const helperX = 640 - pairSpan / 2;
       const repairedX = 640 + pairSpan / 2;
@@ -547,3 +591,5 @@ export class GameScene extends Phaser.Scene {
     markSceneReady(this);
   }
 }
+
+

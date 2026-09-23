@@ -1,0 +1,56 @@
+# Desktop Character Sizing Audit
+
+| SCENE | CHARACTER | ROLE | VIEWPORT | VISIBLE PX | VISIBLE % | TARGET % | MIN % | MAX % | FOOT DELTA | RESULT |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---|
+| M2 | mission2-assembly-envelope | ASSEMBLY_ENVELOPE | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M3 | mission3-assembly-envelope | ASSEMBLY_ENVELOPE | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M4 | mission4-assembly-envelope | ASSEMBLY_ENVELOPE | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M5 | mission5-assembly-envelope | ASSEMBLY_ENVELOPE | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M7 | mission7-repaired | WORLD_SUPPORT | 1280x720 | 259.2 | 36.0 | 36.0 | 33.0 | 39.0 | 0 | PASS |
+| M9 | mission9-bridge-robot | WORLD_PRIMARY | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 2.14 | PASS |
+| M10 | mission10-path-robot | WORLD_PRIMARY | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| TRANSITION | transition-helper | WORLD_PRIMARY | 1280x720 | 294.21 | 40.9 | 41.0 | 38.0 | 43.0 | -53.76 | PASS |
+| TRANSITION | transition-assembled | WORLD_SECONDARY | 1280x720 | 280.8 | 39.0 | 39.0 | 36.0 | 42.0 | -53.76 | PASS |
+| VICTORY | victory-robot | WORLD_PRIMARY | 1280x720 | 295.2 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M1 | mission1-assembly-envelope | ASSEMBLY_ENVELOPE | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M2 | mission2-assembly-envelope | ASSEMBLY_ENVELOPE | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M3 | mission3-assembly-envelope | ASSEMBLY_ENVELOPE | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M4 | mission4-assembly-envelope | ASSEMBLY_ENVELOPE | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M5 | mission5-assembly-envelope | ASSEMBLY_ENVELOPE | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M6 | mission6-helper | WORLD_PRIMARY | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | -3.81 | PASS |
+| M6 | mission6-assembled | WORLD_SECONDARY | 1438x914 | 356.46 | 39.0 | 39.0 | 36.0 | 42.0 | 0 | PASS |
+| M7 | mission7-repaired | WORLD_SUPPORT | 1438x914 | 329.04 | 36.0 | 36.0 | 33.0 | 39.0 | 0 | PASS |
+| M8 | mission8-board-robot | BOARD_ACTOR | 1438x914 | 110.88 | 72.0 | 72.0 | 65.0 | 78.0 | 0 | PASS |
+| M9 | mission9-bridge-robot | WORLD_PRIMARY | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 2.71 | PASS |
+| M10 | mission10-path-robot | WORLD_PRIMARY | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| TRANSITION | transition-helper | WORLD_PRIMARY | 1438x914 | 373.48 | 40.9 | 41.0 | 38.0 | 43.0 | -89.11 | PASS |
+| TRANSITION | transition-assembled | WORLD_SECONDARY | 1438x914 | 356.46 | 39.0 | 39.0 | 36.0 | 42.0 | -89.11 | PASS |
+| VICTORY | victory-robot | WORLD_PRIMARY | 1438x914 | 374.74 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M1 | mission1-assembly-envelope | ASSEMBLY_ENVELOPE | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M2 | mission2-assembly-envelope | ASSEMBLY_ENVELOPE | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M3 | mission3-assembly-envelope | ASSEMBLY_ENVELOPE | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M4 | mission4-assembly-envelope | ASSEMBLY_ENVELOPE | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M5 | mission5-assembly-envelope | ASSEMBLY_ENVELOPE | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M6 | mission6-helper | WORLD_PRIMARY | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | -3.75 | PASS |
+| M6 | mission6-assembled | WORLD_SECONDARY | 1600x900 | 351 | 39.0 | 39.0 | 36.0 | 42.0 | 0 | PASS |
+| M7 | mission7-repaired | WORLD_SUPPORT | 1600x900 | 324 | 36.0 | 36.0 | 33.0 | 39.0 | 0 | PASS |
+| M9 | mission9-bridge-robot | WORLD_PRIMARY | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 2.67 | PASS |
+| M10 | mission10-path-robot | WORLD_PRIMARY | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| TRANSITION | transition-helper | WORLD_PRIMARY | 1600x900 | 367.76 | 40.9 | 41.0 | 38.0 | 43.0 | -86 | PASS |
+| TRANSITION | transition-assembled | WORLD_SECONDARY | 1600x900 | 351 | 39.0 | 39.0 | 36.0 | 42.0 | -86 | PASS |
+| VICTORY | victory-robot | WORLD_PRIMARY | 1600x900 | 369 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M1 | mission1-assembly-envelope | ASSEMBLY_ENVELOPE | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M2 | mission2-assembly-envelope | ASSEMBLY_ENVELOPE | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M3 | mission3-assembly-envelope | ASSEMBLY_ENVELOPE | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M4 | mission4-assembly-envelope | ASSEMBLY_ENVELOPE | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M5 | mission5-assembly-envelope | ASSEMBLY_ENVELOPE | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M6 | mission6-helper | WORLD_PRIMARY | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | -4.5 | PASS |
+| M6 | mission6-assembled | WORLD_SECONDARY | 1920x1080 | 421.2 | 39.0 | 39.0 | 36.0 | 42.0 | 0 | PASS |
+| M7 | mission7-repaired | WORLD_SUPPORT | 1920x1080 | 388.8 | 36.0 | 36.0 | 33.0 | 39.0 | 0 | PASS |
+| M8 | mission8-board-robot | BOARD_ACTOR | 1920x1080 | 110.88 | 72.0 | 72.0 | 65.0 | 78.0 | 0 | PASS |
+| M9 | mission9-bridge-robot | WORLD_PRIMARY | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 3.2 | PASS |
+| M10 | mission10-path-robot | WORLD_PRIMARY | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |
+| M10_SIGNAL | mission10-signal-robot | WORLD_SUPPORT | 1920x1080 | 388.8 | 36.0 | 36.0 | 33.0 | 39.0 | 4.5 | PASS |
+| TRANSITION | transition-helper | WORLD_PRIMARY | 1920x1080 | 441.32 | 40.9 | 41.0 | 38.0 | 43.0 | -126 | PASS |
+| TRANSITION | transition-assembled | WORLD_SECONDARY | 1920x1080 | 421.2 | 39.0 | 39.0 | 36.0 | 42.0 | -126 | PASS |
+| VICTORY | victory-robot | WORLD_PRIMARY | 1920x1080 | 442.8 | 41.0 | 41.0 | 38.0 | 43.0 | 0 | PASS |

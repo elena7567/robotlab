@@ -1,0 +1,2627 @@
+{
+  "checks": [
+    {
+      "name": "m7-1280x720-desktop-active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "semantic": "DESKTOP",
+        "gate": false,
+        "input": true,
+        "card": {
+          "x": 327.21408203125,
+          "y": 187.3000030517578,
+          "width": 411.44000000000005,
+          "height": 427.21998474121096,
+          "right": 738.65408203125,
+          "bottom": 614.5199877929688
+        },
+        "cardFrame": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        },
+        "hint": {
+          "x": 609.43408203125,
+          "y": 654.7999877929688,
+          "width": 111,
+          "height": 22,
+          "right": 720.43408203125,
+          "bottom": 676.7999877929688
+        },
+        "robot": {
+          "x": 882.5526191462576,
+          "y": 297.99999937415123,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 1078.928511184901,
+          "bottom": 568
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 364.93408203125,
+            "y": 299.79998779296875,
+            "bounds": {
+              "x": 327.21408203125,
+              "y": 262.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 402.65408203125,
+              "bottom": 337.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 700.93408203125,
+            "y": 438.29998779296875,
+            "bounds": {
+              "x": 663.21408203125,
+              "y": 400.5799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 738.65408203125,
+              "bottom": 476.0199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 364.93408203125,
+            "y": 438.29998779296875,
+            "bounds": {
+              "x": 327.21408203125,
+              "y": 400.5799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 402.65408203125,
+              "bottom": 476.0199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 700.93408203125,
+            "y": 299.79998779296875,
+            "bounds": {
+              "x": 663.21408203125,
+              "y": 262.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 738.65408203125,
+              "bottom": 337.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 364.93408203125,
+            "y": 576.7999877929688,
+            "bounds": {
+              "x": 327.21408203125,
+              "y": 539.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 402.65408203125,
+              "bottom": 614.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 700.93408203125,
+            "y": 576.7999877929688,
+            "bounds": {
+              "x": 663.21408203125,
+              "y": 539.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 738.65408203125,
+              "bottom": 614.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          }
+        ],
+        "rowDeltas": [
+          0,
+          0,
+          0
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "platformContactY": 560
+      }
+    },
+    {
+      "name": "m7-1280x720-block-moved-up",
+      "ok": true,
+      "actual": {
+        "card": {
+          "x": 327.21408203125,
+          "y": 187.3000030517578,
+          "width": 411.44000000000005,
+          "height": 427.21998474121096,
+          "right": 738.65408203125,
+          "bottom": 614.5199877929688
+        },
+        "platformContactY": 560
+      }
+    },
+    {
+      "name": "m7-1280x720-hint-safe-attached",
+      "ok": true,
+      "actual": {
+        "hint": {
+          "x": 609.43408203125,
+          "y": 654.7999877929688,
+          "width": 111,
+          "height": 22,
+          "right": 720.43408203125,
+          "bottom": 676.7999877929688
+        },
+        "card": {
+          "x": 327.21408203125,
+          "y": 187.3000030517578,
+          "width": 411.44000000000005,
+          "height": 427.21998474121096,
+          "right": 738.65408203125,
+          "bottom": 614.5199877929688
+        }
+      }
+    },
+    {
+      "name": "m7-1280x720-helper-position",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 882.5526191462576,
+          "y": 297.99999937415123,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 1078.928511184901,
+          "bottom": 568
+        },
+        "card": {
+          "x": 327.21408203125,
+          "y": 187.3000030517578,
+          "width": 411.44000000000005,
+          "height": 427.21998474121096,
+          "right": 738.65408203125,
+          "bottom": 614.5199877929688
+        }
+      }
+    },
+    {
+      "name": "m7-1280x720-row-1-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1280x720-row-2-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1280x720-row-3-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-input-first-wire",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "m7-card-stable-1of3",
+      "ok": true,
+      "actual": {
+        "initial": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        },
+        "after": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        }
+      }
+    },
+    {
+      "name": "m7-card-stable-2of3",
+      "ok": true,
+      "actual": {
+        "initial": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        },
+        "after": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        }
+      }
+    },
+    {
+      "name": "m7-card-stable-3of3",
+      "ok": true,
+      "actual": {
+        "initial": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        },
+        "after": {
+          "x": 232.93407999999994,
+          "y": 194.79999999999995,
+          "width": 600,
+          "height": 430
+        }
+      }
+    },
+    {
+      "name": "m7-1438x914-desktop-active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "semantic": "DESKTOP",
+        "gate": false,
+        "input": true,
+        "card": {
+          "x": 416.67999389648435,
+          "y": 378.5,
+          "width": 411.4400305175782,
+          "height": 427.22,
+          "right": 828.1200244140625,
+          "bottom": 805.72
+        },
+        "cardFrame": {
+          "x": 322.4,
+          "y": 386,
+          "width": 600,
+          "height": 430
+        },
+        "hint": {
+          "x": 698.9000244140625,
+          "y": 846,
+          "width": 111,
+          "height": 22,
+          "right": 809.9000244140625,
+          "bottom": 868
+        },
+        "robot": {
+          "x": 978.1615058650076,
+          "y": 448.88891538977623,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 1174.537397903651,
+          "bottom": 718.888916015625
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 454.3999938964844,
+            "y": 491,
+            "bounds": {
+              "x": 416.67999389648435,
+              "y": 453.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 492.1199938964844,
+              "bottom": 528.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 790.4000244140625,
+            "y": 629.5,
+            "bounds": {
+              "x": 752.6800244140625,
+              "y": 591.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 828.1200244140625,
+              "bottom": 667.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 454.3999938964844,
+            "y": 629.5,
+            "bounds": {
+              "x": 416.67999389648435,
+              "y": 591.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 492.1199938964844,
+              "bottom": 667.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 790.4000244140625,
+            "y": 768,
+            "bounds": {
+              "x": 752.6800244140625,
+              "y": 730.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 828.1200244140625,
+              "bottom": 805.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 454.3999938964844,
+            "y": 768,
+            "bounds": {
+              "x": 416.67999389648435,
+              "y": 730.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 492.1199938964844,
+              "bottom": 805.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 790.4000244140625,
+            "y": 491,
+            "bounds": {
+              "x": 752.6800244140625,
+              "y": 453.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 828.1200244140625,
+              "bottom": 528.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          }
+        ],
+        "rowDeltas": [
+          0,
+          0,
+          0
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "platformContactY": 710.8888888888888
+      }
+    },
+    {
+      "name": "m7-1438x914-block-moved-up",
+      "ok": true,
+      "actual": {
+        "card": {
+          "x": 416.67999389648435,
+          "y": 378.5,
+          "width": 411.4400305175782,
+          "height": 427.22,
+          "right": 828.1200244140625,
+          "bottom": 805.72
+        },
+        "platformContactY": 710.8888888888888
+      }
+    },
+    {
+      "name": "m7-1438x914-hint-safe-attached",
+      "ok": true,
+      "actual": {
+        "hint": {
+          "x": 698.9000244140625,
+          "y": 846,
+          "width": 111,
+          "height": 22,
+          "right": 809.9000244140625,
+          "bottom": 868
+        },
+        "card": {
+          "x": 416.67999389648435,
+          "y": 378.5,
+          "width": 411.4400305175782,
+          "height": 427.22,
+          "right": 828.1200244140625,
+          "bottom": 805.72
+        }
+      }
+    },
+    {
+      "name": "m7-1438x914-helper-position",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 978.1615058650076,
+          "y": 448.88891538977623,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 1174.537397903651,
+          "bottom": 718.888916015625
+        },
+        "card": {
+          "x": 416.67999389648435,
+          "y": 378.5,
+          "width": 411.4400305175782,
+          "height": 427.22,
+          "right": 828.1200244140625,
+          "bottom": 805.72
+        }
+      }
+    },
+    {
+      "name": "m7-1438x914-row-1-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1438x914-row-2-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1438x914-row-3-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1600x900-desktop-active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "semantic": "DESKTOP",
+        "gate": false,
+        "input": true,
+        "card": {
+          "x": 497.6800244140625,
+          "y": 364.5,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 909.1200244140625,
+          "bottom": 791.72
+        },
+        "cardFrame": {
+          "x": 403.4,
+          "y": 372,
+          "width": 600,
+          "height": 430
+        },
+        "hint": {
+          "x": 779.9000244140625,
+          "y": 832,
+          "width": 111,
+          "height": 22,
+          "right": 890.9000244140625,
+          "bottom": 854
+        },
+        "robot": {
+          "x": 1059.1615058650077,
+          "y": 437.99999937415123,
+          "width": 196.37589203864331,
+          "height": 270.00000062584877,
+          "right": 1255.537397903651,
+          "bottom": 708
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 535.4000244140625,
+            "y": 477,
+            "bounds": {
+              "x": 497.6800244140625,
+              "y": 439.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 573.1200244140625,
+              "bottom": 514.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 871.4000244140625,
+            "y": 754,
+            "bounds": {
+              "x": 833.6800244140625,
+              "y": 716.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 909.1200244140625,
+              "bottom": 791.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 535.4000244140625,
+            "y": 615.5,
+            "bounds": {
+              "x": 497.6800244140625,
+              "y": 577.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 573.1200244140625,
+              "bottom": 653.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 871.4000244140625,
+            "y": 477,
+            "bounds": {
+              "x": 833.6800244140625,
+              "y": 439.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 909.1200244140625,
+              "bottom": 514.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 535.4000244140625,
+            "y": 754,
+            "bounds": {
+              "x": 497.6800244140625,
+              "y": 716.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 573.1200244140625,
+              "bottom": 791.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 871.4000244140625,
+            "y": 615.5,
+            "bounds": {
+              "x": 833.6800244140625,
+              "y": 577.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 909.1200244140625,
+              "bottom": 653.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          }
+        ],
+        "rowDeltas": [
+          0,
+          0,
+          0
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "platformContactY": 700
+      }
+    },
+    {
+      "name": "m7-1600x900-block-moved-up",
+      "ok": true,
+      "actual": {
+        "card": {
+          "x": 497.6800244140625,
+          "y": 364.5,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 909.1200244140625,
+          "bottom": 791.72
+        },
+        "platformContactY": 700
+      }
+    },
+    {
+      "name": "m7-1600x900-hint-safe-attached",
+      "ok": true,
+      "actual": {
+        "hint": {
+          "x": 779.9000244140625,
+          "y": 832,
+          "width": 111,
+          "height": 22,
+          "right": 890.9000244140625,
+          "bottom": 854
+        },
+        "card": {
+          "x": 497.6800244140625,
+          "y": 364.5,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 909.1200244140625,
+          "bottom": 791.72
+        }
+      }
+    },
+    {
+      "name": "m7-1600x900-helper-position",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 1059.1615058650077,
+          "y": 437.99999937415123,
+          "width": 196.37589203864331,
+          "height": 270.00000062584877,
+          "right": 1255.537397903651,
+          "bottom": 708
+        },
+        "card": {
+          "x": 497.6800244140625,
+          "y": 364.5,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 909.1200244140625,
+          "bottom": 791.72
+        }
+      }
+    },
+    {
+      "name": "m7-1600x900-row-1-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1600x900-row-2-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1600x900-row-3-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1920x1080-desktop-active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "semantic": "DESKTOP",
+        "gate": false,
+        "input": true,
+        "card": {
+          "x": 657.6800244140625,
+          "y": 514.2999877929688,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 1069.1200244140625,
+          "bottom": 941.5199877929688
+        },
+        "cardFrame": {
+          "x": 563.4,
+          "y": 521.8,
+          "width": 600,
+          "height": 430
+        },
+        "hint": {
+          "x": 939.9000244140625,
+          "y": 981.7999877929688,
+          "width": 111,
+          "height": 22,
+          "right": 1050.9000244140625,
+          "bottom": 1003.7999877929688
+        },
+        "robot": {
+          "x": 1219.1615058650077,
+          "y": 577.9999993741512,
+          "width": 196.37589203864331,
+          "height": 270.00000062584877,
+          "right": 1415.537397903651,
+          "bottom": 848
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 695.4000244140625,
+            "y": 626.7999877929688,
+            "bounds": {
+              "x": 657.6800244140625,
+              "y": 589.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 733.1200244140625,
+              "bottom": 664.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1031.4000244140625,
+            "y": 903.7999877929688,
+            "bounds": {
+              "x": 993.6800244140625,
+              "y": 866.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1069.1200244140625,
+              "bottom": 941.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 695.4000244140625,
+            "y": 765.2999877929688,
+            "bounds": {
+              "x": 657.6800244140625,
+              "y": 727.5799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 733.1200244140625,
+              "bottom": 803.0199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1031.4000244140625,
+            "y": 626.7999877929688,
+            "bounds": {
+              "x": 993.6800244140625,
+              "y": 589.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1069.1200244140625,
+              "bottom": 664.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 695.4000244140625,
+            "y": 903.7999877929688,
+            "bounds": {
+              "x": 657.6800244140625,
+              "y": 866.0799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 733.1200244140625,
+              "bottom": 941.5199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1031.4000244140625,
+            "y": 765.2999877929688,
+            "bounds": {
+              "x": 993.6800244140625,
+              "y": 727.5799877929687,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1069.1200244140625,
+              "bottom": 803.0199877929688
+            },
+            "hitWidth": 92,
+            "hitHeight": 92
+          }
+        ],
+        "rowDeltas": [
+          0,
+          0,
+          0
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "platformContactY": 840
+      }
+    },
+    {
+      "name": "m7-1920x1080-block-moved-up",
+      "ok": true,
+      "actual": {
+        "card": {
+          "x": 657.6800244140625,
+          "y": 514.2999877929688,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 1069.1200244140625,
+          "bottom": 941.5199877929688
+        },
+        "platformContactY": 840
+      }
+    },
+    {
+      "name": "m7-1920x1080-hint-safe-attached",
+      "ok": true,
+      "actual": {
+        "hint": {
+          "x": 939.9000244140625,
+          "y": 981.7999877929688,
+          "width": 111,
+          "height": 22,
+          "right": 1050.9000244140625,
+          "bottom": 1003.7999877929688
+        },
+        "card": {
+          "x": 657.6800244140625,
+          "y": 514.2999877929688,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 1069.1200244140625,
+          "bottom": 941.5199877929688
+        }
+      }
+    },
+    {
+      "name": "m7-1920x1080-helper-position",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 1219.1615058650077,
+          "y": 577.9999993741512,
+          "width": 196.37589203864331,
+          "height": 270.00000062584877,
+          "right": 1415.537397903651,
+          "bottom": 848
+        },
+        "card": {
+          "x": 657.6800244140625,
+          "y": 514.2999877929688,
+          "width": 411.44000000000005,
+          "height": 427.22,
+          "right": 1069.1200244140625,
+          "bottom": 941.5199877929688
+        }
+      }
+    },
+    {
+      "name": "m7-1920x1080-row-1-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1920x1080-row-2-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m7-1920x1080-row-3-aligned",
+      "ok": true,
+      "actual": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "m9-1280x720-bridge-group-up",
+      "ok": true,
+      "actual": {
+        "puzzleStage": {
+          "x": 297.8,
+          "y": 163.6,
+          "width": 684.4,
+          "height": 396.4
+        },
+        "platformContactY": 560
+      }
+    },
+    {
+      "name": "m9-1280x720-title-gap-small",
+      "ok": true,
+      "actual": {
+        "titleGap": 38,
+        "title": {
+          "x": 360,
+          "y": 95.36,
+          "width": 560,
+          "height": 30.240000000000002
+        },
+        "puzzleStage": {
+          "x": 297.8,
+          "y": 163.6,
+          "width": 684.4,
+          "height": 396.4
+        }
+      }
+    },
+    {
+      "name": "m9-1280x720-robot-close",
+      "ok": true,
+      "actual": {
+        "robotGap": 10,
+        "robot": {
+          "x": 57.80000000000001,
+          "y": 163.6,
+          "width": 230,
+          "height": 396.4
+        },
+        "puzzleStage": {
+          "x": 297.8,
+          "y": 163.6,
+          "width": 684.4,
+          "height": 396.4
+        }
+      }
+    },
+    {
+      "name": "m9-1280x720-choice-row-safe",
+      "ok": true,
+      "actual": {
+        "choices": {
+          "x": 49.99999999999996,
+          "y": 596.8,
+          "width": 1180,
+          "height": 62
+        },
+        "rendered": 3,
+        "bottom": 658.8
+      }
+    },
+    {
+      "name": "m9-bridge-input",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "stage": "GATE",
+        "correctCandidateId": "gate-truss-profile",
+        "title": {
+          "x": 360,
+          "y": 95.36,
+          "width": 560,
+          "height": 30.240000000000002
+        },
+        "puzzleStage": {
+          "x": 297.8,
+          "y": 163.6,
+          "width": 684.4,
+          "height": 396.4
+        },
+        "robotLayout": {
+          "x": 57.80000000000001,
+          "y": 163.6,
+          "width": 230,
+          "height": 396.4
+        },
+        "choices": {
+          "x": 49.99999999999996,
+          "y": 596.8,
+          "width": 1180,
+          "height": 62
+        },
+        "platformContactY": 560,
+        "robot": {
+          "x": 99.94948664662229,
+          "y": 342.6981342989368,
+          "width": 145.70103281027104,
+          "height": 221.70480773295287,
+          "right": 245.65051945689333,
+          "bottom": 564.4029420318897
+        },
+        "robotImage": {
+          "x": 99.94948664662229,
+          "y": 342.6981342989368,
+          "width": 145.70103281027104,
+          "height": 219.8012553495007,
+          "right": 245.65051945689333,
+          "bottom": 562.4993896484375
+        },
+        "bridgeLeft": null,
+        "bridgeRight": null,
+        "bridgeGap": null,
+        "choicesRendered": [
+          {
+            "name": "mission9-choice-gate-triangle-profile",
+            "bounds": {
+              "x": 372.6189705882353,
+              "y": 603.6199877929688,
+              "width": 70.7620588235294,
+              "height": 48.3599999999999,
+              "right": 443.3810294117647,
+              "bottom": 651.9799877929687
+            }
+          },
+          {
+            "name": "mission9-choice-gate-truss-profile",
+            "bounds": {
+              "x": 581.6835294117647,
+              "y": 603.6199877929688,
+              "width": 116.6329411764707,
+              "height": 48.3599999999999,
+              "right": 698.3164705882353,
+              "bottom": 651.9799877929687
+            }
+          },
+          {
+            "name": "mission9-choice-gate-round-lightning-profile",
+            "bounds": {
+              "x": 837.5393877551021,
+              "y": 603.6199877929688,
+              "width": 68.9212244897958,
+              "height": 48.3599999999999,
+              "right": 906.4606122448979,
+              "bottom": 651.9799877929687
+            }
+          }
+        ],
+        "selectedAction": null
+      }
+    },
+    {
+      "name": "m9-1600x900-bridge-group-up",
+      "ok": true,
+      "actual": {
+        "puzzleStage": {
+          "x": 457.8,
+          "y": 179.8,
+          "width": 684.4,
+          "height": 520.2
+        },
+        "platformContactY": 700
+      }
+    },
+    {
+      "name": "m9-1600x900-title-gap-small",
+      "ok": true,
+      "actual": {
+        "titleGap": 38,
+        "title": {
+          "x": 520,
+          "y": 104,
+          "width": 560,
+          "height": 37.800000000000004
+        },
+        "puzzleStage": {
+          "x": 457.8,
+          "y": 179.8,
+          "width": 684.4,
+          "height": 520.2
+        }
+      }
+    },
+    {
+      "name": "m9-1600x900-robot-close",
+      "ok": true,
+      "actual": {
+        "robotGap": 10,
+        "robot": {
+          "x": 217.8,
+          "y": 179.8,
+          "width": 230,
+          "height": 520.2
+        },
+        "puzzleStage": {
+          "x": 457.8,
+          "y": 179.8,
+          "width": 684.4,
+          "height": 520.2
+        }
+      }
+    },
+    {
+      "name": "m9-1600x900-choice-row-safe",
+      "ok": true,
+      "actual": {
+        "choices": {
+          "x": 210,
+          "y": 768.5,
+          "width": 1180,
+          "height": 67.5
+        },
+        "rendered": 3,
+        "bottom": 836
+      }
+    },
+    {
+      "name": "m9-1920x1080-bridge-group-up",
+      "ok": true,
+      "actual": {
+        "puzzleStage": {
+          "x": 617.8,
+          "y": 180,
+          "width": 684.4,
+          "height": 660
+        },
+        "platformContactY": 840
+      }
+    },
+    {
+      "name": "m9-1920x1080-title-gap-small",
+      "ok": true,
+      "actual": {
+        "titleGap": 38,
+        "title": {
+          "x": 680,
+          "y": 104,
+          "width": 560,
+          "height": 38
+        },
+        "puzzleStage": {
+          "x": 617.8,
+          "y": 180,
+          "width": 684.4,
+          "height": 660
+        }
+      }
+    },
+    {
+      "name": "m9-1920x1080-robot-close",
+      "ok": true,
+      "actual": {
+        "robotGap": 10,
+        "robot": {
+          "x": 377.79999999999995,
+          "y": 180,
+          "width": 230,
+          "height": 660
+        },
+        "puzzleStage": {
+          "x": 617.8,
+          "y": 180,
+          "width": 684.4,
+          "height": 660
+        }
+      }
+    },
+    {
+      "name": "m9-1920x1080-choice-row-safe",
+      "ok": true,
+      "actual": {
+        "choices": {
+          "x": 370,
+          "y": 944,
+          "width": 1180,
+          "height": 72
+        },
+        "rendered": 3,
+        "bottom": 1016
+      }
+    },
+    {
+      "name": "m9-844x390-bridge-group-up",
+      "ok": true,
+      "actual": {
+        "puzzleStage": {
+          "x": 171.72459999999998,
+          "y": 137.69000000000003,
+          "width": 500.55080000000004,
+          "height": 174.08
+        },
+        "platformContactY": 326.875
+      }
+    },
+    {
+      "name": "m9-844x390-title-gap-small",
+      "ok": true,
+      "actual": {
+        "titleGap": 37.360000000000014,
+        "title": {
+          "x": 207,
+          "y": 70.33000000000001,
+          "width": 430,
+          "height": 30
+        },
+        "puzzleStage": {
+          "x": 171.72459999999998,
+          "y": 137.69000000000003,
+          "width": 500.55080000000004,
+          "height": 174.08
+        }
+      }
+    },
+    {
+      "name": "m9-844x390-robot-close",
+      "ok": true,
+      "actual": {
+        "robotGap": 4.680000000000007,
+        "robot": {
+          "x": 29.044599999999974,
+          "y": 137.69000000000003,
+          "width": 138,
+          "height": 174.08
+        },
+        "puzzleStage": {
+          "x": 171.72459999999998,
+          "y": 137.69000000000003,
+          "width": 500.55080000000004,
+          "height": 174.08
+        }
+      }
+    },
+    {
+      "name": "m9-844x390-choice-row-safe",
+      "ok": true,
+      "actual": {
+        "choices": {
+          "x": 18.330000000000002,
+          "y": 320.35,
+          "width": 807.34,
+          "height": 56
+        },
+        "rendered": 3,
+        "bottom": 376.35
+      }
+    },
+    {
+      "name": "mission6-antenna-present",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission6Scene",
+        "repairedImageCount": 0,
+        "antennaPartCount": 0,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "mission6-no-helper-antenna-contamination",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission6Scene",
+        "repairedImageCount": 0,
+        "antennaPartCount": 0,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "mission7-antenna-present",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission7Scene",
+        "repairedImageCount": 0,
+        "antennaPartCount": 2,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [],
+        "antennaNames": [
+          "assembly-blueprint-antenna",
+          "assembly-installed-antenna"
+        ]
+      }
+    },
+    {
+      "name": "mission7-no-helper-antenna-contamination",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission7Scene",
+        "repairedImageCount": 0,
+        "antennaPartCount": 2,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [],
+        "antennaNames": [
+          "assembly-blueprint-antenna",
+          "assembly-installed-antenna"
+        ]
+      }
+    },
+    {
+      "name": "mission8-antenna-present",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission8Scene",
+        "repairedImageCount": 0,
+        "antennaPartCount": 2,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [],
+        "antennaNames": [
+          "assembly-blueprint-antenna",
+          "assembly-installed-antenna"
+        ]
+      }
+    },
+    {
+      "name": "mission8-no-helper-antenna-contamination",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission8Scene",
+        "repairedImageCount": 0,
+        "antennaPartCount": 2,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [],
+        "antennaNames": [
+          "assembly-blueprint-antenna",
+          "assembly-installed-antenna"
+        ]
+      }
+    },
+    {
+      "name": "mission9-antenna-present",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission9Scene",
+        "repairedImageCount": 1,
+        "antennaPartCount": 0,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [
+          "mission9-repaired-robot-image"
+        ],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "mission9-no-helper-antenna-contamination",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission9Scene",
+        "repairedImageCount": 1,
+        "antennaPartCount": 0,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [
+          "mission9-repaired-robot-image"
+        ],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "mission10-antenna-present",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission10Scene",
+        "repairedImageCount": 1,
+        "antennaPartCount": 0,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [
+          "mission10-intro-robot"
+        ],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "mission10-no-helper-antenna-contamination",
+      "ok": true,
+      "actual": {
+        "sceneName": "Mission10Scene",
+        "repairedImageCount": 1,
+        "antennaPartCount": 0,
+        "assembledCount": 1,
+        "helperAntennaCount": 0,
+        "textures": [
+          "mission10-intro-robot"
+        ],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "victory-antenna-present",
+      "ok": true,
+      "actual": {
+        "sceneName": "VictoryScene",
+        "repairedImageCount": 1,
+        "antennaPartCount": 0,
+        "assembledCount": 0,
+        "helperAntennaCount": 0,
+        "textures": [
+          "victory-robot-v2"
+        ],
+        "antennaNames": []
+      }
+    },
+    {
+      "name": "victory-no-helper-antenna-contamination",
+      "ok": true,
+      "actual": {
+        "sceneName": "VictoryScene",
+        "repairedImageCount": 1,
+        "antennaPartCount": 0,
+        "assembledCount": 0,
+        "helperAntennaCount": 0,
+        "textures": [
+          "victory-robot-v2"
+        ],
+        "antennaNames": []
+      }
+    }
+  ],
+  "errors": [],
+  "mission7": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "semantic": "DESKTOP",
+      "gate": false,
+      "input": true,
+      "card": {
+        "x": 327.21408203125,
+        "y": 187.3000030517578,
+        "width": 411.44000000000005,
+        "height": 427.21998474121096,
+        "right": 738.65408203125,
+        "bottom": 614.5199877929688
+      },
+      "cardFrame": {
+        "x": 232.93407999999994,
+        "y": 194.79999999999995,
+        "width": 600,
+        "height": 430
+      },
+      "hint": {
+        "x": 609.43408203125,
+        "y": 654.7999877929688,
+        "width": 111,
+        "height": 22,
+        "right": 720.43408203125,
+        "bottom": 676.7999877929688
+      },
+      "robot": {
+        "x": 882.5526191462576,
+        "y": 297.99999937415123,
+        "width": 196.37589203864343,
+        "height": 270.00000062584877,
+        "right": 1078.928511184901,
+        "bottom": 568
+      },
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "x": 364.93408203125,
+          "y": 299.79998779296875,
+          "bounds": {
+            "x": 327.21408203125,
+            "y": 262.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 402.65408203125,
+            "bottom": 337.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "x": 700.93408203125,
+          "y": 438.29998779296875,
+          "bounds": {
+            "x": 663.21408203125,
+            "y": 400.5799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 738.65408203125,
+            "bottom": 476.0199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "x": 364.93408203125,
+          "y": 438.29998779296875,
+          "bounds": {
+            "x": 327.21408203125,
+            "y": 400.5799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 402.65408203125,
+            "bottom": 476.0199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "x": 700.93408203125,
+          "y": 299.79998779296875,
+          "bounds": {
+            "x": 663.21408203125,
+            "y": 262.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 738.65408203125,
+            "bottom": 337.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "x": 364.93408203125,
+          "y": 576.7999877929688,
+          "bounds": {
+            "x": 327.21408203125,
+            "y": 539.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 402.65408203125,
+            "bottom": 614.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "x": 700.93408203125,
+          "y": 576.7999877929688,
+          "bounds": {
+            "x": 663.21408203125,
+            "y": 539.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 738.65408203125,
+            "bottom": 614.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        }
+      ],
+      "rowDeltas": [
+        0,
+        0,
+        0
+      ],
+      "connected": [],
+      "challengeIndex": 0,
+      "platformContactY": 560
+    },
+    {
+      "viewport": {
+        "width": 1438,
+        "height": 914
+      },
+      "semantic": "DESKTOP",
+      "gate": false,
+      "input": true,
+      "card": {
+        "x": 416.67999389648435,
+        "y": 378.5,
+        "width": 411.4400305175782,
+        "height": 427.22,
+        "right": 828.1200244140625,
+        "bottom": 805.72
+      },
+      "cardFrame": {
+        "x": 322.4,
+        "y": 386,
+        "width": 600,
+        "height": 430
+      },
+      "hint": {
+        "x": 698.9000244140625,
+        "y": 846,
+        "width": 111,
+        "height": 22,
+        "right": 809.9000244140625,
+        "bottom": 868
+      },
+      "robot": {
+        "x": 978.1615058650076,
+        "y": 448.88891538977623,
+        "width": 196.37589203864343,
+        "height": 270.00000062584877,
+        "right": 1174.537397903651,
+        "bottom": 718.888916015625
+      },
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "x": 454.3999938964844,
+          "y": 491,
+          "bounds": {
+            "x": 416.67999389648435,
+            "y": 453.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 492.1199938964844,
+            "bottom": 528.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "x": 790.4000244140625,
+          "y": 629.5,
+          "bounds": {
+            "x": 752.6800244140625,
+            "y": 591.78,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 828.1200244140625,
+            "bottom": 667.22
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "x": 454.3999938964844,
+          "y": 629.5,
+          "bounds": {
+            "x": 416.67999389648435,
+            "y": 591.78,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 492.1199938964844,
+            "bottom": 667.22
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "x": 790.4000244140625,
+          "y": 768,
+          "bounds": {
+            "x": 752.6800244140625,
+            "y": 730.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 828.1200244140625,
+            "bottom": 805.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "x": 454.3999938964844,
+          "y": 768,
+          "bounds": {
+            "x": 416.67999389648435,
+            "y": 730.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 492.1199938964844,
+            "bottom": 805.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "x": 790.4000244140625,
+          "y": 491,
+          "bounds": {
+            "x": 752.6800244140625,
+            "y": 453.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 828.1200244140625,
+            "bottom": 528.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        }
+      ],
+      "rowDeltas": [
+        0,
+        0,
+        0
+      ],
+      "connected": [],
+      "challengeIndex": 0,
+      "platformContactY": 710.8888888888888
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "semantic": "DESKTOP",
+      "gate": false,
+      "input": true,
+      "card": {
+        "x": 497.6800244140625,
+        "y": 364.5,
+        "width": 411.44000000000005,
+        "height": 427.22,
+        "right": 909.1200244140625,
+        "bottom": 791.72
+      },
+      "cardFrame": {
+        "x": 403.4,
+        "y": 372,
+        "width": 600,
+        "height": 430
+      },
+      "hint": {
+        "x": 779.9000244140625,
+        "y": 832,
+        "width": 111,
+        "height": 22,
+        "right": 890.9000244140625,
+        "bottom": 854
+      },
+      "robot": {
+        "x": 1059.1615058650077,
+        "y": 437.99999937415123,
+        "width": 196.37589203864331,
+        "height": 270.00000062584877,
+        "right": 1255.537397903651,
+        "bottom": 708
+      },
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "x": 535.4000244140625,
+          "y": 477,
+          "bounds": {
+            "x": 497.6800244140625,
+            "y": 439.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 573.1200244140625,
+            "bottom": 514.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "x": 871.4000244140625,
+          "y": 754,
+          "bounds": {
+            "x": 833.6800244140625,
+            "y": 716.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 909.1200244140625,
+            "bottom": 791.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "x": 535.4000244140625,
+          "y": 615.5,
+          "bounds": {
+            "x": 497.6800244140625,
+            "y": 577.78,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 573.1200244140625,
+            "bottom": 653.22
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "x": 871.4000244140625,
+          "y": 477,
+          "bounds": {
+            "x": 833.6800244140625,
+            "y": 439.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 909.1200244140625,
+            "bottom": 514.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "x": 535.4000244140625,
+          "y": 754,
+          "bounds": {
+            "x": 497.6800244140625,
+            "y": 716.28,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 573.1200244140625,
+            "bottom": 791.72
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "x": 871.4000244140625,
+          "y": 615.5,
+          "bounds": {
+            "x": 833.6800244140625,
+            "y": 577.78,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 909.1200244140625,
+            "bottom": 653.22
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        }
+      ],
+      "rowDeltas": [
+        0,
+        0,
+        0
+      ],
+      "connected": [],
+      "challengeIndex": 0,
+      "platformContactY": 700
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "semantic": "DESKTOP",
+      "gate": false,
+      "input": true,
+      "card": {
+        "x": 657.6800244140625,
+        "y": 514.2999877929688,
+        "width": 411.44000000000005,
+        "height": 427.22,
+        "right": 1069.1200244140625,
+        "bottom": 941.5199877929688
+      },
+      "cardFrame": {
+        "x": 563.4,
+        "y": 521.8,
+        "width": 600,
+        "height": 430
+      },
+      "hint": {
+        "x": 939.9000244140625,
+        "y": 981.7999877929688,
+        "width": 111,
+        "height": 22,
+        "right": 1050.9000244140625,
+        "bottom": 1003.7999877929688
+      },
+      "robot": {
+        "x": 1219.1615058650077,
+        "y": 577.9999993741512,
+        "width": 196.37589203864331,
+        "height": 270.00000062584877,
+        "right": 1415.537397903651,
+        "bottom": 848
+      },
+      "ports": [
+        {
+          "color": "red",
+          "side": "source",
+          "x": 695.4000244140625,
+          "y": 626.7999877929688,
+          "bounds": {
+            "x": 657.6800244140625,
+            "y": 589.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 733.1200244140625,
+            "bottom": 664.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "red",
+          "side": "target",
+          "x": 1031.4000244140625,
+          "y": 903.7999877929688,
+          "bounds": {
+            "x": 993.6800244140625,
+            "y": 866.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 1069.1200244140625,
+            "bottom": 941.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "source",
+          "x": 695.4000244140625,
+          "y": 765.2999877929688,
+          "bounds": {
+            "x": 657.6800244140625,
+            "y": 727.5799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 733.1200244140625,
+            "bottom": 803.0199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "blue",
+          "side": "target",
+          "x": 1031.4000244140625,
+          "y": 626.7999877929688,
+          "bounds": {
+            "x": 993.6800244140625,
+            "y": 589.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 1069.1200244140625,
+            "bottom": 664.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "source",
+          "x": 695.4000244140625,
+          "y": 903.7999877929688,
+          "bounds": {
+            "x": 657.6800244140625,
+            "y": 866.0799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 733.1200244140625,
+            "bottom": 941.5199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        },
+        {
+          "color": "green",
+          "side": "target",
+          "x": 1031.4000244140625,
+          "y": 765.2999877929688,
+          "bounds": {
+            "x": 993.6800244140625,
+            "y": 727.5799877929687,
+            "width": 75.44000000000005,
+            "height": 75.44000000000005,
+            "right": 1069.1200244140625,
+            "bottom": 803.0199877929688
+          },
+          "hitWidth": 92,
+          "hitHeight": 92
+        }
+      ],
+      "rowDeltas": [
+        0,
+        0,
+        0
+      ],
+      "connected": [],
+      "challengeIndex": 0,
+      "platformContactY": 840
+    }
+  ],
+  "mission9": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "stage": "BRIDGE",
+      "correctCandidateId": "bridge-flat-span",
+      "title": {
+        "x": 360,
+        "y": 95.36,
+        "width": 560,
+        "height": 30.240000000000002
+      },
+      "puzzleStage": {
+        "x": 297.8,
+        "y": 163.6,
+        "width": 684.4,
+        "height": 396.4
+      },
+      "robotLayout": {
+        "x": 57.80000000000001,
+        "y": 163.6,
+        "width": 230,
+        "height": 396.4
+      },
+      "choices": {
+        "x": 49.99999999999996,
+        "y": 596.8,
+        "width": 1180,
+        "height": 62
+      },
+      "platformContactY": 560,
+      "robot": {
+        "x": 99.94948664662229,
+        "y": 342.6981342989368,
+        "width": 145.70103281027104,
+        "height": 221.70480773295287,
+        "right": 245.65051945689333,
+        "bottom": 564.4029420318897
+      },
+      "robotImage": {
+        "x": 99.94948664662229,
+        "y": 342.6981342989368,
+        "width": 145.70103281027104,
+        "height": 219.8012553495007,
+        "right": 245.65051945689333,
+        "bottom": 562.4993896484375
+      },
+      "bridgeLeft": {
+        "x": 318.332,
+        "y": 475.0559992488263,
+        "width": 294.29200000000003,
+        "height": 146.45517370892014,
+        "right": 612.624,
+        "bottom": 621.5111729577465
+      },
+      "bridgeRight": {
+        "x": 667.6062754303599,
+        "y": 475.59023824726137,
+        "width": 293.83144913928015,
+        "height": 145.5340719874804,
+        "right": 961.4377245696401,
+        "bottom": 621.1243102347418
+      },
+      "bridgeGap": {
+        "x": 540.7620000000001,
+        "y": 463.6990535714286,
+        "width": 198.476,
+        "height": 97.46589285714282,
+        "right": 739.238,
+        "bottom": 561.1649464285714
+      },
+      "choicesRendered": [
+        {
+          "name": "mission9-choice-bridge-flat-span",
+          "bounds": {
+            "x": 336.24,
+            "y": 603.6199877929688,
+            "width": 143.51999999999998,
+            "height": 48.3599999999999,
+            "right": 479.76,
+            "bottom": 651.9799877929687
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-arc-span",
+          "bounds": {
+            "x": 577.6080829015544,
+            "y": 603.6199877929688,
+            "width": 124.78383419689112,
+            "height": 48.3599999999999,
+            "right": 702.3919170984456,
+            "bottom": 651.9799877929687
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-truss-span",
+          "bounds": {
+            "x": 814.969393939394,
+            "y": 603.6199877929688,
+            "width": 114.06121212121207,
+            "height": 48.3599999999999,
+            "right": 929.030606060606,
+            "bottom": 651.9799877929687
+          }
+        }
+      ],
+      "selectedAction": null
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "stage": "BRIDGE",
+      "correctCandidateId": "bridge-flat-span",
+      "title": {
+        "x": 520,
+        "y": 104,
+        "width": 560,
+        "height": 37.800000000000004
+      },
+      "puzzleStage": {
+        "x": 457.8,
+        "y": 179.8,
+        "width": 684.4,
+        "height": 520.2
+      },
+      "robotLayout": {
+        "x": 217.8,
+        "y": 179.8,
+        "width": 230,
+        "height": 520.2
+      },
+      "choices": {
+        "x": 210,
+        "y": 768.5,
+        "width": 1180,
+        "height": 67.5
+      },
+      "platformContactY": 700,
+      "robot": {
+        "x": 237.37559406971624,
+        "y": 415.3637363580766,
+        "width": 190.84878744650499,
+        "height": 290.4035263908702,
+        "right": 428.22438151622123,
+        "bottom": 705.7672627489468
+      },
+      "robotImage": {
+        "x": 237.37559406971624,
+        "y": 415.3637363580766,
+        "width": 190.84878744650499,
+        "height": 287.91012838801714,
+        "right": 428.22438151622123,
+        "bottom": 703.2738647460938
+      },
+      "bridgeLeft": {
+        "x": 478.3320000000001,
+        "y": 615.0559992488263,
+        "width": 294.2919999999999,
+        "height": 146.45517370892014,
+        "right": 772.624,
+        "bottom": 761.5111729577465
+      },
+      "bridgeRight": {
+        "x": 827.6062754303599,
+        "y": 615.5902382472614,
+        "width": 293.83144913928015,
+        "height": 145.5340719874804,
+        "right": 1121.43772456964,
+        "bottom": 761.1243102347418
+      },
+      "bridgeGap": {
+        "x": 700.7620000000001,
+        "y": 588.8430535714286,
+        "width": 198.476,
+        "height": 97.46589285714288,
+        "right": 899.238,
+        "bottom": 686.3089464285715
+      },
+      "choicesRendered": [
+        {
+          "name": "mission9-choice-bridge-flat-span",
+          "bounds": {
+            "x": 489.8741935483871,
+            "y": 775.925,
+            "width": 156.2516129032258,
+            "height": 52.65000000000009,
+            "right": 646.1258064516129,
+            "bottom": 828.575
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-arc-span",
+          "bounds": {
+            "x": 732.0733160621762,
+            "y": 775.925,
+            "width": 135.85336787564756,
+            "height": 52.65000000000009,
+            "right": 867.9266839378238,
+            "bottom": 828.575
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-truss-span",
+          "bounds": {
+            "x": 969.9102272727273,
+            "y": 775.925,
+            "width": 124.1795454545454,
+            "height": 52.65000000000009,
+            "right": 1094.0897727272727,
+            "bottom": 828.575
+          }
+        }
+      ],
+      "selectedAction": null
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "stage": "BRIDGE",
+      "correctCandidateId": "bridge-flat-span",
+      "title": {
+        "x": 680,
+        "y": 104,
+        "width": 560,
+        "height": 38
+      },
+      "puzzleStage": {
+        "x": 617.8,
+        "y": 180,
+        "width": 684.4,
+        "height": 660
+      },
+      "robotLayout": {
+        "x": 377.79999999999995,
+        "y": 180,
+        "width": 230,
+        "height": 660
+      },
+      "choices": {
+        "x": 370,
+        "y": 944,
+        "width": 1180,
+        "height": 72
+      },
+      "platformContactY": 840,
+      "robot": {
+        "x": 397.37559406971627,
+        "y": 555.3637363580766,
+        "width": 190.84878744650496,
+        "height": 290.4035263908702,
+        "right": 588.2243815162212,
+        "bottom": 845.7672627489468
+      },
+      "robotImage": {
+        "x": 397.37559406971627,
+        "y": 555.3637363580766,
+        "width": 190.84878744650496,
+        "height": 287.91012838801714,
+        "right": 588.2243815162212,
+        "bottom": 843.2738647460938
+      },
+      "bridgeLeft": {
+        "x": 638.3320000000001,
+        "y": 755.0559992488263,
+        "width": 294.2919999999999,
+        "height": 146.45517370892014,
+        "right": 932.624,
+        "bottom": 901.5111729577465
+      },
+      "bridgeRight": {
+        "x": 987.6062754303599,
+        "y": 755.5902382472614,
+        "width": 293.83144913928015,
+        "height": 145.5340719874804,
+        "right": 1281.43772456964,
+        "bottom": 901.1243102347418
+      },
+      "bridgeGap": {
+        "x": 860.7620000000001,
+        "y": 712.0670535714286,
+        "width": 198.476,
+        "height": 97.46589285714288,
+        "right": 1059.238,
+        "bottom": 809.5329464285714
+      },
+      "choicesRendered": [
+        {
+          "name": "mission9-choice-bridge-flat-span",
+          "bounds": {
+            "x": 644.6658064516129,
+            "y": 951.92,
+            "width": 166.66838709677427,
+            "height": 56.16000000000008,
+            "right": 811.3341935483871,
+            "bottom": 1008.08
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-arc-span",
+          "bounds": {
+            "x": 887.5448704663213,
+            "y": 951.92,
+            "width": 144.9102590673574,
+            "height": 56.16000000000008,
+            "right": 1032.4551295336787,
+            "bottom": 1008.08
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-truss-span",
+          "bounds": {
+            "x": 1125.770909090909,
+            "y": 951.92,
+            "width": 132.45818181818186,
+            "height": 56.16000000000008,
+            "right": 1258.229090909091,
+            "bottom": 1008.08
+          }
+        }
+      ],
+      "selectedAction": null
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "stage": "BRIDGE",
+      "correctCandidateId": "bridge-flat-span",
+      "title": {
+        "x": 207,
+        "y": 70.33000000000001,
+        "width": 430,
+        "height": 30
+      },
+      "puzzleStage": {
+        "x": 171.72459999999998,
+        "y": 137.69000000000003,
+        "width": 500.55080000000004,
+        "height": 174.08
+      },
+      "robotLayout": {
+        "x": 29.044599999999974,
+        "y": 137.69000000000003,
+        "width": 138,
+        "height": 174.08
+      },
+      "choices": {
+        "x": 18.330000000000002,
+        "y": 320.35,
+        "width": 807.34,
+        "height": 56
+      },
+      "platformContactY": 326.875,
+      "robot": {
+        "x": 56.340607146563784,
+        "y": 202.4784272067387,
+        "width": 83.4079885877318,
+        "height": 127.73823109843082,
+        "right": 139.74859573429558,
+        "bottom": 330.2166583051695
+      },
+      "robotImage": {
+        "x": 56.340607146563784,
+        "y": 202.4784272067387,
+        "width": 83.4079885877318,
+        "height": 125.82738944365192,
+        "right": 139.74859573429558,
+        "bottom": 328.3058166503906
+      },
+      "bridgeLeft": {
+        "x": 186.741124,
+        "y": 264.7493607083568,
+        "width": 215.23684400000002,
+        "height": 107.11317119248827,
+        "right": 401.97796800000003,
+        "bottom": 371.86253190084506
+      },
+      "bridgeRight": {
+        "x": 442.1904489358372,
+        "y": 265.1400879994992,
+        "width": 214.9000101283255,
+        "height": 106.4395034491393,
+        "right": 657.0904590641627,
+        "bottom": 371.5795914486385
+      },
+      "bridgeGap": {
+        "x": 361.73666909090906,
+        "y": 276.39180000000005,
+        "width": 120.52666181818182,
+        "height": 59.18720000000002,
+        "right": 482.2633309090909,
+        "bottom": 335.57900000000006
+      },
+      "choicesRendered": [
+        {
+          "name": "mission9-choice-bridge-flat-span",
+          "bounds": {
+            "x": 129.18451612903226,
+            "y": 326.51000610351565,
+            "width": 129.63096774193548,
+            "height": 43.67999999999995,
+            "right": 258.81548387096774,
+            "bottom": 370.1900061035156
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-arc-span",
+          "bounds": {
+            "x": 365.6460103626943,
+            "y": 326.51000610351565,
+            "width": 112.70797927461138,
+            "height": 43.67999999999995,
+            "right": 478.3539896373057,
+            "bottom": 370.1900061035156
+          }
+        },
+        {
+          "name": "mission9-choice-bridge-truss-span",
+          "bounds": {
+            "x": 598.4884848484849,
+            "y": 326.51000610351565,
+            "width": 103.02303030303028,
+            "height": 43.67999999999995,
+            "right": 701.5115151515151,
+            "bottom": 370.1900061035156
+          }
+        }
+      ],
+      "selectedAction": null
+    }
+  ],
+  "antenna": {
+    "mission6": {
+      "sceneName": "Mission6Scene",
+      "repairedImageCount": 0,
+      "antennaPartCount": 0,
+      "assembledCount": 1,
+      "helperAntennaCount": 0,
+      "textures": [],
+      "antennaNames": []
+    },
+    "mission7": {
+      "sceneName": "Mission7Scene",
+      "repairedImageCount": 0,
+      "antennaPartCount": 2,
+      "assembledCount": 1,
+      "helperAntennaCount": 0,
+      "textures": [],
+      "antennaNames": [
+        "assembly-blueprint-antenna",
+        "assembly-installed-antenna"
+      ]
+    },
+    "mission8": {
+      "sceneName": "Mission8Scene",
+      "repairedImageCount": 0,
+      "antennaPartCount": 2,
+      "assembledCount": 1,
+      "helperAntennaCount": 0,
+      "textures": [],
+      "antennaNames": [
+        "assembly-blueprint-antenna",
+        "assembly-installed-antenna"
+      ]
+    },
+    "mission9": {
+      "sceneName": "Mission9Scene",
+      "repairedImageCount": 1,
+      "antennaPartCount": 0,
+      "assembledCount": 1,
+      "helperAntennaCount": 0,
+      "textures": [
+        "mission9-repaired-robot-image"
+      ],
+      "antennaNames": []
+    },
+    "mission10": {
+      "sceneName": "Mission10Scene",
+      "repairedImageCount": 1,
+      "antennaPartCount": 0,
+      "assembledCount": 1,
+      "helperAntennaCount": 0,
+      "textures": [
+        "mission10-intro-robot"
+      ],
+      "antennaNames": []
+    },
+    "victory": {
+      "sceneName": "VictoryScene",
+      "repairedImageCount": 1,
+      "antennaPartCount": 0,
+      "assembledCount": 0,
+      "helperAntennaCount": 0,
+      "textures": [
+        "victory-robot-v2"
+      ],
+      "antennaNames": []
+    }
+  },
+  "result": "PASS"
+}

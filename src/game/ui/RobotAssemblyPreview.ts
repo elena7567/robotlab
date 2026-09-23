@@ -109,6 +109,15 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
     return this.assemblyState;
   }
 
+  getFootAnchorWorld(): Phaser.Math.Vector2 {
+    const point = this.getWorldTransformMatrix().transformPoint(0, 0);
+    return new Phaser.Math.Vector2(point.x, point.y);
+  }
+
+  setInstalledPartsOpaque(): void {
+    for (const part of this.installedParts.values()) part.setAlpha(1);
+    this.setData('installedPartsAlpha', 1);
+  }
   setPowered(powered: boolean): void {
     for (const part of this.installedParts.values()) {
       if (powered) part.clearTint().setAlpha(1);
@@ -292,4 +301,34 @@ export class RobotAssemblyPreview extends Phaser.GameObjects.Container {
     add(this.scene.add.circle(244, -572, 25, 0x77f3ff).setName('robot-system-arm-right-light'), 0.78);
     add(this.scene.add.circle(0, -1228, 58, 0xb8ffcb).setName('robot-system-antenna-pulse'), 0.62);
   }
+}
+
+export const ASSEMBLED_ROBOT_CANONICAL_KEY = 'ASSEMBLED_ROBOT';
+export const ASSEMBLED_ROBOT_CANONICAL_FILE = 'assets/characters/robot-v2/parts/*';
+
+export function createAssembledRobotPreview(
+  scene: Phaser.Scene,
+  x: number,
+  feetY: number,
+  scale: number,
+  name: string,
+): RobotAssemblyPreview {
+  const robot = new RobotAssemblyPreview(scene, x, feetY, 5, { scale, blueprintAlpha: 0 })
+    .setSize(1000, 1382)
+    .setName(name)
+    .setData({
+      canonicalCharacterKey: ASSEMBLED_ROBOT_CANONICAL_KEY,
+      canonicalCharacterFile: ASSEMBLED_ROBOT_CANONICAL_FILE,
+      bodyTextureKey: 'robot-v2-repaired',
+      bodyFile: 'assets/characters/robot-v2/robot-repaired.png',
+      antennaTextureKey: 'robot-v2-antenna',
+      antennaFile: 'assets/characters/robot-v2/parts/robot-antenna.png',
+      antennaAttached: true,
+      antennaDuplicate: false,
+      characterRole: 'PRIMARY_CHARACTER',
+      visibleBoundsId: 'ROBOT_V2_ASSEMBLED',
+    });
+  robot.setPowered(true);
+  robot.setSystemsConnected(true);
+  return robot;
 }

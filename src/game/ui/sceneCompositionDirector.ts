@@ -7,6 +7,8 @@ import {
   PLATFORM_CENTER_X,
   PLATFORM_CONTACT_Y,
 } from './sceneLayout';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
 
 export const SEMANTIC_REGIONS = [
   'HEADER',
@@ -74,6 +76,30 @@ export interface Mission7SceneLayout {
   readonly repaired: { readonly x: number; readonly feetY: number; readonly scale: number };
   readonly showRepaired: boolean;
   readonly hint: { readonly x: number; readonly y: number; readonly width: number; readonly height: number; readonly fontSize: number };
+  readonly platform?: {
+    readonly centerX: number;
+    readonly topY: number;
+    readonly surfaceAtRobotX: number;
+    readonly surfaceAtCardX: number;
+    readonly surfaceAtHintX: number;
+  };
+}
+
+export interface Mission6SceneLayout {
+  readonly systems: { readonly x: number; readonly y: number; readonly width: number; readonly height: number };
+  readonly card: RectLayout;
+  readonly helper: { readonly x: number; readonly feetY: number; readonly scale: number };
+  readonly assembled: { readonly x: number; readonly feetY: number; readonly scale: number };
+  readonly helperZone: RectLayout;
+  readonly assembledZone: RectLayout;
+  readonly platform: {
+    readonly centerX: number;
+    readonly topY: number;
+    readonly surfaceAtCardX: number;
+    readonly surfaceAtHelperX: number;
+    readonly surfaceAtAssembledX: number;
+    readonly cardClearance: number;
+  };
 }
 
 export interface Mission8SceneLayout {
@@ -84,6 +110,8 @@ export interface Mission8SceneLayout {
   readonly stripY: number;
   readonly arrowsY: number;
   readonly actionsY: number;
+  readonly primaryCtaY?: number;
+  readonly controlPanelHeight?: number;
   readonly controlCenterX: number;
   readonly controlWidth: number;
   readonly arrowSize: number;
@@ -129,6 +157,7 @@ export interface Mission10SceneLayout {
   readonly introRegions: Readonly<Record<'TOP_LEFT_CONTROL' | 'TOP_CENTER_TITLE' | 'TOP_RIGHT_CONTROL' | 'INTRO_MESSAGE' | 'HERO_GROUP' | 'CTA', RectLayout>>;
   readonly introGroundY: number;
   readonly launchGroundY: number;
+  readonly launchRobotZone: RectLayout;
   readonly portraitGate: boolean;
   readonly showExtendedHeader: boolean;
   readonly title: RectLayout;
@@ -137,6 +166,8 @@ export interface Mission10SceneLayout {
   readonly world: RectLayout;
   readonly robot: RectLayout;
   readonly puzzleStage: RectLayout;
+  readonly pathChoiceGroup: RectLayout;
+  readonly platformCenterX: number;
   readonly pathLanes: readonly [RectLayout, RectLayout, RectLayout];
   readonly relayBoard: RectLayout;
   readonly signalBoard: RectLayout;
@@ -175,6 +206,7 @@ export interface SceneComposition {
   readonly whitespaceAllocation: readonly ('CHARACTER_PRESENCE' | 'SUPPORT_REACTION' | 'BREATHING_ROOM' | 'BACKGROUND_VISIBILITY')[];
   readonly taskCard: RectLayout;
   readonly progress: RectLayout & { readonly horizontal: boolean; readonly sizing: ProgressSizing };
+  readonly mission6?: Mission6SceneLayout;
   readonly mission7?: Mission7SceneLayout;
   readonly mission8?: Mission8SceneLayout;
   readonly mission9?: Mission9SceneLayout;
@@ -199,6 +231,35 @@ function rect(x: number, y: number, width: number, height: number): RectLayout {
 
 function emptyRect(layout: ResponsiveLayout): RectLayout {
   return rect(layout.safe.left, layout.safe.top, 1, 1);
+}
+
+function createPlatformSurfaceResolver(width: number, height: number): {
+  readonly centerX: number;
+  readonly topY: number;
+  readonly scale: number;
+  readonly offsetX: number;
+  readonly offsetY: number;
+  readonly surfaceYAt: (worldX: number) => number;
+} {
+  const scale = Math.max(width / LOGICAL_SCENE_WIDTH, height / LOGICAL_SCENE_HEIGHT);
+  const offsetX = (width - LOGICAL_SCENE_WIDTH * scale) / 2;
+  const offsetY = (height - LOGICAL_SCENE_HEIGHT * scale) / 2;
+  const centerX = offsetX + PLATFORM_CENTER_X * scale;
+  const topY = offsetY + PLATFORM_CONTACT_Y * scale;
+  const radiusX = 640 * scale;
+  const radiusY = 24 * scale;
+  const centerY = topY + radiusY;
+  return {
+    centerX,
+    topY,
+    scale,
+    offsetX,
+    offsetY,
+    surfaceYAt: (worldX: number) => {
+      const normalizedX = clampValue(-1, (worldX - centerX) / radiusX, 1);
+      return centerY - radiusY * Math.sqrt(Math.max(0, 1 - normalizedX * normalizedX));
+    },
+  };
 }
 
 export function resolveComponentSize(contract: ComponentSizeContract, available: RectLayout): Size2D {
@@ -234,6 +295,7 @@ function commonRegions(layout: ResponsiveLayout): Record<SemanticRegionName, Rec
 function composeSharedMission(layout: ResponsiveLayout, missionId: 1 | 2 | 3 | 4 | 5 | 6): SceneComposition {
   const regions = commonRegions(layout);
   const shortLandscape = layout.semanticMode === 'PHONE_LANDSCAPE_SHORT';
+  const desktopAssembly = layout.semanticMode === 'DESKTOP' && missionId >= 1 && missionId <= 5;
   let taskCard = layout.taskCard;
   let progress = layout.progress;
   let surface: SceneSurfaceLayout | undefined;
@@ -285,6 +347,58 @@ function composeSharedMission(layout: ResponsiveLayout, missionId: 1 | 2 | 3 | 4
       : rect(taskCard.x, taskCard.y + taskCard.height - layout.taskCardSizing.actionHeight - 8, taskCard.width, layout.taskCardSizing.actionHeight);
     regions.SECONDARY_ACTIONS = externalSecondaryAction ? supportAction : regions.PRIMARY_ACTIONS;
     progress = { ...progress, x: support.x, y: support.y, width: support.width, height: Math.min(progress.height, support.height * 0.34) };
+  } else if (desktopAssembly) {
+    const platform = createPlatformSurfaceResolver(layout.viewportWidth, layout.viewportHeight);
+    const centerGap = clampValue(64, layout.viewportWidth * 0.06, 112);
+    const card = rect(
+      platform.centerX - layout.taskCard.width / 2,
+      layout.taskCard.y,
+      layout.taskCard.width,
+      layout.taskCard.height,
+    );
+    const panelX = Math.min(
+      layout.viewportWidth - layout.safe.right - 48 - layout.progress.width,
+      card.x + card.width + centerGap,
+    );
+    progress = {
+      ...layout.progress,
+      x: panelX,
+      y: card.y + clampValue(44, card.height * 0.16, 72),
+      width: layout.progress.width,
+      height: layout.progress.height,
+    };
+    const helperSizing = resolveWorldCharacterScale({
+      profile: CHARACTER_VISUAL_PROFILES.helper,
+      role: DesktopCharacterRole.ASSEMBLY_ENVELOPE,
+      viewportHeight: layout.viewportHeight,
+      parentScale: platform.scale,
+    });
+    const helperVisibleWidth = CHARACTER_VISUAL_PROFILES.helper.visibleWidthAtScale1 * helperSizing.resolvedScale * platform.scale;
+    const leftDoorClearX = platform.offsetX + 170 * platform.scale;
+    const robotSafeLeft = Math.max(layout.safe.left + layout.gapL + helperVisibleWidth / 2, leftDoorClearX);
+    const robotSafeRight = Math.max(robotSafeLeft, card.x - centerGap - helperVisibleWidth / 2);
+    const robotX = robotSafeLeft + Math.max(0, robotSafeRight - robotSafeLeft) * 0.56;
+    const robotFeetY = platform.surfaceYAt(robotX);
+    const robotTopY = Math.min(taskCard.y, robotFeetY - helperSizing.targetVisibleHeight);
+
+    taskCard = card;
+    regions.PRIMARY_GAMEPLAY = taskCard;
+    regions.STATUS = rect(progress.x, progress.y, progress.width, progress.height);
+    regions.CHARACTER = rect(
+      robotX - helperVisibleWidth / 2,
+      robotTopY,
+      helperVisibleWidth,
+      Math.max(1, robotFeetY - robotTopY),
+    );
+    regions.SECONDARY_CHARACTER = regions.STATUS;
+    regions.FEEDBACK = rect(
+      taskCard.x + layout.taskCardSizing.horizontalPadding,
+      taskCard.y + taskCard.height - layout.taskCardSizing.actionHeight - 46,
+      taskCard.width - layout.taskCardSizing.horizontalPadding * 2,
+      28,
+    );
+    regions.PRIMARY_ACTIONS = rect(taskCard.x, taskCard.y + taskCard.height - layout.taskCardSizing.actionHeight - 8, taskCard.width, layout.taskCardSizing.actionHeight);
+    regions.SECONDARY_ACTIONS = regions.PRIMARY_ACTIONS;
   } else {
     regions.PRIMARY_GAMEPLAY = taskCard;
     regions.STATUS = rect(progress.x, progress.y, progress.width, progress.height);
@@ -331,6 +445,130 @@ function composeSharedMission(layout: ResponsiveLayout, missionId: 1 | 2 | 3 | 4
   };
 }
 
+function composeMission6(layout: ResponsiveLayout): SceneComposition {
+  if (layout.semanticMode !== 'DESKTOP') return composeSharedMission(layout, 6);
+
+  const { viewportWidth: width, viewportHeight: height, safe } = layout;
+  const regions = commonRegions(layout);
+  const platform = createPlatformSurfaceResolver(width, height);
+  const responsiveFactor = clampValue(0.88, Math.min(width / 1600, height / 900), 1.2);
+  const cardClearanceTarget = clampValue(60, 70 * responsiveFactor, 75);
+  const cardHeight = Math.min(layout.taskCard.height, clampValue(336, height * 0.39, 390));
+  const card = rect(
+    platform.centerX - layout.taskCard.width / 2,
+    platform.surfaceYAt(platform.centerX) - cardClearanceTarget - cardHeight,
+    layout.taskCard.width,
+    cardHeight,
+  );
+  const cardClearance = platform.surfaceYAt(platform.centerX) - (card.y + card.height);
+  const helperSizing = resolveWorldCharacterScale({
+    profile: CHARACTER_VISUAL_PROFILES.helper,
+    role: DesktopCharacterRole.WORLD_PRIMARY,
+    viewportHeight: height,
+    parentScale: platform.scale,
+  });
+  const assembledSizing = resolveWorldCharacterScale({
+    profile: CHARACTER_VISUAL_PROFILES.assembled,
+    role: DesktopCharacterRole.WORLD_SECONDARY,
+    viewportHeight: height,
+    parentScale: platform.scale,
+  });
+  const helperScale = helperSizing.resolvedScale;
+  const assembledScale = assembledSizing.resolvedScale;
+  const assembledVisibleWidth = CHARACTER_VISUAL_PROFILES.assembled.visibleWidthAtScale1 * assembledScale * platform.scale;
+  const helperVisibleWidth = CHARACTER_VISUAL_PROFILES.helper.visibleWidthAtScale1 * helperScale * platform.scale;
+  const sideGap = clampValue(38, width * 0.035, 64);
+  const contentLeft = safe.left + layout.gapL;
+  const contentRight = width - safe.right - layout.gapL;
+  const helperZone = rect(
+    contentLeft,
+    card.y,
+    Math.max(1, card.x - sideGap - contentLeft),
+    card.height,
+  );
+  const assembledZone = rect(
+    card.x + card.width + sideGap,
+    card.y,
+    Math.max(1, contentRight - (card.x + card.width + sideGap)),
+    card.height,
+  );
+  const helperX = clampValue(
+    helperZone.x + helperVisibleWidth / 2,
+    helperZone.x + helperZone.width * 0.5,
+    helperZone.x + helperZone.width - helperVisibleWidth / 2,
+  );
+  const assembledX = clampValue(
+    assembledZone.x + assembledVisibleWidth / 2,
+    assembledZone.x + assembledZone.width * 0.5,
+    assembledZone.x + assembledZone.width - assembledVisibleWidth / 2,
+  );
+  const helperFeetY = platform.surfaceYAt(helperX);
+  const assembledFeetY = platform.surfaceYAt(assembledX);
+  const systemsWidth = Math.min(270, Math.max(230, width * 0.17));
+  const systemsHeight = 38;
+  const systemsY = layout.headerY + layout.headerFontSize * 0.72 + systemsHeight * 0.55;
+  const mission6: Mission6SceneLayout = {
+    systems: { x: platform.centerX, y: systemsY, width: systemsWidth, height: systemsHeight },
+    card,
+    helper: { x: helperX, feetY: helperFeetY, scale: helperScale },
+    assembled: { x: assembledX, feetY: assembledFeetY, scale: assembledScale },
+    helperZone,
+    assembledZone,
+    platform: {
+      centerX: platform.centerX,
+      topY: platform.topY,
+      surfaceAtCardX: platform.surfaceYAt(platform.centerX),
+      surfaceAtHelperX: helperFeetY,
+      surfaceAtAssembledX: assembledFeetY,
+      cardClearance,
+    },
+  };
+
+  regions.PRIMARY_GAMEPLAY = card;
+  regions.CHARACTER = assembledZone;
+  regions.SECONDARY_CHARACTER = helperZone;
+  regions.STATUS = rect(
+    mission6.systems.x - mission6.systems.width / 2,
+    mission6.systems.y - mission6.systems.height / 2,
+    mission6.systems.width,
+    mission6.systems.height,
+  );
+  regions.FEEDBACK = rect(
+    card.x + layout.taskCardSizing.horizontalPadding,
+    card.y + card.height - layout.taskCardSizing.actionHeight - 48,
+    card.width - layout.taskCardSizing.horizontalPadding * 2,
+    28,
+  );
+  regions.PRIMARY_ACTIONS = rect(card.x, card.y + card.height - layout.taskCardSizing.actionHeight - 8, card.width, layout.taskCardSizing.actionHeight);
+  regions.SECONDARY_ACTIONS = regions.PRIMARY_ACTIONS;
+  const progress = {
+    ...layout.progress,
+    x: regions.STATUS.x,
+    y: regions.STATUS.y,
+    width: regions.STATUS.width,
+    height: regions.STATUS.height,
+  };
+
+  return {
+    missionId: 6, policyId: `MISSION_6_${layout.semanticMode}`, semanticMode: layout.semanticMode,
+    regions, sizeContracts: COMPONENT_SIZE_CONTRACTS,
+    components: {
+      taskCard: { contract: 'taskCard', rect: card },
+      statusPanel: { contract: 'statusPanel', rect: regions.STATUS },
+      actionRow: { contract: 'actionRow', rect: regions.PRIMARY_ACTIONS },
+      modal: { contract: 'modal', rect: regions.MODAL },
+      characterZone: { contract: 'characterZone', rect: regions.CHARACTER },
+    },
+    characters: [
+      { id: 'HELPER', role: 'SUPPORTING_CHARACTER', presentation: 'FULL_BODY', region: 'SECONDARY_CHARACTER', coordinateSpace: 'SCREEN', visibleBoundsId: 'ROBOT_V2_HELPER', visible: true, occupancy: { min: 0.34, ideal: 0.46, max: 0.58 } },
+      { id: 'REPAIRED', role: 'PRIMARY_CHARACTER', presentation: 'FULL_BODY', region: 'CHARACTER', coordinateSpace: 'SCREEN', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', visible: true, occupancy: { min: 0.48, ideal: 0.72, max: 0.86 } },
+    ],
+    whitespaceAllocation: ['CHARACTER_PRESENCE', 'SUPPORT_REACTION', 'BACKGROUND_VISIBILITY'],
+    taskCard: card,
+    progress,
+    mission6,
+  };
+}
 function composeMission7(layout: ResponsiveLayout): SceneComposition {
   const { viewportWidth: width, viewportHeight: height, safe, semanticMode } = layout;
   const regions = commonRegions(layout);
@@ -360,38 +598,105 @@ function composeMission7(layout: ResponsiveLayout): SceneComposition {
     regions.SECONDARY_ACTIONS = rect(mission7.hint.x - mission7.hint.width / 2, mission7.hint.y - mission7.hint.height / 2, mission7.hint.width, mission7.hint.height);
     regions.PRIMARY_ACTIONS = regions.SECONDARY_ACTIONS;
   } else {
-    const contentTop = shortLandscape ? layout.gameplayZone.y + 18 : layout.headerZone.y + (semanticMode === 'DESKTOP' ? layout.headerHeight : 0) + layout.gapS + 78;
+    const desktop = semanticMode === 'DESKTOP';
+    const platform = createPlatformSurfaceResolver(width, height);
+    const platformCenterX = platform.centerX;
+    const contentTop = shortLandscape ? layout.gameplayZone.y + 18 : layout.headerZone.y + layout.headerHeight + (desktop ? layout.gapM + 14 : layout.gapL + 52);
     const contentBottom = height - safe.bottom;
     const available = rect(safe.left, contentTop, width - safe.left - safe.right, contentBottom - contentTop);
+    const responsiveFactor = clampValue(0.8, Math.min(width / 1600, height / 900), 1.2);
+    const hintHeight = desktop ? 54 : shortLandscape ? 52 : 56;
+    const hintGap = desktop ? clampValue(12, 14 * responsiveFactor, 18) : layout.gapM;
+    const supportGap = desktop ? clampValue(40, width * 0.036, 64) : layout.gapM;
+    const compositionWidth = desktop
+      ? Math.min(980, Math.max(820, available.width * 0.78))
+      : available.width;
+    const compositionLeft = desktop
+      ? clampValue(available.x, platformCenterX - compositionWidth * 0.5, available.x + Math.max(0, available.width - compositionWidth))
+      : available.x;
     const supportWidth = shortLandscape
-      ? clampValue(170, available.width * 0.28, 230)
-      : clampValue(210, available.width * 0.24, 300);
-    const boardAvailable = rect(available.x, available.y, available.width - supportWidth - layout.gapM, available.height);
-    const boardWidth = Math.min(COMPONENT_SIZE_CONTRACTS.wireBoard.max.width, boardAvailable.width);
-    const boardHeight = Math.min(COMPONENT_SIZE_CONTRACTS.wireBoard.max.height, boardAvailable.height);
-    const board = rect(boardAvailable.x + Math.max(0, boardAvailable.width - boardWidth), boardAvailable.y, boardWidth, boardHeight);
-    const support = rect(board.x + board.width + layout.gapM, available.y, supportWidth, available.height);
-    const hintHeight = shortLandscape ? 52 : 56;
-    const hintWidth = Math.min(support.width, shortLandscape ? 190 : 230);
-    const hint = {
-      x: support.x + support.width / 2, y: support.y + support.height - hintHeight / 2,
-      width: hintWidth, height: hintHeight, fontSize: shortLandscape ? 16 : 19,
+      ? clampValue(170, compositionWidth * 0.28, 230)
+      : desktop ? clampValue(230, compositionWidth * 0.27, 285) : clampValue(210, compositionWidth * 0.24, 300);
+    const boardAvailableWidth = Math.max(1, compositionWidth - supportWidth - (desktop ? supportGap : layout.gapM));
+    const boardWidth = desktop
+      ? Math.min(600, Math.max(520, boardAvailableWidth * 0.92))
+      : Math.min(COMPONENT_SIZE_CONTRACTS.wireBoard.max.width, boardAvailableWidth);
+    const maxBoardHeight = Math.max(260, available.height - hintHeight - hintGap);
+    const boardHeight = desktop
+      ? Math.min(370, Math.max(340, maxBoardHeight), boardWidth * 0.72)
+      : Math.min(COMPONENT_SIZE_CONTRACTS.wireBoard.max.height, maxBoardHeight);
+    const boardCenterX = desktop
+      ? platformCenterX
+      : compositionLeft + boardAvailableWidth - boardWidth / 2;
+    const boardX = desktop
+      ? platformCenterX - boardWidth / 2
+      : clampValue(compositionLeft, boardCenterX - boardWidth / 2, compositionLeft + Math.max(0, boardAvailableWidth - boardWidth));
+    const repairedSizing = desktop
+      ? resolveWorldCharacterScale({
+        profile: CHARACTER_VISUAL_PROFILES.assembled,
+        role: DesktopCharacterRole.WORLD_SUPPORT,
+        viewportHeight: height,
+      })
+      : undefined;
+    const repairedVisibleHeight = repairedSizing?.targetVisibleHeight
+      ?? clampValue(132, Math.max(110, boardHeight) * 0.78, shortLandscape ? 190 : 240);
+    const repairedScale = repairedSizing?.resolvedScale ?? repairedVisibleHeight / CHARACTER_VISUAL_PROFILES.assembled.visibleHeightAtScale1;
+    const assembledRobotVisibleWidth = CHARACTER_VISUAL_PROFILES.assembled.visibleWidthAtScale1 * repairedScale;
+    const leftDoorClearX = platform.offsetX + 170 * platform.scale;
+    const sideZoneRightX = platformCenterX - 290 * platform.scale;
+    const sideZoneCardLimitX = boardX - clampValue(48, width * 0.032, 64) - assembledRobotVisibleWidth / 2;
+    const sideZoneLeftX = Math.max(safe.left + assembledRobotVisibleWidth / 2 + layout.gapL, leftDoorClearX);
+    const sideZoneMaxX = Math.max(sideZoneLeftX, Math.min(sideZoneRightX, sideZoneCardLimitX));
+    const sideZonePreferredX = sideZoneLeftX + Math.max(0, sideZoneMaxX - sideZoneLeftX) * 0.58;
+    const robotX = desktop ? clampValue(sideZoneLeftX, sideZonePreferredX, sideZoneMaxX) : 0;
+    const cardCenterX = boardX + boardWidth / 2;
+    const cardSurfaceY = platform.surfaceYAt(cardCenterX);
+    const cardClearance = clampValue(72, 72 * responsiveFactor, 76);
+    const boardY = desktop
+      ? clampValue(available.y, cardSurfaceY - cardClearance - boardHeight, contentBottom - hintHeight - hintGap - boardHeight)
+      : available.y;
+    const board = rect(boardX, boardY, boardWidth, boardHeight);
+    const support = desktop
+      ? rect(board.x - supportGap - supportWidth, board.y, supportWidth, board.height)
+      : rect(board.x + board.width + supportGap, board.y, supportWidth, board.height);
+    const hintWidth = desktop ? Math.min(230, board.width * 0.42) : Math.min(support.width, shortLandscape ? 190 : 230);
+    const hint = desktop
+      ? {
+        x: board.x + board.width / 2,
+        y: board.y + board.height + hintGap + hintHeight / 2,
+        width: hintWidth, height: hintHeight, fontSize: 19,
+      }
+      : {
+        x: support.x + support.width / 2, y: support.y + support.height - hintHeight / 2,
+        width: hintWidth, height: hintHeight, fontSize: shortLandscape ? 16 : 19,
+      };
+    const characterHeight = desktop ? board.height : Math.max(110, hint.y - hintHeight / 2 - layout.gapS - support.y);
+    const leftFloorSurfaceYAt = (worldX: number): number => {
+      const localX = clampValue(0, (worldX - leftDoorClearX) / Math.max(1, sideZoneRightX - leftDoorClearX), 1);
+      return platform.topY + platform.scale * (6 - localX * 3);
     };
-    const characterHeight = Math.max(110, hint.y - hintHeight / 2 - layout.gapS - support.y);
-    const repairedVisibleHeight = clampValue(132, characterHeight * 0.78, shortLandscape ? 190 : 240);
-    const repairedScale = repairedVisibleHeight / 1402;
+    const robotGroundY = desktop ? leftFloorSurfaceYAt(robotX) : hint.y - hint.height / 2 - layout.gapS;
+    const robotFeetY = robotGroundY;
+    const surfaceAtHintX = platform.surfaceYAt(hint.x);
     mission7 = {
-      showHeader: semanticMode === 'DESKTOP', showHelper: false,
-      systems: { x: width / 2, y: contentTop - 52, width: systemsWidth },
+      showHeader: false, showHelper: false,
+      systems: { x: width / 2, y: contentTop - (desktop ? 42 : 52), width: systemsWidth },
       board,
-      helper: { x: support.x + support.width / 2, feetY: hint.y - hint.height / 2 - layout.gapS, scale: 0 },
-      repaired: { x: support.x + support.width / 2, feetY: hint.y - hint.height / 2 - layout.gapS, scale: repairedScale },
+      helper: { x: support.x + support.width / 2, feetY: robotFeetY, scale: 0 },
+      repaired: { x: desktop ? robotX : support.x + support.width / 2, feetY: robotFeetY, scale: repairedScale },
       showRepaired: true, hint,
+      platform: desktop ? {
+        centerX: platformCenterX,
+        topY: platform.topY,
+        surfaceAtRobotX: robotGroundY,
+        surfaceAtCardX: cardSurfaceY,
+        surfaceAtHintX,
+      } : undefined,
     };
     regions.PRIMARY_GAMEPLAY = board;
     regions.CHARACTER = rect(support.x, support.y, support.width, characterHeight);
     regions.SECONDARY_CHARACTER = emptyRect(layout);
-    regions.STATUS = rect(width / 2 - systemsWidth / 2, mission7.systems.y - 26, systemsWidth, 52);
+    regions.STATUS = rect(width / 2 - systemsWidth / 2, mission7.systems.y - (desktop ? 19 : 26), systemsWidth, desktop ? 38 : 52);
     regions.SECONDARY_ACTIONS = rect(hint.x - hint.width / 2, hint.y - hint.height / 2, hint.width, hint.height);
     regions.PRIMARY_ACTIONS = regions.SECONDARY_ACTIONS;
   }
@@ -442,26 +747,68 @@ function composeMission8(layout: ResponsiveLayout): SceneComposition {
       controlCenterX: width / 2, controlWidth: layout.controlsZone.width, arrowSize, actionHeight,
     };
   } else {
-    const contentTop = shortLandscape ? layout.gameplayZone.y + 18 : layout.headerZone.y + layout.headerZone.height + layout.gapL + 32;
+    const desktop = semanticMode === 'DESKTOP';
+    const contentTop = shortLandscape ? layout.gameplayZone.y + 18 : layout.headerZone.y + layout.headerZone.height + layout.gapL + (desktop ? 18 : 32);
     const contentBottom = height - safe.bottom;
     const available = rect(safe.left, contentTop, width - safe.left - safe.right, contentBottom - contentTop);
-    const controlWidth = shortLandscape ? clampValue(250, available.width * 0.36, 320) : clampValue(300, available.width * 0.34, 430);
-    const boardAvailable = rect(available.x, available.y, available.width - controlWidth - layout.gapL, available.height);
-    const boardWidth = Math.min(COMPONENT_SIZE_CONTRACTS.programBoard.max.width, boardAvailable.width);
-    const boardHeight = Math.min(COMPONENT_SIZE_CONTRACTS.programBoard.max.height, boardAvailable.height);
-    const board = rect(boardAvailable.x + Math.max(0, (boardAvailable.width - boardWidth) / 2), boardAvailable.y, boardWidth, boardHeight);
-    const controlX = boardAvailable.x + boardAvailable.width + layout.gapL;
-    const controlCenterX = controlX + controlWidth / 2;
-    const stripY = available.y + (shortLandscape ? 28 : 42);
-    const arrowSize = shortLandscape ? CHILD_UI.touch.minimum : 62;
-    const actionsY = Math.min(contentBottom - CHILD_UI.touch.minimum / 2, stripY + (shortLandscape ? 190 : 230));
-    mission8 = {
-      board,
-      helper: { x: 0, feetY: 0, scale: 0 },
-      systemsY: contentTop - (shortLandscape ? 51 : 58), routeY: contentTop - 24,
-      stripY, arrowsY: stripY + (shortLandscape ? 88 : 104), actionsY,
-      controlCenterX, controlWidth, arrowSize, actionHeight: CHILD_UI.touch.minimum,
-    };
+    if (desktop) {
+      const backgroundScale = Math.max(width / LOGICAL_SCENE_WIDTH, height / LOGICAL_SCENE_HEIGHT);
+      const backgroundOffsetX = (width - LOGICAL_SCENE_WIDTH * backgroundScale) / 2;
+      const platformCenterX = backgroundOffsetX + PLATFORM_CENTER_X * backgroundScale;
+      const compositionWidth = Math.min(1210, Math.max(1040, available.width * 0.86));
+      const controlWidth = clampValue(460, compositionWidth * 0.39, 500);
+      const boardControlGap = 32;
+      const boardWidth = Math.min(COMPONENT_SIZE_CONTRACTS.programBoard.max.width, compositionWidth - controlWidth - boardControlGap);
+      const boardHeight = Math.min(COMPONENT_SIZE_CONTRACTS.programBoard.max.height, Math.max(360, available.height * 0.72), boardWidth * 0.66);
+      const actualCompositionWidth = boardWidth + boardControlGap + controlWidth;
+      const compositionLeft = clampValue(
+        available.x,
+        platformCenterX - actualCompositionWidth / 2,
+        available.x + Math.max(0, available.width - actualCompositionWidth),
+      );
+      const boardCenterY = clampValue(
+        available.y + boardHeight / 2,
+        height * 0.5,
+        Math.min(height * 0.82 - boardHeight / 2, contentBottom - height * 0.08 - boardHeight / 2),
+      );
+      const boardY = boardCenterY - boardHeight / 2;
+      const board = rect(compositionLeft, boardY, boardWidth, boardHeight);
+      const controlCenterX = board.x + board.width + boardControlGap + controlWidth / 2;
+      const boardCenter = board.y + board.height / 2;
+      const arrowSize = clampValue(62, board.height * 0.16, 70);
+      const actionHeight = 54;
+      const controlPanelHeight = clampValue(362, board.height * 0.96, 400);
+      const panelTop = boardCenter - controlPanelHeight / 2;
+      const stripY = panelTop + 66;
+      const arrowsY = stripY + 120;
+      const actionsY = arrowsY + 74;
+      const primaryCtaY = actionsY + actionHeight + 12;
+      mission8 = {
+        board,
+        helper: { x: 0, feetY: 0, scale: 0 },
+        systemsY: contentTop - 46, routeY: contentTop - 18,
+        stripY, arrowsY, actionsY, primaryCtaY, controlPanelHeight,
+        controlCenterX, controlWidth, arrowSize, actionHeight,
+      };
+    } else {
+      const controlWidth = shortLandscape ? clampValue(250, available.width * 0.36, 320) : clampValue(300, available.width * 0.34, 430);
+      const boardAvailable = rect(available.x, available.y, available.width - controlWidth - layout.gapL, available.height);
+      const boardWidth = Math.min(COMPONENT_SIZE_CONTRACTS.programBoard.max.width, boardAvailable.width);
+      const boardHeight = Math.min(COMPONENT_SIZE_CONTRACTS.programBoard.max.height, boardAvailable.height);
+      const board = rect(boardAvailable.x + Math.max(0, (boardAvailable.width - boardWidth) / 2), boardAvailable.y, boardWidth, boardHeight);
+      const controlX = boardAvailable.x + boardAvailable.width + layout.gapL;
+      const controlCenterX = controlX + controlWidth / 2;
+      const stripY = available.y + (shortLandscape ? 28 : 42);
+      const arrowSize = shortLandscape ? CHILD_UI.touch.minimum : 62;
+      const actionsY = Math.min(contentBottom - CHILD_UI.touch.minimum / 2, stripY + (shortLandscape ? 190 : 230));
+      mission8 = {
+        board,
+        helper: { x: 0, feetY: 0, scale: 0 },
+        systemsY: contentTop - (shortLandscape ? 51 : 58), routeY: contentTop - 24,
+        stripY, arrowsY: stripY + (shortLandscape ? 88 : 104), actionsY,
+        controlCenterX, controlWidth, arrowSize, actionHeight: CHILD_UI.touch.minimum,
+      };
+    }
   }
   regions.PRIMARY_GAMEPLAY = mission8.board;
   const boardRight = mission8.board.x + mission8.board.width;
@@ -530,7 +877,7 @@ function composeMission9(layout: ResponsiveLayout): SceneComposition {
     ? rect(contentRight - statusWidth, title.y + title.height + layout.gapXS, statusWidth, statusHeight)
     : rect(contentRight - statusWidth, title.y, statusWidth, statusHeight);
 
-  const feedbackHeight = shortLandscape ? 26 : 30;
+  const feedbackHeight = shortLandscape ? 26 : desktop ? 22 : 30;
   const feedbackTop = title.y + title.height + layout.gapXS;
   const feedbackRight = shortLandscape ? progress.x - layout.gapS : contentRight;
   const feedbackWidth = Math.min(shortLandscape ? 360 : 520, Math.max(1, feedbackRight - contentLeft));
@@ -542,31 +889,40 @@ function composeMission9(layout: ResponsiveLayout): SceneComposition {
   const belowPlatformHeight = Math.max(CHILD_UI.touch.minimum, safeBottom - platformContactY - layout.gapXS);
   const controlHeight = Math.min(desiredControlHeight, belowPlatformHeight);
   const controlGap = shortLandscape ? 8 : 12;
+  const gameplayLift = shortLandscape ? 16 : 28;
   const choicesTop = Math.max(
-    platformContactY + layout.gapXS,
-    safeBottom - controlHeight - (shortLandscape ? 0 : layout.gapM),
+    platformContactY + layout.gapXS - gameplayLift,
+    safeBottom - controlHeight - (shortLandscape ? 0 : layout.gapL),
   );
   const choices = rect(contentLeft, choicesTop, contentWidth, controlHeight);
 
   const stageTop = Math.max(feedback.y + feedback.height, progress.y + progress.height) + layout.gapXS;
-  const stageBottom = Math.min(platformContactY, choices.y - layout.gapXS);
+  const stageBottom = Math.min(platformContactY, choices.y - layout.gapS);
   const stageHeight = Math.max(1, stageBottom - stageTop);
   const puzzleWidth = Math.min(
-    shortLandscape ? 540 : 760,
-    contentWidth * (shortLandscape ? 0.62 : 0.61),
+    shortLandscape ? 540 : 700,
+    contentWidth * (shortLandscape ? 0.62 : 0.58),
   );
   const puzzleStage = rect(platformCenterX - puzzleWidth / 2, stageTop, puzzleWidth, stageHeight);
-  const robotGap = shortLandscape ? layout.gapXS : layout.gapS;
+  const robotGap = shortLandscape ? layout.gapXS : Math.max(8, layout.gapS - 4);
   const robotRight = puzzleStage.x - robotGap;
+  const mission9Sizing = desktop
+    ? resolveWorldCharacterScale({
+      profile: CHARACTER_VISUAL_PROFILES.assembled,
+      role: DesktopCharacterRole.WORLD_PRIMARY,
+      viewportHeight: height,
+    })
+    : undefined;
+  const robotVisibleHeight = mission9Sizing?.targetVisibleHeight
+    ?? (shortLandscape ? clampValue(118, stageHeight * 0.64, 172) : clampValue(128, stageHeight * 0.52, 270));
+  const desiredRobotWidth = CHARACTER_VISUAL_PROFILES.assembled.visibleWidthAtScale1
+    * (mission9Sizing?.resolvedScale ?? robotVisibleHeight / CHARACTER_VISUAL_PROFILES.assembled.visibleHeightAtScale1);
   const robotWidth = Math.min(
-    shortLandscape ? 138 : 230,
+    shortLandscape ? 138 : Math.max(230, desiredRobotWidth),
     Math.max(1, robotRight - contentLeft),
   );
   const robot = rect(robotRight - robotWidth, stageTop, robotWidth, stageHeight);
   const world = rect(contentLeft, stageTop, contentWidth, stageHeight);
-  const robotVisibleHeight = shortLandscape
-    ? clampValue(118, stageHeight * 0.64, 172)
-    : clampValue(128, stageHeight * 0.52, 270);
 
   regions.PRIMARY_GAMEPLAY = puzzleStage;
   regions.CHARACTER = robot;
@@ -589,7 +945,7 @@ function composeMission9(layout: ResponsiveLayout): SceneComposition {
     platformContactY,
     controlGap,
     controlHeight,
-    robotScale: robotVisibleHeight / 1402,
+    robotScale: mission9Sizing?.resolvedScale ?? robotVisibleHeight / CHARACTER_VISUAL_PROFILES.assembled.visibleHeightAtScale1,
   };
   return {
     missionId: 9, policyId: `MISSION_9_${semanticMode}`, semanticMode,
@@ -640,19 +996,55 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
   const worldTop = feedback.y + feedback.height + (shortLandscape ? 1 : layout.gapXS);
   const worldBottom = safeBottom - (shortLandscape ? 4 : layout.gapXS);
   const world = rect(safeLeft, worldTop, safeWidth, Math.max(1, worldBottom - worldTop));
-  const robotWidth = Math.min(desktop ? 250 : shortLandscape ? 112 : 180, world.width * (shortLandscape ? 0.22 : 0.24));
-  const robot = rect(world.x, world.y, robotWidth, world.height);
+  const mission10Sizing = desktop
+    ? resolveWorldCharacterScale({
+      profile: CHARACTER_VISUAL_PROFILES.assembled,
+      role: DesktopCharacterRole.WORLD_PRIMARY,
+      viewportHeight: height,
+    })
+    : undefined;
+  const mission10VisibleWidth = mission10Sizing
+    ? CHARACTER_VISUAL_PROFILES.assembled.visibleWidthAtScale1 * mission10Sizing.resolvedScale
+    : 0;
+  const robotWidth = Math.min(
+    desktop ? Math.max(250, mission10VisibleWidth) : shortLandscape ? 112 : 180,
+    world.width * (desktop ? 0.32 : shortLandscape ? 0.22 : 0.24),
+  );
   const targetGap = shortLandscape ? 8 : 12;
+  const consoleWidth = Math.min(desktop ? 460 : shortLandscape ? 340 : 400, world.width * 0.48);
+  const launchConsoleVisibleLeft = width / 2 - consoleWidth / 2;
+  const launchRobotDesiredLeft = width * 0.12;
+  const launchRobotMaxLeft = launchConsoleVisibleLeft - 64 - robotWidth;
+  const launchRobotLeft = desktop
+    ? Math.min(launchRobotMaxLeft, Math.max(safeLeft + layout.gapL, launchRobotDesiredLeft))
+    : world.x;
+  const launchRobotZone = rect(launchRobotLeft, world.y, robotWidth, world.height);
+  const robot = launchRobotZone;
   const puzzleStage = rect(
     robot.x + robot.width + targetGap,
     world.y,
     Math.max(1, world.width - robot.width - targetGap),
     world.height,
   );
-  const laneGap = targetGap;
-  const laneWidth = (puzzleStage.width - laneGap * 2) / 3;
+  const platform = createPlatformSurfaceResolver(width, height);
+  // Wide path artwork must remain subordinate to the WORLD_SUPPORT robot.
+  const desktopCardWidth = clampValue(184, width * 0.145, 246);
+  const desktopCardHeight = clampValue(138, height * 0.17, 184);
+  const desktopLaneGap = clampValue(18, width * 0.016, 30);
+  const desktopGroupWidth = desktopCardWidth * 3 + desktopLaneGap * 2;
+  const desktopGroupHeight = desktopCardHeight;
+  const desktopGroupCenterY = Math.min(
+    world.y + world.height * 0.58,
+    platform.topY - desktopCardHeight * 0.12,
+  );
+  const pathChoiceGroup = desktop
+    ? rect(platform.centerX - desktopGroupWidth / 2, desktopGroupCenterY - desktopGroupHeight / 2, desktopGroupWidth, desktopGroupHeight)
+    : puzzleStage;
+  const laneGap = desktop ? desktopLaneGap : targetGap;
+  const laneWidth = desktop ? desktopCardWidth : (puzzleStage.width - laneGap * 2) / 3;
+  const laneHeight = desktop ? desktopCardHeight : puzzleStage.height;
   const pathLanes = [0, 1, 2].map((index) =>
-    rect(puzzleStage.x + index * (laneWidth + laneGap), puzzleStage.y, laneWidth, puzzleStage.height),
+    rect(pathChoiceGroup.x + index * (laneWidth + laneGap), pathChoiceGroup.y, laneWidth, laneHeight),
   ) as unknown as readonly [RectLayout, RectLayout, RectLayout];
   const relayBoard = rect(puzzleStage.x, puzzleStage.y, puzzleStage.width, puzzleStage.height);
   const signalBoard = rect(puzzleStage.x, puzzleStage.y, puzzleStage.width, puzzleStage.height);
@@ -660,7 +1052,6 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
   const introPlatformY = (height - LOGICAL_SCENE_HEIGHT * laboratoryScale) / 2 + PLATFORM_CONTACT_Y * laboratoryScale;
   const launchGroundY = Math.min(worldBottom, introPlatformY + layout.gapL);
   const launchHeight = Math.max(1, launchGroundY - world.y);
-  const consoleWidth = Math.min(desktop ? 460 : shortLandscape ? 340 : 400, world.width * 0.48);
   const consoleVisibleWidth = Math.min(consoleWidth, launchHeight * 1091 / 958);
   const beaconHeight = Math.min(desktop ? 360 : shortLandscape ? 220 : 320, launchHeight * 0.92);
   const beaconWidth = beaconHeight * 964 / 1337;
@@ -668,7 +1059,7 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     launchGroundY - beaconHeight, beaconWidth, beaconHeight);
   const launchConsole = rect(width / 2 - consoleWidth / 2, world.y, consoleWidth, launchHeight);
   const platformContactY = world.y + world.height;
-  const robotVisibleHeight = clampValue(shortLandscape ? 118 : 150, world.height * 0.86, desktop ? 320 : 240);
+  const robotVisibleHeight = mission10Sizing?.targetVisibleHeight ?? clampValue(shortLandscape ? 118 : 150, world.height * 0.86, desktop ? 320 : 240);
   // Intro hierarchy starts at the controls, independently of actor dimensions.
   const introTitleHeight = shortLandscape ? 28 : 40;
   const introTitle = rect(safe.left + layout.iconWidth + layout.gapM, layout.headerY - introTitleHeight / 2,
@@ -698,13 +1089,17 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     : Math.min(1.45, laboratoryScale);
   const signalPropHeight = shortLandscape
     ? clampValue(88, 104 * signalScale, 118)
-    : clampValue(60, 98 * signalScale, 128);
+    : desktop
+      ? clampValue(112, height * 0.15, 162)
+      : clampValue(60, 98 * signalScale, 128);
   const signalProgressWidth = clampValue(88, (shortLandscape ? 100 : 108) * signalScale, 138);
   const signalProgress = rect((width - signalProgressWidth) / 2,
     introTitle.y + introTitle.height + layout.gapXS, signalProgressWidth, 22);
   const signalFieldWidth = shortLandscape
     ? Math.min(safeWidth * 0.78, 632 * signalScale)
-    : Math.min(760, 530 * signalScale, safeWidth * 0.69);
+    : desktop
+      ? clampValue(470, width * 0.36, 620)
+      : Math.min(760, 530 * signalScale, safeWidth * 0.69);
   // Two occupied rows in A/B are 2/5 of the grid apart: reserve a full body plus air.
   const signalFieldHeight = shortLandscape
     ? Math.min(Math.max(244 * signalScale, signalPropHeight * 2.72), Math.max(1, safeBottom - signalProgress.y - signalProgress.height - layout.gapXS * 2))
@@ -714,11 +1109,23 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     ? Math.max(signalProgress.y + signalProgress.height + layout.gapXS, signalGroundY - signalFieldHeight - layout.gapXS)
     : Math.max(signalProgress.y + signalProgress.height + signalPropHeight * 0.4,
       introPlatformY - signalFieldHeight + 31 * signalScale);
-  const signalFieldCenterX = shortLandscape ? width / 2 + safeWidth * 0.035 : width / 2 + 58 * signalScale;
+  const signalFieldCenterX = shortLandscape
+    ? width / 2 + safeWidth * 0.035
+    : desktop
+      ? platform.centerX + Math.min(42, width * 0.025)
+      : width / 2 + 58 * signalScale;
   const signalField = rect(signalFieldCenterX - signalFieldWidth / 2,
     signalFieldTop, signalFieldWidth, signalFieldHeight);
-  const signalRobotHeight = shortLandscape ? clampValue(112, signalFieldHeight * 0.58, 142) : 190 * signalScale;
-  const signalRobotWidth = signalRobotHeight * 958 / 1463;
+  const signalRobotSizing = desktop
+    ? resolveWorldCharacterScale({
+      profile: CHARACTER_VISUAL_PROFILES.assembled,
+      role: DesktopCharacterRole.WORLD_SUPPORT,
+      viewportHeight: height,
+    })
+    : undefined;
+  const signalRobotHeight = signalRobotSizing?.targetVisibleHeight
+    ?? (shortLandscape ? clampValue(112, signalFieldHeight * 0.58, 142) : 190 * signalScale);
+  const signalRobotWidth = signalRobotHeight * CHARACTER_VISUAL_PROFILES.assembled.visibleWidthAtScale1 / CHARACTER_VISUAL_PROFILES.assembled.visibleHeightAtScale1;
   const signalRobotRight = shortLandscape ? Math.max(safeLeft + signalRobotWidth, signalField.x - layout.gapXS) : signalField.x - signalPropHeight * 0.55;
   const signalRegions: Mission10SignalRegions = {
     TITLE: introTitle,
@@ -735,6 +1142,7 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     introRegions,
     introGroundY,
     launchGroundY,
+    launchRobotZone,
     portraitGate,
     showExtendedHeader: !shortLandscape && !portraitGate,
     title,
@@ -743,13 +1151,15 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     world,
     robot,
     puzzleStage,
+    pathChoiceGroup,
+    platformCenterX: platform.centerX,
     pathLanes,
     relayBoard,
     signalBoard,
     launchConsole,
     beacon,
     platformContactY,
-    robotScale: Math.min(robotVisibleHeight / 1463, robot.width / 958),
+    robotScale: mission10Sizing?.resolvedScale ?? Math.min(robotVisibleHeight / 1463, robot.width / 958),
     targetGap,
   };
   regions.HEADER = layout.headerZone;
@@ -797,7 +1207,17 @@ function composeTransition(layout: ResponsiveLayout): SceneComposition {
   const actorFeetY = buttonY - buttonHeight / 2 - layout.gapM - (phonePortrait ? fluidValue(74, height, 0.11, 100) : 0);
   const actorAvailableHeight = Math.max(150, actorFeetY - pairTop);
   const pairSpan = phonePortrait ? Math.min(165, width * 0.44) : portrait ? 270 : 320;
-  const pairScale = Math.min(phonePortrait ? 0.21 : portrait ? 0.22 : 0.24, actorAvailableHeight / 1402);
+  const transitionParentScale = Math.max(width / LOGICAL_SCENE_WIDTH, height / LOGICAL_SCENE_HEIGHT);
+  const transitionDesktopSizing = !portrait && semanticMode === 'DESKTOP'
+    ? resolveWorldCharacterScale({
+      profile: CHARACTER_VISUAL_PROFILES.assembled,
+      role: DesktopCharacterRole.WORLD_SECONDARY,
+      viewportHeight: height,
+      parentScale: transitionParentScale,
+    })
+    : undefined;
+  const pairScale = transitionDesktopSizing?.resolvedScale
+    ?? Math.min(phonePortrait ? 0.21 : portrait ? 0.22 : 0.24, actorAvailableHeight / 1402);
   const transition: TransitionSceneLayout = { phonePortrait, titleY, titleSize, subtitleY, buttonHeight, buttonY, actorFeetY, pairScale, pairSpan };
   regions.STATUS = rect(layout.safe.left, titleY - titleSize / 2, width - layout.safe.left - layout.safe.right, subtitleY + titleSize * 0.5 - (titleY - titleSize / 2));
   regions.CHARACTER = rect(layout.safe.left, pairTop, width - layout.safe.left - layout.safe.right, actorFeetY - pairTop);
@@ -818,6 +1238,7 @@ function composeTransition(layout: ResponsiveLayout): SceneComposition {
 }
 
 export function composeScene(layout: ResponsiveLayout, missionId: MissionId): SceneComposition {
+  if (missionId === 6) return composeMission6(layout);
   if (missionId === 7) return composeMission7(layout);
   if (missionId === 8) return composeMission8(layout);
   if (missionId === 9) return composeMission9(layout);

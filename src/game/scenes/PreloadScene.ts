@@ -2,6 +2,8 @@ import Phaser from 'phaser';
 import { AUDIO_ASSETS, IMAGE_ASSETS, MISSING_ASSET_IDS } from '../assets/manifest';
 import { audioManager } from '../audio/AudioManager';
 import { connectionsMechanic } from '../mechanics/connections';
+import { energyMechanic } from '../mechanics/energy';
+import { programmingMechanic } from '../mechanics/programming';
 import { robotTestCourse } from '../mechanics/robotTestCourse';
 import { sessionState } from '../state/sessionState';
 import { mission10Controller } from '../mechanics/mission10/mission10Controller.ts';
@@ -24,10 +26,22 @@ export class PreloadScene extends Phaser.Scene {
     audioManager.initialize(this.game);
     for (const assetId of MISSING_ASSET_IDS) console.warn(`MISSING_ASSET: ${assetId}`);
     const query = new URLSearchParams(globalThis.location?.search ?? '');
+    if (query.get('qaMission') === '6') {
+      sessionState.enterMission6Qa();
+      energyMechanic.reset();
+      this.scene.start('Mission6Scene');
+      return;
+    }
     if (query.get('qaMission') === '7') {
       sessionState.enterMission7Qa();
       connectionsMechanic.reset();
       this.scene.start('Mission7OrientationGuardScene');
+      return;
+    }
+    if (query.get('qaMission') === '8') {
+      sessionState.enterMission8Qa();
+      programmingMechanic.reset();
+      this.scene.start('Mission8Scene');
       return;
     }
     if (query.get('qaMission') === '9') {

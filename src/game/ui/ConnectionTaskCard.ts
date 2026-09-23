@@ -186,8 +186,10 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
     const bottom = options.height - Phaser.Math.Linear(34, 48, compactness);
     const rows = this.snapshot.challenge.colors.length;
     const rowGap = rows === 1 ? 0 : (bottom - top) / (rows - 1);
+    const rowAnchors = this.snapshot.challenge.colors.map((_color, index) => top + index * rowGap);
     const hitRadius = Math.max(36, Math.min(46, rowGap * 0.48, options.width * 0.13));
-    const sourceX = Math.max(42, options.width * 0.105);
+    const wideDesktopPanel = options.width >= 520;
+    const sourceX = wideDesktopPanel ? options.width * 0.22 : Math.max(42, options.width * 0.105);
     const targetX = options.width - sourceX;
     const makePort = (color: WireColor, side: 'source' | 'target', x: number, y: number): void => {
       const port = this.scene.add.container(x, y).setName(`connection-${side}-${color}`).setSize(hitRadius * 2, hitRadius * 2);
@@ -209,14 +211,10 @@ export class ConnectionTaskCard extends Phaser.GameObjects.Container {
       this.ports.set(`${side}-${color}`, { color, side, x, y, hitRadius, container: port });
     };
     this.snapshot.challenge.colors.forEach((color, index) => {
-      const baseY = top + index * rowGap;
-      const stagger = this.snapshot.challenge.staggered && index % 2 === 1 ? Math.min(18, rowGap * 0.2) : 0;
-      makePort(color, 'source', sourceX, baseY + stagger);
+      makePort(color, 'source', sourceX, rowAnchors[index]);
     });
     this.snapshot.destinationOrder.forEach((color, index) => {
-      const baseY = top + index * rowGap;
-      const stagger = this.snapshot.challenge.staggered && index % 2 === 0 ? Math.min(18, rowGap * 0.2) : 0;
-      makePort(color, 'target', targetX, baseY + stagger);
+      makePort(color, 'target', targetX, rowAnchors[index]);
     });
   }
 

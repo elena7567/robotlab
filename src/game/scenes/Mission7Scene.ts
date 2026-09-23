@@ -14,6 +14,9 @@ import { readViewportMetrics, type ViewportMetrics } from '../ui/viewport';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { CHILD_UI } from '../ui/childUi';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 
 const CORRECT_LINES = ['ЕСТЬ КОНТАКТ!', 'ПОДКЛЮЧЕНО!', 'ОТЛИЧНО!'] as const;
 
@@ -37,6 +40,7 @@ export class Mission7Scene extends Phaser.Scene {
     const missionLayout = sceneComposition.mission7!;
     this.game.registry.set('sceneComposition', sceneComposition);
     const portrait = canonicalViewport.orientation === 'portrait';
+    const landscapeOrientationGate = !portrait && layout.deviceLayoutClass !== 'DESKTOP';
     const reducedMotion = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
     const session = sessionState.snapshot;
     this.game.registry.set('sessionSnapshot', session);
@@ -63,7 +67,7 @@ export class Mission7Scene extends Phaser.Scene {
       (soundControl.getAt(1) as Phaser.GameObjects.Text).setText(soundLabel());
     }, UI_COLORS.green, iconSizing).setName('mission7-sound');
 
-    if (!portrait) {
+    if (landscapeOrientationGate) {
       addRobotLabOrientationGate(this, { name: 'mission7-orientation-gate', reducedMotion, targetOrientation: 'portrait' });
       this.game.registry.set('mission7OrientationGate', true);
       this.game.registry.set('mission7InputActive', false);
@@ -109,10 +113,11 @@ export class Mission7Scene extends Phaser.Scene {
 
     const systems = this.add.container(missionLayout.systems.x, missionLayout.systems.y).setName('systems-progress').setDepth(8);
     const systemsWidth = missionLayout.systems.width;
-    const systemsHeight = portrait ? 38 : 52;
+    const compactSystems = portrait || layout.semanticMode === 'DESKTOP';
+    const systemsHeight = compactSystems ? 38 : 52;
     const systemsBody = this.add.graphics().fillStyle(0x174e71, 0.96).fillRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 15)
       .lineStyle(2, 0x67e9f5, 0.85).strokeRoundedRect(-systemsWidth / 2, -systemsHeight / 2, systemsWidth, systemsHeight, 15);
-    systems.add(portrait ? [
+    systems.add(compactSystems ? [
       systemsBody,
       this.add.text(0, 0, `СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ ${connectionsMechanic.snapshot.challengeIndex + 1}/3`, { color: '#ffffff', fontFamily: UI_FONT, fontSize: `${CHILD_UI.typography.statusMin}px`, fontStyle: 'bold' }).setOrigin(0.5),
     ] : [
@@ -174,7 +179,7 @@ export class Mission7Scene extends Phaser.Scene {
     this.game.registry.set('mission7OrientationGate', false);
     this.game.registry.set('mission7InputActive', true);
 
-    addControl(this, missionLayout.hint.x, missionLayout.hint.y, 'ПОДСКАЗКА', () => {
+    const hintButton = addControl(this, missionLayout.hint.x, missionLayout.hint.y, 'ПОДСКАЗКА', () => {
       if (resolving) return;
       const color = connectionsMechanic.hint();
       if (!color) return;
@@ -186,6 +191,52 @@ export class Mission7Scene extends Phaser.Scene {
       height: missionLayout.hint.height,
       fontSize: missionLayout.hint.fontSize,
     }).setName('connection-hint-button').setDepth(10);
+
+    if (layout.semanticMode === 'DESKTOP') {
+      publishCharacterTelemetry(this, [{
+        characterId: 'mission7-repaired',
+        object: repaired,
+        profileId: 'assembled',
+        role: DesktopCharacterRole.WORLD_SUPPORT,
+        sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_SUPPORT, viewportHeight: height }),
+        groundY: missionLayout.repaired.feetY,
+      }]);
+    }
+
+    const boundsOf = (object: Phaser.GameObjects.GameObject): { left: number; right: number; top: number; bottom: number } => {
+      const bounds = (object as unknown as { getBounds: () => Phaser.Geom.Rectangle }).getBounds();
+      return { left: bounds.left, right: bounds.right, top: bounds.top, bottom: bounds.bottom };
+    };
+    const cardBounds = {
+      left: missionLayout.board.x,
+      right: missionLayout.board.x + missionLayout.board.width,
+      top: missionLayout.board.y,
+      bottom: missionLayout.board.y + missionLayout.board.height,
+    };
+    const hintBounds = {
+      left: missionLayout.hint.x - missionLayout.hint.width / 2,
+      right: missionLayout.hint.x + missionLayout.hint.width / 2,
+      top: missionLayout.hint.y - missionLayout.hint.height / 2,
+      bottom: missionLayout.hint.y + missionLayout.hint.height / 2,
+    };
+    const robotBounds = boundsOf(repaired);
+    const footAnchor = repaired.getFootAnchorWorld();
+    if (window.__ROBOTLAB_QA__) {
+      window.__ROBOTLAB_QA__.mission7 = {
+        viewport: { width, height, semanticMode: layout.semanticMode },
+        platform: missionLayout.platform ?? {
+          topY: missionLayout.repaired.feetY,
+          surfaceAtRobotX: missionLayout.repaired.feetY,
+          surfaceAtCardX: cardBounds.bottom,
+          surfaceAtHintX: hintBounds.bottom,
+        },
+        robot: robotBounds,
+        robotFootAnchor: { x: footAnchor.x, y: footAnchor.y },
+        card: cardBounds,
+        hint: hintBounds,
+        hintButton: boundsOf(hintButton),
+      };
+    }
 
     if (session.connectionsCompleted || connectionsMechanic.snapshot.completed) {
       this.game.registry.set('mission7Complete', true);
@@ -226,3 +277,4 @@ export class Mission7Scene extends Phaser.Scene {
     button.setData('nextMission', 8);
   }
 }
+

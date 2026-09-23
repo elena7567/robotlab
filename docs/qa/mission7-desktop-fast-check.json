@@ -1,0 +1,2033 @@
+{
+  "checks": [
+    {
+      "name": "1280x720 desktop active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 560,
+        "platformCenterX": 640,
+        "card": {
+          "x": 559.76974609375,
+          "y": 182.5,
+          "width": 411.44000000000005,
+          "height": 367.22,
+          "right": 971.20974609375,
+          "bottom": 549.72
+        },
+        "hint": {
+          "x": 709.98974609375,
+          "y": 590,
+          "width": 111,
+          "height": 22,
+          "right": 820.98974609375,
+          "bottom": 612
+        },
+        "robot": {
+          "x": 220.7633735407889,
+          "y": 289.99999937415123,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 417.1392655794323,
+          "bottom": 560
+        },
+        "systems": {
+          "x": 522,
+          "y": 85.36000061035156,
+          "width": 236,
+          "height": 16,
+          "right": 758,
+          "bottom": 101.36000061035156
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 640,
+            "y": 93.36000000000001,
+            "width": 243.2
+          },
+          "board": {
+            "x": 465.48975999999993,
+            "y": 190,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 289.93287999999995,
+            "feetY": 560,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 319.30182999999994,
+            "feetY": 560,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 765.4897599999999,
+            "y": 602,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 295,
+            "bounds": {
+              "x": 559.76974609375,
+              "y": 257.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 635.20974609375,
+              "bottom": 332.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 403.5,
+            "bounds": {
+              "x": 895.76974609375,
+              "y": 365.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 971.20974609375,
+              "bottom": 441.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 403.5,
+            "bounds": {
+              "x": 559.76974609375,
+              "y": 365.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 635.20974609375,
+              "bottom": 441.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 295,
+            "bounds": {
+              "x": 895.76974609375,
+              "y": 257.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 971.20974609375,
+              "bottom": 332.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 512,
+            "bounds": {
+              "x": 559.76974609375,
+              "y": 474.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 635.20974609375,
+              "bottom": 549.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 512,
+            "bounds": {
+              "x": 895.76974609375,
+              "y": 474.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 971.20974609375,
+              "bottom": 549.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      }
+    },
+    {
+      "name": "1280x720 robot left of card",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 220.7633735407889,
+          "y": 289.99999937415123,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 417.1392655794323,
+          "bottom": 560
+        },
+        "card": {
+          "x": 559.76974609375,
+          "y": 182.5,
+          "width": 411.44000000000005,
+          "height": 367.22,
+          "right": 971.20974609375,
+          "bottom": 549.72
+        }
+      }
+    },
+    {
+      "name": "1280x720 robot/card gap",
+      "ok": true,
+      "actual": 48.35049442056766
+    },
+    {
+      "name": "1280x720 robot scale preserved",
+      "ok": true,
+      "actual": 270.00000062584877
+    },
+    {
+      "name": "1280x720 robot anchored",
+      "ok": true,
+      "actual": {
+        "robotVisibleBottomY": 560,
+        "platformSurfaceY": 560,
+        "robotSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1280x720 card anchored",
+      "ok": true,
+      "actual": {
+        "cardVisibleBottomY": 549.72,
+        "platformSurfaceY": 560,
+        "cardSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1280x720 hint attached",
+      "ok": true,
+      "actual": {
+        "hintTopY": 590,
+        "cardBottomY": 549.72,
+        "hintGap": 14
+      }
+    },
+    {
+      "name": "1280x720 panel size preserved",
+      "ok": true,
+      "actual": {
+        "width": 600,
+        "height": 370
+      }
+    },
+    {
+      "name": "1280x720 terminal order and size preserved",
+      "ok": true,
+      "actual": {
+        "terminalDistances": [
+          336,
+          336,
+          336
+        ],
+        "visibleDiameters": [
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005
+        ],
+        "hitDiameters": [
+          92,
+          92,
+          92,
+          92,
+          92,
+          92
+        ]
+      }
+    },
+    {
+      "name": "1280x720 status compact",
+      "ok": true,
+      "actual": {
+        "x": 522,
+        "y": 85.36000061035156,
+        "width": 236,
+        "height": 16,
+        "right": 758,
+        "bottom": 101.36000061035156
+      }
+    },
+    {
+      "name": "mouse miss no progress",
+      "ok": true
+    },
+    {
+      "name": "wrong target rejects",
+      "ok": true
+    },
+    {
+      "name": "correct target snaps once",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "1438x914 desktop active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 710.8888888888888,
+        "platformCenterX": 719,
+        "card": {
+          "x": 639.6479809570312,
+          "y": 333.3888854980469,
+          "width": 411.44000000000005,
+          "height": 367.22003051757815,
+          "right": 1051.0879809570313,
+          "bottom": 700.608916015625
+        },
+        "hint": {
+          "x": 789.8679809570312,
+          "y": 740.888916015625,
+          "width": 111,
+          "height": 22,
+          "right": 900.8679809570312,
+          "bottom": 762.888916015625
+        },
+        "robot": {
+          "x": 298.31162183180453,
+          "y": 440.88891538977623,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 494.6875138704479,
+          "bottom": 710.888916015625
+        },
+        "systems": {
+          "x": 601,
+          "y": 94,
+          "width": 236,
+          "height": 16,
+          "right": 837,
+          "bottom": 110
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 719,
+            "y": 102,
+            "width": 260
+          },
+          "board": {
+            "x": 545.368,
+            "y": 340.8888888888888,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 361.30000000000007,
+            "feetY": 710.8888888888888,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 396.8500700000001,
+            "feetY": 710.8888888888888,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 845.368,
+            "y": 752.8888888888888,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 677.3679809570312,
+            "y": 445.8888854980469,
+            "bounds": {
+              "x": 639.6479809570312,
+              "y": 408.16888549804685,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 715.0879809570313,
+              "bottom": 483.6088854980469
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1013.3679809570312,
+            "y": 662.888916015625,
+            "bounds": {
+              "x": 975.6479809570312,
+              "y": 625.168916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1051.0879809570313,
+              "bottom": 700.608916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 677.3679809570312,
+            "y": 554.388916015625,
+            "bounds": {
+              "x": 639.6479809570312,
+              "y": 516.668916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 715.0879809570313,
+              "bottom": 592.108916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1013.3679809570312,
+            "y": 445.8888854980469,
+            "bounds": {
+              "x": 975.6479809570312,
+              "y": 408.16888549804685,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1051.0879809570313,
+              "bottom": 483.6088854980469
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 677.3679809570312,
+            "y": 662.888916015625,
+            "bounds": {
+              "x": 639.6479809570312,
+              "y": 625.168916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 715.0879809570313,
+              "bottom": 700.608916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1013.3679809570312,
+            "y": 554.388916015625,
+            "bounds": {
+              "x": 975.6479809570312,
+              "y": 516.668916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1051.0879809570313,
+              "bottom": 592.108916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      }
+    },
+    {
+      "name": "1438x914 robot left of card",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 298.31162183180453,
+          "y": 440.88891538977623,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 494.6875138704479,
+          "bottom": 710.888916015625
+        },
+        "card": {
+          "x": 639.6479809570312,
+          "y": 333.3888854980469,
+          "width": 411.44000000000005,
+          "height": 367.22003051757815,
+          "right": 1051.0879809570313,
+          "bottom": 700.608916015625
+        }
+      }
+    },
+    {
+      "name": "1438x914 robot/card gap",
+      "ok": true,
+      "actual": 50.68048612955215
+    },
+    {
+      "name": "1438x914 robot scale preserved",
+      "ok": true,
+      "actual": 270.00000062584877
+    },
+    {
+      "name": "1438x914 robot anchored",
+      "ok": true,
+      "actual": {
+        "robotVisibleBottomY": 710.888916015625,
+        "platformSurfaceY": 710.8888888888888,
+        "robotSurfaceDelta": 0.000027126736199534207
+      }
+    },
+    {
+      "name": "1438x914 card anchored",
+      "ok": true,
+      "actual": {
+        "cardVisibleBottomY": 700.608916015625,
+        "platformSurfaceY": 710.8888888888888,
+        "cardSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1438x914 hint attached",
+      "ok": true,
+      "actual": {
+        "hintTopY": 740.888916015625,
+        "cardBottomY": 700.608916015625,
+        "hintGap": 14
+      }
+    },
+    {
+      "name": "1438x914 panel size preserved",
+      "ok": true,
+      "actual": {
+        "width": 600,
+        "height": 370
+      }
+    },
+    {
+      "name": "1438x914 terminal order and size preserved",
+      "ok": true,
+      "actual": {
+        "terminalDistances": [
+          336,
+          336,
+          336
+        ],
+        "visibleDiameters": [
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005
+        ],
+        "hitDiameters": [
+          92,
+          92,
+          92,
+          92,
+          92,
+          92
+        ]
+      }
+    },
+    {
+      "name": "1438x914 status compact",
+      "ok": true,
+      "actual": {
+        "x": 601,
+        "y": 94,
+        "width": 236,
+        "height": 16,
+        "right": 837,
+        "bottom": 110
+      }
+    },
+    {
+      "name": "1600x900 desktop active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 700,
+        "platformCenterX": 800,
+        "card": {
+          "x": 726.4800122070312,
+          "y": 322.5,
+          "width": 411.4399389648438,
+          "height": 367.22,
+          "right": 1137.919951171875,
+          "bottom": 689.72
+        },
+        "hint": {
+          "x": 876.7000122070312,
+          "y": 730,
+          "width": 111,
+          "height": 22,
+          "right": 987.7000122070312,
+          "bottom": 752
+        },
+        "robot": {
+          "x": 379.47363965407015,
+          "y": 429.99999937415123,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 575.8495316927135,
+          "bottom": 700
+        },
+        "systems": {
+          "x": 682,
+          "y": 94,
+          "width": 236,
+          "height": 16,
+          "right": 918,
+          "bottom": 110
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 800,
+            "y": 102,
+            "width": 260
+          },
+          "board": {
+            "x": 632.2,
+            "y": 330,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 442.3,
+            "feetY": 700,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 478.01207000000005,
+            "feetY": 700,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 932.2,
+            "y": 742,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 435,
+            "bounds": {
+              "x": 726.4800122070312,
+              "y": 397.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 801.9200122070313,
+              "bottom": 472.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 652,
+            "bounds": {
+              "x": 1062.479951171875,
+              "y": 614.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1137.919951171875,
+              "bottom": 689.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 543.5,
+            "bounds": {
+              "x": 726.4800122070312,
+              "y": 505.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 801.9200122070313,
+              "bottom": 581.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 435,
+            "bounds": {
+              "x": 1062.479951171875,
+              "y": 397.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1137.919951171875,
+              "bottom": 472.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 652,
+            "bounds": {
+              "x": 726.4800122070312,
+              "y": 614.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 801.9200122070313,
+              "bottom": 689.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 543.5,
+            "bounds": {
+              "x": 1062.479951171875,
+              "y": 505.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1137.919951171875,
+              "bottom": 581.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      }
+    },
+    {
+      "name": "1600x900 robot left of card",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 379.47363965407015,
+          "y": 429.99999937415123,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 575.8495316927135,
+          "bottom": 700
+        },
+        "card": {
+          "x": 726.4800122070312,
+          "y": 322.5,
+          "width": 411.4399389648438,
+          "height": 367.22,
+          "right": 1137.919951171875,
+          "bottom": 689.72
+        }
+      }
+    },
+    {
+      "name": "1600x900 robot/card gap",
+      "ok": true,
+      "actual": 56.35046830728652
+    },
+    {
+      "name": "1600x900 robot scale preserved",
+      "ok": true,
+      "actual": 270.00000062584877
+    },
+    {
+      "name": "1600x900 robot anchored",
+      "ok": true,
+      "actual": {
+        "robotVisibleBottomY": 700,
+        "platformSurfaceY": 700,
+        "robotSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1600x900 card anchored",
+      "ok": true,
+      "actual": {
+        "cardVisibleBottomY": 689.72,
+        "platformSurfaceY": 700,
+        "cardSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1600x900 hint attached",
+      "ok": true,
+      "actual": {
+        "hintTopY": 730,
+        "cardBottomY": 689.72,
+        "hintGap": 14
+      }
+    },
+    {
+      "name": "1600x900 panel size preserved",
+      "ok": true,
+      "actual": {
+        "width": 600,
+        "height": 370
+      }
+    },
+    {
+      "name": "1600x900 terminal order and size preserved",
+      "ok": true,
+      "actual": {
+        "terminalDistances": [
+          335.99993896484375,
+          335.99993896484375,
+          335.99993896484375
+        ],
+        "visibleDiameters": [
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005
+        ],
+        "hitDiameters": [
+          92,
+          92,
+          92,
+          92,
+          92,
+          92
+        ]
+      }
+    },
+    {
+      "name": "1600x900 status compact",
+      "ok": true,
+      "actual": {
+        "x": 682,
+        "y": 94,
+        "width": 236,
+        "height": 16,
+        "right": 918,
+        "bottom": 110
+      }
+    },
+    {
+      "name": "1920x1080 desktop active",
+      "ok": true,
+      "actual": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 840,
+        "platformCenterX": 960,
+        "card": {
+          "x": 892.723359375,
+          "y": 462.5,
+          "width": 411.04131835937505,
+          "height": 367.22,
+          "right": 1303.764677734375,
+          "bottom": 829.72
+        },
+        "hint": {
+          "x": 1042.7440185546875,
+          "y": 870,
+          "width": 111,
+          "height": 22,
+          "right": 1153.7440185546875,
+          "bottom": 892
+        },
+        "robot": {
+          "x": 539.8736030329763,
+          "y": 569.9999993741512,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 736.2494950716198,
+          "bottom": 840
+        },
+        "systems": {
+          "x": 842,
+          "y": 94,
+          "width": 236,
+          "height": 16,
+          "right": 1078,
+          "bottom": 110
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 960,
+            "y": 102,
+            "width": 260
+          },
+          "board": {
+            "x": 798.6000000000001,
+            "y": 470,
+            "width": 599.288,
+            "height": 370
+          },
+          "helper": {
+            "x": 602.3000000000002,
+            "feetY": 840,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 638.4120700000001,
+            "feetY": 840,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 1098.2440000000001,
+            "y": 882,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 575,
+            "bounds": {
+              "x": 892.723359375,
+              "y": 537.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 968.163359375,
+              "bottom": 612.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 792,
+            "bounds": {
+              "x": 1228.324677734375,
+              "y": 754.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1303.764677734375,
+              "bottom": 829.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 683.5,
+            "bounds": {
+              "x": 892.723359375,
+              "y": 645.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 968.163359375,
+              "bottom": 721.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 683.5,
+            "bounds": {
+              "x": 1228.324677734375,
+              "y": 645.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1303.764677734375,
+              "bottom": 721.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 792,
+            "bounds": {
+              "x": 892.723359375,
+              "y": 754.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 968.163359375,
+              "bottom": 829.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 575,
+            "bounds": {
+              "x": 1228.324677734375,
+              "y": 537.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1303.764677734375,
+              "bottom": 612.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 599.288,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      }
+    },
+    {
+      "name": "1920x1080 robot left of card",
+      "ok": true,
+      "actual": {
+        "robot": {
+          "x": 539.8736030329763,
+          "y": 569.9999993741512,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 736.2494950716198,
+          "bottom": 840
+        },
+        "card": {
+          "x": 892.723359375,
+          "y": 462.5,
+          "width": 411.04131835937505,
+          "height": 367.22,
+          "right": 1303.764677734375,
+          "bottom": 829.72
+        }
+      }
+    },
+    {
+      "name": "1920x1080 robot/card gap",
+      "ok": true,
+      "actual": 62.35050492838036
+    },
+    {
+      "name": "1920x1080 robot scale preserved",
+      "ok": true,
+      "actual": 270.00000062584877
+    },
+    {
+      "name": "1920x1080 robot anchored",
+      "ok": true,
+      "actual": {
+        "robotVisibleBottomY": 840,
+        "platformSurfaceY": 840,
+        "robotSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1920x1080 card anchored",
+      "ok": true,
+      "actual": {
+        "cardVisibleBottomY": 829.72,
+        "platformSurfaceY": 840,
+        "cardSurfaceDelta": 0
+      }
+    },
+    {
+      "name": "1920x1080 hint attached",
+      "ok": true,
+      "actual": {
+        "hintTopY": 870,
+        "cardBottomY": 829.72,
+        "hintGap": 14
+      }
+    },
+    {
+      "name": "1920x1080 panel size preserved",
+      "ok": true,
+      "actual": {
+        "width": 599.288,
+        "height": 370
+      }
+    },
+    {
+      "name": "1920x1080 terminal order and size preserved",
+      "ok": true,
+      "actual": {
+        "terminalDistances": [
+          335.601318359375,
+          335.601318359375,
+          335.601318359375
+        ],
+        "visibleDiameters": [
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005,
+          75.44000000000005
+        ],
+        "hitDiameters": [
+          92,
+          92,
+          92,
+          92,
+          92,
+          92
+        ]
+      }
+    },
+    {
+      "name": "1920x1080 status compact",
+      "ok": true,
+      "actual": {
+        "x": 842,
+        "y": 94,
+        "width": 236,
+        "height": 16,
+        "right": 1078,
+        "bottom": 110
+      }
+    }
+  ],
+  "errors": [],
+  "runs": [
+    {
+      "label": "1280x720",
+      "info": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 560,
+        "platformCenterX": 640,
+        "card": {
+          "x": 559.76974609375,
+          "y": 182.5,
+          "width": 411.44000000000005,
+          "height": 367.22,
+          "right": 971.20974609375,
+          "bottom": 549.72
+        },
+        "hint": {
+          "x": 709.98974609375,
+          "y": 590,
+          "width": 111,
+          "height": 22,
+          "right": 820.98974609375,
+          "bottom": 612
+        },
+        "robot": {
+          "x": 220.7633735407889,
+          "y": 289.99999937415123,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 417.1392655794323,
+          "bottom": 560
+        },
+        "systems": {
+          "x": 522,
+          "y": 85.36000061035156,
+          "width": 236,
+          "height": 16,
+          "right": 758,
+          "bottom": 101.36000061035156
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 640,
+            "y": 93.36000000000001,
+            "width": 243.2
+          },
+          "board": {
+            "x": 465.48975999999993,
+            "y": 190,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 289.93287999999995,
+            "feetY": 560,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 319.30182999999994,
+            "feetY": 560,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 765.4897599999999,
+            "y": 602,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 295,
+            "bounds": {
+              "x": 559.76974609375,
+              "y": 257.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 635.20974609375,
+              "bottom": 332.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 403.5,
+            "bounds": {
+              "x": 895.76974609375,
+              "y": 365.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 971.20974609375,
+              "bottom": 441.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 403.5,
+            "bounds": {
+              "x": 559.76974609375,
+              "y": 365.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 635.20974609375,
+              "bottom": 441.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 295,
+            "bounds": {
+              "x": 895.76974609375,
+              "y": 257.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 971.20974609375,
+              "bottom": 332.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 512,
+            "bounds": {
+              "x": 559.76974609375,
+              "y": 474.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 635.20974609375,
+              "bottom": 549.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 512,
+            "bounds": {
+              "x": 895.76974609375,
+              "y": 474.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 971.20974609375,
+              "bottom": 549.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      },
+      "metrics": {
+        "platformSurfaceY": 560,
+        "robotVisibleBottomY": 560,
+        "robotSurfaceDelta": 0,
+        "cardVisibleBottomY": 560,
+        "cardSurfaceDelta": 0,
+        "hintTopY": 574,
+        "hintBottomY": 630,
+        "robotCardGap": 48.35049442056766
+      }
+    },
+    {
+      "label": "1438x914",
+      "info": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 710.8888888888888,
+        "platformCenterX": 719,
+        "card": {
+          "x": 639.6479809570312,
+          "y": 333.3888854980469,
+          "width": 411.44000000000005,
+          "height": 367.22003051757815,
+          "right": 1051.0879809570313,
+          "bottom": 700.608916015625
+        },
+        "hint": {
+          "x": 789.8679809570312,
+          "y": 740.888916015625,
+          "width": 111,
+          "height": 22,
+          "right": 900.8679809570312,
+          "bottom": 762.888916015625
+        },
+        "robot": {
+          "x": 298.31162183180453,
+          "y": 440.88891538977623,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 494.6875138704479,
+          "bottom": 710.888916015625
+        },
+        "systems": {
+          "x": 601,
+          "y": 94,
+          "width": 236,
+          "height": 16,
+          "right": 837,
+          "bottom": 110
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 719,
+            "y": 102,
+            "width": 260
+          },
+          "board": {
+            "x": 545.368,
+            "y": 340.8888888888888,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 361.30000000000007,
+            "feetY": 710.8888888888888,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 396.8500700000001,
+            "feetY": 710.8888888888888,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 845.368,
+            "y": 752.8888888888888,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 677.3679809570312,
+            "y": 445.8888854980469,
+            "bounds": {
+              "x": 639.6479809570312,
+              "y": 408.16888549804685,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 715.0879809570313,
+              "bottom": 483.6088854980469
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1013.3679809570312,
+            "y": 662.888916015625,
+            "bounds": {
+              "x": 975.6479809570312,
+              "y": 625.168916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1051.0879809570313,
+              "bottom": 700.608916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 677.3679809570312,
+            "y": 554.388916015625,
+            "bounds": {
+              "x": 639.6479809570312,
+              "y": 516.668916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 715.0879809570313,
+              "bottom": 592.108916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1013.3679809570312,
+            "y": 445.8888854980469,
+            "bounds": {
+              "x": 975.6479809570312,
+              "y": 408.16888549804685,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1051.0879809570313,
+              "bottom": 483.6088854980469
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 677.3679809570312,
+            "y": 662.888916015625,
+            "bounds": {
+              "x": 639.6479809570312,
+              "y": 625.168916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 715.0879809570313,
+              "bottom": 700.608916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1013.3679809570312,
+            "y": 554.388916015625,
+            "bounds": {
+              "x": 975.6479809570312,
+              "y": 516.668916015625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1051.0879809570313,
+              "bottom": 592.108916015625
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      },
+      "metrics": {
+        "platformSurfaceY": 710.8888888888888,
+        "robotVisibleBottomY": 710.888916015625,
+        "robotSurfaceDelta": 0.000027126736199534207,
+        "cardVisibleBottomY": 710.8888888888888,
+        "cardSurfaceDelta": 0,
+        "hintTopY": 724.8888888888888,
+        "hintBottomY": 780.8888888888888,
+        "robotCardGap": 50.68048612955215
+      }
+    },
+    {
+      "label": "1600x900",
+      "info": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 700,
+        "platformCenterX": 800,
+        "card": {
+          "x": 726.4800122070312,
+          "y": 322.5,
+          "width": 411.4399389648438,
+          "height": 367.22,
+          "right": 1137.919951171875,
+          "bottom": 689.72
+        },
+        "hint": {
+          "x": 876.7000122070312,
+          "y": 730,
+          "width": 111,
+          "height": 22,
+          "right": 987.7000122070312,
+          "bottom": 752
+        },
+        "robot": {
+          "x": 379.47363965407015,
+          "y": 429.99999937415123,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877,
+          "right": 575.8495316927135,
+          "bottom": 700
+        },
+        "systems": {
+          "x": 682,
+          "y": 94,
+          "width": 236,
+          "height": 16,
+          "right": 918,
+          "bottom": 110
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 800,
+            "y": 102,
+            "width": 260
+          },
+          "board": {
+            "x": 632.2,
+            "y": 330,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 442.3,
+            "feetY": 700,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 478.01207000000005,
+            "feetY": 700,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 932.2,
+            "y": 742,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 435,
+            "bounds": {
+              "x": 726.4800122070312,
+              "y": 397.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 801.9200122070313,
+              "bottom": 472.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 652,
+            "bounds": {
+              "x": 1062.479951171875,
+              "y": 614.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1137.919951171875,
+              "bottom": 689.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 543.5,
+            "bounds": {
+              "x": 726.4800122070312,
+              "y": 505.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 801.9200122070313,
+              "bottom": 581.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 435,
+            "bounds": {
+              "x": 1062.479951171875,
+              "y": 397.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1137.919951171875,
+              "bottom": 472.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 652,
+            "bounds": {
+              "x": 726.4800122070312,
+              "y": 614.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 801.9200122070313,
+              "bottom": 689.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 543.5,
+            "bounds": {
+              "x": 1062.479951171875,
+              "y": 505.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1137.919951171875,
+              "bottom": 581.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      },
+      "metrics": {
+        "platformSurfaceY": 700,
+        "robotVisibleBottomY": 700,
+        "robotSurfaceDelta": 0,
+        "cardVisibleBottomY": 700,
+        "cardSurfaceDelta": 0,
+        "hintTopY": 714,
+        "hintBottomY": 770,
+        "robotCardGap": 56.35046830728652
+      }
+    },
+    {
+      "label": "1920x1080",
+      "info": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "platformSurfaceY": 840,
+        "platformCenterX": 960,
+        "card": {
+          "x": 892.723359375,
+          "y": 462.5,
+          "width": 411.04131835937505,
+          "height": 367.22,
+          "right": 1303.764677734375,
+          "bottom": 829.72
+        },
+        "hint": {
+          "x": 1042.7440185546875,
+          "y": 870,
+          "width": 111,
+          "height": 22,
+          "right": 1153.7440185546875,
+          "bottom": 892
+        },
+        "robot": {
+          "x": 539.8736030329763,
+          "y": 569.9999993741512,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877,
+          "right": 736.2494950716198,
+          "bottom": 840
+        },
+        "systems": {
+          "x": 842,
+          "y": 94,
+          "width": 236,
+          "height": 16,
+          "right": 1078,
+          "bottom": 110
+        },
+        "layout": {
+          "showHeader": true,
+          "showHelper": false,
+          "systems": {
+            "x": 960,
+            "y": 102,
+            "width": 260
+          },
+          "board": {
+            "x": 798.6000000000001,
+            "y": 470,
+            "width": 599.288,
+            "height": 370
+          },
+          "helper": {
+            "x": 602.3000000000002,
+            "feetY": 840,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 638.4120700000001,
+            "feetY": 840,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 1098.2440000000001,
+            "y": 882,
+            "width": 230,
+            "height": 56,
+            "fontSize": 19
+          }
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 575,
+            "bounds": {
+              "x": 892.723359375,
+              "y": 537.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 968.163359375,
+              "bottom": 612.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 792,
+            "bounds": {
+              "x": 1228.324677734375,
+              "y": 754.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1303.764677734375,
+              "bottom": 829.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 683.5,
+            "bounds": {
+              "x": 892.723359375,
+              "y": 645.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 968.163359375,
+              "bottom": 721.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 683.5,
+            "bounds": {
+              "x": 1228.324677734375,
+              "y": 645.78,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1303.764677734375,
+              "bottom": 721.22
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 792,
+            "bounds": {
+              "x": 892.723359375,
+              "y": 754.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 968.163359375,
+              "bottom": 829.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 575,
+            "bounds": {
+              "x": 1228.324677734375,
+              "y": 537.28,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005,
+              "right": 1303.764677734375,
+              "bottom": 612.72
+            },
+            "hitWidth": 92,
+            "hitHeight": 92,
+            "locked": false
+          }
+        ],
+        "cardSize": {
+          "width": 599.288,
+          "height": 370
+        },
+        "connected": [],
+        "challengeIndex": 0,
+        "cardCount": 1,
+        "hintCount": 1
+      },
+      "metrics": {
+        "platformSurfaceY": 840,
+        "robotVisibleBottomY": 840,
+        "robotSurfaceDelta": 0,
+        "cardVisibleBottomY": 840,
+        "cardSurfaceDelta": 0,
+        "hintTopY": 854,
+        "hintBottomY": 910,
+        "robotCardGap": 62.35050492838036
+      }
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission7-platform-anchoring\\mission7-platform-1280x720.png",
+    "docs\\qa\\screenshots\\mission7-platform-anchoring\\mission7-platform-1438x914.png",
+    "docs\\qa\\screenshots\\mission7-platform-anchoring\\mission7-platform-1600x900.png",
+    "docs\\qa\\screenshots\\mission7-platform-anchoring\\mission7-platform-1920x1080.png"
+  ],
+  "result": "PASS"
+}

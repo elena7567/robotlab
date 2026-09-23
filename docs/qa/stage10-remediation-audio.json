@@ -1,5 +1,5 @@
 {
-  "result": "PASS",
+  "result": "FAIL",
   "baseline": false,
   "outputEvidence": "PCM sampled after Phaser master mute and volume gain; physical speakers not observed",
   "checks": [
@@ -9,7 +9,7 @@
       "data": {
         "before": {
           "peak": 0,
-          "samples": 45,
+          "samples": 48,
           "plays": [],
           "states": [],
           "locked": true,
@@ -18,12 +18,12 @@
           "stage": "INTRO"
         },
         "after": {
-          "peak": 0.054259076714515686,
-          "samples": 51,
+          "peak": 0.05019006505608559,
+          "samples": 56,
           "plays": [
             {
               "key": "audio-answer-wrong",
-              "at": 8785.899999976158,
+              "at": 7465.199999988079,
               "muted": false,
               "locked": false,
               "context": "running",
@@ -44,7 +44,7 @@
       "data": {
         "before": {
           "peak": 0,
-          "samples": 46,
+          "samples": 48,
           "plays": [],
           "states": [],
           "locked": true,
@@ -53,12 +53,12 @@
           "stage": "INTRO"
         },
         "after": {
-          "peak": 0.046560149639844894,
-          "samples": 54,
+          "peak": 0.03808249533176422,
+          "samples": 58,
           "plays": [
             {
               "key": "audio-answer-wrong",
-              "at": 8879.199999988079,
+              "at": 7415.699999988079,
               "muted": false,
               "locked": false,
               "context": "running",
@@ -77,12 +77,12 @@
       "name": "muted-entry-unmute-first-gesture",
       "ok": true,
       "data": {
-        "peak": 0.04359017685055733,
+        "peak": 0.05514197424054146,
         "samples": 52,
         "plays": [
           {
             "key": "audio-answer-wrong",
-            "at": 8877.90000000596,
+            "at": 6592,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -101,11 +101,11 @@
       "ok": true,
       "data": {
         "peak": 0,
-        "samples": 4,
+        "samples": 6,
         "plays": [
           {
             "key": "audio-answer-wrong",
-            "at": 8877.90000000596,
+            "at": 6592,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -113,7 +113,7 @@
           },
           {
             "key": "audio-ui-click",
-            "at": 9758.5,
+            "at": 7397.0999999940395,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -121,7 +121,7 @@
           },
           {
             "key": "audio-answer-wrong",
-            "at": 9952,
+            "at": 7511.0999999940395,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -140,11 +140,11 @@
       "ok": true,
       "data": {
         "peak": 0.05514197424054146,
-        "samples": 4,
+        "samples": 5,
         "plays": [
           {
             "key": "audio-answer-wrong",
-            "at": 8877.90000000596,
+            "at": 6592,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -152,7 +152,7 @@
           },
           {
             "key": "audio-ui-click",
-            "at": 9758.5,
+            "at": 7397.0999999940395,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -160,7 +160,7 @@
           },
           {
             "key": "audio-answer-wrong",
-            "at": 9952,
+            "at": 7511.0999999940395,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -168,7 +168,7 @@
           },
           {
             "key": "audio-answer-wrong",
-            "at": 10861.300000011921,
+            "at": 8259.399999976158,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -184,22 +184,14 @@
     },
     {
       "name": "natural-m9-to-m10-cue-output",
-      "ok": true,
+      "ok": false,
       "data": {
-        "peak": 0.046560149639844894,
-        "samples": 7,
+        "peak": 0,
+        "samples": 11,
         "plays": [
           {
             "key": "audio-ui-click",
-            "at": 12344.700000017881,
-            "muted": false,
-            "locked": false,
-            "context": "running",
-            "volume": 1
-          },
-          {
-            "key": "audio-answer-wrong",
-            "at": 13078.200000017881,
+            "at": 6807.5,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -212,6 +204,121 @@
         "muted": false,
         "stage": "INTRO"
       }
+    },
+    {
+      "name": "home-before-delayed-unlock-no-stale-intro",
+      "ok": true,
+      "data": {
+        "peak": 0.0830332487821579,
+        "samples": 55,
+        "plays": [
+          {
+            "key": "audio-ui-click",
+            "at": 7159,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          },
+          {
+            "key": "audio-start-lab-theme",
+            "at": 7159.200000017881,
+            "muted": false,
+            "locked": false,
+            "context": "running",
+            "volume": 1
+          }
+        ],
+        "states": [],
+        "locked": false,
+        "context": "running",
+        "muted": false,
+        "stage": "INTRO"
+      }
+    },
+    {
+      "name": "repeated-intro-cue-once-per-entry",
+      "ok": true,
+      "data": [
+        {
+          "cueInstances": 1,
+          "cuePlays": 2,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 3,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 4,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 5,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        }
+      ]
+    },
+    {
+      "name": "intro-lifecycle-counts-bounded",
+      "ok": true,
+      "data": [
+        {
+          "cueInstances": 1,
+          "cuePlays": 2,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 3,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 4,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        },
+        {
+          "cueInstances": 1,
+          "cuePlays": 5,
+          "unlockListeners": 0,
+          "shutdownListeners": 14,
+          "pendingTimers": 0,
+          "tweens": 1,
+          "children": 6
+        }
+      ]
     }
   ],
   "errors": []

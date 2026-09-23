@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { fitImageByVisibleAlpha, getImageVisibleAlphaBounds, OBJECT_VISIBLE_BOUNDS } from '../assets/objectBounds';
+import { fitImageByVisibleAlpha, getImageVisibleAlphaBounds, OBJECT_VISIBLE_BOUNDS, type VisibleTextureBounds } from '../assets/objectBounds';
 import { audioManager } from '../audio/AudioManager';
 import { getMission10EnergyConfig, solveMission10Energy } from '../mechanics/mission10/energyRelayPuzzle.ts';
 import { mission10Controller } from '../mechanics/mission10/mission10Controller.ts';
@@ -8,6 +8,10 @@ import { getMission10SignalConfig, normalizeSignalOrientation, solveMission10Sig
 import { preferencesState } from '../state/preferencesState';
 import { sessionState } from '../state/sessionState';
 import { addIconControl } from '../ui/controls';
+import { RobotAssemblyPreview, createAssembledRobotPreview } from '../ui/RobotAssemblyPreview';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 import { createResponsiveLayout } from '../ui/responsiveLayout';
 import { composeScene, type Mission10SceneLayout } from '../ui/sceneCompositionDirector';
 import {
@@ -38,7 +42,7 @@ export class Mission10Scene extends Phaser.Scene {
   private titleText?: Phaser.GameObjects.Text;
   private feedbackText?: Phaser.GameObjects.Text;
   private progressRoot?: Phaser.GameObjects.Container;
-  private robot?: Phaser.GameObjects.Image;
+  private robot?: RobotAssemblyPreview;
   private interactionLocked = false;
   private pointerOwner: number | null = null;
   private pointerTarget?: Phaser.GameObjects.GameObject;
@@ -151,10 +155,15 @@ export class Mission10Scene extends Phaser.Scene {
 
   private createRobot(): void {
     const box = this.missionLayout!.robot;
-    this.robot = this.add.image(box.x + box.width / 2, this.missionLayout!.platformContactY, 'robot-v2-repaired')
-      .setOrigin(0.5, 1).setScale(this.missionLayout!.robotScale)
-      .setName('mission10-robot-v2').setDepth(6)
-      .setData({ characterRole: 'PRIMARY_CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', grounded: true });
+    this.robot = createAssembledRobotPreview(
+      this,
+      box.x + box.width / 2,
+      this.missionLayout!.platformContactY,
+      this.missionLayout!.robotScale,
+      'mission10-robot-v2',
+    ).setDepth(6).setData({ grounded: true });
+    this.robot.setPowered(true);
+    this.robot.setSystemsConnected(true);
   }
 
   private renderStage(): void {
@@ -193,7 +202,14 @@ export class Mission10Scene extends Phaser.Scene {
     const actorGap = Math.min(compact ? 74 : 100, compositionWidth * 0.18);
     const pairWidthPerRobotHeight = INTRO_ROBOT_BOUNDS.width / INTRO_ROBOT_BOUNDS.height
       + 1.1 * INTRO_BEACON_BOUNDS.width / INTRO_BEACON_BOUNDS.height;
-    const robotVisibleHeight = Math.min(compact ? 164 : 375, regions.HERO_GROUP.height / 1.1,
+    const introSizing = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP'
+      ? resolveWorldCharacterScale({
+        profile: CHARACTER_VISUAL_PROFILES.assembled,
+        role: DesktopCharacterRole.WORLD_PRIMARY,
+        viewportHeight: this.scale.height,
+      })
+      : undefined;
+    const robotVisibleHeight = introSizing?.targetVisibleHeight ?? Math.min(compact ? 164 : 375, regions.HERO_GROUP.height / 1.1,
       (compositionWidth - actorGap) / pairWidthPerRobotHeight);
     const beaconVisibleHeight = robotVisibleHeight * 1.1;
     const robotVisibleWidth = robotVisibleHeight * INTRO_ROBOT_BOUNDS.width / INTRO_ROBOT_BOUNDS.height;
@@ -203,7 +219,7 @@ export class Mission10Scene extends Phaser.Scene {
     const robotCenterX = actorsLeft + robotVisibleWidth / 2;
     const beaconCenterX = actorsLeft + robotVisibleWidth + actorGap + beaconVisibleWidth / 2;
 
-    const robotScale = robotVisibleHeight / INTRO_ROBOT_BOUNDS.height;
+    const robotScale = introSizing?.resolvedScale ?? robotVisibleHeight / INTRO_ROBOT_BOUNDS.height;
     const robotAngle = 4;
     const robotConcernAngle = 7;
     const robotX = robotCenterX + (INTRO_ROBOT_BOUNDS.sourceWidth / 2 - (INTRO_ROBOT_BOUNDS.x + INTRO_ROBOT_BOUNDS.width / 2)) * robotScale;
@@ -216,12 +232,22 @@ export class Mission10Scene extends Phaser.Scene {
     const concernVisibleBottom = robotVisibleRight * Math.sin(robotConcernRadians) + robotVisibleBottom * Math.cos(robotConcernRadians);
     const robotConcernY = groundY - concernVisibleBottom;
     const introRobot = this.robot!
-      .setPosition(robotX, robotY).setOrigin(0.5, 1).setScale(robotScale).setAngle(robotAngle).setAlpha(1)
+      .setPosition(robotX, robotY).setScale(robotScale).setAngle(robotAngle).setAlpha(1)
       .setName('mission10-intro-robot')
       .setData({
         characterRole: 'PRIMARY_CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', grounded: true,
         introVisibleBottomY: groundY, introGroundY: groundY, introGroundingDelta: 0, reactingTo: 'BEACON',
       });
+    if (introSizing) {
+      publishCharacterTelemetry(this, [{
+        characterId: 'mission10-intro-robot',
+        object: introRobot,
+        profileId: 'assembled',
+        role: DesktopCharacterRole.WORLD_PRIMARY,
+        sizing: introSizing,
+        groundY,
+      }]);
+    }
 
     const beaconScale = beaconVisibleHeight / INTRO_BEACON_BOUNDS.height;
     const beaconX = beaconCenterX + (INTRO_BEACON_BOUNDS.sourceWidth / 2 - (INTRO_BEACON_BOUNDS.x + INTRO_BEACON_BOUNDS.width / 2)) * beaconScale;
@@ -367,42 +393,204 @@ export class Mission10Scene extends Phaser.Scene {
     );
     this.robot.setPosition(box.x + box.width / 2, this.missionLayout!.platformContactY)
       .setScale(this.missionLayout!.robotScale).setAngle(0).setAlpha(1);
+    if (createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP') {
+      publishCharacterTelemetry(this, [{
+        characterId: `mission10-${mission10Controller.snapshot.stage.toLowerCase()}-robot`,
+        object: this.robot,
+        profileId: 'assembled',
+        role: DesktopCharacterRole.WORLD_PRIMARY,
+        sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_PRIMARY, viewportHeight: this.scale.height }),
+        groundY: this.missionLayout!.platformContactY,
+      }]);
+    }
   }
 
+  private getTextureVisibleBounds(textureKey: string): VisibleTextureBounds {
+    const cached = this.game.registry.get(`visibleBounds:${textureKey}`) as VisibleTextureBounds | undefined;
+    if (cached) return cached;
+    const source = this.textures.get(textureKey).getSourceImage() as HTMLImageElement;
+    const canvas = document.createElement('canvas');
+    canvas.width = source.width;
+    canvas.height = source.height;
+    const context = canvas.getContext('2d', { willReadFrequently: true });
+    if (!context) return { sourceWidth: source.width, sourceHeight: source.height, x: 0, y: 0, width: source.width, height: source.height };
+    context.drawImage(source, 0, 0);
+    const pixels = context.getImageData(0, 0, source.width, source.height).data;
+    let minX = source.width;
+    let minY = source.height;
+    let maxX = -1;
+    let maxY = -1;
+    for (let y = 0; y < source.height; y += 1) {
+      for (let x = 0; x < source.width; x += 1) {
+        const alpha = pixels[(y * source.width + x) * 4 + 3];
+        if (alpha < 16) continue;
+        minX = Math.min(minX, x);
+        minY = Math.min(minY, y);
+        maxX = Math.max(maxX, x);
+        maxY = Math.max(maxY, y);
+      }
+    }
+    const measured = maxX >= minX && maxY >= minY
+      ? { sourceWidth: source.width, sourceHeight: source.height, x: minX, y: minY, width: maxX - minX + 1, height: maxY - minY + 1 }
+      : { sourceWidth: source.width, sourceHeight: source.height, x: 0, y: 0, width: source.width, height: source.height };
+    this.game.registry.set(`visibleBounds:${textureKey}`, measured);
+    return measured;
+  }
+
+  private getVisibleTelemetry(object: Phaser.GameObjects.Image, source: VisibleTextureBounds): {
+    visibleLeft: number; visibleRight: number; visibleTop: number; visibleBottom: number;
+    visibleWidth: number; visibleHeight: number; parentScaleX: number; parentScaleY: number;
+    localScaleX: number; localScaleY: number; effectiveWorldScaleX: number; effectiveWorldScaleY: number;
+  } {
+    object.setData('visibleAlphaSourceBounds', source);
+    const visible = getImageVisibleAlphaBounds(object);
+    const world = object.getWorldTransformMatrix();
+    const parent = object.parentContainer?.getWorldTransformMatrix();
+    return {
+      visibleLeft: visible.left, visibleRight: visible.right,
+      visibleTop: visible.top, visibleBottom: visible.bottom,
+      visibleWidth: visible.width, visibleHeight: visible.height,
+      parentScaleX: parent ? Math.hypot(parent.a, parent.b) : 1,
+      parentScaleY: parent ? Math.hypot(parent.c, parent.d) : 1,
+      localScaleX: object.scaleX, localScaleY: object.scaleY,
+      effectiveWorldScaleX: Math.hypot(world.a, world.b),
+      effectiveWorldScaleY: Math.hypot(world.c, world.d),
+    };
+  }
   private renderPath(): void {
     const snapshot = mission10Controller.snapshot;
     const round = getMission10PathConfig(snapshot.pathConfigId).rounds[snapshot.pathDecisionIndex];
     if (!round) return;
     this.feedbackText?.setText(`ШАГ ${snapshot.pathDecisionIndex + 1} ИЗ 3`);
     const lanes = this.missionLayout!.pathLanes;
+    const choiceGroupBox = this.missionLayout!.pathChoiceGroup;
     const padding = this.missionLayout!.targetGap;
-    const deckAspect = Math.max(...Object.values(PATH_TEXTURES).map((key) => {
-      const source = this.textures.get(key).getSourceImage() as HTMLImageElement;
-      return source.height / source.width;
-    }));
-    const cardHeight = Math.min(lanes[0].height, (lanes[0].width - padding * 2) * deckAspect + padding * 2);
+    const desktopPath = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP';
+    const pathVisibleSources = Object.values(PATH_TEXTURES).map((key) => this.getTextureVisibleBounds(key));
+    const deckAspect = Math.max(...pathVisibleSources.map((visible) => visible.height / visible.width));
+    const cardHeight = desktopPath
+      ? lanes[0].height
+      : Math.min(lanes[0].height, (lanes[0].width - padding * 2) * deckAspect + padding * 2);
+    const cardTop = lanes[0].y + (lanes[0].height - cardHeight) / 2;
     const robot = this.robot!;
+    if (desktopPath) {
+      const supportSizing = resolveWorldCharacterScale({
+        profile: CHARACTER_VISUAL_PROFILES.assembled,
+        role: DesktopCharacterRole.WORLD_SUPPORT,
+        viewportHeight: this.scale.height,
+      });
+      const rightAtScale = CHARACTER_VISUAL_PROFILES.assembled.visibleRightLocal * supportSizing.resolvedScale;
+      const robotX = lanes[0].x - Math.max(42, this.scale.width * 0.032) - rightAtScale;
+      robot.setPosition(robotX, this.missionLayout!.platformContactY).setScale(supportSizing.resolvedScale).setAngle(0).setAlpha(1)
+        .setData({ characterRole: 'SUPPORTING_CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', grounded: true });
+      publishCharacterTelemetry(this, [{
+        characterId: 'mission10-path-robot', object: robot, profileId: 'assembled',
+        role: DesktopCharacterRole.WORLD_SUPPORT, sizing: supportSizing,
+        groundY: this.missionLayout!.platformContactY,
+      }]);
+    }
     const shadow = this.add.ellipse(robot.x, robot.y - 16 * robot.scaleY,
-      robot.displayWidth * 0.55, Math.max(6, robot.displayHeight * 0.035), 0x031522, 0.3)
+      INTRO_ROBOT_BOUNDS.width * robot.scaleX * 0.55, Math.max(6, INTRO_ROBOT_BOUNDS.height * robot.scaleY * 0.035), 0x031522, 0.3)
       .setName('mission10-path-robot-shadow');
     this.stageRoot!.add(shadow);
+    const choiceGroup = this.add.container(0, 0)
+      .setName('MISSION10_PATH_CHOICE_GROUP')
+      .setData({ semanticGroup: 'MISSION10_PATH_CHOICE_GROUP', slotCount: 3 });
+    this.stageRoot!.add(choiceGroup);
+    const cardMetrics: {
+      id: Mission10LaneId;
+      kind: Mission10PathKind;
+      x: number;
+      y: number;
+      width: number;
+      height: number;
+      assetVisibleWidth: number;
+      assetVisibleHeight: number;
+      visibleLeft: number;
+      visibleRight: number;
+      visibleTop: number;
+      visibleBottom: number;
+      visibleWidth: number;
+      visibleHeight: number;
+      parentScaleX: number;
+      parentScaleY: number;
+      localScaleX: number;
+      localScaleY: number;
+      effectiveWorldScaleX: number;
+      effectiveWorldScaleY: number;
+    }[] = [];
     for (let index = 0; index < lanes.length; index += 1) {
       const lane = round.lanes[index];
       const box = lanes[index];
-      const image = this.add.image(box.x + box.width / 2, box.y + box.height / 2, PATH_TEXTURES[lane.kind])
+      const image = this.add.image(box.x + box.width / 2, cardTop + cardHeight / 2, PATH_TEXTURES[lane.kind])
         .setName(`mission10-path-${lane.id.toLowerCase()}`).setData({ laneId: lane.id, hazardKind: lane.kind });
-      const fit = Math.min((box.width - padding * 2) / image.width, (cardHeight - padding * 2) / image.height);
-      image.setScale(fit);
-      const cardTop = image.y - cardHeight / 2;
-      const frame = this.add.graphics().fillStyle(0x071f35, 0.35)
-        .fillRoundedRect(box.x + 2, cardTop + 2, box.width - 4, cardHeight - 4, 18)
-        .lineStyle(3, lane.kind === 'SAFE' ? 0x73f8d0 : lane.kind === 'LASER' ? 0xff5d70 : 0xffa54d, 0.9)
-        .strokeRoundedRect(box.x + 2, cardTop + 2, box.width - 4, cardHeight - 4, 18);
-      const target = this.add.zone(box.x + box.width / 2, image.y, box.width, cardHeight)
+      const visibleSource = this.getTextureVisibleBounds(image.texture.key);
+      const innerCardWidth = Math.max(1, box.width - padding * 2);
+      const innerCardHeight = Math.max(1, cardHeight - padding * 2);
+      const commonVisibleHeight = Math.min(
+        innerCardHeight,
+        ...pathVisibleSources.map((visible) => innerCardWidth * visible.height / visible.width),
+      );
+      const fit = commonVisibleHeight / visibleSource.height;
+      image.setScale(fit).setData('visibleAlphaSourceBounds', visibleSource);
+      let visible = getImageVisibleAlphaBounds(image);
+      image.x += box.x + box.width / 2 - visible.centerX;
+      image.y += cardTop + cardHeight / 2 - visible.centerY;
+      visible = getImageVisibleAlphaBounds(image);
+      const frame = this.add.graphics().fillStyle(0x071f35, 0.22)
+        .fillRoundedRect(box.x, cardTop, box.width, cardHeight, 16)
+        .lineStyle(2, 0xa7f2ff, 0.28)
+        .strokeRoundedRect(box.x, cardTop, box.width, cardHeight, 16)
+        .setName(`mission10-path-card-${lane.id.toLowerCase()}`)
+        .setData({ laneId: lane.id, hazardKind: lane.kind, productionCardShell: true });
+      const target = this.add.zone(box.x + box.width / 2, cardTop + cardHeight / 2, box.width, cardHeight)
         .setName(`mission10-path-target-${lane.id.toLowerCase()}`).setData({ laneId: lane.id, hazardKind: lane.kind });
       this.bindTap(target, () => this.choosePath(lane.id, target, frame));
-      this.stageRoot!.add([frame, image, target]);
+      choiceGroup.add([frame, image, target]);
+      cardMetrics.push({
+        id: lane.id,
+        kind: lane.kind,
+        x: box.x,
+        y: cardTop,
+        width: box.width,
+        height: cardHeight,
+        assetVisibleWidth: visible.width,
+        assetVisibleHeight: visible.height,
+        ...this.getVisibleTelemetry(image, visibleSource),
+      });
     }
+    const groupLeft = Math.min(...cardMetrics.map((card) => card.visibleLeft));
+    const groupRight = Math.max(...cardMetrics.map((card) => card.visibleRight));
+    const groupTop = Math.min(...cardMetrics.map((card) => card.visibleTop));
+    const groupBottom = Math.max(...cardMetrics.map((card) => card.visibleBottom));
+    const robotRight = this.robot
+      ? this.robot.x + CHARACTER_VISUAL_PROFILES.assembled.visibleRightLocal * this.robot.scaleX
+      : 0;
+    this.game.registry.set('mission10PathPresentation', {
+      platformCenterX: this.missionLayout!.platformCenterX,
+      choiceGroupName: 'MISSION10_PATH_CHOICE_GROUP',
+      choiceGroupLeft: groupLeft,
+      choiceGroupRight: groupRight,
+      choiceGroupCenterX: (groupLeft + groupRight) / 2,
+      choiceGroupCenterDelta: (groupLeft + groupRight) / 2 - this.missionLayout!.platformCenterX,
+      choiceGroupBounds: choiceGroupBox,
+      cards: cardMetrics,
+      gap12: cardMetrics[1].x - (cardMetrics[0].x + cardMetrics[0].width),
+      gap23: cardMetrics[2].x - (cardMetrics[1].x + cardMetrics[1].width),
+      groupVisibleLeft: groupLeft,
+      groupVisibleRight: groupRight,
+      groupVisibleTop: groupTop,
+      groupVisibleBottom: groupBottom,
+      groupVisibleCenterX: (groupLeft + groupRight) / 2,
+      viewportWidth: this.scale.width,
+      rightVisibleClearance: this.scale.width - groupRight,
+      leftVisibleClearance: groupLeft,
+      rightClearance: this.scale.width - groupRight,
+      robotRight,
+      robotToFirstCardGap: groupLeft - robotRight,
+      robotScale: this.robot?.scaleX ?? 0,
+      debugOverlaysVisible: false,
+    });
   }
 
   private choosePath(laneId: Mission10LaneId, target: Phaser.GameObjects.Zone, frame: Phaser.GameObjects.Graphics): void {
@@ -538,9 +726,22 @@ export class Mission10Scene extends Phaser.Scene {
     this.stageRoot!.add(signalPuzzleGroup);
     const robotBox = regions.ROBOT_VISIBLE;
     if (this.robot) {
-      this.robot.setScale(robotBox.height / INTRO_ROBOT_BOUNDS.height).setAngle(0).setAlpha(1)
-        .setPosition(robotBox.x + robotBox.width / 2, regions.ROBOT_GROUND_Y + 16 * robotBox.height / INTRO_ROBOT_BOUNDS.height)
+      const signalRobotScale = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP'
+        ? robotBox.height / CHARACTER_VISUAL_PROFILES.assembled.visibleHeightAtScale1
+        : robotBox.height / INTRO_ROBOT_BOUNDS.height;
+      this.robot.setScale(signalRobotScale).setAngle(0).setAlpha(1)
+        .setPosition(robotBox.x + robotBox.width / 2, regions.ROBOT_GROUND_Y + 16 * signalRobotScale)
         .setData({ grounded: true, reactingTo: 'SIGNAL', signalGroundY: regions.ROBOT_GROUND_Y });
+      if (createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP') {
+        publishCharacterTelemetry(this, [{
+          characterId: 'mission10-signal-robot',
+          object: this.robot,
+          profileId: 'assembled',
+          role: DesktopCharacterRole.WORLD_SUPPORT,
+          sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_SUPPORT, viewportHeight: this.scale.height }),
+          groundY: regions.ROBOT_GROUND_Y,
+        }]);
+      }
       this.stageRoot!.add(this.add.ellipse(this.robot.x, regions.ROBOT_GROUND_Y + 2,
         robotBox.width * 0.66, Math.max(6, robotBox.height * 0.035), 0x031522, 0.4).setName('mission10-signal-robot-shadow'));
     }
@@ -558,10 +759,12 @@ export class Mission10Scene extends Phaser.Scene {
     const receiverPoint = mapPoint(config.receiver);
     const emitter = this.add.image(emitterPoint.x, emitterPoint.y, 'MISSION10_SIGNAL_EMITTER')
       .setOrigin(0.77, 0.31).setName('mission10-signal-emitter');
-    emitter.setScale(propSize / emitter.height);
+    const emitterSource = this.getTextureVisibleBounds(emitter.texture.key);
+    emitter.setScale(propSize / emitterSource.height).setData('visibleAlphaSourceBounds', emitterSource);
     const receiver = this.add.image(receiverPoint.x, receiverPoint.y, 'MISSION10_SIGNAL_RECEIVER')
       .setOrigin(0.41, 0.32).setName('mission10-signal-receiver').setData('active', solution.receiverHit);
-    receiver.setScale(propSize / receiver.height);
+    const receiverSource = this.getTextureVisibleBounds(receiver.texture.key);
+    receiver.setScale(propSize / receiverSource.height).setData('visibleAlphaSourceBounds', receiverSource);
     if (!solution.receiverHit) receiver.setTint(0x8fa7b5);
     const sourceHalo = this.add.circle(emitterPoint.x, emitterPoint.y, propSize * 0.19, 0x19d8ec, 0.20)
       .setStrokeStyle(2, 0x54f6ff, 0.7).setName('mission10-signal-source-halo');
@@ -593,7 +796,8 @@ export class Mission10Scene extends Phaser.Scene {
       const mirror = this.add.container(point.x, point.y).setName(`mission10-reflector-${reflector.id.toLowerCase()}`)
         .setData({ reflectorId: reflector.id, orientation });
       const texture = this.textures.get('MISSION10_SIGNAL_REFLECTOR').getSourceImage();
-      const scale = propSize / texture.height;
+      const reflectorSource = this.getTextureVisibleBounds('MISSION10_SIGNAL_REFLECTOR');
+      const scale = propSize / reflectorSource.height;
       const split = Math.round(texture.height * 0.72);
       // The approved artwork supplies both pieces. The pedestal is stationary;
       // only its circular mirror assembly rotates about the optical centre.
@@ -648,9 +852,44 @@ export class Mission10Scene extends Phaser.Scene {
         this.tweens.add({ targets: [targetRing, platformEnergy], alpha: 0.5, duration: 220, yoyo: true, repeat: 2 });
       } else pulse.setPosition(receiverPoint.x, receiverPoint.y);
     }
+    const apparatus: Array<{
+      id: string; visibleLeft: number; visibleRight: number; visibleTop: number; visibleBottom: number;
+      visibleWidth: number; visibleHeight: number; parentScaleX: number; parentScaleY: number;
+      localScaleX: number; localScaleY: number; effectiveWorldScaleX: number; effectiveWorldScaleY: number;
+    }> = [
+      { id: 'emitter', ...this.getVisibleTelemetry(emitter, emitterSource) },
+      { id: 'receiver', ...this.getVisibleTelemetry(receiver, receiverSource) },
+    ];
+    for (const reflector of config.reflectors) {
+      const mirror = signalPuzzleGroup.getByName(`mission10-reflector-${reflector.id.toLowerCase()}`) as Phaser.GameObjects.Container;
+      const bounds = mirror.getBounds();
+      const matrix = mirror.getWorldTransformMatrix();
+      apparatus.push({
+        id: reflector.id,
+        visibleLeft: bounds.left, visibleRight: bounds.right, visibleTop: bounds.top, visibleBottom: bounds.bottom,
+        visibleWidth: bounds.width, visibleHeight: bounds.height,
+        parentScaleX: 1, parentScaleY: 1, localScaleX: mirror.scaleX, localScaleY: mirror.scaleY,
+        effectiveWorldScaleX: Math.hypot(matrix.a, matrix.b), effectiveWorldScaleY: Math.hypot(matrix.c, matrix.d),
+      });
+    }
+    const beamPoints = points.flatMap((segment) => [segment.from, segment.to]);
+    const halfBeam = (core + 11) / 2;
+    const beamLeft = Math.min(...beamPoints.map((point) => point.x - halfBeam));
+    const beamRight = Math.max(...beamPoints.map((point) => point.x + halfBeam));
+    const beamTop = Math.min(...beamPoints.map((point) => point.y - halfBeam));
+    const beamBottom = Math.max(...beamPoints.map((point) => point.y + halfBeam));
+    const groupVisibleLeft = Math.min(...apparatus.map((item) => item.visibleLeft), beamLeft);
+    const groupVisibleRight = Math.max(...apparatus.map((item) => item.visibleRight), beamRight);
+    const groupVisibleTop = Math.min(...apparatus.map((item) => item.visibleTop), beamTop);
+    const groupVisibleBottom = Math.max(...apparatus.map((item) => item.visibleBottom), beamBottom);
     this.game.registry.set('mission10SignalEvaluation', solution);
     this.game.registry.set('mission10SignalPresentation', { field, propSize, coreWidth: core, points,
-      source: emitterPoint, receiver: receiverPoint, groupName: 'SIGNAL_PUZZLE_GROUP',
+      source: emitterPoint, receiver: receiverPoint, groupName: 'SIGNAL_PUZZLE_GROUP', apparatus,
+      groupVisibleBounds: {
+        visibleLeft: groupVisibleLeft, visibleRight: groupVisibleRight,
+        visibleTop: groupVisibleTop, visibleBottom: groupVisibleBottom,
+        visibleWidth: groupVisibleRight - groupVisibleLeft, visibleHeight: groupVisibleBottom - groupVisibleTop,
+      },
       successHold: this.prefersReducedMotion() ? 1100 : 1500 });
   }
   private renderLaunch(finale: boolean): void {
@@ -673,7 +912,7 @@ export class Mission10Scene extends Phaser.Scene {
     if (this.robot) {
       this.robot.setY(layout.launchGroundY + 16 * this.robot.scaleY);
       this.stageRoot!.add(this.add.ellipse(this.robot.x, layout.launchGroundY + 1,
-        this.robot.displayWidth * 0.55, Math.max(6, this.robot.displayHeight * 0.035), 0x031522, 0.3));
+        INTRO_ROBOT_BOUNDS.width * this.robot.scaleX * 0.55, Math.max(6, INTRO_ROBOT_BOUNDS.height * this.robot.scaleY * 0.035), 0x031522, 0.3));
     }
     this.stageRoot!.add([beacon, consoleObject]);
     if (!finale) ['ПУТЬ ✓', 'ЭНЕРГИЯ ✓', 'СИГНАЛ ✓'].forEach((label, index) => {

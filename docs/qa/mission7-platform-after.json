@@ -1,0 +1,1505 @@
+{
+  "mode": "after",
+  "url": "http://127.0.0.1:4198/?qaMission=7",
+  "checks": [
+    {
+      "name": "1280x720 robot grounded",
+      "ok": true,
+      "actual": {
+        "viewport": "1280x720",
+        "platformTopY": 560,
+        "platformSurfaceAtRobotX": 563.23,
+        "robotBottom": 563.23,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 560.47,
+        "cardBottom": 488.47,
+        "cardClearance": 72,
+        "hintTop": 500.47,
+        "hintBottom": 554.47,
+        "hintGap": 12,
+        "robotCardGap": 48.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1280x720 card floating clearance",
+      "ok": true,
+      "actual": {
+        "viewport": "1280x720",
+        "platformTopY": 560,
+        "platformSurfaceAtRobotX": 563.23,
+        "robotBottom": 563.23,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 560.47,
+        "cardBottom": 488.47,
+        "cardClearance": 72,
+        "hintTop": 500.47,
+        "hintBottom": 554.47,
+        "hintGap": 12,
+        "robotCardGap": 48.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1280x720 hint follows card",
+      "ok": true,
+      "actual": {
+        "viewport": "1280x720",
+        "platformTopY": 560,
+        "platformSurfaceAtRobotX": 563.23,
+        "robotBottom": 563.23,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 560.47,
+        "cardBottom": 488.47,
+        "cardClearance": 72,
+        "hintTop": 500.47,
+        "hintBottom": 554.47,
+        "hintGap": 12,
+        "robotCardGap": 48.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1280x720 hint platform safety",
+      "ok": true,
+      "actual": {
+        "viewport": "1280x720",
+        "platformTopY": 560,
+        "platformSurfaceAtRobotX": 563.23,
+        "robotBottom": 563.23,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 560.47,
+        "cardBottom": 488.47,
+        "cardClearance": 72,
+        "hintTop": 500.47,
+        "hintBottom": 554.47,
+        "hintGap": 12,
+        "robotCardGap": 48.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1280x720 horizontal robot/card",
+      "ok": true,
+      "actual": {
+        "viewport": "1280x720",
+        "platformTopY": 560,
+        "platformSurfaceAtRobotX": 563.23,
+        "robotBottom": 563.23,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 560.47,
+        "cardBottom": 488.47,
+        "cardClearance": 72,
+        "hintTop": 500.47,
+        "hintBottom": 554.47,
+        "hintGap": 12,
+        "robotCardGap": 48.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1600x900 robot grounded",
+      "ok": true,
+      "actual": {
+        "viewport": "1600x900",
+        "platformTopY": 700,
+        "platformSurfaceAtRobotX": 702.54,
+        "robotBottom": 702.54,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 700.41,
+        "cardBottom": 628.41,
+        "cardClearance": 72,
+        "hintTop": 642.41,
+        "hintBottom": 696.41,
+        "hintGap": 14,
+        "robotCardGap": 56.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1600x900 card floating clearance",
+      "ok": true,
+      "actual": {
+        "viewport": "1600x900",
+        "platformTopY": 700,
+        "platformSurfaceAtRobotX": 702.54,
+        "robotBottom": 702.54,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 700.41,
+        "cardBottom": 628.41,
+        "cardClearance": 72,
+        "hintTop": 642.41,
+        "hintBottom": 696.41,
+        "hintGap": 14,
+        "robotCardGap": 56.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1600x900 hint follows card",
+      "ok": true,
+      "actual": {
+        "viewport": "1600x900",
+        "platformTopY": 700,
+        "platformSurfaceAtRobotX": 702.54,
+        "robotBottom": 702.54,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 700.41,
+        "cardBottom": 628.41,
+        "cardClearance": 72,
+        "hintTop": 642.41,
+        "hintBottom": 696.41,
+        "hintGap": 14,
+        "robotCardGap": 56.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1600x900 hint platform safety",
+      "ok": true,
+      "actual": {
+        "viewport": "1600x900",
+        "platformTopY": 700,
+        "platformSurfaceAtRobotX": 702.54,
+        "robotBottom": 702.54,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 700.41,
+        "cardBottom": 628.41,
+        "cardClearance": 72,
+        "hintTop": 642.41,
+        "hintBottom": 696.41,
+        "hintGap": 14,
+        "robotCardGap": 56.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1600x900 horizontal robot/card",
+      "ok": true,
+      "actual": {
+        "viewport": "1600x900",
+        "platformTopY": 700,
+        "platformSurfaceAtRobotX": 702.54,
+        "robotBottom": 702.54,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 700.41,
+        "cardBottom": 628.41,
+        "cardClearance": 72,
+        "hintTop": 642.41,
+        "hintBottom": 696.41,
+        "hintGap": 14,
+        "robotCardGap": 56.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1920x1080 robot grounded",
+      "ok": true,
+      "actual": {
+        "viewport": "1920x1080",
+        "platformTopY": 840,
+        "platformSurfaceAtRobotX": 842.08,
+        "robotBottom": 842.08,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 840.38,
+        "cardBottom": 764.38,
+        "cardClearance": 76,
+        "hintTop": 781.18,
+        "hintBottom": 835.18,
+        "hintGap": 16.8,
+        "robotCardGap": 62.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 599.29,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1920x1080 card floating clearance",
+      "ok": true,
+      "actual": {
+        "viewport": "1920x1080",
+        "platformTopY": 840,
+        "platformSurfaceAtRobotX": 842.08,
+        "robotBottom": 842.08,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 840.38,
+        "cardBottom": 764.38,
+        "cardClearance": 76,
+        "hintTop": 781.18,
+        "hintBottom": 835.18,
+        "hintGap": 16.8,
+        "robotCardGap": 62.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 599.29,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1920x1080 hint follows card",
+      "ok": true,
+      "actual": {
+        "viewport": "1920x1080",
+        "platformTopY": 840,
+        "platformSurfaceAtRobotX": 842.08,
+        "robotBottom": 842.08,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 840.38,
+        "cardBottom": 764.38,
+        "cardClearance": 76,
+        "hintTop": 781.18,
+        "hintBottom": 835.18,
+        "hintGap": 16.8,
+        "robotCardGap": 62.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 599.29,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1920x1080 hint platform safety",
+      "ok": true,
+      "actual": {
+        "viewport": "1920x1080",
+        "platformTopY": 840,
+        "platformSurfaceAtRobotX": 842.08,
+        "robotBottom": 842.08,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 840.38,
+        "cardBottom": 764.38,
+        "cardClearance": 76,
+        "hintTop": 781.18,
+        "hintBottom": 835.18,
+        "hintGap": 16.8,
+        "robotCardGap": 62.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 599.29,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "1920x1080 horizontal robot/card",
+      "ok": true,
+      "actual": {
+        "viewport": "1920x1080",
+        "platformTopY": 840,
+        "platformSurfaceAtRobotX": 842.08,
+        "robotBottom": 842.08,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 840.38,
+        "cardBottom": 764.38,
+        "cardClearance": 76,
+        "hintTop": 781.18,
+        "hintBottom": 835.18,
+        "hintGap": 16.8,
+        "robotCardGap": 62.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 599.29,
+        "cardHeight": 370,
+        "pass": true
+      }
+    },
+    {
+      "name": "390x844 mobile portrait",
+      "ok": true,
+      "actual": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "platform": {
+          "topY": 765.77,
+          "surfaceAtRobotX": 765.77,
+          "surfaceAtCardX": 765.77,
+          "surfaceAtHintX": 830.3500000000001
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 195,
+            "y": 99.23,
+            "width": 270
+          },
+          "board": {
+            "x": 13.650000000000002,
+            "y": 142.81,
+            "width": 362.70000000000005,
+            "height": 622.96
+          },
+          "helper": {
+            "x": 195,
+            "feetY": 765.77,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 195,
+            "feetY": 765.77,
+            "scale": 0
+          },
+          "showRepaired": false,
+          "hint": {
+            "x": 195,
+            "y": 802.3500000000001,
+            "width": 230,
+            "height": 56,
+            "fontSize": 17.55
+          }
+        },
+        "card": {
+          "left": 13.650000000000002,
+          "right": 376.35,
+          "top": 142.81,
+          "bottom": 765.77,
+          "width": 362.70000000000005,
+          "height": 622.96
+        },
+        "hint": {
+          "left": 80,
+          "right": 310,
+          "top": 774.3500000000001,
+          "bottom": 830.3500000000001,
+          "width": 230,
+          "height": 56
+        },
+        "robot": {
+          "left": 195,
+          "right": 195,
+          "top": 765.77001953125,
+          "bottom": 765.77001953125,
+          "width": 0,
+          "height": 0
+        },
+        "systems": {
+          "left": 77,
+          "right": 313,
+          "top": 91.2300033569336,
+          "bottom": 107.2300033569336,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 55.650001525878906,
+            "y": 247.80999755859375,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 334.3500061035156,
+            "y": 717.77001953125,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 55.650001525878906,
+            "y": 482.7900085449219,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 334.3500061035156,
+            "y": 247.80999755859375,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 55.650001525878906,
+            "y": 717.77001953125,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 334.3500061035156,
+            "y": 482.7900085449219,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 362.70000000000005,
+          "height": 622.96
+        }
+      }
+    },
+    {
+      "name": "412x915 mobile portrait",
+      "ok": true,
+      "actual": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "platform": {
+          "topY": 835.5160000000001,
+          "surfaceAtRobotX": 835.5160000000001,
+          "surfaceAtCardX": 835.5160000000001,
+          "surfaceAtHintX": 900.58
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 206,
+            "y": 100.48400000000001,
+            "width": 270
+          },
+          "board": {
+            "x": 14.420000000000002,
+            "y": 144.548,
+            "width": 383.15999999999997,
+            "height": 690.9680000000001
+          },
+          "helper": {
+            "x": 206,
+            "feetY": 835.5160000000001,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 206,
+            "feetY": 835.5160000000001,
+            "scale": 0
+          },
+          "showRepaired": false,
+          "hint": {
+            "x": 206,
+            "y": 872.58,
+            "width": 230,
+            "height": 56,
+            "fontSize": 18.54
+          }
+        },
+        "card": {
+          "left": 14.420000000000002,
+          "right": 397.58,
+          "top": 144.548,
+          "bottom": 835.5160000000001,
+          "width": 383.15999999999997,
+          "height": 690.9680000000001
+        },
+        "hint": {
+          "left": 91,
+          "right": 321,
+          "top": 844.58,
+          "bottom": 900.58,
+          "width": 230,
+          "height": 56
+        },
+        "robot": {
+          "left": 206,
+          "right": 206,
+          "top": 835.5159912109375,
+          "bottom": 835.5159912109375,
+          "width": 0,
+          "height": 0
+        },
+        "systems": {
+          "left": 88,
+          "right": 324,
+          "top": 92.48400115966797,
+          "bottom": 108.48400115966797,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 56.41999816894531,
+            "y": 249.54800415039062,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 355.58001708984375,
+            "y": 787.5159912109375,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 56.41999816894531,
+            "y": 518.531982421875,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 355.58001708984375,
+            "y": 249.54800415039062,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 56.41999816894531,
+            "y": 787.5159912109375,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 355.58001708984375,
+            "y": 518.531982421875,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 383.15999999999997,
+          "height": 690.9680000000001
+        }
+      }
+    },
+    {
+      "name": "844x390 mobile landscape gate",
+      "ok": true,
+      "actual": {
+        "active": "Mission7OrientationGuardScene",
+        "orientationGate": true,
+        "inputActive": false,
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "platform": {
+          "topY": 326.875,
+          "surfaceAtRobotX": 326.875,
+          "surfaceAtCardX": 326.875,
+          "surfaceAtHintX": 326.875
+        },
+        "card": null,
+        "hint": null,
+        "robot": null,
+        "systems": null,
+        "ports": [],
+        "connected": [],
+        "challengeIndex": null,
+        "cardSize": null
+      }
+    },
+    {
+      "name": "wrong connection rejected",
+      "ok": true,
+      "actual": []
+    },
+    {
+      "name": "progress 1/3 first wire accepted",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "duplicate connection rejected",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "Hint clickable",
+      "ok": true,
+      "actual": null
+    },
+    {
+      "name": "progress moves to 2/3",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "progress moves to 3/3",
+      "ok": true,
+      "actual": 2
+    },
+    {
+      "name": "card geometry unchanged between progress states",
+      "ok": true,
+      "actual": {
+        "initial": {
+          "left": 465.48975999999993,
+          "right": 1065.48976,
+          "top": 118.46587955350697,
+          "bottom": 488.46587955350697,
+          "width": 600,
+          "height": 370
+        },
+        "second": {
+          "left": 465.48975999999993,
+          "right": 1065.48976,
+          "top": 118.46587955350697,
+          "bottom": 488.46587955350697,
+          "width": 600,
+          "height": 370
+        },
+        "third": {
+          "left": 465.48975999999993,
+          "right": 1065.48976,
+          "top": 118.46587955350697,
+          "bottom": 488.46587955350697,
+          "width": 600,
+          "height": 370
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "desktop": [
+    {
+      "metrics": {
+        "viewport": "1280x720",
+        "platformTopY": 560,
+        "platformSurfaceAtRobotX": 563.23,
+        "robotBottom": 563.23,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 560.47,
+        "cardBottom": 488.47,
+        "cardClearance": 72,
+        "hintTop": 500.47,
+        "hintBottom": 554.47,
+        "hintGap": 12,
+        "robotCardGap": 48.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      },
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "platform": {
+          "topY": 560,
+          "surfaceAtRobotX": 563.2305281353713,
+          "surfaceAtCardX": 560.465879553507,
+          "surfaceAtHintX": 560.465879553507
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 640,
+            "y": 75.36,
+            "width": 243.2
+          },
+          "board": {
+            "x": 465.48975999999993,
+            "y": 118.46587955350697,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 289.93287999999995,
+            "feetY": 563.2305281353713,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 319.30182999999994,
+            "feetY": 563.2305281353713,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 765.4897599999999,
+            "y": 527.465879553507,
+            "width": 230,
+            "height": 54,
+            "fontSize": 19
+          },
+          "platform": {
+            "topY": 560,
+            "surfaceAtRobotX": 563.2305281353713,
+            "surfaceAtCardX": 560.465879553507,
+            "surfaceAtHintX": 560.465879553507
+          }
+        },
+        "card": {
+          "left": 465.48975999999993,
+          "right": 1065.48976,
+          "top": 118.46587955350697,
+          "bottom": 488.46587955350697,
+          "width": 600,
+          "height": 370
+        },
+        "hint": {
+          "left": 650.4897599999999,
+          "right": 880.4897599999999,
+          "top": 500.46587955350697,
+          "bottom": 554.465879553507,
+          "width": 230,
+          "height": 54
+        },
+        "robot": {
+          "left": 220.7633735407889,
+          "right": 417.1392655794323,
+          "top": 293.2305291593075,
+          "bottom": 563.2305297851562,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877
+        },
+        "systems": {
+          "left": 522,
+          "right": 758,
+          "top": 67.36000061035156,
+          "bottom": 83.36000061035156,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 223.46588134765625,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 331.96588134765625,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 331.96588134765625,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 440.46588134765625,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 597.48974609375,
+            "y": 440.46588134765625,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 933.48974609375,
+            "y": 223.46588134765625,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        }
+      }
+    },
+    {
+      "metrics": {
+        "viewport": "1600x900",
+        "platformTopY": 700,
+        "platformSurfaceAtRobotX": 702.54,
+        "robotBottom": 702.54,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 700.41,
+        "cardBottom": 628.41,
+        "cardClearance": 72,
+        "hintTop": 642.41,
+        "hintBottom": 696.41,
+        "hintGap": 14,
+        "robotCardGap": 56.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 600,
+        "cardHeight": 370,
+        "pass": true
+      },
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "platform": {
+          "topY": 700,
+          "surfaceAtRobotX": 702.5372014228542,
+          "surfaceAtCardX": 700.412448669246,
+          "surfaceAtHintX": 700.412448669246
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 800,
+            "y": 84,
+            "width": 260
+          },
+          "board": {
+            "x": 632.2,
+            "y": 258.41244866924603,
+            "width": 600,
+            "height": 370
+          },
+          "helper": {
+            "x": 442.3,
+            "feetY": 702.5372014228542,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 478.01207000000005,
+            "feetY": 702.5372014228542,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 932.2,
+            "y": 669.412448669246,
+            "width": 230,
+            "height": 54,
+            "fontSize": 19
+          },
+          "platform": {
+            "topY": 700,
+            "surfaceAtRobotX": 702.5372014228542,
+            "surfaceAtCardX": 700.412448669246,
+            "surfaceAtHintX": 700.412448669246
+          }
+        },
+        "card": {
+          "left": 632.2,
+          "right": 1232.2,
+          "top": 258.41244866924603,
+          "bottom": 628.412448669246,
+          "width": 600,
+          "height": 370
+        },
+        "hint": {
+          "left": 817.2,
+          "right": 1047.2,
+          "top": 642.412448669246,
+          "bottom": 696.412448669246,
+          "width": 230,
+          "height": 54
+        },
+        "robot": {
+          "left": 379.47363965407015,
+          "right": 575.8495316927135,
+          "top": 432.53723081946373,
+          "bottom": 702.5372314453125,
+          "width": 196.37589203864337,
+          "height": 270.00000062584877
+        },
+        "systems": {
+          "left": 682,
+          "right": 918,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 363.4124450683594,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 471.9124450683594,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 471.9124450683594,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 580.4124755859375,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 764.2000122070312,
+            "y": 580.4124755859375,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1100.199951171875,
+            "y": 363.4124450683594,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 600,
+          "height": 370
+        }
+      }
+    },
+    {
+      "metrics": {
+        "viewport": "1920x1080",
+        "platformTopY": 840,
+        "platformSurfaceAtRobotX": 842.08,
+        "robotBottom": 842.08,
+        "robotDelta": 0,
+        "platformSurfaceAtCardX": 840.38,
+        "cardBottom": 764.38,
+        "cardClearance": 76,
+        "hintTop": 781.18,
+        "hintBottom": 835.18,
+        "hintGap": 16.8,
+        "robotCardGap": 62.35,
+        "robotWidth": 196.38,
+        "robotHeight": 270,
+        "cardWidth": 599.29,
+        "cardHeight": 370,
+        "pass": true
+      },
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "DESKTOP",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "platform": {
+          "topY": 840,
+          "surfaceAtRobotX": 842.0799864812802,
+          "surfaceAtCardX": 840.3752250705004,
+          "surfaceAtHintX": 840.3752250705004
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 960,
+            "y": 84,
+            "width": 260
+          },
+          "board": {
+            "x": 798.6000000000001,
+            "y": 394.3752250705004,
+            "width": 599.288,
+            "height": 370
+          },
+          "helper": {
+            "x": 602.3000000000002,
+            "feetY": 842.0799864812802,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 638.4120700000001,
+            "feetY": 842.0799864812802,
+            "scale": 0.19258202567760344
+          },
+          "showRepaired": true,
+          "hint": {
+            "x": 1098.2440000000001,
+            "y": 808.1752250705003,
+            "width": 230,
+            "height": 54,
+            "fontSize": 19
+          },
+          "platform": {
+            "topY": 840,
+            "surfaceAtRobotX": 842.0799864812802,
+            "surfaceAtCardX": 840.3752250705004,
+            "surfaceAtHintX": 840.3752250705004
+          }
+        },
+        "card": {
+          "left": 798.6000000000001,
+          "right": 1397.8880000000001,
+          "top": 394.3752250705004,
+          "bottom": 764.3752250705004,
+          "width": 599.288,
+          "height": 370
+        },
+        "hint": {
+          "left": 983.2440000000001,
+          "right": 1213.2440000000001,
+          "top": 781.1752250705003,
+          "bottom": 835.1752250705003,
+          "width": 230,
+          "height": 54
+        },
+        "robot": {
+          "left": 539.8736030329763,
+          "right": 736.2494950716198,
+          "top": 572.0799554288387,
+          "bottom": 842.0799560546875,
+          "width": 196.37589203864343,
+          "height": 270.00000062584877
+        },
+        "systems": {
+          "left": 842,
+          "right": 1078,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 499.3752136230469,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 716.375244140625,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 607.875244140625,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 499.3752136230469,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 930.443359375,
+            "y": 716.375244140625,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 1266.044677734375,
+            "y": 607.875244140625,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 599.288,
+          "height": 370
+        }
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "viewport": "390x844",
+      "pass": true,
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "platform": {
+          "topY": 765.77,
+          "surfaceAtRobotX": 765.77,
+          "surfaceAtCardX": 765.77,
+          "surfaceAtHintX": 830.3500000000001
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 195,
+            "y": 99.23,
+            "width": 270
+          },
+          "board": {
+            "x": 13.650000000000002,
+            "y": 142.81,
+            "width": 362.70000000000005,
+            "height": 622.96
+          },
+          "helper": {
+            "x": 195,
+            "feetY": 765.77,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 195,
+            "feetY": 765.77,
+            "scale": 0
+          },
+          "showRepaired": false,
+          "hint": {
+            "x": 195,
+            "y": 802.3500000000001,
+            "width": 230,
+            "height": 56,
+            "fontSize": 17.55
+          }
+        },
+        "card": {
+          "left": 13.650000000000002,
+          "right": 376.35,
+          "top": 142.81,
+          "bottom": 765.77,
+          "width": 362.70000000000005,
+          "height": 622.96
+        },
+        "hint": {
+          "left": 80,
+          "right": 310,
+          "top": 774.3500000000001,
+          "bottom": 830.3500000000001,
+          "width": 230,
+          "height": 56
+        },
+        "robot": {
+          "left": 195,
+          "right": 195,
+          "top": 765.77001953125,
+          "bottom": 765.77001953125,
+          "width": 0,
+          "height": 0
+        },
+        "systems": {
+          "left": 77,
+          "right": 313,
+          "top": 91.2300033569336,
+          "bottom": 107.2300033569336,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 55.650001525878906,
+            "y": 247.80999755859375,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 334.3500061035156,
+            "y": 717.77001953125,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 55.650001525878906,
+            "y": 482.7900085449219,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 334.3500061035156,
+            "y": 247.80999755859375,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 55.650001525878906,
+            "y": 717.77001953125,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 334.3500061035156,
+            "y": 482.7900085449219,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 362.70000000000005,
+          "height": 622.96
+        }
+      }
+    },
+    {
+      "viewport": "412x915",
+      "pass": true,
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "orientationGate": false,
+        "inputActive": true,
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "platform": {
+          "topY": 835.5160000000001,
+          "surfaceAtRobotX": 835.5160000000001,
+          "surfaceAtCardX": 835.5160000000001,
+          "surfaceAtHintX": 900.58
+        },
+        "layout": {
+          "showHeader": false,
+          "showHelper": false,
+          "systems": {
+            "x": 206,
+            "y": 100.48400000000001,
+            "width": 270
+          },
+          "board": {
+            "x": 14.420000000000002,
+            "y": 144.548,
+            "width": 383.15999999999997,
+            "height": 690.9680000000001
+          },
+          "helper": {
+            "x": 206,
+            "feetY": 835.5160000000001,
+            "scale": 0
+          },
+          "repaired": {
+            "x": 206,
+            "feetY": 835.5160000000001,
+            "scale": 0
+          },
+          "showRepaired": false,
+          "hint": {
+            "x": 206,
+            "y": 872.58,
+            "width": 230,
+            "height": 56,
+            "fontSize": 18.54
+          }
+        },
+        "card": {
+          "left": 14.420000000000002,
+          "right": 397.58,
+          "top": 144.548,
+          "bottom": 835.5160000000001,
+          "width": 383.15999999999997,
+          "height": 690.9680000000001
+        },
+        "hint": {
+          "left": 91,
+          "right": 321,
+          "top": 844.58,
+          "bottom": 900.58,
+          "width": 230,
+          "height": 56
+        },
+        "robot": {
+          "left": 206,
+          "right": 206,
+          "top": 835.5159912109375,
+          "bottom": 835.5159912109375,
+          "width": 0,
+          "height": 0
+        },
+        "systems": {
+          "left": 88,
+          "right": 324,
+          "top": 92.48400115966797,
+          "bottom": 108.48400115966797,
+          "width": 236,
+          "height": 16
+        },
+        "ports": [
+          {
+            "color": "red",
+            "side": "source",
+            "x": 56.41999816894531,
+            "y": 249.54800415039062,
+            "locked": false
+          },
+          {
+            "color": "red",
+            "side": "target",
+            "x": 355.58001708984375,
+            "y": 787.5159912109375,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "source",
+            "x": 56.41999816894531,
+            "y": 518.531982421875,
+            "locked": false
+          },
+          {
+            "color": "blue",
+            "side": "target",
+            "x": 355.58001708984375,
+            "y": 249.54800415039062,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "source",
+            "x": 56.41999816894531,
+            "y": 787.5159912109375,
+            "locked": false
+          },
+          {
+            "color": "green",
+            "side": "target",
+            "x": 355.58001708984375,
+            "y": 518.531982421875,
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "challengeIndex": 0,
+        "cardSize": {
+          "width": 383.15999999999997,
+          "height": 690.9680000000001
+        }
+      }
+    },
+    {
+      "viewport": "844x390",
+      "pass": true,
+      "info": {
+        "active": "Mission7OrientationGuardScene",
+        "orientationGate": true,
+        "inputActive": false,
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "platform": {
+          "topY": 326.875,
+          "surfaceAtRobotX": 326.875,
+          "surfaceAtCardX": 326.875,
+          "surfaceAtHintX": 326.875
+        },
+        "card": null,
+        "hint": null,
+        "robot": null,
+        "systems": null,
+        "ports": [],
+        "connected": [],
+        "challengeIndex": null,
+        "cardSize": null
+      }
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission7-platform-1280x720-after.png",
+    "docs\\qa\\screenshots\\mission7-platform-1600x900-after.png",
+    "docs\\qa\\screenshots\\mission7-platform-1920x1080-after.png"
+  ],
+  "playtest": {
+    "wireDragCorrect": true,
+    "wrongRejected": true,
+    "duplicateRejected": true,
+    "progressStates": [
+      0,
+      1,
+      2
+    ],
+    "hintClickable": true,
+    "cardGeometryStable": true
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "result": "FAIL",
+  "checks": [
+    {
+      "name": "1280x720 card centered on platform",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1280x720 card clearance",
+      "ok": true,
+      "actual": 61.6
+    },
+    {
+      "name": "1280x720 helper left of card",
+      "ok": true,
+      "actual": 142.7
+    },
+    {
+      "name": "1280x720 assembled right of card",
+      "ok": true,
+      "actual": 118.24
+    },
+    {
+      "name": "1280x720 helper grounded",
+      "ok": true,
+      "actual": 0.19
+    },
+    {
+      "name": "1280x720 assembled grounded",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1280x720 assembled fully opaque",
+      "ok": true,
+      "actual": {
+        "assembledAlpha": 1,
+        "installed": 1
+      }
+    },
+    {
+      "name": "1280x720 one assembled robot",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1280x720 antenna visible",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1280x720 system status top-center",
+      "ok": true,
+      "actual": 640
+    },
+    {
+      "name": "1280x720 platform visible under card",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1280x720 robot scales unchanged",
+      "ok": false,
+      "actual": {
+        "helper": 0.20386740331491712,
+        "assembled": 0.2031837916063676
+      }
+    },
+    {
+      "name": "1438x914 card centered on platform",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1438x914 card clearance",
+      "ok": true,
+      "actual": 62.91
+    },
+    {
+      "name": "1438x914 helper left of card",
+      "ok": true,
+      "actual": 152.15
+    },
+    {
+      "name": "1438x914 assembled right of card",
+      "ok": true,
+      "actual": 120.69
+    },
+    {
+      "name": "1438x914 helper grounded",
+      "ok": true,
+      "actual": 0.24
+    },
+    {
+      "name": "1438x914 assembled grounded",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1438x914 assembled fully opaque",
+      "ok": true,
+      "actual": {
+        "assembledAlpha": 1,
+        "installed": 1
+      }
+    },
+    {
+      "name": "1438x914 one assembled robot",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1438x914 antenna visible",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1438x914 system status top-center",
+      "ok": true,
+      "actual": 719
+    },
+    {
+      "name": "1438x914 platform visible under card",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1438x914 robot scales unchanged",
+      "ok": false,
+      "actual": {
+        "helper": 0.2038674033149171,
+        "assembled": 0.2031837916063676
+      }
+    },
+    {
+      "name": "1600x900 card centered on platform",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1600x900 card clearance",
+      "ok": true,
+      "actual": 70
+    },
+    {
+      "name": "1600x900 helper left of card",
+      "ok": true,
+      "actual": 197.45
+    },
+    {
+      "name": "1600x900 assembled right of card",
+      "ok": true,
+      "actual": 166.05
+    },
+    {
+      "name": "1600x900 helper grounded",
+      "ok": true,
+      "actual": 0.22
+    },
+    {
+      "name": "1600x900 assembled grounded",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1600x900 assembled fully opaque",
+      "ok": true,
+      "actual": {
+        "assembledAlpha": 1,
+        "installed": 1
+      }
+    },
+    {
+      "name": "1600x900 one assembled robot",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1600x900 antenna visible",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1600x900 system status top-center",
+      "ok": true,
+      "actual": 800
+    },
+    {
+      "name": "1600x900 platform visible under card",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1600x900 robot scales unchanged",
+      "ok": false,
+      "actual": {
+        "helper": 0.20386740331491712,
+        "assembled": 0.2031837916063676
+      }
+    },
+    {
+      "name": "1920x1080 card centered on platform",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1920x1080 card clearance",
+      "ok": true,
+      "actual": 75
+    },
+    {
+      "name": "1920x1080 helper left of card",
+      "ok": true,
+      "actual": 261.83
+    },
+    {
+      "name": "1920x1080 assembled right of card",
+      "ok": true,
+      "actual": 224.06
+    },
+    {
+      "name": "1920x1080 helper grounded",
+      "ok": true,
+      "actual": 0.26
+    },
+    {
+      "name": "1920x1080 assembled grounded",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1920x1080 assembled fully opaque",
+      "ok": true,
+      "actual": {
+        "assembledAlpha": 1,
+        "installed": 1
+      }
+    },
+    {
+      "name": "1920x1080 one assembled robot",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1920x1080 antenna visible",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1920x1080 system status top-center",
+      "ok": true,
+      "actual": 960
+    },
+    {
+      "name": "1920x1080 platform visible under card",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1920x1080 robot scales unchanged",
+      "ok": false,
+      "actual": {
+        "helper": 0.20386740331491712,
+        "assembled": 0.20318379160636757
+      }
+    },
+    {
+      "name": "390x844 mobile regression",
+      "ok": true,
+      "actual": {
+        "viewport": "390x844",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "cardPresent": true,
+        "hasHelper": true,
+        "hasAssembled": true,
+        "pass": true
+      }
+    },
+    {
+      "name": "844x390 mobile regression",
+      "ok": true,
+      "actual": {
+        "viewport": "844x390",
+        "semantic": "PHONE_LANDSCAPE_SHORT",
+        "cardPresent": true,
+        "hasHelper": true,
+        "hasAssembled": true,
+        "pass": true
+      }
+    },
+    {
+      "name": "battery low clickable",
+      "ok": true,
+      "actual": null
+    },
+    {
+      "name": "battery medium clickable",
+      "ok": true,
+      "actual": null
+    },
+    {
+      "name": "battery full clickable",
+      "ok": true,
+      "actual": null
+    },
+    {
+      "name": "wrong answer remains wrong without progress",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "challengeIndex": 0,
+          "selection": null,
+          "order": [],
+          "result": "wrong",
+          "hintShown": false,
+          "completed": false,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "fullest",
+            "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+            "kind": "select",
+            "correctSelection": "full"
+          }
+        },
+        "session": {
+          "currentTask": 6,
+          "completedTasks": 5,
+          "totalTasks": 10,
+          "score": 5,
+          "assemblyProgress": 5,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        }
+      }
+    },
+    {
+      "name": "Hint works",
+      "ok": true,
+      "actual": {
+        "challengeIndex": 0,
+        "selection": null,
+        "order": [],
+        "result": "wrong",
+        "hintShown": true,
+        "completed": false,
+        "challengeCount": 3,
+        "challenge": {
+          "id": "fullest",
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЛНАЯ?",
+          "kind": "select",
+          "correctSelection": "full"
+        }
+      }
+    },
+    {
+      "name": "correct answer progresses to round 2",
+      "ok": true,
+      "actual": {
+        "challengeIndex": 1,
+        "selection": null,
+        "order": [],
+        "result": "idle",
+        "hintShown": false,
+        "completed": false,
+        "challengeCount": 3,
+        "challenge": {
+          "id": "lowest",
+          "instruction": "КАКАЯ БАТАРЕЯ ПОЧТИ ПУСТАЯ?",
+          "kind": "select",
+          "correctSelection": "low"
+        }
+      }
+    },
+    {
+      "name": "round 2 correct answer progresses to round 3",
+      "ok": true,
+      "actual": {
+        "challengeIndex": 2,
+        "selection": null,
+        "order": [],
+        "result": "idle",
+        "hintShown": false,
+        "completed": false,
+        "challengeCount": 3,
+        "challenge": {
+          "id": "order",
+          "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+          "kind": "order",
+          "correctOrder": [
+            "low",
+            "medium",
+            "full"
+          ]
+        }
+      }
+    },
+    {
+      "name": "3 energy rounds complete",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "challengeIndex": 2,
+          "selection": null,
+          "order": [
+            "low",
+            "medium",
+            "full"
+          ],
+          "result": "correct",
+          "hintShown": false,
+          "completed": true,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "order",
+            "instruction": "РАССТАВЬ БАТАРЕИ ПО ПОРЯДКУ",
+            "kind": "order",
+            "correctOrder": [
+              "low",
+              "medium",
+              "full"
+            ]
+          }
+        },
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        }
+      }
+    },
+    {
+      "name": "assembled remains opaque after activation",
+      "ok": true,
+      "actual": {
+        "alpha": 1,
+        "installed": 1
+      }
+    },
+    {
+      "name": "Mission 6 to Mission 7 handoff works",
+      "ok": true,
+      "actual": [
+        "Mission7Scene"
+      ]
+    },
+    {
+      "name": "no console/page/request errors",
+      "ok": true,
+      "actual": []
+    }
+  ],
+  "errors": [],
+  "desktop": [
+    {
+      "viewport": "1280x720",
+      "semantic": "DESKTOP",
+      "platformCenterX": 640,
+      "cardCenterX": 640,
+      "cardCenterDeltaX": 0,
+      "cardBottom": 498.4,
+      "platformSurfaceAtCardX": 560,
+      "cardClearance": 61.6,
+      "helperX": 239.58,
+      "helperBottom": 565.5,
+      "helperGroundY": 565.31,
+      "helperGroundDelta": 0.19,
+      "assembledX": 1041.03,
+      "assembledBottom": 565.31,
+      "assembledGroundY": 565.31,
+      "assembledGroundDelta": 0,
+      "assembledAlpha": 1,
+      "assembledInstalledAlpha": 1,
+      "helperCardGap": 142.7,
+      "cardAssembledGap": 118.24,
+      "helperScale": 0.20386740331491712,
+      "assembledScale": 0.2031837916063676,
+      "assembledCount": 1,
+      "antennaCount": 1,
+      "systemsCenterX": 640,
+      "platformVisible": true,
+      "pass": false
+    },
+    {
+      "viewport": "1438x914",
+      "semantic": "DESKTOP",
+      "platformCenterX": 719,
+      "cardCenterX": 719,
+      "cardCenterDeltaX": 0,
+      "cardBottom": 647.98,
+      "platformSurfaceAtCardX": 710.89,
+      "cardClearance": 62.91,
+      "helperX": 267.38,
+      "helperBottom": 716.29,
+      "helperGroundY": 716.06,
+      "helperGroundDelta": 0.24,
+      "assembledX": 1171.2,
+      "assembledBottom": 716.06,
+      "assembledGroundY": 716.06,
+      "assembledGroundDelta": 0,
+      "assembledAlpha": 1,
+      "assembledInstalledAlpha": 1,
+      "helperCardGap": 152.15,
+      "cardAssembledGap": 120.69,
+      "helperScale": 0.2038674033149171,
+      "assembledScale": 0.2031837916063676,
+      "assembledCount": 1,
+      "antennaCount": 1,
+      "systemsCenterX": 719,
+      "platformVisible": true,
+      "pass": false
+    },
+    {
+      "viewport": "1600x900",
+      "semantic": "DESKTOP",
+      "platformCenterX": 800,
+      "cardCenterX": 800,
+      "cardCenterDeltaX": 0,
+      "cardBottom": 630,
+      "platformSurfaceAtCardX": 700,
+      "cardClearance": 70,
+      "helperX": 304.82,
+      "helperBottom": 706.68,
+      "helperGroundY": 706.46,
+      "helperGroundDelta": 0.22,
+      "assembledX": 1295.54,
+      "assembledBottom": 706.46,
+      "assembledGroundY": 706.46,
+      "assembledGroundDelta": 0,
+      "assembledAlpha": 1,
+      "assembledInstalledAlpha": 1,
+      "helperCardGap": 197.45,
+      "cardAssembledGap": 166.05,
+      "helperScale": 0.20386740331491712,
+      "assembledScale": 0.2031837916063676,
+      "assembledCount": 1,
+      "antennaCount": 1,
+      "systemsCenterX": 800,
+      "platformVisible": true,
+      "pass": false
+    },
+    {
+      "viewport": "1920x1080",
+      "semantic": "DESKTOP",
+      "platformCenterX": 960,
+      "cardCenterX": 960,
+      "cardCenterDeltaX": 0,
+      "cardBottom": 765,
+      "platformSurfaceAtCardX": 840,
+      "cardClearance": 75,
+      "helperX": 380.93,
+      "helperBottom": 847.58,
+      "helperGroundY": 847.31,
+      "helperGroundDelta": 0.26,
+      "assembledX": 1539.45,
+      "assembledBottom": 847.31,
+      "assembledGroundY": 847.31,
+      "assembledGroundDelta": 0,
+      "assembledAlpha": 1,
+      "assembledInstalledAlpha": 1,
+      "helperCardGap": 261.83,
+      "cardAssembledGap": 224.06,
+      "helperScale": 0.20386740331491712,
+      "assembledScale": 0.20318379160636757,
+      "assembledCount": 1,
+      "antennaCount": 1,
+      "systemsCenterX": 960,
+      "platformVisible": true,
+      "pass": false
+    }
+  ],
+  "mobile": [
+    {
+      "viewport": "390x844",
+      "semantic": "PHONE_PORTRAIT_TALL",
+      "cardPresent": true,
+      "hasHelper": true,
+      "hasAssembled": true,
+      "pass": true
+    },
+    {
+      "viewport": "844x390",
+      "semantic": "PHONE_LANDSCAPE_SHORT",
+      "cardPresent": true,
+      "hasHelper": true,
+      "hasAssembled": true,
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission6-final-desktop-1280x720.png",
+    "docs\\qa\\screenshots\\mission6-final-desktop-1600x900.png",
+    "docs\\qa\\screenshots\\mission6-final-desktop-1920x1080.png"
+  ],
+  "playtest": {
+    "handoff": [
+      "Mission7Scene"
+    ]
+  }
+}

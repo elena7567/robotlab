@@ -1,0 +1,185 @@
+{
+  "result": "FAIL",
+  "completed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "checks": [
+    {
+      "name": "production-bundle-loaded",
+      "ok": true,
+      "data": [
+        "http://127.0.0.1:4198/assets/index-DSHwwlWE.js"
+      ]
+    },
+    {
+      "name": "fresh-session-cannot-enter-m10",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-1-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 2,
+        "completedTasks": 1,
+        "totalTasks": 10,
+        "score": 1,
+        "assemblyProgress": 1,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-2-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 3,
+        "completedTasks": 2,
+        "totalTasks": 10,
+        "score": 2,
+        "assemblyProgress": 2,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-3-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 4,
+        "completedTasks": 3,
+        "totalTasks": 10,
+        "score": 3,
+        "assemblyProgress": 3,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-4-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 5,
+        "completedTasks": 4,
+        "totalTasks": 10,
+        "score": 4,
+        "assemblyProgress": 4,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-5-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 6,
+        "completedTasks": 5,
+        "totalTasks": 10,
+        "score": 5,
+        "assemblyProgress": 5,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-6-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    }
+  ],
+  "errors": [
+    "page.waitForFunction: Timeout 90000ms exceeded.\n    at scene (D:\\Projects\\codex\\RobotLab\\qa\\release-final-natural-flow.cjs:7:43)\n    at D:\\Projects\\codex\\RobotLab\\qa\\release-final-natural-flow.cjs:51:85"
+  ],
+  "screenshots": [
+    "docs/qa/screenshots/stage10-remediation-natural-final-failure.png"
+  ],
+  "releaseCandidate": true,
+  "failureState": {
+    "session": {
+      "currentTask": 7,
+      "completedTasks": 6,
+      "totalTasks": 10,
+      "score": 6,
+      "assemblyProgress": 5,
+      "powerActivated": true,
+      "connectionsCompleted": false,
+      "programmingCompleted": false,
+      "robotVerified": false,
+      "robotTested": false,
+      "robotReadyForFirstLaunch": false
+    },
+    "m10": {
+      "stage": "INTRO",
+      "runSeed": 0,
+      "pathConfigId": "PATH_C",
+      "energyConfigId": "ENERGY_C",
+      "signalConfigId": "SIGNAL_C",
+      "pathDecisionIndex": 0,
+      "pathWrongAttempts": 0,
+      "relayOrientations": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 3
+      },
+      "energyWrongAttempts": 0,
+      "reflectorOrientations": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 1
+      },
+      "signalWrongAttempts": 0,
+      "launchPressed": false,
+      "finaleStep": 0,
+      "completed": false
+    }
+  }
+}

@@ -12,6 +12,7 @@ export type SemanticCompositionMode =
   | 'TABLET_PORTRAIT'
   | 'TABLET_LANDSCAPE'
   | 'DESKTOP';
+export type DeviceLayoutClass = 'DESKTOP' | 'MOBILE_OR_TABLET';
 export type HeightPressure = 'compact' | 'regular' | 'tall';
 export type CharacterRole = 'HERO' | 'HELPER' | 'BOARD_ACTOR' | 'ASSEMBLY_PREVIEW';
 
@@ -75,6 +76,7 @@ export interface ResponsiveLayout {
   viewportWidth: number;
   viewportHeight: number;
   aspectRatio: number;
+  deviceLayoutClass: DeviceLayoutClass;
   mode: CompositionMode;
   semanticMode: SemanticCompositionMode;
   compositionName: 'portrait-compact' | 'portrait-regular' | 'portrait-tall' | 'large-portrait-tablet' | 'short-landscape' | 'landscape';
@@ -131,8 +133,14 @@ function viewportForLayout(width: number, height: number): ViewportMetrics {
   };
 }
 
-export function getSemanticCompositionMode(width: number, height: number): SemanticCompositionMode {
+export function getDeviceLayoutClass(): DeviceLayoutClass {
+  if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return 'MOBILE_OR_TABLET';
+  return window.matchMedia('(hover: hover) and (pointer: fine)').matches ? 'DESKTOP' : 'MOBILE_OR_TABLET';
+}
+
+export function getSemanticCompositionMode(width: number, height: number, deviceLayoutClass: DeviceLayoutClass = getDeviceLayoutClass()): SemanticCompositionMode {
   const portrait = height >= width;
+  if (deviceLayoutClass === 'DESKTOP' && width >= 900) return 'DESKTOP';
   if (portrait && width < 600) {
     if (height < 700) return 'PHONE_PORTRAIT_SHORT';
     if (height >= 840) return 'PHONE_PORTRAIT_TALL';
@@ -144,8 +152,8 @@ export function getSemanticCompositionMode(width: number, height: number): Seman
   return 'TABLET_LANDSCAPE';
 }
 
-export function getCompositionMode(width: number, height: number): CompositionMode {
-  const semantic = getSemanticCompositionMode(width, height);
+export function getCompositionMode(width: number, height: number, deviceLayoutClass: DeviceLayoutClass = getDeviceLayoutClass()): CompositionMode {
+  const semantic = getSemanticCompositionMode(width, height, deviceLayoutClass);
   if (semantic === 'PHONE_PORTRAIT_SHORT') return 'ultra-narrow-portrait';
   if (semantic === 'PHONE_PORTRAIT' || semantic === 'PHONE_PORTRAIT_TALL') return 'portrait';
   if (semantic === 'TABLET_PORTRAIT') return 'large-portrait-tablet';
@@ -156,8 +164,9 @@ export function createResponsiveLayout(width: number, height: number, viewportOv
   const viewport = viewportOverride ?? viewportForLayout(width, height);
   const usableWidth = Math.max(1, width - viewport.safeLeft - viewport.safeRight);
   const usableHeight = Math.max(1, height - viewport.safeTop - viewport.safeBottom);
-  const semanticMode = getSemanticCompositionMode(usableWidth, usableHeight);
-  const mode = getCompositionMode(usableWidth, usableHeight);
+  const deviceLayoutClass = getDeviceLayoutClass();
+  const semanticMode = getSemanticCompositionMode(usableWidth, usableHeight, deviceLayoutClass);
+  const mode = getCompositionMode(usableWidth, usableHeight, deviceLayoutClass);
   const margin = fluidValue(12, Math.min(width, height), 0.035, 28);
   const safe = {
     top: viewport.safeTop + margin,
@@ -328,6 +337,7 @@ export function createResponsiveLayout(width: number, height: number, viewportOv
     viewportWidth: width,
     viewportHeight: height,
     aspectRatio: width / height,
+    deviceLayoutClass,
     mode,
     semanticMode,
     compositionName,

@@ -1,0 +1,322 @@
+{
+  "head": "919541fbcd1303d0d62de12d4b09ab346133b416",
+  "shortHead": "919541f",
+  "bundle": "index-BTAcu6v1.js",
+  "baseUrl": "http://127.0.0.1:4198/",
+  "browser": {
+    "path": {
+      "url": "http://127.0.0.1:4198/?qaMission=10&stage=path&buildDebug=1&review=919541f",
+      "runtime": {
+        "build": {
+          "gitHead": "919541fbcd1303d0d62de12d4b09ab346133b416",
+          "timestamp": "2026-09-19T14:26:30.130Z",
+          "mainJsBundle": "index-BTAcu6v1.js"
+        },
+        "debugText": "git HEAD: 919541fbcd1303d0d62de12d4b09ab346133b416\nbuild timestamp: 2026-09-19T14:26:30.130Z\nmain JS bundle: index-BTAcu6v1.js",
+        "scripts": [
+          "http://127.0.0.1:4198/assets/index-BTAcu6v1.js"
+        ],
+        "stage": "PATH",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_10_DESKTOP",
+        "presentation": {
+          "platformCenterX": 800,
+          "choiceGroupName": "MISSION10_PATH_CHOICE_GROUP",
+          "choiceGroupLeft": 451.5893669575453,
+          "choiceGroupRight": 1159.5956956744194,
+          "choiceGroupCenterX": 805.5925313159823,
+          "choiceGroupCenterDelta": 5.592531315982342,
+          "choiceGroupBounds": {
+            "x": 426.40000000000003,
+            "y": 502.74,
+            "width": 747.1999999999999,
+            "height": 153
+          },
+          "cards": [
+            {
+              "id": "LEFT",
+              "kind": "LASER",
+              "x": 426.40000000000003,
+              "y": 502.74,
+              "width": 231.99999999999997,
+              "height": 153,
+              "assetVisibleWidth": 181.62119284272194,
+              "assetVisibleHeight": 65.79005447030067,
+              "visibleLeft": 451.5893669575453,
+              "visibleRight": 633.2105598002672,
+              "visibleTop": 546.3449607044458,
+              "visibleBottom": 612.1350151747465,
+              "visibleWidth": 181.62119284272194,
+              "visibleHeight": 65.79005447030067,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.1270078286652872,
+              "localScaleY": 0.1270078286652872,
+              "effectiveWorldScaleX": 0.12700782716274261,
+              "effectiveWorldScaleY": 0.12700782716274261
+            },
+            {
+              "id": "CENTER",
+              "kind": "SAFE",
+              "x": 684,
+              "y": 502.74,
+              "width": 231.99999999999997,
+              "height": 153,
+              "assetVisibleWidth": 207.9999932050705,
+              "assetVisibleHeight": 65.79005309939384,
+              "visibleLeft": 696.0000033974648,
+              "visibleRight": 903.9999966025352,
+              "visibleTop": 546.3449950218201,
+              "visibleBottom": 612.1350481212139,
+              "visibleWidth": 207.9999932050705,
+              "visibleHeight": 65.79005309939384,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.14364640883977897,
+              "localScaleY": 0.14364640883977897,
+              "effectiveWorldScaleX": 0.14364640414714813,
+              "effectiveWorldScaleY": 0.14364640414714813
+            },
+            {
+              "id": "RIGHT",
+              "kind": "HAZARD",
+              "x": 941.5999999999999,
+              "y": 502.74,
+              "width": 231.99999999999997,
+              "height": 153,
+              "assetVisibleWidth": 203.9914401769638,
+              "assetVisibleHeight": 65.79005701839924,
+              "visibleLeft": 955.6042554974556,
+              "visibleRight": 1159.5956956744194,
+              "visibleTop": 546.3450093716383,
+              "visibleBottom": 612.1350663900375,
+              "visibleWidth": 203.9914401769638,
+              "visibleHeight": 65.79005701839924,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.14087806263087532,
+              "localScaleY": 0.14087806263087532,
+              "effectiveWorldScaleX": 0.14087806642055511,
+              "effectiveWorldScaleY": 0.14087806642055511
+            }
+          ],
+          "gap12": 25.600000000000023,
+          "gap23": 25.59999999999991,
+          "groupVisibleLeft": 451.5893669575453,
+          "groupVisibleRight": 1159.5956956744194,
+          "groupVisibleTop": 546.3449607044458,
+          "groupVisibleBottom": 612.1350663900375,
+          "groupVisibleCenterX": 805.5925313159823,
+          "viewportWidth": 1600,
+          "rightVisibleClearance": 440.4043043255806,
+          "leftVisibleClearance": 451.5893669575453,
+          "rightClearance": 440.4043043255806,
+          "robotRight": 375.20000000000005,
+          "robotToFirstCardGap": 76.38936695754523,
+          "robotScale": 0.23444283646888567,
+          "debugOverlaysVisible": false
+        },
+        "character": {
+          "scene": "Mission10Scene",
+          "characterId": "mission10-path-robot",
+          "profile": "assembled",
+          "role": "WORLD_SUPPORT",
+          "viewportWidth": 1600,
+          "viewportHeight": 900,
+          "visualTop": 537.6555805206299,
+          "visualBottom": 861.6555716991425,
+          "visibleHeight": 323.9999911785126,
+          "visibleHeightRatio": 0.35999999019834733,
+          "targetVisibleHeight": 324,
+          "targetRatio": 0.36,
+          "minRatio": 0.33,
+          "maxRatio": 0.39,
+          "resolvedScale": 0.2344428300857544,
+          "groundY": 864,
+          "footY": 864,
+          "footDelta": 0,
+          "parentScale": 0.999999972773187,
+          "result": "PASS"
+        }
+      },
+      "domBundle": "index-BTAcu6v1.js",
+      "runtimeErrors": [],
+      "screenshot": "D:\\Projects\\codex\\RobotLab\\docs\\qa\\screenshots\\mission10-path-919541f-1600x900.png"
+    },
+    "signal": {
+      "url": "http://127.0.0.1:4198/?qaMission=10&stage=signal&buildDebug=1&review=919541f",
+      "runtime": {
+        "build": {
+          "gitHead": "919541fbcd1303d0d62de12d4b09ab346133b416",
+          "timestamp": "2026-09-19T14:26:30.130Z",
+          "mainJsBundle": "index-BTAcu6v1.js"
+        },
+        "debugText": "git HEAD: 919541fbcd1303d0d62de12d4b09ab346133b416\nbuild timestamp: 2026-09-19T14:26:30.130Z\nmain JS bundle: index-BTAcu6v1.js",
+        "scripts": [
+          "http://127.0.0.1:4198/assets/index-BTAcu6v1.js"
+        ],
+        "stage": "SIGNAL",
+        "semanticMode": "DESKTOP",
+        "policyId": "MISSION_10_DESKTOP",
+        "presentation": {
+          "field": {
+            "x": 552,
+            "y": 374.25,
+            "width": 576,
+            "height": 364.5
+          },
+          "propSize": 135,
+          "coreWidth": 5,
+          "points": [
+            {
+              "from": {
+                "x": 600,
+                "y": 629.4
+              },
+              "to": {
+                "x": 696,
+                "y": 629.4
+              }
+            },
+            {
+              "from": {
+                "x": 696,
+                "y": 629.4
+              },
+              "to": {
+                "x": 792,
+                "y": 629.4
+              }
+            },
+            {
+              "from": {
+                "x": 792,
+                "y": 629.4
+              },
+              "to": {
+                "x": 792,
+                "y": 702.3
+              }
+            },
+            {
+              "from": {
+                "x": 792,
+                "y": 702.3
+              },
+              "to": {
+                "x": 792,
+                "y": 738.75
+              }
+            }
+          ],
+          "source": {
+            "x": 600,
+            "y": 629.4
+          },
+          "receiver": {
+            "x": 1080,
+            "y": 483.6
+          },
+          "groupName": "SIGNAL_PUZZLE_GROUP",
+          "apparatus": [
+            {
+              "id": "emitter",
+              "visibleLeft": 496.66596202850343,
+              "visibleRight": 620.0010541558265,
+              "visibleTop": 597.1764199519157,
+              "visibleBottom": 732.176422753334,
+              "visibleWidth": 123.3350921273231,
+              "visibleHeight": 135.0000028014183,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.1422550052687039,
+              "localScaleY": 0.1422550052687039,
+              "effectiveWorldScaleX": 0.1422550082206726,
+              "effectiveWorldScaleY": 0.1422550082206726
+            },
+            {
+              "id": "receiver",
+              "visibleLeft": 1045.35102850914,
+              "visibleRight": 1135.2480568957328,
+              "visibleTop": 439.3125903320313,
+              "visibleBottom": 574.3125951600075,
+              "visibleWidth": 89.89702838659286,
+              "visibleHeight": 135.00000482797623,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.10297482837528604,
+              "localScaleY": 0.10297482837528604,
+              "effectiveWorldScaleX": 0.10297483205795288,
+              "effectiveWorldScaleY": 0.10297483205795288
+            },
+            {
+              "id": "M1",
+              "visibleLeft": 718.4596003475239,
+              "visibleRight": 865.5403996524761,
+              "visibleTop": 572.0385126851311,
+              "visibleBottom": 719.1193119900834,
+              "visibleWidth": 147.08079930495228,
+              "visibleHeight": 147.08079930495228,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 1,
+              "localScaleY": 1,
+              "effectiveWorldScaleX": 1,
+              "effectiveWorldScaleY": 1
+            },
+            {
+              "id": "M2",
+              "visibleLeft": 718.4596003475239,
+              "visibleRight": 865.5403996524761,
+              "visibleTop": 426.23849437458426,
+              "visibleBottom": 573.3192936795365,
+              "visibleWidth": 147.08079930495228,
+              "visibleHeight": 147.08079930495222,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 1,
+              "localScaleY": 1,
+              "effectiveWorldScaleX": 1,
+              "effectiveWorldScaleY": 1
+            }
+          ],
+          "groupVisibleBounds": {
+            "visibleLeft": 496.66596202850343,
+            "visibleRight": 1135.2480568957328,
+            "visibleTop": 426.23849437458426,
+            "visibleBottom": 746.75,
+            "visibleWidth": 638.5820948672294,
+            "visibleHeight": 320.51150562541574
+          },
+          "successHold": 1500
+        },
+        "character": {
+          "scene": "Mission10Scene",
+          "characterId": "mission10-signal-robot",
+          "profile": "assembled",
+          "role": "WORLD_SUPPORT",
+          "viewportWidth": 1600,
+          "viewportHeight": 900,
+          "visualTop": 381.1566791534424,
+          "visualBottom": 705.156670331955,
+          "visibleHeight": 323.9999911785126,
+          "visibleHeightRatio": 0.35999999019834733,
+          "targetVisibleHeight": 324,
+          "targetRatio": 0.36,
+          "minRatio": 0.33,
+          "maxRatio": 0.39,
+          "resolvedScale": 0.2344428300857544,
+          "groundY": 703.75,
+          "footY": 707.5010986328125,
+          "footDelta": 3.7510986328125,
+          "parentScale": 0.999999972773187,
+          "result": "PASS"
+        }
+      },
+      "domBundle": "index-BTAcu6v1.js",
+      "runtimeErrors": [],
+      "screenshot": "D:\\Projects\\codex\\RobotLab\\docs\\qa\\screenshots\\mission10-signal-919541f-1600x900.png"
+    }
+  },
+  "errors": []
+}

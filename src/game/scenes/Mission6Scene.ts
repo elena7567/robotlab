@@ -15,6 +15,9 @@ import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneL
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { CHILD_UI } from '../ui/childUi';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 
 const CORRECT_LINES = ['ЕСТЬ ЭНЕРГИЯ!', 'ТОЧНО!', 'ОТЛИЧНО!'] as const;
 
@@ -25,6 +28,7 @@ export class Mission6Scene extends Phaser.Scene {
     const { width, height } = this.scale;
     const baseLayout = createResponsiveLayout(width, height);
     const composition = composeScene(baseLayout, 6);
+    const mission6Layout = composition.mission6;
     const layout = {
       ...baseLayout,
       taskCard: composition.taskCard,
@@ -59,10 +63,70 @@ export class Mission6Scene extends Phaser.Scene {
     const repaired = new RobotAssemblyPreview(this, 640 + pairSpan / 2, 560, 5, { scale: pairScale, blueprintAlpha: 0 })
       .setName('mission6-repaired-robot');
     repaired.setPowered(state.powerActivated);
+    repaired.setInstalledPartsOpaque();
     repaired.setData({ characterRole: 'PRIMARY_CHARACTER', compositionRegion: 'CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED' });
     actorLayer.add(repaired);
     const frame = configureResponsiveCamera(this, worldLayer, layout);
     actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
+    if (mission6Layout) {
+      const toLogical = (x: number, y: number): { x: number; y: number } => ({
+        x: (x - frame.offsetX) / frame.scale,
+        y: (y - frame.offsetY) / frame.scale,
+      });
+      const helperFootCompensation = 3;
+      const helperPoint = toLogical(mission6Layout.helper.x, mission6Layout.helper.feetY - helperFootCompensation * frame.scale);
+      const assembledPoint = toLogical(mission6Layout.assembled.x, mission6Layout.assembled.feetY);
+      helper?.setVisible(true).setPosition(helperPoint.x, helperPoint.y).setScale(mission6Layout.helper.scale).setData({
+        baseX: helperPoint.x,
+        baseY: helperPoint.y,
+        groundedScale: mission6Layout.helper.scale,
+        characterRole: 'SUPPORTING_CHARACTER',
+        compositionRegion: 'MISSION6_HELPER_ZONE',
+        visibleBoundsId: 'ROBOT_V2_HELPER',
+        screenX: mission6Layout.helper.x,
+        screenFeetY: mission6Layout.helper.feetY,
+      });
+      repaired.setPosition(assembledPoint.x, assembledPoint.y).setScale(mission6Layout.assembled.scale).setData({
+        characterRole: 'PRIMARY_CHARACTER',
+        compositionRegion: 'MISSION6_ASSEMBLED_ZONE',
+        visibleBoundsId: 'ROBOT_V2_ASSEMBLED',
+        screenX: mission6Layout.assembled.x,
+        screenFeetY: mission6Layout.assembled.feetY,
+      });
+      this.game.registry.set('mission6CompositionTelemetry', {
+        platformCenterX: mission6Layout.platform.centerX,
+        cardCenterX: mission6Layout.card.x + mission6Layout.card.width / 2,
+        cardBottom: mission6Layout.card.y + mission6Layout.card.height,
+        platformSurfaceAtCardX: mission6Layout.platform.surfaceAtCardX,
+        cardClearance: mission6Layout.platform.cardClearance,
+        helperX: mission6Layout.helper.x,
+        helperGroundY: mission6Layout.platform.surfaceAtHelperX,
+        assembledX: mission6Layout.assembled.x,
+        assembledGroundY: mission6Layout.platform.surfaceAtAssembledX,
+        helperScale: mission6Layout.helper.scale,
+        assembledScale: mission6Layout.assembled.scale,
+      });
+    }
+    if (layout.semanticMode === 'DESKTOP') {
+      publishCharacterTelemetry(this, [
+        {
+          characterId: 'mission6-helper',
+          object: helper!,
+          profileId: 'helper',
+          role: DesktopCharacterRole.WORLD_PRIMARY,
+          sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.helper, role: DesktopCharacterRole.WORLD_PRIMARY, viewportHeight: height, parentScale: frame.scale }),
+          groundY: mission6Layout?.helper.feetY,
+        },
+        {
+          characterId: 'mission6-assembled',
+          object: repaired,
+          profileId: 'assembled',
+          role: DesktopCharacterRole.WORLD_SECONDARY,
+          sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_SECONDARY, viewportHeight: height, parentScale: frame.scale }),
+          groundY: mission6Layout?.assembled.feetY,
+        },
+      ]);
+    }
     if (layout.semanticMode === 'PHONE_LANDSCAPE_SHORT') {
       const zone = composition.regions.CHARACTER;
       const desiredVisibleHeight = Math.min(228, zone.height * 0.76);
@@ -196,3 +260,4 @@ export class Mission6Scene extends Phaser.Scene {
     markSceneReady(this);
   }
 }
+

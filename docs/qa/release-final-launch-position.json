@@ -1,0 +1,858 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "1280x720-launch-position",
+      "ok": true,
+      "data": {
+        "label": "1280x720",
+        "robotLeft": 111.7055141684413,
+        "robotRight": 329.5169692125917,
+        "robotCenterX": 220.61124169051647,
+        "consoleLeft": 410,
+        "robotConsoleGap": 80.48303078740832,
+        "robotFootY": 599.4176635742188,
+        "groundY": 599.4176555716354,
+        "groundDelta": 0.000008002583399502328,
+        "robotScale": 0.21360347322720694,
+        "expectedRobotScale": 0.21360347322720694,
+        "robotScaleDelta": 0,
+        "leftRatio": 0.08726993294409477,
+        "pass": true,
+        "metrics": {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "stage": "LAUNCH",
+          "semanticMode": "DESKTOP",
+          "layout": {
+            "robot": {
+              "x": 96,
+              "y": 171.36,
+              "width": 250,
+              "height": 515.4399999999999
+            },
+            "launchRobotZone": {
+              "x": 96,
+              "y": 171.36,
+              "width": 250,
+              "height": 515.4399999999999
+            },
+            "launchConsole": {
+              "x": 410,
+              "y": 171.36,
+              "width": 460,
+              "height": 424.64
+            },
+            "beacon": {
+              "x": 894,
+              "y": 236,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "launchGroundY": 596,
+            "platformContactY": 686.8,
+            "robotScale": 0.21360347322720694
+          },
+          "robot": {
+            "x": 111.7055141684413,
+            "y": 299.94560319185257,
+            "width": 217.81145504415036,
+            "height": 299.4720603823662,
+            "right": 329.5169692125917,
+            "bottom": 599.4176635742188,
+            "centerX": 220.61124169051647,
+            "centerY": 449.68163338303566
+          },
+          "console": {
+            "x": 334.52795599660504,
+            "y": 158.76810335012118,
+            "width": 610.5224564619616,
+            "height": 457.89184234647115,
+            "right": 945.0504124585666,
+            "bottom": 616.6599456965923,
+            "centerX": 639.7891842275858,
+            "centerY": 387.7140245233568
+          },
+          "beacon": {
+            "x": 877.5751837171897,
+            "y": 218.76738995810723,
+            "width": 292.41585639491404,
+            "height": 389.88780852655196,
+            "right": 1169.9910401121037,
+            "bottom": 608.6551984846592,
+            "centerX": 1023.7831119146467,
+            "centerY": 413.71129422138324
+          },
+          "robotScale": 0.21360347322720694,
+          "robotFootY": 599.4176635742188,
+          "groundY": 599.4176555716354,
+          "groundDelta": 0.000008002583399502328,
+          "enabledTargets": [
+            "mission10-launch-target",
+            "mission10-home",
+            "mission10-sound"
+          ],
+          "targetCount": 3,
+          "text": [
+            "ПУТЬ ✓",
+            "ЭНЕРГИЯ ✓",
+            "СИГНАЛ ✓",
+            "ЗАПУСТИ МАЯК",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "1438x914-launch-position",
+      "ok": true,
+      "data": {
+        "label": "1438x914",
+        "robotLeft": 150.71851037502287,
+        "robotRight": 427.21805943012237,
+        "robotCenterX": 288.9682849025726,
+        "consoleLeft": 489,
+        "robotConsoleGap": 61.781940569877634,
+        "robotFootY": 751.2274169921875,
+        "groundY": 751.2274127673259,
+        "groundDelta": 0.000004224861640977906,
+        "robotScale": 0.27115774240231544,
+        "expectedRobotScale": 0.27115774240231544,
+        "robotScaleDelta": 0,
+        "leftRatio": 0.10481120332060005,
+        "pass": true,
+        "metrics": {
+          "viewport": {
+            "width": 1438,
+            "height": 914
+          },
+          "stage": "LAUNCH",
+          "semanticMode": "DESKTOP",
+          "layout": {
+            "robot": {
+              "x": 153.92360492040524,
+              "y": 186,
+              "width": 271.07639507959476,
+              "height": 692
+            },
+            "launchRobotZone": {
+              "x": 153.92360492040524,
+              "y": 186,
+              "width": 271.07639507959476,
+              "height": 692
+            },
+            "launchConsole": {
+              "x": 489,
+              "y": 186,
+              "width": 460,
+              "height": 560.8888888888888
+            },
+            "beacon": {
+              "x": 973,
+              "y": 386.8888888888888,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "launchGroundY": 746.8888888888888,
+            "platformContactY": 878,
+            "robotScale": 0.27115774240231544
+          },
+          "robot": {
+            "x": 150.71851037502287,
+            "y": 371.06426334381104,
+            "width": 276.49954905509946,
+            "height": 380.16315364837646,
+            "right": 427.21805943012237,
+            "bottom": 751.2274169921875,
+            "centerX": 288.9682849025726,
+            "centerY": 561.1458401679993
+          },
+          "console": {
+            "x": 413.52795599660504,
+            "y": 309.6569651122738,
+            "width": 610.5224564619616,
+            "height": 457.89184234647115,
+            "right": 1024.0504124585666,
+            "bottom": 767.5488074587449,
+            "centerX": 718.7891842275858,
+            "centerY": 538.6028862855094
+          },
+          "beacon": {
+            "x": 956.5751837171897,
+            "y": 369.65625172025983,
+            "width": 292.41585639491404,
+            "height": 389.88780852655196,
+            "right": 1248.9910401121037,
+            "bottom": 759.5440602468118,
+            "centerX": 1102.7831119146467,
+            "centerY": 564.6001559835358
+          },
+          "robotScale": 0.27115774240231544,
+          "robotFootY": 751.2274169921875,
+          "groundY": 751.2274127673259,
+          "groundDelta": 0.000004224861640977906,
+          "enabledTargets": [
+            "mission10-launch-target",
+            "mission10-home",
+            "mission10-sound"
+          ],
+          "targetCount": 3,
+          "text": [
+            "ПУТЬ ✓",
+            "ЭНЕРГИЯ ✓",
+            "СИГНАЛ ✓",
+            "ЗАПУСТИ МАЯК",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "1600x900-launch-position",
+      "ok": true,
+      "data": {
+        "label": "1600x900",
+        "robotLeft": 188.8440165838599,
+        "robotRight": 461.10834298640486,
+        "robotCenterX": 324.9761797851324,
+        "consoleLeft": 570,
+        "robotConsoleGap": 108.89165701359514,
+        "robotFootY": 740.2720947265625,
+        "groundY": 740.2720694645442,
+        "groundDelta": 0.00002526201831187791,
+        "robotScale": 0.2670043415340087,
+        "expectedRobotScale": 0.2670043415340087,
+        "robotScaleDelta": 0,
+        "leftRatio": 0.11802751036491245,
+        "pass": true,
+        "metrics": {
+          "viewport": {
+            "width": 1600,
+            "height": 900
+          },
+          "stage": "LAUNCH",
+          "semanticMode": "DESKTOP",
+          "layout": {
+            "robot": {
+              "x": 192,
+              "y": 186,
+              "width": 266.92424023154854,
+              "height": 678
+            },
+            "launchRobotZone": {
+              "x": 192,
+              "y": 186,
+              "width": 266.92424023154854,
+              "height": 678
+            },
+            "launchConsole": {
+              "x": 570,
+              "y": 186,
+              "width": 460,
+              "height": 550
+            },
+            "beacon": {
+              "x": 1054,
+              "y": 376,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "launchGroundY": 736,
+            "platformContactY": 864,
+            "robotScale": 0.2670043415340087
+          },
+          "robot": {
+            "x": 188.8440165838599,
+            "y": 365.9320088028908,
+            "width": 272.26432640254495,
+            "height": 374.3400859236717,
+            "right": 461.10834298640486,
+            "bottom": 740.2720947265625,
+            "centerX": 324.9761797851324,
+            "centerY": 553.1020517647266
+          },
+          "console": {
+            "x": 494.52795599660504,
+            "y": 298.7681033501212,
+            "width": 610.5224564619616,
+            "height": 457.89184234647115,
+            "right": 1105.0504124585666,
+            "bottom": 756.6599456965923,
+            "centerX": 799.7891842275858,
+            "centerY": 527.7140245233568
+          },
+          "beacon": {
+            "x": 1037.5751837171897,
+            "y": 358.76738995810723,
+            "width": 292.41585639491404,
+            "height": 389.88780852655196,
+            "right": 1329.9910401121037,
+            "bottom": 748.6551984846592,
+            "centerX": 1183.7831119146467,
+            "centerY": 553.7112942213832
+          },
+          "robotScale": 0.2670043415340087,
+          "robotFootY": 740.2720947265625,
+          "groundY": 740.2720694645442,
+          "groundDelta": 0.00002526201831187791,
+          "enabledTargets": [
+            "mission10-launch-target",
+            "mission10-home",
+            "mission10-sound"
+          ],
+          "targetCount": 3,
+          "text": [
+            "ПУТЬ ✓",
+            "ЭНЕРГИЯ ✓",
+            "СИГНАЛ ✓",
+            "ЗАПУСТИ МАЯК",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "1920x1080-launch-position",
+      "ok": true,
+      "data": {
+        "label": "1920x1080",
+        "robotLeft": 226.61279854029416,
+        "robotRight": 553.3299963012338,
+        "robotCenterX": 389.971397420764,
+        "consoleLeft": 730,
+        "robotConsoleGap": 176.6700036987662,
+        "robotFootY": 881.12646484375,
+        "groundY": 881.1264833574529,
+        "groundDelta": -0.00001851370291205967,
+        "robotScale": 0.3204052098408104,
+        "expectedRobotScale": 0.3204052098408104,
+        "robotScaleDelta": 0,
+        "leftRatio": 0.11802749923973654,
+        "pass": true,
+        "metrics": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "stage": "LAUNCH",
+          "semanticMode": "DESKTOP",
+          "layout": {
+            "robot": {
+              "x": 230.39999999999998,
+              "y": 186,
+              "width": 320.30908827785817,
+              "height": 858
+            },
+            "launchRobotZone": {
+              "x": 230.39999999999998,
+              "y": 186,
+              "width": 320.30908827785817,
+              "height": 858
+            },
+            "launchConsole": {
+              "x": 730,
+              "y": 186,
+              "width": 460,
+              "height": 690
+            },
+            "beacon": {
+              "x": 1214,
+              "y": 516,
+              "width": 259.56619296933434,
+              "height": 360
+            },
+            "launchGroundY": 876,
+            "platformContactY": 1044,
+            "robotScale": 0.3204052098408104
+          },
+          "robot": {
+            "x": 226.61279854029416,
+            "y": 431.91835337877274,
+            "width": 326.7171977609396,
+            "height": 449.20811146497726,
+            "right": 553.3299963012338,
+            "bottom": 881.12646484375,
+            "centerX": 389.971397420764,
+            "centerY": 656.5224091112614
+          },
+          "console": {
+            "x": 654.527955996605,
+            "y": 438.7681033501212,
+            "width": 610.5224564619614,
+            "height": 457.89184234647115,
+            "right": 1265.0504124585664,
+            "bottom": 896.6599456965923,
+            "centerX": 959.7891842275857,
+            "centerY": 667.7140245233568
+          },
+          "beacon": {
+            "x": 1197.5751837171897,
+            "y": 498.76738995810723,
+            "width": 292.41585639491404,
+            "height": 389.88780852655196,
+            "right": 1489.9910401121037,
+            "bottom": 888.6551984846592,
+            "centerX": 1343.7831119146467,
+            "centerY": 693.7112942213832
+          },
+          "robotScale": 0.3204052098408104,
+          "robotFootY": 881.12646484375,
+          "groundY": 881.1264833574529,
+          "groundDelta": -0.00001851370291205967,
+          "enabledTargets": [
+            "mission10-launch-target",
+            "mission10-home",
+            "mission10-sound"
+          ],
+          "targetCount": 3,
+          "text": [
+            "ПУТЬ ✓",
+            "ЭНЕРГИЯ ✓",
+            "СИГНАЛ ✓",
+            "ЗАПУСТИ МАЯК",
+            "",
+            "⌂ Домой",
+            "♪ Звук"
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "console-network-clean",
+      "ok": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "label": "1280x720",
+      "robotLeft": 111.7055141684413,
+      "robotRight": 329.5169692125917,
+      "robotCenterX": 220.61124169051647,
+      "consoleLeft": 410,
+      "robotConsoleGap": 80.48303078740832,
+      "robotFootY": 599.4176635742188,
+      "groundY": 599.4176555716354,
+      "groundDelta": 0.000008002583399502328,
+      "robotScale": 0.21360347322720694,
+      "expectedRobotScale": 0.21360347322720694,
+      "robotScaleDelta": 0,
+      "leftRatio": 0.08726993294409477,
+      "pass": true,
+      "metrics": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "stage": "LAUNCH",
+        "semanticMode": "DESKTOP",
+        "layout": {
+          "robot": {
+            "x": 96,
+            "y": 171.36,
+            "width": 250,
+            "height": 515.4399999999999
+          },
+          "launchRobotZone": {
+            "x": 96,
+            "y": 171.36,
+            "width": 250,
+            "height": 515.4399999999999
+          },
+          "launchConsole": {
+            "x": 410,
+            "y": 171.36,
+            "width": 460,
+            "height": 424.64
+          },
+          "beacon": {
+            "x": 894,
+            "y": 236,
+            "width": 259.56619296933434,
+            "height": 360
+          },
+          "launchGroundY": 596,
+          "platformContactY": 686.8,
+          "robotScale": 0.21360347322720694
+        },
+        "robot": {
+          "x": 111.7055141684413,
+          "y": 299.94560319185257,
+          "width": 217.81145504415036,
+          "height": 299.4720603823662,
+          "right": 329.5169692125917,
+          "bottom": 599.4176635742188,
+          "centerX": 220.61124169051647,
+          "centerY": 449.68163338303566
+        },
+        "console": {
+          "x": 334.52795599660504,
+          "y": 158.76810335012118,
+          "width": 610.5224564619616,
+          "height": 457.89184234647115,
+          "right": 945.0504124585666,
+          "bottom": 616.6599456965923,
+          "centerX": 639.7891842275858,
+          "centerY": 387.7140245233568
+        },
+        "beacon": {
+          "x": 877.5751837171897,
+          "y": 218.76738995810723,
+          "width": 292.41585639491404,
+          "height": 389.88780852655196,
+          "right": 1169.9910401121037,
+          "bottom": 608.6551984846592,
+          "centerX": 1023.7831119146467,
+          "centerY": 413.71129422138324
+        },
+        "robotScale": 0.21360347322720694,
+        "robotFootY": 599.4176635742188,
+        "groundY": 599.4176555716354,
+        "groundDelta": 0.000008002583399502328,
+        "enabledTargets": [
+          "mission10-launch-target",
+          "mission10-home",
+          "mission10-sound"
+        ],
+        "targetCount": 3,
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "label": "1438x914",
+      "robotLeft": 150.71851037502287,
+      "robotRight": 427.21805943012237,
+      "robotCenterX": 288.9682849025726,
+      "consoleLeft": 489,
+      "robotConsoleGap": 61.781940569877634,
+      "robotFootY": 751.2274169921875,
+      "groundY": 751.2274127673259,
+      "groundDelta": 0.000004224861640977906,
+      "robotScale": 0.27115774240231544,
+      "expectedRobotScale": 0.27115774240231544,
+      "robotScaleDelta": 0,
+      "leftRatio": 0.10481120332060005,
+      "pass": true,
+      "metrics": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "stage": "LAUNCH",
+        "semanticMode": "DESKTOP",
+        "layout": {
+          "robot": {
+            "x": 153.92360492040524,
+            "y": 186,
+            "width": 271.07639507959476,
+            "height": 692
+          },
+          "launchRobotZone": {
+            "x": 153.92360492040524,
+            "y": 186,
+            "width": 271.07639507959476,
+            "height": 692
+          },
+          "launchConsole": {
+            "x": 489,
+            "y": 186,
+            "width": 460,
+            "height": 560.8888888888888
+          },
+          "beacon": {
+            "x": 973,
+            "y": 386.8888888888888,
+            "width": 259.56619296933434,
+            "height": 360
+          },
+          "launchGroundY": 746.8888888888888,
+          "platformContactY": 878,
+          "robotScale": 0.27115774240231544
+        },
+        "robot": {
+          "x": 150.71851037502287,
+          "y": 371.06426334381104,
+          "width": 276.49954905509946,
+          "height": 380.16315364837646,
+          "right": 427.21805943012237,
+          "bottom": 751.2274169921875,
+          "centerX": 288.9682849025726,
+          "centerY": 561.1458401679993
+        },
+        "console": {
+          "x": 413.52795599660504,
+          "y": 309.6569651122738,
+          "width": 610.5224564619616,
+          "height": 457.89184234647115,
+          "right": 1024.0504124585666,
+          "bottom": 767.5488074587449,
+          "centerX": 718.7891842275858,
+          "centerY": 538.6028862855094
+        },
+        "beacon": {
+          "x": 956.5751837171897,
+          "y": 369.65625172025983,
+          "width": 292.41585639491404,
+          "height": 389.88780852655196,
+          "right": 1248.9910401121037,
+          "bottom": 759.5440602468118,
+          "centerX": 1102.7831119146467,
+          "centerY": 564.6001559835358
+        },
+        "robotScale": 0.27115774240231544,
+        "robotFootY": 751.2274169921875,
+        "groundY": 751.2274127673259,
+        "groundDelta": 0.000004224861640977906,
+        "enabledTargets": [
+          "mission10-launch-target",
+          "mission10-home",
+          "mission10-sound"
+        ],
+        "targetCount": 3,
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "label": "1600x900",
+      "robotLeft": 188.8440165838599,
+      "robotRight": 461.10834298640486,
+      "robotCenterX": 324.9761797851324,
+      "consoleLeft": 570,
+      "robotConsoleGap": 108.89165701359514,
+      "robotFootY": 740.2720947265625,
+      "groundY": 740.2720694645442,
+      "groundDelta": 0.00002526201831187791,
+      "robotScale": 0.2670043415340087,
+      "expectedRobotScale": 0.2670043415340087,
+      "robotScaleDelta": 0,
+      "leftRatio": 0.11802751036491245,
+      "pass": true,
+      "metrics": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "stage": "LAUNCH",
+        "semanticMode": "DESKTOP",
+        "layout": {
+          "robot": {
+            "x": 192,
+            "y": 186,
+            "width": 266.92424023154854,
+            "height": 678
+          },
+          "launchRobotZone": {
+            "x": 192,
+            "y": 186,
+            "width": 266.92424023154854,
+            "height": 678
+          },
+          "launchConsole": {
+            "x": 570,
+            "y": 186,
+            "width": 460,
+            "height": 550
+          },
+          "beacon": {
+            "x": 1054,
+            "y": 376,
+            "width": 259.56619296933434,
+            "height": 360
+          },
+          "launchGroundY": 736,
+          "platformContactY": 864,
+          "robotScale": 0.2670043415340087
+        },
+        "robot": {
+          "x": 188.8440165838599,
+          "y": 365.9320088028908,
+          "width": 272.26432640254495,
+          "height": 374.3400859236717,
+          "right": 461.10834298640486,
+          "bottom": 740.2720947265625,
+          "centerX": 324.9761797851324,
+          "centerY": 553.1020517647266
+        },
+        "console": {
+          "x": 494.52795599660504,
+          "y": 298.7681033501212,
+          "width": 610.5224564619616,
+          "height": 457.89184234647115,
+          "right": 1105.0504124585666,
+          "bottom": 756.6599456965923,
+          "centerX": 799.7891842275858,
+          "centerY": 527.7140245233568
+        },
+        "beacon": {
+          "x": 1037.5751837171897,
+          "y": 358.76738995810723,
+          "width": 292.41585639491404,
+          "height": 389.88780852655196,
+          "right": 1329.9910401121037,
+          "bottom": 748.6551984846592,
+          "centerX": 1183.7831119146467,
+          "centerY": 553.7112942213832
+        },
+        "robotScale": 0.2670043415340087,
+        "robotFootY": 740.2720947265625,
+        "groundY": 740.2720694645442,
+        "groundDelta": 0.00002526201831187791,
+        "enabledTargets": [
+          "mission10-launch-target",
+          "mission10-home",
+          "mission10-sound"
+        ],
+        "targetCount": 3,
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "label": "1920x1080",
+      "robotLeft": 226.61279854029416,
+      "robotRight": 553.3299963012338,
+      "robotCenterX": 389.971397420764,
+      "consoleLeft": 730,
+      "robotConsoleGap": 176.6700036987662,
+      "robotFootY": 881.12646484375,
+      "groundY": 881.1264833574529,
+      "groundDelta": -0.00001851370291205967,
+      "robotScale": 0.3204052098408104,
+      "expectedRobotScale": 0.3204052098408104,
+      "robotScaleDelta": 0,
+      "leftRatio": 0.11802749923973654,
+      "pass": true,
+      "metrics": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "stage": "LAUNCH",
+        "semanticMode": "DESKTOP",
+        "layout": {
+          "robot": {
+            "x": 230.39999999999998,
+            "y": 186,
+            "width": 320.30908827785817,
+            "height": 858
+          },
+          "launchRobotZone": {
+            "x": 230.39999999999998,
+            "y": 186,
+            "width": 320.30908827785817,
+            "height": 858
+          },
+          "launchConsole": {
+            "x": 730,
+            "y": 186,
+            "width": 460,
+            "height": 690
+          },
+          "beacon": {
+            "x": 1214,
+            "y": 516,
+            "width": 259.56619296933434,
+            "height": 360
+          },
+          "launchGroundY": 876,
+          "platformContactY": 1044,
+          "robotScale": 0.3204052098408104
+        },
+        "robot": {
+          "x": 226.61279854029416,
+          "y": 431.91835337877274,
+          "width": 326.7171977609396,
+          "height": 449.20811146497726,
+          "right": 553.3299963012338,
+          "bottom": 881.12646484375,
+          "centerX": 389.971397420764,
+          "centerY": 656.5224091112614
+        },
+        "console": {
+          "x": 654.527955996605,
+          "y": 438.7681033501212,
+          "width": 610.5224564619614,
+          "height": 457.89184234647115,
+          "right": 1265.0504124585664,
+          "bottom": 896.6599456965923,
+          "centerX": 959.7891842275857,
+          "centerY": 667.7140245233568
+        },
+        "beacon": {
+          "x": 1197.5751837171897,
+          "y": 498.76738995810723,
+          "width": 292.41585639491404,
+          "height": 389.88780852655196,
+          "right": 1489.9910401121037,
+          "bottom": 888.6551984846592,
+          "centerX": 1343.7831119146467,
+          "centerY": 693.7112942213832
+        },
+        "robotScale": 0.3204052098408104,
+        "robotFootY": 881.12646484375,
+        "groundY": 881.1264833574529,
+        "groundDelta": -0.00001851370291205967,
+        "enabledTargets": [
+          "mission10-launch-target",
+          "mission10-home",
+          "mission10-sound"
+        ],
+        "targetCount": 3,
+        "text": [
+          "ПУТЬ ✓",
+          "ЭНЕРГИЯ ✓",
+          "СИГНАЛ ✓",
+          "ЗАПУСТИ МАЯК",
+          "",
+          "⌂ Домой",
+          "♪ Звук"
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\release-final-launch-1280x720.png",
+    "docs\\qa\\screenshots\\release-final-launch-1600x900.png",
+    "docs\\qa\\screenshots\\release-final-launch-1920x1080.png"
+  ]
+}

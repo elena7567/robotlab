@@ -1,0 +1,1488 @@
+{
+  "captures": [
+    {
+      "name": "1280x720-initial",
+      "width": 1280,
+      "height": 720,
+      "actions": [],
+      "state": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 0,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "·",
+          "·",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+        "board": {
+          "x": 160.45600000000002,
+          "y": 237.18556087040002,
+          "width": 596.479008,
+          "height": 393.67614528,
+          "right": 756.935008,
+          "bottom": 630.8617061504001
+        },
+        "panel": {
+          "x": 774.5440000000001,
+          "y": 262.0472670208,
+          "width": 360,
+          "height": 272.9249446976,
+          "right": 1134.544,
+          "bottom": 534.9722117184
+        },
+        "strip": {
+          "x": 803.5440063476562,
+          "y": 286.0472717285156,
+          "width": 353.99993896484375,
+          "height": 49,
+          "right": 1157.5439453125,
+          "bottom": 335.0472717285156
+        },
+        "arrows": [
+          {
+            "x": 805.6941106048,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 872.6190553024,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 882.6190553024,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 949.5440000000001,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 959.5440000000001,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 1026.4689446976001,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 1036.4689446976001,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 1103.3938893952002,
+            "bottom": 446.4346840672
+          }
+        ],
+        "actions": [
+          {
+            "x": 789.5440000000001,
+            "y": 462.9722117184,
+            "width": 72,
+            "height": 56,
+            "right": 861.5440000000001,
+            "bottom": 518.9722117184
+          },
+          {
+            "x": 873.5440000000001,
+            "y": 462.9722117184,
+            "width": 79,
+            "height": 56,
+            "right": 952.5440000000001,
+            "bottom": 518.9722117184
+          },
+          {
+            "x": 964.5440000000001,
+            "y": 462.9722117184,
+            "width": 155,
+            "height": 56,
+            "right": 1119.544,
+            "bottom": 518.9722117184
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 964.5440000000001,
+            "y": 462.9722117184,
+            "width": 155,
+            "height": 56,
+            "right": 1119.544,
+            "bottom": 518.9722117184
+          },
+          "enabled": false,
+          "alpha": 0.86
+        },
+        "delete": {
+          "rect": {
+            "x": 873.5440000000001,
+            "y": 462.9722117184,
+            "width": 79,
+            "height": 56,
+            "right": 952.5440000000001,
+            "bottom": 518.9722117184
+          },
+          "enabled": false
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670044,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 143,
+          "scale": 0.09519536903039073
+        },
+        "charger": {
+          "x": 486.69549765234376,
+          "y": 473.3136347737891,
+          "width": 87,
+          "height": 73,
+          "right": 573.6954976523438,
+          "bottom": 546.3136347737891
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "1280x720-3commands",
+      "width": 1280,
+      "height": 720,
+      "actions": [
+        "RIGHT",
+        "UP",
+        "RIGHT"
+      ],
+      "state": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 3,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "→",
+          "↑",
+          "→",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "",
+        "board": {
+          "x": 160.45600000000002,
+          "y": 237.18556087040002,
+          "width": 596.479008,
+          "height": 393.67614528,
+          "right": 756.935008,
+          "bottom": 630.8617061504001
+        },
+        "panel": {
+          "x": 774.5440000000001,
+          "y": 262.0472670208,
+          "width": 360,
+          "height": 272.9249446976,
+          "right": 1134.544,
+          "bottom": 534.9722117184
+        },
+        "strip": {
+          "x": 803.5440063476562,
+          "y": 286.0472717285156,
+          "width": 353.99993896484375,
+          "height": 49,
+          "right": 1157.5439453125,
+          "bottom": 335.0472717285156
+        },
+        "arrows": [
+          {
+            "x": 805.6941106048,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 872.6190553024,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 882.6190553024,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 949.5440000000001,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 959.5440000000001,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 1026.4689446976001,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 1036.4689446976001,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 1103.3938893952002,
+            "bottom": 446.4346840672
+          }
+        ],
+        "actions": [
+          {
+            "x": 789.5440000000001,
+            "y": 462.9722117184,
+            "width": 72,
+            "height": 56,
+            "right": 861.5440000000001,
+            "bottom": 518.9722117184
+          },
+          {
+            "x": 873.5440000000001,
+            "y": 462.9722117184,
+            "width": 79,
+            "height": 56,
+            "right": 952.5440000000001,
+            "bottom": 518.9722117184
+          },
+          {
+            "x": 964.5440000000001,
+            "y": 462.9722117184,
+            "width": 155,
+            "height": 56,
+            "right": 1119.544,
+            "bottom": 518.9722117184
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 964.5440000000001,
+            "y": 462.9722117184,
+            "width": 155,
+            "height": 56,
+            "right": 1119.544,
+            "bottom": 518.9722117184
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        "delete": {
+          "rect": {
+            "x": 873.5440000000001,
+            "y": 462.9722117184,
+            "width": 79,
+            "height": 56,
+            "right": 952.5440000000001,
+            "bottom": 518.9722117184
+          },
+          "enabled": true
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670044,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 143,
+          "scale": 0.09519536903039073
+        },
+        "charger": {
+          "x": 486.69549765234376,
+          "y": 473.3136347737891,
+          "width": 87,
+          "height": 73,
+          "right": 573.6954976523438,
+          "bottom": 546.3136347737891
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "1280x720-route-full-launch-enabled",
+      "width": 1280,
+      "height": 720,
+      "actions": [
+        "RIGHT",
+        "UP",
+        "RIGHT",
+        "RIGHT",
+        "DOWN",
+        "LEFT"
+      ],
+      "state": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 6,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "→",
+          "↑",
+          "→",
+          "→",
+          "↓",
+          "←"
+        ],
+        "feedback": "",
+        "board": {
+          "x": 160.45600000000002,
+          "y": 237.18556087040002,
+          "width": 596.479008,
+          "height": 393.67614528,
+          "right": 756.935008,
+          "bottom": 630.8617061504001
+        },
+        "panel": {
+          "x": 774.5440000000001,
+          "y": 262.0472670208,
+          "width": 360,
+          "height": 272.9249446976,
+          "right": 1134.544,
+          "bottom": 534.9722117184
+        },
+        "strip": {
+          "x": 803.5440063476562,
+          "y": 286.0472717285156,
+          "width": 353.99993896484375,
+          "height": 49,
+          "right": 1157.5439453125,
+          "bottom": 335.0472717285156
+        },
+        "arrows": [
+          {
+            "x": 805.6941106048,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 872.6190553024,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 882.6190553024,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 949.5440000000001,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 959.5440000000001,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 1026.4689446976001,
+            "bottom": 446.4346840672
+          },
+          {
+            "x": 1036.4689446976001,
+            "y": 379.50973936959997,
+            "width": 66.92494469760001,
+            "height": 66.92494469760001,
+            "right": 1103.3938893952002,
+            "bottom": 446.4346840672
+          }
+        ],
+        "actions": [
+          {
+            "x": 789.5440000000001,
+            "y": 462.9722117184,
+            "width": 72,
+            "height": 56,
+            "right": 861.5440000000001,
+            "bottom": 518.9722117184
+          },
+          {
+            "x": 873.5440000000001,
+            "y": 462.9722117184,
+            "width": 79,
+            "height": 56,
+            "right": 952.5440000000001,
+            "bottom": 518.9722117184
+          },
+          {
+            "x": 964.5440000000001,
+            "y": 462.9722117184,
+            "width": 155,
+            "height": 56,
+            "right": 1119.544,
+            "bottom": 518.9722117184
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 964.5440000000001,
+            "y": 462.9722117184,
+            "width": 155,
+            "height": 56,
+            "right": 1119.544,
+            "bottom": 518.9722117184
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        "delete": {
+          "rect": {
+            "x": 873.5440000000001,
+            "y": 462.9722117184,
+            "width": 79,
+            "height": 56,
+            "right": 952.5440000000001,
+            "bottom": 518.9722117184
+          },
+          "enabled": true
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670044,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 143,
+          "scale": 0.09519536903039073
+        },
+        "charger": {
+          "x": 486.69549765234376,
+          "y": 473.3136347737891,
+          "width": 87,
+          "height": 73,
+          "right": 573.6954976523438,
+          "bottom": 546.3136347737891
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "1438x914-initial",
+      "width": 1438,
+      "height": 914,
+      "actions": [],
+      "state": {
+        "viewport": {
+          "width": 1438,
+          "height": 914
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 0,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "·",
+          "·",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+        "board": {
+          "x": 208.20108000000005,
+          "y": 364.5208888888888,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 848.20108,
+          "bottom": 786.9208888888888
+        },
+        "panel": {
+          "x": 869.8517199999999,
+          "y": 390.5208888888888,
+          "width": 374.9472,
+          "height": 277.80799999999994,
+          "right": 1244.79892,
+          "bottom": 668.3288888888887
+        },
+        "strip": {
+          "x": 898.8517173828125,
+          "y": 414.5208740234375,
+          "width": 353.99996718750003,
+          "height": 49,
+          "right": 1252.8516845703125,
+          "bottom": 463.5208740234375
+        },
+        "arrows": [
+          {
+            "x": 898.7093199999999,
+            "y": 510.42488888888874,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 970.5173199999999,
+            "bottom": 582.2328888888887
+          },
+          {
+            "x": 980.5173199999999,
+            "y": 510.42488888888874,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1052.32532,
+            "bottom": 582.2328888888887
+          },
+          {
+            "x": 1062.32532,
+            "y": 510.42488888888874,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1134.13332,
+            "bottom": 582.2328888888887
+          },
+          {
+            "x": 1144.13332,
+            "y": 510.42488888888874,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1215.94132,
+            "bottom": 582.2328888888887
+          }
+        ],
+        "actions": [
+          {
+            "x": 884.8517199999999,
+            "y": 596.3288888888887,
+            "width": 75,
+            "height": 56,
+            "right": 959.8517199999999,
+            "bottom": 652.3288888888887
+          },
+          {
+            "x": 971.8517199999999,
+            "y": 596.3288888888887,
+            "width": 82,
+            "height": 56,
+            "right": 1053.85172,
+            "bottom": 652.3288888888887
+          },
+          {
+            "x": 1065.85172,
+            "y": 596.3288888888887,
+            "width": 163.9472,
+            "height": 56,
+            "right": 1229.79892,
+            "bottom": 652.3288888888887
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 1065.85172,
+            "y": 596.3288888888887,
+            "width": 163.9472,
+            "height": 56,
+            "right": 1229.79892,
+            "bottom": 652.3288888888887
+          },
+          "enabled": false,
+          "alpha": 0.86
+        },
+        "delete": {
+          "rect": {
+            "x": 971.8517199999999,
+            "y": 596.3288888888887,
+            "width": 82,
+            "height": 56,
+            "right": 1053.85172,
+            "bottom": 652.3288888888887
+          },
+          "enabled": false
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670045,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 154,
+          "scale": 0.10251808972503619
+        },
+        "charger": {
+          "x": 558.2010803222656,
+          "y": 618.3408740234376,
+          "width": 94,
+          "height": 78,
+          "right": 652.2010803222656,
+          "bottom": 696.3408740234376
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "1600x900-initial",
+      "width": 1600,
+      "height": 900,
+      "actions": [],
+      "state": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 0,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "·",
+          "·",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+        "board": {
+          "x": 281.79999999999995,
+          "y": 353.632,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 921.8,
+          "bottom": 776.032
+        },
+        "panel": {
+          "x": 944.8,
+          "y": 379.632,
+          "width": 388.40000000000003,
+          "height": 277.80800000000005,
+          "right": 1333.2,
+          "bottom": 657.44
+        },
+        "strip": {
+          "x": 973.8,
+          "y": 403.6319885253906,
+          "width": 354.00004882812505,
+          "height": 49,
+          "right": 1327.800048828125,
+          "bottom": 452.6319885253906
+        },
+        "arrows": [
+          {
+            "x": 980.384,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1052.192,
+            "bottom": 571.344
+          },
+          {
+            "x": 1062.192,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1134,
+            "bottom": 571.344
+          },
+          {
+            "x": 1144,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1215.808,
+            "bottom": 571.344
+          },
+          {
+            "x": 1225.808,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1297.616,
+            "bottom": 571.344
+          }
+        ],
+        "actions": [
+          {
+            "x": 959.8,
+            "y": 585.44,
+            "width": 78,
+            "height": 56,
+            "right": 1037.8,
+            "bottom": 641.44
+          },
+          {
+            "x": 1049.8,
+            "y": 585.44,
+            "width": 86,
+            "height": 56,
+            "right": 1135.8,
+            "bottom": 641.44
+          },
+          {
+            "x": 1147.8,
+            "y": 585.44,
+            "width": 170.40000000000003,
+            "height": 56,
+            "right": 1318.2,
+            "bottom": 641.44
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 1147.8,
+            "y": 585.44,
+            "width": 170.40000000000003,
+            "height": 56,
+            "right": 1318.2,
+            "bottom": 641.44
+          },
+          "enabled": false,
+          "alpha": 0.86
+        },
+        "delete": {
+          "rect": {
+            "x": 1049.8,
+            "y": 585.44,
+            "width": 86,
+            "height": 56,
+            "right": 1135.8,
+            "bottom": 641.44
+          },
+          "enabled": false
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670045,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 154,
+          "scale": 0.10251808972503619
+        },
+        "charger": {
+          "x": 631.7999877929688,
+          "y": 607.4519885253907,
+          "width": 94,
+          "height": 78,
+          "right": 725.7999877929688,
+          "bottom": 685.4519885253907
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "1600x900-route-partial",
+      "width": 1600,
+      "height": 900,
+      "actions": [
+        "RIGHT",
+        "UP"
+      ],
+      "state": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 2,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "→",
+          "↑",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "",
+        "board": {
+          "x": 281.79999999999995,
+          "y": 353.632,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 921.8,
+          "bottom": 776.032
+        },
+        "panel": {
+          "x": 944.8,
+          "y": 379.632,
+          "width": 388.40000000000003,
+          "height": 277.80800000000005,
+          "right": 1333.2,
+          "bottom": 657.44
+        },
+        "strip": {
+          "x": 973.8,
+          "y": 403.6319885253906,
+          "width": 354.00004882812505,
+          "height": 49,
+          "right": 1327.800048828125,
+          "bottom": 452.6319885253906
+        },
+        "arrows": [
+          {
+            "x": 980.384,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1052.192,
+            "bottom": 571.344
+          },
+          {
+            "x": 1062.192,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1134,
+            "bottom": 571.344
+          },
+          {
+            "x": 1144,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1215.808,
+            "bottom": 571.344
+          },
+          {
+            "x": 1225.808,
+            "y": 499.53600000000006,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1297.616,
+            "bottom": 571.344
+          }
+        ],
+        "actions": [
+          {
+            "x": 959.8,
+            "y": 585.44,
+            "width": 78,
+            "height": 56,
+            "right": 1037.8,
+            "bottom": 641.44
+          },
+          {
+            "x": 1049.8,
+            "y": 585.44,
+            "width": 86,
+            "height": 56,
+            "right": 1135.8,
+            "bottom": 641.44
+          },
+          {
+            "x": 1147.8,
+            "y": 585.44,
+            "width": 170.40000000000003,
+            "height": 56,
+            "right": 1318.2,
+            "bottom": 641.44
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 1147.8,
+            "y": 585.44,
+            "width": 170.40000000000003,
+            "height": 56,
+            "right": 1318.2,
+            "bottom": 641.44
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        "delete": {
+          "rect": {
+            "x": 1049.8,
+            "y": 585.44,
+            "width": 86,
+            "height": 56,
+            "right": 1135.8,
+            "bottom": 641.44
+          },
+          "enabled": true
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670045,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 154,
+          "scale": 0.10251808972503619
+        },
+        "charger": {
+          "x": 631.7999877929688,
+          "y": 607.4519885253907,
+          "width": 94,
+          "height": 78,
+          "right": 725.7999877929688,
+          "bottom": 685.4519885253907
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "1920x1080-initial",
+      "width": 1920,
+      "height": 1080,
+      "actions": [],
+      "state": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "semanticMode": "DESKTOP",
+        "commandCount": 0,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "·",
+          "·",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+        "board": {
+          "x": 441.79999999999995,
+          "y": 493.632,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 1081.8,
+          "bottom": 916.032
+        },
+        "panel": {
+          "x": 1104.8,
+          "y": 519.6320000000001,
+          "width": 388.40000000000003,
+          "height": 277.808,
+          "right": 1493.2,
+          "bottom": 797.44
+        },
+        "strip": {
+          "x": 1133.8,
+          "y": 543.6320190429688,
+          "width": 354.00004882812505,
+          "height": 49,
+          "right": 1487.800048828125,
+          "bottom": 592.6320190429688
+        },
+        "arrows": [
+          {
+            "x": 1140.384,
+            "y": 639.5360000000001,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1212.192,
+            "bottom": 711.344
+          },
+          {
+            "x": 1222.192,
+            "y": 639.5360000000001,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1294,
+            "bottom": 711.344
+          },
+          {
+            "x": 1304,
+            "y": 639.5360000000001,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1375.808,
+            "bottom": 711.344
+          },
+          {
+            "x": 1385.808,
+            "y": 639.5360000000001,
+            "width": 71.808,
+            "height": 71.808,
+            "right": 1457.616,
+            "bottom": 711.344
+          }
+        ],
+        "actions": [
+          {
+            "x": 1119.8,
+            "y": 725.44,
+            "width": 78,
+            "height": 56,
+            "right": 1197.8,
+            "bottom": 781.44
+          },
+          {
+            "x": 1209.8,
+            "y": 725.44,
+            "width": 86,
+            "height": 56,
+            "right": 1295.8,
+            "bottom": 781.44
+          },
+          {
+            "x": 1307.8,
+            "y": 725.44,
+            "width": 170.40000000000003,
+            "height": 56,
+            "right": 1478.2,
+            "bottom": 781.44
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 1307.8,
+            "y": 725.44,
+            "width": 170.40000000000003,
+            "height": 56,
+            "right": 1478.2,
+            "bottom": 781.44
+          },
+          "enabled": false,
+          "alpha": 0.86
+        },
+        "delete": {
+          "rect": {
+            "x": 1209.8,
+            "y": 725.44,
+            "width": 86,
+            "height": 56,
+            "right": 1295.8,
+            "bottom": 781.44
+          },
+          "enabled": false
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.6655021707670045,
+          "visibleCellHeightRatio": 0.92,
+          "cellSize": 154,
+          "scale": 0.10251808972503619
+        },
+        "charger": {
+          "x": 791.7999877929688,
+          "y": 747.4519885253907,
+          "width": 94,
+          "height": 78,
+          "right": 885.7999877929688,
+          "bottom": 825.4519885253907
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "name": "844x390",
+      "width": 844,
+      "height": 390,
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "commandCount": 0,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "·",
+          "·",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "ПОПРОБУЙ →",
+        "board": {
+          "x": 13.650000000000002,
+          "y": 92.23,
+          "width": 500.6880000000001,
+          "height": 284.12,
+          "right": 514.3380000000001,
+          "bottom": 376.35
+        },
+        "panel": {
+          "x": 528.3380000000001,
+          "y": 80.23,
+          "width": 310.012,
+          "height": 266,
+          "right": 838.3500000000001,
+          "bottom": 346.23
+        },
+        "strip": {
+          "x": 548.337994140625,
+          "y": 94.2300033569336,
+          "width": 270.01199999999994,
+          "height": 53.00000762939453,
+          "right": 818.349994140625,
+          "bottom": 147.23001098632812
+        },
+        "arrows": [
+          {
+            "x": 556.344,
+            "y": 180.23000000000002,
+            "width": 56,
+            "height": 56,
+            "right": 612.344,
+            "bottom": 236.23000000000002
+          },
+          {
+            "x": 622.344,
+            "y": 180.23000000000002,
+            "width": 56,
+            "height": 56,
+            "right": 678.344,
+            "bottom": 236.23000000000002
+          },
+          {
+            "x": 688.344,
+            "y": 180.23000000000002,
+            "width": 56,
+            "height": 56,
+            "right": 744.344,
+            "bottom": 236.23000000000002
+          },
+          {
+            "x": 754.344,
+            "y": 180.23000000000002,
+            "width": 56,
+            "height": 56,
+            "right": 810.344,
+            "bottom": 236.23000000000002
+          }
+        ],
+        "actions": [
+          {
+            "x": 536.3380000000001,
+            "y": 282.23,
+            "width": 78,
+            "height": 56,
+            "right": 614.3380000000001,
+            "bottom": 338.23
+          },
+          {
+            "x": 626.3380000000001,
+            "y": 282.23,
+            "width": 82,
+            "height": 56,
+            "right": 708.3380000000001,
+            "bottom": 338.23
+          },
+          {
+            "x": 720.3380000000001,
+            "y": 282.23,
+            "width": 110.012,
+            "height": 56,
+            "right": 830.3500000000001,
+            "bottom": 338.23
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 720.3380000000001,
+            "y": 282.23,
+            "width": 110.012,
+            "height": 56,
+            "right": 830.3500000000001,
+            "bottom": 338.23
+          },
+          "enabled": false,
+          "alpha": 0.86
+        },
+        "delete": {
+          "rect": {
+            "x": 626.3380000000001,
+            "y": 282.23,
+            "width": 82,
+            "height": 56,
+            "right": 708.3380000000001,
+            "bottom": 338.23
+          },
+          "enabled": false
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.5642301013024603,
+          "visibleCellHeightRatio": 0.7800000000000001,
+          "cellSize": 119,
+          "scale": 0.06716353111432707
+        },
+        "charger": {
+          "x": 286.9939996185303,
+          "y": 266.3600033569336,
+          "width": 73,
+          "height": 62,
+          "right": 359.9939996185303,
+          "bottom": 328.3600033569336
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "915x412",
+      "width": 915,
+      "height": 412,
+      "state": {
+        "viewport": {
+          "width": 915,
+          "height": 412
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "commandCount": 0,
+        "maxCommands": 6,
+        "routeSlotLabels": [
+          "·",
+          "·",
+          "·",
+          "·",
+          "·",
+          "·"
+        ],
+        "feedback": "ПОПРОБУЙ →",
+        "board": {
+          "x": 14.420000000000002,
+          "y": 93.48400000000001,
+          "width": 544.4824000000001,
+          "height": 304.096,
+          "right": 558.9024000000001,
+          "bottom": 397.58000000000004
+        },
+        "panel": {
+          "x": 573.5624,
+          "y": 81.48400000000001,
+          "width": 335.0176,
+          "height": 266,
+          "right": 908.58,
+          "bottom": 347.48400000000004
+        },
+        "strip": {
+          "x": 593.5624280273437,
+          "y": 95.48400115966797,
+          "width": 295.01760000000013,
+          "height": 53.00000762939453,
+          "right": 888.5800280273438,
+          "bottom": 148.4840087890625
+        },
+        "arrows": [
+          {
+            "x": 614.0712000000001,
+            "y": 181.484,
+            "width": 56,
+            "height": 56,
+            "right": 670.0712000000001,
+            "bottom": 237.484
+          },
+          {
+            "x": 680.0712000000001,
+            "y": 181.484,
+            "width": 56,
+            "height": 56,
+            "right": 736.0712000000001,
+            "bottom": 237.484
+          },
+          {
+            "x": 746.0712000000001,
+            "y": 181.484,
+            "width": 56,
+            "height": 56,
+            "right": 802.0712000000001,
+            "bottom": 237.484
+          },
+          {
+            "x": 812.0712000000001,
+            "y": 181.484,
+            "width": 56,
+            "height": 56,
+            "right": 868.0712000000001,
+            "bottom": 237.484
+          }
+        ],
+        "actions": [
+          {
+            "x": 581.5624,
+            "y": 283.48400000000004,
+            "width": 78,
+            "height": 56,
+            "right": 659.5624,
+            "bottom": 339.48400000000004
+          },
+          {
+            "x": 671.5624,
+            "y": 283.48400000000004,
+            "width": 82,
+            "height": 56,
+            "right": 753.5624,
+            "bottom": 339.48400000000004
+          },
+          {
+            "x": 765.5624,
+            "y": 283.48400000000004,
+            "width": 135.01760000000002,
+            "height": 56,
+            "right": 900.58,
+            "bottom": 339.48400000000004
+          }
+        ],
+        "run": {
+          "rect": {
+            "x": 765.5624,
+            "y": 283.48400000000004,
+            "width": 135.01760000000002,
+            "height": 56,
+            "right": 900.58,
+            "bottom": 339.48400000000004
+          },
+          "enabled": false,
+          "alpha": 0.86
+        },
+        "delete": {
+          "rect": {
+            "x": 671.5624,
+            "y": 283.48400000000004,
+            "width": 82,
+            "height": 56,
+            "right": 753.5624,
+            "bottom": 339.48400000000004
+          },
+          "enabled": false
+        },
+        "robot": {
+          "gridColumn": 0,
+          "gridRow": 1,
+          "visibleCellWidthRatio": 0.5642301013024602,
+          "visibleCellHeightRatio": 0.78,
+          "cellSize": 130,
+          "scale": 0.07337192474674385
+        },
+        "charger": {
+          "x": 311.661200076294,
+          "y": 280.93200115966795,
+          "width": 80,
+          "height": 67,
+          "right": 391.661200076294,
+          "bottom": 347.93200115966795
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  ],
+  "checks": {
+    "desktopChecks": {
+      "1280x720-initial": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      },
+      "1280x720-3commands": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      },
+      "1280x720-route-full-launch-enabled": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      },
+      "1438x914-initial": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      },
+      "1600x900-initial": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      },
+      "1600x900-route-partial": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      },
+      "1920x1080-initial": {
+        "boardCenteredBetter": true,
+        "boundedWidth": true,
+        "compactGap": true,
+        "routeArrowsGrouped": true,
+        "robotLarger": true,
+        "launchReachable": true,
+        "panelNamed": true,
+        "noErrors": true
+      }
+    },
+    "mobileChecks": [
+      {
+        "name": "844x390",
+        "boardVisible": true,
+        "routeVisible": true,
+        "arrowsTouchSized": true,
+        "buttonsVisible": true,
+        "noErrors": true
+      },
+      {
+        "name": "915x412",
+        "boardVisible": true,
+        "routeVisible": true,
+        "arrowsTouchSized": true,
+        "buttonsVisible": true,
+        "noErrors": true
+      }
+    ]
+  },
+  "failures": []
+}

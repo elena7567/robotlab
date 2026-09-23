@@ -1,0 +1,5726 @@
+{
+  "result": "PASS",
+  "totalChecks": 204,
+  "failedChecks": [],
+  "results": [
+    {
+      "label": "desktop-1280x720",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": false,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "deviceLayoutClass": "DESKTOP",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "desktop-1280x720: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1280x720: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "desktop-1438x914",
+      "viewport": {
+        "width": 1438,
+        "height": 914
+      },
+      "mobile": false,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 1438,
+          "height": 914
+        },
+        "semanticMode": "DESKTOP",
+        "deviceLayoutClass": "DESKTOP",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "desktop-1438x914: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1438,
+              "height": 914
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1438x914: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "desktop-1600x900",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "mobile": false,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 1600,
+          "height": 900
+        },
+        "semanticMode": "DESKTOP",
+        "deviceLayoutClass": "DESKTOP",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "desktop-1600x900: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1600,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1600x900: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "desktop-1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mobile": false,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 1920,
+          "height": 1080
+        },
+        "semanticMode": "DESKTOP",
+        "deviceLayoutClass": "DESKTOP",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1920,
+              "height": 1080
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-1920x1080: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "desktop-resize",
+      "states": [
+        {
+          "viewport": {
+            "width": 1200,
+            "height": 900
+          },
+          "info": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "viewport": {
+            "width": 1000,
+            "height": 800
+          },
+          "info": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "viewport": {
+            "width": 900,
+            "height": 700
+          },
+          "info": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1200x900: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1200,
+              "height": 900
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-1000x800: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1000,
+              "height": 800
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop-resize-900x700: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 900,
+              "height": 700
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "desktop resize: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "phone-portrait-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "deviceLayoutClass": "MOBILE_OR_TABLET",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: device class MOBILE_OR_TABLET",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-390x844: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "phone-portrait-412x915",
+      "viewport": {
+        "width": 412,
+        "height": 915
+      },
+      "mobile": true,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 412,
+          "height": 915
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "deviceLayoutClass": "MOBILE_OR_TABLET",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: device class MOBILE_OR_TABLET",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 412,
+              "height": 915
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-412x915: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "phone-portrait-360x800",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "mobile": true,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 360,
+          "height": 800
+        },
+        "semanticMode": "PHONE_PORTRAIT",
+        "deviceLayoutClass": "MOBILE_OR_TABLET",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: device class MOBILE_OR_TABLET",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 360,
+              "height": 800
+            },
+            "semanticMode": "PHONE_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-portrait-360x800: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "phone-landscape-740x360",
+      "viewport": {
+        "width": 740,
+        "height": 360
+      },
+      "mobile": true,
+      "expectation": "gate",
+      "info": {
+        "activeScenes": [
+          "Mission7OrientationGuardScene"
+        ],
+        "scale": {
+          "width": 740,
+          "height": 360
+        },
+        "semanticMode": null,
+        "deviceLayoutClass": null,
+        "mission7Active": false,
+        "guardActive": true,
+        "orientationGateRegistry": true,
+        "inputActive": false,
+        "gateCount": 3,
+        "phoneCopyCount": 1,
+        "verticalCopyCount": 1,
+        "taskPanelCount": 0,
+        "terminalCount": 0,
+        "hintCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: orientation gate registry true",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: orientation gate present",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: ПОВЕРНИ ТЕЛЕФОН visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: ИГРАЕМ ВЕРТИКАЛЬНО visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: task panel hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: wire terminals hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: Hint hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: Mission 7 input inactive",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: mobile/tablet routing",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 740,
+              "height": 360
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-740x360: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "phone-landscape-844x390",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mobile": true,
+      "expectation": "gate",
+      "info": {
+        "activeScenes": [
+          "Mission7OrientationGuardScene"
+        ],
+        "scale": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": null,
+        "deviceLayoutClass": null,
+        "mission7Active": false,
+        "guardActive": true,
+        "orientationGateRegistry": true,
+        "inputActive": false,
+        "gateCount": 3,
+        "phoneCopyCount": 1,
+        "verticalCopyCount": 1,
+        "taskPanelCount": 0,
+        "terminalCount": 0,
+        "hintCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: orientation gate registry true",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: orientation gate present",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: ПОВЕРНИ ТЕЛЕФОН visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: ИГРАЕМ ВЕРТИКАЛЬНО visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: task panel hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: wire terminals hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: Hint hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: Mission 7 input inactive",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: mobile/tablet routing",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-844x390: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "phone-landscape-915x412",
+      "viewport": {
+        "width": 915,
+        "height": 412
+      },
+      "mobile": true,
+      "expectation": "gate",
+      "info": {
+        "activeScenes": [
+          "Mission7OrientationGuardScene"
+        ],
+        "scale": {
+          "width": 915,
+          "height": 412
+        },
+        "semanticMode": null,
+        "deviceLayoutClass": null,
+        "mission7Active": false,
+        "guardActive": true,
+        "orientationGateRegistry": true,
+        "inputActive": false,
+        "gateCount": 3,
+        "phoneCopyCount": 1,
+        "verticalCopyCount": 1,
+        "taskPanelCount": 0,
+        "terminalCount": 0,
+        "hintCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: orientation gate registry true",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: orientation gate present",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: ПОВЕРНИ ТЕЛЕФОН visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: ИГРАЕМ ВЕРТИКАЛЬНО visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: task panel hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: wire terminals hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: Hint hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: Mission 7 input inactive",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: mobile/tablet routing",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 915,
+              "height": 412
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "phone-landscape-915x412: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "tablet-portrait-768x1024",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "mobile": true,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 768,
+          "height": 1024
+        },
+        "semanticMode": "TABLET_PORTRAIT",
+        "deviceLayoutClass": "MOBILE_OR_TABLET",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: Mission7Scene active",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: guard scene inactive",
+          "details": [
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: Hint visible",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: device class MOBILE_OR_TABLET",
+          "details": {
+            "activeScenes": [
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 768,
+              "height": 1024
+            },
+            "semanticMode": "TABLET_PORTRAIT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-portrait-768x1024: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "tablet-landscape-1024x768",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "mobile": true,
+      "expectation": "gate",
+      "info": {
+        "activeScenes": [
+          "Mission7OrientationGuardScene"
+        ],
+        "scale": {
+          "width": 1024,
+          "height": 768
+        },
+        "semanticMode": null,
+        "deviceLayoutClass": null,
+        "mission7Active": false,
+        "guardActive": true,
+        "orientationGateRegistry": true,
+        "inputActive": false,
+        "gateCount": 3,
+        "phoneCopyCount": 1,
+        "verticalCopyCount": 1,
+        "taskPanelCount": 0,
+        "terminalCount": 0,
+        "hintCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: orientation gate registry true",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: orientation gate present",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: ПОВЕРНИ ТЕЛЕФОН visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: ИГРАЕМ ВЕРТИКАЛЬНО visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: task panel hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: wire terminals hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: Hint hidden",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: Mission 7 input inactive",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: mobile/tablet routing",
+          "details": {
+            "activeScenes": [
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 1024,
+              "height": 768
+            },
+            "semanticMode": null,
+            "deviceLayoutClass": null,
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "tablet-landscape-1024x768: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "mission6-to-7-desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": false,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "StartScene",
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "deviceLayoutClass": "DESKTOP",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: Mission7Scene active",
+          "details": [
+            "StartScene",
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: guard scene inactive",
+          "details": [
+            "StartScene",
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: Hint visible",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: device class DESKTOP",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 1280,
+              "height": 720
+            },
+            "semanticMode": "DESKTOP",
+            "deviceLayoutClass": "DESKTOP",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-desktop: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "mission6-to-7-mobile-portrait",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "expectation": "gameplay",
+      "info": {
+        "activeScenes": [
+          "StartScene",
+          "Mission7Scene"
+        ],
+        "scale": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "deviceLayoutClass": "MOBILE_OR_TABLET",
+        "mission7Active": true,
+        "guardActive": false,
+        "orientationGateRegistry": false,
+        "inputActive": true,
+        "gateCount": 0,
+        "phoneCopyCount": 0,
+        "verticalCopyCount": 0,
+        "taskPanelCount": 1,
+        "terminalCount": 6,
+        "hintCount": 1,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: Mission7Scene active",
+          "details": [
+            "StartScene",
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: guard scene inactive",
+          "details": [
+            "StartScene",
+            "Mission7Scene"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: orientation gate registry false",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: orientation gate count 0",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: ПОВЕРНИ ТЕЛЕФОН not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: ИГРАЕМ ВЕРТИКАЛЬНО not visible",
+          "details": [
+            "⌂ Домой",
+            "♪ Звук",
+            "ЗАДАНИЕ 7 ИЗ 10",
+            "ПОДКЛЮЧИ ПРОВОДА",
+            "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+            "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+            "ПОДСКАЗКА"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: Mission 7 task panel visible",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: wire terminals visible",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: Hint visible",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: Mission 7 input active",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: device class MOBILE_OR_TABLET",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7Scene"
+            ],
+            "scale": {
+              "width": 390,
+              "height": 844
+            },
+            "semanticMode": "PHONE_PORTRAIT_TALL",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": true,
+            "guardActive": false,
+            "orientationGateRegistry": false,
+            "inputActive": true,
+            "gateCount": 0,
+            "phoneCopyCount": 0,
+            "verticalCopyCount": 0,
+            "taskPanelCount": 1,
+            "terminalCount": 6,
+            "hintCount": 1,
+            "labels": [
+              "⌂ Домой",
+              "♪ Звук",
+              "ЗАДАНИЕ 7 ИЗ 10",
+              "ПОДКЛЮЧИ ПРОВОДА",
+              "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+              "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+              "ПОДСКАЗКА"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-portrait: console/network clean",
+          "details": {
+            "console": [],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    },
+    {
+      "label": "mission6-to-7-mobile-landscape",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mobile": true,
+      "expectation": "gate",
+      "info": {
+        "activeScenes": [
+          "StartScene",
+          "Mission7OrientationGuardScene"
+        ],
+        "scale": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "deviceLayoutClass": "MOBILE_OR_TABLET",
+        "mission7Active": false,
+        "guardActive": true,
+        "orientationGateRegistry": true,
+        "inputActive": false,
+        "gateCount": 3,
+        "phoneCopyCount": 1,
+        "verticalCopyCount": 1,
+        "taskPanelCount": 0,
+        "terminalCount": 0,
+        "hintCount": 0,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      },
+      "checks": [
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: orientation gate registry true",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: orientation gate present",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: ПОВЕРНИ ТЕЛЕФОН visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: ИГРАЕМ ВЕРТИКАЛЬНО visible",
+          "details": [
+            "ПОВЕРНИ ТЕЛЕФОН",
+            "ИГРАЕМ ВЕРТИКАЛЬНО"
+          ]
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: task panel hidden",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: wire terminals hidden",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: Hint hidden",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: Mission 7 input inactive",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: mobile/tablet routing",
+          "details": {
+            "activeScenes": [
+              "StartScene",
+              "Mission7OrientationGuardScene"
+            ],
+            "scale": {
+              "width": 844,
+              "height": 390
+            },
+            "semanticMode": "PHONE_LANDSCAPE_SHORT",
+            "deviceLayoutClass": "MOBILE_OR_TABLET",
+            "mission7Active": false,
+            "guardActive": true,
+            "orientationGateRegistry": true,
+            "inputActive": false,
+            "gateCount": 3,
+            "phoneCopyCount": 1,
+            "verticalCopyCount": 1,
+            "taskPanelCount": 0,
+            "terminalCount": 0,
+            "hintCount": 0,
+            "labels": [
+              "ПОВЕРНИ ТЕЛЕФОН",
+              "ИГРАЕМ ВЕРТИКАЛЬНО"
+            ]
+          }
+        },
+        {
+          "ok": true,
+          "message": "mission6-to-7-mobile-landscape: console/network clean",
+          "details": {
+            "console": [
+              "[RobotLab layout] unintended overlaps {scene: Mission6Scene, semanticMode: PHONE_LANDSCAPE_SHORT, compositionPolicyId: MISSION_6_PHONE_LANDSCAPE_SHORT, overlapCount: 1, overlaps: Array(1)}"
+            ],
+            "page": [],
+            "requests": [],
+            "responses": []
+          }
+        }
+      ],
+      "errors": {
+        "console": [
+          "[RobotLab layout] unintended overlaps {scene: Mission6Scene, semanticMode: PHONE_LANDSCAPE_SHORT, compositionPolicyId: MISSION_6_PHONE_LANDSCAPE_SHORT, overlapCount: 1, overlaps: Array(1)}"
+        ],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "ok": true
+    }
+  ],
+  "finishedAt": "2026-09-14T13:09:01.811Z"
+}

@@ -1,0 +1,243 @@
+{
+  "portraitHandoff": {
+    "ok": true,
+    "portrait": {
+      "activeScenes": [
+        "StartScene",
+        "Mission7OrientationGuardScene"
+      ],
+      "guardActive": true,
+      "mission7Active": false,
+      "gateVisible": true,
+      "preentryGateVisible": true,
+      "gateCopyVisible": true,
+      "mission7PanelVisible": false,
+      "mission7TerminalsVisible": false,
+      "mission7HintVisible": false,
+      "mission7InputActive": false,
+      "mission7OrientationGate": true,
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "scale": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    "landscape": {
+      "activeScenes": [
+        "StartScene",
+        "Mission7Scene"
+      ],
+      "guardActive": false,
+      "mission7Active": true,
+      "gateVisible": false,
+      "preentryGateVisible": false,
+      "gateCopyVisible": false,
+      "mission7PanelVisible": true,
+      "mission7TerminalsVisible": true,
+      "mission7HintVisible": true,
+      "mission7InputActive": true,
+      "mission7OrientationGate": false,
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "scale": {
+        "width": 844,
+        "height": 390
+      }
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "alreadyLandscape": {
+    "ok": true,
+    "state": {
+      "activeScenes": [
+        "StartScene",
+        "Mission7Scene"
+      ],
+      "guardActive": false,
+      "mission7Active": true,
+      "gateVisible": false,
+      "preentryGateVisible": false,
+      "gateCopyVisible": false,
+      "mission7PanelVisible": true,
+      "mission7TerminalsVisible": true,
+      "mission7HintVisible": true,
+      "mission7InputActive": true,
+      "mission7OrientationGate": false,
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "scale": {
+        "width": 844,
+        "height": 390
+      }
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "portraitBeforeCompletion": {
+    "ok": false,
+    "state": {
+      "activeScenes": [
+        "StartScene",
+        "Mission7OrientationGuardScene"
+      ],
+      "guardActive": true,
+      "mission7Active": false,
+      "gateVisible": true,
+      "preentryGateVisible": true,
+      "gateCopyVisible": true,
+      "mission7PanelVisible": false,
+      "mission7TerminalsVisible": false,
+      "mission7HintVisible": false,
+      "mission7InputActive": false,
+      "mission7OrientationGate": true,
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "scale": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    "errors": {
+      "console": [
+        "[RobotLab layout] unintended overlaps {scene: Mission6Scene, semanticMode: PHONE_LANDSCAPE_SHORT, compositionPolicyId: MISSION_6_PHONE_LANDSCAPE_SHORT, overlapCount: 1, overlaps: Array(1)}"
+      ],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "statePreservationAfterStart": {
+    "ok": true,
+    "before": [
+      "red"
+    ],
+    "after": [
+      "red"
+    ],
+    "portrait": {
+      "activeScenes": [
+        "Mission7Scene"
+      ],
+      "guardActive": false,
+      "mission7Active": true,
+      "gateVisible": true,
+      "preentryGateVisible": false,
+      "gateCopyVisible": true,
+      "mission7PanelVisible": false,
+      "mission7TerminalsVisible": false,
+      "mission7HintVisible": false,
+      "mission7InputActive": false,
+      "mission7OrientationGate": true,
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "scale": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    "landscape": {
+      "activeScenes": [
+        "Mission7Scene"
+      ],
+      "guardActive": false,
+      "mission7Active": true,
+      "gateVisible": false,
+      "preentryGateVisible": false,
+      "gateCopyVisible": false,
+      "mission7PanelVisible": true,
+      "mission7TerminalsVisible": true,
+      "mission7HintVisible": true,
+      "mission7InputActive": true,
+      "mission7OrientationGate": false,
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "scale": {
+        "width": 844,
+        "height": 390
+      }
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "result": "FAIL"
+}

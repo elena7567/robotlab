@@ -12,6 +12,9 @@ import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneL
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { CHILD_UI } from '../ui/childUi';
+import { DesktopCharacterRole, resolveBoardActorScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 
 const COMMAND_LABELS: Readonly<Record<RobotCommand, string>> = { UP: '↑', RIGHT: '→', DOWN: '↓', LEFT: '←' };
 const COMMAND_ORDER: readonly RobotCommand[] = ['UP', 'RIGHT', 'DOWN', 'LEFT'];
@@ -27,6 +30,7 @@ export class Mission8Scene extends Phaser.Scene {
     const portrait = layout.semanticMode.startsWith('PHONE_PORTRAIT') || layout.semanticMode === 'TABLET_PORTRAIT';
     const ultra = layout.semanticMode === 'PHONE_PORTRAIT_SHORT';
     const compactMobile = layout.semanticMode.startsWith('PHONE_');
+    const desktopMission8 = layout.semanticMode === 'DESKTOP';
     const sceneComposition = composeScene(layout, 8);
     const composition = sceneComposition.mission8!;
     this.game.registry.set('sceneComposition', sceneComposition);
@@ -82,13 +86,41 @@ export class Mission8Scene extends Phaser.Scene {
       color: '#fff7cc', fontFamily: UI_FONT, fontSize: `${ultra ? CHILD_UI.typography.statusMin : 16}px`, fontStyle: 'bold', stroke: '#173b52', strokeThickness: 3,
     }).setOrigin(0.5).setName('programming-route-label').setDepth(9).setVisible(false);
 
-    const board = new ProgrammingBoard(this, { ...composition.board, challenge: snapshot.challenge, robotPosition: snapshot.robotPosition }).setDepth(4);
-    const instruction = this.add.text(composition.board.x + composition.board.width / 2, composition.board.y - 18, compactMobile ? 'ДОВЕДИ РОБОТА ДО ЗАРЯДКИ' : 'ДОВЕДИ РОБОТА ДО ЗАРЯДКИ  •  СОСТАВЬ ПУТЬ И НАЖМИ «ЗАПУСТИТЬ»', {
+    const board = new ProgrammingBoard(this, {
+      ...composition.board,
+      challenge: snapshot.challenge,
+      robotPosition: snapshot.robotPosition,
+      ...(desktopMission8 ? { robotCellWidthRatio: 1, robotCellHeightRatio: 0.72 } : {}),
+    }).setDepth(4);
+    if (desktopMission8) {
+      const cellHeight = Number(board.getData('cellSize'));
+      publishCharacterTelemetry(this, [{
+        characterId: 'mission8-board-robot',
+        object: board.robot,
+        profileId: 'assembled',
+        role: DesktopCharacterRole.BOARD_ACTOR,
+        sizing: resolveBoardActorScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, localGridCellHeight: cellHeight, ratio: 0.72 }),
+        cellHeight,
+      }]);
+    }
+
+    const instruction = this.add.text(composition.board.x + composition.board.width / 2, composition.board.y - 18, compactMobile ? 'ДОВЕДИ РОБОТА ДО ЗАРЯДКИ' : 'ДОВЕДИ РОБОТА ДО ЗАРЯДКИ', {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${CHILD_UI.typography.instructionMin}px`, fontStyle: 'bold', stroke: '#102f4b', strokeThickness: 4,
     }).setOrigin(0.5).setName('programming-instruction').setDepth(7);
 
     const stripWidth = Math.min(composition.controlWidth, compactMobile ? 500 : 520);
-    const stripHeight = ultra ? 52 : 60;
+    const stripHeight = desktopMission8 ? 92 : ultra ? 52 : 60;
+    const ctaY = composition.primaryCtaY ?? composition.actionsY;
+    const panelHeight = composition.controlPanelHeight ?? (ctaY + composition.actionHeight / 2 - (composition.stripY - stripHeight / 2) + (compactMobile ? 18 : 32));
+    const panelTop = desktopMission8 ? composition.board.y + composition.board.height / 2 - panelHeight / 2 : composition.stripY - stripHeight / 2 - (compactMobile ? 10 : 16);
+    const panelBottom = desktopMission8 ? panelTop + panelHeight : ctaY + composition.actionHeight / 2 + (compactMobile ? 8 : 16);
+    const panelWidth = Math.min(composition.controlWidth + (compactMobile ? 16 : 34), compactMobile ? 520 : 540);
+    const controlPanel = this.add.graphics().setName('MISSION8_CONTROL_PANEL').setDepth(7);
+    controlPanel.fillStyle(0x0e314b, desktopMission8 ? 0.88 : 0.72)
+      .fillRoundedRect(composition.controlCenterX - panelWidth / 2, panelTop, panelWidth, panelBottom - panelTop, desktopMission8 ? 18 : 16)
+      .lineStyle(desktopMission8 ? 3 : 2, 0x69e5ef, desktopMission8 ? 0.82 : 0.52)
+      .strokeRoundedRect(composition.controlCenterX - panelWidth / 2, panelTop, panelWidth, panelBottom - panelTop, desktopMission8 ? 18 : 16);
+    controlPanel.setData('auditBounds', { x: composition.controlCenterX - panelWidth / 2, y: panelTop, width: panelWidth, height: panelBottom - panelTop });
     const strip = this.add.container(composition.controlCenterX, composition.stripY).setName('program-strip').setDepth(8);
     const stripBackground = this.add.graphics();
     const stripLabel = this.add.text(compactMobile ? -stripWidth / 2 + 12 : -stripWidth / 2 + 14, -stripHeight / 2 + (compactMobile ? 4 : 8), 'ТВОЙ ПУТЬ', {
@@ -99,7 +131,7 @@ export class Mission8Scene extends Phaser.Scene {
     }).setOrigin(1, 0).setName('programming-strip-count');
     strip.add([stripBackground, stripLabel, stripCount]);
     const slotObjects: Phaser.GameObjects.Container[] = [];
-    const feedback = this.add.text(composition.controlCenterX, composition.stripY + stripHeight / 2 + 4, '', {
+    const feedback = this.add.text(composition.controlCenterX, composition.stripY + stripHeight / 2 + (desktopMission8 ? 14 : compactMobile ? 4 : 7), 'ВЫБЕРИ НАПРАВЛЕНИЕ', {
       color: '#fff3a6', fontFamily: UI_FONT, fontSize: `${CHILD_UI.typography.statusMin}px`, fontStyle: 'bold', align: 'center',
     }).setOrigin(0.5, 0).setName('programming-feedback').setDepth(9);
 
@@ -120,17 +152,24 @@ export class Mission8Scene extends Phaser.Scene {
           else if (programmingMechanic.snapshot.commands.length >= programmingMechanic.snapshot.challenge.maxCommands) feedback.setText('КОМАНДЫ ЗАПОЛНЕНЫ');
         }, { width: composition.arrowSize, height: composition.arrowSize, fontSize: composition.arrowSize * 0.55, hitPadding: 2 })
         .setName(`program-command-${command}`).setData({ command, actionPriority: 'INPUT', compositionRegion: 'SECONDARY_ACTIONS' }).setDepth(10);
+      button.setData('auditBounds', {
+        x: button.x - composition.arrowSize / 2,
+        y: composition.arrowsY - composition.arrowSize / 2,
+        width: composition.arrowSize,
+        height: composition.arrowSize,
+      });
       controls.push(button); arrowButtons.set(command, button);
     });
 
-    const actionGap = ultra ? 7 : 12;
-    const usableWidth = Math.min(composition.controlWidth, compactMobile ? 390 : 460);
+    const actionGap = desktopMission8 ? 16 : ultra ? 7 : 12;
+    const usableWidth = Math.min(composition.controlWidth, compactMobile ? 390 : 500);
     const hintLabel = compactMobile ? 'СОВЕТ' : 'ПОДСКАЗКА';
     const deleteLabel = compactMobile ? 'УБРАТЬ' : 'УДАЛИТЬ';
     const runLabel = compactMobile ? 'ПУСК' : 'ЗАПУСТИТЬ';
-    const hintWidth = compactMobile ? Math.max(78, Math.floor(usableWidth * 0.23)) : Math.floor(usableWidth * 0.22);
-    const deleteWidth = compactMobile ? Math.max(82, Math.floor(usableWidth * 0.24)) : Math.floor(usableWidth * 0.24);
-    const runWidth = usableWidth - hintWidth - deleteWidth - actionGap * 2;
+    const secondaryWidth = Math.floor((usableWidth - actionGap) / 2);
+    const hintWidth = desktopMission8 ? secondaryWidth : compactMobile ? Math.max(78, Math.floor(usableWidth * 0.23)) : Math.floor(usableWidth * 0.22);
+    const deleteWidth = desktopMission8 ? secondaryWidth : compactMobile ? Math.max(82, Math.floor(usableWidth * 0.24)) : Math.floor(usableWidth * 0.24);
+    const runWidth = desktopMission8 ? usableWidth : usableWidth - hintWidth - deleteWidth - actionGap * 2;
     const actionLeft = composition.controlCenterX - usableWidth / 2;
     const hintButton = addControl(this, actionLeft + hintWidth / 2, composition.actionsY, hintLabel, () => {
       const hint = programmingMechanic.hint();
@@ -144,12 +183,12 @@ export class Mission8Scene extends Phaser.Scene {
       .setData({ actionPriority: 'TERTIARY', compositionRegion: 'PRIMARY_ACTIONS' }).setDepth(10);
     hintButton.setData('auditBounds', { x: actionLeft, y: composition.actionsY - composition.actionHeight / 2, width: hintWidth, height: composition.actionHeight });
     const deleteButton = addControl(this, actionLeft + hintWidth + actionGap + deleteWidth / 2, composition.actionsY, deleteLabel, () => {
-      if (programmingMechanic.removeLast()) { feedback.setText(''); refreshStrip(); }
+      if (programmingMechanic.removeLast()) { feedback.setText('ВЫБЕРИ НАПРАВЛЕНИЕ'); refreshStrip(); }
     }, { width: deleteWidth, height: composition.actionHeight, fontSize: CHILD_UI.typography.controlMin, fill: UI_COLORS.purple, hoverFill: 0x916ee1, stroke: UI_COLORS.purpleDark })
       .setName('programming-delete-button').setData({ actionPriority: 'SECONDARY', compositionRegion: 'PRIMARY_ACTIONS' }).setDepth(10);
     deleteButton.setData('auditBounds', { x: actionLeft + hintWidth + actionGap, y: composition.actionsY - composition.actionHeight / 2, width: deleteWidth, height: composition.actionHeight });
     let runLocked = false;
-    runButton = addControl(this, actionLeft + hintWidth + deleteWidth + actionGap * 2 + runWidth / 2, composition.actionsY, runLabel, () => {
+    runButton = addControl(this, desktopMission8 ? composition.controlCenterX : actionLeft + hintWidth + deleteWidth + actionGap * 2 + runWidth / 2, ctaY, runLabel, () => {
       if (runLocked) return;
       const execution = programmingMechanic.beginRun();
       if (!execution) return;
@@ -158,9 +197,12 @@ export class Mission8Scene extends Phaser.Scene {
       board.renderPreview(execution, true);
       feedback.setText('РОБОТ ВЫПОЛНЯЕТ ПРОГРАММУ');
       void executeProgram(execution);
-    }, { width: runWidth, height: composition.actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, ultra ? 13 : 17) }).setName('programming-run-button')
+    }, {
+      width: runWidth, height: composition.actionHeight, fontSize: Math.max(CHILD_UI.typography.controlMin, ultra ? 13 : 17),
+      disabledFill: 0x536372, disabledStroke: 0x304459, disabledAlpha: 0.86,
+    }).setName('programming-run-button')
       .setData({ actionPriority: 'PRIMARY', compositionRegion: 'PRIMARY_ACTIONS' }).setDepth(10);
-    runButton.setData('auditBounds', { x: actionLeft + hintWidth + deleteWidth + actionGap * 2, y: composition.actionsY - composition.actionHeight / 2, width: runWidth, height: composition.actionHeight });
+    runButton.setData('auditBounds', { x: desktopMission8 ? actionLeft : actionLeft + hintWidth + deleteWidth + actionGap * 2, y: ctaY - composition.actionHeight / 2, width: runWidth, height: composition.actionHeight });
     controls.push(hintButton, deleteButton, runButton);
 
     function refreshStrip(): void {
@@ -171,7 +213,7 @@ export class Mission8Scene extends Phaser.Scene {
       const slotSize = Math.min(compactMobile ? 34 : 40, Math.floor((stripWidth - 16 - (current.challenge.maxCommands - 1) * slotGap) / current.challenge.maxCommands));
       const slotsWidth = current.challenge.maxCommands * slotSize + (current.challenge.maxCommands - 1) * slotGap;
       const denseRoute = current.challenge.maxCommands >= 8;
-      const startX = compactMobile || denseRoute ? -slotsWidth / 2 : Math.max(-stripWidth / 2 + 88, -slotsWidth / 2);
+      const startX = compactMobile || desktopMission8 || denseRoute ? -slotsWidth / 2 : Math.max(-stripWidth / 2 + 88, -slotsWidth / 2);
       stripLabel.setVisible(!denseRoute);
       stripCount.setOrigin(denseRoute ? 0 : 1, 0).setX(denseRoute ? -stripWidth / 2 + 12 : stripWidth / 2 - 12);
       stripCount.setText(`${current.commands.length}/${current.challenge.maxCommands}`);
@@ -185,7 +227,7 @@ export class Mission8Scene extends Phaser.Scene {
           strip.add(slot);
           slotObjects.push(slot);
         }
-        slot.setPosition(startX + index * (slotSize + slotGap) + slotSize / 2, compactMobile ? 10 : 7).setScale(1).setAlpha(1);
+        slot.setPosition(startX + index * (slotSize + slotGap) + slotSize / 2, desktopMission8 ? 18 : compactMobile ? 10 : 7).setScale(1).setAlpha(1);
         const background = slot.getByName('slot-background') as Phaser.GameObjects.Rectangle;
         const label = slot.getByName('slot-label') as Phaser.GameObjects.Text;
         background.setSize(slotSize, slotSize).setDisplaySize(slotSize, slotSize).setFillStyle(command ? 0x2e7290 : 0x102c45, 1)
@@ -282,7 +324,7 @@ export class Mission8Scene extends Phaser.Scene {
       if (right) tutorialTween = this.tweens.add({ targets: right, scale: { from: 1, to: 1.12 }, duration: reducedMotion ? 160 : 380, yoyo: true, repeat: reducedMotion ? 0 : -1 });
       // The tutorial belongs to the reserved feedback row. A free-floating card
       // used to cover the direction controls after mobile viewport-height changes.
-      feedback.setText('НАЖМИ → И СОСТАВЬ ПУТЬ');
+      feedback.setText('ВЫБЕРИ НАПРАВЛЕНИЕ');
     }
     if (session.programmingCompleted || snapshot.completed) {
       this.game.registry.set('mission8Complete', true);
@@ -352,3 +394,5 @@ export class Mission8Scene extends Phaser.Scene {
     }
   }
 }
+
+

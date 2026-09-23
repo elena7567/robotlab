@@ -1,0 +1,1352 @@
+{
+  "startedAt": "2026-09-14T07:33:43.356Z",
+  "captures": [
+    {
+      "item": {
+        "mission": 7,
+        "width": 1600,
+        "height": 900
+      },
+      "url": "http://127.0.0.1:4198/?qaMission=7",
+      "screenshot": "docs\\qa\\screenshots\\mission7-8-visual-truth-20260914\\mission7-desktop-20260914-1600x900.png",
+      "state": {
+        "semanticMode": "DESKTOP",
+        "card": {
+          "x": 403.4,
+          "y": 187.5,
+          "width": 600,
+          "height": 447,
+          "right": 1003.4,
+          "bottom": 634.5
+        },
+        "hint": {
+          "x": 647.9000244140625,
+          "y": 664.5,
+          "width": 111,
+          "height": 22,
+          "right": 758.9000244140625,
+          "bottom": 686.5
+        },
+        "robot": {
+          "x": 1057.7175361384452,
+          "y": 356.49999937415123,
+          "width": 196.37589203864331,
+          "height": 270.00000062584877,
+          "right": 1254.0934281770885,
+          "bottom": 626.5
+        },
+        "text": {
+          "mission7-header": {
+            "x": 672,
+            "y": 38.5,
+            "width": 256,
+            "height": 41,
+            "right": 928,
+            "bottom": 79.5
+          },
+          "systems-progress": {
+            "x": 682,
+            "y": 108,
+            "width": 236,
+            "height": 16,
+            "right": 918,
+            "bottom": 124
+          }
+        }
+      },
+      "analysis": {
+        "robotGap": 54.317536138445234,
+        "hintCenterDelta": 0.000024414062522737368,
+        "robotLowerMiddleDelta": 26.85999968707563,
+        "pass": true
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "browserClean": true
+    },
+    {
+      "item": {
+        "mission": 8,
+        "width": 1280,
+        "height": 720
+      },
+      "url": "http://127.0.0.1:4198/?qaMission=8",
+      "screenshot": "docs\\qa\\screenshots\\mission7-8-visual-truth-20260914\\mission8-desktop-20260914-1280x720.png",
+      "state": {
+        "semanticMode": "DESKTOP",
+        "board": {
+          "x": 111.27200000000005,
+          "y": 173.39952000000002,
+          "width": 565.4559999999999,
+          "height": 373.20095999999995,
+          "right": 676.728,
+          "bottom": 546.60048
+        },
+        "panel": {
+          "x": 691.728,
+          "y": 179,
+          "width": 494,
+          "height": 362,
+          "right": 1185.728,
+          "bottom": 541
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "label": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 722.72802734375,
+              "y": 207,
+              "width": 78,
+              "height": 16,
+              "right": 800.72802734375,
+              "bottom": 223
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "label": "0/6",
+            "rect": {
+              "x": 1134.72802734375,
+              "y": 207,
+              "width": 22,
+              "height": 16,
+              "right": 1156.72802734375,
+              "bottom": 223
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "label": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 859.728,
+              "y": 305,
+              "width": 158,
+              "height": 16,
+              "right": 1017.728,
+              "bottom": 321
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 798.72802734375,
+            "y": 243,
+            "width": 40,
+            "height": 40,
+            "right": 838.72802734375,
+            "bottom": 283
+          },
+          {
+            "x": 846.72802734375,
+            "y": 243,
+            "width": 40,
+            "height": 40,
+            "right": 886.72802734375,
+            "bottom": 283
+          },
+          {
+            "x": 894.72802734375,
+            "y": 243,
+            "width": 40,
+            "height": 40,
+            "right": 934.72802734375,
+            "bottom": 283
+          },
+          {
+            "x": 942.72802734375,
+            "y": 243,
+            "width": 40,
+            "height": 40,
+            "right": 982.72802734375,
+            "bottom": 283
+          },
+          {
+            "x": 990.72802734375,
+            "y": 243,
+            "width": 40,
+            "height": 40,
+            "right": 1030.72802734375,
+            "bottom": 283
+          },
+          {
+            "x": 1038.72802734375,
+            "y": 243,
+            "width": 40,
+            "height": 40,
+            "right": 1078.72802734375,
+            "bottom": 283
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 799.728,
+              "y": 334,
+              "width": 62,
+              "height": 62,
+              "right": 861.728,
+              "bottom": 396
+            },
+            "text": {
+              "x": 821.72802734375,
+              "y": 345.5,
+              "width": 18,
+              "height": 37,
+              "right": 839.72802734375,
+              "bottom": 382.5
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 871.728,
+              "y": 334,
+              "width": 62,
+              "height": 62,
+              "right": 933.728,
+              "bottom": 396
+            },
+            "text": {
+              "x": 885.22802734375,
+              "y": 345.5,
+              "width": 35,
+              "height": 37,
+              "right": 920.22802734375,
+              "bottom": 382.5
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 943.728,
+              "y": 334,
+              "width": 62,
+              "height": 62,
+              "right": 1005.728,
+              "bottom": 396
+            },
+            "text": {
+              "x": 965.72802734375,
+              "y": 345.5,
+              "width": 18,
+              "height": 37,
+              "right": 983.72802734375,
+              "bottom": 382.5
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 1015.7280000000001,
+              "y": 334,
+              "width": 62,
+              "height": 62,
+              "right": 1077.728,
+              "bottom": 396
+            },
+            "text": {
+              "x": 1029.22802734375,
+              "y": 345.5,
+              "width": 35,
+              "height": 37,
+              "right": 1064.22802734375,
+              "bottom": 382.5
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "ПОДСКАЗКА",
+            "rect": {
+              "x": 708.728,
+              "y": 412,
+              "width": 222,
+              "height": 54,
+              "right": 930.728,
+              "bottom": 466
+            },
+            "text": {
+              "x": 772.72802734375,
+              "y": 429,
+              "width": 94,
+              "height": 18,
+              "right": 866.72802734375,
+              "bottom": 447
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УДАЛИТЬ",
+            "rect": {
+              "x": 946.728,
+              "y": 412,
+              "width": 222,
+              "height": 54,
+              "right": 1168.728,
+              "bottom": 466
+            },
+            "text": {
+              "x": 1020.22802734375,
+              "y": 429,
+              "width": 75,
+              "height": 18,
+              "right": 1095.22802734375,
+              "bottom": 447
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ЗАПУСТИТЬ",
+            "rect": {
+              "x": 708.728,
+              "y": 478,
+              "width": 460,
+              "height": 54,
+              "right": 1168.728,
+              "bottom": 532
+            },
+            "text": {
+              "x": 890.22802734375,
+              "y": 494.5,
+              "width": 97,
+              "height": 19,
+              "right": 987.22802734375,
+              "bottom": 513.5
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ]
+      },
+      "analysis": {
+        "panelWidth": 494,
+        "boardPanelGap": 15,
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "secondaryGap": 16,
+        "launchOwnRow": true,
+        "routeHeader": true,
+        "directionPrompt": true,
+        "routeSlots": true,
+        "pass": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "browserClean": true
+    },
+    {
+      "item": {
+        "mission": 8,
+        "width": 1600,
+        "height": 900
+      },
+      "url": "http://127.0.0.1:4198/?qaMission=8",
+      "screenshot": "docs\\qa\\screenshots\\mission7-8-visual-truth-20260914\\mission8-desktop-20260914-1600x900.png",
+      "state": {
+        "semanticMode": "DESKTOP",
+        "board": {
+          "x": 228.04999999999995,
+          "y": 238.79999999999998,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 868.05,
+          "bottom": 661.2
+        },
+        "panel": {
+          "x": 883.05,
+          "y": 250,
+          "width": 505.90000000000003,
+          "height": 400,
+          "right": 1388.95,
+          "bottom": 650
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "label": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 914.05,
+              "y": 278,
+              "width": 78,
+              "height": 16,
+              "right": 992.05,
+              "bottom": 294
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "label": "0/6",
+            "rect": {
+              "x": 1337.95,
+              "y": 278,
+              "width": 22,
+              "height": 16,
+              "right": 1359.95,
+              "bottom": 294
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "label": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 1057,
+              "y": 376,
+              "width": 158,
+              "height": 16,
+              "right": 1215,
+              "bottom": 392
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 996,
+            "y": 314,
+            "width": 40,
+            "height": 40,
+            "right": 1036,
+            "bottom": 354
+          },
+          {
+            "x": 1044,
+            "y": 314,
+            "width": 40,
+            "height": 40,
+            "right": 1084,
+            "bottom": 354
+          },
+          {
+            "x": 1092,
+            "y": 314,
+            "width": 40,
+            "height": 40,
+            "right": 1132,
+            "bottom": 354
+          },
+          {
+            "x": 1140,
+            "y": 314,
+            "width": 40,
+            "height": 40,
+            "right": 1180,
+            "bottom": 354
+          },
+          {
+            "x": 1188,
+            "y": 314,
+            "width": 40,
+            "height": 40,
+            "right": 1228,
+            "bottom": 354
+          },
+          {
+            "x": 1236,
+            "y": 314,
+            "width": 40,
+            "height": 40,
+            "right": 1276,
+            "bottom": 354
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 985.832,
+              "y": 402.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1053.416,
+              "bottom": 469.792
+            },
+            "text": {
+              "x": 1010.1240234375,
+              "y": 414,
+              "width": 19,
+              "height": 42,
+              "right": 1029.1240234375,
+              "bottom": 456
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 1063.4160000000002,
+              "y": 402.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1131.0000000000002,
+              "bottom": 469.792
+            },
+            "text": {
+              "x": 1078.2080078125,
+              "y": 414,
+              "width": 38,
+              "height": 42,
+              "right": 1116.2080078125,
+              "bottom": 456
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 1141,
+              "y": 402.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1208.584,
+              "bottom": 469.792
+            },
+            "text": {
+              "x": 1165.2919921875,
+              "y": 414,
+              "width": 19,
+              "height": 42,
+              "right": 1184.2919921875,
+              "bottom": 456
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 1218.584,
+              "y": 402.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1286.1680000000001,
+              "bottom": 469.792
+            },
+            "text": {
+              "x": 1233.3759765625,
+              "y": 414,
+              "width": 38,
+              "height": 42,
+              "right": 1271.3759765625,
+              "bottom": 456
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "ПОДСКАЗКА",
+            "rect": {
+              "x": 900.05,
+              "y": 483,
+              "width": 227,
+              "height": 54,
+              "right": 1127.05,
+              "bottom": 537
+            },
+            "text": {
+              "x": 966.5499877929688,
+              "y": 500,
+              "width": 94,
+              "height": 18,
+              "right": 1060.5499877929688,
+              "bottom": 518
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УДАЛИТЬ",
+            "rect": {
+              "x": 1143.05,
+              "y": 483,
+              "width": 227,
+              "height": 54,
+              "right": 1370.05,
+              "bottom": 537
+            },
+            "text": {
+              "x": 1219.050048828125,
+              "y": 500,
+              "width": 75,
+              "height": 18,
+              "right": 1294.050048828125,
+              "bottom": 518
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ЗАПУСТИТЬ",
+            "rect": {
+              "x": 900.05,
+              "y": 549,
+              "width": 471.90000000000003,
+              "height": 54,
+              "right": 1371.95,
+              "bottom": 603
+            },
+            "text": {
+              "x": 1087.5,
+              "y": 565.5,
+              "width": 97,
+              "height": 19,
+              "right": 1184.5,
+              "bottom": 584.5
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ]
+      },
+      "analysis": {
+        "panelWidth": 505.90000000000003,
+        "boardPanelGap": 15,
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "secondaryGap": 16,
+        "launchOwnRow": true,
+        "routeHeader": true,
+        "directionPrompt": true,
+        "routeSlots": true,
+        "pass": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "browserClean": true
+    },
+    {
+      "item": {
+        "mission": 8,
+        "width": 1920,
+        "height": 1080
+      },
+      "url": "http://127.0.0.1:4198/?qaMission=8",
+      "screenshot": "docs\\qa\\screenshots\\mission7-8-visual-truth-20260914\\mission8-desktop-20260914-1920x1080.png",
+      "state": {
+        "semanticMode": "DESKTOP",
+        "board": {
+          "x": 388.04999999999995,
+          "y": 328.79999999999995,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 1028.05,
+          "bottom": 751.2
+        },
+        "panel": {
+          "x": 1043.05,
+          "y": 340,
+          "width": 505.90000000000003,
+          "height": 400,
+          "right": 1548.95,
+          "bottom": 740
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "label": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 1074.05,
+              "y": 368,
+              "width": 78,
+              "height": 16,
+              "right": 1152.05,
+              "bottom": 384
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "label": "0/6",
+            "rect": {
+              "x": 1497.95,
+              "y": 368,
+              "width": 22,
+              "height": 16,
+              "right": 1519.95,
+              "bottom": 384
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "label": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 1217,
+              "y": 466,
+              "width": 158,
+              "height": 16,
+              "right": 1375,
+              "bottom": 482
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 1156,
+            "y": 404,
+            "width": 40,
+            "height": 40,
+            "right": 1196,
+            "bottom": 444
+          },
+          {
+            "x": 1204,
+            "y": 404,
+            "width": 40,
+            "height": 40,
+            "right": 1244,
+            "bottom": 444
+          },
+          {
+            "x": 1252,
+            "y": 404,
+            "width": 40,
+            "height": 40,
+            "right": 1292,
+            "bottom": 444
+          },
+          {
+            "x": 1300,
+            "y": 404,
+            "width": 40,
+            "height": 40,
+            "right": 1340,
+            "bottom": 444
+          },
+          {
+            "x": 1348,
+            "y": 404,
+            "width": 40,
+            "height": 40,
+            "right": 1388,
+            "bottom": 444
+          },
+          {
+            "x": 1396,
+            "y": 404,
+            "width": 40,
+            "height": 40,
+            "right": 1436,
+            "bottom": 444
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 1145.8319999999999,
+              "y": 492.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1213.416,
+              "bottom": 559.7919999999999
+            },
+            "text": {
+              "x": 1170.1240234375,
+              "y": 504,
+              "width": 19,
+              "height": 42,
+              "right": 1189.1240234375,
+              "bottom": 546
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 1223.416,
+              "y": 492.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1291,
+              "bottom": 559.7919999999999
+            },
+            "text": {
+              "x": 1238.2080078125,
+              "y": 504,
+              "width": 38,
+              "height": 42,
+              "right": 1276.2080078125,
+              "bottom": 546
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 1301,
+              "y": 492.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1368.584,
+              "bottom": 559.7919999999999
+            },
+            "text": {
+              "x": 1325.2919921875,
+              "y": 504,
+              "width": 19,
+              "height": 42,
+              "right": 1344.2919921875,
+              "bottom": 546
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 1378.5839999999998,
+              "y": 492.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1446.168,
+              "bottom": 559.7919999999999
+            },
+            "text": {
+              "x": 1393.3759765625,
+              "y": 504,
+              "width": 38,
+              "height": 42,
+              "right": 1431.3759765625,
+              "bottom": 546
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "ПОДСКАЗКА",
+            "rect": {
+              "x": 1060.05,
+              "y": 573,
+              "width": 227,
+              "height": 54,
+              "right": 1287.05,
+              "bottom": 627
+            },
+            "text": {
+              "x": 1126.550048828125,
+              "y": 590,
+              "width": 94,
+              "height": 18,
+              "right": 1220.550048828125,
+              "bottom": 608
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УДАЛИТЬ",
+            "rect": {
+              "x": 1303.05,
+              "y": 573,
+              "width": 227,
+              "height": 54,
+              "right": 1530.05,
+              "bottom": 627
+            },
+            "text": {
+              "x": 1379.050048828125,
+              "y": 590,
+              "width": 75,
+              "height": 18,
+              "right": 1454.050048828125,
+              "bottom": 608
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ЗАПУСТИТЬ",
+            "rect": {
+              "x": 1060.05,
+              "y": 639,
+              "width": 471.90000000000003,
+              "height": 54,
+              "right": 1531.95,
+              "bottom": 693
+            },
+            "text": {
+              "x": 1247.5,
+              "y": 655.5,
+              "width": 97,
+              "height": 19,
+              "right": 1344.5,
+              "bottom": 674.5
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ]
+      },
+      "analysis": {
+        "panelWidth": 505.90000000000003,
+        "boardPanelGap": 15,
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "secondaryGap": 16,
+        "launchOwnRow": true,
+        "routeHeader": true,
+        "directionPrompt": true,
+        "routeSlots": true,
+        "pass": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "browserClean": true
+    },
+    {
+      "item": {
+        "mission": 7,
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "url": "http://127.0.0.1:4198/?qaMission=7",
+      "screenshot": "docs\\qa\\screenshots\\mission7-8-visual-truth-20260914\\mission7-mobile-20260914-390x844.png",
+      "state": {
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "card": {
+          "x": 13.650000000000002,
+          "y": 125.81,
+          "width": 362.70000000000005,
+          "height": 639.96,
+          "right": 376.35,
+          "bottom": 765.77
+        },
+        "hint": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "robot": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "text": {
+          "mission7-header": null,
+          "systems-progress": {
+            "x": 77,
+            "y": 91.2300033569336,
+            "width": 236,
+            "height": 16,
+            "right": 313,
+            "bottom": 107.2300033569336
+          }
+        }
+      },
+      "analysis": {
+        "robotGap": 0,
+        "hintCenterDelta": 2.842170943040401e-14,
+        "robotLowerMiddleDelta": 243.18481953125,
+        "pass": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "browserClean": true
+    },
+    {
+      "item": {
+        "mission": 8,
+        "width": 844,
+        "height": 390,
+        "mobile": true
+      },
+      "url": "http://127.0.0.1:4198/?qaMission=8",
+      "screenshot": "docs\\qa\\screenshots\\mission7-8-visual-truth-20260914\\mission8-mobile-20260914-844x390.png",
+      "state": {
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "board": {
+          "x": 13.650000000000002,
+          "y": 92.23,
+          "width": 500.6880000000001,
+          "height": 284.12,
+          "right": 514.3380000000001,
+          "bottom": 376.35
+        },
+        "panel": {
+          "x": 528.3380000000001,
+          "y": 80.23,
+          "width": 310.012,
+          "height": 266,
+          "right": 838.3500000000001,
+          "bottom": 346.23
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "label": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 548.337994140625,
+              "y": 94.2300033569336,
+              "width": 78,
+              "height": 16,
+              "right": 626.337994140625,
+              "bottom": 110.2300033569336
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "label": "0/6",
+            "rect": {
+              "x": 796.349994140625,
+              "y": 94.2300033569336,
+              "width": 22,
+              "height": 16,
+              "right": 818.349994140625,
+              "bottom": 110.2300033569336
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "label": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 604.344,
+              "y": 154.23000000000002,
+              "width": 158,
+              "height": 16,
+              "right": 762.344,
+              "bottom": 170.23000000000002
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 571.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 605.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 609.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 643.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 647.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 681.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 685.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 719.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 723.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 757.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 761.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 795.343994140625,
+            "bottom": 147.23001098632812
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 556.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 612.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 576.343994140625,
+              "y": 190.22999572753906,
+              "width": 16,
+              "height": 34,
+              "right": 592.343994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 622.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 678.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 634.843994140625,
+              "y": 190.22999572753906,
+              "width": 31,
+              "height": 34,
+              "right": 665.843994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 688.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 744.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 708.343994140625,
+              "y": 190.22999572753906,
+              "width": 16,
+              "height": 34,
+              "right": 724.343994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 754.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 810.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 766.843994140625,
+              "y": 190.22999572753906,
+              "width": 31,
+              "height": 34,
+              "right": 797.843994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "СОВЕТ",
+            "rect": {
+              "x": 536.3380000000001,
+              "y": 282.23,
+              "width": 78,
+              "height": 56,
+              "right": 614.3380000000001,
+              "bottom": 338.23
+            },
+            "text": {
+              "x": 549.8380126953125,
+              "y": 300.2300109863281,
+              "width": 51,
+              "height": 18,
+              "right": 600.8380126953125,
+              "bottom": 318.2300109863281
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УБРАТЬ",
+            "rect": {
+              "x": 626.3380000000001,
+              "y": 282.23,
+              "width": 82,
+              "height": 56,
+              "right": 708.3380000000001,
+              "bottom": 338.23
+            },
+            "text": {
+              "x": 637.3380126953125,
+              "y": 300.2300109863281,
+              "width": 60,
+              "height": 18,
+              "right": 697.3380126953125,
+              "bottom": 318.2300109863281
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ПУСК",
+            "rect": {
+              "x": 720.3380000000001,
+              "y": 282.23,
+              "width": 110.012,
+              "height": 56,
+              "right": 830.3500000000001,
+              "bottom": 338.23
+            },
+            "text": {
+              "x": 753.343994140625,
+              "y": 299.7300109863281,
+              "width": 44,
+              "height": 19,
+              "right": 797.343994140625,
+              "bottom": 318.7300109863281
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ]
+      },
+      "analysis": {
+        "panelWidth": 310.012,
+        "boardPanelGap": 14,
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "secondaryGap": 12,
+        "launchOwnRow": false,
+        "routeHeader": true,
+        "directionPrompt": true,
+        "routeSlots": true,
+        "pass": false
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "browserClean": true
+    }
+  ],
+  "input": {
+    "pass": true,
+    "beforeRunEnabled": false,
+    "afterRight": 1,
+    "afterDelete": 0,
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    }
+  },
+  "summary": {
+    "mission7Geometry": false,
+    "mission8Geometry": false,
+    "input": true,
+    "status": "FAIL"
+  }
+}

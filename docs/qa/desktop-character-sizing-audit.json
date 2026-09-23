@@ -1,0 +1,1769 @@
+{
+  "generatedAt": "2026-09-14T13:10:15.853Z",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 1438,
+      "height": 914
+    },
+    {
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "rows": [
+    {
+      "requestedScene": "M2",
+      "label": "Mission 2",
+      "scene": "GameScene",
+      "character": "mission2-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M3",
+      "label": "Mission 3",
+      "scene": "GameScene",
+      "character": "mission3-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M4",
+      "label": "Mission 4",
+      "scene": "GameScene",
+      "character": "mission4-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M5",
+      "label": "Mission 5",
+      "scene": "GameScene",
+      "character": "mission5-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M7",
+      "label": "Mission 7",
+      "scene": "Mission7Scene",
+      "character": "mission7-repaired",
+      "role": "WORLD_SUPPORT",
+      "viewport": "1280x720",
+      "visiblePx": 259.2,
+      "visibleRatio": 0.36,
+      "targetRatio": 0.36,
+      "minRatio": 0.33,
+      "maxRatio": 0.39,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M9",
+      "label": "Mission 9",
+      "scene": "Mission9Scene",
+      "character": "mission9-bridge-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 2.14,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M10",
+      "label": "Mission 10",
+      "scene": "Mission10Scene",
+      "character": "mission10-path-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1280x720",
+      "visiblePx": 294.21,
+      "visibleRatio": 0.4086,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -53.76,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1280x720",
+      "visiblePx": 280.8,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": -53.76,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "VICTORY",
+      "label": "Victory",
+      "scene": "VictoryScene",
+      "character": "victory-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1280x720",
+      "visiblePx": 295.2,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M1",
+      "label": "Mission 1",
+      "scene": "GameScene",
+      "character": "mission1-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M2",
+      "label": "Mission 2",
+      "scene": "GameScene",
+      "character": "mission2-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M3",
+      "label": "Mission 3",
+      "scene": "GameScene",
+      "character": "mission3-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M4",
+      "label": "Mission 4",
+      "scene": "GameScene",
+      "character": "mission4-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M5",
+      "label": "Mission 5",
+      "scene": "GameScene",
+      "character": "mission5-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M6",
+      "label": "Mission 6",
+      "scene": "Mission6Scene",
+      "character": "mission6-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -3.81,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M6",
+      "label": "Mission 6",
+      "scene": "Mission6Scene",
+      "character": "mission6-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1438x914",
+      "visiblePx": 356.46,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M7",
+      "label": "Mission 7",
+      "scene": "Mission7Scene",
+      "character": "mission7-repaired",
+      "role": "WORLD_SUPPORT",
+      "viewport": "1438x914",
+      "visiblePx": 329.04,
+      "visibleRatio": 0.36,
+      "targetRatio": 0.36,
+      "minRatio": 0.33,
+      "maxRatio": 0.39,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M8",
+      "label": "Mission 8",
+      "scene": "Mission8Scene",
+      "character": "mission8-board-robot",
+      "role": "BOARD_ACTOR",
+      "viewport": "1438x914",
+      "visiblePx": 110.88,
+      "visibleRatio": 0.72,
+      "targetRatio": 0.72,
+      "minRatio": 0.65,
+      "maxRatio": 0.78,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M9",
+      "label": "Mission 9",
+      "scene": "Mission9Scene",
+      "character": "mission9-bridge-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 2.71,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M10",
+      "label": "Mission 10",
+      "scene": "Mission10Scene",
+      "character": "mission10-path-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1438x914",
+      "visiblePx": 373.48,
+      "visibleRatio": 0.4086,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -89.11,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1438x914",
+      "visiblePx": 356.46,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": -89.11,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "VICTORY",
+      "label": "Victory",
+      "scene": "VictoryScene",
+      "character": "victory-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1438x914",
+      "visiblePx": 374.74,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M1",
+      "label": "Mission 1",
+      "scene": "GameScene",
+      "character": "mission1-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M2",
+      "label": "Mission 2",
+      "scene": "GameScene",
+      "character": "mission2-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M3",
+      "label": "Mission 3",
+      "scene": "GameScene",
+      "character": "mission3-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M4",
+      "label": "Mission 4",
+      "scene": "GameScene",
+      "character": "mission4-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M5",
+      "label": "Mission 5",
+      "scene": "GameScene",
+      "character": "mission5-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M6",
+      "label": "Mission 6",
+      "scene": "Mission6Scene",
+      "character": "mission6-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -3.75,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M6",
+      "label": "Mission 6",
+      "scene": "Mission6Scene",
+      "character": "mission6-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1600x900",
+      "visiblePx": 351,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M7",
+      "label": "Mission 7",
+      "scene": "Mission7Scene",
+      "character": "mission7-repaired",
+      "role": "WORLD_SUPPORT",
+      "viewport": "1600x900",
+      "visiblePx": 324,
+      "visibleRatio": 0.36,
+      "targetRatio": 0.36,
+      "minRatio": 0.33,
+      "maxRatio": 0.39,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M9",
+      "label": "Mission 9",
+      "scene": "Mission9Scene",
+      "character": "mission9-bridge-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 2.67,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M10",
+      "label": "Mission 10",
+      "scene": "Mission10Scene",
+      "character": "mission10-path-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1600x900",
+      "visiblePx": 367.76,
+      "visibleRatio": 0.4086,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -86,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1600x900",
+      "visiblePx": 351,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": -86,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "VICTORY",
+      "label": "Victory",
+      "scene": "VictoryScene",
+      "character": "victory-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1600x900",
+      "visiblePx": 369,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M1",
+      "label": "Mission 1",
+      "scene": "GameScene",
+      "character": "mission1-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M2",
+      "label": "Mission 2",
+      "scene": "GameScene",
+      "character": "mission2-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M3",
+      "label": "Mission 3",
+      "scene": "GameScene",
+      "character": "mission3-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M4",
+      "label": "Mission 4",
+      "scene": "GameScene",
+      "character": "mission4-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M5",
+      "label": "Mission 5",
+      "scene": "GameScene",
+      "character": "mission5-assembly-envelope",
+      "role": "ASSEMBLY_ENVELOPE",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M6",
+      "label": "Mission 6",
+      "scene": "Mission6Scene",
+      "character": "mission6-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -4.5,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M6",
+      "label": "Mission 6",
+      "scene": "Mission6Scene",
+      "character": "mission6-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1920x1080",
+      "visiblePx": 421.2,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M7",
+      "label": "Mission 7",
+      "scene": "Mission7Scene",
+      "character": "mission7-repaired",
+      "role": "WORLD_SUPPORT",
+      "viewport": "1920x1080",
+      "visiblePx": 388.8,
+      "visibleRatio": 0.36,
+      "targetRatio": 0.36,
+      "minRatio": 0.33,
+      "maxRatio": 0.39,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M8",
+      "label": "Mission 8",
+      "scene": "Mission8Scene",
+      "character": "mission8-board-robot",
+      "role": "BOARD_ACTOR",
+      "viewport": "1920x1080",
+      "visiblePx": 110.88,
+      "visibleRatio": 0.72,
+      "targetRatio": 0.72,
+      "minRatio": 0.65,
+      "maxRatio": 0.78,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M9",
+      "label": "Mission 9",
+      "scene": "Mission9Scene",
+      "character": "mission9-bridge-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 3.2,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M10",
+      "label": "Mission 10",
+      "scene": "Mission10Scene",
+      "character": "mission10-path-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "M10_SIGNAL",
+      "label": "Mission 10 Signal",
+      "scene": "Mission10Scene",
+      "character": "mission10-signal-robot",
+      "role": "WORLD_SUPPORT",
+      "viewport": "1920x1080",
+      "visiblePx": 388.8,
+      "visibleRatio": 0.36,
+      "targetRatio": 0.36,
+      "minRatio": 0.33,
+      "maxRatio": 0.39,
+      "footDelta": 4.5,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-helper",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1920x1080",
+      "visiblePx": 441.32,
+      "visibleRatio": 0.4086,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": -126,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "TRANSITION",
+      "label": "Transition",
+      "scene": "TransitionScene",
+      "character": "transition-assembled",
+      "role": "WORLD_SECONDARY",
+      "viewport": "1920x1080",
+      "visiblePx": 421.2,
+      "visibleRatio": 0.39,
+      "targetRatio": 0.39,
+      "minRatio": 0.36,
+      "maxRatio": 0.42,
+      "footDelta": -126,
+      "result": "PASS"
+    },
+    {
+      "requestedScene": "VICTORY",
+      "label": "Victory",
+      "scene": "VictoryScene",
+      "character": "victory-robot",
+      "role": "WORLD_PRIMARY",
+      "viewport": "1920x1080",
+      "visiblePx": 442.8,
+      "visibleRatio": 0.41,
+      "targetRatio": 0.41,
+      "minRatio": 0.38,
+      "maxRatio": 0.43,
+      "footDelta": 0,
+      "result": "PASS"
+    }
+  ],
+  "failures": [],
+  "consoleErrors": [],
+  "screenshotWarnings": [],
+  "failedRequests": [
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-closed.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/odd-one-out/carrot.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-truss.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-open.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/gear.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/circuit-board.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-inactive.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-lock-panel.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/sequence/sequence-planet.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-banana.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-carrot.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-apple.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/memory/memory-cover.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/size-comparison/size-battery.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-platform-right.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/sequence/sequence-gear.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-gap-target.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/sequence/sequence-lightning.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/backgrounds/laboratory-background.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-ball.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/bolt.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-platform-left.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/sequence/sequence-star.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-arc.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-repaired-state.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/bolt.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-arc.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/circuit-board.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-platform-right.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_laser.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_on.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_safe.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-closed.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-inactive.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_off.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-open.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-channel-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-energy-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_hazard.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/gear.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-gap-target.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/memory/memory-cover.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-repaired-state.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-lock-panel.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-emitter.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-platform-left.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-truss.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-closed.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/circuit-board.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/gear.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-energy-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-ball.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/memory/memory-cover.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-truss.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-banana.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-inactive.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/sequence/sequence-planet.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/repair-items/bolt.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/size-comparison/size-battery.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-repaired-state.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-lock-panel.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-open.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-platform-right.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-arc.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-apple.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/shadows/shadow-carrot.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-gap-target.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-platform-left.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/objects/sequence/sequence-star.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1280x720",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_final_lab_active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_launch_console.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_off.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/answer-correct.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-lock-panel.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-energy-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_hazard.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-open.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_laser.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-reflector.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/ui-click.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/mission10-beacon-launch.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-receiver.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-channel-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/music/mission10-victory-theme.mp3",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_on.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-emitter.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/music/start-lab-theme.mp3",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/hint.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-inactive.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_final_lab_active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/answer-wrong.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_safe.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1438x914",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/repair-reward.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/repair-reward.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_laser.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-emitter.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/answer-wrong.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_final_lab_active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-energy-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-closed.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-channel-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-truss.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_launch_console.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/hint.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_hazard.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-arc.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_off.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-repaired-state.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_on.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-lock-panel.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_safe.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-inactive.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-receiver.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-reflector.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/music/mission10-victory-theme.mp3",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-open.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/answer-wrong.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_off.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-truss.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_hazard.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-piece-wrong-arc.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-closed.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-lock-panel.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/security-gate-open.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-receiver.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/repair-reward.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_launch_console.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-channel-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_beacon_on.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_final_lab_active.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/music/mission10-victory-theme.mp3",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/gate/gate-key-wrong-1.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-station-inactive.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-reflector.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/signal/signal-emitter.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/audio/sfx/hint.wav",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_safe.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-correct.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/bridge/bridge-repaired-state.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/energy-module-wrong-2.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission9/power/power-energy-glow.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "viewport": "1600x900",
+      "url": "http://127.0.0.1:4198/assets/missions/mission10/mission10_path_laser.png",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "result": "FAIL"
+}

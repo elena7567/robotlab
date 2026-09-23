@@ -1,0 +1,123 @@
+{
+  "checks": [
+    {
+      "name": "portrait-390x844 portrait-gameplay",
+      "ok": true,
+      "actual": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "gate": false,
+        "input": true,
+        "cardCount": 1,
+        "gateCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      }
+    },
+    {
+      "name": "portrait-412x915 portrait-gameplay",
+      "ok": true,
+      "actual": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "gate": false,
+        "input": true,
+        "cardCount": 1,
+        "gateCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      }
+    },
+    {
+      "name": "landscape-844x390 landscape-gate",
+      "ok": true,
+      "actual": {
+        "active": "Mission7OrientationGuardScene",
+        "gate": true,
+        "input": false,
+        "cardCount": 0,
+        "gateCount": 1,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "runs": [
+    {
+      "label": "portrait-390x844",
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "gate": false,
+        "input": true,
+        "cardCount": 1,
+        "gateCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      }
+    },
+    {
+      "label": "portrait-412x915",
+      "info": {
+        "active": "Mission7Scene",
+        "semantic": "PHONE_PORTRAIT_TALL",
+        "gate": false,
+        "input": true,
+        "cardCount": 1,
+        "gateCount": 0,
+        "labels": [
+          "⌂ Домой",
+          "♪ Звук",
+          "ЗАДАНИЕ 7 ИЗ 10",
+          "ПОДКЛЮЧИ ПРОВОДА",
+          "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "",
+          "СИСТЕМЫ 2/4  •  СОЕДИНЕНИЯ 1/3",
+          "ПОДСКАЗКА"
+        ]
+      }
+    },
+    {
+      "label": "landscape-844x390",
+      "info": {
+        "active": "Mission7OrientationGuardScene",
+        "gate": true,
+        "input": false,
+        "cardCount": 0,
+        "gateCount": 1,
+        "labels": [
+          "ПОВЕРНИ ТЕЛЕФОН",
+          "ИГРАЕМ ВЕРТИКАЛЬНО"
+        ]
+      }
+    }
+  ],
+  "result": "PASS"
+}

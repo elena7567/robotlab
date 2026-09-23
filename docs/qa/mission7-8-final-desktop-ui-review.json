@@ -1,0 +1,3774 @@
+{
+  "startedAt": "2026-09-14T07:11:25.367Z",
+  "mission7": {
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "state": {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "semanticMode": "DESKTOP",
+      "orientationGate": false,
+      "inputActive": true,
+      "card": {
+        "x": 403.4,
+        "y": 187.5,
+        "width": 600,
+        "height": 447,
+        "right": 1003.4,
+        "bottom": 634.5
+      },
+      "hint": {
+        "x": 779.9000244140625,
+        "y": 664.5,
+        "width": 111,
+        "height": 22,
+        "right": 890.9000244140625,
+        "bottom": 686.5
+      },
+      "robot": {
+        "x": 1059.1615058650077,
+        "y": 356.49999937415123,
+        "width": 196.37589203864331,
+        "height": 270.00000062584877,
+        "right": 1255.537397903651,
+        "bottom": 626.5
+      },
+      "group": {
+        "x": 403.4,
+        "y": 187.5,
+        "width": 852.137397903651,
+        "height": 499,
+        "right": 1255.537397903651,
+        "bottom": 686.5
+      }
+    },
+    "screenshot": "mission7-final-desktop-ui-1600x900.png",
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "checks": {
+      "semanticDesktop": true,
+      "blockMovedUp": true,
+      "hintBottomClearance": true,
+      "robotAlignment": true,
+      "browserClean": true
+    },
+    "metrics": {
+      "centerYPercent": 48.56,
+      "hintBottomClearance": 213.5,
+      "robotCenterDelta": 26.86
+    }
+  },
+  "mission8": {
+    "1280x720": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "state": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "semanticMode": "DESKTOP",
+        "board": {
+          "x": 148.16000000000003,
+          "y": 167.3856,
+          "width": 583.68,
+          "height": 385.2288,
+          "right": 731.8399999999999,
+          "bottom": 552.6143999999999
+        },
+        "panel": {
+          "x": 756.8399999999999,
+          "y": 182.794752,
+          "width": 390,
+          "height": 354.41049599999997,
+          "right": 1146.84,
+          "bottom": 537.205248
+        },
+        "strip": {
+          "x": 785.8400268554688,
+          "y": 206.7947540283203,
+          "width": 334,
+          "height": 75.99998474121094,
+          "right": 1119.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "text": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 785.8400268554688,
+              "y": 206.7947540283203,
+              "width": 78,
+              "height": 16,
+              "right": 863.8400268554688,
+              "bottom": 222.7947540283203
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "text": "0/6",
+            "rect": {
+              "x": 1097.8400268554688,
+              "y": 206.7947540283203,
+              "width": 22,
+              "height": 16,
+              "right": 1119.8400268554688,
+              "bottom": 222.7947540283203
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 872.8399999999999,
+              "y": 304.794752,
+              "width": 158,
+              "height": 16,
+              "right": 1030.84,
+              "bottom": 320.794752
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 811.8400268554688,
+            "y": 242.79473876953125,
+            "width": 40,
+            "height": 40,
+            "right": 851.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          {
+            "x": 859.8400268554688,
+            "y": 242.79473876953125,
+            "width": 40,
+            "height": 40,
+            "right": 899.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          {
+            "x": 907.8400268554688,
+            "y": 242.79473876953125,
+            "width": 40,
+            "height": 40,
+            "right": 947.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          {
+            "x": 955.8400268554688,
+            "y": 242.79473876953125,
+            "width": 40,
+            "height": 40,
+            "right": 995.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          {
+            "x": 1003.8400268554688,
+            "y": 242.79473876953125,
+            "width": 40,
+            "height": 40,
+            "right": 1043.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          {
+            "x": 1051.840087890625,
+            "y": 242.79473876953125,
+            "width": 40,
+            "height": 40,
+            "right": 1091.840087890625,
+            "bottom": 282.79473876953125
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 812.8399999999999,
+              "y": 331.794752,
+              "width": 62,
+              "height": 62,
+              "right": 874.8399999999999,
+              "bottom": 393.794752
+            },
+            "text": {
+              "x": 834.8400268554688,
+              "y": 343.29473876953125,
+              "width": 18,
+              "height": 37,
+              "right": 852.8400268554688,
+              "bottom": 380.29473876953125
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 884.8399999999999,
+              "y": 331.794752,
+              "width": 62,
+              "height": 62,
+              "right": 946.8399999999999,
+              "bottom": 393.794752
+            },
+            "text": {
+              "x": 898.3400268554688,
+              "y": 343.29473876953125,
+              "width": 35,
+              "height": 37,
+              "right": 933.3400268554688,
+              "bottom": 380.29473876953125
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 956.8399999999999,
+              "y": 331.794752,
+              "width": 62,
+              "height": 62,
+              "right": 1018.8399999999999,
+              "bottom": 393.794752
+            },
+            "text": {
+              "x": 978.8400268554688,
+              "y": 343.29473876953125,
+              "width": 18,
+              "height": 37,
+              "right": 996.8400268554688,
+              "bottom": 380.29473876953125
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 1028.84,
+              "y": 331.794752,
+              "width": 62,
+              "height": 62,
+              "right": 1090.84,
+              "bottom": 393.794752
+            },
+            "text": {
+              "x": 1042.3399658203125,
+              "y": 343.29473876953125,
+              "width": 35,
+              "height": 37,
+              "right": 1077.3399658203125,
+              "bottom": 380.29473876953125
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "ПОДСКАЗКА",
+            "rect": {
+              "x": 771.8399999999999,
+              "y": 408.794752,
+              "width": 173,
+              "height": 52,
+              "right": 944.8399999999999,
+              "bottom": 460.794752
+            },
+            "text": {
+              "x": 811.3400268554688,
+              "y": 424.79473876953125,
+              "width": 94,
+              "height": 18,
+              "right": 905.3400268554688,
+              "bottom": 442.79473876953125
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УДАЛИТЬ",
+            "rect": {
+              "x": 958.8399999999999,
+              "y": 408.794752,
+              "width": 173,
+              "height": 52,
+              "right": 1131.84,
+              "bottom": 460.794752
+            },
+            "text": {
+              "x": 1007.8399658203125,
+              "y": 424.79473876953125,
+              "width": 75,
+              "height": 18,
+              "right": 1082.8399658203125,
+              "bottom": 442.79473876953125
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ЗАПУСТИТЬ",
+            "rect": {
+              "x": 771.8399999999999,
+              "y": 470.794752,
+              "width": 360,
+              "height": 52,
+              "right": 1131.84,
+              "bottom": 522.794752
+            },
+            "text": {
+              "x": 903.3400268554688,
+              "y": 486.29473876953125,
+              "width": 97,
+              "height": 19,
+              "right": 1000.3400268554688,
+              "bottom": 505.29473876953125
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ],
+        "commandCount": 0,
+        "maxCommands": 6,
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+      },
+      "analysis": {
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "slotOverlaps": [],
+        "routeHeaderPass": true,
+        "routeSlotsPass": true,
+        "instructionPass": true,
+        "directionRowPass": true,
+        "secondaryRowPass": true,
+        "launchOwnRow": true,
+        "boardControlGap": 25,
+        "verticalDelta": 0,
+        "verticalAlignmentPass": true,
+        "panelWidth": 390,
+        "panelHeight": 354.41,
+        "launchEnabledStateReadable": true,
+        "allPass": true
+      },
+      "screenshot": "mission8-final-desktop-ui-1280x720.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    "1600x900": {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "state": {
+        "viewport": {
+          "width": 1600,
+          "height": 900
+        },
+        "semanticMode": "DESKTOP",
+        "board": {
+          "x": 256.6,
+          "y": 238.79999999999998,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 896.6,
+          "bottom": 661.2
+        },
+        "panel": {
+          "x": 925,
+          "y": 259,
+          "width": 430,
+          "height": 382,
+          "right": 1355,
+          "bottom": 641
+        },
+        "strip": {
+          "x": 950.6,
+          "y": 283,
+          "width": 380.80000000000007,
+          "height": 76,
+          "right": 1331.4,
+          "bottom": 359
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "text": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 950.6,
+              "y": 283,
+              "width": 77.99999999999989,
+              "height": 16,
+              "right": 1028.6,
+              "bottom": 299
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "text": "0/6",
+            "rect": {
+              "x": 1309.4,
+              "y": 283,
+              "width": 22,
+              "height": 16,
+              "right": 1331.4,
+              "bottom": 299
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 1061,
+              "y": 381,
+              "width": 158,
+              "height": 16,
+              "right": 1219,
+              "bottom": 397
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 1000,
+            "y": 319,
+            "width": 40,
+            "height": 40,
+            "right": 1040,
+            "bottom": 359
+          },
+          {
+            "x": 1048,
+            "y": 319,
+            "width": 40,
+            "height": 40,
+            "right": 1088,
+            "bottom": 359
+          },
+          {
+            "x": 1096,
+            "y": 319,
+            "width": 40,
+            "height": 40,
+            "right": 1136,
+            "bottom": 359
+          },
+          {
+            "x": 1144,
+            "y": 319,
+            "width": 40,
+            "height": 40,
+            "right": 1184,
+            "bottom": 359
+          },
+          {
+            "x": 1192,
+            "y": 319,
+            "width": 40,
+            "height": 40,
+            "right": 1232,
+            "bottom": 359
+          },
+          {
+            "x": 1240,
+            "y": 319,
+            "width": 40,
+            "height": 40,
+            "right": 1280,
+            "bottom": 359
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 989.832,
+              "y": 405.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1057.416,
+              "bottom": 472.792
+            },
+            "text": {
+              "x": 1014.1240234375,
+              "y": 417,
+              "width": 19,
+              "height": 42,
+              "right": 1033.1240234375,
+              "bottom": 459
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 1067.4160000000002,
+              "y": 405.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1135.0000000000002,
+              "bottom": 472.792
+            },
+            "text": {
+              "x": 1082.2080078125,
+              "y": 417,
+              "width": 38,
+              "height": 42,
+              "right": 1120.2080078125,
+              "bottom": 459
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 1145,
+              "y": 405.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1212.584,
+              "bottom": 472.792
+            },
+            "text": {
+              "x": 1169.2919921875,
+              "y": 417,
+              "width": 19,
+              "height": 42,
+              "right": 1188.2919921875,
+              "bottom": 459
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 1222.584,
+              "y": 405.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1290.1680000000001,
+              "bottom": 472.792
+            },
+            "text": {
+              "x": 1237.3759765625,
+              "y": 417,
+              "width": 38,
+              "height": 42,
+              "right": 1275.3759765625,
+              "bottom": 459
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "ПОДСКАЗКА",
+            "rect": {
+              "x": 936.6,
+              "y": 485,
+              "width": 196,
+              "height": 52,
+              "right": 1132.6,
+              "bottom": 537
+            },
+            "text": {
+              "x": 987.5999755859375,
+              "y": 501,
+              "width": 94,
+              "height": 18,
+              "right": 1081.5999755859375,
+              "bottom": 519
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УДАЛИТЬ",
+            "rect": {
+              "x": 1146.6,
+              "y": 485,
+              "width": 196,
+              "height": 52,
+              "right": 1342.6,
+              "bottom": 537
+            },
+            "text": {
+              "x": 1207.0999755859375,
+              "y": 501,
+              "width": 75,
+              "height": 18,
+              "right": 1282.0999755859375,
+              "bottom": 519
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ЗАПУСТИТЬ",
+            "rect": {
+              "x": 936.6,
+              "y": 547,
+              "width": 406.8,
+              "height": 52,
+              "right": 1343.4,
+              "bottom": 599
+            },
+            "text": {
+              "x": 1091.5,
+              "y": 562.5,
+              "width": 97,
+              "height": 19,
+              "right": 1188.5,
+              "bottom": 581.5
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ],
+        "commandCount": 0,
+        "maxCommands": 6,
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+      },
+      "analysis": {
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "slotOverlaps": [],
+        "routeHeaderPass": true,
+        "routeSlotsPass": true,
+        "instructionPass": true,
+        "directionRowPass": true,
+        "secondaryRowPass": true,
+        "launchOwnRow": true,
+        "boardControlGap": 28.4,
+        "verticalDelta": 0,
+        "verticalAlignmentPass": true,
+        "panelWidth": 430,
+        "panelHeight": 382,
+        "launchEnabledStateReadable": true,
+        "allPass": true
+      },
+      "screenshot": "mission8-final-desktop-ui-1600x900.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    },
+    "1920x1080": {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "semanticMode": "DESKTOP",
+        "board": {
+          "x": 416.6,
+          "y": 328.79999999999995,
+          "width": 640,
+          "height": 422.40000000000003,
+          "right": 1056.6,
+          "bottom": 751.2
+        },
+        "panel": {
+          "x": 1085,
+          "y": 349,
+          "width": 430,
+          "height": 382,
+          "right": 1515,
+          "bottom": 731
+        },
+        "strip": {
+          "x": 1110.6,
+          "y": 373,
+          "width": 380.8000000000002,
+          "height": 76,
+          "right": 1491.4,
+          "bottom": 449
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "text": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 1110.6,
+              "y": 373,
+              "width": 78,
+              "height": 16,
+              "right": 1188.6,
+              "bottom": 389
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "text": "0/6",
+            "rect": {
+              "x": 1469.4,
+              "y": 373,
+              "width": 22,
+              "height": 16,
+              "right": 1491.4,
+              "bottom": 389
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 1221,
+              "y": 471,
+              "width": 158,
+              "height": 16,
+              "right": 1379,
+              "bottom": 487
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 1160,
+            "y": 409,
+            "width": 40,
+            "height": 40,
+            "right": 1200,
+            "bottom": 449
+          },
+          {
+            "x": 1208,
+            "y": 409,
+            "width": 40,
+            "height": 40,
+            "right": 1248,
+            "bottom": 449
+          },
+          {
+            "x": 1256,
+            "y": 409,
+            "width": 40,
+            "height": 40,
+            "right": 1296,
+            "bottom": 449
+          },
+          {
+            "x": 1304,
+            "y": 409,
+            "width": 40,
+            "height": 40,
+            "right": 1344,
+            "bottom": 449
+          },
+          {
+            "x": 1352,
+            "y": 409,
+            "width": 40,
+            "height": 40,
+            "right": 1392,
+            "bottom": 449
+          },
+          {
+            "x": 1400,
+            "y": 409,
+            "width": 40,
+            "height": 40,
+            "right": 1440,
+            "bottom": 449
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 1149.8319999999999,
+              "y": 495.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1217.416,
+              "bottom": 562.7919999999999
+            },
+            "text": {
+              "x": 1174.1240234375,
+              "y": 507,
+              "width": 19,
+              "height": 42,
+              "right": 1193.1240234375,
+              "bottom": 549
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 1227.416,
+              "y": 495.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1295,
+              "bottom": 562.7919999999999
+            },
+            "text": {
+              "x": 1242.2080078125,
+              "y": 507,
+              "width": 38,
+              "height": 42,
+              "right": 1280.2080078125,
+              "bottom": 549
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 1305,
+              "y": 495.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1372.584,
+              "bottom": 562.7919999999999
+            },
+            "text": {
+              "x": 1329.2919921875,
+              "y": 507,
+              "width": 19,
+              "height": 42,
+              "right": 1348.2919921875,
+              "bottom": 549
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 1382.5839999999998,
+              "y": 495.20799999999997,
+              "width": 67.584,
+              "height": 67.584,
+              "right": 1450.168,
+              "bottom": 562.7919999999999
+            },
+            "text": {
+              "x": 1397.3759765625,
+              "y": 507,
+              "width": 38,
+              "height": 42,
+              "right": 1435.3759765625,
+              "bottom": 549
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "ПОДСКАЗКА",
+            "rect": {
+              "x": 1096.6,
+              "y": 575,
+              "width": 196,
+              "height": 52,
+              "right": 1292.6,
+              "bottom": 627
+            },
+            "text": {
+              "x": 1147.5999755859375,
+              "y": 591,
+              "width": 94,
+              "height": 18,
+              "right": 1241.5999755859375,
+              "bottom": 609
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УДАЛИТЬ",
+            "rect": {
+              "x": 1306.6,
+              "y": 575,
+              "width": 196,
+              "height": 52,
+              "right": 1502.6,
+              "bottom": 627
+            },
+            "text": {
+              "x": 1367.0999755859375,
+              "y": 591,
+              "width": 75,
+              "height": 18,
+              "right": 1442.0999755859375,
+              "bottom": 609
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ЗАПУСТИТЬ",
+            "rect": {
+              "x": 1096.6,
+              "y": 637,
+              "width": 406.8,
+              "height": 52,
+              "right": 1503.3999999999999,
+              "bottom": 689
+            },
+            "text": {
+              "x": 1251.5,
+              "y": 652.5,
+              "width": 97,
+              "height": 19,
+              "right": 1348.5,
+              "bottom": 671.5
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ],
+        "commandCount": 0,
+        "maxCommands": 6,
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+      },
+      "analysis": {
+        "textFit": {
+          "program-command-UP": true,
+          "program-command-RIGHT": true,
+          "program-command-DOWN": true,
+          "program-command-LEFT": true,
+          "programming-hint-button": true,
+          "programming-delete-button": true,
+          "programming-run-button": true
+        },
+        "buttonOverlaps": [],
+        "textOverlaps": [],
+        "slotOverlaps": [],
+        "routeHeaderPass": true,
+        "routeSlotsPass": true,
+        "instructionPass": true,
+        "directionRowPass": true,
+        "secondaryRowPass": true,
+        "launchOwnRow": true,
+        "boardControlGap": 28.4,
+        "verticalDelta": 0,
+        "verticalAlignmentPass": true,
+        "panelWidth": 430,
+        "panelHeight": 382,
+        "launchEnabledStateReadable": true,
+        "allPass": true
+      },
+      "screenshot": "mission8-final-desktop-ui-1920x1080.png",
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      }
+    }
+  },
+  "inputRegression": {
+    "initial": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "semanticMode": "DESKTOP",
+      "board": {
+        "x": 148.16000000000003,
+        "y": 167.3856,
+        "width": 583.68,
+        "height": 385.2288,
+        "right": 731.8399999999999,
+        "bottom": 552.6143999999999
+      },
+      "panel": {
+        "x": 756.8399999999999,
+        "y": 182.794752,
+        "width": 390,
+        "height": 354.41049599999997,
+        "right": 1146.84,
+        "bottom": 537.205248
+      },
+      "strip": {
+        "x": 785.8400268554688,
+        "y": 206.7947540283203,
+        "width": 334,
+        "height": 75.99998474121094,
+        "right": 1119.8400268554688,
+        "bottom": 282.79473876953125
+      },
+      "labels": [
+        {
+          "name": "programming-strip-label",
+          "text": "ТВОЙ ПУТЬ",
+          "rect": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 78,
+            "height": 16,
+            "right": 863.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-strip-count",
+          "text": "0/6",
+          "rect": {
+            "x": 1097.8400268554688,
+            "y": 206.7947540283203,
+            "width": 22,
+            "height": 16,
+            "right": 1119.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-feedback",
+          "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+          "rect": {
+            "x": 872.8399999999999,
+            "y": 304.794752,
+            "width": 158,
+            "height": 16,
+            "right": 1030.84,
+            "bottom": 320.794752
+          }
+        }
+      ],
+      "slots": [
+        {
+          "x": 811.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 851.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 859.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 899.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 907.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 947.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 955.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 995.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1003.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1043.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1051.840087890625,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1091.840087890625,
+          "bottom": 282.79473876953125
+        }
+      ],
+      "buttons": [
+        {
+          "name": "program-command-UP",
+          "label": "↑",
+          "rect": {
+            "x": 812.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 874.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 834.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 852.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-RIGHT",
+          "label": "→",
+          "rect": {
+            "x": 884.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 946.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 898.2612763047218,
+            "y": 343.2069881558418,
+            "width": 35.157501101493835,
+            "height": 37.16650116443634,
+            "right": 933.4187774062157,
+            "bottom": 380.37348932027817
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-DOWN",
+          "label": "↓",
+          "rect": {
+            "x": 956.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1018.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 978.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 996.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-LEFT",
+          "label": "←",
+          "rect": {
+            "x": 1028.84,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1090.84,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 1042.3399658203125,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 1077.3399658203125,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-hint-button",
+          "label": "ПОДСКАЗКА",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 944.8399999999999,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 811.3400268554688,
+            "y": 424.79473876953125,
+            "width": 94,
+            "height": 18,
+            "right": 905.3400268554688,
+            "bottom": 442.79473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-delete-button",
+          "label": "УДАЛИТЬ",
+          "rect": {
+            "x": 958.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 1007.8399658203125,
+            "y": 424.79473876953125,
+            "width": 75,
+            "height": 18,
+            "right": 1082.8399658203125,
+            "bottom": 442.79473876953125
+          },
+          "enabled": false,
+          "alpha": 0.42
+        },
+        {
+          "name": "programming-run-button",
+          "label": "ЗАПУСТИТЬ",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 470.794752,
+            "width": 360,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 522.794752
+          },
+          "text": {
+            "x": 903.3400268554688,
+            "y": 486.29473876953125,
+            "width": 97,
+            "height": 19,
+            "right": 1000.3400268554688,
+            "bottom": 505.29473876953125
+          },
+          "enabled": false,
+          "alpha": 0.86
+        }
+      ],
+      "commandCount": 0,
+      "maxCommands": 6,
+      "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+    },
+    "afterDisabledLaunchClick": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "semanticMode": "DESKTOP",
+      "board": {
+        "x": 148.16000000000003,
+        "y": 167.3856,
+        "width": 583.68,
+        "height": 385.2288,
+        "right": 731.8399999999999,
+        "bottom": 552.6143999999999
+      },
+      "panel": {
+        "x": 756.8399999999999,
+        "y": 182.794752,
+        "width": 390,
+        "height": 354.41049599999997,
+        "right": 1146.84,
+        "bottom": 537.205248
+      },
+      "strip": {
+        "x": 785.8400268554688,
+        "y": 206.7947540283203,
+        "width": 334,
+        "height": 75.99998474121094,
+        "right": 1119.8400268554688,
+        "bottom": 282.79473876953125
+      },
+      "labels": [
+        {
+          "name": "programming-strip-label",
+          "text": "ТВОЙ ПУТЬ",
+          "rect": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 78,
+            "height": 16,
+            "right": 863.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-strip-count",
+          "text": "0/6",
+          "rect": {
+            "x": 1097.8400268554688,
+            "y": 206.7947540283203,
+            "width": 22,
+            "height": 16,
+            "right": 1119.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-feedback",
+          "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+          "rect": {
+            "x": 872.8399999999999,
+            "y": 304.794752,
+            "width": 158,
+            "height": 16,
+            "right": 1030.84,
+            "bottom": 320.794752
+          }
+        }
+      ],
+      "slots": [
+        {
+          "x": 811.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 851.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 859.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 899.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 907.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 947.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 955.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 995.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1003.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1043.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1051.840087890625,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1091.840087890625,
+          "bottom": 282.79473876953125
+        }
+      ],
+      "buttons": [
+        {
+          "name": "program-command-UP",
+          "label": "↑",
+          "rect": {
+            "x": 812.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 874.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 834.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 852.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-RIGHT",
+          "label": "→",
+          "rect": {
+            "x": 884.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 946.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 898.3400268554688,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 933.3400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-DOWN",
+          "label": "↓",
+          "rect": {
+            "x": 956.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1018.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 978.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 996.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-LEFT",
+          "label": "←",
+          "rect": {
+            "x": 1028.84,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1090.84,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 1042.3399658203125,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 1077.3399658203125,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-hint-button",
+          "label": "ПОДСКАЗКА",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 944.8399999999999,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 811.3400268554688,
+            "y": 424.79473876953125,
+            "width": 94,
+            "height": 18,
+            "right": 905.3400268554688,
+            "bottom": 442.79473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-delete-button",
+          "label": "УДАЛИТЬ",
+          "rect": {
+            "x": 958.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 1007.8399658203125,
+            "y": 424.79473876953125,
+            "width": 75,
+            "height": 18,
+            "right": 1082.8399658203125,
+            "bottom": 442.79473876953125
+          },
+          "enabled": false,
+          "alpha": 0.42
+        },
+        {
+          "name": "programming-run-button",
+          "label": "ЗАПУСТИТЬ",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 470.794752,
+            "width": 360,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 522.794752
+          },
+          "text": {
+            "x": 903.3400268554688,
+            "y": 486.29473876953125,
+            "width": 97,
+            "height": 19,
+            "right": 1000.3400268554688,
+            "bottom": 505.29473876953125
+          },
+          "enabled": false,
+          "alpha": 0.86
+        }
+      ],
+      "commandCount": 0,
+      "maxCommands": 6,
+      "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+    },
+    "afterRight": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "semanticMode": "DESKTOP",
+      "board": {
+        "x": 148.16000000000003,
+        "y": 167.3856,
+        "width": 583.68,
+        "height": 385.2288,
+        "right": 731.8399999999999,
+        "bottom": 552.6143999999999
+      },
+      "panel": {
+        "x": 756.8399999999999,
+        "y": 182.794752,
+        "width": 390,
+        "height": 354.41049599999997,
+        "right": 1146.84,
+        "bottom": 537.205248
+      },
+      "strip": {
+        "x": 785.8400268554688,
+        "y": 206.7947540283203,
+        "width": 334,
+        "height": 75.99998474121094,
+        "right": 1119.8400268554688,
+        "bottom": 282.79473876953125
+      },
+      "labels": [
+        {
+          "name": "programming-strip-label",
+          "text": "ТВОЙ ПУТЬ",
+          "rect": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 78,
+            "height": 16,
+            "right": 863.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-strip-count",
+          "text": "1/6",
+          "rect": {
+            "x": 1097.8400268554688,
+            "y": 206.7947540283203,
+            "width": 22,
+            "height": 16,
+            "right": 1119.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-feedback",
+          "text": "",
+          "rect": {
+            "x": 951.8399999999999,
+            "y": 304.794752,
+            "width": 0,
+            "height": 16,
+            "right": 951.8399999999999,
+            "bottom": 320.794752
+          }
+        }
+      ],
+      "slots": [
+        {
+          "x": 811.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 851.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 859.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 899.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 907.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 947.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 955.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 995.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1003.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1043.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1051.840087890625,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1091.840087890625,
+          "bottom": 282.79473876953125
+        }
+      ],
+      "buttons": [
+        {
+          "name": "program-command-UP",
+          "label": "↑",
+          "rect": {
+            "x": 812.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 874.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 834.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 852.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-RIGHT",
+          "label": "→",
+          "rect": {
+            "x": 884.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 946.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 898.3400268554688,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 933.3400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-DOWN",
+          "label": "↓",
+          "rect": {
+            "x": 956.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1018.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 978.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 996.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-LEFT",
+          "label": "←",
+          "rect": {
+            "x": 1028.84,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1090.84,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 1042.3399658203125,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 1077.3399658203125,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-hint-button",
+          "label": "ПОДСКАЗКА",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 944.8399999999999,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 811.3400268554688,
+            "y": 424.79473876953125,
+            "width": 94,
+            "height": 18,
+            "right": 905.3400268554688,
+            "bottom": 442.79473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-delete-button",
+          "label": "УДАЛИТЬ",
+          "rect": {
+            "x": 958.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 1007.8399658203125,
+            "y": 424.79473876953125,
+            "width": 75,
+            "height": 18,
+            "right": 1082.8399658203125,
+            "bottom": 442.79473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-run-button",
+          "label": "ЗАПУСТИТЬ",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 470.794752,
+            "width": 360,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 522.794752
+          },
+          "text": {
+            "x": 903.3400268554688,
+            "y": 486.29473876953125,
+            "width": 97,
+            "height": 19,
+            "right": 1000.3400268554688,
+            "bottom": 505.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        }
+      ],
+      "commandCount": 1,
+      "maxCommands": 6,
+      "feedback": ""
+    },
+    "afterDelete": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "semanticMode": "DESKTOP",
+      "board": {
+        "x": 148.16000000000003,
+        "y": 167.3856,
+        "width": 583.68,
+        "height": 385.2288,
+        "right": 731.8399999999999,
+        "bottom": 552.6143999999999
+      },
+      "panel": {
+        "x": 756.8399999999999,
+        "y": 182.794752,
+        "width": 390,
+        "height": 354.41049599999997,
+        "right": 1146.84,
+        "bottom": 537.205248
+      },
+      "strip": {
+        "x": 785.8400268554688,
+        "y": 206.7947540283203,
+        "width": 334,
+        "height": 75.99998474121094,
+        "right": 1119.8400268554688,
+        "bottom": 282.79473876953125
+      },
+      "labels": [
+        {
+          "name": "programming-strip-label",
+          "text": "ТВОЙ ПУТЬ",
+          "rect": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 78,
+            "height": 16,
+            "right": 863.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-strip-count",
+          "text": "0/6",
+          "rect": {
+            "x": 1097.8400268554688,
+            "y": 206.7947540283203,
+            "width": 22,
+            "height": 16,
+            "right": 1119.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-feedback",
+          "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+          "rect": {
+            "x": 872.8399999999999,
+            "y": 304.794752,
+            "width": 158,
+            "height": 16,
+            "right": 1030.84,
+            "bottom": 320.794752
+          }
+        }
+      ],
+      "slots": [
+        {
+          "x": 811.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 851.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 859.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 899.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 907.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 947.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 955.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 995.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1003.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1043.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1051.840087890625,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1091.840087890625,
+          "bottom": 282.79473876953125
+        }
+      ],
+      "buttons": [
+        {
+          "name": "program-command-UP",
+          "label": "↑",
+          "rect": {
+            "x": 812.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 874.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 834.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 852.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-RIGHT",
+          "label": "→",
+          "rect": {
+            "x": 884.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 946.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 898.3400268554688,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 933.3400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-DOWN",
+          "label": "↓",
+          "rect": {
+            "x": 956.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1018.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 978.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 996.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-LEFT",
+          "label": "←",
+          "rect": {
+            "x": 1028.84,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1090.84,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 1042.3399658203125,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 1077.3399658203125,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-hint-button",
+          "label": "ПОДСКАЗКА",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 944.8399999999999,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 811.3400268554688,
+            "y": 424.79473876953125,
+            "width": 94,
+            "height": 18,
+            "right": 905.3400268554688,
+            "bottom": 442.79473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-delete-button",
+          "label": "УДАЛИТЬ",
+          "rect": {
+            "x": 958.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 1007.8399658203125,
+            "y": 424.79473876953125,
+            "width": 75,
+            "height": 18,
+            "right": 1082.8399658203125,
+            "bottom": 442.79473876953125
+          },
+          "enabled": false,
+          "alpha": 0.42
+        },
+        {
+          "name": "programming-run-button",
+          "label": "ЗАПУСТИТЬ",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 470.794752,
+            "width": 360,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 522.794752
+          },
+          "text": {
+            "x": 903.3400268554688,
+            "y": 486.29473876953125,
+            "width": 97,
+            "height": 19,
+            "right": 1000.3400268554688,
+            "bottom": 505.29473876953125
+          },
+          "enabled": false,
+          "alpha": 0.86
+        }
+      ],
+      "commandCount": 0,
+      "maxCommands": 6,
+      "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+    },
+    "afterHint": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "semanticMode": "DESKTOP",
+      "board": {
+        "x": 148.16000000000003,
+        "y": 167.3856,
+        "width": 583.68,
+        "height": 385.2288,
+        "right": 731.8399999999999,
+        "bottom": 552.6143999999999
+      },
+      "panel": {
+        "x": 756.8399999999999,
+        "y": 182.794752,
+        "width": 390,
+        "height": 354.41049599999997,
+        "right": 1146.84,
+        "bottom": 537.205248
+      },
+      "strip": {
+        "x": 785.8400268554688,
+        "y": 206.7947540283203,
+        "width": 334,
+        "height": 75.99998474121094,
+        "right": 1119.8400268554688,
+        "bottom": 282.79473876953125
+      },
+      "labels": [
+        {
+          "name": "programming-strip-label",
+          "text": "ТВОЙ ПУТЬ",
+          "rect": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 78,
+            "height": 16,
+            "right": 863.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-strip-count",
+          "text": "0/6",
+          "rect": {
+            "x": 1097.8400268554688,
+            "y": 206.7947540283203,
+            "width": 22,
+            "height": 16,
+            "right": 1119.8400268554688,
+            "bottom": 222.7947540283203
+          }
+        },
+        {
+          "name": "programming-feedback",
+          "text": "ПОПРОБУЙ →",
+          "rect": {
+            "x": 905.8399999999999,
+            "y": 304.794752,
+            "width": 92,
+            "height": 16,
+            "right": 997.8399999999999,
+            "bottom": 320.794752
+          }
+        }
+      ],
+      "slots": [
+        {
+          "x": 811.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 851.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 859.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 899.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 907.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 947.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 955.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 995.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1003.8400268554688,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1043.8400268554688,
+          "bottom": 282.79473876953125
+        },
+        {
+          "x": 1051.840087890625,
+          "y": 242.79473876953125,
+          "width": 40,
+          "height": 40,
+          "right": 1091.840087890625,
+          "bottom": 282.79473876953125
+        }
+      ],
+      "buttons": [
+        {
+          "name": "program-command-UP",
+          "label": "↑",
+          "rect": {
+            "x": 812.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 874.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 834.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 852.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-RIGHT",
+          "label": "→",
+          "rect": {
+            "x": 884.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 946.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 896.2400267720222,
+            "y": 340.954738676548,
+            "width": 39.200000166893005,
+            "height": 41.44000017642975,
+            "right": 935.4400269389153,
+            "bottom": 382.39473885297775
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-DOWN",
+          "label": "↓",
+          "rect": {
+            "x": 956.8399999999999,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1018.8399999999999,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 978.8400268554688,
+            "y": 343.29473876953125,
+            "width": 18,
+            "height": 37,
+            "right": 996.8400268554688,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "program-command-LEFT",
+          "label": "←",
+          "rect": {
+            "x": 1028.84,
+            "y": 331.794752,
+            "width": 62,
+            "height": 62,
+            "right": 1090.84,
+            "bottom": 393.794752
+          },
+          "text": {
+            "x": 1042.3399658203125,
+            "y": 343.29473876953125,
+            "width": 35,
+            "height": 37,
+            "right": 1077.3399658203125,
+            "bottom": 380.29473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-hint-button",
+          "label": "ПОДСКАЗКА",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 944.8399999999999,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 811.3400268554688,
+            "y": 424.79473876953125,
+            "width": 94,
+            "height": 18,
+            "right": 905.3400268554688,
+            "bottom": 442.79473876953125
+          },
+          "enabled": true,
+          "alpha": 1
+        },
+        {
+          "name": "programming-delete-button",
+          "label": "УДАЛИТЬ",
+          "rect": {
+            "x": 958.8399999999999,
+            "y": 408.794752,
+            "width": 173,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 460.794752
+          },
+          "text": {
+            "x": 1007.8399658203125,
+            "y": 424.79473876953125,
+            "width": 75,
+            "height": 18,
+            "right": 1082.8399658203125,
+            "bottom": 442.79473876953125
+          },
+          "enabled": false,
+          "alpha": 0.42
+        },
+        {
+          "name": "programming-run-button",
+          "label": "ЗАПУСТИТЬ",
+          "rect": {
+            "x": 771.8399999999999,
+            "y": 470.794752,
+            "width": 360,
+            "height": 52,
+            "right": 1131.84,
+            "bottom": 522.794752
+          },
+          "text": {
+            "x": 903.3400268554688,
+            "y": 486.29473876953125,
+            "width": 97,
+            "height": 19,
+            "right": 1000.3400268554688,
+            "bottom": 505.29473876953125
+          },
+          "enabled": false,
+          "alpha": 0.86
+        }
+      ],
+      "commandCount": 0,
+      "maxCommands": 6,
+      "feedback": "ПОПРОБУЙ →"
+    },
+    "solvedRoutes": [
+      {
+        "routeIndex": 1,
+        "beforeRun": {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "semanticMode": "DESKTOP",
+          "board": {
+            "x": 148.16000000000003,
+            "y": 167.3856,
+            "width": 583.68,
+            "height": 385.2288,
+            "right": 731.8399999999999,
+            "bottom": 552.6143999999999
+          },
+          "panel": {
+            "x": 756.8399999999999,
+            "y": 182.794752,
+            "width": 390,
+            "height": 354.41049599999997,
+            "right": 1146.84,
+            "bottom": 537.205248
+          },
+          "strip": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 334,
+            "height": 75.99998474121094,
+            "right": 1119.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          "labels": [
+            {
+              "name": "programming-strip-label",
+              "text": "ТВОЙ ПУТЬ",
+              "rect": {
+                "x": 785.8400268554688,
+                "y": 206.7947540283203,
+                "width": 78,
+                "height": 16,
+                "right": 863.8400268554688,
+                "bottom": 222.7947540283203
+              }
+            },
+            {
+              "name": "programming-strip-count",
+              "text": "2/6",
+              "rect": {
+                "x": 1097.8400268554688,
+                "y": 206.7947540283203,
+                "width": 22,
+                "height": 16,
+                "right": 1119.8400268554688,
+                "bottom": 222.7947540283203
+              }
+            },
+            {
+              "name": "programming-feedback",
+              "text": "",
+              "rect": {
+                "x": 951.8399999999999,
+                "y": 304.794752,
+                "width": 0,
+                "height": 16,
+                "right": 951.8399999999999,
+                "bottom": 320.794752
+              }
+            }
+          ],
+          "slots": [
+            {
+              "x": 811.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 851.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 859.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 899.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 907.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 947.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 955.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 995.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 1003.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 1043.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 1051.840087890625,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 1091.840087890625,
+              "bottom": 282.79473876953125
+            }
+          ],
+          "buttons": [
+            {
+              "name": "program-command-UP",
+              "label": "↑",
+              "rect": {
+                "x": 812.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 874.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 834.8400268554688,
+                "y": 343.29473876953125,
+                "width": 18,
+                "height": 37,
+                "right": 852.8400268554688,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-RIGHT",
+              "label": "→",
+              "rect": {
+                "x": 884.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 946.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 898.8650263547897,
+                "y": 343.8797382116318,
+                "width": 33.95000100135803,
+                "height": 35.89000105857849,
+                "right": 932.8150273561478,
+                "bottom": 379.76973927021027
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-DOWN",
+              "label": "↓",
+              "rect": {
+                "x": 956.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 1018.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 978.8400268554688,
+                "y": 343.29473876953125,
+                "width": 18,
+                "height": 37,
+                "right": 996.8400268554688,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-LEFT",
+              "label": "←",
+              "rect": {
+                "x": 1028.84,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 1090.84,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 1042.3399658203125,
+                "y": 343.29473876953125,
+                "width": 35,
+                "height": 37,
+                "right": 1077.3399658203125,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-hint-button",
+              "label": "ПОДСКАЗКА",
+              "rect": {
+                "x": 771.8399999999999,
+                "y": 408.794752,
+                "width": 173,
+                "height": 52,
+                "right": 944.8399999999999,
+                "bottom": 460.794752
+              },
+              "text": {
+                "x": 811.3400268554688,
+                "y": 424.79473876953125,
+                "width": 94,
+                "height": 18,
+                "right": 905.3400268554688,
+                "bottom": 442.79473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-delete-button",
+              "label": "УДАЛИТЬ",
+              "rect": {
+                "x": 958.8399999999999,
+                "y": 408.794752,
+                "width": 173,
+                "height": 52,
+                "right": 1131.84,
+                "bottom": 460.794752
+              },
+              "text": {
+                "x": 1007.8399658203125,
+                "y": 424.79473876953125,
+                "width": 75,
+                "height": 18,
+                "right": 1082.8399658203125,
+                "bottom": 442.79473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-run-button",
+              "label": "ЗАПУСТИТЬ",
+              "rect": {
+                "x": 771.8399999999999,
+                "y": 470.794752,
+                "width": 360,
+                "height": 52,
+                "right": 1131.84,
+                "bottom": 522.794752
+              },
+              "text": {
+                "x": 903.3400268554688,
+                "y": 486.29473876953125,
+                "width": 97,
+                "height": 19,
+                "right": 1000.3400268554688,
+                "bottom": 505.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            }
+          ],
+          "commandCount": 2,
+          "maxCommands": 6,
+          "feedback": ""
+        },
+        "afterRun": {
+          "challengeIndex": 1,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "turn",
+            "columns": 4,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "obstacles": [
+              {
+                "column": 1,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 3,
+            "longestSimplePathLength": 9,
+            "simpleRouteCount": 6,
+            "maxCommands": 9
+          },
+          "commands": [],
+          "robotPosition": {
+            "column": 0,
+            "row": 2
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        }
+      },
+      {
+        "routeIndex": 2,
+        "beforeRun": {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "semanticMode": "DESKTOP",
+          "board": {
+            "x": 148.16000000000003,
+            "y": 167.3856,
+            "width": 583.68,
+            "height": 385.2288,
+            "right": 731.8399999999999,
+            "bottom": 552.6143999999999
+          },
+          "panel": {
+            "x": 756.8399999999999,
+            "y": 182.794752,
+            "width": 390,
+            "height": 354.41049599999997,
+            "right": 1146.84,
+            "bottom": 537.205248
+          },
+          "strip": {
+            "x": 780.3400268554688,
+            "y": 206.7947540283203,
+            "width": 343.00006103515625,
+            "height": 71.49998474121094,
+            "right": 1123.340087890625,
+            "bottom": 278.29473876953125
+          },
+          "labels": [
+            {
+              "name": "programming-strip-label",
+              "text": "ТВОЙ ПУТЬ",
+              "rect": {
+                "x": 785.8400268554688,
+                "y": 206.7947540283203,
+                "width": 78,
+                "height": 16,
+                "right": 863.8400268554688,
+                "bottom": 222.7947540283203
+              }
+            },
+            {
+              "name": "programming-strip-count",
+              "text": "3/9",
+              "rect": {
+                "x": 783.8400268554688,
+                "y": 206.7947540283203,
+                "width": 22,
+                "height": 16,
+                "right": 805.8400268554688,
+                "bottom": 222.7947540283203
+              }
+            },
+            {
+              "name": "programming-feedback",
+              "text": "",
+              "rect": {
+                "x": 951.8399999999999,
+                "y": 304.794752,
+                "width": 0,
+                "height": 16,
+                "right": 951.8399999999999,
+                "bottom": 320.794752
+              }
+            }
+          ],
+          "slots": [
+            {
+              "x": 780.3400268554688,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 811.3400268554688,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 819.3400268554688,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 850.3400268554688,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 858.3400268554688,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 889.3400268554688,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 897.3400268554688,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 928.3400268554688,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 936.3400268554688,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 967.3400268554688,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 975.3400268554688,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 1006.3400268554688,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 1014.340087890625,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 1045.340087890625,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 1053.340087890625,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 1084.340087890625,
+              "bottom": 278.29473876953125
+            },
+            {
+              "x": 1092.340087890625,
+              "y": 247.29473876953125,
+              "width": 31,
+              "height": 31,
+              "right": 1123.340087890625,
+              "bottom": 278.29473876953125
+            }
+          ],
+          "buttons": [
+            {
+              "name": "program-command-UP",
+              "label": "↑",
+              "rect": {
+                "x": 812.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 874.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 835.1100265979767,
+                "y": 343.8797382116318,
+                "width": 17.46000051498413,
+                "height": 35.89000105857849,
+                "right": 852.5700271129608,
+                "bottom": 379.76973927021027
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-RIGHT",
+              "label": "→",
+              "rect": {
+                "x": 884.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 946.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 898.3400268554688,
+                "y": 343.29473876953125,
+                "width": 35,
+                "height": 37,
+                "right": 933.3400268554688,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-DOWN",
+              "label": "↓",
+              "rect": {
+                "x": 956.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 1018.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 978.8400268554688,
+                "y": 343.29473876953125,
+                "width": 18,
+                "height": 37,
+                "right": 996.8400268554688,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-LEFT",
+              "label": "←",
+              "rect": {
+                "x": 1028.84,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 1090.84,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 1042.3399658203125,
+                "y": 343.29473876953125,
+                "width": 35,
+                "height": 37,
+                "right": 1077.3399658203125,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-hint-button",
+              "label": "ПОДСКАЗКА",
+              "rect": {
+                "x": 771.8399999999999,
+                "y": 408.794752,
+                "width": 173,
+                "height": 52,
+                "right": 944.8399999999999,
+                "bottom": 460.794752
+              },
+              "text": {
+                "x": 811.3400268554688,
+                "y": 424.79473876953125,
+                "width": 94,
+                "height": 18,
+                "right": 905.3400268554688,
+                "bottom": 442.79473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-delete-button",
+              "label": "УДАЛИТЬ",
+              "rect": {
+                "x": 958.8399999999999,
+                "y": 408.794752,
+                "width": 173,
+                "height": 52,
+                "right": 1131.84,
+                "bottom": 460.794752
+              },
+              "text": {
+                "x": 1007.8399658203125,
+                "y": 424.79473876953125,
+                "width": 75,
+                "height": 18,
+                "right": 1082.8399658203125,
+                "bottom": 442.79473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-run-button",
+              "label": "ЗАПУСТИТЬ",
+              "rect": {
+                "x": 771.8399999999999,
+                "y": 470.794752,
+                "width": 360,
+                "height": 52,
+                "right": 1131.84,
+                "bottom": 522.794752
+              },
+              "text": {
+                "x": 903.3400268554688,
+                "y": 486.29473876953125,
+                "width": 97,
+                "height": 19,
+                "right": 1000.3400268554688,
+                "bottom": 505.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            }
+          ],
+          "commandCount": 3,
+          "maxCommands": 9,
+          "feedback": ""
+        },
+        "afterRun": {
+          "challengeIndex": 2,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "navigation",
+            "columns": 5,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "obstacles": [
+              {
+                "column": 2,
+                "row": 2
+              },
+              {
+                "column": 3,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 5,
+            "longestSimplePathLength": 7,
+            "simpleRouteCount": 7,
+            "maxCommands": 7
+          },
+          "commands": [],
+          "robotPosition": {
+            "column": 0,
+            "row": 2
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        }
+      },
+      {
+        "routeIndex": 3,
+        "beforeRun": {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "semanticMode": "DESKTOP",
+          "board": {
+            "x": 148.16000000000003,
+            "y": 167.3856,
+            "width": 583.68,
+            "height": 385.2288,
+            "right": 731.8399999999999,
+            "bottom": 552.6143999999999
+          },
+          "panel": {
+            "x": 756.8399999999999,
+            "y": 182.794752,
+            "width": 390,
+            "height": 354.41049599999997,
+            "right": 1146.84,
+            "bottom": 537.205248
+          },
+          "strip": {
+            "x": 785.8400268554688,
+            "y": 206.7947540283203,
+            "width": 334,
+            "height": 75.99998474121094,
+            "right": 1119.8400268554688,
+            "bottom": 282.79473876953125
+          },
+          "labels": [
+            {
+              "name": "programming-strip-label",
+              "text": "ТВОЙ ПУТЬ",
+              "rect": {
+                "x": 785.8400268554688,
+                "y": 206.7947540283203,
+                "width": 78,
+                "height": 16,
+                "right": 863.8400268554688,
+                "bottom": 222.7947540283203
+              }
+            },
+            {
+              "name": "programming-strip-count",
+              "text": "5/7",
+              "rect": {
+                "x": 1097.8400268554688,
+                "y": 206.7947540283203,
+                "width": 22,
+                "height": 16,
+                "right": 1119.8400268554688,
+                "bottom": 222.7947540283203
+              }
+            },
+            {
+              "name": "programming-feedback",
+              "text": "",
+              "rect": {
+                "x": 951.8399999999999,
+                "y": 304.794752,
+                "width": 0,
+                "height": 16,
+                "right": 951.8399999999999,
+                "bottom": 320.794752
+              }
+            }
+          ],
+          "slots": [
+            {
+              "x": 787.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 827.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 835.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 875.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 883.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 923.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 931.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 971.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 979.8400268554688,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 1019.8400268554688,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 1027.840087890625,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 1067.840087890625,
+              "bottom": 282.79473876953125
+            },
+            {
+              "x": 1075.840087890625,
+              "y": 242.79473876953125,
+              "width": 40,
+              "height": 40,
+              "right": 1115.840087890625,
+              "bottom": 282.79473876953125
+            }
+          ],
+          "buttons": [
+            {
+              "name": "program-command-UP",
+              "label": "↑",
+              "rect": {
+                "x": 812.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 874.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 834.8400268554688,
+                "y": 343.29473876953125,
+                "width": 18,
+                "height": 37,
+                "right": 852.8400268554688,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-RIGHT",
+              "label": "→",
+              "rect": {
+                "x": 884.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 946.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 898.8650263547897,
+                "y": 343.8797382116318,
+                "width": 33.95000100135803,
+                "height": 35.89000105857849,
+                "right": 932.8150273561478,
+                "bottom": 379.76973927021027
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-DOWN",
+              "label": "↓",
+              "rect": {
+                "x": 956.8399999999999,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 1018.8399999999999,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 978.8400268554688,
+                "y": 343.29473876953125,
+                "width": 18,
+                "height": 37,
+                "right": 996.8400268554688,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "program-command-LEFT",
+              "label": "←",
+              "rect": {
+                "x": 1028.84,
+                "y": 331.794752,
+                "width": 62,
+                "height": 62,
+                "right": 1090.84,
+                "bottom": 393.794752
+              },
+              "text": {
+                "x": 1042.3399658203125,
+                "y": 343.29473876953125,
+                "width": 35,
+                "height": 37,
+                "right": 1077.3399658203125,
+                "bottom": 380.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-hint-button",
+              "label": "ПОДСКАЗКА",
+              "rect": {
+                "x": 771.8399999999999,
+                "y": 408.794752,
+                "width": 173,
+                "height": 52,
+                "right": 944.8399999999999,
+                "bottom": 460.794752
+              },
+              "text": {
+                "x": 811.3400268554688,
+                "y": 424.79473876953125,
+                "width": 94,
+                "height": 18,
+                "right": 905.3400268554688,
+                "bottom": 442.79473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-delete-button",
+              "label": "УДАЛИТЬ",
+              "rect": {
+                "x": 958.8399999999999,
+                "y": 408.794752,
+                "width": 173,
+                "height": 52,
+                "right": 1131.84,
+                "bottom": 460.794752
+              },
+              "text": {
+                "x": 1007.8399658203125,
+                "y": 424.79473876953125,
+                "width": 75,
+                "height": 18,
+                "right": 1082.8399658203125,
+                "bottom": 442.79473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            },
+            {
+              "name": "programming-run-button",
+              "label": "ЗАПУСТИТЬ",
+              "rect": {
+                "x": 771.8399999999999,
+                "y": 470.794752,
+                "width": 360,
+                "height": 52,
+                "right": 1131.84,
+                "bottom": 522.794752
+              },
+              "text": {
+                "x": 903.3400268554688,
+                "y": 486.29473876953125,
+                "width": 97,
+                "height": 19,
+                "right": 1000.3400268554688,
+                "bottom": 505.29473876953125
+              },
+              "enabled": true,
+              "alpha": 1
+            }
+          ],
+          "commandCount": 5,
+          "maxCommands": 7,
+          "feedback": ""
+        },
+        "afterRun": {
+          "challengeIndex": 2,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "navigation",
+            "columns": 5,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "obstacles": [
+              {
+                "column": 2,
+                "row": 2
+              },
+              {
+                "column": 3,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 5,
+            "longestSimplePathLength": 7,
+            "simpleRouteCount": 7,
+            "maxCommands": 7
+          },
+          "commands": [
+            "RIGHT",
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "robotPosition": {
+            "column": 3,
+            "row": 0
+          },
+          "running": false,
+          "routeComplete": true,
+          "completed": true
+        }
+      }
+    ],
+    "errors": {
+      "console": [],
+      "page": [],
+      "requests": [],
+      "responses": []
+    },
+    "checks": {
+      "launchDisabledWithEmptyRoute": true,
+      "directionButtonsWork": true,
+      "deleteWorks": true,
+      "hintWorks": true,
+      "launchEnablesCorrectly": true,
+      "launchWorksAllRoutes": true,
+      "browserClean": true
+    }
+  },
+  "mobileRegression": {
+    "mission7": {
+      "state": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "semanticMode": "PHONE_PORTRAIT_TALL",
+        "orientationGate": false,
+        "inputActive": true,
+        "card": {
+          "x": 13.650000000000002,
+          "y": 125.81,
+          "width": 362.70000000000005,
+          "height": 639.96,
+          "right": 376.35,
+          "bottom": 765.77
+        },
+        "hint": {
+          "x": 143.5,
+          "y": 790.8499755859375,
+          "width": 103,
+          "height": 21,
+          "right": 246.5,
+          "bottom": 811.8499755859375
+        },
+        "robot": {
+          "x": 195,
+          "y": 765.77001953125,
+          "width": 0,
+          "height": 0,
+          "right": 195,
+          "bottom": 765.77001953125
+        },
+        "group": {
+          "x": 13.650000000000002,
+          "y": 125.81,
+          "width": 362.70000000000005,
+          "height": 686.0399755859376,
+          "right": 376.35,
+          "bottom": 811.8499755859375
+        }
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "pass": true
+    },
+    "mission8": {
+      "state": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "semanticMode": "PHONE_LANDSCAPE_SHORT",
+        "board": {
+          "x": 13.650000000000002,
+          "y": 92.23,
+          "width": 500.6880000000001,
+          "height": 284.12,
+          "right": 514.3380000000001,
+          "bottom": 376.35
+        },
+        "panel": {
+          "x": 528.3380000000001,
+          "y": 80.23,
+          "width": 310.012,
+          "height": 266,
+          "right": 838.3500000000001,
+          "bottom": 346.23
+        },
+        "strip": {
+          "x": 548.337994140625,
+          "y": 94.2300033569336,
+          "width": 270.01199999999994,
+          "height": 53.00000762939453,
+          "right": 818.349994140625,
+          "bottom": 147.23001098632812
+        },
+        "labels": [
+          {
+            "name": "programming-strip-label",
+            "text": "ТВОЙ ПУТЬ",
+            "rect": {
+              "x": 548.337994140625,
+              "y": 94.2300033569336,
+              "width": 78,
+              "height": 16,
+              "right": 626.337994140625,
+              "bottom": 110.2300033569336
+            }
+          },
+          {
+            "name": "programming-strip-count",
+            "text": "0/6",
+            "rect": {
+              "x": 796.349994140625,
+              "y": 94.2300033569336,
+              "width": 22,
+              "height": 16,
+              "right": 818.349994140625,
+              "bottom": 110.2300033569336
+            }
+          },
+          {
+            "name": "programming-feedback",
+            "text": "ВЫБЕРИ НАПРАВЛЕНИЕ",
+            "rect": {
+              "x": 604.344,
+              "y": 154.23000000000002,
+              "width": 158,
+              "height": 16,
+              "right": 762.344,
+              "bottom": 170.23000000000002
+            }
+          }
+        ],
+        "slots": [
+          {
+            "x": 571.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 605.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 609.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 643.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 647.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 681.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 685.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 719.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 723.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 757.343994140625,
+            "bottom": 147.23001098632812
+          },
+          {
+            "x": 761.343994140625,
+            "y": 113.23001098632812,
+            "width": 34,
+            "height": 34,
+            "right": 795.343994140625,
+            "bottom": 147.23001098632812
+          }
+        ],
+        "buttons": [
+          {
+            "name": "program-command-UP",
+            "label": "↑",
+            "rect": {
+              "x": 556.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 612.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 576.343994140625,
+              "y": 190.22999572753906,
+              "width": 16,
+              "height": 34,
+              "right": 592.343994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-RIGHT",
+            "label": "→",
+            "rect": {
+              "x": 622.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 678.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 634.843994140625,
+              "y": 190.22999572753906,
+              "width": 31,
+              "height": 34,
+              "right": 665.843994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-DOWN",
+            "label": "↓",
+            "rect": {
+              "x": 688.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 744.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 708.343994140625,
+              "y": 190.22999572753906,
+              "width": 16,
+              "height": 34,
+              "right": 724.343994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "program-command-LEFT",
+            "label": "←",
+            "rect": {
+              "x": 754.344,
+              "y": 180.23000000000002,
+              "width": 56,
+              "height": 56,
+              "right": 810.344,
+              "bottom": 236.23000000000002
+            },
+            "text": {
+              "x": 766.843994140625,
+              "y": 190.22999572753906,
+              "width": 31,
+              "height": 34,
+              "right": 797.843994140625,
+              "bottom": 224.22999572753906
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-hint-button",
+            "label": "СОВЕТ",
+            "rect": {
+              "x": 536.3380000000001,
+              "y": 282.23,
+              "width": 78,
+              "height": 56,
+              "right": 614.3380000000001,
+              "bottom": 338.23
+            },
+            "text": {
+              "x": 549.8380126953125,
+              "y": 300.2300109863281,
+              "width": 51,
+              "height": 18,
+              "right": 600.8380126953125,
+              "bottom": 318.2300109863281
+            },
+            "enabled": true,
+            "alpha": 1
+          },
+          {
+            "name": "programming-delete-button",
+            "label": "УБРАТЬ",
+            "rect": {
+              "x": 626.3380000000001,
+              "y": 282.23,
+              "width": 82,
+              "height": 56,
+              "right": 708.3380000000001,
+              "bottom": 338.23
+            },
+            "text": {
+              "x": 637.3380126953125,
+              "y": 300.2300109863281,
+              "width": 60,
+              "height": 18,
+              "right": 697.3380126953125,
+              "bottom": 318.2300109863281
+            },
+            "enabled": false,
+            "alpha": 0.42
+          },
+          {
+            "name": "programming-run-button",
+            "label": "ПУСК",
+            "rect": {
+              "x": 720.3380000000001,
+              "y": 282.23,
+              "width": 110.012,
+              "height": 56,
+              "right": 830.3500000000001,
+              "bottom": 338.23
+            },
+            "text": {
+              "x": 753.343994140625,
+              "y": 299.7300109863281,
+              "width": 44,
+              "height": 19,
+              "right": 797.343994140625,
+              "bottom": 318.7300109863281
+            },
+            "enabled": false,
+            "alpha": 0.86
+          }
+        ],
+        "commandCount": 0,
+        "maxCommands": 6,
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "requests": [],
+        "responses": []
+      },
+      "pass": true
+    }
+  },
+  "summary": {
+    "mission7Pass": true,
+    "mission8Pass": true,
+    "inputPass": true,
+    "mobilePass": true,
+    "status": "PASS"
+  }
+}

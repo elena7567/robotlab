@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { createResponsiveLayout } from '../ui/responsiveLayout';
 import { addRobotLabOrientationGate } from '../ui/sceneLayout';
 import { readViewportMetrics, type CommittedViewportDetail } from '../ui/viewport';
 import { markSceneReady } from '../ui/sceneUi';
@@ -26,11 +27,14 @@ export class Mission7OrientationGuardScene extends Phaser.Scene {
 
   private tryEnterMission7(): boolean {
     const viewport = readViewportMetrics();
-    if (viewport.orientation !== 'portrait') return false;
+    const width = Math.max(320, viewport.visualViewportWidth);
+    const height = Math.max(320, viewport.visualViewportHeight);
+    const layout = createResponsiveLayout(width, height, viewport);
+    if (viewport.orientation !== 'portrait' && layout.deviceLayoutClass !== 'DESKTOP') return false;
     this.game.registry.set('mission7OrientationGate', false);
     this.game.registry.set('mission7InputActive', false);
-    if (Math.round(this.scale.width) !== viewport.visualViewportWidth || Math.round(this.scale.height) !== viewport.visualViewportHeight) {
-      this.scale.resize(Math.max(320, viewport.visualViewportWidth), Math.max(320, viewport.visualViewportHeight));
+    if (Math.round(this.scale.width) !== width || Math.round(this.scale.height) !== height) {
+      this.scale.resize(width, height);
     }
     this.scene.start('Mission7Scene');
     return true;
@@ -47,7 +51,12 @@ export class Mission7OrientationGuardScene extends Phaser.Scene {
     };
     const onViewportCommit = (event: Event): void => {
       const detail = (event as CustomEvent<CommittedViewportDetail>).detail;
-      if (detail?.viewport.orientation === 'portrait') scheduleCheck();
+      const viewport = detail?.viewport;
+      if (!viewport) return;
+      const width = Math.max(320, viewport.visualViewportWidth);
+      const height = Math.max(320, viewport.visualViewportHeight);
+      const layout = createResponsiveLayout(width, height, viewport);
+      if (viewport.orientation === 'portrait' || layout.deviceLayoutClass === 'DESKTOP') scheduleCheck();
     };
     const cleanup = (): void => {
       if (this.retryFrame) cancelAnimationFrame(this.retryFrame);

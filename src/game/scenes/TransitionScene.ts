@@ -12,6 +12,9 @@ import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
 import { fluidValue } from '../ui/fluidSizing';
 import { audioManager } from '../audio/AudioManager';
 import { CHARACTER_VISIBLE_BOUNDS, fitVisibleBoundsInRect } from '../assets/characterBounds';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 
 export class TransitionScene extends Phaser.Scene {
   constructor() { super('TransitionScene'); }
@@ -67,6 +70,26 @@ export class TransitionScene extends Phaser.Scene {
     repaired.setPowered(false);
     actorLayer.add(repaired);
     if (!screenActors) actorLayer.setPosition(frame.offsetX, frame.offsetY).setScale(frame.scale);
+    if (layout.semanticMode === 'DESKTOP' && helper) {
+      publishCharacterTelemetry(this, [
+        {
+          characterId: 'transition-helper',
+          object: helper,
+          profileId: 'helper',
+          role: DesktopCharacterRole.WORLD_PRIMARY,
+          sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.helper, role: DesktopCharacterRole.WORLD_PRIMARY, viewportHeight: height, parentScale: frame.scale }),
+          groundY: transitionLayout.actorFeetY,
+        },
+        {
+          characterId: 'transition-assembled',
+          object: repaired,
+          profileId: 'assembled',
+          role: DesktopCharacterRole.WORLD_SECONDARY,
+          sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_SECONDARY, viewportHeight: height, parentScale: frame.scale }),
+          groundY: transitionLayout.actorFeetY,
+        },
+      ]);
+    }
     this.add.rectangle(0, 0, width, height, 0x102b47, portrait ? 0.3 : 0.22).setOrigin(0).setDepth(-1);
 
     const iconSizing = { width: layout.iconWidth, height: layout.iconHeight, fontSize: layout.iconFontSize };
@@ -94,3 +117,4 @@ export class TransitionScene extends Phaser.Scene {
     markSceneReady(this);
   }
 }
+

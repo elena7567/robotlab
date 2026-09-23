@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { CHARACTER_VISIBLE_BOUNDS } from '../assets/characterBounds';
 import { memoryMechanic } from '../mechanics/memory';
 import { sequenceMechanic } from '../mechanics/sequence';
 import { shadowMatchingMechanic } from '../mechanics/shadowMatching';
@@ -6,6 +7,10 @@ import { sizeComparisonMechanic } from '../mechanics/sizeComparison';
 import { sessionState } from '../state/sessionState';
 import { addControl } from '../ui/controls';
 import { fluidValue } from '../ui/fluidSizing';
+import { createAssembledRobotPreview } from '../ui/RobotAssemblyPreview';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 import { restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { UI_FONT } from '../ui/visualTheme';
@@ -109,13 +114,33 @@ export class VictoryScene extends Phaser.Scene {
       stroke: '#31567a', strokeThickness: 4,
     }).setOrigin(0.5, 0).setName('victory-subtitle');
 
-    const robot = this.add.image(platform.contactX, platform.contactY, 'robot-v2-repaired')
-      .setOrigin(0.5, 1)
-      .setName('victory-robot-v2')
+    const robot = createAssembledRobotPreview(this, platform.contactX, platform.contactY, 1, 'victory-robot-v2')
       .setData({ role: 'repaired', platformContactX: platform.contactX, platformContactY: platform.contactY });
+    robot.setPowered(true);
+    robot.setSystemsConnected(true);
     const robotTop = subtitle.getBounds().bottom + 24;
     const robotHeight = Math.max(108, Math.min(platform.contactY - robotTop, portrait ? 250 : 330));
-    robot.setScale(Math.min(robotHeight / robot.height, (width * (portrait ? 0.54 : 0.3)) / robot.width));
+    const victorySizing = !portrait
+      ? resolveWorldCharacterScale({
+        profile: CHARACTER_VISUAL_PROFILES.assembled,
+        role: DesktopCharacterRole.WORLD_PRIMARY,
+        viewportHeight: height,
+      })
+      : undefined;
+    robot.setScale(victorySizing?.resolvedScale ?? Math.min(
+      robotHeight / CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.height,
+      (width * (portrait ? 0.54 : 0.3)) / CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.width,
+    ));
+    if (victorySizing) {
+      publishCharacterTelemetry(this, [{
+        characterId: 'victory-robot',
+        object: robot,
+        profileId: 'assembled',
+        role: DesktopCharacterRole.WORLD_PRIMARY,
+        sizing: victorySizing,
+        groundY: platform.contactY,
+      }]);
+    }
     const shadow = this.add.ellipse(platform.contactX, platform.contactY + 1, robot.displayWidth * 0.55,
       Math.max(6, robot.displayHeight * 0.035), 0x031522, 0.3).setName('victory-robot-shadow');
     this.children.moveBelow(shadow, robot);
@@ -147,3 +172,5 @@ export class VictoryScene extends Phaser.Scene {
     markSceneReady(this);
   }
 }
+
+

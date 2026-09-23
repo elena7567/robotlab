@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-09-14T11:37:42.792Z",
+  "scannedFiles": [
+    "src/game/scenes/GameScene.ts",
+    "src/game/scenes/Mission6Scene.ts",
+    "src/game/scenes/Mission7Scene.ts",
+    "src/game/scenes/Mission8Scene.ts",
+    "src/game/scenes/Mission9Scene.ts",
+    "src/game/scenes/Mission10Scene.ts",
+    "src/game/scenes/TransitionScene.ts",
+    "src/game/scenes/VictoryScene.ts",
+    "src/game/ui/ProgrammingBoard.ts",
+    "src/game/ui/RobotAssemblyPreview.ts",
+    "src/game/ui/robotGrounding.ts",
+    "src/game/ui/sceneCompositionDirector.ts"
+  ],
+  "occurrenceCount": 51,
+  "directMissionCharacterScaleOverrides": 0,
+  "findings": [],
+  "allowlistedReason": "Policy application, board-local actor fit, modal preview, non-character image/object fitting, animation scale, or mobile-only branch."
+}

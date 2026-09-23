@@ -12,6 +12,8 @@ export interface ProgrammingBoardOptions {
   readonly height: number;
   readonly challenge: ProgrammingChallenge;
   readonly robotPosition: GridCell;
+  readonly robotCellWidthRatio?: number;
+  readonly robotCellHeightRatio?: number;
 }
 
 export class ProgrammingBoard extends Phaser.GameObjects.Container {
@@ -91,11 +93,13 @@ export class ProgrammingBoard extends Phaser.GameObjects.Container {
     }
 
     const robotPoint = this.centerOf(options.robotPosition);
+    const robotCellWidthRatio = options.robotCellWidthRatio ?? 0.86;
+    const robotCellHeightRatio = options.robotCellHeightRatio ?? 0.78;
     const actorZone = {
-      x: robotPoint.x - this.cellSize * 0.43,
+      x: robotPoint.x - this.cellSize * robotCellWidthRatio / 2,
       y: robotPoint.y - this.cellSize * 0.5,
-      width: this.cellSize * 0.86,
-      height: this.cellSize * 0.78,
+      width: this.cellSize * robotCellWidthRatio,
+      height: this.cellSize * robotCellHeightRatio,
     };
     const actorFit = fitVisibleBoundsInRect(CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED, actorZone, 0.5, 1);
     this.robot = new RobotAssemblyPreview(scene, actorFit.x, actorFit.y, 5, { scale: actorFit.scale, blueprintAlpha: 0 })
@@ -107,7 +111,7 @@ export class ProgrammingBoard extends Phaser.GameObjects.Container {
       gridColumn: options.robotPosition.column, gridRow: options.robotPosition.row, groundedScale: actorFit.scale,
       cellCenterX: robotPoint.x, cellCenterY: robotPoint.y, targetColumn: options.challenge.targetCell.column,
       targetRow: options.challenge.targetCell.row, visualScale: actorFit.scale,
-      characterRole: 'BOARD_ACTOR', targetCellHeightRatio: 0.78,
+      characterRole: 'BOARD_ACTOR', targetCellHeightRatio: robotCellHeightRatio,
       visibleBoundsId: 'ROBOT_V2_ASSEMBLED',
       visibleWidth: actorFit.visibleRect.width,
       visibleHeight: actorFit.visibleRect.height,

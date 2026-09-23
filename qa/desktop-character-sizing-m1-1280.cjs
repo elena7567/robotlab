@@ -1,0 +1,31 @@
+const fs = require('fs');
+const path = require('path');
+const { chromium } = require('playwright');
+const root = process.cwd();
+(async()=>{
+ const browser=await chromium.launch({headless:true});
+ const page=await browser.newPage({viewport:{width:1280,height:720}});
+ const errors=[]; page.on('console',m=>{ if(m.type()==='error') errors.push(m.text()); }); page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:4198/',{waitUntil:'domcontentloaded'});
+ await page.waitForSelector('canvas');
+ await page.waitForFunction(()=>window.__ROBOTLAB_QA__ && window.__ROBOTLAB_GAME__, null, {timeout:15000});
+ await page.evaluate(()=>{ window.__ROBOTLAB_QA__.characters=[]; window.__ROBOTLAB_QA__.sessionState.reset(); window.__ROBOTLAB_GAME__.scene.start('GameScene'); });
+ await page.waitForTimeout(800);
+ const entries=await page.evaluate(()=>window.__ROBOTLAB_QA__.characters ?? []);
+ await browser.close();
+ if(errors.length || entries.length !== 1) { console.error({errors, entries}); process.exit(1); }
+ const entry=entries[0];
+ const row={ requestedScene:'M1', label:'Mission 1', scene:entry.scene, character:entry.characterId, role:entry.role, viewport:`${entry.viewportWidth}x${entry.viewportHeight}`, visiblePx:Number(entry.visibleHeight.toFixed(2)), visibleRatio:Number(entry.visibleHeightRatio.toFixed(4)), targetRatio:entry.targetRatio, minRatio:entry.minRatio, maxRatio:entry.maxRatio, footDelta:Number(entry.footDelta.toFixed(2)), result:entry.result };
+ const reportPath=path.join(root,'docs/qa/desktop-character-sizing-audit.json');
+ const report=JSON.parse(fs.readFileSync(reportPath,'utf8'));
+ report.rows=report.rows.filter(r=>!(r.requestedScene==='M1'&&r.viewport==='1280x720'));
+ report.rows.unshift(row);
+ report.failures=report.rows.filter(r=>r.result!=='PASS');
+ report.result=report.failures.length===0 && report.consoleErrors.length===0 && report.failedRequests.length===0 ? 'PASS':'FAIL';
+ fs.writeFileSync(reportPath, JSON.stringify(report,null,2));
+ const header='| SCENE | CHARACTER | ROLE | VIEWPORT | VISIBLE PX | VISIBLE % | TARGET % | MIN % | MAX % | FOOT DELTA | RESULT |';
+ const sep='|---|---|---|---|---:|---:|---:|---:|---:|---:|---|';
+ const lines=[header, sep, ...report.rows.map((r)=>`| ${r.requestedScene} | ${r.character} | ${r.role} | ${r.viewport} | ${r.visiblePx} | ${(r.visibleRatio*100).toFixed(1)} | ${(r.targetRatio*100).toFixed(1)} | ${(r.minRatio*100).toFixed(1)} | ${(r.maxRatio*100).toFixed(1)} | ${r.footDelta} | ${r.result} |`)];
+ fs.writeFileSync(path.join(root,'docs/qa/desktop-character-sizing-audit.md'), `# Desktop Character Sizing Audit\n\n${lines.join('\n')}\n`);
+ console.log(JSON.stringify(row,null,2));
+})();

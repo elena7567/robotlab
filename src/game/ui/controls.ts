@@ -10,12 +10,16 @@ export interface ControlOptions {
   stroke?: number;
   fontSize?: number;
   hitPadding?: number;
+  disabledFill?: number;
+  disabledStroke?: number;
+  disabledAlpha?: number;
 }
 
 interface ControlRuntime {
   enabled: boolean;
   pressed: boolean;
   hovered: boolean;
+  disabledAlpha: number;
   draw: () => void;
   release: () => void;
 }
@@ -29,7 +33,7 @@ export function setControlEnabled(control: Phaser.GameObjects.Container, enabled
   runtime.pressed = false;
   runtime.hovered = false;
   control.scene.tweens.killTweensOf(control);
-  control.setScale(1).setAlpha(enabled ? 1 : 0.42);
+  control.setScale(1).setAlpha(enabled ? 1 : runtime.disabledAlpha);
   runtime.draw();
 }
 
@@ -46,6 +50,9 @@ export function addControl(
   const fill = options.fill ?? UI_COLORS.green;
   const hoverFill = options.hoverFill ?? 0x7dcc54;
   const stroke = options.stroke ?? UI_COLORS.greenDark;
+  const disabledFill = options.disabledFill;
+  const disabledStroke = options.disabledStroke;
+  const disabledAlpha = options.disabledAlpha ?? 0.42;
   const fontSize = options.fontSize ?? 24;
   const hitPadding = options.hitPadding ?? 4;
   const container = scene.add.container(x, y).setSize(width + hitPadding * 2, height + hitPadding * 2);
@@ -57,17 +64,21 @@ export function addControl(
     enabled: true,
     pressed: false,
     hovered: false,
+    disabledAlpha,
     draw: () => undefined,
     release: () => undefined,
   };
   const draw = (): void => {
-    const color = runtime.pressed ? Phaser.Display.Color.ValueToColor(fill).darken(12).color : (runtime.hovered ? hoverFill : fill);
+    const color = !runtime.enabled && disabledFill
+      ? disabledFill
+      : runtime.pressed ? Phaser.Display.Color.ValueToColor(fill).darken(12).color : (runtime.hovered ? hoverFill : fill);
+    const outline = !runtime.enabled && disabledStroke ? disabledStroke : stroke;
     graphics.clear();
     graphics.fillStyle(0x1f3650, runtime.pressed ? 0.12 : 0.24)
       .fillRoundedRect(-width / 2 + 2, -height / 2 + (runtime.pressed ? 2 : 5), width, height, 17);
     graphics.fillStyle(color, 1).fillRoundedRect(-width / 2, -height / 2 + (runtime.pressed ? 2 : 0), width, height - (runtime.pressed ? 2 : 0), 17);
-    graphics.lineStyle(3, stroke, 1).strokeRoundedRect(-width / 2, -height / 2, width, height, 17);
-    graphics.lineStyle(2, 0xffffff, 0.28).strokeRoundedRect(-width / 2 + 4, -height / 2 + 4, width - 8, height - 10, 13);
+    graphics.lineStyle(3, outline, 1).strokeRoundedRect(-width / 2, -height / 2, width, height, 17);
+    graphics.lineStyle(2, 0xffffff, runtime.enabled ? 0.28 : 0.16).strokeRoundedRect(-width / 2 + 4, -height / 2 + 4, width - 8, height - 10, 13);
   };
   runtime.draw = draw;
   runtime.release = (): void => {

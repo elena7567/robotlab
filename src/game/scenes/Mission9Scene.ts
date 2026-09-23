@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { CHARACTER_VISIBLE_BOUNDS, fitVisibleBoundsInRect } from '../assets/characterBounds';
 import { audioManager } from '../audio/AudioManager';
 import { Mission9InteractionController } from '../mechanics/Mission9InteractionController.ts';
 import { MISSION9_PUZZLES, type Mission9CandidateId, type Mission9PlayStage, type Mission9PuzzleDefinition } from '../mechanics/mission9Puzzles.ts';
@@ -11,12 +12,15 @@ import { composeScene, type Mission9SceneLayout } from '../ui/sceneCompositionDi
 import { addLogicalLaboratoryImage, restartOnViewportResize } from '../ui/sceneLayout';
 import { markSceneReady } from '../ui/sceneUi';
 import { CHILD_UI } from '../ui/childUi';
+import { createAssembledRobotPreview } from '../ui/RobotAssemblyPreview';
 import { UI_COLORS, UI_FONT } from '../ui/visualTheme';
+import { DesktopCharacterRole, resolveWorldCharacterScale } from '../characters/CharacterSizingPolicy';
+import { CHARACTER_VISUAL_PROFILES } from '../characters/characterVisualProfiles';
+import { publishCharacterTelemetry } from '../characters/CharacterTelemetry';
 
 interface Bounds { readonly x: number; readonly y: number; readonly width: number; readonly height: number }
 interface GroundingAudit { readonly visibleBottomY: number; readonly groundY: number; readonly delta: number }
 
-const ROBOT_VISIBLE_BOUNDS = { sourceWidth: 991, sourceHeight: 1495, x: 16, y: 16, width: 959, height: 1463 } as const;
 const STAGE_PROGRESS: Readonly<Record<RobotTestCourseStage, number>> = { START: 0, BRIDGE: 0, GATE: 1, POWER: 2, COMPLETE: 3 };
 const FEEDBACK: Readonly<Record<Mission9PlayStage, { readonly wrong: string; readonly solved: string }>> = {
   BRIDGE: { wrong: 'НЕ ПОДХОДИТ', solved: 'МОСТ ГОТОВ' },
@@ -243,22 +247,33 @@ export class Mission9Scene extends Phaser.Scene {
   }
 
   private renderRobot(layout: Mission9SceneLayout, stage: Mission9PlayStage): void {
-    const visibleScale = Math.min(layout.robotScale, layout.robot.width / ROBOT_VISIBLE_BOUNDS.width, layout.robot.height / ROBOT_VISIBLE_BOUNDS.height);
-    const originY = this.robotOriginYForGround(layout.platformContactY, visibleScale);
-    const robot = this.add.container(layout.robot.x + layout.robot.width / 2, originY)
-      .setName('mission9-repaired-robot')
-      .setData({ characterRole: 'PRIMARY_CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', courseStage: stage });
-    const shadowWidth = Math.min(76, ROBOT_VISIBLE_BOUNDS.width * visibleScale * 0.32);
+    const fit = fitVisibleBoundsInRect(CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED, layout.robot, 0.5, 1);
+    const desktop = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP';
+    const visibleScale = desktop ? layout.robotScale : Math.min(layout.robotScale, fit.scale);
+    const feetY = layout.platformContactY + 10 * visibleScale;
+    const robot = createAssembledRobotPreview(this, layout.robot.x + layout.robot.width / 2, feetY, visibleScale, 'mission9-repaired-robot')
+      .setData({ courseStage: stage });
+    robot.setPowered(true);
+    robot.setSystemsConnected(true);
+    const shadowWidth = Math.min(76, CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.width * visibleScale * 0.32);
     const shadow = this.add.ellipse(0, -7 * visibleScale, shadowWidth, Math.max(5, shadowWidth * 0.13), 0x041829, 0.28)
       .setName('mission9-robot-contact-shadow');
-    const actor = this.add.image(0, 0, 'robot-v2-repaired').setOrigin(0.5, 1).setScale(visibleScale)
-      .setName('mission9-repaired-robot-image');
-    robot.add([shadow, actor]);
+    robot.addAt(shadow, 0);
     const grounding = this.robotGrounding(robot.y, visibleScale, layout.platformContactY);
     robot.setData('visibleBottomY', grounding.visibleBottomY).setData('visibleFeetGroundY', grounding.groundY).setData('groundingDelta', grounding.delta);
     this.robot = robot;
     this.stageRoot!.add(robot);
     this.game.registry.set('mission9Grounding', Object.freeze({ ...grounding }));
+    if (desktop) {
+      publishCharacterTelemetry(this, [{
+        characterId: `mission9-${stage.toLowerCase()}-robot`,
+        object: robot,
+        profileId: 'assembled',
+        role: DesktopCharacterRole.WORLD_PRIMARY,
+        sizing: resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_PRIMARY, viewportHeight: this.scale.height }),
+        groundY: layout.platformContactY,
+      }]);
+    }
   }
 
   private renderChoices(layout: Mission9SceneLayout, puzzle: Mission9PuzzleDefinition): void {
@@ -506,14 +521,8 @@ export class Mission9Scene extends Phaser.Scene {
     };
   }
 
-  private robotOriginYForGround(groundY: number, scale: number): number {
-    const visibleBottomSourceY = ROBOT_VISIBLE_BOUNDS.y + ROBOT_VISIBLE_BOUNDS.height - 1;
-    return groundY + (ROBOT_VISIBLE_BOUNDS.sourceHeight - visibleBottomSourceY) * scale;
-  }
-
   private robotGrounding(robotY: number, scale: number, groundY: number): GroundingAudit {
-    const visibleBottomSourceY = ROBOT_VISIBLE_BOUNDS.y + ROBOT_VISIBLE_BOUNDS.height - 1;
-    const visibleBottomY = robotY + (visibleBottomSourceY - ROBOT_VISIBLE_BOUNDS.sourceHeight) * scale;
+    const visibleBottomY = robotY + (CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.top + CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.height) * scale;
     return Object.freeze({ visibleBottomY, groundY, delta: visibleBottomY - groundY });
   }
 
@@ -579,8 +588,8 @@ export class Mission9Scene extends Phaser.Scene {
         color: '#bfffea', fontFamily: UI_FONT, fontSize: `${Math.min(19, Math.max(CHILD_UI.typography.instructionMin, layout.viewportWidth * 0.03))}px`,
         fontStyle: 'bold', align: 'center', wordWrap: { width: width - 42 },
       }).setOrigin(0.5).setData('completionRegion', 'SUBTITLE'),
-      this.add.image(0, height * 0.28, 'robot-v2-repaired').setOrigin(0.5, 1).setScale(robotHeight / 1402)
-        .setName('mission9-completion-robot').setData('completionRegion', 'CHARACTER'),
+      createAssembledRobotPreview(this, 0, height * 0.28, robotHeight / CHARACTER_VISIBLE_BOUNDS.ROBOT_V2_ASSEMBLED.height, 'mission9-completion-robot')
+        .setData({ completionRegion: 'CHARACTER', systemsConnected: true }),
     ]);
     addControl(this, centerX, centerY + height * 0.39, 'К МАЯКУ', () => this.scene.start('Mission10Scene'), {
       width: Math.min(260, width - 48), height: 54,
@@ -588,3 +597,5 @@ export class Mission9Scene extends Phaser.Scene {
     }).setName('mission9-continue-mission10').setDepth(31).setData('completionRegion', 'ACTION');
   }
 }
+
+

@@ -1,0 +1,4303 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "1280x720-step1-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1280x720-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 640,
+        "choiceGroupLeft": 251.84000000000003,
+        "choiceGroupRight": 1028.1599999999999,
+        "choiceGroupCenterX": 640,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 188.60661923885345,
+            "assetVisibleHeight": 68.32043969631195
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 216.0000103712082,
+            "assetVisibleHeight": 68.32044526934624
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 211.837268948555,
+            "assetVisibleHeight": 68.32044516503811
+          }
+        ],
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968,
+        "rightClearance": 251.84000000000015,
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step1-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190.00000000000006
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190.00000000000006
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 239.9999999999999,
+            "height": 190.00000000000006
+          }
+        }
+      ]
+    },
+    {
+      "name": "1280x720-step1-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1280x720-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 640,
+        "choiceGroupLeft": 251.84000000000003,
+        "choiceGroupRight": 1028.1599999999999,
+        "choiceGroupCenterX": 640,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 188.60661923885345,
+            "assetVisibleHeight": 68.32043969631195
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 216.0000103712082,
+            "assetVisibleHeight": 68.32044526934624
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 211.837268948555,
+            "assetVisibleHeight": 68.32044516503811
+          }
+        ],
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968,
+        "rightClearance": 251.84000000000015,
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step1-equal-widths",
+      "ok": true,
+      "actual": [
+        240,
+        240,
+        240
+      ]
+    },
+    {
+      "name": "1280x720-step1-equal-heights",
+      "ok": true,
+      "actual": [
+        190,
+        190,
+        190
+      ]
+    },
+    {
+      "name": "1280x720-step1-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968
+      }
+    },
+    {
+      "name": "1280x720-step1-right-clearance",
+      "ok": true,
+      "actual": 251.84000000000015
+    },
+    {
+      "name": "1280x720-step1-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1280x720-step1-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          68.32043969631195,
+          68.32044526934624,
+          68.32044516503811
+        ],
+        "assetDelta": 0.000008157198426514811
+      }
+    },
+    {
+      "name": "1280x720-step1-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step2-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1280x720-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 640,
+        "choiceGroupLeft": 251.84000000000003,
+        "choiceGroupRight": 1028.1599999999999,
+        "choiceGroupCenterX": 640,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 216.0000103712082,
+            "assetVisibleHeight": 68.32044526934624
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 211.837268948555,
+            "assetVisibleHeight": 68.32044516503811
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 188.60661923885345,
+            "assetVisibleHeight": 68.32043969631195
+          }
+        ],
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968,
+        "rightClearance": 251.84000000000015,
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step2-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190.00000000000006
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190.00000000000006
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 239.9999999999999,
+            "height": 190.00000000000006
+          }
+        }
+      ]
+    },
+    {
+      "name": "1280x720-step2-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1280x720-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 640,
+        "choiceGroupLeft": 251.84000000000003,
+        "choiceGroupRight": 1028.1599999999999,
+        "choiceGroupCenterX": 640,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 216.0000103712082,
+            "assetVisibleHeight": 68.32044526934624
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 211.837268948555,
+            "assetVisibleHeight": 68.32044516503811
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 188.60661923885345,
+            "assetVisibleHeight": 68.32043969631195
+          }
+        ],
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968,
+        "rightClearance": 251.84000000000015,
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step2-equal-widths",
+      "ok": true,
+      "actual": [
+        240,
+        240,
+        240
+      ]
+    },
+    {
+      "name": "1280x720-step2-equal-heights",
+      "ok": true,
+      "actual": [
+        190,
+        190,
+        190
+      ]
+    },
+    {
+      "name": "1280x720-step2-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968
+      }
+    },
+    {
+      "name": "1280x720-step2-right-clearance",
+      "ok": true,
+      "actual": 251.84000000000015
+    },
+    {
+      "name": "1280x720-step2-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1280x720-step2-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          68.32044526934624,
+          68.32044516503811,
+          68.32043969631195
+        ],
+        "assetDelta": 0.000008157198426514811
+      }
+    },
+    {
+      "name": "1280x720-step2-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step2-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.84000000000003,
+        "current": 251.84000000000003
+      }
+    },
+    {
+      "name": "1280x720-step2-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 375.31519999999995,
+        "current": 375.31519999999995
+      }
+    },
+    {
+      "name": "1280x720-step2-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1280x720-step2-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 190,
+        "current": 190
+      }
+    },
+    {
+      "name": "1280x720-step2-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 520,
+        "current": 520
+      }
+    },
+    {
+      "name": "1280x720-step2-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 375.31519999999995,
+        "current": 375.31519999999995
+      }
+    },
+    {
+      "name": "1280x720-step2-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1280x720-step2-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 190,
+        "current": 190
+      }
+    },
+    {
+      "name": "1280x720-step2-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 788.16,
+        "current": 788.16
+      }
+    },
+    {
+      "name": "1280x720-step2-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 375.31519999999995,
+        "current": 375.31519999999995
+      }
+    },
+    {
+      "name": "1280x720-step2-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1280x720-step2-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 190,
+        "current": 190
+      }
+    },
+    {
+      "name": "1280x720-step3-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1280x720-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 640,
+        "choiceGroupLeft": 251.84000000000003,
+        "choiceGroupRight": 1028.1599999999999,
+        "choiceGroupCenterX": 640,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 211.837268948555,
+            "assetVisibleHeight": 68.32044516503811
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 188.60661923885345,
+            "assetVisibleHeight": 68.32043969631195
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 216.0000103712082,
+            "assetVisibleHeight": 68.32044526934624
+          }
+        ],
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968,
+        "rightClearance": 251.84000000000015,
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step3-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190.00000000000006
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190.00000000000006
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 239.9999999999999,
+            "height": 190.00000000000006
+          }
+        }
+      ]
+    },
+    {
+      "name": "1280x720-step3-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1280x720-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 640,
+        "choiceGroupLeft": 251.84000000000003,
+        "choiceGroupRight": 1028.1599999999999,
+        "choiceGroupCenterX": 640,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 251.84000000000003,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 211.837268948555,
+            "assetVisibleHeight": 68.32044516503811
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 520,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 188.60661923885345,
+            "assetVisibleHeight": 68.32043969631195
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 788.16,
+            "y": 375.31519999999995,
+            "width": 240,
+            "height": 190,
+            "assetVisibleWidth": 216.0000103712082,
+            "assetVisibleHeight": 68.32044526934624
+          }
+        ],
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968,
+        "rightClearance": 251.84000000000015,
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step3-equal-widths",
+      "ok": true,
+      "actual": [
+        240,
+        240,
+        240
+      ]
+    },
+    {
+      "name": "1280x720-step3-equal-heights",
+      "ok": true,
+      "actual": [
+        190,
+        190,
+        190
+      ]
+    },
+    {
+      "name": "1280x720-step3-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 28.159999999999968,
+        "gap23": 28.159999999999968
+      }
+    },
+    {
+      "name": "1280x720-step3-right-clearance",
+      "ok": true,
+      "actual": 251.84000000000015
+    },
+    {
+      "name": "1280x720-step3-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 211.84000000000003,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1280x720-step3-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          68.32044516503811,
+          68.32043969631195,
+          68.32044526934624
+        ],
+        "assetDelta": 0.000008157198426514811
+      }
+    },
+    {
+      "name": "1280x720-step3-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1280x720-step3-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.84000000000003,
+        "current": 251.84000000000003
+      }
+    },
+    {
+      "name": "1280x720-step3-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 375.31519999999995,
+        "current": 375.31519999999995
+      }
+    },
+    {
+      "name": "1280x720-step3-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1280x720-step3-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 190,
+        "current": 190
+      }
+    },
+    {
+      "name": "1280x720-step3-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 520,
+        "current": 520
+      }
+    },
+    {
+      "name": "1280x720-step3-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 375.31519999999995,
+        "current": 375.31519999999995
+      }
+    },
+    {
+      "name": "1280x720-step3-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1280x720-step3-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 190,
+        "current": 190
+      }
+    },
+    {
+      "name": "1280x720-step3-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 788.16,
+        "current": 788.16
+      }
+    },
+    {
+      "name": "1280x720-step3-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 375.31519999999995,
+        "current": 375.31519999999995
+      }
+    },
+    {
+      "name": "1280x720-step3-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1280x720-step3-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 190,
+        "current": 190
+      }
+    },
+    {
+      "name": "1438x914-step1-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1438x914-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 719,
+        "choiceGroupLeft": 309.889,
+        "choiceGroupRight": 1128.1109999999999,
+        "choiceGroupCenterX": 719,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 198.7791606783867,
+            "assetVisibleHeight": 72.00531834363937
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 227.64999437332153,
+            "assetVisibleHeight": 72.00531589984894
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 223.2627454996109,
+            "assetVisibleHeight": 72.00531916320324
+          }
+        ],
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008,
+        "rightClearance": 309.8890000000001,
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step1-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999986,
+            "height": 228.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "1438x914-step1-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1438x914-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 719,
+        "choiceGroupLeft": 309.889,
+        "choiceGroupRight": 1128.1109999999999,
+        "choiceGroupCenterX": 719,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 198.7791606783867,
+            "assetVisibleHeight": 72.00531834363937
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 227.64999437332153,
+            "assetVisibleHeight": 72.00531589984894
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 223.2627454996109,
+            "assetVisibleHeight": 72.00531916320324
+          }
+        ],
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008,
+        "rightClearance": 309.8890000000001,
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step1-equal-widths",
+      "ok": true,
+      "actual": [
+        251.64999999999998,
+        251.64999999999998,
+        251.64999999999998
+      ]
+    },
+    {
+      "name": "1438x914-step1-equal-heights",
+      "ok": true,
+      "actual": [
+        228.5,
+        228.5,
+        228.5
+      ]
+    },
+    {
+      "name": "1438x914-step1-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008
+      }
+    },
+    {
+      "name": "1438x914-step1-right-clearance",
+      "ok": true,
+      "actual": 309.8890000000001
+    },
+    {
+      "name": "1438x914-step1-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1438x914-step1-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          72.00531834363937,
+          72.00531589984894,
+          72.00531916320324
+        ],
+        "assetDelta": 0.0000045321017105084974
+      }
+    },
+    {
+      "name": "1438x914-step1-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step2-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1438x914-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 719,
+        "choiceGroupLeft": 309.889,
+        "choiceGroupRight": 1128.1109999999999,
+        "choiceGroupCenterX": 719,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 227.64999437332153,
+            "assetVisibleHeight": 72.00531589984894
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 223.2627454996109,
+            "assetVisibleHeight": 72.00531916320324
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 198.7791606783867,
+            "assetVisibleHeight": 72.00531834363937
+          }
+        ],
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008,
+        "rightClearance": 309.8890000000001,
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step2-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999986,
+            "height": 228.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "1438x914-step2-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1438x914-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 719,
+        "choiceGroupLeft": 309.889,
+        "choiceGroupRight": 1128.1109999999999,
+        "choiceGroupCenterX": 719,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 227.64999437332153,
+            "assetVisibleHeight": 72.00531589984894
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 223.2627454996109,
+            "assetVisibleHeight": 72.00531916320324
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 198.7791606783867,
+            "assetVisibleHeight": 72.00531834363937
+          }
+        ],
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008,
+        "rightClearance": 309.8890000000001,
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step2-equal-widths",
+      "ok": true,
+      "actual": [
+        251.64999999999998,
+        251.64999999999998,
+        251.64999999999998
+      ]
+    },
+    {
+      "name": "1438x914-step2-equal-heights",
+      "ok": true,
+      "actual": [
+        228.5,
+        228.5,
+        228.5
+      ]
+    },
+    {
+      "name": "1438x914-step2-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008
+      }
+    },
+    {
+      "name": "1438x914-step2-right-clearance",
+      "ok": true,
+      "actual": 309.8890000000001
+    },
+    {
+      "name": "1438x914-step2-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1438x914-step2-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          72.00531589984894,
+          72.00531916320324,
+          72.00531834363937
+        ],
+        "assetDelta": 0.0000045321017105084974
+      }
+    },
+    {
+      "name": "1438x914-step2-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step2-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 309.889,
+        "current": 309.889
+      }
+    },
+    {
+      "name": "1438x914-step2-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 473.1099999999999,
+        "current": 473.1099999999999
+      }
+    },
+    {
+      "name": "1438x914-step2-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.64999999999998,
+        "current": 251.64999999999998
+      }
+    },
+    {
+      "name": "1438x914-step2-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 228.5,
+        "current": 228.5
+      }
+    },
+    {
+      "name": "1438x914-step2-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 593.175,
+        "current": 593.175
+      }
+    },
+    {
+      "name": "1438x914-step2-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 473.1099999999999,
+        "current": 473.1099999999999
+      }
+    },
+    {
+      "name": "1438x914-step2-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.64999999999998,
+        "current": 251.64999999999998
+      }
+    },
+    {
+      "name": "1438x914-step2-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 228.5,
+        "current": 228.5
+      }
+    },
+    {
+      "name": "1438x914-step2-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 876.461,
+        "current": 876.461
+      }
+    },
+    {
+      "name": "1438x914-step2-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 473.1099999999999,
+        "current": 473.1099999999999
+      }
+    },
+    {
+      "name": "1438x914-step2-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.64999999999998,
+        "current": 251.64999999999998
+      }
+    },
+    {
+      "name": "1438x914-step2-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 228.5,
+        "current": 228.5
+      }
+    },
+    {
+      "name": "1438x914-step3-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1438x914-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 719,
+        "choiceGroupLeft": 309.889,
+        "choiceGroupRight": 1128.1109999999999,
+        "choiceGroupCenterX": 719,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 223.2627454996109,
+            "assetVisibleHeight": 72.00531916320324
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 198.7791606783867,
+            "assetVisibleHeight": 72.00531834363937
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 227.64999437332153,
+            "assetVisibleHeight": 72.00531589984894
+          }
+        ],
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008,
+        "rightClearance": 309.8890000000001,
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step3-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999986,
+            "height": 228.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "1438x914-step3-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1438x914-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 719,
+        "choiceGroupLeft": 309.889,
+        "choiceGroupRight": 1128.1109999999999,
+        "choiceGroupCenterX": 719,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 309.889,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 223.2627454996109,
+            "assetVisibleHeight": 72.00531916320324
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 593.175,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 198.7791606783867,
+            "assetVisibleHeight": 72.00531834363937
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 876.461,
+            "y": 473.1099999999999,
+            "width": 251.64999999999998,
+            "height": 228.5,
+            "assetVisibleWidth": 227.64999437332153,
+            "assetVisibleHeight": 72.00531589984894
+          }
+        ],
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008,
+        "rightClearance": 309.8890000000001,
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step3-equal-widths",
+      "ok": true,
+      "actual": [
+        251.64999999999998,
+        251.64999999999998,
+        251.64999999999998
+      ]
+    },
+    {
+      "name": "1438x914-step3-equal-heights",
+      "ok": true,
+      "actual": [
+        228.5,
+        228.5,
+        228.5
+      ]
+    },
+    {
+      "name": "1438x914-step3-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 31.635999999999967,
+        "gap23": 31.63600000000008
+      }
+    },
+    {
+      "name": "1438x914-step3-right-clearance",
+      "ok": true,
+      "actual": 309.8890000000001
+    },
+    {
+      "name": "1438x914-step3-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 269.889,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1438x914-step3-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          72.00531916320324,
+          72.00531834363937,
+          72.00531589984894
+        ],
+        "assetDelta": 0.0000045321017105084974
+      }
+    },
+    {
+      "name": "1438x914-step3-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1438x914-step3-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 309.889,
+        "current": 309.889
+      }
+    },
+    {
+      "name": "1438x914-step3-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 473.1099999999999,
+        "current": 473.1099999999999
+      }
+    },
+    {
+      "name": "1438x914-step3-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.64999999999998,
+        "current": 251.64999999999998
+      }
+    },
+    {
+      "name": "1438x914-step3-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 228.5,
+        "current": 228.5
+      }
+    },
+    {
+      "name": "1438x914-step3-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 593.175,
+        "current": 593.175
+      }
+    },
+    {
+      "name": "1438x914-step3-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 473.1099999999999,
+        "current": 473.1099999999999
+      }
+    },
+    {
+      "name": "1438x914-step3-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.64999999999998,
+        "current": 251.64999999999998
+      }
+    },
+    {
+      "name": "1438x914-step3-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 228.5,
+        "current": 228.5
+      }
+    },
+    {
+      "name": "1438x914-step3-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 876.461,
+        "current": 876.461
+      }
+    },
+    {
+      "name": "1438x914-step3-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 473.1099999999999,
+        "current": 473.1099999999999
+      }
+    },
+    {
+      "name": "1438x914-step3-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 251.64999999999998,
+        "current": 251.64999999999998
+      }
+    },
+    {
+      "name": "1438x914-step3-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 228.5,
+        "current": 228.5
+      }
+    },
+    {
+      "name": "1600x900-step1-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1600x900-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 800,
+        "choiceGroupLeft": 344.8,
+        "choiceGroupRight": 1255.2,
+        "choiceGroupCenterX": 800,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 344.8,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 223.53377252817154,
+            "assetVisibleHeight": 80.97237354516983
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 256.00000989437103,
+            "assetVisibleHeight": 80.9723788201809
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 251.06639122962952,
+            "assetVisibleHeight": 80.97237893939018
+          }
+        ],
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045,
+        "rightClearance": 344.79999999999995,
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step1-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 344.8,
+            "y": 466.74,
+            "width": 279.99999999999994,
+            "height": 225
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225
+          }
+        }
+      ]
+    },
+    {
+      "name": "1600x900-step1-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1600x900-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 800,
+        "choiceGroupLeft": 344.8,
+        "choiceGroupRight": 1255.2,
+        "choiceGroupCenterX": 800,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 344.8,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 223.53377252817154,
+            "assetVisibleHeight": 80.97237354516983
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 256.00000989437103,
+            "assetVisibleHeight": 80.9723788201809
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 251.06639122962952,
+            "assetVisibleHeight": 80.97237893939018
+          }
+        ],
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045,
+        "rightClearance": 344.79999999999995,
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step1-equal-widths",
+      "ok": true,
+      "actual": [
+        280,
+        280,
+        280
+      ]
+    },
+    {
+      "name": "1600x900-step1-equal-heights",
+      "ok": true,
+      "actual": [
+        225,
+        225,
+        225
+      ]
+    },
+    {
+      "name": "1600x900-step1-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045
+      }
+    },
+    {
+      "name": "1600x900-step1-right-clearance",
+      "ok": true,
+      "actual": 344.79999999999995
+    },
+    {
+      "name": "1600x900-step1-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1600x900-step1-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          80.97237354516983,
+          80.9723788201809,
+          80.97237893939018
+        ],
+        "assetDelta": 0.000006661802978779416
+      }
+    },
+    {
+      "name": "1600x900-step1-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step2-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1600x900-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 800,
+        "choiceGroupLeft": 344.8,
+        "choiceGroupRight": 1255.2,
+        "choiceGroupCenterX": 800,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 344.8,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 256.00000989437103,
+            "assetVisibleHeight": 80.9723788201809
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 251.06639122962952,
+            "assetVisibleHeight": 80.97237893939018
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 223.53377252817154,
+            "assetVisibleHeight": 80.97237354516983
+          }
+        ],
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045,
+        "rightClearance": 344.79999999999995,
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step2-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 344.8,
+            "y": 466.74,
+            "width": 279.99999999999994,
+            "height": 225
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225
+          }
+        }
+      ]
+    },
+    {
+      "name": "1600x900-step2-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1600x900-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 800,
+        "choiceGroupLeft": 344.8,
+        "choiceGroupRight": 1255.2,
+        "choiceGroupCenterX": 800,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 344.8,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 256.00000989437103,
+            "assetVisibleHeight": 80.9723788201809
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 251.06639122962952,
+            "assetVisibleHeight": 80.97237893939018
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 223.53377252817154,
+            "assetVisibleHeight": 80.97237354516983
+          }
+        ],
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045,
+        "rightClearance": 344.79999999999995,
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step2-equal-widths",
+      "ok": true,
+      "actual": [
+        280,
+        280,
+        280
+      ]
+    },
+    {
+      "name": "1600x900-step2-equal-heights",
+      "ok": true,
+      "actual": [
+        225,
+        225,
+        225
+      ]
+    },
+    {
+      "name": "1600x900-step2-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045
+      }
+    },
+    {
+      "name": "1600x900-step2-right-clearance",
+      "ok": true,
+      "actual": 344.79999999999995
+    },
+    {
+      "name": "1600x900-step2-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1600x900-step2-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          80.9723788201809,
+          80.97237893939018,
+          80.97237354516983
+        ],
+        "assetDelta": 0.000006661802978779416
+      }
+    },
+    {
+      "name": "1600x900-step2-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step2-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 344.8,
+        "current": 344.8
+      }
+    },
+    {
+      "name": "1600x900-step2-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 466.74,
+        "current": 466.74
+      }
+    },
+    {
+      "name": "1600x900-step2-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 280,
+        "current": 280
+      }
+    },
+    {
+      "name": "1600x900-step2-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 225,
+        "current": 225
+      }
+    },
+    {
+      "name": "1600x900-step2-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 660,
+        "current": 660
+      }
+    },
+    {
+      "name": "1600x900-step2-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 466.74,
+        "current": 466.74
+      }
+    },
+    {
+      "name": "1600x900-step2-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 280,
+        "current": 280
+      }
+    },
+    {
+      "name": "1600x900-step2-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 225,
+        "current": 225
+      }
+    },
+    {
+      "name": "1600x900-step2-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 975.2,
+        "current": 975.2
+      }
+    },
+    {
+      "name": "1600x900-step2-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 466.74,
+        "current": 466.74
+      }
+    },
+    {
+      "name": "1600x900-step2-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 280,
+        "current": 280
+      }
+    },
+    {
+      "name": "1600x900-step2-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 225,
+        "current": 225
+      }
+    },
+    {
+      "name": "1600x900-step3-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1600x900-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 800,
+        "choiceGroupLeft": 344.8,
+        "choiceGroupRight": 1255.2,
+        "choiceGroupCenterX": 800,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 344.8,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 251.06639122962952,
+            "assetVisibleHeight": 80.97237893939018
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 223.53377252817154,
+            "assetVisibleHeight": 80.97237354516983
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 256.00000989437103,
+            "assetVisibleHeight": 80.9723788201809
+          }
+        ],
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045,
+        "rightClearance": 344.79999999999995,
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step3-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 344.8,
+            "y": 466.74,
+            "width": 279.99999999999994,
+            "height": 225
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225
+          }
+        }
+      ]
+    },
+    {
+      "name": "1600x900-step3-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1600x900-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 800,
+        "choiceGroupLeft": 344.8,
+        "choiceGroupRight": 1255.2,
+        "choiceGroupCenterX": 800,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 344.8,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 251.06639122962952,
+            "assetVisibleHeight": 80.97237893939018
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 660,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 223.53377252817154,
+            "assetVisibleHeight": 80.97237354516983
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 975.2,
+            "y": 466.74,
+            "width": 280,
+            "height": 225,
+            "assetVisibleWidth": 256.00000989437103,
+            "assetVisibleHeight": 80.9723788201809
+          }
+        ],
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045,
+        "rightClearance": 344.79999999999995,
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step3-equal-widths",
+      "ok": true,
+      "actual": [
+        280,
+        280,
+        280
+      ]
+    },
+    {
+      "name": "1600x900-step3-equal-heights",
+      "ok": true,
+      "actual": [
+        225,
+        225,
+        225
+      ]
+    },
+    {
+      "name": "1600x900-step3-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 35.200000000000045,
+        "gap23": 35.200000000000045
+      }
+    },
+    {
+      "name": "1600x900-step3-right-clearance",
+      "ok": true,
+      "actual": 344.79999999999995
+    },
+    {
+      "name": "1600x900-step3-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 304.8,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1600x900-step3-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          80.97237893939018,
+          80.97237354516983,
+          80.9723788201809
+        ],
+        "assetDelta": 0.000006661802978779416
+      }
+    },
+    {
+      "name": "1600x900-step3-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1600x900-step3-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 344.8,
+        "current": 344.8
+      }
+    },
+    {
+      "name": "1600x900-step3-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 466.74,
+        "current": 466.74
+      }
+    },
+    {
+      "name": "1600x900-step3-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 280,
+        "current": 280
+      }
+    },
+    {
+      "name": "1600x900-step3-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 225,
+        "current": 225
+      }
+    },
+    {
+      "name": "1600x900-step3-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 660,
+        "current": 660
+      }
+    },
+    {
+      "name": "1600x900-step3-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 466.74,
+        "current": 466.74
+      }
+    },
+    {
+      "name": "1600x900-step3-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 280,
+        "current": 280
+      }
+    },
+    {
+      "name": "1600x900-step3-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 225,
+        "current": 225
+      }
+    },
+    {
+      "name": "1600x900-step3-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 975.2,
+        "current": 975.2
+      }
+    },
+    {
+      "name": "1600x900-step3-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 466.74,
+        "current": 466.74
+      }
+    },
+    {
+      "name": "1600x900-step3-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 280,
+        "current": 280
+      }
+    },
+    {
+      "name": "1600x900-step3-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 225,
+        "current": 225
+      }
+    },
+    {
+      "name": "1920x1080-step1-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1920x1080-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 960,
+        "choiceGroupLeft": 440,
+        "choiceGroupRight": 1480,
+        "choiceGroupCenterX": 960,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 258.4609258174896,
+            "assetVisibleHeight": 93.62430739402771
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 296.0000094175339,
+            "assetVisibleHeight": 93.62431237101555
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 290.29551351070404,
+            "assetVisibleHeight": 93.62431271374226
+          }
+        ],
+        "gap12": 40,
+        "gap23": 40,
+        "rightClearance": 440,
+        "robotRight": 400,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step1-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        }
+      ]
+    },
+    {
+      "name": "1920x1080-step1-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1920x1080-step1",
+        "pathDecisionIndex": 0,
+        "platformCenterX": 960,
+        "choiceGroupLeft": 440,
+        "choiceGroupRight": 1480,
+        "choiceGroupCenterX": 960,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 258.4609258174896,
+            "assetVisibleHeight": 93.62430739402771
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 296.0000094175339,
+            "assetVisibleHeight": 93.62431237101555
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 290.29551351070404,
+            "assetVisibleHeight": 93.62431271374226
+          }
+        ],
+        "gap12": 40,
+        "gap23": 40,
+        "rightClearance": 440,
+        "robotRight": 400,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step1-equal-widths",
+      "ok": true,
+      "actual": [
+        320,
+        320,
+        320
+      ]
+    },
+    {
+      "name": "1920x1080-step1-equal-heights",
+      "ok": true,
+      "actual": [
+        240,
+        240,
+        240
+      ]
+    },
+    {
+      "name": "1920x1080-step1-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 40,
+        "gap23": 40
+      }
+    },
+    {
+      "name": "1920x1080-step1-right-clearance",
+      "ok": true,
+      "actual": 440
+    },
+    {
+      "name": "1920x1080-step1-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 400,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1920x1080-step1-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          93.62430739402771,
+          93.62431237101555,
+          93.62431271374226
+        ],
+        "assetDelta": 0.000005681979810595481
+      }
+    },
+    {
+      "name": "1920x1080-step1-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step2-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1920x1080-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 960,
+        "choiceGroupLeft": 440,
+        "choiceGroupRight": 1480,
+        "choiceGroupCenterX": 960,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 296.0000094175339,
+            "assetVisibleHeight": 93.62431237101555
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 290.29551351070404,
+            "assetVisibleHeight": 93.62431271374226
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 258.4609258174896,
+            "assetVisibleHeight": 93.62430739402771
+          }
+        ],
+        "gap12": 40,
+        "gap23": 40,
+        "rightClearance": 440,
+        "robotRight": 400,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step2-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        }
+      ]
+    },
+    {
+      "name": "1920x1080-step2-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1920x1080-step2",
+        "pathDecisionIndex": 1,
+        "platformCenterX": 960,
+        "choiceGroupLeft": 440,
+        "choiceGroupRight": 1480,
+        "choiceGroupCenterX": 960,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "SAFE",
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 296.0000094175339,
+            "assetVisibleHeight": 93.62431237101555
+          },
+          {
+            "id": "CENTER",
+            "kind": "HAZARD",
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 290.29551351070404,
+            "assetVisibleHeight": 93.62431271374226
+          },
+          {
+            "id": "RIGHT",
+            "kind": "LASER",
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 258.4609258174896,
+            "assetVisibleHeight": 93.62430739402771
+          }
+        ],
+        "gap12": 40,
+        "gap23": 40,
+        "rightClearance": 440,
+        "robotRight": 400,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step2-equal-widths",
+      "ok": true,
+      "actual": [
+        320,
+        320,
+        320
+      ]
+    },
+    {
+      "name": "1920x1080-step2-equal-heights",
+      "ok": true,
+      "actual": [
+        240,
+        240,
+        240
+      ]
+    },
+    {
+      "name": "1920x1080-step2-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 40,
+        "gap23": 40
+      }
+    },
+    {
+      "name": "1920x1080-step2-right-clearance",
+      "ok": true,
+      "actual": 440
+    },
+    {
+      "name": "1920x1080-step2-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 400,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1920x1080-step2-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          93.62431237101555,
+          93.62431271374226,
+          93.62430739402771
+        ],
+        "assetDelta": 0.000005681979810595481
+      }
+    },
+    {
+      "name": "1920x1080-step2-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step2-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 440,
+        "current": 440
+      }
+    },
+    {
+      "name": "1920x1080-step2-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 563.64,
+        "current": 563.64
+      }
+    },
+    {
+      "name": "1920x1080-step2-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 320,
+        "current": 320
+      }
+    },
+    {
+      "name": "1920x1080-step2-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1920x1080-step2-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 800,
+        "current": 800
+      }
+    },
+    {
+      "name": "1920x1080-step2-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 563.64,
+        "current": 563.64
+      }
+    },
+    {
+      "name": "1920x1080-step2-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 320,
+        "current": 320
+      }
+    },
+    {
+      "name": "1920x1080-step2-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1920x1080-step2-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 1160,
+        "current": 1160
+      }
+    },
+    {
+      "name": "1920x1080-step2-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 563.64,
+        "current": 563.64
+      }
+    },
+    {
+      "name": "1920x1080-step2-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 320,
+        "current": 320
+      }
+    },
+    {
+      "name": "1920x1080-step2-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1920x1080-step3-one-choice-group",
+      "ok": true,
+      "actual": {
+        "label": "1920x1080-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 960,
+        "choiceGroupLeft": 440,
+        "choiceGroupRight": 1480,
+        "choiceGroupCenterX": 960,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 290.29551351070404,
+            "assetVisibleHeight": 93.62431271374226
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 258.4609258174896,
+            "assetVisibleHeight": 93.62430739402771
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 296.0000094175339,
+            "assetVisibleHeight": 93.62431237101555
+          }
+        ],
+        "gap12": 40,
+        "gap23": 40,
+        "rightClearance": 440,
+        "robotRight": 400,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step3-three-targets",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240
+          }
+        }
+      ]
+    },
+    {
+      "name": "1920x1080-step3-centered-on-platform",
+      "ok": true,
+      "actual": {
+        "label": "1920x1080-step3",
+        "pathDecisionIndex": 2,
+        "platformCenterX": 960,
+        "choiceGroupLeft": 440,
+        "choiceGroupRight": 1480,
+        "choiceGroupCenterX": 960,
+        "choiceGroupCenterDelta": 0,
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "HAZARD",
+            "x": 440,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 290.29551351070404,
+            "assetVisibleHeight": 93.62431271374226
+          },
+          {
+            "id": "CENTER",
+            "kind": "LASER",
+            "x": 800,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 258.4609258174896,
+            "assetVisibleHeight": 93.62430739402771
+          },
+          {
+            "id": "RIGHT",
+            "kind": "SAFE",
+            "x": 1160,
+            "y": 563.64,
+            "width": 320,
+            "height": 240,
+            "assetVisibleWidth": 296.0000094175339,
+            "assetVisibleHeight": 93.62431237101555
+          }
+        ],
+        "gap12": 40,
+        "gap23": 40,
+        "rightClearance": 440,
+        "robotRight": 400,
+        "robotToFirstCardGap": 40,
+        "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+        "targetCount": 3,
+        "groupCount": 1,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step3-equal-widths",
+      "ok": true,
+      "actual": [
+        320,
+        320,
+        320
+      ]
+    },
+    {
+      "name": "1920x1080-step3-equal-heights",
+      "ok": true,
+      "actual": [
+        240,
+        240,
+        240
+      ]
+    },
+    {
+      "name": "1920x1080-step3-equal-gaps",
+      "ok": true,
+      "actual": {
+        "gap12": 40,
+        "gap23": 40
+      }
+    },
+    {
+      "name": "1920x1080-step3-right-clearance",
+      "ok": true,
+      "actual": 440
+    },
+    {
+      "name": "1920x1080-step3-robot-gap",
+      "ok": true,
+      "actual": {
+        "robotRight": 400,
+        "robotToFirstCardGap": 40
+      }
+    },
+    {
+      "name": "1920x1080-step3-asset-size-normalized",
+      "ok": true,
+      "actual": {
+        "assetHeights": [
+          93.62431271374226,
+          93.62430739402771,
+          93.62431237101555
+        ],
+        "assetDelta": 0.000005681979810595481
+      }
+    },
+    {
+      "name": "1920x1080-step3-debug-overlays-absent",
+      "ok": true,
+      "actual": {
+        "registry": false,
+        "debugNamedCount": 0
+      }
+    },
+    {
+      "name": "1920x1080-step3-card1-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 440,
+        "current": 440
+      }
+    },
+    {
+      "name": "1920x1080-step3-card1-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 563.64,
+        "current": 563.64
+      }
+    },
+    {
+      "name": "1920x1080-step3-card1-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 320,
+        "current": 320
+      }
+    },
+    {
+      "name": "1920x1080-step3-card1-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1920x1080-step3-card2-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 800,
+        "current": 800
+      }
+    },
+    {
+      "name": "1920x1080-step3-card2-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 563.64,
+        "current": 563.64
+      }
+    },
+    {
+      "name": "1920x1080-step3-card2-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 320,
+        "current": 320
+      }
+    },
+    {
+      "name": "1920x1080-step3-card2-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "1920x1080-step3-card3-x-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 1160,
+        "current": 1160
+      }
+    },
+    {
+      "name": "1920x1080-step3-card3-y-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 563.64,
+        "current": 563.64
+      }
+    },
+    {
+      "name": "1920x1080-step3-card3-width-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 320,
+        "current": 320
+      }
+    },
+    {
+      "name": "1920x1080-step3-card3-height-stable",
+      "ok": true,
+      "actual": {
+        "baseline": 240,
+        "current": 240
+      }
+    },
+    {
+      "name": "input-LEFT-isolated",
+      "ok": true,
+      "actual": {
+        "laneName": "LEFT",
+        "hazardKind": "LASER",
+        "expectedAdvance": false,
+        "advanced": false,
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 2,
+            "R2": 3,
+            "R3": 2
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "input-CENTER-isolated",
+      "ok": true,
+      "actual": {
+        "laneName": "CENTER",
+        "hazardKind": "SAFE",
+        "expectedAdvance": true,
+        "advanced": true,
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 1,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 2,
+            "R2": 3,
+            "R3": 2
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "input-RIGHT-isolated",
+      "ok": true,
+      "actual": {
+        "laneName": "RIGHT",
+        "hazardKind": "HAZARD",
+        "expectedAdvance": false,
+        "advanced": false,
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 2,
+            "R2": 3,
+            "R3": 2
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        }
+      }
+    },
+    {
+      "name": "mobile-regression-path-playable",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "stage": "PATH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 0,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 2,
+            "R2": 3,
+            "R3": 2
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "presentation": {
+          "platformCenterX": 422,
+          "choiceGroupName": "MISSION10_PATH_CHOICE_GROUP",
+          "choiceGroupLeft": 138.33,
+          "choiceGroupRight": 825.67,
+          "choiceGroupCenterX": 482,
+          "choiceGroupCenterDelta": 60,
+          "choiceGroupBounds": {
+            "x": 138.33,
+            "y": 121.65,
+            "width": 687.34,
+            "height": 250.70000000000002
+          },
+          "cards": [
+            {
+              "id": "LEFT",
+              "kind": "LASER",
+              "x": 138.33,
+              "y": 201.3671188811189,
+              "width": 223.78,
+              "height": 91.26576223776223,
+              "assetVisibleWidth": 181.4290952682495,
+              "assetVisibleHeight": 65.72046947479248
+            },
+            {
+              "id": "CENTER",
+              "kind": "SAFE",
+              "x": 370.11,
+              "y": 201.3671188811189,
+              "width": 223.78,
+              "height": 91.26576223776223,
+              "assetVisibleWidth": 207.77999532222748,
+              "assetVisibleHeight": 65.72046813368797
+            },
+            {
+              "id": "RIGHT",
+              "kind": "HAZARD",
+              "x": 601.89,
+              "y": 201.3671188811189,
+              "width": 223.78,
+              "height": 91.26576223776223,
+              "assetVisibleWidth": 203.7756713628769,
+              "assetVisibleHeight": 65.72046859562397
+            }
+          ],
+          "gap12": 8,
+          "gap23": 8,
+          "rightClearance": 18.33000000000004,
+          "robotRight": 132.55480167014613,
+          "robotToFirstCardGap": 5.775198329853879,
+          "robotScale": 0.11691022964509394,
+          "debugOverlaysVisible": false
+        },
+        "contract": {
+          "stage": "PATH",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 2,
+          "targetCount": 0,
+          "timerCount": 0
+        },
+        "targets": [
+          {
+            "name": "mission10-path-target-left",
+            "laneId": "LEFT",
+            "hazardKind": "LASER",
+            "bounds": {
+              "x": 138.33000000000004,
+              "y": 201.36711888111887,
+              "width": 223.77999999999997,
+              "height": 91.2657622377622
+            }
+          },
+          {
+            "name": "mission10-path-target-center",
+            "laneId": "CENTER",
+            "hazardKind": "SAFE",
+            "bounds": {
+              "x": 370.11,
+              "y": 201.36711888111887,
+              "width": 223.77999999999997,
+              "height": 91.2657622377622
+            }
+          },
+          {
+            "name": "mission10-path-target-right",
+            "laneId": "RIGHT",
+            "hazardKind": "HAZARD",
+            "bounds": {
+              "x": 601.89,
+              "y": 201.36711888111887,
+              "width": 223.77999999999997,
+              "height": 91.2657622377622
+            }
+          }
+        ],
+        "groupCount": 1,
+        "debugNamedCount": 0,
+        "stageRootCount": 1
+      }
+    }
+  ],
+  "errors": [],
+  "viewports": [
+    "1280x720",
+    "1438x914",
+    "1600x900",
+    "1920x1080"
+  ],
+  "steps": [
+    {
+      "label": "1280x720-step1",
+      "pathDecisionIndex": 0,
+      "platformCenterX": 640,
+      "choiceGroupLeft": 251.84000000000003,
+      "choiceGroupRight": 1028.1599999999999,
+      "choiceGroupCenterX": 640,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "LASER",
+          "x": 251.84000000000003,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 188.60661923885345,
+          "assetVisibleHeight": 68.32043969631195
+        },
+        {
+          "id": "CENTER",
+          "kind": "SAFE",
+          "x": 520,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 216.0000103712082,
+          "assetVisibleHeight": 68.32044526934624
+        },
+        {
+          "id": "RIGHT",
+          "kind": "HAZARD",
+          "x": 788.16,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 211.837268948555,
+          "assetVisibleHeight": 68.32044516503811
+        }
+      ],
+      "gap12": 28.159999999999968,
+      "gap23": 28.159999999999968,
+      "rightClearance": 251.84000000000015,
+      "robotRight": 211.84000000000003,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1280x720-step2",
+      "pathDecisionIndex": 1,
+      "platformCenterX": 640,
+      "choiceGroupLeft": 251.84000000000003,
+      "choiceGroupRight": 1028.1599999999999,
+      "choiceGroupCenterX": 640,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "SAFE",
+          "x": 251.84000000000003,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 216.0000103712082,
+          "assetVisibleHeight": 68.32044526934624
+        },
+        {
+          "id": "CENTER",
+          "kind": "HAZARD",
+          "x": 520,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 211.837268948555,
+          "assetVisibleHeight": 68.32044516503811
+        },
+        {
+          "id": "RIGHT",
+          "kind": "LASER",
+          "x": 788.16,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 188.60661923885345,
+          "assetVisibleHeight": 68.32043969631195
+        }
+      ],
+      "gap12": 28.159999999999968,
+      "gap23": 28.159999999999968,
+      "rightClearance": 251.84000000000015,
+      "robotRight": 211.84000000000003,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1280x720-step3",
+      "pathDecisionIndex": 2,
+      "platformCenterX": 640,
+      "choiceGroupLeft": 251.84000000000003,
+      "choiceGroupRight": 1028.1599999999999,
+      "choiceGroupCenterX": 640,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "HAZARD",
+          "x": 251.84000000000003,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 211.837268948555,
+          "assetVisibleHeight": 68.32044516503811
+        },
+        {
+          "id": "CENTER",
+          "kind": "LASER",
+          "x": 520,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 188.60661923885345,
+          "assetVisibleHeight": 68.32043969631195
+        },
+        {
+          "id": "RIGHT",
+          "kind": "SAFE",
+          "x": 788.16,
+          "y": 375.31519999999995,
+          "width": 240,
+          "height": 190,
+          "assetVisibleWidth": 216.0000103712082,
+          "assetVisibleHeight": 68.32044526934624
+        }
+      ],
+      "gap12": 28.159999999999968,
+      "gap23": 28.159999999999968,
+      "rightClearance": 251.84000000000015,
+      "robotRight": 211.84000000000003,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000008157198426514811,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1438x914-step1",
+      "pathDecisionIndex": 0,
+      "platformCenterX": 719,
+      "choiceGroupLeft": 309.889,
+      "choiceGroupRight": 1128.1109999999999,
+      "choiceGroupCenterX": 719,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "LASER",
+          "x": 309.889,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 198.7791606783867,
+          "assetVisibleHeight": 72.00531834363937
+        },
+        {
+          "id": "CENTER",
+          "kind": "SAFE",
+          "x": 593.175,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 227.64999437332153,
+          "assetVisibleHeight": 72.00531589984894
+        },
+        {
+          "id": "RIGHT",
+          "kind": "HAZARD",
+          "x": 876.461,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 223.2627454996109,
+          "assetVisibleHeight": 72.00531916320324
+        }
+      ],
+      "gap12": 31.635999999999967,
+      "gap23": 31.63600000000008,
+      "rightClearance": 309.8890000000001,
+      "robotRight": 269.889,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1438x914-step2",
+      "pathDecisionIndex": 1,
+      "platformCenterX": 719,
+      "choiceGroupLeft": 309.889,
+      "choiceGroupRight": 1128.1109999999999,
+      "choiceGroupCenterX": 719,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "SAFE",
+          "x": 309.889,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 227.64999437332153,
+          "assetVisibleHeight": 72.00531589984894
+        },
+        {
+          "id": "CENTER",
+          "kind": "HAZARD",
+          "x": 593.175,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 223.2627454996109,
+          "assetVisibleHeight": 72.00531916320324
+        },
+        {
+          "id": "RIGHT",
+          "kind": "LASER",
+          "x": 876.461,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 198.7791606783867,
+          "assetVisibleHeight": 72.00531834363937
+        }
+      ],
+      "gap12": 31.635999999999967,
+      "gap23": 31.63600000000008,
+      "rightClearance": 309.8890000000001,
+      "robotRight": 269.889,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1438x914-step3",
+      "pathDecisionIndex": 2,
+      "platformCenterX": 719,
+      "choiceGroupLeft": 309.889,
+      "choiceGroupRight": 1128.1109999999999,
+      "choiceGroupCenterX": 719,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "HAZARD",
+          "x": 309.889,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 223.2627454996109,
+          "assetVisibleHeight": 72.00531916320324
+        },
+        {
+          "id": "CENTER",
+          "kind": "LASER",
+          "x": 593.175,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 198.7791606783867,
+          "assetVisibleHeight": 72.00531834363937
+        },
+        {
+          "id": "RIGHT",
+          "kind": "SAFE",
+          "x": 876.461,
+          "y": 473.1099999999999,
+          "width": 251.64999999999998,
+          "height": 228.5,
+          "assetVisibleWidth": 227.64999437332153,
+          "assetVisibleHeight": 72.00531589984894
+        }
+      ],
+      "gap12": 31.635999999999967,
+      "gap23": 31.63600000000008,
+      "rightClearance": 309.8890000000001,
+      "robotRight": 269.889,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.0000045321017105084974,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1600x900-step1",
+      "pathDecisionIndex": 0,
+      "platformCenterX": 800,
+      "choiceGroupLeft": 344.8,
+      "choiceGroupRight": 1255.2,
+      "choiceGroupCenterX": 800,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "LASER",
+          "x": 344.8,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 223.53377252817154,
+          "assetVisibleHeight": 80.97237354516983
+        },
+        {
+          "id": "CENTER",
+          "kind": "SAFE",
+          "x": 660,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 256.00000989437103,
+          "assetVisibleHeight": 80.9723788201809
+        },
+        {
+          "id": "RIGHT",
+          "kind": "HAZARD",
+          "x": 975.2,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 251.06639122962952,
+          "assetVisibleHeight": 80.97237893939018
+        }
+      ],
+      "gap12": 35.200000000000045,
+      "gap23": 35.200000000000045,
+      "rightClearance": 344.79999999999995,
+      "robotRight": 304.8,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1600x900-step2",
+      "pathDecisionIndex": 1,
+      "platformCenterX": 800,
+      "choiceGroupLeft": 344.8,
+      "choiceGroupRight": 1255.2,
+      "choiceGroupCenterX": 800,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "SAFE",
+          "x": 344.8,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 256.00000989437103,
+          "assetVisibleHeight": 80.9723788201809
+        },
+        {
+          "id": "CENTER",
+          "kind": "HAZARD",
+          "x": 660,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 251.06639122962952,
+          "assetVisibleHeight": 80.97237893939018
+        },
+        {
+          "id": "RIGHT",
+          "kind": "LASER",
+          "x": 975.2,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 223.53377252817154,
+          "assetVisibleHeight": 80.97237354516983
+        }
+      ],
+      "gap12": 35.200000000000045,
+      "gap23": 35.200000000000045,
+      "rightClearance": 344.79999999999995,
+      "robotRight": 304.8,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1600x900-step3",
+      "pathDecisionIndex": 2,
+      "platformCenterX": 800,
+      "choiceGroupLeft": 344.8,
+      "choiceGroupRight": 1255.2,
+      "choiceGroupCenterX": 800,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "HAZARD",
+          "x": 344.8,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 251.06639122962952,
+          "assetVisibleHeight": 80.97237893939018
+        },
+        {
+          "id": "CENTER",
+          "kind": "LASER",
+          "x": 660,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 223.53377252817154,
+          "assetVisibleHeight": 80.97237354516983
+        },
+        {
+          "id": "RIGHT",
+          "kind": "SAFE",
+          "x": 975.2,
+          "y": 466.74,
+          "width": 280,
+          "height": 225,
+          "assetVisibleWidth": 256.00000989437103,
+          "assetVisibleHeight": 80.9723788201809
+        }
+      ],
+      "gap12": 35.200000000000045,
+      "gap23": 35.200000000000045,
+      "rightClearance": 344.79999999999995,
+      "robotRight": 304.8,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000006661802978779416,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1920x1080-step1",
+      "pathDecisionIndex": 0,
+      "platformCenterX": 960,
+      "choiceGroupLeft": 440,
+      "choiceGroupRight": 1480,
+      "choiceGroupCenterX": 960,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "LASER",
+          "x": 440,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 258.4609258174896,
+          "assetVisibleHeight": 93.62430739402771
+        },
+        {
+          "id": "CENTER",
+          "kind": "SAFE",
+          "x": 800,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 296.0000094175339,
+          "assetVisibleHeight": 93.62431237101555
+        },
+        {
+          "id": "RIGHT",
+          "kind": "HAZARD",
+          "x": 1160,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 290.29551351070404,
+          "assetVisibleHeight": 93.62431271374226
+        }
+      ],
+      "gap12": 40,
+      "gap23": 40,
+      "rightClearance": 440,
+      "robotRight": 400,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1920x1080-step2",
+      "pathDecisionIndex": 1,
+      "platformCenterX": 960,
+      "choiceGroupLeft": 440,
+      "choiceGroupRight": 1480,
+      "choiceGroupCenterX": 960,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "SAFE",
+          "x": 440,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 296.0000094175339,
+          "assetVisibleHeight": 93.62431237101555
+        },
+        {
+          "id": "CENTER",
+          "kind": "HAZARD",
+          "x": 800,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 290.29551351070404,
+          "assetVisibleHeight": 93.62431271374226
+        },
+        {
+          "id": "RIGHT",
+          "kind": "LASER",
+          "x": 1160,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 258.4609258174896,
+          "assetVisibleHeight": 93.62430739402771
+        }
+      ],
+      "gap12": 40,
+      "gap23": 40,
+      "rightClearance": 440,
+      "robotRight": 400,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    },
+    {
+      "label": "1920x1080-step3",
+      "pathDecisionIndex": 2,
+      "platformCenterX": 960,
+      "choiceGroupLeft": 440,
+      "choiceGroupRight": 1480,
+      "choiceGroupCenterX": 960,
+      "choiceGroupCenterDelta": 0,
+      "cards": [
+        {
+          "id": "LEFT",
+          "kind": "HAZARD",
+          "x": 440,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 290.29551351070404,
+          "assetVisibleHeight": 93.62431271374226
+        },
+        {
+          "id": "CENTER",
+          "kind": "LASER",
+          "x": 800,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 258.4609258174896,
+          "assetVisibleHeight": 93.62430739402771
+        },
+        {
+          "id": "RIGHT",
+          "kind": "SAFE",
+          "x": 1160,
+          "y": 563.64,
+          "width": 320,
+          "height": 240,
+          "assetVisibleWidth": 296.0000094175339,
+          "assetVisibleHeight": 93.62431237101555
+        }
+      ],
+      "gap12": 40,
+      "gap23": 40,
+      "rightClearance": 440,
+      "robotRight": 400,
+      "robotToFirstCardGap": 40,
+      "maxOptionAssetSizeDeltaPercent": 0.000005681979810595481,
+      "targetCount": 3,
+      "groupCount": 1,
+      "debugNamedCount": 0
+    }
+  ],
+  "input": [
+    {
+      "laneName": "LEFT",
+      "hazardKind": "LASER",
+      "expectedAdvance": false,
+      "advanced": false,
+      "snapshot": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "laneName": "CENTER",
+      "hazardKind": "SAFE",
+      "expectedAdvance": true,
+      "advanced": true,
+      "snapshot": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 1,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "laneName": "RIGHT",
+      "hazardKind": "HAZARD",
+      "expectedAdvance": false,
+      "advanced": false,
+      "snapshot": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "snapshot": {
+        "stage": "PATH",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 0,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      },
+      "presentation": {
+        "platformCenterX": 422,
+        "choiceGroupName": "MISSION10_PATH_CHOICE_GROUP",
+        "choiceGroupLeft": 138.33,
+        "choiceGroupRight": 825.67,
+        "choiceGroupCenterX": 482,
+        "choiceGroupCenterDelta": 60,
+        "choiceGroupBounds": {
+          "x": 138.33,
+          "y": 121.65,
+          "width": 687.34,
+          "height": 250.70000000000002
+        },
+        "cards": [
+          {
+            "id": "LEFT",
+            "kind": "LASER",
+            "x": 138.33,
+            "y": 201.3671188811189,
+            "width": 223.78,
+            "height": 91.26576223776223,
+            "assetVisibleWidth": 181.4290952682495,
+            "assetVisibleHeight": 65.72046947479248
+          },
+          {
+            "id": "CENTER",
+            "kind": "SAFE",
+            "x": 370.11,
+            "y": 201.3671188811189,
+            "width": 223.78,
+            "height": 91.26576223776223,
+            "assetVisibleWidth": 207.77999532222748,
+            "assetVisibleHeight": 65.72046813368797
+          },
+          {
+            "id": "RIGHT",
+            "kind": "HAZARD",
+            "x": 601.89,
+            "y": 201.3671188811189,
+            "width": 223.78,
+            "height": 91.26576223776223,
+            "assetVisibleWidth": 203.7756713628769,
+            "assetVisibleHeight": 65.72046859562397
+          }
+        ],
+        "gap12": 8,
+        "gap23": 8,
+        "rightClearance": 18.33000000000004,
+        "robotRight": 132.55480167014613,
+        "robotToFirstCardGap": 5.775198329853879,
+        "robotScale": 0.11691022964509394,
+        "debugOverlaysVisible": false
+      },
+      "contract": {
+        "stage": "PATH",
+        "interactionLocked": false,
+        "pointerOwner": null,
+        "generation": 2,
+        "targetCount": 0,
+        "timerCount": 0
+      },
+      "targets": [
+        {
+          "name": "mission10-path-target-left",
+          "laneId": "LEFT",
+          "hazardKind": "LASER",
+          "bounds": {
+            "x": 138.33000000000004,
+            "y": 201.36711888111887,
+            "width": 223.77999999999997,
+            "height": 91.2657622377622
+          }
+        },
+        {
+          "name": "mission10-path-target-center",
+          "laneId": "CENTER",
+          "hazardKind": "SAFE",
+          "bounds": {
+            "x": 370.11,
+            "y": 201.36711888111887,
+            "width": 223.77999999999997,
+            "height": 91.2657622377622
+          }
+        },
+        {
+          "name": "mission10-path-target-right",
+          "laneId": "RIGHT",
+          "hazardKind": "HAZARD",
+          "bounds": {
+            "x": 601.89,
+            "y": 201.36711888111887,
+            "width": 223.77999999999997,
+            "height": 91.2657622377622
+          }
+        }
+      ],
+      "groupCount": 1,
+      "debugNamedCount": 0,
+      "stageRootCount": 1
+    }
+  ],
+  "shot-1280x720-step1": "docs\\qa\\screenshots\\mission10-path-step1-1280x720.png",
+  "shot-1280x720-step2": "docs\\qa\\screenshots\\mission10-path-step2-1280x720.png",
+  "shot-1280x720-step3": "docs\\qa\\screenshots\\mission10-path-step3-1280x720.png",
+  "shot-1600x900-step1": "docs\\qa\\screenshots\\mission10-path-step1-1600x900.png",
+  "shot-1600x900-step2": "docs\\qa\\screenshots\\mission10-path-step2-1600x900.png",
+  "shot-1600x900-step3": "docs\\qa\\screenshots\\mission10-path-step3-1600x900.png",
+  "shot-1920x1080-step1": "docs\\qa\\screenshots\\mission10-path-step1-1920x1080.png"
+}

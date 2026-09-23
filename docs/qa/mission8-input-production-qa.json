@@ -1,0 +1,566 @@
+{
+  "initial": {
+    "mechanic": {
+      "challengeIndex": 0,
+      "challengeCount": 3,
+      "challenge": {
+        "id": "straight",
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [],
+        "shortestPathLength": 2,
+        "longestSimplePathLength": 6,
+        "simpleRouteCount": 6,
+        "maxCommands": 6
+      },
+      "commands": [],
+      "robotPosition": {
+        "column": 0,
+        "row": 1
+      },
+      "running": false,
+      "routeComplete": false,
+      "completed": false
+    },
+    "stripCommands": [],
+    "maxCommands": 6,
+    "runEnabled": false,
+    "deleteEnabled": false,
+    "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+  },
+  "afterDisabledLaunchClick": {
+    "mechanic": {
+      "challengeIndex": 0,
+      "challengeCount": 3,
+      "challenge": {
+        "id": "straight",
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [],
+        "shortestPathLength": 2,
+        "longestSimplePathLength": 6,
+        "simpleRouteCount": 6,
+        "maxCommands": 6
+      },
+      "commands": [],
+      "robotPosition": {
+        "column": 0,
+        "row": 1
+      },
+      "running": false,
+      "routeComplete": false,
+      "completed": false
+    },
+    "stripCommands": [],
+    "maxCommands": 6,
+    "runEnabled": false,
+    "deleteEnabled": false,
+    "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+  },
+  "afterRight": {
+    "mechanic": {
+      "challengeIndex": 0,
+      "challengeCount": 3,
+      "challenge": {
+        "id": "straight",
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [],
+        "shortestPathLength": 2,
+        "longestSimplePathLength": 6,
+        "simpleRouteCount": 6,
+        "maxCommands": 6
+      },
+      "commands": [
+        "RIGHT"
+      ],
+      "robotPosition": {
+        "column": 0,
+        "row": 1
+      },
+      "running": false,
+      "routeComplete": false,
+      "completed": false
+    },
+    "stripCommands": [
+      "RIGHT"
+    ],
+    "maxCommands": 6,
+    "runEnabled": true,
+    "deleteEnabled": true,
+    "feedback": ""
+  },
+  "afterDelete": {
+    "mechanic": {
+      "challengeIndex": 0,
+      "challengeCount": 3,
+      "challenge": {
+        "id": "straight",
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [],
+        "shortestPathLength": 2,
+        "longestSimplePathLength": 6,
+        "simpleRouteCount": 6,
+        "maxCommands": 6
+      },
+      "commands": [],
+      "robotPosition": {
+        "column": 0,
+        "row": 1
+      },
+      "running": false,
+      "routeComplete": false,
+      "completed": false
+    },
+    "stripCommands": [],
+    "maxCommands": 6,
+    "runEnabled": false,
+    "deleteEnabled": false,
+    "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+  },
+  "afterHint": {
+    "mechanic": {
+      "challengeIndex": 0,
+      "challengeCount": 3,
+      "challenge": {
+        "id": "straight",
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [],
+        "shortestPathLength": 2,
+        "longestSimplePathLength": 6,
+        "simpleRouteCount": 6,
+        "maxCommands": 6
+      },
+      "commands": [],
+      "robotPosition": {
+        "column": 0,
+        "row": 1
+      },
+      "running": false,
+      "routeComplete": false,
+      "completed": false
+    },
+    "stripCommands": [],
+    "maxCommands": 6,
+    "runEnabled": false,
+    "deleteEnabled": false,
+    "feedback": "ПОПРОБУЙ →"
+  },
+  "afterRapid": {
+    "mechanic": {
+      "challengeIndex": 0,
+      "challengeCount": 3,
+      "challenge": {
+        "id": "straight",
+        "columns": 4,
+        "rows": 2,
+        "start": {
+          "column": 0,
+          "row": 1
+        },
+        "targetCell": {
+          "column": 2,
+          "row": 1
+        },
+        "obstacles": [],
+        "shortestPathLength": 2,
+        "longestSimplePathLength": 6,
+        "simpleRouteCount": 6,
+        "maxCommands": 6
+      },
+      "commands": [
+        "RIGHT",
+        "RIGHT",
+        "RIGHT",
+        "RIGHT",
+        "RIGHT",
+        "RIGHT"
+      ],
+      "robotPosition": {
+        "column": 0,
+        "row": 1
+      },
+      "running": false,
+      "routeComplete": false,
+      "completed": false
+    },
+    "stripCommands": [
+      "RIGHT",
+      "RIGHT",
+      "RIGHT",
+      "RIGHT",
+      "RIGHT",
+      "RIGHT"
+    ],
+    "maxCommands": 6,
+    "runEnabled": true,
+    "deleteEnabled": true,
+    "feedback": "КОМАНДЫ ЗАПОЛНЕНЫ"
+  },
+  "solvedRoutes": [
+    {
+      "routeIndex": 1,
+      "beforeRun": {
+        "mechanic": {
+          "challengeIndex": 0,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "straight",
+            "columns": 4,
+            "rows": 2,
+            "start": {
+              "column": 0,
+              "row": 1
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "obstacles": [],
+            "shortestPathLength": 2,
+            "longestSimplePathLength": 6,
+            "simpleRouteCount": 6,
+            "maxCommands": 6
+          },
+          "commands": [
+            "RIGHT",
+            "RIGHT"
+          ],
+          "robotPosition": {
+            "column": 0,
+            "row": 1
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        },
+        "stripCommands": [
+          "RIGHT",
+          "RIGHT"
+        ],
+        "maxCommands": 6,
+        "runEnabled": true,
+        "deleteEnabled": true,
+        "feedback": ""
+      },
+      "afterRun": {
+        "mechanic": {
+          "challengeIndex": 1,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "turn",
+            "columns": 4,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "obstacles": [
+              {
+                "column": 1,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 3,
+            "longestSimplePathLength": 9,
+            "simpleRouteCount": 6,
+            "maxCommands": 9
+          },
+          "commands": [],
+          "robotPosition": {
+            "column": 0,
+            "row": 2
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        },
+        "stripCommands": [],
+        "maxCommands": 9,
+        "runEnabled": false,
+        "deleteEnabled": false,
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+      }
+    },
+    {
+      "routeIndex": 2,
+      "beforeRun": {
+        "mechanic": {
+          "challengeIndex": 1,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "turn",
+            "columns": 4,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 2,
+              "row": 1
+            },
+            "obstacles": [
+              {
+                "column": 1,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 3,
+            "longestSimplePathLength": 9,
+            "simpleRouteCount": 6,
+            "maxCommands": 9
+          },
+          "commands": [
+            "RIGHT",
+            "RIGHT",
+            "UP"
+          ],
+          "robotPosition": {
+            "column": 0,
+            "row": 2
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        },
+        "stripCommands": [
+          "RIGHT",
+          "RIGHT",
+          "UP"
+        ],
+        "maxCommands": 9,
+        "runEnabled": true,
+        "deleteEnabled": true,
+        "feedback": ""
+      },
+      "afterRun": {
+        "mechanic": {
+          "challengeIndex": 2,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "navigation",
+            "columns": 5,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "obstacles": [
+              {
+                "column": 2,
+                "row": 2
+              },
+              {
+                "column": 3,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 5,
+            "longestSimplePathLength": 7,
+            "simpleRouteCount": 7,
+            "maxCommands": 7
+          },
+          "commands": [],
+          "robotPosition": {
+            "column": 0,
+            "row": 2
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        },
+        "stripCommands": [],
+        "maxCommands": 7,
+        "runEnabled": false,
+        "deleteEnabled": false,
+        "feedback": "ВЫБЕРИ НАПРАВЛЕНИЕ"
+      }
+    },
+    {
+      "routeIndex": 3,
+      "beforeRun": {
+        "mechanic": {
+          "challengeIndex": 2,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "navigation",
+            "columns": 5,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "obstacles": [
+              {
+                "column": 2,
+                "row": 2
+              },
+              {
+                "column": 3,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 5,
+            "longestSimplePathLength": 7,
+            "simpleRouteCount": 7,
+            "maxCommands": 7
+          },
+          "commands": [
+            "RIGHT",
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "robotPosition": {
+            "column": 0,
+            "row": 2
+          },
+          "running": false,
+          "routeComplete": false,
+          "completed": false
+        },
+        "stripCommands": [
+          "RIGHT",
+          "UP",
+          "UP",
+          "RIGHT",
+          "RIGHT"
+        ],
+        "maxCommands": 7,
+        "runEnabled": true,
+        "deleteEnabled": true,
+        "feedback": ""
+      },
+      "afterRun": {
+        "mechanic": {
+          "challengeIndex": 2,
+          "challengeCount": 3,
+          "challenge": {
+            "id": "navigation",
+            "columns": 5,
+            "rows": 3,
+            "start": {
+              "column": 0,
+              "row": 2
+            },
+            "targetCell": {
+              "column": 3,
+              "row": 0
+            },
+            "obstacles": [
+              {
+                "column": 2,
+                "row": 2
+              },
+              {
+                "column": 3,
+                "row": 1
+              }
+            ],
+            "shortestPathLength": 5,
+            "longestSimplePathLength": 7,
+            "simpleRouteCount": 7,
+            "maxCommands": 7
+          },
+          "commands": [
+            "RIGHT",
+            "UP",
+            "UP",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "robotPosition": {
+            "column": 3,
+            "row": 0
+          },
+          "running": false,
+          "routeComplete": true,
+          "completed": true
+        },
+        "stripCommands": [
+          "RIGHT",
+          "UP",
+          "UP",
+          "RIGHT",
+          "RIGHT"
+        ],
+        "maxCommands": 7,
+        "runEnabled": false,
+        "deleteEnabled": false,
+        "feedback": "ПРОГРАММА РАБОТАЕТ!"
+      }
+    }
+  ],
+  "errors": {
+    "console": [],
+    "page": [],
+    "requests": [],
+    "responses": []
+  },
+  "checks": {
+    "launchDisabledWhenEmpty": true,
+    "directionClickAddsCommand": true,
+    "routeSlotUpdates": true,
+    "deleteRemovesExpectedCommand": true,
+    "hintWorks": true,
+    "rapidTapsDoNotExceedCapacity": true,
+    "allThreeMapsSolvable": true,
+    "browserClean": true
+  }
+}

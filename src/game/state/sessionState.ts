@@ -33,8 +33,14 @@ export const sessionState = {
     };
   },
   reset(): void { state = createInitialState(); },
+  enterMission6Qa(): void {
+    state = { currentTask: 6, completedTasks: 5, totalTasks: 10, score: 5 };
+  },
   enterMission7Qa(): void {
     state = { currentTask: 7, completedTasks: 6, totalTasks: 10, score: 6 };
+  },
+  enterMission8Qa(): void {
+    state = { currentTask: 8, completedTasks: 7, totalTasks: 10, score: 7 };
   },
   enterMission9Qa(): void {
     state = { currentTask: 9, completedTasks: 8, totalTasks: 10, score: 8 };
