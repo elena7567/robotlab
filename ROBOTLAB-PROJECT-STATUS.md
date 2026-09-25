@@ -1,3 +1,9 @@
+## 2026-09-25 — MISSION 10 SIGNAL_C QA VARIANT INSPECTION
+
+- Result: `SIGNAL_C_VISUAL_FAIL`. Added a QA-only `signalVariant=A|B|C` selector, honored exclusively when `qaMission=10&stage=signal`. The normal Mission 10 seed/config selection, all non-signal stage shortcuts, solver, progression, mobile branch, ENERGY, PATH, audio, character sizing, and Victory were not changed.
+- Live production inspection: `http://127.0.0.1:4198/?qaMission=10&stage=signal&signalVariant=C` rendered one source, three reflectors, and one receiver. The two right-side reflectors (M2 and M3) visibly overlap/crowd one another. The receiver remains visually distinct, but the apparatus group is unbalanced on the platform and the initially shown beam stops at M1, making the full intended route hard to trace.
+- Verification: `npm run typecheck` PASS; `npm run review` PASS (production build); direct QA HTTP `200` PASS; live browser screenshot inspection PASS. No layout correction was made. Files modified: `src/game/scenes/PreloadScene.ts`, `src/game/mechanics/mission10/mission10Controller.ts`, and this status file. No files created, moved, or deleted. No commit, push, or deploy performed.
+
 ## 2026-09-25 — FINAL RELEASE GATE
 
 - Result: `RELEASE_CANDIDATE_READY`. The frozen game received no production-code changes during this gate. Final production-preview QA passed character sizing (60 rows), antenna continuity (92 checks), mobile/tablet regression (18 checks), Mission 7 orientation/state preservation, Mission 9 mouse/touch/responsive/lifecycle flow, Mission 10 gold candidate (59 checks), audio unlock/mute/handoff/lifecycle, and Victory replay/reduced motion.
@@ -95,6 +101,14 @@
 - Manual review URLs: PC Mission 7 `http://127.0.0.1:4198/?qaMission=7`; PC Mission 8 `http://127.0.0.1:4198/?qaMission=8`; Samsung Mission 7 `http://192.168.0.107:4198/?qaMission=7`; Samsung Mission 8 `http://192.168.0.107:4198/?qaMission=8`.
 - Files changed for this pass: `src/game/ui/sceneCompositionDirector.ts`, `src/game/scenes/Mission8Scene.ts`, `qa/mission7-8-final-desktop-ui-review.cjs`, `docs/qa/mission7-8-final-desktop-ui-review.json`, refreshed final Mission 7/8 screenshots, and this status file. Files moved/deleted: none. No commit or push performed. Pre-existing unrelated working-tree changes were preserved.
 # RobotLab project status
+
+## 2026-09-25 — MISSION 10 SIGNAL RUNTIME DUPLICATE / LIFECYCLE AUDIT
+
+- Result: `OTHER_ROOT_CAUSE_FOUND`. No runtime duplication was reproduced or found. Live production inspection at build `77da040235dcbc9e19fecd782dac37e395d7ac41` showed SIGNAL_A with exactly two reflector bodies, one source, one receiver, and one beam object on entry, after the first tap, after the second (solved) tap, and after repeated taps. The visually similar third circular object is the receiver artwork, rendered only as `mission10-signal-receiver`.
+- Lifecycle evidence: each reflector tap runs `clearStagePresentation()`, preserves only input zones while removing them from the root, then calls `stageRoot.removeAll(true)` before `renderSignal()`. The root is rebuilt as one `MISSION10_SIGNAL_PUZZLE_GROUP`; descendant tweens are killed before removal. No legacy SIGNAL renderer or duplicate event subscription is present.
+- Runtime object-inventory audit PASS: `qa/mission10-signal-lifecycle-audit.cjs`, run through the shared Playwright runner against the production preview. Across initial/partial/solved presentation states: SIGNAL_A and SIGNAL_B each had 2 unique reflector containers; SIGNAL_C had its authored 3 unique reflector containers; every sample had exactly one source, receiver, beam, and SIGNAL root. This artifact documents the intentional three-reflector SIGNAL_C variant, so a global two-reflector contract would contradict existing source and content data.
+- No production gameplay code, coordinates, solver, responsive behavior, ENERGY, or other missions changed. Verification PASS: `npm run typecheck`; `npm run build` through `npm run review`; production preview strict on `0.0.0.0:4198`, localhost/LAN HTTP checks PASS, HMR absent, server left running. The Vite chunk-size advisory is non-blocking.
+- Files created: `qa/mission10-signal-lifecycle-audit.cjs`, `docs/qa/mission10-signal-lifecycle-audit.json`. Files modified: this status file. Files moved/deleted: none. No commit, push, or deploy performed. Pre-existing unrelated working-tree changes were preserved.
 
 ## 2026-09-14 — POST-ASSEMBLY ANTENNA CANONICAL RENDERER
 

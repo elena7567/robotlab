@@ -55,7 +55,11 @@ export class PreloadScene extends Phaser.Scene {
       const requested = (query.get('stage') ?? 'intro').toLowerCase();
       const shortcuts: readonly Mission10StageShortcut[] = ['intro', 'path', 'energy', 'signal', 'launch', 'final', 'complete'];
       const stage = shortcuts.includes(requested as Mission10StageShortcut) ? requested as Mission10StageShortcut : 'intro';
-      mission10Controller.initializeStageShortcut(stage, 1010);
+      const signalVariant = query.get('signalVariant')?.trim().toUpperCase();
+      const signalConfigId = stage === 'signal' && ['A', 'B', 'C'].includes(signalVariant ?? '')
+        ? `SIGNAL_${signalVariant}`
+        : undefined;
+      mission10Controller.initializeStageShortcut(stage, 1010, signalConfigId);
       this.scene.start('Mission10Scene');
       return;
     }

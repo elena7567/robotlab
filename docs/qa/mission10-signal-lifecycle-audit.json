@@ -1,0 +1,426 @@
+{
+  "result": "PASS",
+  "errors": [],
+  "samples": [
+    {
+      "configId": "SIGNAL_A",
+      "tap": 0,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_A",
+      "tap": 1,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_A",
+      "tap": 2,
+      "stage": "LAUNCH",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_B",
+      "tap": 0,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_B",
+      "tap": 1,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_B",
+      "tap": 2,
+      "stage": "LAUNCH",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_C",
+      "tap": 0,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m3",
+          "type": "Container",
+          "x": 781.7833333333333,
+          "y": 421.2,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        },
+        {
+          "id": "M3",
+          "x": 781.7833333333333,
+          "y": 432.4
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_C",
+      "tap": 1,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m3",
+          "type": "Container",
+          "x": 781.7833333333333,
+          "y": 421.2,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        },
+        {
+          "id": "M3",
+          "x": 781.7833333333333,
+          "y": 432.4
+        }
+      ],
+      "valid": true
+    },
+    {
+      "configId": "SIGNAL_C",
+      "tap": 2,
+      "stage": "SIGNAL",
+      "roots": 1,
+      "reflectors": [
+        {
+          "name": "mission10-reflector-m1",
+          "type": "Container",
+          "x": 584.3833333333334,
+          "y": 387,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m2",
+          "type": "Container",
+          "x": 720.6833333333334,
+          "y": 466.79999999999995,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        },
+        {
+          "name": "mission10-reflector-m3",
+          "type": "Container",
+          "x": 781.7833333333333,
+          "y": 421.2,
+          "visible": true,
+          "active": true,
+          "parent": "MISSION10_SIGNAL_PUZZLE_GROUP"
+        }
+      ],
+      "receiver": 1,
+      "source": 1,
+      "beam": 1,
+      "targets": [
+        {
+          "id": "M1",
+          "x": 584.3833333333334,
+          "y": 398.2
+        },
+        {
+          "id": "M2",
+          "x": 720.6833333333334,
+          "y": 477.99999999999994
+        },
+        {
+          "id": "M3",
+          "x": 781.7833333333333,
+          "y": 432.4
+        }
+      ],
+      "valid": true
+    }
+  ]
+}

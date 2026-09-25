@@ -950,20 +950,26 @@ export class Mission10Scene extends Phaser.Scene {
     };
     if (desktopSignal) {
       // Presentation deliberately follows the player-facing route order rather than
-      // the serializable grid rows. This makes one platform installation: source
-      // lower-left -> A upper-left -> B lower-right -> receiver upper-right.
+      // the serializable grid rows. SIGNAL_C gets its own three-reflector map so
+      // its extra station is spaced across the platform rather than joining the
+      // two-reflector A/B finish on the right.
       const at = (x: number, y: number): Phaser.Math.Vector2 => new Phaser.Math.Vector2(
         field.x + field.width * x, field.y + field.height * y,
       );
       const source = at(0.08, 0.70);
-      const receiver = at(0.92, 0.30);
+      const signalCLayout = config.id === 'SIGNAL_C';
+      const receiver = signalCLayout ? at(0.96, 0.30) : at(0.92, 0.30);
       registerNode(config.emitter, 'SOURCE', source,
         source, new Phaser.Math.Vector2(source.x + propSize * 0.20, source.y));
       config.reflectors.forEach((reflector, index) => {
         const role = (['REFLECTOR_A', 'REFLECTOR_B', 'REFLECTOR_C'] as const)[index];
-        const position = index === 0 ? at(0.34, 0.30)
-          : index === 1 ? at(0.63, 0.72)
-            : at(0.76, 0.48);
+        const position = signalCLayout
+          ? index === 0 ? at(0.28, 0.28)
+            : index === 1 ? at(0.47, 0.72)
+              : at(0.69, 0.38)
+          : index === 0 ? at(0.34, 0.30)
+            : index === 1 ? at(0.63, 0.72)
+              : at(0.76, 0.48);
         const rise = index === 0 ? -0.05 : index === 1 ? 0.05 : -0.03;
         registerNode(reflector.position, role, position,
           new Phaser.Math.Vector2(position.x - propSize * 0.34, position.y + propSize * rise),

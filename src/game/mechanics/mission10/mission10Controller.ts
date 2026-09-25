@@ -113,8 +113,20 @@ export class Mission10Controller {
     return { status: 'reset', stage: 'INTRO' };
   }
 
-  initializeStageShortcut(shortcut: Mission10StageShortcut, seed = this.state.runSeed): Mission10ActionResult {
+  initializeStageShortcut(
+    shortcut: Mission10StageShortcut,
+    seed = this.state.runSeed,
+    signalConfigId?: string,
+  ): Mission10ActionResult {
     this.state = initialSnapshot(seed);
+    if (signalConfigId) {
+      const signalConfig = getMission10SignalConfig(signalConfigId);
+      this.state = {
+        ...this.state,
+        signalConfigId: signalConfig.id,
+        reflectorOrientations: { ...signalConfig.initialOrientations },
+      };
+    }
     const stageMap: Readonly<Record<Mission10StageShortcut, Mission10Stage>> = {
       intro: 'INTRO', path: 'PATH', energy: 'ENERGY', signal: 'SIGNAL', launch: 'LAUNCH', final: 'FINALE', complete: 'COMPLETE',
     };
