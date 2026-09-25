@@ -55,7 +55,7 @@ Fresh screenshots:
 ### Failed / Blocked
 
 - Full natural Missions 1-10 flow: FAIL in `qa/release-final-natural-flow.cjs`; fresh automation completed Missions 1-6, then timed out waiting for Mission 7 after Mission 6 continue. Separate Mission 7 routing/handoff QA passed, so this needs diagnosis before release approval.
-- Mission 10 browser suite: FAIL in `docs/qa/stage10-mission10-gold-candidate.json`; 18 failures, 0 runtime errors. Failures are stale robot-detection assertions expecting direct `robot-v2-repaired` texture counts while the current assembled robot renders as part-container artwork, but the suite remains red.
+- Mission 10 browser suite: RESOLVED on 2026-09-23. `docs/qa/stage10-mission10-gold-candidate.json` now PASSes with 59 checks, 0 failures, 0 runtime errors. The previous 18 failures were stale robot-detection assertions expecting direct `robot-v2-repaired` texture counts while the assembled robot renders as a `RobotAssemblyPreview` part-container; the suite now detects the robot by stable name/`visibleBoundsId` contract instead of texture.
 - Antenna/Mission 7-9 QA: FAIL in `qa/mission7-9-antenna-correction.cjs` on direct scene-start runtime `TypeError: Cannot read properties of undefined (reading 'active')`.
 - Mission 10 signal/victory polish QA: FAIL in `qa/stage10-signal-victory-final-polish.cjs` on null target tap in the QA harness.
 - Audio QA: FAIL in `qa/stage10-remediation-audio.cjs`; `natural-m9-to-m10-cue-output` sampled peak 0. Direct delayed unlock, mute/unmute, master mute, Home cleanup, and lifecycle count checks passed.

@@ -151,6 +151,21 @@ export interface Mission10SignalRegions {
   readonly PROP_VISIBLE_HEIGHT: number;
   readonly BEAM_CORE_WIDTH: number;
 }
+export interface Mission10EnergyStageLayout {
+  /** Bounded semantic group holding the whole ENERGY composition (desktop only). */
+  readonly group: RectLayout;
+  readonly groupCenterX: number;
+  readonly groupCenterY: number;
+  readonly relaySize: number;
+  readonly terminalRadius: number;
+  readonly beamCoreWidth: number;
+  readonly beamGlowWidth: number;
+  readonly robotCenterX: number;
+  readonly robotScale: number;
+  readonly robotTargetVisibleHeight: number;
+  readonly gapToGroup: number;
+  readonly platformCenterX: number;
+}
 
 export interface Mission10SceneLayout {
   readonly signalRegions: Mission10SignalRegions;
@@ -170,6 +185,8 @@ export interface Mission10SceneLayout {
   readonly platformCenterX: number;
   readonly pathLanes: readonly [RectLayout, RectLayout, RectLayout];
   readonly relayBoard: RectLayout;
+  /** Desktop-only bounded ENERGY composition; undefined keeps the legacy full-band render. */
+  readonly energyStage?: Mission10EnergyStageLayout;
   readonly signalBoard: RectLayout;
   readonly launchConsole: RectLayout;
   readonly beacon: RectLayout;
@@ -1048,6 +1065,30 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
   ) as unknown as readonly [RectLayout, RectLayout, RectLayout];
   const relayBoard = rect(puzzleStage.x, puzzleStage.y, puzzleStage.width, puzzleStage.height);
   const signalBoard = rect(puzzleStage.x, puzzleStage.y, puzzleStage.width, puzzleStage.height);
+  // ENERGY keeps a compact bounded semantic group centered on the central platform.
+  // Extra desktop viewport width becomes breathing room, never puzzle stretching.
+  const energyGroupWidth = clampValue(620, width * 0.44, 780);
+  const energyGroupHeight = clampValue(220, height * 0.3, 320);
+  const energyGroupCenterX = platform.centerX;
+  const energyStageBottomY = platform.topY - clampValue(20, height * 0.035, 36);
+  const energyGroupCenterY = energyStageBottomY - energyGroupHeight / 2;
+  const energyRelaySize = clampValue(100, height * 0.125, 120);
+  const energyRobotSizing = resolveWorldCharacterScale({ profile: CHARACTER_VISUAL_PROFILES.assembled, role: DesktopCharacterRole.WORLD_SUPPORT, viewportHeight: height });
+  const energyGroup = rect(energyGroupCenterX - energyGroupWidth / 2, energyGroupCenterY - energyGroupHeight / 2, energyGroupWidth, energyGroupHeight);
+  const energyStage: Mission10EnergyStageLayout | undefined = desktop ? {
+    group: energyGroup,
+    groupCenterX: energyGroupCenterX,
+    groupCenterY: energyGroupCenterY,
+    relaySize: energyRelaySize,
+    terminalRadius: Math.round(energyRelaySize * 0.28),
+    beamCoreWidth: clampValue(4, width * 0.0032, 6),
+    beamGlowWidth: clampValue(9, width * 0.0075, 14),
+    robotCenterX: energyGroup.x - clampValue(50, width * 0.04, 100) - CHARACTER_VISUAL_PROFILES.assembled.visibleRightLocal * energyRobotSizing.resolvedScale,
+    robotScale: energyRobotSizing.resolvedScale,
+    robotTargetVisibleHeight: energyRobotSizing.targetVisibleHeight,
+    gapToGroup: clampValue(50, width * 0.04, 100),
+    platformCenterX: platform.centerX,
+  } : undefined;
   const laboratoryScale = Math.max(width / LOGICAL_SCENE_WIDTH, height / LOGICAL_SCENE_HEIGHT);
   const introPlatformY = (height - LOGICAL_SCENE_HEIGHT * laboratoryScale) / 2 + PLATFORM_CONTACT_Y * laboratoryScale;
   const launchGroundY = Math.min(worldBottom, introPlatformY + layout.gapL);
@@ -1090,7 +1131,7 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
   const signalPropHeight = shortLandscape
     ? clampValue(88, 104 * signalScale, 118)
     : desktop
-      ? clampValue(112, height * 0.15, 162)
+      ? clampValue(112, height * 0.15, 145)
       : clampValue(60, 98 * signalScale, 128);
   const signalProgressWidth = clampValue(88, (shortLandscape ? 100 : 108) * signalScale, 138);
   const signalProgress = rect((width - signalProgressWidth) / 2,
@@ -1100,19 +1141,28 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     : desktop
       ? clampValue(470, width * 0.36, 620)
       : Math.min(760, 530 * signalScale, safeWidth * 0.69);
-  // Two occupied rows in A/B are 2/5 of the grid apart: reserve a full body plus air.
+  // Desktop SIGNAL is a bounded installation on the laboratory platform.  The authored
+  // route still has meaningful vertical turns, but must not grow with the laboratory.
+  // Non-desktop branches deliberately retain their approved composition.
   const signalFieldHeight = shortLandscape
     ? Math.min(Math.max(244 * signalScale, signalPropHeight * 2.72), Math.max(1, safeBottom - signalProgress.y - signalProgress.height - layout.gapXS * 2))
-    : Math.max(205 * signalScale, signalPropHeight * 2.7);
+    : desktop
+      ? clampValue(190, height * 0.221, 200)
+      : Math.max(205 * signalScale, signalPropHeight * 2.7);
   const signalGroundY = Math.min(safeBottom, introPlatformY + (shortLandscape ? 2 : 3) * signalScale);
   const signalFieldTop = shortLandscape
     ? Math.max(signalProgress.y + signalProgress.height + layout.gapXS, signalGroundY - signalFieldHeight - layout.gapXS)
-    : Math.max(signalProgress.y + signalProgress.height + signalPropHeight * 0.4,
-      introPlatformY - signalFieldHeight + 31 * signalScale);
+    : desktop
+      ? platform.topY - clampValue(40, height * 0.049, 52) - signalFieldHeight
+      : Math.max(signalProgress.y + signalProgress.height + signalPropHeight * 0.4,
+        introPlatformY - signalFieldHeight + 31 * signalScale);
   const signalFieldCenterX = shortLandscape
     ? width / 2 + safeWidth * 0.035
     : desktop
-      ? platform.centerX + Math.min(42, width * 0.025)
+      // SIGNAL_B's authored end devices occupy 5 of 6 columns. Offset the field
+      // by half that residual column so the actual visible apparatus, not an empty
+      // grid cell, is centered over the platform.
+      ? platform.centerX + signalFieldWidth / 24
       : width / 2 + 58 * signalScale;
   const signalField = rect(signalFieldCenterX - signalFieldWidth / 2,
     signalFieldTop, signalFieldWidth, signalFieldHeight);
@@ -1155,6 +1205,7 @@ function composeMission10(layout: ResponsiveLayout): SceneComposition {
     platformCenterX: platform.centerX,
     pathLanes,
     relayBoard,
+    energyStage,
     signalBoard,
     launchConsole,
     beacon,

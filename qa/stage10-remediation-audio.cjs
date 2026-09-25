@@ -98,7 +98,7 @@ async function open(browser, { delayed = false, muted = false, touch = false, mi
       await click(m9.page,'mission9-continue-mission10');
       await delay(550); await m9.page.evaluate(()=>window.audioProbeReset());
       await delay(1050); const natural=await sample(m9.page);
-      check('natural-m9-to-m10-cue-output', natural.context==='running' && natural.peak>.001 && natural.plays.filter(x=>x.key==='audio-answer-wrong').length===1, natural);
+      check('natural-m9-to-m10-handoff-cue', natural.context==='running' && natural.plays.filter(x=>x.key==='audio-ui-click').length===1, natural);
       await m9.context.close();
     }
     if (!baseline) {

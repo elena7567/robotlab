@@ -1,0 +1,420 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "1280x720-initial-energy-layout-published",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1280x720-initial-group-centered",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1280x720-initial-group-width-bounded",
+      "ok": true,
+      "actual": 620
+    },
+    {
+      "name": "1280x720-initial-clearances",
+      "ok": true,
+      "actual": {
+        "left": 330,
+        "right": 330
+      }
+    },
+    {
+      "name": "1280x720-initial-robot-gap",
+      "ok": true,
+      "actual": 51.19999999999999
+    },
+    {
+      "name": "1280x720-initial-relay-extent",
+      "ok": true,
+      "actual": 100
+    },
+    {
+      "name": "1280x720-initial-robot-world-support",
+      "ok": true,
+      "actual": [
+        {
+          "characterId": "mission10-energy-robot",
+          "role": "WORLD_SUPPORT",
+          "visibleHeight": 259.20000118017197,
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "1280x720-initial-single-stage-root",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1280x720-three-relays",
+      "ok": true,
+      "actual": [
+        "mission10-relay-r1",
+        "mission10-relay-r2",
+        "mission10-relay-r3"
+      ]
+    },
+    {
+      "name": "1280x720-partial-visual",
+      "ok": true,
+      "actual": {
+        "glow": 1,
+        "core": 4
+      }
+    },
+    {
+      "name": "1280x720-solved-advances",
+      "ok": true,
+      "actual": "SIGNAL"
+    },
+    {
+      "name": "1438x914-initial-energy-layout-published",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1438x914-initial-group-centered",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1438x914-initial-group-width-bounded",
+      "ok": true,
+      "actual": 632.72
+    },
+    {
+      "name": "1438x914-initial-clearances",
+      "ok": true,
+      "actual": {
+        "left": 402.64,
+        "right": 402.6399999999999
+      }
+    },
+    {
+      "name": "1438x914-initial-robot-gap",
+      "ok": true,
+      "actual": 57.51999999999998
+    },
+    {
+      "name": "1438x914-initial-relay-extent",
+      "ok": true,
+      "actual": 114.25
+    },
+    {
+      "name": "1438x914-initial-robot-world-support",
+      "ok": true,
+      "actual": [
+        {
+          "characterId": "mission10-energy-robot",
+          "role": "WORLD_SUPPORT",
+          "visibleHeight": 329.0400004684925,
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "1438x914-initial-single-stage-root",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1438x914-three-relays",
+      "ok": true,
+      "actual": [
+        "mission10-relay-r1",
+        "mission10-relay-r2",
+        "mission10-relay-r3"
+      ]
+    },
+    {
+      "name": "1438x914-partial-visual",
+      "ok": true,
+      "actual": {
+        "glow": 1,
+        "core": 4
+      }
+    },
+    {
+      "name": "1438x914-solved-advances",
+      "ok": true,
+      "actual": "SIGNAL"
+    },
+    {
+      "name": "1600x900-initial-energy-layout-published",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1600x900-initial-group-centered",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1600x900-initial-group-width-bounded",
+      "ok": true,
+      "actual": 704
+    },
+    {
+      "name": "1600x900-initial-clearances",
+      "ok": true,
+      "actual": {
+        "left": 448,
+        "right": 448
+      }
+    },
+    {
+      "name": "1600x900-initial-robot-gap",
+      "ok": true,
+      "actual": 64
+    },
+    {
+      "name": "1600x900-initial-relay-extent",
+      "ok": true,
+      "actual": 112.5
+    },
+    {
+      "name": "1600x900-initial-robot-world-support",
+      "ok": true,
+      "actual": [
+        {
+          "characterId": "mission10-energy-robot",
+          "role": "WORLD_SUPPORT",
+          "visibleHeight": 323.9999911785126,
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "1600x900-initial-single-stage-root",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1600x900-three-relays",
+      "ok": true,
+      "actual": [
+        "mission10-relay-r1",
+        "mission10-relay-r2",
+        "mission10-relay-r3"
+      ]
+    },
+    {
+      "name": "1600x900-partial-visual",
+      "ok": true,
+      "actual": {
+        "glow": 1,
+        "core": 4
+      }
+    },
+    {
+      "name": "1600x900-solved-advances",
+      "ok": true,
+      "actual": "SIGNAL"
+    },
+    {
+      "name": "1920x1080-initial-energy-layout-published",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1920x1080-initial-group-centered",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1920x1080-initial-group-width-bounded",
+      "ok": true,
+      "actual": 780
+    },
+    {
+      "name": "1920x1080-initial-clearances",
+      "ok": true,
+      "actual": {
+        "left": 570,
+        "right": 570
+      }
+    },
+    {
+      "name": "1920x1080-initial-robot-gap",
+      "ok": true,
+      "actual": 76.80000000000007
+    },
+    {
+      "name": "1920x1080-initial-relay-extent",
+      "ok": true,
+      "actual": 120
+    },
+    {
+      "name": "1920x1080-initial-robot-world-support",
+      "ok": true,
+      "actual": [
+        {
+          "characterId": "mission10-energy-robot",
+          "role": "WORLD_SUPPORT",
+          "visibleHeight": 388.7999811768532,
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "1920x1080-initial-single-stage-root",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1920x1080-three-relays",
+      "ok": true,
+      "actual": [
+        "mission10-relay-r1",
+        "mission10-relay-r2",
+        "mission10-relay-r3"
+      ]
+    },
+    {
+      "name": "1920x1080-partial-visual",
+      "ok": true,
+      "actual": {
+        "glow": 1,
+        "core": 4
+      }
+    },
+    {
+      "name": "1920x1080-solved-advances",
+      "ok": true,
+      "actual": "SIGNAL"
+    },
+    {
+      "name": "1600x900-reduced-energy-layout-published",
+      "ok": true,
+      "actual": true
+    },
+    {
+      "name": "1600x900-reduced-group-centered",
+      "ok": true,
+      "actual": 0
+    },
+    {
+      "name": "1600x900-reduced-group-width-bounded",
+      "ok": true,
+      "actual": 704
+    },
+    {
+      "name": "1600x900-reduced-clearances",
+      "ok": true,
+      "actual": {
+        "left": 448,
+        "right": 448
+      }
+    },
+    {
+      "name": "1600x900-reduced-robot-gap",
+      "ok": true,
+      "actual": 64
+    },
+    {
+      "name": "1600x900-reduced-relay-extent",
+      "ok": true,
+      "actual": 112.5
+    },
+    {
+      "name": "1600x900-reduced-robot-world-support",
+      "ok": true,
+      "actual": [
+        {
+          "characterId": "mission10-energy-robot",
+          "role": "WORLD_SUPPORT",
+          "visibleHeight": 323.9999911785126,
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "1600x900-reduced-single-stage-root",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "1600x900-reduced-tap-safe",
+      "ok": true,
+      "actual": "ENERGY"
+    },
+    {
+      "name": "1600x900-rapid-exactly-two-rotations",
+      "ok": true,
+      "actual": {
+        "before": 2,
+        "after": 0
+      }
+    },
+    {
+      "name": "1600x900-rapid-still-energy-or-solved",
+      "ok": true,
+      "actual": null
+    },
+    {
+      "name": "844x390-mobile-no-desktop-group",
+      "ok": true,
+      "actual": "absent"
+    },
+    {
+      "name": "844x390-mobile-stage-root-single",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "844x390-mobile-three-relays-mobile",
+      "ok": true,
+      "actual": 3
+    },
+    {
+      "name": "915x412-mobile-no-desktop-group",
+      "ok": true,
+      "actual": "absent"
+    },
+    {
+      "name": "915x412-mobile-stage-root-single",
+      "ok": true,
+      "actual": 1
+    },
+    {
+      "name": "915x412-mobile-three-relays-mobile",
+      "ok": true,
+      "actual": 3
+    },
+    {
+      "name": "390x844-mobile-orientation-gate",
+      "ok": true,
+      "actual": {
+        "gate": true,
+        "roots": 0
+      }
+    }
+  ],
+  "measurements": [],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1280x720-initial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1280x720-partial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1280x720-solved.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1438x914-initial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1438x914-partial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1438x914-solved.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1600x900-initial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1600x900-after-tap.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1600x900-partial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1600x900-solved.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1920x1080-initial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1920x1080-partial.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1920x1080-solved.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\1600x900-reduced-reduced-motion.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\844x390-mobile.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\915x412-mobile.png",
+    "docs\\qa\\screenshots\\mission10-energy-desktop-repair\\390x844-mobile.png"
+  ],
+  "errors": []
+}

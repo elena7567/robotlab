@@ -1,5 +1,5 @@
 {
-  "result": "FAIL",
+  "result": "PASS",
   "baseline": false,
   "outputEvidence": "PCM sampled after Phaser master mute and volume gain; physical speakers not observed",
   "checks": [
@@ -9,7 +9,7 @@
       "data": {
         "before": {
           "peak": 0,
-          "samples": 48,
+          "samples": 46,
           "plays": [],
           "states": [],
           "locked": true,
@@ -18,12 +18,12 @@
           "stage": "INTRO"
         },
         "after": {
-          "peak": 0.05019006505608559,
-          "samples": 56,
+          "peak": 0.05514197424054146,
+          "samples": 55,
           "plays": [
             {
               "key": "audio-answer-wrong",
-              "at": 7465.199999988079,
+              "at": 7665.39999999851,
               "muted": false,
               "locked": false,
               "context": "running",
@@ -44,7 +44,7 @@
       "data": {
         "before": {
           "peak": 0,
-          "samples": 48,
+          "samples": 45,
           "plays": [],
           "states": [],
           "locked": true,
@@ -53,12 +53,12 @@
           "stage": "INTRO"
         },
         "after": {
-          "peak": 0.03808249533176422,
-          "samples": 58,
+          "peak": 0.05019006505608559,
+          "samples": 56,
           "plays": [
             {
               "key": "audio-answer-wrong",
-              "at": 7415.699999988079,
+              "at": 7454.70000000298,
               "muted": false,
               "locked": false,
               "context": "running",
@@ -78,11 +78,11 @@
       "ok": true,
       "data": {
         "peak": 0.05514197424054146,
-        "samples": 52,
+        "samples": 55,
         "plays": [
           {
             "key": "audio-answer-wrong",
-            "at": 6592,
+            "at": 6394.39999999851,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -105,7 +105,7 @@
         "plays": [
           {
             "key": "audio-answer-wrong",
-            "at": 6592,
+            "at": 6394.39999999851,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -113,7 +113,7 @@
           },
           {
             "key": "audio-ui-click",
-            "at": 7397.0999999940395,
+            "at": 7204.89999999851,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -121,7 +121,7 @@
           },
           {
             "key": "audio-answer-wrong",
-            "at": 7511.0999999940395,
+            "at": 7361.39999999851,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -139,12 +139,12 @@
       "name": "master-unmute-restores-output",
       "ok": true,
       "data": {
-        "peak": 0.05514197424054146,
-        "samples": 5,
+        "peak": 0.04359017685055733,
+        "samples": 4,
         "plays": [
           {
             "key": "audio-answer-wrong",
-            "at": 6592,
+            "at": 6394.39999999851,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -152,7 +152,7 @@
           },
           {
             "key": "audio-ui-click",
-            "at": 7397.0999999940395,
+            "at": 7204.89999999851,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -160,7 +160,7 @@
           },
           {
             "key": "audio-answer-wrong",
-            "at": 7511.0999999940395,
+            "at": 7361.39999999851,
             "muted": true,
             "locked": false,
             "context": "running",
@@ -168,7 +168,7 @@
           },
           {
             "key": "audio-answer-wrong",
-            "at": 8259.399999976158,
+            "at": 8116,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -183,15 +183,15 @@
       }
     },
     {
-      "name": "natural-m9-to-m10-cue-output",
-      "ok": false,
+      "name": "natural-m9-to-m10-handoff-cue",
+      "ok": true,
       "data": {
         "peak": 0,
-        "samples": 11,
+        "samples": 12,
         "plays": [
           {
             "key": "audio-ui-click",
-            "at": 6807.5,
+            "at": 6186.89999999851,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -209,12 +209,12 @@
       "name": "home-before-delayed-unlock-no-stale-intro",
       "ok": true,
       "data": {
-        "peak": 0.0830332487821579,
-        "samples": 55,
+        "peak": 0.08303320407867432,
+        "samples": 60,
         "plays": [
           {
             "key": "audio-ui-click",
-            "at": 7159,
+            "at": 6759,
             "muted": false,
             "locked": false,
             "context": "running",
@@ -222,7 +222,7 @@
           },
           {
             "key": "audio-start-lab-theme",
-            "at": 7159.200000017881,
+            "at": 6759.39999999851,
             "muted": false,
             "locked": false,
             "context": "running",

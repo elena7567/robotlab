@@ -3,6 +3,7 @@ import { fitImageByVisibleAlpha, getImageVisibleAlphaBounds, OBJECT_VISIBLE_BOUN
 import { audioManager } from '../audio/AudioManager';
 import { getMission10EnergyConfig, solveMission10Energy } from '../mechanics/mission10/energyRelayPuzzle.ts';
 import { mission10Controller } from '../mechanics/mission10/mission10Controller.ts';
+import type { Mission10Snapshot } from '../mechanics/mission10/mission10State.ts';
 import { getMission10PathConfig, type Mission10LaneId, type Mission10PathKind } from '../mechanics/mission10/safePathPuzzle.ts';
 import { getMission10SignalConfig, normalizeSignalOrientation, solveMission10Signal } from '../mechanics/mission10/signalPuzzle.ts';
 import { preferencesState } from '../state/preferencesState';
@@ -637,6 +638,11 @@ export class Mission10Scene extends Phaser.Scene {
   }
 
   private renderEnergy(): void {
+    const energyStage = this.missionLayout!.energyStage;
+    if (energyStage) {
+      this.renderEnergyDesktop(energyStage);
+      return;
+    }
     const box = this.missionLayout!.relayBoard;
     const snapshot = mission10Controller.snapshot;
     const config = getMission10EnergyConfig(snapshot.energyConfigId);
@@ -682,10 +688,216 @@ export class Mission10Scene extends Phaser.Scene {
     this.game.registry.set('mission10EnergyEvaluation', evaluation);
   }
 
-  private createEnergyTerminal(x: number, y: number, glyph: string, lit: boolean): Phaser.GameObjects.Container {
+  private renderEnergyDesktop(energyStage: NonNullable<Mission10SceneLayout['energyStage']>): void {
+    const snapshot = mission10Controller.snapshot;
+    const config = getMission10EnergyConfig(snapshot.energyConfigId);
+    const evaluation = solveMission10Energy(config, snapshot.relayOrientations);
+    const reduced = this.prefersReducedMotion();
+    const { groupCenterX: cx, groupCenterY: cy, beamCoreWidth, beamGlowWidth } = energyStage;
+    const group = this.add.container(0, 0).setName('MISSION10_ENERGY_PUZZLE_GROUP')
+      .setData({ semanticGroup: 'MISSION10_ENERGY_PUZZLE_GROUP', nodeCount: 5 });
+    this.stageRoot!.add(group);
+    const spacing = Math.min(200, energyStage.group.width / 5);
+    const xs = [-2, -1, 0, 1, 2].map((offset) => cx + offset * spacing);
+    const y = cy;
+    const drawSegment = (fromX: number, toX: number, powered: boolean): void => {
+      const color = powered ? 0x54edff : 0x2c5670;
+      if (powered) {
+        const glow = this.add.graphics().setBlendMode(Phaser.BlendModes.ADD).setName('mission10-energy-glow');
+        glow.lineStyle(beamGlowWidth, 0x19d8ec, 0.22).beginPath().moveTo(fromX, y).lineTo(toX, y).strokePath();
+        group.add(glow);
+      }
+      const core = this.add.graphics().setName('mission10-energy-core');
+      core.lineStyle(beamCoreWidth, color, powered ? 1 : 0.75).beginPath().moveTo(fromX, y).lineTo(toX, y).strokePath();
+      group.add(core);
+    };
+    const segmentCount = config.relays.length + 1;
+    const poweredSegmentCount = Math.min(segmentCount, evaluation.connectedRelayCount + 1);
+    for (let index = 0; index < segmentCount; index += 1) {
+      drawSegment(xs[index], xs[index + 1], index < poweredSegmentCount);
+    }
+    if (evaluation.breakRelayId && !evaluation.receiverPowered && !reduced) {
+      const breakIndex = config.relays.findIndex((relay) => relay.id === evaluation.breakRelayId);
+      if (breakIndex >= 0) {
+        const spark = this.add.graphics().setBlendMode(Phaser.BlendModes.ADD).setName('mission10-energy-break-spark');
+        spark.fillStyle(0xbdf3ff, 0.9).fillCircle(xs[breakIndex + 1], y, 3)
+          .fillCircle(xs[breakIndex + 1] - 7, y - 5, 2).fillCircle(xs[breakIndex + 1] + 7, y - 6, 2);
+        group.add(spark);
+      }
+    }
+    this.positionEnergyNodes(group, xs, y, config, evaluation, snapshot, reduced);
+    this.game.registry.set('mission10EnergyEvaluation', evaluation);
+    if (evaluation.breakRelayId && snapshot.energyWrongAttempts >= 2) {
+      const hintNode = group.getAll().find((item) => item.getData?.('relayId') === evaluation.breakRelayId);
+      if (hintNode instanceof Phaser.GameObjects.Container) {
+        if (reduced) {
+          (hintNode.getAt(0) as Phaser.GameObjects.Graphics).lineStyle(3, 0xc7f8ff, 1).strokeCircle(0, 0, hintNode.width * 0.49);
+        } else {
+          this.tweens.add({ targets: hintNode, alpha: 0.5, duration: 320, yoyo: true, repeat: -1 });
+        }
+      }
+    }
+    if (evaluation.receiverPowered && !reduced) {
+      this.tweens.add({ targets: group, alpha: { from: 0.82, to: 1 }, duration: 320, ease: 'Sine.easeOut' });
+    }
+    this.publishEnergyQa();
+  }
+
+  private positionEnergyNodes(
+    group: Phaser.GameObjects.Container,
+    xs: number[],
+    y: number,
+    config: ReturnType<typeof getMission10EnergyConfig>,
+    evaluation: ReturnType<typeof solveMission10Energy>,
+    snapshot: Readonly<Mission10Snapshot>,
+    reduced: boolean,
+  ): void {
+    const energyStage = this.missionLayout!.energyStage!;
+    const { terminalRadius, beamGlowWidth, relaySize } = energyStage;
+    const source = this.createEnergyTerminal(xs[0], y, '⚡', true, terminalRadius, beamGlowWidth).setName('mission10-energy-source');
+    const receiver = this.createEnergyTerminal(xs[4], y, '★', evaluation.receiverPowered, terminalRadius, beamGlowWidth)
+      .setName('mission10-energy-receiver');
+    group.add([source, receiver]);
+    if (evaluation.receiverPowered && !reduced) {
+      const ring = this.add.graphics().setBlendMode(Phaser.BlendModes.ADD).setName('mission10-energy-receiver-ring');
+      ring.lineStyle(3, 0x9dfcff, 0.9).strokeCircle(xs[4], y, terminalRadius + 9);
+      group.add(ring);
+    }
+    config.relays.forEach((relay, index) => {
+      const orientation = snapshot.relayOrientations[relay.id] ?? 0;
+      const node = this.createRelay(xs[index + 1], y, relaySize, orientation, index < evaluation.connectedRelayCount)
+        .setName(`mission10-relay-${relay.id.toLowerCase()}`).setData({ relayId: relay.id, orientation });
+      this.bindTap(node, () => this.tapEnergyRelayDesktop(relay.id, node));
+      group.add(node);
+    });
+    this.applyEnergyRobotComposition(energyStage);
+  }
+
+  private applyEnergyRobotComposition(energyStage: NonNullable<Mission10SceneLayout['energyStage']>): void {
+    const robot = this.robot;
+    if (!robot) return;
+    robot.setPosition(energyStage.robotCenterX, this.missionLayout!.platformContactY)
+      .setScale(energyStage.robotScale).setAngle(0).setAlpha(1)
+      .setData({ characterRole: 'SUPPORTING_CHARACTER', visibleBoundsId: 'ROBOT_V2_ASSEMBLED', grounded: true });
+    publishCharacterTelemetry(this, [{
+      characterId: 'mission10-energy-robot', object: robot, profileId: 'assembled',
+      role: DesktopCharacterRole.WORLD_SUPPORT,
+      sizing: {
+        role: DesktopCharacterRole.WORLD_SUPPORT,
+        targetVisibleHeight: energyStage.robotTargetVisibleHeight,
+        resolvedScale: energyStage.robotScale,
+        minVisibleHeight: energyStage.robotTargetVisibleHeight * 0.9,
+        maxVisibleHeight: energyStage.robotTargetVisibleHeight * 1.1,
+        targetRatio: 0.36, minRatio: 0.33, maxRatio: 0.39,
+      },
+      groundY: this.missionLayout!.platformContactY,
+    }]);
+    let shadow = this.stageRoot?.getAll().find((item) => item.name === 'mission10-energy-robot-shadow') as Phaser.GameObjects.Ellipse | undefined;
+    if (!shadow && this.stageRoot) {
+      shadow = this.add.ellipse(robot.x, robot.y, 10, 6, 0x031522, 0.3).setName('mission10-energy-robot-shadow');
+      this.stageRoot.add(shadow);
+    }
+    shadow?.setPosition(robot.x, robot.y - 16 * robot.scaleY)
+      .setDisplaySize(INTRO_ROBOT_BOUNDS.width * robot.scaleX * 0.55, Math.max(6, INTRO_ROBOT_BOUNDS.height * robot.scaleY * 0.035));
+  }
+
+  private robotEnergyReaction(kind: 'tap' | 'progress' | 'concern' | 'success'): void {
+    const robot = this.robot;
+    if (!robot) return;
+    this.tweens.killTweensOf(robot);
+    if (this.prefersReducedMotion()) return;
+    const baseX = this.missionLayout!.energyStage?.robotCenterX ?? robot.x;
+    if (kind === 'tap' || kind === 'concern') {
+      this.tweens.add({ targets: robot, x: baseX + 8, angle: 2.5, duration: 130, yoyo: true, ease: 'Sine.easeInOut' });
+    } else if (kind === 'progress') {
+      this.tweens.add({ targets: robot, y: robot.y - 8, duration: 140, yoyo: true, repeat: 1, ease: 'Sine.easeOut' });
+    } else {
+      this.tweens.add({ targets: robot, y: robot.y - 14, duration: 150, yoyo: true, repeat: 1, ease: 'Sine.easeOut' });
+    }
+  }
+
+  private publishEnergyQa(): void {
+    const energyStage = this.missionLayout!.energyStage;
+    if (!energyStage) return;
+    const robot = this.robot;
+    const robotVisibleRight = robot ? robot.x + CHARACTER_VISUAL_PROFILES.assembled.visibleRightLocal * robot.scaleX : 0;
+    this.game.registry.set('mission10EnergyLayout', {
+      stage: 'ENERGY',
+      semanticGroup: 'MISSION10_ENERGY_PUZZLE_GROUP',
+      groupVisibleLeft: energyStage.group.x,
+      groupVisibleRight: energyStage.group.x + energyStage.group.width,
+      groupVisibleTop: energyStage.group.y,
+      groupVisibleBottom: energyStage.group.y + energyStage.group.height,
+      groupVisibleCenterX: energyStage.groupCenterX,
+      groupVisibleWidth: energyStage.group.width,
+      platformCenterX: energyStage.platformCenterX,
+      centerDelta: Math.abs(energyStage.groupCenterX - energyStage.platformCenterX),
+      leftClearance: energyStage.group.x,
+      rightClearance: this.scale.width - (energyStage.group.x + energyStage.group.width),
+      robotVisibleRight,
+      robotToGroupGap: energyStage.group.x - robotVisibleRight,
+      robotVisibleHeight: robot ? CHARACTER_VISUAL_PROFILES.assembled.visibleHeightAtScale1 * robot.scaleY : 0,
+      relayVisibleExtent: energyStage.relaySize,
+      terminalDiameter: energyStage.terminalRadius * 2,
+      beamCoreWidth: energyStage.beamCoreWidth,
+      beamGlowWidth: energyStage.beamGlowWidth,
+      viewportWidth: this.scale.width,
+      viewportHeight: this.scale.height,
+      effectiveWorldScaleX: 1,
+      effectiveWorldScaleY: 1,
+    });
+  }
+
+  private tapEnergyRelayDesktop(relayId: string, node: Phaser.GameObjects.Container): void {
+    if (this.interactionLocked) return;
+    audioManager.registerUserGesture();
+    const beforeSnapshot = mission10Controller.snapshot;
+    const before = solveMission10Energy(getMission10EnergyConfig(beforeSnapshot.energyConfigId), beforeSnapshot.relayOrientations);
+    const result = mission10Controller.rotateRelay(relayId);
+    if (result.status !== 'energy') return;
+    const reduced = this.prefersReducedMotion();
+    const improved = result.evaluation.connectedRelayCount > before.connectedRelayCount;
+    const degraded = result.evaluation.connectedRelayCount < before.connectedRelayCount;
+    const path = node.getAt(2) as Phaser.GameObjects.Graphics | undefined;
+    this.tweens.killTweensOf(node);
+    if (path) {
+      if (reduced) path.setAngle(path.angle + 90);
+      else {
+        this.tweens.add({ targets: path, angle: path.angle + 90, duration: 150, ease: 'Back.easeOut' });
+        this.tweens.add({ targets: node, scaleX: node.scaleX * 1.08, scaleY: node.scaleY * 1.08, duration: 90, yoyo: true, ease: 'Sine.easeOut' });
+      }
+    }
+    audioManager.playUiClick();
+    this.robotEnergyReaction(result.stageAdvanced ? 'success' : improved ? 'progress' : degraded ? 'concern' : 'tap');
+    this.delay(reduced ? 60 : 170, () => this.refreshEnergyDesktop());
+    this.feedbackText?.setText(result.stageAdvanced ? 'ЭНЕРГИЯ ПОДКЛЮЧЕНА!'
+      : result.hintRelayId ? (reduced ? 'ПОВЕРНИ ВЫДЕЛЕННОЕ РЕЛЕ' : 'ПОСМОТРИ НА МИГАЮЩЕЕ РЕЛЕ')
+      : improved ? 'ЭНЕРГИЯ ИДЁТ ДАЛЬШЕ' : 'ЭНЕРГИЯ ИДЁТ ДО РАЗРЫВА');
+    if (result.stageAdvanced) {
+      this.interactionLocked = true;
+      audioManager.playRepairReward();
+      this.delay(reduced ? 300 : 900, () => this.renderStage());
+    }
+    this.publishQa();
+  }
+
+  private refreshEnergyDesktop(): void {
+    if (mission10Controller.snapshot.stage !== 'ENERGY') return;
+    this.clearStagePresentation();
+    this.stageRoot!.removeAll(true);
+    this.renderEnergy();
+    this.publishQa();
+  }
+
+  private createEnergyTerminal(x: number, y: number, glyph: string, lit: boolean, terminalRadius = 30, beamGlowWidth = 10): Phaser.GameObjects.Container {
     const root = this.add.container(x, y);
-    const g = this.add.graphics().fillStyle(0x183b55, 0.98).fillCircle(0, 0, 30)
-      .lineStyle(5, lit ? 0x66f5ff : 0x45677b, 1).strokeCircle(0, 0, 30);
+    const g = this.add.graphics().fillStyle(0x183b55, 0.98).fillCircle(0, 0, terminalRadius)
+      .lineStyle(5, lit ? 0x66f5ff : 0x45677b, 1).strokeCircle(0, 0, terminalRadius);
+    if (lit) {
+      const halo = this.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+      halo.lineStyle(beamGlowWidth, 0x19d8ec, 0.2).strokeCircle(0, 0, terminalRadius + beamGlowWidth * 0.6);
+      root.add(halo);
+    }
     root.add([g, this.add.text(0, 0, glyph, { fontFamily: UI_FONT, fontSize: '26px', color: lit ? '#dfffff' : '#7596a8' }).setOrigin(0.5)]);
     return root;
   }
@@ -718,11 +930,55 @@ export class Mission10Scene extends Phaser.Scene {
     const config = getMission10SignalConfig(snapshot.signalConfigId);
     const solution = solveMission10Signal(config, snapshot.reflectorOrientations);
     const propSize = regions.PROP_VISIBLE_HEIGHT;
-    const mapPoint = (point: { x: number; y: number }): Phaser.Math.Vector2 => new Phaser.Math.Vector2(
+    const desktopSignal = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP';
+    const pointKey = (point: { x: number; y: number }): string => `${point.x},${point.y}`;
+    const rawMapPoint = (point: { x: number; y: number }): Phaser.Math.Vector2 => new Phaser.Math.Vector2(
       field.x + (point.x + 0.5) / config.bounds.width * field.width,
       field.y + (point.y + 0.5) / config.bounds.height * field.height,
     );
-    const signalPuzzleGroup = this.add.container(0, 0).setName('SIGNAL_PUZZLE_GROUP');
+    type SignalRole = 'SOURCE' | 'REFLECTOR_A' | 'REFLECTOR_B' | 'REFLECTOR_C' | 'RECEIVER';
+    type SignalPresentationNode = {
+      readonly role: SignalRole;
+      readonly center: Phaser.Math.Vector2;
+      readonly inputPort: Phaser.Math.Vector2;
+      readonly outputPort: Phaser.Math.Vector2;
+    };
+    const presentationNodes = new Map<string, SignalPresentationNode>();
+    const registerNode = (point: { x: number; y: number }, role: SignalRole, center: Phaser.Math.Vector2,
+      inputPort = center, outputPort = center): void => {
+      presentationNodes.set(pointKey(point), { role, center, inputPort, outputPort });
+    };
+    if (desktopSignal) {
+      // Presentation deliberately follows the player-facing route order rather than
+      // the serializable grid rows. This makes one platform installation: source
+      // lower-left -> A upper-left -> B lower-right -> receiver upper-right.
+      const at = (x: number, y: number): Phaser.Math.Vector2 => new Phaser.Math.Vector2(
+        field.x + field.width * x, field.y + field.height * y,
+      );
+      const source = at(0.08, 0.70);
+      const receiver = at(0.92, 0.30);
+      registerNode(config.emitter, 'SOURCE', source,
+        source, new Phaser.Math.Vector2(source.x + propSize * 0.20, source.y));
+      config.reflectors.forEach((reflector, index) => {
+        const role = (['REFLECTOR_A', 'REFLECTOR_B', 'REFLECTOR_C'] as const)[index];
+        const position = index === 0 ? at(0.34, 0.30)
+          : index === 1 ? at(0.63, 0.72)
+            : at(0.76, 0.48);
+        const rise = index === 0 ? -0.05 : index === 1 ? 0.05 : -0.03;
+        registerNode(reflector.position, role, position,
+          new Phaser.Math.Vector2(position.x - propSize * 0.34, position.y + propSize * rise),
+          new Phaser.Math.Vector2(position.x + propSize * 0.34, position.y + propSize * rise));
+      });
+      registerNode(config.receiver, 'RECEIVER', receiver,
+        new Phaser.Math.Vector2(receiver.x - propSize * 0.26, receiver.y), receiver);
+    } else {
+      registerNode(config.emitter, 'SOURCE', rawMapPoint(config.emitter));
+      registerNode(config.receiver, 'RECEIVER', rawMapPoint(config.receiver));
+      config.reflectors.forEach((reflector, index) => registerNode(reflector.position,
+        (['REFLECTOR_A', 'REFLECTOR_B', 'REFLECTOR_C'] as const)[index], rawMapPoint(reflector.position)));
+    }
+    const mapPoint = (point: { x: number; y: number }): Phaser.Math.Vector2 => presentationNodes.get(pointKey(point))?.center ?? rawMapPoint(point);
+    const signalPuzzleGroup = this.add.container(0, 0).setName('MISSION10_SIGNAL_PUZZLE_GROUP');
     this.stageRoot!.add(signalPuzzleGroup);
     const robotBox = regions.ROBOT_VISIBLE;
     if (this.robot) {
@@ -755,8 +1011,10 @@ export class Mission10Scene extends Phaser.Scene {
         .fillStyle(solution.receiverHit ? 0xbdfff5 : 0x43dac8, 1).fillRoundedRect(x - 4, ledY - 2, 8, 4, 2);
     }
     this.stageRoot!.add(platformEnergy);
-    const emitterPoint = mapPoint(config.emitter);
-    const receiverPoint = mapPoint(config.receiver);
+    const emitterNode = presentationNodes.get(pointKey(config.emitter))!;
+    const receiverNode = presentationNodes.get(pointKey(config.receiver))!;
+    const emitterPoint = emitterNode.center;
+    const receiverPoint = receiverNode.center;
     const emitter = this.add.image(emitterPoint.x, emitterPoint.y, 'MISSION10_SIGNAL_EMITTER')
       .setOrigin(0.77, 0.31).setName('mission10-signal-emitter');
     const emitterSource = this.getTextureVisibleBounds(emitter.texture.key);
@@ -766,28 +1024,36 @@ export class Mission10Scene extends Phaser.Scene {
     const receiverSource = this.getTextureVisibleBounds(receiver.texture.key);
     receiver.setScale(propSize / receiverSource.height).setData('visibleAlphaSourceBounds', receiverSource);
     if (!solution.receiverHit) receiver.setTint(0x8fa7b5);
-    const sourceHalo = this.add.circle(emitterPoint.x, emitterPoint.y, propSize * 0.19, 0x19d8ec, 0.20)
-      .setStrokeStyle(2, 0x54f6ff, 0.7).setName('mission10-signal-source-halo');
-    const sourceAperture = this.add.circle(emitterPoint.x, emitterPoint.y, propSize * 0.075, 0xe4ffff, 1)
-      .setStrokeStyle(3, 0x27d9ef, 1).setName('mission10-signal-source-aperture');
-    const receiverAperture = this.add.circle(receiverPoint.x, receiverPoint.y, propSize * 0.17,
-      solution.receiverHit ? 0xbafff4 : 0x062b40, 1).setStrokeStyle(3, solution.receiverHit ? 0xf0fffb : 0x80c5d4, 1)
-      .setName('mission10-signal-receiver-aperture');
-    const targetRing = this.add.circle(receiverPoint.x, receiverPoint.y, propSize * 0.20, 0x32eacf, solution.receiverHit ? 0.34 : 0)
-      .setStrokeStyle(solution.receiverHit ? 4 : 2, solution.receiverHit ? 0xaffff1 : 0x63aaba, 1)
-      .setName('mission10-signal-receiver-powered').setData('active', solution.receiverHit);
-    signalPuzzleGroup.add([emitter, receiver, sourceHalo, targetRing, receiverAperture]);
+    // Signal ports are semantic geometry only; rendering a receiver ring makes it
+    // read as a separate floating device rather than part of the receiver artwork.
+    signalPuzzleGroup.add([emitter, receiver]);
     const beam = this.add.graphics().setName('mission10-signal-beam').setBlendMode(Phaser.BlendModes.NORMAL);
     const core = regions.BEAM_CORE_WIDTH;
-    const points = solution.segments.map((segment) => ({ from: mapPoint(segment.from), to: mapPoint(segment.to) }));
+    const points: Array<{ from: Phaser.Math.Vector2; to: Phaser.Math.Vector2; fromRole: SignalRole; toRole: SignalRole }> = [];
+    let lastReachedNode = presentationNodes.get(pointKey(solution.segments[0]?.from));
+    for (const segment of solution.segments) {
+      const from = presentationNodes.get(pointKey(segment.from));
+      const to = presentationNodes.get(pointKey(segment.to));
+      if (from) lastReachedNode = from;
+      if (lastReachedNode && to && lastReachedNode !== to) {
+        // Solver subdivisions between device cells collapse into one semantic
+        // optical link, preserving the route without exposing grid scaffolding.
+        points.push({ from: lastReachedNode.outputPort, to: to.inputPort, fromRole: lastReachedNode.role, toRole: to.role });
+        lastReachedNode = to;
+      }
+    }
     // Three opaque strokes preserve contrast even over the brightest laboratory panel.
     for (const [width, color, alpha] of [[core + 11, 0x052c44, 0.95], [core + 5, 0x18c9ee, 1],
       [core + (solution.receiverHit ? 1 : 0), solution.receiverHit ? 0xffffff : 0xd1ffff, 1]]) {
       beam.lineStyle(width, color, alpha);
       for (const segment of points) beam.beginPath().moveTo(segment.from.x, segment.from.y).lineTo(segment.to.x, segment.to.y).strokePath();
     }
-    signalPuzzleGroup.add([beam, sourceAperture]);
-    const endpoint = points.at(-1)?.to;
+    signalPuzzleGroup.add(beam);
+    const terminalSegment = solution.segments.at(-1);
+    const terminalTo = terminalSegment ? presentationNodes.get(pointKey(terminalSegment.to)) : undefined;
+    const endpoint = !solution.receiverHit
+      ? (lastReachedNode && !terminalTo ? lastReachedNode.outputPort : points.at(-1)?.to)
+      : undefined;
     if (endpoint && !solution.receiverHit) signalPuzzleGroup.add(this.add.circle(endpoint.x, endpoint.y, core + 1, 0xc4ffff)
       .setStrokeStyle(2, 0x123e53).setName('mission10-signal-miss'));
     config.reflectors.forEach((reflector) => {
@@ -849,7 +1115,7 @@ export class Mission10Scene extends Phaser.Scene {
         this.tweens.add({ targets: pulse, angle: 1, duration: 950, ease: 'Linear',
           onUpdate: () => { const position = path.getPoint(pulse.angle); pulse.setPosition(position.x, position.y); },
           onComplete: () => { pulse.setVisible(false); } });
-        this.tweens.add({ targets: [targetRing, platformEnergy], alpha: 0.5, duration: 220, yoyo: true, repeat: 2 });
+        this.tweens.add({ targets: [platformEnergy], alpha: 0.5, duration: 220, yoyo: true, repeat: 2 });
       } else pulse.setPosition(receiverPoint.x, receiverPoint.y);
     }
     const apparatus: Array<{
@@ -883,8 +1149,13 @@ export class Mission10Scene extends Phaser.Scene {
     const groupVisibleTop = Math.min(...apparatus.map((item) => item.visibleTop), beamTop);
     const groupVisibleBottom = Math.max(...apparatus.map((item) => item.visibleBottom), beamBottom);
     this.game.registry.set('mission10SignalEvaluation', solution);
+    const presentationNodesTelemetry = [...presentationNodes.values()].map((node) => ({
+      role: node.role, center: { x: node.center.x, y: node.center.y },
+      inputPort: { x: node.inputPort.x, y: node.inputPort.y }, outputPort: { x: node.outputPort.x, y: node.outputPort.y },
+    }));
     this.game.registry.set('mission10SignalPresentation', { field, propSize, coreWidth: core, points,
-      source: emitterPoint, receiver: receiverPoint, groupName: 'SIGNAL_PUZZLE_GROUP', apparatus,
+      source: emitterPoint, receiver: receiverPoint, groupName: 'MISSION10_SIGNAL_PUZZLE_GROUP', apparatus,
+      nodes: presentationNodesTelemetry, stoppedPort: endpoint ? { x: endpoint.x, y: endpoint.y } : null,
       groupVisibleBounds: {
         visibleLeft: groupVisibleLeft, visibleRight: groupVisibleRight,
         visibleTop: groupVisibleTop, visibleBottom: groupVisibleBottom,

@@ -2,6 +2,8 @@
 const { chromium } = require('playwright');
 const fs = require('node:fs');
 const report = { result:'FAIL', completed:[], checks:[], errors:[], screenshots:[], releaseCandidate: true };
+const runId = new Date().toISOString().replace(/[:.]/g, '-');
+const screenshotDir = `docs/qa/runs/natural-flow/${runId}/screenshots`;
 const check=(name,ok,data)=>{report.checks.push({name,ok,data});if(!ok)throw Error(name+' failed: '+JSON.stringify(data));};
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 async function scene(page,key){await page.waitForFunction(key=>window.__ROBOTLAB_GAME__?.scene.isActive(key),key,{timeout:90000});}
@@ -10,12 +12,74 @@ async function point(page,key,name){
  await page.waitForFunction(({key,name})=>{const s=window.__ROBOTLAB_GAME__?.scene.getScene(key);const walk=x=>[x,...(x.list||[]).flatMap(walk)];return (key!=='Mission10Scene'||!s?.interactionLocked)&&s?.children.list.flatMap(walk).some(x=>x.name===name&&x.active&&x.visible&&x.input?.enabled);},{key,name},{timeout:15000});
  return page.evaluate(({key,name})=>{const game=window.__ROBOTLAB_GAME__;const walk=x=>[x,...(x.list||[]).flatMap(walk)];const item=game.scene.getScene(key).children.list.flatMap(walk).find(x=>x.name===name&&x.active&&x.visible&&x.input?.enabled);const b=item.getBounds();const origin=key==='Mission10Scene'?item.getWorldTransformMatrix().transformPoint(0,0):{x:b.centerX,y:b.centerY};const c=game.canvas.getBoundingClientRect();return {x:c.x+origin.x*c.width/game.scale.width,y:c.y+origin.y*c.height/game.scale.height};},{key,name});
 }
-async function tap(page,key,name){const p=await point(page,key,name);await page.mouse.click(p.x,p.y);if(key==='Mission10Scene')await page.waitForTimeout(100);}
+async function tap(page,key,name){
+ if(name.endsWith('continue')) await page.waitForTimeout(200);
+ const p=await point(page,key,name);
+ const transition=name.endsWith('continue') ? await page.evaluate(({key,name,p})=>{
+  const game=window.__ROBOTLAB_GAME__;const walk=x=>[x,...(x.list||[]).flatMap(walk)];const item=game.scene.getScene(key).children.list.flatMap(walk).find(x=>x.name===name);
+  const b=item?.getBounds?.();const canvas=game.canvas.getBoundingClientRect();
+  return {at:Date.now(),beforeScenes:game.scene.getScenes(true).map(x=>x.scene.key),session:window.__ROBOTLAB_QA__.sessionState.snapshot,point:p,bounds:b?{x:b.x,y:b.y,width:b.width,height:b.height}:null,canvas:{x:canvas.x,y:canvas.y,width:canvas.width,height:canvas.height},inputEnabled:Boolean(item?.input?.enabled)};
+ },{key,name,p}) : null;
+ if(name.endsWith('continue')){
+  await page.mouse.move(p.x,p.y);
+  await page.mouse.down();
+  await page.waitForTimeout(50);
+  await page.mouse.up();
+ }else await page.mouse.click(p.x,p.y);
+ if(transition){
+  await page.waitForTimeout(350);
+  transition.after=await page.evaluate(()=>({at:Date.now(),activeScenes:window.__ROBOTLAB_GAME__?.scene.getScenes(true).map(x=>x.scene.key)??[],session:window.__ROBOTLAB_QA__?.sessionState.snapshot??null,mission8Active:window.__ROBOTLAB_GAME__?.scene.isActive('Mission8Scene')??false,mission8Board:Boolean(window.__ROBOTLAB_GAME__?.scene.getScene('Mission8Scene')?.children.getByName('programming-board'))}));
+  report.transitions=[...(report.transitions||[]),transition];
+ }
+ if(key==='Mission10Scene')await page.waitForTimeout(100);
+}
+async function press(page,key,name,hold=50){
+ const p=await point(page,key,name);
+ await page.mouse.move(p.x,p.y);
+ await page.mouse.down();
+ await page.waitForTimeout(hold);
+ await page.mouse.up();
+ return p;
+}
+async function completeMission9Stage(page,expected){
+ await page.waitForFunction((stage)=>{
+  const game=window.__ROBOTLAB_GAME__;
+  return game?.registry.get('mission9PuzzleContract')?.stage===stage
+   && game.registry.get('mission9InteractionSnapshot')?.state==='IDLE';
+ },expected,{timeout:15000});
+ const before=await page.evaluate(()=>({
+  contract:window.__ROBOTLAB_GAME__.registry.get('mission9PuzzleContract'),
+  interaction:window.__ROBOTLAB_GAME__.registry.get('mission9InteractionSnapshot'),
+  snapshot:window.__ROBOTLAB_QA__.robotTestCourse.snapshot,
+ }));
+ const candidateName='mission9-choice-'+before.contract.correctCandidateId;
+ await press(page,'Mission9Scene',candidateName);
+ await page.waitForFunction((id)=>{
+  const interaction=window.__ROBOTLAB_GAME__?.registry.get('mission9InteractionSnapshot');
+  return interaction?.state==='SELECTED'&&interaction.selectedCandidateId===id;
+ },before.contract.correctCandidateId,{timeout:5000});
+ await press(page,'Mission9Scene','mission9-drop-target-hitarea');
+ await page.waitForFunction((stage)=>window.__ROBOTLAB_GAME__?.registry.get('mission9InteractionSnapshot')?.state==='TRANSITIONING'
+  &&window.__ROBOTLAB_QA__?.robotTestCourse.snapshot.courseStage===stage,expected,{timeout:5000});
+ const transitioning=await page.evaluate(()=>({
+  contract:window.__ROBOTLAB_GAME__.registry.get('mission9PuzzleContract'),
+  interaction:window.__ROBOTLAB_GAME__.registry.get('mission9InteractionSnapshot'),
+  snapshot:window.__ROBOTLAB_QA__.robotTestCourse.snapshot,
+ }));
+ report.mission9Stages=[...(report.mission9Stages||[]),{expected,before,transitioning}];
+ if(expected==='POWER')await page.waitForFunction(()=>window.__ROBOTLAB_GAME__?.registry.get('mission9Complete')===true
+  &&Boolean(window.__ROBOTLAB_GAME__.scene.getScene('Mission9Scene').children.getByName('mission9-completion')),{timeout:10000});
+ else await page.waitForFunction((stage)=>{
+  const game=window.__ROBOTLAB_GAME__;
+  return game?.registry.get('mission9PuzzleContract')?.stage===stage
+   &&game.registry.get('mission9InteractionSnapshot')?.state==='IDLE';
+ },expected==='BRIDGE'?'GATE':'POWER',{timeout:10000});
+}
 async function drag(page,key,from,to){const a=await point(page,key,from),b=await point(page,key,to);await page.mouse.move(a.x,a.y);await page.mouse.down();await page.mouse.move(b.x,b.y,{steps:12});await page.mouse.up();}
 async function rememberCard(page,key,name){await page.evaluate(({key,name})=>{window.fullFlowPreviousCard=window.__ROBOTLAB_GAME__.scene.getScene(key).children.getByName(name);},{key,name});}
 async function newCard(page,key,name){await page.waitForFunction(({key,name})=>{const s=window.__ROBOTLAB_GAME__.scene.getScene(key);return !s.sys.isActive()||s.children.getByName(name)!==window.fullFlowPreviousCard;},{key,name},{timeout:15000});}
 async function cardState(page,key,name){return page.evaluate(({key,name})=>window.__ROBOTLAB_GAME__.scene.getScene(key).children.getByName(name).snapshot,{key,name});}
-async function shot(page,label){const file='docs/qa/screenshots/stage10-remediation-natural-final-'+label+'.png';await page.screenshot({path:file});report.screenshots.push(file);}
+async function shot(page,label){fs.mkdirSync(screenshotDir,{recursive:true});const file=`${screenshotDir}/${label}.png`;await page.screenshot({path:file});report.screenshots.push(file);}
 async function completed(page,n){await page.waitForFunction(n=>window.__ROBOTLAB_QA__.sessionState.snapshot.completedTasks>=n,n,{timeout:15000});const s=await state(page);check('mission-'+n+'-natural-progression',s.completedTasks===n,s);report.completed.push(n);console.log('Completed Mission '+n);}
 (async()=>{
  const sequence=await import('../src/game/mechanics/sequence.ts');
@@ -61,11 +125,7 @@ async function completed(page,n){await page.waitForFunction(n=>window.__ROBOTLAB
    await tap(page,'Mission8Scene','programming-run-button');if(i<2)await newCard(page,'Mission8Scene','programming-board');
   }
   await completed(page,8);await tap(page,'Mission8Scene','mission8-continue');await scene(page,'Mission9Scene');
-  for(const stage of ['BRIDGE','GATE','POWER']){
-   await page.waitForFunction(stage=>window.__ROBOTLAB_GAME__.registry.get('mission9PuzzleContract')?.stage===stage,stage,{timeout:15000});
-   const c=await page.evaluate(()=>window.__ROBOTLAB_GAME__.registry.get('mission9PuzzleContract'));
-   await tap(page,'Mission9Scene','mission9-choice-'+c.correctCandidateId);await tap(page,'Mission9Scene','mission9-drop-target-hitarea');
-  }
+  for(const stage of ['BRIDGE','GATE','POWER'])await completeMission9Stage(page,stage);
   await completed(page,9);await shot(page,'mission9-complete');await tap(page,'Mission9Scene','mission9-continue-mission10');await scene(page,'Mission10Scene');
   check('m9-handoff-intro',await page.evaluate(()=>window.__ROBOTLAB_QA__.mission10Controller.snapshot.stage==='INTRO'),await state(page));
   await shot(page,'mission10-intro');await tap(page,'Mission10Scene','mission10-intro-start');

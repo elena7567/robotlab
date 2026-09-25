@@ -3,7 +3,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const baseUrl = process.env.ROBOTLAB_URL || 'http://127.0.0.1:4198/';
-const screenshotDir = path.join('docs', 'qa', 'screenshots');
+const runId = `${new Date().toISOString().replace(/[:.]/g, '-')}-pid${process.pid}`;
+const screenshotDir = path.join('docs', 'qa', 'runs', 'mission9', runId, 'screenshots');
 const reportPath = path.join('docs', 'qa', 'stage9r-mission9-full-rebuild.json');
 const stages = ['BRIDGE', 'GATE', 'POWER'];
 const nextStage = { BRIDGE: 'GATE', GATE: 'POWER', POWER: 'COMPLETE' };
@@ -11,7 +12,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const COPY = {
   completionTitle: '\u0418\u0421\u041f\u042b\u0422\u0410\u041d\u0418\u0415 \u041f\u0420\u041e\u0419\u0414\u0415\u041d\u041e',
   completionSubtitle: '\u0420\u041e\u0411\u041e\u0422 \u0413\u041e\u0422\u041e\u0412 \u041a \u041f\u0415\u0420\u0412\u041e\u041c\u0423 \u0417\u0410\u041f\u0423\u0421\u041a\u0423',
-  home: '\u041d\u0410 \u0413\u041b\u0410\u0412\u041d\u0423\u042e',
+  continueToBeacon: '\u041a \u041c\u0410\u042f\u041a\u0423',
   rotate: '\u041f\u041e\u0412\u0415\u0420\u041d\u0418 \u0422\u0415\u041b\u0415\u0424\u041e\u041d',
   landscape: '\u0418\u0413\u0420\u0410\u0415\u041c \u0413\u041e\u0420\u0418\u0417\u041e\u041d\u0422\u0410\u041b\u042c\u041d\u041e',
 };
@@ -322,15 +323,13 @@ async function fullFlow(browser, width, height, kind, viewport, desktop) {
         break;
       }
     }
-    const completionPath = path.join(screenshotDir, 'stage9r-mission9-' + viewport + '-completion.png');
     if (reachedCompletion) screenshots.completion = await shot(page, viewport + '-completion');
-    else if (fs.existsSync(completionPath)) fs.unlinkSync(completionPath);
     const final = await inspect(page);
     const regions = new Set(final.completionRegions);
     checks.push({ name: viewport + '-completion-contract', ok: final.labels.includes('ˆ‘›’€ˆ… Ž‰„…Ž')
       && final.labels.includes('ŽŽ’ ƒŽ’Ž‚ Š …‚ŽŒ“ ‡€“‘Š“') && final.labels.includes('€ ƒ‹€‚“ž')
       && ['TITLE', 'SUBTITLE', 'CHARACTER', 'ACTION'].every((region) => regions.has(region)), labels: final.labels, regions: [...regions] });
-    checks[checks.length - 1].ok = reachedCompletion && final.labels.includes(COPY.completionTitle) && final.labels.includes(COPY.completionSubtitle) && final.labels.includes(COPY.home) && ['TITLE', 'SUBTITLE', 'CHARACTER', 'ACTION'].every((region) => regions.has(region));
+    checks[checks.length - 1].ok = reachedCompletion && final.labels.includes(COPY.completionTitle) && final.labels.includes(COPY.completionSubtitle) && final.labels.includes(COPY.continueToBeacon) && ['TITLE', 'SUBTITLE', 'CHARACTER', 'ACTION'].every((region) => regions.has(region));
     checks.push({ name: viewport + '-runtime-clean', ok: clean(errors), errors });
     return { viewport: width + 'x' + height, input: kind === 'touch' ? 'CDP_TOUCH' : 'MOUSE', checks, final, screenshots, errors, ok: checks.every((check) => check.ok) };
   } finally { await context.close(); }

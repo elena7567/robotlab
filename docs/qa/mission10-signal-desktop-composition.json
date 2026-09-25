@@ -1,0 +1,4543 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "1280x720-scene",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1280x720-semantic-group",
+      "ok": true,
+      "actual": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    {
+      "name": "1280x720-platform-centered",
+      "ok": true,
+      "actual": {
+        "groupTop": 339.41119026933103,
+        "groupCenterX": 639.6365510050953,
+        "groupCenterY": 443.83876781897743,
+        "groupBottom": 548.2663453686238,
+        "groupWidth": 526.3644232878089,
+        "verticalSpread": 208.85515509929274,
+        "platformCenterX": 640,
+        "platformFrontRimY": 563,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 828.2375238502026,
+          "visibleRight": 902.8187626489997,
+          "visibleTop": 350.25784744262694,
+          "visibleBottom": 462.2578520992398,
+          "visibleWidth": 74.58123879879713,
+          "visibleHeight": 112.00000465661287,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.08543096872616324,
+          "localScaleY": 0.08543096872616324,
+          "effectiveWorldScaleX": 0.08543097227811813,
+          "effectiveWorldScaleY": 0.08543097227811813
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 523.3720672899076,
+            "visibleRight": 645.3946563429049,
+            "visibleTop": 339.41119026933103,
+            "visibleBottom": 461.4337793223284,
+            "visibleWidth": 122.02258905299732,
+            "visibleHeight": 122.02258905299738,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 659.6720550828763,
+            "visibleRight": 781.6946441358737,
+            "visibleTop": 419.2111780622998,
+            "visibleBottom": 541.2337671152972,
+            "visibleWidth": 122.02258905299732,
+            "visibleHeight": 122.02258905299738,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 14.277398739971431,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 14.277398739971431
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 462.1833333333334,
+              "y": 463
+            },
+            "inputPort": {
+              "x": 462.1833333333334,
+              "y": 463
+            },
+            "outputPort": {
+              "x": 484.58333333333337,
+              "y": 463
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 584.3833333333334,
+              "y": 387
+            },
+            "inputPort": {
+              "x": 546.3033333333334,
+              "y": 381.4
+            },
+            "outputPort": {
+              "x": 622.4633333333335,
+              "y": 381.4
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 720.6833333333334,
+              "y": 466.79999999999995
+            },
+            "inputPort": {
+              "x": 682.6033333333334,
+              "y": 472.4
+            },
+            "outputPort": {
+              "x": 758.7633333333334,
+              "y": 472.4
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 856.9833333333333,
+              "y": 387
+            },
+            "inputPort": {
+              "x": 827.8633333333333,
+              "y": 387
+            },
+            "outputPort": {
+              "x": 856.9833333333333,
+              "y": 387
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 484.58333333333337,
+              "y": 463
+            },
+            "to": {
+              "x": 546.3033333333334,
+              "y": 381.4
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 622.4633333333335,
+          "y": 381.4
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1280x720-semantic-nodes",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 462.1833333333334,
+            "y": 463
+          },
+          "inputPort": {
+            "x": 462.1833333333334,
+            "y": 463
+          },
+          "outputPort": {
+            "x": 484.58333333333337,
+            "y": 463
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 584.3833333333334,
+            "y": 387
+          },
+          "inputPort": {
+            "x": 546.3033333333334,
+            "y": 381.4
+          },
+          "outputPort": {
+            "x": 622.4633333333335,
+            "y": 381.4
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 720.6833333333334,
+            "y": 466.79999999999995
+          },
+          "inputPort": {
+            "x": 682.6033333333334,
+            "y": 472.4
+          },
+          "outputPort": {
+            "x": 758.7633333333334,
+            "y": 472.4
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 856.9833333333333,
+            "y": 387
+          },
+          "inputPort": {
+            "x": 827.8633333333333,
+            "y": 387
+          },
+          "outputPort": {
+            "x": 856.9833333333333,
+            "y": 387
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 484.58333333333337,
+              "y": 463
+            },
+            {
+              "x": 546.3033333333334,
+              "y": 381.4
+            }
+          ],
+          [
+            {
+              "x": 622.4633333333335,
+              "y": 381.4
+            },
+            {
+              "x": 682.6033333333334,
+              "y": 472.4
+            }
+          ],
+          [
+            {
+              "x": 758.7633333333334,
+              "y": 472.4
+            },
+            {
+              "x": 827.8633333333333,
+              "y": 387
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1280x720-forward-zig-zag",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 462.1833333333334,
+            "y": 463
+          },
+          "inputPort": {
+            "x": 462.1833333333334,
+            "y": 463
+          },
+          "outputPort": {
+            "x": 484.58333333333337,
+            "y": 463
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 584.3833333333334,
+            "y": 387
+          },
+          "inputPort": {
+            "x": 546.3033333333334,
+            "y": 381.4
+          },
+          "outputPort": {
+            "x": 622.4633333333335,
+            "y": 381.4
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 720.6833333333334,
+            "y": 466.79999999999995
+          },
+          "inputPort": {
+            "x": 682.6033333333334,
+            "y": 472.4
+          },
+          "outputPort": {
+            "x": 758.7633333333334,
+            "y": 472.4
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 856.9833333333333,
+            "y": 387
+          },
+          "inputPort": {
+            "x": 827.8633333333333,
+            "y": 387
+          },
+          "outputPort": {
+            "x": 856.9833333333333,
+            "y": 387
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 484.58333333333337,
+              "y": 463
+            },
+            {
+              "x": 546.3033333333334,
+              "y": 381.4
+            }
+          ],
+          [
+            {
+              "x": 622.4633333333335,
+              "y": 381.4
+            },
+            {
+              "x": 682.6033333333334,
+              "y": 472.4
+            }
+          ],
+          [
+            {
+              "x": 758.7633333333334,
+              "y": 472.4
+            },
+            {
+              "x": 827.8633333333333,
+              "y": 387
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1280x720-no-free-beam-endpoints",
+      "ok": true,
+      "actual": [
+        {
+          "from": {
+            "x": 484.58333333333337,
+            "y": 463
+          },
+          "to": {
+            "x": 546.3033333333334,
+            "y": 381.4
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ]
+    },
+    {
+      "name": "1280x720-unclipped",
+      "ok": true,
+      "actual": {
+        "groupTop": 339.41119026933103,
+        "groupCenterX": 639.6365510050953,
+        "groupCenterY": 443.83876781897743,
+        "groupBottom": 548.2663453686238,
+        "groupWidth": 526.3644232878089,
+        "verticalSpread": 208.85515509929274,
+        "platformCenterX": 640,
+        "platformFrontRimY": 563,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 828.2375238502026,
+          "visibleRight": 902.8187626489997,
+          "visibleTop": 350.25784744262694,
+          "visibleBottom": 462.2578520992398,
+          "visibleWidth": 74.58123879879713,
+          "visibleHeight": 112.00000465661287,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.08543096872616324,
+          "localScaleY": 0.08543096872616324,
+          "effectiveWorldScaleX": 0.08543097227811813,
+          "effectiveWorldScaleY": 0.08543097227811813
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 523.3720672899076,
+            "visibleRight": 645.3946563429049,
+            "visibleTop": 339.41119026933103,
+            "visibleBottom": 461.4337793223284,
+            "visibleWidth": 122.02258905299732,
+            "visibleHeight": 122.02258905299738,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 659.6720550828763,
+            "visibleRight": 781.6946441358737,
+            "visibleTop": 419.2111780622998,
+            "visibleBottom": 541.2337671152972,
+            "visibleWidth": 122.02258905299732,
+            "visibleHeight": 122.02258905299738,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 14.277398739971431,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 14.277398739971431
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 462.1833333333334,
+              "y": 463
+            },
+            "inputPort": {
+              "x": 462.1833333333334,
+              "y": 463
+            },
+            "outputPort": {
+              "x": 484.58333333333337,
+              "y": 463
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 584.3833333333334,
+              "y": 387
+            },
+            "inputPort": {
+              "x": 546.3033333333334,
+              "y": 381.4
+            },
+            "outputPort": {
+              "x": 622.4633333333335,
+              "y": 381.4
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 720.6833333333334,
+              "y": 466.79999999999995
+            },
+            "inputPort": {
+              "x": 682.6033333333334,
+              "y": 472.4
+            },
+            "outputPort": {
+              "x": 758.7633333333334,
+              "y": 472.4
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 856.9833333333333,
+              "y": 387
+            },
+            "inputPort": {
+              "x": 827.8633333333333,
+              "y": 387
+            },
+            "outputPort": {
+              "x": 856.9833333333333,
+              "y": 387
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 484.58333333333337,
+              "y": 463
+            },
+            "to": {
+              "x": 546.3033333333334,
+              "y": 381.4
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 622.4633333333335,
+          "y": 381.4
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1280x720-robot-grounded",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-robot-v2",
+          "grounded": true,
+          "bounds": {
+            "x": 173.26845113664865,
+            "y": 303.0497679114342,
+            "width": 191.24908914864062,
+            "height": 262.9510865807533
+          }
+        }
+      ]
+    },
+    {
+      "name": "1280x720-lower-reflector-clears-rim",
+      "ok": true,
+      "actual": {
+        "groupTop": 339.41119026933103,
+        "groupCenterX": 639.6365510050953,
+        "groupCenterY": 443.83876781897743,
+        "groupBottom": 548.2663453686238,
+        "groupWidth": 526.3644232878089,
+        "verticalSpread": 208.85515509929274,
+        "platformCenterX": 640,
+        "platformFrontRimY": 563,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 828.2375238502026,
+          "visibleRight": 902.8187626489997,
+          "visibleTop": 350.25784744262694,
+          "visibleBottom": 462.2578520992398,
+          "visibleWidth": 74.58123879879713,
+          "visibleHeight": 112.00000465661287,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.08543096872616324,
+          "localScaleY": 0.08543096872616324,
+          "effectiveWorldScaleX": 0.08543097227811813,
+          "effectiveWorldScaleY": 0.08543097227811813
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 523.3720672899076,
+            "visibleRight": 645.3946563429049,
+            "visibleTop": 339.41119026933103,
+            "visibleBottom": 461.4337793223284,
+            "visibleWidth": 122.02258905299732,
+            "visibleHeight": 122.02258905299738,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 659.6720550828763,
+            "visibleRight": 781.6946441358737,
+            "visibleTop": 419.2111780622998,
+            "visibleBottom": 541.2337671152972,
+            "visibleWidth": 122.02258905299732,
+            "visibleHeight": 122.02258905299738,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 14.277398739971431,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 14.277398739971431
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 462.1833333333334,
+              "y": 463
+            },
+            "inputPort": {
+              "x": 462.1833333333334,
+              "y": 463
+            },
+            "outputPort": {
+              "x": 484.58333333333337,
+              "y": 463
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 584.3833333333334,
+              "y": 387
+            },
+            "inputPort": {
+              "x": 546.3033333333334,
+              "y": 381.4
+            },
+            "outputPort": {
+              "x": 622.4633333333335,
+              "y": 381.4
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 720.6833333333334,
+              "y": 466.79999999999995
+            },
+            "inputPort": {
+              "x": 682.6033333333334,
+              "y": 472.4
+            },
+            "outputPort": {
+              "x": 758.7633333333334,
+              "y": 472.4
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 856.9833333333333,
+              "y": 387
+            },
+            "inputPort": {
+              "x": 827.8633333333333,
+              "y": 387
+            },
+            "outputPort": {
+              "x": 856.9833333333333,
+              "y": 387
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 484.58333333333337,
+              "y": 463
+            },
+            "to": {
+              "x": 546.3033333333334,
+              "y": 381.4
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 622.4633333333335,
+          "y": 381.4
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1438x914-scene",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1438x914-semantic-group",
+      "ok": true,
+      "actual": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    {
+      "name": "1438x914-platform-centered",
+      "ok": true,
+      "actual": {
+        "groupTop": 467.8491033620561,
+        "groupCenterX": 716.1530158022047,
+        "groupCenterY": 589.1635742304188,
+        "groupBottom": 710.4780450987816,
+        "groupWidth": 595.900120921731,
+        "verticalSpread": 242.62894173672555,
+        "platformCenterX": 719,
+        "platformFrontRimY": 714.6972222222221,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 922.8076501774788,
+          "visibleRight": 1014.1030762630701,
+          "visibleTop": 481.12657440185546,
+          "visibleBottom": 618.2265785235167,
+          "visibleWidth": 91.29542608559132,
+          "visibleHeight": 137.1000041216612,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10457665903890159,
+          "localScaleY": 0.10457665903890159,
+          "effectiveWorldScaleX": 0.10457666218280792,
+          "effectiveWorldScaleY": 0.10457666218280792
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 583.0568495126521,
+            "visibleRight": 732.4255723623479,
+            "visibleTop": 467.8491033620561,
+            "visibleBottom": 617.217826211752,
+            "visibleWidth": 149.3687228496958,
+            "visibleHeight": 149.36872284969593,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 733.1840467782771,
+            "visibleRight": 882.5527696279729,
+            "visibleTop": 551.8491033620561,
+            "visibleBottom": 701.217826211752,
+            "visibleWidth": 149.3687228496958,
+            "visibleHeight": 149.36872284969593,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 0.7584744159291859,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 0.7584744159291859
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 523.1444,
+              "y": 606.1028888888889
+            },
+            "inputPort": {
+              "x": 523.1444,
+              "y": 606.1028888888889
+            },
+            "outputPort": {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 657.7412,
+              "y": 526.1028888888889
+            },
+            "inputPort": {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            },
+            "outputPort": {
+              "x": 704.3552000000001,
+              "y": 519.2478888888888
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 807.8684000000001,
+              "y": 610.1028888888889
+            },
+            "inputPort": {
+              "x": 761.2544,
+              "y": 616.9578888888889
+            },
+            "outputPort": {
+              "x": 854.4824000000001,
+              "y": 616.9578888888889
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 957.9956,
+              "y": 526.1028888888889
+            },
+            "inputPort": {
+              "x": 922.3496,
+              "y": 526.1028888888889
+            },
+            "outputPort": {
+              "x": 957.9956,
+              "y": 526.1028888888889
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            },
+            "to": {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 704.3552000000001,
+          "y": 519.2478888888888
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1438x914-semantic-nodes",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 523.1444,
+            "y": 606.1028888888889
+          },
+          "inputPort": {
+            "x": 523.1444,
+            "y": 606.1028888888889
+          },
+          "outputPort": {
+            "x": 550.5644,
+            "y": 606.1028888888889
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 657.7412,
+            "y": 526.1028888888889
+          },
+          "inputPort": {
+            "x": 611.1272,
+            "y": 519.2478888888888
+          },
+          "outputPort": {
+            "x": 704.3552000000001,
+            "y": 519.2478888888888
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 807.8684000000001,
+            "y": 610.1028888888889
+          },
+          "inputPort": {
+            "x": 761.2544,
+            "y": 616.9578888888889
+          },
+          "outputPort": {
+            "x": 854.4824000000001,
+            "y": 616.9578888888889
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 957.9956,
+            "y": 526.1028888888889
+          },
+          "inputPort": {
+            "x": 922.3496,
+            "y": 526.1028888888889
+          },
+          "outputPort": {
+            "x": 957.9956,
+            "y": 526.1028888888889
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            },
+            {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            }
+          ],
+          [
+            {
+              "x": 704.3552000000001,
+              "y": 519.2478888888888
+            },
+            {
+              "x": 761.2544,
+              "y": 616.9578888888889
+            }
+          ],
+          [
+            {
+              "x": 854.4824000000001,
+              "y": 616.9578888888889
+            },
+            {
+              "x": 922.3496,
+              "y": 526.1028888888889
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1438x914-forward-zig-zag",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 523.1444,
+            "y": 606.1028888888889
+          },
+          "inputPort": {
+            "x": 523.1444,
+            "y": 606.1028888888889
+          },
+          "outputPort": {
+            "x": 550.5644,
+            "y": 606.1028888888889
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 657.7412,
+            "y": 526.1028888888889
+          },
+          "inputPort": {
+            "x": 611.1272,
+            "y": 519.2478888888888
+          },
+          "outputPort": {
+            "x": 704.3552000000001,
+            "y": 519.2478888888888
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 807.8684000000001,
+            "y": 610.1028888888889
+          },
+          "inputPort": {
+            "x": 761.2544,
+            "y": 616.9578888888889
+          },
+          "outputPort": {
+            "x": 854.4824000000001,
+            "y": 616.9578888888889
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 957.9956,
+            "y": 526.1028888888889
+          },
+          "inputPort": {
+            "x": 922.3496,
+            "y": 526.1028888888889
+          },
+          "outputPort": {
+            "x": 957.9956,
+            "y": 526.1028888888889
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            },
+            {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            }
+          ],
+          [
+            {
+              "x": 704.3552000000001,
+              "y": 519.2478888888888
+            },
+            {
+              "x": 761.2544,
+              "y": 616.9578888888889
+            }
+          ],
+          [
+            {
+              "x": 854.4824000000001,
+              "y": 616.9578888888889
+            },
+            {
+              "x": 922.3496,
+              "y": 526.1028888888889
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1438x914-no-free-beam-endpoints",
+      "ok": true,
+      "actual": [
+        {
+          "from": {
+            "x": 550.5644,
+            "y": 606.1028888888889
+          },
+          "to": {
+            "x": 611.1272,
+            "y": 519.2478888888888
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ]
+    },
+    {
+      "name": "1438x914-unclipped",
+      "ok": true,
+      "actual": {
+        "groupTop": 467.8491033620561,
+        "groupCenterX": 716.1530158022047,
+        "groupCenterY": 589.1635742304188,
+        "groupBottom": 710.4780450987816,
+        "groupWidth": 595.900120921731,
+        "verticalSpread": 242.62894173672555,
+        "platformCenterX": 719,
+        "platformFrontRimY": 714.6972222222221,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 922.8076501774788,
+          "visibleRight": 1014.1030762630701,
+          "visibleTop": 481.12657440185546,
+          "visibleBottom": 618.2265785235167,
+          "visibleWidth": 91.29542608559132,
+          "visibleHeight": 137.1000041216612,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10457665903890159,
+          "localScaleY": 0.10457665903890159,
+          "effectiveWorldScaleX": 0.10457666218280792,
+          "effectiveWorldScaleY": 0.10457666218280792
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 583.0568495126521,
+            "visibleRight": 732.4255723623479,
+            "visibleTop": 467.8491033620561,
+            "visibleBottom": 617.217826211752,
+            "visibleWidth": 149.3687228496958,
+            "visibleHeight": 149.36872284969593,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 733.1840467782771,
+            "visibleRight": 882.5527696279729,
+            "visibleTop": 551.8491033620561,
+            "visibleBottom": 701.217826211752,
+            "visibleWidth": 149.3687228496958,
+            "visibleHeight": 149.36872284969593,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 0.7584744159291859,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 0.7584744159291859
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 523.1444,
+              "y": 606.1028888888889
+            },
+            "inputPort": {
+              "x": 523.1444,
+              "y": 606.1028888888889
+            },
+            "outputPort": {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 657.7412,
+              "y": 526.1028888888889
+            },
+            "inputPort": {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            },
+            "outputPort": {
+              "x": 704.3552000000001,
+              "y": 519.2478888888888
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 807.8684000000001,
+              "y": 610.1028888888889
+            },
+            "inputPort": {
+              "x": 761.2544,
+              "y": 616.9578888888889
+            },
+            "outputPort": {
+              "x": 854.4824000000001,
+              "y": 616.9578888888889
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 957.9956,
+              "y": 526.1028888888889
+            },
+            "inputPort": {
+              "x": 922.3496,
+              "y": 526.1028888888889
+            },
+            "outputPort": {
+              "x": 957.9956,
+              "y": 526.1028888888889
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            },
+            "to": {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 704.3552000000001,
+          "y": 519.2478888888888
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1438x914-robot-grounded",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-robot-v2",
+          "grounded": true,
+          "bounds": {
+            "x": 165.4924871508777,
+            "y": 384.70485785603523,
+            "width": 242.78009296506644,
+            "height": 333.801794975996
+          }
+        }
+      ]
+    },
+    {
+      "name": "1438x914-lower-reflector-clears-rim",
+      "ok": true,
+      "actual": {
+        "groupTop": 467.8491033620561,
+        "groupCenterX": 716.1530158022047,
+        "groupCenterY": 589.1635742304188,
+        "groupBottom": 710.4780450987816,
+        "groupWidth": 595.900120921731,
+        "verticalSpread": 242.62894173672555,
+        "platformCenterX": 719,
+        "platformFrontRimY": 714.6972222222221,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 922.8076501774788,
+          "visibleRight": 1014.1030762630701,
+          "visibleTop": 481.12657440185546,
+          "visibleBottom": 618.2265785235167,
+          "visibleWidth": 91.29542608559132,
+          "visibleHeight": 137.1000041216612,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10457665903890159,
+          "localScaleY": 0.10457665903890159,
+          "effectiveWorldScaleX": 0.10457666218280792,
+          "effectiveWorldScaleY": 0.10457666218280792
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 583.0568495126521,
+            "visibleRight": 732.4255723623479,
+            "visibleTop": 467.8491033620561,
+            "visibleBottom": 617.217826211752,
+            "visibleWidth": 149.3687228496958,
+            "visibleHeight": 149.36872284969593,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 733.1840467782771,
+            "visibleRight": 882.5527696279729,
+            "visibleTop": 551.8491033620561,
+            "visibleBottom": 701.217826211752,
+            "visibleWidth": 149.3687228496958,
+            "visibleHeight": 149.36872284969593,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 0.7584744159291859,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 0.7584744159291859
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 523.1444,
+              "y": 606.1028888888889
+            },
+            "inputPort": {
+              "x": 523.1444,
+              "y": 606.1028888888889
+            },
+            "outputPort": {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 657.7412,
+              "y": 526.1028888888889
+            },
+            "inputPort": {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            },
+            "outputPort": {
+              "x": 704.3552000000001,
+              "y": 519.2478888888888
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 807.8684000000001,
+              "y": 610.1028888888889
+            },
+            "inputPort": {
+              "x": 761.2544,
+              "y": 616.9578888888889
+            },
+            "outputPort": {
+              "x": 854.4824000000001,
+              "y": 616.9578888888889
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 957.9956,
+              "y": 526.1028888888889
+            },
+            "inputPort": {
+              "x": 922.3496,
+              "y": 526.1028888888889
+            },
+            "outputPort": {
+              "x": 957.9956,
+              "y": 526.1028888888889
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 550.5644,
+              "y": 606.1028888888889
+            },
+            "to": {
+              "x": 611.1272,
+              "y": 519.2478888888888
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 704.3552000000001,
+          "y": 519.2478888888888
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-scene",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1600x900-semantic-group",
+      "ok": true,
+      "actual": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    {
+      "name": "1600x900-platform-centered",
+      "ok": true,
+      "actual": {
+        "groupTop": 459.3084711812249,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 579.1574249946232,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 239.69790762679662,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 459.3084711812249,
+            "visibleBottom": 606.3892704861771,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495222,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 542.8464960835686,
+            "visibleBottom": 689.9272953885209,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495228,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 777.74,
+          "y": 509.91999999999996
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-semantic-nodes",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 582.08,
+            "y": 596.23
+          },
+          "inputPort": {
+            "x": 582.08,
+            "y": 596.23
+          },
+          "outputPort": {
+            "x": 609.08,
+            "y": 596.23
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 731.84,
+            "y": 516.67
+          },
+          "inputPort": {
+            "x": 685.94,
+            "y": 509.91999999999996
+          },
+          "outputPort": {
+            "x": 777.74,
+            "y": 509.91999999999996
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 898.88,
+            "y": 600.208
+          },
+          "inputPort": {
+            "x": 852.98,
+            "y": 606.958
+          },
+          "outputPort": {
+            "x": 944.78,
+            "y": 606.958
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 1065.92,
+            "y": 516.67
+          },
+          "inputPort": {
+            "x": 1030.8200000000002,
+            "y": 516.67
+          },
+          "outputPort": {
+            "x": 1065.92,
+            "y": 516.67
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 609.08,
+              "y": 596.23
+            },
+            {
+              "x": 685.94,
+              "y": 509.91999999999996
+            }
+          ],
+          [
+            {
+              "x": 777.74,
+              "y": 509.91999999999996
+            },
+            {
+              "x": 852.98,
+              "y": 606.958
+            }
+          ],
+          [
+            {
+              "x": 944.78,
+              "y": 606.958
+            },
+            {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1600x900-forward-zig-zag",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 582.08,
+            "y": 596.23
+          },
+          "inputPort": {
+            "x": 582.08,
+            "y": 596.23
+          },
+          "outputPort": {
+            "x": 609.08,
+            "y": 596.23
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 731.84,
+            "y": 516.67
+          },
+          "inputPort": {
+            "x": 685.94,
+            "y": 509.91999999999996
+          },
+          "outputPort": {
+            "x": 777.74,
+            "y": 509.91999999999996
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 898.88,
+            "y": 600.208
+          },
+          "inputPort": {
+            "x": 852.98,
+            "y": 606.958
+          },
+          "outputPort": {
+            "x": 944.78,
+            "y": 606.958
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 1065.92,
+            "y": 516.67
+          },
+          "inputPort": {
+            "x": 1030.8200000000002,
+            "y": 516.67
+          },
+          "outputPort": {
+            "x": 1065.92,
+            "y": 516.67
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 609.08,
+              "y": 596.23
+            },
+            {
+              "x": 685.94,
+              "y": 509.91999999999996
+            }
+          ],
+          [
+            {
+              "x": 777.74,
+              "y": 509.91999999999996
+            },
+            {
+              "x": 852.98,
+              "y": 606.958
+            }
+          ],
+          [
+            {
+              "x": 944.78,
+              "y": 606.958
+            },
+            {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1600x900-no-free-beam-endpoints",
+      "ok": true,
+      "actual": [
+        {
+          "from": {
+            "x": 609.08,
+            "y": 596.23
+          },
+          "to": {
+            "x": 685.94,
+            "y": 509.91999999999996
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ]
+    },
+    {
+      "name": "1600x900-unclipped",
+      "ok": true,
+      "actual": {
+        "groupTop": 459.3084711812249,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 579.1574249946232,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 239.69790762679662,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 459.3084711812249,
+            "visibleBottom": 606.3892704861771,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495222,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 542.8464960835686,
+            "visibleBottom": 689.9272953885209,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495228,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 777.74,
+          "y": 509.91999999999996
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-robot-grounded",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-robot-v2",
+          "grounded": true,
+          "bounds": {
+            "x": 224.60638835072518,
+            "y": 378.81225085258484,
+            "width": 239.06135383844372,
+            "height": 328.68884778022766
+          }
+        }
+      ]
+    },
+    {
+      "name": "1600x900-lower-reflector-clears-rim",
+      "ok": true,
+      "actual": {
+        "groupTop": 459.3084711812249,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 579.1574249946232,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 239.69790762679662,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 459.3084711812249,
+            "visibleBottom": 606.3892704861771,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495222,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 542.8464960835686,
+            "visibleBottom": 689.9272953885209,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495228,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 777.74,
+          "y": 509.91999999999996
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-visible-spread",
+      "ok": true,
+      "actual": {
+        "groupTop": 459.3084711812249,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 579.1574249946232,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 239.69790762679662,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 459.3084711812249,
+            "visibleBottom": 606.3892704861771,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495222,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 542.8464960835686,
+            "visibleBottom": 689.9272953885209,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495228,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 777.74,
+          "y": 509.91999999999996
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-initial-source-to-a",
+      "ok": true,
+      "actual": {
+        "groupTop": 459.3084711812249,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 579.1574249946232,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 239.69790762679662,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 459.3084711812249,
+            "visibleBottom": 606.3892704861771,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495222,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 542.8464960835686,
+            "visibleBottom": 689.9272953885209,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495228,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 777.74,
+          "y": 509.91999999999996
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-partial-source-to-a-to-b",
+      "ok": true,
+      "actual": {
+        "groupTop": 455.866780477489,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 577.4365796427553,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 243.13959833053252,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 455.866780477489,
+            "visibleBottom": 611.7724277407383,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 155.9056472632493,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 542.8464960835686,
+            "visibleBottom": 689.9272953885209,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495228,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          },
+          {
+            "from": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            },
+            "to": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "fromRole": "REFLECTOR_A",
+            "toRole": "REFLECTOR_B"
+          }
+        ],
+        "stoppedPort": {
+          "x": 944.78,
+          "y": 606.958
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1600x900-solved-port-route",
+      "ok": true,
+      "actual": {
+        "groupTop": 459.3084711812249,
+        "groupCenterX": 799.9570399796962,
+        "groupCenterY": 579.1574249946232,
+        "groupBottom": 699.0063788080215,
+        "groupWidth": 642.4221217226982,
+        "verticalSpread": 239.69790762679662,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1031.2710724544525,
+          "visibleRight": 1121.1681008410453,
+          "visibleTop": 472.3825671386719,
+          "visibleBottom": 607.3825719666481,
+          "visibleWidth": 89.89702838659286,
+          "visibleHeight": 135.00000482797623,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.10297482837528604,
+          "localScaleY": 0.10297482837528604,
+          "effectiveWorldScaleX": 0.10297483205795288,
+          "effectiveWorldScaleY": 0.10297483205795288
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 658.2996272029926,
+            "visibleRight": 805.3804265079449,
+            "visibleTop": 459.3084711812249,
+            "visibleBottom": 606.3892704861771,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 147.08079930495222,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 825.3396052303364,
+            "visibleRight": 972.4204045352886,
+            "visibleTop": 539.4048053798327,
+            "visibleBottom": 695.310452643082,
+            "visibleWidth": 147.08079930495228,
+            "visibleHeight": 155.9056472632493,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 19.95917872239147,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 19.95917872239147
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "inputPort": {
+              "x": 582.08,
+              "y": 596.23
+            },
+            "outputPort": {
+              "x": 609.08,
+              "y": 596.23
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 731.84,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "outputPort": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 898.88,
+              "y": 600.208
+            },
+            "inputPort": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "outputPort": {
+              "x": 944.78,
+              "y": 606.958
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1065.92,
+              "y": 516.67
+            },
+            "inputPort": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "outputPort": {
+              "x": 1065.92,
+              "y": 516.67
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 609.08,
+              "y": 596.23
+            },
+            "to": {
+              "x": 685.94,
+              "y": 509.91999999999996
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          },
+          {
+            "from": {
+              "x": 777.74,
+              "y": 509.91999999999996
+            },
+            "to": {
+              "x": 852.98,
+              "y": 606.958
+            },
+            "fromRole": "REFLECTOR_A",
+            "toRole": "REFLECTOR_B"
+          },
+          {
+            "from": {
+              "x": 944.78,
+              "y": 606.958
+            },
+            "to": {
+              "x": 1030.8200000000002,
+              "y": 516.67
+            },
+            "fromRole": "REFLECTOR_B",
+            "toRole": "RECEIVER"
+          }
+        ],
+        "stoppedPort": null,
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1920x1080-scene",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "1920x1080-semantic-group",
+      "ok": true,
+      "actual": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    {
+      "name": "1920x1080-platform-centered",
+      "ok": true,
+      "actual": {
+        "groupTop": 586.3894874022589,
+        "groupCenterX": 960.0093621279299,
+        "groupCenterY": 712.3894735508256,
+        "groupBottom": 838.3894596993923,
+        "groupWidth": 691.1288369229435,
+        "verticalSpread": 251.99997229713347,
+        "platformCenterX": 960,
+        "platformFrontRimY": 844.35,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1209.01771523118,
+          "visibleRight": 1305.5737805894016,
+          "visibleTop": 600.4320359802246,
+          "visibleBottom": 745.4320379099249,
+          "visibleWidth": 96.55606535822153,
+          "visibleHeight": 145.00000192970037,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.11060259344012205,
+          "localScaleY": 0.11060259344012205,
+          "effectiveWorldScaleX": 0.11060259491205215,
+          "effectiveWorldScaleY": 0.11060259491205215
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 807.6455251526356,
+            "visibleRight": 965.6211984801769,
+            "visibleTop": 586.3894874022589,
+            "visibleBottom": 744.3651607298002,
+            "visibleWidth": 157.97567332754124,
+            "visibleHeight": 157.97567332754136,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 987.4455129456044,
+            "visibleRight": 1145.4211862731456,
+            "visibleTop": 670.3894874022589,
+            "visibleBottom": 828.3651607298002,
+            "visibleWidth": 157.97567332754124,
+            "visibleHeight": 157.97567332754136,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 21.824314465427506,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 21.824314465427506
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 725.4333333333334,
+              "y": 728
+            },
+            "inputPort": {
+              "x": 725.4333333333334,
+              "y": 728
+            },
+            "outputPort": {
+              "x": 754.4333333333334,
+              "y": 728
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 886.6333333333334,
+              "y": 648
+            },
+            "inputPort": {
+              "x": 837.3333333333335,
+              "y": 640.75
+            },
+            "outputPort": {
+              "x": 935.9333333333334,
+              "y": 640.75
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 1066.4333333333334,
+              "y": 732
+            },
+            "inputPort": {
+              "x": 1017.1333333333334,
+              "y": 739.25
+            },
+            "outputPort": {
+              "x": 1115.7333333333333,
+              "y": 739.25
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1246.2333333333333,
+              "y": 648
+            },
+            "inputPort": {
+              "x": 1208.5333333333333,
+              "y": 648
+            },
+            "outputPort": {
+              "x": 1246.2333333333333,
+              "y": 648
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 754.4333333333334,
+              "y": 728
+            },
+            "to": {
+              "x": 837.3333333333335,
+              "y": 640.75
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 935.9333333333334,
+          "y": 640.75
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1920x1080-semantic-nodes",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 725.4333333333334,
+            "y": 728
+          },
+          "inputPort": {
+            "x": 725.4333333333334,
+            "y": 728
+          },
+          "outputPort": {
+            "x": 754.4333333333334,
+            "y": 728
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 886.6333333333334,
+            "y": 648
+          },
+          "inputPort": {
+            "x": 837.3333333333335,
+            "y": 640.75
+          },
+          "outputPort": {
+            "x": 935.9333333333334,
+            "y": 640.75
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 1066.4333333333334,
+            "y": 732
+          },
+          "inputPort": {
+            "x": 1017.1333333333334,
+            "y": 739.25
+          },
+          "outputPort": {
+            "x": 1115.7333333333333,
+            "y": 739.25
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 1246.2333333333333,
+            "y": 648
+          },
+          "inputPort": {
+            "x": 1208.5333333333333,
+            "y": 648
+          },
+          "outputPort": {
+            "x": 1246.2333333333333,
+            "y": 648
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 754.4333333333334,
+              "y": 728
+            },
+            {
+              "x": 837.3333333333335,
+              "y": 640.75
+            }
+          ],
+          [
+            {
+              "x": 935.9333333333334,
+              "y": 640.75
+            },
+            {
+              "x": 1017.1333333333334,
+              "y": 739.25
+            }
+          ],
+          [
+            {
+              "x": 1115.7333333333333,
+              "y": 739.25
+            },
+            {
+              "x": 1208.5333333333333,
+              "y": 648
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1920x1080-forward-zig-zag",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 725.4333333333334,
+            "y": 728
+          },
+          "inputPort": {
+            "x": 725.4333333333334,
+            "y": 728
+          },
+          "outputPort": {
+            "x": 754.4333333333334,
+            "y": 728
+          }
+        },
+        "a": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 886.6333333333334,
+            "y": 648
+          },
+          "inputPort": {
+            "x": 837.3333333333335,
+            "y": 640.75
+          },
+          "outputPort": {
+            "x": 935.9333333333334,
+            "y": 640.75
+          }
+        },
+        "b": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 1066.4333333333334,
+            "y": 732
+          },
+          "inputPort": {
+            "x": 1017.1333333333334,
+            "y": 739.25
+          },
+          "outputPort": {
+            "x": 1115.7333333333333,
+            "y": 739.25
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 1246.2333333333333,
+            "y": 648
+          },
+          "inputPort": {
+            "x": 1208.5333333333333,
+            "y": 648
+          },
+          "outputPort": {
+            "x": 1246.2333333333333,
+            "y": 648
+          }
+        },
+        "expected": [
+          [
+            {
+              "x": 754.4333333333334,
+              "y": 728
+            },
+            {
+              "x": 837.3333333333335,
+              "y": 640.75
+            }
+          ],
+          [
+            {
+              "x": 935.9333333333334,
+              "y": 640.75
+            },
+            {
+              "x": 1017.1333333333334,
+              "y": 739.25
+            }
+          ],
+          [
+            {
+              "x": 1115.7333333333333,
+              "y": 739.25
+            },
+            {
+              "x": 1208.5333333333333,
+              "y": 648
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "name": "1920x1080-no-free-beam-endpoints",
+      "ok": true,
+      "actual": [
+        {
+          "from": {
+            "x": 754.4333333333334,
+            "y": 728
+          },
+          "to": {
+            "x": 837.3333333333335,
+            "y": 640.75
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ]
+    },
+    {
+      "name": "1920x1080-unclipped",
+      "ok": true,
+      "actual": {
+        "groupTop": 586.3894874022589,
+        "groupCenterX": 960.0093621279299,
+        "groupCenterY": 712.3894735508256,
+        "groupBottom": 838.3894596993923,
+        "groupWidth": 691.1288369229435,
+        "verticalSpread": 251.99997229713347,
+        "platformCenterX": 960,
+        "platformFrontRimY": 844.35,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1209.01771523118,
+          "visibleRight": 1305.5737805894016,
+          "visibleTop": 600.4320359802246,
+          "visibleBottom": 745.4320379099249,
+          "visibleWidth": 96.55606535822153,
+          "visibleHeight": 145.00000192970037,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.11060259344012205,
+          "localScaleY": 0.11060259344012205,
+          "effectiveWorldScaleX": 0.11060259491205215,
+          "effectiveWorldScaleY": 0.11060259491205215
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 807.6455251526356,
+            "visibleRight": 965.6211984801769,
+            "visibleTop": 586.3894874022589,
+            "visibleBottom": 744.3651607298002,
+            "visibleWidth": 157.97567332754124,
+            "visibleHeight": 157.97567332754136,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 987.4455129456044,
+            "visibleRight": 1145.4211862731456,
+            "visibleTop": 670.3894874022589,
+            "visibleBottom": 828.3651607298002,
+            "visibleWidth": 157.97567332754124,
+            "visibleHeight": 157.97567332754136,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 21.824314465427506,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 21.824314465427506
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 725.4333333333334,
+              "y": 728
+            },
+            "inputPort": {
+              "x": 725.4333333333334,
+              "y": 728
+            },
+            "outputPort": {
+              "x": 754.4333333333334,
+              "y": 728
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 886.6333333333334,
+              "y": 648
+            },
+            "inputPort": {
+              "x": 837.3333333333335,
+              "y": 640.75
+            },
+            "outputPort": {
+              "x": 935.9333333333334,
+              "y": 640.75
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 1066.4333333333334,
+              "y": 732
+            },
+            "inputPort": {
+              "x": 1017.1333333333334,
+              "y": 739.25
+            },
+            "outputPort": {
+              "x": 1115.7333333333333,
+              "y": 739.25
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1246.2333333333333,
+              "y": 648
+            },
+            "inputPort": {
+              "x": 1208.5333333333333,
+              "y": 648
+            },
+            "outputPort": {
+              "x": 1246.2333333333333,
+              "y": 648
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 754.4333333333334,
+              "y": 728
+            },
+            "to": {
+              "x": 837.3333333333335,
+              "y": 640.75
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 935.9333333333334,
+          "y": 640.75
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "1920x1080-robot-grounded",
+      "ok": true,
+      "actual": [
+        {
+          "name": "mission10-robot-v2",
+          "grounded": true,
+          "bounds": {
+            "x": 311.51100647300484,
+            "y": 454.424709379673,
+            "width": 286.8736185282469,
+            "height": 394.426608979702
+          }
+        }
+      ]
+    },
+    {
+      "name": "1920x1080-lower-reflector-clears-rim",
+      "ok": true,
+      "actual": {
+        "groupTop": 586.3894874022589,
+        "groupCenterX": 960.0093621279299,
+        "groupCenterY": 712.3894735508256,
+        "groupBottom": 838.3894596993923,
+        "groupWidth": 691.1288369229435,
+        "verticalSpread": 251.99997229713347,
+        "platformCenterX": 960,
+        "platformFrontRimY": 844.35,
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 1209.01771523118,
+          "visibleRight": 1305.5737805894016,
+          "visibleTop": 600.4320359802246,
+          "visibleBottom": 745.4320379099249,
+          "visibleWidth": 96.55606535822153,
+          "visibleHeight": 145.00000192970037,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.11060259344012205,
+          "localScaleY": 0.11060259344012205,
+          "effectiveWorldScaleX": 0.11060259491205215,
+          "effectiveWorldScaleY": 0.11060259491205215
+        },
+        "reflectors": [
+          {
+            "id": "M1",
+            "visibleLeft": 807.6455251526356,
+            "visibleRight": 965.6211984801769,
+            "visibleTop": 586.3894874022589,
+            "visibleBottom": 744.3651607298002,
+            "visibleWidth": 157.97567332754124,
+            "visibleHeight": 157.97567332754136,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 987.4455129456044,
+            "visibleRight": 1145.4211862731456,
+            "visibleTop": 670.3894874022589,
+            "visibleBottom": 828.3651607298002,
+            "visibleWidth": 157.97567332754124,
+            "visibleHeight": 157.97567332754136,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "reflectorSeparation": {
+          "horizontalGap": 21.824314465427506,
+          "verticalGap": 0,
+          "edgeToEdgeSeparation": 21.824314465427506
+        },
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 725.4333333333334,
+              "y": 728
+            },
+            "inputPort": {
+              "x": 725.4333333333334,
+              "y": 728
+            },
+            "outputPort": {
+              "x": 754.4333333333334,
+              "y": 728
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 886.6333333333334,
+              "y": 648
+            },
+            "inputPort": {
+              "x": 837.3333333333335,
+              "y": 640.75
+            },
+            "outputPort": {
+              "x": 935.9333333333334,
+              "y": 640.75
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 1066.4333333333334,
+              "y": 732
+            },
+            "inputPort": {
+              "x": 1017.1333333333334,
+              "y": 739.25
+            },
+            "outputPort": {
+              "x": 1115.7333333333333,
+              "y": 739.25
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 1246.2333333333333,
+              "y": 648
+            },
+            "inputPort": {
+              "x": 1208.5333333333333,
+              "y": 648
+            },
+            "outputPort": {
+              "x": 1246.2333333333333,
+              "y": 648
+            }
+          }
+        ],
+        "beamSegments": [
+          {
+            "from": {
+              "x": 754.4333333333334,
+              "y": 728
+            },
+            "to": {
+              "x": 837.3333333333335,
+              "y": 640.75
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "stoppedPort": {
+          "x": 935.9333333333334,
+          "y": 640.75
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+      }
+    },
+    {
+      "name": "844x390-frozen-signal-presentation",
+      "ok": true,
+      "actual": {
+        "field": {
+          "x": 135.3943,
+          "y": 81.01000000000002,
+          "width": 629.7252000000001,
+          "height": 282.88
+        },
+        "propSize": 104,
+        "coreWidth": 7,
+        "points": [
+          {
+            "from": {
+              "x": 187.8714,
+              "y": 279.026
+            },
+            "to": {
+              "x": 397.7798,
+              "y": 279.026
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "source": {
+          "x": 187.8714,
+          "y": 279.026
+        },
+        "receiver": {
+          "x": 712.6424,
+          "y": 165.87400000000002
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP",
+        "apparatus": [
+          {
+            "id": "emitter",
+            "visibleLeft": 108.2659200668335,
+            "visibleRight": 203.27961798906327,
+            "visibleTop": 254.20189157247543,
+            "visibleBottom": 358.2018907976151,
+            "visibleWidth": 95.01369792222977,
+            "visibleHeight": 103.99999922513965,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 0.1095890410958904,
+            "localScaleY": 0.1095890410958904,
+            "effectiveWorldScaleX": 0.10958904027938843,
+            "effectiveWorldScaleY": 0.10958904027938843
+          },
+          {
+            "id": "receiver",
+            "visibleLeft": 685.9498561918736,
+            "visibleRight": 755.2038576081395,
+            "visibleTop": 131.75628280639648,
+            "visibleBottom": 235.75627806037664,
+            "visibleWidth": 69.25400141626596,
+            "visibleHeight": 103.99999525398016,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 0.07932875667429443,
+            "localScaleY": 0.07932875667429443,
+            "effectiveWorldScaleX": 0.079328753054142,
+            "effectiveWorldScaleY": 0.079328753054142
+          },
+          {
+            "id": "M1",
+            "visibleLeft": 341.1264402387869,
+            "visibleRight": 454.4331300737131,
+            "visibleTop": 234.8363919409413,
+            "visibleBottom": 348.1430817758675,
+            "visibleWidth": 113.30668983492615,
+            "visibleHeight": 113.30668983492617,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 341.1264402387869,
+            "visibleRight": 454.4331300737131,
+            "visibleTop": 121.68438388430067,
+            "visibleBottom": 234.99107371922685,
+            "visibleWidth": 113.30668983492615,
+            "visibleHeight": 113.30668983492617,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 187.8714,
+              "y": 279.026
+            },
+            "inputPort": {
+              "x": 187.8714,
+              "y": 279.026
+            },
+            "outputPort": {
+              "x": 187.8714,
+              "y": 279.026
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 712.6424,
+              "y": 165.87400000000002
+            },
+            "inputPort": {
+              "x": 712.6424,
+              "y": 165.87400000000002
+            },
+            "outputPort": {
+              "x": 712.6424,
+              "y": 165.87400000000002
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 397.7798,
+              "y": 279.026
+            },
+            "inputPort": {
+              "x": 397.7798,
+              "y": 279.026
+            },
+            "outputPort": {
+              "x": 397.7798,
+              "y": 279.026
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 397.7798,
+              "y": 165.87400000000002
+            },
+            "inputPort": {
+              "x": 397.7798,
+              "y": 165.87400000000002
+            },
+            "outputPort": {
+              "x": 397.7798,
+              "y": 165.87400000000002
+            }
+          }
+        ],
+        "stoppedPort": {
+          "x": 397.7798,
+          "y": 279.026
+        },
+        "groupVisibleBounds": {
+          "visibleLeft": 108.2659200668335,
+          "visibleRight": 755.2038576081395,
+          "visibleTop": 121.68438388430067,
+          "visibleBottom": 358.2018907976151,
+          "visibleWidth": 646.937937541306,
+          "visibleHeight": 236.5175069133144
+        },
+        "successHold": 1500
+      }
+    },
+    {
+      "name": "844x390-signal-stage",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-frozen-signal-presentation",
+      "ok": true,
+      "actual": {
+        "field": {
+          "x": 154.34387897435903,
+          "y": 82.308,
+          "width": 667.651282051282,
+          "height": 298.8373333333334
+        },
+        "propSize": 109.86666666666667,
+        "coreWidth": 7.394871794871795,
+        "points": [
+          {
+            "from": {
+              "x": 209.98148581196585,
+              "y": 291.49413333333337
+            },
+            "to": {
+              "x": 432.5319131623932,
+              "y": 291.49413333333337
+            },
+            "fromRole": "SOURCE",
+            "toRole": "REFLECTOR_A"
+          }
+        ],
+        "source": {
+          "x": 209.98148581196585,
+          "y": 291.49413333333337
+        },
+        "receiver": {
+          "x": 766.3575541880341,
+          "y": 171.9592
+        },
+        "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP",
+        "apparatus": [
+          {
+            "id": "emitter",
+            "visibleLeft": 125.88544528484344,
+            "visibleRight": 226.2588920250535,
+            "visibleTop": 265.26969638556244,
+            "visibleBottom": 375.13636415541174,
+            "visibleWidth": 100.37344674021007,
+            "visibleHeight": 109.8666677698493,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 0.11577098700386372,
+            "localScaleY": 0.11577098700386372,
+            "effectiveWorldScaleX": 0.11577098816633224,
+            "effectiveWorldScaleY": 0.11577098816633224
+          },
+          {
+            "id": "receiver",
+            "visibleLeft": 738.1592704868317,
+            "visibleRight": 811.3199122166634,
+            "visibleTop": 135.91689697265625,
+            "visibleBottom": 245.78356513738635,
+            "visibleWidth": 73.1606417298317,
+            "visibleHeight": 109.8666681647301,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 0.08380371217899822,
+            "localScaleY": 0.08380371217899822,
+            "effectiveWorldScaleX": 0.08380371332168579,
+            "effectiveWorldScaleY": 0.08380371332168579
+          },
+          {
+            "id": "M1",
+            "visibleLeft": 372.68274675596285,
+            "visibleRight": 492.38109601747465,
+            "visibleTop": 244.81178441301043,
+            "visibleBottom": 364.5101336745222,
+            "visibleWidth": 119.6983492615118,
+            "visibleHeight": 119.69834926151177,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          },
+          {
+            "id": "M2",
+            "visibleLeft": 372.68274675596285,
+            "visibleRight": 492.38109601747465,
+            "visibleTop": 125.2768417860573,
+            "visibleBottom": 244.97519104756904,
+            "visibleWidth": 119.6983492615118,
+            "visibleHeight": 119.69834926151174,
+            "parentScaleX": 1,
+            "parentScaleY": 1,
+            "localScaleX": 1,
+            "localScaleY": 1,
+            "effectiveWorldScaleX": 1,
+            "effectiveWorldScaleY": 1
+          }
+        ],
+        "nodes": [
+          {
+            "role": "SOURCE",
+            "center": {
+              "x": 209.98148581196585,
+              "y": 291.49413333333337
+            },
+            "inputPort": {
+              "x": 209.98148581196585,
+              "y": 291.49413333333337
+            },
+            "outputPort": {
+              "x": 209.98148581196585,
+              "y": 291.49413333333337
+            }
+          },
+          {
+            "role": "RECEIVER",
+            "center": {
+              "x": 766.3575541880341,
+              "y": 171.9592
+            },
+            "inputPort": {
+              "x": 766.3575541880341,
+              "y": 171.9592
+            },
+            "outputPort": {
+              "x": 766.3575541880341,
+              "y": 171.9592
+            }
+          },
+          {
+            "role": "REFLECTOR_A",
+            "center": {
+              "x": 432.5319131623932,
+              "y": 291.49413333333337
+            },
+            "inputPort": {
+              "x": 432.5319131623932,
+              "y": 291.49413333333337
+            },
+            "outputPort": {
+              "x": 432.5319131623932,
+              "y": 291.49413333333337
+            }
+          },
+          {
+            "role": "REFLECTOR_B",
+            "center": {
+              "x": 432.5319131623932,
+              "y": 171.9592
+            },
+            "inputPort": {
+              "x": 432.5319131623932,
+              "y": 171.9592
+            },
+            "outputPort": {
+              "x": 432.5319131623932,
+              "y": 171.9592
+            }
+          }
+        ],
+        "stoppedPort": {
+          "x": 432.5319131623932,
+          "y": 291.49413333333337
+        },
+        "groupVisibleBounds": {
+          "visibleLeft": 125.88544528484344,
+          "visibleRight": 811.3199122166634,
+          "visibleTop": 125.2768417860573,
+          "visibleBottom": 375.13636415541174,
+          "visibleWidth": 685.43446693182,
+          "visibleHeight": 249.85952236935444
+        },
+        "successHold": 1500
+      }
+    },
+    {
+      "name": "915x412-signal-stage",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "390x844-frozen-signal-presentation",
+      "ok": true,
+      "actual": null
+    },
+    {
+      "name": "390x844-signal-stage",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "energy-regression-stage",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 2,
+            "R2": 3,
+            "R3": 2
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "presentation": null,
+        "evaluation": null,
+        "platformCenterX": 800,
+        "platformFrontRimY": 703.75,
+        "robot": [
+          {
+            "name": "mission10-robot-v2",
+            "grounded": true,
+            "bounds": {
+              "x": 147.28308512806893,
+              "y": 535.3111522197723,
+              "width": 239.06135383844372,
+              "height": 328.68884778022766
+            }
+          }
+        ],
+        "targets": [
+          {
+            "reflectorId": null,
+            "bounds": null
+          },
+          {
+            "reflectorId": null,
+            "bounds": null
+          },
+          {
+            "reflectorId": null,
+            "bounds": null
+          },
+          {
+            "reflectorId": null,
+            "bounds": {
+              "x": 37,
+              "y": 47.5,
+              "width": 74,
+              "height": 21
+            }
+          },
+          {
+            "reflectorId": null,
+            "bounds": {
+              "x": 1499,
+              "y": 47.5,
+              "width": 54,
+              "height": 21
+            }
+          }
+        ],
+        "sceneActive": true
+      }
+    },
+    {
+      "name": "runtime-errors-empty",
+      "ok": true,
+      "actual": []
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1280x720-initial.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1438x914-initial.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1600x900-initial.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1600x900-partial.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1600x900-solved.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1920x1080-initial.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\844x390-signal.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\915x412-signal.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\390x844-signal.png",
+    "docs\\qa\\screenshots\\mission10-signal-desktop-repair\\1600x900-energy-regression.png"
+  ],
+  "measurements": {
+    "1280x720": {
+      "groupTop": 339.41119026933103,
+      "groupCenterX": 639.6365510050953,
+      "groupCenterY": 443.83876781897743,
+      "groupBottom": 548.2663453686238,
+      "groupWidth": 526.3644232878089,
+      "verticalSpread": 208.85515509929274,
+      "platformCenterX": 640,
+      "platformFrontRimY": 563,
+      "receiver": {
+        "id": "receiver",
+        "visibleLeft": 828.2375238502026,
+        "visibleRight": 902.8187626489997,
+        "visibleTop": 350.25784744262694,
+        "visibleBottom": 462.2578520992398,
+        "visibleWidth": 74.58123879879713,
+        "visibleHeight": 112.00000465661287,
+        "parentScaleX": 1,
+        "parentScaleY": 1,
+        "localScaleX": 0.08543096872616324,
+        "localScaleY": 0.08543096872616324,
+        "effectiveWorldScaleX": 0.08543097227811813,
+        "effectiveWorldScaleY": 0.08543097227811813
+      },
+      "reflectors": [
+        {
+          "id": "M1",
+          "visibleLeft": 523.3720672899076,
+          "visibleRight": 645.3946563429049,
+          "visibleTop": 339.41119026933103,
+          "visibleBottom": 461.4337793223284,
+          "visibleWidth": 122.02258905299732,
+          "visibleHeight": 122.02258905299738,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        {
+          "id": "M2",
+          "visibleLeft": 659.6720550828763,
+          "visibleRight": 781.6946441358737,
+          "visibleTop": 419.2111780622998,
+          "visibleBottom": 541.2337671152972,
+          "visibleWidth": 122.02258905299732,
+          "visibleHeight": 122.02258905299738,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        }
+      ],
+      "reflectorSeparation": {
+        "horizontalGap": 14.277398739971431,
+        "verticalGap": 0,
+        "edgeToEdgeSeparation": 14.277398739971431
+      },
+      "nodes": [
+        {
+          "role": "SOURCE",
+          "center": {
+            "x": 462.1833333333334,
+            "y": 463
+          },
+          "inputPort": {
+            "x": 462.1833333333334,
+            "y": 463
+          },
+          "outputPort": {
+            "x": 484.58333333333337,
+            "y": 463
+          }
+        },
+        {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 584.3833333333334,
+            "y": 387
+          },
+          "inputPort": {
+            "x": 546.3033333333334,
+            "y": 381.4
+          },
+          "outputPort": {
+            "x": 622.4633333333335,
+            "y": 381.4
+          }
+        },
+        {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 720.6833333333334,
+            "y": 466.79999999999995
+          },
+          "inputPort": {
+            "x": 682.6033333333334,
+            "y": 472.4
+          },
+          "outputPort": {
+            "x": 758.7633333333334,
+            "y": 472.4
+          }
+        },
+        {
+          "role": "RECEIVER",
+          "center": {
+            "x": 856.9833333333333,
+            "y": 387
+          },
+          "inputPort": {
+            "x": 827.8633333333333,
+            "y": 387
+          },
+          "outputPort": {
+            "x": 856.9833333333333,
+            "y": 387
+          }
+        }
+      ],
+      "beamSegments": [
+        {
+          "from": {
+            "x": 484.58333333333337,
+            "y": 463
+          },
+          "to": {
+            "x": 546.3033333333334,
+            "y": 381.4
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ],
+      "stoppedPort": {
+        "x": 622.4633333333335,
+        "y": 381.4
+      },
+      "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    "1438x914": {
+      "groupTop": 467.8491033620561,
+      "groupCenterX": 716.1530158022047,
+      "groupCenterY": 589.1635742304188,
+      "groupBottom": 710.4780450987816,
+      "groupWidth": 595.900120921731,
+      "verticalSpread": 242.62894173672555,
+      "platformCenterX": 719,
+      "platformFrontRimY": 714.6972222222221,
+      "receiver": {
+        "id": "receiver",
+        "visibleLeft": 922.8076501774788,
+        "visibleRight": 1014.1030762630701,
+        "visibleTop": 481.12657440185546,
+        "visibleBottom": 618.2265785235167,
+        "visibleWidth": 91.29542608559132,
+        "visibleHeight": 137.1000041216612,
+        "parentScaleX": 1,
+        "parentScaleY": 1,
+        "localScaleX": 0.10457665903890159,
+        "localScaleY": 0.10457665903890159,
+        "effectiveWorldScaleX": 0.10457666218280792,
+        "effectiveWorldScaleY": 0.10457666218280792
+      },
+      "reflectors": [
+        {
+          "id": "M1",
+          "visibleLeft": 583.0568495126521,
+          "visibleRight": 732.4255723623479,
+          "visibleTop": 467.8491033620561,
+          "visibleBottom": 617.217826211752,
+          "visibleWidth": 149.3687228496958,
+          "visibleHeight": 149.36872284969593,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        {
+          "id": "M2",
+          "visibleLeft": 733.1840467782771,
+          "visibleRight": 882.5527696279729,
+          "visibleTop": 551.8491033620561,
+          "visibleBottom": 701.217826211752,
+          "visibleWidth": 149.3687228496958,
+          "visibleHeight": 149.36872284969593,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        }
+      ],
+      "reflectorSeparation": {
+        "horizontalGap": 0.7584744159291859,
+        "verticalGap": 0,
+        "edgeToEdgeSeparation": 0.7584744159291859
+      },
+      "nodes": [
+        {
+          "role": "SOURCE",
+          "center": {
+            "x": 523.1444,
+            "y": 606.1028888888889
+          },
+          "inputPort": {
+            "x": 523.1444,
+            "y": 606.1028888888889
+          },
+          "outputPort": {
+            "x": 550.5644,
+            "y": 606.1028888888889
+          }
+        },
+        {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 657.7412,
+            "y": 526.1028888888889
+          },
+          "inputPort": {
+            "x": 611.1272,
+            "y": 519.2478888888888
+          },
+          "outputPort": {
+            "x": 704.3552000000001,
+            "y": 519.2478888888888
+          }
+        },
+        {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 807.8684000000001,
+            "y": 610.1028888888889
+          },
+          "inputPort": {
+            "x": 761.2544,
+            "y": 616.9578888888889
+          },
+          "outputPort": {
+            "x": 854.4824000000001,
+            "y": 616.9578888888889
+          }
+        },
+        {
+          "role": "RECEIVER",
+          "center": {
+            "x": 957.9956,
+            "y": 526.1028888888889
+          },
+          "inputPort": {
+            "x": 922.3496,
+            "y": 526.1028888888889
+          },
+          "outputPort": {
+            "x": 957.9956,
+            "y": 526.1028888888889
+          }
+        }
+      ],
+      "beamSegments": [
+        {
+          "from": {
+            "x": 550.5644,
+            "y": 606.1028888888889
+          },
+          "to": {
+            "x": 611.1272,
+            "y": 519.2478888888888
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ],
+      "stoppedPort": {
+        "x": 704.3552000000001,
+        "y": 519.2478888888888
+      },
+      "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    "1600x900": {
+      "groupTop": 459.3084711812249,
+      "groupCenterX": 799.9570399796962,
+      "groupCenterY": 579.1574249946232,
+      "groupBottom": 699.0063788080215,
+      "groupWidth": 642.4221217226982,
+      "verticalSpread": 239.69790762679662,
+      "platformCenterX": 800,
+      "platformFrontRimY": 703.75,
+      "receiver": {
+        "id": "receiver",
+        "visibleLeft": 1031.2710724544525,
+        "visibleRight": 1121.1681008410453,
+        "visibleTop": 472.3825671386719,
+        "visibleBottom": 607.3825719666481,
+        "visibleWidth": 89.89702838659286,
+        "visibleHeight": 135.00000482797623,
+        "parentScaleX": 1,
+        "parentScaleY": 1,
+        "localScaleX": 0.10297482837528604,
+        "localScaleY": 0.10297482837528604,
+        "effectiveWorldScaleX": 0.10297483205795288,
+        "effectiveWorldScaleY": 0.10297483205795288
+      },
+      "reflectors": [
+        {
+          "id": "M1",
+          "visibleLeft": 658.2996272029926,
+          "visibleRight": 805.3804265079449,
+          "visibleTop": 459.3084711812249,
+          "visibleBottom": 606.3892704861771,
+          "visibleWidth": 147.08079930495228,
+          "visibleHeight": 147.08079930495222,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        {
+          "id": "M2",
+          "visibleLeft": 825.3396052303364,
+          "visibleRight": 972.4204045352886,
+          "visibleTop": 542.8464960835686,
+          "visibleBottom": 689.9272953885209,
+          "visibleWidth": 147.08079930495228,
+          "visibleHeight": 147.08079930495228,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        }
+      ],
+      "reflectorSeparation": {
+        "horizontalGap": 19.95917872239147,
+        "verticalGap": 0,
+        "edgeToEdgeSeparation": 19.95917872239147
+      },
+      "nodes": [
+        {
+          "role": "SOURCE",
+          "center": {
+            "x": 582.08,
+            "y": 596.23
+          },
+          "inputPort": {
+            "x": 582.08,
+            "y": 596.23
+          },
+          "outputPort": {
+            "x": 609.08,
+            "y": 596.23
+          }
+        },
+        {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 731.84,
+            "y": 516.67
+          },
+          "inputPort": {
+            "x": 685.94,
+            "y": 509.91999999999996
+          },
+          "outputPort": {
+            "x": 777.74,
+            "y": 509.91999999999996
+          }
+        },
+        {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 898.88,
+            "y": 600.208
+          },
+          "inputPort": {
+            "x": 852.98,
+            "y": 606.958
+          },
+          "outputPort": {
+            "x": 944.78,
+            "y": 606.958
+          }
+        },
+        {
+          "role": "RECEIVER",
+          "center": {
+            "x": 1065.92,
+            "y": 516.67
+          },
+          "inputPort": {
+            "x": 1030.8200000000002,
+            "y": 516.67
+          },
+          "outputPort": {
+            "x": 1065.92,
+            "y": 516.67
+          }
+        }
+      ],
+      "beamSegments": [
+        {
+          "from": {
+            "x": 609.08,
+            "y": 596.23
+          },
+          "to": {
+            "x": 685.94,
+            "y": 509.91999999999996
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ],
+      "stoppedPort": {
+        "x": 777.74,
+        "y": 509.91999999999996
+      },
+      "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    },
+    "1920x1080": {
+      "groupTop": 586.3894874022589,
+      "groupCenterX": 960.0093621279299,
+      "groupCenterY": 712.3894735508256,
+      "groupBottom": 838.3894596993923,
+      "groupWidth": 691.1288369229435,
+      "verticalSpread": 251.99997229713347,
+      "platformCenterX": 960,
+      "platformFrontRimY": 844.35,
+      "receiver": {
+        "id": "receiver",
+        "visibleLeft": 1209.01771523118,
+        "visibleRight": 1305.5737805894016,
+        "visibleTop": 600.4320359802246,
+        "visibleBottom": 745.4320379099249,
+        "visibleWidth": 96.55606535822153,
+        "visibleHeight": 145.00000192970037,
+        "parentScaleX": 1,
+        "parentScaleY": 1,
+        "localScaleX": 0.11060259344012205,
+        "localScaleY": 0.11060259344012205,
+        "effectiveWorldScaleX": 0.11060259491205215,
+        "effectiveWorldScaleY": 0.11060259491205215
+      },
+      "reflectors": [
+        {
+          "id": "M1",
+          "visibleLeft": 807.6455251526356,
+          "visibleRight": 965.6211984801769,
+          "visibleTop": 586.3894874022589,
+          "visibleBottom": 744.3651607298002,
+          "visibleWidth": 157.97567332754124,
+          "visibleHeight": 157.97567332754136,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        {
+          "id": "M2",
+          "visibleLeft": 987.4455129456044,
+          "visibleRight": 1145.4211862731456,
+          "visibleTop": 670.3894874022589,
+          "visibleBottom": 828.3651607298002,
+          "visibleWidth": 157.97567332754124,
+          "visibleHeight": 157.97567332754136,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        }
+      ],
+      "reflectorSeparation": {
+        "horizontalGap": 21.824314465427506,
+        "verticalGap": 0,
+        "edgeToEdgeSeparation": 21.824314465427506
+      },
+      "nodes": [
+        {
+          "role": "SOURCE",
+          "center": {
+            "x": 725.4333333333334,
+            "y": 728
+          },
+          "inputPort": {
+            "x": 725.4333333333334,
+            "y": 728
+          },
+          "outputPort": {
+            "x": 754.4333333333334,
+            "y": 728
+          }
+        },
+        {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 886.6333333333334,
+            "y": 648
+          },
+          "inputPort": {
+            "x": 837.3333333333335,
+            "y": 640.75
+          },
+          "outputPort": {
+            "x": 935.9333333333334,
+            "y": 640.75
+          }
+        },
+        {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 1066.4333333333334,
+            "y": 732
+          },
+          "inputPort": {
+            "x": 1017.1333333333334,
+            "y": 739.25
+          },
+          "outputPort": {
+            "x": 1115.7333333333333,
+            "y": 739.25
+          }
+        },
+        {
+          "role": "RECEIVER",
+          "center": {
+            "x": 1246.2333333333333,
+            "y": 648
+          },
+          "inputPort": {
+            "x": 1208.5333333333333,
+            "y": 648
+          },
+          "outputPort": {
+            "x": 1246.2333333333333,
+            "y": 648
+          }
+        }
+      ],
+      "beamSegments": [
+        {
+          "from": {
+            "x": 754.4333333333334,
+            "y": 728
+          },
+          "to": {
+            "x": 837.3333333333335,
+            "y": 640.75
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ],
+      "stoppedPort": {
+        "x": 935.9333333333334,
+        "y": 640.75
+      },
+      "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP"
+    }
+  },
+  "errors": [],
+  "failedChecks": []
+}

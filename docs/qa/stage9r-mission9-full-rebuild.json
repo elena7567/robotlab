@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "testedAt": "2026-09-12T16:43:11.476Z",
+  "testedAt": "2026-09-25T08:18:27.955Z",
   "baseUrl": "http://127.0.0.1:4198/",
   "primaryInteraction": "TAP_SELECT_THEN_TAP_TARGET",
   "drag": "DISABLED",
@@ -53,10 +53,10 @@
           "targetId": "bridge-gap",
           "clueId": "bridge-flat-span",
           "bounds": {
-            "x": 695.629,
-            "y": 587.2823839285713,
-            "width": 208.74199999999996,
-            "height": 102.5072321428571
+            "x": 700.7620000000001,
+            "y": 588.8430535714286,
+            "width": 198.476,
+            "height": 97.46589285714288
           },
           "interactive": true
         }
@@ -75,20 +75,20 @@
           "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
           "bounds": {
             "x": 489.8741935483871,
-            "y": 789.925,
+            "y": 775.925,
             "width": 156.2516129032258,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 458,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 568,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 568,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -125,7 +125,7 @@
         "ok": true,
         "targetCenter": {
           "x": 800,
-          "y": 638.5359999999998
+          "y": 637.576
         },
         "platformCenterX": 800
       },
@@ -310,10 +310,10 @@
           "targetId": "gate-lock",
           "clueId": "gate-truss-profile",
           "bounds": {
-            "x": 718.01478,
-            "y": 545.67488,
-            "width": 163.97044000000005,
-            "height": 91.63054
+            "x": 722.04684,
+            "y": 553.26464,
+            "width": 155.90632000000005,
+            "height": 87.12411999999995
           },
           "interactive": true
         }
@@ -332,20 +332,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 736.510294117647,
-            "y": 789.925,
+            "y": 775.925,
             "width": 126.9794117647059,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 690,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 800,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 800,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -380,7 +380,7 @@
         "ok": true,
         "targetCenter": {
           "x": 800,
-          "y": 591.4901500000001
+          "y": 596.8267
         },
         "platformCenterX": 800
       },
@@ -565,10 +565,10 @@
           "targetId": "power-socket",
           "clueId": "power-capsule-module",
           "bounds": {
-            "x": 700.23572,
-            "y": 532.9828963265306,
-            "width": 199.52855999999997,
-            "height": 73.0699828571428
+            "x": 705.14216,
+            "y": 541.196852244898,
+            "width": 189.71568000000002,
+            "height": 69.47637714285713
           },
           "interactive": true
         }
@@ -587,20 +587,20 @@
           "runtimeTexture": "MISSION9_ENERGY_WRONG_1",
           "bounds": {
             "x": 737.268085106383,
-            "y": 789.925,
+            "y": 775.925,
             "width": 125.46382978723409,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 690,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 800,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 800,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -635,7 +635,7 @@
         "ok": true,
         "targetCenter": {
           "x": 800,
-          "y": 569.517887755102
+          "y": 575.9350408163266
         },
         "platformCenterX": 800
       },
@@ -823,7 +823,7 @@
             "СТАНЦИЯ ЗАПУЩЕНА",
             "ИСПЫТАНИЕ ПРОЙДЕНО",
             "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
-            "НА ГЛАВНУЮ"
+            "К МАЯКУ"
           ],
           "rootCount": 0,
           "completionCount": 1,
@@ -847,7 +847,7 @@
           "СТАНЦИЯ ЗАПУЩЕНА",
           "ИСПЫТАНИЕ ПРОЙДЕНО",
           "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
-          "НА ГЛАВНУЮ"
+          "К МАЯКУ"
         ],
         "regions": [
           "TITLE",
@@ -927,7 +927,7 @@
         "СТАНЦИЯ ЗАПУЩЕНА",
         "ИСПЫТАНИЕ ПРОЙДЕНО",
         "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
-        "НА ГЛАВНУЮ"
+        "К МАЯКУ"
       ],
       "rootCount": 0,
       "completionCount": 1,
@@ -941,21 +941,21 @@
     },
     "screenshots": {
       "idle": [
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-bridge-idle.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-gate-idle.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-power-idle.png"
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-bridge-idle.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-gate-idle.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-power-idle.png"
       ],
       "selected": [
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-bridge-selected.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-gate-selected.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-power-selected.png"
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-bridge-selected.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-gate-selected.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-power-selected.png"
       ],
       "solved": [
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-bridge-solved.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-gate-solved.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-1600x900-power-solved.png"
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-bridge-solved.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-gate-solved.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-power-solved.png"
       ],
-      "completion": "docs\\qa\\screenshots\\stage9r-mission9-1600x900-completion.png"
+      "completion": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-1600x900-completion.png"
     },
     "errors": {
       "console": [],
@@ -1014,10 +1014,10 @@
           "targetId": "bridge-gap",
           "clueId": "bridge-flat-span",
           "bounds": {
-            "x": 356.5075927272727,
-            "y": 272.01135,
-            "width": 130.98481454545453,
-            "height": 64.3229
+            "x": 361.73666909090906,
+            "y": 276.39180000000005,
+            "width": 120.52666181818182,
+            "height": 59.18720000000002
           },
           "interactive": true
         }
@@ -1036,20 +1036,20 @@
           "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
           "bounds": {
             "x": 129.18451612903226,
-            "y": 337.7149926757813,
+            "y": 326.51000610351565,
             "width": 129.63096774193548,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 84,
-            "y": 331.555,
+            "y": 320.35,
             "width": 220,
             "height": 56
           },
           "baseX": 194,
-          "baseY": 359.555,
+          "baseY": 348.35,
           "x": 194,
-          "y": 359.555,
+          "y": 348.35,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -1086,7 +1086,7 @@
         "ok": true,
         "targetCenter": {
           "x": 422,
-          "y": 304.1728
+          "y": 305.9854
         },
         "platformCenterX": 422
       },
@@ -1270,10 +1270,10 @@
           "targetId": "gate-lock",
           "clueId": "gate-truss-profile",
           "bounds": {
-            "x": 364.98726388,
-            "y": 219.55690847999998,
-            "width": 114.02547224,
-            "height": 63.72011684000003
+            "x": 366.364032,
+            "y": 222.148472,
+            "width": 111.27193600000004,
+            "height": 62.18137599999997
           },
           "interactive": true
         }
@@ -1292,20 +1292,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 369.3270588235294,
-            "y": 337.7149926757813,
+            "y": 326.51000610351565,
             "width": 105.3458823529412,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 312,
-            "y": 331.555,
+            "y": 320.35,
             "width": 220,
             "height": 56
           },
           "baseX": 422,
-          "baseY": 359.555,
+          "baseY": 348.35,
           "x": 422,
-          "y": 359.555,
+          "y": 348.35,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -1340,7 +1340,7 @@
         "ok": true,
         "targetCenter": {
           "x": 422,
-          "y": 251.41696689999998
+          "y": 253.23915999999997
         },
         "platformCenterX": 422
       },
@@ -1524,9 +1524,9 @@
           "targetId": "power-socket",
           "clueId": "power-capsule-module",
           "bounds": {
-            "x": 354.0156966811146,
-            "y": 209.95805000000001,
-            "width": 135.96860663777085,
+            "x": 359.4437322105263,
+            "y": 217.05739999999997,
+            "width": 125.11253557894742,
             "height": 56
           },
           "interactive": true
@@ -1546,20 +1546,20 @@
           "runtimeTexture": "MISSION9_ENERGY_WRONG_1",
           "bounds": {
             "x": 369.95574468085107,
-            "y": 337.7149926757813,
+            "y": 326.51000610351565,
             "width": 104.08851063829786,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 312,
-            "y": 331.555,
+            "y": 320.35,
             "width": 220,
             "height": 56
           },
           "baseX": 422,
-          "baseY": 359.555,
+          "baseY": 348.35,
           "x": 422,
-          "y": 359.555,
+          "y": 348.35,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -1594,7 +1594,7 @@
         "ok": true,
         "targetCenter": {
           "x": 422,
-          "y": 237.95805000000001
+          "y": 245.05739999999997
         },
         "platformCenterX": 422
       },
@@ -1780,7 +1780,7 @@
             "СТАНЦИЯ ЗАПУЩЕНА",
             "ИСПЫТАНИЕ ПРОЙДЕНО",
             "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
-            "НА ГЛАВНУЮ"
+            "К МАЯКУ"
           ],
           "rootCount": 0,
           "completionCount": 1,
@@ -1803,7 +1803,7 @@
           "СТАНЦИЯ ЗАПУЩЕНА",
           "ИСПЫТАНИЕ ПРОЙДЕНО",
           "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
-          "НА ГЛАВНУЮ"
+          "К МАЯКУ"
         ],
         "regions": [
           "TITLE",
@@ -1882,7 +1882,7 @@
         "СТАНЦИЯ ЗАПУЩЕНА",
         "ИСПЫТАНИЕ ПРОЙДЕНО",
         "РОБОТ ГОТОВ К ПЕРВОМУ ЗАПУСКУ",
-        "НА ГЛАВНУЮ"
+        "К МАЯКУ"
       ],
       "rootCount": 0,
       "completionCount": 1,
@@ -1896,13 +1896,13 @@
     },
     "screenshots": {
       "idle": [
-        "docs\\qa\\screenshots\\stage9r-mission9-844x390-bridge-idle.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-844x390-gate-idle.png",
-        "docs\\qa\\screenshots\\stage9r-mission9-844x390-power-idle.png"
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-844x390-bridge-idle.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-844x390-gate-idle.png",
+        "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-844x390-power-idle.png"
       ],
       "selected": [],
       "solved": [],
-      "completion": "docs\\qa\\screenshots\\stage9r-mission9-844x390-completion.png"
+      "completion": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-844x390-completion.png"
     },
     "errors": {
       "console": [],
@@ -1961,10 +1961,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 535.629,
-              "y": 462.1383839285715,
-              "width": 208.74199999999996,
-              "height": 102.50723214285716
+              "x": 540.7620000000001,
+              "y": 463.6990535714286,
+              "width": 198.476,
+              "height": 97.46589285714282
             },
             "interactive": true
           }
@@ -1983,20 +1983,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 336.24,
-              "y": 617.6199877929688,
+              "y": 603.6199877929688,
               "width": 143.51999999999998,
               "height": 48.3599999999999
             },
             "auditBounds": {
               "x": 297.99999999999994,
-              "y": 610.8,
+              "y": 596.8,
               "width": 220,
               "height": 62
             },
             "baseX": 407.99999999999994,
-            "baseY": 641.8,
+            "baseY": 627.8,
             "x": 407.99999999999994,
-            "y": 641.8,
+            "y": 627.8,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2033,7 +2033,7 @@
           "ok": true,
           "targetCenter": {
             "x": 640,
-            "y": 513.392
+            "y": 512.432
           },
           "platformCenterX": 640
         },
@@ -2062,7 +2062,7 @@
           }
         }
       ],
-      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-1280x720-bridge.png",
+      "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-responsive-1280x720-bridge.png",
       "state": {
         "stage": "BRIDGE",
         "snapshot": {
@@ -2120,20 +2120,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 336.24,
-              "y": 617.6199877929688,
+              "y": 603.6199877929688,
               "width": 143.51999999999998,
               "height": 48.3599999999999
             },
             "auditBounds": {
               "x": 297.99999999999994,
-              "y": 610.8,
+              "y": 596.8,
               "width": 220,
               "height": 62
             },
             "baseX": 407.99999999999994,
-            "baseY": 641.8,
+            "baseY": 627.8,
             "x": 407.99999999999994,
-            "y": 641.8,
+            "y": 627.8,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2145,20 +2145,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
             "bounds": {
               "x": 577.6080829015544,
-              "y": 617.6199877929688,
+              "y": 603.6199877929688,
               "width": 124.78383419689112,
               "height": 48.3599999999999
             },
             "auditBounds": {
               "x": 530,
-              "y": 610.8,
+              "y": 596.8,
               "width": 220,
               "height": 62
             },
             "baseX": 640,
-            "baseY": 641.8,
+            "baseY": 627.8,
             "x": 640,
-            "y": 641.8,
+            "y": 627.8,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2170,20 +2170,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
             "bounds": {
               "x": 814.969393939394,
-              "y": 617.6199877929688,
+              "y": 603.6199877929688,
               "width": 114.06121212121207,
               "height": 48.3599999999999
             },
             "auditBounds": {
               "x": 762,
-              "y": 610.8,
+              "y": 596.8,
               "width": 220,
               "height": 62
             },
             "baseX": 872,
-            "baseY": 641.8,
+            "baseY": 627.8,
             "x": 872,
-            "y": 641.8,
+            "y": 627.8,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2194,10 +2194,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 535.629,
-              "y": 462.1383839285715,
-              "width": 208.74199999999996,
-              "height": 102.50723214285716
+              "x": 540.7620000000001,
+              "y": 463.6990535714286,
+              "width": 198.476,
+              "height": 97.46589285714282
             },
             "interactive": true
           }
@@ -2278,10 +2278,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 695.629,
-              "y": 587.2823839285713,
-              "width": 208.74199999999996,
-              "height": 102.5072321428571
+              "x": 700.7620000000001,
+              "y": 588.8430535714286,
+              "width": 198.476,
+              "height": 97.46589285714288
             },
             "interactive": true
           }
@@ -2300,20 +2300,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 489.8741935483871,
-              "y": 789.925,
+              "y": 775.925,
               "width": 156.2516129032258,
               "height": 52.65000000000009
             },
             "auditBounds": {
               "x": 458,
-              "y": 782.5,
+              "y": 768.5,
               "width": 220,
               "height": 67.5
             },
             "baseX": 568,
-            "baseY": 816.25,
+            "baseY": 802.25,
             "x": 568,
-            "y": 816.25,
+            "y": 802.25,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2350,7 +2350,7 @@
           "ok": true,
           "targetCenter": {
             "x": 800,
-            "y": 638.5359999999998
+            "y": 637.576
           },
           "platformCenterX": 800
         },
@@ -2379,7 +2379,7 @@
           }
         }
       ],
-      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-1600x900-bridge.png",
+      "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-responsive-1600x900-bridge.png",
       "state": {
         "stage": "BRIDGE",
         "snapshot": {
@@ -2437,20 +2437,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 489.8741935483871,
-              "y": 789.925,
+              "y": 775.925,
               "width": 156.2516129032258,
               "height": 52.65000000000009
             },
             "auditBounds": {
               "x": 458,
-              "y": 782.5,
+              "y": 768.5,
               "width": 220,
               "height": 67.5
             },
             "baseX": 568,
-            "baseY": 816.25,
+            "baseY": 802.25,
             "x": 568,
-            "y": 816.25,
+            "y": 802.25,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2462,20 +2462,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
             "bounds": {
               "x": 732.0733160621762,
-              "y": 789.925,
+              "y": 775.925,
               "width": 135.85336787564756,
               "height": 52.65000000000009
             },
             "auditBounds": {
               "x": 690,
-              "y": 782.5,
+              "y": 768.5,
               "width": 220,
               "height": 67.5
             },
             "baseX": 800,
-            "baseY": 816.25,
+            "baseY": 802.25,
             "x": 800,
-            "y": 816.25,
+            "y": 802.25,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2487,20 +2487,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
             "bounds": {
               "x": 969.9102272727273,
-              "y": 789.925,
+              "y": 775.925,
               "width": 124.1795454545454,
               "height": 52.65000000000009
             },
             "auditBounds": {
               "x": 922,
-              "y": 782.5,
+              "y": 768.5,
               "width": 220,
               "height": 67.5
             },
             "baseX": 1032,
-            "baseY": 816.25,
+            "baseY": 802.25,
             "x": 1032,
-            "y": 816.25,
+            "y": 802.25,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2511,10 +2511,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 695.629,
-              "y": 587.2823839285713,
-              "width": 208.74199999999996,
-              "height": 102.5072321428571
+              "x": 700.7620000000001,
+              "y": 588.8430535714286,
+              "width": 198.476,
+              "height": 97.46589285714288
             },
             "interactive": true
           }
@@ -2595,10 +2595,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 855.629,
-              "y": 710.5063839285714,
-              "width": 208.74200000000008,
-              "height": 102.5072321428571
+              "x": 860.7620000000001,
+              "y": 712.0670535714286,
+              "width": 198.476,
+              "height": 97.46589285714288
             },
             "interactive": true
           }
@@ -2617,20 +2617,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 644.6658064516129,
-              "y": 965.92,
+              "y": 951.92,
               "width": 166.66838709677427,
               "height": 56.16000000000008
             },
             "auditBounds": {
               "x": 618,
-              "y": 958,
+              "y": 944,
               "width": 220,
               "height": 72
             },
             "baseX": 728,
-            "baseY": 994,
+            "baseY": 980,
             "x": 728,
-            "y": 994,
+            "y": 980,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2667,7 +2667,7 @@
           "ok": true,
           "targetCenter": {
             "x": 960,
-            "y": 761.76
+            "y": 760.8
           },
           "platformCenterX": 960
         },
@@ -2696,7 +2696,7 @@
           }
         }
       ],
-      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-1920x1080-bridge.png",
+      "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-responsive-1920x1080-bridge.png",
       "state": {
         "stage": "BRIDGE",
         "snapshot": {
@@ -2754,20 +2754,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 644.6658064516129,
-              "y": 965.92,
+              "y": 951.92,
               "width": 166.66838709677427,
               "height": 56.16000000000008
             },
             "auditBounds": {
               "x": 618,
-              "y": 958,
+              "y": 944,
               "width": 220,
               "height": 72
             },
             "baseX": 728,
-            "baseY": 994,
+            "baseY": 980,
             "x": 728,
-            "y": 994,
+            "y": 980,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2779,20 +2779,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
             "bounds": {
               "x": 887.5448704663213,
-              "y": 965.92,
+              "y": 951.92,
               "width": 144.9102590673574,
               "height": 56.16000000000008
             },
             "auditBounds": {
               "x": 850,
-              "y": 958,
+              "y": 944,
               "width": 220,
               "height": 72
             },
             "baseX": 960,
-            "baseY": 994,
+            "baseY": 980,
             "x": 960,
-            "y": 994,
+            "y": 980,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2804,20 +2804,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
             "bounds": {
               "x": 1125.770909090909,
-              "y": 965.92,
+              "y": 951.92,
               "width": 132.45818181818186,
               "height": 56.16000000000008
             },
             "auditBounds": {
               "x": 1082,
-              "y": 958,
+              "y": 944,
               "width": 220,
               "height": 72
             },
             "baseX": 1192,
-            "baseY": 994,
+            "baseY": 980,
             "x": 1192,
-            "y": 994,
+            "y": 980,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2828,10 +2828,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 855.629,
-              "y": 710.5063839285714,
-              "width": 208.74200000000008,
-              "height": 102.5072321428571
+              "x": 860.7620000000001,
+              "y": 712.0670535714286,
+              "width": 198.476,
+              "height": 97.46589285714288
             },
             "interactive": true
           }
@@ -2912,9 +2912,9 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 314.58840727272724,
-              "y": 248.41719999999998,
-              "width": 110.82318545454547,
+              "x": 318.82048,
+              "y": 249.88420000000002,
+              "width": 102.35904,
               "height": 56
             },
             "interactive": true
@@ -2934,20 +2934,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 77.18451612903226,
-              "y": 306.1050073242188,
+              "y": 297.5599938964844,
               "width": 129.63096774193548,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 32,
-              "y": 299.945,
+              "y": 291.4,
               "width": 220,
               "height": 56
             },
             "baseX": 142,
-            "baseY": 327.945,
+            "baseY": 319.4,
             "x": 142,
-            "y": 327.945,
+            "y": 319.4,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -2984,7 +2984,7 @@
           "ok": true,
           "targetCenter": {
             "x": 370,
-            "y": 276.4172
+            "y": 277.8842
           },
           "platformCenterX": 370
         },
@@ -3013,7 +3013,7 @@
           }
         }
       ],
-      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-740x360-bridge.png",
+      "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-responsive-740x360-bridge.png",
       "state": {
         "stage": "BRIDGE",
         "snapshot": {
@@ -3071,20 +3071,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 77.18451612903226,
-              "y": 306.1050073242188,
+              "y": 297.5599938964844,
               "width": 129.63096774193548,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 32,
-              "y": 299.945,
+              "y": 291.4,
               "width": 220,
               "height": 56
             },
             "baseX": 142,
-            "baseY": 327.945,
+            "baseY": 319.4,
             "x": 142,
-            "y": 327.945,
+            "y": 319.4,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3096,20 +3096,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
             "bounds": {
               "x": 313.6460103626943,
-              "y": 306.1050073242188,
+              "y": 297.5599938964844,
               "width": 112.70797927461138,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 260,
-              "y": 299.945,
+              "y": 291.4,
               "width": 220,
               "height": 56
             },
             "baseX": 370,
-            "baseY": 327.945,
+            "baseY": 319.4,
             "x": 370,
-            "y": 327.945,
+            "y": 319.4,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3121,20 +3121,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
             "bounds": {
               "x": 546.4884848484849,
-              "y": 306.1050073242188,
+              "y": 297.5599938964844,
               "width": 103.02303030303028,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 488,
-              "y": 299.945,
+              "y": 291.4,
               "width": 220,
               "height": 56
             },
             "baseX": 598,
-            "baseY": 327.945,
+            "baseY": 319.4,
             "x": 598,
-            "y": 327.945,
+            "y": 319.4,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3145,9 +3145,9 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 314.58840727272724,
-              "y": 248.41719999999998,
-              "width": 110.82318545454547,
+              "x": 318.82048,
+              "y": 249.88420000000002,
+              "width": 102.35904,
               "height": 56
             },
             "interactive": true
@@ -3228,10 +3228,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 356.5075927272727,
-              "y": 272.01135,
-              "width": 130.98481454545453,
-              "height": 64.3229
+              "x": 361.73666909090906,
+              "y": 276.39180000000005,
+              "width": 120.52666181818182,
+              "height": 59.18720000000002
             },
             "interactive": true
           }
@@ -3250,20 +3250,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 129.18451612903226,
-              "y": 337.7149926757813,
+              "y": 326.51000610351565,
               "width": 129.63096774193548,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 84,
-              "y": 331.555,
+              "y": 320.35,
               "width": 220,
               "height": 56
             },
             "baseX": 194,
-            "baseY": 359.555,
+            "baseY": 348.35,
             "x": 194,
-            "y": 359.555,
+            "y": 348.35,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3300,7 +3300,7 @@
           "ok": true,
           "targetCenter": {
             "x": 422,
-            "y": 304.1728
+            "y": 305.9854
           },
           "platformCenterX": 422
         },
@@ -3329,7 +3329,7 @@
           }
         }
       ],
-      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-844x390-bridge.png",
+      "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-responsive-844x390-bridge.png",
       "state": {
         "stage": "BRIDGE",
         "snapshot": {
@@ -3387,20 +3387,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 129.18451612903226,
-              "y": 337.7149926757813,
+              "y": 326.51000610351565,
               "width": 129.63096774193548,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 84,
-              "y": 331.555,
+              "y": 320.35,
               "width": 220,
               "height": 56
             },
             "baseX": 194,
-            "baseY": 359.555,
+            "baseY": 348.35,
             "x": 194,
-            "y": 359.555,
+            "y": 348.35,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3412,20 +3412,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
             "bounds": {
               "x": 365.6460103626943,
-              "y": 337.7149926757813,
+              "y": 326.51000610351565,
               "width": 112.70797927461138,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 312,
-              "y": 331.555,
+              "y": 320.35,
               "width": 220,
               "height": 56
             },
             "baseX": 422,
-            "baseY": 359.555,
+            "baseY": 348.35,
             "x": 422,
-            "y": 359.555,
+            "y": 348.35,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3437,20 +3437,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
             "bounds": {
               "x": 598.4884848484849,
-              "y": 337.7149926757813,
+              "y": 326.51000610351565,
               "width": 103.02303030303028,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 540,
-              "y": 331.555,
+              "y": 320.35,
               "width": 220,
               "height": 56
             },
             "baseX": 650,
-            "baseY": 359.555,
+            "baseY": 348.35,
             "x": 650,
-            "y": 359.555,
+            "y": 348.35,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3461,10 +3461,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 356.5075927272727,
-              "y": 272.01135,
-              "width": 130.98481454545453,
-              "height": 64.3229
+              "x": 361.73666909090906,
+              "y": 276.39180000000005,
+              "width": 120.52666181818182,
+              "height": 59.18720000000002
             },
             "interactive": true
           }
@@ -3544,10 +3544,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 384.8998741818182,
-              "y": 288.15089249999994,
-              "width": 145.20025163636365,
-              "height": 71.303695
+              "x": 390.5955170909091,
+              "y": 292.92219,
+              "width": 133.80896581818183,
+              "height": 65.70976000000002
             },
             "interactive": true
           }
@@ -3566,20 +3566,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 164.68451612903226,
-              "y": 360.07275024414065,
+              "y": 347.73998657226565,
               "width": 129.63096774193548,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 119.50000000000003,
-              "y": 353.91275,
+              "y": 341.58,
               "width": 220,
               "height": 56
             },
             "baseX": 229.50000000000003,
-            "baseY": 381.91275,
+            "baseY": 369.58,
             "x": 229.50000000000003,
-            "y": 381.91275,
+            "y": 369.58,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3616,7 +3616,7 @@
           "ok": true,
           "targetCenter": {
             "x": 457.5,
-            "y": 323.80274
+            "y": 325.77707
           },
           "platformCenterX": 457.5
         },
@@ -3645,7 +3645,7 @@
           }
         }
       ],
-      "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-responsive-915x412-bridge.png",
+      "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-responsive-915x412-bridge.png",
       "state": {
         "stage": "BRIDGE",
         "snapshot": {
@@ -3703,20 +3703,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_CORRECT",
             "bounds": {
               "x": 164.68451612903226,
-              "y": 360.07275024414065,
+              "y": 347.73998657226565,
               "width": 129.63096774193548,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 119.50000000000003,
-              "y": 353.91275,
+              "y": 341.58,
               "width": 220,
               "height": 56
             },
             "baseX": 229.50000000000003,
-            "baseY": 381.91275,
+            "baseY": 369.58,
             "x": 229.50000000000003,
-            "y": 381.91275,
+            "y": 369.58,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3728,20 +3728,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_ARC",
             "bounds": {
               "x": 401.1460103626943,
-              "y": 360.07275024414065,
+              "y": 347.73998657226565,
               "width": 112.70797927461143,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 347.5,
-              "y": 353.91275,
+              "y": 341.58,
               "width": 220,
               "height": 56
             },
             "baseX": 457.5,
-            "baseY": 381.91275,
+            "baseY": 369.58,
             "x": 457.5,
-            "y": 381.91275,
+            "y": 369.58,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3753,20 +3753,20 @@
             "runtimeTexture": "MISSION9_BRIDGE_WRONG_TRUSS",
             "bounds": {
               "x": 633.9884848484849,
-              "y": 360.07275024414065,
+              "y": 347.73998657226565,
               "width": 103.02303030303028,
               "height": 43.67999999999995
             },
             "auditBounds": {
               "x": 575.5,
-              "y": 353.91275,
+              "y": 341.58,
               "width": 220,
               "height": 56
             },
             "baseX": 685.5,
-            "baseY": 381.91275,
+            "baseY": 369.58,
             "x": 685.5,
-            "y": 381.91275,
+            "y": 369.58,
             "alpha": 1,
             "depth": 0,
             "interactive": true
@@ -3777,10 +3777,10 @@
             "targetId": "bridge-gap",
             "clueId": "bridge-flat-span",
             "bounds": {
-              "x": 384.8998741818182,
-              "y": 288.15089249999994,
-              "width": 145.20025163636365,
-              "height": 71.303695
+              "x": 390.5955170909091,
+              "y": 292.92219,
+              "width": 133.80896581818183,
+              "height": 65.70976000000002
             },
             "interactive": true
           }
@@ -3839,7 +3839,7 @@
         }
       }
     ],
-    "screenshot": "docs\\qa\\screenshots\\stage9r-mission9-390x844-orientation-gate.png",
+    "screenshot": "docs\\qa\\runs\\mission9\\2026-09-25T08-16-39-270Z-pid31400\\screenshots\\stage9r-mission9-390x844-orientation-gate.png",
     "state": {
       "stage": "BRIDGE",
       "snapshot": {
@@ -4079,20 +4079,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 404.8270588235294,
-            "y": 360.07275024414065,
+            "y": 347.73998657226565,
             "width": 105.3458823529412,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 347.5,
-            "y": 353.91275,
+            "y": 341.58,
             "width": 220,
             "height": 56
           },
           "baseX": 457.5,
-          "baseY": 381.91275,
+          "baseY": 369.58,
           "x": 457.5,
-          "y": 381.91275,
+          "y": 369.58,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4209,20 +4209,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
           "bounds": {
             "x": 162.04294117647058,
-            "y": 337.7149926757813,
+            "y": 326.51000610351565,
             "width": 63.914117647058845,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 84,
-            "y": 331.555,
+            "y": 320.35,
             "width": 220,
             "height": 56
           },
           "baseX": 194,
-          "baseY": 359.555,
+          "baseY": 348.35,
           "x": 194,
-          "y": 359.555,
+          "y": 348.35,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4234,20 +4234,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 369.3270588235294,
-            "y": 337.7149926757813,
+            "y": 326.51000610351565,
             "width": 105.3458823529412,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 312,
-            "y": 331.555,
+            "y": 320.35,
             "width": 220,
             "height": 56
           },
           "baseX": 422,
-          "baseY": 359.555,
+          "baseY": 348.35,
           "x": 422,
-          "y": 359.555,
+          "y": 348.35,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4259,20 +4259,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
           "bounds": {
             "x": 618.8742857142857,
-            "y": 337.7149926757813,
+            "y": 326.51000610351565,
             "width": 62.251428571428505,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 540,
-            "y": 331.555,
+            "y": 320.35,
             "width": 220,
             "height": 56
           },
           "baseX": 650,
-          "baseY": 359.555,
+          "baseY": 348.35,
           "x": 650,
-          "y": 359.555,
+          "y": 348.35,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4283,10 +4283,10 @@
           "targetId": "gate-lock",
           "clueId": "gate-truss-profile",
           "bounds": {
-            "x": 364.98726388,
-            "y": 219.55690847999998,
-            "width": 114.02547224,
-            "height": 63.72011684000003
+            "x": 366.364032,
+            "y": 222.148472,
+            "width": 111.27193600000004,
+            "height": 62.18137599999997
           },
           "interactive": true
         }
@@ -4365,20 +4365,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
           "bounds": {
             "x": 197.54294117647058,
-            "y": 360.07275024414065,
+            "y": 347.73998657226565,
             "width": 63.914117647058816,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 119.50000000000003,
-            "y": 353.91275,
+            "y": 341.58,
             "width": 220,
             "height": 56
           },
           "baseX": 229.50000000000003,
-          "baseY": 381.91275,
+          "baseY": 369.58,
           "x": 229.50000000000003,
-          "y": 381.91275,
+          "y": 369.58,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4390,20 +4390,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 404.8270588235294,
-            "y": 360.07275024414065,
+            "y": 347.73998657226565,
             "width": 105.3458823529412,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 347.5,
-            "y": 353.91275,
+            "y": 341.58,
             "width": 220,
             "height": 56
           },
           "baseX": 457.5,
-          "baseY": 381.91275,
+          "baseY": 369.58,
           "x": 457.5,
-          "y": 381.91275,
+          "y": 369.58,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4415,20 +4415,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
           "bounds": {
             "x": 654.3742857142857,
-            "y": 360.07275024414065,
+            "y": 347.73998657226565,
             "width": 62.251428571428505,
             "height": 43.67999999999995
           },
           "auditBounds": {
             "x": 575.5,
-            "y": 353.91275,
+            "y": 341.58,
             "width": 220,
             "height": 56
           },
           "baseX": 685.5,
-          "baseY": 381.91275,
+          "baseY": 369.58,
           "x": 685.5,
-          "y": 381.91275,
+          "y": 369.58,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4537,20 +4537,20 @@
               "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
               "bounds": {
                 "x": 529.480330882353,
-                "y": 789.925,
+                "y": 775.925,
                 "width": 77.03933823529405,
                 "height": 52.65000000000009
               },
               "auditBounds": {
                 "x": 458,
-                "y": 782.5,
+                "y": 768.5,
                 "width": 220,
                 "height": 67.5
               },
               "baseX": 568,
-              "baseY": 816.25,
+              "baseY": 802.25,
               "x": 568,
-              "y": 816.25,
+              "y": 802.25,
               "alpha": 1,
               "depth": 0,
               "interactive": true
@@ -4562,20 +4562,20 @@
               "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
               "bounds": {
                 "x": 736.510294117647,
-                "y": 789.925,
+                "y": 775.925,
                 "width": 126.9794117647059,
                 "height": 52.65000000000009
               },
               "auditBounds": {
                 "x": 690,
-                "y": 782.5,
+                "y": 768.5,
                 "width": 220,
                 "height": 67.5
               },
               "baseX": 800,
-              "baseY": 816.25,
+              "baseY": 802.25,
               "x": 800,
-              "y": 816.25,
+              "y": 802.25,
               "alpha": 1,
               "depth": 0,
               "interactive": true
@@ -4587,20 +4587,20 @@
               "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
               "bounds": {
                 "x": 994.4823979591837,
-                "y": 789.925,
+                "y": 775.925,
                 "width": 75.03520408163274,
                 "height": 52.65000000000009
               },
               "auditBounds": {
                 "x": 922,
-                "y": 782.5,
+                "y": 768.5,
                 "width": 220,
                 "height": 67.5
               },
               "baseX": 1032,
-              "baseY": 816.25,
+              "baseY": 802.25,
               "x": 1032,
-              "y": 816.25,
+              "y": 802.25,
               "alpha": 1,
               "depth": 0,
               "interactive": true
@@ -4611,10 +4611,10 @@
               "targetId": "gate-lock",
               "clueId": "gate-truss-profile",
               "bounds": {
-                "x": 718.01478,
-                "y": 545.67488,
-                "width": 163.97044000000005,
-                "height": 91.63054
+                "x": 722.04684,
+                "y": 553.26464,
+                "width": 155.90632000000005,
+                "height": 87.12411999999995
               },
               "interactive": true
             }
@@ -4724,20 +4724,20 @@
               "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
               "bounds": {
                 "x": 529.480330882353,
-                "y": 789.925,
+                "y": 775.925,
                 "width": 77.03933823529405,
                 "height": 52.65000000000009
               },
               "auditBounds": {
                 "x": 458,
-                "y": 782.5,
+                "y": 768.5,
                 "width": 220,
                 "height": 67.5
               },
               "baseX": 568,
-              "baseY": 816.25,
+              "baseY": 802.25,
               "x": 568,
-              "y": 816.25,
+              "y": 802.25,
               "alpha": 1,
               "depth": 0,
               "interactive": true
@@ -4749,20 +4749,20 @@
               "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
               "bounds": {
                 "x": 736.510294117647,
-                "y": 789.925,
+                "y": 775.925,
                 "width": 126.9794117647059,
                 "height": 52.65000000000009
               },
               "auditBounds": {
                 "x": 690,
-                "y": 782.5,
+                "y": 768.5,
                 "width": 220,
                 "height": 67.5
               },
               "baseX": 800,
-              "baseY": 816.25,
+              "baseY": 802.25,
               "x": 800,
-              "y": 816.25,
+              "y": 802.25,
               "alpha": 1,
               "depth": 0,
               "interactive": true
@@ -4774,20 +4774,20 @@
               "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
               "bounds": {
                 "x": 994.4823979591837,
-                "y": 789.925,
+                "y": 775.925,
                 "width": 75.03520408163274,
                 "height": 52.65000000000009
               },
               "auditBounds": {
                 "x": 922,
-                "y": 782.5,
+                "y": 768.5,
                 "width": 220,
                 "height": 67.5
               },
               "baseX": 1032,
-              "baseY": 816.25,
+              "baseY": 802.25,
               "x": 1032,
-              "y": 816.25,
+              "y": 802.25,
               "alpha": 1,
               "depth": 0,
               "interactive": true
@@ -4798,10 +4798,10 @@
               "targetId": "gate-lock",
               "clueId": "gate-truss-profile",
               "bounds": {
-                "x": 718.01478,
-                "y": 545.67488,
-                "width": 163.97044000000005,
-                "height": 91.63054
+                "x": 722.04684,
+                "y": 553.26464,
+                "width": 155.90632000000005,
+                "height": 87.12411999999995
               },
               "interactive": true
             }
@@ -4893,20 +4893,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
           "bounds": {
             "x": 529.480330882353,
-            "y": 789.925,
+            "y": 775.925,
             "width": 77.03933823529405,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 458,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 568,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 568,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4918,20 +4918,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 736.510294117647,
-            "y": 789.925,
+            "y": 775.925,
             "width": 126.9794117647059,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 690,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 800,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 800,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4943,20 +4943,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
           "bounds": {
             "x": 994.4823979591837,
-            "y": 789.925,
+            "y": 775.925,
             "width": 75.03520408163274,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 922,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 1032,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 1032,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -4967,10 +4967,10 @@
           "targetId": "gate-lock",
           "clueId": "gate-truss-profile",
           "bounds": {
-            "x": 718.01478,
-            "y": 545.67488,
-            "width": 163.97044000000005,
-            "height": 91.63054
+            "x": 722.04684,
+            "y": 553.26464,
+            "width": 155.90632000000005,
+            "height": 87.12411999999995
           },
           "interactive": true
         }
@@ -5068,20 +5068,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_CORRECT",
           "bounds": {
             "x": 529.480330882353,
-            "y": 789.925,
+            "y": 775.925,
             "width": 77.03933823529405,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 458,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 568,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 568,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -5093,20 +5093,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_1",
           "bounds": {
             "x": 736.510294117647,
-            "y": 789.925,
+            "y": 775.925,
             "width": 126.9794117647059,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 690,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 800,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 800,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -5118,20 +5118,20 @@
           "runtimeTexture": "MISSION9_GATE_KEY_WRONG_2",
           "bounds": {
             "x": 994.4823979591837,
-            "y": 789.925,
+            "y": 775.925,
             "width": 75.03520408163274,
             "height": 52.65000000000009
           },
           "auditBounds": {
             "x": 922,
-            "y": 782.5,
+            "y": 768.5,
             "width": 220,
             "height": 67.5
           },
           "baseX": 1032,
-          "baseY": 816.25,
+          "baseY": 802.25,
           "x": 1032,
-          "y": 816.25,
+          "y": 802.25,
           "alpha": 1,
           "depth": 0,
           "interactive": true
@@ -5142,10 +5142,10 @@
           "targetId": "gate-lock",
           "clueId": "gate-truss-profile",
           "bounds": {
-            "x": 718.01478,
-            "y": 545.67488,
-            "width": 163.97044000000005,
-            "height": 91.63054
+            "x": 722.04684,
+            "y": 553.26464,
+            "width": 155.90632000000005,
+            "height": 87.12411999999995
           },
           "interactive": true
         }

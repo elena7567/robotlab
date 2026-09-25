@@ -1,19 +1,23 @@
 {
-  "result": "FAIL",
+  "result": "PASS",
   "completed": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7,
+    8,
+    9,
+    10
   ],
   "checks": [
     {
       "name": "production-bundle-loaded",
       "ok": true,
       "data": [
-        "http://127.0.0.1:4198/assets/index-DSHwwlWE.js"
+        "http://127.0.0.1:4198/assets/index-kYbrwvZz.js"
       ]
     },
     {
@@ -134,52 +138,657 @@
         "robotTested": false,
         "robotReadyForFirstLaunch": false
       }
+    },
+    {
+      "name": "mission-7-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 8,
+        "completedTasks": 7,
+        "totalTasks": 10,
+        "score": 7,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-8-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "mission-9-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 9,
+        "totalTasks": 10,
+        "score": 9,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "m9-handoff-intro",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 9,
+        "totalTasks": 10,
+        "score": 9,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "path-to-energy",
+      "ok": true,
+      "data": {
+        "stage": "ENERGY",
+        "runSeed": 0,
+        "pathConfigId": "PATH_C",
+        "energyConfigId": "ENERGY_C",
+        "signalConfigId": "SIGNAL_C",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 1,
+          "R2": 1,
+          "R3": 3
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 0,
+          "M2": 0,
+          "M3": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "mission-10-natural-progression",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 10,
+        "totalTasks": 10,
+        "score": 10,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "victory-once",
+      "ok": true,
+      "data": {
+        "currentTask": 10,
+        "completedTasks": 10,
+        "totalTasks": 10,
+        "score": 10,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": true,
+        "robotTested": true,
+        "robotReadyForFirstLaunch": true
+      }
+    },
+    {
+      "name": "play-again-resets",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "play-again-stops-victory-audio",
+      "ok": true,
+      "data": null
+    },
+    {
+      "name": "home-after-replay",
+      "ok": true,
+      "data": {
+        "currentTask": 1,
+        "completedTasks": 0,
+        "totalTasks": 10,
+        "score": 0,
+        "assemblyProgress": 0,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      }
+    },
+    {
+      "name": "console-network-clean",
+      "ok": true,
+      "data": []
     }
   ],
-  "errors": [
-    "page.waitForFunction: Timeout 90000ms exceeded.\n    at scene (D:\\Projects\\codex\\RobotLab\\qa\\release-final-natural-flow.cjs:7:43)\n    at D:\\Projects\\codex\\RobotLab\\qa\\release-final-natural-flow.cjs:51:85"
-  ],
+  "errors": [],
   "screenshots": [
-    "docs/qa/screenshots/stage10-remediation-natural-final-failure.png"
+    "docs/qa/runs/natural-flow/2026-09-25T07-10-55-161Z/screenshots/mission9-complete.png",
+    "docs/qa/runs/natural-flow/2026-09-25T07-10-55-161Z/screenshots/mission10-intro.png",
+    "docs/qa/runs/natural-flow/2026-09-25T07-10-55-161Z/screenshots/mission10-launch.png",
+    "docs/qa/runs/natural-flow/2026-09-25T07-10-55-161Z/screenshots/victory.png"
   ],
   "releaseCandidate": true,
-  "failureState": {
-    "session": {
-      "currentTask": 7,
-      "completedTasks": 6,
-      "totalTasks": 10,
-      "score": 6,
-      "assemblyProgress": 5,
-      "powerActivated": true,
-      "connectionsCompleted": false,
-      "programmingCompleted": false,
-      "robotVerified": false,
-      "robotTested": false,
-      "robotReadyForFirstLaunch": false
+  "transitions": [
+    {
+      "at": 1790320279289,
+      "beforeScenes": [
+        "TransitionScene"
+      ],
+      "session": {
+        "currentTask": 6,
+        "completedTasks": 5,
+        "totalTasks": 10,
+        "score": 5,
+        "assemblyProgress": 5,
+        "powerActivated": false,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "point": {
+        "x": 640,
+        "y": 664.280029296875
+      },
+      "bounds": {
+        "x": 549,
+        "y": 650.280029296875,
+        "width": 182,
+        "height": 28
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "inputEnabled": true,
+      "after": {
+        "at": 1790320279926,
+        "activeScenes": [
+          "Mission6Scene"
+        ],
+        "session": {
+          "currentTask": 6,
+          "completedTasks": 5,
+          "totalTasks": 10,
+          "score": 5,
+          "assemblyProgress": 5,
+          "powerActivated": false,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "mission8Active": false,
+        "mission8Board": false
+      }
     },
-    "m10": {
-      "stage": "INTRO",
-      "runSeed": 0,
-      "pathConfigId": "PATH_C",
-      "energyConfigId": "ENERGY_C",
-      "signalConfigId": "SIGNAL_C",
-      "pathDecisionIndex": 0,
-      "pathWrongAttempts": 0,
-      "relayOrientations": {
-        "R1": 1,
-        "R2": 1,
-        "R3": 3
+    {
+      "at": 1790320281515,
+      "beforeScenes": [
+        "Mission6Scene"
+      ],
+      "session": {
+        "currentTask": 7,
+        "completedTasks": 6,
+        "totalTasks": 10,
+        "score": 6,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": false,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
       },
-      "energyWrongAttempts": 0,
-      "reflectorOrientations": {
-        "M1": 0,
-        "M2": 0,
-        "M3": 1
+      "point": {
+        "x": 640,
+        "y": 666.7999877929688
       },
-      "signalWrongAttempts": 0,
-      "launchPressed": false,
-      "finaleStep": 0,
-      "completed": false
+      "bounds": {
+        "x": 556,
+        "y": 653.7999877929688,
+        "width": 168,
+        "height": 26
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "inputEnabled": true,
+      "after": {
+        "at": 1790320282105,
+        "activeScenes": [
+          "Mission7Scene"
+        ],
+        "session": {
+          "currentTask": 7,
+          "completedTasks": 6,
+          "totalTasks": 10,
+          "score": 6,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": false,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "mission8Active": false,
+        "mission8Board": false
+      }
+    },
+    {
+      "at": 1790320299970,
+      "beforeScenes": [
+        "Mission7Scene"
+      ],
+      "session": {
+        "currentTask": 8,
+        "completedTasks": 7,
+        "totalTasks": 10,
+        "score": 7,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": false,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "point": {
+        "x": 640,
+        "y": 436.5
+      },
+      "bounds": {
+        "x": 563,
+        "y": 424,
+        "width": 154,
+        "height": 25
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "inputEnabled": true,
+      "after": {
+        "at": 1790320300572,
+        "activeScenes": [
+          "Mission8Scene"
+        ],
+        "session": {
+          "currentTask": 8,
+          "completedTasks": 7,
+          "totalTasks": 10,
+          "score": 7,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": false,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "mission8Active": true,
+        "mission8Board": true
+      }
+    },
+    {
+      "at": 1790320305932,
+      "beforeScenes": [
+        "Mission8Scene"
+      ],
+      "session": {
+        "currentTask": 9,
+        "completedTasks": 8,
+        "totalTasks": 10,
+        "score": 8,
+        "assemblyProgress": 5,
+        "powerActivated": true,
+        "connectionsCompleted": true,
+        "programmingCompleted": true,
+        "robotVerified": false,
+        "robotTested": false,
+        "robotReadyForFirstLaunch": false
+      },
+      "point": {
+        "x": 640,
+        "y": 497.6000061035156
+      },
+      "bounds": {
+        "x": 566.5,
+        "y": 486.1000061035156,
+        "width": 147,
+        "height": 23
+      },
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "inputEnabled": true,
+      "after": {
+        "at": 1790320306612,
+        "activeScenes": [
+          "Mission9Scene"
+        ],
+        "session": {
+          "currentTask": 9,
+          "completedTasks": 8,
+          "totalTasks": 10,
+          "score": 8,
+          "assemblyProgress": 5,
+          "powerActivated": true,
+          "connectionsCompleted": true,
+          "programmingCompleted": true,
+          "robotVerified": false,
+          "robotTested": false,
+          "robotReadyForFirstLaunch": false
+        },
+        "mission8Active": false,
+        "mission8Board": false
+      }
     }
-  }
+  ],
+  "mission9Stages": [
+    {
+      "expected": "BRIDGE",
+      "before": {
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": false,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        }
+      },
+      "transitioning": {
+        "contract": {
+          "stage": "BRIDGE",
+          "clueId": "bridge-flat-span",
+          "targetId": "bridge-gap",
+          "correctCandidateId": "bridge-flat-span",
+          "targetTextureKey": "MISSION9_BRIDGE_GAP_TARGET",
+          "candidateIds": [
+            "bridge-flat-span",
+            "bridge-arc-span",
+            "bridge-truss-span"
+          ],
+          "candidateTextures": [
+            "MISSION9_BRIDGE_CORRECT",
+            "MISSION9_BRIDGE_WRONG_ARC",
+            "MISSION9_BRIDGE_WRONG_TRUSS"
+          ],
+          "assetFamily": "bridge",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "BRIDGE",
+          "state": "TRANSITIONING",
+          "selectedCandidateId": "bridge-flat-span",
+          "targetHighlighted": false
+        },
+        "snapshot": {
+          "courseStage": "BRIDGE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": "bridge-flat-span",
+          "lastResult": "correct",
+          "transitioning": true,
+          "completed": false
+        }
+      }
+    },
+    {
+      "expected": "GATE",
+      "before": {
+        "contract": {
+          "stage": "GATE",
+          "clueId": "gate-truss-profile",
+          "targetId": "gate-lock",
+          "correctCandidateId": "gate-truss-profile",
+          "targetTextureKey": "MISSION9_GATE_CLOSED",
+          "candidateIds": [
+            "gate-triangle-profile",
+            "gate-truss-profile",
+            "gate-round-lightning-profile"
+          ],
+          "candidateTextures": [
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "assetFamily": "gate",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "GATE",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "snapshot": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": false,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        }
+      },
+      "transitioning": {
+        "contract": {
+          "stage": "GATE",
+          "clueId": "gate-truss-profile",
+          "targetId": "gate-lock",
+          "correctCandidateId": "gate-truss-profile",
+          "targetTextureKey": "MISSION9_GATE_CLOSED",
+          "candidateIds": [
+            "gate-triangle-profile",
+            "gate-truss-profile",
+            "gate-round-lightning-profile"
+          ],
+          "candidateTextures": [
+            "MISSION9_GATE_KEY_CORRECT",
+            "MISSION9_GATE_KEY_WRONG_1",
+            "MISSION9_GATE_KEY_WRONG_2"
+          ],
+          "assetFamily": "gate",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "GATE",
+          "state": "TRANSITIONING",
+          "selectedCandidateId": "gate-truss-profile",
+          "targetHighlighted": false
+        },
+        "snapshot": {
+          "courseStage": "GATE",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": "gate-truss-profile",
+          "lastResult": "correct",
+          "transitioning": true,
+          "completed": false
+        }
+      }
+    },
+    {
+      "expected": "POWER",
+      "before": {
+        "contract": {
+          "stage": "POWER",
+          "clueId": "power-capsule-module",
+          "targetId": "power-socket",
+          "correctCandidateId": "power-capsule-module",
+          "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+          "candidateIds": [
+            "power-orb-module",
+            "power-capsule-module",
+            "power-triangle-module"
+          ],
+          "candidateTextures": [
+            "MISSION9_ENERGY_CORRECT",
+            "MISSION9_ENERGY_WRONG_1",
+            "MISSION9_ENERGY_WRONG_2"
+          ],
+          "assetFamily": "power",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "POWER",
+          "state": "IDLE",
+          "selectedCandidateId": null,
+          "targetHighlighted": false
+        },
+        "snapshot": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": false,
+          "wrongAttempts": 0,
+          "lastAction": null,
+          "lastResult": "idle",
+          "transitioning": false,
+          "completed": false
+        }
+      },
+      "transitioning": {
+        "contract": {
+          "stage": "POWER",
+          "clueId": "power-capsule-module",
+          "targetId": "power-socket",
+          "correctCandidateId": "power-capsule-module",
+          "targetTextureKey": "MISSION9_POWER_STATION_OFF",
+          "candidateIds": [
+            "power-orb-module",
+            "power-capsule-module",
+            "power-triangle-module"
+          ],
+          "candidateTextures": [
+            "MISSION9_ENERGY_CORRECT",
+            "MISSION9_ENERGY_WRONG_1",
+            "MISSION9_ENERGY_WRONG_2"
+          ],
+          "assetFamily": "power",
+          "dragEnabled": false
+        },
+        "interaction": {
+          "stage": "POWER",
+          "state": "TRANSITIONING",
+          "selectedCandidateId": "power-capsule-module",
+          "targetHighlighted": false
+        },
+        "snapshot": {
+          "courseStage": "POWER",
+          "bridgeRepaired": true,
+          "gateOpened": true,
+          "stationPowered": true,
+          "wrongAttempts": 0,
+          "lastAction": "power-capsule-module",
+          "lastResult": "complete",
+          "transitioning": true,
+          "completed": true
+        }
+      }
+    }
+  ]
 }

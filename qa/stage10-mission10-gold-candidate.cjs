@@ -3,10 +3,19 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const baseUrl = process.env.ROBOTLAB_URL || 'http://127.0.0.1:4198/';
-const shotDir = path.join('docs', 'qa', 'screenshots');
-const reportPath = path.join('docs', 'qa', 'stage10-mission10-gold-candidate.json');
+const runId = `${new Date().toISOString().replace(/[:.]/g, '-')}-pid${process.pid}`;
+const runDir = path.join('docs', 'qa', 'runs', 'mission10', runId);
+const shotDir = path.join(runDir, 'screenshots');
+const reportPath = path.join(runDir, 'report.json');
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const results = { result: 'FAIL', checks: [], screenshots: [], errors: [], viewports: [] };
+
+function writeReport() {
+  fs.mkdirSync(runDir, { recursive: true });
+  const temporaryPath = path.join(runDir, `report-${process.pid}.tmp.json`);
+  fs.writeFileSync(temporaryPath, JSON.stringify(results, null, 2));
+  fs.renameSync(temporaryPath, reportPath);
+}
 
 function check(name, ok, actual) {
   results.checks.push({ name, ok, ...(actual === undefined ? {} : { actual }) });
@@ -54,7 +63,13 @@ async function inspect(page) {
       contract: { ...(game.registry.get('mission10SceneContract') || {}) },
       orientationCount: all.filter((item) => item?.name === 'mission10-orientation-gate').length,
       stageRootCount: all.filter((item) => item?.name === 'mission10-stage-root').length,
-      robotCount: all.filter((item) => item?.texture?.key === 'robot-v2-repaired').length,
+      // Robot v2 renders either as a direct `robot-v2-repaired` image (legacy) or as the
+      // `RobotAssemblyPreview` container. Mission 10 renames it to `mission10-intro-robot`
+      // during INTRO and back to `mission10-robot-v2` (fresh name) on later stages.
+      robotCount: all.filter((item) => item?.name === 'mission10-robot-v2'
+        || item?.name === 'mission10-intro-robot'
+        || item?.getData?.('visibleBoundsId') === 'ROBOT_V2_ASSEMBLED'
+        || item?.texture?.key === 'robot-v2-repaired').length,
       texts: all.filter((item) => typeof item?.text === 'string').map((item) => item.text),
       targets: all.filter((item) => item?.input?.enabled).map((item) => ({
         name: item.name, bounds: bounds(item), laneId: item.getData?.('laneId') || null,
@@ -220,8 +235,9 @@ async function visualPack(browser, viewport) {
         && item?.list?.some((child) => typeof child?.text === 'string' && /ДОМОЙ|Домой/.test(child.text)))),
       duplicateRobotCount: ['victory-robot', 'victory-assembled-robot']
         .filter((name) => Boolean(scene.children.getByName(name))).length,
-      repairedRobotCount: scene.children.list.filter((item) => item?.name === 'victory-robot-v2'
-        && item?.texture?.key === 'robot-v2-repaired').length,
+      // Victory robot v2 is a `RobotAssemblyPreview` container named `victory-robot-v2`
+      // (legacy direct `robot-v2-repaired` images keep the same name); count by name.
+      repairedRobotCount: scene.children.list.filter((item) => item?.name === 'victory-robot-v2').length,
       session: { ...window.__ROBOTLAB_QA__.sessionState.snapshot },
     };
   });
@@ -275,14 +291,12 @@ async function visualPack(browser, viewport) {
   const failed = results.checks.filter((item) => !item.ok);
   results.result = failed.length === 0 && results.errors.length === 0 ? 'PASS' : 'FAIL';
   results.failedChecks = failed;
-  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
-  fs.writeFileSync(reportPath, JSON.stringify(results, null, 2));
+  writeReport();
   process.stdout.write(JSON.stringify({ result: results.result, checks: results.checks.length, failures: failed.length, errors: results.errors.length, screenshots: results.screenshots.length }) + '\n');
   if (results.result !== 'PASS') process.exitCode = 1;
 })().catch((error) => {
   results.errors.push({ type: 'runner', message: error.stack || error.message });
-  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
-  fs.writeFileSync(reportPath, JSON.stringify(results, null, 2));
+  writeReport();
   console.error(error);
   process.exitCode = 1;
 });
