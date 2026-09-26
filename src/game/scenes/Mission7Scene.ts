@@ -28,6 +28,10 @@ const syncScaleToCanonicalViewport = (scene: Phaser.Scene, viewport: ViewportMet
 };
 
 export class Mission7Scene extends Phaser.Scene {
+  private mobileGestureCue?: Phaser.GameObjects.Container;
+  private mobileGestureCueTargets: object[] = [];
+  private mobileGestureCueDismissed = false;
+
   constructor() { super('Mission7Scene'); }
 
   create(): void {
@@ -163,6 +167,8 @@ export class Mission7Scene extends Phaser.Scene {
       onConnect: (source, target) => {
         const result = connectionsMechanic.connect(source, target);
         if (result === 'correct') {
+          this.mobileGestureCueDismissed = true;
+          this.dismissMobileGestureCue();
           audioManager.playCorrect();
           void helper?.playCorrect();
           card.refresh(connectionsMechanic.snapshot, CORRECT_LINES[connectionsMechanic.snapshot.connected.length % CORRECT_LINES.length]);
@@ -176,6 +182,8 @@ export class Mission7Scene extends Phaser.Scene {
       },
       onCancel: () => card.refresh(connectionsMechanic.snapshot, ''),
     });
+    this.showMobileGestureCue(card, layout.semanticMode.startsWith('PHONE_PORTRAIT'));
+    this.events.once(Phaser.Scenes.Events.SHUTDOWN, this.dismissMobileGestureCue, this);
     this.game.registry.set('mission7OrientationGate', false);
     this.game.registry.set('mission7InputActive', true);
 
@@ -244,6 +252,64 @@ export class Mission7Scene extends Phaser.Scene {
     }
     restartOnViewportResize(this);
     markSceneReady(this);
+  }
+
+  private showMobileGestureCue(card: ConnectionTaskCard, phonePortrait: boolean): void {
+    if (!phonePortrait || this.mobileGestureCueDismissed || connectionsMechanic.snapshot.completed) return;
+    const color = connectionsMechanic.hint();
+    if (!color) return;
+    const source = card.getByName(`connection-source-${color}`) as Phaser.GameObjects.Container | null;
+    const target = card.getByName(`connection-target-${color}`) as Phaser.GameObjects.Container | null;
+    if (!source || !target) return;
+
+    const sourceBounds = source.getBounds();
+    const targetBounds = target.getBounds();
+    const sourcePoint = new Phaser.Math.Vector2(sourceBounds.centerX, sourceBounds.centerY);
+    const targetPoint = new Phaser.Math.Vector2(targetBounds.centerX, targetBounds.centerY);
+    const bend = Math.min(80, Math.abs(targetPoint.x - sourcePoint.x) * 0.24);
+    const curve = new Phaser.Curves.CubicBezier(
+      sourcePoint,
+      new Phaser.Math.Vector2(sourcePoint.x + bend, sourcePoint.y),
+      new Phaser.Math.Vector2(targetPoint.x - bend, targetPoint.y),
+      targetPoint,
+    );
+    const overlay = this.add.container(0, 0).setName('mission7-mobile-gesture-cue').setDepth(7);
+    const guide = this.add.graphics().setName('mission7-mobile-gesture-guide');
+    const sourcePulse = this.add.circle(sourcePoint.x, sourcePoint.y, sourceBounds.width * 0.45, 0x67e9f5, 0.22)
+      .setBlendMode(Phaser.BlendModes.ADD);
+    const targetPulse = this.add.circle(targetPoint.x, targetPoint.y, targetBounds.width * 0.45, 0x67e9f5, 0.22)
+      .setBlendMode(Phaser.BlendModes.ADD);
+    const traveler = this.add.circle(sourcePoint.x, sourcePoint.y, 7, 0xffffff, 0.94).setBlendMode(Phaser.BlendModes.ADD);
+    const progress = { value: 0 };
+    const drawGuide = (): void => {
+      guide.clear();
+      const points = curve.getPoints(28);
+      guide.lineStyle(7, 0x67e9f5, 0.16).strokePoints(points, false, false);
+      guide.lineStyle(2, 0xffffff, 0.52).strokePoints(points, false, false);
+      const point = curve.getPoint(progress.value);
+      traveler.setPosition(point.x, point.y);
+    };
+    drawGuide();
+    overlay.add([guide, sourcePulse, targetPulse, traveler]);
+    this.mobileGestureCue = overlay;
+    this.mobileGestureCueTargets = [sourcePulse, targetPulse, traveler, progress];
+    this.tweens.add({ targets: [sourcePulse, targetPulse], scale: 1.28, alpha: 0.5, duration: 520, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+    this.tweens.add({
+      targets: progress,
+      value: 1,
+      duration: 1000,
+      repeat: -1,
+      ease: 'Sine.easeInOut',
+      onRepeat: () => { progress.value = 0; },
+      onUpdate: drawGuide,
+    });
+  }
+
+  private dismissMobileGestureCue(): void {
+    this.tweens.killTweensOf(this.mobileGestureCueTargets);
+    this.mobileGestureCue?.destroy();
+    this.mobileGestureCue = undefined;
+    this.mobileGestureCueTargets = [];
   }
 
   private showCompletion(layout: ReturnType<typeof createResponsiveLayout>): void {
