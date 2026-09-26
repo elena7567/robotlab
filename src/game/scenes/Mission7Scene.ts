@@ -115,7 +115,12 @@ export class Mission7Scene extends Phaser.Scene {
       color: '#ffffff', fontFamily: UI_FONT, fontSize: `${layout.headerFontSize}px`, fontStyle: 'bold', stroke: '#31567a', strokeThickness: 5,
     }).setOrigin(0.5).setName('mission7-header');
 
-    const systems = this.add.container(missionLayout.systems.x, missionLayout.systems.y).setName('systems-progress').setDepth(8);
+    const { x: boardX, y: boardTop, width: boardWidth, height: boardHeight } = missionLayout.board;
+    const desktopInstruction = layout.semanticMode === 'DESKTOP';
+    const systemsY = desktopInstruction
+      ? Math.min(missionLayout.systems.y, boardTop - 66)
+      : missionLayout.systems.y;
+    const systems = this.add.container(missionLayout.systems.x, systemsY).setName('systems-progress').setDepth(8);
     const systemsWidth = missionLayout.systems.width;
     const compactSystems = portrait || layout.semanticMode === 'DESKTOP';
     const systemsHeight = compactSystems ? 38 : 52;
@@ -130,7 +135,22 @@ export class Mission7Scene extends Phaser.Scene {
       this.add.text(0, 17, 'СОЕДИНЕНИЯ', { color: '#77f3ff', fontFamily: UI_FONT, fontSize: '13px', fontStyle: 'bold' }).setOrigin(0.5),
     ]);
 
-    const { x: boardX, y: boardTop, width: boardWidth, height: boardHeight } = missionLayout.board;
+    if (desktopInstruction && missionLayout.instruction) {
+      const instruction = missionLayout.instruction;
+      const panel = this.add.container(instruction.x + instruction.width / 2, instruction.y + instruction.height / 2)
+        .setName('connection-drag-instruction-panel')
+        .setSize(instruction.width, instruction.height)
+        .setDepth(8)
+        .setData('auditBounds', { left: instruction.x, right: instruction.x + instruction.width, top: instruction.y, bottom: instruction.y + instruction.height, width: instruction.width, height: instruction.height });
+      const body = this.add.graphics()
+        .fillStyle(0x174e71, 0.97).fillRoundedRect(-instruction.width / 2, -instruction.height / 2, instruction.width, instruction.height, 18)
+        .lineStyle(2, 0x67e9f5, 0.92).strokeRoundedRect(-instruction.width / 2, -instruction.height / 2, instruction.width, instruction.height, 18);
+      const text = this.add.text(0, 0, 'ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ', {
+        color: '#ffffff', fontFamily: UI_FONT, fontSize: `${Math.min(19, Math.max(16, instruction.width * 0.031))}px`, fontStyle: 'bold', align: 'center',
+        wordWrap: { width: instruction.width - 46, useAdvancedWrap: true },
+      }).setOrigin(0.5).setName('connection-drag-instruction');
+      panel.add([body, text]);
+    }
     let resolving = false;
     let card: ConnectionTaskCard;
     const finishChallenge = (): void => {

@@ -71,6 +71,8 @@ export interface Mission7SceneLayout {
   readonly showHeader: boolean;
   readonly showHelper: boolean;
   readonly systems: { readonly x: number; readonly y: number; readonly width: number };
+  /** Desktop-only instructional layer, deliberately outside the connection card. */
+  readonly instruction?: RectLayout;
   readonly board: RectLayout;
   readonly helper: { readonly x: number; readonly feetY: number; readonly scale: number };
   readonly repaired: { readonly x: number; readonly feetY: number; readonly scale: number };
@@ -668,9 +670,19 @@ function composeMission7(layout: ResponsiveLayout): SceneComposition {
     const robotX = desktop ? clampValue(sideZoneLeftX, sideZonePreferredX, sideZoneMaxX) : 0;
     const cardCenterX = boardX + boardWidth / 2;
     const cardSurfaceY = platform.surfaceYAt(cardCenterX);
-    const cardClearance = clampValue(72, 72 * responsiveFactor, 76);
+    const desktopInstructionHeight = clampValue(56, height * 0.071, 72);
+    const desktopStatusToInstructionGap = clampValue(36, height * 0.045, 46);
+    const desktopInstructionToBadgeGap = clampValue(36, height * 0.045, 46);
+    const desktopSystemsY = contentTop - 42;
+    // Mission 7's desktop header is a semantic vertical stack.  It takes
+    // precedence over the old platform-only board Y so that shorter desktops
+    // have enough room for a readable instruction panel without overlap.
     const boardY = desktop
-      ? clampValue(available.y, cardSurfaceY - cardClearance - boardHeight, contentBottom - hintHeight - hintGap - boardHeight)
+      ? clampValue(
+        available.y,
+        desktopSystemsY + 19 + desktopStatusToInstructionGap + desktopInstructionHeight + desktopInstructionToBadgeGap + 17,
+        contentBottom - hintHeight - hintGap - boardHeight,
+      )
       : available.y;
     const board = rect(boardX, boardY, boardWidth, boardHeight);
     const support = desktop
@@ -695,9 +707,18 @@ function composeMission7(layout: ResponsiveLayout): SceneComposition {
     const robotGroundY = desktop ? leftFloorSurfaceYAt(robotX) : hint.y - hint.height / 2 - layout.gapS;
     const robotFeetY = robotGroundY;
     const surfaceAtHintX = platform.surfaceYAt(hint.x);
+    const instruction = desktop
+      ? rect(
+        width / 2 - clampValue(500, width * 0.38, 620) / 2,
+        board.y - 17 - desktopInstructionToBadgeGap - desktopInstructionHeight,
+        clampValue(500, width * 0.38, 620),
+        desktopInstructionHeight,
+      )
+      : undefined;
     mission7 = {
       showHeader: false, showHelper: false,
-      systems: { x: width / 2, y: contentTop - (desktop ? 42 : 52), width: systemsWidth },
+      systems: { x: width / 2, y: desktop ? desktopSystemsY : contentTop - 52, width: systemsWidth },
+      instruction,
       board,
       helper: { x: support.x + support.width / 2, feetY: robotFeetY, scale: 0 },
       repaired: { x: desktop ? robotX : support.x + support.width / 2, feetY: robotFeetY, scale: repairedScale },

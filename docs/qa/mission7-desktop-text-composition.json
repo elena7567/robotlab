@@ -1,0 +1,3595 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "1280x720 title/progress separated",
+      "ok": true,
+      "actual": {
+        "gap": 5,
+        "title": {
+          "left": 507,
+          "right": 773,
+          "top": 265.36000061035156,
+          "bottom": 293.36000061035156,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 552.5,
+          "right": 727.5,
+          "top": 298.36000061035156,
+          "bottom": 316.36000061035156,
+          "width": 175,
+          "height": 18
+        }
+      }
+    },
+    {
+      "name": "1280x720 has a centered instruction pill",
+      "ok": true,
+      "actual": {
+        "left": 390,
+        "right": 890,
+        "top": 130.36,
+        "bottom": 186.36,
+        "width": 500,
+        "height": 56
+      }
+    },
+    {
+      "name": "1280x720 instruction is a child of its pill",
+      "ok": true,
+      "actual": {
+        "parent": "connection-drag-instruction-panel"
+      }
+    },
+    {
+      "name": "1280x720 instruction sits below systems status",
+      "ok": true,
+      "actual": {
+        "gap": 47,
+        "systems": {
+          "left": 522,
+          "right": 758,
+          "top": 67.36000061035156,
+          "bottom": 83.36000061035156,
+          "width": 236,
+          "height": 16
+        },
+        "instructionPanel": {
+          "left": 390,
+          "right": 890,
+          "top": 130.36,
+          "bottom": 186.36,
+          "width": 500,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1280x720 instruction clear of task-card badge",
+      "ok": true,
+      "actual": {
+        "gap": 45.5,
+        "instructionPanel": {
+          "left": 390,
+          "right": 890,
+          "top": 130.36,
+          "bottom": 186.36,
+          "width": 500,
+          "height": 56
+        },
+        "taskBadge": {
+          "left": 564,
+          "right": 716,
+          "top": 231.86000061035156,
+          "bottom": 252.86000061035156,
+          "width": 152,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "1280x720 instruction clear of terminals",
+      "ok": true,
+      "actual": {
+        "instruction": {
+          "left": 445,
+          "right": 835,
+          "top": 149.36000061035156,
+          "bottom": 167.36000061035156,
+          "width": 390,
+          "height": 18
+        },
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 472,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 808,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 472,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 808,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 472,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 808,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280x720 instruction is a single readable line",
+      "ok": true,
+      "actual": {
+        "title": "ПОДКЛЮЧИ ПРОВОДА",
+        "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+        "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+      }
+    },
+    {
+      "name": "1280x720 correct red wire connects",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "1280x720 card envelope unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": {
+          "left": 340,
+          "right": 940,
+          "top": 222.36,
+          "bottom": 609.36,
+          "width": 600,
+          "height": 387
+        },
+        "after": {
+          "left": 340,
+          "right": 940,
+          "top": 222.36,
+          "bottom": 609.36,
+          "width": 600,
+          "height": 387
+        }
+      }
+    },
+    {
+      "name": "1280x720 terminals unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": [
+          {
+            "name": "connection-source-red",
+            "x": 472,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 808,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 472,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 808,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 472,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 808,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "after": [
+          {
+            "name": "connection-source-red",
+            "x": 472,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 808,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 472,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 808,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 472,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 808,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1366x768 title/progress separated",
+      "ok": true,
+      "actual": {
+        "gap": 5,
+        "title": {
+          "left": 550,
+          "right": 816,
+          "top": 270.78399658203125,
+          "bottom": 298.78399658203125,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 595.5,
+          "right": 770.5,
+          "top": 303.78399658203125,
+          "bottom": 321.78399658203125,
+          "width": 175,
+          "height": 18
+        }
+      }
+    },
+    {
+      "name": "1366x768 has a centered instruction pill",
+      "ok": true,
+      "actual": {
+        "left": 423.46,
+        "right": 942.54,
+        "top": 135.784,
+        "bottom": 191.784,
+        "width": 519.08,
+        "height": 56
+      }
+    },
+    {
+      "name": "1366x768 instruction is a child of its pill",
+      "ok": true,
+      "actual": {
+        "parent": "connection-drag-instruction-panel"
+      }
+    },
+    {
+      "name": "1366x768 instruction sits below systems status",
+      "ok": true,
+      "actual": {
+        "gap": 47,
+        "systems": {
+          "left": 565,
+          "right": 801,
+          "top": 72.78399658203125,
+          "bottom": 88.78399658203125,
+          "width": 236,
+          "height": 16
+        },
+        "instructionPanel": {
+          "left": 423.46,
+          "right": 942.54,
+          "top": 135.784,
+          "bottom": 191.784,
+          "width": 519.08,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1366x768 instruction clear of task-card badge",
+      "ok": true,
+      "actual": {
+        "gap": 45.5,
+        "instructionPanel": {
+          "left": 423.46,
+          "right": 942.54,
+          "top": 135.784,
+          "bottom": 191.784,
+          "width": 519.08,
+          "height": 56
+        },
+        "taskBadge": {
+          "left": 607,
+          "right": 759,
+          "top": 237.28399658203125,
+          "bottom": 258.28399658203125,
+          "width": 152,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "1366x768 instruction clear of terminals",
+      "ok": true,
+      "actual": {
+        "instruction": {
+          "left": 487,
+          "right": 879,
+          "top": 154.78399658203125,
+          "bottom": 172.78399658203125,
+          "width": 392,
+          "height": 18
+        },
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 515,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 851,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 515,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 851,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 515,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 851,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1366x768 instruction is a single readable line",
+      "ok": true,
+      "actual": {
+        "title": "ПОДКЛЮЧИ ПРОВОДА",
+        "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+        "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+      }
+    },
+    {
+      "name": "1366x768 correct red wire connects",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "1366x768 card envelope unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": {
+          "left": 383,
+          "right": 983,
+          "top": 227.784,
+          "bottom": 614.784,
+          "width": 600,
+          "height": 387
+        },
+        "after": {
+          "left": 383,
+          "right": 983,
+          "top": 227.784,
+          "bottom": 614.784,
+          "width": 600,
+          "height": 387
+        }
+      }
+    },
+    {
+      "name": "1366x768 terminals unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": [
+          {
+            "name": "connection-source-red",
+            "x": 515,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 851,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 515,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 851,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 515,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 851,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "after": [
+          {
+            "name": "connection-source-red",
+            "x": 515,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 851,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 515,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 851,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 515,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 851,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440x900 title/progress separated",
+      "ok": true,
+      "actual": {
+        "gap": 5,
+        "title": {
+          "left": 587,
+          "right": 853,
+          "top": 290.8999938964844,
+          "bottom": 318.8999938964844,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 632.5,
+          "right": 807.5,
+          "top": 323.8999938964844,
+          "bottom": 341.8999938964844,
+          "width": 175,
+          "height": 18
+        }
+      }
+    },
+    {
+      "name": "1440x900 has a centered instruction pill",
+      "ok": true,
+      "actual": {
+        "left": 446.4,
+        "right": 993.6,
+        "top": 143.5,
+        "bottom": 207.39999999999998,
+        "width": 547.2,
+        "height": 63.89999999999999
+      }
+    },
+    {
+      "name": "1440x900 instruction is a child of its pill",
+      "ok": true,
+      "actual": {
+        "parent": "connection-drag-instruction-panel"
+      }
+    },
+    {
+      "name": "1440x900 instruction sits below systems status",
+      "ok": true,
+      "actual": {
+        "gap": 51.5,
+        "systems": {
+          "left": 602,
+          "right": 838,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "instructionPanel": {
+          "left": 446.4,
+          "right": 993.6,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 547.2,
+          "height": 63.89999999999999
+        }
+      }
+    },
+    {
+      "name": "1440x900 instruction clear of task-card badge",
+      "ok": true,
+      "actual": {
+        "gap": 50,
+        "instructionPanel": {
+          "left": 446.4,
+          "right": 993.6,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 547.2,
+          "height": 63.89999999999999
+        },
+        "taskBadge": {
+          "left": 644,
+          "right": 796,
+          "top": 257.3999938964844,
+          "bottom": 278.3999938964844,
+          "width": 152,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "1440x900 instruction clear of terminals",
+      "ok": true,
+      "actual": {
+        "instruction": {
+          "left": 513.5,
+          "right": 926.5,
+          "top": 165.9499969482422,
+          "bottom": 184.9499969482422,
+          "width": 413,
+          "height": 19
+        },
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 552,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 888,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 552,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 888,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 552,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 888,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440x900 instruction is a single readable line",
+      "ok": true,
+      "actual": {
+        "title": "ПОДКЛЮЧИ ПРОВОДА",
+        "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+        "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+      }
+    },
+    {
+      "name": "1440x900 correct red wire connects",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "1440x900 card envelope unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": {
+          "left": 420,
+          "right": 1020,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        },
+        "after": {
+          "left": 420,
+          "right": 1020,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        }
+      }
+    },
+    {
+      "name": "1440x900 terminals unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": [
+          {
+            "name": "connection-source-red",
+            "x": 552,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 888,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 552,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 888,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 552,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 888,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "after": [
+          {
+            "name": "connection-source-red",
+            "x": 552,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 888,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 552,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 888,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 552,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 888,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1600x900 title/progress separated",
+      "ok": true,
+      "actual": {
+        "gap": 5,
+        "title": {
+          "left": 667,
+          "right": 933,
+          "top": 290.8999938964844,
+          "bottom": 318.8999938964844,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 712.5,
+          "right": 887.5,
+          "top": 323.8999938964844,
+          "bottom": 341.8999938964844,
+          "width": 175,
+          "height": 18
+        }
+      }
+    },
+    {
+      "name": "1600x900 has a centered instruction pill",
+      "ok": true,
+      "actual": {
+        "left": 496,
+        "right": 1104,
+        "top": 143.5,
+        "bottom": 207.39999999999998,
+        "width": 608,
+        "height": 63.89999999999999
+      }
+    },
+    {
+      "name": "1600x900 instruction is a child of its pill",
+      "ok": true,
+      "actual": {
+        "parent": "connection-drag-instruction-panel"
+      }
+    },
+    {
+      "name": "1600x900 instruction sits below systems status",
+      "ok": true,
+      "actual": {
+        "gap": 51.5,
+        "systems": {
+          "left": 682,
+          "right": 918,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "instructionPanel": {
+          "left": 496,
+          "right": 1104,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 608,
+          "height": 63.89999999999999
+        }
+      }
+    },
+    {
+      "name": "1600x900 instruction clear of task-card badge",
+      "ok": true,
+      "actual": {
+        "gap": 50,
+        "instructionPanel": {
+          "left": 496,
+          "right": 1104,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 608,
+          "height": 63.89999999999999
+        },
+        "taskBadge": {
+          "left": 724,
+          "right": 876,
+          "top": 257.3999938964844,
+          "bottom": 278.3999938964844,
+          "width": 152,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "1600x900 instruction clear of terminals",
+      "ok": true,
+      "actual": {
+        "instruction": {
+          "left": 570.5,
+          "right": 1029.5,
+          "top": 164.4499969482422,
+          "bottom": 186.4499969482422,
+          "width": 459,
+          "height": 22
+        },
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 632,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 968,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 632,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 968,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 632,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 968,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1600x900 instruction is a single readable line",
+      "ok": true,
+      "actual": {
+        "title": "ПОДКЛЮЧИ ПРОВОДА",
+        "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+        "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+      }
+    },
+    {
+      "name": "1600x900 correct red wire connects",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "1600x900 card envelope unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": {
+          "left": 500,
+          "right": 1100,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        },
+        "after": {
+          "left": 500,
+          "right": 1100,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        }
+      }
+    },
+    {
+      "name": "1600x900 terminals unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": [
+          {
+            "name": "connection-source-red",
+            "x": 632,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 968,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 632,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 968,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 632,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 968,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "after": [
+          {
+            "name": "connection-source-red",
+            "x": 632,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 968,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 632,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 968,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 632,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 968,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080 title/progress separated",
+      "ok": true,
+      "actual": {
+        "gap": 5,
+        "title": {
+          "left": 827.0000180664063,
+          "right": 1093.0000180664063,
+          "top": 310,
+          "bottom": 338,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 872.5000180664063,
+          "right": 1047.5000180664063,
+          "top": 343,
+          "bottom": 361,
+          "width": 175,
+          "height": 18
+        }
+      }
+    },
+    {
+      "name": "1920x1080 has a centered instruction pill",
+      "ok": true,
+      "actual": {
+        "left": 650,
+        "right": 1270,
+        "top": 149,
+        "bottom": 221,
+        "width": 620,
+        "height": 72
+      }
+    },
+    {
+      "name": "1920x1080 instruction is a child of its pill",
+      "ok": true,
+      "actual": {
+        "parent": "connection-drag-instruction-panel"
+      }
+    },
+    {
+      "name": "1920x1080 instruction sits below systems status",
+      "ok": true,
+      "actual": {
+        "gap": 57,
+        "systems": {
+          "left": 842,
+          "right": 1078,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "instructionPanel": {
+          "left": 650,
+          "right": 1270,
+          "top": 149,
+          "bottom": 221,
+          "width": 620,
+          "height": 72
+        }
+      }
+    },
+    {
+      "name": "1920x1080 instruction clear of task-card badge",
+      "ok": true,
+      "actual": {
+        "gap": 55.5,
+        "instructionPanel": {
+          "left": 650,
+          "right": 1270,
+          "top": 149,
+          "bottom": 221,
+          "width": 620,
+          "height": 72
+        },
+        "taskBadge": {
+          "left": 884.0000180664063,
+          "right": 1036.0000180664063,
+          "top": 276.5,
+          "bottom": 297.5,
+          "width": 152,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "1920x1080 instruction clear of terminals",
+      "ok": true,
+      "actual": {
+        "instruction": {
+          "left": 728.5,
+          "right": 1191.5,
+          "top": 174,
+          "bottom": 196,
+          "width": 463,
+          "height": 22
+        },
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 792.1993408203125,
+            "y": 389,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 1127.8006591796875,
+            "y": 389,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 792.1993408203125,
+            "y": 497.5,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 1127.8006591796875,
+            "y": 606,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 792.1993408203125,
+            "y": 606,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 1127.8006591796875,
+            "y": 497.5,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080 instruction is a single readable line",
+      "ok": true,
+      "actual": {
+        "title": "ПОДКЛЮЧИ ПРОВОДА",
+        "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+        "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+      }
+    },
+    {
+      "name": "1920x1080 correct red wire connects",
+      "ok": true,
+      "actual": [
+        "red"
+      ]
+    },
+    {
+      "name": "1920x1080 card envelope unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": {
+          "left": 660.356,
+          "right": 1259.644,
+          "top": 267,
+          "bottom": 654,
+          "width": 599.288,
+          "height": 387
+        },
+        "after": {
+          "left": 660.356,
+          "right": 1259.644,
+          "top": 267,
+          "bottom": 654,
+          "width": 599.288,
+          "height": 387
+        }
+      }
+    },
+    {
+      "name": "1920x1080 terminals unchanged by connection",
+      "ok": true,
+      "actual": {
+        "before": [
+          {
+            "name": "connection-source-red",
+            "x": 792.1993408203125,
+            "y": 389,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 1127.8006591796875,
+            "y": 389,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 792.1993408203125,
+            "y": 497.5,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 1127.8006591796875,
+            "y": 606,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 792.1993408203125,
+            "y": 606,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 1127.8006591796875,
+            "y": 497.5,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "after": [
+          {
+            "name": "connection-source-red",
+            "x": 792.1993408203125,
+            "y": 389,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 1127.8006591796875,
+            "y": 389,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 792.1993408203125,
+            "y": 497.5,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 1127.8006591796875,
+            "y": 606,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 792.1993408203125,
+            "y": 606,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 1127.8006591796875,
+            "y": 497.5,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "runs": [
+    {
+      "viewport": "1280x720",
+      "titleGap": 5,
+      "instructionGap": 47,
+      "instructionCardGap": 45.5,
+      "instructionOverPort": false,
+      "before": {
+        "systems": {
+          "left": 522,
+          "right": 758,
+          "top": 67.36000061035156,
+          "bottom": 83.36000061035156,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 340,
+          "right": 940,
+          "top": 222.36,
+          "bottom": 609.36,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 564,
+          "right": 716,
+          "top": 231.86000061035156,
+          "bottom": 252.86000061035156,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 390,
+          "right": 890,
+          "top": 130.36,
+          "bottom": 186.36,
+          "width": 500,
+          "height": 56
+        },
+        "title": {
+          "left": 507,
+          "right": 773,
+          "top": 265.36000061035156,
+          "bottom": 293.36000061035156,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 552.5,
+          "right": 727.5,
+          "top": 298.36000061035156,
+          "bottom": 316.36000061035156,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 445,
+          "right": 835,
+          "top": 149.36000061035156,
+          "bottom": 167.36000061035156,
+          "width": 390,
+          "height": 18
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 472,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 808,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 472,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 808,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 472,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 808,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      },
+      "after": {
+        "systems": {
+          "left": 522,
+          "right": 758,
+          "top": 67.36000061035156,
+          "bottom": 83.36000061035156,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 340,
+          "right": 940,
+          "top": 222.36,
+          "bottom": 609.36,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 564,
+          "right": 716,
+          "top": 231.86000061035156,
+          "bottom": 252.86000061035156,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 390,
+          "right": 890,
+          "top": 130.36,
+          "bottom": 186.36,
+          "width": 500,
+          "height": 56
+        },
+        "title": {
+          "left": 507,
+          "right": 773,
+          "top": 265.36000061035156,
+          "bottom": 293.36000061035156,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 552.5,
+          "right": 727.5,
+          "top": 298.36000061035156,
+          "bottom": 316.36000061035156,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 445,
+          "right": 835,
+          "top": 149.36000061035156,
+          "bottom": 167.36000061035156,
+          "width": 390,
+          "height": 18
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 472,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 808,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 472,
+            "y": 452.8599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 415.1399853515625,
+              "bottom": 490.5799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 808,
+            "y": 344.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 306.6399853515625,
+              "bottom": 382.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 472,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 434.28,
+              "right": 509.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 808,
+            "y": 561.3599853515625,
+            "bounds": {
+              "left": 770.28,
+              "right": 845.72,
+              "top": 523.6399853515625,
+              "bottom": 599.0799853515625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [
+          "red"
+        ],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      }
+    },
+    {
+      "viewport": "1366x768",
+      "titleGap": 5,
+      "instructionGap": 47,
+      "instructionCardGap": 45.5,
+      "instructionOverPort": false,
+      "before": {
+        "systems": {
+          "left": 565,
+          "right": 801,
+          "top": 72.78399658203125,
+          "bottom": 88.78399658203125,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 383,
+          "right": 983,
+          "top": 227.784,
+          "bottom": 614.784,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 607,
+          "right": 759,
+          "top": 237.28399658203125,
+          "bottom": 258.28399658203125,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 423.46,
+          "right": 942.54,
+          "top": 135.784,
+          "bottom": 191.784,
+          "width": 519.08,
+          "height": 56
+        },
+        "title": {
+          "left": 550,
+          "right": 816,
+          "top": 270.78399658203125,
+          "bottom": 298.78399658203125,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 595.5,
+          "right": 770.5,
+          "top": 303.78399658203125,
+          "bottom": 321.78399658203125,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 487,
+          "right": 879,
+          "top": 154.78399658203125,
+          "bottom": 172.78399658203125,
+          "width": 392,
+          "height": 18
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 515,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 851,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 515,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 851,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 515,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 851,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      },
+      "after": {
+        "systems": {
+          "left": 565,
+          "right": 801,
+          "top": 72.78399658203125,
+          "bottom": 88.78399658203125,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 383,
+          "right": 983,
+          "top": 227.784,
+          "bottom": 614.784,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 607,
+          "right": 759,
+          "top": 237.28399658203125,
+          "bottom": 258.28399658203125,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 423.46,
+          "right": 942.54,
+          "top": 135.784,
+          "bottom": 191.784,
+          "width": 519.08,
+          "height": 56
+        },
+        "title": {
+          "left": 550,
+          "right": 816,
+          "top": 270.78399658203125,
+          "bottom": 298.78399658203125,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 595.5,
+          "right": 770.5,
+          "top": 303.78399658203125,
+          "bottom": 321.78399658203125,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 487,
+          "right": 879,
+          "top": 154.78399658203125,
+          "bottom": 172.78399658203125,
+          "width": 392,
+          "height": 18
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 515,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 851,
+            "y": 349.78399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 312.0639965820312,
+              "bottom": 387.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 515,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 851,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 515,
+            "y": 566.7839965820312,
+            "bounds": {
+              "left": 477.28,
+              "right": 552.72,
+              "top": 529.0639965820312,
+              "bottom": 604.5039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 851,
+            "y": 458.28399658203125,
+            "bounds": {
+              "left": 813.28,
+              "right": 888.72,
+              "top": 420.5639965820312,
+              "bottom": 496.0039965820313,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [
+          "red"
+        ],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      }
+    },
+    {
+      "viewport": "1440x900",
+      "titleGap": 5,
+      "instructionGap": 51.5,
+      "instructionCardGap": 50,
+      "instructionOverPort": false,
+      "before": {
+        "systems": {
+          "left": 602,
+          "right": 838,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 420,
+          "right": 1020,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 644,
+          "right": 796,
+          "top": 257.3999938964844,
+          "bottom": 278.3999938964844,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 446.4,
+          "right": 993.6,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 547.2,
+          "height": 63.89999999999999
+        },
+        "title": {
+          "left": 587,
+          "right": 853,
+          "top": 290.8999938964844,
+          "bottom": 318.8999938964844,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 632.5,
+          "right": 807.5,
+          "top": 323.8999938964844,
+          "bottom": 341.8999938964844,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 513.5,
+          "right": 926.5,
+          "top": 165.9499969482422,
+          "bottom": 184.9499969482422,
+          "width": 413,
+          "height": 19
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 552,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 888,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 552,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 888,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 552,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 888,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      },
+      "after": {
+        "systems": {
+          "left": 602,
+          "right": 838,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 420,
+          "right": 1020,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 644,
+          "right": 796,
+          "top": 257.3999938964844,
+          "bottom": 278.3999938964844,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 446.4,
+          "right": 993.6,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 547.2,
+          "height": 63.89999999999999
+        },
+        "title": {
+          "left": 587,
+          "right": 853,
+          "top": 290.8999938964844,
+          "bottom": 318.8999938964844,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 632.5,
+          "right": 807.5,
+          "top": 323.8999938964844,
+          "bottom": 341.8999938964844,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 513.5,
+          "right": 926.5,
+          "top": 165.9499969482422,
+          "bottom": 184.9499969482422,
+          "width": 413,
+          "height": 19
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 552,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 888,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 552,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 888,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 552,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 514.28,
+              "right": 589.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 888,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 850.28,
+              "right": 925.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [
+          "red"
+        ],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      }
+    },
+    {
+      "viewport": "1600x900",
+      "titleGap": 5,
+      "instructionGap": 51.5,
+      "instructionCardGap": 50,
+      "instructionOverPort": false,
+      "before": {
+        "systems": {
+          "left": 682,
+          "right": 918,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 500,
+          "right": 1100,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 724,
+          "right": 876,
+          "top": 257.3999938964844,
+          "bottom": 278.3999938964844,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 496,
+          "right": 1104,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 608,
+          "height": 63.89999999999999
+        },
+        "title": {
+          "left": 667,
+          "right": 933,
+          "top": 290.8999938964844,
+          "bottom": 318.8999938964844,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 712.5,
+          "right": 887.5,
+          "top": 323.8999938964844,
+          "bottom": 341.8999938964844,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 570.5,
+          "right": 1029.5,
+          "top": 164.4499969482422,
+          "bottom": 186.4499969482422,
+          "width": 459,
+          "height": 22
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 632,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 968,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 632,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 968,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 632,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 968,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      },
+      "after": {
+        "systems": {
+          "left": 682,
+          "right": 918,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 500,
+          "right": 1100,
+          "top": 247.89999999999998,
+          "bottom": 634.9,
+          "width": 600,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 724,
+          "right": 876,
+          "top": 257.3999938964844,
+          "bottom": 278.3999938964844,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 496,
+          "right": 1104,
+          "top": 143.5,
+          "bottom": 207.39999999999998,
+          "width": 608,
+          "height": 63.89999999999999
+        },
+        "title": {
+          "left": 667,
+          "right": 933,
+          "top": 290.8999938964844,
+          "bottom": 318.8999938964844,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 712.5,
+          "right": 887.5,
+          "top": 323.8999938964844,
+          "bottom": 341.8999938964844,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 570.5,
+          "right": 1029.5,
+          "top": 164.4499969482422,
+          "bottom": 186.4499969482422,
+          "width": 459,
+          "height": 22
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 632,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 968,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 632,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 968,
+            "y": 478.3999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 440.67999389648435,
+              "bottom": 516.1199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 632,
+            "y": 586.9000244140625,
+            "bounds": {
+              "left": 594.28,
+              "right": 669.72,
+              "top": 549.1800244140625,
+              "bottom": 624.6200244140625,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 968,
+            "y": 369.8999938964844,
+            "bounds": {
+              "left": 930.28,
+              "right": 1005.72,
+              "top": 332.17999389648435,
+              "bottom": 407.6199938964844,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [
+          "red"
+        ],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      }
+    },
+    {
+      "viewport": "1920x1080",
+      "titleGap": 5,
+      "instructionGap": 57,
+      "instructionCardGap": 55.5,
+      "instructionOverPort": false,
+      "before": {
+        "systems": {
+          "left": 842,
+          "right": 1078,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 660.356,
+          "right": 1259.644,
+          "top": 267,
+          "bottom": 654,
+          "width": 599.288,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 884.0000180664063,
+          "right": 1036.0000180664063,
+          "top": 276.5,
+          "bottom": 297.5,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 650,
+          "right": 1270,
+          "top": 149,
+          "bottom": 221,
+          "width": 620,
+          "height": 72
+        },
+        "title": {
+          "left": 827.0000180664063,
+          "right": 1093.0000180664063,
+          "top": 310,
+          "bottom": 338,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 872.5000180664063,
+          "right": 1047.5000180664063,
+          "top": 343,
+          "bottom": 361,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 728.5,
+          "right": 1191.5,
+          "top": 174,
+          "bottom": 196,
+          "width": 463,
+          "height": 22
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 792.1993408203125,
+            "y": 389,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-red",
+            "x": 1127.8006591796875,
+            "y": 389,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 792.1993408203125,
+            "y": 497.5,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 1127.8006591796875,
+            "y": 606,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 792.1993408203125,
+            "y": 606,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 1127.8006591796875,
+            "y": 497.5,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      },
+      "after": {
+        "systems": {
+          "left": 842,
+          "right": 1078,
+          "top": 76,
+          "bottom": 92,
+          "width": 236,
+          "height": 16
+        },
+        "card": {
+          "left": 660.356,
+          "right": 1259.644,
+          "top": 267,
+          "bottom": 654,
+          "width": 599.288,
+          "height": 387
+        },
+        "taskBadge": {
+          "left": 884.0000180664063,
+          "right": 1036.0000180664063,
+          "top": 276.5,
+          "bottom": 297.5,
+          "width": 152,
+          "height": 21
+        },
+        "instructionPanel": {
+          "left": 650,
+          "right": 1270,
+          "top": 149,
+          "bottom": 221,
+          "width": 620,
+          "height": 72
+        },
+        "title": {
+          "left": 827.0000180664063,
+          "right": 1093.0000180664063,
+          "top": 310,
+          "bottom": 338,
+          "width": 266,
+          "height": 28
+        },
+        "progress": {
+          "left": 872.5000180664063,
+          "right": 1047.5000180664063,
+          "top": 343,
+          "bottom": 361,
+          "width": 175,
+          "height": 18
+        },
+        "instruction": {
+          "left": 728.5,
+          "right": 1191.5,
+          "top": 174,
+          "bottom": 196,
+          "width": 463,
+          "height": 22
+        },
+        "instructionParent": "connection-drag-instruction-panel",
+        "ports": [
+          {
+            "name": "connection-source-red",
+            "x": 792.1993408203125,
+            "y": 389,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-target-red",
+            "x": 1127.8006591796875,
+            "y": 389,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 351.28,
+              "bottom": 426.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": true
+          },
+          {
+            "name": "connection-source-blue",
+            "x": 792.1993408203125,
+            "y": 497.5,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-blue",
+            "x": 1127.8006591796875,
+            "y": 606,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-source-green",
+            "x": 792.1993408203125,
+            "y": 606,
+            "bounds": {
+              "left": 754.4793408203125,
+              "right": 829.9193408203125,
+              "top": 568.28,
+              "bottom": 643.72,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          },
+          {
+            "name": "connection-target-green",
+            "x": 1127.8006591796875,
+            "y": 497.5,
+            "bounds": {
+              "left": 1090.0806591796875,
+              "right": 1165.5206591796875,
+              "top": 459.78,
+              "bottom": 535.22,
+              "width": 75.44000000000005,
+              "height": 75.44000000000005
+            },
+            "locked": false
+          }
+        ],
+        "connected": [
+          "red"
+        ],
+        "text": {
+          "title": "ПОДКЛЮЧИ ПРОВОДА",
+          "progress": "ПОДКЛЮЧЕНИЕ 1 ИЗ 3",
+          "instruction": "ЗАЖМИ ПРОВОД И ПРОТЯНИ К ТАКОМУ ЖЕ ЦВЕТУ"
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1280x720-initial.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1280x720-red-connected.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1366x768-initial.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1366x768-red-connected.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1440x900-initial.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1440x900-red-connected.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1600x900-initial.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1600x900-red-connected.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1920x1080-initial.png",
+    "docs\\qa\\screenshots\\mission7-desktop-text-composition\\1920x1080-red-connected.png"
+  ]
+}
