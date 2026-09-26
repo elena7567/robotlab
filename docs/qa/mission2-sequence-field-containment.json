@@ -1,0 +1,2357 @@
+{
+  "startedAt": "2026-09-26T13:22:46.281Z",
+  "stages": [
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:22:46.282Z",
+      "elapsedMs": 0,
+      "details": {
+        "name": "1024x640",
+        "width": 1024,
+        "height": 640,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:22:46.283Z",
+      "elapsedMs": 1,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:22:46.844Z",
+      "elapsedMs": 562,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:22:46.845Z",
+      "elapsedMs": 563,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:22:46.854Z",
+      "elapsedMs": 572,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:22:46.854Z",
+      "elapsedMs": 572,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:22:47.020Z",
+      "elapsedMs": 738,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:22:47.022Z",
+      "elapsedMs": 740,
+      "details": {
+        "name": "1024x640",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:22:47.033Z",
+      "elapsedMs": 751,
+      "details": {
+        "name": "1024x640",
+        "status": 200
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:22:51.743Z",
+      "elapsedMs": 5461,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:22:51.879Z",
+      "elapsedMs": 5597,
+      "details": {
+        "name": "1024x640",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:22:51.879Z",
+      "elapsedMs": 5597,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:22:56.732Z",
+      "elapsedMs": 10450,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:22:56.733Z",
+      "elapsedMs": 10451,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:23:02.132Z",
+      "elapsedMs": 15850,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:23:02.132Z",
+      "elapsedMs": 15850,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:23:07.439Z",
+      "elapsedMs": 21157,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:23:07.446Z",
+      "elapsedMs": 21164,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:23:10.168Z",
+      "elapsedMs": 23886,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:23:10.169Z",
+      "elapsedMs": 23887,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:23:10.169Z",
+      "elapsedMs": 23887,
+      "details": {
+        "name": "1024x640",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:23:10.169Z",
+      "elapsedMs": 23887,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:23:10.170Z",
+      "elapsedMs": 23888,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:23:10.556Z",
+      "elapsedMs": 24274,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:23:10.558Z",
+      "elapsedMs": 24276,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:23:11.484Z",
+      "elapsedMs": 25202,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:23:11.485Z",
+      "elapsedMs": 25203,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:23:16.806Z",
+      "elapsedMs": 30524,
+      "details": {
+        "name": "1024x640"
+      }
+    },
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:23:16.806Z",
+      "elapsedMs": 30524,
+      "details": {
+        "name": "1280x720",
+        "width": 1280,
+        "height": 720,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:23:16.807Z",
+      "elapsedMs": 30525,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:23:17.459Z",
+      "elapsedMs": 31177,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:23:17.460Z",
+      "elapsedMs": 31178,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:23:17.464Z",
+      "elapsedMs": 31182,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:23:17.465Z",
+      "elapsedMs": 31183,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:23:18.544Z",
+      "elapsedMs": 32262,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:23:18.545Z",
+      "elapsedMs": 32263,
+      "details": {
+        "name": "1280x720",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:23:18.554Z",
+      "elapsedMs": 32272,
+      "details": {
+        "name": "1280x720",
+        "status": 200
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:23:18.563Z",
+      "elapsedMs": 32281,
+      "details": {
+        "name": "1280x720",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:23:18.564Z",
+      "elapsedMs": 32282,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:23:18.931Z",
+      "elapsedMs": 32649,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:23:20.531Z",
+      "elapsedMs": 34249,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:23:20.531Z",
+      "elapsedMs": 34249,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:23:27.388Z",
+      "elapsedMs": 41106,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:23:27.389Z",
+      "elapsedMs": 41107,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:23:34.182Z",
+      "elapsedMs": 47901,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:23:34.183Z",
+      "elapsedMs": 47901,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:23:41.430Z",
+      "elapsedMs": 55148,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:23:41.431Z",
+      "elapsedMs": 55149,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:23:41.434Z",
+      "elapsedMs": 55152,
+      "details": {
+        "name": "1280x720",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:23:41.438Z",
+      "elapsedMs": 55156,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:23:41.440Z",
+      "elapsedMs": 55158,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:23:41.601Z",
+      "elapsedMs": 55319,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:23:41.601Z",
+      "elapsedMs": 55319,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:23:43.900Z",
+      "elapsedMs": 57618,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:23:43.901Z",
+      "elapsedMs": 57619,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:23:44.939Z",
+      "elapsedMs": 58657,
+      "details": {
+        "name": "1280x720"
+      }
+    },
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:23:44.939Z",
+      "elapsedMs": 58657,
+      "details": {
+        "name": "1280x800",
+        "width": 1280,
+        "height": 800,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:23:44.939Z",
+      "elapsedMs": 58657,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:23:45.341Z",
+      "elapsedMs": 59059,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:23:45.342Z",
+      "elapsedMs": 59060,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:23:45.348Z",
+      "elapsedMs": 59066,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:23:45.348Z",
+      "elapsedMs": 59066,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:23:45.640Z",
+      "elapsedMs": 59358,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:23:45.641Z",
+      "elapsedMs": 59359,
+      "details": {
+        "name": "1280x800",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:23:45.651Z",
+      "elapsedMs": 59369,
+      "details": {
+        "name": "1280x800",
+        "status": 200
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:23:45.659Z",
+      "elapsedMs": 59377,
+      "details": {
+        "name": "1280x800",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:23:45.662Z",
+      "elapsedMs": 59380,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:23:46.035Z",
+      "elapsedMs": 59753,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:23:47.752Z",
+      "elapsedMs": 61470,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:23:47.753Z",
+      "elapsedMs": 61471,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:23:54.735Z",
+      "elapsedMs": 68453,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:23:54.735Z",
+      "elapsedMs": 68453,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:23:59.980Z",
+      "elapsedMs": 73698,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:24:00.026Z",
+      "elapsedMs": 73744,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:24:07.383Z",
+      "elapsedMs": 81101,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:24:07.384Z",
+      "elapsedMs": 81102,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:24:07.384Z",
+      "elapsedMs": 81102,
+      "details": {
+        "name": "1280x800",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:24:07.385Z",
+      "elapsedMs": 81103,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:24:07.386Z",
+      "elapsedMs": 81104,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:24:07.389Z",
+      "elapsedMs": 81107,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:24:07.390Z",
+      "elapsedMs": 81108,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:24:10.190Z",
+      "elapsedMs": 83908,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:24:10.191Z",
+      "elapsedMs": 83909,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:24:10.317Z",
+      "elapsedMs": 84035,
+      "details": {
+        "name": "1280x800"
+      }
+    },
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:24:10.318Z",
+      "elapsedMs": 84036,
+      "details": {
+        "name": "1366x768",
+        "width": 1366,
+        "height": 768,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:24:10.318Z",
+      "elapsedMs": 84036,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:24:10.420Z",
+      "elapsedMs": 84138,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:24:10.421Z",
+      "elapsedMs": 84139,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:24:10.425Z",
+      "elapsedMs": 84143,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:24:10.425Z",
+      "elapsedMs": 84143,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:24:10.527Z",
+      "elapsedMs": 84245,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:24:10.528Z",
+      "elapsedMs": 84246,
+      "details": {
+        "name": "1366x768",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:24:10.559Z",
+      "elapsedMs": 84277,
+      "details": {
+        "name": "1366x768",
+        "status": 200
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:24:10.575Z",
+      "elapsedMs": 84293,
+      "details": {
+        "name": "1366x768",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:24:10.576Z",
+      "elapsedMs": 84294,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:24:10.907Z",
+      "elapsedMs": 84625,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:24:12.490Z",
+      "elapsedMs": 86208,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:24:12.490Z",
+      "elapsedMs": 86208,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:24:20.251Z",
+      "elapsedMs": 93969,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:24:20.252Z",
+      "elapsedMs": 93970,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:24:25.544Z",
+      "elapsedMs": 99262,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:24:25.555Z",
+      "elapsedMs": 99273,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:24:31.458Z",
+      "elapsedMs": 105176,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:24:31.509Z",
+      "elapsedMs": 105227,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:24:31.510Z",
+      "elapsedMs": 105228,
+      "details": {
+        "name": "1366x768",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:24:31.511Z",
+      "elapsedMs": 105229,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:24:31.521Z",
+      "elapsedMs": 105239,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:24:31.538Z",
+      "elapsedMs": 105256,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:24:31.560Z",
+      "elapsedMs": 105278,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:24:34.002Z",
+      "elapsedMs": 107720,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:24:34.003Z",
+      "elapsedMs": 107721,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:24:34.137Z",
+      "elapsedMs": 107855,
+      "details": {
+        "name": "1366x768"
+      }
+    },
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:24:34.137Z",
+      "elapsedMs": 107855,
+      "details": {
+        "name": "1440x900",
+        "width": 1440,
+        "height": 900,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:24:34.138Z",
+      "elapsedMs": 107856,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:24:34.254Z",
+      "elapsedMs": 107972,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:24:34.254Z",
+      "elapsedMs": 107972,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:24:34.258Z",
+      "elapsedMs": 107976,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:24:34.259Z",
+      "elapsedMs": 107977,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:24:34.358Z",
+      "elapsedMs": 108076,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:24:34.359Z",
+      "elapsedMs": 108077,
+      "details": {
+        "name": "1440x900",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:24:34.379Z",
+      "elapsedMs": 108097,
+      "details": {
+        "name": "1440x900",
+        "status": 200
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:24:34.391Z",
+      "elapsedMs": 108109,
+      "details": {
+        "name": "1440x900",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:24:34.391Z",
+      "elapsedMs": 108109,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:24:34.714Z",
+      "elapsedMs": 108432,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:24:36.571Z",
+      "elapsedMs": 110289,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:24:36.572Z",
+      "elapsedMs": 110290,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:24:44.744Z",
+      "elapsedMs": 118463,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:24:44.746Z",
+      "elapsedMs": 118464,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:24:49.774Z",
+      "elapsedMs": 123492,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:24:49.777Z",
+      "elapsedMs": 123495,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:24:56.564Z",
+      "elapsedMs": 130282,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:24:56.567Z",
+      "elapsedMs": 130285,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:24:56.574Z",
+      "elapsedMs": 130292,
+      "details": {
+        "name": "1440x900",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:24:56.579Z",
+      "elapsedMs": 130297,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:24:56.581Z",
+      "elapsedMs": 130299,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:24:56.659Z",
+      "elapsedMs": 130377,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:24:56.659Z",
+      "elapsedMs": 130377,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:24:59.544Z",
+      "elapsedMs": 133262,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:24:59.545Z",
+      "elapsedMs": 133263,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:24:59.834Z",
+      "elapsedMs": 133552,
+      "details": {
+        "name": "1440x900"
+      }
+    },
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:24:59.835Z",
+      "elapsedMs": 133553,
+      "details": {
+        "name": "1920x1080",
+        "width": 1920,
+        "height": 1080,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:24:59.836Z",
+      "elapsedMs": 133554,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:24:59.927Z",
+      "elapsedMs": 133645,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:24:59.927Z",
+      "elapsedMs": 133645,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:24:59.932Z",
+      "elapsedMs": 133650,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:24:59.932Z",
+      "elapsedMs": 133650,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:25:00.009Z",
+      "elapsedMs": 133727,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:25:00.010Z",
+      "elapsedMs": 133728,
+      "details": {
+        "name": "1920x1080",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:25:00.023Z",
+      "elapsedMs": 133741,
+      "details": {
+        "name": "1920x1080",
+        "status": 200
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:25:00.040Z",
+      "elapsedMs": 133758,
+      "details": {
+        "name": "1920x1080",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:25:00.041Z",
+      "elapsedMs": 133759,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:25:00.342Z",
+      "elapsedMs": 134060,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:25:02.063Z",
+      "elapsedMs": 135781,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:25:02.064Z",
+      "elapsedMs": 135782,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:25:14.399Z",
+      "elapsedMs": 148117,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:25:14.400Z",
+      "elapsedMs": 148118,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:25:19.963Z",
+      "elapsedMs": 153681,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:25:20.113Z",
+      "elapsedMs": 153831,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:25:28.897Z",
+      "elapsedMs": 162615,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:25:28.917Z",
+      "elapsedMs": 162635,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:25:28.918Z",
+      "elapsedMs": 162636,
+      "details": {
+        "name": "1920x1080",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:25:28.918Z",
+      "elapsedMs": 162636,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:25:28.922Z",
+      "elapsedMs": 162640,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:25:28.934Z",
+      "elapsedMs": 162652,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:25:28.934Z",
+      "elapsedMs": 162652,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:25:33.183Z",
+      "elapsedMs": 166901,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:25:33.184Z",
+      "elapsedMs": 166902,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:25:33.611Z",
+      "elapsedMs": 167329,
+      "details": {
+        "name": "1920x1080"
+      }
+    },
+    {
+      "name": "viewport iteration start",
+      "at": "2026-09-26T13:25:33.612Z",
+      "elapsedMs": 167330,
+      "details": {
+        "name": "2560x1440",
+        "width": 2560,
+        "height": 1440,
+        "touch": false
+      }
+    },
+    {
+      "name": "browser launch start",
+      "at": "2026-09-26T13:25:33.613Z",
+      "elapsedMs": 167331,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "browser launch complete",
+      "at": "2026-09-26T13:25:33.875Z",
+      "elapsedMs": 167593,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "context creation start",
+      "at": "2026-09-26T13:25:33.876Z",
+      "elapsedMs": 167594,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "context creation complete",
+      "at": "2026-09-26T13:25:33.879Z",
+      "elapsedMs": 167597,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "page creation start",
+      "at": "2026-09-26T13:25:33.880Z",
+      "elapsedMs": 167598,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "page creation complete",
+      "at": "2026-09-26T13:25:34.051Z",
+      "elapsedMs": 167769,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "page.goto start",
+      "at": "2026-09-26T13:25:34.053Z",
+      "elapsedMs": 167771,
+      "details": {
+        "name": "2560x1440",
+        "url": "http://127.0.0.1:4198/"
+      }
+    },
+    {
+      "name": "response received",
+      "at": "2026-09-26T13:25:34.068Z",
+      "elapsedMs": 167786,
+      "details": {
+        "name": "2560x1440",
+        "status": 200
+      }
+    },
+    {
+      "name": "service worker inspection",
+      "at": "2026-09-26T13:25:34.150Z",
+      "elapsedMs": 167868,
+      "details": {
+        "name": "2560x1440",
+        "serviceWorkers": []
+      }
+    },
+    {
+      "name": "game/start scene readiness start",
+      "at": "2026-09-26T13:25:34.150Z",
+      "elapsedMs": 167868,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "DOMContentLoaded",
+      "at": "2026-09-26T13:25:34.451Z",
+      "elapsedMs": 168169,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "game/start scene readiness complete",
+      "at": "2026-09-26T13:25:37.099Z",
+      "elapsedMs": 170817,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "navigation to Mission 2 start",
+      "at": "2026-09-26T13:25:37.100Z",
+      "elapsedMs": 170818,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "Mission 2 readiness complete",
+      "at": "2026-09-26T13:25:56.730Z",
+      "elapsedMs": 190448,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "geometry assertions start",
+      "at": "2026-09-26T13:25:56.730Z",
+      "elapsedMs": 190448,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "geometry assertions complete",
+      "at": "2026-09-26T13:26:02.069Z",
+      "elapsedMs": 195787,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "interaction assertions start",
+      "at": "2026-09-26T13:26:02.071Z",
+      "elapsedMs": 195789,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "interaction assertions complete",
+      "at": "2026-09-26T13:26:08.813Z",
+      "elapsedMs": 202531,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "console assertions start",
+      "at": "2026-09-26T13:26:08.814Z",
+      "elapsedMs": 202532,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "console assertions complete",
+      "at": "2026-09-26T13:26:08.815Z",
+      "elapsedMs": 202533,
+      "details": {
+        "name": "2560x1440",
+        "errorCount": 0
+      }
+    },
+    {
+      "name": "viewport iteration complete",
+      "at": "2026-09-26T13:26:08.815Z",
+      "elapsedMs": 202533,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "page close start",
+      "at": "2026-09-26T13:26:08.815Z",
+      "elapsedMs": 202533,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "page close complete",
+      "at": "2026-09-26T13:26:08.826Z",
+      "elapsedMs": 202544,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "context close start",
+      "at": "2026-09-26T13:26:08.827Z",
+      "elapsedMs": 202545,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "context close complete",
+      "at": "2026-09-26T13:26:15.715Z",
+      "elapsedMs": 209433,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "browser close start",
+      "at": "2026-09-26T13:26:15.716Z",
+      "elapsedMs": 209434,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "browser close complete",
+      "at": "2026-09-26T13:26:15.796Z",
+      "elapsedMs": 209514,
+      "details": {
+        "name": "2560x1440"
+      }
+    },
+    {
+      "name": "JSON report write",
+      "at": "2026-09-26T13:26:15.797Z",
+      "elapsedMs": 209515,
+      "details": {
+        "status": "CLEANUP_PENDING"
+      }
+    },
+    {
+      "name": "process exit scheduled",
+      "at": "2026-09-26T13:26:15.798Z",
+      "elapsedMs": 209516,
+      "details": {
+        "exitCode": 0
+      }
+    }
+  ],
+  "status": "COMPLETE",
+  "results": [
+    {
+      "name": "1024x640",
+      "width": 1024,
+      "height": 640,
+      "before": {
+        "field": {
+          "x": 384.0650546484375,
+          "y": 225.2459615258789,
+          "width": 255.86992000000004,
+          "height": 67.18860000000006,
+          "right": 639.9349746484376,
+          "bottom": 292.43456152587896
+        },
+        "row": {
+          "x": 392.0650546484375,
+          "y": 242.68443485921227,
+          "width": 239.86992000000004,
+          "height": 38.31165333333331,
+          "right": 631.9349746484376,
+          "bottom": 280.9960881925456
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 390.5839340298808,
+            "y": 241.20331424065557,
+            "width": 41.273894570446714,
+            "height": 41.273894570446714,
+            "right": 431.85782860032754,
+            "bottom": 282.4772088111023
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 430.89558736321413,
+            "y": 241.20331424065557,
+            "width": 41.27389457044677,
+            "height": 41.273894570446714,
+            "right": 472.1694819336609,
+            "bottom": 282.4772088111023
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 472.05719733926674,
+            "y": 242.0532708833748,
+            "width": 39.573981285008244,
+            "height": 39.573981285008244,
+            "right": 511.631178624275,
+            "bottom": 281.62725216838305
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 511.5188940298808,
+            "y": 241.20331424065557,
+            "width": 41.273894570446714,
+            "height": 41.273894570446714,
+            "right": 552.7927886003275,
+            "bottom": 282.4772088111023
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 551.8305473632142,
+            "y": 241.20331424065557,
+            "width": 41.273894570446714,
+            "height": 41.273894570446714,
+            "right": 593.104441933661,
+            "bottom": 282.4772088111023
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 593.6233213151042,
+            "y": 242.68443485921227,
+            "width": 38.31165333333331,
+            "height": 38.31165333333331,
+            "right": 631.9349746484376,
+            "bottom": 280.9960881925456
+          }
+        ],
+        "question": {
+          "x": 607.2791479817708,
+          "y": 247.84026152587893,
+          "width": 11,
+          "height": 26,
+          "right": 618.2791479817708,
+          "bottom": 273.84026152587893
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 38.31165333333334,
+        "gap": 2,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    },
+    {
+      "name": "1280x720",
+      "width": 1280,
+      "height": 720,
+      "before": {
+        "field": {
+          "x": 478.51878779296874,
+          "y": 249.16653546956383,
+          "width": 322.9624,
+          "height": 123.03266666666667,
+          "right": 801.4811877929687,
+          "bottom": 372.1992021362305
+        },
+        "row": {
+          "x": 486.51878779296874,
+          "y": 288.93600213623046,
+          "width": 306.9624,
+          "height": 49.493733333333296,
+          "right": 793.4811877929687,
+          "bottom": 338.42973546956375
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 484.60537026719555,
+            "y": 287.0225846104573,
+            "width": 53.32056838487972,
+            "height": 53.32056838487972,
+            "right": 537.9259386520753,
+            "bottom": 340.343152995337
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 536.0991036005289,
+            "y": 287.0225846104573,
+            "width": 53.32056838487972,
+            "height": 53.32056838487972,
+            "right": 589.4196719854086,
+            "bottom": 340.343152995337
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 588.6908717029083,
+            "y": 288.1206193795034,
+            "width": 51.124498846787446,
+            "height": 51.124498846787446,
+            "right": 639.8153705496958,
+            "bottom": 339.24511822629086
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 639.0865702671956,
+            "y": 287.0225846104573,
+            "width": 53.32056838487961,
+            "height": 53.32056838487972,
+            "right": 692.4071386520752,
+            "bottom": 340.343152995337
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 690.5803036005289,
+            "y": 287.0225846104573,
+            "width": 53.320568384879834,
+            "height": 53.32056838487972,
+            "right": 743.9008719854087,
+            "bottom": 340.343152995337
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 743.9874544596354,
+            "y": 288.93600213623046,
+            "width": 49.49373333333335,
+            "height": 49.493733333333296,
+            "right": 793.4811877929687,
+            "bottom": 338.42973546956375
+          }
+        ],
+        "question": {
+          "x": 761.7343211263021,
+          "y": 295.68286880289713,
+          "width": 14,
+          "height": 34,
+          "right": 775.7343211263021,
+          "bottom": 329.68286880289713
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 49.49373333333333,
+        "gap": 2,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    },
+    {
+      "name": "1280x800",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "field": {
+          "x": 478.51878779296874,
+          "y": 261.40653333333336,
+          "width": 322.9624,
+          "height": 123.03266666666667,
+          "right": 801.4811877929687,
+          "bottom": 384.4392
+        },
+        "row": {
+          "x": 486.51878779296874,
+          "y": 301.176,
+          "width": 306.9624,
+          "height": 49.493733333333296,
+          "right": 793.4811877929687,
+          "bottom": 350.6697333333333
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 484.60537026719555,
+            "y": 299.2625824742268,
+            "width": 53.32056838487972,
+            "height": 53.32056838487972,
+            "right": 537.9259386520753,
+            "bottom": 352.5831508591065
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 536.0991036005289,
+            "y": 299.2625824742268,
+            "width": 53.32056838487972,
+            "height": 53.32056838487972,
+            "right": 589.4196719854086,
+            "bottom": 352.5831508591065
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 588.6908717029083,
+            "y": 300.36061724327294,
+            "width": 51.124498846787446,
+            "height": 51.124498846787446,
+            "right": 639.8153705496958,
+            "bottom": 351.4851160900604
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 639.0865702671956,
+            "y": 299.2625824742268,
+            "width": 53.32056838487961,
+            "height": 53.32056838487972,
+            "right": 692.4071386520752,
+            "bottom": 352.5831508591065
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 690.5803036005289,
+            "y": 299.2625824742268,
+            "width": 53.320568384879834,
+            "height": 53.32056838487972,
+            "right": 743.9008719854087,
+            "bottom": 352.5831508591065
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 743.9874544596354,
+            "y": 301.176,
+            "width": 49.49373333333335,
+            "height": 49.493733333333296,
+            "right": 793.4811877929687,
+            "bottom": 350.6697333333333
+          }
+        ],
+        "question": {
+          "x": 761.7343211263021,
+          "y": 307.92286666666666,
+          "width": 14,
+          "height": 34,
+          "right": 775.7343211263021,
+          "bottom": 341.92286666666666
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 49.49373333333333,
+        "gap": 2,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    },
+    {
+      "name": "1366x768",
+      "width": 1366,
+      "height": 768,
+      "before": {
+        "field": {
+          "x": 509.760009765625,
+          "y": 246.34400177001953,
+          "width": 346.48,
+          "height": 147,
+          "right": 856.240009765625,
+          "bottom": 393.34400177001953
+        },
+        "row": {
+          "x": 517.760009765625,
+          "y": 296.84400177001953,
+          "width": 330.48,
+          "height": 52,
+          "right": 848.240009765625,
+          "bottom": 348.84400177001953
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 515.7497004872745,
+            "y": 294.833692491669,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 571.7703190439755,
+            "bottom": 350.85431104837005
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 571.4457004872745,
+            "y": 294.833692491669,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 627.4663190439755,
+            "bottom": 350.85431104837005
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 628.2953376074702,
+            "y": 295.98732961186465,
+            "width": 53.71334431630976,
+            "height": 53.71334431630976,
+            "right": 682.0086819237799,
+            "bottom": 349.7006739281744
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 682.8377004872746,
+            "y": 294.833692491669,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 738.8583190439756,
+            "bottom": 350.85431104837005
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 738.5337004872745,
+            "y": 294.833692491669,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 794.5543190439755,
+            "bottom": 350.85431104837005
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 796.240009765625,
+            "y": 296.84400177001953,
+            "width": 52,
+            "height": 52,
+            "right": 848.240009765625,
+            "bottom": 348.84400177001953
+          }
+        ],
+        "question": {
+          "x": 814.740009765625,
+          "y": 303.84400177001953,
+          "width": 15,
+          "height": 36,
+          "right": 829.740009765625,
+          "bottom": 339.84400177001953
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 52,
+        "gap": 3.6960000000000037,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    },
+    {
+      "name": "1440x900",
+      "width": 1440,
+      "height": 900,
+      "before": {
+        "field": {
+          "x": 538,
+          "y": 254,
+          "width": 364,
+          "height": 147,
+          "right": 902,
+          "bottom": 401
+        },
+        "row": {
+          "x": 546,
+          "y": 304.5,
+          "width": 348,
+          "height": 52,
+          "right": 894,
+          "bottom": 356.5
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 543.9896907216495,
+            "y": 302.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 600.0103092783505,
+            "bottom": 358.5103092783505
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 603.1896907216495,
+            "y": 302.4896907216495,
+            "width": 56.020618556700924,
+            "height": 56.02061855670104,
+            "right": 659.2103092783505,
+            "bottom": 358.5103092783505
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 663.5433278418452,
+            "y": 303.6433278418451,
+            "width": 53.713344316309644,
+            "height": 53.71334431630976,
+            "right": 717.2566721581549,
+            "bottom": 357.3566721581549
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 721.5896907216495,
+            "y": 302.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 777.6103092783505,
+            "bottom": 358.5103092783505
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 780.7896907216495,
+            "y": 302.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 836.8103092783506,
+            "bottom": 358.5103092783505
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 842,
+            "y": 304.5,
+            "width": 52,
+            "height": 52,
+            "right": 894,
+            "bottom": 356.5
+          }
+        ],
+        "question": {
+          "x": 860.5,
+          "y": 311.5,
+          "width": 15,
+          "height": 36,
+          "right": 875.5,
+          "bottom": 347.5
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 52,
+        "gap": 7.2,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    },
+    {
+      "name": "1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "before": {
+        "field": {
+          "x": 778,
+          "y": 256,
+          "width": 364,
+          "height": 147,
+          "right": 1142,
+          "bottom": 403
+        },
+        "row": {
+          "x": 786,
+          "y": 306.5,
+          "width": 348,
+          "height": 52,
+          "right": 1134,
+          "bottom": 358.5
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 783.9896907216495,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 840.0103092783505,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 843.1896907216495,
+            "y": 304.4896907216495,
+            "width": 56.020618556700924,
+            "height": 56.02061855670104,
+            "right": 899.2103092783505,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 903.5433278418452,
+            "y": 305.6433278418451,
+            "width": 53.713344316309644,
+            "height": 53.71334431630976,
+            "right": 957.2566721581549,
+            "bottom": 359.3566721581549
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 961.5896907216495,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 1017.6103092783505,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 1020.7896907216495,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 1076.8103092783506,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 1082,
+            "y": 306.5,
+            "width": 52,
+            "height": 52,
+            "right": 1134,
+            "bottom": 358.5
+          }
+        ],
+        "question": {
+          "x": 1100.5,
+          "y": 313.5,
+          "width": 15,
+          "height": 36,
+          "right": 1115.5,
+          "bottom": 349.5
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 52,
+        "gap": 7.2,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    },
+    {
+      "name": "2560x1440",
+      "width": 2560,
+      "height": 1440,
+      "before": {
+        "field": {
+          "x": 1098,
+          "y": 256,
+          "width": 364,
+          "height": 147,
+          "right": 1462,
+          "bottom": 403
+        },
+        "row": {
+          "x": 1106,
+          "y": 306.5,
+          "width": 348,
+          "height": 52,
+          "right": 1454,
+          "bottom": 358.5
+        },
+        "slots": [
+          {
+            "name": "sequence-symbol-0-sequence-lightning",
+            "x": 1103.9896907216496,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 1160.0103092783506,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-symbol-1-sequence-lightning",
+            "x": 1163.1896907216494,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 1219.2103092783505,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-symbol-2-sequence-planet",
+            "x": 1223.5433278418452,
+            "y": 305.6433278418451,
+            "width": 53.71334431630976,
+            "height": 53.71334431630976,
+            "right": 1277.256672158155,
+            "bottom": 359.3566721581549
+          },
+          {
+            "name": "sequence-symbol-3-sequence-lightning",
+            "x": 1281.5896907216495,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 1337.6103092783505,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-symbol-4-sequence-lightning",
+            "x": 1340.7896907216495,
+            "y": 304.4896907216495,
+            "width": 56.02061855670104,
+            "height": 56.02061855670104,
+            "right": 1396.8103092783506,
+            "bottom": 360.5103092783505
+          },
+          {
+            "name": "sequence-missing-slot",
+            "x": 1402,
+            "y": 306.5,
+            "width": 52,
+            "height": 52,
+            "right": 1454,
+            "bottom": 358.5
+          }
+        ],
+        "question": {
+          "x": 1420.5,
+          "y": 313.5,
+          "width": 15,
+          "height": 36,
+          "right": 1435.5,
+          "bottom": 349.5
+        },
+        "slotCount": 6,
+        "leftClearance": 8,
+        "rightClearance": 8,
+        "slotSize": 52,
+        "gap": 7.2,
+        "correctKey": "sequence-planet"
+      },
+      "checks": {
+        "cyanFieldBounds": true,
+        "sequenceRowBounds": true,
+        "balancedClearance": true,
+        "readableSlots": true,
+        "answerInteraction": true,
+        "console": true
+      },
+      "errors": []
+    }
+  ],
+  "failures": [],
+  "runtimeErrors": []
+}

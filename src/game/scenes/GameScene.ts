@@ -444,6 +444,7 @@ export class GameScene extends Phaser.Scene {
         title: 'Продолжи ряд', instruction: 'Какая картинка должна быть следующей?',
         objectKeys: sequenceState.optionKeys,
         sequenceKeys: sequenceState.sequenceKeys,
+        sequenceLayout: 'field-constrained',
         correctKey: sequenceState.correctKey,
         internalProgress: { current: sequenceState.challengeIndex + 1, total: sequenceState.challengeCount },
         initialSelection: sequenceState.selectedKey,

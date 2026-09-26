@@ -50,6 +50,8 @@ export interface TaskCardConfig {
   correctFeedbackText?: string;
   hintKeys?: readonly TaskObjectKey[];
   sequenceKeys?: readonly SequenceAssetKey[];
+  /** Mission-owned sequence presentation policy. Omitted keeps the legacy sequence layout. */
+  sequenceLayout?: 'field-constrained';
   correctKey?: TaskObjectKey;
   internalProgress?: { current: number; total: number };
   internalProgressLabel?: string;
@@ -237,7 +239,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
         y: optionsY,
       }));
 
-      const sequenceBackground = scene.add.graphics();
+      const sequenceBackground = scene.add.graphics().setName('sequence-field');
       sequenceBackground.fillStyle(0xe8f4f4, 0.94)
         .fillRoundedRect(sizing.horizontalPadding, areaTop, contentWidth, sequenceHeight, 12);
       sequenceBackground.lineStyle(2, UI_COLORS.cyan, 0.65)
@@ -245,17 +247,56 @@ export class TaskCard extends Phaser.GameObjects.Container {
       this.add(sequenceBackground);
 
       const sequenceCount = config.sequenceKeys.length + 1;
-      const sequenceGap = interaction.mechanicGap;
-      const sequenceContentWidth = contentWidth - 12;
-      const slotSize = Math.max(interaction.visibleObjectMin, Math.min(
-        interaction.visibleObjectIdeal,
-        sizing.sequenceIconMaxSize,
-        (sequenceContentWidth - sequenceGap * (sequenceCount - 1)) / sequenceCount,
-        sequenceHeight - 8,
-      ));
+      const legacySequenceGap = interaction.mechanicGap;
+      const legacySequenceContentWidth = contentWidth - 12;
+      const fieldHorizontalClearance = 8;
+      const sequenceFieldWidth = contentWidth - fieldHorizontalClearance * 2;
+      const constrainedSequenceLayout = config.sequenceLayout === 'field-constrained';
+      const minimumReadableSlot = constrainedSequenceLayout
+        ? Math.min(
+          interaction.visibleObjectMin,
+          Math.max(32, (sequenceFieldWidth - 2 * (sequenceCount - 1)) / sequenceCount),
+        )
+        : interaction.visibleObjectMin;
+      const sequenceGap = constrainedSequenceLayout
+        ? Math.min(
+          legacySequenceGap,
+          Math.max(2, (sequenceFieldWidth - minimumReadableSlot * sequenceCount) / (sequenceCount - 1)),
+        )
+        : legacySequenceGap;
+      const sequenceContentWidth = constrainedSequenceLayout ? sequenceFieldWidth : legacySequenceContentWidth;
+      const slotSize = constrainedSequenceLayout
+        ? Math.min(
+          interaction.visibleObjectIdeal,
+          sizing.sequenceIconMaxSize,
+          (sequenceContentWidth - sequenceGap * (sequenceCount - 1)) / sequenceCount,
+          sequenceHeight - 8,
+        )
+        : Math.max(interaction.visibleObjectMin, Math.min(
+          interaction.visibleObjectIdeal,
+          sizing.sequenceIconMaxSize,
+          (sequenceContentWidth - sequenceGap * (sequenceCount - 1)) / sequenceCount,
+          sequenceHeight - 8,
+        ));
       const rowWidth = slotSize * sequenceCount + sequenceGap * (sequenceCount - 1);
-      const rowX = config.width / 2 - rowWidth / 2;
+      const rowX = constrainedSequenceLayout
+        ? sizing.horizontalPadding + fieldHorizontalClearance + (sequenceContentWidth - rowWidth) / 2
+        : config.width / 2 - rowWidth / 2;
       const rowY = areaTop + sequenceHeight / 2 + 3;
+      this.setData('sequenceFieldBounds', {
+        x: sizing.horizontalPadding,
+        y: areaTop,
+        width: contentWidth,
+        height: sequenceHeight,
+      });
+      this.setData('sequenceRowBounds', {
+        x: rowX,
+        y: rowY - slotSize / 2,
+        width: rowWidth,
+        height: slotSize,
+        slotSize,
+        gap: sequenceGap,
+      });
       config.sequenceKeys.forEach((key, index) => {
         const image = scene.add.image(rowX + slotSize / 2 + index * (slotSize + sequenceGap), rowY, key)
           .setName(`sequence-symbol-${index}-${key}`)
@@ -264,7 +305,7 @@ export class TaskCard extends Phaser.GameObjects.Container {
         this.add(image);
       });
       const missingX = rowX + slotSize / 2 + (sequenceCount - 1) * (slotSize + sequenceGap);
-      const missingSlot = scene.add.graphics();
+      const missingSlot = scene.add.graphics().setName('sequence-missing-slot');
       missingSlot.fillStyle(0xfffbf1, 0.96).fillRoundedRect(missingX - slotSize / 2, rowY - slotSize / 2, slotSize, slotSize, 8);
       missingSlot.lineStyle(2, UI_COLORS.purple, 0.9)
         .strokeRoundedRect(missingX - slotSize / 2, rowY - slotSize / 2, slotSize, slotSize, 8);
