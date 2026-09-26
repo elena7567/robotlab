@@ -930,7 +930,9 @@ export class Mission10Scene extends Phaser.Scene {
     const config = getMission10SignalConfig(snapshot.signalConfigId);
     const solution = solveMission10Signal(config, snapshot.reflectorOrientations);
     const propSize = regions.PROP_VISIBLE_HEIGHT;
-    const desktopSignal = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode === 'DESKTOP';
+    const signalResponsiveMode = createResponsiveLayout(this.scale.width, this.scale.height).semanticMode;
+    const desktopSignal = signalResponsiveMode === 'DESKTOP';
+    const shortLandscapeSignal = signalResponsiveMode === 'PHONE_LANDSCAPE_SHORT';
     const pointKey = (point: { x: number; y: number }): string => `${point.x},${point.y}`;
     const rawMapPoint = (point: { x: number; y: number }): Phaser.Math.Vector2 => new Phaser.Math.Vector2(
       field.x + (point.x + 0.5) / config.bounds.width * field.width,
@@ -975,6 +977,28 @@ export class Mission10Scene extends Phaser.Scene {
           new Phaser.Math.Vector2(position.x - propSize * 0.34, position.y + propSize * rise),
           new Phaser.Math.Vector2(position.x + propSize * 0.34, position.y + propSize * rise));
       });
+      registerNode(config.receiver, 'RECEIVER', receiver,
+        new Phaser.Math.Vector2(receiver.x - propSize * 0.26, receiver.y), receiver);
+    } else if (shortLandscapeSignal && config.id === 'SIGNAL_B') {
+      // SIGNAL_B's serialized grid deliberately stacks its two reflectors in one
+      // column for the solver. On a short landscape phone that grid is not a
+      // player-facing composition: keep the state data intact, but present the
+      // apparatus as a left-to-right optical route with real connection ports.
+      const at = (x: number, y: number): Phaser.Math.Vector2 => new Phaser.Math.Vector2(
+        field.x + field.width * x, field.y + field.height * y,
+      );
+      const source = at(0.10, 0.68);
+      const mirrorOne = at(0.34, 0.42);
+      const mirrorTwo = at(0.62, 0.68);
+      const receiver = at(0.90, 0.40);
+      registerNode(config.emitter, 'SOURCE', source,
+        source, new Phaser.Math.Vector2(source.x + propSize * 0.20, source.y));
+      registerNode(config.reflectors[0].position, 'REFLECTOR_A', mirrorOne,
+        new Phaser.Math.Vector2(mirrorOne.x - propSize * 0.34, mirrorOne.y - propSize * 0.05),
+        new Phaser.Math.Vector2(mirrorOne.x + propSize * 0.34, mirrorOne.y - propSize * 0.05));
+      registerNode(config.reflectors[1].position, 'REFLECTOR_B', mirrorTwo,
+        new Phaser.Math.Vector2(mirrorTwo.x - propSize * 0.34, mirrorTwo.y + propSize * 0.05),
+        new Phaser.Math.Vector2(mirrorTwo.x + propSize * 0.34, mirrorTwo.y + propSize * 0.05));
       registerNode(config.receiver, 'RECEIVER', receiver,
         new Phaser.Math.Vector2(receiver.x - propSize * 0.26, receiver.y), receiver);
     } else {
