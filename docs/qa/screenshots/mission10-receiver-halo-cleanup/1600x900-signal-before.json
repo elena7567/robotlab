@@ -1,0 +1,52 @@
+{
+  "receiver": [
+    {
+      "type": "Image",
+      "visible": true,
+      "alpha": 1,
+      "x": 1065.92,
+      "y": 516.67,
+      "radius": null,
+      "displayWidth": 116.15560640732265,
+      "displayHeight": 143.54691075514873
+    }
+  ],
+  "receiverHalo": [
+    {
+      "type": "Arc",
+      "visible": true,
+      "alpha": 1,
+      "x": 1030.8200000000002,
+      "y": 516.67,
+      "radius": 27,
+      "displayWidth": 54,
+      "displayHeight": 54
+    }
+  ],
+  "beam": [
+    {
+      "type": "Graphics",
+      "visible": true,
+      "alpha": 1,
+      "x": 0,
+      "y": 0,
+      "radius": null,
+      "displayWidth": null,
+      "displayHeight": null
+    }
+  ],
+  "points": [
+    {
+      "from": {
+        "x": 609.08,
+        "y": 596.23
+      },
+      "to": {
+        "x": 685.94,
+        "y": 509.91999999999996
+      },
+      "fromRole": "SOURCE",
+      "toRole": "REFLECTOR_A"
+    }
+  ]
+}
