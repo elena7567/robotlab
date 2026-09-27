@@ -156,7 +156,13 @@ async function runRapidTaps(browser, viewport, label) {
   await page.mouse.click(center(first).x, center(first).y);
   await sleep(600);
   const after = (await inspect(page)).snapshot.relayOrientations[first.relayId];
-  check(label + '-exactly-two-rotations', (after - before + 8) % 4 === 2, { before, after });
+  check(label + '-refresh-serializes-immediate-taps', (after - before + 8) % 4 === 1, { before, after });
+  const refreshed = await inspect(page);
+  await page.mouse.click(center(refreshed.relayNodes[0]).x, center(refreshed.relayNodes[0]).y);
+  await sleep(260);
+  const recovered = await inspect(page);
+  check(label + '-next-tap-after-refresh-is-accepted', (recovered.snapshot.relayOrientations[first.relayId] - after + 8) % 4 === 1,
+    { after, recovered: recovered.snapshot.relayOrientations[first.relayId] });
   check(label + '-still-energy-or-solved', ['ENERGY', 'SIGNAL'].includes((await inspect(page)).snapshot.stage), null);
   await context.close();
 }

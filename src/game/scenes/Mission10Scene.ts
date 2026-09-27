@@ -869,6 +869,10 @@ export class Mission10Scene extends Phaser.Scene {
     }
     audioManager.playUiClick();
     this.robotEnergyReaction(result.stageAdvanced ? 'success' : improved ? 'progress' : degraded ? 'concern' : 'tap');
+    // The current relay nodes are rebuilt after their feedback animation. Do not
+    // accept another pointer gesture while that rebuild is pending: otherwise a
+    // new target can be destroyed between its pointer-down and pointer-up.
+    this.interactionLocked = true;
     this.delay(reduced ? 60 : 170, () => this.refreshEnergyDesktop());
     this.feedbackText?.setText(result.stageAdvanced ? 'ЭНЕРГИЯ ПОДКЛЮЧЕНА!'
       : result.hintRelayId ? (reduced ? 'ПОВЕРНИ ВЫДЕЛЕННОЕ РЕЛЕ' : 'ПОСМОТРИ НА МИГАЮЩЕЕ РЕЛЕ')
@@ -886,6 +890,7 @@ export class Mission10Scene extends Phaser.Scene {
     this.clearStagePresentation();
     this.stageRoot!.removeAll(true);
     this.renderEnergy();
+    this.interactionLocked = false;
     this.publishQa();
   }
 
@@ -1325,16 +1330,20 @@ export class Mission10Scene extends Phaser.Scene {
     });
     target.on(Phaser.Input.Events.POINTER_UP, (pointer: Phaser.Input.Pointer) => {
       if (this.pointerOwner !== pointer.id || this.pointerTarget !== target) return;
-      this.pointerOwner = null;
-      this.pointerTarget = undefined;
+      this.releasePointer(pointer, target);
       activate();
     });
     target.on(Phaser.Input.Events.POINTER_OUT, (pointer: Phaser.Input.Pointer) => {
-      if (this.pointerOwner === pointer.id && this.pointerTarget === target) {
-        this.pointerOwner = null;
-        this.pointerTarget = undefined;
-      }
+      this.releasePointer(pointer, target);
     });
+    target.on('pointerupoutside', (pointer: Phaser.Input.Pointer) => this.releasePointer(pointer, target));
+  }
+
+  private releasePointer(pointer?: Phaser.Input.Pointer, target?: Phaser.GameObjects.GameObject): void {
+    if (pointer && this.pointerOwner !== pointer.id) return;
+    if (target && this.pointerTarget !== target) return;
+    this.pointerOwner = null;
+    this.pointerTarget = undefined;
   }
 
   private robotReaction(success: boolean): void {
@@ -1355,6 +1364,7 @@ export class Mission10Scene extends Phaser.Scene {
 
   private clearStagePresentation(): void {
     this.generation += 1;
+    this.releasePointer();
     for (const timer of this.timers) timer.remove(false);
     this.timers = [];
     if (!this.stageRoot) return;

@@ -345,11 +345,19 @@
       "actual": "ENERGY"
     },
     {
-      "name": "1600x900-rapid-exactly-two-rotations",
+      "name": "1600x900-rapid-refresh-serializes-immediate-taps",
       "ok": true,
       "actual": {
         "before": 2,
-        "after": 0
+        "after": 3
+      }
+    },
+    {
+      "name": "1600x900-rapid-next-tap-after-refresh-is-accepted",
+      "ok": true,
+      "actual": {
+        "after": 3,
+        "recovered": 0
       }
     },
     {

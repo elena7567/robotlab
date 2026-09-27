@@ -1,0 +1,1391 @@
+{
+  "result": "NOT_REPRODUCED",
+  "deterministic": {
+    "delayMs": 145,
+    "initial": {
+      "snapshot": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 2,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      },
+      "relayNodes": [
+        {
+          "relayId": "R1",
+          "x": 456,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R2",
+          "x": 580,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R3",
+          "x": 704,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "energyEvaluation": {
+        "connectedRelayCount": 0,
+        "breakRelayId": "R1",
+        "receiverPowered": false,
+        "energizedSegments": [
+          {
+            "from": {
+              "x": 0,
+              "y": 0
+            },
+            "to": {
+              "x": 1,
+              "y": 0
+            },
+            "energized": true
+          }
+        ]
+      },
+      "inputEnabled": 3,
+      "interactionLock": false,
+      "transitionLock": false,
+      "pointerOwner": null,
+      "pointerTarget": null,
+      "activeTweens": [],
+      "activeTimers": [],
+      "pointerHandlers": 9,
+      "currentValidPath": false,
+      "lastValidNode": 0,
+      "blinkingRelay": null,
+      "sceneActive": true,
+      "solved": false,
+      "contract": {
+        "stage": "ENERGY",
+        "interactionLocked": false,
+        "pointerOwner": null,
+        "generation": 2,
+        "targetCount": 0,
+        "timerCount": 0
+      }
+    },
+    "stuck": {
+      "snapshot": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 3,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 1,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      },
+      "relayNodes": [
+        {
+          "relayId": "R1",
+          "x": 456,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R2",
+          "x": 580,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R3",
+          "x": 704,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "energyEvaluation": {
+        "connectedRelayCount": 0,
+        "breakRelayId": "R1",
+        "receiverPowered": false,
+        "energizedSegments": [
+          {
+            "from": {
+              "x": 0,
+              "y": 0
+            },
+            "to": {
+              "x": 1,
+              "y": 0
+            },
+            "energized": true
+          }
+        ]
+      },
+      "inputEnabled": 3,
+      "interactionLock": true,
+      "transitionLock": false,
+      "pointerOwner": null,
+      "pointerTarget": null,
+      "activeTweens": [],
+      "activeTimers": [
+        {
+          "delay": 170,
+          "elapsed": 86.64000000000087
+        }
+      ],
+      "pointerHandlers": 9,
+      "currentValidPath": false,
+      "lastValidNode": 0,
+      "blinkingRelay": null,
+      "sceneActive": true,
+      "solved": false,
+      "contract": {
+        "stage": "ENERGY",
+        "interactionLocked": true,
+        "pointerOwner": null,
+        "generation": 2,
+        "targetCount": 0,
+        "timerCount": 1
+      }
+    },
+    "beforeRecovery": {
+      "snapshot": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 3,
+          "R2": 3,
+          "R3": 2
+        },
+        "energyWrongAttempts": 1,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      },
+      "relayNodes": [
+        {
+          "relayId": "R1",
+          "x": 456,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R2",
+          "x": 580,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R3",
+          "x": 704,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "energyEvaluation": {
+        "connectedRelayCount": 0,
+        "breakRelayId": "R1",
+        "receiverPowered": false,
+        "energizedSegments": [
+          {
+            "from": {
+              "x": 0,
+              "y": 0
+            },
+            "to": {
+              "x": 1,
+              "y": 0
+            },
+            "energized": true
+          }
+        ]
+      },
+      "inputEnabled": 3,
+      "interactionLock": false,
+      "transitionLock": false,
+      "pointerOwner": null,
+      "pointerTarget": null,
+      "activeTweens": [],
+      "activeTimers": [],
+      "pointerHandlers": 9,
+      "currentValidPath": false,
+      "lastValidNode": 0,
+      "blinkingRelay": null,
+      "sceneActive": true,
+      "solved": false,
+      "contract": {
+        "stage": "ENERGY",
+        "interactionLocked": false,
+        "pointerOwner": null,
+        "generation": 3,
+        "targetCount": 0,
+        "timerCount": 0
+      }
+    },
+    "afterRecovery": {
+      "snapshot": {
+        "stage": "ENERGY",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 3,
+          "R2": 3,
+          "R3": 3
+        },
+        "energyWrongAttempts": 2,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      },
+      "relayNodes": [
+        {
+          "relayId": "R1",
+          "x": 456,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R2",
+          "x": 580,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        },
+        {
+          "relayId": "R3",
+          "x": 704,
+          "y": 414.22222900390625,
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "energyEvaluation": {
+        "connectedRelayCount": 0,
+        "breakRelayId": "R1",
+        "receiverPowered": false,
+        "energizedSegments": [
+          {
+            "from": {
+              "x": 0,
+              "y": 0
+            },
+            "to": {
+              "x": 1,
+              "y": 0
+            },
+            "energized": true
+          }
+        ]
+      },
+      "inputEnabled": 3,
+      "interactionLock": false,
+      "transitionLock": false,
+      "pointerOwner": null,
+      "pointerTarget": null,
+      "activeTweens": [
+        {
+          "state": 21,
+          "totalProgress": 4.2187499999999965e-13
+        }
+      ],
+      "activeTimers": [],
+      "pointerHandlers": 9,
+      "currentValidPath": false,
+      "lastValidNode": 0,
+      "blinkingRelay": null,
+      "sceneActive": true,
+      "solved": false,
+      "contract": {
+        "stage": "ENERGY",
+        "interactionLocked": false,
+        "pointerOwner": null,
+        "generation": 4,
+        "targetCount": 0,
+        "timerCount": 0
+      }
+    },
+    "permanentlyLocked": false
+  },
+  "randomized": [
+    {
+      "sequenceIndex": 0,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 2,
+            "R3": 3
+          },
+          "energyWrongAttempts": 5,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 1,
+          "breakRelayId": "R2",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": false,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 2.484375e-13
+          }
+        ],
+        "activeTimers": [],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 1,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 8,
+          "targetCount": 0,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 1,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 1,
+            "R3": 3
+          },
+          "energyWrongAttempts": 4,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 2,
+          "breakRelayId": "R3",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 0
+              },
+              "to": {
+                "x": 3,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": true,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 1.2484375e-12
+          }
+        ],
+        "activeTimers": [
+          {
+            "delay": 170,
+            "elapsed": 166.65333333333317
+          }
+        ],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 2,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": true,
+          "pointerOwner": null,
+          "generation": 6,
+          "targetCount": 0,
+          "timerCount": 1
+        }
+      }
+    },
+    {
+      "sequenceIndex": 2,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 3,
+            "R2": 2,
+            "R3": 0
+          },
+          "energyWrongAttempts": 6,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 0,
+          "breakRelayId": "R1",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": true,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 9.078125e-13
+          }
+        ],
+        "activeTimers": [
+          {
+            "delay": 170,
+            "elapsed": 99.99999999999997
+          }
+        ],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 0,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": true,
+          "pointerOwner": null,
+          "generation": 7,
+          "targetCount": 0,
+          "timerCount": 1
+        }
+      }
+    },
+    {
+      "sequenceIndex": 3,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 1,
+            "R3": 0
+          },
+          "energyWrongAttempts": 5,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 1,
+          "breakRelayId": "R2",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": false,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 1.009375e-12
+          }
+        ],
+        "activeTimers": [],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 1,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 8,
+          "targetCount": 0,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 4,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "SIGNAL",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 7,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [],
+        "energyEvaluation": {
+          "connectedRelayCount": 1,
+          "breakRelayId": "R2",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 0,
+        "interactionLock": false,
+        "transitionLock": true,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [],
+        "activeTimers": [],
+        "pointerHandlers": 0,
+        "currentValidPath": false,
+        "lastValidNode": 1,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": true,
+        "contract": {
+          "stage": "SIGNAL",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 11,
+          "targetCount": 2,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 5,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 1
+          },
+          "energyWrongAttempts": 8,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 2,
+          "breakRelayId": "R3",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 0
+              },
+              "to": {
+                "x": 3,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": false,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 0.4089285714285714
+          },
+          {
+            "state": 21,
+            "totalProgress": 1.171875e-13
+          }
+        ],
+        "activeTimers": [],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 2,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 12,
+          "targetCount": 0,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 6,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 0,
+            "R3": 1
+          },
+          "energyWrongAttempts": 10,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 0,
+          "breakRelayId": "R1",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": false,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 1.3421875e-12
+          }
+        ],
+        "activeTimers": [],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 0,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 13,
+          "targetCount": 0,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 7,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "SIGNAL",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 7,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [],
+        "energyEvaluation": {
+          "connectedRelayCount": 1,
+          "breakRelayId": "R2",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 0,
+        "interactionLock": false,
+        "transitionLock": true,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [],
+        "activeTimers": [],
+        "pointerHandlers": 0,
+        "currentValidPath": false,
+        "lastValidNode": 1,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": true,
+        "contract": {
+          "stage": "SIGNAL",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 11,
+          "targetCount": 2,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 8,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 1,
+            "R3": 1
+          },
+          "energyWrongAttempts": 9,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 1,
+          "breakRelayId": "R2",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            },
+            {
+              "from": {
+                "x": 1,
+                "y": 0
+              },
+              "to": {
+                "x": 2,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": false,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 9.6671875e-12
+          }
+        ],
+        "activeTimers": [],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 1,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 13,
+          "targetCount": 0,
+          "timerCount": 0
+        }
+      }
+    },
+    {
+      "sequenceIndex": 9,
+      "pass": true,
+      "state": {
+        "snapshot": {
+          "stage": "ENERGY",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 1,
+            "R2": 0,
+            "R3": 1
+          },
+          "energyWrongAttempts": 10,
+          "reflectorOrientations": {
+            "M1": 1,
+            "M2": 1
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "relayNodes": [
+          {
+            "relayId": "R1",
+            "x": 456,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R2",
+            "x": 580,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relayId": "R3",
+            "x": 704,
+            "y": 414.22222900390625,
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "energyEvaluation": {
+          "connectedRelayCount": 0,
+          "breakRelayId": "R1",
+          "receiverPowered": false,
+          "energizedSegments": [
+            {
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 1,
+                "y": 0
+              },
+              "energized": true
+            }
+          ]
+        },
+        "inputEnabled": 3,
+        "interactionLock": false,
+        "transitionLock": false,
+        "pointerOwner": null,
+        "pointerTarget": null,
+        "activeTweens": [
+          {
+            "state": 21,
+            "totalProgress": 0.85
+          },
+          {
+            "state": 21,
+            "totalProgress": 0
+          }
+        ],
+        "activeTimers": [],
+        "pointerHandlers": 9,
+        "currentValidPath": false,
+        "lastValidNode": 0,
+        "blinkingRelay": null,
+        "sceneActive": true,
+        "solved": false,
+        "contract": {
+          "stage": "ENERGY",
+          "interactionLocked": false,
+          "pointerOwner": null,
+          "generation": 13,
+          "targetCount": 0,
+          "timerCount": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}
