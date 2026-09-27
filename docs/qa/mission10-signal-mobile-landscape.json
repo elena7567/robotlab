@@ -1,0 +1,1048 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "844x390-signal-b",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "844x390-route-order",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 198.36682,
+            "y": 273.36840000000007
+          },
+          "inputPort": {
+            "x": 198.36682,
+            "y": 273.36840000000007
+          },
+          "outputPort": {
+            "x": 219.16682,
+            "y": 273.36840000000007
+          }
+        },
+        "m1": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 349.500868,
+            "y": 199.8196
+          },
+          "inputPort": {
+            "x": 314.140868,
+            "y": 194.61960000000002
+          },
+          "outputPort": {
+            "x": 384.86086800000004,
+            "y": 194.61960000000002
+          }
+        },
+        "m2": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 525.823924,
+            "y": 273.36840000000007
+          },
+          "inputPort": {
+            "x": 490.463924,
+            "y": 278.56840000000005
+          },
+          "outputPort": {
+            "x": 561.183924,
+            "y": 278.56840000000005
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 702.14698,
+            "y": 194.16200000000003
+          },
+          "inputPort": {
+            "x": 675.10698,
+            "y": 194.16200000000003
+          },
+          "outputPort": {
+            "x": 702.14698,
+            "y": 194.16200000000003
+          }
+        }
+      }
+    },
+    {
+      "name": "844x390-no-vertical-stack",
+      "ok": true,
+      "actual": {
+        "m1": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 349.500868,
+            "y": 199.8196
+          },
+          "inputPort": {
+            "x": 314.140868,
+            "y": 194.61960000000002
+          },
+          "outputPort": {
+            "x": 384.86086800000004,
+            "y": 194.61960000000002
+          }
+        },
+        "m2": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 525.823924,
+            "y": 273.36840000000007
+          },
+          "inputPort": {
+            "x": 490.463924,
+            "y": 278.56840000000005
+          },
+          "outputPort": {
+            "x": 561.183924,
+            "y": 278.56840000000005
+          }
+        }
+      }
+    },
+    {
+      "name": "844x390-mirror-gap",
+      "ok": true,
+      "actual": [
+        {
+          "id": "M1",
+          "visibleLeft": 292.8475095747244,
+          "visibleRight": 406.1541994096506,
+          "visibleTop": 155.62998630129286,
+          "visibleBottom": 268.93667613621903,
+          "visibleWidth": 113.30668983492615,
+          "visibleHeight": 113.30668983492617,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        {
+          "id": "M2",
+          "visibleLeft": 469.1705686567557,
+          "visibleRight": 582.4772584916818,
+          "visibleTop": 229.1787991675038,
+          "visibleBottom": 342.48548900243,
+          "visibleWidth": 113.30668983492615,
+          "visibleHeight": 113.30668983492617,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        }
+      ]
+    },
+    {
+      "name": "844x390-receiver-gap",
+      "ok": true,
+      "actual": {
+        "mirror": {
+          "id": "M2",
+          "visibleLeft": 469.1705686567557,
+          "visibleRight": 582.4772584916818,
+          "visibleTop": 229.1787991675038,
+          "visibleBottom": 342.48548900243,
+          "visibleWidth": 113.30668983492615,
+          "visibleHeight": 113.30668983492617,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 675.4544338285923,
+          "visibleRight": 744.7084352448583,
+          "visibleTop": 160.04429244995117,
+          "visibleBottom": 264.04428770393133,
+          "visibleWidth": 69.25400141626596,
+          "visibleHeight": 103.99999525398016,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.07932875667429443,
+          "localScaleY": 0.07932875667429443,
+          "effectiveWorldScaleX": 0.079328753054142,
+          "effectiveWorldScaleY": 0.079328753054142
+        }
+      }
+    },
+    {
+      "name": "844x390-semantic-initial-beam",
+      "ok": true,
+      "actual": [
+        {
+          "from": {
+            "x": 219.16682,
+            "y": 273.36840000000007
+          },
+          "to": {
+            "x": 314.140868,
+            "y": 194.61960000000002
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ]
+    },
+    {
+      "name": "844x390-touch-targets",
+      "ok": true,
+      "actual": [
+        {
+          "id": "M1",
+          "bounds": {
+            "x": 293.340868,
+            "y": 157.6996,
+            "width": 112.32,
+            "height": 105.03999999999999
+          }
+        },
+        {
+          "id": "M2",
+          "bounds": {
+            "x": 469.663924,
+            "y": 231.24840000000003,
+            "width": 112.32,
+            "height": 105.03999999999999
+          }
+        },
+        {
+          "bounds": {
+            "x": 18.650001525878906,
+            "y": 25.650001525878906,
+            "width": 66,
+            "height": 18
+          }
+        },
+        {
+          "bounds": {
+            "x": 768.3499755859375,
+            "y": 25.650001525878906,
+            "width": 48,
+            "height": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "844x390-touch-solve",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "presentation": {
+          "field": {
+            "x": 135.3943,
+            "y": 81.01000000000002,
+            "width": 629.7252000000001,
+            "height": 282.88
+          },
+          "propSize": 104,
+          "coreWidth": 7,
+          "points": [
+            {
+              "from": {
+                "x": 219.16682,
+                "y": 273.36840000000007
+              },
+              "to": {
+                "x": 314.140868,
+                "y": 194.61960000000002
+              },
+              "fromRole": "SOURCE",
+              "toRole": "REFLECTOR_A"
+            },
+            {
+              "from": {
+                "x": 384.86086800000004,
+                "y": 194.61960000000002
+              },
+              "to": {
+                "x": 490.463924,
+                "y": 278.56840000000005
+              },
+              "fromRole": "REFLECTOR_A",
+              "toRole": "REFLECTOR_B"
+            },
+            {
+              "from": {
+                "x": 561.183924,
+                "y": 278.56840000000005
+              },
+              "to": {
+                "x": 675.10698,
+                "y": 194.16200000000003
+              },
+              "fromRole": "REFLECTOR_B",
+              "toRole": "RECEIVER"
+            }
+          ],
+          "source": {
+            "x": 198.36682,
+            "y": 273.36840000000007
+          },
+          "receiver": {
+            "x": 702.14698,
+            "y": 194.16200000000003
+          },
+          "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP",
+          "apparatus": [
+            {
+              "id": "emitter",
+              "visibleLeft": 118.76134243011475,
+              "visibleRight": 213.77504035234452,
+              "visibleTop": 248.54429879903793,
+              "visibleBottom": 352.5442980241776,
+              "visibleWidth": 95.01369792222977,
+              "visibleHeight": 103.99999922513965,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.1095890410958904,
+              "localScaleY": 0.1095890410958904,
+              "effectiveWorldScaleX": 0.10958904027938843,
+              "effectiveWorldScaleY": 0.10958904027938843
+            },
+            {
+              "id": "receiver",
+              "visibleLeft": 675.4544338285923,
+              "visibleRight": 744.7084352448583,
+              "visibleTop": 160.04429244995117,
+              "visibleBottom": 264.04428770393133,
+              "visibleWidth": 69.25400141626596,
+              "visibleHeight": 103.99999525398016,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.07932875667429443,
+              "localScaleY": 0.07932875667429443,
+              "effectiveWorldScaleX": 0.079328753054142,
+              "effectiveWorldScaleY": 0.079328753054142
+            },
+            {
+              "id": "M1",
+              "visibleLeft": 292.8475095747244,
+              "visibleRight": 406.1541994096506,
+              "visibleTop": 155.62998630129286,
+              "visibleBottom": 268.93667613621903,
+              "visibleWidth": 113.30668983492615,
+              "visibleHeight": 113.30668983492617,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 1,
+              "localScaleY": 1,
+              "effectiveWorldScaleX": 1,
+              "effectiveWorldScaleY": 1
+            },
+            {
+              "id": "M2",
+              "visibleLeft": 469.1705686567557,
+              "visibleRight": 582.4772584916818,
+              "visibleTop": 226.5274226253665,
+              "visibleBottom": 346.63251385038825,
+              "visibleWidth": 113.30668983492615,
+              "visibleHeight": 120.10509122502174,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 1,
+              "localScaleY": 1,
+              "effectiveWorldScaleX": 1,
+              "effectiveWorldScaleY": 1
+            }
+          ],
+          "nodes": [
+            {
+              "role": "SOURCE",
+              "center": {
+                "x": 198.36682,
+                "y": 273.36840000000007
+              },
+              "inputPort": {
+                "x": 198.36682,
+                "y": 273.36840000000007
+              },
+              "outputPort": {
+                "x": 219.16682,
+                "y": 273.36840000000007
+              }
+            },
+            {
+              "role": "REFLECTOR_A",
+              "center": {
+                "x": 349.500868,
+                "y": 199.8196
+              },
+              "inputPort": {
+                "x": 314.140868,
+                "y": 194.61960000000002
+              },
+              "outputPort": {
+                "x": 384.86086800000004,
+                "y": 194.61960000000002
+              }
+            },
+            {
+              "role": "REFLECTOR_B",
+              "center": {
+                "x": 525.823924,
+                "y": 273.36840000000007
+              },
+              "inputPort": {
+                "x": 490.463924,
+                "y": 278.56840000000005
+              },
+              "outputPort": {
+                "x": 561.183924,
+                "y": 278.56840000000005
+              }
+            },
+            {
+              "role": "RECEIVER",
+              "center": {
+                "x": 702.14698,
+                "y": 194.16200000000003
+              },
+              "inputPort": {
+                "x": 675.10698,
+                "y": 194.16200000000003
+              },
+              "outputPort": {
+                "x": 702.14698,
+                "y": 194.16200000000003
+              }
+            }
+          ],
+          "stoppedPort": null,
+          "groupVisibleBounds": {
+            "visibleLeft": 118.76134243011475,
+            "visibleRight": 744.7084352448583,
+            "visibleTop": 155.62998630129286,
+            "visibleBottom": 352.5442980241776,
+            "visibleWidth": 625.9470928147435,
+            "visibleHeight": 196.91431172288472
+          },
+          "successHold": 1500
+        },
+        "targets": [
+          {
+            "id": "M1",
+            "bounds": {
+              "x": 293.340868,
+              "y": 157.6996,
+              "width": 112.32,
+              "height": 105.03999999999999
+            }
+          },
+          {
+            "id": "M2",
+            "bounds": {
+              "x": 469.663924,
+              "y": 231.24840000000003,
+              "width": 112.32,
+              "height": 105.03999999999999
+            }
+          },
+          {
+            "bounds": {
+              "x": 18.650001525878906,
+              "y": 25.650001525878906,
+              "width": 66,
+              "height": 18
+            }
+          },
+          {
+            "bounds": {
+              "x": 768.3499755859375,
+              "y": 25.650001525878906,
+              "width": 48,
+              "height": 18
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "915x412-signal-b",
+      "ok": true,
+      "actual": {
+        "stage": "SIGNAL",
+        "runSeed": 1010,
+        "pathConfigId": "PATH_B",
+        "energyConfigId": "ENERGY_B",
+        "signalConfigId": "SIGNAL_B",
+        "pathDecisionIndex": 3,
+        "pathWrongAttempts": 0,
+        "relayOrientations": {
+          "R1": 0,
+          "R2": 0,
+          "R3": 0
+        },
+        "energyWrongAttempts": 0,
+        "reflectorOrientations": {
+          "M1": 1,
+          "M2": 1
+        },
+        "signalWrongAttempts": 0,
+        "launchPressed": false,
+        "finaleStep": 0,
+        "completed": false
+      }
+    },
+    {
+      "name": "915x412-route-order",
+      "ok": true,
+      "actual": {
+        "source": {
+          "role": "SOURCE",
+          "center": {
+            "x": 221.10900717948724,
+            "y": 285.5173866666667
+          },
+          "inputPort": {
+            "x": 221.10900717948724,
+            "y": 285.5173866666667
+          },
+          "outputPort": {
+            "x": 243.08234051282056,
+            "y": 285.5173866666667
+          }
+        },
+        "m1": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 381.3453148717949,
+            "y": 207.81968
+          },
+          "inputPort": {
+            "x": 343.99064820512825,
+            "y": 202.32634666666667
+          },
+          "outputPort": {
+            "x": 418.6999815384616,
+            "y": 202.32634666666667
+          }
+        },
+        "m2": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 568.2876738461539,
+            "y": 285.5173866666667
+          },
+          "inputPort": {
+            "x": 530.9330071794873,
+            "y": 291.01072000000005
+          },
+          "outputPort": {
+            "x": 605.6423405128205,
+            "y": 291.01072000000005
+          }
+        },
+        "receiver": {
+          "role": "RECEIVER",
+          "center": {
+            "x": 755.2300328205129,
+            "y": 201.84293333333335
+          },
+          "inputPort": {
+            "x": 726.6646994871795,
+            "y": 201.84293333333335
+          },
+          "outputPort": {
+            "x": 755.2300328205129,
+            "y": 201.84293333333335
+          }
+        }
+      }
+    },
+    {
+      "name": "915x412-no-vertical-stack",
+      "ok": true,
+      "actual": {
+        "m1": {
+          "role": "REFLECTOR_A",
+          "center": {
+            "x": 381.3453148717949,
+            "y": 207.81968
+          },
+          "inputPort": {
+            "x": 343.99064820512825,
+            "y": 202.32634666666667
+          },
+          "outputPort": {
+            "x": 418.6999815384616,
+            "y": 202.32634666666667
+          }
+        },
+        "m2": {
+          "role": "REFLECTOR_B",
+          "center": {
+            "x": 568.2876738461539,
+            "y": 285.5173866666667
+          },
+          "inputPort": {
+            "x": 530.9330071794873,
+            "y": 291.01072000000005
+          },
+          "outputPort": {
+            "x": 605.6423405128205,
+            "y": 291.01072000000005
+          }
+        }
+      }
+    },
+    {
+      "name": "915x412-mirror-gap",
+      "ok": true,
+      "actual": [
+        {
+          "id": "M1",
+          "visibleLeft": 321.4961317657285,
+          "visibleRight": 441.1944810272403,
+          "visibleTop": 161.13733067765887,
+          "visibleBottom": 280.83567993917063,
+          "visibleWidth": 119.6983492615118,
+          "visibleHeight": 119.69834926151177,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        {
+          "id": "M2",
+          "visibleLeft": 508.43848406065035,
+          "visibleRight": 628.1368333221621,
+          "visibleTop": 238.83503880754168,
+          "visibleBottom": 358.53338806905344,
+          "visibleWidth": 119.6983492615118,
+          "visibleHeight": 119.69834926151177,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        }
+      ]
+    },
+    {
+      "name": "915x412-receiver-gap",
+      "ok": true,
+      "actual": {
+        "mirror": {
+          "id": "M2",
+          "visibleLeft": 508.43848406065035,
+          "visibleRight": 628.1368333221621,
+          "visibleTop": 238.83503880754168,
+          "visibleBottom": 358.53338806905344,
+          "visibleWidth": 119.6983492615118,
+          "visibleHeight": 119.69834926151177,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 1,
+          "localScaleY": 1,
+          "effectiveWorldScaleX": 1,
+          "effectiveWorldScaleY": 1
+        },
+        "receiver": {
+          "id": "receiver",
+          "visibleLeft": 727.0317680454255,
+          "visibleRight": 800.1924097752571,
+          "visibleTop": 165.800625,
+          "visibleBottom": 275.6672931647301,
+          "visibleWidth": 73.1606417298317,
+          "visibleHeight": 109.8666681647301,
+          "parentScaleX": 1,
+          "parentScaleY": 1,
+          "localScaleX": 0.08380371217899822,
+          "localScaleY": 0.08380371217899822,
+          "effectiveWorldScaleX": 0.08380371332168579,
+          "effectiveWorldScaleY": 0.08380371332168579
+        }
+      }
+    },
+    {
+      "name": "915x412-semantic-initial-beam",
+      "ok": true,
+      "actual": [
+        {
+          "from": {
+            "x": 243.08234051282056,
+            "y": 285.5173866666667
+          },
+          "to": {
+            "x": 343.99064820512825,
+            "y": 202.32634666666667
+          },
+          "fromRole": "SOURCE",
+          "toRole": "REFLECTOR_A"
+        }
+      ]
+    },
+    {
+      "name": "915x412-touch-targets",
+      "ok": true,
+      "actual": [
+        {
+          "id": "M1",
+          "bounds": {
+            "x": 322.0173148717949,
+            "y": 163.32368000000002,
+            "width": 118.656,
+            "height": 110.96533333333338
+          }
+        },
+        {
+          "id": "M2",
+          "bounds": {
+            "x": 508.95967384615386,
+            "y": 241.02138666666673,
+            "width": 118.656,
+            "height": 110.96533333333338
+          }
+        },
+        {
+          "bounds": {
+            "x": 19.419998168945312,
+            "y": 26.419998168945312,
+            "width": 66,
+            "height": 18
+          }
+        },
+        {
+          "bounds": {
+            "x": 838.5800170898438,
+            "y": 26.419998168945312,
+            "width": 48,
+            "height": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "915x412-touch-solve",
+      "ok": true,
+      "actual": {
+        "snapshot": {
+          "stage": "LAUNCH",
+          "runSeed": 1010,
+          "pathConfigId": "PATH_B",
+          "energyConfigId": "ENERGY_B",
+          "signalConfigId": "SIGNAL_B",
+          "pathDecisionIndex": 3,
+          "pathWrongAttempts": 0,
+          "relayOrientations": {
+            "R1": 0,
+            "R2": 0,
+            "R3": 0
+          },
+          "energyWrongAttempts": 0,
+          "reflectorOrientations": {
+            "M1": 0,
+            "M2": 0
+          },
+          "signalWrongAttempts": 0,
+          "launchPressed": false,
+          "finaleStep": 0,
+          "completed": false
+        },
+        "presentation": {
+          "field": {
+            "x": 154.34387897435903,
+            "y": 82.308,
+            "width": 667.651282051282,
+            "height": 298.8373333333334
+          },
+          "propSize": 109.86666666666667,
+          "coreWidth": 7.394871794871795,
+          "points": [
+            {
+              "from": {
+                "x": 243.08234051282056,
+                "y": 285.5173866666667
+              },
+              "to": {
+                "x": 343.99064820512825,
+                "y": 202.32634666666667
+              },
+              "fromRole": "SOURCE",
+              "toRole": "REFLECTOR_A"
+            },
+            {
+              "from": {
+                "x": 418.6999815384616,
+                "y": 202.32634666666667
+              },
+              "to": {
+                "x": 530.9330071794873,
+                "y": 291.01072000000005
+              },
+              "fromRole": "REFLECTOR_A",
+              "toRole": "REFLECTOR_B"
+            },
+            {
+              "from": {
+                "x": 605.6423405128205,
+                "y": 291.01072000000005
+              },
+              "to": {
+                "x": 726.6646994871795,
+                "y": 201.84293333333335
+              },
+              "fromRole": "REFLECTOR_B",
+              "toRole": "RECEIVER"
+            }
+          ],
+          "source": {
+            "x": 221.10900717948724,
+            "y": 285.5173866666667
+          },
+          "receiver": {
+            "x": 755.2300328205129,
+            "y": 201.84293333333335
+          },
+          "groupName": "MISSION10_SIGNAL_PUZZLE_GROUP",
+          "apparatus": [
+            {
+              "id": "emitter",
+              "visibleLeft": 137.01296298503877,
+              "visibleRight": 237.38640972524882,
+              "visibleTop": 259.2929507800937,
+              "visibleBottom": 369.159618549943,
+              "visibleWidth": 100.37344674021006,
+              "visibleHeight": 109.8666677698493,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.11577098700386372,
+              "localScaleY": 0.11577098700386372,
+              "effectiveWorldScaleX": 0.11577098816633224,
+              "effectiveWorldScaleY": 0.11577098816633224
+            },
+            {
+              "id": "receiver",
+              "visibleLeft": 727.0317680454255,
+              "visibleRight": 800.1924097752571,
+              "visibleTop": 165.800625,
+              "visibleBottom": 275.6672931647301,
+              "visibleWidth": 73.1606417298317,
+              "visibleHeight": 109.8666681647301,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 0.08380371217899822,
+              "localScaleY": 0.08380371217899822,
+              "effectiveWorldScaleX": 0.08380371332168579,
+              "effectiveWorldScaleY": 0.08380371332168579
+            },
+            {
+              "id": "M1",
+              "visibleLeft": 321.4961317657285,
+              "visibleRight": 441.1944810272403,
+              "visibleTop": 161.13733067765887,
+              "visibleBottom": 280.83567993917063,
+              "visibleWidth": 119.6983492615118,
+              "visibleHeight": 119.69834926151177,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 1,
+              "localScaleY": 1,
+              "effectiveWorldScaleX": 1,
+              "effectiveWorldScaleY": 1
+            },
+            {
+              "id": "M2",
+              "visibleLeft": 508.43848406065035,
+              "visibleRight": 628.1368333221621,
+              "visibleTop": 236.03409743482229,
+              "visibleBottom": 362.91434765202473,
+              "visibleWidth": 119.6983492615118,
+              "visibleHeight": 126.88025021720244,
+              "parentScaleX": 1,
+              "parentScaleY": 1,
+              "localScaleX": 1,
+              "localScaleY": 1,
+              "effectiveWorldScaleX": 1,
+              "effectiveWorldScaleY": 1
+            }
+          ],
+          "nodes": [
+            {
+              "role": "SOURCE",
+              "center": {
+                "x": 221.10900717948724,
+                "y": 285.5173866666667
+              },
+              "inputPort": {
+                "x": 221.10900717948724,
+                "y": 285.5173866666667
+              },
+              "outputPort": {
+                "x": 243.08234051282056,
+                "y": 285.5173866666667
+              }
+            },
+            {
+              "role": "REFLECTOR_A",
+              "center": {
+                "x": 381.3453148717949,
+                "y": 207.81968
+              },
+              "inputPort": {
+                "x": 343.99064820512825,
+                "y": 202.32634666666667
+              },
+              "outputPort": {
+                "x": 418.6999815384616,
+                "y": 202.32634666666667
+              }
+            },
+            {
+              "role": "REFLECTOR_B",
+              "center": {
+                "x": 568.2876738461539,
+                "y": 285.5173866666667
+              },
+              "inputPort": {
+                "x": 530.9330071794873,
+                "y": 291.01072000000005
+              },
+              "outputPort": {
+                "x": 605.6423405128205,
+                "y": 291.01072000000005
+              }
+            },
+            {
+              "role": "RECEIVER",
+              "center": {
+                "x": 755.2300328205129,
+                "y": 201.84293333333335
+              },
+              "inputPort": {
+                "x": 726.6646994871795,
+                "y": 201.84293333333335
+              },
+              "outputPort": {
+                "x": 755.2300328205129,
+                "y": 201.84293333333335
+              }
+            }
+          ],
+          "stoppedPort": null,
+          "groupVisibleBounds": {
+            "visibleLeft": 137.01296298503877,
+            "visibleRight": 800.1924097752571,
+            "visibleTop": 161.13733067765887,
+            "visibleBottom": 369.159618549943,
+            "visibleWidth": 663.1794467902184,
+            "visibleHeight": 208.02228787228412
+          },
+          "successHold": 1500
+        },
+        "targets": [
+          {
+            "id": "M1",
+            "bounds": {
+              "x": 322.0173148717949,
+              "y": 163.32368000000002,
+              "width": 118.656,
+              "height": 110.96533333333338
+            }
+          },
+          {
+            "id": "M2",
+            "bounds": {
+              "x": 508.95967384615386,
+              "y": 241.02138666666673,
+              "width": 118.656,
+              "height": 110.96533333333338
+            }
+          },
+          {
+            "bounds": {
+              "x": 19.419998168945312,
+              "y": 26.419998168945312,
+              "width": 66,
+              "height": 18
+            }
+          },
+          {
+            "bounds": {
+              "x": 838.5800170898438,
+              "y": 26.419998168945312,
+              "width": 48,
+              "height": 18
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "runtime-errors-empty",
+      "ok": true,
+      "actual": []
+    }
+  ],
+  "screenshots": [
+    "docs\\qa\\screenshots\\mission10-signal-mobile-landscape\\844x390-signal-b.png",
+    "docs\\qa\\screenshots\\mission10-signal-mobile-landscape\\844x390-signal-b-solved.png",
+    "docs\\qa\\screenshots\\mission10-signal-mobile-landscape\\915x412-signal-b.png",
+    "docs\\qa\\screenshots\\mission10-signal-mobile-landscape\\915x412-signal-b-solved.png"
+  ],
+  "errors": [],
+  "failedChecks": []
+}
