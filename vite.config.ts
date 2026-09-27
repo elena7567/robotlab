@@ -13,11 +13,14 @@ function readGitHead(): string {
   }
 }
 
-const buildIdentity = {
-  gitHead: readGitHead(),
-  timestamp: new Date().toISOString(),
-};
+export default defineConfig(({ command }) => {
+  const gitHead = readGitHead();
+  const buildIdentity = {
+    gitHead,
+    timestamp: command === 'serve' ? new Date().toISOString() : `git:${gitHead}`,
+  };
 
-export default defineConfig({
-  define: { __ROBOTLAB_BUILD_IDENTITY__: JSON.stringify(buildIdentity) },
+  return {
+    define: { __ROBOTLAB_BUILD_IDENTITY__: JSON.stringify(buildIdentity) },
+  };
 });
